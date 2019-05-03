@@ -5,8 +5,8 @@ on the process of becoming a contributor or maintainer will be published later.
 
 ## Admins
 
-This is a group of people, who are currently voted as a board members as well as
-CNCF representatives helping with project organization.
+This is a group of people, who are currently selected or will be voted as a
+board members as well as CNCF representatives helping with project organization.
 
 - [Ben Sigelman](https://github.com/bhs)
 - [Bogdan Drutu](https://github.com/BogdanDrutu)
@@ -43,6 +43,7 @@ Maintainers (TSC):
 Members:
 
 Approvers:
+
 - [Carlos Alberto](https://github.com/carlosalberto)
 - [Pavol Loffay](https://github.com/pavolloffay) *appointed by Yuri*
 
@@ -64,3 +65,4 @@ Maintainers:
 
 C++, Erlang, PHP, Ruby, Rust, Swift
 
+Consider porting people from here https://opencensus.io/faq/
