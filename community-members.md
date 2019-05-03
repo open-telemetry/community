@@ -62,6 +62,11 @@ Maintainers:
 
 ## Python
 
+Maintainers:
+
+- [Chris Kleinknecht](https://github.com/c24t), Google
+- [Reiley Yang](https://github.com/reyang), Microsoft
+
 ## Agent and Collector
 
 ## Others
