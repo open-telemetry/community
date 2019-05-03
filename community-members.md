@@ -64,6 +64,12 @@ Maintainers:
 
 ## Agent and Collector
 
+Repo: TBD
+
+Maintainers:
+
+- [Paulo Janotti](https://github.com/pjanotti)
+
 ## Others
 
 C++, Erlang, PHP, Ruby, Rust, Swift
