@@ -71,7 +71,7 @@ Approvers:
 
 Maintainers:
 
-- [Rahul Patel](https://github.com/rghetia)
+- [Rahul Patel](https://github.com/rghetia), Google
 
 ## Node.js
 
