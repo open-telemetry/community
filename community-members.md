@@ -1,5 +1,8 @@
 # The original list of maintainers
 
+
+***This document is work in progress***
+
 This is an original list of maintainers to bootstrap the effort. Official docs
 on the process of becoming a contributor or maintainer will be published later.
 
