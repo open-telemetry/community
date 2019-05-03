@@ -64,5 +64,3 @@ Maintainers:
 ## Others
 
 C++, Erlang, PHP, Ruby, Rust, Swift
-
-Consider porting people from here https://opencensus.io/faq/
