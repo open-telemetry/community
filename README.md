@@ -1,2 +1,3 @@
-# community
-OpenTelemetry community content
+# Community
+
+OpenTelemetry community content.
