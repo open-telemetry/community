@@ -59,6 +59,8 @@ Members:
 
 Approvers:
 
+- [Liudmila Molkova](https://github.com/lmolkova), Microsoft
+
 Maintainers:
 
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft
