@@ -1,6 +1,5 @@
 # The original list of maintainers
 
-
 ***This document is work in progress***
 
 This is an original list of maintainers to bootstrap the effort. Official docs
@@ -56,11 +55,33 @@ Maintainers:
 
 ## .NET
 
+Members:
+
+Approvers:
+
+- [Liudmila Molkova](https://github.com/lmolkova), Microsoft
+
+Maintainers:
+
+- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft
+
 ## Golang
+
+Approvers:
+
+- [Bogdan Drutu](https://github.com/BogdanDrutu), Google
 
 ## Node.js
 
+Approvers:
+
+- [Yuri Shkuro](https://github.com/yurishkuro), Uber
+
 ## Python
+
+Approvers:
+
+- [Carlos Alberto](https://github.com/carlosalberto), LightStep
 
 Maintainers:
 
@@ -68,6 +89,13 @@ Maintainers:
 - [Reiley Yang](https://github.com/reyang), Microsoft
 
 ## Agent and Collector
+
+Repo: TBD
+
+Maintainers:
+
+- [Bogdan Drutu](https://github.com/BogdanDrutu), Google
+- [Paulo Janotti](https://github.com/pjanotti), Omnition
 
 ## Others
 
