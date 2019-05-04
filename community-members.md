@@ -83,6 +83,11 @@ Approvers:
 
 - [Carlos Alberto](https://github.com/carlosalberto), LightStep
 
+Maintainers:
+
+- [Chris Kleinknecht](https://github.com/c24t), Google
+- [Reiley Yang](https://github.com/reyang), Microsoft
+
 ## Agent and Collector
 
 Repo: TBD
