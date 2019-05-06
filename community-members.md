@@ -77,6 +77,10 @@ Approvers:
 
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber
 
+Maintainers:
+
+- [Mayur Kale](https://github.com/mayurkale22), Google
+
 ## Python
 
 Approvers:
