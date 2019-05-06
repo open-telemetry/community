@@ -71,6 +71,10 @@ Approvers:
 
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
 
+Maintainers:
+
+- [Rahul Patel](https://github.com/rghetia), Google
+
 ## Node.js
 
 Approvers:
