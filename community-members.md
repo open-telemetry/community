@@ -46,12 +46,11 @@ Members:
 
 Approvers:
 
-- [Carlos Alberto](https://github.com/carlosalberto), LightStep
 - [Pavol Loffay](https://github.com/pavolloffay), RedHat *appointed by Yuri*
 
 Maintainers:
-
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
+- [Carlos Alberto](https://github.com/carlosalberto), LightStep
 
 ## .NET
 
