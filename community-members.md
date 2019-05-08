@@ -108,7 +108,8 @@ Maintainers:
 ## Erlang
 
 Maintainers:
-- [Ilya Khaprov](https://github.com/deadtrickster), ???
+- [Ilya Khaprov](https://github.com/deadtrickster), KOBIL Systems
+- [Tristan Sloughter](https://github.com/tsloughter), Postmates Inc.
 
 ## Others
 
