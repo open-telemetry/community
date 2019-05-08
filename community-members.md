@@ -105,6 +105,12 @@ Maintainers:
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
 - [Paulo Janotti](https://github.com/pjanotti), Omnition
 
+## Erlang
+
+Maintainers:
+- [Ilya Khaprov](https://github.com/deadtrickster), KOBIL Systems
+- [Tristan Sloughter](https://github.com/tsloughter), Postmates Inc.
+
 ## Others
 
 C++, Erlang, PHP, Ruby, Rust, Swift
