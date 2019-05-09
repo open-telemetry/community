@@ -69,6 +69,7 @@ Maintainers:
 Approvers:
 
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
+- [Steven Karis](https://github.com/sjkaris), Omnition
 
 Maintainers:
 
@@ -97,7 +98,8 @@ Maintainers:
 
 ## Agent and Collector
 
-Repo: TBD
+Approvers:
+- [Steven Karis](https://github.com/sjkaris), Omnition
 
 Maintainers:
 
