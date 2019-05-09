@@ -69,6 +69,7 @@ Maintainers:
 Approvers:
 
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
+- [Paulo Janotti](https://github.com/pjanotti), Omnition
 
 Maintainers:
 
