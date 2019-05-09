@@ -97,12 +97,13 @@ Maintainers:
 
 ## Agent and Collector
 
-Repo: TBD
+Repo: https://github.com/open-telemetry/opentelemetry-service
 
 Maintainers:
 
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
 - [Paulo Janotti](https://github.com/pjanotti), Omnition
+- [Steve Flanders](https://github.com/flands), Omnition
 
 ## Erlang
 
