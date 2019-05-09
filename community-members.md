@@ -21,11 +21,6 @@ board members as well as CNCF representatives helping with project organization.
 [Project specs](https://github.com/open-telemetry/opentelemetry-specification)
 is maintained by technical steering committee.
 
-Members:
-
-- [Isobel Redelmeier](https://github.com/iredelmeier), LightStep *nominated by Ted*
-- [Austin Parker](https://github.com/austinlparker), LightStep *nominated by Ted*
-
 Approvers:
 
 - [Ted Young](https://github.com/tedsuo), LightStep *as a project manager for the merge
@@ -42,8 +37,6 @@ Maintainers (TSC):
 
 [Java SDK](https://github.com/open-telemetry/opentelemetry-java).
 
-Members:
-
 Approvers:
 
 - [Pavol Loffay](https://github.com/pavolloffay), RedHat *appointed by Yuri*
@@ -53,8 +46,6 @@ Maintainers:
 - [Carlos Alberto](https://github.com/carlosalberto), LightStep
 
 ## .NET
-
-Members:
 
 Approvers:
 
@@ -70,6 +61,7 @@ Approvers:
 
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
 - [Paulo Janotti](https://github.com/pjanotti), Omnition
+- [Steven Karis](https://github.com/sjkaris), Omnition
 
 Maintainers:
 
@@ -98,7 +90,8 @@ Maintainers:
 
 ## Agent and Collector
 
-Repo: TBD
+Approvers:
+- [Steven Karis](https://github.com/sjkaris), Omnition
 
 Maintainers:
 
