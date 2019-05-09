@@ -97,6 +97,15 @@ Maintainers:
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
 - [Paulo Janotti](https://github.com/pjanotti), Omnition
 
+## Docs and website
+
+Repo: https://github.com/open-telemetry/opentelemetry.dev/
+
+Maintainers:
+
+- [Morgan McLean](https://github.com/mtwo), Google
+- [Steve Flanders](https://github.com/flands), Omnition
+
 ## Erlang
 
 Maintainers:
