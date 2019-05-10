@@ -23,8 +23,7 @@ is maintained by technical steering committee.
 
 Approvers:
 
-- [Ted Young](https://github.com/tedsuo), LightStep *as a project manager for the merge
-  work stream*
+- [Ted Young](https://github.com/tedsuo), LightStep
 
 Maintainers (TSC):
 
@@ -39,7 +38,7 @@ Maintainers (TSC):
 
 Approvers:
 
-- [Pavol Loffay](https://github.com/pavolloffay), RedHat *appointed by Yuri*
+- [Pavol Loffay](https://github.com/pavolloffay), RedHat
 
 Maintainers:
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
