@@ -19,7 +19,7 @@ We organize the community into Special Interest Groups (SIGs) in order to improv
 
 ### .NET SDK
 
-Regular sync up will be held initially weekly - every Tuesday at 9 AM PST.
+Regular sync up will be held initially weekly - every [Tuesday at 9 AM PST](https://calendar.google.com/calendar/embed?src=dcvpqkmn20ds6ptlcn5cd8l16c%40group.calendar.google.com&ctz=America%2FLos_Angeles). 
 
 [Join Microsoft Teams Meeting](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTMwYTBlMDMtODM2Ni00YzgwLWFiNWYtMTU1YTdhZDBmMzc4%40thread.v2/0?context={"Tid"%3a"72f988bf-86f1-41af-91ab-2d7cd011db47"%2c"Oid"%3a"faf2c66b-c829-47b3-832c-7112d576b360"}) 
 
