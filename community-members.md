@@ -39,6 +39,7 @@ Maintainers (TSC):
 Approvers:
 
 - [Pavol Loffay](https://github.com/pavolloffay), RedHat
+- [Yang Song](https://github.com/songy23), Google
 
 Maintainers:
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
