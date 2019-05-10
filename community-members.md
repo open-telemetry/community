@@ -76,7 +76,7 @@ Approvers:
 Maintainers:
 
 - [Mayur Kale](https://github.com/mayurkale22), Google
-- [Justin Smith](https://github.com/justindsmith), ???
+- [Justin Smith](https://github.com/justindsmith), Omnition
 
 ## Python
 
