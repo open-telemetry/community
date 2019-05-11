@@ -10,7 +10,7 @@ repository is from OpenTelemetry organization.
 
 ## Permissions
 
-Documents (Community Membership)[../community-membership.md] and
+Documents [Community Membership](../community-membership.md) and
 [CONTRIBUTING](../CONTRIBUTING.md) define how permissions are typically set up
 for the repository.
 
