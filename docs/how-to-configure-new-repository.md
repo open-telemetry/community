@@ -5,7 +5,7 @@
 Most repositories have a name pattern like this:
 `open-telemetry/opentelemetry-foo`. The reason to include `opentelemetry` in the
 name of the repository is to simplify repositories distinction in forks. So when
-One will fork the repository - fork's name will still indicate that this
+one will fork the repository - fork's name will still indicate that this
 repository is from OpenTelemetry organization.
 
 ## Permissions
@@ -46,3 +46,10 @@ policies:
    branch.
 
 ![image](https://user-images.githubusercontent.com/9950081/57563714-c5d51000-7355-11e9-80c8-68374e2de2f6.png)
+
+## Best practices
+
+It is recommended to set the following settings:
+
+1. Only set "Allow squash merging" for the Merge button. It will ensure clean
+   history for the repository.
