@@ -77,6 +77,7 @@ Maintainers:
 
 - [Mayur Kale](https://github.com/mayurkale22), Google
 - [Justin Smith](https://github.com/justindsmith), Omnition
+- [Thomas Watson](https://github.com/watson), Elastic
 
 ## Python
 
