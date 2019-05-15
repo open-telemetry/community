@@ -54,6 +54,7 @@ Approvers:
 Maintainers:
 
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft
+- [Austin Parker](https://github.com/austinlparker), LightStep
 
 ## Golang
 
