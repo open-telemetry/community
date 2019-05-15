@@ -120,6 +120,14 @@ Maintainers:
 - [Ilya Khaprov](https://github.com/deadtrickster), KOBIL Systems
 - [Tristan Sloughter](https://github.com/tsloughter), Postmates Inc.
 
+## C++
+
+Approvers:
+- [Josh MacDonald](https://github.com/jmacd), LightStep
+
+Maintainers:
+- [Ryan Burn](https://github.com/rnburn), LighStep
+
 ## Others
 
 C++, Erlang, PHP, Ruby, Rust, Swift
