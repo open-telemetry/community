@@ -72,6 +72,7 @@ Maintainers:
 Approvers:
 
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber
+- [Isobel Redelmeier](https://github.com/iredelmeier), LightStep
 
 Maintainers:
 
