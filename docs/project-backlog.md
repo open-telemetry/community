@@ -1,6 +1,8 @@
 # Backlog Structure for OpenTelemetry
 
-## Backlog Roles
+It's an important community goal for OpenTelemetry that our members find the backlogs to be responsive, and easy to take part in. Having a shared methodology for processing issues helps new members understand the current state of each project.
+
+## Roles
 * **Triager**: Person who is triaging the issue by determining its workability. This person is responsible for getting the ticket to one of two stages - 1) ready-for-work 2) wontfix. They are responsible for triaging  by working with the OP to get additional information as needed and analyzing the issue and adding relevant details/information/guidance that would be helpful to the resolution of the issue.
 
 * **OP**: Original Poster. This is the person who has opened or posted the issue.
@@ -12,7 +14,8 @@
 * **Contributing Reviewer**: Person who provides feedback on an PR but whose Approval is not necessarily needed to merge the PR.
 
 ## SLAs
-We value having a responsive backlog. To make it clear, we have 
+We value having a responsive backlog, and have response SLAs for each role. If an issue exceeds an SLA, it is put into the `stale` state.
+
 * **Triager**: Daily (Business Days) review of new issues with initial feedback to OP or issue processed within 3 days of last activity.
 * **Reviewer / Contributing Reviewer**: Provide feedback within 3 days of the last activity on a PR
 * **Contributor**: 3 day updates as comments on the PR to indicate activity
