@@ -6,6 +6,7 @@ A Special Interest Group focused on implemeting OpenTelemetry in a programming l
 If you are interested in starting a new project, please do the following
 * [create an issue](github.com/open-telemetry/community/issues) proposing the new project.
 * [Configure the new repository](docs/how-to-configure-new-repository.md).
+* Add the milestones listed below to the backlog.
 
 
 # Roadmap to Convergence
