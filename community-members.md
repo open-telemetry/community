@@ -40,6 +40,7 @@ Approvers:
 
 - [Pavol Loffay](https://github.com/pavolloffay), RedHat
 - [Yang Song](https://github.com/songy23), Google
+- [Tyler Benson](https://github.com/tylerbenson), DataDog
 
 Maintainers:
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
