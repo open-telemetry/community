@@ -4,7 +4,7 @@ OpenTelemetry community content.
 
 ## Communication
 
-We are on [gitter](https://gitter.im/open-telemetry/community).
+We are on [Slack](https://tinyurl.com/otel-slack).
 
 ## Community Meetings
 We host monthly community video conferences, alternating between times that work for Europe and Asia. These meetings are open to all contributors!
