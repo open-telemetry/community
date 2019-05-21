@@ -51,7 +51,7 @@ Defined by: Member of the OpenTelemetry GitHub organization
     chat, email, and discussion forums)
 - [Joined the gitter channel ](https://gitter.im/open-telemetry/community)
 - Have read the [contributor
-  guide](TBD)
+  guide](https://github.com/open-telemetry/community/blob/master/CONTRIBUTING.md)
 - Actively contributing to 1 or more subprojects.
 - Sponsored by 2 approvers. Note the following requirements for sponsors:
   - Sponsors must have close interactions with the prospective member - e.g.
