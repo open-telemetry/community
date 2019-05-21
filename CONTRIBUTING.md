@@ -109,7 +109,7 @@ Make sure to adhere to the repository specific policies or issue templates to
 provide detailed information that will help prompt answer and resolution of an
 issue.
 
-###Contributing
+### Contributing
 
 OpenTelemetry is open source, but many of the people working on it do so as
 their day job. In order to avoid forcing people to be "at work" effectively
