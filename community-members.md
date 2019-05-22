@@ -130,6 +130,11 @@ Approvers:
 Maintainers:
 - [Ryan Burn](https://github.com/rnburn), LighStep
 
+## Ruby
+
+Maintainers:
+- [Francis Bogsanyi](https://github.com/fbogsany), Shopify
+
 ## Others
 
-C++, Erlang, PHP, Ruby, Rust, Swift
+C++, Erlang, PHP, Rust, Swift
