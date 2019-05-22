@@ -25,8 +25,9 @@ Approvers:
 
 - [Ted Young](https://github.com/tedsuo), LightStep
 - [Isobel Redelmeier](https://github.com/iredelmeier), LightStep
+- [Alois Reitbauer](https://github.com/aloisReitbauer), Dynatrace
 
-Maintainers (TSC):
+Maintainers (TC - Technical committee):
 
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
 - [Carlos Alberto](https://github.com/carlosalberto), LightStep
@@ -41,6 +42,8 @@ Approvers:
 
 - [Pavol Loffay](https://github.com/pavolloffay), RedHat
 - [Yang Song](https://github.com/songy23), Google
+- [Tyler Benson](https://github.com/tylerbenson), DataDog
+- [Armin Ruech](https://github.com/arminru), Dynatrace
 
 Maintainers:
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
@@ -51,10 +54,12 @@ Maintainers:
 Approvers:
 
 - [Liudmila Molkova](https://github.com/lmolkova), Microsoft
+- [Christoph Neumueller](https://github.com/discostu105), Dynatrace
 
 Maintainers:
 
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft
+- [Austin Parker](https://github.com/austinlparker), LightStep
 
 ## Golang
 
@@ -67,12 +72,15 @@ Approvers:
 Maintainers:
 
 - [Rahul Patel](https://github.com/rghetia), Google
+- [Ted Young](https://github.com/tedsuo), LightStep
 
 ## Node.js
 
 Approvers:
 
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber
+- [Isobel Redelmeier](https://github.com/iredelmeier), LightStep
+- [Daniel Khan](https://github.com/danielkhan), Dynatrace
 
 Maintainers:
 
@@ -84,6 +92,7 @@ Maintainers:
 Approvers:
 
 - [Carlos Alberto](https://github.com/carlosalberto), LightStep
+- [Christian Neumüller](https://github.com/Oberon00), Dynatrace
 
 Maintainers:
 
@@ -118,6 +127,14 @@ Maintainers:
 Maintainers:
 - [Ilya Khaprov](https://github.com/deadtrickster), KOBIL Systems
 - [Tristan Sloughter](https://github.com/tsloughter), Postmates Inc.
+
+## C++
+
+Approvers:
+- [Josh MacDonald](https://github.com/jmacd), LightStep
+
+Maintainers:
+- [Ryan Burn](https://github.com/rnburn), LighStep
 
 ## Others
 
