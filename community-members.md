@@ -42,7 +42,7 @@ Approvers:
 - [Pavol Loffay](https://github.com/pavolloffay), RedHat
 - [Yang Song](https://github.com/songy23), Google
 - [Tyler Benson](https://github.com/tylerbenson), DataDog
-- [Armin Ruech](https://github.com/tylerbenson/arminru), Dynatrace
+- [Armin Ruech](https://github.com/arminru), Dynatrace
 
 Maintainers:
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
