@@ -91,7 +91,7 @@ Maintainers:
 Approvers:
 
 - [Carlos Alberto](https://github.com/carlosalberto), LightStep
-- [@christian Neumueller](https://github.com/Oberon00), Dynatrace
+- [Christian Neumüller](https://github.com/Oberon00), Dynatrace
 
 Maintainers:
 
