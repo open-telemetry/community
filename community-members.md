@@ -24,8 +24,9 @@ is maintained by technical steering committee.
 Approvers:
 
 - [Ted Young](https://github.com/tedsuo), LightStep
+- [Alois Reitbauer](https://github.com/aloisReitbauer), Dynatrace
 
-Maintainers (TSC):
+Maintainers (TC - Technical committee):
 
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
 - [Carlos Alberto](https://github.com/carlosalberto), LightStep
@@ -41,6 +42,7 @@ Approvers:
 - [Pavol Loffay](https://github.com/pavolloffay), RedHat
 - [Yang Song](https://github.com/songy23), Google
 - [Tyler Benson](https://github.com/tylerbenson), DataDog
+- [Armin Ruech](https://github.com/tylerbenson/arminru), Dynatrace
 
 Maintainers:
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
@@ -51,6 +53,7 @@ Maintainers:
 Approvers:
 
 - [Liudmila Molkova](https://github.com/lmolkova), Microsoft
+- [Christoph Neumueller](https://github.com/discostu105), Dynatrace
 
 Maintainers:
 
@@ -76,6 +79,7 @@ Approvers:
 
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber
 - [Isobel Redelmeier](https://github.com/iredelmeier), LightStep
+- [Daniel Khan](https://github.com/danielkhan), Dynatrace
 
 Maintainers:
 
@@ -87,6 +91,7 @@ Maintainers:
 Approvers:
 
 - [Carlos Alberto](https://github.com/carlosalberto), LightStep
+- [@christian Neumueller](https://github.com/Oberon00), Dynatrace
 
 Maintainers:
 
