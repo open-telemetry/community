@@ -24,14 +24,14 @@ is maintained by technical steering committee.
 Approvers:
 
 - [Ted Young](https://github.com/tedsuo), LightStep
+- [Alois Reitbauer](https://github.com/aloisReitbauer), Dynatrace
 
-Maintainers (TSC):
+Maintainers (TC - Technical committee):
 
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
 - [Carlos Alberto](https://github.com/carlosalberto), LightStep
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber
-- [Alois Reitbauer](https://github.com/aloisReitbauer), Dynatrace
 
 ## Java
 
