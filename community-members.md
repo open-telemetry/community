@@ -24,6 +24,7 @@ is maintained by technical steering committee.
 Approvers:
 
 - [Ted Young](https://github.com/tedsuo), LightStep
+- [Isobel Redelmeier](https://github.com/iredelmeier), LightStep
 - [Alois Reitbauer](https://github.com/aloisReitbauer), Dynatrace
 
 Maintainers (TC - Technical committee):
