@@ -23,13 +23,13 @@ Regular sync up will be held initially weekly - every [Tuesday at 9 AM PST](http
 
 [Join Microsoft Teams Meeting](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTMwYTBlMDMtODM2Ni00YzgwLWFiNWYtMTU1YTdhZDBmMzc4%40thread.v2/0?context={"Tid"%3a"72f988bf-86f1-41af-91ab-2d7cd011db47"%2c"Oid"%3a"faf2c66b-c829-47b3-832c-7112d576b360"}) 
 
-[+1 469-480-6275](tel:+1 469-480-6275,,21468028# )   United States, Dallas (Toll) 
++1(469)480-6275, 21468028#   United States, Dallas (Toll) 
 
-[(866) 639-0588](tel:(866) 639-0588,,21468028# )   United States (Toll-free) 
++1(866)639-0588, 21468028#   United States (Toll-free) 
 
 Conference ID: 214 680 28# 
 
-[Local numbers](https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=21468028) | [Reset PIN](https://mysettings.lync.com/pstnconferencing) | [Learn more about Teams](https://go.microsoft.com/fwlink/?linkid=857250) | [Meeting Options](https://teams.microsoft.com/meetingOptions/?organizerId=faf2c66b-c829-47b3-832c-7112d576b360&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47&threadId=19_meeting_ZTMwYTBlMDMtODM2Ni00YzgwLWFiNWYtMTU1YTdhZDBmMzc4@thread.v2&messageId=0&language=en-US) 
+[Local numbers](https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=21468028) | Learn more about Teams](https://go.microsoft.com/fwlink/?linkid=857250)
 
 
 ### GoLang SDK
