@@ -29,7 +29,7 @@ Regular sync up will be held initially weekly - every [Tuesday at 9 AM PST](http
 
 Conference ID: 214 680 28# 
 
-[Local numbers](https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=21468028) | Learn more about Teams](https://go.microsoft.com/fwlink/?linkid=857250)
+[Local numbers](https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=21468028) | [Learn more about Teams](https://go.microsoft.com/fwlink/?linkid=857250)
 
 
 ### GoLang SDK
