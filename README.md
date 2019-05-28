@@ -6,6 +6,10 @@ OpenTelemetry community content.
 
 We are on [gitter](https://gitter.im/open-telemetry/community).
 
+## Get Involved
+
+There is a lot to do! If you are interested in getting involved, please get in touch via [this simple form](https://forms.gle/HCGGoLRzoPm6o29K6). We are a friendly, collaborative group and look forward to working together.
+
 ## Community Meetings
 We host monthly community video conferences, alternating between times that work for Europe and Asia. These meetings are open to all contributors!
 
