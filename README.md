@@ -47,6 +47,9 @@ Conference ID: 214 680 28#
 
 ### Python SDK
 
+The Python SIG meets weekly on [Thursday 9 AM PDT](https://calendar.google.com/calendar/embed?src=google.com_346fplg7bemb44783pege5amj4%40group.calendar.google.com&ctz=America%2FLos_Angeles). This meeting is subject to change depending on contributors' availability, check the calendar for specific dates.
+
+You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-python).
 
 ### Other
 
