@@ -21,9 +21,10 @@ Parity can be defined as the following milestones:
 * Benchmarks which provide evidence of expected resource utilization.
 
 ### SPEC: Define OpenTelemetry Interfaces
-* Metrics interface
-* Tracing interface
-* Tags interface
+* Metrics
+* Trace
+* Tags
+* Resources
 
 ### SDK: Propagate Common Trace Contexts
 * Propagate context in Trace-Context format
