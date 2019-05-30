@@ -16,16 +16,19 @@ board members as well as CNCF representatives helping with project organization.
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber
 
-## Specifications
+## Specifications and Proto
 
 [Project specs](https://github.com/open-telemetry/opentelemetry-specification)
-is maintained by technical steering committee.
+and [Proto](https://github.com/open-telemetry/opentelemetry-proto)
+are maintained by technical steering committee.
 
 Approvers:
 
 - [Ted Young](https://github.com/tedsuo), LightStep
 - [Isobel Redelmeier](https://github.com/iredelmeier), LightStep
 - [Alois Reitbauer](https://github.com/aloisReitbauer), Dynatrace
+- [Yang Song](https://github.com/songy23), Google
+- [Chris Kleinknecht](https://github.com/c24t), Google
 
 Maintainers (TC - Technical committee):
 
