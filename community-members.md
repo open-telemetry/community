@@ -28,6 +28,7 @@ Approvers:
 - [Isobel Redelmeier](https://github.com/iredelmeier), LightStep
 - [Alois Reitbauer](https://github.com/aloisReitbauer), Dynatrace
 - [Yang Song](https://github.com/songy23), Google
+- [Chris Kleinknecht](https://github.com/c24t), Google
 
 Maintainers (TC - Technical committee):
 
