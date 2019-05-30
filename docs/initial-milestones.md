@@ -20,7 +20,7 @@ Parity can be defined as the following milestones:
 * Tests which provide evidence of interoperability.
 * Benchmarks which provide evidence of expected resource utilization.
 
-### SPEC: Define OpenTelemetry Interfaces
+### API: Define OpenTelemetry Interfaces
 * Metrics
 * Trace
 * Tags
@@ -34,7 +34,7 @@ Parity can be defined as the following milestones:
 * Export data in OpenTelemetry format
 * Export data in custom format
 
-### SDK: Semantic Conventions
+### API: Semantic Conventions
 * Structured data representing common operations.
 * Utilities to record this data easily
 
