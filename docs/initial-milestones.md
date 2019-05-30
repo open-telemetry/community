@@ -34,9 +34,9 @@ Parity can be defined as the following milestones:
 * Export data in OpenTelemetry format
 * Export data in custom format
 
-### SDK: Record Common Operations
-* A data structure representing each operation type
-* Utilities to record 
+### SDK: Semantic Conventions
+* Structured data representing common operations.
+* Utilities to record this data easily
 
 ### SDK: OpenTracing Bridge
 * the OpenTelemtry SDK implements the latest version of the OpenTracing interface.
