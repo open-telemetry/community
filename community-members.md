@@ -141,6 +141,14 @@ Maintainers:
 Maintainers:
 - [Francis Bogsanyi](https://github.com/fbogsany), Shopify
 
+## Proto
+
+Repo: https://github.com/open-telemetry/opentelemetry-proto
+
+Approvers:
+
+- [Yang Song](https://github.com/songy23), Google
+
 ## Others
 
 C++, Erlang, PHP, Rust, Swift
