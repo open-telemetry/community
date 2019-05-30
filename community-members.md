@@ -16,10 +16,11 @@ board members as well as CNCF representatives helping with project organization.
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber
 
-## Specifications
+## Specifications and Proto
 
 [Project specs](https://github.com/open-telemetry/opentelemetry-specification)
-is maintained by technical steering committee.
+and [Proto](https://github.com/open-telemetry/opentelemetry-proto)
+are maintained by technical steering committee.
 
 Approvers:
 
@@ -140,14 +141,6 @@ Maintainers:
 
 Maintainers:
 - [Francis Bogsanyi](https://github.com/fbogsany), Shopify
-
-## Proto
-
-Repo: https://github.com/open-telemetry/opentelemetry-proto
-
-Approvers:
-
-- [Yang Song](https://github.com/songy23), Google
 
 ## Others
 
