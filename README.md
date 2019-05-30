@@ -25,6 +25,8 @@ We organize the community into Special Interest Groups (SIGs) in order to improv
 
 Regular sync up will be held initially weekly - every [Tuesday at 9 AM PDT](https://calendar.google.com/calendar/embed?src=dcvpqkmn20ds6ptlcn5cd8l16c%40group.calendar.google.com&ctz=America%2FLos_Angeles). 
 
+Meeting notes are held in [this google doc](https://docs.google.com/document/d/1yjjD6aBcLxlRazYrawukDgrhZMObwHARJbB9glWdHj8/edit?usp=sharing).
+
 [Join Microsoft Teams Meeting](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTMwYTBlMDMtODM2Ni00YzgwLWFiNWYtMTU1YTdhZDBmMzc4%40thread.v2/0?context={"Tid"%3a"72f988bf-86f1-41af-91ab-2d7cd011db47"%2c"Oid"%3a"faf2c66b-c829-47b3-832c-7112d576b360"}) 
 
 +1(469)480-6275, 21468028#   United States, Dallas (Toll) 
@@ -35,6 +37,7 @@ Conference ID: 214 680 28#
 
 [Local numbers](https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=21468028) | [Learn more about Teams](https://go.microsoft.com/fwlink/?linkid=857250)
 
+.NET Gitter Channel: [![Gitter chat](https://badges.gitter.im/open-telemetry/opentelemetry-dotnet.svg)](https://gitter.im/open-telemetry/opentelemetry-dotnet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ### GoLang SDK
 
