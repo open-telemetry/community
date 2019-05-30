@@ -13,12 +13,13 @@ If you are interested in starting a new OpenTelemetry implementation, please do 
 For languages which have both an OpenTracing and OpenCensus implementation, we would like to achieve parity in OpenTelemetry by **September, 2019**, and sunset the existing OpenTracing and OpenCensus ptojects by **November, 2019**. 
 
 Parity can be defined as the following milestones:
-* A set of interfaces which define the OpenTelemetry Specification in a given programming language.
+* A set of interfaces which implement the OpenTelemetry specification in a given programming language.
 * An SDK which can propagate context and record data in common formats.
 * Backwards compatibility with OpenTracing and OpenCensus.
 * Metadata helpers for recording common operations defined in the OpenTelemetry data model.
 * Tests which provide evidence of interoperability.
 * Benchmarks which provide evidence of expected resource utilization.
+* Documentation and getting started guide.
 
 ### API: Define OpenTelemetry Interfaces
 * Metrics
@@ -39,8 +40,9 @@ Parity can be defined as the following milestones:
 * Utilities to record this data easily
 
 ### SDK: OpenTracing Bridge
-* the OpenTelemtry SDK implements the latest version of the OpenTracing interface.
-* register as GlobalTracer.
+* The OpenTelemtry SDK implements the latest version of the OpenTracing interface.
+* Register as GlobalTracer.
+* Interoperability tests using OpenTracing and OpenTelemetry instrumentation together.
 
 ### SDK: OpenCensus Bridge
 * implement a version of OpenCensus which bridges to OpenTelemetry.
