@@ -139,7 +139,7 @@ Maintainers:
 ## Ruby
 
 Approvers:
-- [Vlad Gorodetsky](https://github.com/bai), ???
+- [Vlad Gorodetsky](https://github.com/bai), Shopify
 
 Maintainers:
 - [Francis Bogsanyi](https://github.com/fbogsany), Shopify
