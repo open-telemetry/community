@@ -1,16 +1,16 @@
 # OpenTelemetry: A Roadmap to Convergence
 
-This document covers the intial milestones for each SIG developing an implementation of the OpenTelemetry Specification. For each new language, we want to quickly achieve parity with existing OpenTracing and OpenCensus implementations.
+This document covers the intial milestones for each  repository developing an implementation of the OpenTelemetry Specification for a specific language. For each new language, we want to quickly achieve parity with existing OpenTracing and OpenCensus implementations.
 
 [Merging OpenTracing and OpenCensus: A Roadmap to Convergence](https://medium.com/opentracing/a-roadmap-to-convergence-b074e5815289) defines the goals and timelines for OpenTelemetry.
 
-If you are interested in starting a new SIG, please do the following:
-* [create an issue](github.com/open-telemetry/community/issues) proposing the new SIG.
+If you are interested in starting a new OpenTelemetry implementation, please do the following:
+* [create an issue](github.com/open-telemetry/community/issues) proposing the new repository.
 * [Configure the new repository](docs/how-to-configure-new-repository.md).
 * Add the milestones listed below to the backlog.
 
 ## Initial Milestones
-For languages which have both an OpenTracing and OpenCensus implementation, we would like to achieve parity in OpenTelemetry by **September, 2019**, and sunset the existing OpenTracing and OpenCensus SIGs by **November, 2019**. 
+For languages which have both an OpenTracing and OpenCensus implementation, we would like to achieve parity in OpenTelemetry by **September, 2019**, and sunset the existing OpenTracing and OpenCensus ptojects by **November, 2019**. 
 
 Parity can be defined as the following milestones:
 * A set of interfaces which define the OpenTelemetry Specification in a given programming language.
@@ -46,7 +46,7 @@ Parity can be defined as the following milestones:
 * implement a version of OpenCensus which bridges to OpenTelemetry.
 
 ### TEST: Verify Interoperability
-* Integration tests which verify SIG is interoperable with the rest of OpenTelemetry.
+* Integration tests which verify the implementation is interoperable with the rest of OpenTelemetry.
 * CI integration to alert for incorrect context propagation.
 * CI integration to alert for variations in data output.
 
