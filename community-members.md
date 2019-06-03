@@ -147,6 +147,16 @@ Approvers:
 Maintainers:
 - [Francis Bogsanyi](https://github.com/fbogsany), Shopify
 
-## Others
+## Other Languages
 
 C++, Erlang, PHP, Rust, Swift
+
+## Auto-Instrumentation
+
+Approvers:
+- [Ben Sigelman](https://github.com/bhs), LightStep
+
+Maintainers:
+- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft
+- [Ted Young](https://github.com/tedsuo), LightStep
+

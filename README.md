@@ -54,6 +54,12 @@ The Python SIG meets weekly on [Thursday 9 AM PDT](https://calendar.google.com/c
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-python).
 
+### Auto-Instrumentation (cross-language)
+
+"Auto-Instrumentation" refers to efforts to install OpenTelemetry instrumentation and otherwise extract OpenTelemetry-compatible data from processes without direct code modification. The Auto-Instrumentation SIG will meet weekly at a time TBD.
+
+You can also join us on [the auto-instrumentation channel](https://gitter.im/open-telemetry/auto-instrumentation) in OpenTelemetry gitter.
+
 ### Other
 
 We also considering creating SIGs for byte code injection agents and other projects.
