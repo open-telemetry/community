@@ -23,9 +23,15 @@ We organize the community into Special Interest Groups (SIGs) in order to improv
 ### Cross-language specification
 
 This is a group for people interested in writing cross-language specifications
-and participate in high-level design discussions.
+and participate in high-level design discussions. SIG will be led by the members
+of a Technical Committee
+[@open-telemetry/technical-committee](https://github.com/orgs/open-telemetry/teams/technical-committee).
+It is recommended for all members of
+[@open-telemetry/specs-approvers](https://github.com/orgs/open-telemetry/teams/specs-approvers)
+and open for all.
 
-Specifications gitter channel: [![Gitter chat](https://badges.gitter.im/open-telemetry/opentelemetry-specification.svg)](https://gitter.im/open-telemetry/opentelemetry-specification?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Specifications gitter channel: [![Gitter
+chat](https://badges.gitter.im/open-telemetry/opentelemetry-specification.svg)](https://gitter.im/open-telemetry/opentelemetry-specification?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Meetings: TBD
 
