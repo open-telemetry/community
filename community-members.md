@@ -115,6 +115,16 @@ Maintainers:
 - [Paulo Janotti](https://github.com/pjanotti), Omnition
 - [Steve Flanders](https://github.com/flands), Omnition
 
+## Collector tests
+
+Repo: https://github.com/open-telemetry/opentelemetry-service-testbed
+
+Maintainers:
+
+- [Paulo Janotti](https://github.com/pjanotti), Omnition
+- [Tigran Najaryan](https://github.com/tigrannajaryan), Omnition
+- [Yang Song](https://github.com/songy23), Google
+
 ## Docs and website
 
 Repo: https://github.com/open-telemetry/opentelemetry.dev/
