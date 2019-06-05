@@ -34,12 +34,13 @@ Specifications gitter channel: [![Gitter
 chat](https://badges.gitter.im/open-telemetry/opentelemetry-specification.svg)](https://gitter.im/open-telemetry/opentelemetry-specification?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Meeting will be help every [Tuesday at 8 AM pacific
-time](https://calendar.google.com/calendar?cid=MDRpaTE1bGY4ZWNzZjJzamd1MDM4aDBsdXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ).
+time](https://calendar.google.com/calendar/embed?src=04ii15lf8ecsf2sjgu038h0lus%40group.calendar.google.com&ctz=America%2FLos_Angeles).
 Meeting notes are held in [this google doc](https://docs.google.com/document/d/1-bCYkN-DWJq4jw1ybaDZYYmx-WAe6HnwfWbkm8d57v8/edit?usp=sharing).
 
 [Join Microsoft Teams Meeting](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTFkYzM5MTktOGQxMy00YTJkLWE1NmMtOTVjNTZlMmZkZGJj%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22faf2c66b-c829-47b3-832c-7112d576b360%22%7d) 
 
 +1(469)480-6275, 21468028#   United States, Dallas (Toll) 
+
 +1(866)639-0588, 21468028#   United States (Toll-free) 
 
 Conference ID: 634 117 56# 
