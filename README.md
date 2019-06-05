@@ -47,6 +47,11 @@ Conference ID: 214 680 28#
 
 ### Node.JS SDK
 
+Regular sync up will be held initially weekly - every [Wednesday at 9 AM PDT](https://calendar.google.com/calendar/embed?src=google.com_4mgfktv05r5qte9metq8s7annc%40group.calendar.google.com&ctz=America%2FLos_Angeles).
+
+Meeting notes are held in [this google doc](https://docs.google.com/document/d/1fiOmIHyCUofqLR13U44x1isUloXXJWfEH8yPhG8MoDs/edit?usp=sharing).
+
+You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-node).
 
 ### Python SDK
 
