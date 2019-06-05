@@ -33,7 +33,10 @@ and open for all.
 Specifications gitter channel: [![Gitter
 chat](https://badges.gitter.im/open-telemetry/opentelemetry-specification.svg)](https://gitter.im/open-telemetry/opentelemetry-specification?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Meetings: TBD
+Meeting will be help every [Tuesday at 8 AM pacific
+time](https://calendar.google.com/calendar?cid=MDRpaTE1bGY4ZWNzZjJzamd1MDM4aDBsdXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ).
+
+
 
 ### Agent/Collector
 
