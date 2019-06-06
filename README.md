@@ -89,7 +89,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 The Python SIG meets weekly on [Thursday 9 AM PDT](https://calendar.google.com/calendar/embed?src=google.com_346fplg7bemb44783pege5amj4%40group.calendar.google.com&ctz=America%2FLos_Angeles). This meeting is subject to change depending on contributors' availability, check the calendar for specific dates.
 
-Meeting notes are held in this [doc] (https://docs.google.com/document/d/1CIMGoIOZ-c3-igzbd6_Pnxx1SjAkjwqoYSUWxPY8XIs/edit).
+Meeting notes are held in this [doc](https://docs.google.com/document/d/1CIMGoIOZ-c3-igzbd6_Pnxx1SjAkjwqoYSUWxPY8XIs/edit).
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-python).
 
