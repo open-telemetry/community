@@ -72,7 +72,7 @@ Conference ID: 214 680 28#
 
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1A63zSWX0x2CyCK_LoNhmQC4rqhLpYXJzXbEPDUQ2n6w/edit#).
 
-You can also join us on [gitter] (https://gitter.im/open-telemetry/opentelemetry-go)
+You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-go)
 
 ### Java SDK
 
