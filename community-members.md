@@ -108,13 +108,14 @@ Maintainers:
 Repo: https://github.com/open-telemetry/opentelemetry-service
 
 Approvers:
+- [Steve Flanders](https://github.com/flands), Omnition
 - [Steven Karis](https://github.com/sjkaris), Omnition
 
 Maintainers:
 
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
 - [Paulo Janotti](https://github.com/pjanotti), Omnition
-- [Steve Flanders](https://github.com/flands), Omnition
+- [Tigran Najaryan](https://github.com/tigrannajaryan), Omnition
 
 ## Docs and website
 
