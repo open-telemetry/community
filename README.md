@@ -20,6 +20,13 @@ Meeting invites can be accessed from our public Calendar ([web](https://calendar
 
 We organize the community into Special Interest Groups (SIGs) in order to improve our workflow and more easily manage a community project.
 
+Please do not hesitate to contact SIG owners if the proposed time of the meeting
+or tools used are unavailable for you. For instance, it will be a good practice
+to alternate morning/evening meetings once SIG has representatives from 3
+largely distinct timezones. The best way to report it and suggest an alternative
+is to file an issue on this repository or discuss it in SIG-specific gitter
+channel.
+
 ### Cross-language specification
 
 This is a group for people interested in writing cross-language specifications
@@ -46,7 +53,6 @@ Meeting notes are held in [this google doc](https://docs.google.com/document/d/1
 Conference ID: 634 117 56# 
 
 [Local numbers](https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=21468028) | [Learn more about Teams](https://go.microsoft.com/fwlink/?linkid=857250)
-
 
 ### Agent/Collector
 
