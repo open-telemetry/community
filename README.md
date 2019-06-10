@@ -76,6 +76,8 @@ Conference ID: 214 680 28#
 
 ### GoLang SDK
 
+The Golang SIG meets weekly on [Tuesday at 3 PM PDT](https://calendar.google.com/calendar/embed?src=lightstep.com_r2rdlnakn4kjbbo4jbbmdbd7m0%40group.calendar.google.com&ctz=America%2FLos_Angeles). This meeting is subject to change depending on contributors' availability, check the calendar for specific dates.
+
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1A63zSWX0x2CyCK_LoNhmQC4rqhLpYXJzXbEPDUQ2n6w/edit#).
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-go)
