@@ -37,10 +37,20 @@ Parity can be defined as the following milestones:
 ## Initial milestones
 
 With OpenTelemetry we strive for consistency and unification. It is important
-for 
+for users of OpenTelemetry to get the same look and feel of APIs and consistent
+data collection across all languages. Consistency is achieved thru the
+specifications and cross-language test cases.
 
-API specification will be complete **June, 14th**. SDK specification will be
-complete end of June.
+As OpenTracing and OpenCensus projects converge we write specifications the same
+time as we develop libraries.
+
+Initial API specification will be complete **June, 14th**. SDK specification
+will be complete end of June. Later we plan to revise specifications for both -
+API and SDK every month till September while we are getting feedback. These
+revisions will be documented with the CHANGELOG and will likely include breaking
+changes.
+
+Languages can use the following milestones to triage issues related to API:
 
 - API Complete: **June, 2019**
 - API revisions:
@@ -48,9 +58,21 @@ complete end of June.
   - API revision 08/2019
   - API revision 09/2019
 
-- SDK Complete: **mid July, 2019**
-  - SDK revision
-- Basic exporters and adapters: **August, 2019**
-- Stable Version: **September, 2019**
+And for SDK:
 
+- SDK Complete: **mid July, 2019**
+  - SDK revision 08/2019
+  - SDK revision 09/2019
+
+Even though stable version of OpenTelemetry may be limited to API and SDK
+packages, we encourage to build a set of exporters and adapters for the most
+common platforms and libraries. This milestone will confirm the API and SDK
+completeness.
+
+- Basic exporters and adapters: **August, 2019**
+
+Finally, these two milestones can be used for extra work needed to stabilize
+OpenTelemetry SDK and sunset OpenTracing and OpenCensus SDKs:
+
+- Stable Version: **September, 2019**
 - OpenTracing and OpenCensus sunset: **November, 2019**
