@@ -86,6 +86,8 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 The Java SIG meets weekly on [Friday at 8 AM PDT](https://calendar.google.com/calendar/embed?src=lightstep.com_uuegcsvip16hv2qq31sj08sbkk%40group.calendar.google.com&ctz=America%2FLos_Angeles).
 
+Meeting notes are held in [this doc](https://docs.google.com/document/d/1oHpisisco8J7Yk73ovx3eeXaokSMqgVuEuWNwPOajtY/edit).
+
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-java)
 
 ### Node.JS SDK
