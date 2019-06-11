@@ -84,7 +84,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### Java SDK
 
-The Jaba SIG meets weekly on [Friday at 8 AM PDT](https://calendar.google.com/calendar/embed?src=lightstep.com_uuegcsvip16hv2qq31sj08sbkk%40group.calendar.google.com&ctz=America%2FLos_Angeles).
+The Java SIG meets weekly on [Friday at 8 AM PDT](https://calendar.google.com/calendar/embed?src=lightstep.com_uuegcsvip16hv2qq31sj08sbkk%40group.calendar.google.com&ctz=America%2FLos_Angeles).
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-java)
 
