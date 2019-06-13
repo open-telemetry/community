@@ -8,7 +8,16 @@ We are on [gitter](https://gitter.im/open-telemetry/community).
 
 ## Get Involved
 
-There is a lot to do! If you are interested in getting involved, please get in touch via [this simple form](https://forms.gle/HCGGoLRzoPm6o29K6). We are a friendly, collaborative group and look forward to working together.
+There is a lot to do! If you are interested in getting involved, please join the mailing lists and attend the community meetings. If you wish to join one of the special interest groups, you can get in touch via [this simple form](https://forms.gle/HCGGoLRzoPm6o29K6). We are a friendly, collaborative group and look forward to working together.
+
+## Mailing Lists and instant messaging
+
+You should join our public mailing lists, which are where we make announcements and provide regular updates: 
+
+- cncf-opentelemetry-community@lists.cncf.io
+- cncf-opentelemetry-comms@lists.cncf.io
+
+You can sign up for these lists at https://groups.io/groups
 
 ## Community Meetings
 
