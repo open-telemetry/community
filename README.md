@@ -44,31 +44,37 @@ Meeting will be help every [Tuesday at 8 AM pacific
 time](https://calendar.google.com/calendar/embed?src=04ii15lf8ecsf2sjgu038h0lus%40group.calendar.google.com&ctz=America%2FLos_Angeles).
 Meeting notes are held in [this google doc](https://docs.google.com/document/d/1-bCYkN-DWJq4jw1ybaDZYYmx-WAe6HnwfWbkm8d57v8/edit?usp=sharing).
 
-[Join Microsoft Teams Meeting](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTFkYzM5MTktOGQxMy00YTJkLWE1NmMtOTVjNTZlMmZkZGJj%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22faf2c66b-c829-47b3-832c-7112d576b360%22%7d) 
+[Join Microsoft Teams Meeting](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTFkYzM5MTktOGQxMy00YTJkLWE1NmMtOTVjNTZlMmZkZGJj%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22faf2c66b-c829-47b3-832c-7112d576b360%22%7d)
 
-+1(469)480-6275, 21468028#   United States, Dallas (Toll) 
++1(469)480-6275, 21468028#   United States, Dallas (Toll)
 
-+1(866)639-0588, 21468028#   United States (Toll-free) 
++1(866)639-0588, 21468028#   United States (Toll-free)
 
-Conference ID: 634 117 56# 
+Conference ID: 634 117 56#
 
 [Local numbers](https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=21468028) | [Learn more about Teams](https://go.microsoft.com/fwlink/?linkid=857250)
 
 ### Agent/Collector
 
+The Service SIG meets every other week on [Wednesday at 2 PM PT](https://calendar.google.com/calendar?cid=b21uaXRpb24uaW9fNmQwa25naHJjNTViOWM2bGhoNm44dDVwbmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ).
+
+Meeting notes are held in [this doc](https://docs.google.com/document/d/1dlcx3Mn3njG8lVmrgRFdGczTlyEN9IBO26cUwFQdlC8/edit?usp=sharing).
+
+You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-service).
+
 ### .NET SDK
 
-Regular sync up will be held initially weekly - every [Tuesday at 9 AM PDT](https://calendar.google.com/calendar/embed?src=dcvpqkmn20ds6ptlcn5cd8l16c%40group.calendar.google.com&ctz=America%2FLos_Angeles). 
+Regular sync up will be held initially weekly - every [Tuesday at 9 AM PDT](https://calendar.google.com/calendar/embed?src=dcvpqkmn20ds6ptlcn5cd8l16c%40group.calendar.google.com&ctz=America%2FLos_Angeles).
 
 Meeting notes are held in [this google doc](https://docs.google.com/document/d/1yjjD6aBcLxlRazYrawukDgrhZMObwHARJbB9glWdHj8/edit?usp=sharing).
 
-[Join Microsoft Teams Meeting](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTMwYTBlMDMtODM2Ni00YzgwLWFiNWYtMTU1YTdhZDBmMzc4%40thread.v2/0?context={"Tid"%3a"72f988bf-86f1-41af-91ab-2d7cd011db47"%2c"Oid"%3a"faf2c66b-c829-47b3-832c-7112d576b360"}) 
+[Join Microsoft Teams Meeting](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTMwYTBlMDMtODM2Ni00YzgwLWFiNWYtMTU1YTdhZDBmMzc4%40thread.v2/0?context={"Tid"%3a"72f988bf-86f1-41af-91ab-2d7cd011db47"%2c"Oid"%3a"faf2c66b-c829-47b3-832c-7112d576b360"})
 
-+1(469)480-6275, 21468028#   United States, Dallas (Toll) 
++1(469)480-6275, 21468028#   United States, Dallas (Toll)
 
-+1(866)639-0588, 21468028#   United States (Toll-free) 
++1(866)639-0588, 21468028#   United States (Toll-free)
 
-Conference ID: 214 680 28# 
+Conference ID: 214 680 28#
 
 [Local numbers](https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=21468028) | [Learn more about Teams](https://go.microsoft.com/fwlink/?linkid=857250)
 
