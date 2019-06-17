@@ -10,6 +10,10 @@ We are on [gitter](https://gitter.im/open-telemetry/community).
 
 There is a lot to do! If you are interested in getting involved, please get in touch via [this simple form](https://forms.gle/HCGGoLRzoPm6o29K6). We are a friendly, collaborative group and look forward to working together.
 
+### License
+
+All OpenTelemetry projects are shipped under the permissive Apache 2.0 license as CNCF IP Policy [dictates](https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy). This [blog post](https://www.cncf.io/blog/2017/02/01/cncf-recommends-aslv2/) explains the reasoning behind choosing this license.
+
 ## Community Meetings
 
 We host monthly community video conferences, alternating between times that work for Europe and Asia. These meetings are open to all contributors!
