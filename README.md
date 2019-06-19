@@ -2,16 +2,17 @@
 
 OpenTelemetry community content.
 
-## Communication
-
-We are on [gitter](https://gitter.im/open-telemetry/community).
-
 ## Get Involved
 
 There is a lot to do! If you are interested in getting involved, please join the mailing lists and attend the community meetings. If you wish to join one of the special interest groups, you can get in touch via [this simple form](https://forms.gle/HCGGoLRzoPm6o29K6). We are a friendly, collaborative group and look forward to working together.
 
-## Mailing Lists and instant messaging
-### Community
+## Communication
+### Instant Messaging
+
+We are on [gitter](https://gitter.im/open-telemetry/community).
+
+### Mailing Lists
+#### Community
 - List name: cncf-opentelemetry-community@lists.cncf.io
 - Signup: https://lists.cncf.io/g/cncf-opentelemetry-community
 - Membership: anyone
@@ -20,7 +21,7 @@ There is a lot to do! If you are interested in getting involved, please join the
 
 The community mailing list is for anybody who wants to monitor the latest news from the project. It is used to send updates on community meetings and announcements about new projects and SIGs. There is a minimal moderation for a new users to reduce spam, new users are approved after one post.
 
-### Contributors
+#### Contributors
 - List name: cncf-opentelemetry-contributors@lists.cncf.io
 - Signup: https://lists.cncf.io/g/cncf-opentelemetry-contributors
 - Membership: anyone
@@ -29,7 +30,7 @@ The community mailing list is for anybody who wants to monitor the latest news f
 
 The discussions mailing list is for anyone who is interested in contributing to OpenTelemetry or has questions (related to the contribution, technical issues, etc) they’d like to discuss. Will be used to announce updates related to how the project is being developed and ask general contribution questions related to the contribution processes. No approval is required to join.
 
-### TC (Technical Committee)
+#### TC (Technical Committee)
 - List name: cncf-opentelemetry-tc@lists.cncf.io
 - Membership: TC
 - Write Permissions: anyone
@@ -37,7 +38,7 @@ The discussions mailing list is for anyone who is interested in contributing to 
 
 Used by the OpenTelemetry technical steering committee for internal communication. This mailing list should be used sparingly as we strive to keep all communication public. It only should be used to contact the technical steering committee with questions that cannot be discussed publicly on github, gitter, or the community or contributors mailing lists.
 
-### Governance committee
+#### Governance Committee
 - List name: cncf-opentelemetry-governance@lists.cncf.io
 - Membership: Governance committee
 - Write Permissions: anyone
@@ -45,7 +46,7 @@ Used by the OpenTelemetry technical steering committee for internal communicatio
 
 Used by the OpenTelemetry steering committee for internal communication. Also can be used to contact the steering committee for questions that cannot be discussed publicly on github, gitter, or other mailing lists. For instance, members could use this for issues related to improper applications of our community membership guidance.
 
-### Public communication requests
+#### Public Communication Requests
 - List name: cncf-opentelemetry-comms@lists.cncf.io
 - Membership: David Klein + Morgan McLean + Governance committee
 - Write Permissions: anyone
