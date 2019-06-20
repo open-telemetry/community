@@ -158,7 +158,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### Ruby SIG
 
-The Ruby SIG meets weekly on [Wednesday 9 AM PDT](https://calendar.google.com/calendar/embed?src=shopify.com_cmmvfb39j3jrk9hc0gcbg2hk2c%40group.calendar.google.com&ctz=America%2FToronto). This meeting is subject to change depending on contributors' availability, check the calendar for specific dates.
+The Ruby SIG meets weekly on Wednesday alternating between [9 AM PDT](https://calendar.google.com/calendar/event?eid=MXVkNG9tb3NqZmdvMGpxOHZwNHE3MzB2NWVfMjAxOTA2MTlUMTYwMDAwWiBnb29nbGUuY29tX2I3OWUzZTkwajdiYnNhMm4ycDVhbjVsZjYwQGc&ctz=America/Los_Angeles) and [4 PM PDT](https://calendar.google.com/calendar/event?eid=MGw3azJocW9kbWRyNHZxMWVncjRrMWlsMTlfMjAxOTA2MjZUMjMwMDAwWiBnb29nbGUuY29tX2I3OWUzZTkwajdiYnNhMm4ycDVhbjVsZjYwQGc&ctz=America/Los_Angeles). This meeting is subject to change depending on contributors' availability, check the [community meeting calendar](https://github.com/open-telemetry/community#community-meetings) for specific dates.
 
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1D15bO8o340sQm2CVZiukEJuCO_XMMHKPuTznoEhyFqE/edit).
 
