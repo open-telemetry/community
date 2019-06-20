@@ -40,7 +40,7 @@ Maintainers (TC - Technical committee):
 
 ## Java
 
-[Java SDK](https://github.com/open-telemetry/opentelemetry-java).
+Repo: [open-telemetry/opentelemetry-java](https://github.com/open-telemetry/opentelemetry-java)
 
 Approvers:
 
@@ -55,6 +55,8 @@ Maintainers:
 
 ## .NET
 
+Repo: [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet)
+
 Approvers:
 
 - [Liudmila Molkova](https://github.com/lmolkova), Microsoft
@@ -66,6 +68,8 @@ Maintainers:
 - [Austin Parker](https://github.com/austinlparker), LightStep
 
 ## Golang
+
+Repo: [open-telemetry/opentelemetry-go](https://github.com/open-telemetry/opentelemetry-go)
 
 Approvers:
 
@@ -80,6 +84,8 @@ Maintainers:
 
 ## Node.js
 
+Repo: [open-telemetry/opentelemetry-node](https://github.com/open-telemetry/opentelemetry-node)
+
 Approvers:
 
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber
@@ -93,6 +99,8 @@ Maintainers:
 
 ## Python
 
+Repo: [open-telemetry/opentelemetry-python](https://github.com/open-telemetry/opentelemetry-python)
+
 Approvers:
 
 - [Carlos Alberto](https://github.com/carlosalberto), LightStep
@@ -105,7 +113,7 @@ Maintainers:
 
 ## Agent and Collector
 
-Repo: https://github.com/open-telemetry/opentelemetry-service
+Repo: [open-telemetry/opentelemetry-service](https://github.com/open-telemetry/opentelemetry-service)
 
 Approvers:
 - [Steve Flanders](https://github.com/flands), Omnition
@@ -119,7 +127,7 @@ Maintainers:
 
 ## Docs and website
 
-Repo: https://github.com/open-telemetry/opentelemetry.dev/
+Repo: [open-telemetry/opentelemetry.io](https://github.com/open-telemetry/opentelemetry.io/)
 
 Maintainers:
 
@@ -128,6 +136,8 @@ Maintainers:
 - [Jigar Parsana](https://github.com/jparsana), Google
 
 ## Erlang
+
+Repo: [open-telemetry/opentelemetry-erlang](https://github.com/open-telemetry/opentelemetry-erlang)
 
 Maintainers:
 - [Ilya Khaprov](https://github.com/deadtrickster), KOBIL Systems
@@ -142,6 +152,8 @@ Maintainers:
 - [Ryan Burn](https://github.com/rnburn), LighStep
 
 ## Ruby
+
+Repo: [open-telemetry/opentelemetry-ruby](https://github.com/open-telemetry/opentelemetry-ruby)
 
 Approvers:
 - [Vlad Gorodetsky](https://github.com/bai), Shopify
