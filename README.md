@@ -171,3 +171,13 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 ### Other
 
 We also considering creating SIGs for byte code injection agents and other projects.
+
+## Related groups
+
+### W3C - Distributed Tracing Working Group
+
+Join W3C [Distributed Tracing Working Group](https://www.w3.org/2018/distributed-tracing/) to discuss standardization efforts in distributed tracing space.
+
+### Erlang Ecosystem Foundation – Observability Working Group
+
+See [Observability Working Group Proposal](https://erlef.org/observability-wg/).
