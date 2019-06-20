@@ -54,6 +54,10 @@ Used by the OpenTelemetry steering committee for internal communication. Also ca
 
 Mailing list to notify and request reviews of upcoming announcements, or request a post on the OpenTelemetry Twitter account or other public channels.
 
+### License
+
+All OpenTelemetry projects are shipped under the permissive Apache 2.0 license as CNCF IP Policy [dictates](https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy). This [blog post](https://www.cncf.io/blog/2017/02/01/cncf-recommends-aslv2/) explains the reasoning behind choosing this license.
+
 ## Community Meetings
 
 We host monthly community video conferences, alternating between times that work for Europe and Asia. These meetings are open to all contributors!
