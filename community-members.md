@@ -157,6 +157,7 @@ Repo: [open-telemetry/opentelemetry-ruby](https://github.com/open-telemetry/open
 
 Approvers:
 - [Vlad Gorodetsky](https://github.com/bai), Shopify
+- [Yoshinori Kawasaki](https://github.com/luvtechno), Wantedly 
 
 Maintainers:
 - [Francis Bogsanyi](https://github.com/fbogsany), Shopify
