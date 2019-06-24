@@ -146,11 +146,15 @@ Maintainers:
 
 ## C++
 
+Repo: [open-telemetry/opentelemetry-cpp](https://github.com/open-telemetry/opentelemetry-cpp)
+
 Approvers:
 - [Josh MacDonald](https://github.com/jmacd), LightStep
+- [Tigran Najaryan](https://github.com/tigrannajaryan), Omnition
 
 Maintainers:
-- [Ryan Burn](https://github.com/rnburn), LighStep
+- [Ryan Burn](https://github.com/rnburn), LightStep
+- [Emil Mikulic](https://github.com/g-easy), Google
 
 ## Ruby
 
