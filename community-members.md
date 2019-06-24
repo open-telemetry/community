@@ -153,7 +153,7 @@ Approvers:
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Omnition
 
 Maintainers:
-- [Ryan Burn](https://github.com/rnburn), LighStep
+- [Ryan Burn](https://github.com/rnburn), LightStep
 - [Emil Mikulic](https://github.com/g-easy), Google
 
 ## Ruby
