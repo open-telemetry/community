@@ -169,4 +169,4 @@ Maintainers:
 
 ## Others
 
-C++, Erlang, PHP, Rust, Swift
+PHP, Rust, Swift
