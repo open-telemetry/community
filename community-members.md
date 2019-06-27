@@ -93,6 +93,7 @@ Approvers:
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber
 - [Isobel Redelmeier](https://github.com/iredelmeier), LightStep
 - [Daniel Khan](https://github.com/danielkhan), Dynatrace
+- [Roch Devost](https://github.com/rochdev), DataDog
 
 Maintainers:
 
