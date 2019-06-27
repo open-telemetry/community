@@ -84,7 +84,7 @@ Maintainers:
 - [Rahul Patel](https://github.com/rghetia), Google
 - [Ted Young](https://github.com/tedsuo), LightStep
 
-## Node.js
+## Javascript
 
 Repo: [open-telemetry/opentelemetry-node](https://github.com/open-telemetry/opentelemetry-node)
 

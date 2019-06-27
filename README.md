@@ -144,7 +144,7 @@ Meeting notes are held in [this doc](https://docs.google.com/document/d/1oHpisis
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-java)
 
-### Node.JS SDK
+### Javascript SDK
 
 Regular sync up will be held initially weekly - every [Wednesday at 9 AM PDT](https://calendar.google.com/calendar/embed?src=google.com_4mgfktv05r5qte9metq8s7annc%40group.calendar.google.com&ctz=America%2FLos_Angeles).
 
