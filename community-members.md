@@ -168,6 +168,7 @@ Approvers:
 
 Maintainers:
 - [Francis Bogsanyi](https://github.com/fbogsany), Shopify
+- [Matthew Wear](https://github.com/mwear), NewRelic
 
 ## Others
 
