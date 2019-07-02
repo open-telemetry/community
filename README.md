@@ -88,7 +88,7 @@ and open for all.
 Specifications gitter channel: [![Gitter
 chat](https://badges.gitter.im/open-telemetry/opentelemetry-specification.svg)](https://gitter.im/open-telemetry/opentelemetry-specification?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Meeting will be help every [Tuesday at 8 AM pacific
+Meeting will be held every [Tuesday at 8 AM pacific
 time](https://calendar.google.com/calendar/embed?src=04ii15lf8ecsf2sjgu038h0lus%40group.calendar.google.com&ctz=America%2FLos_Angeles).
 Meeting notes are held in [this google doc](https://docs.google.com/document/d/1-bCYkN-DWJq4jw1ybaDZYYmx-WAe6HnwfWbkm8d57v8/edit?usp=sharing).
 
