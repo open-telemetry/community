@@ -121,6 +121,7 @@ Repo: [open-telemetry/opentelemetry-service](https://github.com/open-telemetry/o
 Approvers:
 - [Steve Flanders](https://github.com/flands), Omnition
 - [Steven Karis](https://github.com/sjkaris), Omnition
+- [Yang Song](https://github.com/songy23), Google
 
 Maintainers:
 
