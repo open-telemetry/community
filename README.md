@@ -104,7 +104,7 @@ Conference ID: 634 117 56#
 
 ### Agent/Collector
 
-The Service SIG meets every other week on [Wednesday at 2 PM PT](https://calendar.google.com/calendar/event?eid=Mmc5Z2w5anJncmFtNWFsOWVrZXVpc2RiaHRfMjAxOTA3MDNUMjEwMDAwWiBnb29nbGUuY29tX2I3OWUzZTkwajdiYnNhMm4ycDVhbjVsZjYwQGc&ctz=America/Los_Angeles).
+The Service SIG meets every other week on [Wednesday at 9 AM PT](https://calendar.google.com/calendar/event?eid=Mmc5Z2w5anJncmFtNWFsOWVrZXVpc2RiaHRfMjAxOTA3MDNUMjEwMDAwWiBnb29nbGUuY29tX2I3OWUzZTkwajdiYnNhMm4ycDVhbjVsZjYwQGc&ctz=America/Los_Angeles).
 
 Meeting notes are held in [this doc](https://docs.google.com/document/d/1dlcx3Mn3njG8lVmrgRFdGczTlyEN9IBO26cUwFQdlC8/edit?usp=sharing).
 
