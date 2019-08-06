@@ -84,21 +84,20 @@ Maintainers:
 - [Rahul Patel](https://github.com/rghetia), Google
 - [Ted Young](https://github.com/tedsuo), LightStep
 
-## Javascript
+## JavaScript
 
-Repo: [open-telemetry/opentelemetry-node](https://github.com/open-telemetry/opentelemetry-node)
+Repo: [open-telemetry/opentelemetry-js](https://github.com/open-telemetry/opentelemetry-js)
 
 Approvers:
 
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber
 - [Isobel Redelmeier](https://github.com/iredelmeier), LightStep
-- [Daniel Khan](https://github.com/danielkhan), Dynatrace
 - [Roch Devost](https://github.com/rochdev), DataDog
 
 Maintainers:
 
 - [Mayur Kale](https://github.com/mayurkale22), Google
-- [Justin Smith](https://github.com/justindsmith), Omnition
+- [Daniel Khan](https://github.com/danielkhan), Dynatrace
 
 ## Python
 
