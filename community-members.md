@@ -93,6 +93,7 @@ Approvers:
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber
 - [Isobel Redelmeier](https://github.com/iredelmeier), LightStep
 - [Roch Devost](https://github.com/rochdev), DataDog
+- [Brandon Gonzalez](https://github.com/bg451), LightStep
 
 Maintainers:
 
