@@ -51,7 +51,7 @@ The development process will include a process for the TC to oversee and approve
 
 * Cleanliness of code base
 * Ample and diverse Members, Approvers and Maintainers to assure the vitality of the project
-Stability (e.g. presence of test suites, stable APIs and use of an appropriate source-code control system)
+* Stability (e.g. presence of test suites, stable APIs and use of an appropriate source-code control system)
 * Predictability of releases and standards of compatibility
 * Alignment with OpenTelemetry’s goals and priorities
 
