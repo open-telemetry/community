@@ -130,7 +130,7 @@ Conference ID: 214 680 28#
 
 ### GoLang SDK
 
-The Golang SIG meets weekly on [Tuesday at 3 PM PDT](https://calendar.google.com/calendar/embed?src=lightstep.com_r2rdlnakn4kjbbo4jbbmdbd7m0%40group.calendar.google.com&ctz=America%2FLos_Angeles). This meeting is subject to change depending on contributors' availability, check the calendar for specific dates.
+The Golang SIG meets weekly on Thursdays at 10 AM Pacific. This meeting is subject to change depending on contributors' availability, look for the pinned message in the Gitter for specific dates (until a public calendar can be published).
 
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1A63zSWX0x2CyCK_LoNhmQC4rqhLpYXJzXbEPDUQ2n6w/edit#).
 
