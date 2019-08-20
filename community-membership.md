@@ -7,7 +7,7 @@ OpenTelemetry. The OpenTelemetry project is subdivided into subprojects under
 (predominantly, but not exclusively) language-focused SIGs (Special Interest
 Group). Responsibilities for most roles are scoped to these subprojects (repos).
 
-The OpenTelemetry Steering Committee owns this document and process until
+The OpenTelemetry Governance Committee owns this document and process until
 delegated. They can be reached via [TODO mailing list - post CNCF acceptance].
 
 | **Role**   | **Responsibilities**                                  | **Requirements**                                             | **Defined by**                                               |
@@ -71,8 +71,8 @@ Defined by: Member of the OpenTelemetry GitHub organization
     work on the project.
 - Have your sponsoring reviewers reply confirmation of sponsorship: `+1`
 - Once your sponsors have responded, your request will be reviewed by the
-  Steering Committee.  Any SC member can review the requirements and add Members
-  to the GitHub org. 
+  Governance Committee.  Any GC member can review the requirements and add
+  Members to the GitHub org. 
 
 ### Responsibilities and privileges
 
@@ -166,8 +166,8 @@ The following apply to the subproject for which one would be an owner.
   - Identifying subtle or complex issues in designs and implementation PRs
 - Directly contributed to the subproject through implementation and / or review
 - Aligning with the overall project goals, specifications and design principles
-  defined by TSC. Bringing general questions and requests to the discussions as
-  part of specifications project.
+  defined by Technical Committee (TC). Bringing general questions and requests
+  to the discussions as part of specifications project.
 
 ### Responsibilities and privileges
 
