@@ -30,7 +30,7 @@ Approvers:
 - [Yang Song](https://github.com/songy23), Google
 - [Chris Kleinknecht](https://github.com/c24t), Google
 - [Reiley Yang](https://github.com/reyang), Microsoft
-- [Tigran Najaryan](https://github.com/tigrannajaryan), Omnition
+- [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 
 Maintainers (TC - Technical committee):
 
@@ -75,8 +75,8 @@ Repo: [open-telemetry/opentelemetry-go](https://github.com/open-telemetry/opente
 Approvers:
 
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
-- [Paulo Janotti](https://github.com/pjanotti), Omnition
-- [Steven Karis](https://github.com/sjkaris), Omnition
+- [Paulo Janotti](https://github.com/pjanotti), Splunk
+- [Steven Karis](https://github.com/sjkaris), Splunk
 - [Josh MacDonald](https://github.com/jmacd), LightStep
 
 Maintainers:
@@ -120,15 +120,15 @@ Maintainers:
 Repo: [open-telemetry/opentelemetry-service](https://github.com/open-telemetry/opentelemetry-service)
 
 Approvers:
-- [Steve Flanders](https://github.com/flands), Omnition
-- [Steven Karis](https://github.com/sjkaris), Omnition
+- [Steve Flanders](https://github.com/flands), Splunk
+- [Steven Karis](https://github.com/sjkaris), Splunk
 - [Yang Song](https://github.com/songy23), Google
 
 Maintainers:
 
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
-- [Paulo Janotti](https://github.com/pjanotti), Omnition
-- [Tigran Najaryan](https://github.com/tigrannajaryan), Omnition
+- [Paulo Janotti](https://github.com/pjanotti), Splunk
+- [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 
 ## Docs and website
 
@@ -137,7 +137,7 @@ Repo: [open-telemetry/opentelemetry.io](https://github.com/open-telemetry/opente
 Maintainers:
 
 - [Morgan McLean](https://github.com/mtwo), Google
-- [Steve Flanders](https://github.com/flands), Omnition
+- [Steve Flanders](https://github.com/flands), Splunk
 - [Jigar Parsana](https://github.com/jparsana), Google
 
 ## Erlang
@@ -154,7 +154,7 @@ Repo: [open-telemetry/opentelemetry-cpp](https://github.com/open-telemetry/opent
 
 Approvers:
 - [Josh MacDonald](https://github.com/jmacd), LightStep
-- [Tigran Najaryan](https://github.com/tigrannajaryan), Omnition
+- [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 
 Maintainers:
 - [Ryan Burn](https://github.com/rnburn), LightStep
