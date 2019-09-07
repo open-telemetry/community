@@ -173,7 +173,7 @@ Meeting notes are held in this [doc](https://docs.google.com/document/d/1D15bO8o
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-ruby).
 
-### Erlang SDK
+### Erlang/Elixir SDK
 
 Regular sync up will be held initially weekly in the [gitter channel](https://gitter.im/open-telemetry/opentelemetry-erlang).
 
