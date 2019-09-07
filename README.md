@@ -173,6 +173,14 @@ Meeting notes are held in this [doc](https://docs.google.com/document/d/1D15bO8o
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-ruby).
 
+### Erlang SDK
+
+Regular sync up will be held initially weekly - TODO:@tsloughter add details.
+
+Meeting notes are held in - TODO:@tsloughter add details.
+
+You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-erlang).
+
 ### Other
 
 We also considering creating SIGs for byte code injection agents and other projects.
