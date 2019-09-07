@@ -175,7 +175,9 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### Erlang SDK
 
-Regular sync up will be held initially weekly - TODO:@tsloughter add details.
+Regular sync up will be held initially weekly in the [gitter channel](https://gitter.im/open-telemetry/opentelemetry-erlang).
+
+Monthly sync ups will be part of monthly [Erlang Ecosystem Foundation Observability Working Group](https://erlef.org/wg/observability) meetings. See the [calendar](https://calendar.google.com/calendar?cid=N25nZ2RiNWhuZnFwODI4b2FwaTExOWprZXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ) for dates.
 
 Meeting notes are held in a [Google doc](https://docs.google.com/document/d/18JVh6ICLyRCJBpRVIXwcR1fb-K4qRX3WHYgtM7mFx2U/edit?usp=sharing).
 
