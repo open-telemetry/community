@@ -147,6 +147,7 @@ Maintainers:
 Repo: [open-telemetry/opentelemetry-erlang](https://github.com/open-telemetry/opentelemetry-erlang)
 
 Approvers:
+- [Fred Hebert](https://github.com/ferd), Postmates Inc.
 
 Maintainers:
 - [Łukasz Jan Niemier](https://github.com/hauleth), 
