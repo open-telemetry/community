@@ -177,7 +177,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 Regular sync up will be held initially weekly - TODO:@tsloughter add details.
 
-Meeting notes are held in - TODO:@tsloughter add details.
+Meeting notes are held in a [Google doc](https://docs.google.com/document/d/18JVh6ICLyRCJBpRVIXwcR1fb-K4qRX3WHYgtM7mFx2U/edit?usp=sharing).
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-erlang).
 
