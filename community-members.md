@@ -95,6 +95,7 @@ Approvers:
 - [Roch Devost](https://github.com/rochdev), DataDog
 - [Brandon Gonzalez](https://github.com/bg451), LightStep
 - [Olivier Albertini](https://github.com/OlivierAlbertini), VilledeMontreal
+- [Valentin Marchaud](https://github.com/vmarchaud), Open Source Contributor
 
 Maintainers:
 
