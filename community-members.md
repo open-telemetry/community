@@ -77,12 +77,12 @@ Approvers:
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
 - [Paulo Janotti](https://github.com/pjanotti), Omnition
 - [Steven Karis](https://github.com/sjkaris), Omnition
-- [Josh MacDonald](https://github.com/jmacd), LightStep
+- [Ted Young](https://github.com/tedsuo), LightStep
 
 Maintainers:
 
 - [Rahul Patel](https://github.com/rghetia), Google
-- [Ted Young](https://github.com/tedsuo), LightStep
+- [Josh MacDonald](https://github.com/jmacd), LightStep
 
 ## JavaScript
 
