@@ -141,6 +141,7 @@ Maintainers:
 - [Morgan McLean](https://github.com/mtwo), Google
 - [Steve Flanders](https://github.com/flands), Omnition
 - [Jigar Parsana](https://github.com/jparsana), Google
+- [Austin Parker](https://github.com/austinlparker), Lightstep
 
 ## Erlang
 
