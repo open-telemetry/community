@@ -183,6 +183,14 @@ Meeting notes are held in a [Google doc](https://docs.google.com/document/d/18JV
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-erlang).
 
+### Java Auto Instrumentation
+
+The Java Auto Instrumentation SIG meets every other week on Thursday at 9 AM Pacific Time [TODO create calendar and add link].
+
+Meeting notes are held in this doc [TODO create doc and add link].
+
+You can also join us on [gitter](https://gitter.im/open-telemetry/auto-instr-java) [TODO create repo / gitter channel].
+
 ### Other
 
 We also considering creating SIGs for byte code injection agents and other projects.
