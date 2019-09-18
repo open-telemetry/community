@@ -8,7 +8,7 @@ OpenTelemetry. The OpenTelemetry project is subdivided into subprojects under
 Group). Responsibilities for most roles are scoped to these subprojects (repos).
 
 The OpenTelemetry Governance Committee owns this document and process until
-delegated. They can be reached via [TODO mailing list - post CNCF acceptance].
+delegated. They can be reached via e-mail cncf-opentelemetry-governance@lists.cncf.io.
 
 | **Role**   | **Responsibilities**                                  | **Requirements**                                             | **Defined by**                                               |
 | ---------- | ----------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
