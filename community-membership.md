@@ -96,16 +96,19 @@ approver in addition to the reviews by *members.*
 ## Approver
 
 Code approvers are able to both review and approve code contributions. As well
-as help maintainers triage issues. While code review is focused on code quality
-and correctness, approval is focused on holistic acceptance of a contribution
-including: backwards/forwards compatibility, adhering to API and flag
-conventions, subtle performance and correctness issues, interactions with other
-parts of the system, etc.
+as help maintainers triage issues and do project management.
+
+While code review is focused on code quality and correctness, approval is
+focused on holistic acceptance of a contribution including: backwards/forwards
+compatibility, adhering to API and flag conventions, subtle performance and
+correctness issues, interactions with other parts of the system, etc.
 
 Defined by: [CODEOWNER
 workflow](https://help.github.com/en/articles/about-code-owners).
 
-Approver status can be scoped to a part of the codebase.
+Approver status can be scoped to a part of the codebase. For example, critical
+core components may have higher bar of becoming an approver. Some approvers may
+only be doing issues triage and have no approval rights.
 
 ### Requirements
 
