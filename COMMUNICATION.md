@@ -4,11 +4,10 @@
 
 OpenTelemetry has a [Code of
 Conduct](https://github.com/open-telemetry/community/blob/master/code-of-conduct.md)
-where maintainers and community members pledge to foster welcoming and open
-community. Code of conduct gives examples of unacceptable behavior by
-participants like harassment, trolling or personal attacks which result in
-remove, edit, or reject any contributions to the project as well as declining
-participation in the project to individuals.
+where maintainers and community members pledge to foster a welcoming and open
+community. The code of conduct cites examples of unacceptable behavior by
+participants – like harassment, trolling or personal attacks – that would lead to
+removal, revision, or rejection of contributions to the project.
 
 And while we all deserve to collaborate without fear of overt harassment and
 personal attacks, that is a very low bar! This document is aspirational, it
