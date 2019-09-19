@@ -95,7 +95,7 @@ approver in addition to the reviews by *members.*
 
 ## Approver
 
-Code approvers are able to both review and approve code contributions. As well
+Code approvers are able to both review and approve code contributions, as well
 as help maintainers triage issues and do project management.
 
 While code review is focused on code quality and correctness, approval is
