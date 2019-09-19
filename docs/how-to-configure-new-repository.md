@@ -38,10 +38,12 @@ policies:
 
 1. Enable `Require pull request reviews before merging` setting. Make sure
    `Require review from Code Owners` is checked.
-2. Every repo MUST enforce `cla/linuxfoundation` check for `Require status
+2. The default setting for `Required approving reviews` is `1` approval. Individual 
+   repositores may opt-in for bigger number of required reviews.
+3. Every repo MUST enforce `cla/linuxfoundation` check for `Require status
    checks to pass before merging` section.
-3. It is a good practice to check the `Include administrators` setting.
-4. Repository MUST enforce `Restrict who can push to matching branches` setting
+4. It is a good practice to check the `Include administrators` setting.
+5. Repository MUST enforce `Restrict who can push to matching branches` setting
    to only allow the members of `foo-maintainers` to push to the `master`
    branch.
 
