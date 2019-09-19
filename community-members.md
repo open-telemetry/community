@@ -12,7 +12,7 @@ board members as well as CNCF representatives helping with project organization.
 
 - [Ben Sigelman](https://github.com/bhs), LightStep
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
-- [Sarah Novotny](https://github.com/SarahNovotny), Google
+- [Sarah Novotny](https://github.com/SarahNovotny), Microsoft
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber
 
