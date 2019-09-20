@@ -18,10 +18,10 @@ for the repository.
    repository `opentelemetry-foo` they will be named `foo-approvers` and
    `foo-maintainers`. `foo-maintainers` is a child of `foo-approvers` as it
    always contains subset of people and defines larger scope of privileges.
-2. Even though the members of `foo-maintainers` are the members of
-   `foo-approvers` automatically as the groups are enclosed, every member of
-   `foo-maintainers` should be included in `foo-approvers` explicitly with the
-   "Maintainer". So repository maintainers can invite new approvers.
+2. Even though the members of `foo-maintainers` are included in `foo-approvers`
+   transitively, every member of `foo-maintainers` should be included in
+   `foo-approvers` explicitly, and with the "Maintainer" GitHub privileges. So
+   repository maintainers can invite new approvers to the team.
 3. The team `foo-approvers` has `Write` permissions for the repository.
 4. The team `foo-maintainers` has `Maintain (beta)` permissions for the
    repository.
