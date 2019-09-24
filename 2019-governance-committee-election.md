@@ -17,7 +17,8 @@ community is well-represented by the Governance Committee.
 - If you‘ve been nominated or are willing to nominate yourself: check the
   [charter document][charter] and confirm you are ready for the commitment. Make
   sure to provide your information by October 9th.
-- If you are an active community member: confirm that you are in the voters
+- If you are an active community member: confirm that you are in the voters (see
+  [Appendix](#Appendix)).
   lists or register yourself by October 20th.
 - Vote October 21st - October 23rd after receiving the voting link.
 - Keep being awesome and contributing to the project!
