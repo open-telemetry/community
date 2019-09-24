@@ -11,6 +11,8 @@ associated with the rooms:
 
 The color "Graphite" is used for non zoom meetings.
 
+![Google Calendar Colors](images/google-calendar-colors.png).
+
 Same color (meeting location) meetings must not be held at the same time or be
 back to back meetings.
 
