@@ -18,8 +18,8 @@ community is well-represented by the Governance Committee.
 
 - If you‘ve been nominated or are willing to nominate yourself: check the
   [charter
-  document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)and
-  confirm you are ready for the commitment. Make sure to provide your
+  document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)
+  and confirm you are ready for the commitment. Make sure to provide your
   information by Oct 9th.
 - If you are an active community member: confirm that you are in the voters
   lists or register yourself by Oct 20th.
