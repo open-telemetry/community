@@ -1,9 +1,7 @@
 # OpenTelemetry 2019 Governance Committee election
 
 This document lays out the election schedule and process for the OpenTelemetry
-governance committee to implement the [charter
-document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)
-requirements.
+governance committee to implement the [charter document][charter] requirements.
 
 In this election there are **four seats** that need to be filled. We strive to
 complete the election before KubeCon North America so that there is a good
@@ -17,37 +15,33 @@ community is well-represented by the Governance Committee.
 ## TL;DR;
 
 - If you‘ve been nominated or are willing to nominate yourself: check the
-  [charter
-  document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)
-  and confirm you are ready for the commitment. Make sure to provide your
-  information by Oct 9th.
+  [charter document][charter] and confirm you are ready for the commitment. Make
+  sure to provide your information by October 9th.
 - If you are an active community member: confirm that you are in the voters
-  lists or register yourself by Oct 20th.
-- Vote Oct 21st - Oct 23rd after receiving the voting link.
+  lists or register yourself by October 20th.
+- Vote October 21st - October 23rd after receiving the voting link.
 - Keep being awesome and contributing to the project!
 
 ## Vacancies
 
 Current governance committee members:
 
-- [Ben Sigelman](https://github.com/bhs), LightStep, till 2021
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Google, till 2021
-- [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, till 2021
-- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft, till 2021
-- [Yuri Shkuro](https://github.com/yurishkuro), Uber, till 2021
+- [Ben Sigelman](https://github.com/bhs), LightStep, till October 2021
+- [Bogdan Drutu](https://github.com/BogdanDrutu), Google, till October 2021
+- [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, till October 2021
+- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft, till October 2021
+- [Yuri Shkuro](https://github.com/yurishkuro), Uber, till October 2021
 
 In this election **four** people must be elected. Two with **two years** term
 and two with a **one year** term:
 
-- Vacancy 1, till 2021
-- Vacancy 2, till 2021
-- Vacancy 3, till 2020
-- Vacancy 4, till 2020
+- Vacancy 1, till October 2021
+- Vacancy 2, till October 2021
+- Vacancy 3, till October 2020
+- Vacancy 4, till October 2020
 
 After the voting and until 2021, the Governance Committee will have 9 seats.
-Please refer to the [charter
-document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)
-for more information.
+Please refer to the [charter document][charter] for more information.
 
 ## Voting process
 
@@ -57,14 +51,14 @@ interests of the community as our first priority.
 
 ### Nominations
 
-As per [charter
-document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee),
-anybody is eligible to run for the board. During the call for nomination period,
-people can be nominated or nominate themselves by sending an email to
+As per [charter document][charter], anybody is eligible to run for the board.
+During the call for nomination period, people can be nominated or nominate
+themselves by sending an email to
 [cncf-opentelemetry-governance@lists.cncf.io](mailto:cncf-opentelemetry-governance@lists.cncf.io).
 The following information will be collected via email from every nominee:
 
 - Full name
+- GitHub alias
 - Company affiliation
 - Short bio and/or reasoning to join the Governance committee (no more than a
   short paragraph)
@@ -83,8 +77,7 @@ contributions, you need to pre-register so voting link can be sent.
 
 The form will ask for email and a proof of eligibility for the vote. Criteria
 for voting eligibility are listed in the Members of Standing section of the
-[charter
-document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#members-of-standing).
+[charter document][charter].
 
 One of two options will be available in the form to prove eligibility:
 
@@ -129,7 +122,7 @@ the nominee with the highest score after that will be picked.
 - October 10th: Monthly public governance meeting. Preliminary list of nominees
   announced.
 - *Governance committee ensures nominees commitment.*
-- October 14th, Noon PT: List of nominee is published at
+- October 14th, Noon PT: List of nominees is published at
   [community](https://github.com/open-telemetry/community) GitHub and advertised
   via mailing list and Gitter.
 - October 20th: End of call for voters pre-registration.
@@ -139,3 +132,5 @@ the nominee with the highest score after that will be picked.
   Voting starts. People with voting rights cast their vote.
 - October 23rd, Noon PT: Election end.
 - October 28th: Results are announced.
+
+[charter]:https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee
