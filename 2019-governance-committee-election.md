@@ -2,7 +2,8 @@
 
 This document lays out the election schedule and process for the OpenTelemetry
 governance committee to implement the [charter
-document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)requirements.
+document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)
+requirements.
 
 In this election there are **four seats** that need to be filled. We strive to
 complete the election before KubeCon North America so that there is a good
@@ -20,12 +21,9 @@ community is well-represented by the Governance Committee.
   document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)and
   confirm you are ready for the commitment. Make sure to provide your
   information by Oct 9th.
-
 - If you are an active community member: confirm that you are in the voters
   lists or register yourself by Oct 20th.
-
 - Vote Oct 21st - Oct 23rd after receiving the voting link.
-
 - Keep being awesome and contributing to the project!
 
 ## Vacancies
@@ -38,7 +36,7 @@ Current governance committee members:
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft, till 2021
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber, till 2021
 
-In this election **four**people must be elected. Two with **two****years** term
+In this election **four** people must be elected. Two with **two years** term
 and two with a **one year** term:
 
 - Vacancy 1, till 2021
@@ -48,8 +46,8 @@ and two with a **one year** term:
 
 After the voting and until 2021, the Governance Committee will have 9 seats.
 Please refer to the [charter
-document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)for
-more information.
+document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)
+for more information.
 
 ## Voting process
 
@@ -105,13 +103,13 @@ month after the election.
 ### Vote
 
 Everyone with voting rights will receive the link to the voting site. [Condorcet
-Internet Voting Service](https://civs.cs.cornell.edu/)will be used for the
+Internet Voting Service](https://civs.cs.cornell.edu/) will be used for the
 voting process.
 
 Late registrations for vote and requests to re-send the voting link will be
 accepted via email
-[cncf-opentelemetry-governance@lists.cncf.io](mailto:cncf-opentelemetry-governance@lists.cncf.io).We
-you encourage to pre-register to minimize an effort to run this election.
+[cncf-opentelemetry-governance@lists.cncf.io](mailto:cncf-opentelemetry-governance@lists.cncf.io).
+We encourage you to pre-register to minimize an effort to run this election.
 
 Voting is private, nobody will know an individual's vote.
 
@@ -132,11 +130,12 @@ the nominee with the highest score after that will be picked.
   announced.
 - *Governance committee ensures nominees commitment.*
 - October 14th, Noon PT: List of nominee is published at
-  [community](https://github.com/open-telemetry/community)GitHub and advertised
+  [community](https://github.com/open-telemetry/community) GitHub and advertised
   via mailing list and Gitter.
 - October 20th: End of call for voters pre-registration.
 - It’s OK to register during the voting time, but highly discouraged.
-- October 21th, Noon PT: Emails with voting links sent from the CIVS web site.
+- October 21th, Noon PT: Emails with voting links sent from the
+  [CIVS](https://civs.cs.cornell.edu/) web site.
   Voting starts. People with voting rights cast their vote.
 - October 23rd, Noon PT: Election end.
 - October 28th: Results are announced.
