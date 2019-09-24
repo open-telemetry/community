@@ -133,4 +133,88 @@ the nominee with the highest score after that will be picked.
 - October 23rd, Noon PT: Election end.
 - October 28th: Results are announced.
 
+## Appendix
+
+We identified active contributors. For these contributors we found at least one
+e-mail address associated with the commit. We will be using one of them at
+random. If you want to use an alternative e-mail address please fill out the
+pre-registration form: https://forms.gle/9aqtXYm9BmZg7tjo9
+
+- alban
+- AloisReitbauer
+- arminru
+- austinlparker
+- backjo
+- bg451
+- bhs
+- bogdandrutu
+- bruno-garcia
+- c24t
+- caniszczyk
+- carlosalberto
+- ccaraman
+- danielkhan
+- discostu105
+- djosephsen
+- draffensperger
+- fbogsany
+- flands
+- freeformz
+- hekike
+- huikang
+- ibawt
+- indrekj
+- iredelmeier
+- Jamim
+- jkwatson
+- jmacd
+- jpkrohling
+- krnowak
+- lizthegrey
+- lmolkova
+- lucperkins
+- lzchen
+- markwolff
+- mauriciovasquezbernal
+- mayurkale22
+- MohamedElqdusy
+- mtwo
+- mwear
+- Oberon00
+- OlivierAlbertini
+- owais
+- pakrym
+- pavolloffay
+- pcwiese
+- pjanotti
+- PS-EGHornbostel
+- rdooley
+- reyang
+- rghetia
+- rochdev
+- saiya
+- SergeyKanzhelev
+- songy23
+- tedsuo
+- thinkerou
+- tigrannajaryan
+- toumorokoshi
+- trwegner
+- tsloughter
+- tylerbenson
+- vmarchaud
+- yurishkuro
+- z1c0
+
+For these accounts we didn't find e-mails associated with the commits. Please
+fill out the pre-registration form: https://forms.gle/9aqtXYm9BmZg7tjo9 
+
+- dinooliva
+- a-feld
+- thomashchan1
+- Flarna
+- hauleth
+- enzian
+- cep21
+
 [charter]:https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee
