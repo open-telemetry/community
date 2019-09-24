@@ -12,7 +12,7 @@ board members as well as CNCF representatives helping with project organization.
 
 - [Ben Sigelman](https://github.com/bhs), LightStep
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
-- [Sarah Novotny](https://github.com/SarahNovotny), Google
+- [Sarah Novotny](https://github.com/SarahNovotny), Microsoft
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber
 
@@ -77,12 +77,12 @@ Approvers:
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
 - [Paulo Janotti](https://github.com/pjanotti), Splunk
 - [Steven Karis](https://github.com/sjkaris), Splunk
-- [Josh MacDonald](https://github.com/jmacd), LightStep
+- [Ted Young](https://github.com/tedsuo), LightStep
 
 Maintainers:
 
 - [Rahul Patel](https://github.com/rghetia), Google
-- [Ted Young](https://github.com/tedsuo), LightStep
+- [Josh MacDonald](https://github.com/jmacd), LightStep
 
 ## JavaScript
 
@@ -95,6 +95,7 @@ Approvers:
 - [Roch Devost](https://github.com/rochdev), DataDog
 - [Brandon Gonzalez](https://github.com/bg451), LightStep
 - [Olivier Albertini](https://github.com/OlivierAlbertini), VilledeMontreal
+- [Valentin Marchaud](https://github.com/vmarchaud), Open Source Contributor
 
 Maintainers:
 
@@ -123,6 +124,7 @@ Approvers:
 - [Steve Flanders](https://github.com/flands), Splunk
 - [Steven Karis](https://github.com/sjkaris), Splunk
 - [Yang Song](https://github.com/songy23), Google
+- [Owais Lone](https://github.com/owais), Splunk
 
 Maintainers:
 
@@ -134,17 +136,24 @@ Maintainers:
 
 Repo: [open-telemetry/opentelemetry.io](https://github.com/open-telemetry/opentelemetry.io/)
 
+Approvers:
+
 Maintainers:
 
 - [Morgan McLean](https://github.com/mtwo), Google
 - [Steve Flanders](https://github.com/flands), Splunk
 - [Jigar Parsana](https://github.com/jparsana), Google
+- [Austin Parker](https://github.com/austinlparker), Lightstep
 
 ## Erlang
 
 Repo: [open-telemetry/opentelemetry-erlang](https://github.com/open-telemetry/opentelemetry-erlang)
 
+Approvers:
+- [Fred Hebert](https://github.com/ferd), Postmates Inc.
+
 Maintainers:
+- [Łukasz Jan Niemier](https://github.com/hauleth), 
 - [Ilya Khaprov](https://github.com/deadtrickster), KOBIL Systems
 - [Tristan Sloughter](https://github.com/tsloughter), Postmates Inc.
 

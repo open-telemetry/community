@@ -6,17 +6,22 @@ OpenTelemetry community content.
 
 There is a lot to do! If you are interested in getting involved, please join the mailing lists and attend the community meetings. If you're interested in contributing to a specific part of the project, please join the appropriate special interest group (SIG). Details for all of these items are below. We are a friendly, collaborative group and look forward to working together!
 
+## Governing Bodies
+
+* [Governance Committee](./governance-charter.md)
+* [Technical Committee (TC)](./tech-committee-charter.md)
+
 ## Communication
 ### Instant Messaging
 
-We are on [gitter](https://gitter.im/open-telemetry/community).
+We are on [Gitter chat](https://gitter.im/open-telemetry/community).
 
 ### Mailing Lists
-#### Community
+#### Community Announcements
 - List name: cncf-opentelemetry-community@lists.cncf.io
 - Signup: https://lists.cncf.io/g/cncf-opentelemetry-community
 - Membership: anyone
-- Write Permissions: TSC and Governance committee
+- Write Permissions: TC and Governance committee
 - Read Permissions: anyone
 
 The community mailing list is for anybody who wants to monitor the latest news from the project. It is used to send updates on community meetings and announcements about new projects and SIGs. There is a minimal moderation for a new users to reduce spam, new users are approved after one post.
@@ -36,15 +41,15 @@ The discussions mailing list is for anyone who is interested in contributing to 
 - Write Permissions: anyone
 - Read Permissions: members
 
-Used by the OpenTelemetry technical steering committee for internal communication. This mailing list should be used sparingly as we strive to keep all communication public. It only should be used to contact the technical steering committee with questions that cannot be discussed publicly on github, gitter, or the community or contributors mailing lists.
+Used by the OpenTelemetry Technical Committee for internal communication. This mailing list should be used sparingly as we strive to keep all communication public. It only should be used to contact the Technical Committee with questions that cannot be discussed publicly on GitHub, Gitter, or the community or contributors mailing lists.
 
 #### Governance Committee
 - List name: cncf-opentelemetry-governance@lists.cncf.io
-- Membership: Governance committee
+- Membership: Governance Committee
 - Write Permissions: anyone
 - Read Permissions: members
 
-Used by the OpenTelemetry steering committee for internal communication. Also can be used to contact the steering committee for questions that cannot be discussed publicly on github, gitter, or other mailing lists. For instance, members could use this for issues related to improper applications of our community membership guidance.
+Used by the OpenTelemetry Governance Committee for internal communication. Also can be used to contact the Governance Committee for questions that cannot be discussed publicly on GitHub, Gitter, or other mailing lists. For instance, members could use this for issues related to improper applications of our community membership guidance.
 
 #### Public Communication Requests
 - List name: cncf-opentelemetry-comms@lists.cncf.io
@@ -112,19 +117,16 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### .NET SDK
 
-Regular sync up will be held initially weekly - every [Tuesday at 9 AM PDT](https://calendar.google.com/calendar/embed?src=dcvpqkmn20ds6ptlcn5cd8l16c%40group.calendar.google.com&ctz=America%2FLos_Angeles).
+Regular sync up will be held initially weekly - every Tuesday at 9 AM PDT. Check
+the public OpenTelemetry calendar
+([web](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com&ctz=America%2FLos_Angeles),
+[gCal](https://calendar.google.com/calendar?cid=Z29vZ2xlLmNvbV9iNzllM2U5MGo3YmJzYTJuMnA1YW41bGY2MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t),
+[iCal](https://calendar.google.com/calendar/ical/google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com/public/basic.ics))
+for potential meeting time updates or cancellations.
 
 Meeting notes are held in [this google doc](https://docs.google.com/document/d/1yjjD6aBcLxlRazYrawukDgrhZMObwHARJbB9glWdHj8/edit?usp=sharing).
 
-[Join Microsoft Teams Meeting](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTMwYTBlMDMtODM2Ni00YzgwLWFiNWYtMTU1YTdhZDBmMzc4%40thread.v2/0?context={"Tid"%3a"72f988bf-86f1-41af-91ab-2d7cd011db47"%2c"Oid"%3a"faf2c66b-c829-47b3-832c-7112d576b360"})
-
-+1(469)480-6275, 21468028#   United States, Dallas (Toll)
-
-+1(866)639-0588, 21468028#   United States (Toll-free)
-
-Conference ID: 214 680 28#
-
-[Local numbers](https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=21468028) | [Learn more about Teams](https://go.microsoft.com/fwlink/?linkid=857250)
+Link to join the meeting: https://zoom.us/j/8287234601.
 
 .NET Gitter Channel: [![Gitter chat](https://badges.gitter.im/open-telemetry/opentelemetry-dotnet.svg)](https://gitter.im/open-telemetry/opentelemetry-dotnet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -167,6 +169,16 @@ The Ruby SIG meets weekly on Wednesday alternating between [9 AM PDT](https://ca
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1D15bO8o340sQm2CVZiukEJuCO_XMMHKPuTznoEhyFqE/edit).
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-ruby).
+
+### Erlang/Elixir SDK
+
+Regular sync up will be held initially weekly in the [gitter channel](https://gitter.im/open-telemetry/opentelemetry-erlang).
+
+Monthly sync ups will be part of monthly [Erlang Ecosystem Foundation Observability Working Group](https://erlef.org/wg/observability) meetings. See the [calendar](https://calendar.google.com/calendar?cid=N25nZ2RiNWhuZnFwODI4b2FwaTExOWprZXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ) for dates.
+
+Meeting notes are held in a [Google doc](https://docs.google.com/document/d/18JVh6ICLyRCJBpRVIXwcR1fb-K4qRX3WHYgtM7mFx2U/edit?usp=sharing).
+
+You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-erlang).
 
 ### Other
 
