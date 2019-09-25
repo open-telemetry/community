@@ -149,6 +149,14 @@ Meeting notes are held in [this doc](https://docs.google.com/document/d/1oHpisis
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-java)
 
+#### Java Auto-Instrumentation
+
+Separate but related to the "Java SDK SIG", the "Java Auto-Instrumentation SIG" meets every other week on Thursday at 9 AM Pacific Time [TODO create calendar and add link]. For more context, see [the auto-instrumentation OTEP](https://github.com/open-telemetry/oteps/blob/master/text/0001-telemetry-without-manual-instrumentation.md).
+
+Meeting notes are held in this doc [TODO create doc and add link].
+
+You can also join us on [gitter](https://gitter.im/open-telemetry/auto-instr-java) [TODO create repo / gitter channel].
+
 ### JavaScript SDK
 
 Regular sync up will be held initially weekly - every [Wednesday at 9 AM PDT](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com&ctz=America%2FLos_Angeles).
@@ -182,14 +190,6 @@ Monthly sync ups will be part of monthly [Erlang Ecosystem Foundation Observabil
 Meeting notes are held in a [Google doc](https://docs.google.com/document/d/18JVh6ICLyRCJBpRVIXwcR1fb-K4qRX3WHYgtM7mFx2U/edit?usp=sharing).
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-erlang).
-
-### Java Auto Instrumentation
-
-The Java Auto Instrumentation SIG meets every other week on Thursday at 9 AM Pacific Time [TODO create calendar and add link].
-
-Meeting notes are held in this doc [TODO create doc and add link].
-
-You can also join us on [gitter](https://gitter.im/open-telemetry/auto-instr-java) [TODO create repo / gitter channel].
 
 ### Other
 
