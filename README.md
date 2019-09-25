@@ -151,11 +151,11 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 #### Java Auto-Instrumentation
 
-Separate but related to the "Java SDK SIG", the "Java Auto-Instrumentation SIG" meets every other week on Thursday at 9 AM Pacific Time [TODO create calendar and add link]. For more context, see [the auto-instrumentation OTEP](https://github.com/open-telemetry/oteps/blob/master/text/0001-telemetry-without-manual-instrumentation.md).
+Separate but related to the "Java SDK SIG", the "Java Auto-Instrumentation SIG" meets [every other week on Thursday at 9 AM Pacific Time](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com&ctz=America%2FLos_Angeles). For more context, see [the auto-instrumentation OTEP](https://github.com/open-telemetry/oteps/blob/master/text/0001-telemetry-without-manual-instrumentation.md).
 
-Meeting notes are held in this doc [TODO create doc and add link].
+Meeting notes are held in this [doc](https://docs.google.com/document/d/1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw/edit?usp=sharing).
 
-You can also join us on [gitter](https://gitter.im/open-telemetry/auto-instr-java) [TODO create repo / gitter channel].
+You can also join us on [gitter](https://gitter.im/open-telemetry/auto-instr-java).
 
 ### JavaScript SDK
 
