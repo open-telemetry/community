@@ -137,9 +137,10 @@ the nominee with the highest score after that will be picked.
 ## Appendix
 
 We identified active contributors. For these contributors we found at least one
-e-mail address associated with the commit. We will be using one of them at
-random. If you want to use an alternative e-mail address please fill out the
-pre-registration form: https://forms.gle/9aqtXYm9BmZg7tjo9
+e-mail address associated with the commits to OpenTelemetry repositories. If
+there are more than one email associated with the GitHub handle, we will be
+using one of them at random. If you want to use an alternative e-mail address
+please fill out the pre-registration form: https://forms.gle/9aqtXYm9BmZg7tjo9
 
 - alban
 - AloisReitbauer
