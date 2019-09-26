@@ -78,6 +78,7 @@ Approvers:
 - [Paulo Janotti](https://github.com/pjanotti), Omnition
 - [Steven Karis](https://github.com/sjkaris), Omnition
 - [Ted Young](https://github.com/tedsuo), LightStep
+- [Krzesimir Nowak](https://github.com/krnowak), Kinvolk
 
 Maintainers:
 
