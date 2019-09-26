@@ -152,7 +152,7 @@ Separate but related to the "Java SDK SIG", the "Java Auto-Instrumentation SIG" 
 
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw/edit?usp=sharing).
 
-You can also join us on [gitter](https://gitter.im/open-telemetry/auto-instr-java).
+You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-auto-instr-java).
 
 ### JavaScript SDK
 
