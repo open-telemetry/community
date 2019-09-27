@@ -67,7 +67,7 @@ All OpenTelemetry projects are shipped under the permissive Apache 2.0 license a
 
 We host monthly community video conferences, alternating between times that work for Europe and Asia. These meetings are open to all contributors!
 
-Meeting invites can be accessed from our public Calendar ([web](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com&ctz=America%2FLos_Angeles), [gCal](https://calendar.google.com/calendar?cid=Z29vZ2xlLmNvbV9iNzllM2U5MGo3YmJzYTJuMnA1YW41bGY2MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t), [iCal](https://calendar.google.com/calendar/ical/google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com/public/basic.ics)), and we keep public notes in the agenda document available [here](https://docs.google.com/document/d/1uvua6R-VnOpMmAjM3b7j3jQDFz6KHDzbEX4ZaZ9BFso).
+Meeting invites can be accessed from our public Calendar ([web](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com), [gCal](https://calendar.google.com/calendar?cid=Z29vZ2xlLmNvbV9iNzllM2U5MGo3YmJzYTJuMnA1YW41bGY2MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t), [iCal](https://calendar.google.com/calendar/ical/google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com/public/basic.ics)), and we keep public notes in the agenda document available [here](https://docs.google.com/document/d/1uvua6R-VnOpMmAjM3b7j3jQDFz6KHDzbEX4ZaZ9BFso).
 
 ## Special Interest Groups
 
@@ -94,7 +94,7 @@ Specifications gitter channel: [![Gitter
 chat](https://badges.gitter.im/open-telemetry/opentelemetry-specification.svg)](https://gitter.im/open-telemetry/opentelemetry-specification?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Meeting will be held every [Tuesday at 8 AM pacific
-time](https://calendar.google.com/calendar/embed?src=04ii15lf8ecsf2sjgu038h0lus%40group.calendar.google.com&ctz=America%2FLos_Angeles).
+time](https://calendar.google.com/calendar/embed?src=04ii15lf8ecsf2sjgu038h0lus%40group.calendar.google.com).
 Meeting notes are held in [this google doc](https://docs.google.com/document/d/1-bCYkN-DWJq4jw1ybaDZYYmx-WAe6HnwfWbkm8d57v8/edit?usp=sharing).
 
 [Join Microsoft Teams Meeting](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTFkYzM5MTktOGQxMy00YTJkLWE1NmMtOTVjNTZlMmZkZGJj%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22faf2c66b-c829-47b3-832c-7112d576b360%22%7d)
@@ -119,7 +119,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 Regular sync up will be held initially weekly - every Tuesday at 9 AM PDT. Check
 the public OpenTelemetry calendar
-([web](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com&ctz=America%2FLos_Angeles),
+([web](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com),
 [gCal](https://calendar.google.com/calendar?cid=Z29vZ2xlLmNvbV9iNzllM2U5MGo3YmJzYTJuMnA1YW41bGY2MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t),
 [iCal](https://calendar.google.com/calendar/ical/google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com/public/basic.ics))
 for potential meeting time updates or cancellations.
@@ -140,7 +140,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### Java SDK
 
-The Java SIG meets weekly on [Friday at 8 AM PDT](https://calendar.google.com/calendar/embed?src=lightstep.com_uuegcsvip16hv2qq31sj08sbkk%40group.calendar.google.com&ctz=America%2FLos_Angeles).
+The Java SIG meets weekly on [Friday at 8 AM PDT](https://calendar.google.com/calendar/embed?src=lightstep.com_uuegcsvip16hv2qq31sj08sbkk%40group.calendar.google.com).
 
 Meeting notes are held in [this doc](https://docs.google.com/document/d/1oHpisisco8J7Yk73ovx3eeXaokSMqgVuEuWNwPOajtY/edit).
 
@@ -148,7 +148,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 #### Java Auto-Instrumentation
 
-Separate but related to the "Java SDK SIG", the "Java Auto-Instrumentation SIG" meets [every other week on Thursday at 9 AM Pacific Time](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com&ctz=America%2FLos_Angeles). For more context, see [the auto-instrumentation OTEP](https://github.com/open-telemetry/oteps/blob/master/text/0001-telemetry-without-manual-instrumentation.md).
+Separate but related to the "Java SDK SIG", the "Java Auto-Instrumentation SIG" meets [every other week on Thursday at 9 AM Pacific Time](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com). For more context, see [the auto-instrumentation OTEP](https://github.com/open-telemetry/oteps/blob/master/text/0001-telemetry-without-manual-instrumentation.md).
 
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw/edit?usp=sharing).
 
@@ -156,7 +156,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### JavaScript SDK
 
-Regular sync up will be held initially weekly - every [Wednesday at 9 AM PDT](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com&ctz=America%2FLos_Angeles).
+Regular sync up will be held initially weekly - every [Wednesday at 9 AM PDT](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com).
 
 Meeting notes are held in [this google doc](https://docs.google.com/document/d/1S_pN7sBU7wO6cBP2hDSAt3bjSWdWdm6jWeUikC9KrcY/edit?usp=sharing).
 
@@ -164,7 +164,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### Python SDK
 
-The Python SIG meets weekly on [Thursday 8 AM PDT](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com&ctz=America%2FLos_Angeles). This meeting is subject to change depending on contributors' availability, check the calendar for specific dates.
+The Python SIG meets weekly on [Thursday 8 AM PDT](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com). This meeting is subject to change depending on contributors' availability, check the calendar for specific dates.
 
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1CIMGoIOZ-c3-igzbd6_Pnxx1SjAkjwqoYSUWxPY8XIs/edit).
 
