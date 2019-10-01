@@ -139,7 +139,7 @@ Link to join the meeting: https://zoom.us/j/8287234601.
 
 ### C/C++ SDK
 
-The C/C++ SIG meets weekly - every [Monday at 3PM AM PDT](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com).
+The C/C++ SIG meets weekly - every [Monday at 3 PM PDT](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com).
 
 Meeting notes are held in [this doc](https://docs.google.com/document/d/1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw/edit?usp=sharing).
 
