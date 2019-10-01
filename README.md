@@ -137,13 +137,21 @@ Link to join the meeting: https://zoom.us/j/8287234601.
 
 .NET Gitter Channel: [![Gitter chat](https://badges.gitter.im/open-telemetry/opentelemetry-dotnet.svg)](https://gitter.im/open-telemetry/opentelemetry-dotnet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+### C/C++ SDK
+
+The C/C++ SIG meets weekly - every [Monday at 3PM AM PDT](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com).
+
+Meeting notes are held in [this doc](https://docs.google.com/document/d/1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw/edit?usp=sharing).
+
+You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-cpp).
+
 ### GoLang SDK
 
 The Golang SIG meets weekly on Thursdays at 10 AM Pacific. This meeting is subject to change depending on contributors' availability, look for the pinned message in the Gitter for specific dates (until a public calendar can be published).
 
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1A63zSWX0x2CyCK_LoNhmQC4rqhLpYXJzXbEPDUQ2n6w/edit#).
 
-You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-go)
+You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-go).
 
 ### Java SDK
 
@@ -151,7 +159,7 @@ The Java SIG meets weekly on [Friday at 8 AM PDT](https://calendar.google.com/ca
 
 Meeting notes are held in [this doc](https://docs.google.com/document/d/1oHpisisco8J7Yk73ovx3eeXaokSMqgVuEuWNwPOajtY/edit).
 
-You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-java)
+You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-java).
 
 #### Java Auto-Instrumentation
 
