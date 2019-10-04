@@ -205,7 +205,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### Website SIG
 
-Regular syncs take place every Thursday at 1:30 PM PST and are posted on the [calendar](https://github.com/open-telemetry/community#community-meetings). [Meeting notes](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY) are updated every sync.
+Regular syncs take place every Thursday at 1:30 PM PT and are posted on the [calendar](https://github.com/open-telemetry/community#community-meetings). [Meeting notes](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY) are updated every sync.
 
 ### Other
 
