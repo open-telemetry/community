@@ -16,6 +16,10 @@ There is a lot to do! If you are interested in getting involved, please join the
 
 We are on [Gitter chat](https://gitter.im/open-telemetry/community).
 
+### Calendar
+
+The shared community calendar contains all public OpenTelemetry meetings, including weekly SIG meetings, the monthly community meetings, and others. You can access it [on the web](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com), [in Google Calendar](https://calendar.google.com/calendar?cid=Z29vZ2xlLmNvbV9iNzllM2U5MGo3YmJzYTJuMnA1YW41bGY2MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t), and [via iCalendar](https://calendar.google.com/calendar/ical/google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com/public/basic.ics)) (syncs with Outlook).
+
 ### Mailing Lists
 #### Community Announcements
 - List name: cncf-opentelemetry-community@lists.cncf.io
