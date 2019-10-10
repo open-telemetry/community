@@ -207,6 +207,14 @@ Meeting notes are held in a [Google doc](https://docs.google.com/document/d/18JV
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-erlang).
 
+### PHP SIG
+
+The PHP SIG meets weekly on [Wednesday 10:30 AM PT](https://calendar.google.com/calendar/embed?src=google.com_346fplg7bemb44783pege5amj4%40group.calendar.google.com) via Zoom. Follow this link to [join the meeting](https://zoom.us/j/8203130519).
+
+Meeting notes are held in this [doc](https://docs.google.com/document/d/1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI/edit).
+
+You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-php).
+
 ### Website SIG
 
 Regular syncs take place every Thursday at 1:30 PM PT and are posted on the [calendar](https://github.com/open-telemetry/community#community-meetings). [Meeting notes](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY) are updated every sync.
