@@ -181,6 +181,17 @@ Maintainers:
 - [Francis Bogsanyi](https://github.com/fbogsany), Shopify
 - [Matthew Wear](https://github.com/mwear), NewRelic
 
+## PHP
+
+Repo: [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opentelemetry-php)
+
+Approvers:
+- [Brain Akins](https://github.com/bakins), Mailchimp
+
+Maintainers:
+- [Bob Strecansky](https://github.com/bobstrecansky), Mailchimp
+- [Dmitry Krokhin](https://github.com/nekufa), basis.company
+
 ## Others
 
-PHP, Rust, Swift
+Rust, Swift
