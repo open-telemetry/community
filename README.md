@@ -205,7 +205,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### PHP SIG
 
-The PHP SIG meets weekly on [Wednesday 10:30 AM PDT](https://calendar.google.com/calendar/embed?src=google.com_346fplg7bemb44783pege5amj4%40group.calendar.google.com&ctz=America%2FLos_Angeles) via Zoom. Follow this link to [join the meeting](https://zoom.us/j/8203130519).
+The PHP SIG meets weekly on [Wednesday 10:30 AM PT](https://calendar.google.com/calendar/embed?src=google.com_346fplg7bemb44783pege5amj4%40group.calendar.google.com) via Zoom. Follow this link to [join the meeting](https://zoom.us/j/8203130519).
 
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI/edit).
 
