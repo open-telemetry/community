@@ -1,4 +1,4 @@
-# 2019 OpenTelememtry Governance Committee Candidates
+# 2019 OpenTelemetry Governance Committee Candidates
 
 In alphabetical order:
 
@@ -16,5 +16,5 @@ In alphabetical order:
 | Mark Carter | AWS | - | [markcartertm](https://github.com/markcartertm) |
 | Morgan James McLean | Google | - | [mtwo](https://github.com/mtwo) |
 | Steven Le Roux | OVHcloud | - | [StevenLeRoux](https://github.com/StevenLeRoux) |
-| Ted Young | Lightstep | - | [tedsuo](https://github.com/tedsuo) |
+| Ted Young | LightStep | - | [tedsuo](https://github.com/tedsuo) |
 | Vinod Vydier | New Relic / Independent | - | [vvydier](https://github.com/vvydier) |
