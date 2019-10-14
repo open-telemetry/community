@@ -1,5 +1,7 @@
 # 2019 OpenTelemetry Governance Committee Candidates
 
+## The List
+
 In alphabetical order:
 
 | Name | Affiliation | Ratified? | GitHub |
@@ -18,3 +20,11 @@ In alphabetical order:
 | Steven Le Roux | OVHcloud | - | [StevenLeRoux](https://github.com/StevenLeRoux) |
 | Ted Young | LightStep | - | [tedsuo](https://github.com/tedsuo) |
 | Vinod Vydier | New Relic / Independent | - | [vvydier](https://github.com/vvydier) |
+
+## Ratification
+
+If you are a [member of
+standing](https://github.com/open-telemetry/community/blob/master/governance-charter.md#members-of-standing)
+in the OpenTelemetry organization, please ratify one or more of these
+candidates via [this form](https://forms.gle/3nrPt9HTsNBFdeku7). Thank you!
+
