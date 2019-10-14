@@ -162,12 +162,14 @@ Maintainers:
 Repo: [open-telemetry/opentelemetry-cpp](https://github.com/open-telemetry/opentelemetry-cpp)
 
 Approvers:
+- [Max Golovanov](https://github.com/maxgolov), Microsoft
 - [Josh MacDonald](https://github.com/jmacd), LightStep
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 
 Maintainers:
-- [Ryan Burn](https://github.com/rnburn), LightStep
 - [Emil Mikulic](https://github.com/g-easy), Google
+- [Reiley Yang](https://github.com/reyang), Microsoft
+- [Ryan Burn](https://github.com/rnburn), LightStep
 
 ## Ruby
 
