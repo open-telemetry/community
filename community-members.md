@@ -124,6 +124,7 @@ Approvers:
 - [Steven Karis](https://github.com/sjkaris), Splunk
 - [Yang Song](https://github.com/songy23), Google
 - [Owais Lone](https://github.com/owais), Splunk
+- [Rahul Patel](https://github.com/rghetia), Google
 
 Maintainers:
 
