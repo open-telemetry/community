@@ -10,7 +10,6 @@ In alphabetical order:
 | Constance Caramanolis | Splunk / Omnition | - | [ccaraman](https://github.com/ccaraman) |
 | Daniel Prata Almeida | Spotify | - | [skateordie](https://github.com/skateordie) |
 | Edward Muller | Salesforce / Heroku | - | [freeformz](https://github.com/freeformz) |
-| Hungai Kevin Amuhinda | OrijTech | - | [hungaikev](https://github.com/hungaikev) |
 | Ilan Rabinovitch | Datadog | - | [irabinovitch](https://github.com/irabinovitch) |
 | Kevin Chu | New Relic | - | [kbychu](https://github.com/kbychu) |
 | Liz Fong-Jones | Honeycomb | - | [lizthegrey](https://github.com/lizthegrey) |
