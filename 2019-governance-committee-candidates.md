@@ -123,13 +123,11 @@ take part in contributing to the project.
 - Company: Honeycomb
 - GitHub: [lizthegrey](https://github.com/lizthegrey)
 
-Liz is very involved in the OpenTelemetry community. She co-hosts the
-OpenTelemetry Tuesdays on Twitch, and is a strong advocate for OpenTelemetry in
-the broader dev community. Liz is excellent at thinking about the big picture
-and would be a strong, positive force on the OpenTelemetry Governance Committee.
-Liz has been collecting field feedback and bringing it back to the community and
-is developing the OpenTelemetry workshop that will be given in early November at
-Velocity, Berlin.
+Liz is a developer advocate, labor and ethics organizer, and Site Reliability
+Engineer (SRE) with 15+ years of experience. She is an advocate at
+[Honeycomb.io](https://www.honeycomb.io/) for the SRE and Observability
+communities, and previously was an SRE working on products ranging from the
+Google Cloud Load Balancer to Google Flights.
 
 ---
 
