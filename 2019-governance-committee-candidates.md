@@ -122,6 +122,7 @@ take part in contributing to the project.
 
 - Company: Honeycomb
 - GitHub: [lizthegrey](https://github.com/lizthegrey)
+- Platform/Q&A: https://twitter.com/lizthegrey/status/1186356672605884416
 
 Liz is a developer advocate, labor and ethics organizer, and Site Reliability
 Engineer (SRE) with 15+ years of experience. She is an advocate at
