@@ -35,8 +35,11 @@ and is a regular conference speaker, blogger and author.
 
 ### Constance Caramanolis
 
+![Constance Caramanolis](static/constance-caramanolis.jpg)
+
 - Company: Splunk / Omnition
 - GitHub: [ccaraman](https://github.com/ccaraman)
+- Platform/Q&A: https://twitter.com/ccaramanolis/status/1186396899030364160
 
 I am Senior Software engineer at Omnition, now Splunk, contributing to
 OpenTelemetry and increasing adoption through tech talks. In 2020, I will be a
