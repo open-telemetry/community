@@ -49,7 +49,7 @@ Approvers:
 - [Yang Song](https://github.com/songy23), Google
 - [Tyler Benson](https://github.com/tylerbenson), DataDog
 - [Armin Ruech](https://github.com/arminru), Dynatrace
-- [John Watson](https://github.com/jkwatson), New Relic
+- [John Watson](https://github.com/jkwatson), NewRelic
 
 Maintainers:
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
