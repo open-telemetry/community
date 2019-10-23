@@ -118,7 +118,7 @@ Maintainers:
 
 ## Agent and Collector
 
-Repo: [open-telemetry/opentelemetry-service](https://github.com/open-telemetry/opentelemetry-service)
+Repo: [open-telemetry/opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector)
 
 Approvers:
 - [Steve Flanders](https://github.com/flands), Splunk
