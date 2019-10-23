@@ -57,18 +57,7 @@ Maintainers:
 
 ## .NET
 
-Repo: [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet)
-
-Approvers:
-
-- [Liudmila Molkova](https://github.com/lmolkova), Microsoft
-- [Christoph Neumueller](https://github.com/discostu105), Dynatrace
-- [Bruno Garcia](https://github.com/bruno-garcia), Sentry
-
-Maintainers:
-
-- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft
-- [Austin Parker](https://github.com/austinlparker), LightStep
+Find out active members - approvers and maintainers of .NET SDK in [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet) README file.
 
 ## Golang
 
