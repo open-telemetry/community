@@ -96,6 +96,7 @@ Approvers:
 - [Brandon Gonzalez](https://github.com/bg451), LightStep
 - [Olivier Albertini](https://github.com/OlivierAlbertini), VilledeMontreal
 - [Valentin Marchaud](https://github.com/vmarchaud), Open Source Contributor
+- [Mark Wolff](https://github.com/markwolff), Microsoft
 
 Maintainers:
 
