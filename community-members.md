@@ -63,6 +63,7 @@ Approvers:
 
 - [Liudmila Molkova](https://github.com/lmolkova), Microsoft
 - [Christoph Neumueller](https://github.com/discostu105), Dynatrace
+- [Bruno Garcia](https://github.com/bruno-garcia), Sentry
 
 Maintainers:
 
