@@ -31,6 +31,7 @@ Approvers:
 - [Chris Kleinknecht](https://github.com/c24t), Google
 - [Reiley Yang](https://github.com/reyang), Microsoft
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
+- [Josh MacDonald](https://github.com/jmacd), LightStep
 
 Maintainers (TC - Technical committee):
 
