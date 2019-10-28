@@ -1,6 +1,6 @@
 # OpenTelemetry Governance Committee Charter
 
-Last update: 5/31/2019
+Last update: 10/28/2019
 
 ## Overview
 
@@ -23,7 +23,7 @@ and community.
 
 ## Scope
 
-The Steering Committee has a set of rights and responsibilities including the
+The Governance Committee has a set of rights and responsibilities including the
 following:
 
 - Charter for **Technical Committee**.
@@ -54,6 +54,25 @@ project groups like the Technical Committee (to be chartered by Fall 2019).
 
 ## Committee Structure
 
+### Current Governance Committee Membership
+
+_As of October 28, 2019:_
+
+"Bootstrap committee" members, serving until 2021:
+- Ben Sigelman (LightStep)
+- Bogdan Drutu (Google)
+- Sarah Novotny (Microsoft)
+- Sergey Kanzhelev (Microsoft)
+- Yuri Shkuro (Uber)
+
+Elected committee members, serving until 2021:
+- Constance Caramanolis (Splunk)
+- Ted Young (LightStep)
+
+Elected committe members, serving until 2020:
+- Liz Fong-Jones (Honeycomb)
+- Morgan McLean (Google)
+
 ### Establishment of a governance committee
 
 To bootstrap the process of OpenTelemetry governance, 5 individuals (Ben
@@ -65,7 +84,7 @@ The Bootstrap Committee will be replaced by the elected OpenTelemetry Governance
 Committee. Ultimately, the **OpenTelemetry Governance Committee will consist
 of 5 individual members** of the community **elected for 2 year terms**. The
 terms will be **staggered with 1 year elections** (alternating 2 seats and 3
-seats). [TARGET FALL 2019]
+seats).
 
 To provide a level of continuity as this process is established, the initial
 committee will include continuity members, expanding the size to 9 members,
@@ -77,8 +96,8 @@ Sergey Kanzhelev, Yuri Shkuro) plus 4 positions to be elected from the
 community. Of the 4 members that are elected, 2 will have a two year term and 2
 will have one year term. 
 
-One year later (in 2020) there will be an election of the 2 people serving a two
-year term. The continuity members of the original bootstrap committee will
+One year later (in 2020) there will be an election of the 2 people serving a
+one year term. The continuity members of the original bootstrap committee will
 continue to serve.
 
 One year after that (2021), the continuity positions will be eliminated and the
@@ -132,7 +151,7 @@ criteria. Exception eligibility applications will be approved by the bootstrap
 committee by a simple majority vote. The exception process will be used as data
 points for refining the criteria for the future.
 
-Within its first year, the Steering Committee will redefine these criteria
+Within its first year, the Governance Committee will redefine these criteria
 around a more robust idea of community membership.
 
 ### Eligibility for candidacy
@@ -160,10 +179,10 @@ respective positions.
 ### Maximal representation
 
 To encourage diversity there will be a maximum of one-third representation on
-the Steering Committee from any one company at any time. If the outcomes of an
-election result in greater than 1/3 representation (or maximum of two, whichever
-is greater), the lowest vote getters from any particular company will be removed
-until representation on the committee is less than one-third.
+the Governance Committee from any one company at any time. If the outcomes of
+an election result in greater than 1/3 representation (or maximum of two,
+whichever is greater), the lowest vote getters from any particular company will
+be removed until representation on the committee is less than one-third.
 
 If percentages shift because of job changes, acquisitions, or other events,
 sufficient members of the committee must resign until max one-third
