@@ -77,9 +77,9 @@ Sergey Kanzhelev, Yuri Shkuro) plus 4 positions to be elected from the
 community. Of the 4 members that are elected, 2 will have a two year term and 2
 will have one year term. 
 
-One year later (in 2020) there will be an election of the 2 people serving a
-one year term. The continuity members of the original bootstrap committee will
-continue to serve.
+One year later (in 2020) there will be an election to fill the two seats
+opening up, each with a two year term. The continuity members of the original
+bootstrap committee will continue to serve.
 
 One year after that (2021), the continuity positions will be eliminated and the
 committee will shrink to the final size of 5. There will be an election to fill
