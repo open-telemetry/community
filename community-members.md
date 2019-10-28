@@ -78,20 +78,7 @@ Maintainers:
 
 ## JavaScript
 
-Repo: [open-telemetry/opentelemetry-js](https://github.com/open-telemetry/opentelemetry-js)
-
-Approvers:
-
-- [Yuri Shkuro](https://github.com/yurishkuro), Uber
-- [Roch Devost](https://github.com/rochdev), DataDog
-- [Brandon Gonzalez](https://github.com/bg451), LightStep
-- [Olivier Albertini](https://github.com/OlivierAlbertini), VilledeMontreal
-- [Valentin Marchaud](https://github.com/vmarchaud), Open Source Contributor
-
-Maintainers:
-
-- [Mayur Kale](https://github.com/mayurkale22), Google
-- [Daniel Khan](https://github.com/danielkhan), Dynatrace
+Find out active members - approvers and maintainers of JavaScript SDK in [open-telemetry/opentelemetry-js](https://github.com/open-telemetry/opentelemetry-js#contributing) README file.
 
 ## Python
 
@@ -145,7 +132,7 @@ Approvers:
 - [Fred Hebert](https://github.com/ferd), Postmates Inc.
 
 Maintainers:
-- [Łukasz Jan Niemier](https://github.com/hauleth), 
+- [Łukasz Jan Niemier](https://github.com/hauleth),
 - [Ilya Khaprov](https://github.com/deadtrickster), KOBIL Systems
 - [Tristan Sloughter](https://github.com/tsloughter), Postmates Inc.
 
