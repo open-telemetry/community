@@ -78,7 +78,7 @@ Maintainers:
 
 ## JavaScript
 
-Find out active members - approvers and maintainers of JavaScript SDK in [open-telemetry/opentelemetry-js](https://github.com/open-telemetry/opentelemetry-js#contributing) README file.
+The list of active members (both "approvers" and "maintainers") for the JavaScript can be found Find out active members - approvers and maintainers of the OpenTelemetry JavaScript API and SDK can be found in the [open-telemetry/opentelemetry-js README file](https://github.com/open-telemetry/opentelemetry-js#contributing).
 
 ## Python
 
