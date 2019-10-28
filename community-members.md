@@ -1,20 +1,20 @@
-# The original list of maintainers
+# OpenTelemetry Community Membership
 
-***This document is work in progress***
+## Governance Committee
 
-This is an original list of maintainers to bootstrap the effort. Official docs
-on the process of becoming a contributor or maintainer will be published later.
+This is the current Governance Committee, per the [Governance Committee
+Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md),
+in alphabetical order:
 
-## Admins
-
-This is a group of people, who are currently selected or will be voted as a
-board members as well as CNCF representatives helping with project organization.
-
-- [Ben Sigelman](https://github.com/bhs), LightStep
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Google
-- [Sarah Novotny](https://github.com/SarahNovotny), Microsoft
-- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft
-- [Yuri Shkuro](https://github.com/yurishkuro), Uber
+- [Ben Sigelman](https://github.com/bhs), LightStep, until October 2021
+- [Bogdan Drutu](https://github.com/BogdanDrutu), Google, until October 2021
+- [Constance Caramanolis](https://github.com/ccaraman), Splunk, until October 2021
+- [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, , until October 2020
+- [Morgan James McLean](https://github.com/mtwo), Google, until October 2020
+- [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
+- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft, until October 2021
+- [Ted Young](https://github.com/tedsuo), LightStep, until October 2021
+- [Yuri Shkuro](https://github.com/yurishkuro), Uber, until October 2021
 
 ## Specifications and Proto
 
@@ -33,7 +33,7 @@ Approvers:
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 - [Josh MacDonald](https://github.com/jmacd), LightStep
 
-Maintainers (TC - Technical committee):
+Maintainers (i.e., the "Technical Committee" or "TC"):
 
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google
 - [Carlos Alberto](https://github.com/carlosalberto), LightStep

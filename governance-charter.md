@@ -54,25 +54,6 @@ project groups like the Technical Committee (to be chartered by Fall 2019).
 
 ## Committee Structure
 
-### Current Governance Committee Membership
-
-_As of October 28, 2019:_
-
-"Bootstrap committee" members, serving until 2021:
-- Ben Sigelman (LightStep)
-- Bogdan Drutu (Google)
-- Sarah Novotny (Microsoft)
-- Sergey Kanzhelev (Microsoft)
-- Yuri Shkuro (Uber)
-
-Elected committee members, serving until 2021:
-- Constance Caramanolis (Splunk)
-- Ted Young (LightStep)
-
-Elected committe members, serving until 2020:
-- Liz Fong-Jones (Honeycomb)
-- Morgan McLean (Google)
-
 ### Establishment of a governance committee
 
 To bootstrap the process of OpenTelemetry governance, 5 individuals (Ben
