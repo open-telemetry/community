@@ -162,6 +162,7 @@ Approvers:
 Maintainers:
 - [Francis Bogsanyi](https://github.com/fbogsany), Shopify
 - [Matthew Wear](https://github.com/mwear), NewRelic
+- [Daniel Azuma](https://github.com/dazuma), Google
 
 ## PHP
 
