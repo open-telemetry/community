@@ -152,17 +152,7 @@ Maintainers:
 
 ## Ruby
 
-Repo: [open-telemetry/opentelemetry-ruby](https://github.com/open-telemetry/opentelemetry-ruby)
-
-Approvers:
-- [Vlad Gorodetsky](https://github.com/bai), Shopify
-- [Yoshinori Kawasaki](https://github.com/luvtechno), Wantedly
-- [Don Morrison](https://github.com/elskwid), Mutations
-
-Maintainers:
-- [Francis Bogsanyi](https://github.com/fbogsany), Shopify
-- [Matthew Wear](https://github.com/mwear), NewRelic
-- [Daniel Azuma](https://github.com/dazuma), Google
+The list of active members (both "approvers" and "maintainers") for OpenTelemetry Ruby can be found in the [open-telemetry/opentelemetry-ruby README file](https://github.com/open-telemetry/opentelemetry-ruby#contributing).
 
 ## PHP
 
