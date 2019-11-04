@@ -67,6 +67,10 @@ Mailing list to notify and request reviews of upcoming announcements, or request
 
 All OpenTelemetry projects are shipped under the permissive Apache 2.0 license as CNCF IP Policy [dictates](https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy). This [blog post](https://www.cncf.io/blog/2017/02/01/cncf-recommends-aslv2/) explains the reasoning behind choosing this license.
 
+### Logos and Brand Guide
+
+The OpenTelemetry logos and brand guide can be found in the [CNCF artwork repository](https://github.com/cncf/artwork/tree/master/projects/opentelemetry).
+
 ## Community Meetings
 
 We host monthly community video conferences, alternating between times that work for Europe and Asia. These meetings are open to all contributors!
