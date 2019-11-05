@@ -135,6 +135,7 @@ approver in the `CODEOWNER` files.
 - Expected to be responsive to review requests
 - Mentor contributors and reviewers
 - May approve code contributions for acceptance
+- Merge PRs that have recieved sufficient approval on behalf of those without permission to do so.
 
 ## Maintainer
 
