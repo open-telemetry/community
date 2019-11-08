@@ -14,11 +14,15 @@ This OpenTelemetry Technical Committee Charter reflects the scope and expectatio
 
 TC memberships are not time-limited. There is no maximum size of the TC. The size is expected to vary in order to ensure adequate coverage of important areas of expertise, balanced with the ability to make decisions efficiently. The TC must have at least four members and is recommended to have an odd number of members for tie-breaking purposes.
 
-TC membership is developed through leadership in the project and was bootstrapped initially by selection of long-standing maintainers in the OpenTracing and OpenCensus projects. The TC may add additional members to the TC by a standard TC motion and vote. The TC members are expected to be active leaders in the project.  A TC member may be removed from the TC by voluntary resignation, by a standard TC motion, or in accordance with the participation rules described below.
+TC membership is developed through leadership in the project and was bootstrapped initially by selection of long-standing maintainers in the OpenTracing and OpenCensus projects. The TC may add additional members to the TC by the [election process](#election-of-tc-members) described below. The TC members are expected to be active leaders in the project. A TC member may be removed from the TC by voluntary resignation, by a super-majority TC vote similar to the [election process](#election-of-tc-members), or in accordance with the participation rules described below.
 
 Changes to TC membership should be posted in the agenda document, and may be suggested as any other agenda item.
 
-No more than one-fourth of the TC members may be affiliated with the same employer (in the event of confusion or concern, the OpenTelemetry TC will defer to the CNCF definition of “same employer”). If removal or resignation of a TC member, or a change of employment by a TC member, creates a situation where more than one-fourth of the TC membership shares an employer, then the situation must be immediately remedied by the resignation or removal of one or more TC members affiliated with the over-represented employer(s).
+### No Over-Representation
+
+No more than one-fourth (25%) of the TC members may be affiliated with the same employer (in the event of confusion or concern, the OpenTelemetry TC will defer to the CNCF definition of "same employer"). If removal or resignation of a TC member, or a change of employment by a TC member, creates a situation where more than one-fourth of the TC membership shares an employer, then the situation must be immediately remedied by the resignation or removal of one or more TC members affiliated with the over-represented employer(s).
+
+### Participation
 
 The TC may, at its discretion, invite any number of non-voting observers to participate in the public portion of TC discussions and meetings.
 
@@ -38,8 +42,7 @@ The TC is responsible for all technical development within the OpenTelemetry pro
 * Approving changes to any specifications
 * Mediating technical discussions which have cross project impact
 
-The TC recognizes that maintainers of specific languages or sub-projects have significant autonomy over their SIG and implementations.  The TC’s focus is on cross-project or disputed concerns with a primary goal of seeking consensus to develop an appropriate technical solution.
-The TC will define OpenTelemetry’s release vehicles and serve as the primary technical liaison body for the OpenTelemetry project with the CNCF's TOC, external open source projects, consortiums and groups.
+The TC recognizes that maintainers of specific languages or sub-projects have significant autonomy over their SIG and implementations.  The TC’s focus is on cross-project or disputed concerns with a primary goal of seeking consensus to develop an appropriate technical solution. The TC will define OpenTelemetry’s release vehicles and serve as the primary technical liaison body for the OpenTelemetry project with the CNCF's TOC, external open source projects, consortiums and groups.
 
 ## OpenTelemetry Project Operations
 
@@ -60,6 +63,20 @@ The TC and entire technical community will follow any processes as may be specif
 ## Elections
 
 Leadership roles in OpenTelemetry project will be peer elected representatives of the community.
+
+### Election of TC Members
+
+New TC members can be nominated by any Member in Standing as defined in the [OpenTelemetry Governance Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md#members-of-standing), and must be sponsored by one of the existing TC members to bring it to a vote. A candidate can be elected to the TC by the super-majority vote (greater than two thirds) of the existing TC members. The voting by the TC members is anonymous. A multiple-candidate method, such as [Condorcet](http://en.wikipedia.org/wiki/Condorcet_method) or [Single Transferable Vote](http://en.wikipedia.org/wiki/Single_transferable_vote), may be used to conduct the vote, by phrasing the selections as:
+
+* Vote for Nominee X
+* Vote against Nominee X
+
+The voting should remain open for a minimum of 5 business days.
+
+### Election of TC Chair
+
+The TC will elect from amongst voting TC members a TC Chairperson to work on building an agenda for TC meetings. The TC shall hold annual elections to select a TC Chairperson; there are no limits on the number of terms a TC Chairperson may serve.
+
 For election of persons (such as the TC Chairperson) by a vote of the TC voting members, a multiple-candidate method should be used, such as:
 
 * [Condorcet](http://en.wikipedia.org/wiki/Condorcet_method) or
@@ -67,9 +84,7 @@ For election of persons (such as the TC Chairperson) by a vote of the TC voting 
 
 Multiple-candidate methods may be reduced to simple election by plurality when there are only two candidates for one position to be filled. No election is required if there is only one candidate and no objections to the candidates election. Elections shall be done within the Projects by the collaborators active in the Project.
 
-The TC will elect from amongst voting TC members a TC Chairperson to work on building an agenda for TC meetings. The TC shall hold annual elections to select a TC Chairperson; there are no limits on the number of terms a TC Chairperson may serve.
-
-## Voting
+## Voting on project issues
 
 For internal project decisions, Maintainers shall operate under Lazy Consensus, a decision-making policy which assumes general consent if no responses are posted within a defined period. The TC shall establish appropriate guidelines for implementing Lazy Consensus (e.g. expected notification and review time periods) within the development process.
 
