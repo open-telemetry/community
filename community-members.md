@@ -9,7 +9,7 @@ in alphabetical order:
 - [Ben Sigelman](https://github.com/bhs), LightStep, until October 2021
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Google, until October 2021
 - [Constance Caramanolis](https://github.com/ccaraman), Splunk, until October 2021
-- [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, , until October 2020
+- [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2020
 - [Morgan James McLean](https://github.com/mtwo), Google, until October 2020
 - [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft, until October 2021
