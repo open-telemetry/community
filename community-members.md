@@ -66,7 +66,6 @@ Repo: [open-telemetry/opentelemetry-go](https://github.com/open-telemetry/opente
 
 Approvers:
 
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Google
 - [Paulo Janotti](https://github.com/pjanotti), Splunk
 - [Steven Karis](https://github.com/sjkaris), Splunk
 - [Ted Young](https://github.com/tedsuo), LightStep
