@@ -81,17 +81,7 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 ## Python
 
-Repo: [open-telemetry/opentelemetry-python](https://github.com/open-telemetry/opentelemetry-python)
-
-Approvers:
-
-- [Carlos Alberto](https://github.com/carlosalberto), LightStep
-- [Christian Neumüller](https://github.com/Oberon00), Dynatrace
-
-Maintainers:
-
-- [Chris Kleinknecht](https://github.com/c24t), Google
-- [Reiley Yang](https://github.com/reyang), Microsoft
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Python API and SDK can be found in the [open-telemetry/opentelemetry-python README file](https://github.com/open-telemetry/opentelemetry-python#contributing).
 
 ## Agent and Collector
 
