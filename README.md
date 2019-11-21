@@ -219,6 +219,10 @@ Meeting notes are held in this [doc](https://docs.google.com/document/d/1WLDZGLY
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-php).
 
+### Rust SIG
+
+The Rust SIG will start meeting regularly soon. In the mean time, please [join us on Gitter](https://gitter.im/open-telemetry/opentelemetry-rust)!
+
 ### Website SIG
 
 Regular syncs take place every Thursday at 1:30 PM PT and are posted on the [calendar](https://github.com/open-telemetry/community#community-meetings). [Meeting notes](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY) are updated every sync.
