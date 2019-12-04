@@ -128,6 +128,8 @@ The Service SIG meets every other week on [Wednesday at 9 AM PT](https://calenda
 
 Meeting notes are held in [this doc](https://docs.google.com/document/d/1dlcx3Mn3njG8lVmrgRFdGczTlyEN9IBO26cUwFQdlC8/edit?usp=sharing).
 
+Link to join the meeting: https://splunk.zoom.us/j/742947018.
+
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-service).
 
 ### .NET SDK
