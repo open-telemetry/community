@@ -130,6 +130,9 @@ criteria. Exception eligibility applications will be approved by the bootstrap
 committee by a simple majority vote. The exception process will be used as data
 points for refining the criteria for the future.
 
+The Governance Committee may periodically review and redefine these criteria
+around a more robust idea of community membership.
+
 ### Eligibility for candidacy
 
 Anyone may nominate either themselves or someone else to be a candidate in the
