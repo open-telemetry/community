@@ -116,8 +116,8 @@ The following apply to the part of the codebase for which one would be an
 approver in the `CODEOWNERS` files.
 
 - Reviewer of the codebase for at least 1 month
-- Reviewer for at least 10 substantial PRs to the codebase
-- Reviewed at least 20 PRs to the codebase
+- Reviewer for or contributor of at least 10 substantial PRs to the codebase
+- Reviewed or contributed at least 20 PRs to the codebase
 - Nominated by a maintainer
   - With no objections from other maintainers
   - Done through PR to update the `CODEOWNERS`.
