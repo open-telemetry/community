@@ -1,6 +1,6 @@
 # OpenTelemetry Governance Committee Charter
 
-Last update: 10/28/2019
+Last update: 2019-12-19
 
 ## Overview
 
@@ -109,11 +109,9 @@ vote in the elections, and may choose to run in the 2021 election).
 
 ### Members of Standing
 
-Standing in the OpenTelemetry community will be defined by the union of:
-
-- Active members - those with 20 contributions (PRs, Issues, Comments etc.) in
-  the prior rolling year.
-- All approvers, and maintainers in the OpenTelemetry organization
+Standing in the OpenTelemetry community will be defined as the set of all
+members, approvers, and maintainers of the [OpenTelemetry
+organization](https://github.com/open-telemetry/community/blob/master/community-membership.md#member).
 
 Members who don’t meet the criteria above and are part of the following are
 encouraged to help us evolve the definition of Member of Standing through the
@@ -131,9 +129,6 @@ provided for people who have contributed to the project but may not meet these
 criteria. Exception eligibility applications will be approved by the bootstrap
 committee by a simple majority vote. The exception process will be used as data
 points for refining the criteria for the future.
-
-Within its first year, the Governance Committee will redefine these criteria
-around a more robust idea of community membership.
 
 ### Eligibility for candidacy
 

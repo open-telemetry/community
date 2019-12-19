@@ -1,6 +1,6 @@
 # Community membership
 
-Note: This document is in progress
+Last updated: 2019-12-19
 
 This doc outlines the various responsibilities of contributor roles in
 OpenTelemetry. The OpenTelemetry project is subdivided into subprojects under
@@ -113,26 +113,26 @@ only be doing issues triage and have no approval rights.
 ### Requirements
 
 The following apply to the part of the codebase for which one would be an
-approver in the `CODEOWNER` files.
+approver in the `CODEOWNERS` files.
 
-- Reviewer of the codebase for at least 3 months
+- Reviewer of the codebase for at least 1 month
 - Reviewer for at least 10 substantial PRs to the codebase
-- Reviewed or merged at least 30 PRs to the codebase
+- Reviewed or merged at least 20 PRs to the codebase
 - Nominated by a maintainer
   - With no objections from other maintainers
-  - Done through PR to update the `CODEOWNER`.
+  - Done through PR to update the `CODEOWNERS`.
 
 ### Responsibilities and privileges
 
 The following apply to the part of the codebase for which one would be an
-approver in the `CODEOWNER` files.
+approver in the `CODEOWNERS` files.
 
 - Approver status may be a precondition to accepting large code contributions
-- Demonstrate sound technical judgement
+- Demonstrate sound technical judgement (may be asked to step down by a maintainer if they lose confidence of the maintainers)
 - Responsible for project quality control via code reviews
   - Focus on holistic acceptance of contribution such as dependencies with other
     features, backwards / forwards compatibility, API and flag definitions, etc
-- Expected to be responsive to review requests
+- Expected to be responsive to review requests (inactivity for more than 1 month may result in suspension until active again)
 - Mentor contributors and reviewers
 - May approve code contributions for acceptance
 
@@ -148,7 +148,7 @@ towards the health of that subproject. Maintainers *MUST* set technical
 direction and make or approve design decisions for their subproject - either
 directly or through delegation of these responsibilities.
 
-Defined by: GitHub organization ownership, permissions and entry in CODEOWNERs
+Defined by: GitHub organization ownership, permissions and entry in `CODEOWNERS`
 files.
 
 ### Requirements
