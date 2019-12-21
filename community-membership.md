@@ -12,7 +12,7 @@ delegated. They can be reached via e-mail cncf-opentelemetry-governance@lists.cn
 
 | **Role**   | **Responsibilities**                                  | **Requirements**                                             | **Defined by**                                               |
 | ---------- | ----------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| member     | active contributor in the community.  reviewer of PRs | sponsored by 2 approvers. multiple contributions to the project. | OpenTelemetry GitHub org member.                             |
+| member     | active contributor in the community.  reviewer of PRs | sponsored by 2 approvers or maintainers. multiple contributions to the project. | OpenTelemetry GitHub org member.                             |
 | approver   | approve accepting contributions                       | highly experienced and active reviewer + contributor to a subproject | [CODEOWNER](https://help.github.com/en/articles/about-code-owners) in GitHub |
 | maintainer | set direction and priorities for a subproject         | demonstrated responsibility and excellent technical judgement for the subproject | [CODEOWNER](https://help.github.com/en/articles/about-code-owners), GitHub Team and repo ownership in GitHub |
 
