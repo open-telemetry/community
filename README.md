@@ -241,4 +241,5 @@ Join W3C [Distributed Tracing Working Group](https://www.w3.org/2018/distributed
 
 ### Erlang Ecosystem Foundation – Observability Working Group
 
-See [Observability Working Group Proposal](https://erlef.org/observability-wg/).
+The Erlang and Elixir API and SDK are maintained by members of the Erlang Ecosystem Foundation Observability Working Group.
+See the [Observability Working Group](https://erlef.org/wg/observability) page on the EEF website for details.
