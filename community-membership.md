@@ -13,8 +13,8 @@ delegated. They can be reached via e-mail cncf-opentelemetry-governance@lists.cn
 | **Role**   | **Responsibilities**                                  | **Requirements**                                             | **Defined by**                                               |
 | ---------- | ----------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | member     | active contributor in the community.  reviewer of PRs | sponsored by 2 approvers or maintainers. multiple contributions to the project. | OpenTelemetry GitHub org member.                             |
-| approver   | approve accepting contributions                       | highly experienced and active reviewer + contributor to a subproject | [CODEOWNER](https://help.github.com/en/articles/about-code-owners) in GitHub |
-| maintainer | set direction and priorities for a subproject         | demonstrated responsibility and excellent technical judgement for the subproject | [CODEOWNER](https://help.github.com/en/articles/about-code-owners), GitHub Team and repo ownership in GitHub |
+| approver   | approve accepting contributions                       | highly experienced and active reviewer + contributor to a subproject | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners) in GitHub |
+| maintainer | set direction and priorities for a subproject         | demonstrated responsibility and excellent technical judgement for the subproject | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners), GitHub Team and repo ownership in GitHub |
 
 ## New contributors
 
@@ -57,7 +57,7 @@ Defined by: Member of the OpenTelemetry GitHub organization
   - Sponsors must have close interactions with the prospective member - e.g.
     code/design/proposal review, coordinating on issues, etc.
   - Sponsors must be approvers or maintainers in at least 1 CODEOWNERS file
-    either in any repo in the OpenTelemetry org.
+    in any repo in the OpenTelemetry org.
   - Sponsors must be from multiple member companies to demonstrate integration
     across community.
 - [Open an
@@ -103,7 +103,7 @@ focused on holistic acceptance of a contribution including: backwards/forwards
 compatibility, adhering to API and flag conventions, subtle performance and
 correctness issues, interactions with other parts of the system, etc.
 
-Defined by: [CODEOWNER
+Defined by: [CODEOWNERS
 workflow](https://help.github.com/en/articles/about-code-owners).
 
 Approver status can be scoped to a part of the codebase. For example, critical
@@ -116,8 +116,9 @@ The following apply to the part of the codebase for which one would be an
 approver in the `CODEOWNERS` files.
 
 - Reviewer of the codebase for at least 1 month
-- Reviewer for or contributor of at least 10 substantial PRs to the codebase
-- Reviewed or contributed at least 20 PRs to the codebase
+- Reviewer for or author of at least 10 substantial PRs to the codebase,
+  with the definition of substantial subject to the maintainer's discretion
+  (e.g. refactors/adds new functionality rather than one-line pulls).
 - Nominated by a maintainer
   - With no objections from other maintainers
   - Done through PR to update the `CODEOWNERS`.
