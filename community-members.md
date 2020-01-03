@@ -64,16 +64,7 @@ Find out active members - approvers and maintainers of .NET SDK in [open-telemet
 
 Repo: [open-telemetry/opentelemetry-go](https://github.com/open-telemetry/opentelemetry-go)
 
-Approvers:
-
-- [Paulo Janotti](https://github.com/pjanotti), Splunk
-- [Steven Karis](https://github.com/sjkaris), Splunk
-- [Ted Young](https://github.com/tedsuo), LightStep
-
-Maintainers:
-
-- [Rahul Patel](https://github.com/rghetia), Google
-- [Josh MacDonald](https://github.com/jmacd), LightStep
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Go API and SDK can be found in the [open-telemetry/opentelemetry-go CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-go/blob/master/CONTRIBUTING.md#approvers-and-maintainers).
 
 ## JavaScript
 
