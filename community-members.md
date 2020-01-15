@@ -42,19 +42,7 @@ Maintainers (i.e., the "Technical Committee" or "TC"):
 
 ## Java
 
-Repo: [open-telemetry/opentelemetry-java](https://github.com/open-telemetry/opentelemetry-java)
-
-Approvers:
-
-- [Pavol Loffay](https://github.com/pavolloffay), RedHat
-- [Yang Song](https://github.com/songy23), Google
-- [Tyler Benson](https://github.com/tylerbenson), DataDog
-- [Armin Ruech](https://github.com/arminru), Dynatrace
-- [John Watson](https://github.com/jkwatson), NewRelic
-
-Maintainers:
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Google
-- [Carlos Alberto](https://github.com/carlosalberto), LightStep
+Find out active members - approvers and maintainers of Java SDK in [open-telemetry/opentelemetry-java](https://github.com/open-telemetry/opentelemetry-java) README file.
 
 ## .NET
 
