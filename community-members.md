@@ -75,7 +75,10 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Python API and SDK can be found in the [open-telemetry/opentelemetry-python README file](https://github.com/open-telemetry/opentelemetry-python#contributing).
 
 ## Agent and Collector
-Find out active members - approvers and maintainers of Agent and Collector in [open-telemetry/opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector) README file.
+
+Repo: [open-telemetry/opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector)
+
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Agent and Collector can be found in the [open-telemetry/opentelemetry-collector README file](https://github.com/open-telemetry/opentelemetry-collector/blob/master/CONTRIBUTING.md#owners).
 
 ## Docs and website
 
