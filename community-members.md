@@ -42,11 +42,15 @@ Maintainers (i.e., the "Technical Committee" or "TC"):
 
 ## Java
 
-Find out active members - approvers and maintainers of Java SDK in [open-telemetry/opentelemetry-java](https://github.com/open-telemetry/opentelemetry-java) README file.
+Repo: [open-telemetry/opentelemetry-java](https://github.com/open-telemetry/opentelemetry-java)
+
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Java API and SDK can be found in the [open-telemetry/opentelemetry-java README file](https://github.com/open-telemetry/opentelemetry-java#owners).
 
 ## .NET
 
-Find out active members - approvers and maintainers of .NET SDK in [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet) README file.
+Repo: [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet)
+
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry .NET API and SDK can be found in the [open-telemetry/opentelemetry-dotnet README file](https://github.com/open-telemetry/opentelemetry-dotnet).
 
 ## Golang
 
@@ -56,9 +60,13 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 ## JavaScript
 
+Repo: [open-telemetry/opentelemetry-js](https://github.com/open-telemetry/opentelemetry-js)
+
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry JavaScript API and SDK can be found in the [open-telemetry/opentelemetry-js README file](https://github.com/open-telemetry/opentelemetry-js#contributing).
 
 ## Python
+
+Repo: [open-telemetry/opentelemetry-python](https://github.com/open-telemetry/opentelemetry-python)
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Python API and SDK can be found in the [open-telemetry/opentelemetry-python README file](https://github.com/open-telemetry/opentelemetry-python#contributing).
 
