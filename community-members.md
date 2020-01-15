@@ -74,7 +74,7 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 Repo: [open-telemetry/opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector)
 
-The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Agent and Collector can be found in the [open-telemetry/opentelemetry-collector README file](https://github.com/open-telemetry/opentelemetry-collector/blob/master/CONTRIBUTING.md#owners).
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Agent and Collector can be found in the [open-telemetry/opentelemetry-collector README file](https://github.com/open-telemetry/opentelemetry-collector#owners).
 
 ## Docs and website
 
