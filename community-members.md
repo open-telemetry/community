@@ -74,18 +74,7 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 Repo: [open-telemetry/opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector)
 
-Approvers:
-- [Steve Flanders](https://github.com/flands), Splunk
-- [Steven Karis](https://github.com/sjkaris), Splunk
-- [Yang Song](https://github.com/songy23), Google
-- [Owais Lone](https://github.com/owais), Splunk
-- [Rahul Patel](https://github.com/rghetia), Google
-
-Maintainers:
-
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Google
-- [Paulo Janotti](https://github.com/pjanotti), Splunk
-- [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Agent and Collector can be found in the [open-telemetry/opentelemetry-collector README file](https://github.com/open-telemetry/opentelemetry-collector#owners).
 
 ## Docs and website
 
