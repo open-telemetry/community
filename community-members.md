@@ -75,21 +75,7 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Python API and SDK can be found in the [open-telemetry/opentelemetry-python README file](https://github.com/open-telemetry/opentelemetry-python#contributing).
 
 ## Agent and Collector
-
-Repo: [open-telemetry/opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector)
-
-Approvers:
-- [Steve Flanders](https://github.com/flands), Splunk
-- [Steven Karis](https://github.com/sjkaris), Splunk
-- [Yang Song](https://github.com/songy23), Google
-- [Owais Lone](https://github.com/owais), Splunk
-- [Rahul Patel](https://github.com/rghetia), Google
-
-Maintainers:
-
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Google
-- [Paulo Janotti](https://github.com/pjanotti), Splunk
-- [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
+Find out active members - approvers and maintainers of Agent and Collector in [open-telemetry/opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector) README file.
 
 ## Docs and website
 
