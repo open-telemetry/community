@@ -173,7 +173,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 #### Java Auto-Instrumentation
 
-Separate but related to the "Java SDK SIG", the "Java Auto-Instrumentation SIG" meets every [Thursday at 9 AM Pacific Time](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com). For more context, see [the auto-instrumentation OTEP](https://github.com/open-telemetry/oteps/blob/master/text/0001-telemetry-without-manual-instrumentation.md).
+Separate but related to the "Java SDK SIG", the "Java Auto-Instrumentation SIG" meets every [Thursday alternating between 9 AM and 3 PM Pacific Time](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com). For more context, see [the auto-instrumentation OTEP](https://github.com/open-telemetry/oteps/blob/master/text/0001-telemetry-without-manual-instrumentation.md).
 
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw/edit?usp=sharing).
 
