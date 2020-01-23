@@ -7,7 +7,7 @@ Charter](https://github.com/open-telemetry/community/blob/master/governance-char
 in alphabetical order:
 
 - [Ben Sigelman](https://github.com/bhs), LightStep, until October 2021
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Google, until October 2021
+- [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk, until October 2021
 - [Constance Caramanolis](https://github.com/ccaraman), Splunk, until October 2021
 - [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2020
 - [Morgan James McLean](https://github.com/mtwo), Google, until October 2020
