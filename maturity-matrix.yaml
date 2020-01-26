@@ -19,7 +19,7 @@
 # - API MATURITY: How stable is the component's API from a backwards- and
 #   forwards-compatibility standpoint)?
 #
-# In some cases, for instance, OpenTelemetry componants may be immature from an
+# In some cases, for instance, OpenTelemetry components may be immature from an
 # API maturity standpoint, yet be nearly 100% safe from a production standpoint
 # – and vice versa. Similarly, end-users may have more tolerance for lost
 # development time or software stability depending on their situation, so we
@@ -47,9 +47,11 @@ productionMaturityLevels:
   # typical production use cases.
   - stable
 
-# All OpenTelemetry APIs follow semver conventions (i.e.,
-# backwards-incompatibly changes should bump the major version number).
+# All OpenTelemetry APIs follow semver conventions (i.e., after v1.x,
+# backwards-incompatible changes should bump the major version number).
 apiMaturityLevels:
+  # "unimplemented" APIs do not exist yet for the component/language.
+  - unimplemented
   # "alpha" maturity APIs can change in incompatible ways at any time.
   - alpha
   # "beta" maturity APIs should not introduce backwards-incompatible changes
@@ -132,7 +134,28 @@ languages:
   ruby: ""
   erlang: ""
   python: ""
-  go: ""
+  golang:
+    traceAPI:
+      api: beta
+      production: beta
+    metricsAPI:
+      api: alpha
+      production: beta
+    contextAPI:
+      api: unimplemented
+      production: unknown
+    traceSDK:
+      api: beta
+      production: beta
+    metricsSDK:
+      api: alpha
+      production: unstable
+    contextSDK:
+      api: unimplemented
+      production: unknown
+    automaticInstrumentation:
+      api: unimplemented
+      production: unknown
   php: ""
   cpp: ""
   rust: ""
