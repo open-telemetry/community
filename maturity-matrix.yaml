@@ -39,9 +39,11 @@ productionMaturityLevels:
   # security issues.
   - unstable
   # "beta" components have been used successfully in production workloads at
-  # scale, but either due to the uncertainty introduced by active development
-  # or a small number of production deployments, they should still be used
-  # cautiously in new deployments. They do not have known security issues.
+  # scale: that is, the component is used in support of well-known product
+  # functionality at publicly-held companies. Nevertheless, either due to
+  # the uncertainty introduced by active development or a small number of
+  # production environments, they should still be used cautiously in new
+  # deployments. They do not have known security issues.
   - beta
   # "stable" components are, to the best of the author's knowledge, safe for
   # typical production use cases.
@@ -90,7 +92,7 @@ perLanguageComponents:
 # end-user programming language.
 standaloneComponents:
   collector:
-    api: beta
+    api: alpha
     production: beta
   operator:
     api: alpha
@@ -102,10 +104,12 @@ standaloneComponents:
 # repository). E.g., something like this:
 #
 # languages:
-#   logo:
-#     url: "https://raw.githubusercontent.com/open-telemetry/opentelemetry-logo/master/maturity.yaml"
+#   pascal:
+#     repoUrl: "https://github.com/open-telemetry/opentelemetry-pascal"
+#     maturityUrl: "https://raw.githubusercontent.com/open-telemetry/opentelemetry-pascal/master/maturity.yaml"
 languages:
   java:
+    repoUrl: "https://github.com/open-telemetry/opentelemetry-java"
     traceAPI:
       api: alpha
       production: beta
