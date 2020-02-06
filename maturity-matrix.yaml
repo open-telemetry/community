@@ -34,10 +34,12 @@ productionMaturityLevels:
   # between a lack of evidence about production maturity and actual evidence of
   # immaturity.
   - unknown
+
   # "unstable" components are not recommended for production workloads. They
   # may crash the process, introduce performance artifacts, or have known
   # security issues.
   - unstable
+
   # "beta" components have been used successfully in production workloads at
   # scale: that is, the component is used in support of well-known product
   # functionality at publicly-held companies. Nevertheless, either due to
@@ -45,6 +47,7 @@ productionMaturityLevels:
   # production environments, they should still be used cautiously in new
   # deployments. They do not have known security issues.
   - beta
+
   # "stable" components are, to the best of the author's knowledge, safe for
   # typical production use cases.
   - stable
@@ -54,12 +57,19 @@ productionMaturityLevels:
 apiMaturityLevels:
   # "unimplemented" APIs do not exist yet for the component/language.
   - unimplemented
+
   # "alpha" maturity APIs can change in incompatible ways at any time.
   - alpha
+
   # "beta" maturity APIs should not introduce backwards-incompatible changes
   # more than once every three months; and when those changes are introduced, the
   # authors will make a best effort to provide compatibility bridges.
+  #
+  # Also, for an API to be considered "beta", it must be supported by at least
+  # two complete implementations, and at least one of those must be for a
+  # well-known OSS project (e.g., Jaeger or Prometheus).
   - beta
+
   # "stable" maturity APIs should not introduce backwards-incompatible changes
   # more than once every twelve months, and will make every effort to provide
   # compatibility bridges if at all possible.
@@ -86,7 +96,6 @@ perLanguageComponents:
   - traceSDK
   - metricsSDK
   - contextSDK
-  - automaticInstrumentation
 
 # The maturity of the "standaloneComponents" is independent of any particular
 # end-user programming language.
@@ -128,9 +137,6 @@ languages:
     contextSDK:
       api: alpha
       production: unstable
-    automaticInstrumentation:
-      api: beta
-      production: unstable
 
   # TODO once we've converged on the schema for all of this
   js: ""
@@ -155,9 +161,6 @@ languages:
       api: alpha
       production: unstable
     contextSDK:
-      api: unimplemented
-      production: unknown
-    automaticInstrumentation:
       api: unimplemented
       production: unknown
   php: ""
