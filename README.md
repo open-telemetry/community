@@ -223,7 +223,13 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### Rust SIG
 
-The Rust SIG will start meeting regularly soon. In the mean time, please [join us on Gitter](https://gitter.im/open-telemetry/opentelemetry-rust)!
+The Rust SIG meets bi-weekly on Tuesdays, 07:00 AM PT (16:00 PM GMT) followed by 15:00 PM PST (12:00 AM GMT). Check the [Google calendar](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com&ctz=Etc%2FGMT) for the next meeting.
+
+Meeting notes are held in [this google doc](https://docs.google.com/document/d/1tGKuCsSnyT2McDncVJrMgg74_z8V06riWZa0Sr79I_4).
+
+Link to join the [Zoom meeting](https://zoom.us/j/8203130519).
+
+Rust Gitter Channel: [![Gitter chat](https://badges.gitter.im/open-telemetry/opentelemetry-rust.svg)](https://gitter.im/open-telemetry/opentelemetry-rust?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ### Website SIG
 
