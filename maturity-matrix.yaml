@@ -58,6 +58,12 @@ apiMaturityLevels:
   # "unimplemented" APIs do not exist yet for the component/language.
   - unimplemented
 
+  # "notApplicable" APIs do not and will never exist for the component/language
+  # because they are, well, not applicable. For instance, a
+  # zero-code-modification auto-instrumentation agent would be notApplicable
+  # for C99.
+  - notApplicable
+
   # "alpha" maturity APIs can change in incompatible ways at any time.
   - alpha
 
@@ -145,6 +151,7 @@ languages:
   erlang: ""
   python: ""
   golang:
+    repoUrl: "https://github.com/open-telemetry/opentelemetry-go"
     traceAPI:
       api: beta
       production: beta
