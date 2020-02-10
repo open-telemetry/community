@@ -173,7 +173,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 #### Java Auto-Instrumentation
 
-Separate but related to the "Java SDK SIG", the "Java Auto-Instrumentation SIG" meets every [Thursday alternating between 9 AM and 3 PM Pacific Time](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com). For more context, see [the auto-instrumentation OTEP](https://github.com/open-telemetry/oteps/blob/master/text/0001-telemetry-without-manual-instrumentation.md).
+Separate but related to the "Java SDK SIG", the "Java Auto-Instrumentation SIG" meets every [Thursday alternating between 9 AM and 3 PM Pacific Time](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com) [Note: Meeting at 9 AM throughout February]. For more context, see [the auto-instrumentation OTEP](https://github.com/open-telemetry/oteps/blob/master/text/0001-telemetry-without-manual-instrumentation.md).
 
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw/edit?usp=sharing).
 
@@ -197,7 +197,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### Ruby SIG
 
-The Ruby SIG meets weekly on Wednesday alternating between [9 AM PDT](https://calendar.google.com/calendar/event?eid=MXVkNG9tb3NqZmdvMGpxOHZwNHE3MzB2NWVfMjAxOTA2MTlUMTYwMDAwWiBnb29nbGUuY29tX2I3OWUzZTkwajdiYnNhMm4ycDVhbjVsZjYwQGc&ctz=America/Los_Angeles) and [4 PM PDT](https://calendar.google.com/calendar/event?eid=MGw3azJocW9kbWRyNHZxMWVncjRrMWlsMTlfMjAxOTA2MjZUMjMwMDAwWiBnb29nbGUuY29tX2I3OWUzZTkwajdiYnNhMm4ycDVhbjVsZjYwQGc&ctz=America/Los_Angeles). This meeting is subject to change depending on contributors' availability, check the [community meeting calendar](https://github.com/open-telemetry/community#community-meetings) for specific dates.
+The Ruby SIG meets weekly on Thursday at 9 AM PT. This meeting is subject to change depending on contributors' availability, check the [community meeting calendar](https://github.com/open-telemetry/community#community-meetings) for specific dates.
 
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1D15bO8o340sQm2CVZiukEJuCO_XMMHKPuTznoEhyFqE/edit).
 
@@ -223,7 +223,13 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### Rust SIG
 
-The Rust SIG will start meeting regularly soon. In the mean time, please [join us on Gitter](https://gitter.im/open-telemetry/opentelemetry-rust)!
+The Rust SIG meets bi-weekly on Tuesdays, 07:00 AM PT (16:00 PM GMT) followed by 15:00 PM PST (12:00 AM GMT). Check the [Google calendar](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com&ctz=Etc%2FGMT) for the next meeting.
+
+Meeting notes are held in [this google doc](https://docs.google.com/document/d/1tGKuCsSnyT2McDncVJrMgg74_z8V06riWZa0Sr79I_4).
+
+Link to join the [Zoom meeting](https://zoom.us/j/8203130519).
+
+Rust Gitter Channel: [![Gitter chat](https://badges.gitter.im/open-telemetry/opentelemetry-rust.svg)](https://gitter.im/open-telemetry/opentelemetry-rust?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ### Website SIG
 
