@@ -34,7 +34,7 @@ Approvers:
 
 Maintainers (i.e., the "Technical Committee" or "TC"):
 
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Google
+- [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk
 - [Carlos Alberto](https://github.com/carlosalberto), LightStep
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber
