@@ -26,8 +26,7 @@ Approvers:
 
 - [Ted Young](https://github.com/tedsuo), LightStep
 - [Isobel Redelmeier](https://github.com/iredelmeier), LightStep
-- [Alois Reitbauer](https://github.com/aloisReitbauer), Dynatrace
-- [Yang Song](https://github.com/songy23), Google
+- [Armin Ruech](https://github.com/arminru), Dynatrace
 - [Chris Kleinknecht](https://github.com/c24t), Google
 - [Reiley Yang](https://github.com/reyang), Microsoft
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
