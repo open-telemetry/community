@@ -241,6 +241,16 @@ Log SIG meets every other week on [TBD] via Zoom. Meeting notes are held in this
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/logs).
 
+### Metrics SIG
+
+The Metrics SIG meets weekly on [Thursday 11 AM PDT](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com). This meeting is subject to change depending on contributors' availability, check the calendar for specific dates.
+
+Meeting notes are held in [this google doc](https://docs.google.com/document/d/1LfDVyBJlIewwm3a0JtDtEjkusZjzQE3IAix8b0Fxy3Y/edit).
+
+Link to join the [Zoom meeting](https://zoom.us/j/8203130519).
+
+You can also join us on [gitter](https://gitter.im/open-telemetry/metrics-specs).
+
 ### Other
 
 We also considering creating SIGs for byte code injection agents and other projects.
