@@ -122,13 +122,13 @@ Dial by your location
 Meeting ID: 672 939 6170
 Find your local number: https://zoom.us/u/abrmtXWOh8
 
-#### Logs Sub-SIG
+#### Logs Working Group
 
 The Logs sub-SIG of the specifiction SIG meets every other week on Wednesdays at alternating times via [Zoom](https://zoom.us/j/8203130519). Meeting notes are held in this [doc](https://docs.google.com/document/d/1cX5fWXyWqVVzYHSFUymYUfWxUK5hT97gc23w595LmdM/edit#).
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/logs).
 
-#### Metrics Sub-SIG
+#### Metrics Working Group
 
 The Metrics sub-SIG of the specification SIG meets weekly on [Thursday 11 AM PDT](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com). This meeting is subject to change depending on contributors' availability, check the calendar for specific dates.
 
