@@ -205,7 +205,8 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### Python SDK
 
-The Python SIG meets weekly on [Thursday 8 AM PDT](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com). This meeting is subject to change depending on contributors' availability, check the calendar for specific dates.
+The Python SIG meets weekly on Thursday, alternating between 9AM and 4PM PT.
+This meeting is subject to change depending on contributors' availability, check the [calendar](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com) for specific dates.
 
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1CIMGoIOZ-c3-igzbd6_Pnxx1SjAkjwqoYSUWxPY8XIs/edit).
 
