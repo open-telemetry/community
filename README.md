@@ -150,7 +150,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### .NET SDK
 
-Regular sync up will be held initially weekly - every Tuesday at 9 AM PDT. Check
+Regular sync up held weekly on Tuesdays at alternating time - 11 AM PT and 4PM PT. Check
 the public OpenTelemetry calendar
 ([web](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com),
 [gCal](https://calendar.google.com/calendar?cid=Z29vZ2xlLmNvbV9iNzllM2U5MGo3YmJzYTJuMnA1YW41bGY2MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t),
