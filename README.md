@@ -173,7 +173,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### GoLang SDK
 
-The Golang SIG meets weekly on Thursdays at 10 AM Pacific. This meeting is subject to change depending on contributors' availability, look for the pinned message in the Gitter for specific dates (until a public calendar can be published).
+The Golang SIG meets weekly on Thursdays, alternating between at 10 AM and 3 PM PDT. This meeting is subject to change depending on contributors' availability, look for the pinned message in the Gitter for specific dates (until a public calendar can be published).
 
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1A63zSWX0x2CyCK_LoNhmQC4rqhLpYXJzXbEPDUQ2n6w/edit#).
 
