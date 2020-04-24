@@ -1,6 +1,6 @@
 # Community membership
 
-Last updated: 2019-12-19
+Last updated: 2019-03-04
 
 This doc outlines the various responsibilities of contributor roles in
 OpenTelemetry. The OpenTelemetry project is subdivided into subprojects under
@@ -181,6 +181,7 @@ The following apply to the subproject for which one would be an owner.
 - Make and approve technical design decisions for the subproject.
 - Set technical direction and priorities for the subproject.
 - Define milestones and releases.
+  - Decides on when PRs are merged to control the release scope. 
 - Mentor and guide approvers, reviewers, and contributors to the subproject.
 - Escalate *reviewer* and *maintainer* workflow concerns (i.e. responsiveness,
   availability, and general contributor community health) to the TC.
