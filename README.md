@@ -122,6 +122,22 @@ Dial by your location
 Meeting ID: 672 939 6170
 Find your local number: https://zoom.us/u/abrmtXWOh8
 
+#### Logs Working Group
+
+The Logs sub-SIG of the specifiction SIG meets every other week on Wednesdays at alternating times via [Zoom](https://zoom.us/j/8203130519). Meeting notes are held in this [doc](https://docs.google.com/document/d/1cX5fWXyWqVVzYHSFUymYUfWxUK5hT97gc23w595LmdM/edit#).
+
+You can also join us on [gitter](https://gitter.im/open-telemetry/logs).
+
+#### Metrics Working Group
+
+The Metrics sub-SIG of the specification SIG meets weekly on [Thursday 11 AM PDT](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com). This meeting is subject to change depending on contributors' availability, check the calendar for specific dates.
+
+Meeting notes are held in [this google doc](https://docs.google.com/document/d/1LfDVyBJlIewwm3a0JtDtEjkusZjzQE3IAix8b0Fxy3Y/edit).
+
+Link to join the [Zoom meeting](https://zoom.us/j/8203130519).
+
+You can also join us on [gitter](https://gitter.im/open-telemetry/metrics-specs).
+
 ### Agent/Collector
 
 The Service SIG meets every other week on [Wednesday at 9 AM PT](https://calendar.google.com/calendar/event?eid=Mmc5Z2w5anJncmFtNWFsOWVrZXVpc2RiaHRfMjAxOTA3MDNUMjEwMDAwWiBnb29nbGUuY29tX2I3OWUzZTkwajdiYnNhMm4ycDVhbjVsZjYwQGc&ctz=America/Los_Angeles).
@@ -134,7 +150,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### .NET SDK
 
-Regular sync up will be held initially weekly - every Tuesday at 9 AM PDT. Check
+Regular sync up held weekly on Tuesdays at alternating time - 11 AM PT and 4PM PT. Check
 the public OpenTelemetry calendar
 ([web](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com),
 [gCal](https://calendar.google.com/calendar?cid=Z29vZ2xlLmNvbV9iNzllM2U5MGo3YmJzYTJuMnA1YW41bGY2MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t),
@@ -157,7 +173,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### GoLang SDK
 
-The Golang SIG meets weekly on Thursdays at 10 AM Pacific. This meeting is subject to change depending on contributors' availability, look for the pinned message in the Gitter for specific dates (until a public calendar can be published).
+The Golang SIG meets weekly on Thursdays, alternating between at 10 AM and 3 PM PDT. This meeting is subject to change depending on contributors' availability, look for the pinned message in the Gitter for specific dates (until a public calendar can be published).
 
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1A63zSWX0x2CyCK_LoNhmQC4rqhLpYXJzXbEPDUQ2n6w/edit#).
 
@@ -165,7 +181,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### Java SDK
 
-The Java SIG meets weekly on [Friday at 8 AM PDT](https://calendar.google.com/calendar/embed?src=lightstep.com_uuegcsvip16hv2qq31sj08sbkk%40group.calendar.google.com).
+The Java SIG meets weekly on [Friday at 8 AM PDT](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com). 
 
 Meeting notes are held in [this doc](https://docs.google.com/document/d/1oHpisisco8J7Yk73ovx3eeXaokSMqgVuEuWNwPOajtY/edit).
 
@@ -173,7 +189,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 #### Java Auto-Instrumentation
 
-Separate but related to the "Java SDK SIG", the "Java Auto-Instrumentation SIG" meets every [Thursday alternating between 9 AM and 3 PM Pacific Time](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com) [Note: Meeting at 9 AM throughout February]. For more context, see [the auto-instrumentation OTEP](https://github.com/open-telemetry/oteps/blob/master/text/0001-telemetry-without-manual-instrumentation.md).
+Separate but related to the "Java SDK SIG", the "Java Auto-Instrumentation SIG" meets every [Thursday at 9 AM Pacific Time](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com). For more context, see [the auto-instrumentation OTEP](https://github.com/open-telemetry/oteps/blob/master/text/0001-telemetry-without-manual-instrumentation.md).
 
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw/edit?usp=sharing).
 
@@ -189,7 +205,8 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-
 
 ### Python SDK
 
-The Python SIG meets weekly on [Thursday 8 AM PDT](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com). This meeting is subject to change depending on contributors' availability, check the calendar for specific dates.
+The Python SIG meets weekly on Thursday, alternating between 9AM and 4PM PT.
+This meeting is subject to change depending on contributors' availability, check the [calendar](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com) for specific dates.
 
 Meeting notes are held in this [doc](https://docs.google.com/document/d/1CIMGoIOZ-c3-igzbd6_Pnxx1SjAkjwqoYSUWxPY8XIs/edit).
 
