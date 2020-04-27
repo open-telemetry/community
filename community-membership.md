@@ -1,6 +1,6 @@
 # Community membership
 
-Last updated: 2019-03-04
+Last updated: 2020-03-04
 
 This doc outlines the various responsibilities of contributor roles in
 OpenTelemetry. The OpenTelemetry project is subdivided into subprojects under
