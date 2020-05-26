@@ -12,7 +12,7 @@ in alphabetical order:
 - [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2020
 - [Morgan James McLean](https://github.com/mtwo), Google, until October 2020
 - [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
-- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft, until October 2021
+- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google, until October 2021
 - [Ted Young](https://github.com/tedsuo), LightStep, until October 2021
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber, until October 2021
 
@@ -36,7 +36,7 @@ Maintainers (i.e., the "Technical Committee" or "TC"):
 
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk
 - [Carlos Alberto](https://github.com/carlosalberto), LightStep
-- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Microsoft
+- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber
 
 ## Java
