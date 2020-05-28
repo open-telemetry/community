@@ -93,6 +93,27 @@ code reviews and work towards becoming an *approver* for the subproject that
 they are active in.  Acceptance of code contributions requires at least one
 approver in addition to the reviews by *members.*
 
+## Triager
+
+Triagers assist the maintainers and approvers with project management and 
+backlog organization. The specific workflows and triage requirements depend on 
+the project, and are set by the project maintainers.
+
+Defined by: [Triage permissions](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level)
+
+Traigers are not required to make code contributions, but are encouraged to be
+active participants in project meetings, chat rooms, and other discussion forums.
+
+### Requirements
+
+- Nominated by a maintainer, with no objections from other maintainers.
+
+### Responsibilities and privileges
+
+- Have an understanding of the goals and workflows defined by the maintainers.
+- Respond to new PRs and Issues by asking clarifying questions.
+- Organize the backlog by applying labels, milestones, assignees, and projects.
+
 ## Approver
 
 Code approvers are able to both review and approve code contributions, as well
