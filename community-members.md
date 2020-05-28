@@ -122,12 +122,7 @@ The list of active members (both "approvers" and "maintainers") for OpenTelemetr
 
 Repo: [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opentelemetry-php)
 
-Approvers:
-- [Brain Akins](https://github.com/bakins), Mailchimp
-
-Maintainers:
-- [Bob Strecansky](https://github.com/bobstrecansky), Mailchimp
-- [Dmitry Krokhin](https://github.com/nekufa), basis.company
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry PHP API and SDK can be found in the [open-telemetry/opentelemetry-php CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-php/CONTRIBUTING.md).
 
 ## Others
 
