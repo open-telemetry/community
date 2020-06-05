@@ -6,14 +6,14 @@ This is the current Governance Committee, per the [Governance Committee
 Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md),
 in alphabetical order:
 
-- [Ben Sigelman](https://github.com/bhs), LightStep, until October 2021
+- [Ben Sigelman](https://github.com/bhs), Lightstep, until October 2021
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk, until October 2021
 - [Constance Caramanolis](https://github.com/ccaraman), Splunk, until October 2021
 - [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2020
 - [Morgan James McLean](https://github.com/mtwo), Google, until October 2020
 - [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google, until October 2021
-- [Ted Young](https://github.com/tedsuo), LightStep, until October 2021
+- [Ted Young](https://github.com/tedsuo), Lightstep, until October 2021
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber, until October 2021
 
 ## Specifications and Proto
@@ -24,18 +24,18 @@ are maintained by technical steering committee.
 
 Approvers:
 
-- [Ted Young](https://github.com/tedsuo), LightStep
-- [Isobel Redelmeier](https://github.com/iredelmeier), LightStep
+- [Ted Young](https://github.com/tedsuo), Lightstep
+- [Isobel Redelmeier](https://github.com/iredelmeier)
 - [Armin Ruech](https://github.com/arminru), Dynatrace
 - [Chris Kleinknecht](https://github.com/c24t), Google
 - [Reiley Yang](https://github.com/reyang), Microsoft
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
-- [Josh MacDonald](https://github.com/jmacd), LightStep
+- [Josh MacDonald](https://github.com/jmacd), Lightstep
 
 Maintainers (i.e., the "Technical Committee" or "TC"):
 
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk
-- [Carlos Alberto](https://github.com/carlosalberto), LightStep
+- [Carlos Alberto](https://github.com/carlosalberto), Lightstep
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
 - [Yuri Shkuro](https://github.com/yurishkuro), Uber
 
@@ -106,13 +106,13 @@ Repo: [open-telemetry/opentelemetry-cpp](https://github.com/open-telemetry/opent
 
 Approvers:
 - [Max Golovanov](https://github.com/maxgolov), Microsoft
-- [Josh MacDonald](https://github.com/jmacd), LightStep
+- [Josh MacDonald](https://github.com/jmacd), Lightstep
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 
 Maintainers:
 - [Emil Mikulic](https://github.com/g-easy), Google
 - [Reiley Yang](https://github.com/reyang), Microsoft
-- [Ryan Burn](https://github.com/rnburn), LightStep
+- [Ryan Burn](https://github.com/rnburn), Lightstep
 
 ## Ruby
 
