@@ -25,7 +25,7 @@ are maintained by technical steering committee.
 Approvers:
 
 - [Ted Young](https://github.com/tedsuo), Lightstep
-- [Isobel Redelmeier](https://github.com/iredelmeier), Lightstep
+- [Isobel Redelmeier](https://github.com/iredelmeier)
 - [Armin Ruech](https://github.com/arminru), Dynatrace
 - [Chris Kleinknecht](https://github.com/c24t), Google
 - [Reiley Yang](https://github.com/reyang), Microsoft
