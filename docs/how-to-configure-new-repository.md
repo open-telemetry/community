@@ -48,6 +48,9 @@ policies:
    repositores may opt-in for bigger number of required reviews.
 3. Every repo MUST enforce `cla/linuxfoundation` check for `Require status
    checks to pass before merging` section.
+   During the transition period, the `CNCF` EasyCLA check MAY be enabled.
+   After the transition period, it MUST be enabled, and `cla/linuxfoundation`
+   MUST NOT be enabled.
 4. It is a good practice to check the `Include administrators` setting.
 5. Repository MUST enforce `Restrict who can push to matching branches` setting
    to only allow the members of `foo-maintainers` to push to the `master`
