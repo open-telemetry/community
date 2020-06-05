@@ -10,7 +10,7 @@ and file new ones, all feedback welcome!
 ## Sign the CLA
 
 Before you can contribute, you will need to sign the [Contributor License
-Agreement](https://identity.linuxfoundation.org/projects/cncf).
+Agreement](https://docs.linuxfoundation.org/docs/communitybridge/communitybridge-easycla/contributors).
 
 ## Code of Conduct
 
