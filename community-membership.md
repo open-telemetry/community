@@ -101,7 +101,7 @@ the project, and are set by the project maintainers.
 
 Defined by: [Triage permissions](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level)
 
-Traigers are not required to make code contributions, but are encouraged to be
+Triagers are not required to make code contributions, but are encouraged to be
 active participants in project meetings, chat rooms, and other discussion forums.
 
 ### Requirements
