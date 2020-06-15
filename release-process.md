@@ -60,3 +60,11 @@ These items need to be sorted.
   * Specify the opentelemetry-specification version that the release adheres to.
   * Can have more categories if not confusing e.g. https://github.com/open-telemetry/opentelemetry-js/releases
 * Where to get the artifacts that each SIG should describe; and from there, pointers to system requirements, how to install, etc.
+* Github labels to represent spec sections (taken from spec repo):
+  * context
+  * correlationcontext
+  * logs
+  * metrics
+  * resource
+  * trace
+  * protocol
