@@ -24,3 +24,5 @@ This file is intended to list all the assets controlled by OpenTelemetry.
     - Owner: Mayur Kale @mayurkale22
     - Admin: Daniel Dyla @dyladan
     - Member: Bogdan Drutu @bogdandrutu
+- [Calendar Google Group](https://groups.google.com/forum/#!forum/opentelemetry-calendar)
+    - Owner: Morgan McLean @mtwo
