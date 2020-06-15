@@ -224,15 +224,13 @@ Meeting notes are held in this [doc](https://docs.google.com/document/d/1D15bO8o
 
 You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-ruby).
 
-### Erlang/Elixir SDK
+### Erlang/Elixir SIG
 
-Regular sync up will be held initially weekly in the [gitter channel](https://gitter.im/open-telemetry/opentelemetry-erlang).
+Weekly sync ups are on Thursdays alternating between 07:00 AM PT (16:00 PM GMT) followed by 15:00 PM PST (12:00 AM GMT). See the [community Google calendar](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com) for all OpenTelemetry events and meetings.
 
-Monthly sync ups will be part of monthly [Erlang Ecosystem Foundation Observability Working Group](https://erlef.org/wg/observability) meetings. See the [calendar](https://calendar.google.com/calendar?cid=N25nZ2RiNWhuZnFwODI4b2FwaTExOWprZXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ) for dates.
+Meeting notes are held in [this Google doc](https://docs.google.com/document/d/1EbBiRjBc_cBf0T_B5OtNRPhbD4jdBrVYJAy8euCDrUI/edit?usp=sharing).
 
-Meeting notes are held in a [Google doc](https://docs.google.com/document/d/18JVh6ICLyRCJBpRVIXwcR1fb-K4qRX3WHYgtM7mFx2U/edit?usp=sharing).
-
-You can also join us on [gitter](https://gitter.im/open-telemetry/opentelemetry-erlang).
+Erlang/Elixir Gitter Channel: [![Gitter chat](https://badges.gitter.im/open-telemetry/opentelemetry-erlang.svg)](https://gitter.im/open-telemetry/opentelemetry-erlang?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ### PHP SIG
 
