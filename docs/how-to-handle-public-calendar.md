@@ -22,9 +22,7 @@ All rooms are configured the same way. Some notes on meetings configuration:
 - **There is no time limit on the length of the meeting**. Please make sure nobody is
   using this room for another meeting on the calendar when meeting is going long
   over time.
-- **Auto-recording is enabled for all rooms**. Recordings will be sent by CNCF
-  tech team to OpenTelemetry representatives for publishing on GitHub.
-  **TODO:** Update information on where the recordings will be published.
+- **Auto-recording is enabled for all rooms**. All OpenTelemetry public meetings are being recorded automatically. Find recordings at [YouTube](https://www.google.com/url?q=https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA&sa=D&ust=1592721765342000&usg=AOvVaw04g46_vdizqNIMfR1o7lJp).
 
 Every meeting must contain a link to the meeting notes. The meeting notes
 document must be shared with write or commenting permissions.
