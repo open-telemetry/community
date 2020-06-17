@@ -142,7 +142,7 @@ You can also join us on [gitter](https://gitter.im/open-telemetry/metrics-specs)
 
 ### Agent/Collector
 
-The Service SIG meets every other week on [Wednesday at 9 AM PT](https://calendar.google.com/calendar/event?eid=Mmc5Z2w5anJncmFtNWFsOWVrZXVpc2RiaHRfMjAxOTA3MDNUMjEwMDAwWiBnb29nbGUuY29tX2I3OWUzZTkwajdiYnNhMm4ycDVhbjVsZjYwQGc&ctz=America/Los_Angeles).
+The Service SIG meets every Wednesday, alternating between [9 AM and 2 PM PT](https://calendar.google.com/calendar/event?eid=Mmc5Z2w5anJncmFtNWFsOWVrZXVpc2RiaHRfMjAxOTA3MDNUMjEwMDAwWiBnb29nbGUuY29tX2I3OWUzZTkwajdiYnNhMm4ycDVhbjVsZjYwQGc&ctz=America/Los_Angeles).
 
 Meeting notes are held in [this doc](https://docs.google.com/document/d/1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE/edit?usp=sharing).
 
