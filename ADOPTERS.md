@@ -2,16 +2,16 @@
 
 A non-exhaustive unordered list of organizations that have adopted OpenTelemetry.
 
-**_[AppDirect](https://www.appdirect.com/)_**
+[AppDirect](https://www.appdirect.com/)
 
-**_[Google Cloud Platform](https://cloud.google.com)_** uses the OpenTelemetry collector as an agent and forwarder. Cloud Trace and Monitoring use the OpenTelemetry SDKs to capture metrics and traces from customers' applications.
+[Google Cloud Platform](https://cloud.google.com) uses the OpenTelemetry collector as an agent and forwarder. Cloud Trace and Monitoring use the OpenTelemetry SDKs to capture metrics and traces from customers' applications.
 
-**_[Grafana Labs](https://grafana.com/)_**
+[Grafana Labs](https://grafana.com/)
 
-**_[OrderMyGear](https://www.ordermygear.com/)_**
+[OrderMyGear](https://www.ordermygear.com/)
 
-**_[Shopify](https://www.shopify.com/)_**
+[Shopify](https://www.shopify.com/)
 
-**_[Splunk](https://www.splunk.com/)_**
+[Splunk](https://www.splunk.com/)
 
-**_[Wandera](https://www.wandera.com/)_**
+[Wandera](https://www.wandera.com/)
