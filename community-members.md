@@ -22,12 +22,22 @@ in alphabetical order:
 and [Proto](https://github.com/open-telemetry/opentelemetry-proto)
 are maintained by technical steering committee.
 
-Approvers:
-
-- [Ted Young](https://github.com/tedsuo), Lightstep
-- [Isobel Redelmeier](https://github.com/iredelmeier)
+Trace Approvers:
 - [Armin Ruech](https://github.com/arminru), Dynatrace
-- [Chris Kleinknecht](https://github.com/c24t), Google
+- [Christian Neumüller](https://github.com/Oberon00), Dynatrace
+- [Ted Young](https://github.com/tedsuo), Lightstep
+
+Metrics Approvers:
+- [John Watson](https://github.com/jkwatson), New Relic
+- [Tyler Yahn](https://github.com/MrAlias), New Relic
+- [Leighton Chen](https://github.com/lzchen), Microsoft
+- [Cijo Thomas](https://github.com/cijothomas), Microsoft
+
+Logs Approvers:
+- TBD
+
+Global Approvers:
+
 - [Reiley Yang](https://github.com/reyang), Microsoft
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 - [Josh MacDonald](https://github.com/jmacd), Lightstep
