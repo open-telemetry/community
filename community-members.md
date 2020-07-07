@@ -34,7 +34,8 @@ Metrics Approvers:
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
 
 Logs Approvers:
-- TBD
+- [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
+- [David Poncelow](https://github.com/zenmoto), Splunk
 
 Global Approvers:
 
