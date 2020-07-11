@@ -56,6 +56,12 @@ Repo: [open-telemetry/opentelemetry-java](https://github.com/open-telemetry/open
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Java API and SDK can be found in the [open-telemetry/opentelemetry-java README file](https://github.com/open-telemetry/opentelemetry-java#owners).
 
+## Java Instrumentation
+
+Repo: [open-telemetry/opentelemetry-java-instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation)
+
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Java Instrumentation can be found in the [open-telemetry/opentelemetry-java-instrumentation CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/master/CONTRIBUTING.md#approvers-and-maintainers).
+
 ## .NET
 
 Repo: [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet)
