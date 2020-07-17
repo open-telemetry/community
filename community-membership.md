@@ -110,6 +110,7 @@ meetings, chat rooms, and other discussion forums.
 ### Requirements
 
 - Nominated by a maintainer, with no objections from other maintainers.
+- Consistently attend meetings and interact with issues for at least 1 month.
 
 ### Responsibilities and privileges
 
