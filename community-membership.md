@@ -103,7 +103,7 @@ Defined by: [Triage permissions](https://help.github.com/en/github/setting-up-an
 with the names of the current Triagers commited to git, either in CONTRIBUTING, 
 CODEOWNERS, or the botom of the README.
 
-Triagers may be code cotributors, but writing code is not a requirement for 
+Triagers may be code contributors, but writing code is not a requirement for 
 becoming a triager. Triagers are encouraged to be active participants in project 
 meetings, chat rooms, and other discussion forums.
 
