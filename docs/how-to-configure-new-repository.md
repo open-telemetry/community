@@ -16,8 +16,9 @@ for the repository.
 
 1. Every repository has three teams associated with it. Typically for the
    repository `opentelemetry-foo` they will be named `foo-triagers`, `foo-approvers`,
-   and `foo-maintainers`. `foo-maintainers` is a child of `foo-approvers` as it
-   always contains subset of people and defines a larger scope of privileges.
+   and `foo-maintainers`. `foo-maintainers` is a child of `foo-approvers`, and 
+   `foo-approvers` is a child of `foo-triagers`, as it each group always contains 
+   a subset of people and defines a larger scope of privileges.
 2. Every member of `foo-maintainers` should be included in
    `foo-approvers` and `foo-triagers` explicitly, with the "Maintainer" GitHub 
    privileges. This allows repository maintainers to invite new approvers and 
