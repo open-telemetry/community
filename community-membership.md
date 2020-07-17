@@ -128,8 +128,7 @@ Defined by: [CODEOWNERS
 workflow](https://help.github.com/en/articles/about-code-owners).
 
 Approver status can be scoped to a part of the codebase. For example, critical
-core components may have higher bar of becoming an approver. Some approvers may
-only be doing issues triage and have no approval rights.
+core components may have higher bar of becoming an approver.
 
 ### Requirements
 
