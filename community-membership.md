@@ -93,6 +93,31 @@ code reviews and work towards becoming an *approver* for the subproject that
 they are active in.  Acceptance of code contributions requires at least one
 approver in addition to the reviews by *members.*
 
+## Triager
+
+Triagers assist the maintainers and approvers with project management and 
+backlog organization. The specific workflows and triage requirements depend on 
+the project, and are set by the project maintainers.
+
+Defined by: [Triage permissions](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level), 
+with the names of the current Triagers commited to git, either in CONTRIBUTING, 
+CODEOWNERS, or the botom of the README.
+
+Triagers may be code contributors, but writing code is not a requirement for 
+becoming a triager. Triagers are encouraged to be active participants in project 
+meetings, chat rooms, and other discussion forums.
+
+### Requirements
+
+- Nominated by a maintainer, with no objections from other maintainers.
+- Consistently attend meetings and interact with issues for at least 1 month.
+
+### Responsibilities and privileges
+
+- Have an understanding of the goals and workflows defined by the maintainers.
+- Respond to new PRs and Issues by asking clarifying questions.
+- Organize the backlog by applying labels, milestones, assignees, and projects.
+
 ## Approver
 
 Code approvers are able to both review and approve code contributions, as well
@@ -107,8 +132,7 @@ Defined by: [CODEOWNERS
 workflow](https://help.github.com/en/articles/about-code-owners).
 
 Approver status can be scoped to a part of the codebase. For example, critical
-core components may have higher bar of becoming an approver. Some approvers may
-only be doing issues triage and have no approval rights.
+core components may have higher bar for becoming an approver.
 
 ### Requirements
 

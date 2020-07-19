@@ -14,23 +14,22 @@ Documents [Community Membership](../community-membership.md) and
 [CONTRIBUTING](../CONTRIBUTING.md) define how permissions are typically set up
 for the repository.
 
-1. Every repository has two teams associated with it. Typically for the
-   repository `opentelemetry-foo` they will be named `foo-approvers` and
-   `foo-maintainers`. `foo-maintainers` is a child of `foo-approvers` as it
-   always contains subset of people and defines larger scope of privileges.
-2. Even though the members of `foo-maintainers` are included in `foo-approvers`
-   transitively, every member of `foo-maintainers` should be included in
-   `foo-approvers` explicitly, and with the "Maintainer" GitHub privileges. So
-   repository maintainers can invite new approvers to the team.
-3. The team `foo-approvers` has `Write` permissions for the repository.
-4. The team `foo-maintainers` has `Maintain (beta)` permissions for the
+1. Every repository has three teams associated with it. Typically for the
+   repository `opentelemetry-foo` they will be named `foo-triagers`, `foo-approvers`,
+   and `foo-maintainers`. `foo-maintainers` is a child of `foo-approvers`, and 
+   `foo-approvers` is a child of `foo-triagers`, as it each group always contains 
+   a subset of people and defines a larger scope of privileges.
+2. Every member of `foo-maintainers` should be included in
+   `foo-approvers` and `foo-triagers` explicitly, with the "Maintainer" GitHub 
+   privileges. This allows repository maintainers to invite new approvers and 
+   triagers to the team.
+3. The team `foo-triagers` has `Triage` permissions for the repository.
+4. The team `foo-approvers` has `Write` permissions for the repository.
+5. The team `foo-maintainers` has `Maintain (beta)` permissions for the
    repository.
-5. Root-level `CODEOWNERS` file on the repository should include superset of
-   people from both teams.
-6. Every repository has Admins group defined as Admins for the repository.
-7. Some repositories may include more individuals outside of approvers and
-   maintainers teams with the `Write` permissions. Typically for issues tracking
-   and triage purpose.
+6. Root-level `CODEOWNERS` file on the repository should include superset of
+   people from both `foo-approvers` and `foo-maintainers`.
+7. Every repository has Admins group defined as Admins for the repository.
 8. Some repositories may include more individuals with `Admin` permissions.
    Typically to help set up repository, CI, web hooks or other administrative
    work.
