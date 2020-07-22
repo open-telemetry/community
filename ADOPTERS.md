@@ -8,6 +8,8 @@ A non-exhaustive unordered list of organizations that have adopted OpenTelemetry
 
 [Grafana Labs](https://grafana.com/)
 
+[Honeycomb](honeycomb.io) uses OpenTelemetry to instrument its querying frontend service. Several of its customers use OpenTelemetry to send data to Honeycomb.
+
 [Jaeger](https://jaegertracing.io) backend binaries are built on top of OpenTelemetry collector ([blog post](https://medium.com/jaegertracing/jaeger-embraces-opentelemetry-collector-90a545cbc24)).
 
 [OrderMyGear](https://www.ordermygear.com/)
