@@ -22,12 +22,23 @@ in alphabetical order:
 and [Proto](https://github.com/open-telemetry/opentelemetry-proto)
 are maintained by technical steering committee.
 
-Approvers:
-
-- [Ted Young](https://github.com/tedsuo), Lightstep
-- [Isobel Redelmeier](https://github.com/iredelmeier)
+Trace Approvers:
 - [Armin Ruech](https://github.com/arminru), Dynatrace
-- [Chris Kleinknecht](https://github.com/c24t), Google
+- [Christian Neumüller](https://github.com/Oberon00), Dynatrace
+- [Ted Young](https://github.com/tedsuo), Lightstep
+
+Metrics Approvers:
+- [John Watson](https://github.com/jkwatson), New Relic
+- [Tyler Yahn](https://github.com/MrAlias), New Relic
+- [Leighton Chen](https://github.com/lzchen), Microsoft
+- [Cijo Thomas](https://github.com/cijothomas), Microsoft
+
+Logs Approvers:
+- [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
+- [David Poncelow](https://github.com/zenmoto), Splunk
+
+Global Approvers:
+
 - [Reiley Yang](https://github.com/reyang), Microsoft
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 - [Josh MacDonald](https://github.com/jmacd), Lightstep
@@ -44,6 +55,12 @@ Maintainers (i.e., the "Technical Committee" or "TC"):
 Repo: [open-telemetry/opentelemetry-java](https://github.com/open-telemetry/opentelemetry-java)
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Java API and SDK can be found in the [open-telemetry/opentelemetry-java README file](https://github.com/open-telemetry/opentelemetry-java#owners).
+
+### Java Instrumentation
+
+Repo: [open-telemetry/opentelemetry-java-instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation)
+
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Java Instrumentation can be found in the [open-telemetry/opentelemetry-java-instrumentation CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/master/CONTRIBUTING.md#approvers-and-maintainers).
 
 ## .NET
 
