@@ -59,9 +59,10 @@ Used by the OpenTelemetry Governance Committee for internal communication. Also 
 
 #### Public Communication Requests
 - List name: cncf-opentelemetry-comms@lists.cncf.io
-- Membership: David Klein + Morgan McLean + Governance committee
+- Signup: https://lists.cncf.io/g/cncf-opentelemetry-comms
+- Membership: Governance committee and open for anyone
 - Write Permissions: anyone
-- Read Permissions: members
+- Read Permissions: anyone
 
 Mailing list to notify and request reviews of upcoming announcements, or request a post on the OpenTelemetry Twitter account or other public channels.
 
