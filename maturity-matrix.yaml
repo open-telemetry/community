@@ -173,3 +173,8 @@ languages:
   php: ""
   cpp: ""
   rust: ""
+
+otlp:
+  traces: stable
+  metrics: alpha
+  common: stable
