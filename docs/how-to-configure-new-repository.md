@@ -29,8 +29,7 @@ for the repository.
    repository.
 6. Root-level `CODEOWNERS` file on the repository should include superset of
    people from both `foo-approvers` and `foo-maintainers`.
-7. Every repository has Admins group defined as Admins for the repository.
-8. Some repositories may include more individuals with `Admin` permissions.
+7. Some repositories may include more individuals with `Admin` permissions.
    Typically to help set up repository, CI, web hooks or other administrative
    work.
 
