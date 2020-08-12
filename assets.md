@@ -18,8 +18,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 - YouTube channel [OpenTelemetry](https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos). 
     - Ask any of the following people if you need to manage the feed:
     - Owner: Amye Scavarda Perrin (CNCF rep)
-    - Managers: Sergey Kanzhelev, Austin Parker
-    - Maintainer: Eddy Nakamura
+    - Managers: Sergey Kanzhelev, Austin Parker, Eddy Nakamura
 - NPM [OpenTelemetry Organization](https://www.npmjs.com/settings/opentelemetry/packages)
     - Ask any of the following people if you need access
     - Owner: Mayur Kale @mayurkale22
