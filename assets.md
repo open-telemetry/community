@@ -19,6 +19,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
     - Ask any of the following people if you need to manage the feed:
     - Owner: Amye Scavarda Perrin (CNCF rep)
     - Managers: Sergey Kanzhelev, Austin Parker
+    - Maintainer: Eddy Nakamura
 - NPM [OpenTelemetry Organization](https://www.npmjs.com/settings/opentelemetry/packages)
     - Ask any of the following people if you need access
     - Owner: Mayur Kale @mayurkale22

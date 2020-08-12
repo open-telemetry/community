@@ -19,7 +19,10 @@ namespace OpenTelemetryYoutube
         {
             try
             {
-                new Program().Run().Wait();
+                Console.WriteLine("Path to secret.json");
+                string path = Console.ReadLine();
+
+                new Program().Run(path).Wait();
             }
             catch (AggregateException ex)
             {
@@ -30,10 +33,10 @@ namespace OpenTelemetryYoutube
             }
         }
 
-        private async Task Run()
+        private async Task Run(string path)
         {
             UserCredential credential;
-            using (var stream = new FileStream("secret.json", FileMode.Open, FileAccess.Read))
+            using (var stream = new FileStream(path, FileMode.Open, FileAccess.Read))
             {
                 credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
                     GoogleClientSecrets.Load(stream).Secrets,
