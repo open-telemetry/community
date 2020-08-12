@@ -14,6 +14,9 @@ namespace OpenTelemetryYoutube
 {
     class Program
     {
+        // https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA
+        private const string openTelemetryChannelId = "UCHZDBZTIfdy94xMjMKz-_MA";
+
         [STAThread]
         static void Main(string[] args)
         {
@@ -59,7 +62,7 @@ namespace OpenTelemetryYoutube
             // Retrieve the contentDetails part of the channel resource for the authenticated user's channel.
             var channelsListResponse = await channelsListRequest.ExecuteAsync();
 
-            foreach (var channel in channelsListResponse.Items)
+            foreach (var channel in channelsListResponse.Items.Where(c => c.Id == openTelemetryChannelId))
             {
                 await ProcessChannel(youtubeService, channel);
             }
@@ -108,6 +111,8 @@ namespace OpenTelemetryYoutube
         {
             var time = XmlConvert.ToTimeSpan(videoItem.ContentDetails.Duration);
 
+            // our processed videos start with 2020-08-12, so, 202 is the start of a know pattern
+            // that we know that the video already been processed. 202x = 2020, 2021, etc.
             // video that doesn't start with 202x and has totalMinutes > 30, we will process
             if (!videoItem.Snippet.Title.StartsWith("202") && time.TotalMinutes > 30)
             {
