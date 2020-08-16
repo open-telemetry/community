@@ -121,15 +121,8 @@ Maintainers:
 
 Repo: [open-telemetry/opentelemetry-cpp](https://github.com/open-telemetry/opentelemetry-cpp)
 
-Approvers:
-- [Max Golovanov](https://github.com/maxgolov), Microsoft
-- [Josh MacDonald](https://github.com/jmacd), Lightstep
-- [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
+The list of active members (both "approvers" and "maintainers") for OpenTelemetry Ruby can be found in the [open-telemetry/opentelemetry-cpp README file](https://github.com/open-telemetry/opentelemetry-cpp#contributing).
 
-Maintainers:
-- [Emil Mikulic](https://github.com/g-easy), Google
-- [Reiley Yang](https://github.com/reyang), Microsoft
-- [Ryan Burn](https://github.com/rnburn), Lightstep
 
 ## Ruby
 
