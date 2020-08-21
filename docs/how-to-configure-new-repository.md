@@ -45,7 +45,9 @@ policies:
 2. The default setting for `Required approving reviews` is `1` approval. Individual 
    repositores may opt-in for bigger number of required reviews.
 3. Every repo MUST enforce the CNCF `EasyCLA` check under the
-   `Require status checks to pass before merging` section.
+   `Require status checks to pass before merging` section. (if the check isn't
+   showing, have a CLA manager [enable the check for the
+   repo](https://project.lfcla.com/#/project/a0941000002wBz4AAE/cla))
 4. It is a good practice to check the `Include administrators` setting.
 5. Repository MUST enforce `Restrict who can push to matching branches` setting
    to only allow the members of `foo-maintainers` to push to the `master`
