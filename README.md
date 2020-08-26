@@ -164,7 +164,6 @@ Meeting notes are held in [this google doc](https://docs.google.com/document/d/1
 
 Link to join the meeting: https://zoom.us/j/8287234601.
 
-https://gitter.im/open-telemetry/opentelemetry-dotnet-auto-instr
 .NET Gitter Channel: [![Gitter chat](https://badges.gitter.im/open-telemetry/opentelemetry-dotnet.svg)](https://gitter.im/open-telemetry/opentelemetry-dotnet-auto-instr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ### .NET SDK
