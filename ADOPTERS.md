@@ -23,3 +23,5 @@ A non-exhaustive unordered list of organizations that have adopted OpenTelemetry
 [Splunk](https://www.splunk.com/)
 
 [Wandera](https://www.wandera.com/)
+
+[Zocdoc](https://www.zocdoc.com/)
