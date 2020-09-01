@@ -54,7 +54,7 @@ Maintainers (i.e., the "Technical Committee" or "TC"):
 
 Repo: [open-telemetry/opentelemetry-java](https://github.com/open-telemetry/opentelemetry-java)
 
-The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Java API and SDK can be found in the [open-telemetry/opentelemetry-java README file](https://github.com/open-telemetry/opentelemetry-java#owners).
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Java API and SDK can be found in the [open-telemetry/opentelemetry-java README file](https://github.com/open-telemetry/opentelemetry-java#contributing).
 
 ### Java Instrumentation
 
@@ -66,7 +66,7 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 Repo: [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet)
 
-The list of active members (both "approvers" and "maintainers") for the OpenTelemetry .NET API and SDK can be found in the [open-telemetry/opentelemetry-dotnet README file](https://github.com/open-telemetry/opentelemetry-dotnet).
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry .NET API and SDK can be found in the [open-telemetry/opentelemetry-dotnet README file](https://github.com/open-telemetry/opentelemetry-dotnet#contributing).
 
 ## Golang
 
@@ -90,7 +90,7 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 Repo: [open-telemetry/opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector)
 
-The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Agent and Collector can be found in the [open-telemetry/opentelemetry-collector README file](https://github.com/open-telemetry/opentelemetry-collector#owners).
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Agent and Collector can be found in the [open-telemetry/opentelemetry-collector README file](https://github.com/open-telemetry/opentelemetry-collector#contributing).
 
 ## Docs and website
 
@@ -109,13 +109,7 @@ Maintainers:
 
 Repo: [open-telemetry/opentelemetry-erlang](https://github.com/open-telemetry/opentelemetry-erlang)
 
-Approvers:
-- [Fred Hebert](https://github.com/ferd), Postmates Inc.
-
-Maintainers:
-- [Łukasz Jan Niemier](https://github.com/hauleth),
-- [Ilya Khaprov](https://github.com/deadtrickster), KOBIL Systems
-- [Tristan Sloughter](https://github.com/tsloughter), Postmates Inc.
+The list of active members (both "approvers" and "maintainers") for OpenTelemetry Ruby can be found in the [open-telemetry/opentelemetry-erlang README file](https://github.com/open-telemetry/opentelemetry-erlang#contributing).
 
 ## C++
 
@@ -125,6 +119,9 @@ The list of active members (both "approvers" and "maintainers") for OpenTelemetr
 
 
 ## Ruby
+
+Repo: [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opentelemetry-ruby)
+
 
 The list of active members (both "approvers" and "maintainers") for OpenTelemetry Ruby can be found in the [open-telemetry/opentelemetry-ruby README file](https://github.com/open-telemetry/opentelemetry-ruby#contributing).
 
