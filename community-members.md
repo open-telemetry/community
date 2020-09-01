@@ -122,7 +122,6 @@ The list of active members (both "approvers" and "maintainers") for OpenTelemetr
 
 Repo: [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opentelemetry-ruby)
 
-
 The list of active members (both "approvers" and "maintainers") for OpenTelemetry Ruby can be found in the [open-telemetry/opentelemetry-ruby README file](https://github.com/open-telemetry/opentelemetry-ruby#contributing).
 
 ## PHP
