@@ -109,7 +109,7 @@ Maintainers:
 
 Repo: [open-telemetry/opentelemetry-erlang](https://github.com/open-telemetry/opentelemetry-erlang)
 
-The list of active members (both "approvers" and "maintainers") for OpenTelemetry Ruby can be found in the [open-telemetry/opentelemetry-erlang README file](https://github.com/open-telemetry/opentelemetry-erlang#contributing).
+The list of active members (both "approvers" and "maintainers") for OpenTelemetry Erlang can be found in the [open-telemetry/opentelemetry-erlang README file](https://github.com/open-telemetry/opentelemetry-erlang#contributing).
 
 ## C++
 
