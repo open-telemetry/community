@@ -14,7 +14,7 @@ in alphabetical order:
 - [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google, until October 2021
 - [Ted Young](https://github.com/tedsuo), Lightstep, until October 2021
-- [Yuri Shkuro](https://github.com/yurishkuro), Uber, until October 2021
+- [Yuri Shkuro](https://github.com/yurishkuro), Facebook, until October 2021
 
 ## Specifications and Proto
 
@@ -48,7 +48,7 @@ Maintainers (i.e., the "Technical Committee" or "TC"):
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk
 - [Carlos Alberto](https://github.com/carlosalberto), Lightstep
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
-- [Yuri Shkuro](https://github.com/yurishkuro), Uber
+- [Yuri Shkuro](https://github.com/yurishkuro), Facebook
 
 ## Java
 
