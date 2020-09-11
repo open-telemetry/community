@@ -12,6 +12,11 @@ and file new ones, all feedback welcome!
 Before you can contribute, you will need to sign the [Contributor License
 Agreement](https://docs.linuxfoundation.org/docs/communitybridge/communitybridge-easycla/contributors).
 
+## Copyright Notices
+
+OpenTelemetry follows [CNCF recommendations](https://github.com/cncf/foundation/blob/master/copyright-notices.md)
+for copyright notices.
+
 ## Code of Conduct
 
 Please make sure to read and observe our [Code of
