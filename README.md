@@ -1,6 +1,4 @@
-# Community
-
-OpenTelemetry community content.
+# <img src="https://opentelemetry.io/img/logos/opentelemetry-logo-nav.png" alt="OpenTelemetry Icon" width="25" height=""> OpenTelemetry community content
 
 <details>
 <summary>
@@ -10,16 +8,16 @@ Table of Contents
 * [Getting Involved](#getting-involved)
 * [Governing Bodies](#governing-bodies)
 * [Communication](#communication)
+  * [Instant Messaging](#instant-messaging)
   * [Calendar](#calendar)
   * [Mailing Lists](#mailing-lists)
-  * [License](#license)
-  * [Logos and Branding Guide](#logo-and-branding-guide)
-* [Community Meetings](#community-meetings)
+  * [Community Meetings](#community-meetings)
+* [License](#license)
+* [Logos and Branding Guide](#logo-and-branding-guide)
 * [Special Interest Groups](#special-interest-groups)
 * [Related Groups](#related-groups)
 
 </details>
-<br/>
 
 ## Get Involved
 
@@ -31,7 +29,7 @@ a friendly, collaborative group and look forward to working together!
 
 ## Governing Bodies
 
-* [Governance Committee](./governance-charter.md)
+* [Governance Committee (GC)](./governance-charter.md)
 * [Technical Committee (TC)](./tech-committee-charter.md)
 
 ## Communication
@@ -62,13 +60,21 @@ Group](https://groups.google.com/forum/#!forum/opentelemetry-calendar).
 
 List Name|Signup|Membership|Write Permissions|Read Permissions|Notes|
 ---------|------|----------|-----------------|----------------|-----|
-cncf-opentelemetry-community@lists.cncf.io|[Here](https://lists.cncf.io/g/cncf-opentelemetry-community)|anyone|TC and Governance committee|anyone|<details><summary>Notes</summary>The community mailing list is for anybody who wants to monitor the latest news from the project. It is used to send updates on community meetings and announcements about new projects and SIGs. There is a minimal moderation for a new users to reduce spam, new users are approved after one post.</details>|
+cncf-opentelemetry-community@lists.cncf.io|[Here](https://lists.cncf.io/g/cncf-opentelemetry-community)|anyone|GC and TC|anyone|<details><summary>Notes</summary>The community mailing list is for anybody who wants to monitor the latest news from the project. It is used to send updates on community meetings and announcements about new projects and SIGs. There is a minimal moderation for a new users to reduce spam, new users are approved after one post.</details>|
 cncf-opentelemetry-contributors@lists.cncf.io|[Here](https://lists.cncf.io/g/cncf-opentelemetry-contributors)|anyone|anyone|anyone|<details><summary>Notes</summary>The discussions mailing list is for anyone who is interested in contributing to OpenTelemetry or has questions (related to the contribution, technical issues,etc) they’d like to discuss. Will be used to announce updates related to how the project is being developed and ask general contribution questions related to the contribution processes. No approval is required to join.</details>|
 cncf-opentelemetry-tc@lists.cncf.io|N/A|TC|anyone|members|<details><summary>Notes</summary>Used by the OpenTelemetry Technical Committee for internal communication. This mailing list should be used sparingly as we strive to keep all communication public. It only should be used to contact the Technical Committee with questions that cannot be discussed publicly on GitHub, Gitter, or the community or contributors mailing lists.</details>|
-cncf-opentelemetry-governance@lists.cncf.io|N/A|Governance Committee|anyone|members|<details><summary>Notes</summary>Used by the OpenTelemetry Governance Committee for internal communication. Also can be used to contact the Governance Committee for questions that cannot be discussed publicly on GitHub, Gitter, or other mailing lists. For instance, members could use this for issues related to improper applications of our community membership guidance.</details>|
-cncf-opentelemetry-comms@lists.cncf.io|[Here](https://lists.cncf.io/g/cncf-opentelemetry-comms)|Governance committee and open for anyone|anyone|anyone|<details><summary>Notes</summary>Mailing list to notify and request reviews of upcoming announcements, or request a post on the OpenTelemetry Twitter account or other public channels.</details>|
+cncf-opentelemetry-governance@lists.cncf.io|N/A|GC|anyone|members|<details><summary>Notes</summary>Used by the OpenTelemetry GC for internal communication. Also can be used to contact the GC for questions that cannot be discussed publicly on GitHub, Gitter, or other mailing lists. For instance, members could use this for issues related to improper applications of our community membership guidance.</details>|
+cncf-opentelemetry-comms@lists.cncf.io|[Here](https://lists.cncf.io/g/cncf-opentelemetry-comms)|GC and open for anyone|anyone|anyone|<details><summary>Notes</summary>Mailing list to notify and request reviews of upcoming announcements, or request a post on the OpenTelemetry Twitter account or other public channels.</details>|
 
-### License
+### Community Meetings
+
+We host monthly community video conferences, alternating between times that
+work for Europe and Asia. These meetings are open to all contributors!
+
+Meeting invites can be accessed from our [public Calendar](https://github.com/open-telemetry/community#calendar). We keep public notes in the agenda document available
+[here](https://docs.google.com/document/d/1uvua6R-VnOpMmAjM3b7j3jQDFz6KHDzbEX4ZaZ9BFso).
+
+## License
 
 All OpenTelemetry projects are shipped under the permissive Apache 2.0 license
 as CNCF IP Policy
@@ -76,18 +82,10 @@ as CNCF IP Policy
 This [blog post](https://www.cncf.io/blog/2017/02/01/cncf-recommends-aslv2/)
 explains the reasoning behind choosing this license.
 
-### Logos and Brand Guide
+## Logos and Brand Guide
 
 The OpenTelemetry logos and brand guide can be found in the [CNCF artwork
-repository](https://github.com/cncf/artwork/tree/master/projects/opentelemetry).
-
-## Community Meetings
-
-We host monthly community video conferences, alternating between times that
-work for Europe and Asia. These meetings are open to all contributors!
-
-Meeting invites can be accessed from our [public Calendar](https://github.com/open-telemetry/community#calendar). We keep public notes in the agenda document available
-[here](https://docs.google.com/document/d/1uvua6R-VnOpMmAjM3b7j3jQDFz6KHDzbEX4ZaZ9BFso).
+repository](https://github.com/cncf/artwork/tree/master/projects/opentelemetry). In addition, a [Google Slides template](https://docs.google.com/presentation/d/1Neab3OZ3c-m5kOE37iZXEVpK4Pjj6xGTJEUuUzLQJvk/edit?usp=sharing) is also available.
 
 ## Special Interest Groups
 
@@ -118,7 +116,7 @@ Ruby: SIG|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/docume
 Rust: SDK|Bi-weekly on Tuesday alternating between 07:00 and 15:00 PT|[Google Doc](https://docs.google.com/document/d/1tGKuCsSnyT2McDncVJrMgg74_z8V06riWZa0Sr79I_4)|[Zoom](https://zoom.us/j/8203130519)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-rust)|
 Specification: General|Every Tuesday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/1-bCYkN-DWJq4jw1ybaDZYYmx-WAe6HnwfWbkm8d57v8/edit?usp=sharing)|[Zoom](https://zoom.us/j/6729396170)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-specification)
 Specification: Errors|Every Thursday at 11:00 PT|[Google Doc](https://docs.google.com/document/d/1HgUI69rBridFzCXxXuTjQrkG6jb-YcFQnZjPcyBcK1U/edit#)|[Zoom](https://zoom.us/j/6729396170)|[Gitter](https://gitter.im/open-telemetry/error-events-wg)|
-Specification: Logs|Every other week on Wednesdays at alternating times|[Google Doc](https://docs.google.com/document/d/1cX5fWXyWqVVzYHSFUymYUfWxUK5hT97gc23w595LmdM/edit#)|[Zoom](https://zoom.us/j/8203130519)|[Gitter](https://gitter.im/open-telemetry/logs)
+Specification: Logs|Every other week on Wednesdays at 13:00 PT|[Google Doc](https://docs.google.com/document/d/1cX5fWXyWqVVzYHSFUymYUfWxUK5hT97gc23w595LmdM/edit#)|[Zoom](https://zoom.us/j/8203130519)|[Gitter](https://gitter.im/open-telemetry/logs)
 Specification: Metrics|Every Thursday at 11:00 PT|[ Google Doc](https://docs.google.com/document/d/1LfDVyBJlIewwm3a0JtDtEjkusZjzQE3IAix8b0Fxy3Y/edit)|[Zoom](https://zoom.us/j/8203130519)|[Gitter](https://gitter.im/open-telemetry/metrics-specs)
 Specification: Sampling|Every Friday at 12:00 PT|[Google Doc](https://docs.google.com/document/d/12i1Y_M2AD9A0jsRMTuqnyHf923WLnbO7K8QquKKDlsg/)|[Zoom](https://zoom.us/j/6729396170)||
 Website|Every Thursday at 13:30 PT|[Google Doc](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY)|[Zoom](https://zoom.us/j/8203130519)||
