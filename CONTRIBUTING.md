@@ -12,6 +12,27 @@ and file new ones, all feedback welcome!
 Before you can contribute, you will need to sign the [Contributor License
 Agreement](https://docs.linuxfoundation.org/docs/communitybridge/communitybridge-easycla/contributors).
 
+## Copyright Notices
+
+OpenTelemetry follows [CNCF recommendations](https://github.com/cncf/foundation/blob/master/copyright-notices.md)
+for copyright notices. We use "Copyright The OpenTelemetry Authors" notice form.
+
+According to CNCF recommendations if you are contributing third-party code
+you will need to [retain the original copyright notice](https://github.com/cncf/foundation/blob/master/copyright-notices.md#dont-change-someone-elses-notice-without-their-permission).
+
+Any contributed third-party code must originally be Apache 2.0-Licensed or must
+carry a permisive software license that is compatible when combining with
+Apache 2.0 License. At this moment, BSD and MIT are the only
+[OSI-approved licenses](https://opensource.org/licenses/alphabetical) known to be compatible. 
+
+If you make substantial changes to the third-party code, _prepend_ the contributed
+third party file with OpenTelemetry's copyright notice.
+
+If the contributed code is not third-party code and you are the author we
+strongly encourage to avoid including your name in the notice and use the
+generic "Copyright The OpenTelemetry Authors" notice. See rationale for this
+recommendation [here](https://github.com/cncf/foundation/blob/master/copyright-notices.md#why-not-list-every-copyright-holder).
+
 ## Code of Conduct
 
 Please make sure to read and observe our [Code of
