@@ -22,7 +22,8 @@ you will need to [retain the original copyright notice](https://github.com/cncf/
 
 Any contributed third-party code must originally be Apache 2.0-Licensed or must
 carry a permisive software license that is compatible when combining with
-Apache 2.0 License (e.g. BSD or MIT license). 
+Apache 2.0 License. At this moment, BSD and MIT are the only
+[OSI-approved licenses](https://opensource.org/licenses/alphabetical) known to be compatible. 
 
 If you make substantial changes to the third-party code, _prepend_ the contributed
 third party file with OpenTelemetry's copyright notice.
