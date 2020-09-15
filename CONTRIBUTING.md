@@ -17,18 +17,18 @@ Agreement](https://docs.linuxfoundation.org/docs/communitybridge/communitybridge
 OpenTelemetry follows [CNCF recommendations](https://github.com/cncf/foundation/blob/master/copyright-notices.md)
 for copyright notices. We use "Copyright The OpenTelemetry Authors" notice form.
 
-According to CNCF recommendations if you are contributing a third-party code
+According to CNCF recommendations if you are contributing third-party code
 you will need to [retain the original copyright notice](https://github.com/cncf/foundation/blob/master/copyright-notices.md#dont-change-someone-elses-notice-without-their-permission).
 
 Any contributed third-party code must originally be Apache 2.0-Licensed or must
 carry a permisive software license that is compatible when combining with
 Apache 2.0 License (e.g. BSD or MIT license). 
 
-If you make substantial changes to the third-party code _prepend_ the contributed
+If you make substantial changes to the third-party code, _prepend_ the contributed
 third party file with OpenTelemetry's copyright notice.
 
-If contributed code is not a third-party code and you are the author we
-stroungly encourage to avoid including your name in the notice and use the
+If the contributed code is not third-party code and you are the author we
+strongly encourage to avoid including your name in the notice and use the
 generic "Copyright The OpenTelemetry Authors" notice. See rationale for this
 recommendation [here](https://github.com/cncf/foundation/blob/master/copyright-notices.md#why-not-list-every-copyright-holder).
 
