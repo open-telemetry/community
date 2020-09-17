@@ -63,15 +63,16 @@ can bootstrap the remainder of the process.
 
 The Bootstrap Committee will be replaced by the elected OpenTelemetry Governance
 Committee. Ultimately, the **OpenTelemetry Governance Committee will consist
-of 5 individual members** of the community **elected for 2 year terms**. The
-terms will be **staggered with 1 year elections** (alternating 2 seats and 3
+of 9 individual members** of the community **elected for 2 year terms**. The
+terms will be **staggered with 1 year elections** (alternating 4 seats and 5
 seats).
 
 To provide a level of continuity as this process is established, the initial
-committee will include continuity members, expanding the size to 9 members,
-which will be eliminated after the first two years. 
+committee will include continuity members, expanding the size to 9 members.
+Note that from the 2020 election to the 2021 election, the committee will
+include 11 members.
 
-This year (2019) as this approval is enacted, the committee will consist of the
+In 2019 as this approval is enacted, the committee consists of the
 members of the bootstrap committee (Ben Sigelman, Bogdan Drutu, Sarah Novotny,
 Sergey Kanzhelev, Yuri Shkuro) plus 4 positions to be elected from the
 community. Of the 4 members that are elected, 2 will have a two year term and 2
@@ -81,13 +82,12 @@ One year later (in 2020) there will be an election to fill the two seats
 opening up, each with a two year term. The continuity members of the original
 bootstrap committee will continue to serve.
 
-One year after that (2021), the continuity positions will be eliminated and the
-committee will shrink to the final size of 5. There will be an election to fill
-the 3 open seats on the governance committee. The previous continuity members
-are eligible to run for these seats.
+One year after that (2021), there will be an election to fill the 5 open
+seats on the governance committee. The previous continuity members are
+eligible to run for these seats.
 
-The committee will continue to iterate with alternating elections of two and
-three members each year. 
+The committee will continue to iterate with alternating elections of four and
+five members each year. 
 
 For clarity, a table describing this process is given below:
 
@@ -95,9 +95,9 @@ For clarity, a table describing this process is given below:
 | ------ | ------------ | ----------------------- | ----------------------- |
 | 2019   | 5 people     | **2 people** (2yr term) | **2 people** (1yr term) |
 | 2020   | -            | -                       | **2 people** (2yr term) |
-| 2021   | 0 people     | **3 people** (2yr term) | -                       |
-| 2022   | -            | -                       | **2 people** (2yr term) |
-| 2023   | -            | **3 people** (2yr term) | -                       |
+| 2021   | 0 people     | **5 people** (2yr term) | -                       |
+| 2022   | -            | -                       | **4 people** (2yr term) |
+| 2023   | -            | **5 people** (2yr term) | -                       |
 
 ## Elections
 
