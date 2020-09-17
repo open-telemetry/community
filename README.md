@@ -80,12 +80,9 @@ All OpenTelemetry projects are shipped under the permissive Apache 2.0 license
 as CNCF IP Policy
 [dictates](https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy).
 This [blog post](https://www.cncf.io/blog/2017/02/01/cncf-recommends-aslv2/)
-explains the reasoning behind choosing this license.
-
-License information should be included in all source files where applicable.
-Either full or short version of the header should be used as described at [apache.org](http://www.apache.org/foundation/license-faq.html#Apply-My-Software).
-Header may or may not include the year. For the details on how to apply the copyright,
-see [CONTRIBUTING.md](https://github.com/open-telemetry/community/blob/master/CONTRIBUTING.md#copyright-notices).
+explains the reasoning behind choosing this license. 
+Refer to [CONTRIBUTING.md](https://github.com/open-telemetry/community/blob/master/CONTRIBUTING.md#code-attribution) 
+for details on code attribution.
 
 ## Logos and Brand Guide
 
