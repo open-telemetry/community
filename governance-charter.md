@@ -1,6 +1,6 @@
 # OpenTelemetry Governance Committee Charter
 
-Last update: 10/28/2019
+Last updated: September 2020
 
 ## Overview
 
