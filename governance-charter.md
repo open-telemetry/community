@@ -91,13 +91,13 @@ five members each year.
 
 For clarity, a table describing this process is given below:
 
-| *Year* | *Continuity* | *Election Cohort #1*    | *Election Cohort #2*    |
-| ------ | ------------ | ----------------------- | ----------------------- |
-| 2019   | 5 people     | **2 people** (2yr term) | **2 people** (1yr term) |
-| 2020   | -            | -                       | **4 people** (2yr term) |
-| 2021   | 0 people     | **5 people** (2yr term) | -                       |
-| 2022   | -            | -                       | **4 people** (2yr term) |
-| 2023   | -            | **5 people** (2yr term) | -                       |
+| *Year* | *Continuity* | *Election Cohort #1*    | *Election Cohort #2*    | GC size post-election |
+| ------ | ------------ | ----------------------- | ----------------------- | --------------------- |
+| 2019   | 5 people     | **2 people** (2yr term) | **2 people** (1yr term) | 9 people (+4)         |
+| 2020   | -            | -                       | **4 people** (2yr term) | 11 people (-2, +4)    |
+| 2021   | 0 people     | **5 people** (2yr term) | -                       | 9 people (-7, +5)     |
+| 2022   | -            | -                       | **4 people** (2yr term) | 9 people (-4, +4)     |
+| 2023   | -            | **5 people** (2yr term) | -                       | 9 people (-5, +5)     |
 
 ## Elections
 
