@@ -23,7 +23,6 @@ and [Proto](https://github.com/open-telemetry/opentelemetry-proto)
 are maintained by technical steering committee.
 
 Trace Approvers:
-- [Armin Ruech](https://github.com/arminru), Dynatrace
 - [Christian Neumüller](https://github.com/Oberon00), Dynatrace
 - [Ted Young](https://github.com/tedsuo), Lightstep
 
@@ -40,14 +39,15 @@ Logs Approvers:
 Global Approvers:
 
 - [Reiley Yang](https://github.com/reyang), Microsoft
-- [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
-- [Josh MacDonald](https://github.com/jmacd), Lightstep
 
 Maintainers (i.e., the "Technical Committee" or "TC"):
 
+- [Armin Ruech](https://github.com/arminru), Dynatrace
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk
 - [Carlos Alberto](https://github.com/carlosalberto), Lightstep
+- [Josh MacDonald](https://github.com/jmacd), Lightstep
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
+- [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 - [Yuri Shkuro](https://github.com/yurishkuro), Facebook
 
 ## Java
