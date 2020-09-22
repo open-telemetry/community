@@ -1,4 +1,4 @@
-# OpenTelemetry Community Membership
+# OpenTelemetry Community Members
 
 ## Governance Committee
 
