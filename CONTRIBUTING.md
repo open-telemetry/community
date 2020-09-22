@@ -12,6 +12,13 @@ and file new ones, all feedback welcome!
 Before you can contribute, you will need to sign the [Contributor License
 Agreement](https://docs.linuxfoundation.org/docs/communitybridge/communitybridge-easycla/contributors).
 
+## Code attribution
+
+[License information](README.md#License) should be included in all source files where applicable.
+Either full or short version of the header should be used as described at [apache.org](http://www.apache.org/foundation/license-faq.html#Apply-My-Software).
+It is OK to exclude the year from the copyright notice. For the details on how to apply the copyright,
+see the next section.
+
 ## Copyright Notices
 
 OpenTelemetry follows [CNCF recommendations](https://github.com/cncf/foundation/blob/master/copyright-notices.md)
