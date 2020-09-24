@@ -31,7 +31,7 @@ e.g. (at)example_user
 - (at)sponsor-2
 
 **New!**: Each sponsor should reply to this issue with the comment "*I support*".
-Please remember, it is an applicant responsibility to notify sponsor about this application.
+Please remember, it is an applicant's responsibility to get their sponsors' confirmation before submitting the request.
 
 ### List of contributions to the OpenTelemetry project
 
