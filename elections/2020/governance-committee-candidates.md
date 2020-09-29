@@ -10,7 +10,7 @@ In alphabetical order:
 
 ### Ann Example
 
-![Ann Example](static/ann-example.jpg)
+![Ann Example](static/ann-example.png)
 
 - Company: ACME Corp
 - GitHub: [annexample](https://github.com/annexample)

@@ -15,14 +15,14 @@ community is well-represented by the Governance Committee.
 # TL;DR
 
 * If you‘ve been nominated or are willing to nominate yourself: check the
-[charter document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)
-and confirm you are ready for the commitment. Make sure to provide all
-necessary information before 12:01am GST on 2020/10/14
+  [charter document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)
+  and confirm you are ready for the commitment. Make sure to provide all
+  necessary information before 12:01am GST on 2020/10/14
 * If you are an active community member: confirm that you are in the voters
-(see [Appendix](#Appendix)) list or register yourself before 12:01am GST on
-2020/10/25
+  (see [Appendix](#Appendix)) list or register yourself before 12:01am GST on
+  2020/10/25
 * Vote between 12:01am GST on 2020/10/26 and 12:01am GST on 2020/10/28 via the
-voting link (delivered via email)
+  voting link (delivered via email)
 * Keep being awesome and contributing to the project!
 
 # Vacancies
@@ -77,7 +77,7 @@ the following columns:
 * GitHub alias
 * Company affiliation
 * Short bio and/or reasoning to join the Governance Committee (no more than a
-short paragraph)
+  short paragraph)
 * _Optional_: photo/picture of a nominee
 
 The Pull Request will not be merged until the candidate has confirmed their
@@ -108,11 +108,10 @@ One of two options will be available in the form to prove eligibility:
 * GitHub handle
 * List either…
   * Your contributions to OpenTelemetry that make you eligible to vote, or
-  * Your non-code contributions per the [Members of Standing section of the
-charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md#members-of-standing):
-particularly, your relationship to a well-known project that’s taken a hard
-dependency on OpenTelemetry, and/or your involvement with a well-known
-organization’s adoption of OpenTelemetry as an end-user.
+  * Your non-code contributions per the [Members of Standing section of the charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md#members-of-standing):
+    particularly, your relationship to a well-known project that’s taken a hard
+    dependency on OpenTelemetry, and/or your involvement with a well-known
+    organization’s adoption of OpenTelemetry as an end-user.
 
 The link to the pre-registration form: [NEED TO UPDATE BEFORE MERGE](http://localhost/)
 
