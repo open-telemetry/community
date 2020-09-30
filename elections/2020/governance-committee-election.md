@@ -113,7 +113,7 @@ One of two options will be available in the form to prove eligibility:
     dependency on OpenTelemetry, and/or your involvement with a well-known
     organization’s adoption of OpenTelemetry as an end-user.
 
-The link to the pre-registration form: [NEED TO UPDATE BEFORE MERGE](http://localhost/)
+The link to the pre-registration form: [NEEDS UPDATE](https://github.com/open-telemetry/community/issues/488#issuecomment-700967483)
 
 Note that all pre-registrations will be verified by the Governance Committee
 for eligibility.
@@ -168,12 +168,12 @@ We identified active contributors. For these contributors we found at least one
 email address associated with the commits to OpenTelemetry repositories. If
 there are more than one email associated with the GitHub handle, we will be
 using one of them at random. If you want to use an alternative email address
-please fill out the pre-registration form: [NEEDS UPDATE](https://localhost)
+please fill out the pre-registration form: [NEEDS UPDATE](https://github.com/open-telemetry/community/issues/488#issuecomment-700967483)
 
-* TODO: list
+* TODO: [auto-generate list](https://github.com/open-telemetry/community/issues/488#issuecomment-700814185)
 
 For these accounts we didn't find emails associated with the commits. Please
-fill out the pre-registration form: [NEEDS UPDATE](https://localhost/)
+fill out the pre-registration form: [NEEDS UPDATE](https://github.com/open-telemetry/community/issues/488#issuecomment-700967483/)
 
-* TODO: list
+* TODO: [auto-generate list](https://github.com/open-telemetry/community/issues/488#issuecomment-700814185)
 
