@@ -16,16 +16,22 @@ namespace OpenTelemetryYoutube
     {
         // https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA
         private const string openTelemetryChannelId = "UCHZDBZTIfdy94xMjMKz-_MA";
+        private const string governancePlaylistId = "PLVYDBkQ1Tdyzg1CuQgd9mdjwOUYg7ECYR";
+        private const string governanceCommitteeVideoName = "Governance Committee";
+        private static int minValidVideoTime = 3;
 
         [STAThread]
         static void Main(string[] args)
         {
             try
             {
-                Console.WriteLine("Path to secret.json");
-                string path = Console.ReadLine();
+                if (args.Length > 1)
+                {
+                    int.TryParse(args[1], out int minValue);
+                    minValidVideoTime = minValue;
+                }
 
-                new Program().Run(path).Wait();
+                new Program().Run(args[0]).Wait();
             }
             catch (AggregateException ex)
             {
@@ -110,13 +116,17 @@ namespace OpenTelemetryYoutube
         private static async Task ProcessVideo(YouTubeService youtubeService, Video videoItem)
         {
             var time = XmlConvert.ToTimeSpan(videoItem.ContentDetails.Duration);
+            bool update = false;
+            Video video = null;
 
             // our processed videos start with 2020-08-12, so, 202 is the start of a know pattern
             // that we know that the video already been processed. 202x = 2020, 2021, etc.
             // video that doesn't start with 202x and has totalMinutes > 30, we will process
-            if (!videoItem.Snippet.Title.StartsWith("202") && time.TotalMinutes > 30)
+            if (!videoItem.Snippet.Title.StartsWith("202")
+                && time.TotalMinutes > 20
+                && !videoItem.Snippet.Title.StartsWith(governanceCommitteeVideoName, StringComparison.OrdinalIgnoreCase))
             {
-                Video video = new Video
+                video = new Video
                 {
                     Id = videoItem.Id,
                     Snippet = new VideoSnippet
@@ -129,9 +139,47 @@ namespace OpenTelemetryYoutube
                         PrivacyStatus = "public"
                     }
                 };
+                update = true;
+            }
 
+            // just process if it is a governance committee video
+            if (videoItem.Snippet.Title.StartsWith(governanceCommitteeVideoName, StringComparison.OrdinalIgnoreCase))
+            {
+                video = new Video
+                {
+                    Id = videoItem.Id,
+                    Snippet = new VideoSnippet
+                    {
+                        CategoryId = "22",
+                        Title = $"{videoItem.Snippet.PublishedAt.Split('T')[0]} {videoItem.Snippet.Title}"
+                    },
+                    Status = new VideoStatus
+                    {
+                        PrivacyStatus = "public"
+                    }
+                };
+
+                var newPlaylistItem = new PlaylistItem();
+                newPlaylistItem.Snippet = new PlaylistItemSnippet();
+                newPlaylistItem.Snippet.PlaylistId = governancePlaylistId;
+                newPlaylistItem.Snippet.ResourceId = new ResourceId();
+                newPlaylistItem.Snippet.ResourceId.Kind = videoItem.Kind;
+                newPlaylistItem.Snippet.ResourceId.VideoId = videoItem.Id;
+                await youtubeService.PlaylistItems.Insert(newPlaylistItem, "snippet").ExecuteAsync();
+
+                update = true;
+            }
+
+            if (update && video != null)
+            {
                 var videoUpdateRequest = youtubeService.Videos.Update(video, "snippet,status");
                 await videoUpdateRequest.ExecuteAsync();
+            }
+
+            if (time.TotalMinutes < minValidVideoTime)
+            {
+                var videoDeleteRequest = youtubeService.Videos.Delete(videoItem.Id);
+                await videoDeleteRequest.ExecuteAsync();
             }
         }
     }
