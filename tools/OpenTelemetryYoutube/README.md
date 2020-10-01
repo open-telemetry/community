@@ -28,7 +28,7 @@ This tool will process the private videos that we have in [OpenTelemetry
 channel](https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA) and will move
 it to public if:
 
-1. The length of the video is greater then 30 minutes
+1. The length of the video is greater then 20 minutes
 2. The title does not start with our current placeholder (`202x-xx-xx meeting`)
 
 If the tool encounters a video with the title "Governance Committee", it will

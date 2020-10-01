@@ -16,6 +16,7 @@ namespace OpenTelemetryYoutube
     {
         // https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA
         private const string openTelemetryChannelId = "UCHZDBZTIfdy94xMjMKz-_MA";
+        private const string governancePlaylistId = "PLVYDBkQ1Tdyzg1CuQgd9mdjwOUYg7ECYR";
         private const string governanceCommitteeVideoName = "Governance Committee";
         private static int minValidVideoTime = 3;
 
@@ -121,8 +122,8 @@ namespace OpenTelemetryYoutube
             // our processed videos start with 2020-08-12, so, 202 is the start of a know pattern
             // that we know that the video already been processed. 202x = 2020, 2021, etc.
             // video that doesn't start with 202x and has totalMinutes > 30, we will process
-            if (!videoItem.Snippet.Title.StartsWith("202") 
-                && time.TotalMinutes > 30 
+            if (!videoItem.Snippet.Title.StartsWith("202")
+                && time.TotalMinutes > 20
                 && !videoItem.Snippet.Title.StartsWith(governanceCommitteeVideoName, StringComparison.OrdinalIgnoreCase))
             {
                 video = new Video
@@ -157,6 +158,15 @@ namespace OpenTelemetryYoutube
                         PrivacyStatus = "public"
                     }
                 };
+
+                var newPlaylistItem = new PlaylistItem();
+                newPlaylistItem.Snippet = new PlaylistItemSnippet();
+                newPlaylistItem.Snippet.PlaylistId = governancePlaylistId;
+                newPlaylistItem.Snippet.ResourceId = new ResourceId();
+                newPlaylistItem.Snippet.ResourceId.Kind = videoItem.Kind;
+                newPlaylistItem.Snippet.ResourceId.VideoId = videoItem.Id;
+                await youtubeService.PlaylistItems.Insert(newPlaylistItem, "snippet").ExecuteAsync();
+
                 update = true;
             }
 
@@ -168,7 +178,7 @@ namespace OpenTelemetryYoutube
 
             if (time.TotalMinutes < minValidVideoTime)
             {
-                var videoDeleteRequest =  youtubeService.Videos.Delete(videoItem.Id);
+                var videoDeleteRequest = youtubeService.Videos.Delete(videoItem.Id);
                 await videoDeleteRequest.ExecuteAsync();
             }
         }
