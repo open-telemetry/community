@@ -38,6 +38,7 @@ Logs Approvers:
 
 Global Approvers:
 
+- [Anuraag Agrawal](https://github.com/anuraaga), AWS
 - [Reiley Yang](https://github.com/reyang), Microsoft
 
 Maintainers (i.e., the "Technical Committee" or "TC"):
