@@ -32,6 +32,8 @@ a friendly, collaborative group and look forward to working together!
 * [Governance Committee (GC)](./governance-charter.md)
 * [Technical Committee (TC)](./tech-committee-charter.md)
 
+Both committes meet regularly and the respective meeting notes are publicly available in the [GC meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8) and the [TC meeting notes](https://docs.google.com/document/d/17v2RMZlJZkgoPYHZhIFTVdDqQMIAH8kzo8Sl2kP3cbY) Google Docs. If you want to check out the recordings, head to the [Governance Committee YouTube playlist](https://www.youtube.com/playlist?list=PLVYDBkQ1Tdyzg1CuQgd9mdjwOUYg7ECYR).
+
 ## Communication
 ### Instant Messaging
 
@@ -104,7 +106,7 @@ SIG-specific Gitter channel.
 Name|Meeting Time|Meeting Notes|Meeting Link|Gitter|
 ----|------------|-------------|------------|------|
 Collector|Every Wednesday alternating between 09:00 and 14:00 PT|[Google Doc](https://docs.google.com/document/d/1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE/edit?usp=sharing)|[Zoom](https://zoom.us/j/8203130519)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-service)|
-C/C++: SDK|Every Monday at 03:00 PT|[Google Doc](https://docs.google.com/document/d/1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw/edit?usp=sharing)|[Zoom](https://zoom.us/j/8203130519)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-cpp)|
+C/C++: SDK|Every week alternating between Monday at 15:00 PT and Wednesday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw/edit?usp=sharing)|[Zoom](https://zoom.us/j/8203130519)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-cpp)|
 DotNET: Instrumentation|Every Wednesday at 13:00 PT|[Google Doc](https://docs.google.com/document/d/1XedN2D8_PH4YLej-maT8sp4RKogfuhFpccRi3QpUcoI/edit?usp=sharing)|[Zoom](https://zoom.us/j/8287234601)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-dotnet-auto-instr)|
 DotNET: SDK|Every Tuesday alternating between 11:00 and 16:00 PT|[Google Doc](https://docs.google.com/document/d/1yjjD6aBcLxlRazYrawukDgrhZMObwHARJbB9glWdHj8/edit?usp=sharing)|[Zoom](https://zoom.us/j/8287234601)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-dotnet)|
 Erlang/Elixir: SDK|Every Thursday alternating between 07:00 and 15:00 PT|[Google Doc](https://docs.google.com/document/d/1EbBiRjBc_cBf0T_B5OtNRPhbD4jdBrVYJAy8euCDrUI/edit?usp=sharing)|[Zoom](https://zoom.us/j/8287234601)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-erlang)|
