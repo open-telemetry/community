@@ -5,6 +5,7 @@
 In alphabetical order:
 
 - [Ann Example](#Ann-Example)
+- [Tyler Yahn](#Tyler-Yahn)
 
 ---
 
@@ -23,5 +24,22 @@ ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in
 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
 occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
 id est laborum.
+
+---
+
+### Tyler Yahn (He/Him)
+
+![Tyler Yahn](https://media-exp1.licdn.com/dms/image/C4E03AQGIVMZfZIio8Q/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=yFPwjgZomuLSexgC3aZ2H9Lzo1ZXsLNAaqz8lIns1do)
+
+- Company: New Relic
+- GitHub: [@MrAlias](https://github.com/MrAlias)
+
+Tyler has been an active contributor to the OpenTelemetry project for almost a
+full year. During that time Tyler has served as an Approver and then a Maintainer
+of the OpenTelemetry Go SIG and actively participated in the Specification SIG
+including taking on the role of a Metrics Approver. As OpenTelemetry moves into
+the future it has the potential to greatly help the technology community at large.
+Tyler is excited to help cultivate and promote the growth of the OpenTelemetry
+community and help ensure its success.
 
 ---
