@@ -154,7 +154,7 @@ election).
 * September 30: this document announced
 * October 7: Call for nominations and voters pre-registration
 * October 16, 12:01am GST: End of call for nominations
-* October 16: Preliminary list of nominees announced
+* October 17: Preliminary list of nominees announced
 * Nominees ratified and Governance Committee ensures nominees’ commitment
 * October 19: List of nominees is finalized on [community](https://github.com/open-telemetry/community) GitHub and advertised via mailing list and Gitter
 * October 25: End of call for voters pre-registration (registration during the voting period is permitted, but highly discouraged)
@@ -176,4 +176,3 @@ For these accounts we didn't find emails associated with the commits. Please
 fill out the pre-registration form: [NEEDS UPDATE](https://github.com/open-telemetry/community/issues/488#issuecomment-700967483/)
 
 * TODO: [auto-generate list](https://github.com/open-telemetry/community/issues/488#issuecomment-700814185)
-
