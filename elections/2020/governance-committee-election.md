@@ -153,8 +153,8 @@ election).
 
 * September 30: this document announced
 * October 7: Call for nominations and voters pre-registration
-* October 14, 12:01am GST: End of call for nominations
-* October 15: Preliminary list of nominees announced
+* October 16, 12:01am GST: End of call for nominations
+* October 16: Preliminary list of nominees announced
 * Nominees ratified and Governance Committee ensures nominees’ commitment
 * October 19: List of nominees is finalized on [community](https://github.com/open-telemetry/community) GitHub and advertised via mailing list and Gitter
 * October 25: End of call for voters pre-registration (registration during the voting period is permitted, but highly discouraged)
