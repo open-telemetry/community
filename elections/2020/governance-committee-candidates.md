@@ -5,6 +5,7 @@
 In alphabetical order:
 
 - [Ann Example](#Ann-Example)
+- [Morgan McLean](#Morgan-McLean)
 - [Tyler Yahn](#Tyler-Yahn)
 
 ---
@@ -27,6 +28,21 @@ id est laborum.
 
 ---
 
+### Morgan McLean
+
+![Morgan McLean](static/morgan-mclean.png)
+
+- Company: Google
+- GitHub: [mtwo](https://github.com/mtwo)
+
+Morgan is one of the co-founders of OpenTelemetry and currently serves on the
+Governance Committee. He is a co-creator of the OpenCensus project and
+helped orchestrate its merger into OpenTelemetry, serves as a chair
+of the W3C Trace Context standard, and drives OpenTelemetry's beta, RC, and
+GA release processes.
+
+---
+
 ### Tyler Yahn (He/Him)
 
 ![Tyler Yahn](static/tyler-yahn.jpeg)
@@ -41,5 +57,3 @@ including taking on the role of a Metrics Approver. As OpenTelemetry moves into
 the future it has the potential to greatly help the technology community at large.
 Tyler is excited to help cultivate and promote the growth of the OpenTelemetry
 community and help ensure its success.
-
----
