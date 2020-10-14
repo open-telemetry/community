@@ -23,21 +23,25 @@ and [Proto](https://github.com/open-telemetry/opentelemetry-proto)
 are maintained by technical steering committee.
 
 Trace Approvers:
+
 - [Christian Neumüller](https://github.com/Oberon00), Dynatrace
 - [Ted Young](https://github.com/tedsuo), Lightstep
 
 Metrics Approvers:
-- [John Watson](https://github.com/jkwatson), New Relic
-- [Tyler Yahn](https://github.com/MrAlias), New Relic
-- [Leighton Chen](https://github.com/lzchen), Microsoft
+
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
+- [John Watson](https://github.com/jkwatson), Splunk
+- [Leighton Chen](https://github.com/lzchen), Microsoft
+- [Tyler Yahn](https://github.com/MrAlias), New Relic
 
 Logs Approvers:
+
 - [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
 - [David Poncelow](https://github.com/zenmoto), Splunk
 
 Global Approvers:
 
+- [Anuraag Agrawal](https://github.com/anuraaga), AWS
 - [Reiley Yang](https://github.com/reyang), Microsoft
 
 Maintainers (i.e., the "Technical Committee" or "TC"):
