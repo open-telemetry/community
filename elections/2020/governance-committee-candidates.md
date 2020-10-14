@@ -6,6 +6,7 @@ In alphabetical order:
 
 - [Ann Example](#Ann-Example)
 - [Morgan McLean](#Morgan-McLean)
+- [Tyler Yahn](#Tyler-Yahn)
 
 ---
 
@@ -39,3 +40,20 @@ Governance Committee. He is a co-creator of the OpenCensus project and
 helped orchestrate its merger into OpenTelemetry, serves as a chair
 of the W3C Trace Context standard, and drives OpenTelemetry's beta, RC, and
 GA release processes.
+
+---
+
+### Tyler Yahn (He/Him)
+
+![Tyler Yahn](static/tyler-yahn.jpeg)
+
+- Company: New Relic
+- GitHub: [@MrAlias](https://github.com/MrAlias)
+
+Tyler has been an active contributor to the OpenTelemetry project for almost a
+full year. During that time Tyler has served as an Approver and then a Maintainer
+of the OpenTelemetry Go SIG and actively participated in the Specification SIG
+including taking on the role of a Metrics Approver. As OpenTelemetry moves into
+the future it has the potential to greatly help the technology community at large.
+Tyler is excited to help cultivate and promote the growth of the OpenTelemetry
+community and help ensure its success.
