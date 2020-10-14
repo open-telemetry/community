@@ -4,10 +4,13 @@
 
 In alphabetical order:
 
-- [Alolita Sharma](#Alolita-Sharma)
-- [Daniel Dyla](#Daniel-Dyla)
-- [Morgan McLean](#Morgan-McLean)
-- [Tyler Yahn](#Tyler-Yahn)
+- [2020 OpenTelemetry Governance Committee Candidates](#2020-opentelemetry-governance-committee-candidates)
+  - [List of candidates](#list-of-candidates)
+    - [Alolita Sharma](#alolita-sharma)
+    - [Daniel Dyla](#daniel-dyla)
+    - [Jaana Dogan](#jaana-dogan)
+    - [Morgan McLean](#morgan-mclean)
+    - [Tyler Yahn (He/Him)](#tyler-yahn-hehim)
 
 ---
 
@@ -30,6 +33,37 @@ I am a [Principal Technologist](https://www.linkedin.com/in/alolita/) at AWS whe
 - GitHub: [dyladan](https://github.com/dyladan)
 
 Daniel is an Open Source Architect at Dynatrace where he works on OpenTelemetry and related topics. He is a maintainer of the OpenTelemetry JS SIG and a contributor to the specification, as well as a regular specification meeting attendee. He is a member of the W3C Distributed Tracing Working Group where he works on the Trace Context and Baggage standards. Daniel has spoken at [Observe 2020](https://observe2020.io/) and participated as a panelist discussing observability and how it drives value for teams and customers. As a governance committee member, Daniel is interested in leveraging his experience and enthusiasm to drive the OpenTelemetry project forward and ensure it is a safe, inclusive, and rewarding experience for contributors, maintainers, and users.
+
+---
+
+### Jaana Dogan
+
+![Jaana Dogan](static/jaana-dogan.jpeg)
+
+- Company: Amazon Web Services (AWS)
+- GitHub: [rakyll](https://github.com/rakyll)
+
+Jaana is a Principal Engineer at AWS working on observability efforts
+including OpenTelemetry. Jaana was a co-creator of the OpenCensus project
+where various aspects of OpenTelemetry is originated at. 
+Jaana contributed to various open standards efforts including
+the W3C Distributed Tracing and establishing more correlation
+standards among different groups working on telemetry collection.
+Jaana has a strong background in telemetry efforts, she led
+various aspects of Google's instrumentation projects and was a lead
+working on Go programming language's diagnostics story.
+
+Jaana has worked with 10+ APM companies in this space to find consensus in
+terms of standards and instrumentation practices during her time 
+on OpenCensus. She was also a key public representative of the concepts
+and the technology. She gave keynotes and talks at various conferences
+including KubeCon, Velocity, FOSDEM, Monitorama, PromCon, OSCON,
+DockerCon and more.
+
+Jaana has a strong past in building developer products.
+She has 15 years in this field, most notably making Go a
+globally successful programming language. She will ensure OpenTelemetry
+is capturing practitioner's needs and is adopted widely in the industry.
 
 ---
 
