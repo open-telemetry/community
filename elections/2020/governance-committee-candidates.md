@@ -29,7 +29,7 @@ id est laborum.
 
 ### Tyler Yahn (He/Him)
 
-![Tyler Yahn](https://media-exp1.licdn.com/dms/image/C4E03AQGIVMZfZIio8Q/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=yFPwjgZomuLSexgC3aZ2H9Lzo1ZXsLNAaqz8lIns1do)
+![Tyler Yahn](static/tyler-yahn.jpeg)
 
 - Company: New Relic
 - GitHub: [@MrAlias](https://github.com/MrAlias)
