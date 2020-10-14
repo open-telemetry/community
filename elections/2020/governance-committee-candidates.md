@@ -37,5 +37,5 @@ id est laborum.
 Morgan is one of the co-founders of OpenTelemetry and currently serves on the
 Governance Committee. He is a co-creator of the OpenCensus project and
 helped orchestrate its merger into OpenTelemetry, serves as a chair
-of the W3C Trace Context standard, and drives the beta, release candidate, and
-GA release process within OpenTelemetry.
+of the W3C Trace Context standard, and drives OpenTelemetry's beta, RC, and
+GA release processes.
