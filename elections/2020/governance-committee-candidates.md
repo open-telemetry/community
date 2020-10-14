@@ -4,24 +4,16 @@
 
 In alphabetical order:
 
-- [Ann Example](#Ann-Example)
-
+- [Alolita Sharma](#Alolita-Sharma)
 ---
 
-### Ann Example
+### Alolita Sharma
 
-![Ann Example](static/ann-example.png)
+![Alolita Sharma](static/alolita-sharma.png)
 
-- Company: ACME Corp
-- GitHub: [annexample](https://github.com/annexample)
+- Company: Amazon Web Services (AWS)
+- GitHub: [alolita](https://github.com/alolita)
 
-Ann is not an actual person and is just an example. To that end, the rest of
-this bio is just "Lorem Ipsum" text. Lorem ipsum dolor sit amet, consectetur
-adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in
-voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-id est laborum.
+I am a [Principal Technologist](https://www.linkedin.com/in/alolita/) at AWS where I lead development of OpenTelemetry components focused on metrics and log based observability and where I collaborate with Microsoft, Google, LightStep, Splunk, RedHat and others. I [speak](https://alolitasharma.com/my-talks-and-presentations/) at open source conferences such as the Linux Foundation Open Source Summit, ATO, OSCON, FOSDEM and Unicode where I have addressed the challenges of building large scale open source projects, collaborating on open standards and accelerating technology innovation. I have been [Director of Engineering](https://www.mediawiki.org/wiki/User:Alolitas) at the Wikimedia Foundation and served as an Officer and [Board Member](https://en.wikipedia.org/wiki/Open_Source_Initiative) of the Open Source Initiative (OSI). I currently serve as a [Board Director](https://unicode.org/consortium/directors.html) of the Unicode Consortium. At Wikimedia, I increased the ease-of-use and accessibility of Wikipedia by adding multilingual editing and internationalization tools. At the OSI, I helped reduce open source license proliferation and created the OSI education outreach program. At the Unicode Consortium, I am serving on the Governance and Infrastructure Committees to help create the 2020-21 operating plan. I also contribute to the Unicode Technical Committee and W3C on language standardization. I have designed and implemented governance policies and processes for a variety of open source projects including those at Wikimedia, OSI and AWS. Enhancing accessibility, expanding standardization, encouraging education outreach and facilitating broad collaboration are vital for the success of OpenTelemetry. As a Governance Committee member, I would like to use the lessons I have learned to benefit the OpenTelemetry project and help unlock the full potential of open source observability.
 
 ---
