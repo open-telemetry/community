@@ -29,7 +29,7 @@ id est laborum.
 
 ### Morgan McLean
 
-![Morgan McLean](static/morgan-mclean.jpg)
+![Morgan McLean](static/morgan-mclean.png)
 
 - Company: Google
 - GitHub: [mtwo](https://github.com/mtwo)
