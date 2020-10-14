@@ -5,6 +5,7 @@
 In alphabetical order:
 
 - [Ann Example](#Ann-Example)
+- [Morgan McLean](#Morgan-McLean)
 
 ---
 
@@ -25,3 +26,16 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
 id est laborum.
 
 ---
+
+### Morgan McLean
+
+![Morgan McLean](static/morgan-mclean.jpg)
+
+- Company: Google
+- GitHub: [mtwo](https://github.com/mtwo)
+
+Morgan is one of the co-founders of OpenTelemetry and currently serves on the
+Governance Committee. He is a co-creator of the OpenCensus project and
+helped orchestrate its merger into OpenTelemetry, serves as a chair
+of the W3C Trace Context standard, and drives the beta, release candidate, and
+GA release process within OpenTelemetry.
