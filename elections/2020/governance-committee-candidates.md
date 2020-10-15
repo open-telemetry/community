@@ -8,6 +8,7 @@ In alphabetical order:
   - [List of candidates](#list-of-candidates)
     - [Alolita Sharma](#alolita-sharma)
     - [Daniel Dyla](#daniel-dyla)
+    - [Ilan Rabinovitch](#ilan-rabinovitch)
     - [Jaana Dogan](#jaana-dogan)
     - [Liz Fong-Jones](#liz-fong-jones)
     - [Morgan McLean](#morgan-mclean)
@@ -34,6 +35,17 @@ I am a [Principal Technologist](https://www.linkedin.com/in/alolita/) at AWS whe
 - GitHub: [dyladan](https://github.com/dyladan)
 
 Daniel is an Open Source Architect at Dynatrace where he works on OpenTelemetry and related topics. He is a maintainer of the OpenTelemetry JS SIG and a contributor to the specification, as well as a regular specification meeting attendee. He is a member of the W3C Distributed Tracing Working Group where he works on the Trace Context and Baggage standards. Daniel has spoken at [Observe 2020](https://observe2020.io/) and participated as a panelist discussing observability and how it drives value for teams and customers. As a governance committee member, Daniel is interested in leveraging his experience and enthusiasm to drive the OpenTelemetry project forward and ensure it is a safe, inclusive, and rewarding experience for contributors, maintainers, and users.
+
+---
+
+### Ilan Rabinovitch
+
+![Ilan Rabinovitch](static/ilan-rabinovitch.jpg)
+
+- Company: Datadog
+- GitHub: [@irabinovitch](https://github.com/irabinovitch)
+
+Ilan Rabinovitch leads the community and product teams at Datadog. He spends his days diving into monitoring best practices, collaborating with Datadog's open source community and evangelizing observability best practices. Over the last year, he has collaborated with the OTel governance board and SIGs to arrange the contribution of Datadog's tracing libraries and auto-instrumentation support to OpenTelemetry. Prior to joining Datadog, Ilan spent a number of years leading infrastructure and reliability engineering teams at organizations such as Ooyala and Edmunds.com. He's active in the wider open source and DevOps communities, including co-founding events such as SCALE, Texas Linux Fest, and various DevOpsDays events.
 
 ---
 
