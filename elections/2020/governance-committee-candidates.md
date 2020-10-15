@@ -9,6 +9,7 @@ In alphabetical order:
     - [Alolita Sharma](#alolita-sharma)
     - [Daniel Dyla](#daniel-dyla)
     - [Jaana Dogan](#jaana-dogan)
+    - [Liz Fong-Jones](#liz-fong-jones)
     - [Morgan McLean](#morgan-mclean)
     - [Tyler Yahn (He/Him)](#tyler-yahn-hehim)
 
@@ -64,6 +65,27 @@ Jaana has a strong past in building developer products.
 She has 15 years in this field, most notably making Go a
 globally successful programming language. She will ensure OpenTelemetry
 is capturing practitioner's needs and is adopted widely in the industry.
+
+---
+
+### Liz Fong-Jones
+
+![Liz Fong-Jones](static/lizf.jpg)
+
+- Company: Honeycomb.io
+- GitHub: [lizthegrey](https://github.com/lizthegrey)
+
+Liz is Principal Developer Advocate at honeycomb.io, and previously worked at
+Google as a Staff Developer Advocate & Site Reliability Engineer. She's spent
+her career helping engineers improve the operability and observability of
+their systems. She is an approver for the OpenTelemetry Go SIG, wrote vendor
+exporters for Go and Python, and has contributed to the OpenTelemetry
+Collector. She has co-authored training & workshops to encourage OpenTelemetry
+adoption, and presented on OpenTelemetry's behalf at KubeCon/CloudNativeCon
+2019. She co-hosts the biweekly OpenTelemetry Tuesdays livestreamed podcast.
+
+She has served an initial one-year term on the OpenTelemetry Governance
+Committee and is standing for re-election.
 
 ---
 
