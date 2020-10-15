@@ -97,10 +97,19 @@ Committee and is standing for re-election.
 - GitHub: [mtwo](https://github.com/mtwo)
 
 Morgan is one of the co-founders of OpenTelemetry and currently serves on the
-Governance Committee. He is a co-creator of the OpenCensus project and
-helped orchestrate its merger into OpenTelemetry, serves as a chair
-of the W3C Trace Context standard, and drives OpenTelemetry's beta, RC, and
-GA release processes.
+Governance Committee. His accomplishments in the open source observability space include:
+
+- Co-creating OpenCensus at Google, defining its roadmap and release to customers, and growing the community
+- Orchestrating the merger of OpenCensus and OpenTracing into OpenTelemetry, defining the OpenTelemetry governance structure, etc.
+- Drafting the HTTP header specification that became W3C Trace Context, which he co-chairs
+- Organizing OpenTelemetry's beta, release candidate, and GA requirements, driving towards these releases, and shipping them
+- Speaking at the Kubecon and Next keynotes, and presenting OpenTelemetry in sessions at Kubecon, Next, Velocity, Monitorama, Perform, etc.
+- Growing the community and bringing in new partners like Microsoft, Dynatrace, etc.
+
+At Google, Morgan is responsible for all data ingestion into the Cloud Operations suite,
+APM tools, and the VM logging experience.
+Morgan's past roles include developing and operating high-scale services at Microsoft and
+developing high-performance client code at Microsoft and BioWare.
 
 ---
 
