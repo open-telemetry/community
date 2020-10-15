@@ -464,5 +464,5 @@ We identified active contributors programmatically. For most contributors, we we
 * [zenmoto](https://github.com/zenmoto)
 * [ziqizh](https://github.com/ziqizh) (no email found)
 
-We will contact all of the above via a GitHub issue and via email (where possible) to register themselves to vote in the election via this Google form: [https://forms.gle/2VWUNA8oz9DP4C3SA](https://forms.gle/2VWUNA8oz9DP4C3SA)
+We will contact all of the above via a GitHub issue (and via email where possible) to register to vote – and specify the email address they'd like to use – in the CIVS election. That registration will happen via this google form: [https://forms.gle/2VWUNA8oz9DP4C3SA](https://forms.gle/2VWUNA8oz9DP4C3SA)
 
