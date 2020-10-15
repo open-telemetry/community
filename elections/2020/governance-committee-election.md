@@ -17,11 +17,11 @@ community is well-represented by the Governance Committee.
 * If you‘ve been nominated or are willing to nominate yourself: check the
   [charter document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)
   and confirm you are ready for the commitment. Make sure to provide all
-  necessary information before 12:01am GST on 2020/10/14
+  necessary information before 12:01am GMT on 2020/10/14
 * If you are an active community member: confirm that you are in the voters
-  (see [Appendix](#Appendix)) list or register yourself before 12:01am GST on
+  (see [Appendix](#Appendix)) list or register yourself before 12:01am GMT on
   2020/10/25
-* Vote between 12:01am GST on 2020/10/26 and 12:01am GST on 2020/10/28 via the
+* Vote between 12:01am GMT on 2020/10/26 and 12:01am GMT on 2020/10/28 via the
   voting link (delivered via email)
 * Keep being awesome and contributing to the project!
 
@@ -140,7 +140,7 @@ Per CIVS, voting is completely private: nobody will know any individual's vote.
 
 # Results
 
-Voting will close at 12:01am GST on 2020/10/28. Nominees will be stack ranked.
+Voting will close at 12:01am GMT on 2020/10/28. Nominees will be stack ranked.
 If a nominee becomes ineligible (for instance, if more than 2 topmost nominees
 work for the same company), those nominees will be skipped and the nominee with
 the next-highest score will be picked.
@@ -153,13 +153,13 @@ election).
 
 * September 30: this document announced
 * October 7: Call for nominations and voters pre-registration
-* October 16, 12:01am GST: End of call for nominations
+* October 16, 12:01am GMT: End of call for nominations
 * October 17: Preliminary list of nominees announced
 * Nominees ratified and Governance Committee ensures nominees’ commitment
 * October 19: List of nominees is finalized on [community](https://github.com/open-telemetry/community) GitHub and advertised via mailing list and Gitter
 * October 25: End of call for voters pre-registration (registration during the voting period is permitted, but highly discouraged)
-* October 26, 12:01am GST: Emails with voting links sent via [CIVS](https://civs.cs.cornell.edu/). Voting period begins
-* October 28, 12:01am GST: Voting ends
+* October 26, 12:01am GMT: Emails with voting links sent via [CIVS](https://civs.cs.cornell.edu/). Voting period begins
+* October 28, 12:01am GMT: Voting ends
 * October 30: Results are announced
 
 # Appendix
