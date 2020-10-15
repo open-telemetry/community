@@ -70,7 +70,7 @@ is capturing practitioner's needs and is adopted widely in the industry.
 
 ### Liz Fong-Jones
 
-![Liz Fong-Jones](static/lizf.jpg)
+<img src="static/lizf.jpg" width="300px" alt="Liz Fong-Jones profile image" />
 
 - Company: Honeycomb.io
 - GitHub: [lizthegrey](https://github.com/lizthegrey)
