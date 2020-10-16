@@ -23,7 +23,12 @@ for the repository.
    `foo-approvers` and `foo-triagers` explicitly, with the "Maintainer" GitHub 
    privileges. This allows repository maintainers to invite new approvers and 
    triagers to the team.
-3. The team `foo-triagers` has `Triage` permissions for the repository.
+3. The team `foo-triagers` has `Triage` permissions for the repository. If repository
+   is using the Project Boards, `foo-triagers` should have `Write` permissions to
+   have access to the Project Boards. Note, by not adding members of `foo-triagers` to
+   CODEOWNERS file, repository restricts triagers from counting a triagers approvals for
+   PRs. See the [Policies](#policies) section that suggest to ensure that `Require
+   review from Code Owners` is checked.
 4. The team `foo-approvers` has `Write` permissions for the repository.
 5. The team `foo-maintainers` has `Maintain (beta)` permissions for the
    repository.
