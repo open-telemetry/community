@@ -9,7 +9,6 @@ In alphabetical order:
     - [Alolita Sharma](#alolita-sharma)
     - [Daniel Dyla](#daniel-dyla)
     - [Ilan Rabinovitch](#ilan-rabinovitch)
-    - [Jaana Dogan](#jaana-dogan)
     - [Liz Fong-Jones](#liz-fong-jones)
     - [Morgan McLean](#morgan-mclean)
     - [Tyler Yahn (He/Him)](#tyler-yahn-hehim)
