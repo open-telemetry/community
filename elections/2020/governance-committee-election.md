@@ -1,5 +1,7 @@
 # OpenTelemetry 2020 Governance Committee election
 
+Please see [the list of candidates running in the election here](./governance-committee-candidates.md).
+
 This document lays out the 2020 election process per the OpenTelemetry
 governance committee
 [charter document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)
