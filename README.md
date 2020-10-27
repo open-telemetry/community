@@ -135,3 +135,19 @@ Join W3C [Distributed Tracing Working Group](https://www.w3.org/2018/distributed
 
 The Erlang and Elixir API and SDK are maintained by members of the Erlang Ecosystem Foundation Observability Working Group.
 See the [Observability Working Group](https://erlef.org/wg/observability) page on the EEF website for details.
+
+### CNCF SIG Observability - Special Interest Group
+
+The CNCF SIG Observability is a special interest group for observability that focuses on topics pertaining to the observation of cloud native workloads.
+Check out the [CNCF SIG Observability](https://github.com/cncf/sig-observability) page for details.
+
+### K8s SIG - Instrumentation Special Interest Group
+
+The [K8s SIG](https://github.com/kubernetes/community/tree/master/sig-instrumentation) Instrumentation special interest group coordinates metric requirements of different SIGs for other components through finding common APIs.
+This group also covers best practices for cluster observabilty through metrics, logging and events across all Kubernetes components.
+See the [Instrumentation Special Interest Group](https://github.com/kubernetes/community/tree/master/sig-instrumentation) for details on joining this group.
+
+### OpenMetrics
+
+The OpenMetrics is an effort to create an open standard for transmitting metrics at scale, with support for both text representation and Protocol Buffers.
+See the [OpenMetrics](https://openmetrics.io/) page for details.
