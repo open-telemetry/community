@@ -68,9 +68,17 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 ## .NET
 
-Repo: [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet)
+### API and SDK
 
-The list of active members (both "approvers" and "maintainers") for the OpenTelemetry .NET API and SDK can be found in the [open-telemetry/opentelemetry-dotnet README file](https://github.com/open-telemetry/opentelemetry-dotnet#contributing).
+Repo: [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet).
+
+The [list of active members](https://github.com/open-telemetry/opentelemetry-dotnet#contributing) (both "approvers" and "maintainers") can be found in the [README.md](https://github.com/open-telemetry/opentelemetry-dotnet/blob/master/README.md#contributing) file in the [repo](https://github.com/open-telemetry/opentelemetry-dotnet).
+
+### Auto-Instrumentation Agent (aka Tracer)
+
+Repo: [open-telemetry/opentelemetry-dotnet-instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation).
+
+The [list of active members](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation#community-roles) (both "approvers" and "maintainers") can be found in the [README.md](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/master/README.md#community-roles) file in the [repo](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation).
 
 ## Golang
 
