@@ -9,7 +9,6 @@ In alphabetical order:
     - [Alolita Sharma](#alolita-sharma)
     - [Daniel Dyla](#daniel-dyla)
     - [Ilan Rabinovitch](#ilan-rabinovitch)
-    - [Jaana Dogan](#jaana-dogan)
     - [Liz Fong-Jones](#liz-fong-jones)
     - [Morgan McLean](#morgan-mclean)
     - [Tyler Yahn (He/Him)](#tyler-yahn-hehim)
@@ -46,37 +45,6 @@ Daniel is an Open Source Architect at Dynatrace where he works on OpenTelemetry 
 - GitHub: [@irabinovitch](https://github.com/irabinovitch)
 
 Ilan Rabinovitch leads the community and product teams at Datadog. He spends his days diving into monitoring best practices, collaborating with Datadog's open source community and evangelizing observability best practices. Over the last year, he has collaborated with the OTel governance board and SIGs to arrange the contribution of Datadog's tracing libraries and auto-instrumentation support to OpenTelemetry. Prior to joining Datadog, Ilan spent a number of years leading infrastructure and reliability engineering teams at organizations such as Ooyala and Edmunds.com. He's active in the wider open source and DevOps communities, including co-founding events such as SCALE, Texas Linux Fest, and various DevOpsDays events.
-
----
-
-### Jaana Dogan
-
-![Jaana Dogan](static/jaana-dogan.jpeg)
-
-- Company: Amazon Web Services (AWS)
-- GitHub: [rakyll](https://github.com/rakyll)
-
-Jaana is a Principal Engineer at AWS working on observability efforts
-including OpenTelemetry. Jaana was a co-creator of the OpenCensus project
-where various aspects of OpenTelemetry is originated at. 
-Jaana contributed to various open standards efforts including
-the W3C Distributed Tracing and establishing more correlation
-standards among different groups working on telemetry collection.
-Jaana has a strong background in telemetry efforts, she led
-various aspects of Google's instrumentation projects and was a lead
-working on Go programming language's diagnostics story.
-
-Jaana has worked with 10+ APM companies in this space to find consensus in
-terms of standards and instrumentation practices during her time 
-on OpenCensus. She was also a key public representative of the concepts
-and the technology. She gave keynotes and talks at various conferences
-including KubeCon, Velocity, FOSDEM, Monitorama, PromCon, OSCON,
-DockerCon and more.
-
-Jaana has a strong past in building developer products.
-She has 15 years in this field, most notably making Go a
-globally successful programming language. She will ensure OpenTelemetry
-is capturing practitioner's needs and is adopted widely in the industry.
 
 ---
 

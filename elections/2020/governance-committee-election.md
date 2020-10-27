@@ -1,5 +1,7 @@
 # OpenTelemetry 2020 Governance Committee election
 
+Please see **[the list of candidates running in the election here](./governance-committee-candidates.md)**.
+
 This document lays out the 2020 election process per the OpenTelemetry
 governance committee
 [charter document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)
@@ -113,7 +115,7 @@ One of two options will be available in the form to prove eligibility:
     dependency on OpenTelemetry, and/or your involvement with a well-known
     organization’s adoption of OpenTelemetry as an end-user.
 
-The link to the pre-registration form: [NEEDS UPDATE](https://github.com/open-telemetry/community/issues/488#issuecomment-700967483)
+The link to the pre-registration form: [OpenTelemetry 2020 Governance Committee Voter Registration Form](https://forms.gle/X4XjnJsVyNauEq9U7)
 
 Note that all pre-registrations will be verified by the Governance Committee
 for eligibility.
