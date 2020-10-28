@@ -12,7 +12,7 @@ in alphabetical order:
 - [Constance Caramanolis](https://github.com/ccaraman), Splunk, until October 2021
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2022
 - [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2022
-- [Morgan James McLean](https://github.com/mtwo), Google, until October 2022
+- [Morgan McLean](https://github.com/mtwo), Google, until October 2022
 - [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google, until October 2021
 - [Ted Young](https://github.com/tedsuo), Lightstep, until October 2021
