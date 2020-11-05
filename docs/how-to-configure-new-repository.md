@@ -37,7 +37,7 @@ for the repository.
 
 ## Policies
 
-Typically `master` branch is set as default. And protected with the following
+Typically `main` branch is set as default. And protected with the following
 policies:
 
 1. Enable `Require pull request reviews before merging` setting. Make sure
@@ -50,7 +50,7 @@ policies:
    repo](https://project.lfcla.com/#/project/a0941000002wBz4AAE/cla))
 4. It is a good practice to check the `Include administrators` setting.
 5. Repository MUST enforce `Restrict who can push to matching branches` setting
-   to only allow the members of `foo-maintainers` to push to the `master`
+   to only allow the members of `foo-maintainers` to push to the `main`
    branch.
 
 ![image](https://user-images.githubusercontent.com/9950081/57563714-c5d51000-7355-11e9-80c8-68374e2de2f6.png)
