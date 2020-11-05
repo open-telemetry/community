@@ -6,11 +6,13 @@ This is the current Governance Committee, per the [Governance Committee
 Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md),
 in alphabetical order:
 
+- [Alolita Sharma](https://github.com/alolita), AWS, until October 2022
 - [Ben Sigelman](https://github.com/bhs), Lightstep, until October 2021
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk, until October 2021
 - [Constance Caramanolis](https://github.com/ccaraman), Splunk, until October 2021
-- [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2020
-- [Morgan James McLean](https://github.com/mtwo), Google, until October 2020
+- [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2022
+- [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2022
+- [Morgan McLean](https://github.com/mtwo), Google, until October 2022
 - [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google, until October 2021
 - [Ted Young](https://github.com/tedsuo), Lightstep, until October 2021
@@ -68,9 +70,17 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 ## .NET
 
-Repo: [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet)
+### API and SDK
 
-The list of active members (both "approvers" and "maintainers") for the OpenTelemetry .NET API and SDK can be found in the [open-telemetry/opentelemetry-dotnet README file](https://github.com/open-telemetry/opentelemetry-dotnet#contributing).
+Repo: [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet).
+
+The [list of active members](https://github.com/open-telemetry/opentelemetry-dotnet#contributing) (both "approvers" and "maintainers") can be found in the [README.md](https://github.com/open-telemetry/opentelemetry-dotnet/blob/master/README.md#contributing) file in the [repo](https://github.com/open-telemetry/opentelemetry-dotnet).
+
+### Auto-Instrumentation Agent (aka Tracer)
+
+Repo: [open-telemetry/opentelemetry-dotnet-instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation).
+
+The [list of active members](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation#community-roles) (both "approvers" and "maintainers") can be found in the [README.md](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/master/README.md#community-roles) file in the [repo](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation).
 
 ## Golang
 
