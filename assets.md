@@ -26,3 +26,5 @@ This file is intended to list all the assets controlled by OpenTelemetry.
     - Member: Bogdan Drutu @bogdandrutu
 - [Calendar Google Group](https://groups.google.com/forum/#!forum/opentelemetry-calendar)
     - Owner: Morgan McLean @mtwo
+- [Easy CLA](https://project.lfcla.com/#/project/a0941000002wBz4AAE/cla)
+    - Admins: @lizthegrey, @bogdandrutu
