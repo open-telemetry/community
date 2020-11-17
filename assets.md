@@ -34,6 +34,10 @@ This file is intended to list all the assets controlled by OpenTelemetry.
     - Used to register service accounts and as a NuGet OpenTelemetry organization e-mail. All .NET SIG maintainers are part of this list. Owned by CNCF.
     - Admin: [add member](https://lists.cncf.io/g/cncf-opentelemetry-net-maintainers/).
 
+- Mailing list cncf-opentelemetry-ruby@lists.cncf.io
+    - Used as a service account e-mail for Ruby SIG. All Ruby SIG maintainers [@open-telemetry/ruby-maintainers](https://github.com/orgs/open-telemetry/teams/ruby-maintainers) are moderators of this list. Owned by CNCF.
+    - Moderators: [add member](https://lists.cncf.io/g/cncf-opentelemetry-ruby/members).
+
 - YouTube channel [OpenTelemetry](https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos).
     - Ask any of the following people if you need to manage the feed:
     - Owners: Amye Scavarda Perrin (CNCF rep), Sergey Kanzhelev
