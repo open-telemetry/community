@@ -103,7 +103,7 @@ from 3 largely distinct timezones. The best way to report it and suggest an
 alternative is to file an issue on this repository or discuss it in
 SIG-specific Gitter channel.
 
-Name|Meeting Time|Meeting Notes|Meeting Link|Gitter|
+Name|Meeting Time|Meeting Notes|Meeting Link|Discussions|
 ----|------------|-------------|------------|------|
 Collector|Every Wednesday alternating between 09:00 and 14:00 PT|[Google Doc](https://docs.google.com/document/d/1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE/edit?usp=sharing)|[Zoom](https://zoom.us/j/8203130519)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-service)|
 C/C++: SDK|Every week alternating between Monday at 15:00 PT and Wednesday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw/edit?usp=sharing)|[Zoom](https://zoom.us/j/8203130519)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-cpp)|
@@ -111,8 +111,8 @@ DotNET: Instrumentation|Every Wednesday at 13:00 PT|[Google Doc](https://docs.go
 DotNET: SDK|Every Tuesday alternating between 11:00 and 16:00 PT|[Google Doc](https://docs.google.com/document/d/1yjjD6aBcLxlRazYrawukDgrhZMObwHARJbB9glWdHj8/edit?usp=sharing)|[Zoom](https://zoom.us/j/8287234601)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-dotnet)|
 Erlang/Elixir: SDK|Every Thursday alternating between 07:00 and 15:00 PT|[Google Doc](https://docs.google.com/document/d/1EbBiRjBc_cBf0T_B5OtNRPhbD4jdBrVYJAy8euCDrUI/edit?usp=sharing)|[Zoom](https://zoom.us/j/8287234601)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-erlang)|
 GoLang: SDK|Every Thursday alternating between 10:00 and 15:00 PDT|[Google Doc](https://docs.google.com/document/d/1A63zSWX0x2CyCK_LoNhmQC4rqhLpYXJzXbEPDUQ2n6w/edit#)|[Zoom](https://zoom.us/j/6729396170)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-go)|
-Java: SDK|Every Friday at 08:00 PDT|[Google Doc](https://docs.google.com/document/d/1oHpisisco8J7Yk73ovx3eeXaokSMqgVuEuWNwPOajtY/edit)|[Zoom](https://zoom.us/j/8287234601)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-java)|
-Java: Instrumentation|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw/edit?usp=sharing)|[Zoom](https://zoom.us/j/8203130519)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-auto-instr-java)|
+Java: SDK|Every Friday at 08:00 PDT|[Google Doc](https://docs.google.com/document/d/1oHpisisco8J7Yk73ovx3eeXaokSMqgVuEuWNwPOajtY/edit)|[Zoom](https://zoom.us/j/8287234601)|[GitHub Discussions](https://github.com/open-telemetry/opentelemetry-java/discussions)|
+Java: Instrumentation|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw/edit?usp=sharing)|[Zoom](https://zoom.us/j/8203130519)|[GitHub Discussions](https://github.com/open-telemetry/opentelemetry-java-instrumentation/discussions)|
 JavaScript: SDK|Every Wednesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1S_pN7sBU7wO6cBP2hDSAt3bjSWdWdm6jWeUikC9KrcY/edit?usp=sharing)|[Zoom](https://zoom.us/j/8287234601)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-node)|
 PHP: SDK|Every Wednesday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI/edit)|[Zoom](https://zoom.us/j/8287234601)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-php)|
 Python: SDK|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1CIMGoIOZ-c3-igzbd6_Pnxx1SjAkjwqoYSUWxPY8XIs/edit)|[Zoom](https://zoom.us/j/6729396170)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-python)|
