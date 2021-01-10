@@ -41,6 +41,7 @@ The TC is responsible for all technical development within the OpenTelemetry pro
 * Development process and any coding standards
 * Approving changes to any specifications
 * Mediating technical discussions which have cross project impact
+* Deciding on and communicating about proposed donations to OpenTelemetry
 
 The TC recognizes that maintainers of specific languages or sub-projects have significant autonomy over their SIG and implementations.  The TC’s focus is on cross-project or disputed concerns with a primary goal of seeking consensus to develop an appropriate technical solution. The TC will define OpenTelemetry’s release vehicles and serve as the primary technical liaison body for the OpenTelemetry project with the CNCF's TOC, external open source projects, consortiums and groups.
 
@@ -59,6 +60,14 @@ The development process will include a process for the TC to oversee and approve
 * Alignment with OpenTelemetry’s goals and priorities
 
 The TC and entire technical community will follow any processes as may be specified by the Cloud Native Computing Foundation relating to the intake and license compliance review of contributions, including the CNCF IP Policy.
+
+### Code Donations
+
+From time to time, organizations may wish to donate existing code to OpenTelemetry. These donations fall into two rough categories:
+* **Small donations:** Some donations only amount to a single PR and should usually just be contributed as such
+* **Large or complex donations:** Other donations are much larger, require ongoing maintenance of their own, and/or introduce nuanced licensing issues
+
+Large donations – or small donations that don't turn out to be so simple during PR review – should be referred to the TC. The TC will respond to donation proposals **within two weeks** (that is, after having time to meet and discuss live). If the TC has not responded to the donation request within that interval, the donating party can and should point to this document and request guidance at the TC's earliest convenience.
 
 ## Elections
 
