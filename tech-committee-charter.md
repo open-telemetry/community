@@ -63,11 +63,11 @@ The TC and entire technical community will follow any processes as may be specif
 
 ### Code Donations
 
-From time to time, organizations may wish to donate existing code to OpenTelemetry. These donations fall into two rough categories:
-* **Small donations:** Some donations only amount to a single PR and should usually just be contributed as such
-* **Large or complex donations:** Other donations are much larger, require ongoing maintenance of their own, and/or introduce nuanced licensing issues
-
-Large donations – or small donations that don't turn out to be so simple during PR review – should be referred to the TC. The TC will respond to donation proposals **within two weeks** (that is, after having time to meet and discuss live). If the TC has not responded to the donation request within that interval, the donating party can and should point to this document and request guidance at the TC's earliest convenience.
+From time to time, organizations may wish to donate existing code to
+OpenTelemetry. The basic process for donating code is described [in
+CONTRIBUTING.md](https://github.com/open-telemetry/community/blob/master/CONTRIBUTING.md#donations).
+Of note is the expectation that the TC respond to donation proposals **within
+two weeks.**
 
 ## Elections
 
