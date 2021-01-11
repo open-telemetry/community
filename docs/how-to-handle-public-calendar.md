@@ -31,5 +31,6 @@ Anyone can request to be added or removed as a meeting participant. Request can
 be made via GitHub issue on this repository or contacting SIG maintainer via
 other channels like Gitter.
 
-All SIG maintainers have permission to edit the Public OpenTelemetry calendar. 
-Please contact @mtwo via Gitter or by creating an issue if you require access.
+All SIG maintainers have permission to edit the Public OpenTelemetry calendar.
+Please contact @SergeyKanzhelev via Gitter or by creating an issue if you
+require access.
