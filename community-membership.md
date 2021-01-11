@@ -198,6 +198,8 @@ The following apply to the subproject for which one would be an owner.
 - Aligning with the overall project goals, specifications and design principles
   defined by Technical Committee (TC). Bringing general questions and requests
   to the discussions as part of specifications project.
+- Scheduling SIG meetings using the [OpenTelemetry Public
+  Calendar](./docs/how-to-handle-public-calendar.md).
 
 ### Responsibilities and privileges
 
@@ -206,7 +208,7 @@ The following apply to the subproject for which one would be an owner.
 - Make and approve technical design decisions for the subproject.
 - Set technical direction and priorities for the subproject.
 - Define milestones and releases.
-  - Decides on when PRs are merged to control the release scope. 
+  - Decides on when PRs are merged to control the release scope.
 - Mentor and guide approvers, reviewers, and contributors to the subproject.
 - Escalate *reviewer* and *maintainer* workflow concerns (i.e. responsiveness,
   availability, and general contributor community health) to the TC.
