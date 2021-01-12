@@ -243,7 +243,7 @@ interval, the donating party can and should point to this document and request
 guidance at the TC's earliest convenience.
 
 All donated code requires a license compatible with the Apache Software License
-2.0 (ASL 2), and donated code will require a change of copyright to reflect the
+2.0, and donated code will require a change of copyright to reflect the
 OpenTelemetry Authors.
 
 ## Communication
