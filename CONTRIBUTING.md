@@ -225,6 +225,27 @@ contributors, so we would like you to come join us! The [Community Membership
 Document](https://github.com/open-telemetry/community/blob/master/community-membership.md)
 covers membership processes and roles.
 
+## Donations
+
+Donations of preexisting code fall into two broad categories:
+* **Small donations:** Some donations only amount to a single PR and should
+  usually just be contributed as such
+* **Large or complex donations:** Other donations are much larger, require
+  ongoing maintenance of their own, and/or introduce nuanced licensing issues
+
+Large donations – or small donations that turn up complex issues during PR
+review – should be referred to the Technical Committee (TC) by filing an issue
+in this `community` repository and tagging
+`@open-telemetry/technical-committee`. The TC will respond to donation
+proposals **within two weeks** (that is, after having time to meet and discuss
+live). If the TC has not responded to the donation request within that
+interval, the donating party can and should point to this document and request
+guidance at the TC's earliest convenience.
+
+All donated code requires a license compatible with the Apache Software License
+2.0, and donated code will require a change of copyright to reflect the
+OpenTelemetry Authors.
+
 ## Communication
 
 - [General
