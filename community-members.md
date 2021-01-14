@@ -28,6 +28,7 @@ Trace Approvers:
 
 - [Christian Neumüller](https://github.com/Oberon00), Dynatrace
 - [Ted Young](https://github.com/tedsuo), Lightstep
+- [Nikita Salnikov-Tarnovski](https://github.com/iNikem), Splunk
 
 Metrics Approvers:
 
