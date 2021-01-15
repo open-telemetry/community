@@ -31,7 +31,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
     - Owner: @SergeyKanzhelev
     - Write access controled via: opentelemetry-calendar-contributors@googlegroups.com
 
-- [opentelemetry-calendar-contributors Google Group](opentelemetry-calendar-contributors@googlegroups.com)
+- [opentelemetry-calendar-contributors Google Group](https://groups.google.com/g/opentelemetry-calendar-contributors)
     - Owners: current GC members.
 
 - [OpenTelemetry Calendar Invites Google Group](https://groups.google.com/g/opentelemetry-calendar)
