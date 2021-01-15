@@ -33,6 +33,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 
 - [opentelemetry-calendar-contributors Google Group](https://groups.google.com/g/opentelemetry-calendar-contributors)
     - Owners: current GC members.
+    - Members: SIG maintainers and individuals appointed by maintainers
 
 - [OpenTelemetry Calendar Invites Google Group](https://groups.google.com/g/opentelemetry-calendar)
     - Owners: @mtwo
