@@ -51,6 +51,15 @@ This file is intended to list all the assets controlled by OpenTelemetry.
     - Owners: Amye Scavarda Perrin (CNCF rep), Sergey Kanzhelev
     - Managers: Alolita Sharma, Austin Parker, Ben Sigelman, Eddy Nakamura
 
+- Zoom accounts
+    - E-mails: cncf-opentelemetry@cncf.io, cncf-opentelemetry-meeting-1@cncf.io, cncf-opentelemetry-meeting-2@cncf.io
+    - Owned by: Amye Scavarda Perrin (CNCF rep)
+    - Passwords shared with: Austin Parker, Sergey Kanzhelev, Eddy Nakamura
+
+- [Splain](https://splain.io/) account
+    - Used to upload Zoom meeting recordings to Youtube
+    - Owned by: Amye Scavarda Perrin (CNCF rep)
+
 ## Bot accounts
 
 - [Easy CLA](https://project.lfcla.com/#/project/a0941000002wBz4AAE/cla)
