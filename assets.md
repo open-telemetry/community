@@ -54,7 +54,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 - Zoom accounts
     - E-mails: cncf-opentelemetry@cncf.io, cncf-opentelemetry-meeting-1@cncf.io, cncf-opentelemetry-meeting-2@cncf.io
     - Owned by: Amye Scavarda Perrin (CNCF rep)
-    - Passwords shared with: Austin Parker, Sergey Kanzhelev, Eddy Nakamura
+    - Passwords shared with: Austin Parker, Eddy Nakamura, Morgan McLean, Ted Young, Sergey Kanzhelev,
 
 - [Splain](https://splain.io/) account
     - Used to upload Zoom meeting recordings to Youtube
