@@ -49,7 +49,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 - YouTube channel [OpenTelemetry](https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos).
     - Ask any of the following people if you need to manage the feed:
     - Owners: Amye Scavarda Perrin (CNCF rep), Sergey Kanzhelev
-    - Managers: Alolita Sharma, Austin Parker, Ben Sigelman, Eddy Nakamura
+    - Managers: Alolita Sharma, Austin Parker, Ben Sigelman, Eddy Nakamura, Ted Young
 
 ## Bot accounts
 
