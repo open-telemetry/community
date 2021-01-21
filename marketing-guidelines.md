@@ -1,17 +1,16 @@
 # OpenTelemetry Marketing Guidelines for Contributing Organizations
 
-OpenTelemetry is a collaboration among end-users, adjacent OSS projects, and
-vendors who ultimately sell products and services built upon OpenTelemetry data
-or components. Like many standards-oriented projects, the vendors that partner
-on OpenTelemetry also compete in the marketplace, and for this reason it’s
+OpenTelemetry (a.k.a. "OTel") is a collaboration among end-users, adjacent OSS
+projects, and vendors who ultimately sell products and services built upon OTel
+data or components. Like many standards-oriented projects, the vendors that
+partner on OTel also compete in the marketplace, and for this reason it’s
 important to establish some ground rules and expectations for how contributing
-organizations communicate and message about OpenTelemetry.
+organizations communicate and message about OTel.
 
-In fact, OpenTelemetry’s success depends on both the reality and the perception
-of sincere collaboration between the many parties (and vendors) involved.
-There’s a lot of superb technical work happening within OTel, and we want to
-make sure it’s not overshadowed by an opportunistic marketing department here
-or there!
+In fact, OTel’s success depends on both the reality and the perception of
+sincere collaboration between the many parties (and vendors) involved. There’s
+a lot of superb technical work happening within OTel, and we want to make sure
+it’s not overshadowed by an opportunistic marketing department here or there!
 
 This document is divided into two sections:
 * **Goals and Guidelines:** What are we trying to achieve? What is our
@@ -21,7 +20,7 @@ This document is divided into two sections:
 
 ## Goals and Guidelines
 
-There are three high-level foci for these goals and guidelines.
+There are three high-level focus areas for these goals and guidelines.
 
 ### I: OpenTelemetry is a joint effort
 
@@ -85,13 +84,15 @@ Here is how we handle such circumstances:
 1. Whomever notices the relevant public (marketing) content should write an
    email to cncf-opentelemetry-governance@lists.cncf.io and include an
    explanation of why the content is problematic, ideally referencing the
-   [relevant guidelines above](#goals-and-guidelines)
+   [relevant guidelines above](#goals-and-guidelines).
 1. The OTel Governance Committee (GC) will discuss the case during its next
-   (weekly) meeting, or asynchronously via email if possible
+   (weekly) meeting, or asynchronously via email if possible. The OTel GC
+   guarantees a response via email **within two weeks** of the initial report.
 1. If the GC agrees that there’s a problem, a corrective action will be
    recommended to the author of the content in question, and the GC will
    request that the organization that published the content train relevant
-   employees on the content in this document as a further preventative measure
+   employees on the content in this document as a further preventative
+   measure.
 
 If a pattern develops with a particular vendor, the GC will meet to discuss
 more significant consequences – for instance, removing that vendor’s name from
