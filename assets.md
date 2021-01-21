@@ -6,7 +6,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 
 - OpenTelemetry [Azure Pipeline](https://dev.azure.com/opentelemetry/).
     - Free tier is used.
-    - Currently used for .NET SDK (.NET SIG maintainers are administrators).
+    - Currently used for .NET Instrumentation repository.
     - Admin: [add administrator](https://dev.azure.com/opentelemetry/pipelines/_settings/).
 
 ## Artifact repositories
