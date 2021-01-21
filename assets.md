@@ -6,7 +6,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 
 - OpenTelemetry [Azure Pipeline](https://dev.azure.com/opentelemetry/).
     - Free tier is used.
-    - Currently used for .NET SDK (.NET SIG maintainers are administrators).
+    - Currently used for .NET Instrumentation repository.
     - Admin: [add administrator](https://dev.azure.com/opentelemetry/pipelines/_settings/).
 
 ## Artifact repositories
@@ -49,7 +49,16 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 - YouTube channel [OpenTelemetry](https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos).
     - Ask any of the following people if you need to manage the feed:
     - Owners: Amye Scavarda Perrin (CNCF rep), Sergey Kanzhelev
-    - Managers: Alolita Sharma, Austin Parker, Ben Sigelman, Eddy Nakamura
+    - Managers: Alolita Sharma, Austin Parker, Ben Sigelman, Eddy Nakamura, Ted Young
+
+- Zoom accounts
+    - E-mails: cncf-opentelemetry@cncf.io, cncf-opentelemetry-meeting-1@cncf.io, cncf-opentelemetry-meeting-2@cncf.io
+    - Owned by: Amye Scavarda Perrin (CNCF rep)
+    - Passwords shared with: Austin Parker, Eddy Nakamura, Morgan McLean, Ted Young, Sergey Kanzhelev,
+
+- [Splain](https://splain.io/) account
+    - Used to upload Zoom meeting recordings to Youtube
+    - Owned by: Amye Scavarda Perrin (CNCF rep)
 
 ## Bot accounts
 
