@@ -28,7 +28,15 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 ## Communication channels
 
 - [Calendar Google Group](https://groups.google.com/forum/#!forum/opentelemetry-calendar)
-    - Owner: Morgan McLean @mtwo
+    - Owner: @SergeyKanzhelev
+    - Write access controled via: opentelemetry-calendar-contributors@googlegroups.com
+
+- [opentelemetry-calendar-contributors Google Group](https://groups.google.com/g/opentelemetry-calendar-contributors)
+    - Owners: current GC members.
+    - Members: SIG maintainers and individuals appointed by maintainers
+
+- [OpenTelemetry Calendar Invites Google Group](https://groups.google.com/g/opentelemetry-calendar)
+    - Owners: @mtwo
 
 - Mailing list cncf-opentelemetry-net-maintainers@lists.cncf.io
     - Used to register service accounts and as a NuGet OpenTelemetry organization e-mail. All .NET SIG maintainers are part of this list. Owned by CNCF.

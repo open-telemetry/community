@@ -27,6 +27,7 @@ are maintained by technical steering committee.
 Trace Approvers:
 
 - [Christian Neumüller](https://github.com/Oberon00), Dynatrace
+- [Nikita Salnikov-Tarnovski](https://github.com/iNikem), Splunk
 - [Ted Young](https://github.com/tedsuo), Lightstep
 
 Metrics Approvers:
@@ -66,7 +67,7 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 Repo: [open-telemetry/opentelemetry-java-instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation)
 
-The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Java Instrumentation can be found in the [open-telemetry/opentelemetry-java-instrumentation CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/master/CONTRIBUTING.md#approvers-and-maintainers).
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Java Instrumentation can be found in the [open-telemetry/opentelemetry-java-instrumentation README file](https://github.com/open-telemetry/opentelemetry-java-instrumentation#contributing).
 
 ## .NET
 
