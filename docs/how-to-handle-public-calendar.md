@@ -45,5 +45,5 @@ Please keep the membership of this group up to date and accurate.
 
 ## Zoom bombing
 
-All members of opentelemetry-calendar-contributors@googlegroups.com has access to [the document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#)
+All members of opentelemetry-calendar-contributors@googlegroups.com has access to [this document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#)
 explaining how to deal with inappropriate behavior in Zoom.
