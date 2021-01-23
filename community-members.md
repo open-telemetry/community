@@ -18,11 +18,25 @@ in alphabetical order:
 - [Ted Young](https://github.com/tedsuo), Lightstep, until October 2021
 - [Yuri Shkuro](https://github.com/yurishkuro), Facebook, until October 2021
 
+## Technical Committee
+
+This is the current Technical Committee, per the [Technical Committee
+Charter](https://github.com/open-telemetry/community/blob/master/tech-committee-charter.md),
+in alphabetical order:
+
+- [Armin Ruech](https://github.com/arminru), Dynatrace
+- [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk
+- [Carlos Alberto](https://github.com/carlosalberto), Lightstep
+- [Josh MacDonald](https://github.com/jmacd), Lightstep
+- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
+- [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
+- [Yuri Shkuro](https://github.com/yurishkuro), Facebook
+
 ## Specifications and Proto
 
+Members of the Technical Committee are the maintainers of
 [Project specs](https://github.com/open-telemetry/opentelemetry-specification)
-and [Proto](https://github.com/open-telemetry/opentelemetry-proto)
-are maintained by technical steering committee.
+and [Proto definitions](https://github.com/open-telemetry/opentelemetry-proto).
 
 Trace Approvers:
 
@@ -46,16 +60,6 @@ Global Approvers:
 
 - [Anuraag Agrawal](https://github.com/anuraaga), AWS
 - [Reiley Yang](https://github.com/reyang), Microsoft
-
-Maintainers (i.e., the "Technical Committee" or "TC"):
-
-- [Armin Ruech](https://github.com/arminru), Dynatrace
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk
-- [Carlos Alberto](https://github.com/carlosalberto), Lightstep
-- [Josh MacDonald](https://github.com/jmacd), Lightstep
-- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
-- [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
-- [Yuri Shkuro](https://github.com/yurishkuro), Facebook
 
 ## Java
 
