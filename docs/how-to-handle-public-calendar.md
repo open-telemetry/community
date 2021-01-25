@@ -40,7 +40,6 @@ To get access to the calendar, please join the Google Group opentelemetry-calend
 If your identity is not recognizable from the e-mail you are using to request joining the group, please
 request to be added to this Google Group by creating an issue in this repository.
 
-Important: all members of this Google Group has access to [zoom meetings host keys](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#).
 Please keep the membership of this group up to date and accurate.
 
 ## Zoom bombing prevention
