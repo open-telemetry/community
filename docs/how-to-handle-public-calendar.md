@@ -36,7 +36,7 @@ as a participant. Anybody who wants to recieve up to date invites for all OpenTe
 meetings can join the group.
 
 All SIG maintainers have permission to edit the Public OpenTelemetry calendar.
-To get access to the calendar, please join the Google Group opentelemetry-calendar-contributors@googlegroups.com.
+To get access to the calendar, please join the Google Group opentelemetry-calendar-contributors@googlegroups.com by submitting a request [here](https://groups.google.com/g/opentelemetry-calendar-contributors).
 If your identity is not recognizable from the e-mail you are using to request joining the group, please
 request to be added to this Google Group by creating an issue in this repository.
 
