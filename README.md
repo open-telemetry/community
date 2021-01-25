@@ -90,7 +90,7 @@ from 3 largely distinct timezones. The best way to report it and suggest an
 alternative is to file an issue on this repository or discuss it in
 SIG-specific GitHub discussions.
 
-*Note: all meetings use the same passcode: _77777_*. This is embedded into all calendar Zoom links.
+**Note: all meetings use the same passcode: _77777_**. This is embedded into all calendar Zoom links.
 
 Name|Meeting Time|Meeting Notes|Meeting Link|Discussions|
 ----|------------|-------------|------------|------|
