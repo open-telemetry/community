@@ -45,4 +45,4 @@ Please keep the membership of this group up to date and accurate.
 ## Zoom bombing prevention
 
 All members of opentelemetry-calendar-contributors@googlegroups.com have access to [this document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#)
-explaining how to deal with inappropriate behavior in Zoom.
+listing the host keys for our meetings and explaining how to deal with inappropriate behavior in Zoom.
