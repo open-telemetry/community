@@ -43,6 +43,6 @@ request to be added to this Google Group by creating an issue in this repository
 Please keep the membership of this group up to date and accurate.
 
 ## Zoom bombing prevention
-
+All meetings now require a passcode to join: _77777_. This passcode is embedded into the calendar meeting invites and meeting notes documents.
 All members of opentelemetry-calendar-contributors@googlegroups.com have access to [this document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#)
 listing the host keys for our meetings and explaining how to deal with inappropriate behavior in Zoom.
