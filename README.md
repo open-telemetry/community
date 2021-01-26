@@ -63,14 +63,6 @@ cncf-opentelemetry-tc@lists.cncf.io|N/A|TC|anyone|members|<details><summary>Note
 cncf-opentelemetry-governance@lists.cncf.io|N/A|GC|anyone|members|<details><summary>Notes</summary>Used by the OpenTelemetry GC for internal communication. Also can be used to contact the GC for questions that cannot be discussed publicly on GitHub, GitHub discussions, or other mailing lists. For instance, members could use this for issues related to improper applications of our community membership guidance.</details>|
 cncf-opentelemetry-comms@lists.cncf.io|[Here](https://lists.cncf.io/g/cncf-opentelemetry-comms)|GC and open for anyone|anyone|anyone|<details><summary>Notes</summary>Mailing list to notify and request reviews of upcoming announcements, or request a post on the OpenTelemetry Twitter account or other public channels.</details>|
 
-### Community Meetings
-
-We host monthly community video conferences, alternating between times that
-work for Europe and Asia. These meetings are open to all contributors!
-
-Meeting invites can be accessed from our [public Calendar](https://github.com/open-telemetry/community#calendar). We keep public notes in the agenda document available
-[here](https://docs.google.com/document/d/1uvua6R-VnOpMmAjM3b7j3jQDFz6KHDzbEX4ZaZ9BFso).
-
 ## License
 
 All OpenTelemetry projects are shipped under the permissive Apache 2.0 license
@@ -97,6 +89,8 @@ practice to alternate morning/evening meetings once SIG has representatives
 from 3 largely distinct timezones. The best way to report it and suggest an
 alternative is to file an issue on this repository or discuss it in
 SIG-specific GitHub discussions.
+
+**Note: all meetings use the same passcode: _77777_**. This is embedded into all calendar Zoom links.
 
 Name|Meeting Time|Meeting Notes|Meeting Link|Discussions|
 ----|------------|-------------|------------|------|
