@@ -110,7 +110,8 @@ Rust: SDK|Every other week on Tuesday alternating between 07:00 and 15:00 PT|[Go
 Specification: General|Every Tuesday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/1-bCYkN-DWJq4jw1ybaDZYYmx-WAe6HnwfWbkm8d57v8/edit?usp=sharing)|[Zoom](https://zoom.us/j/6729396170)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-specification)
 Specification: Errors|Every Thursday at 11:00 PT|[Google Doc](https://docs.google.com/document/d/1HgUI69rBridFzCXxXuTjQrkG6jb-YcFQnZjPcyBcK1U/edit#)|[Zoom](https://zoom.us/j/6729396170)|[Gitter](https://gitter.im/open-telemetry/error-events-wg)|
 Specification: Logs|Every other week on Wednesday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1cX5fWXyWqVVzYHSFUymYUfWxUK5hT97gc23w595LmdM/edit#)|[Zoom](https://zoom.us/j/8203130519)|[Gitter](https://gitter.im/open-telemetry/logs)
-Specification: Metrics|Every Thursday at 11:00 PT|[ Google Doc](https://docs.google.com/document/d/1LfDVyBJlIewwm3a0JtDtEjkusZjzQE3IAix8b0Fxy3Y/edit)|[Zoom](https://zoom.us/j/8203130519)|[Gitter](https://gitter.im/open-telemetry/metrics-specs)
+Specification: Metrics API/SDK|Every Tuesday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1-bCYkN-DWJq4jw1ybaDZYYmx-WAe6HnwfWbkm8d57v8/edit)|[Zoom](https://zoom.us/j/8203130519)|[Gitter](https://gitter.im/open-telemetry/metrics-specs)
+Specification: Metrics Data Model|Every Thursday alternating between 11:00 and 16:00 PT|[Google Doc](https://docs.google.com/document/d/1-bCYkN-DWJq4jw1ybaDZYYmx-WAe6HnwfWbkm8d57v8/edit)|[Zoom](https://zoom.us/j/8203130519)|[Gitter](https://gitter.im/open-telemetry/metrics-specs)
 Specification: Sampling|Every Friday at 12:00 PT|[Google Doc](https://docs.google.com/document/d/12i1Y_M2AD9A0jsRMTuqnyHf923WLnbO7K8QquKKDlsg/)|[Zoom](https://zoom.us/j/6729396170)||
 Website|Every Thursday at 13:30 PT|[Google Doc](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY)|[Zoom](https://zoom.us/j/8203130519)||
 
