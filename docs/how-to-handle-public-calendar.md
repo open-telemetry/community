@@ -36,5 +36,13 @@ as a participant. Anybody who wants to recieve up to date invites for all OpenTe
 meetings can join the group.
 
 All SIG maintainers have permission to edit the Public OpenTelemetry calendar.
-To get access to the calendar, please join the Google Group opentelemetry-calendar-contributors@googlegroups.com.
-You can request to be added to this Google Group by creating an issue in this repository.
+To get access to the calendar, please join the Google Group opentelemetry-calendar-contributors@googlegroups.com by submitting a request [here](https://groups.google.com/g/opentelemetry-calendar-contributors).
+If your identity is not recognizable from the e-mail you are using to request joining the group, please
+request to be added to this Google Group by creating an issue in this repository.
+
+Please keep the membership of this group up to date and accurate.
+
+## Zoom bombing prevention
+All meetings now require a passcode to join: _77777_. This passcode is embedded into the calendar meeting invites and meeting notes documents.
+All members of opentelemetry-calendar-contributors@googlegroups.com have access to [this document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#)
+listing the host keys for our meetings and explaining how to deal with inappropriate behavior in Zoom.
