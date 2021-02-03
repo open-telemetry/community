@@ -1,29 +1,21 @@
 # OpenTelemetry Adopters
 
-A non-exhaustive unordered list of organizations that have adopted OpenTelemetry.
+A non-exhaustive, alphabetized list of organizations that have adopted OpenTelemetry.
 
-[AppDirect](https://www.appdirect.com/)
-
-[EcoBee](https://www.ecobee.com/) [uses the OpenTelemetry Java SDK](https://www.honeycomb.io/blog/bees-working-together-how-ecobees-engineers-adopted-honeycomb/), and the collector both as a centralized service and as a sidecar.
-
-[Google Cloud Platform](https://cloud.google.com) uses the OpenTelemetry collector as an agent and forwarder. Cloud Trace and Monitoring use the OpenTelemetry SDKs to capture metrics and traces from customers' applications.
-
-[Grafana Labs](https://grafana.com/)
-
-[Honeycomb](honeycomb.io) uses OpenTelemetry to instrument its querying frontend service. Several of its customers use OpenTelemetry to send data to Honeycomb.
-
-[Jaeger](https://jaegertracing.io) backend binaries are built on top of OpenTelemetry collector ([blog post](https://medium.com/jaegertracing/jaeger-embraces-opentelemetry-collector-90a545cbc24)).
-
-[Lightstep](https://lightstep.com) has implemented native ingest for OpenTelemetry protocol data into its SaaS and uses OpenTelemetry internally for trace generation.
-
-[OrderMyGear](https://www.ordermygear.com/)
-
-[Shopify](https://www.shopify.com/)
-
-[Splunk](https://www.splunk.com/)
-
-[Transit](https://transitapp.com/)
-
-[Wandera](https://www.wandera.com/)
-
-[Zocdoc](https://www.zocdoc.com/)
+| Company                                           | Collector | CPP  | DotNet | Erlang | Go   | Java | JS   | Python | PHP   | Ruby | Rust | Swift | Notes                                                                                                               |
+| ------------------------------------------------  | :-------: | :--: | :----: | :----: | :--: | :--: | :--: | :----: | :---: | :--: | :--: | :---: | :-----------------------------------------------------------------------------------------------------------------: |
+| [Amazon Web Services](https://aws.amazon.com/)    | X         |      |        |        |      |      |      |        |       |      |      |       | [website](https://aws.amazon.com/otel/)                                                                             |
+| [AppDirect](https://www.appdirect.com/)           | X         |      |        |        |      |      |      |        |       |      |      |       |                                                                                                                     |
+| [EcoBee](https://www.ecobee.com/)                 | X         |      |        |        |      | X    |      |        |       |      |      |       | [blog post](https://www.honeycomb.io/blog/bees-working-together-how-ecobees-engineers-adopted-honeycomb/)           |
+| [Google Cloud Platform](https://cloud.google.com) | X         |      |        |        | X    | X    | X    | X      |       |      |      |       |                                                                                                                     |
+| [Grafana Labs](https://grafana.com/)              | X         |      |        |        |      |      |      |        |       |      |      |       |                                                                                                                     |
+| [Honeycomb](honeycomb.io)                         |           |      |        |        | X    |      |      |        |       |      |      |       | [blog post](https://www.honeycomb.io/blog/interview-with-honeycomb-engineer-chris-toshok-dogfooding-opentelemetry/) |
+| [Jaeger](https://jaegertracing.io)                | X         |      |        |        |      |      |      |        |       |      |      |       | [blog post](https://medium.com/jaegertracing/jaeger-embraces-opentelemetry-collector-90a545cbc24)                   |
+| [Lightstep](https://lightstep.com)                |           |      |        |        | X    |      | X    |        |       |      |      |       |                                                                                                                     |
+| [OpenTelemetry](https://opentelemetry.io)         | X         |      |        |        |      |      | X    |        |       |      |      |       |                                                                                                                     |
+| [OrderMyGear](https://www.ordermygear.com/)       |           |      |        |        |      |      |      |        |       |      |      |       |                                                                                                                     |
+| [Shopify](https://www.shopify.com/)               | X         |      |        |        | X    |      |      |        |       | X    |      |       |                                                                                                                     |
+| [Splunk](https://www.splunk.com/)                 | X         |      |        |        |      | X    | X    |        |       |      |      |       |                                                                                                                     |
+| [Transit](https://transitapp.com/)                |           |      |        |        |      |      |      |        |       |      |      |       |                                                                                                                     |
+| [Wandera](https://www.wandera.com/)               | X         |      |        |        |      |      |      |        |       |      |      |       |                                                                                                                     |
+| [Zocdoc](https://www.zocdoc.com/)                 |           |      |        |        |      |      |      |        |       |      |      |       |                                                                                                                     |
