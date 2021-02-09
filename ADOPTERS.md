@@ -6,6 +6,8 @@ A non-exhaustive unordered list of organizations that have adopted OpenTelemetry
 
 [EcoBee](https://www.ecobee.com/) [uses the OpenTelemetry Java SDK](https://www.honeycomb.io/blog/bees-working-together-how-ecobees-engineers-adopted-honeycomb/), and the collector both as a centralized service and as a sidecar.
 
+[F5](https://www.f5.com/) has implemented native ingest for the OpenTelemetry protocol data, in addition to using the OpenTelemetry SDKs and the Collector for instrumenting, collecting, and exporting of metrics, traces, and logs.
+
 [Google Cloud Platform](https://cloud.google.com) uses the OpenTelemetry collector as an agent and forwarder. Cloud Trace and Monitoring use the OpenTelemetry SDKs to capture metrics and traces from customers' applications.
 
 [Grafana Labs](https://grafana.com/)
