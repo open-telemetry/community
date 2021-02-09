@@ -7,6 +7,7 @@ A non-exhaustive, alphabetized list of organizations that have adopted OpenTelem
 | [Amazon Web Services](https://aws.amazon.com/)    | Collector                       |  [website](https://aws.amazon.com/otel/)                                                                             |
 | [AppDirect](https://www.appdirect.com/)           | Collector                       |                                                                                                                      |
 | [EcoBee](https://www.ecobee.com/)                 | Collector, Java                 |  [blog post](https://www.honeycomb.io/blog/bees-working-together-how-ecobees-engineers-adopted-honeycomb/)           |
+| [F5](https://www.f5.com/)                         | Collector.                      |                                                                                                                      |
 | [Google Cloud Platform](https://cloud.google.com) | Collector, Go, Java, JS, Python |                                                                                                                      |
 | [Grafana Labs](https://grafana.com/)              | Collector                       |                                                                                                                      |
 | [Honeycomb](honeycomb.io)                         | Go                              |  [blog post](https://www.honeycomb.io/blog/interview-with-honeycomb-engineer-chris-toshok-dogfooding-opentelemetry/) |
