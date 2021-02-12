@@ -94,6 +94,7 @@ SIG-specific GitHub discussions.
 
 Name|Meeting Time|Meeting Notes|Meeting Link|Discussions|
 ----|------------|-------------|------------|------|
+Maintainers weekly meeting|Every Monday at 09:00PT|[Google Doc](https://www.google.com/url?q=https://docs.google.com/document/d/1-tGqaT9fn9Bpuy4roLS1YDfLzIWHodUFfyrBlyJVz9g)|[Zoom](https://zoom.us/j/8287234601)|[Gitter](https://gitter.im/open-telemetry/maintainers)|
 Collector|Every Wednesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE/edit?usp=sharing)|[Zoom](https://zoom.us/j/8203130519)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-service)|
 C/C++: SDK|Every week alternating between Monday at 15:00 PT and Wednesday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw/edit?usp=sharing)|[Zoom](https://zoom.us/j/8203130519)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-cpp)|
 DotNET: Instrumentation|Every Wednesday at 13:00 PT|[Google Doc](https://docs.google.com/document/d/1XedN2D8_PH4YLej-maT8sp4RKogfuhFpccRi3QpUcoI/edit?usp=sharing)|[Zoom](https://zoom.us/j/8287234601)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-dotnet-auto-instr)|
