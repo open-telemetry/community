@@ -38,6 +38,8 @@ Both committes meet regularly and the respective meeting notes are publicly avai
 ### Discussions
 We use [GitHub discussions](https://github.com/open-telemetry/community/discussions) for most communications. Please join us there!
 
+For those who are brand new to OpenTelemetry and just want to chat or get redirected to the appropriate place for a specific question, feel free to join [the CNCF OpenTelemetry Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q).
+
 ### Calendar
 
 The shared community calendar contains all public OpenTelemetry meetings,
