@@ -4,7 +4,7 @@ A non-exhaustive, alphabetized list of organizations that have adopted OpenTelem
 
 | Company                                           | Components                      |  Notes                                                                                                               |
 | ------------------------------------------------  | ------------------------------- |  :-----------------------------------------------------------------------------------------------------------------: |
-| [Amazon Web Services](https://aws.amazon.com/)    | Collector                       |  [website](https://aws.amazon.com/otel/)                                                                             |
+| [Amazon Web Services](https://aws.amazon.com/)    | Collector, Java, JS, Python     |  [website](https://aws.amazon.com/otel/)                                                                             |
 | [AppDirect](https://www.appdirect.com/)           | Collector                       |                                                                                                                      |
 | [Dynatrace](https://www.dynatrace.com/)           | Collector, Java, JS, Python, Go, .NET |                                                                                                                |
 | [EcoBee](https://www.ecobee.com/)                 | Collector, Java                 |  [blog post](https://www.honeycomb.io/blog/bees-working-together-how-ecobees-engineers-adopted-honeycomb/)           |
