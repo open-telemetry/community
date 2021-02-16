@@ -11,7 +11,7 @@ A non-exhaustive, alphabetized list of organizations that have adopted OpenTelem
 | [F5](https://www.f5.com/)                         | Collector.                      |                                                                                                                      |
 | [Google Cloud Platform](https://cloud.google.com) | Collector, Go, Java, JS, Python |                                                                                                                      |
 | [Grafana Labs](https://grafana.com/)              | Collector                       |                                                                                                                      |
-| [Honeycomb](honeycomb.io)                         | Go                              |  [blog post](https://www.honeycomb.io/blog/interview-with-honeycomb-engineer-chris-toshok-dogfooding-opentelemetry/) |
+| [Honeycomb](https://honeycomb.io)                         | Go                              |  [blog post](https://www.honeycomb.io/blog/interview-with-honeycomb-engineer-chris-toshok-dogfooding-opentelemetry/) |
 | [Jaeger](https://jaegertracing.io)                | Jaeger                          |  [blog post](https://medium.com/jaegertracing/jaeger-embraces-opentelemetry-collector-90a545cbc24)                   |
 | [Lightstep](https://lightstep.com)                | Go, JS                          |                                                                                                                      |
 | [Logz.io](https://logz.io)                        | Collector, Java, Go, JS                          |                                                                                                                      |
