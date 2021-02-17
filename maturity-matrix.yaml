@@ -176,5 +176,6 @@ languages:
 
 otlp:
   traces: stable
-  metrics: alpha
+  metrics: beta
+  logs: alpha
   common: stable
