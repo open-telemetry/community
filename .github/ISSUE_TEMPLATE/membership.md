@@ -18,7 +18,7 @@ e.g. (at)example_user
 
 - [ ] I have reviewed the community membership guidelines (https://github.com/open-telemetry/community/blob/master/community-membership.md)
 - [ ] I have enabled 2FA on my GitHub account. See https://github.com/settings/security
-- [ ] I have subscribed to the [Gitter channel](https://gitter.im/open-telemetry/community)
+- [ ] I have subscribed to the [Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q)
 - [ ] I am actively contributing to 1 or more OpenTelemetry subprojects
 - [ ] I have two sponsors that meet the sponsor requirements listed in the community membership guidelines. Among other requirements, sponsors must be approvers or maintainers of at least one repository in the organization and not both affiliated with the same company
 - [ ] I have spoken to my sponsors ahead of this application, and they have agreed to sponsor my application
