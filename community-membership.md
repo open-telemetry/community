@@ -244,7 +244,7 @@ that issue.
 4. If the vote is split, the OpenTelemetry TC should be brought into the
 discussion, and the TC itself gets a (single) tiebreaking vote.
 
-While inevitably these sorts of decisions will be "disappointing for somebody,"
+While inevitably these sorts of decisions will be disappointing for somebody,
 it's incredibly important for the project to maintain velocity and recognize
 that we are all coming to these sorts of technical issues with the best of
 intentions and remain aligned about the overall goals of the OpenTelemetry
