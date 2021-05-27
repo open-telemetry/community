@@ -241,7 +241,7 @@ actual go-forward options themselves).
 2. Each SIG Maintainer must formally vote for their choice by commenting on
 that issue.
 3. The option receiving the most votes wins.
-4. If the vote is split, the OpenTelemetry TC should be brought into the
+4. If the vote is a tie, the OpenTelemetry TC should be brought into the
 discussion, and the TC itself gets a (single) tiebreaking vote.
 
 While inevitably these sorts of decisions will be disappointing for somebody,
