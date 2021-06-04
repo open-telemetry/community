@@ -115,7 +115,7 @@ Specification: Logs|Every other week on Wednesday at 10:00 PT|[Google Doc](https
 Specification: Metrics API/SDK|Every Thursday alternating between 11:00 and 16:00 PT|[Google Doc](https://docs.google.com/document/d/1-bCYkN-DWJq4jw1ybaDZYYmx-WAe6HnwfWbkm8d57v8/edit)|[Zoom](https://zoom.us/j/8203130519)|[Slack](https://cloud-native.slack.com/archives/C01NP3BV26R)
 Specification: Metrics Data Model|Every Tuesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1-bCYkN-DWJq4jw1ybaDZYYmx-WAe6HnwfWbkm8d57v8/edit)|[Zoom](https://zoom.us/j/8203130519)|[Slack](https://cloud-native.slack.com/archives/C01NP3BV26R)
 Specification: Sampling|Every Friday at 12:00 PT|[Google Doc](https://docs.google.com/document/d/12i1Y_M2AD9A0jsRMTuqnyHf923WLnbO7K8QquKKDlsg/)|[Zoom](https://zoom.us/j/6729396170)||
-Website|Every Thursday at 13:30 PT|[Google Doc](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY)|[Zoom](https://zoom.us/j/8203130519)||
+Website|Every other week on Thursday at 13:30 ET|[Google Doc](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY)|[Zoom](https://zoom.us/j/8203130519)||
 
 ## Related groups
 
