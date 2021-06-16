@@ -64,8 +64,8 @@ write code to fix them, and get your work reviewed and merged.
 
 Please be aware that, due to the number of issues our triage team deals with, we
 cannot offer technical support in GitHub issues. If you have questions about the
-development process, feel free to jump into our [Gitter
-Channel](https://gitter.im/open-telemetry/community) . You can also ask
+development process, feel free to jump into our [Slack
+Channel](https://cloud-native.slack.com/archives/CJFCJHG4Q) ([Get an invite to join CNCF](http://slack.cncf.io/)). You can also ask
 questions on [Stack
 Overflow](https://stackoverflow.com/questions/tagged/opentelemetry).
 
