@@ -5,17 +5,22 @@
 Table of Contents
 </summary>
 
-* [Getting Involved](#getting-involved)
-* [Governing Bodies](#governing-bodies)
-* [Communication](#communication)
-  * [Instant Messaging](#instant-messaging)
-  * [Calendar](#calendar)
-  * [Mailing Lists](#mailing-lists)
-  * [Community Meetings](#community-meetings)
-* [License](#license)
-* [Logos and Branding Guide](#logo-and-branding-guide)
-* [Special Interest Groups](#special-interest-groups)
-* [Related Groups](#related-groups)
+- [<img src="https://opentelemetry.io/img/logos/opentelemetry-logo-nav.png" alt="OpenTelemetry Icon" width="45" height=""> OpenTelemetry community content](#-opentelemetry-community-content)
+  - [Get Involved](#get-involved)
+  - [Governing Bodies](#governing-bodies)
+  - [Communication](#communication)
+    - [Discussions](#discussions)
+    - [Calendar](#calendar)
+    - [Mailing Lists](#mailing-lists)
+  - [License](#license)
+  - [Logos and Brand Guide](#logos-and-brand-guide)
+  - [Special Interest Groups](#special-interest-groups)
+  - [Related groups](#related-groups)
+    - [W3C - Distributed Tracing Working Group](#w3c---distributed-tracing-working-group)
+    - [Erlang Ecosystem Foundation – Observability Working Group](#erlang-ecosystem-foundation--observability-working-group)
+    - [CNCF SIG Observability - Special Interest Group](#cncf-sig-observability---special-interest-group)
+    - [K8s SIG - Instrumentation Special Interest Group](#k8s-sig---instrumentation-special-interest-group)
+    - [OpenMetrics](#openmetrics)
 
 </details>
 
@@ -98,8 +103,8 @@ Name|Meeting Time|Meeting Notes|Meeting Link|Discussions|
 ----|------------|-------------|------------|------|
 Maintainers weekly meeting|Every Monday at 09:00PT|[Google Doc](https://www.google.com/url?q=https://docs.google.com/document/d/1-tGqaT9fn9Bpuy4roLS1YDfLzIWHodUFfyrBlyJVz9g)|[Zoom](https://zoom.us/j/8287234601)|[Slack](https://cloud-native.slack.com/archives/C01NJ7V1KRC)|
 Collector|Every Wednesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE/edit?usp=sharing)|[Zoom](https://zoom.us/j/8203130519)|[Slack](https://cloud-native.slack.com/archives/C01N6P7KR6W)|
-C/C++: SDK|Every week alternating between Monday at 15:00 PT and Wednesday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw/edit?usp=sharing)|[Zoom](https://zoom.us/j/8203130519)|[Slack](https://cloud-native.slack.com/archives/C01N3AT62SJ)|
-DotNET: Instrumentation|Every Wednesday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1XedN2D8_PH4YLej-maT8sp4RKogfuhFpccRi3QpUcoI/edit?usp=sharing)|[Zoom](https://zoom.us/j/6729396170)|[Slack](https://cloud-native.slack.com/archives/C01NR1YLSE7)|
+C/C++: SDK|Every week alternating between Monday at 15:00 PT and Wednesday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw/edit?usp=sharing)|[Zoom](https://zoom.us/j/6729396170)|[Slack](https://cloud-native.slack.com/archives/C01N3AT62SJ)|
+DotNET: Instrumentation|Every Wednesday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1XedN2D8_PH4YLej-maT8sp4RKogfuhFpccRi3QpUcoI/edit?usp=sharing)|[Zoom](https://zoom.us/j/8203130519)|[Slack](https://cloud-native.slack.com/archives/C01NR1YLSE7)|
 DotNET: SDK|Every Tuesday alternating between 11:00 and 16:00 PT|[Google Doc](https://docs.google.com/document/d/1yjjD6aBcLxlRazYrawukDgrhZMObwHARJbB9glWdHj8/edit?usp=sharing)|[Zoom](https://zoom.us/j/8287234601)|[Slack](https://cloud-native.slack.com/archives/C01N3BC2W7Q)|
 Erlang/Elixir: SDK|Every Thursday alternating between 07:00 and 15:00 PT|[Google Doc](https://docs.google.com/document/d/1EbBiRjBc_cBf0T_B5OtNRPhbD4jdBrVYJAy8euCDrUI/edit?usp=sharing)|[Zoom](https://zoom.us/j/8287234601)|[Slack](https://cloud-native.slack.com/archives/C01N75YMZCN)|
 GoLang: SDK|Every Thursday alternating between 10:00 and 15:00 PDT|[Google Doc](https://docs.google.com/document/d/1A63zSWX0x2CyCK_LoNhmQC4rqhLpYXJzXbEPDUQ2n6w/edit#)|[Zoom](https://zoom.us/j/6729396170)|[Slack](https://cloud-native.slack.com/archives/C01NPAXACKT)|
