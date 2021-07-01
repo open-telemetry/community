@@ -5,22 +5,21 @@
 Table of Contents
 </summary>
 
-- [<img src="https://opentelemetry.io/img/logos/opentelemetry-logo-nav.png" alt="OpenTelemetry Icon" width="45" height=""> OpenTelemetry community content](#-opentelemetry-community-content)
-  - [Get Involved](#get-involved)
-  - [Governing Bodies](#governing-bodies)
-  - [Communication](#communication)
-    - [Discussions](#discussions)
-    - [Calendar](#calendar)
-    - [Mailing Lists](#mailing-lists)
-  - [License](#license)
-  - [Logos and Brand Guide](#logos-and-brand-guide)
-  - [Special Interest Groups](#special-interest-groups)
-  - [Related groups](#related-groups)
-    - [W3C - Distributed Tracing Working Group](#w3c---distributed-tracing-working-group)
-    - [Erlang Ecosystem Foundation – Observability Working Group](#erlang-ecosystem-foundation--observability-working-group)
-    - [CNCF SIG Observability - Special Interest Group](#cncf-sig-observability---special-interest-group)
-    - [K8s SIG - Instrumentation Special Interest Group](#k8s-sig---instrumentation-special-interest-group)
-    - [OpenMetrics](#openmetrics)
+- [Get Involved](#get-involved)
+- [Governing Bodies](#governing-bodies)
+- [Communication](#communication)
+  - [Discussions](#discussions)
+  - [Calendar](#calendar)
+  - [Mailing Lists](#mailing-lists)
+- [License](#license)
+- [Logos and Brand Guide](#logos-and-brand-guide)
+- [Special Interest Groups](#special-interest-groups)
+- [Related groups](#related-groups)
+  - [W3C - Distributed Tracing Working Group](#w3c---distributed-tracing-working-group)
+  - [Erlang Ecosystem Foundation – Observability Working Group](#erlang-ecosystem-foundation--observability-working-group)
+  - [CNCF SIG Observability - Special Interest Group](#cncf-sig-observability---special-interest-group)
+  - [K8s SIG - Instrumentation Special Interest Group](#k8s-sig---instrumentation-special-interest-group)
+  - [OpenMetrics](#openmetrics)
 
 </details>
 
