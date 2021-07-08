@@ -117,7 +117,7 @@ Rust: SDK|Every other week on Tuesday alternating between 07:00 and 15:00 PT|[Go
 Specification: General|Every Tuesday at 08:00 and 16:00 PT|[Google Doc](https://docs.google.com/document/d/1-bCYkN-DWJq4jw1ybaDZYYmx-WAe6HnwfWbkm8d57v8/edit?usp=sharing)|[Zoom](https://zoom.us/j/6729396170)|[Slack](https://cloud-native.slack.com/archives/C01N7PP1THC)
 Specification: Logs|Every other week on Wednesday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1cX5fWXyWqVVzYHSFUymYUfWxUK5hT97gc23w595LmdM/edit#)|[Zoom](https://zoom.us/j/6729396170)|[Slack](https://cloud-native.slack.com/archives/C01N5UCHTEH)
 Specification: Metrics|Every Tuesday at 09:00 PT; Every Thursday alternating between 11:00 and 16:00 PT|[Google Doc](https://docs.google.com/document/d/1-bCYkN-DWJq4jw1ybaDZYYmx-WAe6HnwfWbkm8d57v8/edit)|[Zoom](https://zoom.us/j/8203130519)|[Slack](https://cloud-native.slack.com/archives/C01NP3BV26R)
-Specification: Sampling|Every Friday at 12:00 PT|[Google Doc](https://docs.google.com/document/d/12i1Y_M2AD9A0jsRMTuqnyHf923WLnbO7K8QquKKDlsg/)|[Zoom](https://zoom.us/j/6729396170)||
+Specification: Sampling|Every Thursday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/1gASMhmxNt9qCa8czEMheGlUW2xpORiYoD7dBD7aNtbQ/)|[Zoom](https://zoom.us/j/6729396170)||
 Website|Every other week on Thursday at 13:30 ET|[Google Doc](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY)|[Zoom](https://zoom.us/j/8203130519)||
 
 ## Related groups
