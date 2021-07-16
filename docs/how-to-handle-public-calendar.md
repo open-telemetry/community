@@ -1,20 +1,16 @@
 # How to create and configure meetings
 
-In OpenTelemetry we are using CNCF zoom account. We currently own three
-identical zoom rooms. A single room can only host one meeting at a time. So for
-meeting differentiation in the calendar, beyond the location, colors are
-associated with the rooms:
+In OpenTelemetry we are using CNCF zoom account. We currently own four
+identical zoom accounts. The default room from every single account is
+used and a room can only host one meeting at a time. These are the
+account rooms:
 
-- "Banana" https://zoom.us/j/6729396170
-- "Blueberry" https://zoom.us/j/8203130519
-- "Tomato" https://zoom.us/j/8287234601
+- https://zoom.us/j/6729396170
+- https://zoom.us/j/8203130519
+- https://zoom.us/j/8287234601
+- https://zoom.us/j/5227112777
 
-The color "Graphite" is used for non zoom meetings.
-
-![Google Calendar Colors](images/google-calendar-colors.png).
-
-Same color (meeting location) meetings must not be held at the same time or be
-back to back meetings.
+Meetings with the same room must not be held at the same time or be adjacent.
 
 All rooms are configured the same way. Some notes on meetings configuration:
 
