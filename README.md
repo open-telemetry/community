@@ -36,18 +36,18 @@ a friendly, collaborative group and look forward to working together!
 * [Governance Committee (GC)](./governance-charter.md)
 * [Technical Committee (TC)](./tech-committee-charter.md)
 
-Both committes meet regularly and the respective meeting notes are publicly available in the [GC meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8) and the [TC meeting notes](https://docs.google.com/document/d/17v2RMZlJZkgoPYHZhIFTVdDqQMIAH8kzo8Sl2kP3cbY) Google Docs. If you want to check out the recordings, head to the [Governance Committee YouTube playlist](https://www.youtube.com/playlist?list=PLVYDBkQ1Tdyzg1CuQgd9mdjwOUYg7ECYR).
+Both committees meet regularly, and the respective meeting notes are publicly available in the [GC meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8) and the [TC meeting notes](https://docs.google.com/document/d/17v2RMZlJZkgoPYHZhIFTVdDqQMIAH8kzo8Sl2kP3cbY) Google Docs. If you want to check out the recordings, head to the [Governance Committee YouTube playlist](https://www.youtube.com/playlist?list=PLVYDBkQ1Tdyzg1CuQgd9mdjwOUYg7ECYR).
 
 ## Communication
 ### Discussions
 We use [GitHub discussions](https://github.com/open-telemetry/community/discussions) for most communications. Please join us there!
 
-For those who are brand new to OpenTelemetry and just want to chat or get redirected to the appropriate place for a specific question, feel free to join [the CNCF OpenTelemetry Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q). If you are new, you can create a CNCF Slack account [here](http://slack.cncf.io/).
+For those who are brand new to OpenTelemetry and want to chat or get redirected to the appropriate place for a specific question, feel free to join [the CNCF OpenTelemetry Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q). If you are new, you can create a CNCF Slack account [here](http://slack.cncf.io/).
 
 ### Calendar
 
 The shared community calendar contains all public OpenTelemetry meetings,
-including weekly SIG meetings, the monthly community meetings, and others. You
+including weekly SIG meetings, monthly community meetings, etc. You
 can access it via:
 
 * [Web](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com)
@@ -63,10 +63,10 @@ Group](https://groups.google.com/forum/#!forum/opentelemetry-calendar).
 
 List Name|Signup|Membership|Write Permissions|Read Permissions|Notes|
 ---------|------|----------|-----------------|----------------|-----|
-cncf-opentelemetry-community@lists.cncf.io|[Here](https://lists.cncf.io/g/cncf-opentelemetry-community)|anyone|GC and TC|anyone|<details><summary>Notes</summary>The community mailing list is for anybody who wants to monitor the latest news from the project. It is used to send updates on community meetings and announcements about new projects and SIGs. There is a minimal moderation for a new users to reduce spam, new users are approved after one post.</details>|
+cncf-opentelemetry-community@lists.cncf.io|[Here](https://lists.cncf.io/g/cncf-opentelemetry-community)|anyone|GC and TC|anyone|<details><summary>Notes</summary>The community mailing list is for anybody who wants to monitor the latest news from the project. It is used to send updates on community meetings and announcements about new projects and SIGs. There is minimal moderation for a new user to reduce spam, and new users are approved after one post.</details>|
 cncf-opentelemetry-contributors@lists.cncf.io|[Here](https://lists.cncf.io/g/cncf-opentelemetry-contributors)|anyone|anyone|anyone|<details><summary>Notes</summary>The discussions mailing list is for anyone who is interested in contributing to OpenTelemetry or has questions (related to the contribution, technical issues,etc) they’d like to discuss. Will be used to announce updates related to how the project is being developed and ask general contribution questions related to the contribution processes. No approval is required to join.</details>|
-cncf-opentelemetry-tc@lists.cncf.io|N/A|TC|anyone|members|<details><summary>Notes</summary>Used by the OpenTelemetry Technical Committee for internal communication. This mailing list should be used sparingly as we strive to keep all communication public. It only should be used to contact the Technical Committee with questions that cannot be discussed publicly on GitHub, GitHub discussions, or the community or contributors mailing lists.</details>|
-cncf-opentelemetry-governance@lists.cncf.io|N/A|GC|anyone|members|<details><summary>Notes</summary>Used by the OpenTelemetry GC for internal communication. Also can be used to contact the GC for questions that cannot be discussed publicly on GitHub, GitHub discussions, or other mailing lists. For instance, members could use this for issues related to improper applications of our community membership guidance.</details>|
+cncf-opentelemetry-tc@lists.cncf.io|N/A|TC|anyone|members|<details><summary>Notes</summary>Used by the OpenTelemetry Technical Committee for internal communication. This mailing list should be used sparingly as we strive to keep all communication public. It only should be used to contact the Technical Committee with questions that cannot be discussed publicly on GitHub, GitHub discussions, or the community or contributors' mailing lists.</details>|
+cncf-opentelemetry-governance@lists.cncf.io|N/A|GC|anyone|members|<details><summary>Notes</summary>Used by the OpenTelemetry GC for internal communication. Additionally, contact the GC for questions that cannot be discussed publicly on GitHub, GitHub discussions, or other mailing lists. For instance, members could use this for issues related to improper applications of our community membership guidance.</details>|
 cncf-opentelemetry-comms@lists.cncf.io|[Here](https://lists.cncf.io/g/cncf-opentelemetry-comms)|GC and open for anyone|anyone|anyone|<details><summary>Notes</summary>Mailing list to notify and request reviews of upcoming announcements, or request a post on the OpenTelemetry Twitter account or other public channels.</details>|
 
 ## License
@@ -86,11 +86,11 @@ repository](https://github.com/cncf/artwork/tree/master/projects/opentelemetry).
 
 ## Special Interest Groups
 
-We organize the community into Special Interest Groups (SIGs) in order to
-improve our workflow and more easily manage a community project. While meetings are expected to happen regularly, they are subject to contributors' availability and may be rescheduled or changed at time. Check our [public calendar](https://github.com/open-telemetry/community#calendar) and SIG-specific GitHub discussions for meeting changes and cancellations. All meetings happen over Zoom, are recorded and [available on YouTube](https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos), and have a meeting notes document.
+We organize the community into Special Interest Groups (SIGs) to
+improve our workflow and more efficiently manage a community project. While meetings are expected to happen regularly, they are subject to contributors' availability and may be rescheduled or changed at time. Check our [public calendar](https://github.com/open-telemetry/community#calendar) and SIG-specific GitHub discussions for meeting changes and cancellations. All meetings happen over Zoom, are recorded, and [available on YouTube](https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos), and have a meeting notes document.
 
 Please do not hesitate to contact SIG owners if the proposed time of the
-meeting or tools used are unavailable for you. For instance, it is a good
+meeting or tools used is unavailable for you. For instance, it is a good
 practice to alternate morning/evening meetings once SIG has representatives
 from 3 largely distinct timezones. The best way to report it and suggest an
 alternative is to file an issue on this repository or discuss it in
@@ -129,7 +129,7 @@ Join W3C [Distributed Tracing Working Group](https://www.w3.org/2018/distributed
 
 ### Erlang Ecosystem Foundation – Observability Working Group
 
-The Erlang and Elixir API and SDK are maintained by members of the Erlang Ecosystem Foundation Observability Working Group.
+The Erlang and Elixir API and SDK are maintained by the Erlang Ecosystem Foundation Observability Working Group members.
 See the [Observability Working Group](https://erlef.org/wg/observability) page on the EEF website for details.
 
 ### CNCF SIG Observability - Special Interest Group
@@ -140,10 +140,10 @@ Check out the [CNCF SIG Observability](https://github.com/cncf/sig-observability
 ### K8s SIG - Instrumentation Special Interest Group
 
 The [K8s SIG](https://github.com/kubernetes/community/tree/master/sig-instrumentation) Instrumentation special interest group coordinates metric requirements of different SIGs for other components through finding common APIs.
-This group also covers best practices for cluster observabilty through metrics, logging and events across all Kubernetes components.
+This group also covers best practices for cluster observability through metrics, logging, and events across all Kubernetes components.
 See the [Instrumentation Special Interest Group](https://github.com/kubernetes/community/tree/master/sig-instrumentation) for details on joining this group.
 
 ### OpenMetrics
 
-The OpenMetrics is an effort to create an open standard for transmitting metrics at scale, with support for both text representation and Protocol Buffers.
+OpenMetrics is an effort to create an open standard for transmitting metrics at scale, supporting text representation and Protocol Buffers.
 See the [OpenMetrics](https://openmetrics.io/) page for details.
