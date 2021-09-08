@@ -251,11 +251,19 @@ OpenTelemetry Authors.
 Broadly, these are the steps the OpenTelemetry Governance and Technical
 Committees follow to handle a prospective donation.
 
-1. Per the above, the donating organization creates a GitHub issue (with the appropriate template) in the `community` repository.
-2. The Technical Committee (TC) will do diligence, write a report, and attach that report to the GitHub issue
-3. The Governance Committee (GC) will consider the report and make a final decision about the donation
-4. If accepted, the contributing organization – particularly if it's a commercial entity – must formally acknowledge via the GitHub issue that its respective sales and marketing departments have received, understood, and accepted the terms of the [OpenTelemetry marketing guidelines](https://github.com/open-telemetry/community/blob/main/marketing-guidelines.md)
-5. Given all of the above, the GitHub issue is closed and the donation moves forward as agreed to by the TC and GC
+1. Per the above, the donating organization creates a GitHub issue (with the
+   appropriate template) in the `community` repository.
+2. The Technical Committee (TC) will do diligence, write a report, and attach
+   that report to the GitHub issue
+3. The Governance Committee (GC) will consider the report and make a final
+   decision about the donation
+4. If accepted, the contributing organization – particularly if it's a
+   commercial entity – must formally acknowledge via the GitHub issue that its
+   respective sales and marketing departments have received, understood, and
+   accepted the terms of the [OpenTelemetry marketing guidelines]
+   (https://github.com/open-telemetry/community/blob/main/marketing-guidelines.md)
+5. Given all of the above, the GitHub issue is closed and the donation moves
+   forward as agreed to by the TC and GC
 
 ## Communication
 
