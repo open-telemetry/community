@@ -244,7 +244,9 @@ guidance at the TC's earliest convenience.
 
 All donated code requires a license compatible with the Apache Software License
 2.0, and donated code will require a change of copyright to reflect the
-OpenTelemetry Authors.
+OpenTelemetry Authors. The Governance Committee will also ask to review any
+trademarks (like the names of components) the donation can carry and make a
+decision to either remove those trademarks or transfer them to the CNCF.
 
 ### Donation process
 
@@ -254,16 +256,23 @@ Committees follow to handle a prospective donation.
 1. Per the above, the donating organization creates a GitHub issue (with the
    appropriate template) in the `community` repository.
 2. The Technical Committee (TC) will do diligence, write a report, and attach
-   that report to the GitHub issue
+   that report to the GitHub issue. Writing the report may require meeting and
+   discussing alternative technologies with different vendors in the community
+   and can be a lengthy process. The TC member driving the report will post
+   updates and time estimates to the issue.
 3. The Governance Committee (GC) will consider the report and make a final
-   decision about the donation
+   decision about the donation. The GC must ensure that the donation is aligned
+   with the overall OpenTelemetry project vision and roadmap and has a balanced
+   set of interested contributors and maintainers. The GC is also responsible
+   for driving awareness in the community about the contribution and making
+   sure all interested parties have a chance to object and/or contribute.
 4. If accepted, the contributing organization – particularly if it's a
    commercial entity – must formally acknowledge via the GitHub issue that its
    respective sales and marketing departments have received, understood, and
    accepted the terms of the [OpenTelemetry marketing guidelines]
-   (https://github.com/open-telemetry/community/blob/main/marketing-guidelines.md)
+   (https://github.com/open-telemetry/community/blob/main/marketing-guidelines.md).
 5. Given all of the above, the GitHub issue is closed and the donation moves
-   forward as agreed to by the TC and GC
+   forward as agreed to by the TC and GC.
 
 ## Communication
 
