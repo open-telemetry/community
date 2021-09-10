@@ -37,5 +37,6 @@ TODO
 
 ### Other notes
 
-TODO: things that the OpenTelemetry Technical or Governance committees should be aware of
+TODO: things that the OpenTelemetry Technical or Governance committees should
+be aware of
 
