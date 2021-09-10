@@ -1,6 +1,6 @@
 ---
 name: Donation Proposal
-about: Request membership in a OpenTelemetry Org
+about: Propose the donation of a preexisting project to the OpenTelemetry organization
 title: 'Donation proposal: <name of donation>'
 labels: ''
 assignees: ''

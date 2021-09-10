@@ -253,8 +253,10 @@ decision to either remove those trademarks or transfer them to the CNCF.
 Broadly, these are the steps the OpenTelemetry Governance and Technical
 Committees follow to handle a prospective donation.
 
-1. Per the above, the donating organization creates a GitHub issue (with the
-   appropriate template) in the `community` repository.
+1. Per the above, the donating organization creates a GitHub issue with
+   [the "Donation Proposal" template]
+   (https://github.com/open-telemetry/community/issues/new?assignees=&labels=&template=donation.md&title=Donation+proposal%3A+%3Cname+of+donation%3E)
+   in the `community` repository.
 2. The Technical Committee (TC) will do diligence, write a report, and attach
    that report to the GitHub issue. Writing the report may require meeting and
    discussing alternative technologies with different vendors in the community
