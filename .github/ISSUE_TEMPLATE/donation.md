@@ -20,7 +20,8 @@ TODO
 
 ### Benefits to the OpenTelemetry community
 
-TODO
+TODO. Please include an explanation of why an OpenTelemetry donation is
+necessary to realize these benefits.
 
 ### Maintenance plan
 
