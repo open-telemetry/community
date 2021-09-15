@@ -150,3 +150,8 @@ See the [Instrumentation Special Interest Group](https://github.com/kubernetes/c
 
 OpenMetrics is an effort to create an open standard for transmitting metrics at scale, supporting text representation and Protocol Buffers.
 See the [OpenMetrics](https://openmetrics.io/) page for details.
+
+### eBPF Foundation
+
+The eBPF foundation aims to facilitate collaboration between eBPF projects, and to ensure good maintainance and clear roadmap for eBPF core. 
+See the [eBPF Foundation](https://ebpf.io/foundation/) page for more details.
