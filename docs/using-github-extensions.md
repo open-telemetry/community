@@ -19,7 +19,7 @@ Extensions, apps, or bots that can **arbitrarily modify code are NOT allowed**. 
 
 Many GitHub Action workflows do not require a dedicated GitHub account. Good examples are auto-assign workflows for issues and PRs such as [the one used in specifications repo](https://github.com/open-telemetry/opentelemetry-specification/blob/main/.github/workflows/auto-assign-issue.yml).
 
-There are cases when a dedicated account is needed to perform some higher privilege operations. In this cases the recommendation for maintainers  to use their accounts. See [example](https://github.com/open-telemetry/opentelemetry-specification/blob/main/.github/workflows/publish-schemas.yml).
+There are cases when a dedicated account is needed to perform some higher privilege operations. In this cases the recommendation for maintainers is to use their accounts. See [example](https://github.com/open-telemetry/opentelemetry-specification/blob/main/.github/workflows/publish-schemas.yml).
 
 Bots accounts are not recommended, as they cannot sign the CLA. If bot account needs to be used, it should be clear who owns this account and who signed CLA on behalf of this bot.
 
