@@ -21,7 +21,7 @@ Many GitHub Action workflows do not require a dedicated GitHub account. Good exa
 
 There are cases when a dedicated account is needed to perform some higher privilege operations. In this cases the recommendation for maintainers is to use their accounts. See [example](https://github.com/open-telemetry/opentelemetry-specification/blob/main/.github/workflows/publish-schemas.yml).
 
-Bots accounts are not recommended, as they cannot sign the CLA. If bot account needs to be used, it should be clear who owns this account and who signed CLA on behalf of this bot.
+Bot accounts are not recommended, as they cannot sign the CLA. If bot account needs to be used, it should be clear who owns this account and who signed CLA on behalf of this bot.
 
 OpenTelemetry does not provide org-level access bot accounts. See discussion here: [open-telemetry/community#551](https://github.com/open-telemetry/community/issues/551).
 
