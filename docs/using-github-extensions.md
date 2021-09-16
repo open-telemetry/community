@@ -17,7 +17,7 @@ Extensions, apps, or bots that can **arbitrarily modify code are NOT allowed**. 
 
 ## Writing your GitHub Actions pipelines
 
-Many GitHub Action workflows does not require a dedicated GutHub Account created. Good example is an PR and issues auto-assign workflows like [one used in specifications repo](https://github.com/open-telemetry/opentelemetry-specification/blob/main/.github/workflows/auto-assign-issue.yml).
+Many GitHub Action workflows do not require a dedicated GitHub account. Good examples are auto-assign workflows for issues and PRs such as [the one used in specifications repo](https://github.com/open-telemetry/opentelemetry-specification/blob/main/.github/workflows/auto-assign-issue.yml).
 
 There are cases when a dedicated account is needed to perform some higher privilege operations. In this cases the recommendation for maintainers  to use their accounts. See [example](https://github.com/open-telemetry/opentelemetry-specification/blob/main/.github/workflows/publish-schemas.yml).
 
