@@ -8,7 +8,7 @@ No Extensions, Apps, or bots that can arbitrarily modify code are allowed. Read-
 
 - The default answer for installing third party tools in the org is "NO". Justification needs to be provided and supported by multiple org members.
 - Open an issue at https://github.com/open-telemetry/community/issues
-  - Include reasoning and SIG/SIGs requesting this
+  - Include reasoning and SIG(s) requesting this
   - Requests from maintainers are typically carry higher weight, please make sure to discuss in the SIG you participate.
   - List permissions this extension, app, or bot requests.
   - If possible: point to other uses of this extensions in OSS.
