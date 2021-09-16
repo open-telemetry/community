@@ -2,7 +2,7 @@
 
 In OpenTelemetry it is critically important to preserve code integrity, including copyright.
 
-No Extensions, Apps, or bots that can arbitrarily modify code are allowed. Read-only code access, opening pull requests from another fork, or bug triage bots can be considered to be installed.
+Extensions, apps, or bots that can **arbitrarily modify code are NOT allowed**. Read-only code access, opening pull requests from another fork, or bug triage bots can be considered to be installed.
 
 ## Requesting installing of Apps, Extensions, or bots
 
