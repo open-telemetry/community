@@ -127,6 +127,9 @@ will be discarded one month after the election.
 Everyone with voting rights my log into
 [Helios Voting](https://vote.heliosvoting.org/helios/elections/bbeab1b8-1406-11ec-b980-eacead3a3158/view)
 using their GitHub account.
+Voting will be approval voting. Each voter may select up to 5 candidates.
+The 5 candidates with the most votes win the election.
+
 
 Late registrations to vote and requests to re-send the voting link will be
 accepted via email to
