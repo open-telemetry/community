@@ -24,8 +24,8 @@ community is well-represented by the Governance Committee.
   and confirm you are ready for the commitment. Make sure to provide all
   necessary information before 12:01am GMT on 2021/10/14
 * If you are an active community member: confirm that you are in the voters
-  (see [Appendix](#Appendix)) list or register yourself before 12:01am GMT on
-  2021/10/25.
+  list (see [election announcements issue](https://github.com/open-telemetry/community/issues/852))
+  or register yourself before 12:01am GMT on 2021/10/25.
 * Vote between 12:01am GMT on 2021/10/25 and 12:01am GMT on 2021/10/28 via the
   voting link https://vote.heliosvoting.org/helios/elections/bbeab1b8-1406-11ec-b980-eacead3a3158/view
 * Keep being awesome and contributing to the project!
@@ -101,7 +101,7 @@ directly to ensure the commitment and desire to be nominated.
 
 All [members of standing](https://github.com/open-telemetry/community/blob/master/governance-charter.md#members-of-standing)
 will automatically be eligible to vote. To confirm your eligibility status,
-see the [appendix](#appendix). If your code contributions do not meet
+see the [election announcements issue](https://github.com/open-telemetry/community/issues/852). If your code contributions do not meet
 eligibility requirements, but you believe your non-code contributions
 should make you eligible to vote, you can request an exemption by submitting
 an exemption request form.
@@ -124,7 +124,7 @@ will be discarded one month after the election.
 
 # Vote
 
-Everyone with voting rights my log into
+Everyone with voting rights may log into
 [Helios Voting](https://vote.heliosvoting.org/helios/elections/bbeab1b8-1406-11ec-b980-eacead3a3158/view)
 using their GitHub account.
 Voting will be approval voting. Each voter may select up to 5 candidates.
@@ -142,11 +142,9 @@ Per Helios, voting is completely private: nobody will know any individual's vote
 # Results
 
 Voting will close at 12:01am GMT on 2021/10/28. Nominees will be stack ranked.
-If a nominee becomes ineligible (for instance, if more than 2 topmost nominees
+If a nominee becomes ineligible (for instance, if more than 3 topmost nominees
 work for the same company), those nominees will be skipped and the nominee with
-the next-highest score will be picked.
-
-Exact scores for each candidate will NOT be made public.
+the next-highest score will be picked. Exact scores for each candidate will be public.
 
 
 # Schedule
@@ -161,9 +159,3 @@ Exact scores for each candidate will NOT be made public.
 * October 25, 12:01am GMT: Voting period begins
 * October 28, 12:01am GMT: Voting ends
 * October 29: Results are announced
-
-# Appendix
-
-We identified active contributors programmatically. For most contributors, we were able to find at least one email address associated with their git commits. For others, we were not able to determine an email address. Here is the complete list of GitHub handles for active contributors:
-
-TODO: list of members eligible to vote
