@@ -2,8 +2,8 @@
 
 ## Mission (our overall north star as a community)
 
-OpenTelemetry's Mission: *to enable effective observability through
-high-quality, turnkey, open-source telemetry.*
+OpenTelemetry's Mission: **to enable effective observability through
+high-quality, turnkey, open-source telemetry.**
 
 ## Vision (the world we imagine for OTel end-users)
 
@@ -22,19 +22,19 @@ So how do we get high-quality, turnkey telemetry without a massive,
 unsustainable engineering effort? This is where OpenTelemetry comes in. To
 achieve our vision, OpenTelemetry sees five key opportunities, listed here:
 
-*Opportunity I: Telemetry should be easy.* With OpenTelemetry we want
+**Opportunity I: Telemetry should be easy.** With OpenTelemetry we want
 high-quality telemetry to be easy, especially for end-users. That means that
 OpenTelemetry should have fast time-to-value, set reasonable defaults yet allow
 for customization, and pair with excellent documentation and a top-tier overall
 developer experience.
 
-*Opportunity II: Telemetry should be universal.* Telemetry protocols and
+**Opportunity II: Telemetry should be universal.** Telemetry protocols and
 conventions should be unified across languages and signal types (tracing,
 metrics, logging, etc), not divergent or siloed. This means that OpenTelemetry
 aspires to find technical solutions that work consistently, both locally and
 globally.
 
-*Opportunity III: Telemetry should be vendor-neutral.* For decades, monitoring
+**Opportunity III: Telemetry should be vendor-neutral.** For decades, monitoring
 and observability vendors have created differentiation – and lock-in – through
 agents that automatically gather useful telemetry from a wide integration
 surface. While convenient, this lock-in is limiting for customers and inhibits
@@ -43,7 +43,7 @@ analysis. With OpenTelemetry, we strive to provide a level playing field for
 all observability providers, avoiding lock-in for any vendor and interoperating
 with other OSS projects in the telemetry and observability ecosystem.
 
-*Opportunity IV: Telemetry should be loosely coupled.* OpenTelemetry end-users
+**Opportunity IV: Telemetry should be loosely coupled.** OpenTelemetry end-users
 should be able to pick and choose from the pieces they want without bringing in
 the rest of the project. To enable this, OpenTelemetry’s software architecture
 is decoupled wherever possible. As a corollary, this also means that
@@ -51,7 +51,7 @@ OpenTelemetry does not want to “pick winners” when it comes to particular
 projects or technologies: where possible, we prefer to create optionality for
 our end-users.
 
-*Opportunity V: Telemetry should be built-in.* Historically, telemetry was
+**Opportunity V: Telemetry should be built-in.** Historically, telemetry was
 something developers integrated manually or via post-compilation agents.
 OpenTelemetry believes that high-quality telemetry can be built in to the
 entire software stack – just like testing has been for decades.
