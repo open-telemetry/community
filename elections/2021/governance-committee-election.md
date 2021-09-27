@@ -7,9 +7,13 @@ governance committee
 [charter document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)
 requirements.
 
-In this election there are five seats that need to be filled. The nominees list
-will be shared October 15th, voting will take place October 25th-27th, and the
-results will be announced October 29th.
+In this election there are five seats that need to be filled. 
+
+Election schedule:
+* October 13th - final deadline to submit nominations
+* October 15th - official nominees list published
+* October 25th-27th - voting takes place
+* October 29th - results announced
 
 This election will mark the end of the transition of the governance committee
 from the initial bootstrap committee to a fully elected committee.
