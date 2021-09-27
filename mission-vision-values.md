@@ -69,21 +69,21 @@ OpenTelemetry’s engineering values describe how we want to get there.
 OpenTelemetry’s core engineering values are Compatibility, Stability,
 Resiliency, and Performance.
 
-### Engineering value #1: Compatibility
+### We Value *Compatibility*
 
 With the number of stakeholders and supported platforms, following
 specifications and enabling interoperability is very important. This means that
 OpenTelemetry strives to be standards-compliant, vendor-neutral, and consistent
 across languages and components.
 
-### Engineering value #2: Stability
+### We Value *Stability*
 
 As many libraries take dependencies on OpenTelemetry APIs, API stability and
 backwards compatibility is vital for our end-users, and thus for our work. As a
 corollary, we do not introduce new concepts unless we’re confident they’re
 needed by a broad subset of OpenTelemetry’s end-users.
 
-### Engineering value #3: Resiliency
+### We Value *Resiliency*
 
 In OpenTelemetry we value technical resiliency: the ability to adapt to
 continue operating even in the face of resource scarcity or other environmental
@@ -91,7 +91,7 @@ challenges. OpenTelemetry is designed to work and keep collecting telemetry
 signals when an application is misbehaving, and OpenTelemetry code is designed
 to degrade gracefully as needed.
 
-### Engineering value #4: Performance
+### We Value *Performance*
 
 The cardinal rule in observability is “first, do no harm”: to that end,
 performance is a strict requirement for OpenTelemetry, and interference effects
