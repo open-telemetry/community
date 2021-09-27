@@ -113,7 +113,6 @@ DotNET: Instrumentation|Every Wednesday at 10:30 PT|[Google Doc](https://docs.go
 DotNET: SDK|Every Tuesday alternating between 11:00 and 16:00 PT|[Google Doc](https://docs.google.com/document/d/1yjjD6aBcLxlRazYrawukDgrhZMObwHARJbB9glWdHj8/edit?usp=sharing)|[Zoom](https://zoom.us/j/8287234601)|[Slack](https://cloud-native.slack.com/archives/C01N3BC2W7Q)|
 Erlang/Elixir: SDK|Every Thursday alternating between 07:00 and 15:00 PT|[Google Doc](https://docs.google.com/document/d/1EbBiRjBc_cBf0T_B5OtNRPhbD4jdBrVYJAy8euCDrUI/edit?usp=sharing)|[Zoom](https://zoom.us/j/8287234601)|[Slack](https://cloud-native.slack.com/archives/C01N75YMZCN)|
 GoLang: SDK|Every Thursday alternating between 10:00 and 15:00 PDT|[Google Doc](https://docs.google.com/document/d/1A63zSWX0x2CyCK_LoNhmQC4rqhLpYXJzXbEPDUQ2n6w/edit#)|[Zoom](https://zoom.us/j/6729396170)|[Slack](https://cloud-native.slack.com/archives/C01NPAXACKT)|
-Instrumentation: Semantics|Every Monday at 11:30 PT|[Google Doc](https://docs.google.com/document/d/1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE/)|[Zoom](https://zoom.us/j/8203130519?pwd=elFSMWxOSVN0Qjk3cVJ1dzZoSnpnZz09)|[Slack](https://cloud-native.slack.com/archives/C01QZFGMLQ7)
 Instrumentation: General|Every Tuesday at 16:00 PT|[Google Doc](https://docs.google.com/document/d/1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE/)|[Zoom](https://zoom.us/j/6729396170?pwd=UFRIL0U0VzczUk1RK0hYaXJITXVldz09)|[Slack](https://cloud-native.slack.com/archives/C01QZFGMLQ7)
 Instrumentation: Messaging|Every Thursday at 8:00 PT|[Google Doc](https://docs.google.com/document/d/1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE/)|[Zoom](https://zoom.us/j/8203130519?pwd=elFSMWxOSVN0Qjk3cVJ1dzZoSnpnZz09)|[Slack](https://cloud-native.slack.com/archives/C01QZFGMLQ7)
 Java: SDK + Instrumentation|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw/)|[Zoom](https://zoom.us/j/8203130519)|[SDK](https://cloud-native.slack.com/archives/C014L2KCTE3) and [Instrumentation](https://cloud-native.slack.com/archives/C0150QF88FL) Slack channels|
@@ -128,6 +127,7 @@ Specification: Metrics|Every Tuesday at 09:00 PT; Every Thursday alternating bet
 Specification: Sampling|Every Thursday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/1gASMhmxNt9qCa8czEMheGlUW2xpORiYoD7dBD7aNtbQ/)|[Zoom](https://zoom.us/j/6729396170)||
 Swift: SDK|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1ShEFMywIV4LJcDYCNy41zkq8RR1sMq-tSvMBHngHcuk/edit?usp=sharing)|[Zoom](https://zoom.us/j/6729396170?pwd=UFRIL0U0VzczUk1RK0hYaXJITXVldz09)|[Slack](https://cloud-native.slack.com/archives/C01NCHR19SB)||
 Website|Every other week on Thursday at 13:30 ET|[Google Doc](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY)|[Zoom](https://zoom.us/j/8203130519)||
+eBPF|Every week on Thursday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1pAxBekk6BadHpK717TbhYtBMOlyrgWSvp3QeYDPwwvk/edit?usp=sharing)|[Zoom](https://zoom.us/j/8287234601)|[Slack](https://cloud-native.slack.com/archives/C02AB15583A)|
 
 ## Related groups
 
@@ -155,3 +155,8 @@ See the [Instrumentation Special Interest Group](https://github.com/kubernetes/c
 
 OpenMetrics is an effort to create an open standard for transmitting metrics at scale, supporting text representation and Protocol Buffers.
 See the [OpenMetrics](https://openmetrics.io/) page for details.
+
+### eBPF Foundation
+
+The eBPF foundation aims to facilitate collaboration between eBPF projects, and to ensure good maintainance and clear roadmap for eBPF core. 
+See the [eBPF Foundation](https://ebpf.io/foundation/) page for more details.
