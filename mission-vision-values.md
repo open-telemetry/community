@@ -37,11 +37,11 @@ globally.
 **Opportunity III: Telemetry should be vendor-neutral.** For decades, monitoring
 and observability vendors have created differentiation – and lock-in – through
 agents that automatically gather useful telemetry from a wide integration
-surface. While convenient, this lock-in is limiting for customers and inhibits
-innovation by tightly coupling telemetry collection and telemetry storage and
-analysis. With OpenTelemetry, we strive to provide a level playing field for
-all observability providers, avoiding lock-in for any vendor and interoperating
-with other OSS projects in the telemetry and observability ecosystem.
+surface. This lock-in is limiting for customers and inhibits innovation by
+tightly coupling telemetry collection and telemetry storage and analysis. With
+OpenTelemetry, we strive to provide a level playing field for all observability
+providers, avoiding lock-in for any vendor and interoperating with other OSS
+projects in the telemetry and observability ecosystem.
 
 **Opportunity IV: Telemetry should be loosely coupled.** OpenTelemetry end-users
 should be able to pick and choose from the pieces they want without bringing in
