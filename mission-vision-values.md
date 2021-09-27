@@ -13,10 +13,11 @@ performant, consistent instrumentation that makes it possible.
 Telemetry in this context is the firehose of raw observational data streaming
 out of software applications, and while “high-quality telemetry” may be a
 requirement for excellent observability, it’s still unreasonable and
-unrealistic to expect software developers to add or maintain the necessary
-instrumentation on their own. That is a massive undertaking, and in practice
-it’s not “just code” – there is also necessary alignment around protocols and
-semantic conventions for tags, attributes, and other metadata to consider.
+unrealistic to expect developers of application software to add or maintain the
+necessary instrumentation on their own. That is a massive undertaking, and in
+practice it’s not “just code” – there is also necessary alignment around
+protocols and semantic conventions for tags, attributes, and other metadata to
+consider.
 
 So how do we get high-quality, turnkey telemetry without a massive,
 unsustainable engineering effort? This is where OpenTelemetry comes in. To
@@ -83,7 +84,7 @@ backwards compatibility is vital for our end-users, and thus for our work. As a
 corollary, we do not introduce new concepts unless we’re confident they’re
 needed by a broad subset of OpenTelemetry’s end-users.
 
-### We Value *Resiliency*
+### We Value *Resilience*
 
 In OpenTelemetry we value technical resiliency: the ability to adapt to
 continue operating even in the face of resource scarcity or other environmental
