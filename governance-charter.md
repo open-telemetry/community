@@ -153,9 +153,9 @@ members.
 
 ### Election process
 
-Elections will be held using time-limited Condorcet ranking on
-[CIVS](http://civs.cs.cornell.edu/). The top vote getters will be elected to the
-respective positions. 
+Elections will be held using time-limited approval voting on
+[Helios](https://vote.heliosvoting.org/). The top vote getters will be elected
+to the respective positions.
 
 ### Maximal representation
 
