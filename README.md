@@ -75,14 +75,20 @@ All OpenTelemetry projects are shipped under the permissive Apache 2.0 license
 as CNCF IP Policy
 [dictates](https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy).
 This [blog post](https://www.cncf.io/blog/2017/02/01/cncf-recommends-aslv2/)
-explains the reasoning behind choosing this license. 
-Refer to [CONTRIBUTING.md](https://github.com/open-telemetry/community/blob/master/CONTRIBUTING.md#code-attribution) 
+explains the reasoning behind choosing this license.
+Refer to [CONTRIBUTING.md](https://github.com/open-telemetry/community/blob/master/CONTRIBUTING.md#code-attribution)
 for details on code attribution.
 
 ## Logos and Brand Guide
 
 The OpenTelemetry logos and brand guide can be found in the [CNCF artwork
 repository](https://github.com/cncf/artwork/tree/master/projects/opentelemetry). In addition, a [Google Slides template](https://docs.google.com/presentation/d/1Neab3OZ3c-m5kOE37iZXEVpK4Pjj6xGTJEUuUzLQJvk/edit?usp=sharing) is also available.
+
+## How to
+
+- [Get access and manage meetings](docs/how-to-handle-public-calendar.md).
+- [Request GitHub extension or create a bit](docs/using-github-extensions.md).
+- [Configure new repository](docs/how-to-configure-new-repository.md): listing settings TC members set when creating the new repository.
 
 ## Special Interest Groups
 
