@@ -2,8 +2,8 @@
 
 ## Mission (our overall north star as a community)
 
-OpenTelemetry's Mission: **to enable effective observability through
-ubiquitous, portable, high-quality telemetry.**
+OpenTelemetry's Mission: **to enable effective observability by making
+high-quality, portable telemetry ubiquitous.**
 
 ## Vision (the world we imagine for OTel end-users)
 
@@ -46,8 +46,6 @@ innovation by tightly coupling telemetry collection and telemetry storage and
 analysis. With OpenTelemetry, we strive to provide a level playing field for
 all observability providers, avoiding lock-in for any vendor and interoperating
 with other OSS projects in the telemetry and observability ecosystem.
-Furthermore, with the looming threat of software-supply-chain attacks, we aim
-to make instrumentation and telemetry auditable.
 
 ### Telemetry should be loosely coupled
 
