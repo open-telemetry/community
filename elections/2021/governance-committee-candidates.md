@@ -4,6 +4,7 @@
 
 In alphabetical order:
 
+- [Punya Biswal](#Punya-Biswal)
 - [Steve Flanders](#Steve-Flanders)
 - [Ted Young](#Ted-Young)
 
@@ -22,6 +23,22 @@ Description of candidate
 ---
 
 -->
+
+### Punya Biswal
+
+![Punya Biswal](static/punya-biswal.jpg)
+
+- Company: Google
+- Github: [punya](https://github.com/punya)
+
+
+I’ve participated in the OpenTelemetry community for the past year, especially the Go and Collector SIGs. In addition to writing code, I help clarify contentious designs and onboard new contributors. As a [triager](../../community-membership.md#triager) for the collector repository, I help our busy maintainers and contributors to use their time efficiently.
+
+Before getting involved in telemetry, I led teams at small-to-midsize companies that were shipping products and figuring out observability for the first time. I’d like to use the perspective I gained from that experience to advocate for simple designs that are easy for newcomers and small teams to adopt.
+
+If elected to the GC, I’ll work to measure and improve the experience of OTel contributors – for example, looking at how many contributors “give up” on proposals, how long it takes to merge a pull request, or how often our automated tests flake.
+
+---
 
 ### Steve Flanders
 
