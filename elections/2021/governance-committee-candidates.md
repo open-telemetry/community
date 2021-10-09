@@ -6,6 +6,7 @@ In alphabetical order:
 
 - [Steve Flanders](#Steve-Flanders)
 - [Ted Young](#Ted-Young)
+- [Yuri Shkuro](#Yuri-Shkuro)
 
 ---
 <!--
@@ -90,3 +91,17 @@ community management sounds good to you, please vote for me so that I may contin
 our amazing community!
 
 ---
+
+### Yuri Shkuro
+
+- Company: Facebook
+- GitHub: [yurishkuro](https://github.com/yurishkuro)
+
+Hello. I am one of the co-founders of OpenTelemetry, a member of the original “seed” Governance Committee that was formed by merging OpenTracing and OpenCensus, and a member of OTel Technical Committee. I helped create many of the OTel’s charters and policies. My primary focus is on OTel Specification as a blueprint for developing APIs and SDKs. I am also the founder of the CNCF Jaeger project.
+
+It will be my privilege to continue serving on the Governance Committee. There are several reasons why my candidacy brings unique perspective to the committee:
+
+- I was a co-founder of the OpenTracing project (which is being retired), and I care about OTel continuing to serve the large number of users and companies who previously invested in OpenTracing.
+- During the existence of OTel GC, I’ve been the only member who represented an end-user organization rather than a commercial observability/cloud vendor. I think we could use more end-user voices in the project’s leadership.
+- I also represent OTel’s partner project Jaeger. Jaeger was the first oss tracing system that embraced vendor-neutral approach to instrumentation via OpenTracing, by developing fully compliant SDKs in multiple languages that followed a single specification while providing novel features like centralized control plane and adaptive sampling. I am happy to see OTel reaching the maturity where we can retire Jaeger’s own SDKs and recommend people to switch to OTel.
+- Lastly, specific to tracing domain, I work with one of the few tracing systems in the industry that is not based on span model (like OTel & Jaeger), but on a richer event-based model (cf. Canopy paper).  That, as well as our scale requirements, also gives me a unique perspective on the usability of OTel APIs.
