@@ -7,8 +7,10 @@ high-quality, portable telemetry ubiquitous.**
 
 ## Vision (the world we imagine for OTel end-users)
 
-Excellent observability requires high-quality telemetry, as well as the
-performant, consistent instrumentation that makes it possible.
+Effective observability is powerful because it enables developers to innovate
+faster while maintaining high reliability. But effective observability
+absolutely requires high-quality telemetry – and the performant, consistent
+instrumentation that makes it possible.
 
 Telemetry in this context is the firehose of raw observational data streaming
 out of software applications, and while “high-quality telemetry” may be a
@@ -40,12 +42,13 @@ consistently, both locally and globally.
 ### Telemetry should be vendor-neutral
 
 For decades, monitoring and observability vendors have created differentiation
-– and lock-in – through agents that automatically gather useful telemetry from
-a wide integration surface. This lock-in is limiting for customers and inhibits
-innovation by tightly coupling telemetry collection and telemetry storage and
-analysis. With OpenTelemetry, we strive to provide a level playing field for
-all observability providers, avoiding lock-in for any vendor and interoperating
-with other OSS projects in the telemetry and observability ecosystem.
+through agents that automatically gather useful telemetry from a wide
+integration surface. Unfortunately, this differentiation also led to vendor
+lock-in for customers, and it inhibited innovation by tightly coupling
+telemetry collection with telemetry storage and analysis. With OpenTelemetry, we
+strive to provide a level playing field for all observability providers,
+avoiding lock-in for any vendor and interoperating with other OSS projects in
+the telemetry and observability ecosystem.
 
 ### Telemetry should be loosely coupled
 
