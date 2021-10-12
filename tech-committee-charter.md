@@ -6,7 +6,7 @@ The OpenTelemetry project will operate transparently, collaboratively, ethically
 
 ## Evolution of OpenTelemetry Governance
 
-Most large, complex open source communities have both a business and a technical governance model. Since its inception, the OpenTelemetry project strives to combine and align the OpenTracing and OpenCensus projects. OpenTelemetry has a project-level Governance Committee, a project-level Technical Committee, and is a sandbox project in the Cloud Native Computing Foundation, working for interoperability and engagement across the industry in conjunction with the CNCF's Board of Directors and Technical Oversight Committee.
+Most large, complex open source communities have both a business and a technical governance model. Since its inception, the OpenTelemetry project strives to combine and align the OpenTracing and OpenCensus projects. OpenTelemetry has a project-level Governance Committee, a project-level Technical Committee, and is an incubating project in the Cloud Native Computing Foundation, working for interoperability and engagement across the industry in conjunction with the CNCF's Board of Directors and Technical Oversight Committee.
 
 This OpenTelemetry Technical Committee Charter reflects the scope and expectations of the Technical Committee ("TC") with the maintainers, the consumers, and the ecosystem of the project. The charter will not be perfect, and so has a simple amendment process – a TC member proposes changes to be discussed and voted on by the full TC.
 
