@@ -5,6 +5,7 @@
 In alphabetical order:
 
 - [Ben Sigelman](#Ben-Sigelman)
+- [Bogdan Drutu](#Bogdan-Drutu)
 - [Punya Biswal](#Punya-Biswal)
 - [Sergey Kanzhelev](#Sergey-Kanzhelev)
 - [Steve Flanders](#Steve-Flanders)
@@ -83,6 +84,46 @@ of the Governance Committee:
   concerted effort into drawing people with diverse backgrounds into the
   project, at all levels.
 
+---
+
+### Bogdan Drutu
+
+<img src="static/bogdan-drutu.jpg" alt="Bogdan Drutu photo" height="333" width="500">
+
+- Company: Splunk
+- Github: [bogdandrutu](https://github.com/bogdandrutu)
+
+Hi all! I am one of the OpenTelemetry's co-founder, one of the top contributor
+to the overall project, a member of the Technical Committee, and one of the
+initial members of the steering committee, and as such I would be honored to
+continue to serve on the OTel Governance Committee.
+
+**Prior work in the space:**
+
+I've been active in the telemetry space for more than 10y:
+
+- Google (2012-2019):
+  - Founder of the OpenCensus project, which was one of the OpenTelemetry parent
+  projects.
+  - I've been one of the tech-leads for Google's internal Census project
+  (predecessor of OpenCensus).
+  - I've been deeply involved in making Google’s internal tracing project (Dapper)
+  more successful and easier to access for everyone.
+- Splunk (2019-2020):
+  - I am one of the tech-leads of Observability “Getting Data In” team, which focuses
+  on using OpenTelemetry to design the Splunk’s telemetry collection future.
+- OpenTelemetry (since inception):
+  - Member of the Technical Committee, proposed/reviewed a large part of the
+  specifications.
+  - I am an active maintainer of the OpenTelemetry collector.
+  - I actively maintained the OpenTelemetry Java project until the 1.0 release.
+- W3C:
+  - Co-author of the initial [trace-context](https://www.w3.org/TR/trace-context/) specification.
+
+**My priorities for OpenTelemetry:**
+
+If elected for another term, I would continue to mediate the collaboration between GC
+and TC, and continue to represent the engineers' interests in the Governance Committee.
 
 ---
 
