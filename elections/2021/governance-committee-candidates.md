@@ -4,6 +4,7 @@
 
 In alphabetical order:
 
+- [Ben Sigelman](#Ben-Sigelman)
 - [Punya Biswal](#Punya-Biswal)
 - [Steve Flanders](#Steve-Flanders)
 - [Ted Young](#Ted-Young)
@@ -21,9 +22,68 @@ In alphabetical order:
 
 Description of candidate
 
----
-
 -->
+
+### Ben Sigelman
+
+<img src="static/bhs.jpg" alt="Ben Sigelman photo" height="400" width="400">
+
+- Company: Lightstep
+- Github: [bhs](https://github.com/bhs)
+
+Hi all! OpenTelemetry's mission is a very important one for our industry, and
+as such I would be honored to continue to serve on the OTel Governance
+Committee. Here I'll try to briefly summarize my history in the space as well
+as my priorities for OpenTelemetry over the coming years.
+
+**My history in the space:**
+
+- Google days (2003-2012)
+  - Productionized Dapper and published ["The Dapper Paper"](https://research.google/pubs/pub36356/)
+    (trivia fact: I
+    [coined the term "Span"](https://lightstep.com/blog/a-brief-history-of-the-span-hard-to-love-hard-to-kill/)
+    in 2006, for better or worse!)
+  - Co-created and productionized [Monarch](https://www.vldb.org/pvldb/vol13/p3181-adams.pdf)
+- Lightstep days (2015-present)
+  - While at a tracing workshop (along with [Yuri](#Yuri-Shkuro) below), a few
+    of us started collaborating and soon co-created
+    [OpenTracing](https://opentracing.io/), one of OpenTelemetry's two "parent"
+    projects.
+  - I worked hard to rebuild trust between OpenTracing and OpenCensus in 2018
+    and 2019 in order to make OpenTelemetry possible – big kudos to everyone
+    involved in that process, it was certainly a group effort!
+  - I have been a tireless advocate for OpenTracing and now OpenTelemetry, even
+    during the early days when everyone from incumbent vendors to Gartner told
+    us we were all completely out to lunch. :) What we're all doing here is
+    important and greatly beneficial but does require a lot of explanation and
+    market education.
+
+**My priorities for OpenTelemetry:**
+
+If elected to another term, these are the things I would prioritize as a member
+of the Governance Committee:
+- *Greater involvement from OpenTelemetry end-users throughout the
+  project:* from planning to prioritization to design iteration.
+- *More detailed and more credible roadmaps:* OpenTelemetry is at risk of
+  becoming a victim of its own success, with thousands of contributors and many
+  constituents with broad priorities. We will benefit from additional planning
+  upfront to get alignment on scope and timelines to guide the (excellent) work
+  taking place across the project.
+- *Scaling our processes and internal structures:* Our maintainers are
+  *amazing* yet likely to burn out given the workload. Our contributors are
+  also *amazing* yet often frustrated by lengthy delays and other side-effects
+  of our scale. By creating more scalable structures and delegation within
+  OTel, as a project we will be able to parallelize more effectively while
+  helping to mentor the next crop of OTel leaders in the process.
+- *Prioritize diversity:* OpenTelemetry is an "average" OSS project from a
+  diversity and inclusion standpoint (and the average is not good!). I have
+  advocated about this in numerous GC meetings in the past, and with the
+  project rounding the bend on maturity I believe it is time to put more
+  concerted effort into drawing people with diverse backgrounds into the
+  project, at all levels.
+
+
+---
 
 ### Punya Biswal
 
@@ -84,7 +144,7 @@ and presented it to TAG Observability.
 
 ![Ted Young photo](static/ted-young.jpg)
 
-- Company: LightStep
+- Company: Lightstep
 - GitHub: [tedsuo](https://github.com/tedsuo)
 
 Hello, I'm one of the OpenTelemetry co-founders . My primary focus has been on
