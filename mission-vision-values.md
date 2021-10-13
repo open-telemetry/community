@@ -41,14 +41,14 @@ consistently, both locally and globally.
 
 ### Telemetry should be vendor-neutral
 
-For decades, monitoring and observability vendors have created differentiation
-through agents that automatically gather useful telemetry from a wide
-integration surface. Unfortunately, this differentiation also led to vendor
-lock-in for customers, and it inhibited innovation by tightly coupling
-telemetry collection with telemetry storage and analysis. With OpenTelemetry, we
-strive to provide a level playing field for all observability providers,
-avoiding lock-in for any vendor and interoperating with other OSS projects in
-the telemetry and observability ecosystem.
+For decades, proprietary drop-in agents from monitoring and observability
+vendors have been the primary source for useful telemetry from across the
+application stack. Unfortunately, the lack of common standards or APIs across
+these agents has led to vendor lock-in for customers, and inhibited innovation
+by tightly coupling telemetry collection with telemetry storage and analysis.
+With OpenTelemetry, we strive to provide a level playing field for all
+observability providers, avoid lock-in to any vendor, and interoperate with
+other OSS projects in the telemetry and observability ecosystem.
 
 ### Telemetry should be loosely coupled
 
