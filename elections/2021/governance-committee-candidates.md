@@ -6,6 +6,7 @@ In alphabetical order:
 
 - [Ben Sigelman](#Ben-Sigelman)
 - [Bogdan Drutu](#Bogdan-Drutu)
+- [Juraci Paixão Kröhling](#Juraci-Paixao-Krohling)
 - [Punya Biswal](#Punya-Biswal)
 - [Sergey Kanzhelev](#Sergey-Kanzhelev)
 - [Steve Flanders](#Steve-Flanders)
@@ -124,6 +125,29 @@ I've been active in the telemetry space for more than 10y:
 
 If elected for another term, I would continue to mediate the collaboration between GC
 and TC, and continue to represent the engineers' interests in the Governance Committee.
+
+---
+
+### Juraci Paixão Kröhling
+
+![Juraci Paixão Kröhling](static/jpkroehling.jpg)
+
+- Company: [Grafana Labs](https://grafana.com)
+- GitHub: [jpkrohling](https://github.com/jpkrohling)
+
+Hello! My name is Juraci Paixão Kröhling. I'm a passionate open source software engineer. I worked at Red Hat until I recently joined Grafana Labs to help build out a team focused on OpenTelemetry. Being able to contribute to OpenTelemetry during work time means that I will be able to dedicate the time a seat on the Governing Board deserves.
+
+I have been a maintainer on the [Jaeger project](https://www.jaegertracing.io/) since 2018, contributing to OpenTelemetry since 2019, and a formal OpenTelemetry member since 2020. Within OpenTelemetry, I have been active in the following sub-projects:
+- [Operator](https://github.com/open-telemetry/opentelemetry-operator), Creator and Maintainer, since 2019
+- [Collector Builder](https://github.com/open-telemetry/opentelemetry-collector-builder), Creator and Maintainer, since 2021
+- [Collector Contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib), Approver, since 2020
+- [Collector core](https://github.com/open-telemetry/opentelemetry-collector), Approver, since 2020
+
+I'm proud to be among the top contributors to [OpenTelemetry overall](https://opentelemetry.devstats.cncf.io/d/9/developer-activity-counts-by-repository-group-table?orgId=1&var-period_name=Last%20year&var-metric=contributions&var-repogroup_name=All&var-country_name=All). Besides code and other technical work, my contributions include outreach. For a detailed list, please look through my [public talks](https://speakerhub.com/speaker/juraci-paixao-krohling) on topics like distributed tracing and OpenTelemetry at conferences such as [KubeCon](https://sched.co/lV0z), [OpenSource Summit](https://sched.co/FxW3), [FOSDEM](https://archive.fosdem.org/2020/schedule/event/tracing_beginners), and [Devoxx](https://www.youtube.com/watch?v=FJ_YuUgIt8E).  I care deeply about diversity, and have served as a mentor and coordinator for [Outreachy](https://www.outreachy.org) internships as part of the [“CNCF Tracing”](https://www.outreachy.org/communities/cfp/cncf-tracing/) community, an umbrella project that includes Jaeger and OpenTelemetry.
+
+As a member of the governing board, my focus points will be:
+- Community: Ensure that our decisions continue to be compatible with the interests of the broader open source observability ecosystem, including users, developers, projects, and vendors
+- Diversity: Create new and strengthen existing diversity initiatives, like Outreachy, across OpenTelemetry's SIGs and projects. As a measurable goal, I intend to support at least two projects per year so that they can participate in Outreachy
 
 ---
 
