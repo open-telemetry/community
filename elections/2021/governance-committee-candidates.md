@@ -132,7 +132,7 @@ and TC, and continue to represent the engineers' interests in the Governance Com
 
 ### Ilan Rabinovitch
 
-![Ilan Rabinovitch](static/ilan-rabinovitch.jpg)
+![Ilan Rabinovitch](static/ilan-rabinovitch.jpeg)
 
 - Company: Datadog
 - GitHub: [@irabinovitch](https://github.com/irabinovitch)
