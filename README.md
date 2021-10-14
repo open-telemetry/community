@@ -128,6 +128,7 @@ Specification: Sampling|Every Thursday at 08:00 PT|[Google Doc](https://docs.goo
 Swift: SDK|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1ShEFMywIV4LJcDYCNy41zkq8RR1sMq-tSvMBHngHcuk/edit?usp=sharing)|[Zoom](https://zoom.us/j/6729396170?pwd=UFRIL0U0VzczUk1RK0hYaXJITXVldz09)|[Slack](https://cloud-native.slack.com/archives/C01NCHR19SB)||
 Website|Every other week on Thursday at 13:30 ET|[Google Doc](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY)|[Zoom](https://zoom.us/j/8203130519)||
 eBPF|Every week on Thursday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1pAxBekk6BadHpK717TbhYtBMOlyrgWSvp3QeYDPwwvk/edit?usp=sharing)|[Zoom](https://zoom.us/j/8287234601)|[Slack](https://cloud-native.slack.com/archives/C02AB15583A)|
+Agent Management WG|Every other week on Tuesday at 11:00 PT|[Google Doc](https://docs.google.com/document/d/1mHNnlCmO0XKUu0xPnKko3GOh0mxVoxjRiN8xmHRImew/edit#)|[Zoom](https://zoom.us/j/8203130519?pwd=elFSMWxOSVN0Qjk3cVJ1dzZoSnpnZz09)|[Slack](https://cloud-native.slack.com/archives/C02J58HR58R)|
 
 ## Related groups
 
