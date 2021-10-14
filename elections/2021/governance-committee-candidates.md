@@ -8,6 +8,7 @@ In alphabetical order:
 - [Bogdan Drutu](#Bogdan-Drutu)
 - [Csuzhang Cheung](#Csuzhang-Cheung)
 - [Juraci Paixão Kröhling](#Juraci-Paixao-Krohling)
+- [Ilan Rabinovitch](#Ilan-Rabinovitch)
 - [Punya Biswal](#Punya-Biswal)
 - [Sergey Kanzhelev](#Sergey-Kanzhelev)
 - [Sharr Creeden](#Sharr-Creeden)
@@ -175,6 +176,17 @@ I'm proud to be among the top contributors to [OpenTelemetry overall](https://op
 As a member of the governing board, my focus points will be:
 - Community: Ensure that our decisions continue to be compatible with the interests of the broader open source observability ecosystem, including users, developers, projects, and vendors
 - Diversity: Create new and strengthen existing diversity initiatives, like Outreachy, across OpenTelemetry's SIGs and projects. As a measurable goal, I intend to support at least two projects per year so that they can participate in Outreachy
+
+---
+
+### Ilan Rabinovitch
+
+![Ilan Rabinovitch](static/ilan-rabinovitch.jpeg)
+
+- Company: Datadog
+- GitHub: [@irabinovitch](https://github.com/irabinovitch)
+
+Ilan Rabinovitch leads the community and product teams at Datadog. He spends his days diving into monitoring best practices, collaborating with Datadog's open source community and evangelizing observability best practices. Over the last year, he has collaborated with the OTel governance board and SIGs to arrange the contribution of Datadog's tracing libraries and auto-instrumentation support to OpenTelemetry. Prior to joining Datadog, Ilan spent a number of years leading infrastructure and reliability engineering teams at organizations such as Ooyala and Edmunds.com. He's active in the wider open source and DevOps communities, including co-founding events such as SCALE, Texas Linux Fest, and various DevOpsDays events.
 
 ---
 
