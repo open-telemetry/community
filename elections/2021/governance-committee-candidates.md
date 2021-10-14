@@ -128,6 +128,31 @@ and TC, and continue to represent the engineers' interests in the Governance Com
 
 ---
 
+### Csuzhang Cheung
+
+<img src="static/csuzhang.jpg" alt="Csuzhang photo" height="400" width="400">
+
+- Company: [Tencent](https://github.com/tencent)
+- Github: [zhyChesterCheung](https://github.com/zhyChesterCheung)
+
+Hi! I'm an engineer at Tencent's internal observability team, which has made a huge
+contribution to the OpenTelemetry community. At the same time, I participated in and
+actively contributed to the OpenTelemetry community, especially the Go-SDK field in 
+the past year. I have been active in the observability field for several years, and
+have made various contributions to OpenTelemetry, Thanos, Prometheus and other communities. 
+I am very proud to be a member of the OpenTelemetry community, thank you for considering 
+me and voting for me!
+
+**As a member of the governing board, my focus points will be:**
+
+- Ensure that our decisions continue to be in line with the interests of the wider 
+  Open-Source observability ecosystem, as well as create a more viable observability ecosystem.
+  
+- Promote the influence of observability in various countries, especially in Asia, and attract
+  people of all levels and different backgrounds to join the project together.
+
+---
+
 ### Juraci Paixão Kröhling
 
 ![Juraci Paixão Kröhling](static/jpkroehling.jpg)
