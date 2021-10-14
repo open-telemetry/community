@@ -6,9 +6,12 @@ In alphabetical order:
 
 - [Ben Sigelman](#Ben-Sigelman)
 - [Bogdan Drutu](#Bogdan-Drutu)
+- [Csuzhang Cheung](#Csuzhang-Cheung)
 - [Juraci Paixão Kröhling](#Juraci-Paixao-Krohling)
+- [Ilan Rabinovitch](#Ilan-Rabinovitch)
 - [Punya Biswal](#Punya-Biswal)
 - [Sergey Kanzhelev](#Sergey-Kanzhelev)
+- [Sharr Creeden](#Sharr-Creeden)
 - [Steve Flanders](#Steve-Flanders)
 - [Ted Young](#Ted-Young)
 - [Yuri Shkuro](#Yuri-Shkuro)
@@ -128,6 +131,31 @@ and TC, and continue to represent the engineers' interests in the Governance Com
 
 ---
 
+### Csuzhang Cheung
+
+<img src="static/csuzhang.jpg" alt="Csuzhang photo" height="400" width="400">
+
+- Company: [Tencent](https://github.com/tencent)
+- Github: [zhyChesterCheung](https://github.com/zhyChesterCheung)
+
+Hi! I'm an engineer at Tencent's internal observability team, which has made a huge
+contribution to the OpenTelemetry community. At the same time, I participated in and
+actively contributed to the OpenTelemetry community, especially the Go-SDK field in 
+the past year. I have been active in the observability field for several years, and
+have made various contributions to OpenTelemetry, Thanos, Prometheus and other communities. 
+I am very proud to be a member of the OpenTelemetry community, thank you for considering 
+me and voting for me!
+
+**As a member of the governing board, my focus points will be:**
+
+- Ensure that our decisions continue to be in line with the interests of the wider 
+  Open-Source observability ecosystem, as well as create a more viable observability ecosystem.
+  
+- Promote the influence of observability in various countries, especially in Asia, and attract
+  people of all levels and different backgrounds to join the project together.
+
+---
+
 ### Juraci Paixão Kröhling
 
 ![Juraci Paixão Kröhling](static/jpkroehling.jpg)
@@ -148,6 +176,17 @@ I'm proud to be among the top contributors to [OpenTelemetry overall](https://op
 As a member of the governing board, my focus points will be:
 - Community: Ensure that our decisions continue to be compatible with the interests of the broader open source observability ecosystem, including users, developers, projects, and vendors
 - Diversity: Create new and strengthen existing diversity initiatives, like Outreachy, across OpenTelemetry's SIGs and projects. As a measurable goal, I intend to support at least two projects per year so that they can participate in Outreachy
+
+---
+
+### Ilan Rabinovitch
+
+![Ilan Rabinovitch](static/ilan-rabinovitch.jpeg)
+
+- Company: Datadog
+- GitHub: [@irabinovitch](https://github.com/irabinovitch)
+
+Ilan Rabinovitch leads the community and product teams at Datadog. He spends his days diving into monitoring best practices, collaborating with Datadog's open source community and evangelizing observability best practices. Over the last year, he has collaborated with the OTel governance board and SIGs to arrange the contribution of Datadog's tracing libraries and auto-instrumentation support to OpenTelemetry. Prior to joining Datadog, Ilan spent a number of years leading infrastructure and reliability engineering teams at organizations such as Ooyala and Edmunds.com. He's active in the wider open source and DevOps communities, including co-founding events such as SCALE, Texas Linux Fest, and various DevOpsDays events.
 
 ---
 
@@ -177,6 +216,28 @@ If elected to the GC, I’ll work to measure and improve the experience of OTel 
 Hi all! I have a long history working on observability and monitoring tools and was involved into OpenCensus and OpenTelemetry projects from their inception. I'm a co-chair of the W3C Distributed Tracing Working Group, which has strong ties to OpenTelemetry. I'm also involved in Kubernetes community which gives me a good perspective on how a different project addresses challenges OpenTelemetry faces. It will be my privilege to continue serving on the Governance Committee.
 
 I strongly believe that the project with such an ambitious mission as OpenTelemetry, with the diverse group of contributors and interested parties, can only succeed if we together will uphold the project values, grow the community, and help everybody in the community grow. This is why as a Governance Committee member my goals are to enable contributors, empower maintainers, keep community welcoming and fair.
+
+---
+
+### Sharr Creeden
+
+<img src="static/sharr-creeden.jpg" alt="Sharr Creeden photo" height="400" width="400">
+
+- Company: New Relic
+- GitHub: [sharrmander](https://github.com/sharrmander)
+
+Hi! For the past year, my primary focus has been improving New Relic’s support for OpenTelemetry informed by partnering with early adopter end-users to plan their OTel based observability strategies. In this capacity, I have successfully championed for New Relic to provide dedicated resources to the project and now I lead our growing OpenTelemetry community team composed of members, approvers, maintainers, and a developer advocate. By establishing this team, I’ve helped grow the OpenTelemetry community too.
+
+I’ve been following the project closely and am inspired by the passion of the contributors and the potential of achieving OpenTelemetry’s mission. I want to contribute to making our shared vision a reality through my unique perspective, cultivated through a career building skills in the business and leadership sides of tech. As a non-developer, I can bring a complementary, but distinctly different background and perspective to the governance committee. I believe that through strong governance and supporting processes, we can build a sustainable community, amplify our advocacy efforts and polish the project to accelerate early majority adoption.
+
+If elected to the governance committee I would prioritize:
+
+- Interacting with members of the community and end-users to understand challenges and celebrate achievements.
+- Creating and optimizing processes to improve feedback access and cycle time, especially as they pertain to stories from end-users and experiences of community contributors.
+- Helping improve end-user engagement and accessibility of the project by contributing to efforts to improve roadmap visibility, reduce onboarding friction, and improve the example code and documentation.
+- Collaborating with members of the governance committee on their platform priorities.
+
+Thank you for your engagement - through both your project contributions and the voting process!
 
 ---
 
