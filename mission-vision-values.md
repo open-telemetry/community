@@ -62,7 +62,7 @@ to give our end-users a choice.
 ### Telemetry should be built-in
 
 Historically, telemetry was something developers integrated manually or via
-post-compilation agents.  OpenTelemetry believes that high-quality telemetry
+post-compilation agents. OpenTelemetry believes that high-quality telemetry
 can be built in to the entire software stack – just like comments are today.
 
 While the structure and technical details of OpenTelemetry may change over
