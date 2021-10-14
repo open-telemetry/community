@@ -6,8 +6,9 @@ In alphabetical order:
 
 - [Ben Sigelman](#Ben-Sigelman)
 - [Bogdan Drutu](#Bogdan-Drutu)
-- [Ilan Rabinovitch](#Ilan-Rabinovitch)
+- [Csuzhang Cheung](#Csuzhang-Cheung)
 - [Juraci Paixão Kröhling](#Juraci-Paixao-Krohling)
+- [Ilan Rabinovitch](#Ilan-Rabinovitch)
 - [Punya Biswal](#Punya-Biswal)
 - [Sergey Kanzhelev](#Sergey-Kanzhelev)
 - [Sharr Creeden](#Sharr-Creeden)
@@ -130,14 +131,28 @@ and TC, and continue to represent the engineers' interests in the Governance Com
 
 ---
 
-### Ilan Rabinovitch
+### Csuzhang Cheung
 
-![Ilan Rabinovitch](static/ilan-rabinovitch.jpeg)
+<img src="static/csuzhang.jpg" alt="Csuzhang photo" height="400" width="400">
 
-- Company: Datadog
-- GitHub: [@irabinovitch](https://github.com/irabinovitch)
+- Company: [Tencent](https://github.com/tencent)
+- Github: [zhyChesterCheung](https://github.com/zhyChesterCheung)
 
-Ilan Rabinovitch leads the community and product teams at Datadog. He spends his days diving into monitoring best practices, collaborating with Datadog's open source community and evangelizing observability best practices. Over the last year, he has collaborated with the OTel governance board and SIGs to arrange the contribution of Datadog's tracing libraries and auto-instrumentation support to OpenTelemetry. Prior to joining Datadog, Ilan spent a number of years leading infrastructure and reliability engineering teams at organizations such as Ooyala and Edmunds.com. He's active in the wider open source and DevOps communities, including co-founding events such as SCALE, Texas Linux Fest, and various DevOpsDays events.
+Hi! I'm an engineer at Tencent's internal observability team, which has made a huge
+contribution to the OpenTelemetry community. At the same time, I participated in and
+actively contributed to the OpenTelemetry community, especially the Go-SDK field in 
+the past year. I have been active in the observability field for several years, and
+have made various contributions to OpenTelemetry, Thanos, Prometheus and other communities. 
+I am very proud to be a member of the OpenTelemetry community, thank you for considering 
+me and voting for me!
+
+**As a member of the governing board, my focus points will be:**
+
+- Ensure that our decisions continue to be in line with the interests of the wider 
+  Open-Source observability ecosystem, as well as create a more viable observability ecosystem.
+  
+- Promote the influence of observability in various countries, especially in Asia, and attract
+  people of all levels and different backgrounds to join the project together.
 
 ---
 
@@ -161,6 +176,17 @@ I'm proud to be among the top contributors to [OpenTelemetry overall](https://op
 As a member of the governing board, my focus points will be:
 - Community: Ensure that our decisions continue to be compatible with the interests of the broader open source observability ecosystem, including users, developers, projects, and vendors
 - Diversity: Create new and strengthen existing diversity initiatives, like Outreachy, across OpenTelemetry's SIGs and projects. As a measurable goal, I intend to support at least two projects per year so that they can participate in Outreachy
+
+---
+
+### Ilan Rabinovitch
+
+![Ilan Rabinovitch](static/ilan-rabinovitch.jpeg)
+
+- Company: Datadog
+- GitHub: [@irabinovitch](https://github.com/irabinovitch)
+
+Ilan Rabinovitch leads the community and product teams at Datadog. He spends his days diving into monitoring best practices, collaborating with Datadog's open source community and evangelizing observability best practices. Over the last year, he has collaborated with the OTel governance board and SIGs to arrange the contribution of Datadog's tracing libraries and auto-instrumentation support to OpenTelemetry. Prior to joining Datadog, Ilan spent a number of years leading infrastructure and reliability engineering teams at organizations such as Ooyala and Edmunds.com. He's active in the wider open source and DevOps communities, including co-founding events such as SCALE, Texas Linux Fest, and various DevOpsDays events.
 
 ---
 
