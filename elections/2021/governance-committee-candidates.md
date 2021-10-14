@@ -6,6 +6,7 @@ In alphabetical order:
 
 - [Ben Sigelman](#Ben-Sigelman)
 - [Bogdan Drutu](#Bogdan-Drutu)
+- [Csuzhang Cheung](#Csuzhang-Cheung)
 - [Juraci Paixão Kröhling](#Juraci-Paixao-Krohling)
 - [Punya Biswal](#Punya-Biswal)
 - [Sergey Kanzhelev](#Sergey-Kanzhelev)
