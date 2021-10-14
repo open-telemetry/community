@@ -87,7 +87,7 @@ The [list of active members](https://github.com/open-telemetry/opentelemetry-dot
 
 Repo: [open-telemetry/opentelemetry-dotnet-instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation).
 
-The [list of active members](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation#community-roles) (both "approvers" and "maintainers") can be found in the [README.md](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/tree/main/docs#community-roles) file in the [repo](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation).
+The [list of active members](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/tree/main/docs#community-roles) (both "approvers" and "maintainers") can be found in the [README.md](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/tree/main/docs#community-roles) file in the [repo](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation).
 
 ## Golang
 
