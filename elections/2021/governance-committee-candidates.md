@@ -9,6 +9,7 @@ In alphabetical order:
 - [Juraci Paixão Kröhling](#Juraci-Paixao-Krohling)
 - [Punya Biswal](#Punya-Biswal)
 - [Sergey Kanzhelev](#Sergey-Kanzhelev)
+- [Sharr Creeden](#Sharr-Creeden)
 - [Steve Flanders](#Steve-Flanders)
 - [Ted Young](#Ted-Young)
 - [Yuri Shkuro](#Yuri-Shkuro)
@@ -177,6 +178,28 @@ If elected to the GC, I’ll work to measure and improve the experience of OTel 
 Hi all! I have a long history working on observability and monitoring tools and was involved into OpenCensus and OpenTelemetry projects from their inception. I'm a co-chair of the W3C Distributed Tracing Working Group, which has strong ties to OpenTelemetry. I'm also involved in Kubernetes community which gives me a good perspective on how a different project addresses challenges OpenTelemetry faces. It will be my privilege to continue serving on the Governance Committee.
 
 I strongly believe that the project with such an ambitious mission as OpenTelemetry, with the diverse group of contributors and interested parties, can only succeed if we together will uphold the project values, grow the community, and help everybody in the community grow. This is why as a Governance Committee member my goals are to enable contributors, empower maintainers, keep community welcoming and fair.
+
+---
+
+### Sharr Creeden
+
+<img src="static/sharr-creeden.jpg" alt="Sharr Creeden photo" height="400" width="400">
+
+- Company: New Relic
+- GitHub: [sharrmander](https://github.com/sharrmander)
+
+Hi! For the past year, my primary focus has been improving New Relic’s support for OpenTelemetry informed by partnering with early adopter end-users to plan their OTel based observability strategies. In this capacity, I have successfully championed for New Relic to provide dedicated resources to the project and now I lead our growing OpenTelemetry community team composed of members, approvers, maintainers, and a developer advocate. By establishing this team, I’ve helped grow the OpenTelemetry community too.
+
+I’ve been following the project closely and am inspired by the passion of the contributors and the potential of achieving OpenTelemetry’s mission. I want to contribute to making our shared vision a reality through my unique perspective, cultivated through a career building skills in the business and leadership sides of tech. As a non-developer, I can bring a complementary, but distinctly different background and perspective to the governance committee. I believe that through strong governance and supporting processes, we can build a sustainable community, amplify our advocacy efforts and polish the project to accelerate early majority adoption.
+
+If elected to the governance committee I would prioritize:
+
+- Interacting with members of the community and end-users to understand challenges and celebrate achievements.
+- Creating and optimizing processes to improve feedback access and cycle time, especially as they pertain to stories from end-users and experiences of community contributors.
+- Helping improve end-user engagement and accessibility of the project by contributing to efforts to improve roadmap visibility, reduce onboarding friction, and improve the example code and documentation.
+- Collaborating with members of the governance committee on their platform priorities.
+
+Thank you for your engagement - through both your project contributions and the voting process!
 
 ---
 
