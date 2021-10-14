@@ -6,6 +6,7 @@ In alphabetical order:
 
 - [Ben Sigelman](#Ben-Sigelman)
 - [Bogdan Drutu](#Bogdan-Drutu)
+- [Ilan Rabinovitch](#Ilan-Rabinovitch)
 - [Juraci Paixão Kröhling](#Juraci-Paixao-Krohling)
 - [Punya Biswal](#Punya-Biswal)
 - [Sergey Kanzhelev](#Sergey-Kanzhelev)
@@ -126,6 +127,17 @@ I've been active in the telemetry space for more than 10y:
 
 If elected for another term, I would continue to mediate the collaboration between GC
 and TC, and continue to represent the engineers' interests in the Governance Committee.
+
+---
+
+### Ilan Rabinovitch
+
+![Ilan Rabinovitch](static/ilan-rabinovitch.jpg)
+
+- Company: Datadog
+- GitHub: [@irabinovitch](https://github.com/irabinovitch)
+
+Ilan Rabinovitch leads the community and product teams at Datadog. He spends his days diving into monitoring best practices, collaborating with Datadog's open source community and evangelizing observability best practices. Over the last year, he has collaborated with the OTel governance board and SIGs to arrange the contribution of Datadog's tracing libraries and auto-instrumentation support to OpenTelemetry. Prior to joining Datadog, Ilan spent a number of years leading infrastructure and reliability engineering teams at organizations such as Ooyala and Edmunds.com. He's active in the wider open source and DevOps communities, including co-founding events such as SCALE, Texas Linux Fest, and various DevOpsDays events.
 
 ---
 
