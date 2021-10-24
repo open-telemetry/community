@@ -7,7 +7,7 @@ In alphabetical order:
 - [Ben Sigelman](#Ben-Sigelman)
 - [Bogdan Drutu](#Bogdan-Drutu)
 - [Csuzhang Cheung](#Csuzhang-Cheung)
-- [Juraci Paixão Kröhling](#Juraci-Paixao-Krohling)
+- [Juraci Paixão Kröhling](#Juraci-Paix%C3%A3o-Kr%C3%B6hling)
 - [Ilan Rabinovitch](#Ilan-Rabinovitch)
 - [Punya Biswal](#Punya-Biswal)
 - [Sergey Kanzhelev](#Sergey-Kanzhelev)
