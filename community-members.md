@@ -7,16 +7,14 @@ Charter](https://github.com/open-telemetry/community/blob/master/governance-char
 in alphabetical order:
 
 - [Alolita Sharma](https://github.com/alolita), AWS, until October 2022
-- [Ben Sigelman](https://github.com/bhs), Lightstep, until October 2021
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk, until October 2021
-- [Constance Caramanolis](https://github.com/ccaraman), Splunk, until October 2021
+- [Ben Sigelman](https://github.com/bhs), Lightstep, until October 2023
+- [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk, until October 2023
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2022
+- [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana, until October 2023
 - [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2022
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2022
-- [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
-- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google, until October 2021
-- [Ted Young](https://github.com/tedsuo), Lightstep, until October 2021
-- [Yuri Shkuro](https://github.com/yurishkuro), Facebook, until October 2021
+- [Ted Young](https://github.com/tedsuo), Lightstep, until October 2023
+- [Yuri Shkuro](https://github.com/yurishkuro), Facebook, until October 2023
 
 ## Technical Committee
 
@@ -154,3 +152,9 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 ## Others
 
 Rust, Swift
+
+## Governance Committee Emeritus
+
+- [Constance Caramanolis](https://github.com/ccaraman), Splunk, until October 2021
+- [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
+- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google, until October 2021
