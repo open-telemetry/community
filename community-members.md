@@ -10,7 +10,7 @@ in alphabetical order:
 - [Ben Sigelman](https://github.com/bhs), Lightstep, until October 2023
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk, until October 2023
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2022
-- [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana, until October 2023
+- [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs, until October 2023
 - [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2022
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2022
 - [Ted Young](https://github.com/tedsuo), Lightstep, until October 2023
