@@ -46,6 +46,11 @@ This file is intended to list all the assets controlled by OpenTelemetry.
     - Used as a service account e-mail for Ruby SIG. All Ruby SIG maintainers [@open-telemetry/ruby-maintainers](https://github.com/orgs/open-telemetry/teams/ruby-maintainers) are moderators of this list. Owned by CNCF.
     - Moderators: [add member](https://lists.cncf.io/g/cncf-opentelemetry-ruby/members).
 
+- Mailing list cncf-opentelemetry-governance@lists.cncf.io
+    - Private mailing list for OpenTelemetry Governance Committee.
+    - All GC members AND CNCF reps (Amye Scavarda Perrin, Chris Aniszczyk, Taylor Waggoner) are on the list and are list moderators.
+    - Admin: [add member](https://lists.cncf.io/g/cncf-opentelemetry-governance/members).
+
 - YouTube channel [OpenTelemetry](https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos).
     - Ask any of the following people if you need to manage the feed:
     - Owners: Amye Scavarda Perrin (CNCF rep), Sergey Kanzhelev
