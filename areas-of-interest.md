@@ -58,7 +58,7 @@ concerns.
 ### [Armin Ruech](https://github.com/arminru), Dynatrace
 
 - Trace API and SDK
-- Semantic Conventions
+- Semantic conventions
 
 ### [Yuri Shkuro](https://github.com/yurishkuro), Facebook
 
@@ -72,8 +72,8 @@ concerns.
 - Metrics API and SDK
 - OpenTelemtry Protocol
 - Telemetry correlation (Trace <-> Metrics <-> Logs via Resource, Exemplars, etc.)
-- Protocol Compatibility (OpenCensus, Prometheus, Statsd, etc.)
-- Semantic Conventions
+- Protocol compatibility (OpenCensus, Prometheus, Statsd, etc.)
+- Semantic conventions
 
 ## Maintainers and approvers
 
