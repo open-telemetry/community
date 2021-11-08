@@ -26,7 +26,7 @@ concerns.
 
 - Trace API and SDK
 - OpenTracing compatibility
-- Semantic conventnions
+- Semantic conventions
 
 ### [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk
 
@@ -72,7 +72,7 @@ concerns.
 - Metrics API and SDK
 - OpenTelemtry Protocol
 - Telemetry correlation (Trace <-> Metrics <-> Logs via Resource, Exemplars, etc.)
-- Protoocol Compatibility (OpenCensus, Prometheus, Statsd, etc.)
+- Protocol Compatibility (OpenCensus, Prometheus, Statsd, etc.)
 - Semantic Conventions
 
 ## Maintainers and approvers
