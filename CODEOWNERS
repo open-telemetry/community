@@ -6,10 +6,10 @@
 #
 # Learn about membership in OpenTelemetry community:
 #  https://github.com/open-telemetry/community/blob/master/community-membership.md
-# 
 #
-# Learn about CODEOWNERS file format: 
+#
+# Learn about CODEOWNERS file format:
 #  https://help.github.com/en/articles/about-code-owners
 #
 
-*  @bhs @bogdandrutu @sarahnovotny @SergeyKanzhelev @yurishkuro @lizthegrey @ccaraman @mtwo @tedsuo @alolita @dyladan
+*  @bhs @bogdandrutu @yurishkuro @lizthegrey @mtwo @tedsuo @alolita @dyladan @jpkrohling
