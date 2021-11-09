@@ -87,4 +87,11 @@ contact.
 - OpenTelemetry Collector
 - OTel-Lambda support
 
+### [Daniel Dyla](https://github.com/dyladan), Dynatrace
+
+- OpenTelemetry JavaScript
+- W3C Trace Context Specification
+- Trace and Metrics
+- Trace Sampling
+
 <!-- ### [_Your name here_](http://github.com/your_name), Your Company -->
