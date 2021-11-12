@@ -94,4 +94,12 @@ contact.
 - Trace and Metrics
 - Trace Sampling
 
+### [Dan Jaglowski](https://github.com/djaglowski), observIQ
+
+- OpenTelemetry log collection
+- Logging API and SDK
+- OpenTelemetry metric scrapers
+- Semantic conventions
+- Open Agent Management Protocol
+
 <!-- ### [_Your name here_](http://github.com/your_name), Your Company -->
