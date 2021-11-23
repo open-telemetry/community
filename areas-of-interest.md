@@ -102,4 +102,13 @@ contact.
 - Semantic conventions
 - Open Agent Management Protocol
 
+### [Reiley Yang](https://github.com/reyang), Microsoft
+
+- Logging API and SDK
+- Metrics API and SDK
+- Trace API and SDK
+- OpenTelemetry .NET
+- OpenTelemetry C++
+- W3C Trace Context Specification
+
 <!-- ### [_Your name here_](http://github.com/your_name), Your Company -->

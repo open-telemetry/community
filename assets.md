@@ -36,6 +36,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
     - Members: SIG maintainers and individuals appointed by maintainers
 
 - [OpenTelemetry Calendar Invites Google Group](https://groups.google.com/g/opentelemetry-calendar)
+    - Used to automatically invite members to all OpenTelemetry calendar events, so that time is blocked on their calendars
     - Owners: @mtwo
 
 - Mailing list cncf-opentelemetry-net-maintainers@lists.cncf.io
@@ -64,6 +65,10 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 - [Splain](https://splain.io/) account
     - Used to upload Zoom meeting recordings to Youtube
     - Owned by: Amye Scavarda Perrin (CNCF rep)
+
+- Project Google account: cncf-opentelemetry-governance@lists.cncf.io 
+    - Used to manage the OpenTelemetry community calendar and Zoom
+    - Owned by the governance committee
 
 ## Bot accounts
 
