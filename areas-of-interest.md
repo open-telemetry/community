@@ -111,4 +111,11 @@ contact.
 - OpenTelemetry C++
 - W3C Trace Context Specification
 
+### [Tom Tan](https://github.com/ThomsonTan), Microsoft
+
+- Logging API and SDK
+- Trace API and SDK
+- OpenTelemetry C++
+- OpenTelemetry Protocol
+
 <!-- ### [_Your name here_](http://github.com/your_name), Your Company -->
