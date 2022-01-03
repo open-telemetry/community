@@ -22,10 +22,9 @@ concerns.
 
 ## Technical committee members
 
-### [Carlos Alberto](https://github.com/carlosalberto), Lightstep
+### [Armin Ruech](https://github.com/arminru), Dynatrace
 
 - Trace API and SDK
-- OpenTracing compatibility
 - Semantic conventions
 
 ### [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk
@@ -34,10 +33,11 @@ concerns.
 - OpenTelemetry collector
 - Metrics API and SDK
 
-### [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
+### [Carlos Alberto](https://github.com/carlosalberto), Lightstep
 
 - Trace API and SDK
-- W3C trace context specification
+- OpenTracing compatibility
+- Semantic conventions
 
 ### [Josh MacDonald](https://github.com/jmacd), Lightstep
 
@@ -48,25 +48,6 @@ concerns.
 - Trace sampling algorithms
 - Trace API & SDK
 
-### [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
-
-- OpenTelemetry collector
-- OpenTelemetry protocol
-- OpenTelemetry schemas and versioning
-- Logging API and SDK
-
-### [Armin Ruech](https://github.com/arminru), Dynatrace
-
-- Trace API and SDK
-- Semantic conventions
-
-### [Yuri Shkuro](https://github.com/yurishkuro), Facebook
-
-- Trace API and SDK
-- Jaeger trace ecosystem
-- OpenTracing compatibility
-- W3C trace context specification
-
 ### [Josh Suereth](https://github.com/jsuereth), Google
 
 - Metrics API and SDK
@@ -74,6 +55,25 @@ concerns.
 - Telemetry correlation (Trace <-> Metrics <-> Logs via Resource, Exemplars, etc.)
 - Protocol compatibility (OpenCensus, Prometheus, Statsd, etc.)
 - Semantic conventions
+
+### [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
+
+- Trace API and SDK
+- W3C trace context specification
+
+### [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
+
+- OpenTelemetry collector
+- OpenTelemetry protocol
+- OpenTelemetry schemas and versioning
+- Logging API and SDK
+
+### [Yuri Shkuro](https://github.com/yurishkuro), Facebook
+
+- Trace API and SDK
+- Jaeger trace ecosystem
+- OpenTracing compatibility
+- W3C trace context specification
 
 ## Maintainers and approvers
 
@@ -110,5 +110,12 @@ contact.
 - OpenTelemetry .NET
 - OpenTelemetry C++
 - W3C Trace Context Specification
+
+### [Tom Tan](https://github.com/ThomsonTan), Microsoft
+
+- Logging API and SDK
+- Trace API and SDK
+- OpenTelemetry C++
+- OpenTelemetry Protocol
 
 <!-- ### [_Your name here_](http://github.com/your_name), Your Company -->
