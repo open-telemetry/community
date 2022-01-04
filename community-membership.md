@@ -103,7 +103,7 @@ the project, and are set by the project maintainers.
 
 Defined by: [Triage permissions](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level),
 with the names of the current Triagers commited to git, either in CONTRIBUTING,
-CODEOWNERS, or the botom of the README.
+CODEOWNERS, or the bottom of the README.
 
 Triagers may be code contributors, but writing code is not a requirement for
 becoming a triager. Triagers are encouraged to be active participants in project
