@@ -35,7 +35,7 @@ below.
 
 Members are continuously active contributors in the community. They can have
 issues and PRs assigned to them. Members are expected to participate in SIG or
-SIGs and remain active contributors to the community.  
+SIGs and remain active contributors to the community.
 
 Defined by: Member of the OpenTelemetry GitHub organization
 
@@ -71,10 +71,10 @@ Defined by: Member of the OpenTelemetry GitHub organization
     template](https://github.com/open-telemetry/community/blob/master/.github/ISSUE_TEMPLATE/membership.md))
   - Make sure that the list of contributions included is representative of your
     work on the project.
-- Have your sponsoring reviewers reply confirmation of sponsorship: `+1`
+- Have your sponsoring reviewers reply confirmation of sponsorship: `I support`
 - Once your sponsors have responded, your request will be reviewed by the
-  Governance Committee.  Any GC member can review the requirements and add
-  Members to the GitHub org. 
+  Technical Committee (TC).  Any TC member can review the requirements and add
+  Members to the GitHub org.
 
 ### Responsibilities and privileges
 
@@ -97,16 +97,16 @@ approver in addition to the reviews by *members.*
 
 ## Triager
 
-Triagers assist the maintainers and approvers with project management and 
-backlog organization. The specific workflows and triage requirements depend on 
+Triagers assist the maintainers and approvers with project management and
+backlog organization. The specific workflows and triage requirements depend on
 the project, and are set by the project maintainers.
 
-Defined by: [Triage permissions](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level), 
-with the names of the current Triagers commited to git, either in CONTRIBUTING, 
-CODEOWNERS, or the botom of the README.
+Defined by: [Triage permissions](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level),
+with the names of the current Triagers commited to git, either in CONTRIBUTING,
+CODEOWNERS, or the bottom of the README.
 
-Triagers may be code contributors, but writing code is not a requirement for 
-becoming a triager. Triagers are encouraged to be active participants in project 
+Triagers may be code contributors, but writing code is not a requirement for
+becoming a triager. Triagers are encouraged to be active participants in project
 meetings, chat rooms, and other discussion forums.
 
 ### Requirements
