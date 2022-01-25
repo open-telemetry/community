@@ -180,10 +180,9 @@ files.
 
 ### Requirements
 
-The process for becoming a Maintainer should be defined in the SIG charter of
-the SIG owning the subproject. Unlike the roles outlined above, the Owners of a
-subproject are typically limited to a relatively small group of decision makers
-and updated as fits the needs of the subproject.
+Unlike the roles outlined above, the Owners of a subproject are typically
+limited to a relatively small group of decision makers and updated as fits
+the needs of the subproject.
 
 The following apply to the subproject for which one would be an owner.
 
@@ -219,6 +218,26 @@ The following apply to the subproject for which one would be an owner.
 - Ensure a healthy process for discussion and decision making is in place.
 - Work with other maintainers to maintain the project's overall health and
   success holistically.
+
+### Becoming a Maintainer
+
+Unless stated otherwise in a SIG charter ratified by the Technical Committee,
+a new maintainer is elected by unanimous vote of the existing maintainers
+of the SIG. After a successful vote, a pull request should be made adding
+the new maintainer to the list of existing maintainers. Before the pull request
+is merged, all existing maintainers and the newly elected maintainer should
+approve the pull request to show their support for the public record. The
+nominee is considered a maintainer after the pull request is merged.
+
+If you feel like you meet the requirements above and are willing to take on the
+additional responsibilities and privileges of being a maintainer, it is
+recommended that you approach an existing maintainer about sponsoring your bid
+to become a maintainer. After you and your sponsor have discussed the role
+and its additional requirements and responsibilities, they may approach the other
+maintainers about a vote to confirm you as a new maintainer. If the maintainer
+does not believe you are ready for the role, or the subproject is not in need
+of additional maintainers, they may suggest an alternate role or areas you can
+improve in order to improve your chances to become a maintainer in the future.
 
 ### Resolving technical conflicts within a SIG
 
