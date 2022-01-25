@@ -16,6 +16,7 @@ delegated. They can be reached via e-mail cncf-opentelemetry-governance@lists.cn
 | triager     | assist with project management and backlog organization. | nominated by a maintainer. attend meetings for one month. |  CONTRIBUTING, CODEOWNERS, or the README. |
 | approver   | approve accepting contributions                       | highly experienced and active reviewer + contributor to a subproject | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners) in GitHub |
 | maintainer | set direction and priorities for a subproject         | demonstrated responsibility and excellent technical judgement for the subproject | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners), GitHub Team and repo ownership in GitHub |
+| emeritus   | position of honor for former maintainers, approvers, and triagers        | must have previously held a community role and not have been removed from that role for a [Code of Conduct](code-of-conduct.md) violation. | Listed as an emeritus maintainer/approver/triager in CONTRIBUTING, CODEOWNERS, or README |
 
 ## New contributors
 
@@ -249,3 +250,17 @@ it's incredibly important for the project to maintain velocity and recognize
 that we are all coming to these sorts of technical issues with the best of
 intentions and remain aligned about the overall goals of the OpenTelemetry
 project.
+
+## Emeritus Maintainer/Approver/Triager
+
+For any healthy open source project, it is inevitable that maintainers may move
+on, step down, or otherwise reduce their role in the project for some period of
+time. These people may have expertise in one or more area of the project, but no
+longer have time to actively contribute or approve contributions. They are
+encouraged to reflect this by adding themselves to the `emeritus` section of the
+CONTRIBUTING, CODEOWNERS, or README of the subproject they are stepping away
+from. GitHub usernames listed under the `emeritus` section should be removed
+from the approvers list, and will no longer have any official responsibilities
+with the project. When a contributor returns to being more active, they may be
+promoted back to a regular approver at the discretion of the current approvers
+following the process defined above.
