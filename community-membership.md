@@ -253,7 +253,7 @@ project.
 
 ## Emeritus Maintainer/Approver/Triager
 
-For any healthy open source project, it is inevitable that maintainers may move
+For any healthy open source project, it is inevitable that contributors may move
 on, step down, or otherwise reduce their role in the project for some period of
 time. These people may have expertise in one or more area of the project, but no
 longer have time to actively contribute or approve contributions. They are
@@ -262,5 +262,5 @@ CONTRIBUTING, CODEOWNERS, or README of the subproject they are stepping away
 from. GitHub usernames listed under the `emeritus` section should be removed
 from the approvers list, and will no longer have any official responsibilities
 with the project. When a contributor returns to being more active, they may be
-promoted back to a regular approver at the discretion of the current approvers
-following the process defined above.
+promoted back to a their previous position at the discretion of the current
+maintainers following the process defined above.
