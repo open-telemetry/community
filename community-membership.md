@@ -222,12 +222,16 @@ The following apply to the subproject for which one would be a maintainer.
 ### Becoming a Maintainer
 
 Unless stated otherwise in a SIG charter ratified by the Technical Committee,
-a new maintainer is elected by unanimous vote of the existing maintainers
-of the SIG. After a successful vote, a pull request should be made adding
-the new maintainer to the list of existing maintainers. Before the pull request
-is merged, all existing maintainers and the newly elected maintainer should
-approve the pull request to show their support for the public record. The
-nominee is considered a maintainer after the pull request is merged.
+a new maintainer is elected by vote of the existing maintainers of the SIG.
+The vote is officially started when a pull request to add a new maintainer
+is opened, and ends when the pull request is merged. The pull request may be
+merged when the following conditions are met:
+
+- The person being nominated has accepted the nomination by approving the pull request
+- All maintainers have approved the pull request OR a majority of maintainers
+  have approved the pull request and no maintainer has objected by requesting changes on the pull request
+
+The nominee is considered a maintainer after the pull request is merged.
 
 #### Self-nomination is encouraged
 
