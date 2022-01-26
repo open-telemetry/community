@@ -180,11 +180,11 @@ files.
 
 ### Requirements
 
-Unlike the roles outlined above, the Owners of a subproject are typically
+Unlike the roles outlined above, the maintainers of a subproject are typically
 limited to a relatively small group of decision makers and updated as fits
 the needs of the subproject.
 
-The following apply to the subproject for which one would be an owner.
+The following apply to the subproject for which one would be a maintainer.
 
 - Deep understanding of the technical goals and direction of the subproject
 - Deep understanding of the technical domain (specifically the language) of the
@@ -203,7 +203,7 @@ The following apply to the subproject for which one would be an owner.
 
 ### Responsibilities and privileges
 
-The following apply to the subproject for which one would be an owner.
+The following apply to the subproject for which one would be a maintainer.
 
 - Make and approve technical design decisions for the subproject.
 - Set technical direction and priorities for the subproject.
