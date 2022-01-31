@@ -229,7 +229,9 @@ merged when the following conditions are met:
 
 - The person being nominated has accepted the nomination by approving the pull request
 - All maintainers have approved the pull request OR a majority of maintainers
-  have approved the pull request and no maintainer has objected by requesting changes on the pull request
+  have approved the pull request and no maintainer has objected by requesting
+  changes on the pull request. In the case that all maintainers have not given
+  approval, the pull request should stay open for a minimum of 5 days before merging.
 
 The nominee is considered a maintainer after the pull request is merged.
 
