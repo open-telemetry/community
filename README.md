@@ -123,7 +123,6 @@ Ruby: SIG|Every Tuesday at 09:00 PT|[Google Doc](https://docs.google.com/documen
 Rust: SDK|Every other week on Tuesday alternating between 07:00 and 15:00 PT|[Google Doc](https://docs.google.com/document/d/1tGKuCsSnyT2McDncVJrMgg74_z8V06riWZa0Sr79I_4)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-rust)|
 Specification: General|Every Tuesday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/1pdvPeKjA8v8w_fGKAN68JjWBmVJtPCpqdi9IZrd6eEo/edit)|[Slack](https://cloud-native.slack.com/archives/C01N7PP1THC)
 Specification: Logs|Every week on Wednesday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1cX5fWXyWqVVzYHSFUymYUfWxUK5hT97gc23w595LmdM/edit#)|[Slack](https://cloud-native.slack.com/archives/C01N5UCHTEH)
-Specification: Metrics|Every Thursday alternating between 11:00 and 16:00 PT|[Google Doc](https://docs.google.com/document/d/1pdvPeKjA8v8w_fGKAN68JjWBmVJtPCpqdi9IZrd6eEo/edit)|[Slack](https://cloud-native.slack.com/archives/C01NP3BV26R)
 Specification: Sampling|Every Thursday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/1gASMhmxNt9qCa8czEMheGlUW2xpORiYoD7dBD7aNtbQ/)||
 Swift: SDK|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1ShEFMywIV4LJcDYCNy41zkq8RR1sMq-tSvMBHngHcuk/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01NCHR19SB)||
 Communications (Website, etc.)|Every other week on Thursday at 13:30 ET|[Google Doc](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY)|[Slack](https://cloud-native.slack.com/archives/C02UN96HZH6)|
