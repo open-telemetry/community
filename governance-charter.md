@@ -50,7 +50,7 @@ following:
 - **Delegate appropriate authority** to trusted individuals.
 
 This work is to be handled by the Governance Committee or delegated to other
-project groups like the Technical Committee (to be chartered by Fall 2019).
+project groups like the [Technical Committee](./tech-committee-charter.md).
 
 ## Committee Structure
 

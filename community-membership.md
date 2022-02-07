@@ -181,12 +181,11 @@ files.
 
 ### Requirements
 
-The process for becoming a Maintainer should be defined in the SIG charter of
-the SIG owning the subproject. Unlike the roles outlined above, the Owners of a
-subproject are typically limited to a relatively small group of decision makers
-and updated as fits the needs of the subproject.
+Unlike the roles outlined above, the maintainers of a subproject are typically
+limited to a relatively small group of decision makers and updated as fits
+the needs of the subproject.
 
-The following apply to the subproject for which one would be an owner.
+The following apply to the subproject for which one would be a maintainer.
 
 - Deep understanding of the technical goals and direction of the subproject
 - Deep understanding of the technical domain (specifically the language) of the
@@ -205,7 +204,7 @@ The following apply to the subproject for which one would be an owner.
 
 ### Responsibilities and privileges
 
-The following apply to the subproject for which one would be an owner.
+The following apply to the subproject for which one would be a maintainer.
 
 - Make and approve technical design decisions for the subproject.
 - Set technical direction and priorities for the subproject.
@@ -220,6 +219,34 @@ The following apply to the subproject for which one would be an owner.
 - Ensure a healthy process for discussion and decision making is in place.
 - Work with other maintainers to maintain the project's overall health and
   success holistically.
+
+### Becoming a Maintainer
+
+Unless stated otherwise in a SIG charter ratified by the Technical Committee,
+a new maintainer is elected by vote of the existing maintainers of the SIG.
+The vote is officially started when a pull request to add a new maintainer
+is opened, and ends when the pull request is merged. The pull request may be
+merged when the following conditions are met:
+
+- The person being nominated has accepted the nomination by approving the pull request
+- All maintainers have approved the pull request OR a majority of maintainers
+  have approved the pull request and no maintainer has objected by requesting
+  changes on the pull request. In the case that all maintainers have not given
+  approval, the pull request should stay open for a minimum of 5 days before merging.
+
+The nominee is considered a maintainer after the pull request is merged.
+
+#### Self-nomination is encouraged
+
+If you feel like you meet the requirements above and are willing to take on the
+additional responsibilities and privileges of being a maintainer, it is
+recommended that you approach an existing maintainer about sponsoring your bid
+to become a maintainer. After you and your sponsor have discussed the role
+and its additional requirements and responsibilities, they may approach the other
+maintainers about a vote to confirm you as a new maintainer. If the maintainer
+does not believe you are ready for the role, or the subproject is not in need
+of additional maintainers, they may suggest an alternate role or growth areas
+in order to improve your chances to become a maintainer in the future.
 
 ### Resolving technical conflicts within a SIG
 
