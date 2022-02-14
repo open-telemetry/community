@@ -31,6 +31,11 @@ contributing to a specific part of the project, please join the appropriate
 special interest group (SIG). Details for all of these items are below. We are
 a friendly, collaborative group and look forward to working together!
 
+Technical committee members, maintainers, and approvers are encouraged
+to list their [areas of interest in this
+document](areas-of-interest.md) to help community members find
+interested parties and form new special interest groups.
+
 ## Governing Bodies
 
 * [Governance Committee (GC)](./governance-charter.md)
