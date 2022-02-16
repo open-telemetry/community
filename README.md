@@ -7,6 +7,7 @@ Table of Contents
 
 * [Get Involved](#get-involved)
 * [Governing Bodies](#governing-bodies)
+* [Areas of Interest](#areas-of-interest)
 * [Communication](#communication)
   * [Discussions](#discussions)
   * [Calendar](#calendar)
@@ -31,17 +32,19 @@ contributing to a specific part of the project, please join the appropriate
 special interest group (SIG). Details for all of these items are below. We are
 a friendly, collaborative group and look forward to working together!
 
-Technical committee members, maintainers, and approvers are encouraged
-to list their [areas of interest in this
-document](areas-of-interest.md) to help community members find
-interested parties and form new special interest groups.
-
 ## Governing Bodies
 
 * [Governance Committee (GC)](./governance-charter.md)
 * [Technical Committee (TC)](./tech-committee-charter.md)
 
 Both committees meet regularly, and the respective meeting notes are publicly available in the [GC meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8) and the [TC meeting notes](https://docs.google.com/document/d/17v2RMZlJZkgoPYHZhIFTVdDqQMIAH8kzo8Sl2kP3cbY) Google Docs. If you want to check out the recordings, head to the [Governance Committee YouTube playlist](https://www.youtube.com/playlist?list=PLVYDBkQ1Tdyzg1CuQgd9mdjwOUYg7ECYR).
+
+## Areas of Interest
+
+Technical committee members, maintainers, and approvers are encouraged
+to list their [areas of interest in this
+document](areas-of-interest.md) to help community members find
+interested parties and form new special interest groups.
 
 ## Communication
 ### Discussions
