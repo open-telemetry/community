@@ -30,13 +30,10 @@ for the repository.
    PRs. See the [Policies](#policies) section that suggest to ensure that `Require
    review from Code Owners` is checked.
 4. The team `foo-approvers` has `Write` permissions for the repository.
-5. The team `foo-maintainers` has `Maintain` permissions for the
+5. The team `foo-maintainers` has `Admin` permissions for the
    repository.
 6. Root-level `CODEOWNERS` file on the repository should include superset of
    people from both `foo-approvers` and `foo-maintainers`.
-7. Some repositories may include more individuals with `Admin` permissions.
-   Typically to help set up repository, CI, web hooks or other administrative
-   work.
 
 ![image](https://user-images.githubusercontent.com/9950081/57563719-d7b6b300-7355-11e9-9ebb-3c4f549336bc.png)
 
