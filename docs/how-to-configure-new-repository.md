@@ -30,8 +30,10 @@ for the repository.
    PRs. See the [Policies](#policies) section that suggest to ensure that `Require
    review from Code Owners` is checked.
 4. The team `foo-approvers` has `Write` permissions for the repository.
-5. The team `foo-maintainers` has `Admin` permissions for the
+5. The team `foo-maintainers` has `Maintain` permissions for the
    repository.
+   In individual cases, for example, if this is required to allow maintainers to publish releases independently,
+   the team `foo-maintainers` can be granted `Admin` permissions instead.
 6. Root-level `CODEOWNERS` file on the repository should include superset of
    people from both `foo-approvers` and `foo-maintainers`.
 
