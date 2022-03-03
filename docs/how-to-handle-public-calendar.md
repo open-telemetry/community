@@ -23,8 +23,7 @@ as a participant. Anybody who wants to recieve up to date invites for all OpenTe
 meetings can join the group.
 
 ## Steps
-To create or edit a meeting, you need to have access to the Public OpenTelemetry calendar (a shared Google calendar)
-and access to one of our Zoom accounts or to a Google account that has already been linked to Zoom (such as cncf-opentelemetry-governance).
+To create or edit a meeting, you need to have access to the Public OpenTelemetry calendar (a shared Google calendar) and you must add a Zoom meeting link.
 
 ### Gaining Calendar Permissions
 All SIG maintainers have permission to edit the Public OpenTelemetry calendar.
@@ -34,12 +33,11 @@ request to be added to this Google Group by creating an issue in this repository
 
 Please keep the membership of this group up to date and accurate.
 
-### Gaining Zoom Permissions
-To create a new meeting, you will need to either link one of the OpenTelemetry Zoom accounts to your public calendar,
-or you can use the credentials for the cncf-opentelemetry-governance@lists.cncf.io Google account. Currently, using a shared set of credentials for
-the cncf-opentelemetry-governance@lists.cncf.io Google account is the preferred way to make edits, as it is already linked to Zoom.
+### Adding a Zoom link to a meeting
+OpenTelemetry's Zoom accounts use meetings URLs that are accessible in [this document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#), or you can copy them from an existing calendar link
+(posting the URLs publicly on GitHub leads to Zoom bombing by random bots). When editing or creating calendar events, please ensure that the same
+ID is not being used simultaneously or for back-to-back calls.
 
-You can gain access to the shared Google account by following the steps in [this document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#).
 
 ## Zoom bombing prevention
 All meetings are created by Zoom with randomized passcodes, which are embedded into the shared calendar links.
