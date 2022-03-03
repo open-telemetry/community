@@ -6,10 +6,11 @@ Videos are being recorded using one of [zoom accounts](https://github.com/open-t
 
 - All meetings are configured for automatic recording start. No host present necessary.
 - Once meeting is concluded, all participants need to leave the meeting room so the recording will be uploaded to zoom account.
-- Every recorded meeting is picked up by [Splain](https://github.com/open-telemetry/community/blob/main/assets.md#splain-account) (https://splain.io/). Splain is configured to automatically copy meetings from zoom to Youtube.
+- Every recorded meeting is picked up by [Splain](https://github.com/open-telemetry/community/blob/main/assets.md#splain-account) (https://splain.io/). Splain is configured to automatically copy meetings from zoom to Youtube. It typically takes an hour for the video to be processed by Splain.
 - Splain uploads all meetings as private (not published). People with the access to OpenTelemetry [Youtube channel](https://github.com/open-telemetry/community/blob/main/assets.md#youtube-channel-opentelemetry) can see both - private and public videos.
 - A custom built tool [OpenTelemetryYoutube](https://github.com/open-telemetry/community/tree/main/tools/OpenTelemetryYoutube) is designed to fix up the title of the video by including it's date into the title and marking video as public.
-- Note, short videos are not processed by the tool as they typically are accidental meeting link clicks, not a real meetings
+- The tool is manually run by volunteer. The frequency of the run depends on this volunteer availability. The work to improve situation is tracked here: https://github.com/open-telemetry/community/issues/863.
+- Note, short videos are not processed by the tool as they typically are accidental meeting link clicks, not a real meetings.
 
 ## Video is missing - what to do
 
