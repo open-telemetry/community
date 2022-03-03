@@ -7,6 +7,7 @@ Table of Contents
 
 * [Get Involved](#get-involved)
 * [Governing Bodies](#governing-bodies)
+* [Areas of Interest](#areas-of-interest)
 * [Communication](#communication)
   * [Discussions](#discussions)
   * [Calendar](#calendar)
@@ -37,6 +38,13 @@ a friendly, collaborative group and look forward to working together!
 * [Technical Committee (TC)](./tech-committee-charter.md)
 
 Both committees meet regularly, and the respective meeting notes are publicly available in the [GC meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8) and the [TC meeting notes](https://docs.google.com/document/d/17v2RMZlJZkgoPYHZhIFTVdDqQMIAH8kzo8Sl2kP3cbY) Google Docs. If you want to check out the recordings, head to the [Governance Committee YouTube playlist](https://www.youtube.com/playlist?list=PLVYDBkQ1Tdyzg1CuQgd9mdjwOUYg7ECYR).
+
+## Areas of Interest
+
+Technical committee members, maintainers, and approvers are encouraged
+to list their [areas of interest in this
+document](areas-of-interest.md) to help community members find
+interested parties and form new special interest groups.
 
 ## Communication
 ### Discussions
@@ -123,10 +131,10 @@ Ruby: SIG|Every Tuesday at 09:00 PT|[Google Doc](https://docs.google.com/documen
 Rust: SDK|Every other week on Tuesday alternating between 07:00 and 15:00 PT|[Google Doc](https://docs.google.com/document/d/1tGKuCsSnyT2McDncVJrMgg74_z8V06riWZa0Sr79I_4)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-rust)|
 Specification: General|Every Tuesday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/1pdvPeKjA8v8w_fGKAN68JjWBmVJtPCpqdi9IZrd6eEo/edit)|[Slack](https://cloud-native.slack.com/archives/C01N7PP1THC)
 Specification: Logs|Every week on Wednesday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1cX5fWXyWqVVzYHSFUymYUfWxUK5hT97gc23w595LmdM/edit#)|[Slack](https://cloud-native.slack.com/archives/C01N5UCHTEH)
-Specification: Metrics|Every Thursday alternating between 11:00 and 16:00 PT|[Google Doc](https://docs.google.com/document/d/1pdvPeKjA8v8w_fGKAN68JjWBmVJtPCpqdi9IZrd6eEo/edit)|[Slack](https://cloud-native.slack.com/archives/C01NP3BV26R)
 Specification: Sampling|Every Thursday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/1gASMhmxNt9qCa8czEMheGlUW2xpORiYoD7dBD7aNtbQ/)||
 Swift: SDK|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1ShEFMywIV4LJcDYCNy41zkq8RR1sMq-tSvMBHngHcuk/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01NCHR19SB)||
-Communications (Website, etc.)|Every other week on Thursday at 13:30 ET|[Google Doc](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY)|[Slack](https://cloud-native.slack.com/archives/C02UN96HZH6)|
+Communications (Website, etc.)|Every other week on Thursday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY)|[Slack](https://cloud-native.slack.com/archives/C02UN96HZH6)|
+End-User WG|Every other week on Thursday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1FqEo2PfHPP8iZX_W-C3YgXFUjhfwmAhoREUE8ZJPJfc/)|TBD|
 eBPF|Every week on Thursday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1pAxBekk6BadHpK717TbhYtBMOlyrgWSvp3QeYDPwwvk/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C02AB15583A)|
 Agent Management WG|Every other week on Tuesday at 11:00 PT|[Google Doc](https://docs.google.com/document/d/1mHNnlCmO0XKUu0xPnKko3GOh0mxVoxjRiN8xmHRImew/edit#)|[Slack](https://cloud-native.slack.com/archives/C02J58HR58R)|
 Client Instrumentation|Every Wednesday at 8:30 AM PT|[Google Doc](https://docs.google.com/document/d/16Vsdh-DM72AfMg_FIt9yT9ExEWF4A_vRbQ3jRNBe09w/edit)|[Slack](https://cloud-native.slack.com/archives/C0239SYARD2)|

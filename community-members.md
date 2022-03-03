@@ -45,6 +45,7 @@ Trace Approvers:
 
 Metrics Approvers:
 
+- [Jack Berg](https://github.com/jack-berg), New Relic
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
 - [John Watson](https://github.com/jkwatson), Splunk
 - [Leighton Chen](https://github.com/lzchen), Microsoft
@@ -53,6 +54,7 @@ Metrics Approvers:
 Logs Approvers:
 
 - [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
+- [Daniel Jaglowski](https://github.com/djaglowski), observIQ
 - [David Poncelow](https://github.com/zenmoto), Splunk
 
 Global Approvers:

@@ -32,11 +32,10 @@ for the repository.
 4. The team `foo-approvers` has `Write` permissions for the repository.
 5. The team `foo-maintainers` has `Maintain` permissions for the
    repository.
+   In individual cases, for example, if this is required to allow maintainers to publish releases independently,
+   the team `foo-maintainers` can be granted `Admin` permissions instead.
 6. Root-level `CODEOWNERS` file on the repository should include superset of
    people from both `foo-approvers` and `foo-maintainers`.
-7. Some repositories may include more individuals with `Admin` permissions.
-   Typically to help set up repository, CI, web hooks or other administrative
-   work.
 
 ![image](https://user-images.githubusercontent.com/9950081/57563719-d7b6b300-7355-11e9-9ebb-3c4f549336bc.png)
 
