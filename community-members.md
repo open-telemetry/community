@@ -27,6 +27,7 @@ in alphabetical order:
 - [Carlos Alberto](https://github.com/carlosalberto), Lightstep
 - [Josh MacDonald](https://github.com/jmacd), Lightstep
 - [Josh Suereth](https://github.com/jsuereth), Google
+- [Reiley Yang](https://github.com/reyang), Microsoft
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 - [Yuri Shkuro](https://github.com/yurishkuro), Facebook
