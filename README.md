@@ -137,7 +137,7 @@ Communications (Website, etc.)|Every other week on Thursday at 10:30 PT|[Google 
 End-User WG|Every other week on Thursday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1FqEo2PfHPP8iZX_W-C3YgXFUjhfwmAhoREUE8ZJPJfc/)|TBD|
 eBPF|Every week on Thursday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1pAxBekk6BadHpK717TbhYtBMOlyrgWSvp3QeYDPwwvk/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C02AB15583A)|
 Agent Management WG|Every other week on Tuesday at 11:00 PT|[Google Doc](https://docs.google.com/document/d/1mHNnlCmO0XKUu0xPnKko3GOh0mxVoxjRiN8xmHRImew/edit#)|[Slack](https://cloud-native.slack.com/archives/C02J58HR58R)|
-Client Instrumentation|Every Wednesday at 8:30 AM PT|[Google Doc](https://docs.google.com/document/d/16Vsdh-DM72AfMg_FIt9yT9ExEWF4A_vRbQ3jRNBe09w/edit)|[Slack](https://cloud-native.slack.com/archives/C0239SYARD2)|
+Client Instrumentation|Every Wednesday at 8:00 AM PT|[Google Doc](https://docs.google.com/document/d/16Vsdh-DM72AfMg_FIt9yT9ExEWF4A_vRbQ3jRNBe09w/edit)|[Slack](https://cloud-native.slack.com/archives/C0239SYARD2)|
 Kubernetes Operator|NA|[Google Doc](https://docs.google.com/document/d/1zBNzh1dw9HpXUexTaURRS7n_NQSzqNJSuqNVw9GhIe4/edit#)|[Slack](https://cloud-native.slack.com/archives/C033BJ8BASU)|
 
 ## Related groups
