@@ -72,6 +72,8 @@ It is recommended to follow these best practices:
 
 ## Permission changes
 
-In order to change repository permissions (e.g., for temporary or permanent admin access, or adding a new triagers team),
+In order to change repository permissions (e.g., for temporary or permanent admin access,
+adding branch protection rules, or adding a new triagers team),
 an issue in the community repository needs to be created to keep track of changes.
 Please use the "Repository Maintenance Request" issue template for such requests.
+For temporary permission changes, the issue should be kept open until the work is finished and permissions can be reverted again.
