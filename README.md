@@ -115,7 +115,7 @@ Name|Meeting Time|Meeting Notes|Discussions|
 ----|------------|-------------|-----------|
 Maintainers weekly meeting|Every Monday at 09:00PT|[Google Doc](https://docs.google.com/document/d/14lBtLAdzsV7M8xQNdhTJ0d2PxM1R7FByw-GttKJzVVw)|[Slack](https://cloud-native.slack.com/archives/C01NJ7V1KRC)|
 Collector|Every Wednesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N6P7KR6W)|
-C/C++: SDK|Every week alternating between Monday at 15:00 PT and Wednesday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N3AT62SJ)|
+C/C++: SDK|Every week alternating between Monday at 13:00 PT and Wednesday at 9:30 PT|[Google Doc](https://docs.google.com/document/d/1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N3AT62SJ)|
 DotNET: Instrumentation|Every Wednesday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1XedN2D8_PH4YLej-maT8sp4RKogfuhFpccRi3QpUcoI/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01NR1YLSE7)|
 DotNET: SDK|Every Tuesday alternating between 11:00 and 16:00 PT|[Google Doc](https://docs.google.com/document/d/1yjjD6aBcLxlRazYrawukDgrhZMObwHARJbB9glWdHj8/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N3BC2W7Q)|
 Erlang/Elixir: SDK|Every Thursday alternating between 07:00 and 15:00 PT|[Google Doc](https://docs.google.com/document/d/1EbBiRjBc_cBf0T_B5OtNRPhbD4jdBrVYJAy8euCDrUI/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N75YMZCN)|
