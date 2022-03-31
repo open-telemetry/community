@@ -15,18 +15,18 @@ e.g. https://github.com/open-telemetry/community
 
 ### Requested changes
 
-e.g. Give 'Admin' permissions to `@username`
+e.g. "Give 'Admin' permissions to `@username`" or "Enable branch protection rules for `release-*`"
 
 <!-- Please review the repository configuration guideliens at
  https://github.com/open-telemetry/community/blob/main/docs/how-to-configure-new-repository.md -->
  
 ### Purpose
 
-e.g. We are setting up a new release management tool (link) and need to adapt our required merge checks for this.
+e.g. "We are setting up a new release management tool (link) and need to adapt our required merge checks for this."
  
 ### Expected Duration
 
-e.g. 1-2 weeks, we'll comment again on this issue once we are done and the permissions can be reverted.
+e.g. "1-2 weeks. We'll comment again on this issue once we are done so the permissions can be reverted." or "permanently"
 
 ### Repository Maintainers
 
