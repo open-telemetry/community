@@ -60,7 +60,6 @@ Logs Approvers:
 
 Global Approvers:
 
-- [Anuraag Agrawal](https://github.com/anuraaga), AWS
 - [Josh Suereth](https://github.com/jsuereth), Google
 - [Reiley Yang](https://github.com/reyang), Microsoft
 
