@@ -69,3 +69,6 @@ It is recommended to follow these best practices:
 2. Set up a security scanning tool like, for example, [Github CodeQL](https://docs.github.com/en/code-security/secure-coding/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning).
 3. Set up a test coverage scanning tool like, for example, [Codecov](https://codecov.io/).
 4. Add status badges for passing builds and scans to the root README.
+5. Reduce friction for new contributors by changing workflows from "Require approval for first-time contributors"
+   to the less strict "Require approval for first-time contributors who are new to GitHub"
+   (this is set under Settings > Actions > General > Fork pull request workflows from outside collaborators).
