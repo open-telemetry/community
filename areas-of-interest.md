@@ -56,6 +56,15 @@ concerns.
 - Protocol compatibility (OpenCensus, Prometheus, Statsd, etc.)
 - Semantic conventions
 
+### [Reiley Yang](https://github.com/reyang), Microsoft
+
+- Logging API and SDK
+- Metrics API and SDK
+- Trace API and SDK
+- OpenTelemetry .NET
+- OpenTelemetry C++
+- W3C trace context specification
+
 ### [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
 
 - Trace API and SDK
@@ -101,15 +110,6 @@ contact.
 - OpenTelemetry metric scrapers
 - Semantic conventions
 - Open Agent Management Protocol
-
-### [Reiley Yang](https://github.com/reyang), Microsoft
-
-- Logging API and SDK
-- Metrics API and SDK
-- Trace API and SDK
-- OpenTelemetry .NET
-- OpenTelemetry C++
-- W3C Trace Context Specification
 
 ### [Tom Tan](https://github.com/ThomsonTan), Microsoft
 
