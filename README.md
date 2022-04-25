@@ -34,8 +34,8 @@ a friendly, collaborative group and look forward to working together!
 
 ## Governing Bodies
 
-* Governance Committee (GC): [Charter](./governance-charter.md) -- [Members](./community-members.md#governance-committee)
-* Technical Committee (TC): [Charter](./tech-committee-charter.md) -- [Members](./community-members.md#technical-committee)
+* Governance Committee (GC): [Charter](./governance-charter.md), [Members](./community-members.md#governance-committee)
+* Technical Committee (TC): [Charter](./tech-committee-charter.md), [Members](./community-members.md#technical-committee)
 
 Both committees meet regularly, and the respective meeting notes are publicly available in the [GC meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8) and the [TC meeting notes](https://docs.google.com/document/d/17v2RMZlJZkgoPYHZhIFTVdDqQMIAH8kzo8Sl2kP3cbY) Google Docs. If you want to check out the recordings, head to the [Governance Committee YouTube playlist](https://www.youtube.com/playlist?list=PLVYDBkQ1Tdyzg1CuQgd9mdjwOUYg7ECYR).
 
