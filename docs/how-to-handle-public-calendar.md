@@ -33,11 +33,26 @@ request to be added to this Google Group by creating an issue in this repository
 
 Please keep the membership of this group up to date and accurate.
 
+### Create the meeting
+The following details need to be set properly:
+- Title
+- Timeslot (make sure to use the correct time zone - Pacific Time - as the dates for switching DST differs between countries)
+- Recurrence pattern (usually weekly or bi-weekly)
+- Location (see below for the Zoom links)
+- Description
+  - A brief description on the scope of the meeting
+  - A link to the meeting notes
+    - The meeting notes should be owned by the shared Governance Committee Google account.
+      Having a document created can be requested from the GC via opening an issue in this repository.
+- Invited attendes: opentelemetry-calendar@googlegroups.com (see note on this Google Group above)
+
 ### Adding a Zoom link to a meeting
 OpenTelemetry's Zoom accounts use meetings URLs that are accessible in [this document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#), or you can copy them from an existing calendar link
 (posting the URLs publicly on GitHub leads to Zoom bombing by random bots). When editing or creating calendar events, please ensure that the same
 ID is not being used simultaneously or for back-to-back calls.
 
+### Update the meetings overview
+All recurring meetings are listed in the [Community repo's README](../README.md#special-interest-groups), make sure to add/update the respective entry there.
 
 ## Zoom bombing prevention
 All meetings are created by Zoom with randomized passcodes, which are embedded into the shared calendar links.
