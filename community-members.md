@@ -138,7 +138,6 @@ Repo: [open-telemetry/opentelemetry-cpp](https://github.com/open-telemetry/opent
 
 The list of active members (both "approvers" and "maintainers") for OpenTelemetry C++ can be found in the [open-telemetry/opentelemetry-cpp README file](https://github.com/open-telemetry/opentelemetry-cpp#contributing).
 
-
 ## Ruby
 
 Repo: [open-telemetry/opentelemetry-ruby](https://github.com/open-telemetry/opentelemetry-ruby)
@@ -150,6 +149,10 @@ The list of active members (both "approvers" and "maintainers") for OpenTelemetr
 Repo: [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opentelemetry-php)
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry PHP API and SDK can be found in the [open-telemetry/opentelemetry-php CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-php/blob/master/CONTRIBUTING.md).
+
+## Community Demo
+
+Placeholder for repo information
 
 ## Others
 
