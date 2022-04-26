@@ -49,7 +49,9 @@ document](areas-of-interest.md) to help community members find
 interested parties and form new special interest groups.
 
 ## Communication
+
 ### Discussions
+
 We use [GitHub discussions](https://github.com/open-telemetry/community/discussions) for most communications. Please join us there!
 
 For those who are brand new to OpenTelemetry and want to chat or get redirected to the appropriate place for a specific question, feel free to join [the CNCF OpenTelemetry Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q). If you are new, you can create a CNCF Slack account [here](http://slack.cncf.io/).
