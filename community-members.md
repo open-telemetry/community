@@ -152,7 +152,7 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 ## Community Demo
 
-Placeholder for repo information
+Repo: [open-telemetry/opentelemetry-demo-webstore](https://github.com/open-telemetry/opentelemetry-demo-webstore)
 
 ## Others
 
