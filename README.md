@@ -47,7 +47,9 @@ document](areas-of-interest.md) to help community members find
 interested parties and form new special interest groups.
 
 ## Communication
+
 ### Discussions
+
 We use [GitHub discussions](https://github.com/open-telemetry/community/discussions) for most communications. Please join us there!
 
 For those who are brand new to OpenTelemetry and want to chat or get redirected to the appropriate place for a specific question, feel free to join [the CNCF OpenTelemetry Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q). If you are new, you can create a CNCF Slack account [here](http://slack.cncf.io/).
@@ -139,6 +141,7 @@ eBPF|Every week on Thursday at 10:30 PT|[Google Doc](https://docs.google.com/doc
 Agent Management WG|Every other week on Tuesday at 11:00 PT|[Google Doc](https://docs.google.com/document/d/1mHNnlCmO0XKUu0xPnKko3GOh0mxVoxjRiN8xmHRImew/edit#)|[Slack](https://cloud-native.slack.com/archives/C02J58HR58R)|
 Client Instrumentation|Every Wednesday at 8:00 AM PT|[Google Doc](https://docs.google.com/document/d/16Vsdh-DM72AfMg_FIt9yT9ExEWF4A_vRbQ3jRNBe09w/edit)|[Slack](https://cloud-native.slack.com/archives/C0239SYARD2)|
 Kubernetes Operator|NA|[Google Doc](https://docs.google.com/document/d/1zBNzh1dw9HpXUexTaURRS7n_NQSzqNJSuqNVw9GhIe4/edit#)|[Slack](https://cloud-native.slack.com/archives/C033BJ8BASU)|
+Community Demo Application|Every Monday at 8:15 PT|[Google Doc](https://docs.google.com/document/d/16f-JOjKzLgWxULRxY8TmpM_FjlI1sthvKurnqFz9x98/edit)|[Slack](https://cloud-native.slack.com/archives/C03B4CWV4DA)|
 
 ## Related groups
 
