@@ -123,7 +123,7 @@ namespace OpenTelemetryYoutube
             // that we know that the video already been processed. 202x = 2020, 2021, etc.
             // video that doesn't start with 202x and has totalMinutes > 30, we will process
             if (!videoItem.Snippet.Title.StartsWith("202")
-                && time.TotalMinutes > 20
+                && time.TotalMinutes > 10
                 && !videoItem.Snippet.Title.StartsWith(governanceCommitteeVideoName, StringComparison.OrdinalIgnoreCase))
             {
                 video = new Video
