@@ -1,3 +1,5 @@
+name: Publish Meetings on YouTube
+
 on:
   workflow_dispatch:
 
