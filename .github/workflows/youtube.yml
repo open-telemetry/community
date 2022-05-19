@@ -1,0 +1,18 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  publish_videos:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 6.0.x
+    - env:
+        YOUTUBE_API_CLIENT_ID: ${{ secrets.YOUTUBE_API_CLIENT_ID }}
+        YOUTUBE_API_CLIENT_SECRET: ${{ secrets.YOUTUBE_API_CLIENT_SECRET }}
+        YOUTUBE_API_ACCESS_TOKEN: ${{ secrets.YOUTUBE_API_ACCESS_TOKEN }}
+        YOUTUBE_API_REFRESH_TOKEN: ${{ secrets.YOUTUBE_API_REFRESH_TOKEN }}
+      run: dotnet run
+      working-directory: ./tools/OpenTelemetryYoutube/OpenTelemetryYoutube
