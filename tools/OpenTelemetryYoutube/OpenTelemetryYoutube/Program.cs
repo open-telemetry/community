@@ -1,12 +1,7 @@
 ﻿using System;
-using System.IO;
 using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Xml;
-using Google.Apis.Auth.OAuth2;
-using Google.Apis.Services;
-using Google.Apis.Util.Store;
 using Google.Apis.YouTube.v3;
 using Google.Apis.YouTube.v3.Data;
 
@@ -25,13 +20,13 @@ namespace OpenTelemetryYoutube
         {
             try
             {
-                if (args.Length > 1)
+                if (args.Length == 1)
                 {
                     int.TryParse(args[1], out int minValue);
                     minValidVideoTime = minValue;
                 }
 
-                new Program().Run(args[0]).Wait();
+                new Program().Run().Wait();
             }
             catch (AggregateException ex)
             {
@@ -42,26 +37,9 @@ namespace OpenTelemetryYoutube
             }
         }
 
-        private async Task Run(string path)
+        private async Task Run()
         {
-            UserCredential credential;
-            using (var stream = new FileStream(path, FileMode.Open, FileAccess.Read))
-            {
-                credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
-                    GoogleClientSecrets.Load(stream).Secrets,
-                    new[] { YouTubeService.Scope.Youtube },
-                    "user",
-                    CancellationToken.None,
-                    new FileDataStore(this.GetType().ToString())
-                );
-            }
-
-            var youtubeService = new YouTubeService(new BaseClientService.Initializer
-            {
-                HttpClientInitializer = credential,
-                ApplicationName = this.GetType().ToString(),
-            });
-
+            var youtubeService = await YouTubeServiceHelper.Instance.GetYouTubeService();
             var channelsListRequest = youtubeService.Channels.List("snippet,contentDetails,statistics");
             channelsListRequest.Mine = true;
 
