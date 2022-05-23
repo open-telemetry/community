@@ -34,7 +34,7 @@ a friendly, collaborative group and look forward to working together!
 
 ## Mission, Vision, and Values
 
-OpenTelemetry’s Mission is *to enable effective observability by making high-quality, portable telemetry ubiquitous*. Head to the [Mission, vision and values page](https://opentelemetry.io/mission/) to learn more.
+OpenTelemetry’s mission is *to enable effective observability by making high-quality, portable telemetry ubiquitous*. [Learn more](https://opentelemetry.io/mission/).
 
 ## Governing Bodies
 
