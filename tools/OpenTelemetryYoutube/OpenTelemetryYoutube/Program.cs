@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Xml;
@@ -34,6 +34,8 @@ namespace OpenTelemetryYoutube
                 {
                     Console.WriteLine("Error: " + e.Message);
                 }
+
+                Environment.Exit(1);
             }
         }
 
