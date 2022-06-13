@@ -5,7 +5,13 @@
 * [dotnet](https://dotnet.microsoft.com/download) installed to run
   the application
 * Your user need to be manager or owner of the channel
-* OAuth credentials from [Google Console](https://console.developers.google.com/)
+* Configure access to use the [YouTube Data API](https://developers.google.com/youtube/v3/getting-started).
+  Steps are roughly as follows:
+  1. Create a project using the [Google Developers Console](https://console.developers.google.com/).
+  2. From the [Enabled APIs page](https://console.developers.google.com/apis/enabled)
+     make sure the YouTube Data API v3 is enabled for the project.
+  3. Create OAuth credentials from the [Credentials page](https://console.cloud.google.com/apis/credentials).
+  4. Configure the consent screen from the [OAuth consent screen page](https://console.cloud.google.com/apis/credentials/consent).
 
 ## Configuration
 
@@ -15,6 +21,47 @@ Running the tool requires the following environment variables to be set:
 * `YOUTUBE_API_CLIENT_SECRET`
 * `YOUTUBE_API_ACCESS_TOKEN`
 * `YOUTUBE_API_REFRESH_TOKEN`
+
+The `YOUTUBE_API_CLIENT_ID` and `YOUTUBE_API_CLIENT_SECRET` variables should be
+set with the appropriate values from the OAuth credentials created when
+configuring access to the [YouTube Data API](https://developers.google.com/youtube/v3/getting-started).
+
+Generate an access and refresh token as follows:
+
+1. The following command works on a Mac and opens a browswer window
+   facilitating the generation of an authorization code:
+
+    ```shell
+    open "https://accounts.google.com/o/oauth2/auth?client_id=$YOUTUBE_API_CLIENT_ID&redirect_uri=urn:ietf:wg:oauth:2.0:oob&scope=https://www.googleapis.com/auth/youtube&response_type=code"
+    ```
+
+2. Run the following curl command using the authorization code generated in the
+   previous step:
+
+    ```shell
+    curl \
+    -d "client_id=$YOUTUBE_API_CLIENT_ID" \
+    -d "client_secret=$YOUTUBE_API_CLIENT_SECRET" \
+    -d "redirect_uri=urn:ietf:wg:oauth:2.0:oob" \
+    -d "grant_type=authorization_code" \
+    -d "code=PUT_AUTH_CODE_FROM_STEP_1_HERE" \
+    https://accounts.google.com/o/oauth2/token
+    ```
+
+    Sample response:
+
+    ```json
+    {
+      "access_token": "YOUR_ACCESS_TOKEN",
+      "expires_in": 3599,
+      "refresh_token": "YOUR_REFRESH_TOKEN",
+      "scope": "https://www.googleapis.com/auth/youtube",
+      "token_type": "Bearer"
+    }
+    ```
+
+3. Set the `YOUTUBE_API_ACCESS_TOKEN` and `YOUTUBE_API_REFRESH_TOKEN`
+   environment variables to the values retreived in the previous step.
 
 ## How to use
 
