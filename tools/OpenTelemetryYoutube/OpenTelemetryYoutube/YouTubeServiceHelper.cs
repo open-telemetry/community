@@ -47,29 +47,52 @@ internal class YouTubeServiceHelper
         using var reader = new StreamReader(response.Content.ReadAsStream());
         var json = reader.ReadToEnd();
 
+        var tokenErrorResponse = JsonConvert.DeserializeObject<TokenErrorResponse>(json);
+        if (!string.IsNullOrEmpty(tokenErrorResponse.Error))
+        {
+            throw new Exception($"Received token error response: {json}");
+        }
+
         var tokenResponse = JsonConvert.DeserializeObject<TokenResponse>(json);
+        if (string.IsNullOrEmpty(tokenResponse.AccessToken))
+        {
+            throw new Exception($"Received invalid token response: {json}");
+        }
+
         tokenResponse.IssuedUtc = DateTime.UtcNow;
         return tokenResponse;
     }
 
     public async Task<YouTubeService> GetYouTubeService()
     {
-        var credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
-            new ClientSecrets
-            {
-                ClientId = this.ClientId,
-                ClientSecret = this.ClientSecret,
-            },
-            new[] { YouTubeService.Scope.Youtube },
-            "user",
-            CancellationToken.None,
-            new YouTubeToolDataStore()
-        );
-
-        return new YouTubeService(new BaseClientService.Initializer
+        var cts = new CancellationTokenSource(10000);
+        try
         {
-            HttpClientInitializer = credential,
-            ApplicationName = typeof(Program).ToString(),
-        });
+            var credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
+                new ClientSecrets
+                {
+                    ClientId = this.ClientId,
+                    ClientSecret = this.ClientSecret,
+                },
+                new[] { YouTubeService.Scope.Youtube },
+                "user",
+                cts.Token,
+                new YouTubeToolDataStore()
+            );
+
+            return new YouTubeService(new BaseClientService.Initializer
+            {
+                HttpClientInitializer = credential,
+                ApplicationName = typeof(Program).ToString(),
+            });
+        }
+        catch (OperationCanceledException e)
+        {
+            throw new TimeoutException("Timed out authorizing with YouTube API. Token has likely expired.", e);
+        }
+        finally
+        {
+            cts.Dispose();
+        }
     }
 }
