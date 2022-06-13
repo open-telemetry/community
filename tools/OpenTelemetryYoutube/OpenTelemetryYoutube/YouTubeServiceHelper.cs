@@ -1,10 +1,14 @@
 using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Auth.OAuth2.Responses;
 using Google.Apis.Services;
 using Google.Apis.YouTube.v3;
+using Newtonsoft.Json;
 
 namespace OpenTelemetryYoutube;
 
@@ -27,15 +31,25 @@ internal class YouTubeServiceHelper
 
     public TokenResponse GetTokenResponse()
     {
-        return new TokenResponse
+        var request = new HttpRequestMessage(HttpMethod.Post, "https://accounts.google.com/o/oauth2/token")
         {
-            AccessToken = this.AccessToken,
-            ExpiresInSeconds = 3599,
-            RefreshToken = this.RefreshToken,
-            Scope = "https://www.googleapis.com/auth/youtube",
-            TokenType = "Bearer",
-            IssuedUtc = System.DateTime.UtcNow,
+            Content = new FormUrlEncodedContent(new Dictionary<string, string>
+            {
+                { "client_id", this.ClientId },
+                { "client_secret", this.ClientSecret },
+                { "refresh_token", this.RefreshToken },
+                { "grant_type", "refresh_token" },
+            }),
         };
+
+        using var client = new HttpClient();
+        var response = client.Send(request);
+        using var reader = new StreamReader(response.Content.ReadAsStream());
+        var json = reader.ReadToEnd();
+
+        var tokenResponse = JsonConvert.DeserializeObject<TokenResponse>(json);
+        tokenResponse.IssuedUtc = DateTime.UtcNow;
+        return tokenResponse;
     }
 
     public async Task<YouTubeService> GetYouTubeService()
