@@ -2,25 +2,31 @@
 
 ## Pre-requisites
 
-* [dotnet](https://dotnet.microsoft.com/download/dotnet-core) installed to run
+* [dotnet](https://dotnet.microsoft.com/download) installed to run
   the application
-* `secret.json` from [Google Console](https://console.developers.google.com/)
 * Your user need to be manager or owner of the channel
+* OAuth credentials from [Google Console](https://console.developers.google.com/)
+
+## Configuration
+
+Running the tool requires the following environment variables to be set:
+
+* `YOUTUBE_API_CLIENT_ID`
+* `YOUTUBE_API_CLIENT_SECRET`
+* `YOUTUBE_API_ACCESS_TOKEN`
+* `YOUTUBE_API_REFRESH_TOKEN`
 
 ## How to use
 
-1. Create your OAuth credential at [Google
-   Console](https://console.developers.google.com/)
-2. Download the `secret.json`
-3. Build and run the application:
+Build and run the application:
 
 * `dotnet build`
-* `dotnet run path_to_secrets.json`
+* `dotnet run`
 
 This will filter the total video duration to be deleted (if time less then 5
 minutes, it will automatically delete):
 
-* `dotnet run path_to_secrets.json 5`
+* `dotnet run 5`
 
 ## What it does
 
