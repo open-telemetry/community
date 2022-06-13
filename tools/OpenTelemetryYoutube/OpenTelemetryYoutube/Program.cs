@@ -112,7 +112,7 @@ namespace OpenTelemetryYoutube
                     Snippet = new VideoSnippet
                     {
                         CategoryId = "22",
-                        Title = $"{videoItem.Snippet.PublishedAt.Split('T')[0]} meeting",
+                        Title = $"{videoItem.Snippet.PublishedAt:yyyy-MM-dd} meeting",
                         Description = string.IsNullOrEmpty(videoItem.Snippet.Description)
                             ? $"{videoItem.Snippet.Title}"
                             : $"OriginalTitle={videoItem.Snippet.Title};OriginalDescription={videoItem.Snippet.Description}",
@@ -134,7 +134,7 @@ namespace OpenTelemetryYoutube
                     Snippet = new VideoSnippet
                     {
                         CategoryId = "22",
-                        Title = $"{videoItem.Snippet.PublishedAt.Split('T')[0]} {videoItem.Snippet.Title}"
+                        Title = $"{videoItem.Snippet.PublishedAt:yyyy-MM-dd} {videoItem.Snippet.Title}"
                     },
                     Status = new VideoStatus
                     {
