@@ -21,7 +21,7 @@ As an end user, you may want to:
 * Reach out to us to tell us your OpenTelemetry adoption story. You can reach out in [#otel-user-research](https://cloud-native.slack.com/archives/C01RT3MSWGZ) or directly message @bhs, @tedsuo, @alolita, @mtwo or @sharrmander to get an interview session set up. 
 * Take one of our surveys, links included here will be updated as surveys are released.
 * Participate in end-user discussions asynchronously on Slack or synchronously via Google Meet.
-* Follow this page and #opentelemetry to learn about new engagement opportunities as we grow our efforts.
+* Follow this page and [#opentelemetry](https://cloud-native.slack.com/archives/CJFCJHG4Q) to learn about new engagement opportunities as we grow our efforts.
 * Encourage other end-users to join and get involved!
 
 
