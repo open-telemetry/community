@@ -34,6 +34,6 @@ As someone interested in user research and/or improving the user experience of O
 
 ## Communication
 We coordinate our working group efforts in [#otel-user-research](https://cloud-native.slack.com/archives/C01RT3MSWGZ) on CNCF Slack
-If you are new, you can create a CNCF Slack account here.
+If you are new, you can create a CNCF Slack account [here](http://slack.cncf.io/).
 
 
