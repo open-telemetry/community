@@ -4,8 +4,8 @@
 ## What is the End User Working Group? 
 
 There are two primary goals of the End User Working Group: 
-* Foster a sense of vendor-agnostic community for OpenTelemetry end-users to promote learning and adoption. We currently accomplish this through:   Organization and facilitation of End User Discussion Group & Administration of a private end-user discussion slack channel
-* Facilitate the collection and communication of end-user feedback to OpenTelemetry project special interest groups to influence SIG priorities. We currently accomplish this through: Creation and maintenance of end-user research assets such as OpenTelemetry Community surveys & Organization and facilitation of structured end-user interview sessions
+* Foster a sense of vendor-agnostic community for OpenTelemetry end-users to promote learning and adoption. We currently accomplish this through:   Organization and facilitation of End User Discussion Group & Administration of a private end-user discussion slack channel.
+* Facilitate the collection and communication of end-user feedback to OpenTelemetry project special interest groups to influence SIG priorities. We currently accomplish this through: Creation and maintenance of end-user research assets such as OpenTelemetry Community surveys & Organization and facilitation of structured end-user interview sessions.
 
 Our group discourages promotion of vendor-specific solutions and desires to keep the focus on OpenTelemetry core technologies, adoption and usage.
 
@@ -29,11 +29,12 @@ As someone interested in user research and/or improving the user experience of O
 
 * Attend the [Working Group meetings](https://docs.google.com/document/d/1FqEo2PfHPP8iZX_W-C3YgXFUjhfwmAhoREUE8ZJPJfc/edit) and contribute to our efforts.
 * Become an end-user interview facilitator or helper.
-* Follow our work coordination efforts in [#otel-user-research](https://cloud-native.slack.com/archives/C01RT3MSWGZ)
+* Follow our work coordination efforts in [#otel-user-research](https://cloud-native.slack.com/archives/C01RT3MSWGZ).
 * Amplify the existence of our surveys and end-user engagement opportunities to interested people!
 
 ## Communication
-We coordinate our working group efforts in [#otel-user-research](https://cloud-native.slack.com/archives/C01RT3MSWGZ) on CNCF Slack
+We coordinate our working group efforts in [#otel-user-research](https://cloud-native.slack.com/archives/C01RT3MSWGZ) on CNCF Slack.
+
 If you are new, you can create a CNCF Slack account [here](http://slack.cncf.io/).
 
 
