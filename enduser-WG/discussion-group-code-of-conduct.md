@@ -2,7 +2,7 @@
 
 The OpenTelemetry End User Discussion Group is an online Slack based community dedicated to sharing best practices and discussing the usage of OpenTelemetry.
 
-All participants in this channel are required to comply with the [CNCF code of conduct](https://github.com/cncf/foundation/blob/main/code-of-conduct.md) which outlines expectations for acceptable behavior. 
+All participants in the channel are required to comply with the [CNCF code of conduct](https://github.com/cncf/foundation/blob/main/code-of-conduct.md) which outlines expectations for acceptable behavior. 
 
 We expect all channel members to follow [Chatham House Rule](https://www.chathamhouse.org/about-us/chatham-house-rule) while engaging in this channel. You are free to use the information in this slack channel in other contexts, however you should not disclose the identity or affiliation of any commenter in this channel.
 
