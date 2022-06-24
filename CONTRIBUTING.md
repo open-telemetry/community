@@ -270,8 +270,7 @@ Committees follow to handle a prospective donation.
 4. If accepted, the contributing organization – particularly if it's a
    commercial entity – must formally acknowledge via the GitHub issue that its
    respective sales and marketing departments have received, understood, and
-   accepted the terms of the [OpenTelemetry marketing guidelines]
-   (https://github.com/open-telemetry/community/blob/main/marketing-guidelines.md).
+   accepted the terms of the [OpenTelemetry marketing guidelines](https://github.com/open-telemetry/community/blob/main/marketing-guidelines.md).
 5. Given all of the above, the GitHub issue is closed and the donation moves
    forward as agreed to by the TC and GC.
 
