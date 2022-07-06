@@ -32,6 +32,13 @@ in alphabetical order:
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 - [Yuri Shkuro](https://github.com/yurishkuro), Facebook
 
+## Community Management
+
+These are community maintainers, responsible for cross-functional project communications,
+events, and other functions as needed.
+
+- [Austin Parker](https://github.com/austinlparker), Lightstep
+
 ## Specifications and Proto
 
 Members of the Technical Committee are the maintainers of
