@@ -48,7 +48,6 @@ Metrics Approvers:
 
 - [Jack Berg](https://github.com/jack-berg), New Relic
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
-- [John Watson](https://github.com/jkwatson), Splunk
 - [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
