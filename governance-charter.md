@@ -256,11 +256,15 @@ the OpenTelemetry end-user and contributor community.
   
 ### Community Manager Eligibility, Term, and Selection
 
-CMs shall be nominated by the GC for one-year terms on an as-needed basis, by
-simple majority vote. Once appointed, a CM will continue to serve until
-dismissal or voluntary departure. The GC may appoint individuals who are not
-part of the OpenTelemetry project. The GC may dismiss a CM for violations of the
-project Code of Conduct or a failure to uphold the responsibilities of the role.
+CMs shall be nominated and approved by the GC for one-year terms on an as-needed 
+basis, by simple majority vote. The GC shall re-confirm CMs on an annual basis.
+A CM that wishes to step down from their role shall notify the GC at least 30 days
+before the next GC meeting.
+
+The GC may appoint individuals who are not part of the OpenTelemetry project. 
+
+The GC may dismiss a CM for violations of the project Code of Conduct or a 
+failure to uphold the responsibilities of the role.
 
 ### Community Manager Rights and Permissions
 
