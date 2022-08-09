@@ -237,7 +237,7 @@ reasons for this, prior to the meeting taking place.
 
 In order to facilitate end-user and contributor experience programs that cut
 across multiple SIGs in the OpenTelemetry project, the governance committee
-may appoint Community Managers (CMs) to act as liasions, facilitators, and 
+may appoint Community Managers (CMs) to act as liaisons, facilitators, and 
 organizers for such programs. The goal of this role is to ensure the health of
 the OpenTelemetry end-user and contributor community.
 
