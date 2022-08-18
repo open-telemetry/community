@@ -34,11 +34,11 @@ below.
 
 ## Member
 
-Members can vote in the [Governance Committee][] elections.
-
 Members are continuously active contributors in the community. They can have
 issues and PRs assigned to them. Members are expected to participate in SIG or
 SIGs and remain active contributors to the community.
+
+Members can vote in the [Governance Committee][] elections.
 
 Defined by: Member of the OpenTelemetry GitHub organization
 
@@ -81,13 +81,13 @@ Defined by: Member of the OpenTelemetry GitHub organization
 
 ### Responsibilities and privileges
 
-- Can vote in the [Governance Committee][] elections
 - Responsive to issues and PRs assigned to them
 - Active owner of code they have contributed (unless ownership is explicitly
   transferred)
   - Code is well tested
   - Tests consistently pass
   - Addresses bugs or issues discovered after code is accepted
+- Can vote in the [Governance Committee][] elections (see [Members of Standing][])
 - Members can review and approve via the GitHub workflow.  This review work is
   not sufficient to merge a PR.  There will still need to be a review by an
   *approver*.
@@ -296,3 +296,4 @@ promoted back to a their previous position at the discretion of the current
 maintainers following the process defined above.
 
 [Governance Committee]: ../governance-charter.md
+[Members of Standing]: ../governance-charter.md#members-of-standing
