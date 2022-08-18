@@ -7,7 +7,7 @@ OpenTelemetry. The OpenTelemetry project is subdivided into subprojects under
 (predominantly, but not exclusively) language-focused SIGs (Special Interest
 Group). Responsibilities for most roles are scoped to these subprojects (repos).
 
-The OpenTelemetry Governance Committee owns this document and process until
+The OpenTelemetry [Governance Committee][] owns this document and process until
 delegated. They can be reached via e-mail cncf-opentelemetry-governance@lists.cncf.io.
 
 | **Role**   | **Responsibilities**                                  | **Requirements**                                             | **Defined by**                                               |
@@ -33,6 +33,8 @@ Role-specific expectations, responsibilities, and requirements are enumerated
 below.
 
 ## Member
+
+Members can vote in the [Governance Committee][] elections.
 
 Members are continuously active contributors in the community. They can have
 issues and PRs assigned to them. Members are expected to participate in SIG or
@@ -79,6 +81,7 @@ Defined by: Member of the OpenTelemetry GitHub organization
 
 ### Responsibilities and privileges
 
+- Can vote in the [Governance Committee][] elections
 - Responsive to issues and PRs assigned to them
 - Active owner of code they have contributed (unless ownership is explicitly
   transferred)
@@ -291,3 +294,5 @@ from the approvers list, and will no longer have any official responsibilities
 with the project. When a contributor returns to being more active, they may be
 promoted back to a their previous position at the discretion of the current
 maintainers following the process defined above.
+
+[Governance Committee]: ../governance-charter.md
