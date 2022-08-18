@@ -295,5 +295,5 @@ with the project. When a contributor returns to being more active, they may be
 promoted back to a their previous position at the discretion of the current
 maintainers following the process defined above.
 
-[Governance Committee]: ../governance-charter.md
-[Members of Standing]: ../governance-charter.md#members-of-standing
+[Governance Committee]: ./governance-charter.md
+[Members of Standing]: ./governance-charter.md#members-of-standing
