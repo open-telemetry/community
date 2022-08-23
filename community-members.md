@@ -57,11 +57,6 @@ Logs Approvers:
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
 - [David Poncelow](https://github.com/zenmoto), Splunk
 
-Global Approvers:
-
-- [Josh Suereth](https://github.com/jsuereth), Google
-- [Reiley Yang](https://github.com/reyang), Microsoft
-
 ## Java
 
 Repo: [open-telemetry/opentelemetry-java](https://github.com/open-telemetry/opentelemetry-java)
