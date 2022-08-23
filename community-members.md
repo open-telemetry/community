@@ -46,8 +46,8 @@ Trace Approvers:
 
 Metrics Approvers:
 
-- [Jack Berg](https://github.com/jack-berg), New Relic
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
+- [Jack Berg](https://github.com/jack-berg), New Relic
 - [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
