@@ -257,9 +257,9 @@ the OpenTelemetry end-user and contributor community.
 ### Community Manager Eligibility, Term, and Selection
 
 CMs shall be nominated and approved by the GC for one-year terms on an as-needed 
-basis, by simple majority vote. The GC shall re-confirm CMs on an annual basis.
-A CM that wishes to step down from their role shall notify the GC at least 30 days
-before the next GC meeting.
+basis, by simple majority vote. The GC shall re-confirm CMs on an annual basis, at
+the first meeting following an annual GC election. A CM that wishes to step down 
+from their role shall notify the GC at least 30 days before the next GC meeting.
 
 The GC may appoint individuals who are not part of the OpenTelemetry project. 
 
@@ -268,7 +268,10 @@ failure to uphold the responsibilities of the role.
 
 ### Community Manager Rights and Permissions
 
-A CM may act as an extension of the GC in pursuing its responsibilities. They
+A CM may act as an extension of the GC in pursuing their responsibilities. Pursuant
+to this, the GC should hold CMs accountable for their actions if they reflect poorly
+on the project, its contributors, or the CNCF. Thus, CMs should work in collaboration
+with the GC, especially if their actions could be construed as controversial. They
 will be the point of contact for the CNCF on events, swag, communications, and
 other programs as needed. Thus, they will have access to Service Desk. Other
 permissions (for example, repository creation and management) can be granted by
