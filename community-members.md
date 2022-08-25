@@ -55,7 +55,6 @@ Metrics Approvers:
 
 - [Jack Berg](https://github.com/jack-berg), New Relic
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
-- [John Watson](https://github.com/jkwatson), Splunk
 - [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
@@ -159,7 +158,7 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 ## Community Demo
 
-Repo: [open-telemetry/opentelemetry-demo-webstore](https://github.com/open-telemetry/opentelemetry-demo-webstore)
+Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/opentelemetry-demo)
 
 ## Others
 
