@@ -53,8 +53,8 @@ Trace Approvers:
 
 Metrics Approvers:
 
-- [Jack Berg](https://github.com/jack-berg), New Relic
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
+- [Jack Berg](https://github.com/jack-berg), New Relic
 - [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
@@ -63,11 +63,6 @@ Logs Approvers:
 - [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
 - [David Poncelow](https://github.com/zenmoto), Splunk
-
-Global Approvers:
-
-- [Josh Suereth](https://github.com/jsuereth), Google
-- [Reiley Yang](https://github.com/reyang), Microsoft
 
 ## Java
 
