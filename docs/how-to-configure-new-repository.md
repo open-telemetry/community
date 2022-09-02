@@ -69,3 +69,11 @@ It is recommended to follow these best practices:
 2. Set up a security scanning tool like, for example, [Github CodeQL](https://docs.github.com/en/code-security/secure-coding/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning).
 3. Set up a test coverage scanning tool like, for example, [Codecov](https://codecov.io/).
 4. Add status badges for passing builds and scans to the root README.
+
+## Permission changes
+
+In order to change repository permissions (e.g., for temporary or permanent admin access,
+adding branch protection rules, or adding a new triagers team),
+an issue in the community repository needs to be created to keep track of changes.
+Please use the "Repository Maintenance Request" issue template for such requests.
+For temporary permission changes, the issue should be kept open until the work is finished and permissions can be reverted again.

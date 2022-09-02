@@ -32,6 +32,13 @@ in alphabetical order:
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 - [Yuri Shkuro](https://github.com/yurishkuro), Facebook
 
+## Community Management
+
+These are community maintainers, responsible for cross-functional project communications,
+events, and other functions as needed.
+
+- [Austin Parker](https://github.com/austinlparker), Lightstep
+
 ## Specifications and Proto
 
 Members of the Technical Committee are the maintainers of
@@ -46,9 +53,8 @@ Trace Approvers:
 
 Metrics Approvers:
 
-- [Jack Berg](https://github.com/jack-berg), New Relic
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
-- [John Watson](https://github.com/jkwatson), Splunk
+- [Jack Berg](https://github.com/jack-berg), New Relic
 - [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
@@ -57,11 +63,6 @@ Logs Approvers:
 - [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
 - [David Poncelow](https://github.com/zenmoto), Splunk
-
-Global Approvers:
-
-- [Josh Suereth](https://github.com/jsuereth), Google
-- [Reiley Yang](https://github.com/reyang), Microsoft
 
 ## Java
 
@@ -138,7 +139,6 @@ Repo: [open-telemetry/opentelemetry-cpp](https://github.com/open-telemetry/opent
 
 The list of active members (both "approvers" and "maintainers") for OpenTelemetry C++ can be found in the [open-telemetry/opentelemetry-cpp README file](https://github.com/open-telemetry/opentelemetry-cpp#contributing).
 
-
 ## Ruby
 
 Repo: [open-telemetry/opentelemetry-ruby](https://github.com/open-telemetry/opentelemetry-ruby)
@@ -150,6 +150,10 @@ The list of active members (both "approvers" and "maintainers") for OpenTelemetr
 Repo: [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opentelemetry-php)
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry PHP API and SDK can be found in the [open-telemetry/opentelemetry-php CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-php/blob/master/CONTRIBUTING.md).
+
+## Community Demo
+
+Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/opentelemetry-demo)
 
 ## Others
 
