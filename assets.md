@@ -2,6 +2,14 @@
 
 This file is intended to list all the assets controlled by OpenTelemetry.
 
+## Credential Storage
+
+- [1Password Teams](https://1password.com/)
+  - Team account: https://opentelemetry.1password.com/
+  - https://github.com/1Password/1password-teams-open-source#opentelemetry
+  - PR: https://github.com/1Password/1password-teams-open-source/pull/364
+  - Admin: Alex Boten @codeboten
+
 ## CI pipelines
 
 ### OpenTelemetry Azure Pipeline
