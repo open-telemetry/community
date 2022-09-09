@@ -6,19 +6,12 @@ This document lays out the 2022 election process per the OpenTelemetry governanc
 
 This election should fill four seats.
 
-The schedule is yet to be determined, and the two current alternatives are:
+Election schedule:
 
 * 6 October 2022 - final deadline to submit nominations
 * 8 October 2022 - official nominees list published
 * 18 October 2022 to 20 October 2022 - voting takes place
 * 22 October 2022 - results announced
-
-* 20 October 2022 - final deadline to submit nominations
-* 22 October 2022 - official nominees list published
-* 1 November 2022 to 3 November 2022 - voting takes place
-* 5 November 2022 - results announced
-
-_DRAFT:_ for practical effects, the remaining of this document assumes that the first option is selected.
 
 We highly encourage participation in this election cycle to ensure that the community is well-represented by the Governance Committee.
 
@@ -26,7 +19,7 @@ We highly encourage participation in this election cycle to ensure that the comm
 
 * If you've been nominated or are willing to nominate yourself: check the [charter document](https://github.com/open-telemetry/community/blob/main/governance-charter.md#establishment-of-a-governance-committee) and confirm you are ready for the commitment. Make sure to provide all necessary information before 8 October 2022 00:00 UTC
 * If you are an active community member: confirm that you are on the voters list (see [election announcements issue](https://github.com/open-telemetry/community/issues/1173)) or register yourself before 18 October 2022 00:00 UTC.
-* Vote between 18 October 2022 00:00 UTC and 20 October 2022 00:00 UTC via the voting link (link to follow)
+* Vote between 18 October 2022 00:00 UTC and 20 October 2022 23:59 UTC via the voting link (link to follow)
 * Keep being awesome and contributing to the project!
 
 # Vacancies
@@ -96,7 +89,7 @@ Voting will close on 21 October 2022 at 00:00 UTC. Nominees will be stack ranked
 
 | Date                      | Activity                                                                                                                                    |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-|  9 September 2022         | This document announced                                                                                                                     |
+| 12 September 2022         | This document announced                                                                                                                     |
 | 12 September 2022         | Election blog post and call for nominations                                                                                                 |
 |  7 October 2022 23:59 UTC | End of call for nominations                                                                                                                 |
 |  8 October 2022           | Preliminary list of nominees announced.                                                                                                     |
