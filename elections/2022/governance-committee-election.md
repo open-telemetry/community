@@ -53,7 +53,7 @@ Anyone can track the 2022 election process via [this GitHub issue](https://githu
 
 # Nominations
 
-As per [the charter document](https://github.com/open-telemetry/community/blob/main/governance-charter.md#establishment-of-a-governance-committee), anybody is eligible to run for the Governance Committee. During the "call for nomination" period, people can be nominated or nominate themselves by submitting a Pull Request adding said candidate to the [governance-committee-candidates.md](https://github.com/open-telemetry/community/blob/main/elections/2021/governance-committee-candidates.md) file in the OpenTelemetry community repository. The template in that file includes the following columns:
+As per [the charter document](https://github.com/open-telemetry/community/blob/main/governance-charter.md#establishment-of-a-governance-committee), anybody is eligible to run for the Governance Committee. During the "call for nomination" period, people can be nominated or nominate themselves by submitting a Pull Request adding said candidate to the [governance-committee-candidates.md](https://github.com/open-telemetry/community/blob/main/elections/2022/governance-committee-candidates.md) file in the OpenTelemetry community repository. The template in that file includes the following columns:
 
 * Full name
 * GitHub alias
