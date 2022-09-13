@@ -26,7 +26,7 @@ We highly encourage participation in this election cycle to ensure that the comm
 
 Current governance committee members (alphabetical order):
 
-* [Alolita Sharma](https://github.com/alolita), AWS, until October 2022
+* [Alolita Sharma](https://github.com/alolita), Apple, until October 2022
 * [Ben Sigelman](https://github.com/bhs), Lightstep, until October 2023
 * [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk, until October 2023
 * [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2022
