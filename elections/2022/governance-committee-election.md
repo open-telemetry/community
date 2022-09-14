@@ -75,7 +75,7 @@ All exemption forms are private. Only the current governance and election commit
 
 # Vote
 
-Everyone with voting rights may log into Helios Voting (link to follow) using their GitHub account. Voting will be approval voting, where each voter may select up to five candidates. The five candidates with the most votes win the election.
+Everyone with voting rights may log into [Helios Voting](https://vote.heliosvoting.org/helios/elections/76558134-3384-11ed-8688-02871af94755/view) using their GitHub account. Voting will be approval voting, where each voter may select up to five candidates. The five candidates with the most votes win the election.
 
 The election committee will accept late registrations to vote and requests to re-send the voting link via email to [cncf-opentelemetry-governance@lists.cncf.io](mailto:cncf-opentelemetry-governance@lists.cncf.io). We encourage pre-registration to minimize the effort required to run this election.
 
@@ -97,5 +97,5 @@ Voting will close on 21 October 2022 at 00:00 UTC. Nominees will be stack ranked
 | 11 October 2022           | List of nominees is finalized on [community](https://github.com/open-telemetry/community) GitHub and advertised via mailing list and Gitter |
 | 17 October 2022 23:59 UTC | Last day to apply for a member of standing exemption                                                                                        |
 | 18 October 2022 00:00 UTC | Voting period begins                                                                                                                        |
-| 20 October 2022 00:00 UTC | voting ends                                                                                                                                 |
+| 20 October 2022 23:59 UTC | voting ends                                                                                                                                 |
 | 22 October 2022           | Results are announced                                                                                                                       |
