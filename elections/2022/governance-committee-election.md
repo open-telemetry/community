@@ -90,11 +90,11 @@ Voting will close on 21 October 2022 at 00:00 UTC. Nominees will be stack ranked
 | Date                      | Activity                                                                                                                                    |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | 12 September 2022         | This document announced                                                                                                                     |
-| 12 September 2022         | Election blog post and call for nominations                                                                                                 |
+| 14 September 2022         | Election blog post and call for nominations                                                                                                 |
 |  7 October 2022 23:59 UTC | End of call for nominations                                                                                                                 |
-|  8 October 2022           | Preliminary list of nominees announced.                                                                                                     |
-|  8 October 2022           | Nominees ratified, and Governance Committee ensures nominees' commitment.                                                                    |
-| 11 October 2022           | List of nominees is finalized on [community](https://github.com/open-telemetry/community) GitHub and advertised via mailing list and Gitter |
+|  8 October 2022           | Nominees ratified, and Governance Committee ensures nominees' commitment                                                                    |
+|  9 October 2022           | Preliminary list of nominees announced                                                                                                      |
+| 11 October 2022           | List of nominees is finalized on [community](https://github.com/open-telemetry/community) GitHub and advertised via mailing list and Slack  |
 | 17 October 2022 23:59 UTC | Last day to apply for a member of standing exemption                                                                                        |
 | 18 October 2022 00:00 UTC | Voting period begins                                                                                                                        |
 | 20 October 2022 23:59 UTC | voting ends                                                                                                                                 |
