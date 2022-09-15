@@ -17,9 +17,9 @@ We highly encourage participation in this election cycle to ensure that the comm
 
 # TL;DR
 
-* If you've been nominated or are willing to nominate yourself: check the [charter document](https://github.com/open-telemetry/community/blob/main/governance-charter.md#establishment-of-a-governance-committee) and confirm you are ready for the commitment. Make sure to provide all necessary information before 8 October 2022 00:00 UTC
+* If you've been nominated or are willing to nominate yourself: check the [charter document](https://github.com/open-telemetry/community/blob/main/governance-charter.md) and confirm you are ready for the commitment. Make sure to provide all necessary information before 8 October 2022 00:00 UTC
 * If you are an active community member: confirm that you are on the voters list (see [election announcements issue](https://github.com/open-telemetry/community/issues/1173)) or register yourself before 18 October 2022 00:00 UTC.
-* Vote between 18 October 2022 00:00 UTC and 20 October 2022 23:59 UTC via the voting link (link to follow)
+* Vote between 18 October 2022 00:00 UTC and 20 October 2022 23:59 UTC via the [voting link](https://vote.heliosvoting.org/helios/elections/76558134-3384-11ed-8688-02871af94755/view)
 * Keep being awesome and contributing to the project!
 
 # Vacancies
@@ -62,7 +62,7 @@ The Governance Committee or appointed people will contact every nominee directly
 
 # Voter Eligibility
 
-All [members of standing](https://github.com/open-telemetry/community/blob/main/governance-charter.md#members-of-standing) will automatically be eligible to vote. To confirm your eligibility status, see the [election announcements issue](https://github.com/open-telemetry/community/issues/852). If your code contributions do not meet eligibility requirements but you believe your non-code contributions should make you eligible to vote, you can request an exemption by submitting an exemption request form (link to follow).
+All [members of standing](https://github.com/open-telemetry/community/blob/main/governance-charter.md#members-of-standing) will automatically be eligible to vote. To confirm your eligibility status, see the [election announcements issue](https://github.com/open-telemetry/community/issues/852). If your code contributions do not meet eligibility requirements but you believe your non-code contributions should make you eligible to vote, you can request an exemption by submitting an exemption [request form](https://forms.gle/mEDWyn6G7iCe4bvJ7).
 
 One of two options will be available in the form to prove eligibility:
 
@@ -90,7 +90,7 @@ Voting will close on 21 October 2022 at 00:00 UTC. Nominees will be stack ranked
 | Date                      | Activity                                                                                                                                    |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | 12 September 2022         | This document announced                                                                                                                     |
-| 14 September 2022         | Election blog post and call for nominations                                                                                                 |
+| 15 September 2022         | Election blog post and call for nominations                                                                                                 |
 |  7 October 2022 23:59 UTC | End of call for nominations                                                                                                                 |
 |  8 October 2022           | Nominees ratified, and Governance Committee ensures nominees' commitment                                                                    |
 |  9 October 2022           | Preliminary list of nominees announced                                                                                                      |
