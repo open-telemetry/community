@@ -19,7 +19,7 @@ Meeting notes are available as a [public Google doc](https://docs.google.com/doc
 As an end user, you may want to: 
 
 * Reach out to us to tell us your OpenTelemetry adoption story. You can reach out in [#otel-user-research](https://cloud-native.slack.com/archives/C01RT3MSWGZ) to learn more.
-* Take one of our surveys, links included here will be updated as surveys are released.
+* Take one of our surveys, like our [OpenTelemetry Quarterly Feedback Survey](https://docs.google.com/forms/d/e/1FAIpQLSdKm6oLYRXlZOhEZMVmjoIn4eBToVYNmF6fwpm5GAIipQmPxA/viewform?pli=1)
 * Participate in end-user discussions asynchronously on Slack or synchronously via Google Meet.
 * Follow this page and [#opentelemetry](https://cloud-native.slack.com/archives/CJFCJHG4Q) to learn about new engagement opportunities as we grow our efforts.
 * Encourage other end-users to join and get involved!
