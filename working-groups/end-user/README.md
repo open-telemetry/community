@@ -27,7 +27,7 @@ As an end user, you may want to:
 
 As someone interested in user research and/or improving the user experience of OpenTelemetry, you may want to: 
 
-* Attend the [Working Group meetings](https://docs.google.com/document/d/1FqEo2PfHPP8iZX_W-C3YgXFUjhfwmAhoREUE8ZJPJfc/edit) and contribute to our efforts.
+* Attend the [Working Group meetings](https://docs.google.com/document/d/1e-UNZA3Tuno9b53RQbe--whUcO0VIXF3P81oXsrBK6g) and contribute to our efforts.
 * Become an end-user interview facilitator or helper.
 * Follow our work coordination efforts in [#otel-user-research](https://cloud-native.slack.com/archives/C01RT3MSWGZ).
 * Amplify the existence of our surveys and end-user engagement opportunities to interested people!
