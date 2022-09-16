@@ -14,7 +14,7 @@ Our group discourages promotion of vendor-specific solutions and desires to keep
 There are many ways to get involved in our work! We (End User Working Group) meet every two weeks on Thursdays at 10:00 AM PST. Check out the [OpenTelemetry community calendar](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com)
 for the Zoom link and any updates to this schedule.
 
-Meeting notes are available as a [public Google doc](https://docs.google.com/document/d/1FqEo2PfHPP8iZX_W-C3YgXFUjhfwmAhoREUE8ZJPJfc/edit). If you have trouble accessing the doc, please get in touch on [Slack](https://cloud-native.slack.com/archives/C01RT3MSWGZ).
+Meeting notes are available as a [public Google doc](https://docs.google.com/document/d/1e-UNZA3Tuno9b53RQbe--whUcO0VIXF3P81oXsrBK6g). If you have trouble accessing the doc, please get in touch on [Slack](https://cloud-native.slack.com/archives/C01RT3MSWGZ).
 
 As an end user, you may want to: 
 
