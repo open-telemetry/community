@@ -63,6 +63,7 @@ Logs Approvers:
 - [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
 - [David Poncelow](https://github.com/zenmoto), Splunk
+- [Jack Berg](https://github.com/jack-berg), New Relic
 
 ## Java
 
