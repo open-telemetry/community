@@ -10,7 +10,7 @@
 
 ## When do these sessions happen? 
 - Our end user working group goal is to hold at least one session a month. 
-- Our scheduling preference is for these sessions to occur at 11am PST on Thursdays, however the final schedule will be dictated by the end-user interviewee’s availability.
+- Our scheduling preference is for these sessions to occur at 10:00 AM PST on Thursdays, however the final schedule will be dictated by the end-user interviewee’s availability.
 
 ## Are the interview sessions recorded? 
 - Sessions are only recorded if the end user is comfortable with them being recorded. In this directory, you can find links to both video recordings and session summaries created by the Facilitator and Helper roles, as appropriate. 
