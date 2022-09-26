@@ -7,7 +7,7 @@
 - Kafka topic subscriber model. 
 - Java
 - C#
-- Dotnet core
+- .NET core
 - Rust
 - Go
 - Javascript ( typescript, npm)
