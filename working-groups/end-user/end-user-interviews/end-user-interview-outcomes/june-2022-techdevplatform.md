@@ -3,17 +3,18 @@
 - An engineer on a technology development platform centralized observability team *and* OpenTelemetry project SDK maintainer.
 
 ## Stack/What they’re trying to Observe: 
-- Ruby
-- Kafka topic subscriber model. 
-- Java
-- C#
-- .NET core
-- Rust
-- Go
-- Javascript ( typescript, npm)
 - C
+- C#
 - C++
+- Go
+- Java
+- Javascript (typscript, node)
+- .NET Core
 - Python
+- Ruby
+- Rust
+
+They also want to observe Kafka (subscriber model)
 
 The company heavily uses logs and Statsd.
 
