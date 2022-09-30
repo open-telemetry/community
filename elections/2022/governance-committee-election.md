@@ -62,7 +62,7 @@ The Governance Committee or appointed people will contact every nominee directly
 
 # Voter Eligibility
 
-All [members of standing](https://github.com/open-telemetry/community/blob/main/governance-charter.md#members-of-standing) will automatically be eligible to vote. To confirm your eligibility status, see the [election announcements issue](https://github.com/open-telemetry/community/issues/852). If your code contributions do not meet eligibility requirements but you believe your non-code contributions should make you eligible to vote, you can request an exemption by submitting an exemption [request form](https://forms.gle/mEDWyn6G7iCe4bvJ7).
+All [members of standing](https://github.com/open-telemetry/community/blob/main/governance-charter.md#members-of-standing) will automatically be eligible to vote. To confirm your eligibility status, see the [election announcements issue](https://github.com/open-telemetry/community/issues/1173). If your code contributions do not meet eligibility requirements but you believe your non-code contributions should make you eligible to vote, you can request an exemption by submitting an exemption [request form](https://forms.gle/mEDWyn6G7iCe4bvJ7).
 
 One of two options will be available in the form to prove eligibility:
 
