@@ -7,6 +7,7 @@ In alphabetical order:
 - [Michael Hausenblas](#michael-hausenblas)
 
 ---
+
 <!--
 ### Candidate 1
 ![Candidate Name](static/candidate-picture.png)
@@ -36,6 +37,19 @@ OpenTelemetry Community Day. If elected for a second term, Daniel would focus on
 experience, especially for developers new to OpenTelemetry and Open Source, as well
 as continue to focus on making sure OpenTelemetry continues to be a safe, inclusive,
 and rewarding experience for contributors, maintainers, and users.
+=======
+
+### Sean Marciniak
+
+![Sean Marciniak](static/seanmarciniak.jpg)
+
+- Company: [Atlassian](https://www.atlassian.com/)
+- Github: [MovieStoreGuy](https://github.com/MovieStoreGuy)
+
+I've been work as part of the Observability team here at Atlassian for nearly four years and having been contributing back to OpenTelemetry to help progress internal Observability standards.
+I've been a visonary by starting [profiling support otep](https://github.com/open-telemetry/oteps/issues/139), and now it is finally being adopt.
+I would love to help shape how our end users would get their biggest value from it.
+I keen to be the voice in APAC and helping companies improve Open Telemetry and their current observability by helping provide a voice for them.
 
 ---
 
