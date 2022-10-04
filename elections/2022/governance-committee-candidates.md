@@ -6,6 +6,7 @@ In alphabetical order:
 
 - [Daniel Dyla](#daniel-dyla)
 - [Michael Hausenblas](#michael-hausenblas)
+- [Morgan McLean](#morgan-mclean)
 - [Ken Finnigan](#ken-finnigan)
 - [Sean Marciniak](#sean-marciniak)
 
@@ -57,6 +58,26 @@ OpenTelemetry throughs talks, for example at QCon. Michael is based out of Irela
 focusing on OpenTelemetry adoption, be that via tutorials or best practices.
 
 ---
+
+### Morgan McLean
+![Morgan McLean](static/morgan-mclean.png)
+
+- Company: [Splunk](https://www.splunk.com/en_us/products/observability.html)
+- GitHub: [mtwo](https://github.com/mtwo)
+
+Morgan is one of the co-founders of OpenTelemetry, and currently serves on the governance committee. Morgan makes significant contributions directly OpenTelemetry:
+
+- He runs the weekly maintainers check-in and participates in various SIGs, including client instrumentation, profiles, agent management, user feedback, etc.
+- He organized and tracked the final drives towards the beta and GA releases of both traces and metrics
+- He was instrumental in the creation of new signal types, specifically logs and profiles, and introduced new voices into the community to support these
+- As part of the end-user working group, he solicits feedback from people who use OpenTelemetry and uses this to improve the project
+
+Morgan’s work on the governance committee has focused on everything from moderating and participating in technical discussions, to community outreach and organizing the project’s presence at Kubecon, driving the project towards release milestones, and more. If re-elected, he plans to focus on reducing maintainer toil, more formally establishing the project roadmap, and driving the logs implementations to beta and GA.
+
+At Splunk, Morgan is responsible for all platform functionality within Splunk Observability Cloud, which includes OpenTelemetry. He previously worked on high-scale observability systems at Google, where he co-created and grew OpenCensus, OpenTelemetry, and the W3C TraceContext specification, and brought partners like Microsoft and Dynatrace into these projects. Prior to that he developed and operated high-scale e-commerce systems at Microsoft and developed high-performance client code at Microsoft and BioWare.
+
+---
+
 ### Ken Finnigan
 
 ![Ken Finnigan](static/kenfinnigan.png)
