@@ -4,9 +4,9 @@
 
 In alphabetical order:
 
+- [Daniel Dyla](#daniel-dyla)
 - [Michael Hausenblas](#michael-hausenblas)
-
----
+- [Sean Marciniak](#sean-marciniak)
 
 <!--
 ### Candidate 1
@@ -37,7 +37,8 @@ OpenTelemetry Community Day. If elected for a second term, Daniel would focus on
 experience, especially for developers new to OpenTelemetry and Open Source, as well
 as continue to focus on making sure OpenTelemetry continues to be a safe, inclusive,
 and rewarding experience for contributors, maintainers, and users.
-=======
+
+---
 
 ### Michael Hausenblas
 
