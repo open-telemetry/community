@@ -6,6 +6,7 @@ In alphabetical order:
 
 - [Daniel Dyla](#daniel-dyla)
 - [Michael Hausenblas](#michael-hausenblas)
+- [Ken Finnigan](#ken-finnigan)
 - [Sean Marciniak](#sean-marciniak)
 
 <!--
@@ -56,6 +57,20 @@ OpenTelemetry throughs talks, for example at QCon. Michael is based out of Irela
 focusing on OpenTelemetry adoption, be that via tutorials or best practices.
 
 ---
+### Ken Finnigan
+
+![Ken Finnigan](static/kenfinnigan.png)
+
+- Company: [Workday](https://www.workday.com/)
+- Github: [kenfinnigan](https://github.com/kenfinnigan)
+
+Ken is the co-creator of Quarkus (https://quarkus.io/), a build time optimized framework for Kubernetes. He also helped drive the adoption of OpenTelemetry across Red Hat Middleware to ensure all projects/products can be efficiently observed with existing and new tooling. Achieving this with a clean developer experience by handling integration with frameworks directly.
+
+Ken's role as Observability Architect at Workday is to drive innovation and adoption of technologies within his group with a goal to improve the developer experience of observability tooling. This covers everything from architecture and design of systems for logs, metrics, or traces, in public cloud, to working on improved methods for observing services, such as SLOs. Ken collaborates with teams across Workday to improve the developer experience from Platform engineering.
+
+His nomination will bring a much needed balance to the board by being a voice representing end-users.
+
+---
 
 ### Sean Marciniak
 
@@ -69,18 +84,4 @@ I've been a visonary by starting [profiling support otep](https://github.com/ope
 I would love to help shape how our end users would get their biggest value from it.
 I keen to be the voice in APAC and helping companies improve Open Telemetry and their current observability by helping provide a voice for them.
 
----
-
-### Ken Finnigan
-
-![Ken Finnigan](static/kenfinnigan.png)
-
-- Company: [Workday](https://www.workday.com/)
-- Github: [kenfinnigan](https://github.com/kenfinnigan)
-
-Ken is the co-creator of Quarkus (https://quarkus.io/), a build time optimized framework for Kubernetes. He also helped drive the adoption of OpenTelemetry across Red Hat Middleware to ensure all projects/products can be efficiently observed with existing and new tooling. Achieving this with a clean developer experience by handling integration with frameworks directly.
-
-Ken's role as Observability Architect at Workday is to drive innovation and adoption of technologies within his group with a goal to improve the developer experience of observability tooling. This covers everything from architecture and design of systems for logs, metrics, or traces, in public cloud, to working on improved methods for observing services, such as SLOs. Ken collaborates with teams across Workday to improve the developer experience from Platform engineering.
-
-His nomination will bring a much needed balance to the board by being a voice representing end-users.
 ---
