@@ -40,7 +40,6 @@ experience, especially for developers new to OpenTelemetry and Open Source, as w
 as continue to focus on making sure OpenTelemetry continues to be a safe, inclusive,
 and rewarding experience for contributors, maintainers, and users.
 
-
 ---
 
 ### Michael Hausenblas
@@ -57,7 +56,6 @@ since late 2020 in various roles: as a CNCF Ambassador, as a TAG o11y member, wo
 end user domain (hosting end-user meetings and outreach), and through spreading the word about
 OpenTelemetry throughs talks, for example at QCon. Michael is based out of Ireland and is
 focusing on OpenTelemetry adoption, be that via tutorials or best practices.
-
 
 ---
 
@@ -78,7 +76,6 @@ Morgan’s work on the governance committee has focused on everything from moder
 
 At Splunk, Morgan is responsible for all platform functionality within Splunk Observability Cloud, which includes OpenTelemetry. He previously worked on high-scale observability systems at Google, where he co-created and grew OpenCensus, OpenTelemetry, and the W3C TraceContext specification, and brought partners like Microsoft and Dynatrace into these projects. Prior to that he developed and operated high-scale e-commerce systems at Microsoft and developed high-performance client code at Microsoft and BioWare.
 
-
 ---
 
 ### Ken Finnigan
@@ -94,7 +91,6 @@ Ken's role as Observability Architect at Workday is to drive innovation and adop
 
 His nomination will bring a much needed balance to the board by being a voice representing end-users.
 
-
 ---
 
 ### Sean Marciniak
@@ -108,6 +104,5 @@ I've been work as part of the Observability team here at Atlassian for nearly fo
 I've been a visonary by starting [profiling support otep](https://github.com/open-telemetry/oteps/issues/139), and now it is finally being adopt.
 I would love to help shape how our end users would get their biggest value from it.
 I keen to be the voice in APAC and helping companies improve Open Telemetry and their current observability by helping provide a voice for them.
-
 
 ---
