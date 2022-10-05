@@ -144,8 +144,9 @@ on their journey to from their first issue/PR to being an active member
 of the community.
 
 I would be honored to be elected by you into the Governance Committee and
-to expand my mission to the whole project. If elected, ...
+to expand my mission to the whole project. 
 
+If elected, ...
 - ... I want to stretch my support to the whole community and encourage new-comers
   everywhere to become and stay active members of the community.
 - ... I want to continue to improve the ease of use of OpenTelemetry and with that
