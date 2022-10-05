@@ -9,6 +9,7 @@ In alphabetical order:
 - [Morgan McLean](#morgan-mclean)
 - [Ken Finnigan](#ken-finnigan)
 - [Sean Marciniak](#sean-marciniak)
+- [Severin Neumann](#severin-neumann)
 - [Trask Stalnaker](#trask-stalnaker)
 
 <!--
@@ -105,6 +106,55 @@ I've been work as part of the Observability team here at Atlassian for nearly fo
 I've been a visonary by starting [profiling support otep](https://github.com/open-telemetry/oteps/issues/139), and now it is finally being adopt.
 I would love to help shape how our end users would get their biggest value from it.
 I keen to be the voice in APAC and helping companies improve Open Telemetry and their current observability by helping provide a voice for them.
+
+---
+
+### Severin Neumann
+
+![Severin Neumann](static/severin-neumann.jpg)
+
+- Company: [Cisco AppDynamics](https://www.appdynamics.com)
+- Github: [svrnm](https://github.com/svrnm)
+
+My name is Severin Neumann and I am based out of Germany. I am a maintainer in
+the Communication SIG (Website, Docs). I have been doing software development
+for 20 years. I have been a pre-sales engineer in the APM space for 6 years,
+before I started working as Product Manager with a focus on OpenTelemetry at
+Cisco/AppDynamics. I feel that I have an unusual combination of customer
+background, vendor support, open source passion, development experience,
+sales and ability to execute.
+
+**Why I am running**
+
+OTel’s mission to **enable effective observability by making high-quality**,
+**portable telemetry ubiquitous** is a bold undertaking that changed how users
+get insights into their code. This change is accelerating and there are plenty
+of opportunities and challenges ahead!
+
+I believe that, what we need to seize those opportunities and to tackle
+those challenges, are passionate contributors and enthusiastic end-users:
+contributors make sure that OpenTelemetry flourishes and happy end-users spread
+the word about it.
+
+Being passionate about a happy community, my own mission so far is to improve
+the ease of use of OpenTelemetry via my contributions
+(e.g. by [writing documentation](https://github.com/open-telemetry/opentelemetry.io/issues?q=author%3Asvrnm))
+and to encourage as many people as possible within Cisco to contribute to
+the OpenTelemetry projects: [I support 60 individuals](https://opentelemetry.devstats.cncf.io/d/66/developer-activity-counts-by-companies?orgId=1&var-period_name=Last%20year&var-metric=contributions&var-repogroup_name=All&var-country_name=All&var-companies=Cisco)
+on their journey to from their first issue/PR to being an active member
+of the community.
+
+I would be honored to be elected by you into the Governance Committee and
+to expand my mission to the whole project. 
+
+If elected, ...
+- ... I want to stretch my support to the whole community and encourage new-comers
+  everywhere to become and stay active members of the community.
+- ... I want to continue to improve the ease of use of OpenTelemetry and with that
+  make sure that new end-users have a great first experience with OpenTelemetry.
+- ... I want to work with the members of the GC & TC to foster our community and
+  support you to stay a passionate contributor and a happy end-users for the
+  years to come.
 
 ---
 
