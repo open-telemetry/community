@@ -10,6 +10,7 @@ In alphabetical order:
 - [Ken Finnigan](#ken-finnigan)
 - [Sean Marciniak](#sean-marciniak)
 - [Severin Neumann](#severin-neumann)
+- [Trask Stalnaker](#trask-stalnaker)
 
 <!--
 ### Candidate 1
@@ -154,5 +155,35 @@ If elected, ...
 - ... I want to work with the members of the GC & TC to foster our community and
   support you to stay a passionate contributor and a happy end-users for the
   years to come.
+
+---
+
+### Trask Stalnaker
+
+![Trask Stalnaker](static/trask-stalnaker.png)
+
+- Company: [Microsoft](https://www.microsoft.com/)
+- GitHub: [trask](https://github.com/trask)
+
+Hi! I have been in the observability/monitoring space for a decade+, the past three years as a maintainer of the
+OpenTelemetry Java Instrumentation project, and before that as author and maintainer of an open source Java APM tool
+[Glowroot](https://glowroot.org).
+
+I have helped build the OpenTelemetry Java Instrumentation community into one that "is welcoming, supportive, and
+inclusive, more than any other I've contributed to" ([@lmolkova](https://github.com/lmolkova)). It is also the
+[most active repository](https://opentelemetry.devstats.cncf.io/d/1/activity-repository-groups?orgId=1&var-period=y&var-repogroups=All&from=now-5y&to=now)
+outside of the Collector and Collector Contrib repositories.
+
+As a member of the OpenTelemetry Governance Committee, I would like to shift my focus within the community for the next
+two years to focus on the health across all repositories and their respective contributor communities.
+
+I believe there is a lot we can learn from each other across repositories and I would like to focus on driving these
+discussions to identify best practices and concrete actions we can take to improve experiences for everyone,
+from first-time contributors to long-time maintainers.
+
+And as [one of the most active](https://opentelemetry.devstats.cncf.io/d/9/developer-activity-counts-by-repository-group-table?orgId=1)
+contributors to OpenTelemetry, I believe I have the time, commitment, and support from my employer to take this on.
+
+Thanks :heart:
 
 ---
