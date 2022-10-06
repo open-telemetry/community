@@ -212,3 +212,5 @@ As a member of the OpenTelemetry Governance Committee I plan to prioritize:
 
 - *Strengthening our communities:* we need to ensure we are supporting structures, policy, and practices that help long-time maintainers as well as first-time contributors. [As an active contributor](https://opentelemetry.devstats.cncf.io/d/9/developer-activity-counts-by-repository-group-table?orgId=1) to the project, I know first-hand how frustrating things can be. I also know many groups grown and solved these frustrations across the project. I plan to help facilitate the spread of these good ideas project wide and in doing so build up our communities.
 - *Building user confidence:* OpenTelemetry has accomplish a lot! In the next leg of OTels journey, we need to inspire confidence in our users. I plan to work on formalizing and effectively communicating our project's roadmap to help inspire this confidence.
+
+---
