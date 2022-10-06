@@ -12,6 +12,7 @@ In alphabetical order:
 - [Sean Marciniak](#sean-marciniak)
 - [Severin Neumann](#severin-neumann)
 - [Trask Stalnaker](#trask-stalnaker)
+- [Tyler Yahn](#tyler-yahn)
 
 <!--
 ### Candidate 1
@@ -210,5 +211,31 @@ And as [one of the most active](https://opentelemetry.devstats.cncf.io/d/9/devel
 contributors to OpenTelemetry, I believe I have the time, commitment, and support from my employer to take this on.
 
 Thanks :heart:
+
+---
+
+### Tyler Yahn
+
+![Tyler Yahn](static/tyler-yahn.jpeg)
+
+- Company: [Splunk](https://www.splunk.com/en_us/products/observability.html)
+- GitHub: [MrAlias](https://github.com/MrAlias)
+
+Hi all!
+OpenTelemetry is in the process of transforming our industry.
+It has been an privilege to help progress this work over the past three years of my involvement with the project, and it would be an honor to help further by serving on the OTel Governance Committee.
+
+I have been a contributor and maintainer of the OpenTelemetry Go project for thee years.
+During that time, I have ...
+
+- Run weekly SIG meetings and help promote a welcoming and respectful community
+- Managed and delivered project milestones, including the release of the stable tracing API and SDK
+- Acted as a founding member of the metric specification and helped release it as stable specification
+- Lead the start of the OpenTelemetry Go auto-instrumentation SIG
+
+As a member of the OpenTelemetry Governance Committee I plan to prioritize:
+
+- *Strengthening our communities:* we need to ensure we are supporting structures, policy, and practices that help long-time maintainers as well as first-time contributors. [As an active contributor](https://opentelemetry.devstats.cncf.io/d/9/developer-activity-counts-by-repository-group-table?orgId=1) to the project, I know first-hand how frustrating things can be. I also know many groups grown and solved these frustrations across the project. I plan to help facilitate the spread of these good ideas project wide and in doing so build up our communities.
+- *Building user confidence:* OpenTelemetry has accomplish a lot! In the next leg of OTels journey, we need to inspire confidence in our users. I plan to work on formalizing and effectively communicating our project's roadmap to help inspire this confidence.
 
 ---
