@@ -6,9 +6,10 @@ In alphabetical order:
 
 - [Phillip Carter](#phillip-carter)
 - [Daniel Dyla](#daniel-dyla)
-- [Michael Hausenblas](#michael-hausenblas)
-- [Morgan McLean](#morgan-mclean)
 - [Ken Finnigan](#ken-finnigan)
+- [Michael Hausenblas](#michael-hausenblas)
+- [Reese Lee](#reese-lee)
+- [Morgan McLean](#morgan-mclean)
 - [Sean Marciniak](#sean-marciniak)
 - [Severin Neumann](#severin-neumann)
 - [Trask Stalnaker](#trask-stalnaker)
@@ -70,6 +71,21 @@ and rewarding experience for contributors, maintainers, and users.
 
 ---
 
+### Ken Finnigan
+
+![Ken Finnigan](static/kenfinnigan.png)
+
+- Company: [Workday](https://www.workday.com/)
+- Github: [kenfinnigan](https://github.com/kenfinnigan)
+
+Ken is the co-creator of Quarkus (https://quarkus.io/), a build time optimized framework for Kubernetes. He also helped drive the adoption of OpenTelemetry across Red Hat Middleware to ensure all projects/products can be efficiently observed with existing and new tooling. Achieving this with a clean developer experience by handling integration with frameworks directly.
+
+Ken's role as Observability Architect at Workday is to drive innovation and adoption of technologies within his group with a goal to improve the developer experience of observability tooling. This covers everything from architecture and design of systems for logs, metrics, or traces, in public cloud, to working on improved methods for observing services, such as SLOs. Ken collaborates with teams across Workday to improve the developer experience from Platform engineering.
+
+His nomination will bring a much needed balance to the board by being a voice representing end-users.
+
+---
+
 ### Michael Hausenblas
 
 ![Michael Hausenblas](static/mhausenblas.png)
@@ -84,6 +100,34 @@ since late 2020 in various roles: as a CNCF Ambassador, as a TAG o11y member, wo
 end user domain (hosting end-user meetings and outreach), and through spreading the word about
 OpenTelemetry throughs talks, for example at QCon. Michael is based out of Ireland and is
 focusing on OpenTelemetry adoption, be that via tutorials or best practices.
+
+---
+
+### Reese Lee
+![Reese Lee](static/reese-lee.png)
+
+- Company: [New Relic](https://newrelic.com/)
+- GitHub: [reese-lee](https://github.com/reese-lee)
+
+Hello! My name is Reese Lee, and I am a Developer Relations Engineer on the OpenTelemetry team at New Relic. Initially, I checked out a few different SIGs, but ultimately found that my primary area of interest lay in the End User Working Group – after all, what would this project be without end users? To that end, the majority of my contributions to this project thus far have been centered around end user enablement and engagement:
+
+- Co-organizer for the [OpenTelemetry End User Discussion Group](https://opentelemetry.io/blog/2022/new-end-user-resources/#monthly-discussion-group)
+- One of the primary contacts for the private #otel-endusers CNCF Slack channel (send me a message to be added!)
+- Co-organizer for [OTel Unplugged Day](https://www.eventbrite.com/e/otel-unplugged-kubeconcloudnativecon-detroit-2022-tickets-427595037267), an event for the OpenTelemetry community taking place during KubeCon NA (P.S. Please attend!) 
+- Talks and blog posts on OpenTelemetry enablement:
+  - [Tail-Based Sampling in the OpenTelemetry Collector](https://www.youtube.com/watch?v=l4PeclHKl7I) - KubeCon EU talk
+  - [CNCF Live Webinar: OTel Me All About OpenTelemetry](https://community.cncf.io/events/details/cncf-cncf-online-programs-presents-cncf-live-webinar-otel-me-all-about-opentelemetry/)
+  - [Tail Sampling with OpenTelemetry: Why it's useful, how to do it, and what to consider](https://opentelemetry.io/blog/2022/tail-sampling/) - OpenTelemetry.io blog post
+  - [Where the Heck are my Spans: An OpenTelemetry Mystery](https://vi.to/hubs/o11yfest/videos/5088) - o11yFest talk
+  - [Lightning Talk: OTel Me How to Build a Data Pipeline for Observability](https://sched.co/1Avqa) - Upcoming lightning talk at Open Observability Day, a co-located event for KubeCon NA 2022
+
+If elected, my planned areas of action will pertain to:
+
+- Increasing end user engagement, particularly among those newer to observability and development
+- Improving end user enablement, in part by contributing more talks and blog posts myself as well as engaging others to do so
+- Improving the end user experience as it relates to adoption, usage, and navigating the community and project
+
+…with the end goal of ultimately increasing adoption and usage of OpenTelemetry, and thus improving the project and open source observability as a whole. 
 
 ---
 
@@ -103,21 +147,6 @@ Morgan is one of the co-founders of OpenTelemetry, and currently serves on the g
 Morgan’s work on the governance committee has focused on everything from moderating and participating in technical discussions, to community outreach and organizing the project’s presence at Kubecon, driving the project towards release milestones, and more. If re-elected, he plans to focus on reducing maintainer toil, more formally establishing the project roadmap, and driving the logs implementations to beta and GA.
 
 At Splunk, Morgan is responsible for all platform functionality within Splunk Observability Cloud, which includes OpenTelemetry. He previously worked on high-scale observability systems at Google, where he co-created and grew OpenCensus, OpenTelemetry, and the W3C TraceContext specification, and brought partners like Microsoft and Dynatrace into these projects. Prior to that he developed and operated high-scale e-commerce systems at Microsoft and developed high-performance client code at Microsoft and BioWare.
-
----
-
-### Ken Finnigan
-
-![Ken Finnigan](static/kenfinnigan.png)
-
-- Company: [Workday](https://www.workday.com/)
-- Github: [kenfinnigan](https://github.com/kenfinnigan)
-
-Ken is the co-creator of Quarkus (https://quarkus.io/), a build time optimized framework for Kubernetes. He also helped drive the adoption of OpenTelemetry across Red Hat Middleware to ensure all projects/products can be efficiently observed with existing and new tooling. Achieving this with a clean developer experience by handling integration with frameworks directly.
-
-Ken's role as Observability Architect at Workday is to drive innovation and adoption of technologies within his group with a goal to improve the developer experience of observability tooling. This covers everything from architecture and design of systems for logs, metrics, or traces, in public cloud, to working on improved methods for observing services, such as SLOs. Ken collaborates with teams across Workday to improve the developer experience from Platform engineering.
-
-His nomination will bring a much needed balance to the board by being a voice representing end-users.
 
 ---
 
