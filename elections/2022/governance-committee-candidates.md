@@ -4,6 +4,7 @@
 
 In alphabetical order:
 
+- [Phillip Carter](#phillip-carter)
 - [Daniel Dyla](#daniel-dyla)
 - [Michael Hausenblas](#michael-hausenblas)
 - [Morgan McLean](#morgan-mclean)
@@ -20,6 +21,30 @@ In alphabetical order:
 Description of candidate
 ---
 -->
+
+### Phillip Carter
+
+![Phillip Carter](static/phillip-carter.jpeg)
+
+- Company: [Honeycomb](https://www.honeycomb.io/)
+- GitHub: [cartermp](https://github.com/cartermp)
+- [Homepage](https://phillipcarter.dev/)
+
+Phillip works for Honeycomb on the product team, where he works on improving OpenTelemetry
+and a lot of other stuff. In his non-work time, he also contributes to OpenTelemetry, mainly
+its documentation, and has recently become a maintainer of the Comminications SIG, which
+encompasses the docs, blog, and website for OpenTelemetry.
+
+Phillip is still relatively new to the Observability space, having worked on IDE tooling,
+compilers, and language design at Microsoft for several years prior to joining Honeycomb.
+
+If elected to the GC, Phillip will focus further on improving the overal developer experience
+for all developers who use OpenTelemetry (and typically through its SDKs). This would primarily
+be in the form of advocating for improving APIs to make common operations more convenient,
+helping SIGs develop more opinionated best practices for using their technolog, and continuing
+to help improve documentation for all of OpenTelemetry across the board.
+
+---
 
 ### Daniel Dyla
 
