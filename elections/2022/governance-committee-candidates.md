@@ -4,16 +4,17 @@
 
 In alphabetical order:
 
-- [Phillip Carter](#phillip-carter)
+- [Alolita Sharma](#alolita-sharma)
 - [Daniel Dyla](#daniel-dyla)
 - [Ken Finnigan](#ken-finnigan)
 - [Michael Hausenblas](#michael-hausenblas)
-- [Reese Lee](#reese-lee)
 - [Pavol Loffay](#pavol-loffay)
+- [Phillip Carter](#phillip-carter)
 - [Morgan McLean](#morgan-mclean)
+- [Reese Lee](#reese-lee)
+- [Reiley Yang](#reiley-yang)
 - [Sean Marciniak](#sean-marciniak)
 - [Severin Neumann](#severin-neumann)
-- [Alolita Sharma](#alolita-sharma)
 - [Trask Stalnaker](#trask-stalnaker)
 - [Tyler Yahn](#tyler-yahn)
 
@@ -218,6 +219,58 @@ Morgan is one of the co-founders of OpenTelemetry, and currently serves on the g
 Morgan’s work on the governance committee has focused on everything from moderating and participating in technical discussions, to community outreach and organizing the project’s presence at Kubecon, driving the project towards release milestones, and more. If re-elected, he plans to focus on reducing maintainer toil, more formally establishing the project roadmap, and driving the logs implementations to beta and GA.
 
 At Splunk, Morgan is responsible for all platform functionality within Splunk Observability Cloud, which includes OpenTelemetry. He previously worked on high-scale observability systems at Google, where he co-created and grew OpenCensus, OpenTelemetry, and the W3C TraceContext specification, and brought partners like Microsoft and Dynatrace into these projects. Prior to that he developed and operated high-scale e-commerce systems at Microsoft and developed high-performance client code at Microsoft and BioWare.
+
+---
+
+### Reiley Yang
+
+![Reiley Yang](static/reiley-yang.jpeg)
+
+- Company: [Microsoft](https://www.microsoft.com/)
+- GitHub: [reyang](https://github.com/reyang)
+
+Hi, I am a member of the OpenTelemetry Technical Committee, emeritus maintainer
+of OpenTelemetry C++ and Python, and approver of OpenTelemetry C++,
+OpenTelemetry .NET and OpenTelemetry Demo.
+
+I began to influence the telemetry industry since year 2017, as the maintainer
+of OpenCensus Python and [was
+acknowledged](https://www.w3.org/TR/trace-context/#acknowledgments) for the
+contribution to the W3C TraceContext standard, including the design of the
+widely used [test harness and
+suite](https://github.com/w3c/trace-context/tree/main/test), which has been
+adopted by many OpenTelemetry SIGs and vendors to validate their conformance to
+the TraceContext specification.
+
+Being one of the very initial members of OpenTelemetry, I helped to incubate and
+unblock several projects:
+
+- I was the initial maintainer who helped to kick off the OpenTelemetry Python
+  SIG back in Jun. 2019. After the project started to run smoothly and reached
+  beta, I stepped back as an emeritus maintainer.
+- I started the OpenTelemetry C++ project as an initial maintainer back in Oct.
+  2019, helped to ramp up the SIG, got the initial project set up, and attracted
+  other developers from the community. I guided more than 10 developers and
+  interns to deliver the metrics and logging prototype in 2020. I also sponsored
+  two developers from Microsoft and eventually grew both of them to maintainers.
+- I started to help the OpenTelemetry .NET project, after noticing it was
+  blocked and has not seen breakthrough for almost a year. Starting from
+  mid-2020, the project turned over and quickly reached Release Candidate in
+  late 2020, followed by the 1.0 Stable release in early 2021. I remain active
+  as an approver of the project.
+- I helped to found the OpenTelemetry Demo workstream and turned it into a
+  successful project.
+
+As a Technical Committee member, I also oversee the project from the design,
+specification and process perspective. Including defining the issue triage
+process to unblock the trace and metrics release, facilitating the metrics
+API/SDK specification stabilization, improving the workflow to unblock several
+workstreams, encouraging the collaboration between OpenTelemetry community and
+other open-source communities.
+
+If elected, I would like to spend more energy on attracting talents, improving
+our collaboration efficiency and helping members to grow so we can achieve more
+as a community.
 
 ---
 
