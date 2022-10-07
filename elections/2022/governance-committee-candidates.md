@@ -26,7 +26,7 @@ Description of candidate
 
 ### Alolita Sharma 
 
-![Alolita Sharma](static/candidate-picture.png)
+![Alolita Sharma](static/alolita-sharma-picture.png)
 
 - Company: Apple
 - GitHub: [alolita](https://github.com/alolita)
