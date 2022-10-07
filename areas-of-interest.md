@@ -77,10 +77,10 @@ concerns.
 - OpenTelemetry schemas and versioning
 - Logging API and SDK
 
-### [Yuri Shkuro](https://github.com/yurishkuro), Facebook
+### [Yuri Shkuro](https://github.com/yurishkuro), Meta
 
 - Trace API and SDK
-- Jaeger trace ecosystem
+- Jaeger tracing compatibility
 - OpenTracing compatibility
 - W3C trace context specification
 
