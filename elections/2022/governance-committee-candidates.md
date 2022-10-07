@@ -9,6 +9,7 @@ In alphabetical order:
 - [Ken Finnigan](#ken-finnigan)
 - [Michael Hausenblas](#michael-hausenblas)
 - [Reese Lee](#reese-lee)
+- [Pavol Loffay](#pavol-loffay)
 - [Morgan McLean](#morgan-mclean)
 - [Sean Marciniak](#sean-marciniak)
 - [Severin Neumann](#severin-neumann)
@@ -168,6 +169,35 @@ If elected, my planned areas of action will pertain to:
 - Improving the end user experience as it relates to adoption, usage, and navigating the community and project
 
 …with the end goal of ultimately increasing adoption and usage of OpenTelemetry, and thus improving the project and open source observability as a whole. 
+
+---
+
+### Pavol Loffay
+
+![Pavol Loffay](static/pavolloffay.jpeg)
+
+- Company: [Red Hat](https://www.redhat.com/)
+- Github: [pavolloffay](https://github.com/pavolloffay)
+
+Pavol Loffay is a team lead of distributed tracing team at Red Hat. His team is responsible for OpenTelemetry and distributed tracing experience on OpenShift. The team is part of the larger observability organization that focuses on creating a unified observability experience on OpenShift based on the many CNCF projects - OpenTelemetry, Jaeger, Prometheus, and Thanos.
+
+Pavol has been working in the open-source observability domain since 2015, here are some of his accomplishments:
+* Co-creator and maintainer of [Hawkular APM](https://github.com/hawkular/hawkular-apm)
+* [OpenTracing OTSC member](https://github.com/opentracing/specification/blob/master/project_organization.md#opentracing-specification-council-otsc)
+* Maintainer of [Jaeger ecosystem](https://github.com/jaegertracing/jaeger#maintainers)
+* Maintainer of [OpenTelemetry operator](https://github.com/open-telemetry/opentelemetry-operator#contributing-and-developing) and creator of the auto-instrumentation capabilities in the operator
+* Emeritus approver of [OpenTelemetry Java auto-instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation/pull/2083)
+* Emeritus approver of [OpenTelemetry Java API/SDK](https://github.com/open-telemetry/opentelemetry-java/pull/4089/files#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5L215)
+* Creator of [Hypetrace Javaagent](https://github.com/hypertrace/javaagent) - OpenTelemetry-based auto-instrumentation with extended data capture capabilities used for application security product. The requirements of this project helped to shape OpenTelemtry Java auto-instrumentation SPIs for vendor distributions.
+
+Pavol works for a company that is fully committed to open-source and supporting the OpenTelemetry community.
+
+If elected Pavol will focus on:
+* Enhancing user experience, making OpenTelemetry easy to use
+* Enhancing developer experience, especially for first-time contributors
+* Making OpenTelemetry a successful community with rich data collection capabilities
+
+Thank you for your support. 
 
 ---
 
