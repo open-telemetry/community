@@ -8,9 +8,9 @@ In alphabetical order:
 - [Daniel Dyla](#daniel-dyla)
 - [Ken Finnigan](#ken-finnigan)
 - [Michael Hausenblas](#michael-hausenblas)
+- [Morgan McLean](#morgan-mclean)
 - [Pavol Loffay](#pavol-loffay)
 - [Phillip Carter](#phillip-carter)
-- [Morgan McLean](#morgan-mclean)
 - [Reese Lee](#reese-lee)
 - [Reiley Yang](#reiley-yang)
 - [Sean Marciniak](#sean-marciniak)
@@ -147,7 +147,7 @@ focusing on OpenTelemetry adoption, be that via tutorials or best practices.
 ---
 
 ### Reese Lee
-![Reese Lee](static/reese-lee.png)
+![Reese Lee](https://avatars.githubusercontent.com/u/48657837?s=400&u=0a7eaadab2f565cba144625e7cf4cde030add0b6&v=4)
 
 - Company: [New Relic](https://newrelic.com/)
 - GitHub: [reese-lee](https://github.com/reese-lee)
