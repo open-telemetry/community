@@ -222,21 +222,6 @@ At Splunk, Morgan is responsible for all platform functionality within Splunk Ob
 
 ---
 
-### Ken Finnigan
-
-![Ken Finnigan](static/kenfinnigan.png)
-
-- Company: [Workday](https://www.workday.com/)
-- Github: [kenfinnigan](https://github.com/kenfinnigan)
-
-Ken is the co-creator of Quarkus (https://quarkus.io/), a build time optimized framework for Kubernetes. He also helped drive the adoption of OpenTelemetry across Red Hat Middleware to ensure all projects/products can be efficiently observed with existing and new tooling. Achieving this with a clean developer experience by handling integration with frameworks directly.
-
-Ken's role as Observability Architect at Workday is to drive innovation and adoption of technologies within his group with a goal to improve the developer experience of observability tooling. This covers everything from architecture and design of systems for logs, metrics, or traces, in public cloud, to working on improved methods for observing services, such as SLOs. Ken collaborates with teams across Workday to improve the developer experience from Platform engineering.
-
-His nomination will bring a much needed balance to the board by being a voice representing end-users.
-
----
-
 ### Reiley Yang
 
 ![Reiley Yang](static/reiley-yang.jpeg)
