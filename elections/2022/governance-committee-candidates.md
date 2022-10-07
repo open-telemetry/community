@@ -24,6 +24,46 @@ Description of candidate
 ---
 -->
 
+
+### Alolita Sharma 
+
+![Alolita Sharma](static/alolita-sharma-picture.png)
+
+- Company: Apple
+- GitHub: [alolita](https://github.com/alolita)
+- Twitter: [alolita](https://twitter.com/alolita)
+- Personal Website: [alolitasharma.com](https://alolitasharma.com/my-talks-and-presentations/)
+
+Statement
+
+I believe Open Telemetry (OTel) represents the future of open observability. It embodies standardization, interoperability and growing commitment by all key stakeholders in computing infrastructure and services. 
+
+As a project contributor and member of the OTel governance committee, I will push for native support of OpenTelemetry in Kubernetes for all telemetry signals. I also will contribute to features important for wider adoption of OTel such as instrumentation, smart configuration management, real user monitoring, and profiling.
+
+Some of my key accomplishments on OpenTelemetry over the last four years include: 
+* I’ve helped the Collector project prioritize features for tracing and metrics stability, triaging issues, and maintaining GitHub project boards. 
+* I added over 100 engineers, including women engineers, from multiple teams at AWS to contribute to the Collector and language libraries. 
+* I helped OTel achieve incubation status by leading the graduation review process from sandbox to incubation with the CNCF TOC and the Observability TAG. 
+* I’ve helped ensure maintainer diversity for the Collector, and language libraries including C++, Go, Java, JavaScript, .Net, PHP, and Python.
+* I’ve actively mentored teams from companies like Cisco/AppDynamics, New Relic, and Atlassian to contribute to OTel.  
+* I created the Prometheus-OpenMetrics-OpenTelemetry interoperability workgroup to deliver OTel metrics stability.
+* I collaborated with the Prometheus project to codify the Prometheus remote-write (push) specification and compliance requirements.  
+* I introduced OTel enhancement proposals (OTEPs) for real time monitoring (RUM) and Elastic Common Schema (ECS) logging. 
+* I led the development of GitHub Actions CI/CD and security workflows for OTel’s language libraries. 
+
+While at AWS, for more than three years I led observability strategy and engineering for OpenTelemetry and created “AWS Distro for OpenTelemetry” - an OTel infrastructure and services distribution. 
+
+Today at Apple, I lead observability for Siri and other AI services. I’m a contributor to OTel and a member of the current OTel governance committee. I serve as co-chair of the CNCF Observability Technical Advisory Group (TAG) and also contribute to other open source observability projects including Prometheus, OpenMetrics, Cortex and Grafana. I’m passionate about open source collaboration, have contributed to several open source initiatives and have served on open source organization boards including OSI, SFLC.in and the Unicode Consortium. I’ve presented at international conferences including Kubecon, ApacheCon, Open Source Summit, TED and other venues.
+
+So, now at Apple and running for a second term on the governance committee, I want to continue my contributions to the project and leverage the immense resources and reach of a key stakeholder, adopter and end-user.
+
+I look forward to your vote so that we together can continue to create great progress in OpenTelemetry. 
+
+Thank you for your support. 🙏  
+
+
+---
+
 ### Phillip Carter
 
 ![Phillip Carter](static/phillip-carter.jpeg)
