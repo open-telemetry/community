@@ -14,7 +14,7 @@ in alphabetical order:
 - [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2022
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2022
 - [Ted Young](https://github.com/tedsuo), Lightstep, until October 2023
-- [Yuri Shkuro](https://github.com/yurishkuro), Facebook, until October 2023
+- [Yuri Shkuro](https://github.com/yurishkuro), Meta, until October 2023
 
 ## Technical Committee
 
@@ -30,7 +30,7 @@ in alphabetical order:
 - [Reiley Yang](https://github.com/reyang), Microsoft
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
-- [Yuri Shkuro](https://github.com/yurishkuro), Facebook
+- [Yuri Shkuro](https://github.com/yurishkuro), Meta
 
 ## Community Management
 
