@@ -44,6 +44,12 @@ After this election and until October 2023, the Governance Committee will have n
 
 Anyone can track the 2022 election process via [this GitHub issue](https://github.com/open-telemetry/community/issues/1163). This year's election committee consists of governance committee members Bogdan Drutu and Juraci Paixão Kröhling, with assistance from Ben Sigelman, none of whom are up for reelection this year. We strive for transparency in the election process and hold the community's interests as our priority. In particular, we will ensure that all documents and assets related to the 2022 election process are public, and we will attempt to record and distribute notes for any meetings held as part of this process.
 
+For the 2022 elections, [Helios Voting](https://vote.heliosvoting.org/) was chosen as it's a hosted solution with cryptographic guarantees that no GC members can meddle with the results. 
+
+Helios voting also allows us to add GitHub handles to the list of voters in addition to email addresses. We need this, as we count contributions based on GitHub contributions and do not always have the contributor's actual email address. The disadvantage of Helios is that it does not support ranked voting.
+
+The election committee should evaluate the following alternatives for the 2023 elections: [Condorcet Internet Voting Service](https://civs1.civs.us/) and [Elekto](https://elekto.dev/). We welcome other suggestions as well.
+
 # Nominations
 
 As per [the charter document](https://github.com/open-telemetry/community/blob/main/governance-charter.md#establishment-of-a-governance-committee), anybody is eligible to run for the Governance Committee. During the "call for nomination" period, people can be nominated or nominate themselves by submitting a Pull Request adding said candidate to the [governance-committee-candidates.md](https://github.com/open-telemetry/community/blob/main/elections/2022/governance-committee-candidates.md) file in the OpenTelemetry community repository. The template in that file includes the following columns:
