@@ -13,6 +13,7 @@ In alphabetical order:
 - [Morgan McLean](#morgan-mclean)
 - [Sean Marciniak](#sean-marciniak)
 - [Severin Neumann](#severin-neumann)
+- [Alolita Sharma](#alolita-sharma)
 - [Trask Stalnaker](#trask-stalnaker)
 - [Tyler Yahn](#tyler-yahn)
 
@@ -26,7 +27,7 @@ Description of candidate
 -->
 
 
-### Alolita Sharma 
+### Alolita Sharma
 
 ![Alolita Sharma](static/alolita-sharma-picture.png)
 
