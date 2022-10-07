@@ -147,7 +147,7 @@ focusing on OpenTelemetry adoption, be that via tutorials or best practices.
 ---
 
 ### Reese Lee
-![Reese Lee](https://avatars.githubusercontent.com/u/48657837?s=400&u=0a7eaadab2f565cba144625e7cf4cde030add0b6&v=4)
+![Reese Lee](static/Reese-Lee.jpg)
 
 - Company: [New Relic](https://newrelic.com/)
 - GitHub: [reese-lee](https://github.com/reese-lee)
