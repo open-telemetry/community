@@ -278,7 +278,7 @@ as a community.
 
 ### Sean Marciniak
 
-<img src="static/seanmarciniak.jpeg" alt="Sean Marciniak" height="400" width="400">
+<img src="static/seanmarciniak.jpg" alt="Sean Marciniak" height="400" width="400">
 
 - Company: [Atlassian](https://www.atlassian.com/)
 - Github: [MovieStoreGuy](https://github.com/MovieStoreGuy)
