@@ -195,7 +195,7 @@ to help improve documentation for all of OpenTelemetry across the board.
 
 ### Reese Lee
 
-![Reese Lee](static/reese-lee.png)
+![Reese Lee](static/Reese-Lee.png)
 
 - Company: [New Relic](https://newrelic.com/)
 - GitHub: [reese-lee](https://github.com/reese-lee)
