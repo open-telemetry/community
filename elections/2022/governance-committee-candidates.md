@@ -9,6 +9,7 @@ In alphabetical order:
 - [Michael Hausenblas](#michael-hausenblas)
 - [Morgan McLean](#morgan-mclean)
 - [Ken Finnigan](#ken-finnigan)
+- [Reiley Yang](#reiley-yang)
 - [Sean Marciniak](#sean-marciniak)
 - [Severin Neumann](#severin-neumann)
 - [Trask Stalnaker](#trask-stalnaker)
@@ -158,6 +159,58 @@ Ken is the co-creator of Quarkus (https://quarkus.io/), a build time optimized f
 Ken's role as Observability Architect at Workday is to drive innovation and adoption of technologies within his group with a goal to improve the developer experience of observability tooling. This covers everything from architecture and design of systems for logs, metrics, or traces, in public cloud, to working on improved methods for observing services, such as SLOs. Ken collaborates with teams across Workday to improve the developer experience from Platform engineering.
 
 His nomination will bring a much needed balance to the board by being a voice representing end-users.
+
+---
+
+### Reiley Yang
+
+![Reiley Yang](static/reiley-yang.jpeg)
+
+- Company: [Microsoft](https://www.microsoft.com/)
+- GitHub: [reyang](https://github.com/reyang)
+
+Hi, I am a member of the OpenTelemetry Technical Committee, emeritus maintainer
+of OpenTelemetry C++ and Python, and approver of OpenTelemetry C++,
+OpenTelemetry .NET and OpenTelemetry Demo.
+
+I began to influence the telemetry industry since year 2017, as the maintainer
+of OpenCensus Python and [was
+acknowledged](https://www.w3.org/TR/trace-context/#acknowledgments) for the
+contribution to the W3C TraceContext standard, including the design of the
+widely used [test harness and
+suite](https://github.com/w3c/trace-context/tree/main/test), which has been
+adopted by many OpenTelemetry SIGs and vendors to validate their conformance to
+the TraceContext specification.
+
+Being one of the very initial members of OpenTelemetry, I helped to incubate and
+unblock several projects:
+
+- I was the initial maintainer who helped to kick off the OpenTelemetry Python
+  SIG back in Jun. 2019. After the project started to run smoothly and reached
+  beta, I stepped back as an emeritus maintainer.
+- I started the OpenTelemetry C++ project as an initial maintainer back in Oct.
+  2019, helped to ramp up the SIG, got the initial project set up, and attracted
+  other developers from the community. I guided more than 10 developers and
+  interns to deliver the metrics and logging prototype in 2020. I also sponsored
+  two developers from Microsoft and eventually grew both of them to maintainers.
+- I started to help the OpenTelemetry .NET project, after noticing it was
+  blocked and has not seen breakthrough for almost a year. Starting from
+  mid-2020, the project turned over and quickly reached Release Candidate in
+  late 2020, followed by the 1.0 Stable release in early 2021. I remain active
+  as an approver of the project.
+- I helped to found the OpenTelemetry Demo workstream and turned it into a
+  successful project.
+
+As a Technical Committee member, I also oversee the project from the design,
+specification and process perspective. Including defining the issue triage
+process to unblock the trace and metrics release, facilitating the metrics
+API/SDK specification stabilization, improving the workflow to unblock several
+workstreams, encouraging the collaboration between OpenTelemetry community and
+other open-source communities.
+
+If elected, I would like to spend more energy on attracting talents, improving
+our collaboration efficiency and helping members to grow so we can achieve more
+as a community.
 
 ---
 
