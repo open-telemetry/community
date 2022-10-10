@@ -392,3 +392,19 @@ As a member of the OpenTelemetry Governance Committee I plan to prioritize:
 - *Building user confidence:* OpenTelemetry has accomplish a lot! In the next leg of OTels journey, we need to inspire confidence in our users. I plan to work on formalizing and effectively communicating our project's roadmap to help inspire this confidence.
 
 ---
+
+### Vijay Samuel
+
+![Vijay Samuel](static/vijay-samuel.jpg)
+
+- Company: [eBay](https://www.ebay.com/)
+- GitHub: [vjsamuel](https://github.com/vjsamuel)
+
+Vijay has been a part of eBay's cloud team for the past 10 years (first job out of college) and has mostly worked on its observability platform.
+As the architect of eBay's Observability platform, Vijay is helping drive adoption of Open Telemetry at eBay (which he will be speaking about at the [CNCF Observability Day 2022](https://sched.co/1Avqd) ).
+He has made great strides in moving eBay towards cloud native observability and drove adoption of Elastic Beats at eBay while being the highest contributor to the project outside of Elastic.
+Vijay implemented key features that are the backbone of Beats' Kubernetes observability. He is currently spearheading the migration of Observability agents to Open Telemetry Collector and his team actively
+contributes to bridging gaps that were seen during the migration while contributing new features like Exemplar support to the collector. Vijay and his team are working hard to add value to the Open Telemetry Collector project.
+
+Vijay has vast experience running a very highly scalable Observability platform built on top of Open Source projects. He is deeply passionate and truly believes in the spirit of Open Source. His nomination will bring a strong end user perspective
+to the board and will better represent end users and the various pain points that they face.  
