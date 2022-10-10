@@ -17,6 +17,7 @@ In alphabetical order:
 - [Severin Neumann](#severin-neumann)
 - [Trask Stalnaker](#trask-stalnaker)
 - [Tyler Yahn](#tyler-yahn)
+- [Vijay Samuel](#vijay-samuel)
 
 <!--
 ### Candidate 1
