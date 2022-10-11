@@ -8,15 +8,16 @@ In alphabetical order:
 - [Daniel Dyla](#daniel-dyla)
 - [Ken Finnigan](#ken-finnigan)
 - [Michael Hausenblas](#michael-hausenblas)
+- [Morgan McLean](#morgan-mclean)
 - [Pavol Loffay](#pavol-loffay)
 - [Phillip Carter](#phillip-carter)
-- [Morgan McLean](#morgan-mclean)
 - [Reese Lee](#reese-lee)
 - [Reiley Yang](#reiley-yang)
 - [Sean Marciniak](#sean-marciniak)
 - [Severin Neumann](#severin-neumann)
 - [Trask Stalnaker](#trask-stalnaker)
 - [Tyler Yahn](#tyler-yahn)
+- [Vijay Samuel](#vijay-samuel)
 
 <!--
 ### Candidate 1
@@ -26,7 +27,6 @@ In alphabetical order:
 Description of candidate
 ---
 -->
-
 
 ### Alolita Sharma
 
@@ -63,31 +63,6 @@ So, now at Apple and running for a second term on the governance committee, I wa
 I look forward to your vote so that we together can continue to create great progress in OpenTelemetry. 
 
 Thank you for your support. 🙏  
-
-
----
-
-### Phillip Carter
-
-<img src="static/phillip-carter.jpeg" alt="Phillip Carter" height="400" width="400">
-
-- Company: [Honeycomb](https://www.honeycomb.io/)
-- GitHub: [cartermp](https://github.com/cartermp)
-- [Homepage](https://phillipcarter.dev/)
-
-Phillip works for Honeycomb on the product team, where he works on improving OpenTelemetry
-and a lot of other stuff. In his non-work time, he also contributes to OpenTelemetry, mainly
-its documentation, and has recently become a maintainer of the Comminications SIG, which
-encompasses the docs, blog, and website for OpenTelemetry.
-
-Phillip is still relatively new to the Observability space, having worked on IDE tooling,
-compilers, and language design at Microsoft for several years prior to joining Honeycomb.
-
-If elected to the GC, Phillip will focus further on improving the overal developer experience
-for all developers who use OpenTelemetry (and typically through its SDKs). This would primarily
-be in the form of advocating for improving APIs to make common operations more convenient,
-helping SIGs develop more opinionated best practices for using their technolog, and continuing
-to help improve documentation for all of OpenTelemetry across the board.
 
 ---
 
@@ -146,32 +121,23 @@ focusing on OpenTelemetry adoption, be that via tutorials or best practices.
 
 ---
 
-### Reese Lee
+### Morgan McLean
 
-<img src="static/reese-lee.png" alt="Reese Lee" height="400" width="400">
+<img src="static/morgan-mclean.png" alt="Morgan McLean" height="400" width="400">
 
-- Company: [New Relic](https://newrelic.com/)
-- GitHub: [reese-lee](https://github.com/reese-lee)
+- Company: [Splunk](https://www.splunk.com/en_us/products/observability.html)
+- GitHub: [mtwo](https://github.com/mtwo)
 
-Hello! My name is Reese Lee, and I am a Developer Relations Engineer on the OpenTelemetry team at New Relic. Initially, I checked out a few different SIGs, but ultimately found that my primary area of interest lay in the End User Working Group – after all, what would this project be without end users? To that end, the majority of my contributions to this project thus far have been centered around end user enablement and engagement:
+Morgan is one of the co-founders of OpenTelemetry, and currently serves on the governance committee. Morgan makes significant contributions directly OpenTelemetry:
 
-- Co-organizer for the [OpenTelemetry End User Discussion Group](https://opentelemetry.io/blog/2022/new-end-user-resources/#monthly-discussion-group)
-- One of the primary contacts for the private #otel-endusers CNCF Slack channel (send me a message to be added!)
-- Co-organizer for [OTel Unplugged Day](https://www.eventbrite.com/e/otel-unplugged-kubeconcloudnativecon-detroit-2022-tickets-427595037267), an event for the OpenTelemetry community taking place during KubeCon NA (P.S. Please attend!) 
-- Talks and blog posts on OpenTelemetry enablement:
-  - [Tail-Based Sampling in the OpenTelemetry Collector](https://www.youtube.com/watch?v=l4PeclHKl7I) - KubeCon EU talk
-  - [CNCF Live Webinar: OTel Me All About OpenTelemetry](https://community.cncf.io/events/details/cncf-cncf-online-programs-presents-cncf-live-webinar-otel-me-all-about-opentelemetry/)
-  - [Tail Sampling with OpenTelemetry: Why it's useful, how to do it, and what to consider](https://opentelemetry.io/blog/2022/tail-sampling/) - OpenTelemetry.io blog post
-  - [Where the Heck are my Spans: An OpenTelemetry Mystery](https://vi.to/hubs/o11yfest/videos/5088) - o11yFest talk
-  - [Lightning Talk: OTel Me How to Build a Data Pipeline for Observability](https://sched.co/1Avqa) - Upcoming lightning talk at Open Observability Day, a co-located event for KubeCon NA 2022
+- He runs the weekly maintainers check-in and participates in various SIGs, including client instrumentation, profiles, agent management, user feedback, etc.
+- He organized and tracked the final drives towards the beta and GA releases of both traces and metrics
+- He was instrumental in the creation of new signal types, specifically logs and profiles, and introduced new voices into the community to support these
+- As part of the end-user working group, he solicits feedback from people who use OpenTelemetry and uses this to improve the project
 
-If elected, my planned areas of action will pertain to:
+Morgan’s work on the governance committee has focused on everything from moderating and participating in technical discussions, to community outreach and organizing the project’s presence at Kubecon, driving the project towards release milestones, and more. If re-elected, he plans to focus on reducing maintainer toil, more formally establishing the project roadmap, and driving the logs implementations to beta and GA.
 
-- Increasing end user engagement, particularly among those newer to observability and development
-- Improving end user enablement, in part by contributing more talks and blog posts myself as well as engaging others to do so
-- Improving the end user experience as it relates to adoption, usage, and navigating the community and project
-
-…with the end goal of ultimately increasing adoption and usage of OpenTelemetry, and thus improving the project and open source observability as a whole. 
+At Splunk, Morgan is responsible for all platform functionality within Splunk Observability Cloud, which includes OpenTelemetry. He previously worked on high-scale observability systems at Google, where he co-created and grew OpenCensus, OpenTelemetry, and the W3C TraceContext specification, and brought partners like Microsoft and Dynatrace into these projects. Prior to that he developed and operated high-scale e-commerce systems at Microsoft and developed high-performance client code at Microsoft and BioWare.
 
 ---
 
@@ -200,27 +166,60 @@ If elected Pavol will focus on:
 * Enhancing developer experience, especially for first-time contributors
 * Making OpenTelemetry a successful community with rich data collection capabilities
 
-Thank you for your support. 
+Thank you for your support.
 
 ---
 
-### Morgan McLean
+### Phillip Carter
 
-<img src="static/morgan-mclean.png" alt="Morgan McLean" height="400" width="400">
+<img src="static/phillip-carter.jpeg" alt="Phillip Carter" height="400" width="400">
 
-- Company: [Splunk](https://www.splunk.com/en_us/products/observability.html)
-- GitHub: [mtwo](https://github.com/mtwo)
+- Company: [Honeycomb](https://www.honeycomb.io/)
+- GitHub: [cartermp](https://github.com/cartermp)
+- [Homepage](https://phillipcarter.dev/)
 
-Morgan is one of the co-founders of OpenTelemetry, and currently serves on the governance committee. Morgan makes significant contributions directly OpenTelemetry:
+Phillip works for Honeycomb on the product team, where he works on improving OpenTelemetry
+and a lot of other stuff. In his non-work time, he also contributes to OpenTelemetry, mainly
+its documentation, and has recently become a maintainer of the Comminications SIG, which
+encompasses the docs, blog, and website for OpenTelemetry.
 
-- He runs the weekly maintainers check-in and participates in various SIGs, including client instrumentation, profiles, agent management, user feedback, etc.
-- He organized and tracked the final drives towards the beta and GA releases of both traces and metrics
-- He was instrumental in the creation of new signal types, specifically logs and profiles, and introduced new voices into the community to support these
-- As part of the end-user working group, he solicits feedback from people who use OpenTelemetry and uses this to improve the project
+Phillip is still relatively new to the Observability space, having worked on IDE tooling,
+compilers, and language design at Microsoft for several years prior to joining Honeycomb.
 
-Morgan’s work on the governance committee has focused on everything from moderating and participating in technical discussions, to community outreach and organizing the project’s presence at Kubecon, driving the project towards release milestones, and more. If re-elected, he plans to focus on reducing maintainer toil, more formally establishing the project roadmap, and driving the logs implementations to beta and GA.
+If elected to the GC, Phillip will focus further on improving the overal developer experience
+for all developers who use OpenTelemetry (and typically through its SDKs). This would primarily
+be in the form of advocating for improving APIs to make common operations more convenient,
+helping SIGs develop more opinionated best practices for using their technolog, and continuing
+to help improve documentation for all of OpenTelemetry across the board.
 
-At Splunk, Morgan is responsible for all platform functionality within Splunk Observability Cloud, which includes OpenTelemetry. He previously worked on high-scale observability systems at Google, where he co-created and grew OpenCensus, OpenTelemetry, and the W3C TraceContext specification, and brought partners like Microsoft and Dynatrace into these projects. Prior to that he developed and operated high-scale e-commerce systems at Microsoft and developed high-performance client code at Microsoft and BioWare.
+---
+
+### Reese Lee
+
+<img src="static/reese-lee.png" alt="Reese Lee" height="400" width="400">
+
+- Company: [New Relic](https://newrelic.com/)
+- GitHub: [reese-lee](https://github.com/reese-lee)
+
+Hello! My name is Reese Lee, and I am a Developer Relations Engineer on the OpenTelemetry team at New Relic. Initially, I checked out a few different SIGs, but ultimately found that my primary area of interest lay in the End User Working Group – after all, what would this project be without end users? To that end, the majority of my contributions to this project thus far have been centered around end user enablement and engagement:
+
+- Co-organizer for the [OpenTelemetry End User Discussion Group](https://opentelemetry.io/blog/2022/new-end-user-resources/#monthly-discussion-group)
+- One of the primary contacts for the private #otel-endusers CNCF Slack channel (send me a message to be added!)
+- Co-organizer for [OTel Unplugged Day](https://www.eventbrite.com/e/otel-unplugged-kubeconcloudnativecon-detroit-2022-tickets-427595037267), an event for the OpenTelemetry community taking place during KubeCon NA (P.S. Please attend!)
+- Talks and blog posts on OpenTelemetry enablement:
+  - [Tail-Based Sampling in the OpenTelemetry Collector](https://www.youtube.com/watch?v=l4PeclHKl7I) - KubeCon EU talk
+  - [CNCF Live Webinar: OTel Me All About OpenTelemetry](https://community.cncf.io/events/details/cncf-cncf-online-programs-presents-cncf-live-webinar-otel-me-all-about-opentelemetry/)
+  - [Tail Sampling with OpenTelemetry: Why it's useful, how to do it, and what to consider](https://opentelemetry.io/blog/2022/tail-sampling/) - OpenTelemetry.io blog post
+  - [Where the Heck are my Spans: An OpenTelemetry Mystery](https://vi.to/hubs/o11yfest/videos/5088) - o11yFest talk
+  - [Lightning Talk: OTel Me How to Build a Data Pipeline for Observability](https://sched.co/1Avqa) - Upcoming lightning talk at Open Observability Day, a co-located event for KubeCon NA 2022
+
+If elected, my planned areas of action will pertain to:
+
+- Increasing end user engagement, particularly among those newer to observability and development
+- Improving end user enablement, in part by contributing more talks and blog posts myself as well as engaging others to do so
+- Improving the end user experience as it relates to adoption, usage, and navigating the community and project
+
+…with the end goal of ultimately increasing adoption and usage of OpenTelemetry, and thus improving the project and open source observability as a whole. 
 
 ---
 
@@ -278,7 +277,7 @@ as a community.
 
 ### Sean Marciniak
 
-<img src="static/seanmarciniak.jpg" alt="Sean Marciniak" height="400" width="400">
+<img src="static/seanmarciniak.jpeg" alt="Sean Marciniak" height="400" width="400">
 
 - Company: [Atlassian](https://www.atlassian.com/)
 - Github: [MovieStoreGuy](https://github.com/MovieStoreGuy)
@@ -394,3 +393,19 @@ As a member of the OpenTelemetry Governance Committee I plan to prioritize:
 - *Building user confidence:* OpenTelemetry has accomplish a lot! In the next leg of OTels journey, we need to inspire confidence in our users. I plan to work on formalizing and effectively communicating our project's roadmap to help inspire this confidence.
 
 ---
+
+### Vijay Samuel
+
+<img src="static/vijay-samuel.jpg" alt="Vijay Samuel" height="400" width="400">
+
+- Company: [eBay](https://www.ebay.com/)
+- GitHub: [vjsamuel](https://github.com/vjsamuel)
+
+Vijay has been a part of eBay's cloud team for the past 10 years (first job out of college) and has mostly worked on its observability platform.
+As the architect of eBay's Observability platform, Vijay is helping drive adoption of Open Telemetry at eBay (which he will be speaking about at the [CNCF Observability Day 2022](https://sched.co/1Avqd) ).
+He has made great strides in moving eBay towards cloud native observability and drove adoption of Elastic Beats at eBay while being the highest contributor to the project outside of Elastic.
+Vijay implemented key features that are the backbone of Beats' Kubernetes observability. He is currently spearheading the migration of Observability agents to Open Telemetry Collector and his team actively
+contributes to bridging gaps that were seen during the migration while contributing new features like Exemplar support to the collector. Vijay and his team are working hard to add value to the Open Telemetry Collector project.
+
+Vijay has vast experience running a very highly scalable Observability platform built on top of Open Source projects. He is deeply passionate and truly believes in the spirit of Open Source. His nomination will bring a strong end user perspective
+to the board and will better represent end users and the various pain points that they face.
