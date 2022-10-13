@@ -196,7 +196,7 @@ to help improve documentation for all of OpenTelemetry across the board.
 
 ### Reese Lee
 
-<img src="static/Reese-Lee.png" alt="Reese Lee" height="400" width="400">
+<img src="static/Reese-Lee.jpg" alt="Reese Lee" height="400" width="400">
 
 - Company: [New Relic](https://newrelic.com/)
 - GitHub: [reese-lee](https://github.com/reese-lee)
@@ -277,7 +277,7 @@ as a community.
 
 ### Sean Marciniak
 
-<img src="static/seanmarciniak.jpeg" alt="Sean Marciniak" height="400" width="400">
+<img src="static/seanmarciniak.jpg" alt="Sean Marciniak" height="400" width="400">
 
 - Company: [Atlassian](https://www.atlassian.com/)
 - Github: [MovieStoreGuy](https://github.com/MovieStoreGuy)
