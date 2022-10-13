@@ -30,7 +30,7 @@ Description of candidate
 
 ### Alolita Sharma
 
-![Alolita Sharma](static/alolita-sharma-picture.png)
+<img src="static/alolita-sharma-picture.png" alt="Alolita Sharma" height="400" width="400">
 
 - Company: Apple
 - GitHub: [alolita](https://github.com/alolita)
@@ -68,7 +68,7 @@ Thank you for your support. 🙏
 
 ### Daniel Dyla
 
-![Daniel Dyla](static/daniel-dyla.jpg)
+<img src="static/daniel-dyla.jpg" alt="Daniel Dyla" height="400" width="400">
 
 - Company: Dynatrace
 - GitHub: [dyladan](https://github.com/dyladan)
@@ -91,7 +91,7 @@ and rewarding experience for contributors, maintainers, and users.
 
 ### Ken Finnigan
 
-![Ken Finnigan](static/kenfinnigan.png)
+<img src="static/kenfinnigan.png" alt="Ken Finnigan" height="400" width="400">
 
 - Company: [Workday](https://www.workday.com/)
 - Github: [kenfinnigan](https://github.com/kenfinnigan)
@@ -106,7 +106,7 @@ His nomination will bring a much needed balance to the board by being a voice re
 
 ### Michael Hausenblas
 
-![Michael Hausenblas](static/mhausenblas.png)
+<img src="static/mhausenblas.png" alt="Michael Hausenblas" height="400" width="400">
 
 - Company: [AWS](https://aws.amazon.com/)
 - GitHub: [mhausenblas](https://github.com/mhausenblas)
@@ -123,7 +123,7 @@ focusing on OpenTelemetry adoption, be that via tutorials or best practices.
 
 ### Morgan McLean
 
-![Morgan McLean](static/morgan-mclean.png)
+<img src="static/morgan-mclean.png" alt="Morgan McLean" height="400" width="400">
 
 - Company: [Splunk](https://www.splunk.com/en_us/products/observability.html)
 - GitHub: [mtwo](https://github.com/mtwo)
@@ -143,7 +143,7 @@ At Splunk, Morgan is responsible for all platform functionality within Splunk Ob
 
 ### Pavol Loffay
 
-![Pavol Loffay](static/pavolloffay.jpeg)
+<img src="static/pavolloffay.jpeg" alt="Pavol Loffay" height="400" width="400">
 
 - Company: [Red Hat](https://www.redhat.com/)
 - Github: [pavolloffay](https://github.com/pavolloffay)
@@ -172,7 +172,7 @@ Thank you for your support.
 
 ### Phillip Carter
 
-![Phillip Carter](static/phillip-carter.jpeg)
+<img src="static/phillip-carter.jpeg" alt="Phillip Carter" height="400" width="400">
 
 - Company: [Honeycomb](https://www.honeycomb.io/)
 - GitHub: [cartermp](https://github.com/cartermp)
@@ -196,7 +196,7 @@ to help improve documentation for all of OpenTelemetry across the board.
 
 ### Reese Lee
 
-![Reese Lee](static/Reese-Lee.jpg)
+<img src="static/Reese-Lee.jpg" alt="Reese Lee" height="400" width="400">
 
 - Company: [New Relic](https://newrelic.com/)
 - GitHub: [reese-lee](https://github.com/reese-lee)
@@ -225,7 +225,7 @@ If elected, my planned areas of action will pertain to:
 
 ### Reiley Yang
 
-![Reiley Yang](static/reiley-yang.jpeg)
+<img src="static/reiley-yang.jpeg" alt="Reiley Yang" height="400" width="400">
 
 - Company: [Microsoft](https://www.microsoft.com/)
 - GitHub: [reyang](https://github.com/reyang)
@@ -277,7 +277,7 @@ as a community.
 
 ### Sean Marciniak
 
-![Sean Marciniak](static/seanmarciniak.jpg)
+<img src="static/seanmarciniak.jpg" alt="Sean Marciniak" height="400" width="400">
 
 - Company: [Atlassian](https://www.atlassian.com/)
 - Github: [MovieStoreGuy](https://github.com/MovieStoreGuy)
@@ -291,7 +291,7 @@ I keen to be the voice in APAC and helping companies improve Open Telemetry and 
 
 ### Severin Neumann
 
-![Severin Neumann](static/severin-neumann.jpg)
+<img src="static/severin-neumann.jpg" alt="Severin Neumann" height="400" width="400">
 
 - Company: [Cisco AppDynamics](https://www.appdynamics.com)
 - Github: [svrnm](https://github.com/svrnm)
@@ -340,7 +340,7 @@ If elected, ...
 
 ### Trask Stalnaker
 
-![Trask Stalnaker](static/trask-stalnaker.png)
+<img src="static/trask-stalnaker.png" alt="Trask Stalnaker" height="400" width="400">
 
 - Company: [Microsoft](https://www.microsoft.com/)
 - GitHub: [trask](https://github.com/trask)
@@ -370,7 +370,7 @@ Thanks :heart:
 
 ### Tyler Yahn
 
-![Tyler Yahn](static/tyler-yahn.jpeg)
+<img src="static/tyler-yahn.jpeg" alt="Tyler Yahn" height="400" width="400">
 
 - Company: [Splunk](https://www.splunk.com/en_us/products/observability.html)
 - GitHub: [MrAlias](https://github.com/MrAlias)
@@ -396,7 +396,7 @@ As a member of the OpenTelemetry Governance Committee I plan to prioritize:
 
 ### Vijay Samuel
 
-![Vijay Samuel](static/vijay-samuel.jpg)
+<img src="static/vijay-samuel.jpg" alt="Vijay Samuel" height="400" width="400">
 
 - Company: [eBay](https://www.ebay.com/)
 - GitHub: [vjsamuel](https://github.com/vjsamuel)
@@ -408,4 +408,4 @@ Vijay implemented key features that are the backbone of Beats' Kubernetes observ
 contributes to bridging gaps that were seen during the migration while contributing new features like Exemplar support to the collector. Vijay and his team are working hard to add value to the Open Telemetry Collector project.
 
 Vijay has vast experience running a very highly scalable Observability platform built on top of Open Source projects. He is deeply passionate and truly believes in the spirit of Open Source. His nomination will bring a strong end user perspective
-to the board and will better represent end users and the various pain points that they face.  
+to the board and will better represent end users and the various pain points that they face.
