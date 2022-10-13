@@ -41,19 +41,24 @@ for the repository.
 
 ## Policies
 
-Typically `main` branch is set as default. And protected with the following
-policies:
+Typically `main` branch is set as default.
+
+The default branch MUST be protected with the following policies:
 
 1. Enable `Require pull request reviews before merging` setting. Make sure
    `Require review from Code Owners` is checked.
 2. The default setting for `Required approving reviews` is `1` approval. Individual 
-   repositores may opt-in for bigger number of required reviews.
+   repositories may opt-in for bigger number of required reviews.
 3. Every repo MUST enforce the CNCF `EasyCLA` check under the
    `Require status checks to pass before merging` section. (if the check isn't
    showing, have a CLA manager [enable the check for the
    repo](https://project.lfcla.com/#/project/a0941000002wBz4AAE/cla)). Check
    with the OpenTelemetry's [EasyCLA admins](../assets.md#user-content-opentelemetry-managed-assets:~:text=Easy%20CLA) 
-4. It is a good practice to check the `Include administrators` setting.
+4. Enable "Do not allow bypassing the above settings" so that administrators are subject
+   to the same checks. In case of emergency and if they are unable to obtain the required
+   approvals from other approvers the administrators may **temporarily** bypass this
+   check and immediately revert it back as soon as the emergency change is done.
+   The fact of bypassing MUST be actively communicated. 
 5. Repository MUST enforce `Restrict who can push to matching branches` setting
    to only allow the members of `foo-maintainers` to push to the `main`
    branch.
