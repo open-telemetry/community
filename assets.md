@@ -118,3 +118,11 @@ Link: https://project.lfcla.com/#/project/a0941000002wBz4AAE/cla
 ### Docker Hub
 
 - We publish images from CI to Docker hub using https://hub.docker.com/u/otelbot account. The bot is registered using cncf-opentelemetry-tc@lists.cncf.io email address and Technical Committee members are owners of this account. The Admin for bot security credentials for CI is @tigrannajaryan
+
+### OpenTelemetry Bot
+
+This is a bot that has signed the CNCF CLA and can be used as the author of automated PRs.
+
+Link: [@opentelemetrybot](https://github.com/opentelemetrybot)
+
+- Admins: @trask
