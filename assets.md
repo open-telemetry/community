@@ -124,6 +124,8 @@ Link: https://project.lfcla.com/#/project/a0941000002wBz4AAE/cla
 This is a community-owned bot account that you can use when automating common GitHub tasks
 (e.g. release automation tasks).
 
+Important: You do not need to (and should not) give this account any permissions to any OpenTelemetry repository.
+
 Link: [@opentelemetrybot](https://github.com/opentelemetrybot)
 
 - Admins: @trask
@@ -150,7 +152,7 @@ The OpenTelemetry Bot addresses two common issues:
     ```
     env:
       # not using secrets.GITHUB_TOKEN since pull requests from that token do not run workflows
-      GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
+      GH_TOKEN: ${{ secrets.BOT_TOKEN }}
     ```
 
     [Personal Access Token]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
