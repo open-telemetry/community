@@ -163,5 +163,6 @@ Rust, Swift
 ## Governance Committee Emeritus
 
 - [Constance Caramanolis](https://github.com/ccaraman), Splunk, until October 2021
+- [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2022
 - [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google, until October 2021
