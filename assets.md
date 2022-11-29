@@ -145,9 +145,9 @@ The OpenTelemetry Bot addresses two common issues:
    git config user.email 107717825+opentelemetrybot@users.noreply.github.com
    ```
 
-2. When you use the built-in `secrets.GITHUB_TOKEN` to perform a tasks, events triggered by that task will not create
-   a new workflow run. This prevents you from accidentally creating recursive workflow runs, but is also not very
-   convenient because you have to manually trigger workflow runs on all automatically generated pull requests.
+2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside of a GitHub Action, workflows
+   will not run on that new pull request without closing and re-opening it manually (this limitation is in place to
+   prevent accidental recursive workflow runs).
 
    The OpenTelemetry GitHub organization has a GitHub Action Secret named `OPENTELEMETRYBOT_TOKEN`, which is a
    [Personal Access Token][] for with `public_repo` scope for the OpenTelemetry Bot that you can use to bypass this
