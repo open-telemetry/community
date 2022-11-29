@@ -149,7 +149,7 @@ The OpenTelemetry Bot addresses two common issues:
    will not run on that new pull request without closing and re-opening it manually (this limitation is in place to
    prevent accidental recursive workflow runs).
 
-   The OpenTelemetry GitHub organization has a GitHub Action Secret named `OPENTELEMETRYBOT_TOKEN`, which is a
+   The OpenTelemetry GitHub organization has a GitHub Action secret named `OPENTELEMETRYBOT_TOKEN`, which is a
    [Personal Access Token][] for with `public_repo` scope for the OpenTelemetry Bot that you can use to bypass this
    limitation.
 
