@@ -123,6 +123,7 @@ Specification: Sampling|Every Thursday at 08:00 PT|[Google Doc](https://docs.goo
 Specification: Configuration|Every other Friday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1uNgWQLQZcSVfBLRXfW9XCVJmKa5NH9R15fSOXhmpGWw/edit)|[Slack](https://cloud-native.slack.com/archives/C0476L7UJT1)|[Carlos Alberto](https://github.com/carlosalberto)
 Instrumentation: General|Every Tuesday at 16:00 PT|[Google Doc](https://docs.google.com/document/d/1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE/)|[Slack](https://cloud-native.slack.com/archives/C01QZFGMLQ7)
 Instrumentation: Messaging|Every Thursday at 8:00 PT|[Google Doc](https://docs.google.com/document/d/1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE/)|[Slack](https://cloud-native.slack.com/archives/C01QZFGMLQ7)
+Semantic Conventions Working Group|Every other Monday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8)|[Slack](https://cloud-native.slack.com/archives/C041APFBYQP)
 
 ### Implementation SIGs
 
@@ -147,7 +148,7 @@ End-User WG|Every other week on Thursday at 10:30 PT|[Google Doc](https://docs.g
 eBPF|Every week on Thursday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1pAxBekk6BadHpK717TbhYtBMOlyrgWSvp3QeYDPwwvk/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C02AB15583A)|
 Agent Management WG|Every other week on Tuesday at 11:00 PT|[Google Doc](https://docs.google.com/document/d/1mHNnlCmO0XKUu0xPnKko3GOh0mxVoxjRiN8xmHRImew/edit#)|[Slack](https://cloud-native.slack.com/archives/C02J58HR58R)|
 Client Instrumentation|Every Wednesday at 8:00 AM PT|[Google Doc](https://docs.google.com/document/d/16Vsdh-DM72AfMg_FIt9yT9ExEWF4A_vRbQ3jRNBe09w/edit)|[Slack](https://cloud-native.slack.com/archives/C0239SYARD2)|
-Kubernetes Operator|N/A|[Google Doc](https://docs.google.com/document/d/1zBNzh1dw9HpXUexTaURRS7n_NQSzqNJSuqNVw9GhIe4/edit#)|[Slack](https://cloud-native.slack.com/archives/C033BJ8BASU)|
+Kubernetes Operator|Every other week on Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1Unbs2qp_j5kp8FfL_lRH-ld7i5EOQpsq0I4djkOOSL4)|[Slack](https://cloud-native.slack.com/archives/C033BJ8BASU)|
 Community Demo Application|Every Monday at 8:15 PT|[Google Doc](https://docs.google.com/document/d/16f-JOjKzLgWxULRxY8TmpM_FjlI1sthvKurnqFz9x98/edit)|[Slack](https://cloud-native.slack.com/archives/C03B4CWV4DA)|
 
 ## Related groups
