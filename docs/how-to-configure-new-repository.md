@@ -32,8 +32,10 @@ for the repository.
 4. The team `foo-approvers` has `Write` permissions for the repository.
 5. The team `foo-maintainers` has `Maintain` permissions for the
    repository.
-   In individual cases, for example, if this is required to allow maintainers to publish releases independently,
-   the team `foo-maintainers` can be granted `Admin` permissions instead.
+   If requested, `foo-maintainers` will be granted `Admin` permissions, but in return
+   they must document all changes that are made to the repository settings in a file
+   named `.github/repository-settings.md` (see an
+   [example here](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/.github/repository-settings.md)).
 6. Root-level `CODEOWNERS` file on the repository should include superset of
    people from both `foo-approvers` and `foo-maintainers`.
 
