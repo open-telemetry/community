@@ -54,7 +54,7 @@ Used to provide write access to public OpenTelemertry calendar. See [docs/how-to
 
 Link: https://groups.google.com/g/opentelemetry-calendar-contributors
 
-- Owners: Sergey Kanzhelev, Alolita Sharma, Ben Sigelman, Bogdan Drutu, Constance Caramanolis, Daniel Dyla
+- Owners: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 - Members: SIG maintainers and individuals appointed by maintainers
 
 ### OpenTelemetry Calendar Invites Google Group](https://groups.google.com/g/opentelemetry-calendar)
