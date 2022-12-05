@@ -14,16 +14,21 @@ Documents [Community Membership](../community-membership.md) and
 [CONTRIBUTING](../CONTRIBUTING.md) define how permissions are typically set up
 for the repository.
 
-Every repository has three teams associated with it. Typically for the
-repository `opentelemetry-foo` they will be named `foo-triagers`, `foo-approvers`,
-and `foo-maintainers`. `foo-maintainers` is a child of `foo-approvers`, and
-`foo-approvers` is a child of `foo-triagers`, as each child team always contains
-a subset of people and defines a larger scope of privileges.
-
-Every member of `foo-maintainers` should be included in
-`foo-approvers` and `foo-triagers` explicitly, with the "Maintainer" GitHub
-privileges. This allows repository maintainers to invite new approvers and
-triagers to the team.
+1. Every repository has three teams associated with it. Typically for the
+   repository `opentelemetry-foo` they will be named `foo-triagers`, `foo-approvers`,
+   and `foo-maintainers`. `foo-maintainers` is a child of `foo-approvers`, and
+   `foo-approvers` is a child of `foo-triagers`, as it each group always contains
+   a subset of people and defines a larger scope of privileges.
+2. Every member of `foo-maintainers` should be included in
+   `foo-approvers` and `foo-triagers` explicitly, with the "Maintainer" GitHub
+   privileges. This allows repository maintainers to invite new approvers and
+   triagers to the team.
+3. The team `foo-triagers` has `Triage` permissions for the repository. If repository
+   is using the Project Boards, `foo-triagers` should have `Write` permissions to
+   have access to the Project Boards. Note, by not adding members of `foo-triagers` to
+   CODEOWNERS file, repository restricts triagers from counting a triagers approvals for
+   PRs. See the [Policies](#policies) section that suggest to ensure that `Require
+   review from Code Owners` is checked.
 
 ## Repository settings
 
