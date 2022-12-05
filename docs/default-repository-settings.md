@@ -56,6 +56,7 @@ Everything not mentioned is unchecked.
     * Required number of approvals before merging: `1`
   * Require review from Code Owners: :heavy_check_mark:
 * Require status checks to pass before merging: :heavy_check_mark:
+  * Require branches to be up to date before merging: :heavy_check_mark:
   * Status checks that are required:
     * `EasyCLA`
 * Do not allow bypassing the above settings: :heavy_check_mark:
@@ -64,7 +65,9 @@ Everything not mentioned is unchecked.
 
 **Important:** the only ones of these rules which may be changed are
 * Required number of approvals before merging
-  * This can be more than `1`
+  * This can also be more than `1`
+* Require branches to be up to date before merging
+  * This can also be `unchecked`
 * Status checks that are required
   * More status checks can be added, but EasyCLA cannot be removed
 * Do not allow bypassing the above settings
