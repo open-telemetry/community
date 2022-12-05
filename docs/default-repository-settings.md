@@ -22,6 +22,12 @@ Everything not mentioned is left at the GitHub default.
 * The team `foo-approvers` has `Write` permissions for the repository.
 * The team `foo-maintainers` has `Maintain` permissions for the repository.
 
+If requested, `foo-maintainers` will be granted `Admin` permissions, and in return
+they must document any changes they make to the repository settings in a file named
+`.github/repository-settings.md` in their repository (other than temporarily
+disabling "Do not allow bypassing the above settings", see branch protection rules
+below).
+
 ## Branches
 
 Default branch: `main`

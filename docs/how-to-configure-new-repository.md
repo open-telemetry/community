@@ -55,12 +55,6 @@ It is recommended to follow these best practices:
 2. Set up a test coverage scanning tool like, for example, [Codecov](https://codecov.io/).
 3. Add status badges for passing builds and scans to the root README.
 
-## Admin permissions
-
-If requested, `foo-maintainers` will be granted `Admin` permissions, but in return
-they must document all changes that are made to the [default-repository-settings.md](default-repository.settings.md)
-in a file named `.github/repository-settings.md` in their repository.
-
 ## Permission changes
 
 In order to change repository permissions (e.g., for temporary or permanent admin access,
