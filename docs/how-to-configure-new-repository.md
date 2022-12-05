@@ -8,6 +8,23 @@ name of the repository is to simplify repositories distinction in forks. So when
 one will fork the repository - fork's name will still indicate that this
 repository is from OpenTelemetry organization.
 
+## Teams
+
+Documents [Community Membership](../community-membership.md) and
+[CONTRIBUTING](../CONTRIBUTING.md) define how permissions are typically set up
+for the repository.
+
+Every repository has three teams associated with it. Typically for the
+repository `opentelemetry-foo` they will be named `foo-triagers`, `foo-approvers`,
+and `foo-maintainers`. `foo-maintainers` is a child of `foo-approvers`, and
+`foo-approvers` is a child of `foo-triagers`, as each child team always contains
+a subset of people and defines a larger scope of privileges.
+
+Every member of `foo-maintainers` should be included in
+`foo-approvers` and `foo-triagers` explicitly, with the "Maintainer" GitHub
+privileges. This allows repository maintainers to invite new approvers and
+triagers to the team.
+
 ## Repository settings
 
 See [default-repository-settings.md](default-repository-settings.md).
