@@ -8,7 +8,7 @@ name of the repository is to simplify repositories distinction in forks. So when
 one will fork the repository - fork's name will still indicate that this
 repository is from OpenTelemetry organization.
 
-## Teams
+## Permissions
 
 Documents [Community Membership](../community-membership.md) and
 [CONTRIBUTING](../CONTRIBUTING.md) define how permissions are typically set up
