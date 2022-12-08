@@ -11,7 +11,7 @@ delegated. They can be reached via e-mail cncf-opentelemetry-governance@lists.cn
 | **Role**   | **Responsibilities**                                  | **Requirements**                                             | **Defined by**                                               |
 | ---------- | ----------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | member     | active contributor in the community.  reviewer of PRs | sponsored by 2 approvers or maintainers. multiple contributions to the project. | OpenTelemetry GitHub org member.                             |
-| triager     | assist with project management and backlog organization. | nominated by a maintainer. attend meetings for one month. |  CONTRIBUTING, CODEOWNERS, or the README. |
+| triager     | assist with project management and backlog organization. | nominated by a maintainer. help with issues for one month. |  CONTRIBUTING, CODEOWNERS, or the README. |
 | approver   | approve incoming contributions                        | highly experienced and active reviewer + contributor to a subproject | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners) in GitHub |
 | maintainer | set direction and priorities for a subproject         | demonstrated responsibility and excellent technical judgement for the subproject | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners), GitHub Team and repo ownership in GitHub |
 | emeritus   | position of honor for former maintainers, approvers, and triagers        | must have previously held a community role and not have been removed from that role for a [Code of Conduct](code-of-conduct.md) violation. | Listed as an emeritus maintainer/approver/triager in CONTRIBUTING, CODEOWNERS, or README |
@@ -114,7 +114,7 @@ meetings, chat rooms, and other discussion forums.
 ### Requirements
 
 - Nominated by a maintainer, with no objections from other maintainers.
-- Consistently attend meetings and interact with issues for at least 1 month.
+- Consistently interact with the community and help with issues for at least 1 month.
 
 ### Responsibilities and privileges
 
