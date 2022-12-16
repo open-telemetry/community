@@ -26,13 +26,12 @@ Everything not mentioned is left at the GitHub default.
 
 * Every repository has three teams associated with it. Typically for the
   repository `opentelemetry-foo` they will be named `foo-triagers`, `foo-approvers`,
-  and `foo-maintainers`. `foo-maintainers` is a child of `foo-approvers`, and
-  `foo-approvers` is a child of `foo-triagers`, as it each group always contains
-  a subset of people and defines a larger scope of privileges.
-* Every member of `foo-maintainers` should be included in
-  `foo-approvers` and `foo-triagers` explicitly, with the "Maintainer" GitHub
-  privileges. This allows repository maintainers to invite new approvers and
-  triagers to the team.
+  and `foo-maintainers`.
+* The `foo-maintainers` team should be a member of the `foo-approvers` team,
+  and the `foo-approvers` team should be a member of the `foo-triagers` team.
+* Every member of `foo-maintainers` should be included explicitly in `foo-approvers`
+  and `foo-triagers` with the "Maintainer" GitHub privileges. This allows
+  repository maintainers to invite new approvers and triagers to the team.
 * The team `foo-triagers` has `Triage` permissions for the repository. If repository
   is using the Project Boards, `foo-triagers` should have `Write` permissions to
   have access to the Project Boards. Do not add members of `foo-triagers` to
