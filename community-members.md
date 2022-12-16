@@ -6,15 +6,15 @@ This is the current Governance Committee, per the [Governance Committee
 Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md),
 in alphabetical order:
 
-- [Alolita Sharma](https://github.com/alolita), AWS, until October 2022
+- [Alolita Sharma](https://github.com/alolita), AWS, until October 2024
 - [Ben Sigelman](https://github.com/bhs), Lightstep, until October 2023
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk, until October 2023
-- [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2022
+- [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2024
 - [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs, until October 2023
-- [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2022
-- [Morgan McLean](https://github.com/mtwo), Splunk, until October 2022
+- [Morgan McLean](https://github.com/mtwo), Splunk, until October 2024
 - [Ted Young](https://github.com/tedsuo), Lightstep, until October 2023
-- [Yuri Shkuro](https://github.com/yurishkuro), Facebook, until October 2023
+- [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2024
+- [Yuri Shkuro](https://github.com/yurishkuro), Meta, until October 2023
 
 ## Technical Committee
 
@@ -30,7 +30,14 @@ in alphabetical order:
 - [Reiley Yang](https://github.com/reyang), Microsoft
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
-- [Yuri Shkuro](https://github.com/yurishkuro), Facebook
+- [Yuri Shkuro](https://github.com/yurishkuro), Meta
+
+## Community Management
+
+These are community maintainers, responsible for cross-functional project communications,
+events, and other functions as needed.
+
+- [Austin Parker](https://github.com/austinlparker), Lightstep
 
 ## Specifications and Proto
 
@@ -46,9 +53,8 @@ Trace Approvers:
 
 Metrics Approvers:
 
-- [Jack Berg](https://github.com/jack-berg), New Relic
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
-- [John Watson](https://github.com/jkwatson), Splunk
+- [Jack Berg](https://github.com/jack-berg), New Relic
 - [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
@@ -57,11 +63,7 @@ Logs Approvers:
 - [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
 - [David Poncelow](https://github.com/zenmoto), Splunk
-
-Global Approvers:
-
-- [Josh Suereth](https://github.com/jsuereth), Google
-- [Reiley Yang](https://github.com/reyang), Microsoft
+- [Jack Berg](https://github.com/jack-berg), New Relic
 
 ## Java
 
@@ -138,7 +140,6 @@ Repo: [open-telemetry/opentelemetry-cpp](https://github.com/open-telemetry/opent
 
 The list of active members (both "approvers" and "maintainers") for OpenTelemetry C++ can be found in the [open-telemetry/opentelemetry-cpp README file](https://github.com/open-telemetry/opentelemetry-cpp#contributing).
 
-
 ## Ruby
 
 Repo: [open-telemetry/opentelemetry-ruby](https://github.com/open-telemetry/opentelemetry-ruby)
@@ -151,6 +152,10 @@ Repo: [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opent
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry PHP API and SDK can be found in the [open-telemetry/opentelemetry-php CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-php/blob/master/CONTRIBUTING.md).
 
+## Community Demo
+
+Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/opentelemetry-demo)
+
 ## Others
 
 Rust, Swift
@@ -158,5 +163,6 @@ Rust, Swift
 ## Governance Committee Emeritus
 
 - [Constance Caramanolis](https://github.com/ccaraman), Splunk, until October 2021
+- [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2022
 - [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google, until October 2021

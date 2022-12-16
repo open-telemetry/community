@@ -2,6 +2,14 @@
 
 This file is intended to list all the assets controlled by OpenTelemetry.
 
+## Credential Storage
+
+- [1Password Teams](https://1password.com/)
+  - Team account: https://opentelemetry.1password.com/
+  - https://github.com/1Password/1password-teams-open-source#opentelemetry
+  - PR: https://github.com/1Password/1password-teams-open-source/pull/364
+  - Admin: Alex Boten @codeboten
+
 ## CI pipelines
 
 ### OpenTelemetry Azure Pipeline
@@ -46,7 +54,7 @@ Used to provide write access to public OpenTelemertry calendar. See [docs/how-to
 
 Link: https://groups.google.com/g/opentelemetry-calendar-contributors
 
-- Owners: Sergey Kanzhelev, Alolita Sharma, Ben Sigelman, Bogdan Drutu, Constance Caramanolis, Daniel Dyla
+- Owners: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 - Members: SIG maintainers and individuals appointed by maintainers
 
 ### OpenTelemetry Calendar Invites Google Group](https://groups.google.com/g/opentelemetry-calendar)
@@ -106,3 +114,7 @@ Link: https://splain.io/
 Link: https://project.lfcla.com/#/project/a0941000002wBz4AAE/cla
 
 - Admins: @lizthegrey, @bogdandrutu
+
+### Docker Hub
+
+- We publish images from CI to Docker hub using https://hub.docker.com/u/otelbot account. The bot is registered using cncf-opentelemetry-tc@lists.cncf.io email address and Technical Committee members are owners of this account. The Admin for bot security credentials for CI is @tigrannajaryan

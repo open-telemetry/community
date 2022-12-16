@@ -1,20 +1,18 @@
 # Community membership
 
-Last updated: 2021-05-27
-
 This doc outlines the various responsibilities of contributor roles in
 OpenTelemetry. The OpenTelemetry project is subdivided into subprojects under
 (predominantly, but not exclusively) language-focused SIGs (Special Interest
 Group). Responsibilities for most roles are scoped to these subprojects (repos).
 
-The OpenTelemetry Governance Committee owns this document and process until
+The OpenTelemetry [Governance Committee][] owns this document and process until
 delegated. They can be reached via e-mail cncf-opentelemetry-governance@lists.cncf.io.
 
 | **Role**   | **Responsibilities**                                  | **Requirements**                                             | **Defined by**                                               |
 | ---------- | ----------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | member     | active contributor in the community.  reviewer of PRs | sponsored by 2 approvers or maintainers. multiple contributions to the project. | OpenTelemetry GitHub org member.                             |
-| triager     | assist with project management and backlog organization. | nominated by a maintainer. attend meetings for one month. |  CONTRIBUTING, CODEOWNERS, or the README. |
-| approver   | approve accepting contributions                       | highly experienced and active reviewer + contributor to a subproject | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners) in GitHub |
+| triager     | assist with project management and backlog organization. | nominated by a maintainer. help with issues for one month. |  CONTRIBUTING, CODEOWNERS, or the README. |
+| approver   | approve incoming contributions                        | highly experienced and active reviewer + contributor to a subproject | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners) in GitHub |
 | maintainer | set direction and priorities for a subproject         | demonstrated responsibility and excellent technical judgement for the subproject | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners), GitHub Team and repo ownership in GitHub |
 | emeritus   | position of honor for former maintainers, approvers, and triagers        | must have previously held a community role and not have been removed from that role for a [Code of Conduct](code-of-conduct.md) violation. | Listed as an emeritus maintainer/approver/triager in CONTRIBUTING, CODEOWNERS, or README |
 
@@ -37,6 +35,8 @@ below.
 Members are continuously active contributors in the community. They can have
 issues and PRs assigned to them. Members are expected to participate in SIG or
 SIGs and remain active contributors to the community.
+
+Members can vote in the [Governance Committee][] elections.
 
 Defined by: Member of the OpenTelemetry GitHub organization
 
@@ -85,6 +85,7 @@ Defined by: Member of the OpenTelemetry GitHub organization
   - Code is well tested
   - Tests consistently pass
   - Addresses bugs or issues discovered after code is accepted
+- Can vote in the [Governance Committee][] elections (see [Members of Standing][])
 - Members can review and approve via the GitHub workflow.  This review work is
   not sufficient to merge a PR.  There will still need to be a review by an
   *approver*.
@@ -113,7 +114,7 @@ meetings, chat rooms, and other discussion forums.
 ### Requirements
 
 - Nominated by a maintainer, with no objections from other maintainers.
-- Consistently attend meetings and interact with issues for at least 1 month.
+- Consistently interact with the community and help with issues for at least 1 month.
 
 ### Responsibilities and privileges
 
@@ -291,3 +292,6 @@ from the approvers list, and will no longer have any official responsibilities
 with the project. When a contributor returns to being more active, they may be
 promoted back to a their previous position at the discretion of the current
 maintainers following the process defined above.
+
+[Governance Committee]: ./governance-charter.md
+[Members of Standing]: ./governance-charter.md#members-of-standing
