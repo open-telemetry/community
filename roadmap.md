@@ -17,6 +17,12 @@ OpenTelemetry was started in 2019 with the promise of making it easy and consist
 # Major Priorities
 All of the following workstreams are major areas of investment for OpenTelemetry: all of them have large groups of people already focused on them. Their priorities primarily reflect the ordering of when we expect them to be released.
 
+These priorities are most useful when comparing them against each other. For example, P0 entries are more critical than P1 entries, which are in turn more critical than P2s. We do have some basic definitions of each priority level, however:
+
+- P0: We must do this within the specified timeframe (if there is one), or we will fail as a project
+- P1: This is one of our most important major initiatives, and it will have a major impact on the project
+- P2: This work is important enough to be tracked and prioritized and is more important than items not on this list, but it is currently lower urgency or criticality than P0 and P1 entries
+
 ## P0: Continued Investment in OpenTelemetry Artifacts
 The project’s top priority will always be ensuring that the capabilities and robustness of our existing artifacts (the Collector, SDKs, language agents, etc.) remain excellent. This work takes place in each language SIG and in the Collector SIG, and includes continual improvement to these components, making them even easier to use, providing and integrating more instrumentation libraries, working with the suppliers of telemetry sources to use the OpenTelemetry APIs natively, and more.
 
