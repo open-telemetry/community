@@ -11,7 +11,7 @@ OpenTelemetry was started in 2019 with the promise of making it easy and consist
 - Semantic conventions for metadata, which define how resources and other components are represented. This is applied consistently across all signal types, which allows traces, metrics, and other signals to be processed consistently and correlated.
 - SDKs for twelve languages that allow developers to capture telemetry from their services and to create their own custom telemetry.
 - Automatic instrumentation agents for __ languages, which allow anyone to capture telemetry from their services without making code changes or redeploying.
-- Instrumentation packages for thousands of pieces of software, including operating systems, container runtimes, databases, language runtimes, and libraries, all of which allow the Collector (for infrastructure and third-party applications), and SDKs and automatic instrumentation agents (for custom applications) to capture signals, capture metadata, and propagate context automatically.
+- Instrumentation libraries for thousands of pieces of software, including operating systems, container runtimes, databases, language runtimes, and libraries, all of which allow the Collector (for infrastructure and third-party applications), and SDKs and automatic instrumentation agents (for custom applications) to capture signals, capture metadata, and propagate context automatically.
 - A protocol, OTLP, for transmitting telemetry and metadata between OpenTelemetry components and to backends for processing.
 
 # Major Priorities
