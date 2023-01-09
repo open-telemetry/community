@@ -150,6 +150,7 @@ Agent Management WG|Every other week on Tuesday at 11:00 PT|[Google Doc](https:/
 Client Instrumentation|Every Wednesday at 8:00 AM PT|[Google Doc](https://docs.google.com/document/d/16Vsdh-DM72AfMg_FIt9yT9ExEWF4A_vRbQ3jRNBe09w/edit)|[Slack](https://cloud-native.slack.com/archives/C0239SYARD2)|
 Kubernetes Operator|Every other week on Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1Unbs2qp_j5kp8FfL_lRH-ld7i5EOQpsq0I4djkOOSL4)|[Slack](https://cloud-native.slack.com/archives/C033BJ8BASU)|
 Community Demo Application|Every Monday at 8:15 PT|[Google Doc](https://docs.google.com/document/d/16f-JOjKzLgWxULRxY8TmpM_FjlI1sthvKurnqFz9x98/edit)|[Slack](https://cloud-native.slack.com/archives/C03B4CWV4DA)|
+Functions as a Service (FAAS) |Every Tuesday at 12:00 PM PT and Wednesday at 7:00 AM PT |[Google Doc](https://docs.google.com/document/d/187XYoQcXQ9JxS_5v2wvZ0NEysaJ02xoOYNXj08pT0zc/edit#)|[Slack](https://cloud-native.slack.com/archives/C04HVBETC9Z)|
 
 ## Related groups
 
