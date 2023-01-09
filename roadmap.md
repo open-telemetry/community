@@ -18,7 +18,7 @@ OpenTelemetry was started in 2019 with the promise of making it easy and consist
 All of the following workstreams are major areas of investment for OpenTelemetry: all of them have large groups of people already focused on them. Their priorities primarily reflect the ordering of when we expect them to be released.
 
 ## P0: Continued Investment in OpenTelemetry Artifacts
-The project’s top priority will always be ensuring that the capabilities and robustness of our existing artifacts (the Collector, SDKs, language agents, etc.) remain excellent. This work takes place in each language SIG and in the Collector SIG, and includes continual improvement to these components, making them even easier to use, providing and integrating more instrumentation packages, working with the suppliers of telemetry sources to use the OpenTelemetry APIs natively, and more.
+The project’s top priority will always be ensuring that the capabilities and robustness of our existing artifacts (the Collector, SDKs, language agents, etc.) remain excellent. This work takes place in each language SIG and in the Collector SIG, and includes continual improvement to these components, making them even easier to use, providing and integrating more instrumentation libraries, working with the suppliers of telemetry sources to use the OpenTelemetry APIs natively, and more.
 
 ## P1: Logs
 OpenTelemety established a logging SIG in mid-2020, with two goals:
