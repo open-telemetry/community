@@ -33,7 +33,7 @@ Much progress has been made on the first item, particularly through the donation
 - We must prototype the new logging path within our SDKs, update the designs based on feedback from the prototyping effort, build integrations for existing logging components and telemetry sources, implement these designs across all languages (as we did for traces and metrics), and test and revise these implementations from beta through GA.
 
 ## P1: Further Stabilizing Semantic Conventions
-OpenTelmeetry’s consistent semantic conventions across all data types are a major source of the project’s value, as they allow end-users and observability systems to both correlate related signals and to set expectations about the metadata that should be present on telemetry captured from specific sources or types of interactions. For example, OpenTelemetry’s semantics describe the expected metadata for traces, metrics, and logs captured as part of a HTTP 4xx response.
+OpenTelemetry’s consistent semantic conventions across all data types are a major source of the project’s value, as they allow end-users and observability systems to both correlate related signals and set expectations about the metadata that should be present on telemetry captured from specific sources or types of interactions. For example, OpenTelemetry’s semantics describe the expected metadata for traces, metrics, and logs captured as part of an HTTP 4xx response.
 
 However we still need to define the semantic conventions for more scenarios, so that instrumentation authors can release stable instrumentation packages and so that end-users and observability systems can make firmer dependencies on OpenTelemetry’s metadata.
 
