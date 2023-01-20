@@ -27,7 +27,7 @@ These priorities are most useful when comparing them against each other. For exa
 The project’s top priority will always be ensuring that the capabilities and robustness of our existing artifacts (the Collector, SDKs, language agents, etc.) remain excellent. This work takes place in each language SIG and in the Collector SIG, and includes continual improvement to these components, making them even easier to use, providing and integrating more instrumentation libraries, working with the suppliers of telemetry sources to use the OpenTelemetry APIs natively, and more.
 
 ## P1: Logs
-OpenTelemety established a logging SIG in mid-2020, with two goals:
+OpenTelemetry established a logging SIG in mid-2020, with two goals:
 
 1. Providing a performant path for capturing logs from existing sources (typically text files on disk), where all captured logs have OpenTelemetry’s metadata consistently applied to them.
 2. Providing a new, strongly-typed and extremely high-performance logging path for new applications, which allows logs to be authored and transmitted without being parsed from text, and which enforces the consistency of all metadata.
