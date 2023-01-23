@@ -6,15 +6,15 @@ This is the current Governance Committee, per the [Governance Committee
 Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md),
 in alphabetical order:
 
-- [Alolita Sharma](https://github.com/alolita), AWS, until October 2022
+- [Alolita Sharma](https://github.com/alolita), AWS, until October 2024
 - [Ben Sigelman](https://github.com/bhs), Lightstep, until October 2023
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk, until October 2023
-- [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2022
+- [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2024
 - [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs, until October 2023
-- [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2022
-- [Morgan McLean](https://github.com/mtwo), Splunk, until October 2022
+- [Morgan McLean](https://github.com/mtwo), Splunk, until October 2024
 - [Ted Young](https://github.com/tedsuo), Lightstep, until October 2023
-- [Yuri Shkuro](https://github.com/yurishkuro), Facebook, until October 2023
+- [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2024
+- [Yuri Shkuro](https://github.com/yurishkuro), Meta, until October 2023
 
 ## Technical Committee
 
@@ -30,7 +30,7 @@ in alphabetical order:
 - [Reiley Yang](https://github.com/reyang), Microsoft
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
-- [Yuri Shkuro](https://github.com/yurishkuro), Facebook
+- [Yuri Shkuro](https://github.com/yurishkuro), Meta
 
 ## Community Management
 
@@ -63,6 +63,7 @@ Logs Approvers:
 - [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
 - [David Poncelow](https://github.com/zenmoto), Splunk
+- [Jack Berg](https://github.com/jack-berg), New Relic
 
 ## Java
 
@@ -162,5 +163,6 @@ Rust, Swift
 ## Governance Committee Emeritus
 
 - [Constance Caramanolis](https://github.com/ccaraman), Splunk, until October 2021
+- [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2022
 - [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google, until October 2021

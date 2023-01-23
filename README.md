@@ -118,10 +118,12 @@ SIG-specific GitHub discussions.
 Name|Meeting Time|Meeting Notes|Discussions|[Technical Committee](./community-members.md#technical-committee) Sponsors|
 ----|------------|-------------|-----------|-----------|
 Specification: General|Every Tuesday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/1pdvPeKjA8v8w_fGKAN68JjWBmVJtPCpqdi9IZrd6eEo/edit)|[Slack](https://cloud-native.slack.com/archives/C01N7PP1THC)
-Specification: Logs|Every Wednesday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1cX5fWXyWqVVzYHSFUymYUfWxUK5hT97gc23w595LmdM/edit#)|[Slack](https://cloud-native.slack.com/archives/C01N5UCHTEH)|[Tigran Najaryan](https://github.com/tigrannajaryan)
+Specification: Logs|Every Wednesday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1P_wkLEomswd0M0eNNnxSOe6U-EOpCZaMIIxKuM4frw8)|[Slack](https://cloud-native.slack.com/archives/C01N5UCHTEH)|[Tigran Najaryan](https://github.com/tigrannajaryan)
 Specification: Sampling|Every Thursday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/1gASMhmxNt9qCa8czEMheGlUW2xpORiYoD7dBD7aNtbQ/)|[Slack](https://cloud-native.slack.com/archives/C027DS6GZD3)|[Josh MacDonald](https://github.com/jmacd)
+Specification: Configuration|Every other Monday at 8:00 PT|[Google Doc](https://docs.google.com/document/d/1uNgWQLQZcSVfBLRXfW9XCVJmKa5NH9R15fSOXhmpGWw/edit)|[Slack](https://cloud-native.slack.com/archives/C0476L7UJT1)|[Carlos Alberto](https://github.com/carlosalberto)
 Instrumentation: General|Every Tuesday at 16:00 PT|[Google Doc](https://docs.google.com/document/d/1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE/)|[Slack](https://cloud-native.slack.com/archives/C01QZFGMLQ7)
 Instrumentation: Messaging|Every Thursday at 8:00 PT|[Google Doc](https://docs.google.com/document/d/1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE/)|[Slack](https://cloud-native.slack.com/archives/C01QZFGMLQ7)
+Semantic Conventions Working Group|Every other Monday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8)|[Slack](https://cloud-native.slack.com/archives/C041APFBYQP)
 
 ### Implementation SIGs
 
@@ -129,26 +131,27 @@ Name|Meeting Time|Meeting Notes|Discussions|
 ----|------------|-------------|-----------|
 Maintainers Meeting|Every Monday at 09:00PT|[Google Doc](https://docs.google.com/document/d/14lBtLAdzsV7M8xQNdhTJ0d2PxM1R7FByw-GttKJzVVw)|[Slack](https://cloud-native.slack.com/archives/C01NJ7V1KRC)|
 Collector|Every Wednesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N6P7KR6W)|
-C/C++: SDK|Every week alternating between Monday at 13:00 PT and Wednesday at 9:30 PT|[Google Doc](https://docs.google.com/document/d/1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N3AT62SJ)|
+C/C++: SDK|Every week alternating between Monday at 13:00 PT and Wednesday at 9:00 PT|[Google Doc](https://docs.google.com/document/d/1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N3AT62SJ)|
 .NET: Automatic Instrumentation|Every Wednesday at 9:00 PT|[Google Doc](https://docs.google.com/document/d/1XedN2D8_PH4YLej-maT8sp4RKogfuhFpccRi3QpUcoI/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01NR1YLSE7)|
 .NET: SDK|Every Tuesday alternating between 11:00 and 16:00 PT|[Google Doc](https://docs.google.com/document/d/1yjjD6aBcLxlRazYrawukDgrhZMObwHARJbB9glWdHj8/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N3BC2W7Q)|
-Erlang/Elixir: SDK|Every Thursday alternating between 07:00 and 15:00 PT|[Google Doc](https://docs.google.com/document/d/1EbBiRjBc_cBf0T_B5OtNRPhbD4jdBrVYJAy8euCDrUI/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N75YMZCN)|
+Erlang/Elixir: SDK|Every other Thursday at 9:00 PT|[Google Doc](https://docs.google.com/document/d/1EbBiRjBc_cBf0T_B5OtNRPhbD4jdBrVYJAy8euCDrUI/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N75YMZCN)|
 GoLang: SDK|Every Thursday alternating between 10:00 and 15:00 PDT|[Google Doc](https://docs.google.com/document/d/1E5e7Ld0NuU1iVvf-42tOBpu2VBBLYnh73GJuITGJTTU/edit)|[Slack](https://cloud-native.slack.com/archives/C01NPAXACKT)|
 Java: SDK + Automatic Instrumentation|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw/)|[SDK](https://cloud-native.slack.com/archives/C014L2KCTE3) and [Instrumentation](https://cloud-native.slack.com/archives/C0150QF88FL) Slack channels|
-Java: JVM Metrics|Alternating: Monday at 10:00 PT, Wednesday at 10:00 *CET*|[Google Doc](https://docs.google.com/document/d/1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw/)|[SDK](https://cloud-native.slack.com/archives/C014L2KCTE3) and [Instrumentation](https://cloud-native.slack.com/archives/C0150QF88FL) Slack channels|
 JavaScript: SDK|Every Wednesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1YR1Z3SqOkAJGffycO_P9d0CiTMP79OOtu_xvIyyVLME/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01NL1GRPQR) and [GitHub Discussions](https://github.com/open-telemetry/opentelemetry-js/discussions)|
 PHP: SDK|Every Wednesday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI/edit)|[Slack](https://cloud-native.slack.com/archives/C01NFPCV44V)|
 Python: SDK|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1CIMGoIOZ-c3-igzbd6_Pnxx1SjAkjwqoYSUWxPY8XIs/edit)|[Slack](https://cloud-native.slack.com/archives/C01PD4HUVBL)|
 Ruby: SDK|Every Tuesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1D15bO8o340sQm2CVZiukEJuCO_XMMHKPuTznoEhyFqE/edit)|[Slack](https://cloud-native.slack.com/archives/C01NWKKMKMY) and [GitHub Discussions](https://github.com/open-telemetry/opentelemetry-ruby/discussions)|
-Rust: SDK|Every other week on Tuesday alternating between 07:00 and 15:00 PT|[Google Doc](https://docs.google.com/document/d/1tGKuCsSnyT2McDncVJrMgg74_z8V06riWZa0Sr79I_4)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-rust)|
+Rust: SDK|N/A|[Google Doc](https://docs.google.com/document/d/1tGKuCsSnyT2McDncVJrMgg74_z8V06riWZa0Sr79I_4)|[Gitter](https://gitter.im/open-telemetry/opentelemetry-rust)|
 Swift: SDK|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1ShEFMywIV4LJcDYCNy41zkq8RR1sMq-tSvMBHngHcuk/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01NCHR19SB)||
-Communications (Website, etc.)|Every other week on Thursday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY)|[Slack](https://cloud-native.slack.com/archives/C02UN96HZH6)|
-End-User WG|Every other week on Thursday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1FqEo2PfHPP8iZX_W-C3YgXFUjhfwmAhoREUE8ZJPJfc/)||
-eBPF|Every week on Thursday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1pAxBekk6BadHpK717TbhYtBMOlyrgWSvp3QeYDPwwvk/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C02AB15583A)|
-Agent Management WG|Every other week on Tuesday at 11:00 PT|[Google Doc](https://docs.google.com/document/d/1mHNnlCmO0XKUu0xPnKko3GOh0mxVoxjRiN8xmHRImew/edit#)|[Slack](https://cloud-native.slack.com/archives/C02J58HR58R)|
+Communications (Website, etc.)|Every other week on Monday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY)|[Slack](https://cloud-native.slack.com/archives/C02UN96HZH6)|
+End-User WG|Every other week on Thursday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1e-UNZA3Tuno9b53RQbe--whUcO0VIXF3P81oXsrBK6g/edit#heading=h.ip90glf2wys2)|[Slack](https://cloud-native.slack.com/archives/C01RT3MSWGZ)|
+eBPF|Every week on Thursday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/13GK915hdDQ9sUYzUIWi4pOfJK68EE935ugutUgL3yOw)|[Slack](https://cloud-native.slack.com/archives/C02AB15583A)|
+Agent Management WG|Every other week on Tuesday at 11:00 PT|[Google Doc](https://docs.google.com/document/d/19WA5-ex8rNFIBIyVb5VqMXfWNmUQwppGhN8zBeNG0f4)|[Slack](https://cloud-native.slack.com/archives/C02J58HR58R)|
+Prometheus Interoperability WG|Every other week on Wednesday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/19bnXziPn2MZ9wO6684UoI4D-LCjGL5bTJkGhux29bx8/edit#)|[Slack](https://cloud-native.slack.com/archives/C01LSCJBXDZ)|
 Client Instrumentation|Every Wednesday at 8:00 AM PT|[Google Doc](https://docs.google.com/document/d/16Vsdh-DM72AfMg_FIt9yT9ExEWF4A_vRbQ3jRNBe09w/edit)|[Slack](https://cloud-native.slack.com/archives/C0239SYARD2)|
-Kubernetes Operator|N/A|[Google Doc](https://docs.google.com/document/d/1zBNzh1dw9HpXUexTaURRS7n_NQSzqNJSuqNVw9GhIe4/edit#)|[Slack](https://cloud-native.slack.com/archives/C033BJ8BASU)|
+Kubernetes Operator|Every other week on Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1Unbs2qp_j5kp8FfL_lRH-ld7i5EOQpsq0I4djkOOSL4)|[Slack](https://cloud-native.slack.com/archives/C033BJ8BASU)|
 Community Demo Application|Every Monday at 8:15 PT|[Google Doc](https://docs.google.com/document/d/16f-JOjKzLgWxULRxY8TmpM_FjlI1sthvKurnqFz9x98/edit)|[Slack](https://cloud-native.slack.com/archives/C03B4CWV4DA)|
+Functions as a Service (FAAS) |Every Tuesday at 12:00 PM PT and Wednesday at 7:00 AM PT |[Google Doc](https://docs.google.com/document/d/187XYoQcXQ9JxS_5v2wvZ0NEysaJ02xoOYNXj08pT0zc/edit#)|[Slack](https://cloud-native.slack.com/archives/C04HVBETC9Z)|
 
 ## Related groups
 
