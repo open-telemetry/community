@@ -70,6 +70,9 @@ The best way to subscribe to OpenTelemetry events is to join the [calendar updat
 Group](https://groups.google.com/forum/#!forum/opentelemetry-calendar). This will invite you to every OpenTelemetry call and correctly block time for
 accepted events, and it will keep your calendar in sync with new and updated events.
 
+(Internal Note: When creating or updating a calendar event in the `OpenTelemetry Public Calendar`, please ensure that `opentelemetry-calendar@googlegroups.com`
+is added as an attendee to the meeting invite.  This is what allows updates to the calendar to be synchronized to other attendees.)
+
 ### Mailing Lists
 
 List Name|Signup|Membership|Write Permissions|Read Permissions|Notes|
