@@ -80,6 +80,10 @@ cncf-opentelemetry-tc@lists.cncf.io|N/A|TC|anyone|members|<details><summary>Note
 cncf-opentelemetry-governance@lists.cncf.io|N/A|GC|anyone|members|<details><summary>Notes</summary>Used by the OpenTelemetry GC for internal communication. Additionally, contact the GC for questions that cannot be discussed publicly on GitHub, GitHub discussions, or other mailing lists. For instance, members could use this for issues related to improper applications of our community membership guidance.</details>|
 cncf-opentelemetry-comms@lists.cncf.io|[Here](https://lists.cncf.io/g/cncf-opentelemetry-comms)|GC and open for anyone|anyone|anyone|<details><summary>Notes</summary>Mailing list to notify and request reviews of upcoming announcements, or request a post on the OpenTelemetry Twitter account or other public channels.</details>|
 
+### Media
+
+For PR & Marketing inquiries, please contact [pr@cncf.io](mailto:pr@cncf.io).
+
 ## License
 
 All OpenTelemetry projects are shipped under the permissive Apache 2.0 license
