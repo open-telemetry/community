@@ -54,7 +54,7 @@ Used to provide write access to public OpenTelemertry calendar. See [docs/how-to
 
 Link: https://groups.google.com/g/opentelemetry-calendar-contributors
 
-- Owners: Sergey Kanzhelev, Alolita Sharma, Ben Sigelman, Bogdan Drutu, Constance Caramanolis, Daniel Dyla
+- Owners: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 - Members: SIG maintainers and individuals appointed by maintainers
 
 ### OpenTelemetry Calendar Invites Google Group](https://groups.google.com/g/opentelemetry-calendar)
@@ -118,3 +118,48 @@ Link: https://project.lfcla.com/#/project/a0941000002wBz4AAE/cla
 ### Docker Hub
 
 - We publish images from CI to Docker hub using https://hub.docker.com/u/otelbot account. The bot is registered using cncf-opentelemetry-tc@lists.cncf.io email address and Technical Committee members are owners of this account. The Admin for bot security credentials for CI is @tigrannajaryan
+
+### OpenTelemetry Bot
+
+This is a community-owned bot account that you can use when automating common GitHub tasks
+(e.g. release automation tasks).
+
+Important: You do not need to (and should not) give this account any permissions to any OpenTelemetry repository.
+
+Link: [@opentelemetrybot](https://github.com/opentelemetrybot)
+
+- Admins: [@trask](https://github.com/trask) and
+  [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+- Admins for the associated GitHub organization secret:
+  [@open-telemetry/technical-committee](https://github.com/orgs/open-telemetry/teams/technical-committee)
+
+The OpenTelemetry Bot addresses two common issues:
+
+1. Since you can't push directly to `main` from workflows (due to branch protections), the next best thing is to
+   generate a pull request from the automation and use an account which has signed the CLA as the commit author.
+
+   The OpenTelemetry Bot account has signed the CNCF CLA, and you can assign it as the commit author in your automation:
+
+   ```
+   git config user.name opentelemetrybot
+   git config user.email 107717825+opentelemetrybot@users.noreply.github.com
+   ```
+
+   It is recommended to push to branch names that start with `opentelemetrybot/`, and to add a branch protection
+   rule for `opentelemetrybot/**/**` with the same setup as documented for
+   [`dependabot/**/**`](https://github.com/open-telemetry/community/blob/main/docs/how-to-configure-new-repository.md#branch-protection-rule-dependabot). Note that branch protection rule ordering matters, so you will need to
+   delete the `**/**` branch protection rule temporarily, then add the `opentelemetrybot/**/**` branch protection
+   rule, then add back the `**/**` branch protection rule.
+
+2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside of a GitHub Action, workflows
+   will not run on that new pull request without closing and re-opening it manually (this limitation is in place to
+   prevent accidental recursive workflow runs).
+
+   The OpenTelemetry GitHub organization has a GitHub Action secret named `OPENTELEMETRYBOT_GITHUB_TOKEN`, which is a
+   [Personal Access Token][] for [@opentelemetrybot](https://github.com/opentelemetrybot) with `public_repo`
+   scope for the OpenTelemetry Bot that you can use to bypass this limitation.
+
+   Maintainers can open an issue in the community repository to have their repository granted access to this
+   organization secret.
+
+   [Personal Access Token]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
