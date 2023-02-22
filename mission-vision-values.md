@@ -1,10 +1,13 @@
 <!--- Hugo front matter used to generate the website version of this page:
-title: Mission, vision, and values
+linkTitle: Mission, vision, and values
 aliases: [/mission]
 github_repo: &repo https://github.com/open-telemetry/community
 github_subdir: ''
-path_base_for_github_subdir: content/en/community/
+path_base_for_github_subdir:
+  from: content/en/community/mission\.md
+  to: mission-vision-values.md
 github_project_repo: *repo
+weight: -10
 --->
 
 # OpenTelemetry mission, vision, and values
