@@ -28,7 +28,6 @@ in alphabetical order:
 - [Josh MacDonald](https://github.com/jmacd), Lightstep
 - [Josh Suereth](https://github.com/jsuereth), Google
 - [Reiley Yang](https://github.com/reyang), Microsoft
-- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 - [Yuri Shkuro](https://github.com/yurishkuro), Meta
 
@@ -166,3 +165,7 @@ Rust, Swift
 - [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2022
 - [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google, until October 2021
+
+## Technical Committee Emeritus
+
+- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
