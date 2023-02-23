@@ -25,6 +25,7 @@ in alphabetical order:
 - [Armin Ruech](https://github.com/arminru), Dynatrace
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk
 - [Carlos Alberto](https://github.com/carlosalberto), Lightstep
+- [Jack Berg](https://github.com/jack-berg), New Relic
 - [Josh MacDonald](https://github.com/jmacd), Lightstep
 - [Josh Suereth](https://github.com/jsuereth), Google
 - [Reiley Yang](https://github.com/reyang), Microsoft
@@ -53,7 +54,6 @@ Trace Approvers:
 Metrics Approvers:
 
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
-- [Jack Berg](https://github.com/jack-berg), New Relic
 - [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
@@ -62,7 +62,6 @@ Logs Approvers:
 - [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
 - [David Poncelow](https://github.com/zenmoto), Splunk
-- [Jack Berg](https://github.com/jack-berg), New Relic
 
 ## Java
 
