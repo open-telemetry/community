@@ -65,11 +65,6 @@ concerns.
 - OpenTelemetry C++
 - W3C trace context specification
 
-### [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
-
-- Trace API and SDK
-- W3C trace context specification
-
 ### [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 
 - OpenTelemetry collector
