@@ -91,9 +91,10 @@ Link: https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos
 
 ### Zoom accounts
 
-- E-mails: cncf-opentelemetry@cncf.io, cncf-opentelemetry-meeting-1@cncf.io, cncf-opentelemetry-meeting-2@cncf.io
 - Owned by: Amye Scavarda Perrin (CNCF rep)
-- Passwords shared with: Austin Parker, Eddy Nakamura, Morgan McLean, Ted Young, Sergey Kanzhelev,
+- Admins: [@austinlparker](https://github.com/austinlparker), [@eddynaka](https://github.com/eddynaka),
+  [@mtwo](https://github.com/mtwo), and
+  [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 
 ### Splain account
 
