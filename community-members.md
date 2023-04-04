@@ -107,7 +107,6 @@ Repo: [open-telemetry/opentelemetry-python](https://github.com/open-telemetry/op
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Python API and SDK can be found in the [open-telemetry/opentelemetry-python README file](https://github.com/open-telemetry/opentelemetry-python#contributing).
 
-
 ## Agent and Collector
 
 Repo: [open-telemetry/opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector)
