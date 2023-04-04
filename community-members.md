@@ -107,6 +107,7 @@ Repo: [open-telemetry/opentelemetry-python](https://github.com/open-telemetry/op
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Python API and SDK can be found in the [open-telemetry/opentelemetry-python README file](https://github.com/open-telemetry/opentelemetry-python#contributing).
 
+
 ## Agent and Collector
 
 Repo: [open-telemetry/opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector)
@@ -150,13 +151,19 @@ Repo: [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opent
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry PHP API and SDK can be found in the [open-telemetry/opentelemetry-php CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-php/blob/master/CONTRIBUTING.md).
 
+## Swift
+
+Repo: [open-telemetry/opentelemetry-swift](https://github.com/open-telemetry/opentelemetry-swift)
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Swift API & SDK can be found in the [open-telemetry/opentelemetry-swift CODEOWNERS file](https://github.com/open-telemetry/opentelemetry-swift/blob/main/CODEOWNERS)
+
+
 ## Community Demo
 
 Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/opentelemetry-demo)
 
 ## Others
 
-Rust, Swift
+Rust
 
 ## Governance Committee Emeritus
 
