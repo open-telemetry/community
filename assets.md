@@ -165,4 +165,7 @@ The OpenTelemetry Bot addresses two common issues:
    `.github/workflow` files into opentelemetrybot's forks (these forks are used for automatically opening PRs against
    external repos).
 
+   Maintainers can open an issue in the community repository to have their repository granted access to this
+   organization secret.
+
    [Personal Access Token]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
