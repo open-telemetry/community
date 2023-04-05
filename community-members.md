@@ -154,7 +154,7 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 Repo: [open-telemetry/opentelemetry-swift](https://github.com/open-telemetry/opentelemetry-swift)
 
-The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Swift API & SDK can be found in the [open-telemetry/opentelemetry-swift CODEOWNERS file](https://github.com/open-telemetry/opentelemetry-swift/blob/main/CODEOWNERS).
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Swift API & SDK can be found in the [open-telemetry/opentelemetry-swift CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-swift/blob/main/CONTRIBUTING.md).
 
 ## Community Demo
 
