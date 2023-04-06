@@ -130,6 +130,8 @@ Link: [@opentelemetrybot](https://github.com/opentelemetrybot)
 
 - Admins: [@trask](https://github.com/trask) and
   [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+  (GitHub password and associated 2FA for the `@opentelemetrybot` account are available in the OpenTelemetry Governance
+  1Password)
 - Admins for the associated GitHub organization secret:
   [@open-telemetry/technical-committee](https://github.com/orgs/open-telemetry/teams/technical-committee)
 
@@ -158,6 +160,10 @@ The OpenTelemetry Bot addresses two common issues:
    The OpenTelemetry GitHub organization has a GitHub Action secret named `OPENTELEMETRYBOT_GITHUB_TOKEN`, which is a
    [Personal Access Token][] for [@opentelemetrybot](https://github.com/opentelemetrybot) with `public_repo`
    scope for the OpenTelemetry Bot that you can use to bypass this limitation.
+
+   The personal access token also has `workflow` scope which is needed when merging upstream changes of
+   `.github/workflow` files into opentelemetrybot's forks (these forks are used for automatically opening PRs against
+   external repos).
 
    Maintainers can open an issue in the community repository to have their repository granted access to this
    organization secret.
