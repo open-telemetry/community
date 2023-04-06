@@ -25,10 +25,10 @@ in alphabetical order:
 - [Armin Ruech](https://github.com/arminru), Dynatrace
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk
 - [Carlos Alberto](https://github.com/carlosalberto), Lightstep
+- [Jack Berg](https://github.com/jack-berg), New Relic
 - [Josh MacDonald](https://github.com/jmacd), Lightstep
 - [Josh Suereth](https://github.com/jsuereth), Google
 - [Reiley Yang](https://github.com/reyang), Microsoft
-- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 - [Yuri Shkuro](https://github.com/yurishkuro), Meta
 
@@ -54,7 +54,6 @@ Trace Approvers:
 Metrics Approvers:
 
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
-- [Jack Berg](https://github.com/jack-berg), New Relic
 - [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
@@ -63,7 +62,6 @@ Logs Approvers:
 - [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
 - [David Poncelow](https://github.com/zenmoto), Splunk
-- [Jack Berg](https://github.com/jack-berg), New Relic
 
 ## Java
 
@@ -152,13 +150,19 @@ Repo: [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opent
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry PHP API and SDK can be found in the [open-telemetry/opentelemetry-php CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-php/blob/master/CONTRIBUTING.md).
 
+## Swift
+
+Repo: [open-telemetry/opentelemetry-swift](https://github.com/open-telemetry/opentelemetry-swift)
+
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Swift API & SDK can be found in the [open-telemetry/opentelemetry-swift CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-swift/blob/main/CONTRIBUTING.md).
+
 ## Community Demo
 
 Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/opentelemetry-demo)
 
 ## Others
 
-Rust, Swift
+Rust
 
 ## Governance Committee Emeritus
 
@@ -166,3 +170,7 @@ Rust, Swift
 - [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2022
 - [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google, until October 2021
+
+## Technical Committee Emeritus
+
+- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google

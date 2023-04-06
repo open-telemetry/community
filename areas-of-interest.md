@@ -39,6 +39,14 @@ concerns.
 - OpenTracing compatibility
 - Semantic conventions
 
+### [Jack Berg](https://github.com/jack-berg), New Relic
+
+- Metrics API and SDK
+- Logging API and SDK
+- SDK configuration
+- OpenTelemetry Java
+- OpenTelemetry protocol
+
 ### [Josh MacDonald](https://github.com/jmacd), Lightstep
 
 - Metrics API and SDK and data model
@@ -63,11 +71,6 @@ concerns.
 - Trace API and SDK
 - OpenTelemetry .NET
 - OpenTelemetry C++
-- W3C trace context specification
-
-### [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
-
-- Trace API and SDK
 - W3C trace context specification
 
 ### [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
