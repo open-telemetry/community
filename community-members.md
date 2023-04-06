@@ -150,13 +150,19 @@ Repo: [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opent
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry PHP API and SDK can be found in the [open-telemetry/opentelemetry-php CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-php/blob/master/CONTRIBUTING.md).
 
+## Swift
+
+Repo: [open-telemetry/opentelemetry-swift](https://github.com/open-telemetry/opentelemetry-swift)
+
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Swift API & SDK can be found in the [open-telemetry/opentelemetry-swift CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-swift/blob/main/CONTRIBUTING.md).
+
 ## Community Demo
 
 Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/opentelemetry-demo)
 
 ## Others
 
-Rust, Swift
+Rust
 
 ## Governance Committee Emeritus
 
