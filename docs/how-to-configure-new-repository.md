@@ -76,9 +76,9 @@ Everything not mentioned is unchecked.
 
 **Important:** the only ones of these rules which may be changed are
 * Required number of approvals before merging
-  * This can also be more than `1`
+  * (this can also be more than `1`)
 * Require branches to be up to date before merging
-  * This can also be `unchecked`
+  * (this can also be `unchecked`)
 * Status checks that are required
   * More status checks can be added, but EasyCLA cannot be removed
 * Do not allow bypassing the above settings
@@ -106,6 +106,7 @@ Same as for [`main`](#branch-protection-rule-main) above.
 
 * Fork pull request workflows from outside collaborators
   * `Require approval for first-time contributors who are new to GitHub`
+    * (this can also be `Require approval for first-time contributors`)
 
 ## CODEOWNERS
 
