@@ -118,6 +118,12 @@ Link: https://splain.io/
 - Used to manage the OpenTelemetry community calendar and Zoom
 - Owned by the governance committee
 
+### Project Google account: opentelemetry.calendar.owner@gmail.com
+
+- Used to own calendar-related things (a separate account account is used just
+  for this since it gets a lot of email calendar invites).
+- Owned by the governance committee
+
 ## Bot accounts
 
 ### Easy CLA
