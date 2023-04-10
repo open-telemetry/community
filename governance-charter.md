@@ -35,7 +35,7 @@ following:
 - Decide, for the purpose of elections, who can vote.
 - Logo/landing page/marketing. 
 - Maintain relationships with CNCF. For instance, creating [documents describing
-  the project](https://github.com/cncf/toc/blob/master/proposals/opentelemetry.adoc)
+  the project](https://github.com/cncf/toc/blob/main/proposals/sandbox/opentelemetry.adoc)
 - Define, evolve, and defend the **vision, values, mission, and scope** of the
   project - to establish and maintain the soul of OpenTelemetry.
 - Decide how and when **official releases** of OpenTelemetry artifacts are

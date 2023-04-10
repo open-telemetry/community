@@ -67,7 +67,7 @@ cannot offer technical support in GitHub issues. If you have questions about the
 development process, feel free to jump into our [Slack
 Channel](https://cloud-native.slack.com/archives/CJFCJHG4Q) ([Get an invite to join CNCF](http://slack.cncf.io/)). You can also ask
 questions on [Stack
-Overflow](https://stackoverflow.com/questions/tagged/opentelemetry).
+Overflow](https://stackoverflow.com/questions/tagged/open-telemetry).
 
 ## Find something to work on
 

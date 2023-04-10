@@ -1,0 +1,26 @@
+{
+  "retryOn429" : true,
+  "ignorePatterns" : [
+    {
+      "pattern" : "https://github.com/username"
+    },
+    {
+      "pattern" : "https://github.com/zhyChesterCheung"
+    },
+    {
+      "pattern" : "https://twitter.com"
+    },
+    {
+      "pattern" : "https://www.zocdoc.com"
+    },
+    {
+      "pattern" : "https://www.youtube.com"
+    },
+    {
+      "pattern" : "https://www.linkedin.com"
+    },
+    {
+      "pattern" : "https://dev.azure.com"
+    }
+  ]
+}
