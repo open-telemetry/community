@@ -10,16 +10,6 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   - PR: https://github.com/1Password/1password-teams-open-source/pull/364
   - Admin: Alex Boten @codeboten
 
-## CI pipelines
-
-### OpenTelemetry Azure Pipeline
-
-Link: https://dev.azure.com/opentelemetry/.
-
-- Free tier is used.
-- Currently used for .NET Instrumentation repository.
-- Admin: [add administrator](https://dev.azure.com/opentelemetry/pipelines/_settings/).
-
 ## Artifact repositories
 
 ### NuGet OpenTelemetry organization
