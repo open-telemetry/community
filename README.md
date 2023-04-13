@@ -66,12 +66,12 @@ Calendar](https://calendar.google.com/calendar?cid=Z29vZ2xlLmNvbV9iNzllM2U5MGo3Y
 * [iCalendar](https://calendar.google.com/calendar/ical/google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com/public/basic.ics)
 (syncs with Outlook)
 
-The best way to subscribe to OpenTelemetry events is to join the [calendar updates Google
-Group](https://groups.google.com/forum/#!forum/opentelemetry-calendar). This will invite you to every OpenTelemetry call and correctly block time for
+The best way to subscribe to a specific OpenTelemetry event series is to join the associated
+[opentelemetry-calendar-...@googlegroups.com meeting invite list below](#special-interest-groups).
+This will invite you to those specific OpenTelemetry calls and correctly block time for
 accepted events, and it will keep your calendar in sync with new and updated events.
 
-(Internal Note: When creating or updating a calendar event in the `OpenTelemetry Public Calendar`, please ensure that `opentelemetry-calendar@googlegroups.com`
-is added as an attendee to the meeting invite.  This is what allows updates to the calendar to be synchronized to other attendees.)
+You can also subscribe to [opentelemetry-calendar-all@googlegroups.com](https://groups.google.com/g/opentelemetry-calendar-all), but beware that is a high-volume list.
 
 ### Mailing Lists
 
