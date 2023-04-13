@@ -123,6 +123,8 @@ Link: https://splain.io/
 - Used to own calendar-related things (a separate account account is used just
   for this since it gets a lot of email calendar invites).
 - Owned by the governance committee
+  (password is available in the OpenTelemetry Governance
+  1Password, recovery email is `cncf-opentelemetry-governance@lists.cncf.io`)
 
 ## Bot accounts
 
