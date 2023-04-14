@@ -181,7 +181,7 @@ Common new contributor PR issues are:
   CONTRIBUTING.md of the corresponding repository)
 - dealing with test cases which fail on your PR, unrelated to the changes you
   introduce
-- Introducing change that should be first be approved by TSC, for instance, the
+- Introducing change that should be first be approved by TC, for instance, the
   introduction of new terminology
 
 ## Code Review
