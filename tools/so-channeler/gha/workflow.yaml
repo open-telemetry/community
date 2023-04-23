@@ -1,0 +1,37 @@
+name: Fetch and Post StackOverflow Questions
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  fetch_and_post_questions:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+
+    - name: Fetch and post questions
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      run: |
+        python ./path/to/github_action.py
+
+    - name: Commit and push state file
+      run: |
+        git config user.name "GitHub Action"
+        git config user.email "noreply@example.com"
+        git add ./path/to/state.txt
+        git commit -m "Update state.txt"
+        git push

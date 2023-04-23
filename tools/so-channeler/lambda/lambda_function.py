@@ -23,9 +23,11 @@ def fetch_questions(latest_timestamp):
     params = {
         "tagged": "open-telemetry",
         "sort": "creation",
-        "site": "stackoverflow",
-        "fromdate": latest_timestamp
+        "site": "stackoverflow"
     }
+    if latest_timestamp > 0:
+        params["min"] = latest_timestamp + 1
+
     response = requests.get(STACK_OVERFLOW_API, params=params)
     response.raise_for_status()
     return response.json().get('items', [])
