@@ -63,6 +63,16 @@ Logs Approvers:
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
 - [David Poncelow](https://github.com/zenmoto), Splunk
 
+Semantic Convention Approvers:
+
+- [Christian Neumüller](https://github.com/Oberon00), Dynatrace
+- [James Moessis](https://github.com/jamesmoessis), Atlassian
+- [Joao Grassi](https://github.com/joaopgrassi), Dynatrace
+- [Johannes Tax](https://github.com/pyohannes), Microsoft
+- [Liudmila Molkova](https://github.com/lmolkova), Microsoft
+- [Sean Marcinak](https://github.com/MovieStoreGuy), Atlassian
+- [Ted Young](https://github.com/tedsuo), Lightstep
+
 ## Java
 
 Repo: [open-telemetry/opentelemetry-java](https://github.com/open-telemetry/opentelemetry-java)
