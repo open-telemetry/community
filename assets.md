@@ -112,9 +112,11 @@ Link: https://splain.io/
 
 ### Easy CLA
 
-- Admins: [@trask](https://github.com/trask) and
-  [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
-- Admins can open tickets at: https://jira.linuxfoundation.org/plugins/servlet/desk/portal/4/SUPPORT-17966
+Link: https://project.lfcla.com/#/project/a0941000002wBz4AAE/cla
+
+- Admin: [@bogdandrutu](https://github.com/bogdandrutu)
+- [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+  can open tickets at: https://jira.linuxfoundation.org/plugins/servlet/desk/portal/4/SUPPORT-17966
 
 ### Docker Hub
 
