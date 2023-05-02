@@ -1,0 +1,82 @@
+# OpenTelemetry is a complex project with many moving parts. Thankfully, we
+# strive to keep those parts loosely coupled where we can (this has been a goal
+# since the very announcement of OpenTelemetry, per this blog post:
+# https://medium.com/opentracing/merging-opentracing-and-opencensus-f0fe9c7ca6f0)
+#
+# This file describes the structure of the project and its sub-components,
+# definitions of API and stability maturity levels, and finally records the
+# current maturity of each component. We maintain this file as YAML in order to
+# make it easier to automate scripts (e.g., for the website) that present the
+# data to OpenTelemetry end-users.
+
+
+###############################################################################
+# MATURITY LEVELS
+#
+# OpenTelemetry components advertise their own maturity along two axes:
+# - PRODUCTION MATURITY: How reliable is this component from a
+#   production-readiness standpoint?
+# - API MATURITY: How stable is the component's API from a backwards- and
+#   forwards-compatibility standpoint)?
+#
+# In some cases, for instance, OpenTelemetry components may be immature from an
+# API maturity standpoint, yet be nearly 100% safe from a production standpoint
+# – and vice versa. Similarly, end-users may have more tolerance for lost
+# development time or software stability depending on their situation, so we
+# strive to separate self-reported maturity along these two axes.
+#
+# Needless to say, representations here are best-effort, and there is no
+# substitute for a mature release process. I.e., don't blindly deploy "mature"
+# OpenTelemetry components (or any software, for that matter!).
+productionMaturityLevels:
+  # "unknown" maturity is just what it purports to be. It's reasonable to
+  # assume "unstable", but we separate "unknown" and "unstable" to distinguish
+  # between a lack of evidence about production maturity and actual evidence of
+  # immaturity.
+  - unknown
+
+  # "unstable" components are not recommended for production workloads. They
+  # may crash the process, introduce performance artifacts, or have known
+  # security issues.
+  - unstable
+
+  # "beta" components have been used successfully in production workloads at
+  # scale: that is, the component is used in support of well-known product
+  # functionality at publicly-held companies. Nevertheless, either due to
+  # the uncertainty introduced by active development or a small number of
+  # production environments, they should still be used cautiously in new
+  # deployments. They do not have known security issues.
+  - beta
+
+  # "stable" components are, to the best of the author's knowledge, safe for
+  # typical production use cases.
+  - stable
+
+# All OpenTelemetry APIs follow semver conventions (i.e., after v1.x,
+# backwards-incompatible changes should bump the major version number).
+apiMaturityLevels:
+  # "unimplemented" APIs do not exist yet for the component/language.
+  - unimplemented
+
+  # "notApplicable" APIs do not and will never exist for the component/language
+  # because they are, well, not applicable. For instance, a
+  # zero-code-modification auto-instrumentation agent would be notApplicable
+  # for C99.
+  - notApplicable
+
+  # "alpha" maturity APIs can change in incompatible ways at any time.
+  - alpha
+
+  # "beta" maturity APIs should not introduce backwards-incompatible changes
+  # more than once every three months; and when those changes are introduced, the
+  # authors will make a best effort to provide compatibility bridges.
+  #
+  # Also, for an API to be considered "beta", it must be supported by at least
+  # two complete implementations, and at least one of those must be for a
+  # well-known OSS project (e.g., Jaeger or Prometheus).
+  - beta
+
+  # "stable" maturity APIs should not introduce backwards-incompatible changes
+  # more than once every twelve months, and will make every effort to provide
+  # compatibility bridges if at all possible.
+  - stable
