@@ -84,9 +84,9 @@ Everything not mentioned is unchecked.
 * Do not allow bypassing the above settings
   * Maintainers may temporarily disable this
 
-**Note:** If the `EasyCLA` check isn't showing, have a CLA manager
-[enable the check for the repo](https://project.lfcla.com/#/project/a0941000002wBz4AAE/cla).
-Check with the OpenTelemetry's [EasyCLA admins](../assets.md#easy-cla).
+**Note:** `EasyCLA` check should show up automatically. If it doesn't, open a
+[Jira ticket](https://jira.linuxfoundation.org/plugins/servlet/desk/portal/4/create/143)
+with the EasyCLA team.
 
 #### Branch protection rule: `dependabot/**/**`
 

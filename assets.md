@@ -112,9 +112,12 @@ Link: https://splain.io/
 
 ### Easy CLA
 
-Link: https://project.lfcla.com/#/project/a0941000002wBz4AAE/cla
+This is not really an OpenTelemetry asset as we do not have any credentials or admin access for it.
 
-- Admins: @lizthegrey, @bogdandrutu
+For support:
+* Open an [OpenTelemetry community issue](https://github.com/open-telemetry/community/issues/new/choose)
+* Ask in the [`#easycla`](https://cloud-native.slack.com/archives/CK8QVEXQB) Slack channel
+* Open an [EasyCLA Jira ticket](https://jira.linuxfoundation.org/plugins/servlet/desk/portal/4/create/143)
 
 ### Docker Hub
 
