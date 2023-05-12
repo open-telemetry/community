@@ -37,7 +37,8 @@ a friendly, collaborative group and look forward to working together!
 * Governance Committee (GC): [Charter](./governance-charter.md), [Members](./community-members.md#governance-committee)
 * Technical Committee (TC): [Charter](./tech-committee-charter.md), [Members](./community-members.md#technical-committee)
 
-Both committees meet regularly, and the respective meeting notes are publicly available in the [GC meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8) and the [TC meeting notes](https://docs.google.com/document/d/17v2RMZlJZkgoPYHZhIFTVdDqQMIAH8kzo8Sl2kP3cbY) Google Docs. If you want to check out the recordings, head to the [meeting recordings](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s).
+Both committees meet regularly, and the respective meeting notes are publicly available in the [GC meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8) and the [TC meeting notes](https://docs.google.com/document/d/1hOHPCu5TGenqTeWPB9qQB_qd33uITZBcvK1FnWxYJAw) Google Docs. The Governance Committee meetings are also recorded.
+If you want to check out the recordings, head to the [meeting recordings](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s).
 
 ## Areas of Interest
 
@@ -125,7 +126,7 @@ SIG-specific GitHub discussions.
 Name|Meeting Time|Meeting Notes|Discussions|[Technical Committee](./community-members.md#technical-committee) Sponsors|
 ----|------------|-------------|-----------|-----------|
 Specification: General|Every Tuesday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/1pdvPeKjA8v8w_fGKAN68JjWBmVJtPCpqdi9IZrd6eEo/edit)|[Slack](https://cloud-native.slack.com/archives/C01N7PP1THC)
-Specification: Logs|Every Wednesday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1P_wkLEomswd0M0eNNnxSOe6U-EOpCZaMIIxKuM4frw8)|[Slack](https://cloud-native.slack.com/archives/C01N5UCHTEH)|[Tigran Najaryan](https://github.com/tigrannajaryan)
+Specification: Logs|Merged into "Specification: General"|See above|[Slack](https://cloud-native.slack.com/archives/C01N5UCHTEH)|[Tigran Najaryan](https://github.com/tigrannajaryan)
 Specification: Sampling|Every Thursday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/1gASMhmxNt9qCa8czEMheGlUW2xpORiYoD7dBD7aNtbQ/)|[Slack](https://cloud-native.slack.com/archives/C027DS6GZD3)|[Josh MacDonald](https://github.com/jmacd)
 Specification: Configuration|Every other Monday at 8:00 PT|[Google Doc](https://docs.google.com/document/d/1uNgWQLQZcSVfBLRXfW9XCVJmKa5NH9R15fSOXhmpGWw/edit)|[Slack](https://cloud-native.slack.com/archives/C0476L7UJT1)|[Carlos Alberto](https://github.com/carlosalberto)
 Instrumentation: General|Every Tuesday at 16:00 PT|[Google Doc](https://docs.google.com/document/d/1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE/)|[Slack](https://cloud-native.slack.com/archives/C01QZFGMLQ7)
@@ -153,10 +154,10 @@ Rust: SDK|Every Tuesday at 16:00 UTC|[Google Doc](https://docs.google.com/docume
 Swift: SDK|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1LugL8r4bAkbTxZ1Gq_6j_8SDv1LuZaNeUdR-QLN4d48/edit)|[Slack](https://cloud-native.slack.com/archives/C01NCHR19SB)||
 Communications (Website, etc.)|Every other week on Monday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY)|[Slack](https://cloud-native.slack.com/archives/C02UN96HZH6)|
 End-User WG|Every other week on Thursday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/1e-UNZA3Tuno9b53RQbe--whUcO0VIXF3P81oXsrBK6g/edit#heading=h.ip90glf2wys2)|[Slack](https://cloud-native.slack.com/archives/C01RT3MSWGZ)|
-eBPF|Every week on Thursday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/13GK915hdDQ9sUYzUIWi4pOfJK68EE935ugutUgL3yOw)|[Slack](https://cloud-native.slack.com/archives/C02AB15583A)|
+eBPF|Every week on Tuesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/13GK915hdDQ9sUYzUIWi4pOfJK68EE935ugutUgL3yOw)|[Slack](https://cloud-native.slack.com/archives/C02AB15583A)|
 Agent Management WG|Every other week on Tuesday at 11:00 PT|[Google Doc](https://docs.google.com/document/d/19WA5-ex8rNFIBIyVb5VqMXfWNmUQwppGhN8zBeNG0f4)|[Slack](https://cloud-native.slack.com/archives/C02J58HR58R)|
 Prometheus Interoperability WG|Every other week on Wednesday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/19bnXziPn2MZ9wO6684UoI4D-LCjGL5bTJkGhux29bx8/edit#)|[Slack](https://cloud-native.slack.com/archives/C01LSCJBXDZ)|
-Client Instrumentation|Every Wednesday at 8:00 AM PT|[Google Doc](https://docs.google.com/document/d/16Vsdh-DM72AfMg_FIt9yT9ExEWF4A_vRbQ3jRNBe09w/edit)|[Slack](https://cloud-native.slack.com/archives/C0239SYARD2)|
+Client Instrumentation|Every Tuesday at 9:00 AM PT (primary) and every Monday at 12:30 PM PT (half hour)|[Google Doc](https://docs.google.com/document/d/16Vsdh-DM72AfMg_FIt9yT9ExEWF4A_vRbQ3jRNBe09w/edit)|[Slack](https://cloud-native.slack.com/archives/C0239SYARD2)|
 Kubernetes Operator|Every other week on Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1Unbs2qp_j5kp8FfL_lRH-ld7i5EOQpsq0I4djkOOSL4)|[Slack](https://cloud-native.slack.com/archives/C033BJ8BASU)|
 Community Demo Application|Every Monday at 8:15 PT|[Google Doc](https://docs.google.com/document/d/16f-JOjKzLgWxULRxY8TmpM_FjlI1sthvKurnqFz9x98/edit)|[Slack](https://cloud-native.slack.com/archives/C03B4CWV4DA)|
 Functions as a Service (FAAS) |Every Tuesday at 12:00 PM PT |[Google Doc](https://docs.google.com/document/d/187XYoQcXQ9JxS_5v2wvZ0NEysaJ02xoOYNXj08pT0zc/edit#)|[Slack](https://cloud-native.slack.com/archives/C04HVBETC9Z)|

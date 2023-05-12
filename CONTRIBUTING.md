@@ -67,7 +67,7 @@ cannot offer technical support in GitHub issues. If you have questions about the
 development process, feel free to jump into our [Slack
 Channel](https://cloud-native.slack.com/archives/CJFCJHG4Q) ([Get an invite to join CNCF](http://slack.cncf.io/)). You can also ask
 questions on [Stack
-Overflow](https://stackoverflow.com/questions/tagged/opentelemetry).
+Overflow](https://stackoverflow.com/questions/tagged/open-telemetry).
 
 ## Find something to work on
 
@@ -181,7 +181,7 @@ Common new contributor PR issues are:
   CONTRIBUTING.md of the corresponding repository)
 - dealing with test cases which fail on your PR, unrelated to the changes you
   introduce
-- Introducing change that should be first be approved by TSC, for instance, the
+- Introducing change that should be first be approved by TC, for instance, the
   introduction of new terminology
 
 ## Code Review

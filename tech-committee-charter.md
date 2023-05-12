@@ -65,7 +65,7 @@ The TC and entire technical community will follow any processes as may be specif
 
 From time to time, organizations may wish to donate existing code to
 OpenTelemetry. The basic process for donating code is described [in
-CONTRIBUTING.md](/CONTRIBUTING.md#donations).  Of note is the expectation that
+CONTRIBUTING.md](CONTRIBUTING.md#donations).  Of note is the expectation that
 the TC respond to donation proposals **within two weeks.**
 
 ## Elections
