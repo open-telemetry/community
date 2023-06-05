@@ -36,6 +36,17 @@ Link: https://www.npmjs.com/settings/opentelemetry/packages
 - Admin: Daniel Dyla @dyladan
 - Member: Bogdan Drutu @bogdandrutu
 
+### Maven
+
+Link: https://repo1.maven.org/maven2/io/opentelemetry/
+
+Maven doesn't have the concept of an "organization account",
+but these individual OpenTelemetry members have been given rights to publish under `io.opentelemetry`:
+* [@bogdandrutu](https://github.com/bogdandrutu)
+* [@carlosalberto](https://github.com/carlosalberto)
+* [@jack-berg](https://github.com/jack-berg)
+* [@trask](https://github.com/trask)
+
 ## Communication channels
 
 ### opentelemetry-calendar-contributors Google Group
