@@ -42,6 +42,9 @@ When creating social content, keep the following general guidelines in mind:
 - Focus on our overall goals when creating social content.
   - This doesn't mean we can't be fun, or have fun, but we should try to keep
     social content highly relevant.
+  - Highlight and celebrate our contributors, releases, achievements, and other
+    'sister' projects or initiatives in the CNCF/Open Observability world.
+  - Strive to reflect our DEI values in our social content.
 
 An example of content we should strive to regularly post:
 
