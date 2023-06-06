@@ -38,7 +38,7 @@ When creating social content, keep the following general guidelines in mind:
   - It's also OK to recognize and name individuals employers in the context of
     their contributions to the project.
   - Generally, avoid naming specific companies or products in a way that could
-    be construed as an endorsement.
+    be construed as an endorsement or an opposition.
 - Focus on our overall goals when creating social content.
   - This doesn't mean we can't be fun, or have fun, but we should try to keep
     social content highly relevant.
