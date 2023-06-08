@@ -98,6 +98,17 @@ Everything not mentioned is unchecked.
 * Allow deletions: :heavy_check_mark:
   * (so that branches can be deleted after merging)
 
+**Note:** "Require a pull request before merging" and
+"Require status checks to pass before merging" both need to be `unchecked` so that
+these branches can be directly updated (without going through a pull request).
+
+#### Branch protection rule: `renovate/**/**`
+
+Same as for [`dependabot/**/**`](#branch-protection-rule-dependabot) above.
+
+This branch protection rule is not set up automatically, but can be added for any
+repositories that are using [Renovate](https://github.com/apps/renovate).
+
 #### Branch protection rule: `**/**`
 
 Same as for [`main`](#branch-protection-rule-main) above.
