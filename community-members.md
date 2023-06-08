@@ -109,7 +109,7 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 Repo: [open-telemetry/opentelemetry-go-instrumentation](https://github.com/open-telemetry/opentelemetry-go-instrumentation)
 
-The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Go auto-instrumentation can be found in the [open-telemetry/opentelemetry-go CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-go-instrumentation/blob/main/CONTRIBUTING.md#appovers-and-maintainers).
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Go auto-instrumentation can be found in the [open-telemetry/opentelemetry-go-instrumentation CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-go-instrumentation/blob/main/CONTRIBUTING.md#appovers-and-maintainers).
 
 ## JavaScript
 
