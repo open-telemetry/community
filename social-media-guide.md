@@ -39,6 +39,9 @@ When creating social content, keep the following general guidelines in mind:
     their contributions to the project.
   - Generally, avoid naming specific companies or products in a way that could
     be construed as an endorsement or an opposition.
+  - Never use OpenTelemetry accounts to denigrate, demean, or otherwise make
+    negative statements or claims about specific people, companies, products,
+    services, or other projects.
 - Focus on our overall goals when creating social content.
   - This doesn't mean we can't be fun, or have fun, but we should try to keep
     social content highly relevant.
