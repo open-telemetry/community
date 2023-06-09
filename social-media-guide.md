@@ -63,6 +63,7 @@ The following is a list of official OpenTelemetry social media accounts:
 
 - Twitter: [@opentelemetry](https://twitter.com/opentelemetry)
 - Mastodon: [@opentelemetry@fosstodon.org](https://fosstodon.org/@opentelemetry)
+- LinkedIn: [OpenTelemetry](https://www.linkedin.com/company/opentelemetry/)
 - YouTube: [@otel-official](https://youtube.com/@otel-official)
 
 ## Questions and Feedback
