@@ -31,7 +31,7 @@ Current governance committee members (alphabetical order):
 * [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk, until October 2023
 * [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2024
 * [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs, until October 2023
-* [Morgan James McLean](https://github.com/mtwo), Splunk, until October 2024
+* [Morgan McLean](https://github.com/mtwo), Splunk, until October 2024
 * [Ted Young](https://github.com/tedsuo), Lightstep, until October 2023
 * [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2024
 * [Yuri Shkuro](https://github.com/yurishkuro), Facebook, until October 2023
