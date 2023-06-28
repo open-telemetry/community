@@ -100,7 +100,7 @@ The TC follows a [Consensus Seeking](https://en.wikipedia.org/wiki/Consensus-see
 
 If an agenda item cannot reach a consensus a TC member can call for either a closing vote or a vote to table the issue to the next meeting. The call for a vote must be seconded by a majority of the TC or else the discussion will continue.
 
-For all votes, a simple majority of a quorum of TC members for, or against, the issue wins. A TC member may choose to participate in any vote through abstention. A quorum is defined as > 1/2 of TC members voting for or against (members who abstain do not count towards the quorum). TC votes may be done synchronously or asynchronously. Asynchronous votes remain open for a period of time agreed upon by the TC when the issue is put to a vote. Aggregated TC vote results are shared publicly but the vote selections of individual members are not shared. The TC decides whether vote selections by members are anonymous or shared among members when the issue is put to a vote.
+For all votes, a simple majority of a quorum of TC members for, or against, the issue wins. A TC member may choose to participate in any vote through abstention. A quorum is defined as > 1/2 of TC members voting for or against or explicitly abstaining. TC votes may be done synchronously or asynchronously. Asynchronous votes remain open for a period of time agreed upon by the TC when the issue is put to a vote. Aggregated TC vote results are shared publicly but the vote selections of individual members are not shared. The TC decides whether vote selections by members are anonymous or shared among members when the issue is put to a vote.
 
 ### Requesting a TC decision
 
