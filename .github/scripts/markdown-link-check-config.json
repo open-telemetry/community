@@ -25,6 +25,9 @@
     },
     {
       "pattern" : "https://dev.azure.com"
+    },
+    {
+      "pattern" : "https://www.microsoft.com"
     }
   ]
 }
