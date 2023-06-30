@@ -6,11 +6,12 @@ Videos are being recorded using one of [zoom accounts](https://github.com/open-t
 
 - All meetings are configured for automatic recording start. No host present necessary.
 - Once meeting is concluded, all participants need to leave the meeting room so the recording will be uploaded to zoom cloud.
-- Every recorded meeting is picked up by [Zapier](https://github.com/open-telemetry/community/blob/main/assets.md#zapier-account) (https://zapier.com).
-  Zapier is configured to automatically post links of the Zoom cloud recordings (along with the meeting name, start time and duration) to a publicly viewable Google spreadsheet.
+- Every recorded meeting (of length 1 minute or longer) is picked up by
+  [Zapier](https://github.com/open-telemetry/community/blob/main/assets.md#zapier-account) (https://zapier.com).
+  Zapier is configured to automatically post links of the Zoom cloud recordings
+  (along with the meeting name, start time and duration) to a
+  [publicly viewable Google spreadsheet](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s).
 - It typically takes an hour for the video to be processed by Zapier.
-- TODO short videos should not be posted to the Google spreadsheet as they are typically accidental meeting link clicks, not a real meeting
-  (this requires a paid Zapier account so is being done manually for now).
 
 ## Video is missing - what to do
 
