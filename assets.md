@@ -107,12 +107,14 @@ Link: https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos
   To join https://lists.cncf.io/g/cncf-otel-zoomadmins and get admin rights, open a
   [CNCF ServiceDesk](https://cncfservicedesk.atlassian.net/).
 
-### Splain account
+### Zapier account
 
-Link: https://splain.io/
+Link: https://zapier.com
 
-- Used to upload Zoom meeting recordings to Youtube
-- Owned by: Amye Scavarda Perrin (CNCF rep)
+- Used to automatically add links to Zoom meeting recordings to a
+  [publicly viewable Google spreadsheet](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s)
+- Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+  (GitHub password is available in the OpenTelemetry Governance 1Password)
 
 ### Project Google account: cncf-opentelemetry-governance@lists.cncf.io
 
