@@ -131,7 +131,7 @@ Specification: Sampling|Every Thursday at 08:00 PT|[Google Doc](https://docs.goo
 Specification: Configuration|Every other Monday at 8:00 PT|[Google Doc](https://docs.google.com/document/d/1uNgWQLQZcSVfBLRXfW9XCVJmKa5NH9R15fSOXhmpGWw/edit)|[Slack](https://cloud-native.slack.com/archives/C0476L7UJT1)|[Carlos Alberto](https://github.com/carlosalberto)
 Instrumentation: General|Every Tuesday at 16:00 PT|[Google Doc](https://docs.google.com/document/d/1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE/)|[Slack](https://cloud-native.slack.com/archives/C01QZFGMLQ7)
 Instrumentation: Messaging|Every Thursday at 8:00 PT|[Google Doc](https://docs.google.com/document/d/1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE/)|[Slack](https://cloud-native.slack.com/archives/C01QZFGMLQ7)
-Semantic Conventions Working Group|Every other Monday at 10:00 PT|[Google Doc](https://docs.google.com/document/d/10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8)|[Slack](https://cloud-native.slack.com/archives/C041APFBYQP)
+Semantic Conventions Working Group|Every Monday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8)|[Slack](https://cloud-native.slack.com/archives/C041APFBYQP)|[Armin Ruech](https://github.com/arminru)<br/>[Josh Suereth](https://github.com/jsuereth)<br/>[Reiley Yang](https://github.com/reyang)|
 
 ### Implementation SIGs
 
@@ -146,7 +146,7 @@ Erlang/Elixir: SDK|Every other Thursday at 9:00 PT|[Google Doc](https://docs.goo
 GoLang: SDK|Every Thursday alternating between 10:00 and 15:00 PDT|[Google Doc](https://docs.google.com/document/d/1E5e7Ld0NuU1iVvf-42tOBpu2VBBLYnh73GJuITGJTTU/edit)|[Slack](https://cloud-native.slack.com/archives/C01NPAXACKT)|
 GoLang: Automatic Instrumentation|Every other week on Tuesday at 9:30 PT|[Google Doc](https://docs.google.com/document/d/1P6am_r_cxCX1HcpDQlznrTrTOvwN2whshL0f58lXSWI/edit)|[Slack](https://cloud-native.slack.com/archives/C03S01YSAS0)|
 Java: SDK + Automatic Instrumentation|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw/)|[SDK](https://cloud-native.slack.com/archives/C014L2KCTE3) and [Instrumentation](https://cloud-native.slack.com/archives/C0150QF88FL) Slack channels|
-JavaScript: SDK|Every Wednesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1YR1Z3SqOkAJGffycO_P9d0CiTMP79OOtu_xvIyyVLME/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01NL1GRPQR) and [GitHub Discussions](https://github.com/open-telemetry/opentelemetry-js/discussions)|
+JavaScript: SDK|Every Wednesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1tCyoQK49WVcE-x8oryZOTTToFm7sIeUhxFPm9g-qL1k)|[Slack](https://cloud-native.slack.com/archives/C01NL1GRPQR) and [GitHub Discussions](https://github.com/open-telemetry/opentelemetry-js/discussions)|
 PHP: SDK|Every Wednesday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI/edit)|[Slack](https://cloud-native.slack.com/archives/C01NFPCV44V)|
 Python: SDK|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1CIMGoIOZ-c3-igzbd6_Pnxx1SjAkjwqoYSUWxPY8XIs/edit)|[Slack](https://cloud-native.slack.com/archives/C01PD4HUVBL)|
 Ruby: SDK|Every Tuesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1D15bO8o340sQm2CVZiukEJuCO_XMMHKPuTznoEhyFqE/edit)|[Slack](https://cloud-native.slack.com/archives/C01NWKKMKMY) and [GitHub Discussions](https://github.com/open-telemetry/opentelemetry-ruby/discussions)|
@@ -161,6 +161,7 @@ Client Instrumentation|Every Tuesday at 9:00 AM PT (primary) and every Monday at
 Kubernetes Operator|Every other week on Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1Unbs2qp_j5kp8FfL_lRH-ld7i5EOQpsq0I4djkOOSL4)|[Slack](https://cloud-native.slack.com/archives/C033BJ8BASU)|
 Community Demo Application|Every Monday at 8:15 PT|[Google Doc](https://docs.google.com/document/d/16f-JOjKzLgWxULRxY8TmpM_FjlI1sthvKurnqFz9x98/edit)|[Slack](https://cloud-native.slack.com/archives/C03B4CWV4DA)|
 Functions as a Service (FAAS) |Every Tuesday at 12:00 PM PT |[Google Doc](https://docs.google.com/document/d/187XYoQcXQ9JxS_5v2wvZ0NEysaJ02xoOYNXj08pT0zc/edit#)|[Slack](https://cloud-native.slack.com/archives/C04HVBETC9Z)|
+OpenTelemetry Profilng WG | Every other week on Thursday at 08:00 AM PT |[Google Doc](https://docs.google.com/document/d/19UqPPPlGE83N37MhS93uRlxsP1_wGxQ33Qv6CDHaEp0/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C03J794L0BV)|
 
 ## Related groups
 
