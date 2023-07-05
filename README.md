@@ -138,7 +138,7 @@ Semantic Conventions Working Group|Every Monday at 08:00 PT|[Google Doc](https:/
 Name|Meeting Time|Meeting Notes|Discussions|
 ----|------------|-------------|-----------|
 Maintainers Meeting|Every Monday at 09:00PT|[Google Doc](https://docs.google.com/document/d/14lBtLAdzsV7M8xQNdhTJ0d2PxM1R7FByw-GttKJzVVw)|[Slack](https://cloud-native.slack.com/archives/C01NJ7V1KRC)|
-Collector|Every Wednesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N6P7KR6W)|
+Collector|Every Wednesday at 09:00 PT plus monthly on first Wednesday at 00:00 PT and on third Wednesday at 16:00 PT|[Google Doc](https://docs.google.com/document/d/1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N6P7KR6W)|
 C/C++: SDK|Every week alternating between Monday at 13:00 PT and Wednesday at 9:00 PT|[Google Doc](https://docs.google.com/document/d/1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N3AT62SJ)|
 .NET: Automatic Instrumentation|Every Wednesday at 9:00 PT|[Google Doc](https://docs.google.com/document/d/1XedN2D8_PH4YLej-maT8sp4RKogfuhFpccRi3QpUcoI/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01NR1YLSE7)|
 .NET: SDK|Every Tuesday alternating between 11:00 and 16:00 PT|[Google Doc](https://docs.google.com/document/d/1yjjD6aBcLxlRazYrawukDgrhZMObwHARJbB9glWdHj8/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N3BC2W7Q)|
