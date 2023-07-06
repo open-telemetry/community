@@ -47,6 +47,12 @@ but these individual OpenTelemetry members have been given rights to publish und
 * [@jack-berg](https://github.com/jack-berg)
 * [@trask](https://github.com/trask)
 
+### PyPI
+
+Link: https://pypi.org/user/opentelemetry/
+
+- Owner: [@codeboten](https://github.com/codeboten)
+
 ## Communication channels
 
 ### opentelemetry-calendar-contributors Google Group
