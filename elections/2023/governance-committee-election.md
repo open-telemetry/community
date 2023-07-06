@@ -102,6 +102,6 @@ Voting will close on 25 October 2023 at 00:00 UTC. Nominees will be stack ranked
 | {{TODO DATE}}              | Preliminary list of nominees announced                                                                                                     |
 | {{TODO DATE}}              | List of nominees is finalized on [community](https://github.com/open-telemetry/community) GitHub and advertised via mailing list and Slack |
 | {{TODO DATE}} 23:59 UTC    | Last day to apply for a member of standing exemption                                                                                       |
-| 23 Octoboer 2023 00:00 UTC | Voting period begins                                                                                                                       |
+| 23 October 2023 00:00 UTC | Voting period begins                                                                                                                       |
 | 25 October 2023 23:59 UTC  | voting ends                                                                                                                                |
 | 27 October 2023            | Results are announced                                                                                                                      |
