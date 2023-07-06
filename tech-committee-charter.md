@@ -100,7 +100,13 @@ The TC follows a [Consensus Seeking](https://en.wikipedia.org/wiki/Consensus-see
 
 If an agenda item cannot reach a consensus a TC member can call for either a closing vote or a vote to table the issue to the next meeting. The call for a vote must be seconded by a majority of the TC or else the discussion will continue.
 
-For all votes, a simple majority of all TC members for, or against, the issue wins. A TC member may choose to participate in any vote through abstention.
+For all votes, a simple majority of a quorum of TC members for, or against, the issue wins. A TC member may choose to participate in any vote through abstention. A quorum is defined as > 1/2 of TC members voting for or against or explicitly abstaining. TC votes may be done synchronously or asynchronously. Asynchronous votes remain open for a period of time agreed upon by the TC when the issue is put to a vote. Aggregated TC vote results are shared publicly but the vote selections of individual members are not shared. The TC decides whether vote selections by members are anonymous or shared among members when the issue is put to a vote.
+
+### Requesting a TC decision
+
+When a project issue fails to reach consensus, OpenTelemetry [community members](./community-membership.md#member) may request that the TC make a decision. If the issue falls under a project with assigned [approvers](./community-membership.md#approver) and / or [maintainers](./community-membership.md#maintainer), at least two of those members should agree to and coordinate requesting a TC decision.
+
+The request for a TC decision must be made by a comment on a public issue. The comment must explicitly tag the TC team (@open-telemetry/technical-committee), and summarize the various options and their relative tradeoffs. A TC member should review the summary and may request additional details or other changes to more accurately frame the issue. The request will then be added to the TC agenda, and the TC will work towards a decision using the [TC voting process](#voting-on-project-issues).
 
 ## Project Roles
 

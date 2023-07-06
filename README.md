@@ -37,7 +37,8 @@ a friendly, collaborative group and look forward to working together!
 * Governance Committee (GC): [Charter](./governance-charter.md), [Members](./community-members.md#governance-committee)
 * Technical Committee (TC): [Charter](./tech-committee-charter.md), [Members](./community-members.md#technical-committee)
 
-Both committees meet regularly, and the respective meeting notes are publicly available in the [GC meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8) and the [TC meeting notes](https://docs.google.com/document/d/1hOHPCu5TGenqTeWPB9qQB_qd33uITZBcvK1FnWxYJAw) Google Docs. If you want to check out the recordings, head to the [Governance Committee YouTube playlist](https://www.youtube.com/playlist?list=PLVYDBkQ1Tdyzg1CuQgd9mdjwOUYg7ECYR).
+Both committees meet regularly, and the respective meeting notes are publicly available in the [GC meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8) and the [TC meeting notes](https://docs.google.com/document/d/1hOHPCu5TGenqTeWPB9qQB_qd33uITZBcvK1FnWxYJAw) Google Docs. The Governance Committee meetings are also recorded.
+If you want to check out the recordings, head to the [meeting recordings](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s).
 
 ## Areas of Interest
 
@@ -111,7 +112,7 @@ repository](https://github.com/cncf/artwork/tree/master/projects/opentelemetry).
 ## Special Interest Groups
 
 We organize the community into Special Interest Groups (SIGs) to
-improve our workflow and more efficiently manage a community project. While meetings are expected to happen regularly, they are subject to contributors' availability and may be rescheduled or changed at time. Check our [public calendar](https://github.com/open-telemetry/community#calendar) and SIG-specific GitHub discussions for meeting changes and cancellations. All meetings happen over Zoom, are recorded, and [available on YouTube](https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos), and have a meeting notes document.
+improve our workflow and more efficiently manage a community project. While meetings are expected to happen regularly, they are subject to contributors' availability and may be rescheduled or changed at time. Check our [public calendar](https://github.com/open-telemetry/community#calendar) and SIG-specific GitHub discussions for meeting changes and cancellations. All meetings happen over Zoom, have a meeting notes document, and are recorded and [available on Zoom cloud](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s).
 
 Please do not hesitate to contact SIG owners if the proposed time of the
 meeting or tools used is unavailable for you. For instance, it is a good
@@ -137,7 +138,7 @@ Semantic Conventions Working Group|Every Monday at 08:00 PT|[Google Doc](https:/
 Name|Meeting Time|Meeting Notes|Discussions|
 ----|------------|-------------|-----------|
 Maintainers Meeting|Every Monday at 09:00PT|[Google Doc](https://docs.google.com/document/d/14lBtLAdzsV7M8xQNdhTJ0d2PxM1R7FByw-GttKJzVVw)|[Slack](https://cloud-native.slack.com/archives/C01NJ7V1KRC)|
-Collector|Every Wednesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N6P7KR6W)|
+Collector|Every Wednesday at 09:00 PT plus monthly on first Wednesday at 00:00 PT and on third Wednesday at 16:00 PT|[Google Doc](https://docs.google.com/document/d/1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N6P7KR6W)|
 C/C++: SDK|Every week alternating between Monday at 13:00 PT and Wednesday at 9:00 PT|[Google Doc](https://docs.google.com/document/d/1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N3AT62SJ)|
 .NET: Automatic Instrumentation|Every Wednesday at 9:00 PT|[Google Doc](https://docs.google.com/document/d/1XedN2D8_PH4YLej-maT8sp4RKogfuhFpccRi3QpUcoI/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01NR1YLSE7)|
 .NET: SDK|Every Tuesday alternating between 11:00 and 16:00 PT|[Google Doc](https://docs.google.com/document/d/1yjjD6aBcLxlRazYrawukDgrhZMObwHARJbB9glWdHj8/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N3BC2W7Q)|
@@ -145,7 +146,7 @@ Erlang/Elixir: SDK|Every other Thursday at 9:00 PT|[Google Doc](https://docs.goo
 GoLang: SDK|Every Thursday alternating between 10:00 and 15:00 PDT|[Google Doc](https://docs.google.com/document/d/1E5e7Ld0NuU1iVvf-42tOBpu2VBBLYnh73GJuITGJTTU/edit)|[Slack](https://cloud-native.slack.com/archives/C01NPAXACKT)|
 GoLang: Automatic Instrumentation|Every other week on Tuesday at 9:30 PT|[Google Doc](https://docs.google.com/document/d/1P6am_r_cxCX1HcpDQlznrTrTOvwN2whshL0f58lXSWI/edit)|[Slack](https://cloud-native.slack.com/archives/C03S01YSAS0)|
 Java: SDK + Automatic Instrumentation|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw/)|[SDK](https://cloud-native.slack.com/archives/C014L2KCTE3) and [Instrumentation](https://cloud-native.slack.com/archives/C0150QF88FL) Slack channels|
-JavaScript: SDK|Every Wednesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1YR1Z3SqOkAJGffycO_P9d0CiTMP79OOtu_xvIyyVLME/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01NL1GRPQR) and [GitHub Discussions](https://github.com/open-telemetry/opentelemetry-js/discussions)|
+JavaScript: SDK|Every Wednesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1tCyoQK49WVcE-x8oryZOTTToFm7sIeUhxFPm9g-qL1k)|[Slack](https://cloud-native.slack.com/archives/C01NL1GRPQR) and [GitHub Discussions](https://github.com/open-telemetry/opentelemetry-js/discussions)|
 PHP: SDK|Every Wednesday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI/edit)|[Slack](https://cloud-native.slack.com/archives/C01NFPCV44V)|
 Python: SDK|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1CIMGoIOZ-c3-igzbd6_Pnxx1SjAkjwqoYSUWxPY8XIs/edit)|[Slack](https://cloud-native.slack.com/archives/C01PD4HUVBL)|
 Ruby: SDK|Every Tuesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1D15bO8o340sQm2CVZiukEJuCO_XMMHKPuTznoEhyFqE/edit)|[Slack](https://cloud-native.slack.com/archives/C01NWKKMKMY) and [GitHub Discussions](https://github.com/open-telemetry/opentelemetry-ruby/discussions)|
@@ -160,6 +161,7 @@ Client Instrumentation|Every Tuesday at 9:00 AM PT (primary) and every Monday at
 Kubernetes Operator|Every other week on Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1Unbs2qp_j5kp8FfL_lRH-ld7i5EOQpsq0I4djkOOSL4)|[Slack](https://cloud-native.slack.com/archives/C033BJ8BASU)|
 Community Demo Application|Every Monday at 8:15 PT|[Google Doc](https://docs.google.com/document/d/16f-JOjKzLgWxULRxY8TmpM_FjlI1sthvKurnqFz9x98/edit)|[Slack](https://cloud-native.slack.com/archives/C03B4CWV4DA)|
 Functions as a Service (FAAS) |Every Tuesday at 12:00 PM PT |[Google Doc](https://docs.google.com/document/d/187XYoQcXQ9JxS_5v2wvZ0NEysaJ02xoOYNXj08pT0zc/edit#)|[Slack](https://cloud-native.slack.com/archives/C04HVBETC9Z)|
+OpenTelemetry Profilng WG | Every other week on Thursday at 08:00 AM PT |[Google Doc](https://docs.google.com/document/d/19UqPPPlGE83N37MhS93uRlxsP1_wGxQ33Qv6CDHaEp0/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C03J794L0BV)|
 
 ## Related groups
 
