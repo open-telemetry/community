@@ -8,8 +8,8 @@ This election should fill four seats.
 
 Election schedule:
 
-* 11 October 2023 - final deadline to submit nominations
-* 13 October 2023 - official nominees list published
+* 13 October 2023 - final deadline to submit nominations
+* 16 October 2023 - official nominees list published
 * 23 October 2023 to 25 October 2023 - voting takes place
 * 27 October 2023 - results announced
 
@@ -18,7 +18,7 @@ We highly encourage participation in this election cycle to ensure that the comm
 # TL;DR
 
 * If you've been nominated or are willing to nominate yourself: check the [charter document](../../governance-charter.md) and confirm you are ready for the commitment. Make sure to provide all necessary information before 13 October 2023 00:00 UTC
-* If you are an active community member: confirm that you are on the voters list (see [election announcements issue](https://github.com/open-telemetry/community/issues/1561)) or register yourself before 23 October 2023 00:00 UTC.
+* If you are an active community member: confirm that you are on the voters list (see [election announcements issue](https://github.com/open-telemetry/community/issues/1561)) or register yourself before 20 October 2023 23:59 UTC.
 * Vote between 23 October 2023 00:00 UTC and 25 October 2023 23:59 UTC via the [voting link](https://vote.heliosvoting.org/helios/elections/1ee70ee4-11ce-11ee-aaf8-0a8c9aac83f9/view)
 * Keep being awesome and contributing to the project!
 
@@ -60,7 +60,7 @@ As per [the charter document](../../governance-charter.md#establishment-of-a-gov
 * Short bio or reasoning to join the Governance Committee (no more than a short paragraph)
 * _Optional_: photo/picture of a nominee
 
-The election committee will not merge the Pull Request until the candidate has confirmed their desire to be nominated (if not self-nominating) and ratified via PR comments.
+The election committee will not merge the Pull Request until the candidate has confirmed their desire to be nominated (if not self-nominating) and has been ratified via PR comments.
 
 Nominees should also send their email address to [cncf-opentelemetry-governance@lists.cncf.io](mailto:cncf-opentelemetry-governance@lists.cncf.io) – it will be kept private and used only for candidate communications as the election process proceeds.
 
@@ -93,15 +93,16 @@ Voting will close on 25 October 2023 at 00:00 UTC. Nominees will be stack ranked
 
 # Schedule
 
-| Date                       | Activity                                                                                                                                   |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| June 2023                  | This document announced                                                                                                                    |
-| {{TODO DATE}}              | Election blog post and call for nominations                                                                                                |
-| {{TODO DATE}} 23:59 UTC    | End of call for nominations                                                                                                                |
-| {{TODO DATE}}              | Nominees ratified, and Governance Committee ensures nominees' commitment                                                                   |
-| {{TODO DATE}}              | Preliminary list of nominees announced                                                                                                     |
-| {{TODO DATE}}              | List of nominees is finalized on [community](https://github.com/open-telemetry/community) GitHub and advertised via mailing list and Slack |
-| {{TODO DATE}} 23:59 UTC    | Last day to apply for a member of standing exemption                                                                                       |
+| Date                      | Activity                                                                                                                                   |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| June 2023                 | This document announced                                                                                                                    |
+| August 2023               | Election blog post and call for nominations                                                                                                |
+| 13 October 23:59 UTC      | End of call for nominations                                                                                                                |
+| 16 October                | On or before this date Election Committee verifies commitment of all candidates not self-nominated                                         |
+| 16 October                | Nominees ratified and pull requests merged on or before this date                                                                          |
+| 16 October                | Preliminary list of nominees announced after ratification of all nominees                                                                  |
+| 16 October                | List of nominees is finalized on [community](https://github.com/open-telemetry/community) GitHub and advertised via mailing list and Slack |
+| 20 October 23:59 UTC      | Deadline to apply for a member of standing exemption                                                                                       |
 | 23 October 2023 00:00 UTC | Voting period begins                                                                                                                       |
-| 25 October 2023 23:59 UTC  | voting ends                                                                                                                                |
-| 27 October 2023            | Results are announced                                                                                                                      |
+| 25 October 2023 23:59 UTC | voting ends                                                                                                                                |
+| 27 October 2023           | Results are announced                                                                                                                      |
