@@ -1,18 +1,20 @@
 # Project Management
 
-Some specification changes are small enough in scope such that they can be resolved with a single PR or an OTEP written by a single person. However, this is rarely the case for large, meaningful changes. Most spec work ends up being organized into projects.
+The OpenTelemetry has limited bandwith for managing changes which expand the scope of OpenTelemetry, or impact many SIGs within OpenTelemetry. There are three common scenarios which have this kind of impact.
+* Non-trivial changes to the OpenTelemetry specification.
+* A new SIG being formed.
+* An existing SIG taking on new work which will affect the OpenTelemetry as a whole, and will need review from the broader community.
+
+Any changes which fall into one of the above categories must first create a project proposal and gain approval from the GC and TC before work begins.
+
+## Project Proposal
 
 At minimum, projects require the following resources to be successful:
 
+* A clearly defined set of goals and deliverables.
+* Deadlines for when the deliverables will be ready for review by the broader community.
 * A group of designers and subject matter experts need to dedicate a significant amount of their work time to the project. These participants are needed to design the spec, write a set of OTEPs, and create multiple prototypes. This group needs to meet with each other (and  with TC members) on a regular basis to develop a successful set of proposals.
-* A portion of the TC needs to be aware of and participate in the development of the project, to review the proposals and help guide the participants through the specification process.
-* Spec approvers and the broader community need to be aware of progress being made on the project, so they can be prepared to participate when proposals are ready for review.
-
-## Project Document
-
-Every project must have a high level **Project Document**, which describes the project. This document will be used as the initial proposal for the project. Once a project is approved, the document should be frequently edited and kept up to date as the project progresses. 
-
-## Project Proposal
+* Two TC members, or community members delegated by the TC, to sponsor the project.
 
 To propose a project, please create a **project document** using the [project template](project-template.md) as a guide. This document will be used as the initial proposal for the project.
 
