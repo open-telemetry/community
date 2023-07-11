@@ -17,7 +17,7 @@ We highly encourage participation in this election cycle to ensure that the comm
 
 # TL;DR
 
-* If you've been nominated or are willing to nominate yourself: check the [charter document](../../governance-charter.md) and confirm you are ready for the commitment. Make sure to provide all necessary information before 13 October 2023 00:00 UTC
+* If you've been nominated or are willing to nominate yourself: check the [charter document](../../governance-charter.md) and confirm you are ready for the commitment. Make sure to provide all necessary information before 13 October 2023 23:59 UTC
 * If you are an active community member: confirm that you are on the voters list (see [election announcements issue](https://github.com/open-telemetry/community/issues/1561)) or register yourself before 20 October 2023 23:59 UTC.
 * Vote between 23 October 2023 00:00 UTC and 25 October 2023 23:59 UTC via the [voting link](https://vote.heliosvoting.org/helios/elections/1ee70ee4-11ce-11ee-aaf8-0a8c9aac83f9/view)
 * Keep being awesome and contributing to the project!
@@ -89,7 +89,7 @@ Per Helios, voting is entirely private: nobody will know any individual's vote.
 
 # Results
 
-Voting will close on 25 October 2023 at 00:00 UTC. Nominees will be stack ranked. If a nominee becomes ineligible (for instance, if more than three topmost nominees work for the same company), the election committee will skip those nominees and pick the nominee with the next-highest score. The exact scores for each candidate will be public.
+Voting will close on 25 October 2023 at 23:59 UTC. Nominees will be stack ranked. If a nominee becomes ineligible (for instance, if more than three topmost nominees work for the same company), the election committee will skip those nominees and pick the nominee with the next-highest score. The exact scores for each candidate will be public.
 
 # Schedule
 
