@@ -38,8 +38,6 @@ Current governance committee members (alphabetical order):
 
 Five people must be elected in this election, each with two-year terms. Note that five current Governance Committee members end terms as part of this election cycle, though they are welcome to run again for one of the five vacancies.
 
-After this election and until the next election, the Governance Committee will have nine seats, all of which will be elected positions. Please refer to the [charter document](../../governance-charter.md#establishment-of-a-governance-committee) for more information.
-
 # Voting process
 
 Anyone can track the 2023 election process via [this GitHub issue](https://github.com/open-telemetry/community/issues/1477). This year's election committee consists of governance committee members Daniel Dyla, Morgan McLean, and Trask Stalnaker. None of whom are up for reelection this year. We strive for transparency in the election process and hold the community's interests as our priority. In particular, we will ensure that all documents and assets related to the 2023 election process are public, and we will attempt to record and distribute notes for any meetings held as part of this process.
