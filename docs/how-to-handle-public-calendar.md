@@ -9,7 +9,8 @@ All rooms are configured the same way. Some notes on meetings configuration:
 - **There is no time limit on the length of the meeting**. Please make sure nobody is
   using this room for another meeting on the calendar when meeting is going long
   over time.
-- **Auto-recording is enabled for all meetings**. All OpenTelemetry public meetings are being recorded automatically. Find recordings at [YouTube](https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA).
+- **Auto-recording is enabled for all meetings**. All OpenTelemetry public meetings are recorded automatically
+  and [available on Zoom cloud](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s).
 
 Every meeting must contain a link to the meeting notes. The meeting notes
 document must be shared with write or commenting permissions.

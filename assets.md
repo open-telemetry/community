@@ -58,7 +58,7 @@ Link: https://groups.google.com/g/opentelemetry-calendar-contributors
 - Owners: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 - Members: SIG maintainers and individuals appointed by maintainers
 
-### OpenTelemetry Calendar Invites Google Group](https://groups.google.com/g/opentelemetry-calendar)
+### OpenTelemetry Calendar Invites Google Group
 
 Used to automatically invite members to all OpenTelemetry calendar events, so that time is blocked on their calendars.
 
