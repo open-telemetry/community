@@ -27,8 +27,8 @@ meetings can join the group.
 To create or edit a meeting, you need to have access to the Public OpenTelemetry calendar (a shared Google calendar) and you must add a Zoom meeting link.
 
 ### Gaining Calendar Permissions
-All SIG maintainers have permission to edit the Public OpenTelemetry calendar.
-To get access to the calendar, please join the Google Group opentelemetry-calendar-contributors@googlegroups.com by submitting a request [here](https://groups.google.com/g/opentelemetry-calendar-contributors).
+All SIG maintainers can get access to edit the public OpenTelemetry calendar
+by submitting a request to join the [opentelemetry-calendar-contributors Google Group](https://groups.google.com/g/opentelemetry-calendar-contributors).
 If your identity is not recognizable from the e-mail you are using to request joining the group, please
 request to be added to this Google Group by creating an issue in this repository.
 
