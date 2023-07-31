@@ -134,6 +134,7 @@ Link: https://zapier.com
 This is not really an OpenTelemetry asset as we do not have any credentials or admin access for it.
 
 For support:
+* Check the [EasyCLA status page](https://status.linuxfoundation.org/)
 * Open an [OpenTelemetry community issue](https://github.com/open-telemetry/community/issues/new/choose)
 * Ask in the [`#easycla`](https://cloud-native.slack.com/archives/CK8QVEXQB) Slack channel
 * Open an [EasyCLA Jira ticket](https://jira.linuxfoundation.org/plugins/servlet/desk/portal/4/create/143)
