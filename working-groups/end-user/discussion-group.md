@@ -19,7 +19,7 @@ The OpenTelemetry community is constantly evolving and is composed of vendors, a
 These discussion groups occur on a monthly basis in AMER and EMEA friendly timezones, and creation of an APAC friendly timezone group is in the planning stages. You can see these events on the [community calendar](https://calendar.google.com/calendar/embed?src=google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com) by searching for “discussion group.”  
 
 ## What to expect:
-The format of the discussion groups should evolve over time to provide the best experience for participants. In the meantime, the format of the discussion groups is [Lean Coffee style](http://leancoffee.org/), where discussion topics are generated and democratically selected by the group at the start of the meeting. Then topics are rigorously time-boxed by a facilitator to keep the discussion moving forward.
+The format of the discussion groups should evolve over time to provide the best experience for participants. In the meantime, the format of the discussion groups is [Lean Coffee style](https://leancoffee.org/), where discussion topics are generated and democratically selected by the group at the start of the meeting. Then topics are rigorously time-boxed by a facilitator to keep the discussion moving forward.
 
 Because it can be a bit intimidating to talk to strangers, especially when talking about challenges, discussion groups are held under [Chatham House Rule](https://www.chathamhouse.org/about-us/chatham-house-rule). This means you are free to use the information or stories you learned in the discussion group but you CAN NOT share the identity of any participants or the company they are associated with. Discussion groups are not recorded.
 
