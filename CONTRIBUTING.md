@@ -15,7 +15,7 @@ Agreement](https://docs.linuxfoundation.org/lfx/easycla/contributors).
 ## Code attribution
 
 [License information](README.md#License) should be included in all source files where applicable.
-Either full or short version of the header should be used as described at [apache.org](http://www.apache.org/foundation/license-faq.html#Apply-My-Software).
+Either full or short version of the header should be used as described at [apache.org](https://www.apache.org/foundation/license-faq.html#Apply-My-Software).
 It is OK to exclude the year from the copyright notice. For the details on how to apply the copyright,
 see the next section.
 
@@ -65,7 +65,7 @@ write code to fix them, and get your work reviewed and merged.
 Please be aware that, due to the number of issues our triage team deals with, we
 cannot offer technical support in GitHub issues. If you have questions about the
 development process, feel free to jump into our [Slack
-Channel](https://cloud-native.slack.com/archives/CJFCJHG4Q) ([Get an invite to join CNCF](http://slack.cncf.io/)). You can also ask
+Channel](https://cloud-native.slack.com/archives/CJFCJHG4Q) ([Get an invite to join CNCF](https://slack.cncf.io/)). You can also ask
 questions on [Stack
 Overflow](https://stackoverflow.com/questions/tagged/open-telemetry).
 
@@ -205,7 +205,7 @@ Conduct](https://github.com/open-telemetry/community/blob/master/code-of-conduct
 and must go above and beyond to promote a collaborative, respectful community.
 
 When reviewing PRs from others [The Gentle Art of Patch
-Review](http://sage.thesharps.us/2014/09/01/the-gentle-art-of-patch-review/)
+Review](https://sage.thesharps.us/2014/09/01/the-gentle-art-of-patch-review/)
 suggests an iterative series of focuses which is designed to lead new
 contributors to positive collaboration without inundating them initially with
 nuances:
