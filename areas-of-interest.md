@@ -121,4 +121,4 @@ contact.
 - OpenTelemetry C++
 - OpenTelemetry Protocol
 
-<!-- ### [_Your name here_](http://github.com/your_name), Your Company -->
+<!-- ### [_Your name here_](https://github.com/your_name), Your Company -->

@@ -63,15 +63,11 @@ Logs Approvers:
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
 - [David Poncelow](https://github.com/zenmoto), Splunk
 
-Semantic Convention Approvers:
+## Semantic Conventions
 
-- [Christian Neumüller](https://github.com/Oberon00), Dynatrace
-- [James Moessis](https://github.com/jamesmoessis), Atlassian
-- [Joao Grassi](https://github.com/joaopgrassi), Dynatrace
-- [Johannes Tax](https://github.com/pyohannes), Microsoft
-- [Liudmila Molkova](https://github.com/lmolkova), Microsoft
-- [Sean Marcinak](https://github.com/MovieStoreGuy), Atlassian
-- [Ted Young](https://github.com/tedsuo), Lightstep
+Repo: [open-telemetry/semantic-conventions](https://github.com/open-telemetry/semantic-conventions)
+
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Semantic Conventions can be found in the [open-telemetry/semantic-convention README file](https://github.com/open-telemetry/semantic-conventions/blob/main/README.md).
 
 ## Java
 

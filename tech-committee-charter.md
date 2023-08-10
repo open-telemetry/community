@@ -74,7 +74,7 @@ Leadership roles in OpenTelemetry project will be peer elected representatives o
 
 ### Election of TC Members
 
-New TC members can be nominated by any Member in Standing as defined in the [OpenTelemetry Governance Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md#members-of-standing), and must be sponsored by one of the existing TC members to bring it to a vote. A candidate can be elected to the TC by the super-majority vote (greater than two thirds) of the existing TC members. The voting by the TC members is anonymous. A multiple-candidate method, such as [Condorcet](http://en.wikipedia.org/wiki/Condorcet_method) or [Single Transferable Vote](http://en.wikipedia.org/wiki/Single_transferable_vote), may be used to conduct the vote, by phrasing the selections as:
+New TC members can be nominated by any Member in Standing as defined in the [OpenTelemetry Governance Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md#members-of-standing), and must be sponsored by one of the existing TC members to bring it to a vote. A candidate can be elected to the TC by the super-majority vote (greater than two thirds) of the existing TC members. The voting by the TC members is anonymous. A multiple-candidate method, such as [Condorcet](https://en.wikipedia.org/wiki/Condorcet_method) or [Single Transferable Vote](https://en.wikipedia.org/wiki/Single_transferable_vote), may be used to conduct the vote, by phrasing the selections as:
 
 * Vote for Nominee X
 * Vote against Nominee X
@@ -87,8 +87,8 @@ The TC will elect from amongst voting TC members a TC Chairperson to work on bui
 
 For election of persons (such as the TC Chairperson) by a vote of the TC voting members, a multiple-candidate method should be used, such as:
 
-* [Condorcet](http://en.wikipedia.org/wiki/Condorcet_method) or
-* [Single Transferable Vote](http://en.wikipedia.org/wiki/Single_transferable_vote)
+* [Condorcet](https://en.wikipedia.org/wiki/Condorcet_method) or
+* [Single Transferable Vote](https://en.wikipedia.org/wiki/Single_transferable_vote)
 
 Multiple-candidate methods may be reduced to simple election by plurality when there are only two candidates for one position to be filled. No election is required if there is only one candidate and no objections to the candidates election. Elections shall be done within the Projects by the collaborators active in the Project.
 
