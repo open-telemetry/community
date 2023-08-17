@@ -1,0 +1,1 @@
+This folder contains all OpenTelemetry projects which have been approved by the GC. Please see the [project board](https://github.com/orgs/open-telemetry/projects/29) for an overview of the state of every project.
