@@ -22,6 +22,8 @@ You can then submit the proposal by placing the project document in the [project
 
 As the project progresses, the project document should be kept up to date, and the community [README](README.md) should be updated to include any new project meeting information.
 
+Groups are encouraged to define deadlines for any work which will require public review. We have found that having a goal leads to an increased cadence in project work, and helps resolve debate. Deadlines also help with getting a more coherent public review, as they allow the review community to plan on making themselves available. If deadline prove to be unrealistic, they can be always be updated.
+
 ## Project Lifecycle
 
 All projects progess through a lifecycle. Projects are tracked on the [Project Board](https://github.com/orgs/open-telemetry/projects/29), which the community can use to get a high-level view of the OpenTelemetry roadmap.
