@@ -1,9 +1,9 @@
 # Project Management
 
-The OpenTelemetry has limited bandwith for managing changes which expand the scope of OpenTelemetry, or impact many SIGs within OpenTelemetry. There are three common scenarios which have this kind of impact.
+The OpenTelemetry community has limited bandwidth for managing changes which expand the scope of OpenTelemetry, or impact many SIGs within OpenTelemetry. There are three common scenarios which have this kind of impact.
 * Non-trivial changes to the OpenTelemetry specification.
 * A new SIG being formed.
-* An existing SIG taking on new work which will affect the OpenTelemetry as a whole, and will need review from the broader community.
+* An existing SIG taking on new work which will affect the OpenTelemetry project as a whole, and will need review from the broader community.
 
 Any changes which fall into one of the above categories must first create a project proposal and gain approval from the GC and TC before work begins.
 
@@ -13,8 +13,8 @@ At minimum, projects require the following resources to be successful:
 
 * A clearly defined set of goals and deliverables.
 * Deadlines for when the deliverables will be ready for review by the broader community.
-* A group of designers and subject matter experts need to dedicate a significant amount of their work time to the project. These participants are needed to design the spec, write a set of OTEPs, and create multiple prototypes. This group needs to meet with each other (and  with TC members) on a regular basis to develop a successful set of proposals.
-* Two TC members, or community members delegated by the TC, to sponsor the project.
+* Two TC/GC members, or community members delegated by the them, to sponsor the project.
+* A group of designers and subject matter experts need to dedicate a significant amount of their work time to the project. These participants are needed to design the spec, write a set of OTEPs, and create multiple prototypes. This group needs to meet with each other (and with their sponsors) on a regular basis to develop a successful set of proposals.
 
 To propose a project, please create a **project document** using the [project template](project-template.md) as a guide. This document will be used as the initial proposal for the project.
 
