@@ -43,10 +43,11 @@ The group currently has several regular contributors who have expertise in brows
 Project lead(s): @martinkuba, @scheler, @MSNev
 
 TC sponsoring members:
+Josh Sureth, Jack Berg
 
 ## Meeting Times
 
-SIG meeting times: Wednesdays 8am PT
+SIG meeting times: Mondays 12:30am PT
 Secondary meeting times: Tuesdays 9am PT
 Timeline
 
