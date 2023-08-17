@@ -52,7 +52,7 @@ Defined by: Member of the OpenTelemetry GitHub organization
   - Contributing to SIGs, subprojects, or community discussions (e.g. meetings,
     chat, email, and discussion forums)
 - [Joined the Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q)
-  - [Get an invite to join CNCF](http://slack.cncf.io/)
+  - [Get an invite to join CNCF](https://slack.cncf.io/)
 - Have read the [contributor
   guide](https://github.com/open-telemetry/community/blob/master/CONTRIBUTING.md)
 - Actively contributing to 1 or more subprojects.

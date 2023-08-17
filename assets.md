@@ -47,6 +47,12 @@ but these individual OpenTelemetry members have been given rights to publish und
 * [@jack-berg](https://github.com/jack-berg)
 * [@trask](https://github.com/trask)
 
+### PyPI
+
+Link: https://pypi.org/user/opentelemetry/
+
+- Owner: [@codeboten](https://github.com/codeboten)
+
 ## Communication channels
 
 ### opentelemetry-calendar-contributors Google Group
@@ -58,7 +64,7 @@ Link: https://groups.google.com/g/opentelemetry-calendar-contributors
 - Owners: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 - Members: SIG maintainers and individuals appointed by maintainers
 
-### OpenTelemetry Calendar Invites Google Group](https://groups.google.com/g/opentelemetry-calendar)
+### OpenTelemetry Calendar Invites Google Group
 
 Used to automatically invite members to all OpenTelemetry calendar events, so that time is blocked on their calendars.
 
@@ -107,12 +113,14 @@ Link: https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos
   To join https://lists.cncf.io/g/cncf-otel-zoomadmins and get admin rights, open a
   [CNCF ServiceDesk](https://cncfservicedesk.atlassian.net/).
 
-### Splain account
+### Zapier account
 
-Link: https://splain.io/
+Link: https://zapier.com
 
-- Used to upload Zoom meeting recordings to Youtube
-- Owned by: Amye Scavarda Perrin (CNCF rep)
+- Used to automatically add links to Zoom meeting recordings to a
+  [publicly viewable Google spreadsheet](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s)
+- Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+  (GitHub password is available in the OpenTelemetry Governance 1Password)
 
 ### Project Google account: cncf-opentelemetry-governance@lists.cncf.io
 
@@ -126,6 +134,7 @@ Link: https://splain.io/
 This is not really an OpenTelemetry asset as we do not have any credentials or admin access for it.
 
 For support:
+* Check the [EasyCLA status page](https://status.linuxfoundation.org/)
 * Open an [OpenTelemetry community issue](https://github.com/open-telemetry/community/issues/new/choose)
 * Ask in the [`#easycla`](https://cloud-native.slack.com/archives/CK8QVEXQB) Slack channel
 * Open an [EasyCLA Jira ticket](https://jira.linuxfoundation.org/plugins/servlet/desk/portal/4/create/143)

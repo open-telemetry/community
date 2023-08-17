@@ -53,7 +53,7 @@ interested parties and form new special interest groups.
 
 We use [GitHub discussions](https://github.com/open-telemetry/community/discussions) for most communications. Please join us there!
 
-For those who are brand new to OpenTelemetry and want to chat or get redirected to the appropriate place for a specific question, feel free to join [the CNCF OpenTelemetry Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q). If you are new, you can create a CNCF Slack account [here](http://slack.cncf.io/).
+For those who are brand new to OpenTelemetry and want to chat or get redirected to the appropriate place for a specific question, feel free to join [the CNCF OpenTelemetry Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q). If you are new, you can create a CNCF Slack account [here](https://slack.cncf.io/).
 
 ### Calendar
 
@@ -132,6 +132,7 @@ Specification: Configuration|Every other Monday at 8:00 PT|[Google Doc](https://
 Instrumentation: General|Every Tuesday at 16:00 PT|[Google Doc](https://docs.google.com/document/d/1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE/)|[Slack](https://cloud-native.slack.com/archives/C01QZFGMLQ7)
 Instrumentation: Messaging|Every Thursday at 8:00 PT|[Google Doc](https://docs.google.com/document/d/1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE/)|[Slack](https://cloud-native.slack.com/archives/C01QZFGMLQ7)
 Semantic Conventions Working Group|Every Monday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8)|[Slack](https://cloud-native.slack.com/archives/C041APFBYQP)|[Armin Ruech](https://github.com/arminru)<br/>[Josh Suereth](https://github.com/jsuereth)<br/>[Reiley Yang](https://github.com/reyang)|
+System Semantic Conventions stability WG|Every Wednesday at 08:30 PT<br/>Between 19.07.2023 - 30.08.2023|[Google Doc](https://docs.google.com/document/d/1p5TH57t43XpxA48onLzX4PIr3g6ydYKCtR_AUlsCnQk)|[Slack](https://cloud-native.slack.com/archives/C05CTFE9U4A)|[Josh Suereth](https://github.com/jsuereth)|
 
 ### Implementation SIGs
 
@@ -159,8 +160,8 @@ Agent Management WG|Every other week on Tuesday at 11:00 PT|[Google Doc](https:/
 Prometheus Interoperability WG|Every other week on Wednesday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/19bnXziPn2MZ9wO6684UoI4D-LCjGL5bTJkGhux29bx8/edit#)|[Slack](https://cloud-native.slack.com/archives/C01LSCJBXDZ)|
 Client Instrumentation|Every Tuesday at 9:00 AM PT (primary) and every Monday at 12:30 PM PT (half hour)|[Google Doc](https://docs.google.com/document/d/16Vsdh-DM72AfMg_FIt9yT9ExEWF4A_vRbQ3jRNBe09w/edit)|[Slack](https://cloud-native.slack.com/archives/C0239SYARD2)|
 Kubernetes Operator|Every other week on Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1Unbs2qp_j5kp8FfL_lRH-ld7i5EOQpsq0I4djkOOSL4)|[Slack](https://cloud-native.slack.com/archives/C033BJ8BASU)|
-Community Demo Application|Every Monday at 8:15 PT|[Google Doc](https://docs.google.com/document/d/16f-JOjKzLgWxULRxY8TmpM_FjlI1sthvKurnqFz9x98/edit)|[Slack](https://cloud-native.slack.com/archives/C03B4CWV4DA)|
-Functions as a Service (FAAS) |Every Tuesday at 12:00 PM PT |[Google Doc](https://docs.google.com/document/d/187XYoQcXQ9JxS_5v2wvZ0NEysaJ02xoOYNXj08pT0zc/edit#)|[Slack](https://cloud-native.slack.com/archives/C04HVBETC9Z)|
+Community Demo Application|Every Monday at 8:30 PT|[Google Doc](https://docs.google.com/document/d/16f-JOjKzLgWxULRxY8TmpM_FjlI1sthvKurnqFz9x98/edit)|[Slack](https://cloud-native.slack.com/archives/C03B4CWV4DA)|
+Functions as a Service (FAAS) |Every other Tuesday at 12:00 PM PT |[Google Doc](https://docs.google.com/document/d/187XYoQcXQ9JxS_5v2wvZ0NEysaJ02xoOYNXj08pT0zc/edit#)|[Slack](https://cloud-native.slack.com/archives/C04HVBETC9Z)|
 OpenTelemetry Profiling WG | Every other week on Thursday at 08:00 AM PT |[Google Doc](https://docs.google.com/document/d/19UqPPPlGE83N37MhS93uRlxsP1_wGxQ33Qv6CDHaEp0/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C03J794L0BV)|
 Security | Weekly on Wednesday at 08:30 AM PT |[Google Doc](https://docs.google.com/document/d/1P2xejC7lEkOV_Z-8E0oZPXLK5HOnUPNuRqKP0ZQ5fpg/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C05A85QC281)|
 

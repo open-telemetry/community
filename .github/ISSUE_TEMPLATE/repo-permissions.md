@@ -17,7 +17,7 @@ e.g. https://github.com/open-telemetry/community
 
 e.g. "Give 'Admin' permissions to `@username`" or "Enable branch protection rules for `release-*`"
 
-<!-- Please review the repository configuration guideliens at
+<!-- Please review the repository configuration guidelines at
  https://github.com/open-telemetry/community/blob/main/docs/how-to-configure-new-repository.md -->
  
 ### Purpose
