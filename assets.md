@@ -152,12 +152,9 @@ Important: You do not need to (and should not) give this account any permissions
 
 Link: [@opentelemetrybot](https://github.com/opentelemetrybot)
 
-- Admins: [@trask](https://github.com/trask) and
-  [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
-  (GitHub password and associated 2FA for the `@opentelemetrybot` account are available in the OpenTelemetry Governance
+- Admins: [@open-telemetry/technical-committee](https://github.com/orgs/open-telemetry/teams/technical-committee)
+  (GitHub password and associated 2FA for the `@opentelemetrybot` account are available in the Technical Committee
   1Password)
-- Admins for the associated GitHub organization secret:
-  [@open-telemetry/technical-committee](https://github.com/orgs/open-telemetry/teams/technical-committee)
 
 The OpenTelemetry Bot addresses two common issues:
 
