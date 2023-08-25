@@ -127,7 +127,7 @@ acknowledging that people come from different backgrounds and cultures.
 There might be situations where community members act in a dubious manner. If
 you have seen or experienced unacceptable behavior or anything that would make
 our community less welcoming, please speak up! See [our code of
-conduct](./code-of-conduct) for more information on how to report bad behavior.
+conduct](./code-of-conduct.md) for more information on how to report bad behavior.
 
 While we want to encourage everyone to express themselves in their own way,
 there are some behaviors that we encourage you to adopt while interacting with
