@@ -11,7 +11,7 @@ assignees: ''
 
 ### Repository Vault Requested
 
-e.g. https://github.com/open-telemetry/community
+e.g. https://github.com/open-telemetry/opentelemetry-collector
 
 ### Sponsors
 
