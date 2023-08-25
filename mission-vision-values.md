@@ -116,3 +116,75 @@ to degrade gracefully as needed.
 OpenTelemetry users should not have to choose between high-quality telemetry and
 a performant application. High performance is a requirement for OpenTelemetry,
 and unexpected interference effects in the host application are unacceptable.
+
+## Community values &mdash; the principles that guide our interactions
+
+The OpenTelemetry project aims to be a welcoming place where new and existing
+members feel safe to respectfully share their opinions and disagreements. We
+want to attract a diverse group of people to collaborate with us, which means
+acknowledging that people come from different backgrounds and cultures. 
+
+There might be situations where community members act in a dubious manner. If
+you have seen or experienced unacceptable behavior or anything that would make
+our community less welcoming, please speak up! See [our code of
+conduct](./code-of-conduct) for more information on how to report bad behavior.
+
+While we want to encourage everyone to express themselves in their own way,
+there are some behaviors that we encourage you to adopt while interacting with
+other community members.
+
+#### Act on behalf of the project
+
+It’s no secret that a good number of maintainers of the project are employed by
+companies with commercial interests in OpenTelemetry, especially vendors in the
+observability space. That said, we expect community members to act in the best
+interests of the project. Each member’s priorities can (and should!) align with
+those of their employers so that the relationship is beneficial to all parties,
+but when acting as a maintainer or contributor to the project, community members
+are expected to wear the project’s hat. 
+
+##### Disclose potential conflicts of interest
+
+Even within the project, people might have different hats: a Collector
+maintainer might be part of the Governance Committee, a JavaScript maintainer
+might be part of the Technical Committee, and so on. When the context of your
+message can be ambiguous, make it clear which hat you are using. For instance,
+during a GC call, a person who is also a maintainer of the Collector might say:
+“as a Collector maintainer, I believe that…, while as a GC member, I believe …”
+
+#### Assume positive intent
+
+We all have different priorities in our daily jobs, and while some of us are
+employed to work full time on OpenTelemetry, some of us are paid to improve
+specific parts of the project according to the commercial interests of our
+employers. When reviewing proposals, documents, or code, take the different
+perspectives into consideration, but more importantly, assume positive intent:
+while the proposal might seem skewed towards a specific perspective at first,
+it’s very likely that the author is open to improving it if different
+perspectives are provided.
+
+#### Respectfully disagree
+
+Many decisions are made every day as part of our project. Despite giving our
+best, not all decisions are the right ones. We encourage ideas and solutions to
+be proposed and debated until an agreement is reached or until the “disagree and
+commit” stage is reached. What we cannot tolerate is turning attacks against
+ideas into attacks against people: in the heat of the moment, it might be
+tempting to do an ad hominem attack but it’s always wrong. If you have reasons
+to believe the person you are debating with is not acting on behalf of the
+project, seek mediation instead of engaging further. While the technical merits
+of the matter should be resolved within the SIG by the maintainers or, in
+ultimate cases, by the Technical Committee (TC), non-technical matters should be
+brought up to the Governance Committee.
+
+#### Be nice
+
+As evidenced by Erin Meyer’s [“The Cultural Map”
+book](https://erinmeyer.com/books/the-culture-map/), people from different
+cultural backgrounds have different ways of communicating. While we don’t expect
+you to be an expert in [“reading the
+air”](https://www.bbc.com/worklife/article/20200129-what-is-reading-the-air-in-japan),
+we expect that you be nice to other folks and that your communication is clear
+without requiring the other parties to infer what’s not explicitly written
+there. This includes being minimally polite while transmitting your thoughts and
+keeping snarky or inappropriate comments to yourself.
