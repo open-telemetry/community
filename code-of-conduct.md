@@ -32,6 +32,6 @@ believe that the board will not conduct a fair investigation.
 
 When the GC determines that a code of conduct violation happened, it will take
 the actions deemed necessary and appropriate for the event. In more serious
-cases, the community member might be invited to depart from our communities,
+cases, the community member might be requested to depart from our communities,
 giving up any roles they may possess, such as the maintainership of a SIG. In
 extreme cases, the GC can force the departure of the member.
