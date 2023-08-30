@@ -133,7 +133,7 @@ While we want to encourage everyone to express themselves in their own way,
 there are some behaviors that we encourage you to adopt while interacting with
 other community members.
 
-#### Act on behalf of the project
+### Act on behalf of the project
 
 It’s no secret that a good number of maintainers of the project are employed by
 companies with commercial interests in OpenTelemetry, especially vendors in the
@@ -143,7 +143,7 @@ those of their employers so that the relationship is beneficial to all parties,
 but when acting as a maintainer or contributor to the project, community members
 are expected to wear the project’s hat. 
 
-##### Disclose potential conflicts of interest
+### Disclose potential conflicts of interest
 
 Even within the project, people might have different hats: a Collector
 maintainer might be part of the Governance Committee, a JavaScript maintainer
@@ -152,7 +152,7 @@ message can be ambiguous, make it clear which hat you are using. For instance,
 during a GC call, a person who is also a maintainer of the Collector might say:
 “as a Collector maintainer, I believe that…, while as a GC member, I believe …”
 
-#### Assume positive intent
+### Assume positive intent
 
 We all have different priorities in our daily jobs, and while some of us are
 employed to work full time on OpenTelemetry, some of us are paid to improve
@@ -163,7 +163,7 @@ while the proposal might seem skewed towards a specific perspective at first,
 it’s very likely that the author is open to improving it if different
 perspectives are provided.
 
-#### Respectfully disagree
+### Respectfully disagree
 
 Many decisions are made every day as part of our project. Despite giving our
 best, not all decisions are the right ones. We encourage ideas and solutions to
@@ -177,7 +177,7 @@ of the matter should be resolved within the SIG by the maintainers or, in
 ultimate cases, by the Technical Committee (TC), non-technical matters should be
 brought up to the Governance Committee.
 
-#### Be nice
+### Be nice
 
 As evidenced by Erin Meyer’s [“The Cultural Map”
 book](https://erinmeyer.com/books/the-culture-map/), people from different
