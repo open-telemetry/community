@@ -127,7 +127,8 @@ acknowledging that people come from different backgrounds and cultures.
 There might be situations where community members act in a dubious manner. If
 you have seen or experienced unacceptable behavior or anything that would make
 our community less welcoming, please speak up! See [our code of
-conduct](./code-of-conduct.md) for more information on how to report bad behavior.
+conduct](https://github.com/open-telemetry/community/blob/main/code-of-conduct.md)
+for more information on how to report unacceptable behavior.
 
 While we want to encourage everyone to express themselves in their own way,
 there are some behaviors that we encourage you to adopt while interacting with
@@ -179,10 +180,9 @@ brought up to the Governance Committee.
 
 ### Be nice
 
-As evidenced by Erin Meyer’s [“The Cultural Map”
-book](https://erinmeyer.com/books/the-culture-map/), people from different
-cultural backgrounds have different ways of communicating. While we don’t expect
-you to be an expert in [“reading the
+As evidenced in [The Cultural Map](https://erinmeyer.com/books/the-culture-map/)
+by Erin Meyer, people from different cultural backgrounds have different ways of
+communicating. While we don’t expect you to be an expert in [“reading the
 air”](https://www.bbc.com/worklife/article/20200129-what-is-reading-the-air-in-japan),
 we expect that you be nice to other folks and that your communication is clear
 without requiring the other parties to infer what’s not explicitly written
