@@ -1,5 +1,5 @@
 --
-name: Credential Access Request
+name: Credential Store Access Request
 about: Request access to the OpenTelemetry credentials store
 title: 'REQUEST: Credential Access for <USERNAME>'
 labels: area/repo-maintenance
