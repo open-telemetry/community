@@ -1,7 +1,7 @@
 --
 name: Credential Store Access Request
-about: Request access to the OpenTelemetry credentials store
-title: 'REQUEST: Credential Access for <USERNAME>'
+about: Request access to the OpenTelemetry credential store
+title: 'REQUEST: Credential Store Access for <USERNAME>'
 labels: area/repo-maintenance
 assignees: ''
 ---
