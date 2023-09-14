@@ -14,6 +14,7 @@ At minimum, projects require the following resources to be successful:
 * A clearly defined set of goals and deliverables.
 * Deadlines for when the deliverables will be ready for review by the broader community.
 * Two TC/GC members, or community members delegated by the them, to sponsor the project.
+  These two sponsors should be from different companies.
 * A group of designers and subject matter experts need to dedicate a significant amount of their work time to the project. These participants are needed to design the spec, write a set of OTEPs, and create multiple prototypes. This group needs to meet with each other (and with their sponsors) on a regular basis to develop a successful set of proposals.
 
 To propose a project, please create a **project document** using the [project template](project-template.md) as a guide. This document will be used as the initial proposal for the project.
