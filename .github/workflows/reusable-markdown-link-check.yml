@@ -7,7 +7,7 @@ jobs:
   markdown-link-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Install markdown-link-check
         # fix version to 3.10.3 as 3.11.0 appears to ignore --config, so we can't specify our own
