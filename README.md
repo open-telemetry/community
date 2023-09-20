@@ -132,7 +132,7 @@ Specification: Configuration|Every other Monday at 8:00 PT|[Google Doc](https://
 Instrumentation: General|Every Tuesday at 16:00 PT|[Google Doc](https://docs.google.com/document/d/1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE/)|[Slack](https://cloud-native.slack.com/archives/C01QZFGMLQ7)
 Instrumentation: Messaging|Every Thursday at 8:00 PT|[Google Doc](https://docs.google.com/document/d/1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE/)|[Slack](https://cloud-native.slack.com/archives/C01QZFGMLQ7)
 Semantic Conventions Working Group|Every Monday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8)|[Slack](https://cloud-native.slack.com/archives/C041APFBYQP)|[Armin Ruech](https://github.com/arminru)<br/>[Josh Suereth](https://github.com/jsuereth)<br/>[Reiley Yang](https://github.com/reyang)|
-System Semantic Conventions stability WG|Every Wednesday at 08:30 PT<br/>Between 19.07.2023 - 30.08.2023|[Google Doc](https://docs.google.com/document/d/1p5TH57t43XpxA48onLzX4PIr3g6ydYKCtR_AUlsCnQk)|[Slack](https://cloud-native.slack.com/archives/C05CTFE9U4A)|[Josh Suereth](https://github.com/jsuereth)|
+System Semantic Conventions stability WG|Every Wednesday at 08:30 PT|[Google Doc](https://docs.google.com/document/d/1p5TH57t43XpxA48onLzX4PIr3g6ydYKCtR_AUlsCnQk)|[Slack](https://cloud-native.slack.com/archives/C05CTFE9U4A)|[Josh Suereth](https://github.com/jsuereth)|
 
 ### Implementation SIGs
 
@@ -146,7 +146,7 @@ C/C++: SDK|Every week alternating between Monday at 13:00 PT and Wednesday at 9:
 Erlang/Elixir: SDK|Every other Thursday at 9:00 PT|[Google Doc](https://docs.google.com/document/d/1EbBiRjBc_cBf0T_B5OtNRPhbD4jdBrVYJAy8euCDrUI/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C01N75YMZCN)|
 GoLang: SDK|Every Thursday alternating between 10:00 and 15:00 PDT|[Google Doc](https://docs.google.com/document/d/1E5e7Ld0NuU1iVvf-42tOBpu2VBBLYnh73GJuITGJTTU/edit)|[Slack](https://cloud-native.slack.com/archives/C01NPAXACKT)|
 GoLang: Automatic Instrumentation|Every other week on Tuesday at 9:30 PT|[Google Doc](https://docs.google.com/document/d/1P6am_r_cxCX1HcpDQlznrTrTOvwN2whshL0f58lXSWI/edit)|[Slack](https://cloud-native.slack.com/archives/C03S01YSAS0)|
-Java: SDK + Automatic Instrumentation|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw/)|[SDK](https://cloud-native.slack.com/archives/C014L2KCTE3) and [Instrumentation](https://cloud-native.slack.com/archives/C0150QF88FL) Slack channels|
+Java: SDK + Automatic Instrumentation|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw/)|[Slack](https://cloud-native.slack.com/archives/C014L2KCTE3)|
 JavaScript: SDK|Every Wednesday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1tCyoQK49WVcE-x8oryZOTTToFm7sIeUhxFPm9g-qL1k)|[Slack](https://cloud-native.slack.com/archives/C01NL1GRPQR) and [GitHub Discussions](https://github.com/open-telemetry/opentelemetry-js/discussions)|
 PHP: SDK|Every Wednesday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI/edit)|[Slack](https://cloud-native.slack.com/archives/C01NFPCV44V)|
 Python: SDK|Every Thursday at 09:00 PT|[Google Doc](https://docs.google.com/document/d/1CIMGoIOZ-c3-igzbd6_Pnxx1SjAkjwqoYSUWxPY8XIs/edit)|[Slack](https://cloud-native.slack.com/archives/C01PD4HUVBL)|
