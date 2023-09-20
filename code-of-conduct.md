@@ -6,12 +6,12 @@ want to attract a diverse group of people to collaborate with us, which means
 acknowledging that people come from different backgrounds and cultures. 
 
 This project is bound by and abides by the [CNCF Code of
-Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md).
+Conduct](https://github.com/cncf/foundation/blob/main/code-of-conduct.md).
 Conflicts should be resolved respectfully between the involved parties, however
 we understand that it may not always be possible without outside help or
 mediation. When needed, any community member can ask for help or report a Code
 of Conduct violation to the Governance Committee as outlined below. The project
-prefers that violations to be reported first to the Governance Committee so that
+prefers for violations to be reported first to the Governance Committee so that
 they may be resolved internally, however, in extreme cases code of conduct
 violations should be reported to the CNCF as outlined in the [CNCF Incident
 Resolution
@@ -25,7 +25,7 @@ Policy](https://github.com/cncf/foundation/blob/main/code-of-conduct/coc-committ
 If you have seen or experienced unacceptable behavior or anything that would
 make our community less welcoming, please speak up!
 
-When the Governing Committee (GC) determines that a code of conduct violation
+When the Governance Committee (GC) determines that a code of conduct violation
 happened, it will take the actions deemed necessary and appropriate for the
 event. In more serious cases, the community member might be requested to depart
 from our communities, giving up any roles they may possess, such as the

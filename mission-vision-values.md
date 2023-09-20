@@ -171,8 +171,8 @@ best, not all decisions are the right ones. We encourage ideas and solutions to
 be proposed and debated until an agreement is reached or until the “disagree and
 commit” stage is reached. What we cannot tolerate is turning attacks against
 ideas into attacks against people: in the heat of the moment, it might be
-tempting to do an ad hominem attack but it’s always wrong. If you have reasons
-to believe the person you are debating with is not acting on behalf of the
+tempting to make an ad hominem attack but it’s always wrong. If you have reasons
+to believe the person you are debating with is not acting in the interest of the
 project, seek mediation instead of engaging further. While the technical merits
 of the matter should be resolved within the SIG by the maintainers or, in
 ultimate cases, by the Technical Committee (TC), non-technical matters should be
@@ -182,9 +182,8 @@ brought up to the Governance Committee.
 
 As evidenced in [The Cultural Map](https://erinmeyer.com/books/the-culture-map/)
 by Erin Meyer, people from different cultural backgrounds have different ways of
-communicating. While we don’t expect you to be an expert in [“reading the
-air”](https://www.bbc.com/worklife/article/20200129-what-is-reading-the-air-in-japan),
-we expect that you be nice to other folks and that your communication is clear
-without requiring the other parties to infer what’s not explicitly written
-there. This includes being minimally polite while transmitting your thoughts and
-keeping snarky or inappropriate comments to yourself.
+communicating. While we don’t expect you to be an expert in capturing unspoken
+nuances, we expect that you be nice to other folks and that your communication
+is clear without requiring the other parties to infer what’s not explicitly
+written there. This includes being minimally polite while transmitting your
+thoughts and keeping snarky or inappropriate comments to yourself.
