@@ -26,6 +26,8 @@ valuable new data points for all project stakeholders.
 
 ### Deliverables
 
+This is intended to be an iterative process.
+
 * Develop automated tooling that can be used across project repos to report
   current performance numbers and track changes as new features / PRs are
   merged.
