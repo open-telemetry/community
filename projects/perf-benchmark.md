@@ -38,7 +38,7 @@ This is intended to be an iterative process.
 
 Initial implementation scope would be the core Collector components (main repo),
 JavaScript / Java / Python SDKs and their core components. No contrib or
-instrumentation.
+instrumentation repositories.
 
 ### Staffing / Help Wanted
 
