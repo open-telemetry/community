@@ -70,8 +70,8 @@ TBD
 
 ### Timeline
 
-Initial scope is for the Collector and 3 SDKs. Output should be by KubeCon NA
-November 6, 2023
+Initial scope is for the Collector and 3 SDKs. Initial output should be available by KubeCon NA
+November 6, 2023.
 
 ### Labels
 
