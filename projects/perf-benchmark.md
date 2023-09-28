@@ -50,10 +50,11 @@ participate or consult the SIG on how to use the provided tooling.
 
 #### Required staffing
 
-lead - tbd @jpkrohling domain expert
+lead - tbd 
+@jpkrohling domain expert
 @cartersocha contributor
 @mwear collector sig
-@codeboten collector sig implementation
+@codeboten collector sig
 @ocelotl python sig
 @martinkuba javascript sig
 @tylerbenson java sig
