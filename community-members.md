@@ -8,7 +8,7 @@ in alphabetical order:
 
 - [Alolita Sharma](https://github.com/alolita), AWS, until October 2024
 - [Ben Sigelman](https://github.com/bhs), Lightstep, until October 2023
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk, until October 2023
+- [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake, until October 2023
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2024
 - [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs, until October 2023
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2024
@@ -23,7 +23,7 @@ Charter](https://github.com/open-telemetry/community/blob/master/tech-committee-
 in alphabetical order:
 
 - [Armin Ruech](https://github.com/arminru), Dynatrace
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk
+- [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake
 - [Carlos Alberto](https://github.com/carlosalberto), Lightstep
 - [Jack Berg](https://github.com/jack-berg), New Relic
 - [Josh MacDonald](https://github.com/jmacd), Lightstep
