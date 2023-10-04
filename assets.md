@@ -8,7 +8,8 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   - Team account: https://opentelemetry.1password.com/
   - https://github.com/1Password/1password-teams-open-source#opentelemetry
   - PR: https://github.com/1Password/1password-teams-open-source/pull/364
-  - Admin: Alex Boten @codeboten
+  - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee),
+    [@codeboten](https://github.com/codeboten)
 
 ## Artifact repositories
 
