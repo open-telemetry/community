@@ -108,7 +108,7 @@ will automatically be eligible to vote. To confirm your eligibility status,
 see the [election announcements issue](https://github.com/open-telemetry/community/issues/852). If your code contributions do not meet
 eligibility requirements, but you believe your non-code contributions
 should make you eligible to vote, you can request an exemption by submitting
-an exemption request form [here](https://docs.google.com/forms/d/1TncjWYD6i43jPOZNfVl3_HlgVMUXZBlbvwxH0VVgMns).
+an exemption request form here \[outdated link removed\].
 
 One of two options will be available in the form to prove eligibility:
 

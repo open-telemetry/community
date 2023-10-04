@@ -104,14 +104,13 @@ Link: https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos
   - cncf-opentelemetry-meeting-2@cncf.io
   - cncf-opentelemetry-meeting-3@cncf.io
   - cncf-opentelemetry-meeting-4@cncf.io
-- Owned by: Amye Scavarda Perrin (CNCF rep)
-- Admins: [@austinlparker](https://github.com/austinlparker), [@eddynaka](https://github.com/eddynaka),
-  and [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+- Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 - Note: while the account passwords are available in the Governance Committee 1Password, logging in from a new IP
-  address will require being a member https://lists.cncf.io/g/cncf-otel-zoomadmins with admin rights so you can see
+  address will require being a member https://lists.cncf.io/g/cncf-otel-zoomadmins with at least moderator rights so you can see
   pending (unapproved) messages and retrieve the One-Time Password that is sent when you log in.
-  To join https://lists.cncf.io/g/cncf-otel-zoomadmins and get admin rights, open a
-  [CNCF ServiceDesk](https://cncfservicedesk.atlassian.net/).
+  To join https://lists.cncf.io/g/cncf-otel-zoomadmins, go to that URL and click "Apply For Membership In This Group".
+  Then ask in the [#opentelemetry-gc](https://cloud-native.slack.com/archives/C01S673T1NE) for someone to approve your
+  membership and then to give you owner rights.
 
 ### Zapier account
 
@@ -152,12 +151,9 @@ Important: You do not need to (and should not) give this account any permissions
 
 Link: [@opentelemetrybot](https://github.com/opentelemetrybot)
 
-- Admins: [@trask](https://github.com/trask) and
-  [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
-  (GitHub password and associated 2FA for the `@opentelemetrybot` account are available in the OpenTelemetry Governance
+- Admins: [@open-telemetry/technical-committee](https://github.com/orgs/open-telemetry/teams/technical-committee)
+  (GitHub password and associated 2FA for the `@opentelemetrybot` account are available in the Technical Committee
   1Password)
-- Admins for the associated GitHub organization secret:
-  [@open-telemetry/technical-committee](https://github.com/orgs/open-telemetry/teams/technical-committee)
 
 The OpenTelemetry Bot addresses two common issues:
 
