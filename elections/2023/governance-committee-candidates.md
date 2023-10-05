@@ -80,9 +80,9 @@ deployment without getting locked-in with specific vendors. I’m also the creat
 of the [OpenTelemetry Operator for
 Kubernetes](https://github.com/open-telemetry/opentelemetry-operator), having
 successfully fostered a community around it that is able to continue evolving
-further even after I gave up on maintainership to focus on other OTel areas.
-Overall, I’m very proud of my contributions to the project, placing me among the
-[top 10
+further even after I stepped back from maintainership to focus on other OTel
+areas. Overall, I’m very proud of my contributions to the project, placing me
+among the [top 10
 contributors](https://opentelemetry.devstats.cncf.io/d/9/developer-activity-counts-by-repository-group-table?orgId=1&var-period_name=Last%202%20years&var-metric=contributions&var-repogroup_name=All&var-country_name=All)
 to the project since the last election.
 
