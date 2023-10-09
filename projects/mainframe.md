@@ -4,7 +4,7 @@
 
 As we see a growing interest from customers to use OpenTelemetry on the mainframe, we'd like to propose a working group to define and stabilize semantic conventions supporting the observability of the mainframe and to introduce instrumentation for programming languages present on the mainframe.
 
-This proposal has been created as result of a [series of meetings](https://docs.google.com/document/d/14p-bpofozTL4n3jy6HZH_TKjoOXvog18G1HBRqq6liE/edit?pli=1#heading=h.pss2tdsd549w) for the topic “OpenTelemetry on Mainframe” with contributions from participants of multiple vendors and is based on [this document](https://docs.google.com/document/d/1SM5BmM4st8n4giWuqe1shqN98d37VG9C_-di1hG6sbg/edit#heading=h.q3h9nwmyzjva).
+This proposal has been created as result of a [series of meetings](https://docs.google.com/document/d/14p-bpofozTL4n3jy6HZH_TKjoOXvog18G1HBRqq6liE/edit?pli=1#heading=h.pss2tdsd549w) for the topic “OpenTelemetry on Mainframe” with contributions from participants of multiple vendors and is based on [this document](https://docs.google.com/document/d/1SM5BmM4st8n4giWuqe1shqN98d37VG9C_-di1hG6sbg/edit#heading=h.q3h9nwmyzjva).  
 
 ### Goals
 
@@ -16,7 +16,7 @@ This proposal has been created as result of a [series of meetings](https://docs.
 
 ## Deliverables
 
--   Definition of semantic conventions that capture the concepts of the mainframe including hardware, virtualization, z/OS and subsystems, Linux on IBM Z by aligning to and extending the existing semantic conventions across resources, metrics, logs, and traces. The enhancements of the semantic conventions are assumed to be generically applicable to the mainframe and apply to any OS on the mainframe incl. TPF and z/VSE.
+-   Definition of semantic conventions that capture the concepts of the mainframe including hardware, virtualization, z/OS and subsystems, Linux on IBM Z by aligning to and extending the existing semantic conventions across resources, metrics, logs, and traces. The enhancements of the semantic conventions are assumed to be generically applicable to the mainframe and apply to any OS on the mainframe incl. TPF and z/VSE. The approach for enhancing the semantic conventions will be based on the existing definitions and the on-going work for converging with the Elastic Common Schema (ECS), define rules for mapping the concepts of the mainframe to the existing conventions and extend them with additional attributes where needed, e.g., for representing the different types of CPU utilization in the multi-layer environemnt of the mainframe. 
 -   Alignment of semantic conventions for virtualization between mainframe and other virtualizations solutions, as far as feasible and reasonable
 -   Description of mapping between names and mainframe terms (for conventions not specifically defined as mainframe extensions)
 -   Definition of a curated, most meaningful set of metrics (out of the thousands of available metrics) to be fully supported by the semantic conventions.
@@ -28,7 +28,7 @@ This proposal has been created as result of a [series of meetings](https://docs.
 
 ## Staffing / Help wanted
 
-This group will welcome contributors from various areas:
+Based on previous participation in the meeting for preparings this proposal, we foresee continued contributions from 12 to 15 people. In addition, this group will welcome contributors from various areas:
 -   We look for participation from mainframe experts of all kinds: observability and monitoring experts, performance experts, virtualization experts, architects, and users of observability solutions for the mainframe and those who want to extend, simplify, and improve their current observability solution to the mainframe.
 -   We welcome developers working with Assembler, COBOL, PL/1, and REXX, and engineers willing to contribute with the instrumentation for mainframe-specific programming languages.
 -   We invite everybody to join who is passionate about the mainframe.
@@ -50,7 +50,7 @@ This group will welcome contributors from various areas:
     -   Aaron Young - Either will work for me. Tuesday is slightly preferable.
 
 ## Timeline
-Start of workgroup at the beginning of October 2023.
+Start of workgroup at the beginning of November 2023. The focus is on the implementation of three topics in separate tracks: Semantic Conventions, Code Instrumentation and Collector Enhancements. All three tracks are of equal importance, whereby some of the activities for the track Collector Enhancements rely on the results of the track Semantic Conventions, e.g., when metrics about the virtualization layers of the mainframe have to be gathered. Based on the learnings from the SDK implementation for COBOL, the track for Code instrumentation will provide further SDK implementations for other mainframe-specific languages.
 
 ### Track: Semantic Conventions
 -   Stage 1: Semantic conventions for basic mainframe concepts - 4Q2023/1Q2024
@@ -59,10 +59,10 @@ Start of workgroup at the beginning of October 2023.
 ### Track: Code Instrumentation
 -   Stage 1: Definition of approach for supporting instrumentation of mainframe-specific programming languages - 4Q2023.
 -   Stage 2: SDK for COBOL - 1H2024
--   Stage 3: others
+-   Stage 3: SDKs for other languages, e.g. PL/1, REXX or JCL - 2H2024
 
 ### Track: Collector Enhancements
--   Stage 1: Make the Collector compatible (runnable) within mainframe environments. Should be able to run from Linux on IBM Z, the Container Extension of z/OS (zCX) and the z/OS Unix System Services (USS). (Note: s390x support for Linux on IBM Z and zCX is already addressed by this [PR](https://github.com/open-telemetry/opentelemetry-collector-releases/pull/384)).
+-   Stage 1: Make the Collector compatible (runnable) within mainframe environments and support resource detection. Should be able to run from Linux on IBM Z, the Container Extension of z/OS (zCX) and the z/OS Unix System Services (USS). (Note: s390x support for Linux on IBM Z and zCX is already addressed by this [PR](https://github.com/open-telemetry/opentelemetry-collector-releases/pull/384)).
 -   Stage 2: Make the Collector capture resource metrics from mainframes for z/OS and Linux on IBM Z, considering both agent and gateway deployments of the Collector.
 -   Stage 3: Make the Collector capture logs from mainframes for z/OS and Linux on IBM Z, considering both agent and gateway deployments of the Collector.
 
