@@ -114,3 +114,31 @@ For your reference, my 2021 platform can be found
 
 Thank you for your support in ensuring the continued growth and success of
 OpenTelemetry.
+
+### Eric Sirianni
+![Eric Sirianni](static/eric-sirianni.jpg)
+- Company: [Confluent](https://confluent.io)
+- GitHub: [sirianni](https://github.com/sirianni)
+
+I'm Eric Sirianni, a technical leader at Confluent focused on Observability.
+
+My team currently operates an OpenTelemetry-based platform that powers several
+critical use cases within Confluent Cloud. We run a fleet of over 45,000
+OpenTelemetry Collector agents in production, exporting telemetry to both
+internal and third-party systems. Our internal metrics pipeline ingests over 6
+million datapoints per-second with less than 2 minute lag and serves over 300
+queries per-second with sub-second latency.
+
+I introduced OpenTelemetry to Confluent's architecture in 2020 and have since
+been evangelizing its adoption across our platform.  I also meet regularly with
+our Observability vendors to suggest and advocate OpenTelemetry-related features
+on their roadmaps.
+
+Over the past few years, I have been a fairly active participant in the
+OpenTelemetry community, primarily engaging in Slack discussions and submitting
+bug reports or feature requests.  I've been very impressed with the enthusiasm
+and welcoming nature of the OTel community, as well as their openness and
+responsiveness to feedback.
+
+If elected, I hope to provide an end user's perspective to the GC and share my
+experiences as both an adopter and advocate for OpenTelemetry.
