@@ -156,7 +156,7 @@ done [panel discussions](https://www.youtube.com/watch?v=cypL2ZWUElE&t=9278s) an
 technical [blogs](https://opentelemetry.io/blog/2022/why-and-how-ebay-pivoted-to-opentelemetry/) on the advantages of
 adopting OpenTelemetry within large organizations such as eBay. Vijay is also the co-chair of TAG Observability's Query
 Language Standardization working group. Vijay is passionate about Open Source and has contributed to various projects since the age
-of 19.  He has a wealth of knowledge not only in being an adopter of Open Telemetry but also in building out massive scale
+of 19.  He has a wealth of knowledge not only in being an adopter of OpenTelemetry but also in building out massive scale
 Observability platforms. 
 
 If elected Vijay will bring a much-needed end user perspective to the GC, provide representation to the various end users and
