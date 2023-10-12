@@ -4,7 +4,7 @@ Please see **[the list of candidates running in the election here](./governance-
 
 This document lays out the 2023 election process per the OpenTelemetry governance committee [charter document](../../governance-charter.md#establishment-of-a-governance-committee) requirements.
 
-This election should fill four seats.
+This election should fill five seats.
 
 Election schedule:
 
