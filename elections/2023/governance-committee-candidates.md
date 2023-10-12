@@ -35,6 +35,48 @@ will prioritize efforts to increase the contributor and maintainer community
 size, ensure that the project is welcoming and inclusive, and to guide the
 project towards graduation and long-term success.
 
+### Daniel Gomez Blanco
+![Daniel Gomez Blanco](static/daniel-gomezblanco.png)
+- Company: Skyscanner
+- GitHub: [danielgblanco](https://github.com/danielgblanco)
+
+I’m Daniel Gomez Blanco, Principal Software Engineer at Skyscanner where I’ve
+been leading an organisation-wide observability transformation underpinned by
+the use OpenTelemetry across 1,000+ services, and I’m asking for your vote to
+help me bring an end-user view to the Governance Committee.
+
+Over the last few years, my contributions to the community have been focused on
+advocating adoption of OpenTelemetry tooling in an efficient way, while
+promoting observability best practices to maximise the ROI of telemetry
+instrumentation. As external outputs, these contributions include:
+
+- Authoring [Practical OpenTelemetry: Adopting Open Observability Standards Across Your Organization](https://link.springer.com/book/10.1007/978-1-4842-9075-0).
+- Delivering conference talks (e.g. [QCon London 2023](https://qconlondon.com/presentation/mar2023/effective-and-efficient-observability-opentelemetry)
+, [O11yfest 2021](https://o11yfest.org/speakers/daniel-gomez-blanco), sharing
+my experience on how organisations can benefit from adopting OTel and how to do
+it efficiently.
+- Participating in several interviews, case studies, panels, and podcasts to
+discuss observability best practices and the value of OTel.
+
+At Skyscanner, my job as a platform engineer involves driving the strategy for
+a transition to open standards with minimal friction, providing the necessary
+enablement tooling, and guiding over 700 engineers across dozens of teams to
+make the best use of each telemetry signal to instrument and observe their
+systems, from the client-side all the way down to backend services and their
+underlying infrastructure. Reaping the benefits of effective observability from
+the many terabytes of telemetry data going through our collectors every hour,
+and empowering a reliable experience for millions of users of our product each
+month, makes this an ever exciting challenge!
+
+Previous to OpenTelemetry, I have extensive experience as a platform engineer
+working in a wide range of observability-related areas, having led workstreams
+in frontend performance optimisation, custom telemetry pipelines, open-source
+observability tooling, and Kubernetes resource optimisation.
+
+As a practitioner, I believe I can bring first-hand insights to the GC about
+the challenges that organisations of any size can face, and help to drive
+initiatives to address those, bridging the gap between enablement and adoption.
+
 ### Juraci Paixão Kröhling
 ![Juraci Paixão Kröhling](static/jpkroehling.webp)
 - Company: Grafana Labs
