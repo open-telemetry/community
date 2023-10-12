@@ -264,3 +264,35 @@ I have also had the opportunity to speak about OpenTelemetry at [KubeCon EU](htt
 #### Thank You 
 
 Thank you for being part of the awesome OpenTelemetry community!
+
+### Ted Young
+
+![Ted Young photo](static/ted-young.jpg)
+
+- Company: Lightstep
+- GitHub: [tedsuo](https://github.com/tedsuo)
+
+Hello, I'm one of the OpenTelemetry co-founders. My primary focus has been on
+API design, technical project management, and facilitation. For every new project within OpenTelemetry,
+my ethos has been to reach out to find new collaborators, give them the support that they need and
+set them up for success. When a project is stuck on design, or is missing a designer, then I will also
+help bottom line the design work. Examples include the many aspects of the tracing system, context
+propagation, error reporting, and our approach to stability/backwards compatibility.
+
+In the past, expanding the scope of OpenTelemetry has felt slow, especially when related to desiging
+and accepting new specifications. This perception was related to spreading ourselves too thin, starting
+too many new initiatives without first defining timelines, TC sponsors, and responsibilities.
+
+To address this, I've spent this past year developing a new project management workflow for OpenTelemetry,
+and we have had success rebooting several SIGs under this new process.
+
+I also facilitate conflict resolution, and I am available to all community members whenever they are
+experiencing any difficulty or frustration. In general, I try to keep OpenTelemetry a friendly, drama-free
+environment where collaboration is easy and enjoyable.
+
+I would like to continue this work with another term on the GC. This position aligns well with the facilitation
+and project management role that I currently perform for the OpenTelemetry community. If my approach to 
+community management sounds good to you, please vote for me so that I may continue to help our amazing community
+grow and thrive!
+
+---
