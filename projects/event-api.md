@@ -4,10 +4,6 @@ The Client / RUM Sig is looking to finalize, complete and resolve the outstandin
 
 ### Project Board
 
-Once approved by TC, a project should be managed using a GitHub project board. This project board should be pre-populated with issues that cover all known deliverables, organized by timeline milestones.
-
-A [Technical Committee](https://github.com/open-telemetry/community/blob/main/community-members.md#technical-committee) (TC) member associated with the project can create the board, along with a new project-specific GitHub label to automatically associate issues and PRs with the project. The project lead and all other relevant project members should have edit access to the board.
-
 Project Board: https://github.com/orgs/open-telemetry/projects/65
 
 ### Deliverables
@@ -21,7 +17,6 @@ Resolve the outstanding Event Issues / PR's which will define
 
 #### Required staffing
 
-* Need: TC members (At least two sponsoring TC members.)
 * Need: Scheduled meeting where TC members and domain experts can attend
 * Need: more domain experts willing to define the OTel Event standard
 * Need: engineers willing to write prototypes in at least one more language other than JavaScript. Language should be fairly different from JavaScript.
