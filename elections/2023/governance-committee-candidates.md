@@ -142,3 +142,22 @@ responsiveness to feedback.
 
 If elected, I hope to provide an end user's perspective to the GC and share my
 experiences as both an adopter and advocate for OpenTelemetry.
+
+### Vijay Samuel
+<img src="static/vijay-samuel.jpg" alt="Vijay Samuel" height="400" width="400">
+
+- Company: [eBay](https://www.ebay.com)
+- GitHub: [vjsamuel](ttps://github.com/vjsamuel)
+
+Vijay Samuel is a Principal MTS, Architect at eBay and helps lead its internal Observability platform. He has been involved
+in the OpenTelemetry project for the last couple of years and has been a strong advocate for the project both within eBay
+and externally. Vijay has given talks at [KubeCon](https://www.youtube.com/watch?v=tZJd6W-CIcU), 
+done [panel discussions](https://www.youtube.com/watch?v=cypL2ZWUElE&t=9278s) and written 
+technical [blogs](https://opentelemetry.io/blog/2022/why-and-how-ebay-pivoted-to-opentelemetry/) on the advantages of
+adopting OpenTelemetry within large organizations such as eBay. Vijay is also the co-chair of TAG Observability's Query
+Language Standardization working group. Vijay is passionate about Open Source and has contributed to various projects since the age
+of 19.  He has a wealth of knowledge not only in being an adopter of OpenTelemetry but also in building out massive scale
+Observability platforms. 
+
+If elected Vijay will bring a much-needed end user perspective to the GC, provide representation to the various end users and
+help the community understand their needs and requirements. 
