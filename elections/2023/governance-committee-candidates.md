@@ -296,3 +296,40 @@ community management sounds good to you, please vote for me so that I may contin
 grow and thrive!
 
 ---
+
+### Steve Flanders
+
+<img src="static/steve-flanders.jpg" alt="Steve Flanders photo" height="460" width="460">
+
+- Company: Splunk (formerly Omnition)
+- GitHub: [flands](https://github.com/flands)
+
+Hi! I'm an [Engineering Director](https://www.linkedin.com/in/steveflanders/)
+at Splunk and lead the Observability “Getting Data In” team which contributes
+extensively to OpenTelemetry. I have been in the monitoring/observability space
+for over a decade and involved in both the OpenCensus and OpenTelemetry
+projects from the beginning. I am proud to be part of the incredible
+OpenTelemetry community and appreciate your consideration and vote!
+
+#### How I contribute
+
+I helped co-create the OpenCensus Service and OpenTelemetry Collector with
+involvement from software development and architecture to product management
+and roadmap. Across many OpenTelemetry repositories I spend a lot of time on
+getting started, documentation, and examples. I also help promote and teach
+people about OpenTelemetry via conference talks, workshops, and blog posts. I
+authored the [OpenTelemetry incubation
+document](https://docs.google.com/document/d/1f4WQR6K84giyOCKjCsqcoVA8YUIzBhWZDVo3CwM1wuk/edit#heading=h.wrbwe8x26bft)
+and presented it to TAG Observability.
+
+#### My Values
+
+- Community, diversity, and positivity; recognize and appreciate everyone
+- Listen, share, learn, grow, and laugh; focus on openness and collaboration
+- Prioritize ease of use and customer experience always
+
+#### Why I'm Running
+
+- Continue to build a positive community where opinions are heard and valued
+- Help prioritize and drive customer adoption and case studies
+- Ensure the best documentation with getting started guides and demos
