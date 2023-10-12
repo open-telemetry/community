@@ -2,9 +2,6 @@
 
 The Client / RUM Sig is looking to finalize, complete and resolve the outstanding issues / PR's that exist around the Event API / SDK and the Semantic Conventions that defines what an "event" is.
 
-* Defined, identifying an `event`
-* Created (API / SDK)
-
 ### Project Board
 
 Once approved by TC, a project should be managed using a GitHub project board. This project board should be pre-populated with issues that cover all known deliverables, organized by timeline milestones.
