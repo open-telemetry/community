@@ -143,6 +143,34 @@ responsiveness to feedback.
 If elected, I hope to provide an end user's perspective to the GC and share my
 experiences as both an adopter and advocate for OpenTelemetry.
 
+### Antoine Toulme
+![Antoine Toulme](static/antoine-toulme.jpg)
+- Company: [Splunk](https://www.splunk.com)
+- GitHub: [atoulme](https://github.com/atoulme)
+
+I'm Antoine Toulme, a long time open source enthusiast and engineering manager.
+I have been involved in open source since 2007, with committer and advisory roles
+under the Eclipse Foundation, the Apache Software Foundation and the Hyperledger 
+Foundation.
+
+I have been active with OpenTelemetry since 2020 and am an approver of the 
+OpenTelemetry Collector [Contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib/#contributing) 
+and triager of the [Core](https://github.com/open-telemetry/opentelemetry-collector/#contributing) repositories.
+
+I have authored the Splunk HEC [receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/splunkhecreceiver) 
+and [exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/splunkhecexporter), 
+the [filestats](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/filestatsreceiver) 
+receiver, the [haproxy](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/haproxyreceiver)
+receiver, the [otlpjsonfile](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/otlpjsonfilereceiver)
+receiver among others.
+
+My intent if elected is to concentrate on two goals: move the project towards 
+stability and increase the number of contributors to the project.
+To work towards those goals, I will contribute and foster collaboration to shore 
+up processes for quality, ease of discovery and adoption.
+I aim to drive the project's success by engaging with our ecosystem of adopters 
+and vendors, towards its eventual graduation.
+
 ### Vijay Samuel
 <img src="static/vijay-samuel.jpg" alt="Vijay Samuel" height="400" width="400">
 
