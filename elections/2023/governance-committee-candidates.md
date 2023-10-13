@@ -89,24 +89,36 @@ initiatives to address those, bridging the gap between enablement and adoption.
 - Company: Grafana Labs
 - GitHub: [pyohannes](https://github.com/pyohannes)
 
-Johannes Tax has a multifaceted perspective on OpenTelemetry, from the point of
-view of users, contributors, and vendors. He currently helps Grafana users be
-successful with OpenTelemetry instrumentation. Prior to that, he acted as an
-advocate for OpenTelemetry at Microsoft and shaped the architecture of a
-high-volume distributed tracing backend that natively supports OpenTelemetry.
-As an initial contributor to the OpenTelemetry C++ project, Johannes designed
-and implemented [critical components of the Tracing API and SDK](https://github.com/open-telemetry/opentelemetry-cpp/pulls?q=is%3Apr+author%3Apyohannes+is%3Aclosed). He's an
-[approver for OpenTelemetry semantic conventions](https://github.com/open-telemetry/semantic-conventions#contributing)
-and he [established](https://github.com/open-telemetry/community/issues/805)
-and leads a group dedicated to improving and stabilizing messaging semantic
+I have a multifaceted perspective on OpenTelemetry, from the point of view of
+users, contributors, and vendors. I currently help Grafana users be successful
+with OpenTelemetry instrumentation. Prior to that, I acted as an advocate for
+distributed tracing and OpenTelemetry at Microsoft, where I shaped the
+architecture of a high-volume distributed tracing backend that natively
+supports OpenTelemetry. As an initial contributor to the OpenTelemetry C++
+project, I designed and implemented [critical components of the Tracing API and SDK](https://github.com/open-telemetry/opentelemetry-cpp/pulls?q=is%3Apr+author%3Apyohannes+is%3Aclosed).
+I'm an [approver for OpenTelemetry semantic
+conventions](https://github.com/open-telemetry/semantic-conventions#contributing)
+and I [established](https://github.com/open-telemetry/community/issues/805)
+and lead a group dedicated to improving and stabilizing messaging semantic
 conventions.
 
-During his work with the OpenTelemetry community Johannes learnt a lot about the
-possibilities and challenges of collaboration on open source projects and open
-standards. He continues to be impressed by the open and welcoming community.
-With full support from his employer, Johannes is committed to nurturing this
-environment and further continuing to establish OpenTelemetry as a stable,
-comprehensive, and ubiquitous observability standard.
+I continue to be impressed by the open and welcoming community. With full
+support from my employer, I am committed to nurturing this environment and
+further continuing to establish OpenTelemetry as a stable, comprehensive, and
+ubiquitous observability standard.
+
+Many amazing people devote their time to this project, and it's crucial to
+provide them with tools and processes that optimize their efforts. If elected,
+my aim is to enhance the existing tools and processes and establish new ones to
+support this goal.
+
+As a concrete example, I want to make it easier for subject matter experts to
+contribute to semantic conventions. Semantic conventions span a wide array of
+topics, and to produce high-quality conventions subject matter experts in each
+area are essential. Often, these experts are not observability specialists, and
+they require additional guidance and support to contribute effectively. I want
+to help to attract those experts to OpenTelemetry and make them productive
+members of the community.
 
 ---
 
