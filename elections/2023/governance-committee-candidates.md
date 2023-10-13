@@ -77,6 +77,31 @@ As a practitioner, I believe I can bring first-hand insights to the GC about
 the challenges that organisations of any size can face, and help to drive
 initiatives to address those, bridging the gap between enablement and adoption.
 
+### Johannes Tax
+<img src="static/johannes-tax.gif" alt="Johannes Tax" height="300" width="300">
+
+- Company: Grafana Labs
+- GitHub: [pyohannes](https://github.com/pyohannes)
+
+Johannes Tax has a multifaceted perspective on OpenTelemetry, from the point of
+view of users, contributors, and vendors. He currently helps Grafana users be
+successful with OpenTelemetry instrumentation. Prior to that, he acted as an
+advocate for OpenTelemetry at Microsoft and shaped the architecture of a
+high-volume distributed tracing backend that natively supports OpenTelemetry.
+As an initial contributor to the OpenTelemetry C++ project, Johannes designed
+and implemented [critical components of the Tracing API and SDK](https://github.com/open-telemetry/opentelemetry-cpp/pulls?q=is%3Apr+author%3Apyohannes+is%3Aclosed). He's an
+[approver for OpenTelemetry semantic conventions](https://github.com/open-telemetry/semantic-conventions#contributing)
+and he [established](https://github.com/open-telemetry/community/issues/805)
+and leads a group dedicated to improving and stabilizing messaging semantic
+conventions.
+
+During his work with the OpenTelemetry community Johannes learnt a lot about the
+possibilities and challenges of collaboration on open source projects and open
+standards. He continues to be impressed by the open and welcoming community.
+With full support from his employer, Johannes is committed to nurturing this
+environment and further continuing to establish OpenTelemetry as a stable,
+comprehensive, and ubiquitous observability standard.
+
 ### Juraci Paixão Kröhling
 ![Juraci Paixão Kröhling](static/jpkroehling.webp)
 - Company: Grafana Labs
@@ -184,34 +209,6 @@ responsiveness to feedback.
 
 If elected, I hope to provide an end user's perspective to the GC and share my
 experiences as both an adopter and advocate for OpenTelemetry.
-
-### Antoine Toulme
-![Antoine Toulme](static/antoine-toulme.jpg)
-- Company: [Splunk](https://www.splunk.com)
-- GitHub: [atoulme](https://github.com/atoulme)
-
-I'm Antoine Toulme, a long time open source enthusiast and engineering manager.
-I have been involved in open source since 2007, with committer and advisory roles
-under the Eclipse Foundation, the Apache Software Foundation and the Hyperledger 
-Foundation.
-
-I have been active with OpenTelemetry since 2020 and am an approver of the 
-OpenTelemetry Collector [Contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib/#contributing) 
-and triager of the [Core](https://github.com/open-telemetry/opentelemetry-collector/#contributing) repositories.
-
-I have authored the Splunk HEC [receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/splunkhecreceiver) 
-and [exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/splunkhecexporter), 
-the [filestats](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/filestatsreceiver) 
-receiver, the [haproxy](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/haproxyreceiver)
-receiver, the [otlpjsonfile](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/otlpjsonfilereceiver)
-receiver among others.
-
-My intent if elected is to concentrate on two goals: move the project towards 
-stability and increase the number of contributors to the project.
-To work towards those goals, I will contribute and foster collaboration to shore 
-up processes for quality, ease of discovery and adoption.
-I aim to drive the project's success by engaging with our ecosystem of adopters 
-and vendors, towards its eventual graduation.
 
 ### Vijay Samuel
 <img src="static/vijay-samuel.jpg" alt="Vijay Samuel" height="400" width="400">
