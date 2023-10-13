@@ -15,6 +15,8 @@ Description of candidate
 ---
 -->
 
+---
+
 ### Austin Parker
 ![Austin Parker](static/austin-parker.jpg)
 
@@ -34,6 +36,8 @@ its community, and the GC's role is to nurture and guide that community. They
 will prioritize efforts to increase the contributor and maintainer community
 size, ensure that the project is welcoming and inclusive, and to guide the
 project towards graduation and long-term success.
+
+---
 
 ### Daniel Gomez Blanco
 ![Daniel Gomez Blanco](static/daniel-gomezblanco.png)
@@ -77,6 +81,8 @@ As a practitioner, I believe I can bring first-hand insights to the GC about
 the challenges that organisations of any size can face, and help to drive
 initiatives to address those, bridging the gap between enablement and adoption.
 
+---
+
 ### Johannes Tax
 <img src="static/johannes-tax.gif" alt="Johannes Tax" height="300" width="300">
 
@@ -101,6 +107,8 @@ standards. He continues to be impressed by the open and welcoming community.
 With full support from his employer, Johannes is committed to nurturing this
 environment and further continuing to establish OpenTelemetry as a stable,
 comprehensive, and ubiquitous observability standard.
+
+---
 
 ### Juraci Paixão Kröhling
 ![Juraci Paixão Kröhling](static/jpkroehling.webp)
@@ -182,6 +190,8 @@ For your reference, my 2021 platform can be found
 Thank you for your support in ensuring the continued growth and success of
 OpenTelemetry.
 
+---
+
 ### Eric Sirianni
 ![Eric Sirianni](static/eric-sirianni.jpg)
 - Company: [Confluent](https://confluent.io)
@@ -210,6 +220,8 @@ responsiveness to feedback.
 If elected, I hope to provide an end user's perspective to the GC and share my
 experiences as both an adopter and advocate for OpenTelemetry.
 
+---
+
 ### Vijay Samuel
 <img src="static/vijay-samuel.jpg" alt="Vijay Samuel" height="400" width="400">
 
@@ -228,6 +240,8 @@ Observability platforms.
 
 If elected Vijay will bring a much-needed end user perspective to the GC, provide representation to the various end users and
 help the community understand their needs and requirements.
+
+---
 
 ### Severin Neumann
 
@@ -261,6 +275,8 @@ I have also had the opportunity to speak about OpenTelemetry at [KubeCon EU](htt
 #### Thank You 
 
 Thank you for being part of the awesome OpenTelemetry community!
+
+---
 
 ### Ted Young
 
