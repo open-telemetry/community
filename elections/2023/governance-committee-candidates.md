@@ -77,6 +77,31 @@ As a practitioner, I believe I can bring first-hand insights to the GC about
 the challenges that organisations of any size can face, and help to drive
 initiatives to address those, bridging the gap between enablement and adoption.
 
+### Johannes Tax
+<img src="static/johannes-tax.gif" alt="Johannes Tax" height="300" width="300">
+
+- Company: Grafana Labs
+- GitHub: [pyohannes](https://github.com/pyohannes)
+
+Johannes Tax has a multifaceted perspective on OpenTelemetry, from the point of
+view of users, contributors, and vendors. He currently helps Grafana users be
+successful with OpenTelemetry instrumentation. Prior to that, he acted as an
+advocate for OpenTelemetry at Microsoft and shaped the architecture of a
+high-volume distributed tracing backend that natively supports OpenTelemetry.
+As an initial contributor to the OpenTelemetry C++ project, Johannes designed
+and implemented [critical components of the Tracing API and SDK](https://github.com/open-telemetry/opentelemetry-cpp/pulls?q=is%3Apr+author%3Apyohannes+is%3Aclosed). He's an
+[approver for OpenTelemetry semantic conventions](https://github.com/open-telemetry/semantic-conventions#contributing)
+and he [established](https://github.com/open-telemetry/community/issues/805)
+and leads a group dedicated to improving and stabilizing messaging semantic
+conventions.
+
+During his work with the OpenTelemetry community Johannes learnt a lot about the
+possibilities and challenges of collaboration on open source projects and open
+standards. He continues to be impressed by the open and welcoming community.
+With full support from his employer, Johannes is committed to nurturing this
+environment and further continuing to establish OpenTelemetry as a stable,
+comprehensive, and ubiquitous observability standard.
+
 ### Juraci Paixão Kröhling
 ![Juraci Paixão Kröhling](static/jpkroehling.webp)
 - Company: Grafana Labs
