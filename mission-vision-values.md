@@ -122,12 +122,12 @@ and unexpected interference effects in the host application are unacceptable.
 The OpenTelemetry project aims to be a welcoming place where new and existing
 members feel safe to respectfully share their opinions and disagreements. We
 want to attract a diverse group of people to collaborate with us, which means
-acknowledging that people come from different backgrounds and cultures. 
+acknowledging that people come from different backgrounds and cultures.
 
 There might be situations where community members act in a dubious manner. If
 you have seen or experienced unacceptable behavior or anything that would make
-our community less welcoming, please speak up! See [our code of
-conduct](https://github.com/open-telemetry/community/blob/main/code-of-conduct.md)
+our community less welcoming, please speak up! See
+[our code of conduct](https://github.com/open-telemetry/community/blob/main/code-of-conduct.md)
 for more information on how to report unacceptable behavior.
 
 While we want to encourage everyone to express themselves in their own way,
@@ -142,7 +142,7 @@ observability space. That said, we expect community members to act in the best
 interests of the project. Each member’s priorities can (and should!) align with
 those of their employers so that the relationship is beneficial to all parties,
 but when acting as a maintainer or contributor to the project, community members
-are expected to wear the project’s hat. 
+are expected to wear the project’s hat.
 
 ### Disclose potential conflicts of interest
 
