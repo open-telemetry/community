@@ -169,7 +169,7 @@ Kubernetes](https://github.com/open-telemetry/opentelemetry-operator), having
 successfully fostered a community around it that is able to continue evolving
 further even after I stepped back from maintainership to focus on other OTel
 areas. Overall, I’m very proud of my contributions to the project, placing me
-among the [top 10
+among the [top
 contributors](https://opentelemetry.devstats.cncf.io/d/9/developer-activity-counts-by-repository-group-table?orgId=1&var-period_name=Last%202%20years&var-metric=contributions&var-repogroup_name=All&var-country_name=All)
 to the project since the last election.
 
