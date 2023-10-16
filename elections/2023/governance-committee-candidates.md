@@ -20,7 +20,7 @@ Description of candidate
 ### Austin Parker
 ![Austin Parker](static/austin-parker.jpg)
 
-- Company: Embargoed until 2nd Week of October
+- Company: [Honeycomb](https://honeycomb.io)
 - GitHub: [austinlparker](https://github.com/austinlparker)
 
 Austin Parker is the Community Maintainer of OpenTelemetry and long-term
