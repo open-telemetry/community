@@ -4,16 +4,15 @@
 
 In alphabetical order:
 
-- [Candidate Name](#candidate-name)
-
-<!--
-### Candidate 1
-![Candidate Name](static/candidate-picture.png)
-- Company: Company Name
-- GitHub: [username](https://github.com/username)
-Description of candidate
----
--->
+- [Austin Parker](#austin-parker)
+- [Daniel Gomez Blanco](#daniel-gomez-blanco)
+- [Eric Sirianni](#eric-sirianni)
+- [Johannes Tax](#johannes-tax)
+- [Juraci Paixão Kröhling](#juraci-paixão-kröhling)
+- [Severin Neumann](#severin-neumann)
+- [Steve Flanders](#steve-flanders)
+- [Ted Young](#ted-young)
+- [Vijay Samuel](#vijay-samuel)
 
 ---
 
@@ -80,6 +79,36 @@ observability tooling, and Kubernetes resource optimisation.
 As a practitioner, I believe I can bring first-hand insights to the GC about
 the challenges that organisations of any size can face, and help to drive
 initiatives to address those, bridging the gap between enablement and adoption.
+
+---
+
+### Eric Sirianni
+![Eric Sirianni](static/eric-sirianni.jpg)
+- Company: [Confluent](https://confluent.io)
+- GitHub: [sirianni](https://github.com/sirianni)
+
+I'm Eric Sirianni, a technical leader at Confluent focused on Observability.
+
+My team currently operates an OpenTelemetry-based platform that powers several
+critical use cases within Confluent Cloud. We run a fleet of over 45,000
+OpenTelemetry Collector agents in production, exporting telemetry to both
+internal and third-party systems. Our internal metrics pipeline ingests over 6
+million datapoints per-second with less than 2 minute lag and serves over 300
+queries per-second with sub-second latency.
+
+I introduced OpenTelemetry to Confluent's architecture in 2020 and have since
+been evangelizing its adoption across our platform.  I also meet regularly with
+our Observability vendors to suggest and advocate OpenTelemetry-related features
+on their roadmaps.
+
+Over the past few years, I have been a fairly active participant in the
+OpenTelemetry community, primarily engaging in Slack discussions and submitting
+bug reports or feature requests.  I've been very impressed with the enthusiasm
+and welcoming nature of the OTel community, as well as their openness and
+responsiveness to feedback.
+
+If elected, I hope to provide an end user's perspective to the GC and share my
+experiences as both an adopter and advocate for OpenTelemetry.
 
 ---
 
@@ -204,57 +233,6 @@ OpenTelemetry.
 
 ---
 
-### Eric Sirianni
-![Eric Sirianni](static/eric-sirianni.jpg)
-- Company: [Confluent](https://confluent.io)
-- GitHub: [sirianni](https://github.com/sirianni)
-
-I'm Eric Sirianni, a technical leader at Confluent focused on Observability.
-
-My team currently operates an OpenTelemetry-based platform that powers several
-critical use cases within Confluent Cloud. We run a fleet of over 45,000
-OpenTelemetry Collector agents in production, exporting telemetry to both
-internal and third-party systems. Our internal metrics pipeline ingests over 6
-million datapoints per-second with less than 2 minute lag and serves over 300
-queries per-second with sub-second latency.
-
-I introduced OpenTelemetry to Confluent's architecture in 2020 and have since
-been evangelizing its adoption across our platform.  I also meet regularly with
-our Observability vendors to suggest and advocate OpenTelemetry-related features
-on their roadmaps.
-
-Over the past few years, I have been a fairly active participant in the
-OpenTelemetry community, primarily engaging in Slack discussions and submitting
-bug reports or feature requests.  I've been very impressed with the enthusiasm
-and welcoming nature of the OTel community, as well as their openness and
-responsiveness to feedback.
-
-If elected, I hope to provide an end user's perspective to the GC and share my
-experiences as both an adopter and advocate for OpenTelemetry.
-
----
-
-### Vijay Samuel
-<img src="static/vijay-samuel.jpg" alt="Vijay Samuel" height="400" width="400">
-
-- Company: [eBay](https://www.ebay.com)
-- GitHub: [vjsamuel](ttps://github.com/vjsamuel)
-
-Vijay Samuel is a Principal MTS, Architect at eBay and helps lead its internal Observability platform. He has been involved
-in the OpenTelemetry project for the last couple of years and has been a strong advocate for the project both within eBay
-and externally. Vijay has given talks at [KubeCon](https://www.youtube.com/watch?v=tZJd6W-CIcU), 
-done [panel discussions](https://www.youtube.com/watch?v=cypL2ZWUElE&t=9278s) and written 
-technical [blogs](https://opentelemetry.io/blog/2022/why-and-how-ebay-pivoted-to-opentelemetry/) on the advantages of
-adopting OpenTelemetry within large organizations such as eBay. Vijay is also the co-chair of TAG Observability's Query
-Language Standardization working group. Vijay is passionate about Open Source and has contributed to various projects since the age
-of 19.  He has a wealth of knowledge not only in being an adopter of OpenTelemetry but also in building out massive scale
-Observability platforms. 
-
-If elected Vijay will bring a much-needed end user perspective to the GC, provide representation to the various end users and
-help the community understand their needs and requirements.
-
----
-
 ### Severin Neumann
 
 <img src="static/severin-neumann.jpg" alt="Severin Neumann" height="400" width="400">
@@ -287,38 +265,6 @@ I have also had the opportunity to speak about OpenTelemetry at [KubeCon EU](htt
 #### Thank You 
 
 Thank you for being part of the awesome OpenTelemetry community!
-
----
-
-### Ted Young
-
-![Ted Young photo](static/ted-young.jpg)
-
-- Company: Lightstep
-- GitHub: [tedsuo](https://github.com/tedsuo)
-
-Hello, I'm one of the OpenTelemetry co-founders. My primary focus has been on
-API design, technical project management, and facilitation. For every new project within OpenTelemetry,
-my ethos has been to reach out to find new collaborators, give them the support that they need and
-set them up for success. When a project is stuck on design, or is missing a designer, then I will also
-help bottom line the design work. Examples include the many aspects of the tracing system, context
-propagation, error reporting, and our approach to stability/backwards compatibility.
-
-In the past, expanding the scope of OpenTelemetry has felt slow, especially when related to desiging
-and accepting new specifications. This perception was related to spreading ourselves too thin, starting
-too many new initiatives without first defining timelines, TC sponsors, and responsibilities.
-
-To address this, I've spent this past year developing a new project management workflow for OpenTelemetry,
-and we have had success rebooting several SIGs under this new process.
-
-I also facilitate conflict resolution, and I am available to all community members whenever they are
-experiencing any difficulty or frustration. In general, I try to keep OpenTelemetry a friendly, drama-free
-environment where collaboration is easy and enjoyable.
-
-I would like to continue this work with another term on the GC. This position aligns well with the facilitation
-and project management role that I currently perform for the OpenTelemetry community. If my approach to 
-community management sounds good to you, please vote for me so that I may continue to help our amazing community
-grow and thrive!
 
 ---
 
@@ -358,3 +304,56 @@ and presented it to TAG Observability.
 - Continue to build a positive community where opinions are heard and valued
 - Help prioritize and drive customer adoption and case studies
 - Ensure the best documentation with getting started guides and demos
+
+---
+
+### Ted Young
+
+![Ted Young photo](static/ted-young.jpg)
+
+- Company: Lightstep
+- GitHub: [tedsuo](https://github.com/tedsuo)
+
+Hello, I'm one of the OpenTelemetry co-founders. My primary focus has been on
+API design, technical project management, and facilitation. For every new project within OpenTelemetry,
+my ethos has been to reach out to find new collaborators, give them the support that they need and
+set them up for success. When a project is stuck on design, or is missing a designer, then I will also
+help bottom line the design work. Examples include the many aspects of the tracing system, context
+propagation, error reporting, and our approach to stability/backwards compatibility.
+
+In the past, expanding the scope of OpenTelemetry has felt slow, especially when related to desiging
+and accepting new specifications. This perception was related to spreading ourselves too thin, starting
+too many new initiatives without first defining timelines, TC sponsors, and responsibilities.
+
+To address this, I've spent this past year developing a new project management workflow for OpenTelemetry,
+and we have had success rebooting several SIGs under this new process.
+
+I also facilitate conflict resolution, and I am available to all community members whenever they are
+experiencing any difficulty or frustration. In general, I try to keep OpenTelemetry a friendly, drama-free
+environment where collaboration is easy and enjoyable.
+
+I would like to continue this work with another term on the GC. This position aligns well with the facilitation
+and project management role that I currently perform for the OpenTelemetry community. If my approach to
+community management sounds good to you, please vote for me so that I may continue to help our amazing community
+grow and thrive!
+
+---
+
+### Vijay Samuel
+<img src="static/vijay-samuel.jpg" alt="Vijay Samuel" height="400" width="400">
+
+- Company: [eBay](https://www.ebay.com)
+- GitHub: [vjsamuel](ttps://github.com/vjsamuel)
+
+Vijay Samuel is a Principal MTS, Architect at eBay and helps lead its internal Observability platform. He has been involved
+in the OpenTelemetry project for the last couple of years and has been a strong advocate for the project both within eBay
+and externally. Vijay has given talks at [KubeCon](https://www.youtube.com/watch?v=tZJd6W-CIcU),
+done [panel discussions](https://www.youtube.com/watch?v=cypL2ZWUElE&t=9278s) and written
+technical [blogs](https://opentelemetry.io/blog/2022/why-and-how-ebay-pivoted-to-opentelemetry/) on the advantages of
+adopting OpenTelemetry within large organizations such as eBay. Vijay is also the co-chair of TAG Observability's Query
+Language Standardization working group. Vijay is passionate about Open Source and has contributed to various projects since the age
+of 19.  He has a wealth of knowledge not only in being an adopter of OpenTelemetry but also in building out massive scale
+Observability platforms.
+
+If elected Vijay will bring a much-needed end user perspective to the GC, provide representation to the various end users and
+help the community understand their needs and requirements.
