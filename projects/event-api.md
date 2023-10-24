@@ -17,7 +17,6 @@ Resolve the outstanding Event Issues / PR's which will define
 
 #### Required staffing
 
-* Need: Scheduled meeting where TC members and domain experts can attend
 * Need: more domain experts willing to define the OTel Event standard
 * Need: engineers willing to write prototypes in at least one more language other than JavaScript. Language should be fairly different from JavaScript.
 * Need: maintainers or approvers from those languages committed to reviewing the prototypes.
@@ -49,9 +48,7 @@ Implementation Maintainers / Approvers:
 
 ### Meeting Times
 
-__Once a project is started, the working group should meet regularly for discussion. These meeting times should be posted on the OpenTelemetry public calendar.__
-
-TBD
+SIG meeting times: Friday 10am - 11am PT
 
 ### Timeline
 
