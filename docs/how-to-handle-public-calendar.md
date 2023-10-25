@@ -1,7 +1,7 @@
 # How to create and configure meetings
 
-In OpenTelemetry we are using the CNCF's Zoom accounts. We currently own four
-identical zoom accounts, though most meetings are created by the first account.
+In OpenTelemetry we are using the CNCF's Zoom accounts. We currently own five
+identical zoom accounts.
 
 All rooms are configured the same way. Some notes on meetings configuration:
 
@@ -48,9 +48,13 @@ The following details need to be set properly:
 - Invited attendes: opentelemetry-calendar@googlegroups.com (see note on this Google Group above)
 
 ### Adding a Zoom link to a meeting
-OpenTelemetry's Zoom accounts use meetings URLs that are accessible in [this document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#), or you can copy them from an existing calendar link
-(posting the URLs publicly on GitHub leads to Zoom bombing by random bots). When editing or creating calendar events, please ensure that the same
-ID is not being used simultaneously or for back-to-back calls.
+Open an issue in the community repository, requesting a new Zoom link.
+By requesting a new Zoom link that is only associated with a single meeting series, the meeting recordings
+can be associated with a meeting name.
+The Zoom link will be created in one of the 5 OpenTelemetry Zoom account.
+A single Zoom account should not be used for back-to-back meetings or for more than two meetings at the same time.
+You can see which Zoom account any potentially conflicting meetings are using in the meeting descriptions.
+(Note: posting the URLs publicly on GitHub leads to Zoom bombing by random bots).
 
 ### Update the meetings overview
 All recurring meetings are listed in the [Community repo's README](../README.md#special-interest-groups), make sure to add/update the respective entry there.
