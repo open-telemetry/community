@@ -163,7 +163,7 @@ Community Demo Application|Every Monday at 8:30 PT|[Google Doc](https://docs.goo
 Functions as a Service (FAAS) |Every other Tuesday at 12:00 PM PT |[Google Doc](https://docs.google.com/document/d/187XYoQcXQ9JxS_5v2wvZ0NEysaJ02xoOYNXj08pT0zc/edit#)|[Slack](https://cloud-native.slack.com/archives/C04HVBETC9Z)|
 OpenTelemetry Profiling WG | Every other week on Thursday at 08:00 AM PT |[Google Doc](https://docs.google.com/document/d/19UqPPPlGE83N37MhS93uRlxsP1_wGxQ33Qv6CDHaEp0/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C03J794L0BV)|
 Security | Weekly on Wednesday at 08:30 AM PT |[Google Doc](https://docs.google.com/document/d/1P2xejC7lEkOV_Z-8E0oZPXLK5HOnUPNuRqKP0ZQ5fpg/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C05A85QC281)|
-Event WG|Every Friday at 10:00 AM PT|TBD Google Doc|[Slack](https://cloud-native.slack.com/archives/C062HUREGUV)|
+Event WG|Every Friday at 10:00 AM PT|[Google Doc](https://docs.google.com/document/d/1BKjQWP32FXL9g1cGbyj7DMXV1Uq_RL8_78rWaMBhN0A/edit#heading=h.1nz72gv5evo2)|[Slack](https://cloud-native.slack.com/archives/C062HUREGUV)|
 
 ## Related groups
 
