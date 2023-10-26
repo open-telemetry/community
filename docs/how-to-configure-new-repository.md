@@ -22,6 +22,13 @@ Everything not mentioned is left at the GitHub default.
 * Automatically delete head branches: :heavy_check_mark:
   * (so that merged branches are not left lying around)
 
+**A note on discussions**: Discussions are disabled by default when creating a
+new repository. Maintainers may enable discussions, but in doing so take on the
+responsibility of moderating conversations in accordance with
+the [code of conduct](../code-of-conduct.md). Maintainers who enable discussions
+are encouraged to configure the discussion categories to suit their needs, e.g.
+by removing categories which overlap with issues.
+
 ### Collaborators and Teams
 
 * Every repository has three teams associated with it. Typically for the
