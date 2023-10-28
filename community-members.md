@@ -7,14 +7,14 @@ Charter](https://github.com/open-telemetry/community/blob/master/governance-char
 in alphabetical order:
 
 - [Alolita Sharma](https://github.com/alolita), AWS, until October 2024
-- [Ben Sigelman](https://github.com/bhs), Lightstep, until October 2023
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake, until October 2023
+- [Austin Parker](https://github.com/austinlparker), Honeycomb, until October 2025
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2024
-- [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs, until October 2023
+- [Daniel Gomez Blanco](https://github.com/danielgblanco), Skyscanner, until October 2025
+- [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs, until October 2025
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2024
-- [Ted Young](https://github.com/tedsuo), Lightstep, until October 2023
+- [Severin Neumann](https://github.com/svrnm), Cisco, until October 2025
+- [Ted Young](https://github.com/tedsuo), Lightstep, until October 2025
 - [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2024
-- [Yuri Shkuro](https://github.com/yurishkuro), Meta, until October 2023
 
 ## Technical Committee
 
@@ -178,10 +178,13 @@ Rust
 
 ## Governance Committee Emeritus
 
+- [Ben Sigelman](https://github.com/bhs), Lightstep, until October 2023
+- [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake, until October 2023
 - [Constance Caramanolis](https://github.com/ccaraman), Splunk, until October 2021
 - [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2022
 - [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google, until October 2021
+- [Yuri Shkuro](https://github.com/yurishkuro), Meta, until October 2023
 
 ## Technical Committee Emeritus
 
