@@ -131,7 +131,7 @@ Specification: Sampling|Every Thursday at 08:00 PT|[Google Doc](https://docs.goo
 Specification: Configuration|Every other Monday at 8:00 PT|[Google Doc](https://docs.google.com/document/d/1uNgWQLQZcSVfBLRXfW9XCVJmKa5NH9R15fSOXhmpGWw/edit)|[Slack](https://cloud-native.slack.com/archives/C0476L7UJT1)|[Carlos Alberto](https://github.com/carlosalberto)
 Instrumentation: Messaging|Every Thursday at 8:00 PT|[Google Doc](https://docs.google.com/document/d/1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE/)|[Slack](https://cloud-native.slack.com/archives/C01QZFGMLQ7)
 Semantic Conventions Working Group|Every Monday at 08:00 PT|[Google Doc](https://docs.google.com/document/d/10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8)|[Slack](https://cloud-native.slack.com/archives/C041APFBYQP)|[Armin Ruech](https://github.com/arminru)<br/>[Josh Suereth](https://github.com/jsuereth)<br/>[Reiley Yang](https://github.com/reyang)|
-System Semantic Conventions stability WG|Every Wednesday at 08:30 PT|[Google Doc](https://docs.google.com/document/d/1p5TH57t43XpxA48onLzX4PIr3g6ydYKCtR_AUlsCnQk)|[Slack](https://cloud-native.slack.com/archives/C05CTFE9U4A)|[Josh Suereth](https://github.com/jsuereth)|
+System Semantic Conventions stability WG|Every Thursday at 08:30 PT|[Google Doc](https://docs.google.com/document/d/1p5TH57t43XpxA48onLzX4PIr3g6ydYKCtR_AUlsCnQk)|[Slack](https://cloud-native.slack.com/archives/C05CTFE9U4A)|[Josh Suereth](https://github.com/jsuereth)|
 
 ### Implementation SIGs
 
