@@ -91,9 +91,14 @@ around a more robust idea of community membership.
 ### Eligibility for candidacy
 
 Anyone may nominate either themselves or someone else to be a candidate in the
-election. To be ratified as a candidate, the nominee must accept the nomination
-and three Members of Standing (including the nominator, if she/he has standing)
-from three different employers, must endorse the nomination.
+election.
+
+To be ratified, candidates need three endorsements in total from members of
+standing from three different companies. When self-nominating, a candidate that
+is member of standing will need two more endorsements from members of standing
+from two other companies. When being nominated by a member of standing from a
+different company and accepting the nomination, the candidate that is a member
+of standing will have two endorsements already, needing only one more.
 
 Nominators are free to nominate as many people as they wish to. Members of
 Standing may endorse multiple nominees, but we expect endorsements to be in good
@@ -112,19 +117,17 @@ to the respective positions.
 
 ### Maximal representation
 
-To encourage diversity there will be a maximum of one-third representation on
-the Governance Committee from any one company at any time. If the outcomes of
-an election result in greater than 1/3 representation (or maximum of two,
-whichever is greater), the lowest vote getters from any particular company will
-be removed until representation on the committee is less than one-third.
+To encourage diversity there will be a maximum of two Governance Committee members from any one company at any time. If the outcomes of
+an election result in more than two candidates from the same company being elected, the lowest vote getters from any particular company will
+be removed.
 
-If percentages shift because of job changes, acquisitions, or other events,
-sufficient members of the committee must resign until max one-third
-representation is achieved. If it is impossible to find sufficient members to
-resign, the entire company’s representation will be removed and new special
-elections held. In the event of a question of company membership (for example
-evaluating independence of corporate subsidiaries) a majority of all
-non-involved Governance Committee members will decide. 
+If representation changes because of job changes, acquisitions, or other events,
+sufficient members of the committee must resign until the maximum representation
+is respected. If it is impossible to find sufficient members to resign, the
+entire company’s representation will be removed and new special elections held.
+In the event of a question of company membership (for example evaluating
+independence of corporate subsidiaries) a majority of all non-involved
+Governance Committee members will decide.
 
 ### Special Elections
 
