@@ -117,9 +117,10 @@ to the respective positions.
 
 ### Maximal representation
 
-To encourage diversity there will be a maximum of two Governance Committee members from any one company at any time. If the outcomes of
-an election result in more than two candidates from the same company being elected, the lowest vote getters from any particular company will
-be removed.
+To encourage diversity there will be a maximum of two Governance Committee
+members from any one company at any time. If the outcomes of an election result
+in more than two candidates from the same company being elected, the lowest vote
+getters from any particular company will be removed.
 
 If representation changes because of job changes, acquisitions, or other events,
 sufficient members of the committee must resign until the maximum representation
