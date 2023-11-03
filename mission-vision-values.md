@@ -12,12 +12,12 @@ weight: -10
 
 # OpenTelemetry mission, vision, and values
 
-## Mission &mdash; our overall north star as a community
+## Mission &mdash; our overall north star as a community {#mission}
 
 OpenTelemetry's Mission: **to enable effective observability by making
 high-quality, portable telemetry ubiquitous.**
 
-## Vision &mdash; the world we imagine for OTel end-users
+## Vision &mdash; the world we imagine for OTel end-users {#vision}
 
 Effective observability is powerful because it enables developers to innovate
 faster while maintaining high reliability. But effective observability
@@ -81,7 +81,7 @@ these five key opportunities will remain outstanding until we achieve our
 mission, and as a project we refer to them to orient – and reorient – as we
 chart our path.
 
-## Engineering values &mdash; the principles that guide our contributions
+## Engineering values &mdash; the principles that guide our contributions {#engineering-values}
 
 OpenTelemetry’s mission and vision describe where we want to go. OpenTelemetry’s
 engineering values describe how we want to get there.
@@ -117,7 +117,7 @@ OpenTelemetry users should not have to choose between high-quality telemetry and
 a performant application. High performance is a requirement for OpenTelemetry,
 and unexpected interference effects in the host application are unacceptable.
 
-## Community values &mdash; the principles that guide our interactions
+## Community values &mdash; the principles that guide our interactions {#community-values}
 
 The OpenTelemetry project aims to be a welcoming place where new and existing
 members feel safe to respectfully share their opinions and disagreements. We
