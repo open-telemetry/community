@@ -25,7 +25,7 @@ To create or edit a meeting, you need to have access to the Public OpenTelemetry
 
 ### Gaining Calendar Permissions
 All SIG maintainers can get access to edit the public OpenTelemetry calendar
-by submitting a request to join the [opentelemetry-calendar-contributors Google Group](https://groups.google.com/g/opentelemetry-calendar-contributors).
+by submitting a request to join the [calendar-edit-permission@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-edit-permission).
 If your identity is not recognizable from the e-mail you are using to request joining the group, please
 request to be added to this Google Group by creating an issue in this repository.
 
@@ -43,6 +43,10 @@ The following details need to be set properly:
     - The meeting notes should be owned by the shared Governance Committee Google account.
       Having a document created can be requested from the GC via opening an issue in this repository.
 - Invited attendees (see below)
+- Guest permissions:
+  - Modify event: no
+  - Invite others: no
+  - See guest list: yes
 
 ### Adding a Zoom link to a meeting
 Open an issue in the community repository, requesting a new Zoom link.
