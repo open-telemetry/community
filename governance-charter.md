@@ -1,6 +1,6 @@
 # OpenTelemetry Governance Committee Charter
 
-Last updated: September 2020
+Last updated: August 2022
 
 ## Overview
 
@@ -35,7 +35,7 @@ following:
 - Decide, for the purpose of elections, who can vote.
 - Logo/landing page/marketing. 
 - Maintain relationships with CNCF. For instance, creating [documents describing
-  the project](https://github.com/cncf/toc/blob/master/proposals/opentelemetry.adoc)
+  the project](https://github.com/cncf/toc/blob/main/proposals/sandbox/opentelemetry.adoc)
 - Define, evolve, and defend the **vision, values, mission, and scope** of the
   project - to establish and maintain the soul of OpenTelemetry.
 - Decide how and when **official releases** of OpenTelemetry artifacts are
@@ -50,7 +50,7 @@ following:
 - **Delegate appropriate authority** to trusted individuals.
 
 This work is to be handled by the Governance Committee or delegated to other
-project groups like the Technical Committee (to be chartered by Fall 2019).
+project groups like the [Technical Committee](./tech-committee-charter.md).
 
 ## Committee Structure
 
@@ -232,3 +232,47 @@ majority vote of the governance committee members, but closed meetings do not
 count towards the required meeting frequency. The governance committee will
 inform the community if a particular meeting is closed, as well as the general
 reasons for this, prior to the meeting taking place.
+
+## Community Manager Role
+
+In order to facilitate end-user and contributor experience programs that cut
+across multiple SIGs in the OpenTelemetry project, the governance committee
+may appoint Community Managers (CMs) to act as liaisons, facilitators, and 
+organizers for such programs. The goal of this role is to ensure the health of
+the OpenTelemetry end-user and contributor community.
+
+### Community Manager Responsibilities
+
+- Act as stewards for the OpenTelemetry end-user and contributor community by
+  organizing events and coordinating programs.
+- Manage the OpenTelemetry social media and blog presence.
+- Work with the CNCF and member organizations on cross-functional projects as
+  needed.
+- Track and report on OpenTelemetry end-user and contributor community health
+  for the GC.
+- Grow the OpenTelemetry end-user and contributor community by advocating for
+  programs and initiatives that will attract new users or aid contributor
+  experience.
+  
+### Community Manager Eligibility, Term, and Selection
+
+CMs shall be nominated and approved by the GC for one-year terms on an as-needed 
+basis, by simple majority vote. The GC shall re-confirm CMs on an annual basis, at
+the first meeting following an annual GC election. A CM that wishes to step down 
+from their role shall notify the GC at least 30 days before the next GC meeting.
+
+The GC may appoint individuals who are not part of the OpenTelemetry project. 
+
+The GC may dismiss a CM for violations of the project Code of Conduct or a 
+failure to uphold the responsibilities of the role.
+
+### Community Manager Rights and Permissions
+
+A CM may act as an extension of the GC in pursuing their responsibilities. Pursuant
+to this, the GC should hold CMs accountable for their actions if they reflect poorly
+on the project, its contributors, or the CNCF. Thus, CMs should work in collaboration
+with the GC, especially if their actions could be construed as controversial. They
+will be the point of contact for the CNCF on events, swag, communications, and
+other programs as needed. Thus, they will have access to Service Desk. Other
+permissions (for example, repository creation and management) can be granted by
+the GC on an as-needed basis.

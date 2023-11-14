@@ -15,7 +15,7 @@ Agreement](https://docs.linuxfoundation.org/lfx/easycla/contributors).
 ## Code attribution
 
 [License information](README.md#License) should be included in all source files where applicable.
-Either full or short version of the header should be used as described at [apache.org](http://www.apache.org/foundation/license-faq.html#Apply-My-Software).
+Either full or short version of the header should be used as described at [apache.org](https://www.apache.org/foundation/license-faq.html#Apply-My-Software).
 It is OK to exclude the year from the copyright notice. For the details on how to apply the copyright,
 see the next section.
 
@@ -30,7 +30,7 @@ you will need to [retain the original copyright notice](https://github.com/cncf/
 Any contributed third-party code must originally be Apache 2.0-Licensed or must
 carry a permisive software license that is compatible when combining with
 Apache 2.0 License. At this moment, BSD and MIT are the only
-[OSI-approved licenses](https://opensource.org/licenses/alphabetical) known to be compatible. 
+[OSI-approved licenses](https://opensource.org/licenses/alphabetical) known to be compatible.
 
 If you make substantial changes to the third-party code, _prepend_ the contributed
 third party file with OpenTelemetry's copyright notice.
@@ -60,14 +60,14 @@ its community to provide a productive, friendly, and collaborative environment.
 Would you like to help make robust, modern telemetry a built-in feature of
 modern software? We will help you understand the organization of the project and
 direct you to the best places to get started. You'll be able to pick up issues,
-write code to fix them, and get your work reviewed and merged.  
+write code to fix them, and get your work reviewed and merged.
 
 Please be aware that, due to the number of issues our triage team deals with, we
 cannot offer technical support in GitHub issues. If you have questions about the
 development process, feel free to jump into our [Slack
-Channel](https://cloud-native.slack.com/archives/CJFCJHG4Q) ([Get an invite to join CNCF](http://slack.cncf.io/)). You can also ask
+Channel](https://cloud-native.slack.com/archives/CJFCJHG4Q) ([Get an invite to join CNCF](https://slack.cncf.io/)). You can also ask
 questions on [Stack
-Overflow](https://stackoverflow.com/questions/tagged/opentelemetry).
+Overflow](https://stackoverflow.com/questions/tagged/open-telemetry).
 
 ## Find something to work on
 
@@ -181,7 +181,7 @@ Common new contributor PR issues are:
   CONTRIBUTING.md of the corresponding repository)
 - dealing with test cases which fail on your PR, unrelated to the changes you
   introduce
-- Introducing change that should be first be approved by TSC, for instance, the
+- Introducing change that should be first be approved by TC, for instance, the
   introduction of new terminology
 
 ## Code Review
@@ -205,7 +205,7 @@ Conduct](https://github.com/open-telemetry/community/blob/master/code-of-conduct
 and must go above and beyond to promote a collaborative, respectful community.
 
 When reviewing PRs from others [The Gentle Art of Patch
-Review](http://sage.thesharps.us/2014/09/01/the-gentle-art-of-patch-review/)
+Review](https://sage.thesharps.us/2014/09/01/the-gentle-art-of-patch-review/)
 suggests an iterative series of focuses which is designed to lead new
 contributors to positive collaboration without inundating them initially with
 nuances:
@@ -253,9 +253,8 @@ decision to either remove those trademarks or transfer them to the CNCF.
 Broadly, these are the steps the OpenTelemetry Governance and Technical
 Committees follow to handle a prospective donation.
 
-1. Per the above, the donating organization creates a GitHub issue with
-   [the "Donation Proposal" template](https://github.com/open-telemetry/community/issues/new?assignees=&labels=&template=donation.md&title=Donation+proposal%3A+%3Cname+of+donation%3E)
-   in the `community` repository.
+1. Per the above, the donating organization creates a GitHub issue using
+   the "Donation Proposal" form in the `community` repository.
 2. The Technical Committee (TC) will do diligence, write a report, and attach
    that report to the GitHub issue. Writing the report may require meeting and
    discussing alternative technologies with different vendors in the community
@@ -270,8 +269,7 @@ Committees follow to handle a prospective donation.
 4. If accepted, the contributing organization – particularly if it's a
    commercial entity – must formally acknowledge via the GitHub issue that its
    respective sales and marketing departments have received, understood, and
-   accepted the terms of the [OpenTelemetry marketing guidelines]
-   (https://github.com/open-telemetry/community/blob/main/marketing-guidelines.md).
+   accepted the terms of the [OpenTelemetry marketing guidelines](https://github.com/open-telemetry/community/blob/main/marketing-guidelines.md).
 5. Given all of the above, the GitHub issue is closed and the donation moves
    forward as agreed to by the TC and GC.
 
