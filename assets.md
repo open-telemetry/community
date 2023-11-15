@@ -118,8 +118,18 @@ Link: https://zapier.com
 
 - Used to automatically add links to Zoom meeting recordings to a
   [publicly viewable Google spreadsheet](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s)
+- Used to automatically add repo maintainers to new security incidents
 - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
   (GitHub password is available in the OpenTelemetry Governance 1Password)
+
+### Grafana organization
+
+Link: https://grafana.com/orgs/otelsigsecurity
+
+- Used to provide an overview of open security incidents in the org and
+  historical data on how quickly we respond to incidents
+- Users: SIG-Security Maintainers, Technical and Governance Committees
+- Admins: Juraci Kroehling & Armin Reuch
 
 ### Project Google account: cncf-opentelemetry-governance@lists.cncf.io
 
