@@ -34,7 +34,7 @@ Link: https://grafana.com/orgs/otelsigsecurity
 - Used to provide an overview of open security incidents in the org and
   historical data on how quickly we respond to incidents
 - Users: SIG-Security Maintainers, Technical and Governance Committees
-- Admins: Juraci Krohling @jpkrohling & Armin Ruech @arminru
+- Admins: Juraci Paixão Kröhling @jpkrohling & Armin Ruech @arminru
 
 ## Artifact repositories
 
