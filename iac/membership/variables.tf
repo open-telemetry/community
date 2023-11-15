@@ -11,3 +11,14 @@ variable "teams" {
     parent  = string
   }))
 }
+
+locals {
+  team_member_combinations = merge([
+    for team in var.teams : {
+      for member in team.members : "${team.name}-${member}" => {
+        team_name   = team.name
+        member_name = member
+      }
+    }
+  ]...) 
+}

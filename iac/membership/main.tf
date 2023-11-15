@@ -14,10 +14,10 @@ resource "github_team" "team" {
 }
 
 resource "github_team_membership" "team_member" {
-  for_each = { for team in var.teams : team.name => team.members }
+  for_each = local.team_member_combinations
 
-  team_id  = github_team.team[each.key].id
-  username = each.value
+  team_id  = github_team.team[each.value.team_name].id
+  username = each.value.member_name
 
-  role = contains(each.key, "maintainers") || contains(each.key, "technical-committee") || contains(each.key, "governance-committee") ? "maintainer" : "member"
+  role = can(regex(".*(maintainers|technical-committee|governance-committee).*", each.value.team_name)) ? "maintainer" : "member"
 }
