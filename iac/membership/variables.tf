@@ -1,12 +1,13 @@
 variable "members" {
-    type = list(string)
-    description = "A list of organization members"
+  description = "List of GitHub organization members"
+  type        = list(string)
 }
 
 variable "teams" {
-    type = list(object({
-        name    = string
-        members = list(string)
-    }))
-    description = "A list of organization teams and their members"
+  description = "List of GitHub teams with members"
+  type = list(object({
+    name    = string
+    members = list(string)
+    parent  = string
+  }))
 }
