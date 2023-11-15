@@ -10,6 +10,25 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   - PR: https://github.com/1Password/1password-teams-open-source/pull/364
   - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 
+## Community Resource Accounts
+
+### Equinix bare metal
+
+Link: https://console.equinix.com/projects/6f1c9af6-0470-42da-8f22-59d0df245f6b
+
+- Reserved bare metal machines for the community to run performance tests and
+  other assets on
+  - Admin: Juraci Krohling @jpkrohling
+
+### Grafana organization
+
+Link: https://grafana.com/orgs/otelsigsecurity
+
+- Used to provide an overview of open security incidents in the org and
+  historical data on how quickly we respond to incidents
+- Users: SIG-Security Maintainers, Technical and Governance Committees
+- Admins: Juraci Krohling @jpkrohling & Armin Ruech @arminru
+
 ## Artifact repositories
 
 ### NuGet OpenTelemetry organization
@@ -121,15 +140,6 @@ Link: https://zapier.com
 - Used to automatically add repo maintainers to new security incidents
 - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
   (GitHub password is available in the OpenTelemetry Governance 1Password)
-
-### Grafana organization
-
-Link: https://grafana.com/orgs/otelsigsecurity
-
-- Used to provide an overview of open security incidents in the org and
-  historical data on how quickly we respond to incidents
-- Users: SIG-Security Maintainers, Technical and Governance Committees
-- Admins: Juraci Kroehling & Armin Reuch
 
 ### Project Google account: cncf-opentelemetry-governance@lists.cncf.io
 
