@@ -12,13 +12,20 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 
 ## Community Resource Accounts
 
+### AWS account
+
+Link: http://cncf-aws-opentelemetry.signin.aws.amazon.com/
+
+- Community account to published Lambda layers
+- Admin: Alex Boten @codeboten & Anthony Mirabella @aneurysm9
+
 ### Equinix bare metal
 
 Link: https://console.equinix.com/projects/6f1c9af6-0470-42da-8f22-59d0df245f6b
 
 - Reserved bare metal machines for the community to run performance tests and
   other assets on
-  - Admin: Juraci Krohling @jpkrohling
+- Admin: Juraci Krohling @jpkrohling
 
 ### Grafana organization
 
