@@ -25,7 +25,7 @@ Link: https://console.equinix.com/projects/6f1c9af6-0470-42da-8f22-59d0df245f6b
 
 - Reserved bare metal machines for the community to run performance tests and
   other assets on
-- Admin: Juraci Paixão Kröhling @jpkrohling
+- Admin: Juraci Paixão Kröhling @jpkrohling and OTel TC via the mailing list address
 
 ### Grafana organization
 
