@@ -6,7 +6,7 @@ This is the current Governance Committee, per the [Governance Committee
 Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md),
 in alphabetical order:
 
-- [Alolita Sharma](https://github.com/alolita), AWS, until October 2024
+- [Alolita Sharma](https://github.com/alolita), Apple, until October 2024
 - [Austin Parker](https://github.com/austinlparker), Honeycomb, until October 2025
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2024
 - [Daniel Gomez Blanco](https://github.com/danielgblanco), Skyscanner, until October 2025
