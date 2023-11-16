@@ -12,15 +12,20 @@ Table of Contents
   * [Discussions](#discussions)
   * [Calendar](#calendar)
   * [Mailing Lists](#mailing-lists)
+  * [Media](#media)
 * [License](#license)
 * [Logos and Brand Guide](#logos-and-brand-guide)
+* [How to](#how-to)
 * [Special Interest Groups](#special-interest-groups)
+  * [Specification SIGs](#specification-sigs)
+  * [Implementation SIGs](#implementation-sigs)
 * [Related groups](#related-groups)
   * [W3C - Distributed Tracing Working Group](#w3c---distributed-tracing-working-group)
   * [Erlang Ecosystem Foundation – Observability Working Group](#erlang-ecosystem-foundation--observability-working-group)
-  * [CNCF SIG Observability - Special Interest Group](#cncf-sig-observability---special-interest-group)
+  * [CNCF TAG Observability - Technical Advisory Group](#cncf-tag-observability---technical-advisory-group)
   * [K8s SIG - Instrumentation Special Interest Group](#k8s-sig---instrumentation-special-interest-group)
   * [OpenMetrics](#openmetrics)
+  * [eBPF Foundation](#ebpf-foundation)
 
 </details>
 
@@ -176,10 +181,10 @@ Join W3C [Distributed Tracing Working Group](https://www.w3.org/2018/distributed
 The Erlang and Elixir API and SDK are maintained by the Erlang Ecosystem Foundation Observability Working Group members.
 See the [Observability Working Group](https://erlef.org/wg/observability) page on the EEF website for details.
 
-### CNCF SIG Observability - Special Interest Group
+### CNCF TAG Observability - Technical Advisory Group
 
-The CNCF SIG Observability is a special interest group for observability that focuses on topics pertaining to the observation of cloud native workloads.
-Check out the [CNCF SIG Observability](https://github.com/cncf/sig-observability) page for details.
+The CNCF TAG Observability is a technical advisory group for observability that focuses on topics pertaining to the observation of cloud native workloads.
+Check out the [CNCF TAG Observability](https://github.com/cncf/tag-observability) page for details.
 
 ### K8s SIG - Instrumentation Special Interest Group
 
