@@ -5,8 +5,8 @@ import pprint
 
 # Replace these variables with your GitHub organization and personal access token
 ORG_NAME = 'open-telemetry'
-ACCESS_TOKEN = subprocess.run(["gh", "auth", "token"], capture_output=True).stdout.decode('utf-8').strip()
-
+# ACCESS_TOKEN = subprocess.run(["gh", "auth", "token"], capture_output=True).stdout.decode('utf-8').strip()
+ACCESS_TOKEN = "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"
 
 # Define headers with the access token
 headers = {
@@ -61,15 +61,15 @@ for team in teams_data:
         sig_name = team_name[:-len('-maintainers')]
         role = 'maintainers'
     else:
-        print(f"unknown team structure {team_name}")
-        role = 'unknown'
+        print(f"unknown team structure {team_name}, assuming it's a WG")
+        role = 'members'
     if sig_name not in sigs:
         sigs[sig_name] = {
             "name": sig_name,
             "triagers": set(),
             "approvers": set(),
             "maintainers": set(),
-            "unknown": set()
+            "members": set()
         }
 
     team_members_url = team['members_url'].replace('{/member}', '')  # Remove placeholder
@@ -82,8 +82,24 @@ for name, sig in sigs.items():
     sig["triagers"] = list(sig["triagers"] - sig["approvers"] - sig["maintainers"])
     sig["approvers"] = list(sig["approvers"] - sig["maintainers"])
     sig["maintainers"] = list(sig["maintainers"])
-    sig["unknown"] = list(sig["unknown"])
+    sig["members"] = list(sig["members"])
 
+
+member_string = """
+module "memberships" {
+  for_each = toset(var.members)
+  source   = "./modules/member"
+  username = each.key
+  role     = "member"
+}
+
+module "owners" {
+  for_each = toset(var.owners)
+  source   = "./modules/member"
+  username = each.key
+  role     = "admin"
+}
+"""
 
 member_tmpl = """
 module "{username}_membership" {{
@@ -103,18 +119,26 @@ module "{name}_sig" {{
 }}
 """
 
+wg_tmpl = """
+module "{name}_wg" {{
+    source = "./modules/wg"
+    name = "{name}"
+    members = {members}
+}}
+"""
+
 # GENERATE TF FILE
 with open('output.tf', 'w') as f:
-    for m in members:
-        f.writelines(member_tmpl.format(**m))
+    f.writelines(member_string)
     for name, sig in sigs.items():
-        if len(sig["unknown"]):
-            print('not working on', sig)
-            continue
-        f.writelines(sig_tmpl.format(**sig).replace("'", '"')) # arcane words to replace single quotes with double quotes
+        if len(sig["members"]):
+            f.writelines(wg_tmpl.format(**sig).replace("'", '"')) # arcane words to replace single quotes with double quotes
+        else:
+            f.writelines(sig_tmpl.format(**sig).replace("'", '"')) # arcane words to replace single quotes with double quotes
 
-
-# output = {"members": members, "sigs": sigs}
-
-# with open('output.json', 'w') as f:
-#     json.dump(output, f, indent=4)
+owners = set(["caniszczyk", "idvoretskyi", "thelinuxfoundation"]) # cncf owners not in any team
+owners.update(sigs['technical-committee']['members']) # add the TC
+members = [m for m in members if m["username"] not in owners] # remove potential dupes
+output = {"members": members, "owners": list(owners)}
+with open('output.json', 'w') as f:
+    json.dump(output, f, indent=4)
