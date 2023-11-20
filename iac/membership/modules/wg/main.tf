@@ -1,12 +1,12 @@
-resource "github_team" "maintainers" {
+resource "github_team" "working_group" {
   name        = var.name
   description = "Team ${var.name}"
   privacy     = var.privacy  // or "secret"
 }
 
-resource "github_team_membership" "sig_maintainer" {
-  for_each = toset(var.maintainers)
-  team_id  = github_team.maintainers.id
+resource "github_team_membership" "sig_member" {
+  for_each = toset(var.members)
+  team_id  = github_team.working_group.id
   username = each.value
 
   role = "maintainer"

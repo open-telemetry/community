@@ -15,7 +15,7 @@ variable "repos" {
   default = []
 }
 
-variable "maintainers" {
+variable "members" {
   type = list
-  description = "The list of maintainers for this working group"
+  description = "The list of members for this working group"
 }

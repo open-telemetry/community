@@ -5,8 +5,7 @@ import pprint
 
 # Replace these variables with your GitHub organization and personal access token
 ORG_NAME = 'open-telemetry'
-# ACCESS_TOKEN = subprocess.run(["gh", "auth", "token"], capture_output=True).stdout.decode('utf-8').strip()
-ACCESS_TOKEN = "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"
+ACCESS_TOKEN = subprocess.run(["gh", "auth", "token"], capture_output=True).stdout.decode('utf-8').strip()
 
 # Define headers with the access token
 headers = {
