@@ -37,7 +37,7 @@ def fetch_paginated_data(url):
 # Get organization members
 members_url = f'https://api.github.com/orgs/{ORG_NAME}/members'
 members_data = fetch_paginated_data(members_url)
-members = [{"username": member["login"], "role": "member"} for member in members_data]
+members = set([member["login"] for member in members_data])
 
 # Get organization teams and their members
 teams_url = f'https://api.github.com/orgs/{ORG_NAME}/teams'
@@ -137,7 +137,7 @@ with open('output.tf', 'w') as f:
 
 owners = set(["caniszczyk", "idvoretskyi", "thelinuxfoundation"]) # cncf owners not in any team
 owners.update(sigs['technical-committee']['members']) # add the TC
-members = [m for m in members if m["username"] not in owners] # remove potential dupes
-output = {"members": members, "owners": list(owners)}
+members = members - owners # remove potential dupes
+output = {"members": list(members), "owners": list(owners)}
 with open('output.json', 'w') as f:
     json.dump(output, f, indent=4)
