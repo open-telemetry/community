@@ -126,11 +126,24 @@ module "{name}_wg" {{
 }}
 """
 
+def print_group_imports(group, member_group, suffix):
+    group_name = group["name"]
+    singular = member_group[:-1]
+    print(f"tofu import 'module.{group_name}_{suffix}.github_team.{member_group}' {group_name}-{member_group}")
+    for m in group[member_group]:
+        print(f"tofu import 'module.{group_name}_{suffix}.github_team_membership.sig_{singular}[\"{m}\"]' {group_name}-{member_group}:{m}")
+
 # GENERATE TF FILE
 with open('output.tf', 'w') as f:
     f.writelines(member_string)
     for name, sig in sigs.items():
+        print_group_imports(sig, "maintainers", "sig")
+        if len(sig["approvers"]) > 0:
+            print_group_imports(sig, "approvers", "sig")
+        if len(sig["triagers"]) > 0:
+            print_group_imports(sig, "triagers", "sig")
         if len(sig["members"]):
+            print_group_imports(sig, "members", "wg")
             f.writelines(wg_tmpl.format(**sig).replace("'", '"')) # arcane words to replace single quotes with double quotes
         else:
             f.writelines(sig_tmpl.format(**sig).replace("'", '"')) # arcane words to replace single quotes with double quotes
