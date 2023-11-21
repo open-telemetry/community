@@ -1,4 +1,4 @@
-resource "github_team" "working_group" {
+resource "github_team" "members" {
   name        = var.name
   description = "Team ${var.name}"
   privacy     = var.privacy  // or "secret"

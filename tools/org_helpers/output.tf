@@ -17,15 +17,15 @@ module "dotnet_sig" {
     source = "./modules/sig"
     name = "dotnet"
     triagers = []
-    approvers = ["reyang", "vishweshbankwar", "cijothomas"]
-    maintainers = ["alanwest", "utpilla", "CodeBlanch"]
+    approvers = ["cijothomas", "reyang", "vishweshbankwar"]
+    maintainers = ["CodeBlanch", "alanwest", "utpilla"]
 }
 
 module "python_sig" {
     source = "./modules/sig"
     name = "python"
     triagers = []
-    approvers = ["sanketmehta28", "ashu658", "shalevr", "oxeye-nikolay", "owais", "aabmass", "pmcollins", "jeremydvoss", "srikanthccv"]
+    approvers = ["aabmass", "ashu658", "jeremydvoss", "owais", "oxeye-nikolay", "pmcollins", "sanketmehta28", "shalevr", "srikanthccv"]
     maintainers = ["lzchen", "ocelotl"]
 }
 
@@ -33,39 +33,39 @@ module "erlang_sig" {
     source = "./modules/sig"
     name = "erlang"
     triagers = []
-    approvers = ["zachdaniel", "GregMefford", "ferd"]
-    maintainers = ["hauleth", "deadtrickster", "tsloughter", "bryannaegele"]
+    approvers = ["GregMefford", "ferd", "zachdaniel"]
+    maintainers = ["bryannaegele", "deadtrickster", "hauleth", "tsloughter"]
 }
 
 module "collector_sig" {
     source = "./modules/sig"
     name = "collector"
     triagers = ["astencel-sumo", "atoulme", "songy23"]
-    approvers = ["Aneurysm9", "jpkrohling", "djaglowski"]
-    maintainers = ["mx-psi", "bogdandrutu", "codeboten", "dmitryax"]
+    approvers = ["Aneurysm9", "djaglowski", "jpkrohling"]
+    maintainers = ["bogdandrutu", "codeboten", "dmitryax", "mx-psi"]
 }
 
 module "docs_sig" {
     source = "./modules/sig"
     name = "docs"
     triagers = []
-    approvers = ["tedsuo", "paulsbruce"]
-    maintainers = ["svrnm", "mtwo", "cartermp", "jparsana", "austinlparker", "chalin", "flands"]
+    approvers = ["paulsbruce", "tedsuo"]
+    maintainers = ["austinlparker", "cartermp", "chalin", "flands", "jparsana", "mtwo", "svrnm"]
 }
 
 module "javascript_sig" {
     source = "./modules/sig"
     name = "javascript"
     triagers = []
-    approvers = ["haddasbronfman", "MSNev", "Flarna", "JamieDanielson", "naseemkullah", "mwear", "trentm", "pkanal", "svetlanabrennan", "martinkuba", "hectorhdzg"]
-    maintainers = ["pichlermarc", "dyladan", "legendecas", "blumamir"]
+    approvers = ["Flarna", "JamieDanielson", "MSNev", "haddasbronfman", "hectorhdzg", "martinkuba", "mwear", "naseemkullah", "pkanal", "svetlanabrennan", "trentm"]
+    maintainers = ["blumamir", "dyladan", "legendecas", "pichlermarc"]
 }
 
 module "java_sig" {
     source = "./modules/sig"
     name = "java"
     triagers = []
-    approvers = ["trask", "breedx-splk", "jsuereth", "mateuszrzeszutek"]
+    approvers = ["breedx-splk", "jsuereth", "mateuszrzeszutek", "trask"]
     maintainers = ["jack-berg", "jkwatson"]
 }
 
@@ -73,21 +73,21 @@ module "go_sig" {
     source = "./modules/sig"
     name = "go"
     triagers = ["alolita"]
-    approvers = ["hanyuancheung", "dmathieu", "XSAM", "evantorrie", "Aneurysm9", "dashpole"]
-    maintainers = ["MadVikingGod", "pellared", "MrAlias"]
+    approvers = ["Aneurysm9", "XSAM", "dashpole", "dmathieu", "evantorrie", "hanyuancheung"]
+    maintainers = ["MadVikingGod", "MrAlias", "pellared"]
 }
 
 module "technical-committee_wg" {
     source = "./modules/wg"
     name = "technical-committee"
-    members = ["tigrannajaryan", "reyang", "jack-berg", "arminru", "bogdandrutu", "jsuereth", "jmacd", "yurishkuro", "carlosalberto"]
+    members = ["arminru", "bogdandrutu", "carlosalberto", "jack-berg", "jmacd", "jsuereth", "reyang", "tigrannajaryan", "yurishkuro"]
 }
 
 module "specs_sig" {
     source = "./modules/sig"
     name = "specs"
-    triagers = ["rbailey7210", "andrewhsu"]
-    approvers = ["tigrannajaryan", "reyang", "jack-berg", "arminru", "bogdandrutu", "jsuereth", "jmacd", "yurishkuro", "carlosalberto"]
+    triagers = ["andrewhsu", "rbailey7210"]
+    approvers = ["arminru", "bogdandrutu", "carlosalberto", "jack-berg", "jmacd", "jsuereth", "reyang", "tigrannajaryan", "yurishkuro"]
     maintainers = []
 }
 
@@ -95,8 +95,8 @@ module "ruby_sig" {
     source = "./modules/sig"
     name = "ruby"
     triagers = []
-    approvers = ["robbkidd", "ericmustin", "arielvalentin", "ahayworth", "plantfansam"]
-    maintainers = ["mwear", "fbogsany", "dazuma", "robertlaurin"]
+    approvers = ["ahayworth", "arielvalentin", "ericmustin", "plantfansam", "robbkidd"]
+    maintainers = ["dazuma", "fbogsany", "mwear", "robertlaurin"]
 }
 
 module "cpp_sig" {
@@ -111,40 +111,40 @@ module "docs-cn_sig" {
     source = "./modules/sig"
     name = "docs-cn"
     triagers = []
-    approvers = ["tydhot", "addname"]
-    maintainers = ["tensorchen", "laziobird", "sunface"]
+    approvers = ["addname", "tydhot"]
+    maintainers = ["laziobird", "sunface", "tensorchen"]
 }
 
 module "php_sig" {
     source = "./modules/sig"
     name = "php"
     triagers = ["jodeev"]
-    approvers = ["morrisonlevi", "Fahmy-Mohammed", "zsistla", "kishannsangani", "beniamin"]
-    maintainers = ["pdelewski", "brettmc", "tidal", "bobstrecansky"]
+    approvers = ["Fahmy-Mohammed", "beniamin", "kishannsangani", "morrisonlevi", "zsistla"]
+    maintainers = ["bobstrecansky", "brettmc", "pdelewski", "tidal"]
 }
 
 module "java-instrumentation_sig" {
     source = "./modules/sig"
     name = "java-instrumentation"
     triagers = []
-    approvers = ["jack-berg", "jkwatson", "breedx-splk"]
-    maintainers = ["trask", "mateuszrzeszutek", "laurit"]
+    approvers = ["breedx-splk", "jack-berg", "jkwatson"]
+    maintainers = ["laurit", "mateuszrzeszutek", "trask"]
 }
 
 module "opentelemetry-python-contrib_sig" {
     source = "./modules/sig"
     name = "opentelemetry-python-contrib"
     triagers = []
-    approvers = ["NathanielRN", "nikosokolik", "sanketmehta28", "ashu658", "oxeye-nikolay", "owais", "aabmass", "pmcollins", "jeremydvoss", "srikanthccv"]
-    maintainers = ["lzchen", "shalevr", "ocelotl"]
+    approvers = ["NathanielRN", "aabmass", "ashu658", "jeremydvoss", "nikosokolik", "owais", "oxeye-nikolay", "pmcollins", "sanketmehta28", "srikanthccv"]
+    maintainers = ["lzchen", "ocelotl", "shalevr"]
 }
 
 module "rust_sig" {
     source = "./modules/sig"
     name = "rust"
     triagers = []
-    approvers = ["lalitb", "shaun-cox", "MikeGoldsmith", "iredelmeier", "frigus02", "awiede"]
-    maintainers = ["TommyCpp", "hdost", "jtescher", "cijothomas"]
+    approvers = ["MikeGoldsmith", "awiede", "frigus02", "iredelmeier", "lalitb", "shaun-cox"]
+    maintainers = ["TommyCpp", "cijothomas", "hdost", "jtescher"]
 }
 
 module "swift_sig" {
@@ -152,28 +152,28 @@ module "swift_sig" {
     name = "swift"
     triagers = []
     approvers = ["vvydier"]
-    maintainers = ["nachoBonafonte", "bryce-b"]
+    maintainers = ["bryce-b", "nachoBonafonte"]
 }
 
 module "collector-contrib_sig" {
     source = "./modules/sig"
     name = "collector-contrib"
-    triagers = ["frzifus", "crobert-1", "gbbr", "JaredTan95", "mwear", "Frapschen", "gouthamve", "bryan-aguilar"]
-    approvers = ["atoulme", "MovieStoreGuy", "dmitryax", "bogdandrutu", "TylerHelmuth", "astencel-sumo", "codeboten", "mx-psi", "Aneurysm9", "evan-bradley", "songy23", "fatsheep9146", "dashpole", "jpkrohling", "djaglowski"]
+    triagers = ["Frapschen", "JaredTan95", "bryan-aguilar", "crobert-1", "frzifus", "gbbr", "gouthamve", "mwear"]
+    approvers = ["Aneurysm9", "MovieStoreGuy", "TylerHelmuth", "astencel-sumo", "atoulme", "bogdandrutu", "codeboten", "dashpole", "djaglowski", "dmitryax", "evan-bradley", "fatsheep9146", "jpkrohling", "mx-psi", "songy23"]
     maintainers = []
 }
 
 module "collector-contrib-maintainer_wg" {
     source = "./modules/wg"
     name = "collector-contrib-maintainer"
-    members = ["MovieStoreGuy", "dmitryax", "bogdandrutu", "TylerHelmuth", "mx-psi", "codeboten", "evan-bradley", "jpkrohling", "djaglowski"]
+    members = ["MovieStoreGuy", "TylerHelmuth", "bogdandrutu", "codeboten", "djaglowski", "dmitryax", "evan-bradley", "jpkrohling", "mx-psi"]
 }
 
 module "specs-trace_sig" {
     source = "./modules/sig"
     name = "specs-trace"
     triagers = []
-    approvers = ["tedsuo", "iNikem", "Oberon00"]
+    approvers = ["Oberon00", "iNikem", "tedsuo"]
     maintainers = []
 }
 
@@ -181,7 +181,7 @@ module "specs-metrics_sig" {
     source = "./modules/sig"
     name = "specs-metrics"
     triagers = []
-    approvers = ["cijothomas", "lzchen", "MrAlias"]
+    approvers = ["MrAlias", "cijothomas", "lzchen"]
     maintainers = []
 }
 
@@ -189,38 +189,38 @@ module "specs-logs_sig" {
     source = "./modules/sig"
     name = "specs-logs"
     triagers = []
-    approvers = ["kumoroku", "djaglowski", "zenmoto"]
+    approvers = ["djaglowski", "kumoroku", "zenmoto"]
     maintainers = []
 }
 
 module "dotnet-instrumentation_sig" {
     source = "./modules/sig"
     name = "dotnet-instrumentation"
-    triagers = ["elucus", "MikeGoldsmith"]
+    triagers = ["MikeGoldsmith", "elucus"]
     approvers = ["RassK", "cijothomas", "macrogreg"]
-    maintainers = ["zacharycmontoya", "rajkumar-rangaraj", "pjanotti", "nrcventura", "pellared", "Kielek"]
+    maintainers = ["Kielek", "nrcventura", "pellared", "pjanotti", "rajkumar-rangaraj", "zacharycmontoya"]
 }
 
 module "governance-committee_wg" {
     source = "./modules/wg"
     name = "governance-committee"
-    members = ["dyladan", "svrnm", "alolita", "trask", "tedsuo", "danielgblanco", "mtwo", "austinlparker", "jpkrohling"]
+    members = ["alolita", "austinlparker", "danielgblanco", "dyladan", "jpkrohling", "mtwo", "svrnm", "tedsuo", "trask"]
 }
 
 module "java-contrib_sig" {
     source = "./modules/sig"
     name = "java-contrib"
-    triagers = ["cyrille-leclerc", "kenfinnigan", "PeterF778", "anosek-an", "dehaansa", "willarmiros", "kittylyst", "Mrod1598", "breedx-splk", "iNikem", "oertl"]
+    triagers = ["Mrod1598", "PeterF778", "anosek-an", "breedx-splk", "cyrille-leclerc", "dehaansa", "iNikem", "kenfinnigan", "kittylyst", "oertl", "willarmiros"]
     approvers = ["laurit"]
-    maintainers = ["trask", "mateuszrzeszutek", "jack-berg"]
+    maintainers = ["jack-berg", "mateuszrzeszutek", "trask"]
 }
 
 module "helm_sig" {
     source = "./modules/sig"
     name = "helm"
-    triagers = ["tigrannajaryan", "naseemkullah"]
+    triagers = ["naseemkullah", "tigrannajaryan"]
     approvers = ["Allex1", "povilasv", "puckpuck"]
-    maintainers = ["dmitryax", "TylerHelmuth"]
+    maintainers = ["TylerHelmuth", "dmitryax"]
 }
 
 module "lambda-extension_sig" {
@@ -234,7 +234,7 @@ module "lambda-extension_sig" {
 module "wg-prometheus_wg" {
     source = "./modules/wg"
     name = "wg-prometheus"
-    members = ["jsuereth", "punya", "alolita", "Aneurysm9", "rakyll", "dashpole"]
+    members = ["Aneurysm9", "alolita", "dashpole", "jsuereth", "punya", "rakyll"]
 }
 
 module "dotnet-contrib_sig" {
@@ -242,7 +242,7 @@ module "dotnet-contrib_sig" {
     name = "dotnet-contrib"
     triagers = []
     approvers = []
-    maintainers = ["utpilla", "alanwest", "cijothomas", "CodeBlanch", "Kielek"]
+    maintainers = ["CodeBlanch", "Kielek", "alanwest", "cijothomas", "utpilla"]
 }
 
 module "build-tools_sig" {
@@ -257,7 +257,7 @@ module "cpp-contrib_sig" {
     source = "./modules/sig"
     name = "cpp-contrib"
     triagers = []
-    approvers = ["TomRoSystems", "marcalff", "ThomsonTan", "jsuereth", "esigo", "pyohannes", "maxgolov", "DebajitDas", "kpratyus", "seemk", "tobiasstadler"]
+    approvers = ["DebajitDas", "ThomsonTan", "TomRoSystems", "esigo", "jsuereth", "kpratyus", "marcalff", "maxgolov", "pyohannes", "seemk", "tobiasstadler"]
     maintainers = ["lalitb"]
 }
 
@@ -265,7 +265,7 @@ module "proto-go_sig" {
     source = "./modules/sig"
     name = "proto-go"
     triagers = []
-    approvers = ["Aneurysm9", "pellared", "MadVikingGod"]
+    approvers = ["Aneurysm9", "MadVikingGod", "pellared"]
     maintainers = ["MikeGoldsmith", "MrAlias"]
 }
 
@@ -273,8 +273,8 @@ module "erlang-contrib_sig" {
     source = "./modules/sig"
     name = "erlang-contrib"
     triagers = []
-    approvers = ["hauleth", "zachdaniel", "deadtrickster", "ferd", "GregMefford"]
-    maintainers = ["tsloughter", "bryannaegele"]
+    approvers = ["GregMefford", "deadtrickster", "ferd", "hauleth", "zachdaniel"]
+    maintainers = ["bryannaegele", "tsloughter"]
 }
 
 module "assign-reviewers-action_sig" {
@@ -282,20 +282,20 @@ module "assign-reviewers-action_sig" {
     name = "assign-reviewers-action"
     triagers = []
     approvers = []
-    maintainers = ["trask", "dyladan"]
+    maintainers = ["dyladan", "trask"]
 }
 
 module "otel-elections_wg" {
     source = "./modules/wg"
     name = "otel-elections"
-    members = ["trask", "dyladan", "mtwo"]
+    members = ["dyladan", "mtwo", "trask"]
 }
 
 module "sqlcommenter_sig" {
     source = "./modules/sig"
     name = "sqlcommenter"
     triagers = []
-    approvers = ["jsuereth", "weyert", "alolita"]
+    approvers = ["alolita", "jsuereth", "weyert"]
     maintainers = ["aabmass", "sjs994", "srikanthccv"]
 }
 
@@ -303,29 +303,29 @@ module "opamp-go_sig" {
     source = "./modules/sig"
     name = "opamp-go"
     triagers = []
-    approvers = ["djaglowski", "Aneurysm9", "codeboten", "srikanthccv"]
-    maintainers = ["tigrannajaryan", "andykellr"]
+    approvers = ["Aneurysm9", "codeboten", "djaglowski", "srikanthccv"]
+    maintainers = ["andykellr", "tigrannajaryan"]
 }
 
 module "opamp-spec_sig" {
     source = "./modules/sig"
     name = "opamp-spec"
     triagers = []
-    approvers = ["codeboten", "djaglowski", "andykellr"]
+    approvers = ["andykellr", "codeboten", "djaglowski"]
     maintainers = ["tigrannajaryan"]
 }
 
 module "instr-wg_wg" {
     source = "./modules/wg"
     name = "instr-wg"
-    members = ["tigrannajaryan", "kenfinnigan", "arminru", "joaopgrassi", "dpauls", "MovieStoreGuy", "denisivan0v", "trask", "tedsuo", "pyohannes", "jamesmoessis", "lmolkova"]
+    members = ["MovieStoreGuy", "arminru", "denisivan0v", "dpauls", "jamesmoessis", "joaopgrassi", "kenfinnigan", "lmolkova", "pyohannes", "tedsuo", "tigrannajaryan", "trask"]
 }
 
 module "blog_sig" {
     source = "./modules/sig"
     name = "blog"
     triagers = []
-    approvers = ["mtwo", "cartermp", "SergeyKanzhelev", "austinlparker", "svrnm", "alolita"]
+    approvers = ["SergeyKanzhelev", "alolita", "austinlparker", "cartermp", "mtwo", "svrnm"]
     maintainers = []
 }
 
@@ -333,15 +333,15 @@ module "ruby-contrib_sig" {
     source = "./modules/sig"
     name = "ruby-contrib"
     triagers = []
-    approvers = ["simi", "kaylareopelle"]
-    maintainers = ["dazuma", "robbkidd", "mwear", "arielvalentin", "ericmustin", "ahayworth", "robertlaurin", "fbogsany", "plantfansam"]
+    approvers = ["kaylareopelle", "simi"]
+    maintainers = ["ahayworth", "arielvalentin", "dazuma", "ericmustin", "fbogsany", "mwear", "plantfansam", "robbkidd", "robertlaurin"]
 }
 
 module "demo_sig" {
     source = "./modules/sig"
     name = "demo"
     triagers = []
-    approvers = ["reyang", "wph95", "cedricziel", "fatsheep9146", "mviitane"]
+    approvers = ["cedricziel", "fatsheep9146", "mviitane", "reyang", "wph95"]
     maintainers = ["austinlparker", "cartersocha", "julianocosta89", "puckpuck"]
 }
 
@@ -350,15 +350,15 @@ module "sandbox-web-js_sig" {
     name = "sandbox-web-js"
     triagers = []
     approvers = []
-    maintainers = ["tedsuo", "dyladan", "martinkuba", "MSNev"]
+    maintainers = ["MSNev", "dyladan", "martinkuba", "tedsuo"]
 }
 
 module "go-instrumentation_sig" {
     source = "./modules/sig"
     name = "go-instrumentation"
     triagers = ["jmacd"]
-    approvers = ["RonFed", "damemi", "dineshg13", "MadVikingGod", "pellared"]
-    maintainers = ["MikeGoldsmith", "edeNFed", "MrAlias", "pdelewski"]
+    approvers = ["MadVikingGod", "RonFed", "damemi", "dineshg13", "pellared"]
+    maintainers = ["MikeGoldsmith", "MrAlias", "edeNFed", "pdelewski"]
 }
 
 module "ebpf_sig" {
@@ -388,7 +388,7 @@ module "opamp-java_sig" {
 module "end-user-wg_wg" {
     source = "./modules/wg"
     name = "end-user-wg"
-    members = ["mhausenblas", "musingvirtual", "sharrmander", "reese-lee", "avillela"]
+    members = ["avillela", "mhausenblas", "musingvirtual", "reese-lee", "sharrmander"]
 }
 
 module "profiling_sig" {
@@ -403,8 +403,8 @@ module "specs-semconv_sig" {
     source = "./modules/sig"
     name = "specs-semconv"
     triagers = []
-    approvers = ["Oberon00", "MovieStoreGuy", "tedsuo", "pyohannes", "jamesmoessis", "lmolkova"]
-    maintainers = ["reyang", "arminru", "joaopgrassi", "jsuereth", "AlexanderWert"]
+    approvers = ["MovieStoreGuy", "Oberon00", "jamesmoessis", "lmolkova", "pyohannes", "tedsuo"]
+    maintainers = ["AlexanderWert", "arminru", "joaopgrassi", "jsuereth", "reyang"]
 }
 
 module "configuration_sig" {
@@ -412,14 +412,14 @@ module "configuration_sig" {
     name = "configuration"
     triagers = []
     approvers = []
-    maintainers = ["jack-berg", "tsloughter", "codeboten", "MrAlias"]
+    maintainers = ["MrAlias", "codeboten", "jack-berg", "tsloughter"]
 }
 
 module "semconv-http_sig" {
     source = "./modules/sig"
     name = "semconv-http"
     triagers = []
-    approvers = ["trask", "lmolkova"]
+    approvers = ["lmolkova", "trask"]
     maintainers = []
 }
 
@@ -427,7 +427,7 @@ module "semconv-jvm_sig" {
     source = "./modules/sig"
     name = "semconv-jvm"
     triagers = []
-    approvers = ["trask", "jonatan-ivanov", "mateuszrzeszutek", "jack-berg"]
+    approvers = ["jack-berg", "jonatan-ivanov", "mateuszrzeszutek", "trask"]
     maintainers = []
 }
 
@@ -436,22 +436,22 @@ module "sig-security_sig" {
     name = "sig-security"
     triagers = []
     approvers = []
-    maintainers = ["reyang", "jpkrohling", "codeboten", "cartersocha"]
+    maintainers = ["cartersocha", "codeboten", "jpkrohling", "reyang"]
 }
 
 module "android_sig" {
     source = "./modules/sig"
     name = "android"
     triagers = []
-    approvers = ["trask", "jack-berg"]
-    maintainers = ["breedx-splk", "LikeTheSalad"]
+    approvers = ["jack-berg", "trask"]
+    maintainers = ["LikeTheSalad", "breedx-splk"]
 }
 
 module "semconv-system_sig" {
     source = "./modules/sig"
     name = "semconv-system"
     triagers = []
-    approvers = ["dmitryax", "mx-psi", "ChrsMark", "frzifus"]
+    approvers = ["ChrsMark", "dmitryax", "frzifus", "mx-psi"]
     maintainers = []
 }
 
@@ -459,21 +459,21 @@ module "semconv-mobile_sig" {
     source = "./modules/sig"
     name = "semconv-mobile"
     triagers = []
-    approvers = ["breedx-splk", "LikeTheSalad", "surbhiia", "nachoBonafonte", "bryce-b"]
+    approvers = ["LikeTheSalad", "breedx-splk", "bryce-b", "nachoBonafonte", "surbhiia"]
     maintainers = []
 }
 
 module "semconv-dotnet-approver_wg" {
     source = "./modules/wg"
     name = "semconv-dotnet-approver"
-    members = ["noahfalk", "JamesNK", "antonfirsov"]
+    members = ["JamesNK", "antonfirsov", "noahfalk"]
 }
 
 module "semconv-container_sig" {
     source = "./modules/sig"
     name = "semconv-container"
     triagers = []
-    approvers = ["jinja2", "frzifus", "dmitryax", "TylerHelmuth", "mx-psi", "ChrsMark"]
+    approvers = ["ChrsMark", "TylerHelmuth", "dmitryax", "frzifus", "jinja2", "mx-psi"]
     maintainers = []
 }
 
@@ -481,7 +481,7 @@ module "semconv-k8s_sig" {
     source = "./modules/sig"
     name = "semconv-k8s"
     triagers = []
-    approvers = ["jinja2", "frzifus", "dmitryax", "dashpole", "TylerHelmuth", "mx-psi", "ChrsMark"]
+    approvers = ["ChrsMark", "TylerHelmuth", "dashpole", "dmitryax", "frzifus", "jinja2", "mx-psi"]
     maintainers = []
 }
 
@@ -489,8 +489,8 @@ module "operator_sig" {
     source = "./modules/sig"
     name = "operator"
     triagers = []
-    approvers = ["swiatekm-sumo", "frzifus", "dmitryax", "TylerHelmuth", "yuriolisa"]
-    maintainers = ["jpkrohling", "VineethReddy02", "jaronoff97", "pavolloffay"]
+    approvers = ["TylerHelmuth", "dmitryax", "frzifus", "swiatekm-sumo", "yuriolisa"]
+    maintainers = ["VineethReddy02", "jaronoff97", "jpkrohling", "pavolloffay"]
 }
 
 module "operator-ta_sig" {
@@ -498,5 +498,5 @@ module "operator-ta_sig" {
     name = "operator-ta"
     triagers = []
     approvers = []
-    maintainers = ["jaronoff97", "kristinapathak", "Aneurysm9", "VineethReddy02", "secustor", "jpkrohling", "pavolloffay"]
+    maintainers = ["Aneurysm9", "VineethReddy02", "jaronoff97", "jpkrohling", "kristinapathak", "pavolloffay", "secustor"]
 }
