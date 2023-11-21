@@ -10,6 +10,32 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   - PR: https://github.com/1Password/1password-teams-open-source/pull/364
   - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 
+## Community Resource Accounts
+
+### AWS account
+
+Link: http://cncf-aws-opentelemetry.signin.aws.amazon.com/
+
+- Community account to published Lambda layers
+- Admin: Alex Boten @codeboten & Anthony Mirabella @aneurysm9
+
+### Equinix bare metal
+
+Link: https://console.equinix.com/projects/6f1c9af6-0470-42da-8f22-59d0df245f6b
+
+- Reserved bare metal machines for the community to run performance tests and
+  other assets on
+- Admin: Juraci Paixão Kröhling @jpkrohling and OTel TC via the mailing list address
+
+### Grafana organization for SIG Security
+
+Link: https://grafana.com/orgs/otelsigsecurity
+
+- Used to provide an overview of open security incidents in the org and
+  historical data on how quickly we respond to incidents
+- Users: SIG-Security Maintainers, Technical and Governance Committees
+- Admins: Juraci Paixão Kröhling @jpkrohling & Armin Ruech @arminru
+
 ## Artifact repositories
 
 ### NuGet OpenTelemetry organization
@@ -118,6 +144,7 @@ Link: https://zapier.com
 
 - Used to automatically add links to Zoom meeting recordings to a
   [publicly viewable Google spreadsheet](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s)
+- Used to automatically add repo maintainers to new security incidents
 - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
   (GitHub password is available in the OpenTelemetry Governance 1Password)
 
