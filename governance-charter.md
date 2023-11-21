@@ -101,12 +101,6 @@ For clarity, a table describing this process is given below:
 
 ## Elections
 
-*Special note*: The bootstrap committee pledges to recuse itself from any direct
-election activities while they serve as continuity members. Members of the
-bootstrap committee will refrain from endorsing or otherwise advocating for any
-candidate (with the exception that the members of the bootstrap committee may
-vote in the elections, and may choose to run in the 2021 election).
-
 ### Members of Standing
 
 Standing in the OpenTelemetry community will be defined by the union of:
