@@ -10,5 +10,4 @@ jobs:
       - uses: actions/checkout@v4
       - uses: streetsidesoftware/cspell-action@v2
         with:
-          # Files should be consistent with check:spelling files
-          config: .cspell.json
+          config: .cspell.yaml
