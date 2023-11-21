@@ -17,10 +17,10 @@ document must be shared with write or commenting permissions.
 
 Anyone can request to be added or removed as a meeting participant. Request can
 be made via GitHub issue on this repository or contacting SIG maintainer via
-other channels like Gitter.
+other channels like Slack.
 
 All meetings must include [OpenTelemetry Calendar Invites Google Group](https://groups.google.com/g/opentelemetry-calendar)
-as a participant. Anybody who wants to recieve up to date invites for all OpenTelemetry
+as a participant. Anybody who wants to receive up to date invites for all OpenTelemetry
 meetings can join the group.
 
 ## Steps
@@ -45,7 +45,7 @@ The following details need to be set properly:
   - A link to the meeting notes
     - The meeting notes should be owned by the shared Governance Committee Google account.
       Having a document created can be requested from the GC via opening an issue in this repository.
-- Invited attendes: opentelemetry-calendar@googlegroups.com (see note on this Google Group above)
+- Invited attendees: opentelemetry-calendar@googlegroups.com (see note on this Google Group above)
 
 ### Adding a Zoom link to a meeting
 Open an issue in the community repository, requesting a new Zoom link.
