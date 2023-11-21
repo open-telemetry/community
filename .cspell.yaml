@@ -1,0 +1,9 @@
+version: 0.2
+ignorePaths: ["elections/**/*"]
+words:
+    - cncf
+    - opentelemetry
+    - otel
+    - otep
+    - otlp
+    - trendable
