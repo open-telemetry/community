@@ -78,10 +78,10 @@ for team in teams_data:
 
 # Dedupe the groups
 for name, sig in sigs.items():
-    sig["triagers"] = list(sig["triagers"] - sig["approvers"] - sig["maintainers"])
-    sig["approvers"] = list(sig["approvers"] - sig["maintainers"])
-    sig["maintainers"] = list(sig["maintainers"])
-    sig["members"] = list(sig["members"])
+    sig["triagers"] = sorted(list(sig["triagers"] - sig["approvers"] - sig["maintainers"]))
+    sig["approvers"] = sorted(list(sig["approvers"] - sig["maintainers"]))
+    sig["maintainers"] = sorted(list(sig["maintainers"]))
+    sig["members"] = sorted(list(sig["members"]))
 
 
 member_string = """
@@ -128,10 +128,10 @@ module "{name}_wg" {{
 
 def print_group_imports(group, member_group, suffix):
     group_name = group["name"]
-    singular = member_group[:-1]
     print(f"tofu import 'module.{group_name}_{suffix}.github_team.{member_group}' {group_name}-{member_group}")
-    for m in group[member_group]:
-        print(f"tofu import 'module.{group_name}_{suffix}.github_team_membership.sig_{singular}[\"{m}\"]' {group_name}-{member_group}:{m}")
+    # singular = member_group[:-1]
+    # for m in group[member_group]:
+    #     print(f"tofu import 'module.{group_name}_{suffix}.github_team_membership.sig_{singular}[\"{m}\"]' {group_name}-{member_group}:{m}")
 
 # GENERATE TF FILE
 with open('output.tf', 'w') as f:
@@ -151,6 +151,6 @@ with open('output.tf', 'w') as f:
 owners = set(["caniszczyk", "idvoretskyi", "thelinuxfoundation"]) # cncf owners not in any team
 owners.update(sigs['technical-committee']['members']) # add the TC
 members = members - owners # remove potential dupes
-output = {"members": list(members), "owners": list(owners)}
+output = {"members": sorted(list(members)), "owners": sorted(list(owners))}
 with open('output.json', 'w') as f:
     json.dump(output, f, indent=4)
