@@ -1,9 +1,122 @@
 version: 0.2
 ignorePaths: ["elections/**/*"]
 words:
+    - apac
     - cncf
+    - codecov
+    - codeowners
+    - dynatrace
+    - easycla
+    - emea
+    - faas
+    - gitter
+    - lightstep
+    - maintainership
+    - observiq
     - opentelemetry
+    - opentelemetrybot
     - otel
     - otep
     - otlp
+    - passcodes
+    - proto
+    - runtimes
+    - signup
+    - skyscanner
+    - splk
+    - subdir
+    - subproject
+    - subprojects
+    - subrepository
+    - supermajority
+    - tiebreaking
+    - timebox
+    - timeboxing
+    - tocstop
     - trendable
+    - triager
+    - triagers
+    # names and github handles
+    - alolita
+    - amye
+    - aniszczyk
+    - arbiv
+    - armin
+    - arminru
+    - austinlparker
+    - beedgen
+    - blanco
+    - bogdan
+    - bogdandrutu
+    - boten
+    - breedx
+    - caramanolis
+    - carlosalberto
+    - cartermp
+    - cijo
+    - codeboten
+    - danielgblanco
+    - denisivan
+    - dennisme
+    - drutu
+    - dyla
+    - dyladan
+    - fong
+    - henrikrexed
+    - jaglowski
+    - jigar
+    - jpkrohling
+    - jsuereth
+    - juraci
+    - kanzhelev
+    - kröhling
+    - lalitb
+    - lmolkova
+    - mancuso
+    - martinkuba
+    - mateuszrzeszutek
+    - mayur
+    - mayurkale
+    - mirabella
+    - mtwo
+    - mwear
+    - najaryan
+    - nakamura
+    - neumann
+    - neumüller
+    - novotny
+    - ocelotl
+    - paixão
+    - parsana
+    - patrickhousley
+    - poncelow
+    - reiley
+    - reyang
+    - ruech
+    - rynn
+    - salnikov
+    - scavarda
+    - scheler
+    - sergey
+    - severin
+    - sharma
+    - sharrmander
+    - shkuro
+    - sigelman
+    - srikanthccv
+    - stalnaker
+    - suereth
+    - sureth
+    - svrnm
+    - tarnovski
+    - tedsuo
+    - tigran
+    - tigrannajaryan
+    - trask
+    - tsloughter
+    - tylerbenson
+    - xoscar
+    - yahn
+    # slack spaces
+    - otel-agentmanwg
+    - otel-ebpf
