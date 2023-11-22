@@ -28,7 +28,7 @@ According to CNCF recommendations if you are contributing third-party code
 you will need to [retain the original copyright notice](https://github.com/cncf/foundation/blob/master/copyright-notices.md#dont-change-someone-elses-notice-without-their-permission).
 
 Any contributed third-party code must originally be Apache 2.0-Licensed or must
-carry a permisive software license that is compatible when combining with
+carry a permissive software license that is compatible when combining with
 Apache 2.0 License. At this moment, BSD and MIT are the only
 [OSI-approved licenses](https://opensource.org/licenses/alphabetical) known to be compatible.
 

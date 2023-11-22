@@ -25,7 +25,7 @@
   - Interviewee selection criteria vary and change depending on the needs of the community. Some example criteria includes “people who have used OTel before”, “people who have implemented monitoring, telemetry, observability either in code or in platforms”, “people who develop software and don’t feel they have enough information about how it works in environments other than their laptop”
 
 * ### OTel Community Helper: - Required
-  - The OTel community helper is a named role for each session. The community helper will complete coordination and amplification tasks such as tracking session recording links, acting as notekeeper, and publishing up an interview summary. The community helper can also be the same person as the interview facilitator. 
+  - The OTel community helper is a named role for each session. The community helper will complete coordination and amplification tasks such as tracking session recording links, acting as note keeper, and publishing up an interview summary. The community helper can also be the same person as the interview facilitator. 
 
 * ### OTel Community member audience: - Optional
   - Members from the OTel community are welcome to observe the interview and coordinate with the facilitator if there are any specific topics they’d like to be included during the interview. 
