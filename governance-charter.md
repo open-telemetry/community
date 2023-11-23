@@ -4,8 +4,9 @@ Last updated: November 2023
 
 ## Overview
 
-This document describes the goals, the scope and the structure of the OpenTelemetry Governance Committee (GC).
-It describes the election process for the Governance Committee and how the committee operates.
+This document describes the goals, the scope and the structure of the
+OpenTelemetry Governance Committee (GC). It describes the election process for
+the Governance Committee and how the committee operates.
 
 ## Goals
 
@@ -52,8 +53,9 @@ project groups like the [Technical Committee](./tech-committee-charter.md).
 
 ## Committee Structure
 
-The **OpenTelemetry Governance Committee consists of 9 individual members** of the community **elected for 2 year terms**. The
-terms are **staggered with 1 year elections** (alternating 4 seats and 5 seats).
+The **OpenTelemetry Governance Committee consists of 9 individual members** of
+the community **elected for 2 year terms**.
+The terms are **staggered with 1 year elections** (alternating 4 seats and 5 seats).
 
 ## Elections
 
