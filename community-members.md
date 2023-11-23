@@ -129,14 +129,7 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 Repo: [open-telemetry/opentelemetry.io](https://github.com/open-telemetry/opentelemetry.io/)
 
-Approvers:
-
-Maintainers:
-
-- [Morgan McLean](https://github.com/mtwo), Splunk
-- [Steve Flanders](https://github.com/flands), Splunk
-- [Jigar Parsana](https://github.com/jparsana), Google
-- [Austin Parker](https://github.com/austinlparker), Lightstep
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Docs and Website can be found in the [open-telemetry/opentelemetry.io README file](https://github.com/open-telemetry/opentelemetry.io#contributing).
 
 ## Erlang
 
