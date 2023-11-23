@@ -132,8 +132,7 @@ special election for that position will be held as soon as possible. The same
 group of people as described in "eligibility for voting" will vote in the
 special election. A committee member elected in a special election will serve
 out the remainder of the term for the person they are replacing, regardless of
-the length of that remainder. If a continuity member resigns or otherwise is
-lost from the Committee, that position will not be filled.
+the length of that remainder.
 
 ### Limiting Corporate Campaigning Support
 
