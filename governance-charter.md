@@ -55,7 +55,8 @@ project groups like the [Technical Committee](./tech-committee-charter.md).
 
 The **OpenTelemetry Governance Committee consists of 9 individual members** of
 the community **elected for 2 year terms**.
-The terms are **staggered with 1 year elections** (alternating 4 seats and 5 seats).
+The terms are **staggered with 1 year elections** (alternating 4 seats in even 
+years and 5 seats in odd years).
 
 ## Elections
 
