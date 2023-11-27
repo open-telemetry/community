@@ -104,7 +104,7 @@ backlog organization. The specific workflows and triage requirements depend on
 the project, and are set by the project maintainers.
 
 Defined by: [Triage permissions](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level),
-with the names of the current Triagers commited to git, either in CONTRIBUTING,
+with the names of the current Triagers committed to git, either in CONTRIBUTING,
 CODEOWNERS, or the bottom of the README.
 
 Triagers may be code contributors, but writing code is not a requirement for
@@ -263,7 +263,7 @@ overall OpenTelemetry-wide Technical Committee. As such, this is
 OpenTelemetry's process for resolving technical issues where Maintainers cannot
 reach consensus:
 
-1. The SIG Maintainers should succintly document the options under
+1. The SIG Maintainers should succinctly document the options under
 consideration as a GitHub issue within the SIG's respective repo (note that it
 is *not* required to document the complete framing and pros/cons – just the
 actual go-forward options themselves).

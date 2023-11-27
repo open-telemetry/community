@@ -59,7 +59,7 @@ concerns.
 ### [Josh Suereth](https://github.com/jsuereth), Google
 
 - Metrics API and SDK
-- OpenTelemtry Protocol
+- OpenTelemetry Protocol
 - Telemetry correlation (Trace <-> Metrics <-> Logs via Resource, Exemplars, etc.)
 - Protocol compatibility (OpenCensus, Prometheus, Statsd, etc.)
 - Semantic conventions

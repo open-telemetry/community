@@ -27,12 +27,12 @@ Groups are encouraged to define deadlines for any work which will require public
 
 ## Project Lifecycle
 
-All projects progess through a lifecycle. Projects are tracked on the [Project Board](https://github.com/orgs/open-telemetry/projects/29), which the community can use to get a high-level view of the OpenTelemetry roadmap.
+All projects progress through a lifecycle. Projects are tracked on the [Project Board](https://github.com/orgs/open-telemetry/projects/29), which the community can use to get a high-level view of the OpenTelemetry roadmap.
 
 The project lifecycle is as follows:
 
 * A **Project Proposal** pull request is created, as described above.
 * If a project is approved, the pull request is merged. The project is then added to the list of **Potential Projects**. This list is roughly ordered based on priority.
-* Potential projects are moved to the list of **Scheduled Projects** once they have a planned start date. Having a planned start date lets potential contributors know when they need to make themselves available, and get prepared to begin their work. Subject matter experts and participants who plan to do a lot of work – such as building prototypes – benefit greatly from having a start date, as they can plan for their participantion with their employers and coworkers.
+* Potential projects are moved to the list of **Scheduled Projects** once they have a planned start date. Having a planned start date lets potential contributors know when they need to make themselves available, and get prepared to begin their work. Subject matter experts and participants who plan to do a lot of work – such as building prototypes – benefit greatly from having a start date, as they can plan for their participation with their employers and coworkers.
 * Once a project is begun, it is moved to the list of **Current Projects**. Projects are only started when the necessary resources are available to move them quickly to completion. This means that the necessary subject matter experts have been identified, and at least two TC members are committed to review and guide the project through the specification process.
 * Once work is complete, and the working group is no longer meeting, the project document is moved to the [completed projects](projects/completed-projects/) folder.
