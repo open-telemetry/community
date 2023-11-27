@@ -1,13 +1,12 @@
 # OpenTelemetry Governance Committee Charter
 
-Last updated: August 2022
+Last updated: November 2023
 
 ## Overview
 
-This document describes the bootstrapping process for the OpenTelemetry
-Governance Committee. It describes the formation of the initial governance
-committee and its core responsibilities. This includes its governance processes
-and processes to reform itself as necessary.
+This document describes the goals, the scope and the structure of the
+OpenTelemetry Governance Committee (GC). It describes the election process for
+the Governance Committee and how the committee operates.
 
 ## Goals
 
@@ -54,50 +53,10 @@ project groups like the [Technical Committee](./tech-committee-charter.md).
 
 ## Committee Structure
 
-### Establishment of a governance committee
-
-To bootstrap the process of OpenTelemetry governance, 5 individuals (Ben
-Sigelman, Bogdan Drutu, Sergey Kanzhelev, Sarah Novotny, and Yuri Shkuro) were
-identified to be the *Bootstrap Committee*, to provide the initial process that
-can bootstrap the remainder of the process.
-
-The Bootstrap Committee will be replaced by the elected OpenTelemetry Governance
-Committee. Ultimately, the **OpenTelemetry Governance Committee will consist
-of 9 individual members** of the community **elected for 2 year terms**. The
-terms will be **staggered with 1 year elections** (alternating 4 seats and 5
-seats).
-
-To provide a level of continuity as this process is established, the initial
-committee will include continuity members, expanding the size to 9 members.
-Note that from the 2020 election to the 2021 election, the committee will
-include 11 members.
-
-In 2019 as this approval is enacted, the committee consists of the
-members of the bootstrap committee (Ben Sigelman, Bogdan Drutu, Sarah Novotny,
-Sergey Kanzhelev, Yuri Shkuro) plus 4 positions to be elected from the
-community. Of the 4 members that are elected, 2 will have a two year term and 2
-will have one year term. 
-
-One year later (in 2020) there will be an election to fill the two seats
-opening up, each with a two year term. The continuity members of the original
-bootstrap committee will continue to serve.
-
-One year after that (2021), there will be an election to fill the 5 open
-seats on the governance committee. The previous continuity members are
-eligible to run for these seats.
-
-The committee will continue to iterate with alternating elections of four and
-five members each year. 
-
-For clarity, a table describing this process is given below:
-
-| *Year* | *Continuity* | *Election Cohort #1*    | *Election Cohort #2*    | GC size post-election |
-| ------ | ------------ | ----------------------- | ----------------------- | --------------------- |
-| 2019   | 5 people     | **2 people** (2yr term) | **2 people** (1yr term) | 9 people (+4)         |
-| 2020   | -            | -                       | **4 people** (2yr term) | 11 people (-2, +4)    |
-| 2021   | 0 people     | **5 people** (2yr term) | -                       | 9 people (-7, +5)     |
-| 2022   | -            | -                       | **4 people** (2yr term) | 9 people (-4, +4)     |
-| 2023   | -            | **5 people** (2yr term) | -                       | 9 people (-5, +5)     |
+The **OpenTelemetry Governance Committee consists of 9 individual members** of
+the community **elected for 2 year terms**.
+The terms are **staggered with elections each year** (alternating 4 seats in even 
+years and 5 seats in odd years).
 
 ## Elections
 
@@ -167,16 +126,6 @@ elections held. In the event of a question of company membership (for example
 evaluating independence of corporate subsidiaries) a majority of all
 non-involved Governance Committee members will decide. 
 
-### Initial Election
-
-Because of the need to bootstrap a staggered election cycle, some of the initial
-committee members will only serve a single year term. These two people will be
-selected from the "lowest vote getters" from the four non-continuity committee
-members in the initial election.
-
-The bootstrap committee will operate the election and circulate a timeline for
-nominations, and the vote.
-
 ### Special Elections
 
 In the event of a resignation or other loss of a governance committee member, a
@@ -184,8 +133,7 @@ special election for that position will be held as soon as possible. The same
 group of people as described in "eligibility for voting" will vote in the
 special election. A committee member elected in a special election will serve
 out the remainder of the term for the person they are replacing, regardless of
-the length of that remainder. If a continuity member resigns or otherwise is
-lost from the Committee, that position will not be filled.
+the length of that remainder.
 
 ### Limiting Corporate Campaigning Support
 
