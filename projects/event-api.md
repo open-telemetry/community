@@ -30,7 +30,7 @@ Sponsoring TC Members:
 * @tigrannajaryan
 * @jack-berg
 
-Contributing Engnieers:
+Contributing Engineers:
 
 * @martinkuba (JavaScript)
 * @scheler
