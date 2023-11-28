@@ -104,6 +104,10 @@ Nominators are free to nominate as many people as they wish to. Members of
 Standing may endorse multiple nominees, but we expect endorsements to be in good
 faith. If this turns out to be a problem, this will be reconsidered.
 
+Endorsements should be comments containing the phrase "I support". Simply adding
+a code review or emoji reactions to the description is NOT sufficient and might
+be ambiguous on the intentions of the review or reactions.
+
 ### Eligibility for voting
 
 All Members of Standing are eligible to vote for the governance committee
@@ -119,16 +123,17 @@ to the respective positions.
 
 To encourage diversity there will be a maximum of two Governance Committee
 members from any one company at any time. If the outcomes of an election result
-in more than two candidates from the same company being elected, the lowest vote
-getters from any particular company will be removed.
+in more than two candidates from the same company being at the GC, the lowest vote
+getters from any particular company will be removed. 
 
 If representation changes because of job changes, acquisitions, or other events,
-sufficient members of the committee must resign until the maximum representation
-is respected. If it is impossible to find sufficient members to resign, the
-entire company’s representation will be removed and new special elections held.
-In the event of a question of company membership (for example evaluating
-independence of corporate subsidiaries) a majority of all non-involved
-Governance Committee members will decide.
+sufficient members of the committee must resign within 28 days until the maximum
+representation is respected. If it is impossible to find sufficient members to
+resign after that period, the entire company’s representation will be removed.
+In both cases a special election will be held for those position, as [outlined
+below](#special-elections). In the event of a question of company membership
+(for example evaluating independence of corporate subsidiaries) a majority of
+all non-involved Governance Committee members will decide.
 
 ### Special Elections
 
