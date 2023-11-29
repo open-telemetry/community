@@ -45,6 +45,7 @@ All stages will require a project lead, domain experts, and engineers at a minim
 
 * @horovits (tentative project lead)
 * @adrielp
+* @thisthat
 
 Need more:
 
