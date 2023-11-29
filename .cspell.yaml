@@ -2,6 +2,7 @@ version: 0.2
 ignorePaths: ["elections/**/*"]
 words:
     - apac
+    - cicd
     - cncf
     - codecov
     - codeowners
@@ -10,6 +11,7 @@ words:
     - emea
     - faas
     - gitter
+    - kubecon
     - lightstep
     - maintainership
     - observiq
@@ -38,6 +40,7 @@ words:
     - triager
     - triagers
     # names and github handles
+    - adrielp
     - alolita
     - amye
     - aniszczyk
@@ -64,6 +67,7 @@ words:
     - dyladan
     - fong
     - henrikrexed
+    - horovits
     - jaglowski
     - jigar
     - jpkrohling
@@ -111,6 +115,7 @@ words:
     - svrnm
     - tarnovski
     - tedsuo
+    - thisthat
     - tigran
     - tigrannajaryan
     - trask
