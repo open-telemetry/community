@@ -3,7 +3,7 @@
 ## Description
 
 The goal of this working group is define the semantic conventions for CI/CD Observability and outline 
-a path forward for the Open Telemetry community. 
+a path forward for the OpenTelemetry community. 
 
 ### Why
 
