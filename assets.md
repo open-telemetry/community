@@ -83,7 +83,7 @@ Link: https://pypi.org/user/opentelemetry/
 
 ### opentelemetry-calendar-contributors Google Group
 
-Used to provide write access to public OpenTelemertry calendar. See [docs/how-to-handle-public-calendar.md](docs/how-to-handle-public-calendar.md).
+Used to provide write access to public OpenTelemetry calendar. See [docs/how-to-handle-public-calendar.md](docs/how-to-handle-public-calendar.md).
 
 Link: https://groups.google.com/g/opentelemetry-calendar-contributors
 
