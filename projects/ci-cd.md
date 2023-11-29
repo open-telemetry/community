@@ -29,7 +29,7 @@ A related OTEP that is of great interest to the CI/CD OTEP is that of [Environme
 
 > Note: The environment variables as context propagators enables batch systems as a whole, and not just CI/CD systems. We're here to support and will leverage, but it's possible that other working groups already have that OTEP on their radar.
 
-Working prototypes are partially available in these two systems, but have been down outside of the context of this semantic conventions. Thus these prototypes would be updated based on semantic conventions defined.
+Working prototypes are partially available in these two systems, but have been done outside of the context of this semantic conventions. Thus these prototypes would be updated based on semantic conventions defined.
 
 ## Staffing / Help Wanted
 
