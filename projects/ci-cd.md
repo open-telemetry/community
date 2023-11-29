@@ -11,11 +11,11 @@ The goal of this project is to establish standard semantic conventions for Conti
 Integration (CI) and Continuous (CD) observability. This will provide a common language
 and standardized formats for CI/CD observability, enabling the community to observe CI/CD systems.
 
-This will broaden the target audience of Open Telemetry to Release Engineering and DevOps teams,
-further cementing Open Telemetry as the industry standard Observability framework.
+This will broaden the target audience of OpenTelemetry to Release Engineering and DevOps teams,
+further cementing OpenTelemetry as the industry standard Observability framework.
 
 The timing is ripe to start now. The [CI/CD Observability OTEP](https://github.com/open-telemetry/oteps/pull/223/files)
-has been open since January of 2023 and with the recent changes to the OTEP process, the Kubecon talk, and vendor acknowledgements, there's momentum available to carry this forward. The industry 
+has been open since January of 2023 and with the recent changes to the OTEP process, the KubeCon talk, and vendor acknowledgements, there's momentum available to carry this forward. The industry 
 is heavily looking for solutions and watching the related OTEP with interest.
 
 ## Deliverables
