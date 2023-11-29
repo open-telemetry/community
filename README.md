@@ -199,5 +199,5 @@ See the [OpenMetrics](https://openmetrics.io/) page for details.
 
 ### eBPF Foundation
 
-The eBPF foundation aims to facilitate collaboration between eBPF projects, and to ensure good maintainance and clear roadmap for eBPF core.
+The eBPF foundation aims to facilitate collaboration between eBPF projects, and to ensure good maintenance and clear roadmap for eBPF core.
 See the [eBPF Foundation](https://ebpf.io/foundation/) page for more details.

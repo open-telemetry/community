@@ -8,7 +8,7 @@
 - C++
 - Go
 - Java
-- Javascript (typscript, node)
+- JavaScript (TypeScript, Node.JS)
 - .NET Core
 - Python
 - Ruby
