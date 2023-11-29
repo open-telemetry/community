@@ -111,7 +111,8 @@ be ambiguous on the intentions of the review or reactions.
 ### Eligibility for voting
 
 All Members of Standing are eligible to vote for the governance committee
-members. 
+members, unless two other employees of the same company are already on the
+committee (see [Maximal representation](#maximal-representation)).
 
 ### Election process
 
@@ -122,9 +123,7 @@ to the respective positions.
 ### Maximal representation
 
 To encourage diversity there will be a maximum of two Governance Committee
-members from any one company at any time. If the outcomes of an election result
-in more than two candidates from the same company being at the GC, the lowest vote
-getters from any particular company will be removed. 
+members from any one company at any time.
 
 If representation changes because of job changes, acquisitions, or other events,
 sufficient members of the committee must resign within 28 days until the maximum
