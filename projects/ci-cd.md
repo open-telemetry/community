@@ -45,7 +45,6 @@ The following is a current snapshot of prototypes, plugins, components, and CI/C
 | GitHub         | [OpenTelemetry Export Trace - Inception health](https://github.com/marketplace/actions/opentelemetry-export-trace)                                          | [GitHub Action Repo](https://github.com/inception-health/otel-export-trace-action)                 | * Traces via a GitHub action                                                  |
 | GitHub         | [OpenTelemetry Actions Exporter - New Relic](https://github.com/marketplace/actions/new-relic-opentelemetry-github-actions-exporter)                        | [GitHub Action Repo](https://github.com/newrelic-experimental/gha-new-relic-exporter)              | * Metrics on workflow runs                                                    |
 | GitHub         | [Run with Telemetry GitHub Action](https://github.com/krzko/run-with-telemetry)                                                                             |                                                                                                    | * Traces via GitHub action                                                    |
-| GitLab         | [GitLab Distributed Tracing via Runners](https://gitlab.com/liatrioinc/cn-platform/pipeline-testing)                                                        | [GitLab Runner Fork](https://github.com/liatrio/gitlab-runner-fork)                                | * Distributed Tracing via environment context propagation at the runner layer |
 
 
 ## Staffing / Help Wanted
