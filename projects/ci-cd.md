@@ -24,12 +24,29 @@ The CI/CD observability working group is planning to deliver the [CI/CD Observab
 
 * [GitHub](https://github.com)
 * [GitLab](https://gitlab.com)
+* [Jenkins](https://www.jenkins.io/)
+* [Keptn](https://lifecycle.keptn.sh/)
 
 A related OTEP that is of great interest to the CI/CD OTEP is that of [Environment Variables as Context Propagators](https://github.com/open-telemetry/opentelemetry-specification/issues/740) which this working group would be available to help with.
 
 > Note: The environment variables as context propagators enables batch systems as a whole, and not just CI/CD systems. We're here to support and will leverage, but it's possible that other working groups already have that OTEP on their radar.
 
 Working prototypes are partially available in these two systems, but have been done outside of the context of this semantic conventions. Thus these prototypes would be updated based on semantic conventions defined.
+
+The following is a current snapshot of prototypes, plugins, components, and CI/CD related tooling that attempt to address CI/CD observability in some form.
+
+| Related Vendor | Prototype                                                                                                                                                   | Related Resources                                                                                  | Comments                                                                      |
+|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| GitHub         | [GitHub Actions Receiver](https://github.com/krzko/opentelemetry-collector-contrib/tree/feat-add-githubactionseventreceiver/receiver/githubactionsreceiver) | [OTEL Issue 27460](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/27460) | * Event logs to traces                                                        |
+| GitHub/GitLab  | [Git Provider Receiver](https://github.com/liatrio/liatrio-otel-collector/tree/main/pkg/receiver/gitproviderreceiver)                                       | [OTEL Issue 22028](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/22028) | * Delivery metrics by scraping Git vendors                                    |
+| K8S            | [Keptn](https://lifecycle.keptn.sh/)                                                                                                                        | [Keptn GitHub Repo](https://github.com/keptn/lifecycle-toolkit)                                    | * Focused on observability in Kubernetes deployments                          |
+| Jenkins        | [OpenTelemetry plugin](https://plugins.jenkins.io/opentelemetry/)                                                                                           | [Plugin GitHub Repo](https://github.com/jenkinsci/opentelemetry-plugin)                            | * Tracing of Jenkins pipelines                                                |
+| CLI            | [OTEL CLI](https://github.com/equinix-labs/otel-cli)                                                                                                        |                                                                                                    | * Tracing through a CLI wrapper                                               |
+| GitHub         | [OpenTelemetry Export Trace - Inception health](https://github.com/marketplace/actions/opentelemetry-export-trace)                                          | [GitHub Action Repo](https://github.com/inception-health/otel-export-trace-action)                 | * Traces via a GitHub action                                                  |
+| GitHub         | [OpenTelemetry Actions Exporter - New Relic](https://github.com/marketplace/actions/new-relic-opentelemetry-github-actions-exporter)                        | [GitHub Action Repo](https://github.com/newrelic-experimental/gha-new-relic-exporter)              | * Metrics on workflow runs                                                    |
+| GitHub         | [Run with Telemetry GitHub Action](https://github.com/krzko/run-with-telemetry)                                                                             |                                                                                                    | * Traces via GitHub action                                                    |
+| GitLab         | [GitLab Distributed Tracing via Runners](https://gitlab.com/liatrioinc/cn-platform/pipeline-testing)                                                        | [GitLab Runner Fork](https://github.com/liatrio/gitlab-runner-fork)                                | * Distributed Tracing via environment context propagation at the runner layer |
+
 
 ## Staffing / Help Wanted
 
