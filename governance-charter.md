@@ -112,7 +112,8 @@ be ambiguous on the intentions of the review or reactions.
 
 All Members of Standing are eligible to vote for the governance committee
 members, unless two other employees of the same company are already on the
-committee (see [Maximal representation](#maximal-representation)).
+committee and not up for re-election
+(see [Maximal representation](#maximal-representation)).
 
 ### Election process
 
