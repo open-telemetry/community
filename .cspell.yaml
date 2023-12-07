@@ -23,6 +23,7 @@ words:
     - otlp
     - passcodes
     - proto
+    - pytest
     - runtimes
     - signup
     - skyscanner
@@ -41,6 +42,7 @@ words:
     - triager
     - triagers
     # names and github handles
+    - acramsay
     - adrielp
     - alolita
     - amye
@@ -63,9 +65,13 @@ words:
     - danielgblanco
     - denisivan
     - dennisme
+    - dnsmichi
     - drutu
+    - dsotirakis
     - dyla
     - dyladan
+    - elfo404
+    - e-backmark-ericsson
     - fong
     - henrikrexed
     - horovits
@@ -74,10 +80,13 @@ words:
     - jpkrohling
     - jsuereth
     - juraci
+    - kamphaus
     - kanzhelev
     - kröhling
+    - krzko
     - lalitb
     - lmolkova
+    - magnusbaeck
     - mancuso
     - martinkuba
     - mateuszrzeszutek
@@ -122,6 +131,7 @@ words:
     - trask
     - tsloughter
     - tylerbenson
+    - xibz
     - xoscar
     - yahn
     # slack spaces
