@@ -90,8 +90,9 @@ around a more robust idea of community membership.
 
 ### Eligibility for candidacy
 
-Anyone may nominate either themselves or someone else to be a candidate in the
-election.
+Anyone can be a candidate, nominated by either themselves or someone else,
+unless two other employees of the same company are already on the committee and
+not up for re-election (see [Maximal representation](#maximal-representation)).
 
 To be ratified, candidates need three endorsements in total from members of
 standing from three different companies. When self-nominating, a candidate that
@@ -111,9 +112,7 @@ be ambiguous on the intentions of the review or reactions.
 ### Eligibility for voting
 
 All Members of Standing are eligible to vote for the governance committee
-members, unless two other employees of the same company are already on the
-committee and not up for re-election
-(see [Maximal representation](#maximal-representation)).
+members.
 
 ### Election process
 
