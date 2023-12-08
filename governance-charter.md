@@ -90,9 +90,13 @@ around a more robust idea of community membership.
 
 ### Eligibility for candidacy
 
-Anyone can be a candidate, nominated by either themselves or someone else,
-unless two other employees of the same company are already on the committee and
-not up for re-election (see [Maximal representation](#maximal-representation)).
+Anyone can be a candidate nominated by either themselves or someone else unless
+two other employees of the same company are already on the committee and not up
+for re-election (see [Maximal representation](#maximal-representation)). In case
+enough employees of the same company get enough votes to be elected so that the
+maximal representation is not respected anymore, only the highest-voted
+candidate(s) among them will get elected, with the other candidates having their
+candidacies nullified.
 
 To be ratified, candidates need three endorsements in total from members of
 standing from three different companies. When self-nominating, a candidate that
