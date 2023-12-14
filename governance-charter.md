@@ -133,7 +133,7 @@ If representation changes because of job changes, acquisitions, or other events,
 sufficient members of the committee must resign within 28 days until the maximum
 representation is respected. If it is impossible to find sufficient members to
 resign after that period, the entire company’s representation will be removed.
-In both cases a special election will be held for those position, as [outlined
+In this case a special election will be held for those position, as [outlined
 below](#special-elections). In the event of a question of company membership
 (for example evaluating independence of corporate subsidiaries) a majority of
 all non-involved Governance Committee members will decide.
