@@ -82,7 +82,7 @@ The Governance Committee explicitly believes that this heuristic will be
 inaccurate and not represent the entire community. An exception form will be
 provided for people who have contributed to the project but may not meet these
 criteria. Exception eligibility applications will be approved by the Governance
-committee by a simple majority vote. The exception process will be used as data
+Committee by a simple majority vote. The exception process will be used as data
 points for refining the criteria for the future.
 
 The Governance Committee commits to redefine these criteria around a more robust 
