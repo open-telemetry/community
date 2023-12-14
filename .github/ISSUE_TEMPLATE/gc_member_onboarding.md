@@ -32,7 +32,8 @@ The new member must:
    1. [Mission, Vision and Values](https://opentelemetry.io/community/mission/)
    2. [Concepts](https://opentelemetry.io/docs/concepts/)
    3. [Specification](https://opentelemetry.io/docs/specs/otel/)
-2. Have read the [OpenTelemetry Governance Committee Charter](https://github.com/open-telemetry/community/blob/main/governance-charter.md)
+2. Have read and agreed to comply with the
+   [OpenTelemetry Governance Committee Charter](https://github.com/open-telemetry/community/blob/main/governance-charter.md)
    as per requirements to stand for election.
 3. Have an email address, Google account, and GitHub account and is willing
    to share those details with other GC members.
@@ -102,10 +103,10 @@ members happens on GitHub.
 The existing member must:
 
 - [ ] Ask TC to add new member as `Member` to the [open-telemetry](https://github.com/open-telemetry/)
-  organisation.
+  organization.
 - [ ] Ask TC to add new member as `Member` to the [open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
   team.
-- [ ] Add new member as `CODEOWNER` in [open-telemetry/community](https://github.com/open-telemetry/community/blob/main/CODEOWNERS)
+- [ ] Add new member as code owner in [open-telemetry/community](https://github.com/open-telemetry/community/blob/main/CODEOWNERS)
 - [ ] Add new member to the list of GC members in [open-telemetry/community/community-members.md](https://github.com/open-telemetry/community/blob/main/community-members.md).
 - [ ] Add new member in the `OpenTelemetry (Governance Committee)` section of [cncf/foundation/project-maintainers.csv](https://github.com/cncf/foundation/blob/main/project-maintainers.csv)
 
@@ -170,7 +171,7 @@ The existing member must:
 
 ## Further Reading
 The following is a list of documents and other media that new members must
-familiarise themselves with. The new member must go through these media and ask
+familiarize themselves with. The new member must go through these media and ask
 any relevant questions that will aid them in understanding their role as a GC
 member. The existing member must assist the new member, to the best of their
 capacity, in finding answers to these questions.
@@ -178,8 +179,10 @@ capacity, in finding answers to these questions.
 - [ ] [OpenTelemetry Code of Conduct](https://github.com/open-telemetry/community/blob/main/code-of-conduct.md):
   all GC members define, evolve, and defend the Code of Conduct.
 - [ ] [OpenTelemetry Governance Committee meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8):
-  to understand items currently in progress. [Meeting Recordings](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s)
+  to identify items currently in progress. [Meeting Recordings](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s)
   can help get more details if needed.
+- [ ] [Project Management](https://github.com/open-telemetry/community/blob/main/project-management.md):
+  to understand the fundamentals of how projects are managed by the GC and TC.
 - [ ] [Active Projects](https://github.com/open-telemetry/community/tree/main/projects):
   to understand current project deliverables and the challenges they aim to
   solve.
