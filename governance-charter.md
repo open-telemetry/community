@@ -78,15 +78,15 @@ Exception Process outline below.
 - Representatives from major organizations that have adopted OpenTelemetry as
   end-users (one representative per organization)
 
-The bootstrap committee explicitly believes that this heuristic will be
+The Governance Committee explicitly believes that this heuristic will be
 inaccurate and not represent the entire community. An exception form will be
 provided for people who have contributed to the project but may not meet these
-criteria. Exception eligibility applications will be approved by the bootstrap
+criteria. Exception eligibility applications will be approved by the Governance
 committee by a simple majority vote. The exception process will be used as data
 points for refining the criteria for the future.
 
-Within its first year, the Governance Committee will redefine these criteria
-around a more robust idea of community membership.
+The Governance Committee commits to redefine these criteria around a more robust 
+idea of community membership by the end of 2024.
 
 ### Eligibility for candidacy
 
