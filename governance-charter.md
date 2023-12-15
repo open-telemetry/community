@@ -90,19 +90,33 @@ prior to each election.
 
 ### Eligibility for candidacy
 
-Anyone may nominate either themselves or someone else to be a candidate in the
-election. To be ratified as a candidate, the nominee must accept the nomination
-and three Members of Standing (including the nominator, if she/he has standing)
-from three different employers, must endorse the nomination.
+Anyone can be a candidate nominated by either themselves or someone else unless
+two other employees of the same company are already on the committee and not up
+for re-election (see [Maximal representation](#maximal-representation)). In case
+enough employees of the same company get enough votes to be elected so that the
+maximal representation is not respected anymore, only the highest-voted
+candidate(s) among them will get elected, with the other candidates having their
+candidacies nullified.
+
+To be ratified, candidates need three endorsements in total from members of
+standing from three different companies. When self-nominating, a candidate that
+is member of standing will need two more endorsements from members of standing
+from two other companies. When being nominated by a member of standing from a
+different company and accepting the nomination, the candidate that is a member
+of standing will have two endorsements already, needing only one more.
 
 Nominators are free to nominate as many people as they wish to. Members of
 Standing may endorse multiple nominees, but we expect endorsements to be in good
 faith. If this turns out to be a problem, this will be reconsidered.
 
+Endorsements should be comments containing the phrase "I support". Simply adding
+a code review or emoji reactions to the description is NOT sufficient and might
+be ambiguous on the intentions of the review or reactions.
+
 ### Eligibility for voting
 
 All Members of Standing are eligible to vote for the governance committee
-members. 
+members.
 
 ### Election process
 
@@ -112,19 +126,17 @@ to the respective positions.
 
 ### Maximal representation
 
-To encourage diversity there will be a maximum of one-third representation on
-the Governance Committee from any one company at any time. If the outcomes of
-an election result in greater than 1/3 representation (or maximum of two,
-whichever is greater), the lowest vote getters from any particular company will
-be removed until representation on the committee is less than one-third.
+To encourage diversity there will be a maximum of two Governance Committee
+members from any one company at any time.
 
-If percentages shift because of job changes, acquisitions, or other events,
-sufficient members of the committee must resign until max one-third
-representation is achieved. If it is impossible to find sufficient members to
-resign, the entire company’s representation will be removed and new special
-elections held. In the event of a question of company membership (for example
-evaluating independence of corporate subsidiaries) a majority of all
-non-involved Governance Committee members will decide. 
+If representation changes because of job changes, acquisitions, or other events,
+sufficient members of the committee must resign within 28 days until the maximum
+representation is respected. If it is impossible to find sufficient members to
+resign after that period, the entire company’s representation will be removed.
+In this case a special election will be held for those position, as [outlined
+below](#special-elections). In the event of a question of company membership
+(for example evaluating independence of corporate subsidiaries) a majority of
+all non-involved Governance Committee members will decide.
 
 ### Special Elections
 
