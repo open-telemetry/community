@@ -38,28 +38,34 @@ Based on previous participation in the meeting for preparings this proposal, we 
 -   Maintainers or approvers: \<to be added\>
 
 ### Project Leads
-[\@rrschulze](https://github.com/rrschulze) agrees to volunteer. <br />
-[Aaron Young](mailto:aaron.young@broadcom.com) from Broadcom is willing based on specific tasks and time requirements.
+[\@rrschulze](https://github.com/rrschulze) <br />
+[\@youngaaronm](https://github.com/youngaaronm) 
+
+### Staffing 
+[@MacNale](https://github.com/MacNale)
+[\@davdai01](https://github.com/davdai01)
+[\@jimporell](https://github.com/jimporell)
+[\@msomasu](https://github.com/msomasu)
+[\@jackjia-ibm](https://github.com/jackjia-ibm) 
 
 ### Slack Channel
 [https://cloud-native.slack.com/archives/C05PXDFTCPJ](https://cloud-native.slack.com/archives/C05PXDFTCPJ)
 
 ## Meeting Times 
--   For now, proposing: Tuesdays or Wednesdays at 10 a.m. PDT.
--   Please vote or please propose alternative times!
-    -   Aaron Young - Either will work for me. Tuesday is slightly preferable.
+-   For now, proposing: Tuesdays at 10 a.m. PDT.
 
 ## Timeline
-Start of workgroup at the beginning of November 2023. The focus is on the implementation of three topics in separate tracks: Semantic Conventions, Code Instrumentation and Collector Enhancements. All three tracks are of equal importance, whereby some of the activities for the track Collector Enhancements rely on the results of the track Semantic Conventions, e.g., when metrics about the virtualization layers of the mainframe have to be gathered. Based on the learnings from the SDK implementation for COBOL, the track for Code instrumentation will provide further SDK implementations for other mainframe-specific languages.
+Start of workgroup in January 2024. The focus is on the implementation of three topics in separate tracks: Semantic Conventions, Code Instrumentation and Collector Enhancements. All three tracks are of equal importance, whereby some of the activities for the track Collector Enhancements rely on the results of the track Semantic Conventions, e.g., when metrics about the virtualization layers of the mainframe have to be gathered. Based on the learnings from the SDK implementation for COBOL, the track for Code instrumentation will provide further SDK implementations for other mainframe-specific languages.
 
 ### Track: Semantic Conventions
--   Stage 1: Semantic conventions for basic mainframe concepts - 4Q2023/1Q2024
--   Stage 2: Semantic conventions for curated list of metrics - 2Q2024
+The focus of this track will be on mapping the mainframe concepts and metrics on the currently defined semantic conventions. Where no mapping can be done using the existing conventions, the corresponding requirements will be documented and they will be subject to enhancements of the conventions at a later stage.
+-   Stage 1: Semantic conventions for basic mainframe concepts - 1H2024
+-   Stage 2: Semantic conventions for curated list of metrics - 3Q2024
 
 ### Track: Code Instrumentation
--   Stage 1: Definition of approach for supporting instrumentation of mainframe-specific programming languages - 4Q2023.
--   Stage 2: SDK for COBOL - 1H2024
--   Stage 3: SDKs for other languages, e.g. PL/1, REXX or JCL - 2H2024
+-   Stage 1: Definition of approach for supporting instrumentation of mainframe-specific programming languages - 1Q2024.
+-   Stage 2: SDK for COBOL - 2H2024
+-   Stage 3: SDKs for other languages, e.g. PL/1, REXX or JCL - 1H2025
 
 ### Track: Collector Enhancements
 -   Stage 1: Make the Collector compatible (runnable) within mainframe environments and support resource detection. Should be able to run from Linux on IBM Z, the Container Extension of z/OS (zCX) and the z/OS Unix System Services (USS). (Note: s390x support for Linux on IBM Z and zCX is already addressed by this [PR](https://github.com/open-telemetry/opentelemetry-collector-releases/pull/384)).
