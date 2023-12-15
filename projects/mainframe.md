@@ -42,10 +42,10 @@ Based on previous participation in the meeting for preparings this proposal, we 
 [\@youngaaronm](https://github.com/youngaaronm) 
 
 ### Staffing 
-[@MacNale](https://github.com/MacNale)
-[\@davdai01](https://github.com/davdai01)
-[\@jimporell](https://github.com/jimporell)
-[\@msomasu](https://github.com/msomasu)
+[@MacNale](https://github.com/MacNale) <br />
+[\@davdai01](https://github.com/davdai01) <br />
+[\@jimporell](https://github.com/jimporell) <br />
+[\@msomasu](https://github.com/msomasu) <br />
 [\@jackjia-ibm](https://github.com/jackjia-ibm) 
 
 ### Slack Channel
