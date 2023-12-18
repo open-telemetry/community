@@ -107,7 +107,7 @@ Once a project is started, the working group should meet regularly for discussio
 
 ## Timeline
 
-Estimated timeframe: 6-12 Months
+Estimated time-frame: 6-12 Months
 
 * Q1 Focus
     * Kickoff
