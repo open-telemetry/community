@@ -1,7 +1,7 @@
 # How to create and configure meetings
 
-In OpenTelemetry we are using the CNCF's Zoom accounts. We currently own four
-identical zoom accounts, though most meetings are created by the first account.
+In OpenTelemetry we are using the CNCF's Zoom accounts. We currently own five
+identical zoom accounts.
 
 All rooms are configured the same way. Some notes on meetings configuration:
 
@@ -9,37 +9,55 @@ All rooms are configured the same way. Some notes on meetings configuration:
 - **There is no time limit on the length of the meeting**. Please make sure nobody is
   using this room for another meeting on the calendar when meeting is going long
   over time.
-- **Auto-recording is enabled for all meetings**. All OpenTelemetry public meetings are being recorded automatically. Find recordings at [YouTube](https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA).
+- **Auto-recording is enabled for all meetings**. All OpenTelemetry public meetings are recorded automatically
+  and [available on Zoom cloud](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s).
 
 Every meeting must contain a link to the meeting notes. The meeting notes
 document must be shared with write or commenting permissions.
 
 Anyone can request to be added or removed as a meeting participant. Request can
 be made via GitHub issue on this repository or contacting SIG maintainer via
-other channels like Gitter.
+other channels like Slack.
 
 All meetings must include [OpenTelemetry Calendar Invites Google Group](https://groups.google.com/g/opentelemetry-calendar)
-as a participant. Anybody who wants to recieve up to date invites for all OpenTelemetry
+as a participant. Anybody who wants to receive up to date invites for all OpenTelemetry
 meetings can join the group.
 
 ## Steps
-To create or edit a meeting, you need to have access to the Public OpenTelemetry calendar (a shared Google calendar)
-and access to one of our Zoom accounts or to a Google account that has already been linked to Zoom (such as cncf-opentelemetry-governance).
+To create or edit a meeting, you need to have access to the Public OpenTelemetry calendar (a shared Google calendar) and you must add a Zoom meeting link.
 
 ### Gaining Calendar Permissions
-All SIG maintainers have permission to edit the Public OpenTelemetry calendar.
-To get access to the calendar, please join the Google Group opentelemetry-calendar-contributors@googlegroups.com by submitting a request [here](https://groups.google.com/g/opentelemetry-calendar-contributors).
+All SIG maintainers can get access to edit the public OpenTelemetry calendar
+by submitting a request to join the [opentelemetry-calendar-contributors Google Group](https://groups.google.com/g/opentelemetry-calendar-contributors).
 If your identity is not recognizable from the e-mail you are using to request joining the group, please
 request to be added to this Google Group by creating an issue in this repository.
 
 Please keep the membership of this group up to date and accurate.
 
-### Gaining Zoom Permissions
-To create a new meeting, you will need to either link one of the OpenTelemetry Zoom accounts to your public calendar,
-or you can use the credentials for the cncf-opentelemetry-governance@lists.cncf.io Google account. Currently, using a shared set of credentials for
-the cncf-opentelemetry-governance@lists.cncf.io Google account is the preferred way to make edits, as it is already linked to Zoom.
+### Create the meeting
+The following details need to be set properly:
+- Title
+- Timeslot (make sure to use the correct time zone - Pacific Time - as the dates for switching DST differs between countries)
+- Recurrence pattern (usually weekly or bi-weekly)
+- Location (see below for the Zoom links)
+- Description
+  - A brief description on the scope of the meeting
+  - A link to the meeting notes
+    - The meeting notes should be owned by the shared Governance Committee Google account.
+      Having a document created can be requested from the GC via opening an issue in this repository.
+- Invited attendees: opentelemetry-calendar@googlegroups.com (see note on this Google Group above)
 
-You can gain access to the shared Google account by following the steps in [this document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#).
+### Adding a Zoom link to a meeting
+Open an issue in the community repository, requesting a new Zoom link.
+By requesting a new Zoom link that is only associated with a single meeting series, the meeting recordings
+can be associated with a meeting name.
+The Zoom link will be created in one of the 5 OpenTelemetry Zoom account.
+A single Zoom account should not be used for back-to-back meetings or for more than two meetings at the same time.
+You can see which Zoom account any potentially conflicting meetings are using in the meeting descriptions.
+(Note: posting the URLs publicly on GitHub leads to Zoom bombing by random bots).
+
+### Update the meetings overview
+All recurring meetings are listed in the [Community repo's README](../README.md#special-interest-groups), make sure to add/update the respective entry there.
 
 ## Zoom bombing prevention
 All meetings are created by Zoom with randomized passcodes, which are embedded into the shared calendar links.

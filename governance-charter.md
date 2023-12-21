@@ -1,13 +1,12 @@
 # OpenTelemetry Governance Committee Charter
 
-Last updated: September 2020
+Last updated: November 2023
 
 ## Overview
 
-This document describes the bootstrapping process for the OpenTelemetry
-Governance Committee. It describes the formation of the initial governance
-committee and its core responsibilities. This includes its governance processes
-and processes to reform itself as necessary.
+This document describes the goals, the scope and the structure of the
+OpenTelemetry Governance Committee (GC). It describes the election process for
+the Governance Committee and how the committee operates.
 
 ## Goals
 
@@ -35,7 +34,7 @@ following:
 - Decide, for the purpose of elections, who can vote.
 - Logo/landing page/marketing. 
 - Maintain relationships with CNCF. For instance, creating [documents describing
-  the project](https://github.com/cncf/toc/blob/master/proposals/opentelemetry.adoc)
+  the project](https://github.com/cncf/toc/blob/main/proposals/sandbox/opentelemetry.adoc)
 - Define, evolve, and defend the **vision, values, mission, and scope** of the
   project - to establish and maintain the soul of OpenTelemetry.
 - Decide how and when **official releases** of OpenTelemetry artifacts are
@@ -50,62 +49,16 @@ following:
 - **Delegate appropriate authority** to trusted individuals.
 
 This work is to be handled by the Governance Committee or delegated to other
-project groups like the Technical Committee (to be chartered by Fall 2019).
+project groups like the [Technical Committee](./tech-committee-charter.md).
 
 ## Committee Structure
 
-### Establishment of a governance committee
-
-To bootstrap the process of OpenTelemetry governance, 5 individuals (Ben
-Sigelman, Bogdan Drutu, Sergey Kanzhelev, Sarah Novotny, and Yuri Shkuro) were
-identified to be the *Bootstrap Committee*, to provide the initial process that
-can bootstrap the remainder of the process.
-
-The Bootstrap Committee will be replaced by the elected OpenTelemetry Governance
-Committee. Ultimately, the **OpenTelemetry Governance Committee will consist
-of 9 individual members** of the community **elected for 2 year terms**. The
-terms will be **staggered with 1 year elections** (alternating 4 seats and 5
-seats).
-
-To provide a level of continuity as this process is established, the initial
-committee will include continuity members, expanding the size to 9 members.
-Note that from the 2020 election to the 2021 election, the committee will
-include 11 members.
-
-In 2019 as this approval is enacted, the committee consists of the
-members of the bootstrap committee (Ben Sigelman, Bogdan Drutu, Sarah Novotny,
-Sergey Kanzhelev, Yuri Shkuro) plus 4 positions to be elected from the
-community. Of the 4 members that are elected, 2 will have a two year term and 2
-will have one year term. 
-
-One year later (in 2020) there will be an election to fill the two seats
-opening up, each with a two year term. The continuity members of the original
-bootstrap committee will continue to serve.
-
-One year after that (2021), there will be an election to fill the 5 open
-seats on the governance committee. The previous continuity members are
-eligible to run for these seats.
-
-The committee will continue to iterate with alternating elections of four and
-five members each year. 
-
-For clarity, a table describing this process is given below:
-
-| *Year* | *Continuity* | *Election Cohort #1*    | *Election Cohort #2*    | GC size post-election |
-| ------ | ------------ | ----------------------- | ----------------------- | --------------------- |
-| 2019   | 5 people     | **2 people** (2yr term) | **2 people** (1yr term) | 9 people (+4)         |
-| 2020   | -            | -                       | **4 people** (2yr term) | 11 people (-2, +4)    |
-| 2021   | 0 people     | **5 people** (2yr term) | -                       | 9 people (-7, +5)     |
-| 2022   | -            | -                       | **4 people** (2yr term) | 9 people (-4, +4)     |
-| 2023   | -            | **5 people** (2yr term) | -                       | 9 people (-5, +5)     |
+The **OpenTelemetry Governance Committee consists of 9 individual members** of
+the community **elected for 2 year terms**.
+The terms are **staggered with elections each year** (alternating 4 seats in even 
+years and 5 seats in odd years).
 
 ## Elections
-
-*Special note*: The bootstrap committee pledges to recuse itself from any direct
-election activities while they serve as continuity members. Members of the
-bootstrap committee will refrain from endorsing or otherwise advocating for any
-candidate (with the exception that the members of the bootstrap committee may
-vote in the elections, and may choose to run in the 2021 election).
 
 ### Members of Standing
 
@@ -137,19 +90,33 @@ around a more robust idea of community membership.
 
 ### Eligibility for candidacy
 
-Anyone may nominate either themselves or someone else to be a candidate in the
-election. To be ratified as a candidate, the nominee must accept the nomination
-and three Members of Standing (including the nominator, if she/he has standing)
-from three different employers, must endorse the nomination.
+Anyone can be a candidate nominated by either themselves or someone else unless
+two other employees of the same company are already on the committee and not up
+for re-election (see [Maximal representation](#maximal-representation)). In case
+enough employees of the same company get enough votes to be elected so that the
+maximal representation is not respected anymore, only the highest-voted
+candidate(s) among them will get elected, with the other candidates having their
+candidacies nullified.
+
+To be ratified, candidates need three endorsements in total from members of
+standing from three different companies. When self-nominating, a candidate that
+is member of standing will need two more endorsements from members of standing
+from two other companies. When being nominated by a member of standing from a
+different company and accepting the nomination, the candidate that is a member
+of standing will have two endorsements already, needing only one more.
 
 Nominators are free to nominate as many people as they wish to. Members of
 Standing may endorse multiple nominees, but we expect endorsements to be in good
 faith. If this turns out to be a problem, this will be reconsidered.
 
+Endorsements should be comments containing the phrase "I support". Simply adding
+a code review or emoji reactions to the description is NOT sufficient and might
+be ambiguous on the intentions of the review or reactions.
+
 ### Eligibility for voting
 
 All Members of Standing are eligible to vote for the governance committee
-members. 
+members.
 
 ### Election process
 
@@ -159,29 +126,17 @@ to the respective positions.
 
 ### Maximal representation
 
-To encourage diversity there will be a maximum of one-third representation on
-the Governance Committee from any one company at any time. If the outcomes of
-an election result in greater than 1/3 representation (or maximum of two,
-whichever is greater), the lowest vote getters from any particular company will
-be removed until representation on the committee is less than one-third.
+To encourage diversity there will be a maximum of two Governance Committee
+members from any one company at any time.
 
-If percentages shift because of job changes, acquisitions, or other events,
-sufficient members of the committee must resign until max one-third
-representation is achieved. If it is impossible to find sufficient members to
-resign, the entire company’s representation will be removed and new special
-elections held. In the event of a question of company membership (for example
-evaluating independence of corporate subsidiaries) a majority of all
-non-involved Governance Committee members will decide. 
-
-### Initial Election
-
-Because of the need to bootstrap a staggered election cycle, some of the initial
-committee members will only serve a single year term. These two people will be
-selected from the "lowest vote getters" from the four non-continuity committee
-members in the initial election.
-
-The bootstrap committee will operate the election and circulate a timeline for
-nominations, and the vote.
+If representation changes because of job changes, acquisitions, or other events,
+sufficient members of the committee must resign within 28 days until the maximum
+representation is respected. If it is impossible to find sufficient members to
+resign after that period, the entire company’s representation will be removed.
+In this case a special election will be held for those position, as [outlined
+below](#special-elections). In the event of a question of company membership
+(for example evaluating independence of corporate subsidiaries) a majority of
+all non-involved Governance Committee members will decide.
 
 ### Special Elections
 
@@ -190,8 +145,7 @@ special election for that position will be held as soon as possible. The same
 group of people as described in "eligibility for voting" will vote in the
 special election. A committee member elected in a special election will serve
 out the remainder of the term for the person they are replacing, regardless of
-the length of that remainder. If a continuity member resigns or otherwise is
-lost from the Committee, that position will not be filled.
+the length of that remainder.
 
 ### Limiting Corporate Campaigning Support
 
@@ -232,3 +186,47 @@ majority vote of the governance committee members, but closed meetings do not
 count towards the required meeting frequency. The governance committee will
 inform the community if a particular meeting is closed, as well as the general
 reasons for this, prior to the meeting taking place.
+
+## Community Manager Role
+
+In order to facilitate end-user and contributor experience programs that cut
+across multiple SIGs in the OpenTelemetry project, the governance committee
+may appoint Community Managers (CMs) to act as liaisons, facilitators, and 
+organizers for such programs. The goal of this role is to ensure the health of
+the OpenTelemetry end-user and contributor community.
+
+### Community Manager Responsibilities
+
+- Act as stewards for the OpenTelemetry end-user and contributor community by
+  organizing events and coordinating programs.
+- Manage the OpenTelemetry social media and blog presence.
+- Work with the CNCF and member organizations on cross-functional projects as
+  needed.
+- Track and report on OpenTelemetry end-user and contributor community health
+  for the GC.
+- Grow the OpenTelemetry end-user and contributor community by advocating for
+  programs and initiatives that will attract new users or aid contributor
+  experience.
+  
+### Community Manager Eligibility, Term, and Selection
+
+CMs shall be nominated and approved by the GC for one-year terms on an as-needed 
+basis, by simple majority vote. The GC shall re-confirm CMs on an annual basis, at
+the first meeting following an annual GC election. A CM that wishes to step down 
+from their role shall notify the GC at least 30 days before the next GC meeting.
+
+The GC may appoint individuals who are not part of the OpenTelemetry project. 
+
+The GC may dismiss a CM for violations of the project Code of Conduct or a 
+failure to uphold the responsibilities of the role.
+
+### Community Manager Rights and Permissions
+
+A CM may act as an extension of the GC in pursuing their responsibilities. Pursuant
+to this, the GC should hold CMs accountable for their actions if they reflect poorly
+on the project, its contributors, or the CNCF. Thus, CMs should work in collaboration
+with the GC, especially if their actions could be construed as controversial. They
+will be the point of contact for the CNCF on events, swag, communications, and
+other programs as needed. Thus, they will have access to Service Desk. Other
+permissions (for example, repository creation and management) can be granted by
+the GC on an as-needed basis.
