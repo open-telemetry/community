@@ -85,7 +85,7 @@ criteria. Exception eligibility applications will be approved by the Governance
 Committee by a simple majority vote. The exception process will be used as data
 points for refining the criteria for the future.
 
-It is the responsibility of the Governance Committee to refine these criteria 
+It is the responsibility of the Governance Committee to refine these criteria
 prior to each election.
 
 ### Eligibility for candidacy
