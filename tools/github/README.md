@@ -21,4 +21,4 @@ applications and integrations with the OpenTelemetry organization.
 | [Scope App](https://github.com/apps/scope-app)        | TBD                                                  | TBD                         | TBD                                                                    |
 | [Slack](https://github.com/apps/slack)            | Slack integration for GitHub                         | TBD                         | TBD                                                                    |
 | [Stale](https://github.com/apps/stale)            | Stale issue bot                                      | Org-wide                    | n/a                                                                    |
-| Welcome          | TBD                                                  | TBD                         | TBD                                                                    |
+| [Welcome](https://github.com/apps/welcome)          | TBD                                                  | TBD                         | TBD                                                                    |
