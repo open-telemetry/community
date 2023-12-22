@@ -6,7 +6,7 @@ applications and integrations with the OpenTelemetry organization.
 | Name             | Description                                          | Scopes                      | Notes                                                                  |
 |------------------|------------------------------------------------------|-----------------------------|------------------------------------------------------------------------|
 | [Azure Pipelines](https://github.com/apps/azure-pipelines)  | Support for Azure Pipelines                          | Org-wide                    | Included by default                                                    |
-| ciMate           | TBD                                                  | TBD                         | TBD                                                                    |
+| [ciMate](https://github.com/apps/cimate)           | TBD                                                  | TBD                         | TBD                                                                    |
 | CircleCI Checks  | Integration with CircleCI                            | TBD                         | TBD                                                                    |
 | Codecov          | Integration with Codecov for PR code coverage checks | TBD                         | TBD                                                                    |
 | Forking Renovate | Dependecy updates via Renovate                       | TBD                         | TBD                                                                    |
