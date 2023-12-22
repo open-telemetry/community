@@ -19,6 +19,6 @@ applications and integrations with the OpenTelemetry organization.
 | project-bot      | TBD                                                  | TBD                         | TBD                                                                    |
 | [Renovate](https://github.com/apps/renovate)         | Dependency updates via Renovate                       | TBD                         | TBD                                                                    |
 | [Scope App](https://github.com/apps/scope-app)        | TBD                                                  | TBD                         | TBD                                                                    |
-| Slack            | Slack integration for GitHub                         | TBD                         | TBD                                                                    |
+| [Slack](https://github.com/apps/slack)            | Slack integration for GitHub                         | TBD                         | TBD                                                                    |
 | Stale            | Stale issue bot                                      | Org-wide                    | n/a                                                                    |
 | Welcome          | TBD                                                  | TBD                         | TBD                                                                    |
