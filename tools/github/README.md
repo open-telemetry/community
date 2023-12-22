@@ -7,7 +7,7 @@ applications and integrations with the OpenTelemetry organization.
 |------------------|------------------------------------------------------|-----------------------------|------------------------------------------------------------------------|
 | [Azure Pipelines](https://github.com/apps/azure-pipelines)  | Support for Azure Pipelines                          | Org-wide                    | Included by default                                                    |
 | [ciMate](https://github.com/apps/cimate)           | TBD                                                  | TBD                         | TBD                                                                    |
-| CircleCI Checks  | Integration with CircleCI                            | TBD                         | TBD                                                                    |
+| [CircleCI Checks](https://github.com/apps/circleci-checks)  | Integration with CircleCI                            | TBD                         | TBD                                                                    |
 | Codecov          | Integration with Codecov for PR code coverage checks | TBD                         | TBD                                                                    |
 | Forking Renovate | Dependecy updates via Renovate                       | TBD                         | TBD                                                                    |
 | EasyCLA          | Required CLA checking from LF                        | Org-wide                    | This must be enabled for all repositories for PRs against main branch. |
