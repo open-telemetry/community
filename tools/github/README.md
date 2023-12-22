@@ -5,7 +5,7 @@ applications and integrations with the OpenTelemetry organization.
 
 | Name             | Description                                          | Scopes                      | Notes                                                                  |
 |------------------|------------------------------------------------------|-----------------------------|------------------------------------------------------------------------|
-| Azure Pipelines  | Support for Azure Pipelines                          | Org-wide                    | Included by default                                                    |
+| [Azure Pipelines](https://github.com/apps/azure-pipelines)  | Support for Azure Pipelines                          | Org-wide                    | Included by default                                                    |
 | ciMate           | TBD                                                  | TBD                         | TBD                                                                    |
 | CircleCI Checks  | Integration with CircleCI                            | TBD                         | TBD                                                                    |
 | Codecov          | Integration with Codecov for PR code coverage checks | TBD                         | TBD                                                                    |
