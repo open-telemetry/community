@@ -13,6 +13,7 @@ Get the database client semantic conventions to stability, and afterwards update
 
 * @trask project lead
 * @lmolkova domain expert
+* TBD more domain experts
 * TBD technical committee sponsor
 * TBD engineers willing to prototype in at least two languages
 * TBD maintainers or approvers from languages committed to reviewing the prototypes
