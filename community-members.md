@@ -6,15 +6,15 @@ This is the current Governance Committee, per the [Governance Committee
 Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md),
 in alphabetical order:
 
-- [Alolita Sharma](https://github.com/alolita), AWS, until October 2024
-- [Ben Sigelman](https://github.com/bhs), Lightstep, until October 2023
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk, until October 2023
+- [Alolita Sharma](https://github.com/alolita), Apple, until October 2024
+- [Austin Parker](https://github.com/austinlparker), Honeycomb, until October 2025
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2024
-- [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs, until October 2023
+- [Daniel Gomez Blanco](https://github.com/danielgblanco), Skyscanner, until October 2025
+- [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs, until October 2025
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2024
-- [Ted Young](https://github.com/tedsuo), Lightstep, until October 2023
+- [Severin Neumann](https://github.com/svrnm), Cisco, until October 2025
+- [Ted Young](https://github.com/tedsuo), Lightstep, until October 2025
 - [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2024
-- [Yuri Shkuro](https://github.com/yurishkuro), Meta, until October 2023
 
 ## Technical Committee
 
@@ -23,7 +23,7 @@ Charter](https://github.com/open-telemetry/community/blob/master/tech-committee-
 in alphabetical order:
 
 - [Armin Ruech](https://github.com/arminru), Dynatrace
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Splunk
+- [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake
 - [Carlos Alberto](https://github.com/carlosalberto), Lightstep
 - [Jack Berg](https://github.com/jack-berg), New Relic
 - [Josh MacDonald](https://github.com/jmacd), Lightstep
@@ -129,14 +129,7 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 Repo: [open-telemetry/opentelemetry.io](https://github.com/open-telemetry/opentelemetry.io/)
 
-Approvers:
-
-Maintainers:
-
-- [Morgan McLean](https://github.com/mtwo), Splunk
-- [Steve Flanders](https://github.com/flands), Splunk
-- [Jigar Parsana](https://github.com/jparsana), Google
-- [Austin Parker](https://github.com/austinlparker), Lightstep
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Docs and Website can be found in the [open-telemetry/opentelemetry.io README file](https://github.com/open-telemetry/opentelemetry.io#contributing).
 
 ## Erlang
 
@@ -178,10 +171,13 @@ Rust
 
 ## Governance Committee Emeritus
 
+- [Ben Sigelman](https://github.com/bhs), Lightstep, until October 2023
+- [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake, until October 2023
 - [Constance Caramanolis](https://github.com/ccaraman), Splunk, until October 2021
 - [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2022
 - [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google, until October 2021
+- [Yuri Shkuro](https://github.com/yurishkuro), Meta, until October 2023
 
 ## Technical Committee Emeritus
 
