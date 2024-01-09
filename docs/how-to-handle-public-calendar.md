@@ -13,7 +13,8 @@ All rooms are configured the same way. Some notes on meetings configuration:
   and [available on Zoom cloud](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s).
 
 Every meeting must contain a link to the meeting notes. The meeting notes
-document must be shared with write or commenting permissions.
+document must be shared with write or commenting permissions. If giving edit permissions to everyone,
+go into the document share settings and uncheck "Editors can change permissions and share".
 
 Anyone can request to be added or removed as a meeting participant. Request can
 be made via GitHub issue on this repository or contacting SIG maintainer via
