@@ -16,7 +16,7 @@ This proposal has been created as result of a [series of meetings](https://docs.
 
 ## Deliverables
 
--   Definition of semantic conventions that capture the concepts of the mainframe including hardware, virtualization, z/OS and subsystems, Linux on IBM Z by aligning to and extending the existing semantic conventions across resources, metrics, logs, and traces. The enhancements of the semantic conventions are assumed to be generically applicable to the mainframe and apply to any OS on the mainframe incl. TPF and z/VSE. The approach for enhancing the semantic conventions will be based on the existing definitions and the on-going work for converging with the Elastic Common Schema (ECS), define rules for mapping the concepts of the mainframe to the existing conventions and extend them with additional attributes where needed, e.g., for representing the different types of CPU utilization in the multi-layer environemnt of the mainframe. 
+-   Definition of semantic conventions that capture the concepts of the mainframe including hardware, virtualization, z/OS and subsystems, Linux on IBM Z by aligning to and extending the existing semantic conventions across resources, metrics, logs, and traces. The enhancements of the semantic conventions are assumed to be generically applicable to the mainframe and apply to any OS on the mainframe incl. TPF and z/VSE. The approach for enhancing the semantic conventions will be based on the existing definitions and the on-going work for converging with the Elastic Common Schema (ECS), define rules for mapping the concepts of the mainframe to the existing conventions and extend them with additional attributes where needed, e.g., for representing the different types of CPU utilization in the multi-layer environment of the mainframe. 
 -   Alignment of semantic conventions for virtualization between mainframe and other virtualizations solutions, as far as feasible and reasonable
 -   Description of mapping between names and mainframe terms (for conventions not specifically defined as mainframe extensions)
 -   Definition of a curated, most meaningful set of metrics (out of the thousands of available metrics) to be fully supported by the semantic conventions.
@@ -28,7 +28,7 @@ This proposal has been created as result of a [series of meetings](https://docs.
 
 ## Staffing / Help wanted
 
-Based on previous participation in the meeting for preparings this proposal, we foresee continued contributions from 12 to 15 people. In addition, this group will welcome contributors from various areas:
+Based on previous participation in the meeting for preparing this proposal, we foresee continued contributions from 12 to 15 people. In addition, this group will welcome contributors from various areas:
 -   We look for participation from mainframe experts of all kinds: observability and monitoring experts, performance experts, virtualization experts, architects, and users of observability solutions for the mainframe and those who want to extend, simplify, and improve their current observability solution to the mainframe.
 -   We welcome developers working with Assembler, COBOL, PL/1, and REXX, and engineers willing to contribute with the instrumentation for mainframe-specific programming languages.
 -   We invite everybody to join who is passionate about the mainframe.
