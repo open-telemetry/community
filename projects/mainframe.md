@@ -42,11 +42,16 @@ Based on previous participation in the meeting for preparing this proposal, we f
 [\@youngaaronm](https://github.com/youngaaronm) 
 
 ### Staffing 
-[@MacNale](https://github.com/MacNale) <br />
+[\@MacNale](https://github.com/MacNale) <br />
 [\@davdai01](https://github.com/davdai01) <br />
 [\@jimporell](https://github.com/jimporell) <br />
 [\@msomasu](https://github.com/msomasu) <br />
 [\@jackjia-ibm](https://github.com/jackjia-ibm) 
+
+#### GC sponsors 
+[\@mtwo](https://github.com/mtwo) <br />
+[\@alolita](https://github.com/alolita) <br />
+[\@dyladan](https://github.com/dyladan)
 
 ### Slack Channel
 [https://cloud-native.slack.com/archives/C05PXDFTCPJ](https://cloud-native.slack.com/archives/C05PXDFTCPJ)
