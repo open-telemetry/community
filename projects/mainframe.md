@@ -53,6 +53,11 @@ Based on previous participation in the meeting for preparing this proposal, we f
 [\@alolita](https://github.com/alolita) <br />
 [\@dyladan](https://github.com/dyladan)
 
+#### TC support
+The TC is supportive of the mainframe effort given that it doesn’t stretch existing OTel technical leadership. This means:
+-   No major semantic changes are required in the short-term, the focus should be on fitting mainframe telemetry metadata into the existing OTel semantics
+-   There are net-new people to OTel leading this.
+
 ### Slack Channel
 [https://cloud-native.slack.com/archives/C05PXDFTCPJ](https://cloud-native.slack.com/archives/C05PXDFTCPJ)
 
