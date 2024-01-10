@@ -1,6 +1,7 @@
 version: 0.2
 ignorePaths: ["elections/**/*"]
 words:
+    - adot
     - apac
     - cicd
     - cncf
@@ -37,6 +38,7 @@ words:
     - subprojects
     - subrepository
     - supermajority
+    - tekton
     - tiebreaking
     - timebox
     - timeboxing
