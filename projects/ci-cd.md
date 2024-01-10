@@ -93,6 +93,8 @@ All stages will require a project lead, domain experts, and engineers at a minim
 * @darren17082 (GitLab)
 * @sguyon (GitLab)
 * @kuisathaverat (Elastic)
+* @mhausenblas (AWS, ADOT)
+* @afrittoli (IBM, Tekton, CD Events)
 
 Need more:
 
