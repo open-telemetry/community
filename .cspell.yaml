@@ -5,11 +5,13 @@ words:
     - cncf
     - codecov
     - codeowners
+    - DASD
     - dynatrace
     - easycla
     - emea
     - faas
     - gitter
+    - Hostmetrics
     - lightstep
     - maintainership
     - observiq
@@ -30,6 +32,7 @@ words:
     - subprojects
     - subrepository
     - supermajority
+    - Sysplex
     - tiebreaking
     - timebox
     - timeboxing
