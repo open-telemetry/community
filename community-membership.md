@@ -212,7 +212,7 @@ The following apply to the subproject for which one would be a maintainer.
 - Define milestones and releases.
   - Decides on when PRs are merged to control the release scope.
 - Mentor and guide approvers, reviewers, and contributors to the subproject.
-- Escalate *reviewer*, *approver*, and *maintainer* workflow concerns
+- Escalate *reviewer*, *approver*, *maintainer* and other workflow concerns
   (i.e. responsiveness, availability, and general contributor community health)
   to the TC.
 - Ensure continued health of subproject:
