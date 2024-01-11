@@ -291,7 +291,7 @@ CONTRIBUTING, CODEOWNERS, or README of the subproject they are stepping away
 from. GitHub usernames listed under the `emeritus` section should be removed
 from the approvers list, and will no longer have any official responsibilities
 with the project. When a contributor returns to being more active, they may be
-promoted back to a their previous position at the discretion of the current
+promoted back to their previous position at the discretion of the current
 maintainers following the process defined above.
 
 [Governance Committee]: ./governance-charter.md
