@@ -7,7 +7,7 @@ a path forward for the OpenTelemetry community.
 
 ### Why
 
-The goal of this project is to establish standard semantic conventions for Continuous
+The goal of this project is to establish standard semantic conventions and specification for Continuous
 Integration (CI) and Continuous (CD) observability. This will provide a common language
 and standardized formats for CI/CD observability, enabling the community to observe CI/CD systems.
 
@@ -69,8 +69,8 @@ The following is a list of prototypes, plugins, components, and CI/CD related to
 | Ansible        | [Ansible OpenTelemetry Callback Plugin](https://docs.ansible.com/ansible/latest/collections/community/general/opentelemetry_callback.html)                  |                                                                                                    | * Tracing in Ansible playbooks                                |
 | JUnit          | [JUnit to OpenTelemetry](https://github.com/mdelapenya/junit2otlp)                                                                                          |                                                                                                    | * Tracing of JUnit test results                               |
 | Eiffel         | [Eiffel CI/CD Event Protocol](https://eiffel-community.github.io/)                                                                                          |                                                                                                    | * Event protocol for CI/CD observability and interoperability |
-| CDEvents       | [CD Event Protocol](https://cdevents.dev/)                                                                                                                  |                                                                                                    | * Event protocol for CI/CD observability and interoperability |
-| Tekton         | [Tracing Tekton Enhancement Proposal](https://github.com/tektoncd/community/blob/main/teps/0124-distributed-tracing-for-tasks-and-pipelines.md)             |                                                                                                    | * Tekton Task and Pipeline Tracing                            |
+| CDEvents      | [CD Event Protocol](https://cdevents.dev/)                                                                                                                  |                                                                                                    | * Event protocol for CI/CD observability and interoperability |
+
 
 ## Staffing / Help Wanted
 
@@ -94,7 +94,7 @@ All stages will require a project lead, domain experts, and engineers at a minim
 * @sguyon (GitLab)
 * @kuisathaverat (Elastic)
 * @mhausenblas (AWS, ADOT)
-* @afrittoli (IBM, Tekton, CDEvents)
+* @afrittoli (IBM, Tekton, CD Events)
 
 Need more:
 
