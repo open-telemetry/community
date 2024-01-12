@@ -3,6 +3,7 @@ ignorePaths: ["elections/**/*"]
 words:
     - adot
     - apac
+    - cdevents
     - cicd
     - cncf
     - codecov
