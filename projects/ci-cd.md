@@ -8,10 +8,10 @@ a path forward for the OpenTelemetry community.
 ### Why
 
 The goal of this project is to establish standard semantic conventions specification for Continuous
-Integration (CI) and Continuous (CD) observability. This will provide a common language
+Integration (CI) and Continuous Delivery (CD) observability. This will provide a common language
 and standardized formats for CI/CD observability, enabling the community to observe CI/CD systems.
 
-This will broaden the target audience of OpenTelemetry to Release Engineering and DevOps teams,
+This will broaden the target audience of OpenTelemetry to Release Engineering, Platform Engineering, and DevOps teams,
 further cementing OpenTelemetry as the industry standard Observability framework.
 
 The timing is ripe to start now. The [CI/CD Observability OTEP](https://github.com/open-telemetry/oteps/pull/223/files)
@@ -95,6 +95,8 @@ All stages will require a project lead, domain experts, and engineers at a minim
 * @kuisathaverat (Elastic)
 * @mhausenblas (AWS, ADOT)
 * @afrittoli (IBM, Tekton, CDEvents)
+* @pmpaulino (Liatrio)
+* @ericchapman80 (Liatrio)
 
 Need more:
 
