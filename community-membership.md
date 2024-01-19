@@ -6,7 +6,7 @@ OpenTelemetry. The OpenTelemetry project is subdivided into subprojects under
 Group). Responsibilities for most roles are scoped to these subprojects (repos).
 
 The OpenTelemetry [Governance Committee][] owns this document and process until
-delegated. They can be reached via e-mail cncf-opentelemetry-governance@lists.cncf.io.
+delegated. They can be reached via e-mail <cncf-opentelemetry-governance@lists.cncf.io>.
 
 | **Role**   | **Responsibilities**                                  | **Requirements**                                             | **Defined by**                                               |
 | ---------- | ----------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -54,7 +54,7 @@ Defined by: Member of the OpenTelemetry GitHub organization
 - [Joined the Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q)
   - [Get an invite to join CNCF](https://slack.cncf.io/)
 - Have read the [contributor
-  guide](https://github.com/open-telemetry/community/blob/master/CONTRIBUTING.md)
+  guide](https://github.com/open-telemetry/community/blob/main/CONTRIBUTING.md)
 - Actively contributing to 1 or more subprojects.
 - Sponsored by 2 approvers. Note the following requirements for sponsors:
   - Sponsors must have close interactions with the prospective member - e.g.
@@ -69,7 +69,7 @@ Defined by: Member of the OpenTelemetry GitHub organization
   [OpenTelemetry/community](https://github.com/open-telemetry/community) repo
   - Ensure your sponsors are `@mentioned` on the issue
   - Complete every item on the checklist ([preview the current version of the
-    template](https://github.com/open-telemetry/community/blob/master/.github/ISSUE_TEMPLATE/membership.md))
+    template](https://github.com/open-telemetry/community/blob/main/.github/ISSUE_TEMPLATE/membership.md))
   - Make sure that the list of contributions included is representative of your
     work on the project.
 - Have your sponsoring reviewers reply confirmation of sponsorship: `I support`
@@ -257,7 +257,7 @@ to reach consensus on a technical issue. While it's healthy and appropriate to
 make a sincere attempt to understand all points of view and consider the
 tradeoffs, it's also healthy to occasionally "disagree and commit."
 
-Within OpenTelemetry, SIG Maintainers are chosen specifically _because_ they
+Within OpenTelemetry, SIG Maintainers are chosen specifically *because* they
 are domain experts, so we would like to keep as much of the decision-making
 authority with the SIG Maintainers rather than immediately "escalating" to the
 overall OpenTelemetry-wide Technical Committee. As such, this is
