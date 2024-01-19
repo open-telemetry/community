@@ -74,6 +74,14 @@ The following is a list of prototypes, plugins, components, and CI/CD related to
 
 ## Staffing / Help Wanted
 
+### TC Sponsorship
+
+Initial TC Contact: @carlosalberto 
+
+> Decision was made in the TC syncs that: 
+> No fulltime TC sponsorship needed at this time because there are no immediate major
+> Specification changes are foreseen. 
+
 ### Required staffing
 
 All stages will require a project lead, domain experts, and engineers at a minimum. 
@@ -102,12 +110,13 @@ Need more:
 
 - [x] domain experts
 - [x] engineers
-- [ ] TCs 
+- [x] TCs 
 - [ ] potentially maintainers/approvers in the event that we build language specific prototypes
 
 ## Meeting Times
 
-Once a project is started, the working group should meet regularly for discussion. These meeting times should be posted on the OpenTelemetry public calendar.
+This SIG will begin meeting during the regular Monday Semvonc SIG calls that already exists.
+This group will start meeting independently in the future as the project progresses.
 
 ## Timeline
 
