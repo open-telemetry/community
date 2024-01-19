@@ -115,7 +115,7 @@ Need more:
 
 ## Meeting Times
 
-This SIG will begin meeting during the regular Monday Semvonc SIG calls that already exists.
+This SIG will begin meeting during the regular Monday Semantic Conventions SIG calls that already exists.
 This group will start meeting independently in the future as the project progresses.
 
 ## Timeline
