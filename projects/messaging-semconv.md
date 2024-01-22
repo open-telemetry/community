@@ -25,7 +25,7 @@ TC sponsor
 Domain experts
 
 * @dpauls
-* @joaograssi
+* @joaopgrassi
 * @lmolkova
 
 Maintainers, approvers, and engineers willing to prototype and review
