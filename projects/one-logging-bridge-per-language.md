@@ -1,6 +1,6 @@
 ### Description
 
-During the joint TC/GC call on Jan 11, we agreed on a few items we'd like to accomplish this year. One such item was creating at least one logging bridge per Language SIG, so that our end-users can start using OTLP Logging natively on their applications.
+During the joint TC/GC call on Jan 11 2024, we agreed on a few items we'd like to accomplish this year. One such item was creating at least one logging bridge per Language SIG, so that our end-users can start using OTLP Logging natively in their applications.
 
 We'll strive to get at least one logging bridge for each supported language. Language SIGs will be free to decide which bridge to implement based on the needs of their audiences.
 
