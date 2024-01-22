@@ -24,6 +24,7 @@ TC sponsor
 
 Domain experts
 
+* @alevenberg
 * @dpauls
 * @joaopgrassi
 * @lmolkova
