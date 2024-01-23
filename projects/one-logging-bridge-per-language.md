@@ -24,6 +24,7 @@ Languages (100% of the languages available when this issue was created):
 - [ ] One Logging Bridge per language - Python
 - [ ] One Logging Bridge per language - Ruby
 - [ ] One Logging Bridge per language - Rust
+- [ ] One Logging Bridge per language - Swift
 
 ### Staffing / Help Wanted
 
