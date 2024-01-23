@@ -13,6 +13,8 @@ Teams involved in this:
 * @open-telemetry/collector-contrib-approvers 
 * @open-telemetry/collector-maintainers 
 * @open-telemetry/collector-contrib-maintainer 
+* @open-telemetry/docs-maintainers
+* @open-telemetry/docs-approvers
  
 ### Project Board
 
@@ -27,7 +29,7 @@ The current goal (subject to change) is to have deliverables covering our two cu
 * Multi-arch container images
 
 #### Nice to have
-* OS-specific packages for Linux (deb, rpm, …)
+* OS-specific packages for Linux (deb, rpm, …) and Macos (homebrew)
 
 ### Staffing / Help Wanted
 
