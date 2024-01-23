@@ -105,6 +105,8 @@ All stages will require a project lead, domain experts, and engineers at a minim
 * @afrittoli (IBM, Tekton, CDEvents)
 * @pmpaulino (Liatrio)
 * @ericchapman80 (Liatrio)
+* @oleg-nenashev (Gradle, Jenkins)
+* @lucavallin (GitHub)
 
 Need more:
 
