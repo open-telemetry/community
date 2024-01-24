@@ -35,7 +35,7 @@ Maintainers, approvers, and engineers willing to prototype and review
 
 ## Meeting Times
 
-We will keep the [established meeting at 8 AM PST](https://github.com/open-telemetry/community?tab=readme-ov-file#specification-sigs).
+We will keep the [established meeting Thursdays at 8 AM PST](https://github.com/open-telemetry/community?tab=readme-ov-file#specification-sigs).
 
 ## Timeline
 
