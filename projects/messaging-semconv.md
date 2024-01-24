@@ -18,9 +18,10 @@ Project lead
 
 * @pyohannes
 
-TC sponsor
+GC/TC sponsors
 
 * @carlosalberto
+* @trask
 
 Domain experts
 
