@@ -14,17 +14,17 @@ For each one of the following languages, there should be at least one logging br
 
 Languages (100% of the languages available when this issue was created):
 
-- [ ] One Logging Bridge per language - C++
-- [ ] One Logging Bridge per language - .NET
-- [ ] One Logging Bridge per language - Erlang
-- [ ] One Logging Bridge per language - Go
-- [ ] One Logging Bridge per language - Java
-- [ ] One Logging Bridge per language - JavaScript
-- [ ] One Logging Bridge per language - PHP
-- [ ] One Logging Bridge per language - Python
-- [ ] One Logging Bridge per language - Ruby
-- [ ] One Logging Bridge per language - Rust
-- [ ] One Logging Bridge per language - Swift
+- One Logging Bridge per language - C++ [(#1900)](https://github.com/open-telemetry/community/issues/1900)
+- One Logging Bridge per language - .NET [(#1901)](https://github.com/open-telemetry/community/issues/1901)
+- One Logging Bridge per language - Erlang [(#1902)](https://github.com/open-telemetry/community/issues/1902)
+- One Logging Bridge per language - Go [(#1903)](https://github.com/open-telemetry/community/issues/1903)
+- One Logging Bridge per language - Java [(#1904)](https://github.com/open-telemetry/community/issues/1904)
+- One Logging Bridge per language - JavaScript [(#1905)](https://github.com/open-telemetry/community/issues/1905)
+- One Logging Bridge per language - PHP [(#1906)](https://github.com/open-telemetry/community/issues/1906)
+- One Logging Bridge per language - Python [(#1907)](https://github.com/open-telemetry/community/issues/1907)
+- One Logging Bridge per language - Ruby [(#1908)](https://github.com/open-telemetry/community/issues/1908)
+- One Logging Bridge per language - Rust [(#1909)](https://github.com/open-telemetry/community/issues/1909)
+- One Logging Bridge per language - Swift [(#1910)](https://github.com/open-telemetry/community/issues/1910)
 
 ### Staffing / Help Wanted
 
