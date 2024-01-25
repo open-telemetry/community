@@ -31,6 +31,7 @@ Project lead
 Sponsoring TC members
 
 * @carlosalberto
+* @jack-berg
 
 Engineers contributing to the working group
 
