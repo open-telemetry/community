@@ -116,14 +116,16 @@ members of this group.
 
 The existing member must:
 
-- [ ] Invite new member to the following mailing lists:
+- [ ] Invite new member as `Moderator`, ensuring that they have the same
+  privileges as existing members, to the following mailing lists:
   - https://lists.cncf.io/g/cncf-opentelemetry-governance
   - https://lists.cncf.io/g/cncf-otel-zoomadmins
-- [ ] Open CNCF Service Desk ticket to invite new member to https://lists.cncf.io/g/cncf-opentelemetry-maintainers
+- [ ] Open CNCF Service Desk ticket to invite new member as `Member` to 
+  https://lists.cncf.io/g/cncf-opentelemetry-maintainers
 
 The new member must:
 - [ ] Accept invitations to mailing lists above, creating an account on https://lists.cncf.io
-  if necessary.
+  if necessary, using their preferred email address.
 
 ### Google Drive
 OpenTelemetry handles minutes and other ad-hoc documents in Google Drive.
@@ -139,11 +141,14 @@ The new member must:
 
 ### Google Calendar
 All OpenTelemetry public meetings are handled via Google Calendars (see [How to handle public calendar](https://github.com/open-telemetry/community/blob/main/docs/how-to-handle-public-calendar.md)
-for more details).
+for more details). People in the  `opentelemetry-calendar-contributors` Google
+Group have write access to the OpenTelemetry public calendar. To view and manage
+members of this group one must use the `opentelemetry.calendar.owner@gmail.com`
+account.
 
 The existing member must:
 
-- [ ] Add user as `Owner` of https://groups.google.com/g/opentelemetry-calendar-contributors
+- [ ] Add user as `Owner` of https://groups.google.com/g/opentelemetry-calendar-contributors.
 
 The new member must:
 
