@@ -112,7 +112,7 @@ Link: https://groups.google.com/g/opentelemetry-calendar
 
 - Private mailing list for OpenTelemetry Governance Committee.
 - All GC members AND CNCF reps (Amye Scavarda Perrin, Chris Aniszczyk, Taylor Waggoner) are on the list and are list moderators.
-- Admin: [add member](https://lists.cncf.io/g/cncf-opentelemetry-governance/members).
+- Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
 
 ### YouTube channel OpenTelemetry
 
