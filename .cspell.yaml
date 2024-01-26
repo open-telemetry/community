@@ -8,12 +8,14 @@ words:
     - cncf
     - codecov
     - codeowners
+    - DASD
     - dynatrace
     - easycla
     - eiffel
     - emea
     - faas
     - gitter
+    - Hostmetrics
     - jemmic
     - keptn
     - kubecon
@@ -30,6 +32,7 @@ words:
     - passcodes
     - proto
     - pytest
+    - REXX
     - runtimes
     - signup
     - skyscanner
@@ -39,6 +42,7 @@ words:
     - subprojects
     - subrepository
     - supermajority
+    - Sysplex
     - tekton
     - tiebreaking
     - timebox
@@ -72,6 +76,7 @@ words:
     - codeboten
     - danielgblanco
     - darren17082
+    - davdai
     - denisivan
     - dennisme
     - dnsmichi
@@ -85,8 +90,10 @@ words:
     - fong
     - henrikrexed
     - horovits
+    - jackjia
     - jaglowski
     - jigar
+    - jimporell
     - jpkrohling
     - jsuereth
     - juraci
@@ -106,10 +113,12 @@ words:
     - mayurkale
     - mhausenblas
     - mirabella
+    - msomasu
     - mtwo
     - mwear
     - najaryan
     - nakamura
+    - Nale
     - neumann
     - neumüller
     - novotny
@@ -122,6 +131,7 @@ words:
     - poncelow
     - reiley
     - reyang
+    - rrschulze
     - ruech
     - rynn
     - salnikov
@@ -150,6 +160,7 @@ words:
     - xibz
     - xoscar
     - yahn
+    - youngaaronm
     # slack spaces
     - otel-agentmanwg
     - otel-comms
