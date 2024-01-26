@@ -76,11 +76,8 @@ The following is a list of prototypes, plugins, components, and CI/CD related to
 
 ### TC Sponsorship
 
-Initial TC Contact: @carlosalberto 
-
-> Decision was made in the TC syncs that: 
-> No fulltime TC sponsorship needed at this time because there are no immediate major
-> Specification changes are foreseen. 
+* @carlosalberto (TC Sponsor)
+* @jsuereth (TC Sponsor)
 
 ### Required staffing
 
