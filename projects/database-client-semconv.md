@@ -9,14 +9,14 @@ Get the database client semantic conventions to stability, and afterwards update
 * Mark the Database client semantic conventions as stable.
 * Update existing Database client instrumentation across all OpenTelemetry repositories to conform with the stable conventions.
 
-## Staffing / Help Wanted
+## Staffing
 
-* @trask project lead
+* @trask project lead / GC sponsor
 * @lmolkova domain expert
-* TBD more domain experts
-* TBD technical committee sponsor
-* TBD engineers willing to prototype in at least two languages
-* TBD maintainers or approvers from languages committed to reviewing the prototypes
+* @jcocchi domain expert
+* @sourabh1007 domain expert
+* @alanwest prototype engineer / reviewer
+* @jack-berg TC sponsor / prototype engineer / reviewer
 
 ## Meeting Times
 
