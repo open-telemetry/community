@@ -20,10 +20,12 @@ Get the database client semantic conventions to stability, and afterwards update
 
 ## Meeting Times
 
-2 times per week for 6 weeks. The goal will be to have all proposed changes submitted as PRs by the end of the 6 weeks.
-If you are interested in participating, please fill in the meeting poll to help us find the best meeting times:
+2 times per week for 6 weeks starting Feb 6, 2024. The goal will be to have all proposed changes submitted as PRs by the end of the 6 weeks.
 
-https://strawpoll.com/wby5A0D6wyA
+* Wed 9:30-10a Pacific Time
+* Fri 8:30-9a Pacific Time
+
+(and will report status weekly in the General Semantic Convention meeting Mon 8-9a Pacific Time)
 
 ## Timeline
 
