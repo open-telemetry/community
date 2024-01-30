@@ -1,16 +1,27 @@
 version: 0.2
 ignorePaths: ["elections/**/*"]
 words:
+    - adot
     - apac
+    - cdevents
+    - cicd
     - cncf
     - codecov
     - codeowners
+    - DASD
     - dynatrace
     - easycla
+    - eiffel
     - emea
     - faas
     - gitter
+    - Hostmetrics
+    - jemmic
+    - keptn
+    - kubecon
+    - liatrio
     - lightstep
+    - logz
     - maintainership
     - observiq
     - opentelemetry
@@ -20,6 +31,8 @@ words:
     - otlp
     - passcodes
     - proto
+    - pytest
+    - REXX
     - runtimes
     - signup
     - skyscanner
@@ -29,6 +42,8 @@ words:
     - subprojects
     - subrepository
     - supermajority
+    - Sysplex
+    - tekton
     - tiebreaking
     - timebox
     - timeboxing
@@ -38,6 +53,9 @@ words:
     - triager
     - triagers
     # names and github handles
+    - acramsay
+    - adrielp
+    - afrittoli
     - alolita
     - amye
     - aniszczyk
@@ -57,42 +75,63 @@ words:
     - cijo
     - codeboten
     - danielgblanco
+    - darren17082
+    - davdai
     - denisivan
     - dennisme
+    - dnsmichi
     - drutu
+    - dsotirakis
     - dyla
     - dyladan
+    - elfo404
+    - ericchapman80
+    - e-backmark-ericsson
     - fong
     - henrikrexed
+    - horovits
+    - jackjia
     - jaglowski
     - jigar
+    - jimporell
     - jpkrohling
     - jsuereth
     - juraci
+    - kamphaus
     - kanzhelev
     - kröhling
+    - krzko
+    - kuisathaverat
     - lalitb
     - lmolkova
+    - lucavallin
+    - magnusbaeck
     - mancuso
     - martinkuba
     - mateuszrzeszutek
     - mayur
     - mayurkale
+    - mhausenblas
     - mirabella
+    - msomasu
     - mtwo
     - mwear
     - najaryan
     - nakamura
+    - Nale
     - neumann
     - neumüller
     - novotny
     - ocelotl
+    - oleg-nenashev
     - paixão
     - parsana
     - patrickhousley
+    - pmpaulino
     - poncelow
     - reiley
     - reyang
+    - rrschulze
     - ruech
     - rynn
     - salnikov
@@ -100,6 +139,7 @@ words:
     - scheler
     - sergey
     - severin
+    - sguyon
     - sharma
     - sharrmander
     - shkuro
@@ -111,13 +151,16 @@ words:
     - svrnm
     - tarnovski
     - tedsuo
+    - thisthat
     - tigran
     - tigrannajaryan
     - trask
     - tsloughter
     - tylerbenson
+    - xibz
     - xoscar
     - yahn
+    - youngaaronm
     # slack spaces
     - otel-agentmanwg
     - otel-comms
