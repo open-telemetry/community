@@ -142,8 +142,8 @@ The new member must:
 ### Google Calendar
 All OpenTelemetry public meetings are handled via Google Calendars (see [How to handle public calendar](https://github.com/open-telemetry/community/blob/main/docs/how-to-handle-public-calendar.md)
 for more details). People in the  `opentelemetry-calendar-contributors` Google
-Group have write access to the OpenTelemetry public calendar. To view and manage
-members of this group one must use the `opentelemetry.calendar.owner@gmail.com`
+Group have write access to the OpenTelemetry public calendar. To view and
+manage members of this group one must use the `opentelemetry.calendar.owner@gmail.com`
 account.
 
 The existing member must:
@@ -163,12 +163,14 @@ The new member must:
 - [ ] Validate they can log in to https://zapier.com with the credentials in 1Password.
 
 ## Meetings and Ceremonies
-As per GC charter, all members are expected to attend the following meetings.
+As per GC charter, all members are expected to attend the following meetings:
 
-- Governance Committee Meeting (every Thursday 11:00 Pacific Time, which is
-  typically 19:00 UTC).
-- Governance/Technical Committee Joint Meeting (every second Thursday of the month, coinciding 
-  with the Governance Committee Meeting).
+- Governance Committee Meeting (every Thursday 11:00 Pacific Time).
+- Governance/Technical Committee Joint Meeting (every second Thursday of the month,
+  coinciding with the Governance Committee Meeting).
+
+The dates and times of these meetings may be discussed and updated after every
+election cycle to accommodate time zones and scheduling requirements of attendees.
 
 The existing member must:
 - [ ] Invite the new member to the meetings using the new members' preferred
@@ -198,3 +200,8 @@ capacity, in finding answers to these questions.
   for instructions on how to work with calendars, configuring repositories,
   uploading recordings, etc. As a GC member, it is useful to know that these 
   docs are there when needed.
+- [ ] [Inclusive Open Source Community Orientation (LFC102)](https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/):
+  this free orientation course is designed to provide you with essential
+  background knowledge and practical skills to create an inclusive culture
+  in the open source community. Members of the GC may take this course in
+  support of our community values.
