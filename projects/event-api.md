@@ -28,7 +28,6 @@ Project lead(s):
 Sponsoring TC Members:
 
 * @tigrannajaryan
-* @jack-berg
 
 Contributing Engineers:
 
