@@ -161,6 +161,7 @@ approver in the `CODEOWNERS` files.
 - Responsible for project quality control via code reviews
   - Focus on holistic acceptance of contribution such as dependencies with other
     features, backwards / forwards compatibility, API and flag definitions, etc
+- Responsible for technical quality control of the [documentation](http://docs.opentelemetry.io/), related to their project
 - Expected to be responsive to review requests (inactivity for more than 1 month may result in suspension until active again)
 - Mentor contributors and reviewers
 - May approve code contributions for acceptance
@@ -218,6 +219,7 @@ The following apply to the subproject for which one would be a maintainer.
 - Ensure continued health of subproject:
   - Adequate test coverage to confidently release
   - Tests are passing reliably (i.e. not flaky) and are fixed when they fail
+  - Up-to-date and accurate [documentation](http://docs.opentelemetry.io/)
 - Ensure a healthy process for discussion and decision making is in place.
 - Work with other maintainers to maintain the project's overall health and
   success holistically.
