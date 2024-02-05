@@ -1,10 +1,9 @@
 <!--- Hugo front matter used to generate the website version of this page:
 linkTitle: Roadmap
-github_repo: &repo https://github.com/open-telemetry/community
-github_subdir: ''
-path_base_for_github_subdir: content/en/community/
-github_project_repo: *repo
 aliases: [/roadmap]
+github_repo: &repo https://github.com/open-telemetry/community
+path_base_for_github_subdir: tmp/community
+github_project_repo: *repo
 weight: 20
 --->
 

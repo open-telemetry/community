@@ -255,22 +255,34 @@ Committees follow to handle a prospective donation.
 
 1. Per the above, the donating organization creates a GitHub issue using
    the "Donation Proposal" form in the `community` repository.
-2. The Technical Committee (TC) will do diligence, write a report, and attach
-   that report to the GitHub issue. Writing the report may require meeting and
-   discussing alternative technologies with different vendors in the community
-   and can be a lengthy process. The TC member driving the report will post
-   updates and time estimates to the issue.
-3. The Governance Committee (GC) will consider the report and make a final
-   decision about the donation. The GC must ensure that the donation is aligned
-   with the overall OpenTelemetry project vision and roadmap and has a balanced
-   set of interested contributors and maintainers. The GC is also responsible
-   for driving awareness in the community about the contribution and making
-   sure all interested parties have a chance to object and/or contribute.
-4. If accepted, the contributing organization – particularly if it's a
+2. The Governance Committee (GC) will evaluate the proposal to ensure that
+   the donation is aligned with the overall OpenTelemetry project vision
+   and roadmap and has a balanced set of interested contributors and maintainers.
+   The GC is also responsible for driving awareness in the community about
+   the contribution and making sure all interested parties have a chance to
+   object and/or contribute. The GC should work with any appropriate Special Interest
+   Groups or Working Groups to evaluate the donation proposal, consider alternatives,
+   and ensure OTel has the resources required to support the donation. When
+   considering alternatives, the GC should consider at least the CNCF ecosystem,
+   and may also consider other well-known open source projects or alternatives proposed
+   by the community.
+3. If a donation proposal passes the initial GC screening, the Technical Committee (TC)
+   will conduct due diligence to determine if the proposed donation can be effectively
+   integrated into the OpenTelemetry project in a way that meets the quality, security,
+   and privacy standards of the project without violating stable specification or OTEPs.
+   The TC will summarize their findings, and make a recommendation to either,
+   conditionally or unconditionally, accept or reject the proposal, in a report which will
+   be attached to the donation proposal issue. Writing the report may require meeting
+   and discussing alternative technologies with different vendors in the community and
+   can be a lengthy process. The TC member driving the report will post updates and time
+   estimates to the issue.
+4. The GC will consider the report and make a final decision about the donation,
+   and document that decision on the donation proposal issue.
+5. If accepted, the contributing organization – particularly if it's a
    commercial entity – must formally acknowledge via the GitHub issue that its
    respective sales and marketing departments have received, understood, and
    accepted the terms of the [OpenTelemetry marketing guidelines](https://github.com/open-telemetry/community/blob/main/marketing-guidelines.md).
-5. Given all of the above, the GitHub issue is closed and the donation moves
+6. Given all of the above, the GitHub issue is closed and the donation moves
    forward as agreed to by the TC and GC.
 
 ## Communication

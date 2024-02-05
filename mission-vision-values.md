@@ -2,10 +2,7 @@
 linkTitle: Mission, vision, and values
 aliases: [/mission]
 github_repo: &repo https://github.com/open-telemetry/community
-github_subdir: ''
-path_base_for_github_subdir:
-  from: content/en/community/mission\.md
-  to: mission-vision-values.md
+path_base_for_github_subdir: tmp/community
 github_project_repo: *repo
 weight: -10
 --->

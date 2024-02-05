@@ -53,6 +53,7 @@ words:
     - triager
     - triagers
     # names and github handles
+    - alevenberg
     - acramsay
     - adrielp
     - afrittoli
@@ -80,6 +81,7 @@ words:
     - davdai
     - denisivan
     - dennisme
+    - dpauls
     - dnsmichi
     - drutu
     - dsotirakis
@@ -90,12 +92,14 @@ words:
     - e-backmark-ericsson
     - fong
     - henrikrexed
+    - hongalex
     - horovits
     - jackjia
     - jaglowski
     - jcocchi
     - jigar
     - jimporell
+    - joaopgrassi
     - jpkrohling
     - jsuereth
     - juraci
@@ -131,6 +135,7 @@ words:
     - patrickhousley
     - pmpaulino
     - poncelow
+    - pyohannes
     - reiley
     - reyang
     - rrschulze
