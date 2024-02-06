@@ -227,18 +227,22 @@ The following apply to the subproject for which one would be a maintainer.
 ### Becoming a Maintainer
 
 Unless stated otherwise in a SIG charter ratified by the Technical Committee,
-a new maintainer is elected by vote of the existing maintainers of the SIG.
-The vote is officially started when a pull request to add a new maintainer
-is opened, and ends when the pull request is merged. The pull request may be
-merged when the following conditions are met:
+a new maintainer is elected by vote of thee existing maintainers of the SIG.
+The vote is officially started when an 
+[issue is created](https://github.com/open-telemetry/community/issues/new?assignees=&labels=area%2Fonboarding&template=maintainer-onboarding.yml&title=Maintainer+Onboarding%3A+%3CGH_USERNAME%3E)
+to add the nominee as a new maintainer. All existing maintainers of the SIG 
+are asked to vote by commenting "I support" or "I do not support" on this issue. 
+The election is over, when a majority of the maintainers have voted:
 
-- The person being nominated has accepted the nomination by approving the pull request
-- All maintainers have approved the pull request OR a majority of maintainers
-  have approved the pull request and no maintainer has objected by requesting
-  changes on the pull request. In the case that all maintainers have not given
-  approval, the pull request should stay open for a minimum of 5 days before merging.
+- If the majority have voted in favour of the nominee, the candidate accepts
+(or declines) the vote by commenting "I accept" or "I decline". The nominee is
+considered a maintainer immediatly after they accepted.
+- If the majority have voted against the nominee becoming a maintainer, the
+issue can be closed and the nominee has not been elected.
 
-The nominee is considered a maintainer after the pull request is merged.
+In the case that no majority in favour or against the nominee can be accomplished
+within 5 days, a minority vote sufficies.
+
 
 #### Self-nomination is encouraged
 
