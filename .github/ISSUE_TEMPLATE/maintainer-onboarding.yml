@@ -1,0 +1,81 @@
+name: Maintainer Onboarding
+description: Onboarding checklist for maintainers
+title: "Onboard <GitHub handle> as <SIG/WG FOO> maintainer"
+labels: area/github-membership
+body:
+- type: markdown
+  attributes:
+    value: |
+     This issue should be submitted by an existing maintainer of the affected SIG
+- id: sig
+  type: input
+  attributes:
+    label: "SIG name"
+    placeholder: "SIG example"
+  validations:
+    required: true
+- id: maintainers_group
+  type: input
+  attributes:
+    label: "maintainers team"
+    placeholder: "@opentelemetry/<sig-name>-maintainers"
+    description: Tag the maintainers group. If unsure, you can [look groups up](https://github.com/orgs/open-telemetry/teams?query=maintainers)
+  validations:
+    required: true
+- id: github_handle
+  type: input
+  attributes:
+    label: "Github handle of the new maintainer candidate"
+    placeholder: "@example"
+  validations:
+    required: true
+- id: requirements
+  type: checkboxes
+  attributes:
+    label: Requirements
+    description: Before submitting 
+    options:
+      - label: Are you (submitter of this issue) a maintainer of the affected SIG?
+        required: true
+      - label: Is the maintainer candidate a member of the OpenTelemetry GitHub organization already?
+        required: true
+- id: election
+  type: checkboxes
+  attributes:
+    label: Maintainer Election
+    description: |
+      Unless stated otherwise in a SIG charter ratified by the Technical Committee, all existing maintainers are asked to vote, 
+      if the candidate should be added to their group of maintainers. They vote by commenting "I support" or "I do not support" on this issue.
+      The election is over, when a majority of the maintainers have voted. If the majority have voted in favour of the candidate, the candidate 
+      can accept (or decline) the vote by commenting "I accept" or "I decline". If the candidate has not been elected, the issue can be closed.
+    options:
+      - label: Has the candidate been elected?
+      - label: Has the candidate accepted?
+- id: onboarding
+  type: checkboxes
+  attributes:
+    label: Maintainer Onboarding Tasks
+    description: |
+      After the maintainer has been elected, the following check list helps to verify that the maintainer has everything needed
+      to fullfil their responsibility.
+    options:
+      - label: Added to the `@opentelemetry/<sig-name>-maintainers` GitHub group
+      - label: Added to `#otel-maintainers` slack channel
+      - label: Added to the `maintainers` section in the SIGs repositories `README.md`
+      - label: Added to [opentelemetry-calendar-contributors Google Group](https://groups.google.com/g/opentelemetry-calendar-contributors) 
+      - label: Added to any other groups, slack channels or resources that SIG maintainers require
+      - label: Invited to SIG meetings and Maintainer meeting.
+- id: tasks
+  type: checkboxes
+  attributes:
+    label: Prerequisites for new maintainer
+    description: |
+      The maintainer is asked to review the following checklist, fullfil the items and check them off. When all items of this list are completed, this issue can be closed
+    options:
+      - label: Completed all **Maintainer Onboarding Tasks** (see above)
+      - label: Reviewed the [Code of Conduct](./code-of-conduct.md)
+      - label: Reviewed [requirements, responsibilites and privileges](./community-membership.md#maintainer)
+      - label: Reviewed [mission, vision, values](./mission-vision-values.md)
+      - label: Reviewed all SIG specific documents that are relevant for a maintainer
+      - label: Scheduled a introductory call (30-60 minutes) with a GC member
+      - label: Completed the [Inclusive Open Source Community Orientation course](https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/)
