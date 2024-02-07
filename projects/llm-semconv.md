@@ -1,0 +1,71 @@
+# LLM Observability Standards
+
+## Description
+
+This project aims to establish observability standards for Large Language Model (LLM) applications, focusing on API interactions and multi-step LLM frameworks. Key areas include:
+
+- Developing semantic conventions for standard and complex LLM interactions.
+- Initiating vendor-specific conventions as a foundation for broader contributions.
+- Concentrating on attributes relevant to Metrics and Spans.
+
+For Spans: Instrumentation and debugging guidance for multi-step LLM applications, with recommendations on user privacy and intellectual property security, marking sensitive attributes and events as opt-in.
+
+For Metrics: Tracking model performance by collecting and correlating data like model names, versions, parameters, latency, and evaluation scores.
+
+## Deliverables
+
+- Experimental semantic conventions for LLMs, allowing flexibility for evolution in this fast-paced field.
+- Reference prototypes demonstrating the application of these conventions in data collection, processing, and analysis.
+- Guidelines for monitoring LLM applications, including implementation strategies and privacy/security considerations.
+
+## Staffing / Help Wanted
+
+We will gather further staff as the project is established. We need to 
+make sure there is enough representation across both vendors and customers
+who will benefit from these semantic conventions.
+
+**Project Leads:**
+
+- @drewby - Drew Robbins
+- @nirga - Nir Gazit
+
+**Sponsoring Members:**
+
+- @lmolkova - Liudmila Molkova
+- *Seeking additional sponsors*
+
+**Engineers:**
+
+- @nirga - Nir Gazit (Multilingual expertise)
+- *Positions open for more engineers*
+
+**Maintainers:**
+
+- To be determined
+
+## Meeting Times
+
+Alternating weekly meetings to accommodate different time zones:
+
+- Week 1: Mondays at 8 AM PST
+- Week 2: Mondays at 4 PM PST
+
+## Timeline
+
+1. Initial Draft: February 2024
+2. Review and Refinement: April 2024
+3. Initial Merge Target: June 2024
+4. Ongoing Review for Stability: Date TBD
+
+## Labels
+
+- `LLM`
+
+## Linked Issues and PRs
+
+- Issue: [Introduce semantic conventions for modern AI (LLMs, vector databases, etc.) #327](https://github.com/open-telemetry/semantic-conventions/issues/327)
+- PR: [Add LLM semantic conventions #639](https://github.com/open-telemetry/semantic-conventions/pull/639)
+
+## Project Board
+
+To be established post-approval.
