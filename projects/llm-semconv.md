@@ -1,4 +1,4 @@
-# LLM Observability Standards
+# LLM Observability Semantic Conventions
 
 ## Description
 
