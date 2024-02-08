@@ -60,9 +60,7 @@ Efforts and initiatives that are too large, detailed, or important to be
 resolved in an issue or pull request are referred to as *projects*. These
 larger efforts often require collaboration between subject matter experts,
 the Technical Committee, and OpenTelemetry community members, and involve
-the creation of either a SIG or a Working Group to accomplish their goals.
-The Governance Committee is responsible for reviewing project proposals and
-ensuring  to accomplish their goals. The [project management](https://github.com/open-telemetry/community/blob/main/project-management.md)
+the creation of either a SIG or a Working Group. The [project management](https://github.com/open-telemetry/community/blob/main/project-management.md)
 document describes the process for creating and executing projects of this size.
 
 The GC is responsible for reviewing project proposals, aligning their execution
