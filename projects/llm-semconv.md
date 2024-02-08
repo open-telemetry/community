@@ -26,17 +26,18 @@ who will benefit from these semantic conventions.
 
 **Project Leads:**
 
-- @drewby - Drew Robbins
-- @nirga - Nir Gazit
+- @drewby
+- @nirga
 
 **Sponsoring Members:**
 
-- @lmolkova - Liudmila Molkova
+- @lmolkova
 - *Seeking additional sponsors*
 
 **Engineers:**
 
-- @nirga - Nir Gazit (Multilingual expertise)
+- @nirga
+- @sudivate
 - *Positions open for more engineers*
 
 **Maintainers:**
