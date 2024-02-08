@@ -72,7 +72,7 @@ The Governance Committee is also responsible for deciding if a project is out of
 scope for the OpenTelemetry project.
 
 For proposals that involve [donating](https://github.com/open-telemetry/community/blob/main/CONTRIBUTING.md#donations)
-codebases to OpenTelemetry, the Governance Committee is responsible for
+code bases to OpenTelemetry, the Governance Committee is responsible for
 performing due diligence in determining if the donation is a strategic
 fit for OpenTelemetry before referring the donation to the TC for
 technical review.
