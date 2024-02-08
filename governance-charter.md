@@ -55,7 +55,7 @@ project groups like the [Technical Committee](./tech-committee-charter.md).
 
 ### Project Management
 
-**Develop project proposals**  
+#### Develop project proposals
 Efforts and initiatives that are too large, detailed, or important to be
 resolved in an issue or pull request are referred to as *projects*. These
 larger efforts often require collaboration between subject matter experts,
@@ -77,19 +77,19 @@ performing due diligence in determining if the donation is a strategic
 fit for OpenTelemetry before referring the donation to the TC for
 technical review.
 
-**Prioritize projects and spec issues**  
+#### Prioritize projects and spec issues
 The Governance Committee is responsible for maintaining a prioritized
 backlog of projects and specification issues. The Governance Committee
 is responsible for balancing the efforts of the TC between projects and
 issues and ensuring that we are tackling the most pressing challenges
 for the project while not exceeding our available resources.
 
-**Maintain a project board and a public roadmap**  
+#### Maintain a project board and a public roadmap
 For transparency with our community, the GC must ensure that the
 project board and the public roadmap stay up to date and accurately
 reflect reality.
 
-**Regular check-ins with SIG leads**  
+#### Regular check-ins with SIG leads
 The Governance Committee must establish and publish a process whereby
 every maintainer and project lead has a check in with a Governance Committee
 member on a regular basis. During this check in, any project files or roadmap
