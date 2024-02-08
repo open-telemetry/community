@@ -65,11 +65,11 @@ for reviewing project proposals and ensuring permanent SIG to accomplish
 their goals. The [project management](https://github.com/open-telemetry/community/blob/main/project-management.md)
 document describes the process for creating and executing projects of this size.
 
-The Governance Committee is responsible for reviewing project proposals
-and ensuring that they have clear goals and are staffed sufficiently to
-deliver on an agreed upon deadline. The Governance Committee is also
-responsible for deciding if a project is out of scope for the OpenTelemetry
-project.
+The GC is responsible for reviewing project proposals, aligning their execution
+with the wider strategy and end-user priorities, and ensuring that they have
+clear goals and are staffed sufficiently to deliver on an agreed upon deadline.
+The Governance Committee is also responsible for deciding if a project is out of
+scope for the OpenTelemetry project.
 
 For proposals that involve [donating](https://github.com/open-telemetry/community/blob/main/CONTRIBUTING.md#donations)
 codebases to OpenTelemetry, the Governance Committee is responsible for
@@ -81,7 +81,8 @@ technical review.
 The Governance Committee is responsible for maintaining a prioritized
 backlog of projects and specification issues. The Governance Committee
 is responsible for balancing the efforts of the TC between projects and
-issues and ensuring that we do not exceed our available resources.
+issues and ensuring that we are tackling the most pressing challenges
+for the project while not exceeding our available resources.
 
 **Maintain a project board and a public roadmap**  
 For transparency with our community, the GC must ensure that the
