@@ -37,7 +37,7 @@ following:
   the project](https://github.com/cncf/toc/blob/main/proposals/sandbox/opentelemetry.adoc)
 - Define, evolve, and defend the **vision, values, mission, and scope** of the
   project - to establish and maintain the soul of OpenTelemetry.
-- Define and execute the roadmap for OpenTelemetry, as defined in the project
+- Define and prioritize the roadmap for OpenTelemetry, as defined in the project
   management section below.
 - Ensure that SIGs maintain a healthy pool of maintainers and contributors and
   remain focused on their feature roadmap and deliverables.
