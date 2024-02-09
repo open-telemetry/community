@@ -1,7 +1,7 @@
 name: Maintainer Onboarding
 description: Onboarding checklist for maintainers
 title: "Onboard <GitHub handle> as <SIG/WG FOO> maintainer"
-labels: area/github-membership
+labels: area/onboarding
 body:
 - type: markdown
   attributes:
