@@ -21,6 +21,7 @@ There is an open [PR](https://github.com/open-telemetry/semantic-conventions/iss
 
 * project lead: @trisch-me
 * domain expert: @mjwolf
+* domain expert: @raesene
 
 * GC sponsor: @reyang
 * GC sponsor: vacant
