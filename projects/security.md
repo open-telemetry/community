@@ -23,8 +23,8 @@ There is an open [PR](https://github.com/open-telemetry/semantic-conventions/iss
 * domain expert: @mjwolf
 * domain expert: @raesene
 
-* GC sponsor: @reyang
-* GC sponsor: vacant
+* TC sponsor: @reyang
+* TC sponsor: vacant
 
 Need more 
 - [ ] domain experts

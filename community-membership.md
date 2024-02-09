@@ -6,7 +6,7 @@ OpenTelemetry. The OpenTelemetry project is subdivided into subprojects under
 Group). Responsibilities for most roles are scoped to these subprojects (repos).
 
 The OpenTelemetry [Governance Committee][] owns this document and process until
-delegated. They can be reached via e-mail cncf-opentelemetry-governance@lists.cncf.io.
+delegated. They can be reached via e-mail <cncf-opentelemetry-governance@lists.cncf.io>.
 
 | **Role**   | **Responsibilities**                                  | **Requirements**                                             | **Defined by**                                               |
 | ---------- | ----------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -54,7 +54,7 @@ Defined by: Member of the OpenTelemetry GitHub organization
 - [Joined the Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q)
   - [Get an invite to join CNCF](https://slack.cncf.io/)
 - Have read the [contributor
-  guide](https://github.com/open-telemetry/community/blob/master/CONTRIBUTING.md)
+  guide](https://github.com/open-telemetry/community/blob/main/CONTRIBUTING.md)
 - Actively contributing to 1 or more subprojects.
 - Sponsored by 2 approvers. Note the following requirements for sponsors:
   - Sponsors must have close interactions with the prospective member - e.g.
@@ -69,7 +69,7 @@ Defined by: Member of the OpenTelemetry GitHub organization
   [OpenTelemetry/community](https://github.com/open-telemetry/community) repo
   - Ensure your sponsors are `@mentioned` on the issue
   - Complete every item on the checklist ([preview the current version of the
-    template](https://github.com/open-telemetry/community/blob/master/.github/ISSUE_TEMPLATE/membership.md))
+    template](https://github.com/open-telemetry/community/blob/main/.github/ISSUE_TEMPLATE/membership.md))
   - Make sure that the list of contributions included is representative of your
     work on the project.
 - Have your sponsoring reviewers reply confirmation of sponsorship: `I support`
@@ -161,6 +161,7 @@ approver in the `CODEOWNERS` files.
 - Responsible for project quality control via code reviews
   - Focus on holistic acceptance of contribution such as dependencies with other
     features, backwards / forwards compatibility, API and flag definitions, etc
+- Responsible for technical quality control of the [documentation](http://docs.opentelemetry.io/), related to their project
 - Expected to be responsive to review requests (inactivity for more than 1 month may result in suspension until active again)
 - Mentor contributors and reviewers
 - May approve code contributions for acceptance
@@ -212,11 +213,13 @@ The following apply to the subproject for which one would be a maintainer.
 - Define milestones and releases.
   - Decides on when PRs are merged to control the release scope.
 - Mentor and guide approvers, reviewers, and contributors to the subproject.
-- Escalate *reviewer* and *maintainer* workflow concerns (i.e. responsiveness,
-  availability, and general contributor community health) to the TC.
+- Escalate *reviewer*, *approver*, *maintainer* and other workflow concerns
+  (i.e. responsiveness, availability, and general contributor community health)
+  to the TC.
 - Ensure continued health of subproject:
   - Adequate test coverage to confidently release
   - Tests are passing reliably (i.e. not flaky) and are fixed when they fail
+  - Up-to-date and accurate [documentation](http://docs.opentelemetry.io/)
 - Ensure a healthy process for discussion and decision making is in place.
 - Work with other maintainers to maintain the project's overall health and
   success holistically.
@@ -256,7 +259,7 @@ to reach consensus on a technical issue. While it's healthy and appropriate to
 make a sincere attempt to understand all points of view and consider the
 tradeoffs, it's also healthy to occasionally "disagree and commit."
 
-Within OpenTelemetry, SIG Maintainers are chosen specifically _because_ they
+Within OpenTelemetry, SIG Maintainers are chosen specifically *because* they
 are domain experts, so we would like to keep as much of the decision-making
 authority with the SIG Maintainers rather than immediately "escalating" to the
 overall OpenTelemetry-wide Technical Committee. As such, this is
@@ -290,7 +293,7 @@ CONTRIBUTING, CODEOWNERS, or README of the subproject they are stepping away
 from. GitHub usernames listed under the `emeritus` section should be removed
 from the approvers list, and will no longer have any official responsibilities
 with the project. When a contributor returns to being more active, they may be
-promoted back to a their previous position at the discretion of the current
+promoted back to their previous position at the discretion of the current
 maintainers following the process defined above.
 
 [Governance Committee]: ./governance-charter.md

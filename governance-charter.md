@@ -1,6 +1,6 @@
 # OpenTelemetry Governance Committee Charter
 
-Last updated: November 2023
+Last updated: December 2023
 
 ## Overview
 
@@ -37,8 +37,10 @@ following:
   the project](https://github.com/cncf/toc/blob/main/proposals/sandbox/opentelemetry.adoc)
 - Define, evolve, and defend the **vision, values, mission, and scope** of the
   project - to establish and maintain the soul of OpenTelemetry.
-- Decide how and when **official releases** of OpenTelemetry artifacts are
-  made and what they include.
+- Define and prioritize the roadmap for OpenTelemetry, as defined in the project
+  management section below.
+- Ensure that SIGs maintain a healthy pool of maintainers and contributors and
+  remain focused on their feature roadmap and deliverables.
 - Establish processes regarding, and provide **a final escalation path** for any
   contested OpenTelemetry related decision.
 - Establish processes regarding other **project resources/assets**, including
@@ -50,6 +52,48 @@ following:
 
 This work is to be handled by the Governance Committee or delegated to other
 project groups like the [Technical Committee](./tech-committee-charter.md).
+
+### Project Management
+
+#### Develop project proposals
+Efforts and initiatives that are too large, detailed, or important to be
+resolved in an issue or pull request are referred to as *projects*. These
+larger efforts often require collaboration between subject matter experts,
+the Technical Committee, and OpenTelemetry community members, and involve
+the creation of either a SIG or a Working Group. The [project management](https://github.com/open-telemetry/community/blob/main/project-management.md)
+document describes the process for creating and executing projects of this size.
+
+The GC is responsible for reviewing project proposals, aligning their execution
+with the wider strategy and end-user priorities, and ensuring that they have
+clear goals and are staffed sufficiently to deliver on an agreed upon deadline.
+The Governance Committee is also responsible for deciding if a project is out of
+scope for the OpenTelemetry project.
+
+For proposals that involve [donating](https://github.com/open-telemetry/community/blob/main/CONTRIBUTING.md#donations)
+code bases to OpenTelemetry, the Governance Committee is responsible for
+performing due diligence in determining if the donation is a strategic
+fit for OpenTelemetry before referring the donation to the TC for
+technical review.
+
+#### Prioritize projects and spec issues
+The Governance Committee is responsible for maintaining a prioritized
+backlog of projects and specification issues. The Governance Committee
+is responsible for balancing the efforts of the TC between projects and
+issues and ensuring that we are tackling the most pressing challenges
+for the project while not exceeding our available resources.
+
+#### Maintain a project board and a public roadmap
+For transparency with our community, the GC must ensure that the
+project board and the public roadmap stay up to date and accurately
+reflect reality.
+
+#### Regular check-ins with SIG leads
+The Governance Committee must establish and publish a process whereby
+every maintainer and project lead has a check in with a Governance Committee
+member on a regular basis. During this check in, any project files or roadmap
+entries should be reviewed to verify that they are still accurate. If a SIG
+lead has any private concerns they wish to raise with the Governance Committee,
+this is an opportunity to do so.
 
 ## Committee Structure
 
@@ -78,15 +122,15 @@ Exception Process outline below.
 - Representatives from major organizations that have adopted OpenTelemetry as
   end-users (one representative per organization)
 
-The bootstrap committee explicitly believes that this heuristic will be
+The Governance Committee explicitly believes that this heuristic will be
 inaccurate and not represent the entire community. An exception form will be
 provided for people who have contributed to the project but may not meet these
-criteria. Exception eligibility applications will be approved by the bootstrap
-committee by a simple majority vote. The exception process will be used as data
+criteria. Exception eligibility applications will be approved by the Governance
+Committee by a simple majority vote. The exception process will be used as data
 points for refining the criteria for the future.
 
-Within its first year, the Governance Committee will redefine these criteria
-around a more robust idea of community membership.
+It is the responsibility of the Governance Committee to refine these criteria
+prior to each election.
 
 ### Eligibility for candidacy
 
