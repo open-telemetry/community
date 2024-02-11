@@ -13,7 +13,8 @@ All rooms are configured the same way. Some notes on meetings configuration:
   and [available on Zoom cloud](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s).
 
 Every meeting must contain a link to the meeting notes. The meeting notes
-document must be shared with write or commenting permissions.
+document must be shared with write or commenting permissions. If giving edit permissions to everyone,
+go into the document share settings and uncheck "Editors can change permissions and share".
 
 All meetings should invite a publicly joinable google group `calendar-...@opentelemetry.io` which is specific to the meeting series
 and also the global [calendar-all@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-all).
