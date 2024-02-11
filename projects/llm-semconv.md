@@ -38,6 +38,7 @@ who will benefit from these semantic conventions.
 
 - @nirga
 - @sudivate
+- @cartermp
 - *Positions open for more engineers*
 
 **Maintainers:**
