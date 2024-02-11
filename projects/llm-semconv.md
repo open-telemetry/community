@@ -48,8 +48,8 @@ who will benefit from these semantic conventions.
 
 Alternating weekly meetings to accommodate different time zones:
 
-- Week 1: Mondays at 8 AM PST
-- Week 2: Mondays at 4 PM PST
+- Week 1: Thursdays at 8 AM PST
+- Week 2: Thursdays at 4 PM PST
 
 ## Timeline
 
