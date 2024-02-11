@@ -39,6 +39,7 @@ who will benefit from these semantic conventions.
 **Sponsoring Members:**
 
 - @lmolkova
+- @alolita
 - *Seeking additional sponsors*
 
 **Engineers:**
