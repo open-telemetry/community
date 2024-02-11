@@ -8,6 +8,13 @@ This project aims to establish observability standards for Large Language Model 
 - Initiating vendor-specific conventions as a foundation for broader contributions.
 - Concentrating on attributes relevant to Metrics and Spans.
 
+Example Use Cases:
+
+- **Debugging**: Standardizing log data and error reporting for efficient error resolution in LLM applications.
+- **Evaluation**: Collecting signal for evaluation of LLM performance, including response accuracy, context retention, and user feedback.
+- **Cost Tracking**: Monitoring operational costs like computation time and API calls for resource optimization.
+- **AI Safety**: Monitoring for ethical LLM use, including privacy compliance, bias detection, and secure data handling.
+
 For Spans: Instrumentation and debugging guidance for multi-step LLM applications, with recommendations on user privacy and intellectual property security, marking sensitive attributes and events as opt-in.
 
 For Metrics: Tracking model performance by collecting and correlating data like model names, versions, parameters, latency, and evaluation scores.
