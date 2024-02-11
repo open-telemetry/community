@@ -66,10 +66,10 @@ The shared community calendar contains all public OpenTelemetry meetings,
 including weekly SIG meetings, monthly community meetings, etc. You
 can access it via:
 
-* [Web](https://calendar.google.com/calendar/embed?src=c_854d8f776baa4dbbffa1892c8d148bc48ee4af242a5fa8c9aadf52ae7ace3fe1%40group.calendar.google.com)
+* [Web](https://calendar.google.com/calendar/embed?src=c_2bf73e3b6b530da4babd444e72b76a6ad893a5c3f43cf40467abc7a9a897f977%40group.calendar.google.com)
 * [Google
-Calendar](https://calendar.google.com/calendar?cid=Y184NTRkOGY3NzZiYWE0ZGJiZmZhMTg5MmM4ZDE0OGJjNDhlZTRhZjI0MmE1ZmE4YzlhYWRmNTJhZTdhY2UzZmUxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
-* [iCalendar](https://calendar.google.com/calendar/ical/c_854d8f776baa4dbbffa1892c8d148bc48ee4af242a5fa8c9aadf52ae7ace3fe1%40group.calendar.google.com/public/basic.ics)
+Calendar](https://calendar.google.com/calendar/u/4?cid=Y18yYmY3M2UzYjZiNTMwZGE0YmFiZDQ0NGU3MmI3NmE2YWQ4OTNhNWMzZjQzY2Y0MDQ2N2FiYzdhOWE4OTdmOTc3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
+* [iCalendar](https://calendar.google.com/calendar/ical/c_2bf73e3b6b530da4babd444e72b76a6ad893a5c3f43cf40467abc7a9a897f977%40group.calendar.google.com/public/basic.ics)
 
 The best way to subscribe to specific OpenTelemetry meeting series is to join the associated
 [calendar-...@opentelemetry.io meeting invite groups below](#special-interest-groups).
