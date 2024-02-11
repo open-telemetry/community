@@ -55,9 +55,10 @@ Alternating weekly meetings to accommodate different time zones:
 ## Timeline
 
 1. Initial Draft: February 2024
-2. Review and Refinement: April 2024
-3. Initial Merge Target: June 2024
-4. Ongoing Review for Stability: Date TBD
+1. Review and Refinement: April 2024
+1. Prototypes for .NET, Python, JS: June 2024 
+1. Initial Merge Target: July 2024
+1. Ongoing Review for Stability: Date TBD
 
 ## Labels
 
