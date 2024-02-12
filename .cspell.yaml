@@ -9,13 +9,16 @@ words:
     - codecov
     - codeowners
     - DASD
+    - datadog
     - dynatrace
     - easycla
     - eiffel
+    - elastic
     - emea
     - faas
     - gitter
     - Hostmetrics
+    - isovalent
     - jemmic
     - keptn
     - kubecon
