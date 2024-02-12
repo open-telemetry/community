@@ -19,9 +19,10 @@ We are seeking security experts to collaborate with us in expanding the security
 
 There is an open [PR](https://github.com/open-telemetry/semantic-conventions/issues/580) to create a `semconv-security-approver` group for all PRs related to security fields.  
 
-* project lead: @trisch-me
-* domain expert: @mjwolf
-* domain expert: @raesene
+* project lead: @trisch-me (Elastic)
+* domain expert: @mjwolf (Elastic)
+* domain expert: @raesene (Datadog)
+* domain expert: @lambdanis (Isovalent)
 
 * TC sponsor: @reyang
 * TC sponsor: vacant
