@@ -16,20 +16,17 @@ Every meeting must contain a link to the meeting notes. The meeting notes
 document must be shared with write or commenting permissions. If giving edit permissions to everyone,
 go into the document share settings and uncheck "Editors can change permissions and share".
 
-Anyone can request to be added or removed as a meeting participant. Request can
-be made via GitHub issue on this repository or contacting SIG maintainer via
-other channels like Slack.
-
-All meetings must include [OpenTelemetry Calendar Invites Google Group](https://groups.google.com/g/opentelemetry-calendar)
-as a participant. Anybody who wants to receive up to date invites for all OpenTelemetry
-meetings can join the group.
+All meetings should invite a publicly joinable google group `calendar-...@opentelemetry.io` which is specific to the meeting series
+and also the global [calendar-all@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-all).
+This way anyone who wants to receive up-to-date invites can join one of those groups
+(see [Inviting attendees](#inviting-attendees) below).
 
 ## Steps
 To create or edit a meeting, you need to have access to the Public OpenTelemetry calendar (a shared Google calendar) and you must add a Zoom meeting link.
 
 ### Gaining Calendar Permissions
 All SIG maintainers can get access to edit the public OpenTelemetry calendar
-by submitting a request to join the [opentelemetry-calendar-contributors Google Group](https://groups.google.com/g/opentelemetry-calendar-contributors).
+by submitting a request to join the [calendar-edit-permission@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-edit-permission).
 If your identity is not recognizable from the e-mail you are using to request joining the group, please
 request to be added to this Google Group by creating an issue in this repository.
 
@@ -46,7 +43,11 @@ The following details need to be set properly:
   - A link to the meeting notes
     - The meeting notes should be owned by the shared Governance Committee Google account.
       Having a document created can be requested from the GC via opening an issue in this repository.
-- Invited attendees: opentelemetry-calendar@googlegroups.com (see note on this Google Group above)
+- Invited attendees (see below)
+- Guest permissions:
+  - Modify event: no
+  - Invite others: no
+  - See guest list: yes
 
 ### Adding a Zoom link to a meeting
 Open an issue in the community repository, requesting a new Zoom link.
@@ -56,6 +57,19 @@ The Zoom link will be created in one of the 5 OpenTelemetry Zoom account.
 A single Zoom account should not be used for back-to-back meetings or for more than two meetings at the same time.
 You can see which Zoom account any potentially conflicting meetings are using in the meeting descriptions.
 (Note: posting the URLs publicly on GitHub leads to Zoom bombing by random bots).
+
+### Inviting attendees
+All meetings should invite a publicly joinable google group `calendar-...@opentelemetry.io` which is specific to the meeting series.
+The google group should be set up as follows:
+
+* Who can search for group: Anyone on the web
+* Who can join group: Anyone can join
+* Who can view conversations: Group members
+* Who can post: Group members
+* Who can view members: Group managers
+
+This allows anyone to subscribe to this specific meeting series by joining that google group.
+Please open a community issue to request the creation of a `calendar-...@opentelemetry.io` google group.
 
 ### Update the meetings overview
 All recurring meetings are listed in the [Community repo's README](../README.md#special-interest-groups), make sure to add/update the respective entry there.
