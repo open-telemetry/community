@@ -37,6 +37,9 @@
     },
     {
       "pattern" : "https://grafana.com/orgs/otelsigsecurity"
+    },
+    {
+      "pattern" : "https://civs1.civs.us/"
     }
   ]
 }
