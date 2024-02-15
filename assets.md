@@ -148,10 +148,18 @@ Link: https://zapier.com
 - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
   (GitHub password is available in the OpenTelemetry Governance 1Password)
 
-### Project Google account: cncf-opentelemetry-governance@lists.cncf.io
+### Google Workspace accounts
 
-- Used to manage the OpenTelemetry community calendar and Zoom
-- Owned by the governance committee
+- Accounts
+  - admin@opentelemetry.io
+- Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+- Used to manage the OpenTelemetry community calendar
+
+### Google account for cncf-opentelemetry-governance@lists.cncf.io
+
+- Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+- Used for community Google Docs
+- Used to manage Zoom
 
 ## Bot accounts
 
