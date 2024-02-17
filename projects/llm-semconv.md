@@ -56,8 +56,8 @@ who will benefit from these semantic conventions.
 
 Alternating weekly meetings to accommodate different time zones:
 
-https://strawpoll.com/3RnYlN4Jxye
-- Week 2: Thursdays at 4 PM PST
+- Week 1: Wednesdays at 8 AM PST
+- Week 2: Wednesdays at 4 PM PST
 
 ## Timeline
 
