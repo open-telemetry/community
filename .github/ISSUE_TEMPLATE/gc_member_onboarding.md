@@ -143,7 +143,7 @@ The new member must:
 All OpenTelemetry public meetings are handled via Google Calendars (see [How to handle public calendar](https://github.com/open-telemetry/community/blob/main/docs/how-to-handle-public-calendar.md)
 for more details). People in the  `opentelemetry-calendar-contributors` Google
 Group have write access to the OpenTelemetry public calendar. To view and
-manage members of this group one must use the `opentelemetry.calendar.owner@gmail.com`
+manage members of this group one must use the `admin@opentelemetry.io`
 account.
 
 The existing member must:
