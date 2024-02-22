@@ -2,11 +2,11 @@
 
 ## Description
 
-This project aims to establish observability standards for Large Language Model (LLM) applications, focusing on API interactions and multi-step LLM frameworks. Key areas include:
+This workgroup aims to identify and define a standardized vocabulary and specification for observability of Large Language Model (LLM) based applications. The effort would explore various LLM-based application APIs, LLM tasks and LLM workflows for multistage reasoning. Key areas include:
 
-- Developing semantic conventions for standard and complex LLM interactions.
-- Initiating vendor-specific conventions as a foundation for broader contributions.
-- Concentrating on attributes relevant to Metrics and Spans.
+- Evaluating existing vendor-specific conventions (which may not be currently standardized but implementation specific)
+- Developing a standardized vocabulary for observability specific semantic conventions for single stage and multistage LLM workflows
+- Initial scope focused on metrics and traces (which could later be expanded to other telemetry data signals)
 
 Example Use Cases:
 
@@ -21,9 +21,9 @@ For Metrics: Tracking model performance by collecting and correlating data like 
 
 ## Deliverables
 
-- Experimental semantic conventions for LLMs, allowing flexibility for evolution in this fast-paced field.
+- Semantic conventions for LLMs, allowing flexibility for evolution in this fast-paced field.
 - Reference prototypes demonstrating the application of these conventions in data collection, processing, and analysis.
-- Guidelines for monitoring LLM applications, including implementation strategies and privacy/security considerations.
+- Recommended practices for monitoring LLM applications, including implementation strategies.
 
 ## Staffing / Help Wanted
 
