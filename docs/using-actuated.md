@@ -1,7 +1,7 @@
 # Using actuated
 
 [Actuated](https://actuated.dev/) is available as a GitHub App which can be
-enbabled on repositories, and allows GH Actions to execute on runners hosted by
+enabled on repositories, and allows GH Actions to execute on runners hosted by
 the CNCF. [See the announcement](https://actuated.dev/blog/arm-ci-cncf-ampere)
 
 ## Installation
