@@ -1,0 +1,39 @@
+# Using actuated
+
+[Actuated](https://actuated.dev/) is available as a GitHub App which can be
+enbabled on repositories, and allows GH Actions to execute on runners hosted by
+the CNCF. [See the announcement](https://actuated.dev/blog/arm-ci-cncf-ampere)
+
+## Installation
+
+Before it can be used, the App has to be enabled on the repository, through a
+maintenance request.  [See an
+example](https://github.com/open-telemetry/community/issues/1954).
+
+## Usage
+
+Using actuated on a GitHub Actions job consists in changing the `runs-on`
+section to be `actuated-*` (to run jobs on x86), or `actuated-arm64-*`, with
+the required CPUs and RAM in the name.
+
+For example:
+
+```yaml
+runs-on: actuated-4cpu-16gb
+```
+
+This configuration will ensure your job has 4 CPUs and 16GB of RAM available.
+
+While not specifying any CPU/RAM values (`runs-on: actuated`) works, using that
+format is not recommended by the actuated folks.
+
+## VMMeter
+
+As you set up your job, you may need an estimation of the resources it needs,
+to better set your requirements.
+
+Actuated provides VMMeter, a small action which will output system information
+at the end of a run.
+Follow [the
+instructions](https://gist.github.com/alexellis/1f33e581c75e11e161fe613c46180771)
+to set it up in your job.
