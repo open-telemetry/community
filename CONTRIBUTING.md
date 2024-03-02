@@ -1,6 +1,7 @@
 # OpenTelemetry Contributor Guide
 
 Welcome to OpenTelemetry! This document is the single source of truth for how to
+
 contribute to the code base. Feel free to browse the [open
 issues](https://github.com/open-telemetry/community/issues?q=is%3Aissue+is%3Aopen+label%3Aarea%2Fcontributor-guide)
 and file new ones, all feedback welcome!
