@@ -2,7 +2,11 @@
 
 [Actuated](https://actuated.dev/) is available as a GitHub App which can be
 enabled on repositories, and allows GH Actions to execute on runners hosted by
-the CNCF. [See the announcement](https://actuated.dev/blog/arm-ci-cncf-ampere)
+the CNCF. [See the announcement](https://actuated.dev/blog/arm-ci-cncf-ampere).
+
+Using actuated is ideal if you need to run an Action on an environment that
+GitHub doesn't currently provides, such as ARM64.  
+It should not replace the GitHub Actions runners in every job.
 
 ## Installation
 
