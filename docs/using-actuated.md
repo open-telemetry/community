@@ -4,8 +4,8 @@
 enabled on repositories, and allows GH Actions to execute on runners hosted by
 the CNCF. [See the announcement](https://actuated.dev/blog/arm-ci-cncf-ampere).
 
-Using actuated is ideal if you need to run an Action on an environment that
-GitHub doesn't currently provides, such as ARM64.  
+Using actuated is ideal if you need to run an Action on an an ARM64
+environment, which GitHub doesn't currently provide.
 It should not replace the GitHub Actions runners in every job.
 
 ## Installation
@@ -17,19 +17,18 @@ example](https://github.com/open-telemetry/community/issues/1954).
 ## Usage
 
 Using actuated on a GitHub Actions job consists in changing the `runs-on`
-section to be `actuated-*` (to run jobs on x86), or `actuated-arm64-*`, with
-the required CPUs and RAM in the name.
+section to be `actuated-arm64-*`, with the required CPUs and RAM in the name.
 
 For example:
 
 ```yaml
-runs-on: actuated-4cpu-16gb
+runs-on: actuated-arm64-4cpu-16gb
 ```
 
 This configuration will ensure your job has 4 CPUs and 16GB of RAM available.
 
-While not specifying any CPU/RAM values (`runs-on: actuated`) works, using that
-format is not recommended by the actuated folks.
+While not specifying any CPU/RAM values (`runs-on: actuated-arm64`) works,
+using that format is not recommended by the actuated folks.
 
 ## VMMeter
 
