@@ -19,6 +19,10 @@ example](https://github.com/open-telemetry/community/issues/1954).
 Using actuated on a GitHub Actions job consists in changing the `runs-on`
 section to be `actuated-arm64-*`, with the required CPUs and RAM in the name.
 
+See the [actuated
+documentation](https://docs.actuated.dev/examples/custom-vm-size/) about custom
+VM sizes.
+
 For example:
 
 ```yaml
