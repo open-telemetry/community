@@ -34,7 +34,7 @@ This configuration will ensure your job has 4 CPUs and 16GB of RAM available.
 While not specifying any CPU/RAM values (`runs-on: actuated-arm64`) works,
 using that format is not recommended by the actuated folks.
 
-## VMMeter
+## Right-sizing VMs
 
 As you set up your job, you may need an estimation of the resources it needs,
 to better set your requirements.
