@@ -476,8 +476,12 @@
         name: '#otel-sig-security'
         id: C05A85QC281
     invites: calendar-sig-security
-    tcSponsors: []
-    gcLiaison: []
+    tcSponsors:
+    - name: Reiley Yang
+      github: reyang
+    gcLiaison:
+    - name: 'Juraci Paixão Kröhling'
+      github: jpkrohling
   - name: OpenTelemetry on Mainframes
     meeting: Weekly on Tuesday at 10:00 AM PT
     notes:
