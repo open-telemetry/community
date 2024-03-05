@@ -28,20 +28,20 @@ Resource is defined to be immutable in the OpenTelemetry SDK. This does not alig
 
 With the current definition of the Resource we are forced to either leave out any attributes that may ever change over time or violate the spec definition.
 
-Additionally, OpenTelemetry currently lacks the ability to provide resource attributes that require some kind of delayed lookup that may fail (see this issue). This required, e.g. passing environment variables for k8s container name and various downward-api values for an OpenTelemetry SDK to appropriately report this resource.
+Additionally, OpenTelemetry currently lacks the ability to provide resource attributes that require some kind of delayed lookup that may fail (see [this issue](https://github.com/open-telemetry/opentelemetry-specification/issues/1298)). This required, e.g. passing environment variables for k8s container name and various downward-api values for an OpenTelemetry SDK to appropriately report this resource.
 
-In reality OpenTelemetry SDKs can also easily violate the definition as soon as we consider mutability from recipients perspective. SDKs only guarantee immutability during a single process session. As soon as the process is restarted and the SDK is newly initialized there is no guarantee that the Resource will have the same set of attributes (e.g. because process.id can be one of the Resource attributes).
+In reality, OpenTelemetry SDKs can also easily violate the definition as soon as we consider mutability from a recipient's perspective. SDKs only guarantee immutability during a single process session. As soon as the process is restarted and the SDK is newly initialized, there is no guarantee that the Resource will have the same set of attributes (e.g. because `process.id` can be one of the Resource attributes).
 It is clear that the strictly "immutable" definition of the Resource is not sufficient for what we are trying to model.
 
 ### Problem 4: Metric Cardinality Problem
 
-Today every attribute in an OpenTelemetry Resource, according to the metric data model, is used to determine the identity of metric.  Given known issues in metric time-series database implementation around cardinality, this can cause major issues if Resources are allowed to leverage high cardinality attributes. 
+Today every attribute in an OpenTelemetry Resource, according to the metric data model, is used to determine the identity of a metric.  Given known issues in metric time-series database implementations around cardinality, this can cause major issues if Resources are allowed to leverage high cardinality attributes. 
 
 Given many Resource attributes semantic conventions today were defined for the tracing instrumentation, we do find many high cardinality definitions, e.g. the [Process](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/resource/process.md#process) resource includes `pid` and and `parent_pid`, which are known to churn between instances of an application and would lead to higher cardinality streams. 
 
 Many metric backends are simply erasing resource attributes from metrics to workaround the issue.  Here's an example [solution for prometheus](https://github.com/open-telemetry/opentelemetry-specification/issues/1782), and [another proposal for yet another point-fix for prometheus](https://github.com/open-telemetry/opentelemetry-specification/pull/2736).
 
-However, these workarounds prevent Metrics users from regaining descriptive attributes (and benefits) of current OTEL Resource detection.
+However, these workarounds prevent Metrics users from regaining descriptive attributes (and benefits) of current Otel Resource detection.
 
 Source: [see this issue](https://github.com/open-telemetry/opentelemetry-specification/issues/2775).
 
@@ -51,7 +51,7 @@ For more details on the problems and proposed solutions please [see this documen
 
 ## Deliverables
 
-We plant to deliver the following:
+We plan to deliver the following:
 
 - A specification of a new [concept of Entities](https://docs.google.com/document/d/1VUdBRInLEhO_0ABAoiLEssB1CQO_IcD5zDnaMEha42w/edit#heading=h.psbmkrtahy3d) and a definition of telemetry's Producing Entity concept.
 - A backward-compatible extension of the concept of the Resource that seamlessly integrates with the concept of Entities.
@@ -62,7 +62,7 @@ We plant to deliver the following:
   - To produce information about entities it observes.
   - To [enrich telemetry](https://docs.google.com/document/d/1VUdBRInLEhO_0ABAoiLEssB1CQO_IcD5zDnaMEha42w/edit#heading=h.ij8yjheo645z) that passes through it by additional entity-related information it possesses.
 - A set of core Entities and stable semantic conventions for those entities
-  - To bootstrap consistent identity for OTEl users: Service, Process, Host, Container and k8s.
+  - To bootstrap consistent identity for Otel users: Service, Process, Host, Container and k8s.
   - A set of prototype resource/entity detection code in multiple languages.
 
 A set of prototypes has been implemented that demonstrate what these deliverables look like in practice:
