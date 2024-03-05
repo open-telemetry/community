@@ -1,6 +1,7 @@
 # Project Management
 
 The OpenTelemetry community has limited bandwidth for managing changes which expand the scope of OpenTelemetry, or impact many SIGs within OpenTelemetry. There are three common scenarios which have this kind of impact.
+
 * Non-trivial changes to the OpenTelemetry specification.
 * A new SIG being formed.
 * An existing SIG taking on new work which will affect the OpenTelemetry project as a whole, and will need review from the broader community.
