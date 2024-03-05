@@ -44,3 +44,6 @@ at the end of a run.
 Follow [the
 instructions](https://gist.github.com/alexellis/1f33e581c75e11e161fe613c46180771)
 to set it up in your job.
+
+see [the actuated
+documentation](https://actuated.dev/blog/right-sizing-vms-github-actions).
