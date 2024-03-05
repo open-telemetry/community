@@ -103,7 +103,7 @@ Once a project is started, the working group should meet regularly for discussio
 
 ## Timeline
 
-We expect the SIG to start working immediately. The timeline for specific milestones and deliverables is to be defined by the SIG.
+We expect the SIG to start working immediately. We will aim to deliver the initial design proposal by the end of the first half of 2024 and minimal working implementations by the end of 2024.
 
 ## Labels
 
