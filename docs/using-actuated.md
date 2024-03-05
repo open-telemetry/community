@@ -31,8 +31,8 @@ runs-on: actuated-arm64-4cpu-16gb
 
 This configuration will ensure your job has 4 CPUs and 16GB of RAM available.
 
-While not specifying any CPU/RAM values (`runs-on: actuated-arm64`) works,
-using that format is not recommended by the actuated folks.
+While not specifying any CPU/RAM values (`runs-on: actuated-arm64`) currently
+works, using that format is deprecated and will be removed.
 
 ## Right-sizing VMs
 
