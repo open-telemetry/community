@@ -97,7 +97,9 @@
         id: C02Q4AAHDSA
     invites: calendar-semconv
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: Trask Stalnaker
+      github: trask
   - name: 'Semantic Conventions: System Metrics'
     meeting: Every Thursday at 08:30 PT
     notes:
