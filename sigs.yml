@@ -85,7 +85,9 @@
       github: jsuereth
     - name: Reiley Yang
       github: reyang
-    gcLiaison: []
+    gcLiaison:
+    - name: Trask Stalnaker
+      github: trask
   - name: 'Semantic Conventions: Messaging'
     meeting: Every Thursday at 8:00 PT
     notes:
