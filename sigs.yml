@@ -155,7 +155,9 @@
         id: C05J0T9K27Q
     invites: calendar-android
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: Trask Stalnaker
+      github: trask
   - name: Collector
     meeting: Every Wednesday at 09:00 PT plus monthly on first Wednesday at 00:00 PT
       and on third Wednesday at 16:00 PT
