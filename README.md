@@ -68,7 +68,7 @@ can access it via:
 
 * [Web](https://calendar.google.com/calendar/embed?src=c_2bf73e3b6b530da4babd444e72b76a6ad893a5c3f43cf40467abc7a9a897f977%40group.calendar.google.com)
 * [Google
-Calendar](https://calendar.google.com/calendar?cid=Y18yYmY3M2UzYjZiNTMwZGE0YmFiZDQ0NGU3MmI3NmE2YWQ4OTNhNWMzZjQzY2Y0MDQ2N2FiYzdhOWE4OTdmOTc3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
+Calendar](https://calendar.google.com/calendar?cid=c_2bf73e3b6b530da4babd444e72b76a6ad893a5c3f43cf40467abc7a9a897f977@group.calendar.google.com)
 * [iCalendar](https://calendar.google.com/calendar/ical/c_2bf73e3b6b530da4babd444e72b76a6ad893a5c3f43cf40467abc7a9a897f977%40group.calendar.google.com/public/basic.ics)
 
 The best way to subscribe to specific OpenTelemetry meeting series is to join the associated
