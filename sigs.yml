@@ -498,9 +498,5 @@
     invites: calendar-mainframe
     tcSponsors: []
     gcLiaison:
-      - name: Alolita Sharma
-        github: alolita
       - name: Morgan McLean
         github: mtwo
-      - name: Daniel Dyla
-        github: dyladan
