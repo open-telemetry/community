@@ -433,7 +433,9 @@
         id: C033BJ8BASU
     invites: calendar-k8s-operator
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: 'Juraci Paixão Kröhling'
+      github: jpkrohling
   - name: Community Demo Application
     meeting: Every Wednesday at 8:00 PT
     notes:
