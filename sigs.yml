@@ -245,7 +245,9 @@
         id: C03S01YSAS0
     invites: calendar-go
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: 'Juraci Paixão Kröhling'
+      github: jpkrohling
   - name: 'Java: SDK + Automatic Instrumentation'
     meeting: Every Thursday at 09:00 PT
     notes:
