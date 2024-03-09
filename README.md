@@ -68,7 +68,7 @@ can access it via:
 
 * [Web](https://calendar.google.com/calendar/embed?src=c_2bf73e3b6b530da4babd444e72b76a6ad893a5c3f43cf40467abc7a9a897f977%40group.calendar.google.com)
 * [Google
-Calendar](https://calendar.google.com/calendar?cid=Y18yYmY3M2UzYjZiNTMwZGE0YmFiZDQ0NGU3MmI3NmE2YWQ4OTNhNWMzZjQzY2Y0MDQ2N2FiYzdhOWE4OTdmOTc3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
+Calendar](https://calendar.google.com/calendar?cid=c_2bf73e3b6b530da4babd444e72b76a6ad893a5c3f43cf40467abc7a9a897f977@group.calendar.google.com)
 * [iCalendar](https://calendar.google.com/calendar/ical/c_2bf73e3b6b530da4babd444e72b76a6ad893a5c3f43cf40467abc7a9a897f977%40group.calendar.google.com/public/basic.ics)
 
 The best way to subscribe to specific OpenTelemetry meeting series is to join the associated
@@ -137,6 +137,7 @@ SIG-specific GitHub discussions.
 | Semantic Conventions: General        | Every Monday at 08:00 PT             | [Google Doc](https://docs.google.com/document/d/10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8)      | [#otel-semantic-conventions-wg](https://cloud-native.slack.com/archives/C041APFBYQP) | [calendar-semconv@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)             | [Armin Ruech](https://github.com/arminru)<br/>[Josh Suereth](https://github.com/jsuereth)<br/>[Reiley Yang](https://github.com/reyang) |
 | Semantic Conventions: Messaging      | Every Thursday at 8:00 PT            | [Google Doc](https://docs.google.com/document/d/1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE/)     | [#otel-messaging](https://cloud-native.slack.com/archives/C02Q4AAHDSA)               | [calendar-semconv@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)             |                                                                                                                                        |
 | Semantic Conventions: System Metrics | Every Thursday at 08:30 PT           | [Google Doc](https://docs.google.com/document/d/1p5TH57t43XpxA48onLzX4PIr3g6ydYKCtR_AUlsCnQk)      | [#otel-system-metrics-wg](https://cloud-native.slack.com/archives/C05CTFE9U4A)       | [calendar-semconv@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)             | [Josh Suereth](https://github.com/jsuereth)                                                                                            |
+| Semantic Conventions: LLM | Every Wednesday alternating between 08:00 and 16:00 PT           | [Google Doc](https://docs.google.com/document/d/1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M)      | [#otel-llm-semconv-wg](https://cloud-native.slack.com/archives/C06KR7ARS3X)       | [calendar-semconv@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)             | [Alolita Sharma](https://github.com/alolita)<br/>[Liudmila Molkova](https://github.com/lmolkova)                                                                                            |
 
 ### Implementation SIGs
 
