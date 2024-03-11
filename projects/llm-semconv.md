@@ -46,6 +46,7 @@ who will benefit from these semantic conventions.
 - @nirga
 - @sudivate
 - @cartermp
+- @gyliu513
 - *Positions open for more engineers*
 
 **Maintainers:**
