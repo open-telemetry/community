@@ -2,15 +2,15 @@
 
 ## Description
 
-OpenTelemetry's usage of Resource has a number of known problems (see listed below). The Project's and the SIG's charter is to solve these and other related problems. 
+OpenTelemetry's usage of Resource has a number of known problems (see listed below). The Project's and the SIG's charter is to solve these and related problems. 
 
-The background work on these problems and coming up with potential solution options has been in progress for more than a year now, with participation of the listed sponsors and other interested contributors. We have been waiting until there is sufficient understanding of what and how we would like to solve these problems and also until we are certain there is significant available contributing capacity and interest.
+The background work on these problems and coming up with potential solutions have been in progress for more than a year now, with participation of the listed sponsors and other interested contributors. We have been waiting until there is sufficient understanding of what and how we would like to solve these problems and also until we are certain there is significant available contributing capacity and interest.
 
-We believe we arrived at that point and now is the time to start this project.
+We believe we have arrived at that point and now is the time to start this project.
 
 ### Problem 1: Commingling of Entities
 
-The Resource [is defined as](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/resource/sdk.md) a "representation of the entity producing telemetry". Note that the spec speaks about one particular producing entity. In practice we commingle multiple entities into one Resource. The spec then shows a clear example that talks about multiple entities (Process, Container, Pod, etc) in one Resource:
+A Resource [is defined as](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/resource/sdk.md) a "representation of the entity producing telemetry". Note that the spec speaks about one particular producing entity. In practice we commingle multiple entities into one Resource. The spec then shows a clear example that talks about multiple entities (Process, Container, Pod, etc) in one Resource:
 
 >For example, a process producing telemetry that is running in a container on Kubernetes has a Pod name, it is in a namespace and possibly is part of a Deployment which also has a name. All three of these attributes can be included in the Resource.
 
@@ -35,9 +35,9 @@ It is clear that the strictly "immutable" definition of the Resource is not suff
 
 ### Problem 4: Metric Cardinality Problem
 
-Today every attribute in an OpenTelemetry Resource, according to the metric data model, is used to determine the identity of a metric.  Given known issues in metric time-series database implementations around cardinality, this can cause major issues if Resources are allowed to leverage high cardinality attributes. 
+Today every attribute in an OpenTelemetry Resource, according to the metric data model, is used to determine the identity of a metric. Given known issues in metric time-series database implementations around cardinality, this can cause major issues if Resources are allowed to leverage high cardinality attributes.
 
-Given many Resource attributes semantic conventions today were defined for the tracing instrumentation, we do find many high cardinality definitions, e.g. the [Process](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/resource/process.md#process) resource includes `pid` and and `parent_pid`, which are known to churn between instances of an application and would lead to higher cardinality streams. 
+Given many Resource attribute semantic conventions today were defined for tracing instrumentation, we do find many high cardinality definitions, e.g. the [Process](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/resource/process.md#process) resource includes `pid` and and `parent_pid`, which are known to churn between instances of an application and would lead to higher cardinality streams. 
 
 Many metric backends are simply erasing resource attributes from metrics to workaround the issue.  Here's an example [solution for prometheus](https://github.com/open-telemetry/opentelemetry-specification/issues/1782), and [another proposal for yet another point-fix for prometheus](https://github.com/open-telemetry/opentelemetry-specification/pull/2736).
 
