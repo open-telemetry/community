@@ -28,7 +28,7 @@ Resource is defined to be immutable in the OpenTelemetry SDK. This does not alig
 
 With the current definition of the Resource we are forced to either leave out any attributes that may ever change over time or violate the spec definition.
 
-Additionally, OpenTelemetry currently lacks the ability to provide resource attributes that require some kind of delayed lookup that may fail (see [this issue](https://github.com/open-telemetry/opentelemetry-specification/issues/1298)). This required, e.g. passing environment variables for k8s container name and various downward-api values for an OpenTelemetry SDK to appropriately report this resource.
+Additionally, OpenTelemetry currently lacks the ability to provide resource attributes that require some kind of delayed lookup that may fail (see [this issue](https://github.com/open-telemetry/opentelemetry-specification/issues/1298)). Today, there are a variety of ad-hoc solutions across OpenTelemetry for dealing with these attributes, which may include delaying startup, forcing an external party to lookup the attributes or simply failing to provide the attributes.
 
 In reality, OpenTelemetry SDKs can also easily violate the definition as soon as we consider mutability from a recipient's perspective. SDKs only guarantee immutability during a single process session. As soon as the process is restarted and the SDK is newly initialized, there is no guarantee that the Resource will have the same set of attributes (e.g. because `process.id` can be one of the Resource attributes).
 It is clear that the strictly "immutable" definition of the Resource is not sufficient for what we are trying to model.
