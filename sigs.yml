@@ -145,7 +145,9 @@
         id: C01NJ7V1KRC
     invites: calendar-maintainer-meeting
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+       - name: Morgan McLean
+          github: mtwo
   - name: 'Android: SDK + Automatic Instrumentation'
     meeting: Every Tuesday at 08:00PT
     notes:
@@ -302,7 +304,9 @@
         id: C01PD4HUVBL
     invites: calendar-python
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: Daniel Gomez Blanco
+      github: danielgblanco
   - name: 'Ruby: SDK'
     meeting: Every Tuesday at 09:00 PT
     notes:
@@ -360,7 +364,7 @@
     gcLiaison:
     - name: 'Severin Neumann'
       github: svrnm
-  - name: End-User WG
+  - name: End-User SIG
     meeting: Every other week on Thursday at 10:00 PT
     notes:
       type: gDoc
@@ -397,7 +401,9 @@
         id: C02J58HR58R
     invites: calendar-agent-mgmt
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: Daniel Gomez Blanco
+      github: danielgblanco
   - name: Prometheus Interoperability WG
     meeting: Every other week on Wednesday at 08:00 PT
     notes:
@@ -421,7 +427,9 @@
         id: C0239SYARD2
     invites: calendar-client-side
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: Daniel Gomez Blanco
+      github: danielgblanco
   - name: Kubernetes Operator
     meeting: Every other week on Thursday at 09:00 PT
     notes:
@@ -473,7 +481,9 @@
         id: C03J794L0BV
     invites: calendar-profiling
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+      - name: Morgan McLean
+        github: mtwo
   - name: Security
     meeting: Weekly on Wednesday at 08:30 AM PT
     notes:
