@@ -60,6 +60,15 @@ Alternating weekly meetings to accommodate different time zones:
 - Week 1: Wednesdays at 8 AM PST
 - Week 2: Wednesdays at 4 PM PST
 
+### Meeting Links
+
+- Meeting Calendar: [calendar-semconv@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)
+- Meeting Notes: [Google Doc](https://docs.google.com/document/d/1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M)
+
+## Discussion 
+
+* Slack: [#otel-llm-semconv-wg](https://cloud-native.slack.com/archives/C06KR7ARS3X)
+
 ## Timeline
 
 1. Initial Draft: February 2024
@@ -75,8 +84,9 @@ Alternating weekly meetings to accommodate different time zones:
 ## Linked Issues and PRs
 
 - Issue: [Introduce semantic conventions for modern AI (LLMs, vector databases, etc.) #327](https://github.com/open-telemetry/semantic-conventions/issues/327)
-- PR: [Add LLM semantic conventions #639](https://github.com/open-telemetry/semantic-conventions/pull/639)
+- PR: [LLM Semantic Conventions: Initial PR #825](https://github.com/open-telemetry/semantic-conventions/pull/825)
+- PR: [Add LLM semantic conventions #639](https://github.com/open-telemetry/semantic-conventions/pull/639) - Closed/Replaced with 825
 
 ## Project Board
 
-To be established post-approval.
+* Project Board: [LLM Client Semantic Conventions](https://github.com/orgs/open-telemetry/projects/82)
