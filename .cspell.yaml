@@ -9,14 +9,17 @@ words:
     - codecov
     - codeowners
     - DASD
+    - datadog
     - dynatrace
     - easycla
     - eiffel
+    - elastic
     - emea
     - faas
     - gitter
     - gyliu513
     - Hostmetrics
+    - isovalent
     - jemmic
     - keptn
     - kubecon
@@ -35,6 +38,7 @@ words:
     - pytest
     - REXX
     - runtimes
+    - semconv
     - signup
     - skyscanner
     - splk
@@ -113,6 +117,7 @@ words:
     - krzko
     - kuisathaverat
     - lalitb
+    - lambdanis
     - lmolkova
     - lucavallin
     - magnusbaeck
@@ -121,6 +126,7 @@ words:
     - mateuszrzeszutek
     - mayur
     - mayurkale
+    - mjwolf
     - mhausenblas
     - mirabella
     - molkova
@@ -142,6 +148,7 @@ words:
     - pmpaulino
     - poncelow
     - pyohannes
+    - raesene
     - reiley
     - reyang
     - rrschulze
@@ -170,6 +177,7 @@ words:
     - tigran
     - tigrannajaryan
     - trask
+    - trisch-me
     - tsloughter
     - tylerbenson
     - xibz
