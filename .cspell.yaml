@@ -35,6 +35,7 @@ words:
     - pytest
     - REXX
     - runtimes
+    - scaphandre
     - signup
     - skyscanner
     - splk
@@ -68,6 +69,7 @@ words:
     - arminru
     - austinlparker
     - beedgen
+    - bertysentry
     - blanco
     - bogdan
     - bogdandrutu
@@ -95,6 +97,7 @@ words:
     - ericchapman80
     - e-backmark-ericsson
     - fong
+    - gabibeyer
     - henrikrexed
     - hongalex
     - horovits
@@ -123,6 +126,7 @@ words:
     - mayurkale
     - mhausenblas
     - mirabella
+    - mkorbi
     - molkova
     - msomasu
     - mtwo
@@ -133,6 +137,7 @@ words:
     - neumann
     - neumüller
     - nirga
+    - nikimanoledaki
     - novotny
     - ocelotl
     - oleg-nenashev
@@ -147,6 +152,7 @@ words:
     - rrschulze
     - ruech
     - rynn
+    - rossf7
     - salnikov
     - scavarda
     - scheler
@@ -159,6 +165,7 @@ words:
     - shkuro
     - sigelman
     - sourabh1007
+    - spazzy757
     - srikanthccv
     - stalnaker
     - suereth
