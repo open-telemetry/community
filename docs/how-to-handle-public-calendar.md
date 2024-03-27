@@ -34,6 +34,10 @@ request to be added to this Google Group by creating an issue in this repository
 Please keep the membership of this group up to date and accurate.
 
 ### Create the meeting
+
+:warning: The meeting must initially be created by the admin@opentelemetry.io account,
+otherwise synchronization to external calendars via the `calendar-*@opentelemetry.io` groups may not work.
+
 The following details need to be set properly:
 - Title
 - Timeslot (make sure to use the correct time zone - Pacific Time - as the dates for switching DST differs between countries)
