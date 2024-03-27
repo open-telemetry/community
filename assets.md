@@ -12,6 +12,15 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 
 ## Community Resource Accounts
 
+### Actuated
+
+Link: https://actuated.dev/blog/arm-ci-cncf-ampere
+Doc: [Using Actuated](docs/using-actuated.md)
+
+- GitHub App available for repositories to get ARM64 Actions runners.
+- Admin: N/A. The program is managed by the CNCF and Actuated. The only
+  available admin task is to add the GitHub App to a repository.
+
 ### AWS account
 
 Link: http://cncf-aws-opentelemetry.signin.aws.amazon.com/
