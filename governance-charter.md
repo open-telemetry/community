@@ -33,7 +33,8 @@ following:
   how contributors become committers/maintainers, approvers, reviewers, members,
   etc.
 - Decide, for the purpose of elections, who can vote.
-- Logo/landing page/marketing. 
+- Logo/landing page/marketing.
+- GitHub repository management, membership, and hosting.
 - Maintain relationships with CNCF. For instance, creating [documents describing
   the project](https://github.com/cncf/toc/blob/master/proposals/opentelemetry.adoc)
 - Define, evolve, and defend the **vision, values, mission, and scope** of the
