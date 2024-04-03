@@ -18,7 +18,7 @@ Extensions, apps, or bots that can **arbitrarily modify code are NOT allowed**. 
 
 ## Writing your GitHub Action workflows
 
-Many GitHub Action workflows do not require a dedicated GitHub account. Good examples are auto-assign workflows for issues and PRs such as [the one used in specifications repo](https://github.com/open-telemetry/opentelemetry-specification/blob/main/.github/workflows/auto-assign-issue.yml).
+Many GitHub Action workflows do not require a dedicated GitHub account. Good examples are auto-assign workflows for issues and PRs such as [the one used in semantic convention repo](https://github.com/open-telemetry/semantic-conventions/blob/main/.github/workflows/auto-assign-issue.yml).
 
 If your workflow does require a dedicated GitHub account, you should use [@opentelemetrybot](https://github.com/opentelemetrybot).
 See [OpenTelemetry Bot documentation](../assets.md#opentelemetry-bot) for more details.
