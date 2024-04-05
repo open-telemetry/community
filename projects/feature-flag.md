@@ -58,9 +58,9 @@ Any use of baggage, including propagating fields to be used in feature flag eval
 The project is expected to be mainly staffed by OpenFeature contributors representing a strong subsection of the feature flagging vendor and user community.
 This group will provide the domain expertise to ensure the feature flag observability meets the requirements of feature flag vendors and users.
 
-This project also includes @dyladan acting as one of the project leads.
-@dyladan is a member of the GC, maintainer of OTel JS, and has experience developing semantic conventions.
-@dyladan will provide the necessary expertise to ensure the proposed semantic conventions meet the standards and expectations of the OpenTelemetry community and semantic conventions SIG.
+This project also includes Dan Dyla acting as one of the project leads.
+Dan is a member of the GC, maintainer of OTel JS, and has experience developing semantic conventions.
+Dan will provide the necessary expertise to ensure the proposed semantic conventions meet the standards and expectations of the OpenTelemetry community and semantic conventions SIG.
 
 TODO: list engineers committed to working on the project
 
