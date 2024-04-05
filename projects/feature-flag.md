@@ -66,7 +66,7 @@ TODO: list engineers committed to working on the project
 
 ### Required staffing
 
-**Project Leads:** Daniel Dyla and Michael Beemer (OpenFeature founder/GC member)
+**Project Leads:** Daniel Dyla and Michael Beemer (OpenFeature co-founder/GC member)
 
 **Engineers willing to write and review prototypes:**
 
