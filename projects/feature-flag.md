@@ -24,10 +24,10 @@ For example, if a feature flag targets users with a particular email domain, it 
 ## Problem 2: Flag management separate from monitoring data
 
 Feature flags are typically managed outside your monitoring tooling.
-There is no standardized way for a flag management system to notify a monitoring system that a feature flag ruleset is changed, or if a rule is enabled or disabled.
+There is no standardized way for a flag management system to notify a monitoring system that a feature flag rule set is changed, or if a rule is enabled or disabled.
 This lack of standardization means that even if a flag management system emits a flag change event, the monitoring tool may not be able to correlate that change with the services that it impacts.
 It also means that a person responsible for monitoring an application often has to check two separate tools in order to determine if a flag change was the root cause of a change in service metrics or behavior.
-Because rulesets and monitoring data are managed in separate tools, it may be difficult to determine exactly which ruleset was used and if it has been changed between when it was evaluated and when a person investigating an issue is looking at the monitoring data.
+Because rule sets and monitoring data are managed in separate tools, it may be difficult to determine exactly which rule set was used and if it has been changed between when it was evaluated and when a person investigating an issue is looking at the monitoring data.
 
 ## Target Use Cases
 
@@ -35,11 +35,11 @@ Because rulesets and monitoring data are managed in separate tools, it may be di
   If a feature variant is enabled for some subset of users, it is necessary to be able to distinguish those transactions from other transactions in your monitoring backend.
 - Associating a flag change with a change in key service metrics.
   This is useful additional context during root cause analysis.
-  One example of when this is useful may be determining the ruleset that was evaluated in order to determine the flag variant.
+  One example of when this is useful may be determining the rule set that was evaluated in order to determine the flag variant.
 - Determine how many users are experiencing a particular flag variant.
   In many feature flagging services it is possible to target a flag variant by some attribute of context such as the user’s email domain, however it may be difficult or impossible to know what percentage of your traffic falls into the cohort.
 - Determining why a particular flag evaluation returned the variant that it did.
-  For example, a ruleset may depend on contextual info such as the currently logged in user, their user-agent, or their geographic location in order to determine the flag variant.
+  For example, a rule set may depend on contextual info such as the currently logged in user, their user-agent, or their geographic location in order to determine the flag variant.
 - Identify which services are evaluating a specific feature flag.
   This is useful for the process of removing flags from your code and feature flagging service, an important part of the flag lifecycle.
 - Analyzing the impact of the actual flag evaluation.
@@ -83,7 +83,7 @@ The exact time and date of the meeting will be determined after the project is a
 
 We expect the project to take about 1 calendar quarter. The OpenFeature project is currently targeting Kubecon NA 2024 to announce stable OpenTelemetry support.
 
-- 2-4 weeks - First experimental semantic convention built on pre-exising feature flag semantic conventions
+- 2-4 weeks - First experimental semantic convention built on pre-existing feature flag semantic conventions
 - 2-4 weeks - Prototype implementation and review
 - 2-4 weeks - Incorporate feedback from prototype implementers
 - 2-4 weeks - Final review period including the greater spec and maintainer community
