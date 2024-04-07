@@ -62,7 +62,11 @@ This project also includes Dan Dyla acting as one of the project leads.
 Dan is a member of the GC, maintainer of OTel JS, and has experience developing semantic conventions.
 Dan will provide the necessary expertise to ensure the proposed semantic conventions meet the standards and expectations of the OpenTelemetry community and semantic conventions SIG.
 
-TODO: list engineers committed to working on the project
+The following is a list of engineers committed to working on the project:
+
+- Daniel Dyla (OTel GC, OTel JS, Dynatrace)
+- Ryan Lamb (OpenFeature TC, LaunchDarkly)
+- TODO: more engineers
 
 ### Required staffing
 
@@ -72,7 +76,8 @@ TODO: list engineers committed to working on the project
 
 TODO: list prototype languages and engineers
 
-- JS - Daniel Dyla (Maintainer)
+- JS - Daniel Dyla (OTel JS Maintainer)
+- Review Prototypes - Ryan Lamb (OpenFeature TC)
 
 ## Meeting Times
 
