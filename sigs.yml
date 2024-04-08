@@ -356,7 +356,9 @@
         id: C01NCHR19SB
     invites: calendar-swift
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison: 
+    - name: Alolita Sharma
+      github: alolita
   - name: Communications (Website, [Documentation](https://opentelemetry.io/docs/),
       etc.)
     meeting: Every other week on Monday at 10:00 PT
