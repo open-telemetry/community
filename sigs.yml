@@ -229,7 +229,9 @@
         id: C01N75YMZCN
     invites: calendar-erlang
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: 'Austin Parker'
+      github: austinlparker
   - name: 'GoLang: SDK'
     meeting: Every Thursday alternating between 10:00 and 15:00 PDT
     notes:
