@@ -193,7 +193,9 @@
         id: C01N3AT62SJ
     invites: calendar-cpp
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: 'Severin Neumann'
+      github: svrnm
   - name: '.NET: Automatic Instrumentation'
     meeting: Every Wednesday at 9:00 PT
     notes:
@@ -300,7 +302,9 @@
         id: C01NFPCV44V
     invites: calendar-php
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: 'Severin Neumann'
+      github: svrnm
   - name: 'Python: SDK'
     meeting: Every Thursday at 09:00 PT
     notes:
@@ -344,7 +348,9 @@
         link: https://gitter.im/open-telemetry/opentelemetry-rust
     invites: calendar-rust
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: 'Severin Neumann'
+      github: svrnm
   - name: 'Swift: SDK'
     meeting: Every Thursday at 09:00 PT
     notes:
