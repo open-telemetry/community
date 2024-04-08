@@ -12,20 +12,6 @@
     invites: calendar-spec-general
     tcSponsors: []
     gcLiaison: []
-  - name: 'Specification: Logs'
-    meeting: 'Merged into "Specification: General"'
-    notes:
-      type: none
-      value: See above
-    chat:
-      - type: slack
-        name: '#otel-logs'
-        id: C01N5UCHTEH
-    invites: none
-    tcSponsors:
-    - name: Tigran Najaryan
-      github: tigrannajaryan
-    gcLiaison: []
   - name: 'Specification: Sampling'
     meeting: Every Thursday at 08:00 PT
     notes:
