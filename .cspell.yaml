@@ -11,6 +11,14 @@ ignoreRegExpList:
     - Google Docs ID
 words:
     - DASD
+    - dynatrace
+    - easycla
+    - eiffel
+    - emea
+    - faas
+    - galkleinman
+    - gitter
+    - gyliu513
     - Hostmetrics
     - Liudmila
     - Nale
@@ -26,6 +34,7 @@ words:
     - amye
     - aniszczyk
     - apac
+    - anoshin
     - arbiv
     - armin
     - arminru
@@ -53,6 +62,8 @@ words:
     - davdai
     - denisivan
     - dennisme
+    - dmitrii
+    - dpauls
     - dnsmichi
     - dpauls
     - drewby
