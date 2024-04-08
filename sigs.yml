@@ -423,7 +423,9 @@
         id: C01LSCJBXDZ
     invites: calendar-prometheus
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison: 
+    - name: Alolita Sharma
+      github: alolita
   - name: Client Instrumentation
     meeting: Every Tuesday at 9:00 AM PT
     notes:
