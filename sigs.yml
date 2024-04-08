@@ -475,7 +475,9 @@
         id: C04HVBETC9Z
     invites: calendar-faas
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: 'Austin Parker'
+      github: austinlparker
   - name: Profiling WG
     meeting: Every other week on Thursday at 08:00 AM PT
     notes:
