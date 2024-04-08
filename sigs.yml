@@ -25,7 +25,9 @@
     tcSponsors:
     - name: Josh MacDonald
       github: jmacd
-    gcLiaison: []
+    gcLiaison:
+    - name: 'Daniel Dyla'
+      github: dyladan
   - name: 'Specification: Configuration'
     meeting: Every other Monday at 8:00 PT
     notes:
