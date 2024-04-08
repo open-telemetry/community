@@ -120,6 +120,24 @@
     gcLiaison: 
     - name: Alolita Sharma
       github: alolita
+  - name: 'Specification: Entities'
+    meeting: Every other week on Thursday at 08:00 AM PT
+    notes:
+      type: gDoc
+      value: 15Yt9ss2_EhuFPqItPbk4vjfpeRDAQ5WCUVuY_kCeOAo
+    chat:
+      - type: slack
+        name: '#otel-entities'
+        id: C06QEG97W7L
+    invites: calendar-entities
+    tcSponsors:
+    - name: Josh Suereth
+      github: jsuereth
+    - name: Tigran Najaryan
+      github: tigrannajaryan
+    gcLiaison:
+    - name: 'Daniel Dyla'
+      github: dyladan
 - name: Implementation SIGs
   sigs:
   - name: Maintainer Meeting
