@@ -207,7 +207,9 @@
         id: C01NR1YLSE7
     invites: calendar-dotnet
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+       - name: Morgan McLean
+         github: mtwo
   - name: '.NET: SDK'
     meeting: Every Tuesday alternating between 9:00 and 16:00 PT
     notes:
@@ -219,7 +221,9 @@
         id: C01N3BC2W7Q
     invites: calendar-dotnet
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+       - name: Morgan McLean
+         github: mtwo
   - name: 'Erlang/Elixir: SDK'
     meeting: Every other Thursday at 9:00 PT
     notes:
@@ -333,7 +337,9 @@
         link: https://github.com/open-telemetry/opentelemetry-ruby/discussions
     invites: calendar-ruby
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: 'Austin Parker'
+      github: austinlparker
   - name: 'Rust: SDK'
     meeting: Every Tuesday at 09:00 PT
     notes:
