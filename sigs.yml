@@ -43,7 +43,9 @@
       github: carlosalberto
     - name: Jack Berg
       github: jack-berg
-    gcLiaison: []
+    gcLiaison:
+    - name: Trask Stalnaker
+      github: trask
   - name: 'Specification: Events'
     meeting: Every Friday at 10:00 AM PT
     notes:
@@ -55,7 +57,9 @@
         id: C062HUREGUV
     invites: calendar-spec-events
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: Ted Young
+      github: tedsuo
   - name: 'Semantic Conventions: General'
     meeting: Every Monday at 08:00 PT
     notes:
@@ -103,7 +107,9 @@
     tcSponsors:
     - name: Josh Suereth
       github: jsuereth
-    gcLiaison: []
+    gcLiaison:
+    - name: Ted Young
+      github: tedsuo
   - name: 'Semantic Conventions: LLM'
     meeting: Every Wednesday alternating between 08:00 and 16:00 PT
     notes:
@@ -165,7 +171,9 @@
         id: C05J0T9K27Q
     invites: calendar-android
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: Trask Stalnaker
+      github: trask
   - name: Collector
     meeting: Every Wednesday at 09:00 PT plus monthly on first Wednesday at 00:00 PT
       and on third Wednesday at 16:00 PT
@@ -249,7 +257,9 @@
         id: C01NPAXACKT
     invites: calendar-go
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: Severin Neumann
+      github: svrnm
   - name: 'GoLang: Automatic Instrumentation'
     meeting: Every other week on Tuesday at 9:30 PT
     notes:
@@ -338,8 +348,8 @@
     invites: calendar-ruby
     tcSponsors: []
     gcLiaison:
-    - name: 'Austin Parker'
-      github: austinlparker
+    - name: Ted Young
+      github: tedsuo
   - name: 'Rust: SDK'
     meeting: Every Tuesday at 09:00 PT
     notes:
@@ -355,8 +365,8 @@
     invites: calendar-rust
     tcSponsors: []
     gcLiaison:
-    - name: 'Severin Neumann'
-      github: svrnm
+    - name: Ted Young
+      github: tedsuo
   - name: 'Swift: SDK'
     meeting: Every Thursday at 09:00 PT
     notes:
@@ -411,7 +421,9 @@
         id: C02AB15583A
     invites: calendar-ebpf
     tcSponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: Ted Young
+      github: tedsuo
   - name: Agent Management WG
     meeting: Every other week on Tuesday at 11:00 PT
     notes:
@@ -424,8 +436,8 @@
     invites: calendar-agent-mgmt
     tcSponsors: []
     gcLiaison:
-    - name: Daniel Gomez Blanco
-      github: danielgblanco
+    - name: Ted Young
+      github: tedsuo
   - name: Prometheus Interoperability WG
     meeting: Every other week on Wednesday at 08:00 PT
     notes:
