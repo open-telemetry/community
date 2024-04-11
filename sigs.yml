@@ -108,8 +108,8 @@
     - name: Josh Suereth
       github: jsuereth
     gcLiaison:
-    - name: Ted Young
-      github: tedsuo
+    - name: Severin Neumann
+      github: svrnm
   - name: 'Semantic Conventions: LLM'
     meeting: Every Wednesday alternating between 08:00 and 16:00 PT
     notes:
@@ -258,8 +258,8 @@
     invites: calendar-go
     tcSponsors: []
     gcLiaison:
-    - name: Severin Neumann
-      github: svrnm
+    - name: Ted Young
+      github: tedsuo
   - name: 'GoLang: Automatic Instrumentation'
     meeting: Every other week on Tuesday at 9:30 PT
     notes:
