@@ -5,10 +5,10 @@
 Add any background that may be needed to introduce the scope of this project.
 
 ### Current challenges
-List the current challenges that this project aims to solve. Focus on the problem here, and how it affects users, rather than the solution.
+List the current challenges that this project aims to solve. Focus on the problem here, how it affects users and what the downsides are if nothing is done, rather than the solution.
 
 ### Goals, objectives, and requirements
-Describe the aim of this project, including the goals, objectives and requirements needed to solve the challenges presented in the previous section. Include here the motivations for starting the project now, as opposed to later.
+Describe the aim of this project, including the goals, objectives and requirements needed to solve the challenges presented in the previous section. Include here the motivations for starting the project now, as opposed to later. Call out the benefits for the OpenTelemetry project when this project is completed.
 
 ## Deliverables
 
