@@ -337,7 +337,7 @@
     meeting: Every Tuesday at 09:00 PT
     notes:
       type: gDoc
-      value: 1D15bO8o340sQm2CVZiukEJuCO_XMMHKPuTznoEhyFqE
+      value: 1EaIbfDE1elWTWt3bhilggki_OCRJZoFCSYZJXgc9KsM
     chat:
       - type: slack
         name: '#otel-ruby'
