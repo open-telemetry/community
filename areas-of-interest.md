@@ -39,6 +39,14 @@ concerns.
 - OpenTracing compatibility
 - Semantic conventions
 
+### [Jack Berg](https://github.com/jack-berg), New Relic
+
+- Metrics API and SDK
+- Logging API and SDK
+- SDK configuration
+- OpenTelemetry Java
+- OpenTelemetry protocol
+
 ### [Josh MacDonald](https://github.com/jmacd), Lightstep
 
 - Metrics API and SDK and data model
@@ -51,14 +59,18 @@ concerns.
 ### [Josh Suereth](https://github.com/jsuereth), Google
 
 - Metrics API and SDK
-- OpenTelemtry Protocol
+- OpenTelemetry Protocol
 - Telemetry correlation (Trace <-> Metrics <-> Logs via Resource, Exemplars, etc.)
 - Protocol compatibility (OpenCensus, Prometheus, Statsd, etc.)
 - Semantic conventions
 
-### [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
+### [Reiley Yang](https://github.com/reyang), Microsoft
 
+- Logging API and SDK
+- Metrics API and SDK
 - Trace API and SDK
+- OpenTelemetry .NET
+- OpenTelemetry C++
 - W3C trace context specification
 
 ### [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
@@ -68,10 +80,10 @@ concerns.
 - OpenTelemetry schemas and versioning
 - Logging API and SDK
 
-### [Yuri Shkuro](https://github.com/yurishkuro), Facebook
+### [Yuri Shkuro](https://github.com/yurishkuro), Meta
 
 - Trace API and SDK
-- Jaeger trace ecosystem
+- Jaeger tracing compatibility
 - OpenTracing compatibility
 - W3C trace context specification
 
@@ -102,15 +114,6 @@ contact.
 - Semantic conventions
 - Open Agent Management Protocol
 
-### [Reiley Yang](https://github.com/reyang), Microsoft
-
-- Logging API and SDK
-- Metrics API and SDK
-- Trace API and SDK
-- OpenTelemetry .NET
-- OpenTelemetry C++
-- W3C Trace Context Specification
-
 ### [Tom Tan](https://github.com/ThomsonTan), Microsoft
 
 - Logging API and SDK
@@ -118,4 +121,4 @@ contact.
 - OpenTelemetry C++
 - OpenTelemetry Protocol
 
-<!-- ### [_Your name here_](http://github.com/your_name), Your Company -->
+<!-- ### [_Your name here_](https://github.com/your_name), Your Company -->
