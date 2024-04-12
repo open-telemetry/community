@@ -44,6 +44,7 @@ who will benefit from these semantic conventions.
 **Engineers:**
 
 - @nirga
+- @galkleinman
 - @sudivate
 - @cartermp
 - @gyliu513

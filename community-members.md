@@ -37,7 +37,7 @@ in alphabetical order:
 These are community maintainers, responsible for cross-functional project communications,
 events, and other functions as needed.
 
-- [Austin Parker](https://github.com/austinlparker), Lightstep
+- [Austin Parker](https://github.com/austinlparker), Honeycomb
 
 ## Specifications and Proto
 
