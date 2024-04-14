@@ -1,3 +1,4 @@
+<!-- cspell:ignore Docu heptio gitdm -->
 # The Contributor License Agreement
 
 The [Cloud Native Computing Foundation](https://www.cncf.io) (CNCF) defines
@@ -75,16 +76,13 @@ Heptio
 Canonical until 2017-03-31
 ```
 
+In addition, be sure to update your affiliation on [OpenProfile](https://openprofile.dev).
+
 ## Troubleshooting
 
-If you encounter any problems signing the CLA and need further assistance, log a ticket by clicking on the link [please submit a support request ticket](https://jira.linuxfoundation.org/plugins/servlet/theme/portal/4) from the EasyCLA bot's response. Someone from the CNCF will respond to your ticket to help.
+If you encounter any problems signing the CLA and need further assistance, log a ticket by clicking on the link 'please submit a support request ticket' from the EasyCLA bot's response. Someone from the CNCF will respond to your ticket to help.
 
 Should you have any issues using the LF Support Site, send a message to the
 backup email support address <login-issues@jira.linuxfoundation.org>
-
-## Setting up the CNCF CLA check
-
-If you are a Kubernetes GitHub organization or repo owner and would like to setup the Linux Foundation CNCF CLA check for your repositories, [read the docs on setting up the CNCF CLA check](/github-management/setting-up-cla-check.md)
-
 
 [Linux Foundation Support Site]: https://support.linuxfoundation.org/
