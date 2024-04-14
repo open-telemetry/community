@@ -38,7 +38,7 @@ Agreement](./CLA.md).
 
 ### Code of Conduct
 
-Please make sure to read and follow our [Code of Conduct](../../CODE_OF_CONDUCT.md).
+Please make sure to read and follow our [Code of Conduct](../../code-of-conduct.md).
 
 ### Setting up your development environment
 
