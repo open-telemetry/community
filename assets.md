@@ -12,6 +12,15 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 
 ## Community Resource Accounts
 
+### Actuated
+
+Link: https://actuated.dev/blog/arm-ci-cncf-ampere
+Doc: [Using Actuated](docs/using-actuated.md)
+
+- GitHub App available for repositories to get ARM64 Actions runners.
+- Admin: N/A. The program is managed by the CNCF and Actuated. The only
+  available admin task is to add the GitHub App to a repository.
+
 ### AWS account
 
 Link: http://cncf-aws-opentelemetry.signin.aws.amazon.com/
@@ -148,10 +157,18 @@ Link: https://zapier.com
 - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
   (GitHub password is available in the OpenTelemetry Governance 1Password)
 
-### Project Google account: cncf-opentelemetry-governance@lists.cncf.io
+### Google Workspace accounts
 
-- Used to manage the OpenTelemetry community calendar and Zoom
-- Owned by the governance committee
+- Accounts
+  - admin@opentelemetry.io
+- Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+- Used to manage the OpenTelemetry community calendar
+
+### Google account for cncf-opentelemetry-governance@lists.cncf.io
+
+- Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+- Used for community Google Docs
+- Used to manage Zoom
 
 ## Bot accounts
 
