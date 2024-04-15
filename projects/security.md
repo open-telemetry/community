@@ -8,7 +8,28 @@ As outlined in the [ECS OTEP](https://github.com/open-telemetry/oteps/blob/main/
 
 ## Deliverables
 
-* Our current focus is on defining essential semantic conventions for security use cases. 
+* Our current focus is on defining essential semantic conventions for security use cases.
+  * This includes but is not limited to the following namespaces:
+    * [`Code signature`](https://www.elastic.co/guide/en/ecs/current/ecs-code_signature.html)
+    * [`DLL`](https://www.elastic.co/guide/en/ecs/current/ecs-dll.html)
+    * [`DNS`](https://www.elastic.co/guide/en/ecs/current/ecs-dns.html)
+    * [`File`](https://www.elastic.co/guide/en/ecs/current/ecs-file.html)
+    * [`Group`](https://www.elastic.co/guide/en/ecs/current/ecs-group.html)
+    * [`Hash`](https://www.elastic.co/guide/en/ecs/current/ecs-hash.html)
+    * [`Host`](https://www.elastic.co/guide/en/ecs/current/ecs-host.html)
+    * [`Network`](https://www.elastic.co/guide/en/ecs/current/ecs-network.html)
+    * [`Operating System`](https://www.elastic.co/guide/en/ecs/current/ecs-os.html)
+    * [`Package`](https://www.elastic.co/guide/en/ecs/current/ecs-package.html)
+    * [`Process`](https://www.elastic.co/guide/en/ecs/current/ecs-process.html)
+    * [`Registry`](https://www.elastic.co/guide/en/ecs/current/ecs-registry.html)
+    * [`Risk information`](https://www.elastic.co/guide/en/ecs/current/ecs-risk.html)
+    * [`Rule`](https://www.elastic.co/guide/en/ecs/current/ecs-rule.html)
+    * [`Threat`](https://www.elastic.co/guide/en/ecs/current/ecs-threat.html)
+    * [`TLS`](https://www.elastic.co/guide/en/ecs/current/ecs-tls.html)
+    * [`User`](https://www.elastic.co/guide/en/ecs/current/ecs-user.html)
+    * [`Vulnerability`](https://www.elastic.co/guide/en/ecs/current/ecs-vulnerability.html)
+  * Please note that some of the above-mentioned namespaces are already a part of the Semantic Conventions schema. The goal is to expand these namespaces to include additional fields that are relevant to security use cases.
+
 * As new use cases and namespaces are introduced to the semantic conventions, there may be a need for additional instrumentation to accommodate them. It is anticipated that this aspect will expand through an iterative process.
 
 ## Staffing / Help Wanted
@@ -35,15 +56,18 @@ Need more
 
 ## Meeting Times
 
-TBD
-
-Once a project is started, the working group should meet regularly for discussion. These meeting times should be posted on the OpenTelemetry public calendar.
+There is an open slot in the Semantic Conventions WG for this project.
+- Mondays at 8 AM PST
 
 ## Timeline
 
-TBD
+The goal is to have the security semantic conventions implemented by the end of 2024.
 
-What is the expected timeline the project will aim to adhere to, and what resources and deliverables will be needed for each portion of the timeline? If the project has not been started, please describe this timeline in relative terms (one month in, two weeks later, etc). If a project has started, please include actual dates.
+The timeline for this project is as follows:
+December 2023: Initial Draft
+April 2024: Review and Refinement
+Mai 2024-December 2024: Introducing the Security Semantic Conventions
+
 
 ## Labels
 
@@ -53,8 +77,3 @@ What is the expected timeline the project will aim to adhere to, and what resour
 
 * [Donating ECS to OpenTelemetry](https://github.com/open-telemetry/oteps/blob/main/text/0199-support-elastic-common-schema-in-opentelemetry.md)
 * [Creation of semconv-security-approver group](https://github.com/open-telemetry/semantic-conventions/issues/580)
-
-
-## Project Board
-
-Once approved by TC, a project should be managed using a GitHub project board. This project board should be pre-populated with issues that cover all known deliverables, organized by timeline milestones. Once created, please link to the project board here.
