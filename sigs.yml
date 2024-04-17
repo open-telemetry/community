@@ -154,7 +154,7 @@
     gcLiaison:
     - name: 'Daniel Dyla'
       github: dyladan
-  - name: Agent Management WG
+  - name: Agent Management
     meeting: Every other week on Tuesday at 11:00 PT
     notes:
       type: gDoc
@@ -170,7 +170,7 @@
     gcLiaison:
       - name: Ted Young
         github: tedsuo
-  - name: Prometheus Interoperability WG
+  - name: Prometheus Interoperability
     meeting: Every other week on Wednesday at 08:00 PT
     notes:
       type: gDoc
@@ -198,7 +198,7 @@
     gcLiaison:
       - name: 'Austin Parker'
         github: austinlparker
-  - name: Profiling WG
+  - name: Profiling
     meeting: Every other week on Thursday at 08:00 AM PT
     notes:
       type: gDoc
