@@ -10,7 +10,7 @@
         name: '#otel-specification'
         id: C01N7PP1THC
     invites: calendar-spec-general
-    tcSponsors: []
+    sponsors: []
     gcLiaison: []
   - name: 'Specification: Sampling'
     meeting: Every Thursday at 08:00 PT
@@ -22,7 +22,7 @@
         name: '#otel-sampling'
         id: C027DS6GZD3
     invites: calendar-spec-sampling
-    tcSponsors:
+    sponsors:
     - name: Josh MacDonald
       github: jmacd
     gcLiaison:
@@ -38,7 +38,7 @@
         name: '#otel-config-file'
         id: C0476L7UJT1
     invites: calendar-spec-config
-    tcSponsors:
+    sponsors:
     - name: Carlos Alberto
       github: carlosalberto
     - name: Jack Berg
@@ -56,7 +56,7 @@
         name: '#otel-event'
         id: C062HUREGUV
     invites: calendar-spec-events
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: Ted Young
       github: tedsuo
@@ -70,7 +70,7 @@
         name: '#otel-semantic-conventions-wg'
         id: C041APFBYQP
     invites: calendar-semconv
-    tcSponsors:
+    sponsors:
     - name: Armin Ruech
       github: arminru
     - name: Josh Suereth
@@ -90,7 +90,7 @@
         name: '#otel-messaging'
         id: C02Q4AAHDSA
     invites: calendar-semconv
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: Trask Stalnaker
       github: trask
@@ -104,7 +104,7 @@
         name: '#otel-system-metrics-wg'
         id: C05CTFE9U4A
     invites: calendar-semconv
-    tcSponsors:
+    sponsors:
     - name: Josh Suereth
       github: jsuereth
     gcLiaison:
@@ -120,7 +120,7 @@
         name: '#otel-llm-semconv-wg'
         id: C06KR7ARS3X
     invites: calendar-semconv
-    tcSponsors:
+    sponsors:
     - name: Liudmila Molkova
       github: lmolkova
     gcLiaison: 
@@ -136,7 +136,7 @@
         name: '#otel-entities'
         id: C06QEG97W7L
     invites: calendar-entities
-    tcSponsors:
+    sponsors:
     - name: Josh Suereth
       github: jsuereth
     - name: Tigran Najaryan
@@ -156,7 +156,7 @@
         name: '#otel-maintainers'
         id: C01NJ7V1KRC
     invites: calendar-maintainer-meeting
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
        - name: Morgan McLean
          github: mtwo
@@ -170,7 +170,7 @@
         name: '#otel-android'
         id: C05J0T9K27Q
     invites: calendar-android
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: Trask Stalnaker
       github: trask
@@ -185,7 +185,7 @@
         name: '#otel-collector'
         id: C01N6P7KR6W
     invites: calendar-collector
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: 'Juraci Paixão Kröhling'
       github: jpkrohling
@@ -200,7 +200,7 @@
         name: '#otel-cpp'
         id: C01N3AT62SJ
     invites: calendar-cpp
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: 'Severin Neumann'
       github: svrnm
@@ -214,7 +214,7 @@
         name: '#otel-dotnet-auto-instr'
         id: C01NR1YLSE7
     invites: calendar-dotnet
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
        - name: Morgan McLean
          github: mtwo
@@ -228,7 +228,7 @@
         name: '#otel-dotnet'
         id: C01N3BC2W7Q
     invites: calendar-dotnet
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
        - name: Morgan McLean
          github: mtwo
@@ -242,7 +242,7 @@
         name: '#otel-erlang-elixir'
         id: C01N75YMZCN
     invites: calendar-erlang
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: 'Austin Parker'
       github: austinlparker
@@ -256,7 +256,7 @@
         name: '#otel-go'
         id: C01NPAXACKT
     invites: calendar-go
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: Ted Young
       github: tedsuo
@@ -270,7 +270,7 @@
         name: '#otel-go-instrumentation'
         id: C03S01YSAS0
     invites: calendar-go
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: 'Juraci Paixão Kröhling'
       github: jpkrohling
@@ -284,7 +284,7 @@
         name: '#otel-java'
         id: C014L2KCTE3
     invites: calendar-java
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: Trask Stalnaker
       github: trask
@@ -301,7 +301,7 @@
         name: GitHub Discussions
         link: https://github.com/open-telemetry/opentelemetry-js/discussions
     invites: calendar-js
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: 'Daniel Dyla'
       github: dyladan
@@ -315,7 +315,7 @@
         name: '#otel-php'
         id: C01NFPCV44V
     invites: calendar-php
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: 'Severin Neumann'
       github: svrnm
@@ -329,7 +329,7 @@
         name: '#otel-python'
         id: C01PD4HUVBL
     invites: calendar-python
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: Daniel Gomez Blanco
       github: danielgblanco
@@ -346,7 +346,7 @@
         name: GitHub Discussions
         link: https://github.com/open-telemetry/opentelemetry-ruby/discussions
     invites: calendar-ruby
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: Ted Young
       github: tedsuo
@@ -363,7 +363,7 @@
         name: Gitter
         link: https://gitter.im/open-telemetry/opentelemetry-rust
     invites: calendar-rust
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: Ted Young
       github: tedsuo
@@ -377,7 +377,7 @@
         name: '#otel-swift'
         id: C01NCHR19SB
     invites: calendar-swift
-    tcSponsors: []
+    sponsors: []
     gcLiaison: 
     - name: Alolita Sharma
       github: alolita
@@ -392,7 +392,7 @@
         name: '#otel-comms'
         id: C02UN96HZH6
     invites: calendar-comms
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: 'Severin Neumann'
       github: svrnm
@@ -406,7 +406,7 @@
         name: '#otel-user-research'
         id: C01RT3MSWGZ
     invites: calendar-user-research
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: Daniel Gomez Blanco
       github: danielgblanco
@@ -420,7 +420,7 @@
         name: '#otel-ebpf'
         id: C02AB15583A
     invites: calendar-ebpf
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: Ted Young
       github: tedsuo
@@ -434,7 +434,7 @@
         name: '#otel-agentmanwg'
         id: C02J58HR58R
     invites: calendar-agent-mgmt
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: Ted Young
       github: tedsuo
@@ -448,7 +448,7 @@
         name: '#otel-prometheus-wg'
         id: C01LSCJBXDZ
     invites: calendar-prometheus
-    tcSponsors: []
+    sponsors: []
     gcLiaison: 
     - name: Alolita Sharma
       github: alolita
@@ -462,7 +462,7 @@
         name: '#otel-client-side-telemetry'
         id: C0239SYARD2
     invites: calendar-client-side
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: Daniel Gomez Blanco
       github: danielgblanco
@@ -476,7 +476,7 @@
         name: '#otel-operator'
         id: C033BJ8BASU
     invites: calendar-k8s-operator
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: 'Juraci Paixão Kröhling'
       github: jpkrohling
@@ -490,7 +490,7 @@
         name: '#otel-community-demo'
         id: C03B4CWV4DA
     invites: calendar-demo-app
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: 'Austin Parker'
       github: austinlparker
@@ -504,7 +504,7 @@
         name: '#otel-faas'
         id: C04HVBETC9Z
     invites: calendar-faas
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
     - name: 'Austin Parker'
       github: austinlparker
@@ -518,7 +518,7 @@
         name: '#otel-profiles'
         id: C03J794L0BV
     invites: calendar-profiling
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
       - name: Morgan McLean
         github: mtwo
@@ -532,7 +532,7 @@
         name: '#otel-sig-security'
         id: C05A85QC281
     invites: calendar-sig-security
-    tcSponsors:
+    sponsors:
     - name: Reiley Yang
       github: reyang
     gcLiaison:
@@ -548,7 +548,7 @@
         name: '#otel-mainframes'
         id: C05PXDFTCPJ
     invites: calendar-mainframe
-    tcSponsors: []
+    sponsors: []
     gcLiaison:
       - name: Morgan McLean
         github: mtwo

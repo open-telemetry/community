@@ -53,8 +53,8 @@ def validate_yaml(filename):
                 if 'invites' not in sig:
                     invalid_items.append(f"{sig_prefix} Missing 'invites' field.")
 
-                # Check tcSponsors for SIG
-                tc_sponsors = sig.get('tcSponsors', [])
+                # Check sponsors for SIG
+                tc_sponsors = sig.get('sponsors', [])
                 if tc_sponsors:
                     for sponsor in tc_sponsors:
                         if 'name' not in sponsor or 'github' not in sponsor:
