@@ -154,6 +154,106 @@
     gcLiaison:
     - name: 'Daniel Dyla'
       github: dyladan
+  - name: Agent Management WG
+    meeting: Every other week on Tuesday at 11:00 PT
+    notes:
+      type: gDoc
+      value: 19WA5-ex8rNFIBIyVb5VqMXfWNmUQwppGhN8zBeNG0f4
+    chat:
+      - type: slack
+        name: '#otel-agentmanwg'
+        id: C02J58HR58R
+    invites: calendar-agent-mgmt
+    sponsors:
+      - name: Tigran Najaryan
+        github: tigrannajaryan
+    gcLiaison:
+      - name: Ted Young
+        github: tedsuo
+  - name: Prometheus Interoperability WG
+    meeting: Every other week on Wednesday at 08:00 PT
+    notes:
+      type: gDoc
+      value: 19bnXziPn2MZ9wO6684UoI4D-LCjGL5bTJkGhux29bx8
+    chat:
+      - type: slack
+        name: '#otel-prometheus-wg'
+        id: C01LSCJBXDZ
+    invites: calendar-prometheus
+    sponsors: []
+    gcLiaison:
+      - name: Alolita Sharma
+        github: alolita
+  - name: Functions as a Service (FAAS)
+    meeting: Every other Tuesday at 12:00 PM PT
+    notes:
+      type: gDoc
+      value: 187XYoQcXQ9JxS_5v2wvZ0NEysaJ02xoOYNXj08pT0zc
+    chat:
+      - type: slack
+        name: '#otel-faas'
+        id: C04HVBETC9Z
+    invites: calendar-faas
+    sponsors: []
+    gcLiaison:
+      - name: 'Austin Parker'
+        github: austinlparker
+  - name: Profiling WG
+    meeting: Every other week on Thursday at 08:00 AM PT
+    notes:
+      type: gDoc
+      value: 19UqPPPlGE83N37MhS93uRlxsP1_wGxQ33Qv6CDHaEp0
+    chat:
+      - type: slack
+        name: '#otel-profiles'
+        id: C03J794L0BV
+    invites: calendar-profiling
+    sponsors:
+      - name: Josh Suereth
+        github: jsuereth
+      - name: Tigran Najaryan
+        github: tigrannajaryan
+    gcLiaison:
+      - name: Morgan McLean
+        github: mtwo
+  - name: Security
+    meeting: Weekly on Wednesday at 08:30 AM PT
+    notes:
+      type: gDoc
+      value: 1P2xejC7lEkOV_Z-8E0oZPXLK5HOnUPNuRqKP0ZQ5fpg
+    chat:
+      - type: slack
+        name: '#otel-sig-security'
+        id: C05A85QC281
+    invites: calendar-sig-security
+    sponsors:
+      - name: 'Juraci Paixão Kröhling'
+        github: jpkrohling
+      - name: Reiley Yang
+        github: reyang
+    gcLiaison:
+      - name: 'Juraci Paixão Kröhling'
+        github: jpkrohling
+  - name: OpenTelemetry on Mainframes
+    meeting: Weekly on Tuesday at 10:00 AM PT
+    notes:
+      type: gDoc
+      value: 14p-bpofozTL4n3jy6HZH_TKjoOXvog18G1HBRqq6liE
+    chat:
+      - type: slack
+        name: '#otel-mainframes'
+        id: C05PXDFTCPJ
+    invites: calendar-mainframe
+    sponsors:
+      - name: Alolita Sharma
+        github: alolita
+      - name: Daniel Dyla
+        github: dyladan
+      - name: Morgan McLean
+        github: mtwo
+    gcLiaison:
+      - name: Morgan McLean
+        github: mtwo
 - name: Implementation SIGs
   sigs:
   - name: Maintainer Meeting
@@ -434,36 +534,6 @@
     gcLiaison:
     - name: Ted Young
       github: tedsuo
-  - name: Agent Management WG
-    meeting: Every other week on Tuesday at 11:00 PT
-    notes:
-      type: gDoc
-      value: 19WA5-ex8rNFIBIyVb5VqMXfWNmUQwppGhN8zBeNG0f4
-    chat:
-      - type: slack
-        name: '#otel-agentmanwg'
-        id: C02J58HR58R
-    invites: calendar-agent-mgmt
-    sponsors:
-    - name: Tigran Najaryan
-      github: tigrannajaryan
-    gcLiaison:
-    - name: Ted Young
-      github: tedsuo
-  - name: Prometheus Interoperability WG
-    meeting: Every other week on Wednesday at 08:00 PT
-    notes:
-      type: gDoc
-      value: 19bnXziPn2MZ9wO6684UoI4D-LCjGL5bTJkGhux29bx8
-    chat:
-      - type: slack
-        name: '#otel-prometheus-wg'
-        id: C01LSCJBXDZ
-    invites: calendar-prometheus
-    sponsors: []
-    gcLiaison: 
-    - name: Alolita Sharma
-      github: alolita
   - name: Client Instrumentation
     meeting: Every Tuesday at 9:00 AM PT
     notes:
@@ -506,73 +576,3 @@
     gcLiaison:
     - name: 'Austin Parker'
       github: austinlparker
-  - name: Functions as a Service (FAAS)
-    meeting: Every other Tuesday at 12:00 PM PT
-    notes:
-      type: gDoc
-      value: 187XYoQcXQ9JxS_5v2wvZ0NEysaJ02xoOYNXj08pT0zc
-    chat:
-      - type: slack
-        name: '#otel-faas'
-        id: C04HVBETC9Z
-    invites: calendar-faas
-    sponsors: []
-    gcLiaison:
-    - name: 'Austin Parker'
-      github: austinlparker
-  - name: Profiling WG
-    meeting: Every other week on Thursday at 08:00 AM PT
-    notes:
-      type: gDoc
-      value: 19UqPPPlGE83N37MhS93uRlxsP1_wGxQ33Qv6CDHaEp0
-    chat:
-      - type: slack
-        name: '#otel-profiles'
-        id: C03J794L0BV
-    invites: calendar-profiling
-    sponsors:
-    - name: Josh Suereth
-      github: jsuereth
-    - name: Tigran Najaryan
-      github: tigrannajaryan
-    gcLiaison:
-      - name: Morgan McLean
-        github: mtwo
-  - name: Security
-    meeting: Weekly on Wednesday at 08:30 AM PT
-    notes:
-      type: gDoc
-      value: 1P2xejC7lEkOV_Z-8E0oZPXLK5HOnUPNuRqKP0ZQ5fpg
-    chat:
-      - type: slack
-        name: '#otel-sig-security'
-        id: C05A85QC281
-    invites: calendar-sig-security
-    sponsors:
-    - name: 'Juraci Paixão Kröhling'
-      github: jpkrohling
-    - name: Reiley Yang
-      github: reyang
-    gcLiaison:
-    - name: 'Juraci Paixão Kröhling'
-      github: jpkrohling
-  - name: OpenTelemetry on Mainframes
-    meeting: Weekly on Tuesday at 10:00 AM PT
-    notes:
-      type: gDoc
-      value: 14p-bpofozTL4n3jy6HZH_TKjoOXvog18G1HBRqq6liE
-    chat:
-      - type: slack
-        name: '#otel-mainframes'
-        id: C05PXDFTCPJ
-    invites: calendar-mainframe
-    sponsors:
-    - name: Alolita Sharma
-      github: alolita
-    - name: Daniel Dyla
-      github: dyladan
-    - name: Morgan McLean
-      github: mtwo
-    gcLiaison:
-    - name: Morgan McLean
-      github: mtwo
