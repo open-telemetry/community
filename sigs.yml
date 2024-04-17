@@ -56,7 +56,11 @@
         name: '#otel-event'
         id: C062HUREGUV
     invites: calendar-spec-events
-    sponsors: []
+    sponsors:
+      - name: Ted Young
+        github: tedsuo
+      - name: Trask Stalnaker
+        github: trask
     gcLiaison:
     - name: Ted Young
       github: tedsuo
@@ -90,7 +94,11 @@
         name: '#otel-messaging'
         id: C02Q4AAHDSA
     invites: calendar-semconv
-    sponsors: []
+    sponsors:
+      - name: Johannes Tax
+        github: pyohannes
+      - name: Liudmila Molkova
+        github: lmolkova
     gcLiaison:
     - name: Trask Stalnaker
       github: trask
@@ -121,6 +129,8 @@
         id: C06KR7ARS3X
     invites: calendar-semconv
     sponsors:
+    - name: Alolita Sharma
+      github: alolita
     - name: Liudmila Molkova
       github: lmolkova
     gcLiaison: 
@@ -434,7 +444,9 @@
         name: '#otel-agentmanwg'
         id: C02J58HR58R
     invites: calendar-agent-mgmt
-    sponsors: []
+    sponsors:
+    - name: Tigran Najaryan
+      github: tigrannajaryan
     gcLiaison:
     - name: Ted Young
       github: tedsuo
@@ -518,7 +530,11 @@
         name: '#otel-profiles'
         id: C03J794L0BV
     invites: calendar-profiling
-    sponsors: []
+    sponsors:
+    - name: Josh Suereth
+      github: jsuereth
+    - name: Tigran Najaryan
+      github: tigrannajaryan
     gcLiaison:
       - name: Morgan McLean
         github: mtwo
@@ -533,6 +549,8 @@
         id: C05A85QC281
     invites: calendar-sig-security
     sponsors:
+    - name: 'Juraci Paixão Kröhling'
+      github: jpkrohling
     - name: Reiley Yang
       github: reyang
     gcLiaison:
@@ -548,7 +566,13 @@
         name: '#otel-mainframes'
         id: C05PXDFTCPJ
     invites: calendar-mainframe
-    sponsors: []
+    sponsors:
+    - name: Alolita Sharma
+      github: alolita
+    - name: Daniel Dyla
+      github: dyladan
+    - name: Morgan McLean
+      github: mtwo
     gcLiaison:
-      - name: Morgan McLean
-        github: mtwo
+    - name: Morgan McLean
+      github: mtwo
