@@ -43,7 +43,7 @@ The group currently has several regular contributors who have expertise in brows
 Project lead(s): @martinkuba, @scheler, @MSNev
 
 TC sponsoring members:
-Josh Sureth, Jack Berg
+Josh Suereth, Jack Berg
 
 ## Meeting Times
 

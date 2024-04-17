@@ -6,7 +6,7 @@ This is the current Governance Committee, per the [Governance Committee
 Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md),
 in alphabetical order:
 
-- [Alolita Sharma](https://github.com/alolita), AWS, until October 2024
+- [Alolita Sharma](https://github.com/alolita), Apple, until October 2024
 - [Austin Parker](https://github.com/austinlparker), Honeycomb, until October 2025
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2024
 - [Daniel Gomez Blanco](https://github.com/danielgblanco), Skyscanner, until October 2025
@@ -37,7 +37,7 @@ in alphabetical order:
 These are community maintainers, responsible for cross-functional project communications,
 events, and other functions as needed.
 
-- [Austin Parker](https://github.com/austinlparker), Lightstep
+- [Austin Parker](https://github.com/austinlparker), Honeycomb
 
 ## Specifications and Proto
 
@@ -129,14 +129,7 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 Repo: [open-telemetry/opentelemetry.io](https://github.com/open-telemetry/opentelemetry.io/)
 
-Approvers:
-
-Maintainers:
-
-- [Morgan McLean](https://github.com/mtwo), Splunk
-- [Steve Flanders](https://github.com/flands), Splunk
-- [Jigar Parsana](https://github.com/jparsana), Google
-- [Austin Parker](https://github.com/austinlparker), Lightstep
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Docs and Website can be found in the [open-telemetry/opentelemetry.io README file](https://github.com/open-telemetry/opentelemetry.io#contributing).
 
 ## Erlang
 

@@ -25,12 +25,12 @@ Project lead(s):
 
 * @MSNev (JavaScript)
 
-Sponsoring TC Members:
+Sponsors:
 
-* @tigrannajaryan
-* @jack-berg
+* @trask
+* @tedsuo
 
-Contributing Engnieers:
+Contributing Engineers:
 
 * @martinkuba (JavaScript)
 * @scheler
@@ -52,11 +52,18 @@ SIG meeting times: Friday 10am - 11am PT
 
 ### Timeline
 
-By end of 2023
+Completed:
+* [Provider based EventLogger API](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/logs/event-api.md)
 
-* Refine data model (By end of 2023)
-* Accommodate events in semantic conventions
-* Refine / stabilize API & SDKs
+Q2 2024
+
+* Define EventLogger SDK
+* Deliver API & SDK prototype for Web JS
+* Define how the contents of the log body field are described as semantic conventions
+
+Q3 2024
+* Define the relationship between OTel Events and CloudEvents
+* Project completed, Event SIG disbanded
 
 ### Linked Issues and PRs
 
@@ -64,4 +71,4 @@ See the project board for a collection of Issues related to the project.
 
 ### Labels
 
-Additional labels to be able to identify "Event" related Issues / PR's would be ideal to help with tracking.
+The `spec:events` label is used to describe all spec Issues and PRs related to events.
