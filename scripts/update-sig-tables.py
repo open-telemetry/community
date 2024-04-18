@@ -84,7 +84,7 @@ for group in data:
         if invites == "none":
             calendar = ""
         else:
-            calendar = f"[{invites}<br>@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/{invites})"
+            calendar = f"[{invites}](https://groups.google.com/a/opentelemetry.io/g/{invites})"
         
         if group_name == "Specification SIGs":
             markdown_content += f"| {name} | {meeting} | {notes} | {chats} | {calendar} | {tc_sponsors} | {gc_liaison} | \n"
