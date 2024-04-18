@@ -127,7 +127,7 @@ SIG-specific GitHub discussions.
 <!-- sigs -->
 ### Specification SIGs
 
-| Name | Meeting Time | Meeting Notes | Slack Channel | Meeting Invites Group | [Technical Committee](./community-members.md#technical-committee) Sponsors| [Governance Committee](./community-members.md#governance-committee) Liaison |
+| Name | Meeting Time | Meeting Notes | Slack Channel | Meeting Invites Group | [Sponsors](./project-management.md#project-proposal) | [Governance Committee](./community-members.md#governance-committee) Liaison |
 |------|--------------|---------------|---------------|-----------------|--------------------------------|--------------------------------|
 | Specification: General | Every Tuesday at 08:00 PT | [Google Doc](https://docs.google.com/document/d/1pdvPeKjA8v8w_fGKAN68JjWBmVJtPCpqdi9IZrd6eEo) | [#otel-specification](https://cloud-native.slack.com/archives/C01N7PP1THC) | [calendar-spec-general](https://groups.google.com/a/opentelemetry.io/g/calendar-spec-general) |  |  | 
 | Specification: Sampling | Every Thursday at 08:00 PT | [Google Doc](https://docs.google.com/document/d/1gASMhmxNt9qCa8czEMheGlUW2xpORiYoD7dBD7aNtbQ) | [#otel-sampling](https://cloud-native.slack.com/archives/C027DS6GZD3) | [calendar-spec-sampling](https://groups.google.com/a/opentelemetry.io/g/calendar-spec-sampling) | [Josh MacDonald](https://github.com/jmacd) | [Daniel Dyla](https://github.com/dyladan) | 
