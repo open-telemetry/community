@@ -42,7 +42,7 @@ for group in data:
 
     # Table headers
     if group_name == "Specification SIGs":
-        markdown_content += "| Name | Meeting Time | Meeting Notes | Slack Channel | Meeting Invites | [Technical Committee](./community-members.md#technical-committee) Sponsors| [Governance Committee](./community-members.md#governance-committee) Liaison |\n"
+        markdown_content += "| Name | Meeting Time | Meeting Notes | Slack Channel | Meeting Invites | [Sponsors](./project-management.md#project-proposal)| [Governance Committee](./community-members.md#governance-committee) Liaison |\n"
         markdown_content += "|------|--------------|---------------|---------------|-----------------|--------------------------------|--------------------------------|\n"
     else:
         markdown_content += "| Name | Meeting Time | Meeting Notes | Slack Channel | Meeting Invites | [Governance Committee](./community-members.md#governance-committee) Liaison |\n"
