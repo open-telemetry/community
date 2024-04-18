@@ -63,7 +63,7 @@ for group in data:
 
 
         invites = sig.get('invites', 'none')
-        tc_sponsors = "<br/>".join(
+        tc_sponsors = ",<br/>".join(
             [f"[{sponsor['name']}](https://github.com/{sponsor['github']})"
             for sponsor in sig.get('sponsors', [])
             if sponsor.get('name') and sponsor.get('github')]
