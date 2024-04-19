@@ -42,10 +42,10 @@ for group in data:
 
     # Table headers
     if group_name == "Specification SIGs":
-        markdown_content += "| Name | Meeting Time | Meeting Notes | Slack Channel | Meeting Invites | [Technical Committee](./community-members.md#technical-committee) Sponsors| [Governance Committee](./community-members.md#governance-committee) Liaison |\n"
+        markdown_content += "| Name | Meeting Time | Meeting Notes | Slack Channel | Meeting Invites Group | [Sponsors](./project-management.md#project-proposal) | [Governance Committee](./community-members.md#governance-committee) Liaison |\n"
         markdown_content += "|------|--------------|---------------|---------------|-----------------|--------------------------------|--------------------------------|\n"
     else:
-        markdown_content += "| Name | Meeting Time | Meeting Notes | Slack Channel | Meeting Invites | [Governance Committee](./community-members.md#governance-committee) Liaison |\n"
+        markdown_content += "| Name | Meeting Time | Meeting Notes | Slack Channel | Meeting Invites Group | [Governance Committee](./community-members.md#governance-committee) Liaison |\n"
         markdown_content += "|------|--------------|---------------|---------------|-----------------|--------------------------------|\n"
 
     # Table rows for SIGs
@@ -63,7 +63,7 @@ for group in data:
 
 
         invites = sig.get('invites', 'none')
-        tc_sponsors = "<br/>".join(
+        tc_sponsors = ",<br/>".join(
             [f"[{sponsor['name']}](https://github.com/{sponsor['github']})"
             for sponsor in sig.get('sponsors', [])
             if sponsor.get('name') and sponsor.get('github')]
@@ -84,7 +84,7 @@ for group in data:
         if invites == "none":
             calendar = ""
         else:
-            calendar = f"[{invites}@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/{invites})"
+            calendar = f"[{invites}](https://groups.google.com/a/opentelemetry.io/g/{invites})"
         
         if group_name == "Specification SIGs":
             markdown_content += f"| {name} | {meeting} | {notes} | {chats} | {calendar} | {tc_sponsors} | {gc_liaison} | \n"
