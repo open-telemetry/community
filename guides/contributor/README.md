@@ -58,7 +58,7 @@ environment.
 - Read the [Community Membership](../../community-membership.md) to understand
   the roles and responsibilities of the community.
 - As you gain experience, we encourage you to move up the ladder from member to
-  maintainer!
+  triager, approver, and maintainer!
 
 ## Next Steps
 
