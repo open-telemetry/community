@@ -64,7 +64,7 @@ Once you are redirected back to your GitHub Pull Request, reply with a comment `
 
 ## Changing your Affiliation
 
-If you've changed employers and still contribute to Kubernetes, your affiliation
+If you've changed employers and still contribute to OpenTelemetry, your affiliation
 needs to be updated. The Cloud Native Computing Foundation uses [gitdm](https://github.com/cncf/gitdm)
 to track who is contributing and from where. Create a pull request on the [gitdm](https://github.com/cncf/gitdm)
 repository with a change to the corresponding developer affiliation text file.
