@@ -121,7 +121,7 @@
       - name: Trask Stalnaker
         github: trask
   - name: 'Semantic Conventions: System Metrics'
-    meeting: Every Thursday at 08:30 PT
+    meeting: Every Thursday at 07:30 PT
     notes:
       type: gDoc
       value: 1p5TH57t43XpxA48onLzX4PIr3g6ydYKCtR_AUlsCnQk
