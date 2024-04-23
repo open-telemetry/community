@@ -66,7 +66,7 @@ The goal is to have the security semantic conventions implemented by the end of 
 The timeline for this project is as follows:
 December 2023: Initial Draft
 April 2024: Review and Refinement
-Mai 2024-December 2024: Introducing the Security Semantic Conventions
+May 2024-December 2024: Introducing the Security Semantic Conventions
 
 
 ## Labels
