@@ -1,0 +1,596 @@
+- name: Specification SIGs
+  sigs:
+  - name: 'Specification: General'
+    meeting: Every Tuesday at 08:00 PT
+    notes:
+      type: gDoc
+      value: 1pdvPeKjA8v8w_fGKAN68JjWBmVJtPCpqdi9IZrd6eEo
+    chat:
+      - type: slack
+        name: '#otel-specification'
+        id: C01N7PP1THC
+    invites: calendar-spec-general
+    sponsors: []
+    gcLiaison: []
+  - name: 'Specification: Sampling'
+    meeting: Every Thursday at 08:00 PT
+    notes:
+      type: gDoc
+      value: 1gASMhmxNt9qCa8czEMheGlUW2xpORiYoD7dBD7aNtbQ
+    chat:
+      - type: slack
+        name: '#otel-sampling'
+        id: C027DS6GZD3
+    invites: calendar-spec-sampling
+    sponsors:
+    - name: Josh MacDonald
+      github: jmacd
+    gcLiaison:
+    - name: 'Daniel Dyla'
+      github: dyladan
+  - name: 'Specification: Configuration'
+    meeting: Every other Monday at 8:00 PT
+    notes:
+      type: gDoc
+      value: 1uNgWQLQZcSVfBLRXfW9XCVJmKa5NH9R15fSOXhmpGWw
+    chat:
+      - type: slack
+        name: '#otel-config-file'
+        id: C0476L7UJT1
+    invites: calendar-spec-config
+    sponsors:
+    - name: Carlos Alberto
+      github: carlosalberto
+    - name: Jack Berg
+      github: jack-berg
+    gcLiaison:
+    - name: Trask Stalnaker
+      github: trask
+  - name: 'Specification: Events'
+    meeting: Every Friday at 10:00 AM PT
+    notes:
+      type: gDoc
+      value: 1BKjQWP32FXL9g1cGbyj7DMXV1Uq_RL8_78rWaMBhN0A
+    chat:
+      - type: slack
+        name: '#otel-event'
+        id: C062HUREGUV
+    invites: calendar-spec-events
+    sponsors:
+      - name: Ted Young
+        github: tedsuo
+      - name: Trask Stalnaker
+        github: trask
+    gcLiaison:
+    - name: Ted Young
+      github: tedsuo
+  - name: 'Semantic Conventions: General'
+    meeting: Every Monday at 08:00 PT
+    notes:
+      type: gDoc
+      value: 10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8
+    chat:
+      - type: slack
+        name: '#otel-semantic-conventions-wg'
+        id: C041APFBYQP
+    invites: calendar-semconv
+    sponsors:
+    - name: Armin Ruech
+      github: arminru
+    - name: Josh Suereth
+      github: jsuereth
+    - name: Reiley Yang
+      github: reyang
+    gcLiaison:
+    - name: Trask Stalnaker
+      github: trask
+  - name: 'Semantic Conventions: Messaging'
+    meeting: Every Thursday at 8:00 PT
+    notes:
+      type: gDoc
+      value: 1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE
+    chat:
+      - type: slack
+        name: '#otel-messaging'
+        id: C02Q4AAHDSA
+    invites: calendar-semconv
+    sponsors:
+      - name: Johannes Tax
+        github: pyohannes
+      - name: Liudmila Molkova
+        github: lmolkova
+    gcLiaison:
+    - name: Trask Stalnaker
+      github: trask
+  - name: 'Semantic Conventions: Database'
+    meeting: Every Wednesday at 9:30 PT and Friday at 8:30 PT
+    notes:
+      type: gDoc
+      value: 1zTi_Z4WBisytPnXTpwtnGOK-4Gv5oSTuMHvIQ8--5hg
+    chat:
+      - type: slack
+        name: '#otel-db-client-semconv-stability-wg'
+        id: C06HH05KNMC
+    invites: calendar-semconv
+    sponsors:
+      - name: Jack Berg
+        github: jack-berg
+      - name: Liudmila Molkova
+        github: lmolkova
+    gcLiaison:
+      - name: Trask Stalnaker
+        github: trask
+  - name: 'Semantic Conventions: System Metrics'
+    meeting: Every Thursday at 07:30 PT
+    notes:
+      type: gDoc
+      value: 1p5TH57t43XpxA48onLzX4PIr3g6ydYKCtR_AUlsCnQk
+    chat:
+      - type: slack
+        name: '#otel-system-metrics-wg'
+        id: C05CTFE9U4A
+    invites: calendar-semconv
+    sponsors:
+    - name: Josh Suereth
+      github: jsuereth
+    gcLiaison:
+    - name: Severin Neumann
+      github: svrnm
+  - name: 'Semantic Conventions: LLM'
+    meeting: Every Wednesday alternating between 08:00 and 16:00 PT
+    notes:
+      type: gDoc
+      value: 1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M
+    chat:
+      - type: slack
+        name: '#otel-llm-semconv-wg'
+        id: C06KR7ARS3X
+    invites: calendar-semconv
+    sponsors:
+    - name: Alolita Sharma
+      github: alolita
+    - name: Liudmila Molkova
+      github: lmolkova
+    gcLiaison: 
+    - name: Alolita Sharma
+      github: alolita
+  - name: 'Specification: Entities'
+    meeting: Every other week on Thursday at 08:00 AM PT
+    notes:
+      type: gDoc
+      value: 15Yt9ss2_EhuFPqItPbk4vjfpeRDAQ5WCUVuY_kCeOAo
+    chat:
+      - type: slack
+        name: '#otel-entities'
+        id: C06QEG97W7L
+    invites: calendar-entities
+    sponsors:
+    - name: Josh Suereth
+      github: jsuereth
+    - name: Tigran Najaryan
+      github: tigrannajaryan
+    gcLiaison:
+    - name: 'Daniel Dyla'
+      github: dyladan
+  - name: Agent Management
+    meeting: Every other week on Tuesday at 11:00 PT
+    notes:
+      type: gDoc
+      value: 19WA5-ex8rNFIBIyVb5VqMXfWNmUQwppGhN8zBeNG0f4
+    chat:
+      - type: slack
+        name: '#otel-agentmanwg'
+        id: C02J58HR58R
+    invites: calendar-agent-mgmt
+    sponsors:
+      - name: Tigran Najaryan
+        github: tigrannajaryan
+    gcLiaison:
+      - name: Ted Young
+        github: tedsuo
+  - name: Prometheus Interoperability
+    meeting: Every other week on Wednesday at 08:00 PT
+    notes:
+      type: gDoc
+      value: 19bnXziPn2MZ9wO6684UoI4D-LCjGL5bTJkGhux29bx8
+    chat:
+      - type: slack
+        name: '#otel-prometheus-wg'
+        id: C01LSCJBXDZ
+    invites: calendar-prometheus
+    sponsors: []
+    gcLiaison:
+      - name: Alolita Sharma
+        github: alolita
+  - name: Functions as a Service (FAAS)
+    meeting: Every other Tuesday at 12:00 PM PT
+    notes:
+      type: gDoc
+      value: 187XYoQcXQ9JxS_5v2wvZ0NEysaJ02xoOYNXj08pT0zc
+    chat:
+      - type: slack
+        name: '#otel-faas'
+        id: C04HVBETC9Z
+    invites: calendar-faas
+    sponsors: []
+    gcLiaison:
+      - name: 'Austin Parker'
+        github: austinlparker
+  - name: Profiling
+    meeting: Every other week on Thursday at 08:00 AM PT
+    notes:
+      type: gDoc
+      value: 19UqPPPlGE83N37MhS93uRlxsP1_wGxQ33Qv6CDHaEp0
+    chat:
+      - type: slack
+        name: '#otel-profiles'
+        id: C03J794L0BV
+    invites: calendar-profiling
+    sponsors:
+      - name: Josh Suereth
+        github: jsuereth
+      - name: Tigran Najaryan
+        github: tigrannajaryan
+    gcLiaison:
+      - name: Morgan McLean
+        github: mtwo
+  - name: Security
+    meeting: Weekly on Wednesday at 08:30 AM PT
+    notes:
+      type: gDoc
+      value: 1P2xejC7lEkOV_Z-8E0oZPXLK5HOnUPNuRqKP0ZQ5fpg
+    chat:
+      - type: slack
+        name: '#otel-sig-security'
+        id: C05A85QC281
+    invites: calendar-sig-security
+    sponsors:
+      - name: 'Juraci Paixão Kröhling'
+        github: jpkrohling
+      - name: Reiley Yang
+        github: reyang
+    gcLiaison:
+      - name: 'Juraci Paixão Kröhling'
+        github: jpkrohling
+  - name: OpenTelemetry on Mainframes
+    meeting: Weekly on Tuesday at 10:00 AM PT
+    notes:
+      type: gDoc
+      value: 14p-bpofozTL4n3jy6HZH_TKjoOXvog18G1HBRqq6liE
+    chat:
+      - type: slack
+        name: '#otel-mainframes'
+        id: C05PXDFTCPJ
+    invites: calendar-mainframe
+    sponsors:
+      - name: Alolita Sharma
+        github: alolita
+      - name: Daniel Dyla
+        github: dyladan
+      - name: Morgan McLean
+        github: mtwo
+    gcLiaison:
+      - name: Morgan McLean
+        github: mtwo
+- name: Implementation SIGs
+  sigs:
+  - name: Maintainer Meeting
+    meeting: Every Monday at 09:00PT
+    notes:
+      type: gDoc
+      value: 1_X2CTiDXmxk2JozBNwQ2uP8FfV1rxx9ISE5puHu0yIk
+    chat:
+      - type: slack
+        name: '#otel-maintainers'
+        id: C01NJ7V1KRC
+    invites: calendar-maintainer-meeting
+    sponsors: []
+    gcLiaison:
+       - name: Morgan McLean
+         github: mtwo
+  - name: 'Android: SDK + Automatic Instrumentation'
+    meeting: Every Tuesday at 08:00PT
+    notes:
+      type: gDoc
+      value: 1W72oElAJuYx3efM9wkH5l1iksdfwmTSkVl-H7KHTLnY
+    chat:
+      - type: slack
+        name: '#otel-android'
+        id: C05J0T9K27Q
+    invites: calendar-android
+    sponsors: []
+    gcLiaison:
+    - name: Trask Stalnaker
+      github: trask
+  - name: Collector
+    meeting: Every Wednesday at 09:00 PT plus monthly on first Wednesday at 00:00 PT
+      and on third Wednesday at 16:00 PT
+    notes:
+      type: gDoc
+      value: 1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE
+    chat:
+      - type: slack
+        name: '#otel-collector'
+        id: C01N6P7KR6W
+    invites: calendar-collector
+    sponsors: []
+    gcLiaison:
+    - name: 'Juraci Paixão Kröhling'
+      github: jpkrohling
+  - name: 'C++: SDK'
+    meeting: Every week alternating between Monday at 13:00 PT and Wednesday at 9:00
+      PT
+    notes:
+      type: gDoc
+      value: 1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw
+    chat:
+      - type: slack
+        name: '#otel-cpp'
+        id: C01N3AT62SJ
+    invites: calendar-cpp
+    sponsors: []
+    gcLiaison:
+    - name: 'Severin Neumann'
+      github: svrnm
+  - name: '.NET: Automatic Instrumentation'
+    meeting: Every Wednesday at 9:00 PT
+    notes:
+      type: gDoc
+      value: 1dYdwRQVE3zu0vlp_lqGctNm0dCQUkDo2LfScUJzpuT8
+    chat:
+      - type: slack
+        name: '#otel-dotnet-auto-instr'
+        id: C01NR1YLSE7
+    invites: calendar-dotnet
+    sponsors: []
+    gcLiaison:
+       - name: Morgan McLean
+         github: mtwo
+  - name: '.NET: SDK'
+    meeting: Every Tuesday alternating between 9:00 and 16:00 PT
+    notes:
+      type: gDoc
+      value: 1yjjD6aBcLxlRazYrawukDgrhZMObwHARJbB9glWdHj8
+    chat:
+      - type: slack
+        name: '#otel-dotnet'
+        id: C01N3BC2W7Q
+    invites: calendar-dotnet
+    sponsors: []
+    gcLiaison:
+       - name: Morgan McLean
+         github: mtwo
+  - name: 'Erlang/Elixir: SDK'
+    meeting: Every other Thursday at 9:00 PT
+    notes:
+      type: gDoc
+      value: 1EbBiRjBc_cBf0T_B5OtNRPhbD4jdBrVYJAy8euCDrUI
+    chat:
+      - type: slack
+        name: '#otel-erlang-elixir'
+        id: C01N75YMZCN
+    invites: calendar-erlang
+    sponsors: []
+    gcLiaison:
+    - name: 'Austin Parker'
+      github: austinlparker
+  - name: 'GoLang: SDK'
+    meeting: Every Thursday alternating between 10:00 and 15:00 PDT
+    notes:
+      type: gDoc
+      value: 1E5e7Ld0NuU1iVvf-42tOBpu2VBBLYnh73GJuITGJTTU
+    chat:
+      - type: slack
+        name: '#otel-go'
+        id: C01NPAXACKT
+    invites: calendar-go
+    sponsors: []
+    gcLiaison:
+    - name: Ted Young
+      github: tedsuo
+  - name: 'GoLang: Automatic Instrumentation'
+    meeting: Every other week on Tuesday at 9:30 PT
+    notes:
+      type: gDoc
+      value: 1P6am_r_cxCX1HcpDQlznrTrTOvwN2whshL0f58lXSWI
+    chat:
+      - type: slack
+        name: '#otel-go-instrumentation'
+        id: C03S01YSAS0
+    invites: calendar-go
+    sponsors: []
+    gcLiaison:
+    - name: 'Juraci Paixão Kröhling'
+      github: jpkrohling
+  - name: 'Java: SDK + Automatic Instrumentation'
+    meeting: Every Thursday at 09:00 PT
+    notes:
+      type: gDoc
+      value: 1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw
+    chat:
+      - type: slack
+        name: '#otel-java'
+        id: C014L2KCTE3
+    invites: calendar-java
+    sponsors: []
+    gcLiaison:
+    - name: Trask Stalnaker
+      github: trask
+  - name: 'JavaScript: SDK'
+    meeting: Every Wednesday at 09:00 PT
+    notes:
+      type: gDoc
+      value: 1tCyoQK49WVcE-x8oryZOTTToFm7sIeUhxFPm9g-qL1k
+    chat:
+      - type: slack
+        name: '#otel-js'
+        id: C01NL1GRPQR
+      - type: other
+        name: GitHub Discussions
+        link: https://github.com/open-telemetry/opentelemetry-js/discussions
+    invites: calendar-js
+    sponsors: []
+    gcLiaison:
+    - name: 'Daniel Dyla'
+      github: dyladan
+  - name: 'PHP: SDK'
+    meeting: Every Wednesday at 10:30 PT
+    notes:
+      type: gDoc
+      value: 1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI
+    chat:
+      - type: slack
+        name: '#otel-php'
+        id: C01NFPCV44V
+    invites: calendar-php
+    sponsors: []
+    gcLiaison:
+    - name: 'Severin Neumann'
+      github: svrnm
+  - name: 'Python: SDK'
+    meeting: Every Thursday at 09:00 PT
+    notes:
+      type: gDoc
+      value: 1CIMGoIOZ-c3-igzbd6_Pnxx1SjAkjwqoYSUWxPY8XIs
+    chat:
+      - type: slack
+        name: '#otel-python'
+        id: C01PD4HUVBL
+    invites: calendar-python
+    sponsors: []
+    gcLiaison:
+    - name: Daniel Gomez Blanco
+      github: danielgblanco
+  - name: 'Ruby: SDK'
+    meeting: Every Tuesday at 09:00 PT
+    notes:
+      type: gDoc
+      value: 1EaIbfDE1elWTWt3bhilggki_OCRJZoFCSYZJXgc9KsM
+    chat:
+      - type: slack
+        name: '#otel-ruby'
+        id: C01NWKKMKMY
+      - type: other
+        name: GitHub Discussions
+        link: https://github.com/open-telemetry/opentelemetry-ruby/discussions
+    invites: calendar-ruby
+    sponsors: []
+    gcLiaison:
+    - name: Ted Young
+      github: tedsuo
+  - name: 'Rust: SDK'
+    meeting: Every Tuesday at 09:00 PT
+    notes:
+      type: gDoc
+      value: 1tGKuCsSnyT2McDncVJrMgg74_z8V06riWZa0Sr79I_4
+    chat:
+      - type: slack
+        name: '#otel-rust'
+        id: C03GDP0H023
+      - type: other
+        name: Gitter
+        link: https://gitter.im/open-telemetry/opentelemetry-rust
+    invites: calendar-rust
+    sponsors: []
+    gcLiaison:
+    - name: Ted Young
+      github: tedsuo
+  - name: 'Swift: SDK'
+    meeting: Every Thursday at 09:00 PT
+    notes:
+      type: gDoc
+      value: 1LugL8r4bAkbTxZ1Gq_6j_8SDv1LuZaNeUdR-QLN4d48
+    chat:
+      - type: slack
+        name: '#otel-swift'
+        id: C01NCHR19SB
+    invites: calendar-swift
+    sponsors: []
+    gcLiaison: 
+    - name: Alolita Sharma
+      github: alolita
+  - name: Communications (Website, [Documentation](https://opentelemetry.io/docs/),
+      etc.)
+    meeting: Every other week on Monday at 10:00 PT
+    notes:
+      type: gDoc
+      value: 1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY
+    chat:
+      - type: slack
+        name: '#otel-comms'
+        id: C02UN96HZH6
+    invites: calendar-comms
+    sponsors: []
+    gcLiaison:
+    - name: 'Severin Neumann'
+      github: svrnm
+  - name: End-User SIG
+    meeting: Every other week on Thursday at 10:00 PT
+    notes:
+      type: gDoc
+      value: 1e-UNZA3Tuno9b53RQbe--whUcO0VIXF3P81oXsrBK6g
+    chat:
+      - type: slack
+        name: '#otel-user-research'
+        id: C01RT3MSWGZ
+    invites: calendar-user-research
+    sponsors: []
+    gcLiaison:
+    - name: Daniel Gomez Blanco
+      github: danielgblanco
+  - name: eBPF
+    meeting: Every week on Tuesday at 09:00 PT
+    notes:
+      type: gDoc
+      value: 13GK915hdDQ9sUYzUIWi4pOfJK68EE935ugutUgL3yOw
+    chat:
+      - type: slack
+        name: '#otel-ebpf'
+        id: C02AB15583A
+    invites: calendar-ebpf
+    sponsors: []
+    gcLiaison:
+    - name: Ted Young
+      github: tedsuo
+  - name: Client Instrumentation
+    meeting: Every Tuesday at 9:00 AM PT
+    notes:
+      type: gDoc
+      value: 16Vsdh-DM72AfMg_FIt9yT9ExEWF4A_vRbQ3jRNBe09w
+    chat:
+      - type: slack
+        name: '#otel-client-side-telemetry'
+        id: C0239SYARD2
+    invites: calendar-client-side
+    sponsors: []
+    gcLiaison:
+    - name: Daniel Gomez Blanco
+      github: danielgblanco
+  - name: Kubernetes Operator
+    meeting: Every other week on Thursday at 09:00 PT
+    notes:
+      type: gDoc
+      value: 1Unbs2qp_j5kp8FfL_lRH-ld7i5EOQpsq0I4djkOOSL4
+    chat:
+      - type: slack
+        name: '#otel-operator'
+        id: C033BJ8BASU
+    invites: calendar-k8s-operator
+    sponsors: []
+    gcLiaison:
+    - name: 'Juraci Paixão Kröhling'
+      github: jpkrohling
+  - name: Community Demo Application
+    meeting: Every Wednesday at 8:00 PT
+    notes:
+      type: gDoc
+      value: 16f-JOjKzLgWxULRxY8TmpM_FjlI1sthvKurnqFz9x98
+    chat:
+      - type: slack
+        name: '#otel-community-demo'
+        id: C03B4CWV4DA
+    invites: calendar-demo-app
+    sponsors: []
+    gcLiaison:
+    - name: 'Austin Parker'
+      github: austinlparker
