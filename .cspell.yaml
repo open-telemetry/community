@@ -1,13 +1,15 @@
 version: 0.2
 ignorePaths: ["elections/**/*"]
+# Ignore certain patterns in the sigs.yml file
+patterns:
+    - name: Slack Channel ID
+      pattern: "id: [A-Z0-9]{11}"
+    - name: Google Docs ID
+      pattern: "value: [a-zA-Z0-9-_]+"
+ignoreRegExpList:
+    - Slack Channel ID
+    - Google Docs ID
 words:
-    - adot
-    - apac
-    - cdevents
-    - cicd
-    - cncf
-    - codecov
-    - codeowners
     - DASD
     - dynatrace
     - easycla
@@ -18,51 +20,20 @@ words:
     - gitter
     - gyliu513
     - Hostmetrics
-    - jemmic
-    - keptn
-    - kubecon
-    - liatrio
-    - lightstep
-    - logz
-    - maintainership
-    - observiq
-    - opentelemetry
-    - opentelemetrybot
-    - otel
-    - otep
-    - otlp
-    - passcodes
-    - proto
-    - pytest
+    - Liudmila
+    - Nale
     - REXX
-    - runtimes
-    - signup
-    - skyscanner
-    - splk
-    - subdir
-    - subproject
-    - subprojects
-    - subrepository
-    - supermajority
     - Sysplex
-    - tekton
-    - tiebreaking
-    - timebox
-    - timeboxing
-    - timeslot
-    - tocstop
-    - trendable
-    - triager
-    - triagers
-    # names and github handles
-    - alevenberg
     - acramsay
+    - adot
     - adrielp
     - afrittoli
     - alanwest
+    - alevenberg
     - alolita
     - amye
     - aniszczyk
+    - apac
     - anoshin
     - arbiv
     - armin
@@ -75,11 +46,18 @@ words:
     - bogdandrutu
     - boten
     - breedx
+    - calendar-agent-mgmt
+    - calendar-ebpf
     - caramanolis
     - carlosalberto
     - cartermp
+    - cdevents
+    - cicd
     - cijo
+    - cncf
     - codeboten
+    - codecov
+    - codeowners
     - danielgblanco
     - darren17082
     - davdai
@@ -88,36 +66,52 @@ words:
     - dmitrii
     - dpauls
     - dnsmichi
+    - dpauls
     - drewby
     - drutu
     - dsotirakis
     - dyla
     - dyladan
-    - elfo404
-    - ericchapman80
+    - dynatrace
     - e-backmark-ericsson
+    - easycla
+    - eiffel
+    - elfo404
+    - emea
+    - endsigs
+    - ericchapman80
+    - faas
     - fong
+    - gitter
     - henrikrexed
     - hongalex
     - horovits
     - jackjia
     - jaglowski
     - jcocchi
+    - jemmic
     - jigar
     - jimporell
+    - jmacd
     - joaopgrassi
     - jpkrohling
     - jsuereth
     - juraci
     - kamphaus
     - kanzhelev
-    - kröhling
+    - keptn
     - krzko
+    - kröhling
+    - kubecon
     - kuisathaverat
     - lalitb
+    - liatrio
+    - lightstep
     - lmolkova
+    - logz
     - lucavallin
     - magnusbaeck
+    - maintainership
     - mancuso
     - martinkuba
     - mateuszrzeszutek
@@ -131,23 +125,35 @@ words:
     - mwear
     - najaryan
     - nakamura
-    - Nale
     - neumann
     - neumüller
     - nirga
     - novotny
+    - observiq
     - ocelotl
     - oleg-nenashev
+    - opentelemetry
+    - opentelemetrybot
+    - otel
+    - otel-agentmanwg
+    - otel-comms
+    - otel-ebpf
+    - otep
+    - otlp
     - paixão
     - parsana
+    - passcodes
     - patrickhousley
     - pmpaulino
     - poncelow
+    - proto
     - pyohannes
+    - pytest
     - reiley
     - reyang
     - rrschulze
     - ruech
+    - runtimes
     - rynn
     - salnikov
     - scavarda
@@ -160,25 +166,38 @@ words:
     - sharrmander
     - shkuro
     - sigelman
+    - signup
+    - skyscanner
     - sourabh1007
+    - splk
     - srikanthccv
     - stalnaker
-    - suereth
+    - subdir
+    - subproject
+    - subprojects
+    - subrepository
     - sudivate
+    - suereth
+    - supermajority
     - svrnm
     - tarnovski
     - tedsuo
+    - tekton
     - thisthat
+    - tiebreaking
     - tigran
     - tigrannajaryan
+    - timebox
+    - timeboxing
+    - timeslot
+    - tocstop
     - trask
+    - trendable
+    - triager
+    - triagers
     - tsloughter
     - tylerbenson
     - xibz
     - xoscar
     - yahn
     - youngaaronm
-    # slack spaces
-    - otel-agentmanwg
-    - otel-comms
-    - otel-ebpf
