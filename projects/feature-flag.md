@@ -1,12 +1,12 @@
 # Feature Flag Semantic Conventions
 
-OpenFeature is a CNCF Incubating project aiming to standardize feature flags.
+[OpenFeature](https://openfeature.dev/) is a CNCF Incubating project aiming to standardize feature flags.
 They currently provide 11 open source SDKs in various languages and support more than 10 feature flagging backends.
 OpenFeature has had contributions from over 50 companies and is actively developed by a combination of end users, feature flagging vendors, and platform providers.
 
 OpenFeature provides observability data via OpenTelemetry hooks.
 A hook is an OpenFeature plugin which may execute logic at various stages of the feature flag evaluation process.
-Currently, those hooks use the experimental feature flagging semantic convention.
+Currently, those hooks use the experimental [feature flagging semantic convention](https://opentelemetry.io/docs/specs/semconv/feature-flags/).
 
 OpenFeature is looking to expand their observability solution either by improving the currently available hooks or by providing native instrumentation within the OpenFeature SDK itself.
 In order to support that effort, OpenFeature requires a stable semantic convention to build instrumentation around.
