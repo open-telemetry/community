@@ -2,7 +2,7 @@
 
 [OpenFeature](https://openfeature.dev/) is a CNCF Incubating project aiming to standardize feature flags.
 They currently provide 11 open source SDKs in various languages and support more than 10 feature flagging backends.
-OpenFeature has had contributions from over 50 companies and is actively developed by a combination of end users, feature flagging vendors, and platform providers.
+OpenFeature has had contributions from over 50 companies and is actively developed by a combination of end users, feature flagging vendors, and platform providers (see the list of [interested parties](https://openfeature.dev/community/interested-parties)).
 
 OpenFeature provides observability data via OpenTelemetry hooks.
 A hook is an OpenFeature plugin which may execute logic at various stages of the feature flag evaluation process.
@@ -62,12 +62,6 @@ This project also includes Dan Dyla acting as one of the project leads.
 Dan is a member of the GC, maintainer of OTel JS, and has experience developing semantic conventions.
 Dan will provide the necessary expertise to ensure the proposed semantic conventions meet the standards and expectations of the OpenTelemetry community and semantic conventions SIG.
 
-The following is a list of engineers committed to working on the project:
-
-- Daniel Dyla (OTel GC, OTel JS, Dynatrace)
-- Ryan Lamb (OpenFeature TC, LaunchDarkly)
-- TODO: more engineers
-
 ### Required staffing
 
 **Project Leads:** Daniel Dyla and Michael Beemer (OpenFeature co-founder/GC member)
@@ -76,8 +70,11 @@ The following is a list of engineers committed to working on the project:
 
 TODO: list prototype languages and engineers
 
-- JS - Daniel Dyla (OTel JS Maintainer)
-- Review Prototypes - Ryan Lamb (OpenFeature TC)
+The following is a list of engineers committed to working on the project:
+
+- JS Prototype - Daniel Dyla (OTel GC, OTel JS, Dynatrace)
+- Review Prototypes - Ryan Lamb (OpenFeature TC, LaunchDarkly)
+- TODO: more engineers
 
 ## Meeting Times
 
