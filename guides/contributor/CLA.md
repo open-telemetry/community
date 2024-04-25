@@ -59,7 +59,8 @@ After you have filled out  the information, Click "Finish" and you will be redir
 
 #### 6. Validate your CLA
 
-Once you are redirected back to your GitHub Pull Request, reply with a comment `/easycla` to update the CLA status of your PR.
+Once you are redirected back to your GitHub Pull Request, reply with a comment `/easycla` to update the CLA status of your PR,
+if the bot hasn't picked up the change automatically yet.
 
 
 ## Changing your Affiliation
