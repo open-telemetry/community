@@ -63,4 +63,6 @@ environment.
 ## Next Steps
 
 Now that you've read through this guide, you're ready to start contributing to
-the project. TODO: Flesh out this section
+the project.
+
+<!-- TODO: Flesh out this section -->
