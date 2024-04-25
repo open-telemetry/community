@@ -108,11 +108,10 @@ contact.
 
 ### [Dan Jaglowski](https://github.com/djaglowski), observIQ
 
-- OpenTelemetry log collection
-- Logging API and SDK
-- OpenTelemetry metric scrapers
-- Semantic conventions
-- Open Agent Management Protocol
+- OpenTelemetry collector
+- Log data model
+- Traditional log ingestion
+- Telemetry processing
 
 ### [Tom Tan](https://github.com/ThomsonTan), Microsoft
 
