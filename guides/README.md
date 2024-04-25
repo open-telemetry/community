@@ -1,6 +1,6 @@
 # OpenTelemetry Guidebooks
 
-This directory contains a collection of guides meant for new contributors,
+This directory contains a collection of guides meant for contributors,
 maintainers, and community members. These guides are meant to help you get
 started, answer common questions, and provide best practices for being a part of
 the OpenTelemetry community. These should be considered a living resource, and
