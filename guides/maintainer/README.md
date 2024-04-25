@@ -9,3 +9,5 @@ project.
 TODO
 
 ## What is a Maintainer?
+
+See [Community Membership](../../community-membership.md#maintainer) for now.
