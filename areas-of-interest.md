@@ -93,11 +93,11 @@ Maintainers and approvers are invited to list their areas of interest
 to further assist the community in finding appropriate points of
 contact.
 
-### [Alex Boten](https://github.com/codeboten), Lightstep
+### [Alex Boten](https://github.com/codeboten), Honeycomb
 
-- OpenTelemetry Python
 - OpenTelemetry Collector
-- OTel-Lambda support
+- OpenTelemetry Python
+- SDK configuration
 
 ### [Daniel Dyla](https://github.com/dyladan), Dynatrace
 
@@ -112,6 +112,13 @@ contact.
 - Log data model
 - Traditional log ingestion
 - Telemetry processing
+
+### [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs
+
+- OpenTelemetry Collector
+- Distributed tracing
+- Security
+- Sampling
 
 ### [Tom Tan](https://github.com/ThomsonTan), Microsoft
 
