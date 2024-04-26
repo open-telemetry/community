@@ -113,6 +113,13 @@ contact.
 - Traditional log ingestion
 - Telemetry processing
 
+### [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs
+
+- OpenTelemetry Collector
+- Distributed tracing
+- Security
+- Sampling
+
 ### [Tom Tan](https://github.com/ThomsonTan), Microsoft
 
 - Logging API and SDK
