@@ -62,9 +62,13 @@ This project also includes Dan Dyla acting as one of the project leads.
 Dan is a member of the GC, maintainer of OTel JS, and has experience developing semantic conventions.
 Dan will provide the necessary expertise to ensure the proposed semantic conventions meet the standards and expectations of the OpenTelemetry community and semantic conventions SIG.
 
+The project is sponsored by Dan Dyla and Alexander Wert, an OpenTelemetry semantic conventions maintainer.
+
 ### Required staffing
 
 **Project Leads:** Daniel Dyla and Michael Beemer (OpenFeature co-founder/GC member)
+
+**Project Sponsors**: Daniel Dyla and Alexander Wert
 
 **Engineers willing to write and review prototypes:**
 
