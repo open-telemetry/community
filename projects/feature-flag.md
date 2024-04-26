@@ -45,6 +45,35 @@ Because rule sets and monitoring data are managed in separate tools, it may be d
 - Analyzing the impact of the actual flag evaluation.
   Some feature flag libraries and services do async work such as database or remote calls to decide which variant of a feature flag should be returned.
 
+## Experimental Semantic Conventions
+
+Currently, the experimental [feature flagging semantic convention](https://opentelemetry.io/docs/specs/semconv/feature-flags/) defines a minimal set of attributes to track a flag evaluation: key, provider name, and the returned variant, and shows how they can be used in logs and span events.
+While this provides a lot of value, there are several shortcomings that we would like to address:
+
+### Shortcoming 1: key may not be unique
+
+Many feature flag providers introduce the concept of a collection of feature flags used by the same service, which we will call projects.
+While the flag key uniquely identifies a feature flag within a project or scope, it may not be globally unique across your application or service if your app evaluates flags from multiple projects.
+
+### Shortcoming 2: lack of sufficient context
+
+Most feature flag evaluation services support a concept called flag context.
+Context is a set of attributes input into the flag ruleset to influence the returned variant.
+One example of this may be the current logged in users email domain; a ruleset may turn a particular variant on for only users from a particular company.
+The current experimental semantic conventions currently do not address this concept.
+
+### Shortcoming 3: lack of metric support
+
+It is common to analyze new features, A/B tests, and experiments using metrics split by feature flag data.
+In the current semantic convention, there is no metric advice.
+This leaves the user to decide which attributes to use on their own, which may lead to cardinality explosions or imprecise results.
+
+### Shortcoming 4: no flag change events
+
+This is related to key uniqueness in that a flag's ruleset or possible variants may change over time.
+These changes can have a massive impact on user experience and it is important to be able to view them in context of your observability data for effective root cause analysis.
+Further, without a revision ID or similar concept, it may be difficult to determine exactly which ruleset was evaluated to return a particular feature flag variant.
+
 ## Deliverables
 
 The project deliverable will be a stable feature flag semantic convention for flag evaluations, also called impressions, and feature flag changes.
