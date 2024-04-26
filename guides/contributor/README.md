@@ -34,17 +34,16 @@ GitHub account.
 ### Sign the CLA
 
 Before we can accept your code, you'll need to sign the [Contributor License
-Agreement](./CLA.md).
+Agreement](./CLA.md). This is a one-time process.
 
 ### Code of Conduct
 
 Please make sure to read and follow our [Code of Conduct](../../code-of-conduct.md).
 
-### Setting up your development environment
+### Making a contribution
 
-It is not required to set up a development environment for all contributions.
-If you are submitting code changes, please refer to the `CONTRIBUTING.md` file
-in the repository you are contributing to for specific instructions.
+Please see [contribution processes](./processes.md) for more information on how
+to make a contribution to an OpenTelemetry repository.
 
 ### Community Expectations and Roles
 
