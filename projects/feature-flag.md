@@ -58,8 +58,8 @@ While the flag key uniquely identifies a feature flag within a project or scope,
 ### Shortcoming 2: lack of sufficient context
 
 Most feature flag evaluation services support a concept called flag context.
-Context is a set of attributes input into the flag ruleset to influence the returned variant.
-One example of this may be the current logged in users email domain; a ruleset may turn a particular variant on for only users from a particular company.
+Context is a set of attributes input into the flag rule set to influence the returned variant.
+One example of this may be the current logged in users email domain; a rule set may turn a particular variant on for only users from a particular company.
 The current experimental semantic conventions currently do not address this concept.
 
 ### Shortcoming 3: lack of metric support
@@ -70,9 +70,9 @@ This leaves the user to decide which attributes to use on their own, which may l
 
 ### Shortcoming 4: no flag change events
 
-This is related to key uniqueness in that a flag's ruleset or possible variants may change over time.
+This is related to key uniqueness in that a flag's rule set or possible variants may change over time.
 These changes can have a massive impact on user experience and it is important to be able to view them in context of your observability data for effective root cause analysis.
-Further, without a revision ID or similar concept, it may be difficult to determine exactly which ruleset was evaluated to return a particular feature flag variant.
+Further, without a revision ID or similar concept, it may be difficult to determine exactly which rule set was evaluated to return a particular feature flag variant.
 
 ## Deliverables
 
