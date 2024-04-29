@@ -46,7 +46,7 @@ There is an open [PR](https://github.com/open-telemetry/semantic-conventions/iss
 * domain expert: @lambdanis (Isovalent)
 
 * TC sponsor: @reyang
-* TC sponsor: vacant
+* TC sponsor: @jsuereth
 
 Need more 
 - [ ] domain experts
@@ -56,7 +56,7 @@ Need more
 
 ## Meeting Times
 
-There is an open slot in the Semantic Conventions WG for this project.
+There is an allocated time in the Semantic Conventions WG for this project.
 - Mondays at 8 AM PST
 
 ## Timeline
