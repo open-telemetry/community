@@ -75,10 +75,11 @@ concerns.
 
 ### [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 
-- OpenTelemetry collector
 - OpenTelemetry protocol
 - OpenTelemetry schemas and versioning
 - Logging API and SDK
+- Entities
+- OpAMP
 
 ### [Yuri Shkuro](https://github.com/yurishkuro), Meta
 
