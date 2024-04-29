@@ -59,6 +59,8 @@ Need more
 There is an allocated time in the Semantic Conventions WG for this project.
 - Mondays at 8 AM PST
 
+For async conversation please use #otel-security-wg slack channel from official CNCF slack workspace.
+
 ## Timeline
 
 The goal is to have the security semantic conventions implemented by the end of 2024.
