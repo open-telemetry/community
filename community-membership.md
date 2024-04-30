@@ -312,7 +312,7 @@ their [areas of interest](./areas-of-interest.md).
 ### Requirements
 
 Specification sponsors are trusted to drive specification work which can be
-complex and which highly impactful to downstream language SIGs and to the
+complex and highly impactful to downstream language SIGs and to the
 OpenTelemetry project as a whole. Approvals from specification sponsors count
 towards the approvals required to merge specification PRs. Therefore, there is a
 high bar to becoming a specification sponsor.
@@ -329,8 +329,7 @@ high bar to becoming a specification sponsor.
 ### Responsibilities and privileges
 
 - Review, respond to, and approve issues / PRs when tagged or when within areas
-  of interest (inactivity for more than 1 month when tagged may result in
-  suspension until active again)
+  of interest
 - Sponsor issues, taking responsibility to be point on requirement gathering,
   developing solutions and prototypes, writing PRs, and responding to /
   incorporating PR feedback. This can be done by the sponsor themselves, or by
@@ -339,6 +338,11 @@ high bar to becoming a specification sponsor.
   specification.
 - Demonstrate sound technical judgement (may be asked to step down by a
   technical committee member if they lose confidence of technical committee)
+
+Sponsors who are unable to fulfill their responsibilities (e.g. no longer have
+time available to commit) are expected to be moved
+to [emeritus](#emeritus-maintainerapprovertriager) sponsors. The TC may also
+vote to move a sponsor to emeritus.
 
 ### Becoming a Specification Sponsor
 
