@@ -64,7 +64,7 @@ You can see which Zoom account any potentially conflicting meetings are using in
 (Note: posting the URLs publicly on GitHub leads to Zoom bombing by random bots).
 
 #### Zoom link generation process
-_This is the process that the person responding to Zoom link creation issues will follow. The instructions under this heading are for project admins (Governance and Technical Committee members, some maintainers) who have access to OpenTelemetry's Zoom account credentials._
+_This is the process that the person responding to Zoom link creation issues will follow. The instructions under this heading are for project admins (Governance Committee members) who have access to OpenTelemetry's Zoom account credentials._
 
 1. View the OpenTelemetry meeting calendar, and find your desired time slot, along with the meetings that occur immediately before, during, and after it.
 2. See which OpenTelemetry Zoom accounts are being used for the meetings immediately before, during, and after your desired time. The Zoom account name / number is typically listed in the description of each meeting; if it isn't, you can join a meeting (even if it isn't occurring now), click on the green shield icon in the top left, and see the account name / number in the 'host' field.
