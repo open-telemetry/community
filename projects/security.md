@@ -60,7 +60,7 @@ Need more
 There is an allocated time in the Semantic Conventions WG for this project.
 - Mondays at 8 AM PST
 
-For async conversation please use #otel-security-wg slack channel from official CNCF slack workspace.
+For async conversation please use #otel-semconv-security slack channel from official CNCF slack workspace.
 
 ## Timeline
 
