@@ -63,6 +63,15 @@ A single Zoom account should not be used for back-to-back meetings or for more t
 You can see which Zoom account any potentially conflicting meetings are using in the meeting descriptions.
 (Note: posting the URLs publicly on GitHub leads to Zoom bombing by random bots).
 
+#### Zoom link generation process
+_This is the process that the person responding to Zoom link creation issues will follow. The instructions under this heading are for project admins (Governance and Technical Committee members, some maintainers) who have access to OpenTelemetry's Zoom account credentials._
+
+1. View the OpenTelemetry meeting calendar, and find your desired time slot, along with the meetings that occur immediately before, during, and after it.
+2. See which OpenTelemetry Zoom accounts are being used for the meetings immediately before, during, and after your desired time. The Zoom account name / number is typically listed in the description of each meeting; if it isn't, you can join a meeting (even if it isn't occuring now), click on the green shield icon in the top left, and see the account name / number in the 'host' field.
+3. Choose a Zoom account that isn't already being used for one of the meetings immediately before, during, or after your desired time slot. You may also choose a Zoom account that is being used *exactly*) once immediately before, during, or after (we can run a maximum of two concurrent meetings with each account).
+4. Log into that Zoom account, click "Schedule a meeting", and create a recurring meeting with the desired meeting name and no fixed schedule.
+5. Copy the newly generated unique Zoom link and paste it into the calendar invite when you create it.
+
 ### Inviting attendees
 All meetings should invite a publicly joinable google group `calendar-...@opentelemetry.io` which is specific to the meeting series.
 The google group should be set up as follows:
