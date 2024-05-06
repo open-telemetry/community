@@ -45,6 +45,7 @@ There is an open [PR](https://github.com/open-telemetry/semantic-conventions/iss
 * domain expert: @raesene (Datadog)
 * domain expert: @lambdanis (Isovalent)
 * domain expert: @mdelfabro (Dynatrace)
+* domain expert: @kelnage (Grafana Labs)
 
 * TC sponsor: @reyang
 * TC sponsor: @jsuereth
