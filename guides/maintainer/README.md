@@ -10,4 +10,4 @@ TODO
 
 ## What is a Maintainer?
 
-See [Community Membership](../../community-membership.md#maintainer) for now.
+See [Maintainer](../contributor/membership.md) for more information.

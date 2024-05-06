@@ -11,6 +11,7 @@ ignoreRegExpList:
     - Google Docs ID
 words:
     - DASD
+    - Docu
     - dynatrace
     - easycla
     - eiffel
@@ -82,7 +83,9 @@ words:
     - faas
     - fong
     - gitter
+    - gitdm
     - henrikrexed
+    - heptio
     - hongalex
     - horovits
     - jackjia

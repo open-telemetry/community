@@ -1,6 +1,7 @@
 # Donations
 
 Donations of preexisting code fall into two broad categories:
+
 * **Small donations:** Some donations only amount to a single PR and should
   usually just be contributed as such
 * **Large or complex donations:** Other donations are much larger, require
@@ -21,7 +22,7 @@ OpenTelemetry Authors. The Governance Committee will also ask to review any
 trademarks (like the names of components) the donation can carry and make a
 decision to either remove those trademarks or transfer them to the CNCF.
 
-### Donation process
+## Donation process
 
 Broadly, these are the steps the OpenTelemetry Governance and Technical
 Committees follow to handle a prospective donation.
