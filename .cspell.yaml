@@ -11,15 +11,18 @@ ignoreRegExpList:
     - Google Docs ID
 words:
     - DASD
+    - datadog
     - dynatrace
     - easycla
     - eiffel
+    - elastic
     - emea
     - faas
     - galkleinman
     - gitter
     - gyliu513
     - Hostmetrics
+    - isovalent
     - Liudmila
     - Nale
     - REXX
@@ -104,6 +107,7 @@ words:
     - kubecon
     - kuisathaverat
     - lalitb
+    - lambdanis
     - liatrio
     - lightstep
     - lmolkova
@@ -116,8 +120,10 @@ words:
     - mateuszrzeszutek
     - mayur
     - mayurkale
+    - mdelfabro
     - mhausenblas
     - mirabella
+    - mjwolf
     - molkova
     - msomasu
     - mtwo
@@ -148,6 +154,7 @@ words:
     - proto
     - pyohannes
     - pytest
+    - raesene
     - reiley
     - reyang
     - rrschulze
@@ -194,6 +201,7 @@ words:
     - trendable
     - triager
     - triagers
+    - trisch-me
     - tsloughter
     - tylerbenson
     - xibz
