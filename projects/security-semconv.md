@@ -1,10 +1,10 @@
-# Security Semantic Conventions Working Group
+# Security Semantic Conventions
 
 ## Description
 
-The purpose of this working group is to bring in the security domain for the OpenTelemetry community. 
+The purpose of this project is to bring in the security domain for the OpenTelemetry community. 
 
-As outlined in the [ECS OTEP](https://github.com/open-telemetry/oteps/blob/main/text/0199-support-elastic-common-schema-in-opentelemetry.md), the Elastic Common Schema (ECS) is currently being contributed to the semantic conventions schema. Given the significance of security within ECS, establishing this working group is crucial as it will expedite the donation of ECS fields tailored to security use cases. Beyond expanding the schema, our aim is to craft a clear vision for the instrumentation required.
+As outlined in the [ECS OTEP](https://github.com/open-telemetry/oteps/blob/main/text/0199-support-elastic-common-schema-in-opentelemetry.md), the Elastic Common Schema (ECS) is currently being contributed to the semantic conventions schema. Given the significance of security within ECS, establishing this SIG is crucial as it will expedite the donation of ECS fields tailored to security use cases. Beyond expanding the schema, our aim is to craft a clear vision for the instrumentation required.
 
 ## Deliverables
 
@@ -58,7 +58,7 @@ Need more
 
 ## Meeting Times
 
-There is an allocated time in the Semantic Conventions WG for this project.
+There is an allocated time in the Semantic Conventions SIG for this project.
 - Mondays at 8 AM PST
 
 For async conversation please use #otel-semconv-security slack channel from official CNCF slack workspace.
