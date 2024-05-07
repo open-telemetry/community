@@ -21,6 +21,7 @@ efforts and best practices around these, and new, tools.
 GC/TC sponsors:
 
 - @austinlparker
+- @trask
 
 Maintainers, approvers, and contributors:
 
