@@ -10,6 +10,7 @@ ignoreRegExpList:
     - Slack Channel ID
     - Google Docs ID
 words:
+    - Collibra
     - DASD
     - datadog
     - dynatrace
@@ -35,6 +36,7 @@ words:
     - afrittoli
     - alanwest
     - alevenberg
+    - alexvanboxel
     - alolita
     - amye
     - aniszczyk
