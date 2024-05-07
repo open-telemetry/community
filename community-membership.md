@@ -329,15 +329,14 @@ high bar to becoming a specification sponsor.
 ### Responsibilities and privileges
 
 - Review, respond to, and approve issues / PRs when tagged or when within areas
-  of interest
+  of interest.
 - Sponsor issues, taking responsibility to be point on requirement gathering,
   developing solutions and prototypes, writing PRs, and responding to /
   incorporating PR feedback. This can be done by the sponsor themselves, or by
   another collaborator who is sponsored. If sponsoring another collaborator, the
   sponsor should work with them to ensure the work is consistent with existing
   specification.
-- Demonstrate sound technical judgement (may be asked to step down by a
-  technical committee member if they lose confidence of technical committee)
+- Demonstrate sound technical judgement.
 
 Sponsors who are unable to fulfill their responsibilities (e.g. no longer have
 time available to commit) are expected to be moved
