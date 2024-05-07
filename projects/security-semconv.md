@@ -46,13 +46,13 @@ There is an open [PR](https://github.com/open-telemetry/semantic-conventions/iss
 * domain expert: @lambdanis (Isovalent)
 * domain expert: @mdelfabro (Dynatrace)
 * domain expert: @kelnage (Grafana Labs)
+* domain expert: @alexvanboxel (Collibra)
 
 * TC sponsor: @reyang
 * TC sponsor: @jsuereth
 
 Need more 
 - [ ] domain experts
-- [ ] TC 
 - [ ] potentially, maintainers of language-specific instrumentation may be needed if the need arises.
 
 
