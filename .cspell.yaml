@@ -10,6 +10,7 @@ ignoreRegExpList:
     - Slack Channel ID
     - Google Docs ID
 words:
+    - Collibra
     - DASD
     - datadog
     - dynatrace
@@ -20,9 +21,11 @@ words:
     - faas
     - galkleinman
     - gitter
+    - grafana
     - gyliu513
     - Hostmetrics
     - isovalent
+    - labs
     - Liudmila
     - Nale
     - REXX
@@ -34,6 +37,7 @@ words:
     - afrittoli
     - alanwest
     - alevenberg
+    - alexvanboxel
     - alolita
     - amye
     - aniszczyk
@@ -104,6 +108,7 @@ words:
     - juraci
     - kamphaus
     - kanzhelev
+    - kelnage
     - keptn
     - krzko
     - kröhling
