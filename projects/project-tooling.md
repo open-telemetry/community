@@ -25,7 +25,7 @@ GC/TC sponsors:
 
 Maintainers, approvers, and contributors:
 
-- Your name here!
+- @svrnm
 
 ## Meeting Times
 
