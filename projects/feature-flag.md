@@ -95,21 +95,23 @@ The project is sponsored by Dan Dyla and Alexander Wert, an OpenTelemetry semant
 
 ### Required staffing
 
-**Project Leads:** Daniel Dyla and Michael Beemer (OpenFeature co-founder/GC member)
+**Project Leads and Sponsors:**
 
-**Project Sponsors**: Daniel Dyla and Alexander Wert
+- Alexander Wert - Project Sponsor (OTel SemConv, Elastic)
+- Daniel Dyla - Project Lead and Sponsor (OTel GC, OTel JS, Dynatrace)
+- Michael Beemer - Project Lead (OpenFeature co-founder and GC, Dynatrace)
 
-**Engineers willing to write and review prototypes:**
+**Engineers:**
 
-TODO: list prototype languages and engineers
+The following is a list of engineers committed to working on the project and write and review prototypes:
 
-The following is a list of engineers committed to working on the project:
-
-- JS Prototype - Daniel Dyla (OTel GC, OTel JS, Dynatrace)
-- Review Prototypes - Ryan Lamb (OpenFeature TC, LaunchDarkly)
-- Federico Bond (OpenFeature Python, Independent)
+- Alexander Wert - (OTel SemConv, Elastic)
 - André Silva (OpenFeature dotnet)
-- TODO: more engineers
+- Daniel Dyla - (OTel GC, OTel JS, Dynatrace)
+- Federico Bond (OpenFeature Python, Independent)
+- Lucas Reining (OpenFeature TC)
+- Michael Beemer - (OpenFeature co-founder and TC, Dynatrace)
+- Ryan Lamb (OpenFeature TC, LaunchDarkly)
 
 ## Meeting Times
 
