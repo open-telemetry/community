@@ -108,6 +108,7 @@ The following is a list of engineers committed to working on the project:
 - JS Prototype - Daniel Dyla (OTel GC, OTel JS, Dynatrace)
 - Review Prototypes - Ryan Lamb (OpenFeature TC, LaunchDarkly)
 - Federico Bond (OpenFeature Python, Independent)
+- André Silva (OpenFeature dotnet)
 - TODO: more engineers
 
 ## Meeting Times
