@@ -109,7 +109,7 @@ The following is a list of engineers committed to working on the project and wri
 - André Silva (OpenFeature dotnet)
 - Daniel Dyla - (OTel GC, OTel JS, Dynatrace)
 - Federico Bond (OpenFeature Python, Independent)
-- Lucas Reining (OpenFeature TC)
+- Lukas Reining (OpenFeature TC, Codecentric)
 - Michael Beemer - (OpenFeature co-founder and TC, Dynatrace)
 - Ryan Lamb (OpenFeature TC, LaunchDarkly)
 
