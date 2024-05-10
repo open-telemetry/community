@@ -60,11 +60,7 @@ The goal is to follow [@tedsuo](http://github.com/tedsuo)'s proposed [Semantic C
   - [@bertysentry](https://github.com/bertysentry)
   - [@dineshg13](https://github.com/dineshg13)
 
-## Meeting Times
-
-July 10 - August 21 (6 weeks):
-
-- Wednesday at 8:30-09:00 Pacific Time
+## Meetings
 
 *cncf-slack* [#otel-system-metrics](https://cloud-native.slack.com/archives/C05CTFE9U4A)
 *meeting-notes* [google-doc](https://docs.google.com/document/d/1p5TH57t43XpxA48onLzX4PIr3g6ydYKCtR_AUlsCnQk)
