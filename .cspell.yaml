@@ -49,10 +49,12 @@ words:
     - austinlparker
     - beedgen
     - beemer
+    - bertysentry
     - blanco
     - bogdan
     - bogdandrutu
     - boten
+    - braydonk
     - breedx
     - calendar-agent-mgmt
     - calendar-ebpf
@@ -60,6 +62,7 @@ words:
     - carlosalberto
     - cartermp
     - cdevents
+    - chrs
     - cicd
     - cijo
     - cncf
@@ -72,7 +75,9 @@ words:
     - davdai
     - denisivan
     - dennisme
+    - dineshg
     - dmitrii
+    - dmitryax
     - dpauls
     - dnsmichi
     - dpauls
@@ -91,9 +96,12 @@ words:
     - ericchapman80
     - faas
     - fong
+    - frzifus
+    - gbbr
     - gitter
     - henrikrexed
     - hongalex
+    - hostmetricsreceiver
     - horovits
     - jackjia
     - jaglowski
@@ -106,6 +114,7 @@ words:
     - jpkrohling
     - jsuereth
     - juraci
+    - kaiyan-sheng
     - kamphaus
     - kanzhelev
     - kelnage
@@ -171,6 +180,7 @@ words:
     - runtimes
     - rynn
     - salnikov
+    - sallyom
     - scavarda
     - scheler
     - semconv
