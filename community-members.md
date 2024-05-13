@@ -149,6 +149,12 @@ Repo: [open-telemetry/opentelemetry-ruby](https://github.com/open-telemetry/open
 
 The list of active members (both "approvers" and "maintainers") for OpenTelemetry Ruby can be found in the [open-telemetry/opentelemetry-ruby README file](https://github.com/open-telemetry/opentelemetry-ruby#contributing).
 
+## Rust
+
+Repo: [open-telemetry/opentelemetry-rust](https://github.com/open-telemetry/opentelemetry-rust)
+
+The list of active members (both "approvers" and "maintainers") for OpenTelemetry Rust can be found in the [open-telemetry/opentelemetry-rust README file](https://github.com/open-telemetry/opentelemetry-rust/blob/main/README.md#approvers-and-maintainers).
+
 ## PHP
 
 Repo: [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opentelemetry-php)
@@ -164,10 +170,6 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 ## Community Demo
 
 Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/opentelemetry-demo)
-
-## Others
-
-Rust
 
 ## Governance Committee Emeritus
 
