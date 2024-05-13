@@ -16,23 +16,23 @@ This project aims to develop and stabilize feature flag semantic conventions, us
 
 Currently, it is impossible to determine the impact a feature flag has on key metrics for your services.
 For example, if a feature flag is enabled for 25% of users, additional data is required to know if that subset of users is experiencing faster, slower, or unchanged response times.
-This problem can become exponentially more challenging if multiple feature flags are evaluated over the course of a single transaction.
+This problem can become exponentially more challenging if multiple feature flags are evaluated over the course of a single trace.
 
 Further, it may also be difficult or impossible to know exactly how many users are being affected by a particular feature flag.
-For example, if a feature flag targets users with a particular email domain, it may require additional monitoring data to determine what portion of your users or traffic is receiving a particular experience.
+For example, if a feature flag targets users with a particular email domain, it may require additional telemetry data to determine what portion of your users or traffic is receiving a particular experience.
 
-## Problem 2: Flag management separate from monitoring data
+## Problem 2: Flag management separate from telemetry data
 
-Feature flags are typically managed outside your monitoring tooling.
-There is no standardized way for a flag management system to notify a monitoring system that a feature flag rule set is changed, or if a rule is enabled or disabled.
-This lack of standardization means that even if a flag management system emits a flag change event, the monitoring tool may not be able to correlate that change with the services that it impacts.
+Feature flags are typically managed outside your telemetry tooling.
+There is no standardized way for a flag management system to notify a telemetry system that a feature flag rule set is changed, or if a rule is enabled or disabled.
+This lack of standardization means that even if a flag management system emits a flag change event, the telemetry tool may not be able to correlate that change with the services that it impacts.
 It also means that a person responsible for monitoring an application often has to check two separate tools in order to determine if a flag change was the root cause of a change in service metrics or behavior.
-Because rule sets and monitoring data are managed in separate tools, it may be difficult to determine exactly which rule set was used and if it has been changed between when it was evaluated and when a person investigating an issue is looking at the monitoring data.
+Because rule sets and telemetry data are managed in separate tools, it may be difficult to determine exactly which rule set was used and if it has been changed between when it was evaluated and when a person investigating an issue is looking at the telemetry data.
 
 ## Target Use Cases
 
 - Analyze the impact a feature flag has on key service metrics such as response time and failure rate.
-  If a feature variant is enabled for some subset of users, it is necessary to be able to distinguish those transactions from other transactions in your monitoring backend.
+  If a feature variant is enabled for some subset of users, it is necessary to be able to distinguish those traces from other traces in your telemetry backend.
 - Associating a flag change with a change in key service metrics.
   This is useful additional context during root cause analysis.
   One example of when this is useful may be determining the rule set that was evaluated in order to determine the flag variant.
