@@ -61,6 +61,9 @@ Logs Approvers:
 
 - [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
+
+Logs Approvers Emeritus:
+
 - [David Poncelow](https://github.com/zenmoto), Splunk
 
 ## Semantic Conventions
