@@ -84,6 +84,19 @@
     gcLiaison:
     - name: Trask Stalnaker
       github: trask
+  - name: 'Semantic Conventions: Tooling'
+    meeting: Every Wednesday at 07:00 PT
+    notes:
+      type: gDoc
+      value: 1ygwXgOFRF01UfUOgMr_ElyL7fSDPchTKSrqfj-_HeyA
+    chat:
+      - type: slack
+        name: '#otel-semantic-conventions-wg'
+        id: C041APFBYQP
+    invites: calendar-semconv
+    sponsors:
+    - name: Josh Suereth
+      github: jsuereth
   - name: 'Semantic Conventions: Messaging'
     meeting: Every Thursday at 8:00 PT
     notes:
