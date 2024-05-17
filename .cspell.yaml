@@ -29,6 +29,7 @@ words:
     - Liudmila
     - Nale
     - REXX
+    - scaphandre
     - Sysplex
     - acramsay
     - adot
@@ -47,10 +48,12 @@ words:
     - arminru
     - austinlparker
     - beedgen
+    - bertysentry
     - blanco
     - bogdan
     - bogdandrutu
     - boten
+    - braydonk
     - breedx
     - calendar-agent-mgmt
     - calendar-ebpf
@@ -58,6 +61,7 @@ words:
     - carlosalberto
     - cartermp
     - cdevents
+    - chrs
     - cicd
     - cijo
     - cncf
@@ -69,7 +73,9 @@ words:
     - davdai
     - denisivan
     - dennisme
+    - dineshg
     - dmitrii
+    - dmitryax
     - dpauls
     - dnsmichi
     - dpauls
@@ -88,9 +94,13 @@ words:
     - ericchapman80
     - faas
     - fong
+    - frzifus
+    - gbbr
     - gitter
+    - gabibeyer
     - henrikrexed
     - hongalex
+    - hostmetricsreceiver
     - horovits
     - jackjia
     - jaglowski
@@ -103,6 +113,7 @@ words:
     - jpkrohling
     - jsuereth
     - juraci
+    - kaiyan-sheng
     - kamphaus
     - kanzhelev
     - kelnage
@@ -121,6 +132,7 @@ words:
     - magnusbaeck
     - maintainership
     - mancuso
+    - marceloamaral
     - martinkuba
     - mateuszrzeszutek
     - mayur
@@ -129,6 +141,7 @@ words:
     - mhausenblas
     - mirabella
     - mjwolf
+    - mkorbi
     - molkova
     - msomasu
     - mtwo
@@ -138,6 +151,7 @@ words:
     - neumann
     - neumüller
     - nirga
+    - nikimanoledaki
     - novotny
     - observiq
     - ocelotl
@@ -166,7 +180,9 @@ words:
     - ruech
     - runtimes
     - rynn
+    - rossf7
     - salnikov
+    - sallyom
     - scavarda
     - scheler
     - semconv
@@ -181,6 +197,7 @@ words:
     - skyscanner
     - sourabh1007
     - splk
+    - spazzy757
     - srikanthccv
     - stalnaker
     - subdir
