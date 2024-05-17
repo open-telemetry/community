@@ -61,6 +61,7 @@ Logs Approvers:
 
 - [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
+- [Robert Pająk](https://github.com/pellared), Splunk
 
 Logs Approvers Emeritus:
 
