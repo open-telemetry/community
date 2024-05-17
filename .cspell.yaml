@@ -10,19 +10,26 @@ ignoreRegExpList:
     - Slack Channel ID
     - Google Docs ID
 words:
+    - Collibra
     - DASD
+    - datadog
     - dynatrace
     - easycla
     - eiffel
+    - elastic
     - emea
     - faas
     - galkleinman
     - gitter
+    - grafana
     - gyliu513
     - Hostmetrics
+    - isovalent
+    - labs
     - Liudmila
     - Nale
     - REXX
+    - scaphandre
     - Sysplex
     - acramsay
     - adot
@@ -30,6 +37,7 @@ words:
     - afrittoli
     - alanwest
     - alevenberg
+    - alexvanboxel
     - alolita
     - amye
     - aniszczyk
@@ -40,10 +48,12 @@ words:
     - arminru
     - austinlparker
     - beedgen
+    - bertysentry
     - blanco
     - bogdan
     - bogdandrutu
     - boten
+    - braydonk
     - breedx
     - calendar-agent-mgmt
     - calendar-ebpf
@@ -51,6 +61,7 @@ words:
     - carlosalberto
     - cartermp
     - cdevents
+    - chrs
     - cicd
     - cijo
     - cncf
@@ -62,7 +73,9 @@ words:
     - davdai
     - denisivan
     - dennisme
+    - dineshg
     - dmitrii
+    - dmitryax
     - dpauls
     - dnsmichi
     - dpauls
@@ -81,9 +94,13 @@ words:
     - ericchapman80
     - faas
     - fong
+    - frzifus
+    - gbbr
     - gitter
+    - gabibeyer
     - henrikrexed
     - hongalex
+    - hostmetricsreceiver
     - horovits
     - jackjia
     - jaglowski
@@ -96,14 +113,17 @@ words:
     - jpkrohling
     - jsuereth
     - juraci
+    - kaiyan-sheng
     - kamphaus
     - kanzhelev
+    - kelnage
     - keptn
     - krzko
     - kröhling
     - kubecon
     - kuisathaverat
     - lalitb
+    - lambdanis
     - liatrio
     - lightstep
     - lmolkova
@@ -112,12 +132,16 @@ words:
     - magnusbaeck
     - maintainership
     - mancuso
+    - marceloamaral
     - martinkuba
     - mateuszrzeszutek
     - mayur
     - mayurkale
+    - mdelfabro
     - mhausenblas
     - mirabella
+    - mjwolf
+    - mkorbi
     - molkova
     - msomasu
     - mtwo
@@ -127,6 +151,7 @@ words:
     - neumann
     - neumüller
     - nirga
+    - nikimanoledaki
     - novotny
     - observiq
     - ocelotl
@@ -148,13 +173,16 @@ words:
     - proto
     - pyohannes
     - pytest
+    - raesene
     - reiley
     - reyang
     - rrschulze
     - ruech
     - runtimes
     - rynn
+    - rossf7
     - salnikov
+    - sallyom
     - scavarda
     - scheler
     - semconv
@@ -169,6 +197,7 @@ words:
     - skyscanner
     - sourabh1007
     - splk
+    - spazzy757
     - srikanthccv
     - stalnaker
     - subdir
@@ -194,6 +223,7 @@ words:
     - trendable
     - triager
     - triagers
+    - trisch-me
     - tsloughter
     - tylerbenson
     - xibz

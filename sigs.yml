@@ -275,7 +275,7 @@
 - name: Implementation SIGs
   sigs:
   - name: Maintainer Meeting
-    meeting: Every Monday at 09:00PT
+    meeting: Every Monday at 09:00 PT
     notes:
       type: gDoc
       value: 1_X2CTiDXmxk2JozBNwQ2uP8FfV1rxx9ISE5puHu0yIk
@@ -289,7 +289,7 @@
        - name: Morgan McLean
          github: mtwo
   - name: 'Android: SDK + Automatic Instrumentation'
-    meeting: Every Tuesday at 08:00PT
+    meeting: Every Tuesday at 08:00 PT
     notes:
       type: gDoc
       value: 1W72oElAJuYx3efM9wkH5l1iksdfwmTSkVl-H7KHTLnY
@@ -375,7 +375,7 @@
     - name: 'Austin Parker'
       github: austinlparker
   - name: 'GoLang: SDK'
-    meeting: Every Thursday alternating between 10:00 and 15:00 PDT
+    meeting: Every Thursday alternating between 9:00 and 10:00 PDT
     notes:
       type: gDoc
       value: 1E5e7Ld0NuU1iVvf-42tOBpu2VBBLYnh73GJuITGJTTU

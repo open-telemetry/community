@@ -37,4 +37,5 @@ Please remember, it is an applicant's responsibility to get their sponsors' conf
 
 - PRs reviewed / authored
 - Issues responded to
+- Community activities I organized/ran
 - SIG projects I am involved with
