@@ -6,55 +6,56 @@ patterns:
       pattern: "id: [A-Z0-9]{11}"
     - name: Google Docs ID
       pattern: "value: [a-zA-Z0-9-_]+"
+    - name: "GitHub Handle"
+      pattern: "@[a-zA-Z0-9-_]+\\b"
+    - name: "GitHub Handle in YML"
+      pattern: "github: [a-zA-Z0-9-_]+"
 ignoreRegExpList:
     - Slack Channel ID
     - Google Docs ID
+    - GitHub Handle
+    - GitHub Handle in YML
 words:
+    - Collibra
     - DASD
+    - datadog
     - dynatrace
     - easycla
     - eiffel
+    - elastic
     - emea
     - faas
-    - galkleinman
     - gitter
-    - gyliu513
+    - grafana
     - Hostmetrics
+    - isovalent
+    - labs
     - Liudmila
     - Nale
     - REXX
+    - scaphandre
     - Sysplex
     - acramsay
     - adot
-    - adrielp
-    - afrittoli
-    - alanwest
-    - alevenberg
     - alolita
     - amye
     - aniszczyk
     - apac
     - anoshin
-    - arbiv
     - armin
-    - arminru
-    - austinlparker
     - beedgen
+    - bertysentry
     - blanco
     - bogdan
-    - bogdandrutu
     - boten
-    - breedx
     - calendar-agent-mgmt
     - calendar-ebpf
     - caramanolis
-    - carlosalberto
-    - cartermp
     - cdevents
+    - chrs
     - cicd
     - cijo
     - cncf
-    - codeboten
     - codecov
     - codeowners
     - danielgblanco
@@ -62,62 +63,53 @@ words:
     - davdai
     - denisivan
     - dennisme
+    - dineshg
     - dmitrii
+    - dmitryax
     - dpauls
     - dnsmichi
     - dpauls
     - drewby
     - drutu
-    - dsotirakis
     - dyla
-    - dyladan
     - dynatrace
-    - e-backmark-ericsson
     - easycla
     - eiffel
-    - elfo404
     - emea
     - endsigs
-    - ericchapman80
     - faas
     - fong
+    - frzifus
+    - gbbr
     - gitter
-    - henrikrexed
-    - hongalex
-    - horovits
-    - jackjia
     - jaglowski
-    - jcocchi
     - jemmic
-    - jigar
-    - jimporell
-    - jmacd
-    - joaopgrassi
-    - jpkrohling
-    - jsuereth
     - juraci
+    - kaiyan-sheng
     - kamphaus
     - kanzhelev
+    - kelnage
     - keptn
     - krzko
     - kröhling
     - kubecon
-    - kuisathaverat
-    - lalitb
     - liatrio
     - lightstep
-    - lmolkova
     - logz
     - lucavallin
     - magnusbaeck
     - maintainership
     - mancuso
+    - marceloamaral
     - martinkuba
     - mateuszrzeszutek
     - mayur
     - mayurkale
+    - mdelfabro
     - mhausenblas
     - mirabella
+    - mjwolf
+    - mkorbi
     - molkova
     - msomasu
     - mtwo
@@ -127,10 +119,9 @@ words:
     - neumann
     - neumüller
     - nirga
+    - nikimanoledaki
     - novotny
     - observiq
-    - ocelotl
-    - oleg-nenashev
     - opentelemetry
     - opentelemetrybot
     - otel
@@ -140,37 +131,31 @@ words:
     - otep
     - otlp
     - paixão
-    - parsana
     - passcodes
-    - patrickhousley
-    - pmpaulino
     - poncelow
     - proto
     - protos
     - pyohannes
     - pytest
+    - raesene
     - reiley
-    - reyang
-    - rrschulze
     - ruech
     - runtimes
     - rynn
+    - rossf7
     - salnikov
+    - sallyom
     - scavarda
-    - scheler
     - semconv
     - sergey
     - severin
     - sguyon
     - sharma
-    - sharrmander
     - shkuro
     - sigelman
     - signup
     - skyscanner
-    - sourabh1007
     - splk
-    - srikanthccv
     - stalnaker
     - subdir
     - subproject
@@ -179,14 +164,11 @@ words:
     - sudivate
     - suereth
     - supermajority
-    - svrnm
     - tarnovski
-    - tedsuo
     - tekton
     - thisthat
     - tiebreaking
     - tigran
-    - tigrannajaryan
     - timebox
     - timeboxing
     - timeslot
@@ -195,9 +177,4 @@ words:
     - trendable
     - triager
     - triagers
-    - tsloughter
-    - tylerbenson
-    - xibz
-    - xoscar
     - yahn
-    - youngaaronm
