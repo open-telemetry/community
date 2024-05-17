@@ -16,27 +16,35 @@ ignoreRegExpList:
     - GitHub Handle
     - GitHub Handle in YML
 words:
+    - Collibra
     - DASD
+    - datadog
     - dynatrace
     - easycla
     - eiffel
+    - elastic
     - emea
     - faas
     - gitter
+    - grafana
     - Hostmetrics
+    - isovalent
+    - labs
     - Liudmila
     - Nale
     - REXX
+    - scaphandre
     - Sysplex
     - acramsay
     - adot
-    - amye
-    - apac
     - alolita
+    - amye
     - aniszczyk
+    - apac
     - anoshin
     - armin
     - beedgen
+    - bertysentry
     - blanco
     - bogdan
     - boten
@@ -44,12 +52,23 @@ words:
     - calendar-ebpf
     - caramanolis
     - cdevents
+    - chrs
     - cicd
     - cijo
     - cncf
     - codecov
     - codeowners
+    - danielgblanco
+    - darren17082
+    - davdai
+    - denisivan
+    - dennisme
+    - dineshg
     - dmitrii
+    - dmitryax
+    - dpauls
+    - dnsmichi
+    - dpauls
     - drewby
     - drutu
     - dyla
@@ -60,12 +79,16 @@ words:
     - endsigs
     - faas
     - fong
+    - frzifus
+    - gbbr
     - gitter
     - jaglowski
     - jemmic
     - juraci
+    - kaiyan-sheng
     - kamphaus
     - kanzhelev
+    - kelnage
     - keptn
     - krzko
     - kröhling
@@ -77,8 +100,16 @@ words:
     - magnusbaeck
     - maintainership
     - mancuso
+    - marceloamaral
+    - martinkuba
+    - mateuszrzeszutek
     - mayur
+    - mayurkale
+    - mdelfabro
+    - mhausenblas
     - mirabella
+    - mjwolf
+    - mkorbi
     - molkova
     - msomasu
     - mtwo
@@ -88,6 +119,7 @@ words:
     - neumann
     - neumüller
     - nirga
+    - nikimanoledaki
     - novotny
     - observiq
     - opentelemetry
@@ -103,11 +135,14 @@ words:
     - poncelow
     - proto
     - pytest
+    - raesene
     - reiley
     - ruech
     - runtimes
     - rynn
+    - rossf7
     - salnikov
+    - sallyom
     - scavarda
     - semconv
     - sergey
