@@ -607,3 +607,19 @@
     gcLiaison:
     - name: 'Austin Parker'
       github: austinlparker
+  - name: 'Semantic Conventions: Sustainability'
+    meeting: Every Monday at 7:00 PT
+    notes:
+      type: gDoc
+      value: 1zeVZfuy8TKQuNdbAF8-dElWuzzTjzmTGuBwXf54HymM
+    chat:
+      - type: slack
+        name: '#otel-sustainability-semconv-sig'
+        id: C06RTM63YD6
+    invites: calendar-semconv
+    sponsors:
+      - name: Johannes Tax
+        github: pyohannes
+    gcLiaison:
+      - name: 'Daniel Gomez Blanco'
+        github: danielgblanco
