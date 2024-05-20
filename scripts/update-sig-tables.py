@@ -5,8 +5,12 @@ import sys
 # in the Makefile we use a unmodified python container to run this script, so we need to install pyyaml if it's not already installed
 if (len(sys.argv) > 1) and (sys.argv[1] == "--install"):
     pip.main(['install', 'pyyaml'])
+    sys.argv = sys.argv[1:]
 
 import yaml
+
+# Do not safe the file but verify that it is different from the original one.
+run_in_check_mode = (len(sys.argv) > 1) and (sys.argv[1] == "--check")
 
 # Define the YAML input file and the markdown file to be updated
 yaml_input = "sigs.yml"
@@ -96,11 +100,21 @@ for group in data:
 
 markdown_content += end_marker
 
-# Write the updated markdown content to file
-with open(markdown_file, 'w') as file:
-    file.write(top_part)
-    file.write(markdown_content)
-    file.write(bottom_part)
+result = top_part + markdown_content + bottom_part
+
+if run_in_check_mode:
+    with open(markdown_file, 'r') as file:
+        original = file.read()
+    if original == result:
+        sys.exit(0)
+    else:
+        sys.exit(1)
+else:
+    # Write the updated markdown content to file
+    with open(markdown_file, 'w') as file:
+        file.write(top_part)
+        file.write(markdown_content)
+        file.write(bottom_part)
 
 # Inform the user that the markdown file has been updated
 print("The markdown file has been updated with the new SIG tables.")
