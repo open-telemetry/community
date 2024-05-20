@@ -53,6 +53,7 @@ repositories:
 - [Christian Neumüller](https://github.com/Oberon00), Dynatrace
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
+- [Robert Pająk](https://github.com/pellared), Splunk
 
 Logs Approvers Emeritus:
 
