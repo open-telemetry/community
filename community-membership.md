@@ -50,6 +50,7 @@ Defined by: Member of the OpenTelemetry GitHub organization
   may include, but is not limited to:
   - Authoring or reviewing PRs on GitHub
   - Filing or commenting on issues on GitHub
+  - Organizing and running activities (e.g. events, surveys) within the OpenTelemetry community
   - Contributing to SIGs, subprojects, or community discussions (e.g. meetings,
     chat, email, and discussion forums)
 - [Joined the Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q)
