@@ -337,6 +337,8 @@ high bar to becoming a specification sponsor.
   sponsor should work with them to ensure the work is consistent with existing
   specification.
 - Demonstrate sound technical judgement.
+- Frequently attend the specification SIG meeting where issues and PRs are
+  synchronously discussed.
 
 Sponsors who are unable to fulfill their responsibilities (e.g. no longer have
 time available to commit) are expected to be moved
