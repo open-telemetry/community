@@ -106,7 +106,7 @@ The project is sponsored by Dan Dyla and Alexander Wert, an OpenTelemetry semant
 The following is a list of engineers committed to working on the project and write and review prototypes:
 
 - Alexander Wert - (OTel SemConv, Elastic)
-- André Silva (OpenFeature dotnet)
+- André Silva (OpenFeature dotnet, Lexis Nexis Risk Solutions)
 - Daniel Dyla - (OTel GC, OTel JS, Dynatrace)
 - Federico Bond (OpenFeature Python, Independent)
 - Lukas Reining (OpenFeature TC, Codecentric)
