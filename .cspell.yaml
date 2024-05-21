@@ -6,9 +6,15 @@ patterns:
       pattern: "id: [A-Z0-9]{11}"
     - name: Google Docs ID
       pattern: "value: [a-zA-Z0-9-_]+"
+    - name: "GitHub Handle"
+      pattern: "@[a-zA-Z0-9-_]+\\b"
+    - name: "GitHub Handle in YML"
+      pattern: "github: [a-zA-Z0-9-_]+"
 ignoreRegExpList:
     - Slack Channel ID
     - Google Docs ID
+    - GitHub Handle
+    - GitHub Handle in YML
 words:
     - Collibra
     - DASD
@@ -19,10 +25,8 @@ words:
     - elastic
     - emea
     - faas
-    - galkleinman
     - gitter
     - grafana
-    - gyliu513
     - Hostmetrics
     - isovalent
     - labs
@@ -33,35 +37,22 @@ words:
     - Sysplex
     - acramsay
     - adot
-    - adrielp
-    - afrittoli
-    - alanwest
-    - alevenberg
-    - alexvanboxel
     - alolita
     - amye
     - andré
     - aniszczyk
     - apac
     - anoshin
-    - arbiv
     - armin
-    - arminru
-    - austinlparker
     - beedgen
     - beemer
     - bertysentry
     - blanco
     - bogdan
-    - bogdandrutu
     - boten
-    - braydonk
-    - breedx
     - calendar-agent-mgmt
     - calendar-ebpf
     - caramanolis
-    - carlosalberto
-    - cartermp
     - cdevents
     - chrs
     - cicd
@@ -84,37 +75,19 @@ words:
     - dpauls
     - drewby
     - drutu
-    - dsotirakis
     - dyla
-    - dyladan
     - dynatrace
-    - e-backmark-ericsson
     - easycla
     - eiffel
-    - elfo404
     - emea
     - endsigs
-    - ericchapman80
     - faas
     - fong
     - frzifus
     - gbbr
     - gitter
-    - gabibeyer
-    - henrikrexed
-    - hongalex
-    - hostmetricsreceiver
-    - horovits
-    - jackjia
     - jaglowski
-    - jcocchi
     - jemmic
-    - jigar
-    - jimporell
-    - jmacd
-    - joaopgrassi
-    - jpkrohling
-    - jsuereth
     - juraci
     - kaiyan-sheng
     - kamphaus
@@ -130,7 +103,6 @@ words:
     - lexis
     - liatrio
     - lightstep
-    - lmolkova
     - logz
     - lucavallin
     - lukas
@@ -160,8 +132,6 @@ words:
     - nikimanoledaki
     - novotny
     - observiq
-    - ocelotl
-    - oleg-nenashev
     - opentelemetry
     - opentelemetrybot
     - otel
@@ -171,18 +141,13 @@ words:
     - otep
     - otlp
     - paixão
-    - parsana
+    - pająk
     - passcodes
-    - patrickhousley
-    - pmpaulino
     - poncelow
     - proto
-    - pyohannes
     - pytest
     - raesene
     - reiley
-    - reyang
-    - rrschulze
     - ruech
     - runtimes
     - rynn
@@ -190,21 +155,16 @@ words:
     - salnikov
     - sallyom
     - scavarda
-    - scheler
     - semconv
     - sergey
     - severin
     - sguyon
     - sharma
-    - sharrmander
     - shkuro
     - sigelman
     - signup
     - skyscanner
-    - sourabh1007
     - splk
-    - spazzy757
-    - srikanthccv
     - stalnaker
     - subdir
     - subproject
@@ -213,14 +173,11 @@ words:
     - sudivate
     - suereth
     - supermajority
-    - svrnm
     - tarnovski
-    - tedsuo
     - tekton
     - thisthat
     - tiebreaking
     - tigran
-    - tigrannajaryan
     - timebox
     - timeboxing
     - timeslot
@@ -229,10 +186,4 @@ words:
     - trendable
     - triager
     - triagers
-    - trisch-me
-    - tsloughter
-    - tylerbenson
-    - xibz
-    - xoscar
     - yahn
-    - youngaaronm

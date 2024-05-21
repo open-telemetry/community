@@ -84,6 +84,19 @@
     gcLiaison:
     - name: Trask Stalnaker
       github: trask
+  - name: 'Semantic Conventions: Tooling'
+    meeting: Every Wednesday at 07:00 PT
+    notes:
+      type: gDoc
+      value: 1ygwXgOFRF01UfUOgMr_ElyL7fSDPchTKSrqfj-_HeyA
+    chat:
+      - type: slack
+        name: '#otel-semantic-conventions-wg'
+        id: C041APFBYQP
+    invites: calendar-semconv
+    sponsors:
+    - name: Josh Suereth
+      github: jsuereth
   - name: 'Semantic Conventions: Messaging'
     meeting: Every Thursday at 8:00 PT
     notes:
@@ -154,6 +167,40 @@
     gcLiaison: 
     - name: Alolita Sharma
       github: alolita
+  - name: 'Semantic Conventions: CI/CD'
+    meeting: "Meets during Semantic Conventions: General"
+    notes:
+      type: gDoc
+      value: 10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8
+    chat:
+      - type: slack
+        name: '#otel-semconv-security'
+        id: C0715DWUW7L
+    invites: calendar-semconv
+    sponsors:
+      - name: Josh Suereth
+        github: jsuereth
+      - name: Carlos Alberto
+        github: carlosalberto
+    gcLiaison:
+      - name: Trask Stalnaker
+        github: trask
+  - name: 'Semantic Conventions: Security'
+    meeting: "Meets during Semantic Conventions: General"
+    notes:
+      type: gDoc
+      value: 10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8
+    chat:
+      - type: slack
+        name: '#otel-semconv-security'
+        id: C0715DWUW7L
+    invites: calendar-semconv
+    sponsors:
+      - name: Josh Suereth
+        github: jsuereth
+    gcLiaison:
+      - name: Trask Stalnaker
+        github: trask
   - name: 'Specification: Entities'
     meeting: Every other week on Thursday at 08:00 AM PT
     notes:
@@ -375,7 +422,7 @@
     - name: 'Austin Parker'
       github: austinlparker
   - name: 'GoLang: SDK'
-    meeting: Every Thursday alternating between 10:00 and 15:00 PDT
+    meeting: Every Thursday alternating between 9:00 and 10:00 PDT
     notes:
       type: gDoc
       value: 1E5e7Ld0NuU1iVvf-42tOBpu2VBBLYnh73GJuITGJTTU

@@ -1,4 +1,6 @@
-### Description
+# Semantic Conventions for Sustainability Metrics
+
+## Description
 
 This working group looks to identify and standardize observability for
 sustainability purposes with regards to infrastructure and applications. This
@@ -12,13 +14,13 @@ Current efforts of implementations:
 
 We want to have a unified conventions in order to better facilitate measuring sustainability metrics across different ecosystems.
 
-### Deliverables
+## Deliverables
 
 - Semantic conventions for sustainability metrics
 - Reference Prototypes metrics
 - Recommended practices for reporting on sustainability metrics within the scope of OpenTelemetry 
 
-### Staffing / Help Wanted
+## Staffing / Help Wanted
 
 **Project Leads**
 - @spazzy757
@@ -34,13 +36,14 @@ We want to have a unified conventions in order to better facilitate measuring su
 - @mkorbi
 - @rossf7
 - @marceloamaral
+- @greenhsu123
 
-### Meeting Times
+## Meeting Times
 
 - Meeting Times: Mondays 2:00PM - 3:00PM UCT
 - CNCF Slack [#otel-sustainability-semconv-sig](https://cloud-native.slack.com/archives/C06RTM63YD6) for collaboration
 
-### Timeline
+## Timeline
 
 Q3 2024
 
@@ -57,13 +60,13 @@ Q4 2024
 * Declare sustainability semantic conventions as stable
 * Create Recommendations
 
-### Labels
+## Labels
 
 - `sustainability`
 
-### Linked Issues and PRs
+## Linked Issues and PRs
 - https://github.com/open-telemetry/semantic-conventions/issues/835
 
-### Project Board
+## Project Board
 
 - TBD
