@@ -201,6 +201,24 @@
     gcLiaison:
       - name: Trask Stalnaker
         github: trask
+  - name: 'Semantic Conventions: Sustainability'
+    meeting: Every Monday at 7:00 PT
+    notes:
+      type: gDoc
+      value: 1zeVZfuy8TKQuNdbAF8-dElWuzzTjzmTGuBwXf54HymM
+    chat:
+      - type: slack
+        name: '#otel-sustainability-semconv-sig'
+        id: C06RTM63YD6
+    invites: calendar-semconv
+    sponsors:
+      - name: Johannes Tax
+        github: pyohannes
+      - name: 'Daniel Gomez Blanco'
+        github: danielgblanco
+    gcLiaison:
+      - name: 'Daniel Gomez Blanco'
+        github: danielgblanco
   - name: 'Specification: Entities'
     meeting: Every other week on Thursday at 08:00 AM PT
     notes:
@@ -641,21 +659,3 @@
     gcLiaison:
     - name: 'Austin Parker'
       github: austinlparker
-  - name: 'Semantic Conventions: Sustainability'
-    meeting: Every Monday at 7:00 PT
-    notes:
-      type: gDoc
-      value: 1zeVZfuy8TKQuNdbAF8-dElWuzzTjzmTGuBwXf54HymM
-    chat:
-      - type: slack
-        name: '#otel-sustainability-semconv-sig'
-        id: C06RTM63YD6
-    invites: calendar-semconv
-    sponsors:
-      - name: Johannes Tax
-        github: pyohannes
-      - name: 'Daniel Gomez Blanco'
-        github: danielgblanco
-    gcLiaison:
-      - name: 'Daniel Gomez Blanco'
-        github: danielgblanco
