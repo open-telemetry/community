@@ -654,6 +654,8 @@
     sponsors:
       - name: Johannes Tax
         github: pyohannes
+      - name: 'Daniel Gomez Blanco'
+        github: danielgblanco
     gcLiaison:
       - name: 'Daniel Gomez Blanco'
         github: danielgblanco
