@@ -54,7 +54,6 @@ repositories:
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
 - [Leighton Chen](https://github.com/lzchen), Microsoft
-- [Nikita Salnikov-Tarnovski](https://github.com/iNikem), Splunk
 - [Robert Pająk](https://github.com/pellared), Splunk
 - [Ted Young](https://github.com/tedsuo), Lightstep
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
@@ -62,7 +61,7 @@ repositories:
 Emeritus sponsors (formerly approvers):
 
 - [David Poncelow](https://github.com/zenmoto), Splunk
-
+- [Nikita Salnikov-Tarnovski](https://github.com/iNikem), Splunk
 
 ## Semantic Conventions
 
