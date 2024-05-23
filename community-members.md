@@ -49,18 +49,18 @@ and [Proto definitions](https://github.com/open-telemetry/opentelemetry-proto).
 trusted collaborators of the Technical Committee on Project specs and related
 repositories:
 
-- [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
 - [Christian Neumüller](https://github.com/Oberon00), Dynatrace
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
-- [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Robert Pająk](https://github.com/pellared), Splunk
 - [Ted Young](https://github.com/tedsuo), Lightstep
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
 Emeritus sponsors (formerly approvers):
 
+- [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
 - [David Poncelow](https://github.com/zenmoto), Splunk
+- [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Nikita Salnikov-Tarnovski](https://github.com/iNikem), Splunk
 
 ## Semantic Conventions
