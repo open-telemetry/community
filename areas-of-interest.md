@@ -64,6 +64,12 @@ concerns.
 - Protocol compatibility (OpenCensus, Prometheus, Statsd, etc.)
 - Semantic conventions
 
+### [Liudmila Molkova](https://github.com/lmolkova), Microsoft
+
+- Trace API and SDK
+- Semantic conventions
+- Instrumentation
+
 ### [Reiley Yang](https://github.com/reyang), Microsoft
 
 - Logging API and SDK
