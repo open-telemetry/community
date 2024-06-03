@@ -69,4 +69,4 @@ Q4 2024
 
 ## Project Board
 
-- TBD
+- https://github.com/orgs/open-telemetry/projects/93/views/1
