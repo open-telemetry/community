@@ -46,27 +46,23 @@ Members of the Technical Committee are the maintainers of
 [Project specs](https://github.com/open-telemetry/opentelemetry-specification)
 and [Proto definitions](https://github.com/open-telemetry/opentelemetry-proto).
 
-Trace Approvers:
+[Specification sponsors](./community-membership.md#specification-sponsor) are
+trusted collaborators of the Technical Committee on Project specs and related
+repositories:
 
 - [Christian Neumüller](https://github.com/Oberon00), Dynatrace
-- [Nikita Salnikov-Tarnovski](https://github.com/iNikem), Splunk
-- [Ted Young](https://github.com/tedsuo), Lightstep
-
-Metrics Approvers:
-
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
-- [Leighton Chen](https://github.com/lzchen), Microsoft
+- [Robert Pająk](https://github.com/pellared), Splunk
+- [Ted Young](https://github.com/tedsuo), Lightstep
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
-Logs Approvers:
+Emeritus sponsors (formerly approvers):
 
 - [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
-- [Robert Pająk](https://github.com/pellared), Splunk
-
-Logs Approvers Emeritus:
-
 - [David Poncelow](https://github.com/zenmoto), Splunk
+- [Leighton Chen](https://github.com/lzchen), Microsoft
+- [Nikita Salnikov-Tarnovski](https://github.com/iNikem), Splunk
 
 ## Semantic Conventions
 
