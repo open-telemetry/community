@@ -52,7 +52,6 @@ repositories:
 
 - [Christian Neumüller](https://github.com/Oberon00), Dynatrace
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
-- [Daniel Jaglowski](https://github.com/djaglowski), observIQ
 - [Robert Pająk](https://github.com/pellared), Splunk
 - [Ted Young](https://github.com/tedsuo), Lightstep
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
