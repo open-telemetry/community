@@ -2,7 +2,7 @@
 
 ## Background and description
 
-Convenience as a SIG was initially proposed by Ted Young back in 2021. It
+Convenience as a SIG was initially proposed by [Ted Young](https://github.com/tedsuo) back in 2021. It
 was postponed to prioritize completion of signal specs and stabilization. A
 document was written at this time describing user research to do and a
 brainstorming session,
