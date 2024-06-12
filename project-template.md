@@ -53,4 +53,4 @@ Once created, please add a link to the project board here.
 
 Once a project is started, its corresponding SIG should meet regularly for discussion. These meeting times should be posted on the OpenTelemetry public calendar and automatically recorded.
 
-Any relevant information related to the SIG (e.g. sponsors, meeting times, Slack channels, meeting notes, etc.) must be publicly available in the [community](https://github.com/open-telemetry/community) SIG tables, which can be updated via the [sigs.yml](https://github.com/open-telemetry/community/blob/main/sigs.yml) file.
+Any relevant information related to the SIG (e.g. sponsors, meeting times, Slack channels, meeting notes, etc.) must be publicly available in the [community](https://github.com/open-telemetry/community) SIG tables, which can be updated via the [sigs.yml](https://github.com/open-telemetry/community/blob/main/sigs.yml) file and running `make table-generation`.
