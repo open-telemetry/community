@@ -2,19 +2,33 @@
 
 ## Background and description
 
-Convenience as a SIG was initially proposed by [Ted Young](https://github.com/tedsuo) back in 2021. It
-was postponed to prioritize completion of signal specs and stabilization. A
-document was written at this time describing user research to do and a
-brainstorming session,
-https://docs.google.com/document/d/1bjiw5L4E8FztRtfsy4Nu9A6qSP-BJlK6BBzl6Rea-Ds/edit#heading=h.b7qckyjgu28i
+Convenience as a SIG was initially proposed by [Ted
+Young](https://github.com/tedsuo) back in 2021. It was postponed to prioritize
+completion of signal specs and stabilization. A document was written at this
+time describing the intent to do user research and a brainstorming session,
+https://docs.google.com/document/d/1bjiw5L4E8FztRtfsy4Nu9A6qSP-BJlK6BBzl6Rea-Ds/edit#heading=h.b7qckyjgu28i.
+This brainstorm resulted in a list of some existing convenience functions
+languages have and proposed ones, like a `start` which takes the tracer from the
+active span in the current context, and proposals for defining annotations for
+easier instrumentation.
 
 ### Current challenges
 
-Currently the various language implementations resolve user convenience
-individually and this can lead to drift between different implementations and
-with the spec. An example would be how to handle marking a code block as
-`untraced` which has implementations in at least Java, Ruby and Javascript, each
-done differently, named differently and with no specification.
+We know users can find the API and SDK to be complex and daunting, the challenge
+is to collect actionable feedback on this issues. That information is spread
+across various languages' issues, blog posts and other online commentary.
+Performing an end user survey will help collect some of this knowledge into a
+central place that is actionable.
+
+When developer experience issues are encountered and addressed they are
+currently done in the various language implementations individually and this can
+lead to drift between different implementations and with the spec. An example
+would be how to handle marking a code block as `untraced` which has
+implementations in at least Java, Ruby and Javascript, each done differently,
+named differently and with no specification. This means users working across
+languages experience different results for similar features and other language
+SIG's aren't necessarily even aware of the pain point that their users may
+actually be experiencing.
 
 ### Goals, objectives, and requirements
 
