@@ -60,6 +60,12 @@ The goal of this project is to establish a cross-cutting "SIG Contributor Experi
 which is "responsible for improving the experience of those who upstream contribute to
 the OpenTelemetry project. [They] do this by creating, and maintaining programs and processes that promote community health and reduce project friction, while retiring those programs and processes that don't. Being conscientious of our contributor base is critical to scaling the project, growing the ecosystem, and helping the project succeed". (via [K8s Contributor Experience Special Interest Group Charter](https://github.com/kubernetes/community/blob/master/sig-contributor-experience/charter.md))
 
+While this is "yet another SIG" initiative, we believe that **not** establishing
+such a SIG is not an option: the problems outlined above will get bigger not
+smaller and while the final ownership of the health of the project is with the GC
+this requires a coordinated effort and more hands across the project to be addressed
+successfully.
+
 Note that similar to other cross-cutting SIGs (Docs, Security, End-User) this SIG will not exclusively own
 the domain of contributor experience, but they take responsibility to drive efforts in close collaboration
 with SIGs and Committees.
