@@ -57,7 +57,7 @@ to the specification.
 
 - TC sponsors: 
   - Austin Parker (Honeycomb)
-  - TBA
+  - Ted Young (Lightstep)
 
 - Needed: Engineers and maintainers/approvers for multiple languages to develop
   solutions and do prototypes.
