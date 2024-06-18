@@ -55,9 +55,12 @@ to the specification.
 
 - Project Lead: Tristan Sloughter (MyDecisiveAI)
 
-- TC sponsors: 
+- GC sponsors: 
   - Austin Parker (Honeycomb)
+  
+- TC sponsors:
   - Ted Young (Lightstep)
+  - Liudmila Molkova (Microsoft)
 
 - Needed: Engineers and maintainers/approvers for multiple languages to develop
   solutions and do prototypes.
