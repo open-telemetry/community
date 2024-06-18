@@ -39,6 +39,9 @@ contributor experience are:
   contributors to feel seen and recognized.
 * No structure collaboration across SIGs, especially in the case of cross-cutting
   concerns (Security, Docs, End-User, ...)
+* SIGs are short of contributors and require some help to advertise their need
+  (blog post, social posts, etc) and to lower the barrier of entry into their
+  sub-project.
 * _add more_
 
 Note that there are individuals within the project who try to tackle some of those
