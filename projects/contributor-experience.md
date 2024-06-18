@@ -7,10 +7,10 @@ only in adoption and lines of code, but also in the number of individuals who
 contribute to this project in different ways.
 
 While in the beginning of the project contributors knew each other well and
-could share implicit in-group knowledge easily, the project has outgrown that
+could share implicit in-group knowledge effortlessly, the project has outgrown that
 phase a while ago and we see different kinds of problems, that make it hard
 for long-term contributors to maintain the project sustainably and for new-comers
-to enter the project easily.
+to enter the project effortlessly.
 
 In this project proposal we suggest to form a cross-cutting special interest group
 that takes responsibility for driving contributor experience projects and that
@@ -87,13 +87,13 @@ experience, including
 
 GC/TC sponsors:
 
-- [Severin Neumann](@svrnm)
-- <tbd>
-
+* [@jpkrohling](https://github.com/jpkrohling)
+* [@svrnm](https://github.com/svrnm)
+  
 Maintainers, approvers, and contributors:
 
-- [Severin Neumann](@svrnm)
-
+* [@svrnm](https://github.com/svrnm)
+* [@jpkrohling](https://github.com/jpkrohling)
 
 ## Meeting Times
 
@@ -108,4 +108,4 @@ the Comms SIG is not meeting.
   * Tackle existing projects (contributor guide book, mentorship)
   * Identify high stake initiatives
 * Month 6: Report to GC & TC about the establishment of the SIG
-* Beyond that the SIG is established and will operate similar to existing SIGS. 
+* Beyond that the SIG is established and will operate similar to existing SIGS.
