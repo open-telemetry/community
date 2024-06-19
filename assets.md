@@ -90,6 +90,20 @@ Link: https://pypi.org/user/opentelemetry/
 
 ## Communication channels
 
+### CNCF Community Group
+
+Used by the End-User SIG to organize events (e.g. OTel Q&A, OTel in Practice, feedback sessions, etc.).
+
+CNCF are the owners of the group, so certain requests (e.g. adding organizers) need to be done via Service Desk.
+
+Link: https://community.cncf.io/opentelemetry/
+
+- Owners: CNCF
+- Lead Organizers (i.e. admins):
+  - [@open-telemetry/sig-end-user-approvers](https://github.com/orgs/open-telemetry/teams/sig-end-user-approvers): listed on group page, registered using their personal CNCF Community accounts.
+  - [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee) not listed on the group page, using a single CNCF Community account set up using cncf-opentelemetry-governance@lists.cncf.io (credentials in 1Password).
+
+
 ### opentelemetry-calendar-contributors Google Group
 
 Used to provide write access to public OpenTelemetry calendar. See [docs/how-to-handle-public-calendar.md](docs/how-to-handle-public-calendar.md).
