@@ -79,7 +79,8 @@ experience, including
 * Onboarding rituals for members, approvers, maintainers
 * A contributor guidebook
 * Mentorship opportunities
-* Contributor recognition programs (e.g. via [Credly](https://credly.com))
+* Contributor recognition programs (e.g. via [Credly](https://credly.com) or with blog posts on the style of "here's what's happening under the hood"
+* Blog posts and social media posts to highlight areas where help is needed
 * Events targeting the Contributor Community
 * Consume SIG Check-In reports from the GC and use this data to improve contributor experience
 
