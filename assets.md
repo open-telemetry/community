@@ -94,7 +94,10 @@ Link: https://pypi.org/user/opentelemetry/
 
 Used by the End-User SIG to organize events (e.g. OTel Q&A, OTel in Practice, feedback sessions, etc.).
 
-CNCF are the owners of the group, so certain requests (e.g. adding organizers) need to be done via Service Desk.
+CNCF are the owners of the group, so certain requests (e.g. adding/removing organizers) need to be requested via on of these:
+
+* CNCF Service Desk
+* https://github.com/cncf/communitygroups/issues
 
 Link: https://community.cncf.io/opentelemetry/
 
