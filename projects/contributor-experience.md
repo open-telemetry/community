@@ -95,6 +95,7 @@ Maintainers, approvers, and contributors:
 
 * [@svrnm](https://github.com/svrnm)
 * [@jpkrohling](https://github.com/jpkrohling)
+* [@mx-psi](https://github.com/mx-psi)
 
 ## Meeting Times
 
