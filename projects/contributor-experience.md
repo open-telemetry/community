@@ -96,7 +96,7 @@ Maintainers, approvers, and contributors:
 * [@svrnm](https://github.com/svrnm)
 * [@jpkrohling](https://github.com/jpkrohling)
 * [@mx-psi](https://github.com/mx-psi)
-
+* [theletterf](https://github.com/theletterf)
 ## Meeting Times
 
 The SIG will meet every other week. Initial suggestion: Every other Monday, 6pm CET/10am PT when
