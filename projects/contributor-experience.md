@@ -33,12 +33,12 @@ contributor experience are:
   to other parts of the project.
 * No explicit contributor guidebook that helps contributors to answer common
   questions no matter where they are on the contributors' ladder.
-* Mentorship for new contributors or contributors stepping up into new roles to
-  make them part of the project and aware of.  
-* Only implicit and unstructured recognition for contributors, which would help
-  contributors to feel seen and recognized.
-* No structure collaboration across SIGs, especially in the case of cross-cutting
-  concerns (Security, Docs, End-User, ...)
+* No mentorship available for new contributors or contributors stepping up into new roles to
+  make them part of the project and aware of expectations.  
+* Only implicit and unstructured recognition for contributors, instead of explicit
+   recognition which would help contributors to feel seen and recognized.
+* No structured collaboration across SIGs, especially in the case of cross-cutting
+  concerns (Security, Docs, End-User, ...), leading to information silos and misalignment.
 * SIGs are short of contributors and require some help to advertise their need
   (blog post, social posts, etc) and to lower the barrier of entry into their
   sub-project.
@@ -97,6 +97,7 @@ Maintainers, approvers, and contributors:
 * [@jpkrohling](https://github.com/jpkrohling)
 * [@mx-psi](https://github.com/mx-psi)
 * [@theletterf](https://github.com/theletterf)
+* [@JamieDanielson](https://github.com/JamieDanielson)
 
 ## Meeting Times
 
