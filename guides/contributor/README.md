@@ -2,7 +2,7 @@
 
 Welcome to OpenTelemetry! We're excited for you to join us. This guide will help
 you get started by providing an overview of the project, how we work together,
-and point you towards helpful resources.
+and where to find helpful resources.
 
 ## Table of Contents
 
