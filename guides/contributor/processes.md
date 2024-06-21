@@ -235,7 +235,7 @@ specification issue, along with any prior art or other relevant documentation.
 
 ### Issue lifecycle
 
-Specification issues are regularly triaged by the GC. The GC may accept,
+Specification issues are regularly triaged by the Governance Committee (GC). The GC may accept,
 decline, or defer the issue until more details are added. Once an issue is
 accepted, it may need a sponsor from the TC who will be responsible for driving the
 issue to completion. Some issues may be small enough that they do not need a
