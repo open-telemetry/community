@@ -62,8 +62,9 @@ to the specification.
   - Ted Young (Lightstep)
   - Liudmila Molkova (Microsoft)
 
-- Needed: Engineers and maintainers/approvers for multiple languages to develop
-  solutions and do prototypes.
+- Maintainers, approvers and contributors:
+  - Damien Mathieu (Elastic)
+  - Juliano Costa (Datadog)
 
 ## Meeting Times
 
