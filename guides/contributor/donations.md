@@ -44,8 +44,8 @@ Committees follow to handle a prospective donation.
    will conduct due diligence to determine if the proposed donation can be effectively
    integrated into the OpenTelemetry project in a way that meets the quality, security,
    and privacy standards of the project without violating stable specification or OpenTelemetry Enhancement Proposals (OTEPs).
-   The TC will summarize their findings, and make a recommendation to either,
-   conditionally or unconditionally, accept or reject the proposal, in a report which will
+   The TC will summarize their findings, and make a recommendation to either
+   accept or reject the proposal, conditionally or unconditionally, in a report which will
    be attached to the donation proposal issue. Writing the report may require meeting
    and discussing alternative technologies with different vendors in the community and
    can be a lengthy process. The TC member driving the report will post updates and time
