@@ -40,7 +40,7 @@ Committees follow to handle a prospective donation.
    considering alternatives, the GC should consider at least the CNCF ecosystem,
    and may also consider other well-known open source projects or alternatives proposed
    by the community.
-3. If a donation proposal passes the initial GC screening, the Technical Committee (TC)
+3. If a donation proposal passes the initial GC screening, the TC
    will conduct due diligence to determine if the proposed donation can be effectively
    integrated into the OpenTelemetry project in a way that meets the quality, security,
    and privacy standards of the project without violating stable specification or OpenTelemetry Enhancement Proposals (OTEPs).
