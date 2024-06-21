@@ -90,7 +90,7 @@ Repo: [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/op
 
 The [list of active members](https://github.com/open-telemetry/opentelemetry-dotnet#contributing) (both "approvers" and "maintainers") can be found in the [README.md](https://github.com/open-telemetry/opentelemetry-dotnet/blob/master/README.md#contributing) file in the [repo](https://github.com/open-telemetry/opentelemetry-dotnet).
 
-### Auto-Instrumentation Agent (aka Tracer)
+### .NET Auto-Instrumentation
 
 Repo: [open-telemetry/opentelemetry-dotnet-instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation).
 
