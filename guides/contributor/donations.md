@@ -29,7 +29,7 @@ Committees follow to handle a prospective donation.
 
 1. Per the above, the donating organization creates a GitHub issue using
    the "Donation Proposal" form in the `community` repository.
-2. The Governance Committee (GC) will evaluate the proposal to ensure that
+2. The GC will evaluate the proposal to ensure that
    the donation is aligned with the overall OpenTelemetry project vision
    and roadmap and has a balanced set of interested contributors and maintainers.
    The GC is also responsible for driving awareness in the community about
