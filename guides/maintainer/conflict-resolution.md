@@ -8,7 +8,7 @@ tradeoffs, it's also healthy to occasionally "disagree and commit."
 Within OpenTelemetry, SIG Maintainers are chosen specifically *because* they
 are domain experts, so we would like to keep as much of the decision-making
 authority with the SIG Maintainers rather than immediately "escalating" to the
-overall OpenTelemetry-wide Technical Committee. As such, this is
+overall OpenTelemetry-wide Technical Committee (TC). As such, this is
 OpenTelemetry's process for resolving technical issues where Maintainers cannot
 reach consensus:
 
