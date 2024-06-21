@@ -237,6 +237,6 @@ specification issue, along with any prior art or other relevant documentation.
 
 Specification issues are regularly triaged by the GC. The GC may accept,
 decline, or defer the issue until more details are added. Once an issue is
-accepted, it needs a sponsor from the TC who will be responsible for driving the
+accepted, it may need a sponsor from the TC who will be responsible for driving the
 issue to completion. Some issues may be small enough that they do not need a
 sponsor -- these issues can be worked on as soon as they are accepted.
