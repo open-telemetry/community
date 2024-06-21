@@ -18,7 +18,7 @@ guidance at the TC's earliest convenience.
 
 All donated code requires a license compatible with the Apache Software License
 2.0, and donated code will require a change of copyright to reflect the
-OpenTelemetry Authors. The Governance Committee will also ask to review any
+OpenTelemetry Authors. The Governance Committee (GC) will also ask to review any
 trademarks (like the names of components) the donation can carry and make a
 decision to either remove those trademarks or transfer them to the CNCF.
 
