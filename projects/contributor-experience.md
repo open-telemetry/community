@@ -83,6 +83,9 @@ experience, including
 * Blog posts and social media posts to highlight areas where help is needed
 * Events targeting the Contributor Community
 * Consume SIG Check-In reports from the GC and use this data to improve contributor experience
+* Support the community of contributors to maintain the Code of Conduct (Note: this is a support function, the responsibility for the CoC and especially enforcing it lays with the Governance Committee)
+* Implement or suggest measures to support contributor diversity
+* Help SIGs to establish practices to improve contributor experience, e.g. having multiple meeting times to serve more timezones
 
 ## Staffing / Help Wanted
 
@@ -97,12 +100,11 @@ Maintainers, approvers, and contributors:
 * [@jpkrohling](https://github.com/jpkrohling)
 * [@mx-psi](https://github.com/mx-psi)
 * [@theletterf](https://github.com/theletterf)
-* [@JamieDanielson](https://github.com/JamieDanielson)
+* [@musingvirtual](https://github.com/musingvirtual)
 
 ## Meeting Times
 
-The SIG will meet every other week. Initial suggestion: Every other Monday, 6pm CET/10am PT when
-the Comms SIG is not meeting.
+The SIG will meeting time will be discussed and finalized when this proposal has been merged. There will be a weekly meeting, if necessary to cater as many time zones as possible there will be bi-weekly meetings at alternating times.
 
 ## Timeline
 
