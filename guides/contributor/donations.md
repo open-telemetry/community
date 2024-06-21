@@ -43,7 +43,7 @@ Committees follow to handle a prospective donation.
 3. If a donation proposal passes the initial GC screening, the Technical Committee (TC)
    will conduct due diligence to determine if the proposed donation can be effectively
    integrated into the OpenTelemetry project in a way that meets the quality, security,
-   and privacy standards of the project without violating stable specification or OTEPs.
+   and privacy standards of the project without violating stable specification or OpenTelemetry Enhancement Proposals (OTEPs).
    The TC will summarize their findings, and make a recommendation to either,
    conditionally or unconditionally, accept or reject the proposal, in a report which will
    be attached to the donation proposal issue. Writing the report may require meeting
