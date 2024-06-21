@@ -86,6 +86,7 @@ experience, including
 * Support the community of contributors to maintain the Code of Conduct (Note: this is a support function, the responsibility for the CoC and especially enforcing it lays with the Governance Committee)
 * Implement or suggest measures to support contributor diversity
 * Help SIGs to establish practices to improve contributor experience, e.g. having multiple meeting times to serve more timezones
+* Maintain a relationship with other Contributor Experience SIGs (e.g. from K8s) and TAG Contributor Strategy, to consult them for best practices and resources where that makes sense, as well as upstream our governance resources into their repos for other projects when that makes sense.
 
 ## Staffing / Help Wanted
 
