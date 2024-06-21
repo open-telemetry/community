@@ -65,6 +65,7 @@ to the specification.
 - Maintainers, approvers and contributors:
   - Damien Mathieu (Elastic)
   - Juliano Costa (Datadog)
+  - Martin Thwaites (Honeycomb)
 
 ## Meeting Times
 
