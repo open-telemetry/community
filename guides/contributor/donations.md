@@ -36,7 +36,7 @@ Committees follow to handle a prospective donation.
    the contribution and making sure all interested parties have a chance to
    object and/or contribute. The GC should work with any appropriate Special Interest
    Groups or Working Groups to evaluate the donation proposal, consider alternatives,
-   and ensure OTel has the resources required to support the donation. When
+   and ensure OpenTelemetry has the resources required to support the donation. When
    considering alternatives, the GC should consider at least the CNCF ecosystem,
    and may also consider other well-known open source projects or alternatives proposed
    by the community.
