@@ -13,7 +13,7 @@ and where to find helpful resources.
 
 OpenTelemetry is a framework for application telemetry data. If you've ever
 checked how much memory a process is using on your computer, or looked at the
-size of a file, you've already interacted with telemetry! Cloud-native systems
+size of a file, you've already interacted with telemetry! Cloud native systems
 create, emit, and process many millions of telemetry points every second as they
 run. In addition, the developers of cloud native software need to describe what
 their applications are doing in production in order to find bugs, optimize their
