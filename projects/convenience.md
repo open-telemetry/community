@@ -56,16 +56,17 @@ to the specification.
 - Project Lead: Tristan Sloughter (MyDecisiveAI)
 
 - GC sponsors: 
-  - Austin Parker (Honeycomb)
-  
+  - @austinlparker (Honeycomb)
+  - @tedso (Lightstep)
+      
 - TC sponsors:
-  - Ted Young (Lightstep)
-  - Liudmila Molkova (Microsoft)
+  - @tedso (Lightstep)
+  - @lmolkova (Microsoft)
 
 - Maintainers, approvers and contributors:
-  - Damien Mathieu (Elastic)
-  - Juliano Costa (Datadog)
-  - Martin Thwaites (Honeycomb)
+  - @dmathieu (Elastic)
+  - @julianocosta89 (Datadog)
+  - @martinjt (Honeycomb)
 
 ## Meeting Times
 
