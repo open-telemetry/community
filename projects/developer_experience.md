@@ -75,6 +75,8 @@ to the specification.
   - @dmathieu (Elastic)
   - @julianocosta89 (Datadog)
   - @martinjt (Honeycomb)
+  - @samsp-msft (Microsoft)
+  - @stevejgordon (Elastic)
 
 ## Meeting Times
 
