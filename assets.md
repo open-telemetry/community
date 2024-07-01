@@ -163,6 +163,7 @@ Link: https://zapier.com
   - admin@opentelemetry.io
 - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 - Used to manage the OpenTelemetry community calendar
+- Used to manage the [Google Custom Search](https://programmablesearchengine.google.com/) for [opentelemetry.io/search](https://opentelemetry.io/search/)
 
 ### Google account for cncf-opentelemetry-governance@lists.cncf.io
 
