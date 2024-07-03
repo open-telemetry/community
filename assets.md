@@ -234,3 +234,12 @@ The OpenTelemetry Bot addresses two common issues:
    organization secret.
 
    [Personal Access Token]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
+## Security
+
+The SIG Security has access to the following tools, with GC and TC members welcome to request access to them as well.
+Find more details under [`tools`](https://github.com/open-telemetry/sig-security/tree/main/tools/) on the [SIG Security
+GitHub repository](https://github.com/open-telemetry/sig-security).
+
+* Advisories Dashboard
+* Snyk
