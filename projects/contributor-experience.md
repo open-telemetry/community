@@ -42,7 +42,7 @@ contributor experience are:
 * SIGs are short of contributors and require some help to advertise their need
   (blog post, social posts, etc) and to lower the barrier of entry into their
   sub-project.
-* _add more_
+* Implicit bias towards US (and EU) working hours, rituals and modes of operation. Majority of SIG meetings occurring from early PST onward.
 
 Note that there are individuals within the project who try to tackle some of those
 aspects as individuals and not in a team effort, notable:
