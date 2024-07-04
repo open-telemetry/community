@@ -150,7 +150,7 @@
     - name: Severin Neumann
       github: svrnm
   - name: 'Semantic Conventions: LLM'
-    meeting: Every Wednesday alternating between 08:00 and 16:00 PT
+    meeting: Every Wednesday alternating between 10:00 and 16:00 PT
     notes:
       type: gDoc
       value: 1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M
@@ -164,7 +164,7 @@
       github: alolita
     - name: Liudmila Molkova
       github: lmolkova
-    gcLiaison: 
+    gcLiaison:
     - name: Alolita Sharma
       github: alolita
   - name: 'Semantic Conventions: CI/CD'
@@ -553,7 +553,7 @@
         id: C01NCHR19SB
     invites: calendar-swift
     sponsors: []
-    gcLiaison: 
+    gcLiaison:
     - name: Alolita Sharma
       github: alolita
   - name: eBPF
