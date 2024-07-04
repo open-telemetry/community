@@ -27,7 +27,7 @@ For Metrics: Tracking model performance by collecting and correlating data like 
 
 ## Staffing / Help Wanted
 
-We will gather further staff as the project is established. We need to 
+We will gather further staff as the project is established. We need to
 make sure there is enough representation across both vendors and customers
 who will benefit from these semantic conventions.
 
@@ -58,7 +58,7 @@ who will benefit from these semantic conventions.
 
 Alternating weekly meetings to accommodate different time zones:
 
-- Week 1: Wednesdays at 8 AM PST
+- Week 1: Wednesdays at 10 AM PST
 - Week 2: Wednesdays at 4 PM PST
 
 ### Meeting Links
@@ -66,7 +66,7 @@ Alternating weekly meetings to accommodate different time zones:
 - Meeting Calendar: [calendar-semconv@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)
 - Meeting Notes: [Google Doc](https://docs.google.com/document/d/1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M)
 
-## Discussion 
+## Discussion
 
 * Slack: [#otel-llm-semconv-wg](https://cloud-native.slack.com/archives/C06KR7ARS3X)
 
@@ -74,7 +74,7 @@ Alternating weekly meetings to accommodate different time zones:
 
 1. Initial Draft: February 2024
 1. Review and Refinement: April 2024
-1. Prototypes for .NET, Python, JS: June 2024 
+1. Prototypes for .NET, Python, JS: June 2024
 1. Initial Merge Target: July 2024
 1. Ongoing Review for Stability: Date TBD
 
