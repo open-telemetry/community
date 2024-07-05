@@ -45,6 +45,8 @@ Link: https://grafana.com/orgs/otelsigsecurity
 - Users: SIG-Security Maintainers, Technical and Governance Committees
 - Admins: Juraci Paixão Kröhling @jpkrohling & Armin Ruech @arminru
 
+The GitHub organization `open-telemetry-private` also exists for this purpose.
+
 ## Artifact repositories
 
 ### NuGet OpenTelemetry organization
