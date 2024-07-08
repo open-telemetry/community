@@ -668,7 +668,7 @@
     chat:
       - type: slack
         name: '#otel-contributor-experience'
-        id: C07C5BC6Q6L
+        id: C06TMJ2R0SK
     invites: calendar-contributor-experience
     sponsors:
       - name: 'Juraci Paixão Kröhling'
