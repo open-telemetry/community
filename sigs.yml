@@ -350,8 +350,7 @@
     - name: Trask Stalnaker
       github: trask
   - name: Collector
-    meeting: Every Wednesday at 09:00 PT plus monthly on first Wednesday at 00:00 PT
-      and on third Wednesday at 16:00 PT
+    meeting: "Wednesdays, rotating between the following time slots: 00:00 UTC, 12:00 UTC, 16:00 UTC"
     notes:
       type: gDoc
       value: 1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE
