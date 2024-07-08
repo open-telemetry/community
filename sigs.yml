@@ -667,9 +667,9 @@
       value: 1CTQI0p3QF8JP8reV8z_ggcs8KE5YVPpQGvAQknw4qP0
     chat:
       - type: slack
-        name: '#otel-sig-contribex'
+        name: '#otel-contributor-experience'
         id: C07C5BC6Q6L
-    invites: calendar-sig-contribex
+    invites: calendar-contributor-experience
     sponsors:
       - name: 'Juraci Paixão Kröhling'
         github: jpkrohling
