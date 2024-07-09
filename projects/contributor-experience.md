@@ -102,6 +102,7 @@ Maintainers, approvers, and contributors:
 * [@mx-psi](https://github.com/mx-psi)
 * [@theletterf](https://github.com/theletterf)
 * [@musingvirtual](https://github.com/musingvirtual)
+* [@JamieDanielson](https://github.com/JamieDanielson)
 
 ## Meeting Times
 
