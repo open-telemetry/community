@@ -36,6 +36,27 @@ Link: https://console.equinix.com/projects/6f1c9af6-0470-42da-8f22-59d0df245f6b
   other assets on
 - Admin: Juraci Paixão Kröhling @jpkrohling and OTel TC via the mailing list address
 
+### GitHub-hosted runners
+
+We have the ability to create pay-as-you-go GitHub runners for
+- Linux x64
+- Linux ARM64
+- Windows x64
+- Windows ARM64
+
+with various computing power
+- 2-core
+- 4-core
+- 8-core
+- 16-core
+- 32-core
+- 64-core
+
+In particular, we have created a 4-core Linux ARM64 runner named `otel-linux-arm64`
+with a concurrency limit of 20 jobs that repositories can use as needed.
+In order to get access to this runner, please open a community issue noting which
+repositories you would like to use this runner on.
+
 ### Grafana organization for SIG Security
 
 Link: https://grafana.com/orgs/otelsigsecurity
