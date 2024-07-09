@@ -65,10 +65,9 @@ to the specification.
 
 - GC sponsors: 
   - @austinlparker (Honeycomb)
-  - @tedso (Lightstep)
+  - @tedsuo (Lightstep)
       
 - TC sponsors:
-  - @tedso (Lightstep)
   - @lmolkova (Microsoft)
 
 - Maintainers, approvers and contributors:
