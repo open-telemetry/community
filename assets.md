@@ -52,10 +52,10 @@ with various computing power
 - 32-core
 - 64-core
 
-In particular, we have created a 4-core Linux ARM64 runner named `otel-linux-arm64`
-with a concurrency limit of 20 jobs (at the time of writing) that repositories can use as needed.
-In order to get access to this runner, please open a community issue noting which
-repositories you would like to use this runner on.
+In particular, Linux and Windows ARM64 runners have been created already named `otel-linux-arm64`
+and `otel-windows-arm64`, each with 4-cores and a concurrency limit (at the time of writing) of 20 jobs.
+Individual repositories need to be granted access to these runners, so please open a community issue
+if you would like to use them.
 
 ### Grafana organization for SIG Security
 
