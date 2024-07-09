@@ -53,7 +53,7 @@ with various computing power
 - 64-core
 
 In particular, we have created a 4-core Linux ARM64 runner named `otel-linux-arm64`
-with a concurrency limit of 20 jobs that repositories can use as needed.
+with a concurrency limit of 20 jobs (at the time of writing) that repositories can use as needed.
 In order to get access to this runner, please open a community issue noting which
 repositories you would like to use this runner on.
 
