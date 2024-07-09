@@ -38,7 +38,7 @@ Link: https://console.equinix.com/projects/6f1c9af6-0470-42da-8f22-59d0df245f6b
 
 ### GitHub-hosted runners
 
-We have the ability to create pay-as-you-go GitHub runners for
+We have the ability to create pay-as-you-go [GitHub runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners) for
 - Linux x64
 - Linux ARM64
 - Windows x64
