@@ -1,0 +1,45 @@
+{
+  "retryOn429" : true,
+  "aliveStatusCodes" : [
+    200,
+    403
+  ],
+  "ignorePatterns" : [
+    {
+      "pattern" : "https://github.com/username"
+    },
+    {
+      "pattern" : "https://github.com/zhyChesterCheung"
+    },
+    {
+      "pattern" : "https://twitter.com"
+    },
+    {
+      "pattern" : "https://www.zocdoc.com"
+    },
+    {
+      "pattern" : "https://www.youtube.com"
+    },
+    {
+      "pattern" : "https://www.linkedin.com"
+    },
+    {
+      "pattern" : "https://dev.azure.com"
+    },
+    {
+      "pattern" : "https://www.microsoft.com"
+    },
+    {
+      "pattern" : "https://calendar.google.com/calendar/ical/google.com_b79e3e90j7bbsa2n2p5an5lf60%40group.calendar.google.com/public/basic.ics"
+    },
+    {
+      "pattern" : "https://www.myget.org"
+    },
+    {
+      "pattern" : "https://grafana.com/orgs/otelsigsecurity"
+    },
+    {
+      "pattern" : "https://civs1.civs.us/"
+    }
+  ]
+}
