@@ -10,7 +10,7 @@ applications and integrations with the OpenTelemetry organization.
 | [CircleCI Checks](https://github.com/apps/circleci-checks)  | Integration with CircleCI                            | TBD                         | TBD                                                                    |
 | [Codecov](https://github.com/apps/codecov)          | Integration with Codecov for PR code coverage checks | TBD                         | TBD                                                                    |
 | [Forking Renovate](https://github.com/apps/forking-renovate) | Dependency updates via Renovate                       | TBD                         | TBD                                                                    |
-| EasyCLA          | Required CLA checking from LF                        | Org-wide                    | This must be enabled for all repositories for PRs against main branch. |
+| [EasyCLA](https://github.com/apps/linux-foundation-easycla)          | Required CLA checking from LF                        | Org-wide                    | This must be enabled for all repositories for PRs against main branch. |
 | Mergify          | TBD                                                  | TBD                         | TBD                                                                    |
 | Netlify          | Integration with Netlify for website deployments     | opentelemetry.io repository | n/a                                                                    |
 | Octobox          | TBD                                                  | TBD                         | TBD                                                                    |
