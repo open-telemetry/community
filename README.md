@@ -5,21 +5,24 @@
 Table of Contents
 </summary>
 
-* [Get Involved](#get-involved)
-* [Governing Bodies](#governing-bodies)
-* [Communication](#communication)
-  * [Discussions](#discussions)
-  * [Calendar](#calendar)
-  * [Mailing Lists](#mailing-lists)
-* [License](#license)
-* [Logos and Brand Guide](#logos-and-brand-guide)
-* [Special Interest Groups](#special-interest-groups)
-* [Related groups](#related-groups)
-  * [W3C - Distributed Tracing Working Group](#w3c---distributed-tracing-working-group)
-  * [Erlang Ecosystem Foundation – Observability Working Group](#erlang-ecosystem-foundation--observability-working-group)
-  * [CNCF SIG Observability - Special Interest Group](#cncf-sig-observability---special-interest-group)
-  * [K8s SIG - Instrumentation Special Interest Group](#k8s-sig---instrumentation-special-interest-group)
-  * [OpenMetrics](#openmetrics)
+- [ OpenTelemetry community content](#-opentelemetry-community-content)
+  - [Get Involved](#get-involved)
+  - [Governing Bodies](#governing-bodies)
+  - [Communication](#communication)
+    - [Discussions](#discussions)
+    - [Calendar](#calendar)
+    - [Mailing Lists](#mailing-lists)
+  - [License](#license)
+  - [Logos and Brand Guide](#logos-and-brand-guide)
+  - [How to](#how-to)
+  - [Special Interest Groups](#special-interest-groups)
+  - [Related groups](#related-groups)
+    - [W3C - Distributed Tracing Working Group](#w3c---distributed-tracing-working-group)
+    - [Erlang Ecosystem Foundation – Observability Working Group](#erlang-ecosystem-foundation--observability-working-group)
+    - [CNCF SIG Observability - Special Interest Group](#cncf-sig-observability---special-interest-group)
+    - [K8s SIG - Instrumentation Special Interest Group](#k8s-sig---instrumentation-special-interest-group)
+    - [OpenMetrics](#openmetrics)
+    - [eBPF Foundation](#ebpf-foundation)
 
 </details>
 
@@ -130,6 +133,7 @@ Website|Every other week on Thursday at 13:30 ET|[Google Doc](https://docs.googl
 eBPF|Every week on Thursday at 10:30 PT|[Google Doc](https://docs.google.com/document/d/1pAxBekk6BadHpK717TbhYtBMOlyrgWSvp3QeYDPwwvk/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C02AB15583A)|
 Agent Management WG|Every other week on Tuesday at 11:00 PT|[Google Doc](https://docs.google.com/document/d/1mHNnlCmO0XKUu0xPnKko3GOh0mxVoxjRiN8xmHRImew/edit#)|[Slack](https://cloud-native.slack.com/archives/C02J58HR58R)|
 Client Instrumentation|Every Wednesday at 8:30 AM PT|[Google Doc](https://docs.google.com/document/d/16Vsdh-DM72AfMg_FIt9yT9ExEWF4A_vRbQ3jRNBe09w/edit)|[Slack](https://cloud-native.slack.com/archives/C0239SYARD2)|
+Project Tooling and Infrastructure|Every Wednesday at 8:00 AM PT|[Google Doc](https://docs.google.com/document/d/1_dTP2XIaZoFjNiipkeMaGJN10NrhS20FiBTTJoQJeVM/edit?usp=sharing)|[Slack](https://cloud-native.slack.com/archives/C07BPU981PV)|
 
 ## Related groups
 
