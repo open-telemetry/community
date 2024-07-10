@@ -64,6 +64,12 @@ concerns.
 - Protocol compatibility (OpenCensus, Prometheus, Statsd, etc.)
 - Semantic conventions
 
+### [Liudmila Molkova](https://github.com/lmolkova), Microsoft
+
+- Trace API and SDK
+- Semantic conventions
+- Instrumentation
+
 ### [Reiley Yang](https://github.com/reyang), Microsoft
 
 - Logging API and SDK
@@ -75,10 +81,11 @@ concerns.
 
 ### [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 
-- OpenTelemetry collector
 - OpenTelemetry protocol
 - OpenTelemetry schemas and versioning
 - Logging API and SDK
+- Entities
+- OpAMP
 
 ### [Yuri Shkuro](https://github.com/yurishkuro), Meta
 
@@ -93,11 +100,11 @@ Maintainers and approvers are invited to list their areas of interest
 to further assist the community in finding appropriate points of
 contact.
 
-### [Alex Boten](https://github.com/codeboten), Lightstep
+### [Alex Boten](https://github.com/codeboten), Honeycomb
 
-- OpenTelemetry Python
 - OpenTelemetry Collector
-- OTel-Lambda support
+- OpenTelemetry Python
+- SDK configuration
 
 ### [Daniel Dyla](https://github.com/dyladan), Dynatrace
 
@@ -108,11 +115,17 @@ contact.
 
 ### [Dan Jaglowski](https://github.com/djaglowski), observIQ
 
-- OpenTelemetry log collection
-- Logging API and SDK
-- OpenTelemetry metric scrapers
-- Semantic conventions
-- Open Agent Management Protocol
+- OpenTelemetry collector
+- Log data model
+- Traditional log ingestion
+- Telemetry processing
+
+### [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs
+
+- OpenTelemetry Collector
+- Distributed tracing
+- Security
+- Sampling
 
 ### [Tom Tan](https://github.com/ThomsonTan), Microsoft
 

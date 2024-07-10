@@ -1,124 +1,194 @@
 version: 0.2
 ignorePaths: ["elections/**/*"]
+# Ignore certain patterns in the sigs.yml file
+patterns:
+    - name: Slack Channel ID
+      pattern: "id: [A-Z0-9]{11}"
+    - name: Google Docs ID
+      pattern: "value: [a-zA-Z0-9-_]+"
+    - name: "GitHub Handle"
+      pattern: "@[a-zA-Z0-9-_]+\\b"
+    - name: "GitHub Handle in YML"
+      pattern: "github: [a-zA-Z0-9-_]+"
+ignoreRegExpList:
+    - Slack Channel ID
+    - Google Docs ID
+    - GitHub Handle
+    - GitHub Handle in YML
 words:
-    - apac
-    - cncf
-    - codecov
-    - codeowners
+    - Collibra
+    - DASD
+    - datadog
     - dynatrace
     - easycla
+    - eiffel
+    - elastic
     - emea
     - faas
     - gitter
-    - lightstep
-    - maintainership
-    - observiq
-    - opentelemetry
-    - opentelemetrybot
-    - otel
-    - otep
-    - otlp
-    - passcodes
-    - proto
-    - runtimes
-    - signup
-    - skyscanner
-    - splk
-    - subdir
-    - subproject
-    - subprojects
-    - subrepository
-    - supermajority
-    - tiebreaking
-    - timebox
-    - timeboxing
-    - timeslot
-    - tocstop
-    - trendable
-    - triager
-    - triagers
-    # names and github handles
+    - grafana
+    - Hostmetrics
+    - isovalent
+    - labs
+    - Liudmila
+    - Nale
+    - REXX
+    - scaphandre
+    - Sysplex
+    - acramsay
+    - adot
     - alolita
     - amye
+    - andré
     - aniszczyk
-    - arbiv
+    - apac
+    - anoshin
     - armin
-    - arminru
-    - austinlparker
     - beedgen
+    - beemer
+    - bertysentry
     - blanco
     - bogdan
-    - bogdandrutu
     - boten
-    - breedx
+    - calendar-agent-mgmt
+    - calendar-ebpf
     - caramanolis
-    - carlosalberto
-    - cartermp
+    - cdevents
+    - chrs
+    - cicd
     - cijo
+    - cncf
     - codeboten
+    - codecentric
+    - codecov
+    - codeowners
+    - comms
+    - credly
     - danielgblanco
+    - darren17082
+    - davdai
     - denisivan
     - dennisme
+    - dineshg
+    - dmitrii
+    - dmitryax
+    - dpauls
+    - dnsmichi
+    - dpauls
+    - drewby
     - drutu
     - dyla
-    - dyladan
+    - dynatrace
+    - easycla
+    - eiffel
+    - emea
+    - endsigs
+    - faas
     - fong
-    - henrikrexed
+    - frzifus
+    - gbbr
+    - gitter
     - jaglowski
-    - jigar
-    - jpkrohling
-    - jsuereth
+    - jemmic
     - juraci
+    - kaiyan-sheng
+    - kamphaus
     - kanzhelev
+    - kelnage
+    - keptn
+    - krzko
     - kröhling
+    - kubecon
+    - kuisathaverat
     - lalitb
-    - lmolkova
+    - lambdanis
+    - lexis
+    - liatrio
+    - lightstep
+    - logz
+    - lucavallin
+    - lukas
+    - magnusbaeck
+    - maintainership
     - mancuso
+    - marceloamaral
     - martinkuba
     - mateuszrzeszutek
     - mayur
     - mayurkale
+    - mdelfabro
+    - mhausenblas
     - mirabella
+    - mjwolf
+    - mkorbi
+    - molkova
+    - msomasu
     - mtwo
     - mwear
     - najaryan
     - nakamura
     - neumann
     - neumüller
+    - nexis
+    - nirga
+    - nikimanoledaki
     - novotny
-    - ocelotl
-    - paixão
-    - parsana
-    - patrickhousley
-    - poncelow
-    - reiley
-    - reyang
-    - ruech
-    - rynn
-    - salnikov
-    - scavarda
-    - scheler
-    - sergey
-    - severin
-    - sharma
-    - sharrmander
-    - shkuro
-    - sigelman
-    - srikanthccv
-    - stalnaker
-    - suereth
-    - sureth
-    - svrnm
-    - tarnovski
-    - tedsuo
-    - tigran
-    - tigrannajaryan
-    - trask
-    - tsloughter
-    - tylerbenson
-    - xoscar
-    - yahn
-    # slack spaces
+    - observiq
+    - opentelemetry
+    - opentelemetrybot
+    - otel
     - otel-agentmanwg
     - otel-comms
     - otel-ebpf
+    - otep
+    - otlp
+    - outreachy
+    - paixão
+    - pająk
+    - passcodes
+    - poncelow
+    - proto
+    - protos
+    - pytest
+    - raesene
+    - reiley
+    - ruech
+    - runtimes
+    - rynn
+    - rossf7
+    - salnikov
+    - sallyom
+    - scavarda
+    - semconv
+    - sergey
+    - severin
+    - sguyon
+    - sharma
+    - shkuro
+    - sigelman
+    - signup
+    - skyscanner
+    - sloughter
+    - splk
+    - stalnaker
+    - subdir
+    - subproject
+    - subprojects
+    - subrepository
+    - sudivate
+    - suereth
+    - supermajority
+    - tarnovski
+    - tekton
+    - thisthat
+    - tiebreaking
+    - tigran
+    - timebox
+    - timeboxing
+    - timeslot
+    - tocstop
+    - trask
+    - trendable
+    - triager
+    - triagers
+    - yahn

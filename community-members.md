@@ -28,6 +28,7 @@ in alphabetical order:
 - [Jack Berg](https://github.com/jack-berg), New Relic
 - [Josh MacDonald](https://github.com/jmacd), Lightstep
 - [Josh Suereth](https://github.com/jsuereth), Google
+- [Liudmila Molkova](https://github.com/lmolkova), Microsoft
 - [Reiley Yang](https://github.com/reyang), Microsoft
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 - [Yuri Shkuro](https://github.com/yurishkuro), Meta
@@ -37,7 +38,7 @@ in alphabetical order:
 These are community maintainers, responsible for cross-functional project communications,
 events, and other functions as needed.
 
-- [Austin Parker](https://github.com/austinlparker), Lightstep
+- [Austin Parker](https://github.com/austinlparker), Honeycomb
 
 ## Specifications and Proto
 
@@ -45,23 +46,23 @@ Members of the Technical Committee are the maintainers of
 [Project specs](https://github.com/open-telemetry/opentelemetry-specification)
 and [Proto definitions](https://github.com/open-telemetry/opentelemetry-proto).
 
-Trace Approvers:
+[Specification sponsors](./community-membership.md#specification-sponsor) are
+trusted collaborators of the Technical Committee on Project specs and related
+repositories:
 
 - [Christian Neumüller](https://github.com/Oberon00), Dynatrace
-- [Nikita Salnikov-Tarnovski](https://github.com/iNikem), Splunk
-- [Ted Young](https://github.com/tedsuo), Lightstep
-
-Metrics Approvers:
-
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
-- [Leighton Chen](https://github.com/lzchen), Microsoft
+- [Robert Pająk](https://github.com/pellared), Splunk
+- [Ted Young](https://github.com/tedsuo), Lightstep
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
-Logs Approvers:
+Emeritus sponsors (formerly approvers):
 
 - [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
 - [Daniel Jaglowski](https://github.com/djaglowski), observIQ
 - [David Poncelow](https://github.com/zenmoto), Splunk
+- [Leighton Chen](https://github.com/lzchen), Microsoft
+- [Nikita Salnikov-Tarnovski](https://github.com/iNikem), Splunk
 
 ## Semantic Conventions
 
@@ -89,7 +90,7 @@ Repo: [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/op
 
 The [list of active members](https://github.com/open-telemetry/opentelemetry-dotnet#contributing) (both "approvers" and "maintainers") can be found in the [README.md](https://github.com/open-telemetry/opentelemetry-dotnet/blob/master/README.md#contributing) file in the [repo](https://github.com/open-telemetry/opentelemetry-dotnet).
 
-### Auto-Instrumentation Agent (aka Tracer)
+### .NET Auto-Instrumentation
 
 Repo: [open-telemetry/opentelemetry-dotnet-instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation).
 
@@ -149,6 +150,12 @@ Repo: [open-telemetry/opentelemetry-ruby](https://github.com/open-telemetry/open
 
 The list of active members (both "approvers" and "maintainers") for OpenTelemetry Ruby can be found in the [open-telemetry/opentelemetry-ruby README file](https://github.com/open-telemetry/opentelemetry-ruby#contributing).
 
+## Rust
+
+Repo: [open-telemetry/opentelemetry-rust](https://github.com/open-telemetry/opentelemetry-rust)
+
+The list of active members (both "approvers" and "maintainers") for OpenTelemetry Rust can be found in the [open-telemetry/opentelemetry-rust README file](https://github.com/open-telemetry/opentelemetry-rust/blob/main/README.md#approvers-and-maintainers).
+
 ## PHP
 
 Repo: [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opentelemetry-php)
@@ -164,10 +171,6 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 ## Community Demo
 
 Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/opentelemetry-demo)
-
-## Others
-
-Rust
 
 ## Governance Committee Emeritus
 

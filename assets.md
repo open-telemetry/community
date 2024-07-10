@@ -12,6 +12,15 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 
 ## Community Resource Accounts
 
+### Actuated
+
+Link: https://actuated.dev/blog/arm-ci-cncf-ampere
+Doc: [Using Actuated](docs/using-actuated.md)
+
+- GitHub App available for repositories to get ARM64 Actions runners.
+- Admin: N/A. The program is managed by the CNCF and Actuated. The only
+  available admin task is to add the GitHub App to a repository.
+
 ### AWS account
 
 Link: http://cncf-aws-opentelemetry.signin.aws.amazon.com/
@@ -35,6 +44,8 @@ Link: https://grafana.com/orgs/otelsigsecurity
   historical data on how quickly we respond to incidents
 - Users: SIG-Security Maintainers, Technical and Governance Committees
 - Admins: Juraci Paixão Kröhling @jpkrohling & Armin Ruech @arminru
+
+The GitHub organization `open-telemetry-private` also exists for this purpose.
 
 ## Artifact repositories
 
@@ -112,7 +123,7 @@ Link: https://groups.google.com/g/opentelemetry-calendar
 
 - Private mailing list for OpenTelemetry Governance Committee.
 - All GC members AND CNCF reps (Amye Scavarda Perrin, Chris Aniszczyk, Taylor Waggoner) are on the list and are list moderators.
-- Admin: [add member](https://lists.cncf.io/g/cncf-opentelemetry-governance/members).
+- Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
 
 ### YouTube channel OpenTelemetry
 
@@ -148,10 +159,19 @@ Link: https://zapier.com
 - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
   (GitHub password is available in the OpenTelemetry Governance 1Password)
 
-### Project Google account: cncf-opentelemetry-governance@lists.cncf.io
+### Google Workspace accounts
 
-- Used to manage the OpenTelemetry community calendar and Zoom
-- Owned by the governance committee
+- Accounts
+  - admin@opentelemetry.io
+- Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+- Used to manage the OpenTelemetry community calendar
+- Used to manage the [Google Custom Search](https://programmablesearchengine.google.com/) for [opentelemetry.io/search](https://opentelemetry.io/search/)
+
+### Google account for cncf-opentelemetry-governance@lists.cncf.io
+
+- Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+- Used for community Google Docs
+- Used to manage Zoom
 
 ## Bot accounts
 
@@ -216,3 +236,12 @@ The OpenTelemetry Bot addresses two common issues:
    organization secret.
 
    [Personal Access Token]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
+## Security
+
+The SIG Security has access to the following tools, with GC and TC members welcome to request access to them as well.
+Find more details under [`tools`](https://github.com/open-telemetry/sig-security/tree/main/tools/) on the [SIG Security
+GitHub repository](https://github.com/open-telemetry/sig-security).
+
+* Advisories Dashboard
+* Snyk

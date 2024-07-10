@@ -6,15 +6,16 @@ OpenTelemetry. The OpenTelemetry project is subdivided into subprojects under
 Group). Responsibilities for most roles are scoped to these subprojects (repos).
 
 The OpenTelemetry [Governance Committee][] owns this document and process until
-delegated. They can be reached via e-mail cncf-opentelemetry-governance@lists.cncf.io.
+delegated. They can be reached via e-mail <cncf-opentelemetry-governance@lists.cncf.io>.
 
-| **Role**   | **Responsibilities**                                  | **Requirements**                                             | **Defined by**                                               |
-| ---------- | ----------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| member     | active contributor in the community.  reviewer of PRs | sponsored by 2 approvers or maintainers. multiple contributions to the project. | OpenTelemetry GitHub org member.                             |
-| triager     | assist with project management and backlog organization. | nominated by a maintainer. help with issues for one month. |  CONTRIBUTING, CODEOWNERS, or the README. |
-| approver   | approve incoming contributions                        | highly experienced and active reviewer + contributor to a subproject | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners) in GitHub |
-| maintainer | set direction and priorities for a subproject         | demonstrated responsibility and excellent technical judgement for the subproject | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners), GitHub Team and repo ownership in GitHub |
-| emeritus   | position of honor for former maintainers, approvers, and triagers        | must have previously held a community role and not have been removed from that role for a [Code of Conduct](code-of-conduct.md) violation. | Listed as an emeritus maintainer/approver/triager in CONTRIBUTING, CODEOWNERS, or README |
+| **Role**              | **Responsibilities**                                              | **Requirements**                                                                                                                           | **Defined by**                                                                                                |
+|-----------------------|-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| member                | active contributor in the community.  reviewer of PRs             | sponsored by 2 approvers or maintainers. multiple contributions to the project.                                                            | OpenTelemetry GitHub org member.                                                                              |
+| triager               | assist with project management and backlog organization.          | nominated by a maintainer. help with issues for one month.                                                                                 | CONTRIBUTING, CODEOWNERS, or the README.                                                                      |
+| approver              | approve incoming contributions                                    | highly experienced and active reviewer + contributor to a subproject                                                                       | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners) in GitHub                                 |
+| maintainer            | set direction and priorities for a subproject                     | demonstrated responsibility and excellent technical judgement for the subproject                                                           | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners), GitHub Team and repo ownership in GitHub |
+| emeritus              | position of honor for former maintainers, approvers, and triagers | must have previously held a community role and not have been removed from that role for a [Code of Conduct](code-of-conduct.md) violation. | Listed as an emeritus maintainer/approver/triager in CONTRIBUTING, CODEOWNERS, or README                      |
+| specification sponsor | trusted collaborators for the specification                       | nominated by [Technical Committee][]                                                                                                       | Listed in [Community Members -> Specification and Protos](./community-members.md#specifications-and-proto)    |
 
 ## New contributors
 
@@ -49,12 +50,13 @@ Defined by: Member of the OpenTelemetry GitHub organization
   may include, but is not limited to:
   - Authoring or reviewing PRs on GitHub
   - Filing or commenting on issues on GitHub
+  - Organizing and running activities (e.g. events, surveys) within the OpenTelemetry community
   - Contributing to SIGs, subprojects, or community discussions (e.g. meetings,
     chat, email, and discussion forums)
 - [Joined the Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q)
   - [Get an invite to join CNCF](https://slack.cncf.io/)
 - Have read the [contributor
-  guide](https://github.com/open-telemetry/community/blob/master/CONTRIBUTING.md)
+  guide](https://github.com/open-telemetry/community/blob/main/CONTRIBUTING.md)
 - Actively contributing to 1 or more subprojects.
 - Sponsored by 2 approvers. Note the following requirements for sponsors:
   - Sponsors must have close interactions with the prospective member - e.g.
@@ -69,7 +71,7 @@ Defined by: Member of the OpenTelemetry GitHub organization
   [OpenTelemetry/community](https://github.com/open-telemetry/community) repo
   - Ensure your sponsors are `@mentioned` on the issue
   - Complete every item on the checklist ([preview the current version of the
-    template](https://github.com/open-telemetry/community/blob/master/.github/ISSUE_TEMPLATE/membership.md))
+    template](https://github.com/open-telemetry/community/blob/main/.github/ISSUE_TEMPLATE/membership.md))
   - Make sure that the list of contributions included is representative of your
     work on the project.
 - Have your sponsoring reviewers reply confirmation of sponsorship: `I support`
@@ -161,6 +163,7 @@ approver in the `CODEOWNERS` files.
 - Responsible for project quality control via code reviews
   - Focus on holistic acceptance of contribution such as dependencies with other
     features, backwards / forwards compatibility, API and flag definitions, etc
+- Responsible for technical quality control of the [documentation](http://docs.opentelemetry.io/), related to their project
 - Expected to be responsive to review requests (inactivity for more than 1 month may result in suspension until active again)
 - Mentor contributors and reviewers
 - May approve code contributions for acceptance
@@ -212,11 +215,13 @@ The following apply to the subproject for which one would be a maintainer.
 - Define milestones and releases.
   - Decides on when PRs are merged to control the release scope.
 - Mentor and guide approvers, reviewers, and contributors to the subproject.
-- Escalate *reviewer* and *maintainer* workflow concerns (i.e. responsiveness,
-  availability, and general contributor community health) to the TC.
+- Escalate *reviewer*, *approver*, *maintainer* and other workflow concerns
+  (i.e. responsiveness, availability, and general contributor community health)
+  to the TC.
 - Ensure continued health of subproject:
   - Adequate test coverage to confidently release
   - Tests are passing reliably (i.e. not flaky) and are fixed when they fail
+  - Up-to-date and accurate [documentation](http://docs.opentelemetry.io/)
 - Ensure a healthy process for discussion and decision making is in place.
 - Work with other maintainers to maintain the project's overall health and
   success holistically.
@@ -256,7 +261,7 @@ to reach consensus on a technical issue. While it's healthy and appropriate to
 make a sincere attempt to understand all points of view and consider the
 tradeoffs, it's also healthy to occasionally "disagree and commit."
 
-Within OpenTelemetry, SIG Maintainers are chosen specifically _because_ they
+Within OpenTelemetry, SIG Maintainers are chosen specifically *because* they
 are domain experts, so we would like to keep as much of the decision-making
 authority with the SIG Maintainers rather than immediately "escalating" to the
 overall OpenTelemetry-wide Technical Committee. As such, this is
@@ -290,8 +295,77 @@ CONTRIBUTING, CODEOWNERS, or README of the subproject they are stepping away
 from. GitHub usernames listed under the `emeritus` section should be removed
 from the approvers list, and will no longer have any official responsibilities
 with the project. When a contributor returns to being more active, they may be
-promoted back to a their previous position at the discretion of the current
+promoted back to their previous position at the discretion of the current
 maintainers following the process defined above.
 
+## Specification Sponsor
+
+Specification sponsors are trusted collaborators of the technical committee, and
+work to review, approve, and sponsor [opentelemetry-specification][] issues and
+PRs.
+
+Members are defined
+in [Community Members -> Specification and Protos](./community-members.md#specifications-and-proto)
+and are members of the `spec-sponsors` team (TODO: add link to github team when
+available). Specification sponsors SHOULD list
+their [areas of interest](./areas-of-interest.md).
+
+### Requirements
+
+Specification sponsors are trusted to drive specification work which can be
+complex and highly impactful to downstream language SIGs and to the
+OpenTelemetry project as a whole. Approvals from specification sponsors count
+towards the approvals required to merge specification PRs. Therefore, there is a
+high bar to becoming a specification sponsor.
+
+- Contributor to OpenTelemetry project for at least 1 year
+- Has been the reviewer or author (through the sponsorship of another
+  specification sponsor) of at least 10 substantial PRs to specification or
+  related repositories
+- Demonstrated sound technical judgement, and a deep understanding of the
+  specification and the OpenTelemetry project
+- Nominated by technical committee member (
+  see [becoming a specification sponsor](#becoming-a-specification-sponsor))
+
+### Responsibilities and privileges
+
+- Review, respond to, and approve issues / PRs when tagged or when within areas
+  of interest.
+- Sponsor issues, taking responsibility to be point on requirement gathering,
+  developing solutions and prototypes, writing PRs, and responding to /
+  incorporating PR feedback. This can be done by the sponsor themselves, or by
+  another collaborator who is sponsored. If sponsoring another collaborator, the
+  sponsor should work with them to ensure the work is consistent with existing
+  specification.
+- Demonstrate sound technical judgement.
+- Frequently attend the specification SIG meeting where issues and PRs are
+  synchronously discussed.
+
+Sponsors who are unable to fulfill their responsibilities (e.g. no longer have
+time available to commit) are expected to be moved
+to [emeritus](#emeritus-maintainerapprovertriager) sponsors. The TC may also
+vote to move a sponsor to emeritus.
+
+### Becoming a Specification Sponsor
+
+Technical committee members nominate specification sponsors by opening a PR to
+the community repo to add the nominee to the specification sponsor list. The
+vote is officially started when a pull request is opened, and ends when the pull
+request is merged. The pull request may be merged when the following conditions
+are met:
+
+- The person being nominated has accepted the nomination by approving the pull
+  request.
+- All TC members have approved the pull request or a majority of TC members have
+  approved the pull request and no other TC member has objected by requesting
+  changes on the pull request. In the case that all TC members have not given
+  approval, the pull request should stay open for a minimum of 5 days before
+  merging.
+
+The nominee is considered a specification sponsor after the pull request is
+merged. The merger should update the `spec-sponsors` team with the new member.
+
 [Governance Committee]: ./governance-charter.md
+[Technical Committee]: ./tech-committee-charter.md
+[opentelemetry-specification]: https://github.com/open-telemetry/opentelemetry-specification
 [Members of Standing]: ./governance-charter.md#members-of-standing
