@@ -660,7 +660,7 @@
     gcLiaison:
       - name: 'Juraci Paixão Kröhling'
         github: jpkrohling
-    - name: Contributor Experience
+  - name: Contributor Experience
     meeting: TBA
     notes:
       type: gDoc
@@ -678,5 +678,4 @@
     gcLiaison:
       - name: 'Juraci Paixão Kröhling'
         github: jpkrohling
-      - name: 'Severin Neumann'
-        github: svrnm
+
