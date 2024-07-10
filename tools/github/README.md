@@ -12,11 +12,11 @@ applications and integrations with the OpenTelemetry organization.
 | [Forking Renovate](https://github.com/apps/forking-renovate) | Dependency updates via Renovate                       | TBD                         | TBD                                                                    |
 | [EasyCLA](https://github.com/apps/linux-foundation-easycla)          | Required CLA checking from LF                        | Org-wide                    | This must be enabled for all repositories for PRs against main branch. |
 | [Mergify](https://github.com/apps/mergify)          | TBD                                                  | TBD                         | TBD                                                                    |
-| Netlify          | Integration with Netlify for website deployments     | opentelemetry.io repository | n/a                                                                    |
-| Octobox          | TBD                                                  | TBD                         | TBD                                                                    |
-| OpenShift CI     | TBD                                                  | TBD                         | TBD                                                                    |
-| Polls            | TBD                                                  | TBD                         | TBD                                                                    |
-| project-bot      | TBD                                                  | TBD                         | TBD                                                                    |
+| [Netlify](https://github.com/apps/netlify)          | Integration with Netlify for website deployments     | opentelemetry.io repository | n/a                                                                    |
+| [Octobox](https://github.com/apps/octobox)          | TBD                                                  | TBD                         | TBD                                                                    |
+| [OpenShift CI ](https://github.com/apps/openshift-ci)    | TBD                                                  | TBD                         | TBD                                                                    |
+| [Polls](https://github.com/apps/polls)            | TBD                                                  | TBD                         | TBD                                                                    |
+| [project-bot](https://github.com/apps/project-bot)      | TBD                                                  | TBD                         | TBD                                                                    |
 | [Renovate](https://github.com/apps/renovate)         | Dependency updates via Renovate                       | TBD                         | TBD                                                                    |
 | [Scope App](https://github.com/apps/scope-app)        | TBD                                                  | TBD                         | TBD                                                                    |
 | [Slack](https://github.com/apps/slack)            | Slack integration for GitHub                         | TBD                         | TBD                                                                    |
