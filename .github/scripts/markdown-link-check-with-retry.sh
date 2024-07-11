@@ -7,7 +7,7 @@ config="$(dirname "$0")/markdown-link-check-config.json"
 
 for file in "$@"; do
   for i in $(seq 1 $retry_count); do
-    if npx --no -- markdown-link-check --config "$config" "$file"; then
+    if npx --no -- markdown-link-check --quiet --progress --config "$config" "$file"; then
       break
     elif [[ $i -eq $retry_count ]]; then
       exit 1
