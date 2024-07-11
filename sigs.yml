@@ -660,6 +660,24 @@
     gcLiaison:
       - name: 'Juraci Paixão Kröhling'
         github: jpkrohling
+  - name: Project Tooling and Infrastructure
+    meeting: Weekly on Wednesday at 08:00 AM PT
+    notes:
+      type: gDoc
+      value: 1_dTP2XIaZoFjNiipkeMaGJN10NrhS20FiBTTJoQJeVM
+    chat:
+      - type: slack
+        name: '#otel-project-tooling'
+        id: C07BPU981PV
+    invites: calendar-project-tooling
+    sponsors:
+      - name: 'Austin Parker'
+        github: austinlparker
+      - name: 'Trask Stalnaker'
+        github: trask
+    gcLiaison:
+      - name: 'Austin Parker'
+        github: austinlparker
   - name: Contributor Experience
     meeting: TBA
     notes:
@@ -678,4 +696,3 @@
     gcLiaison:
       - name: 'Juraci Paixão Kröhling'
         github: jpkrohling
-
