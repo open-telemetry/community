@@ -13,13 +13,7 @@ table-check:
 	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/update-sig-tables.py --install --check;
 
 # This target runs markdown-toc on all files that contain
-# a comment <!-- tocstop -->.
-#
-# The recommended way to prepate a .md file for markdown-toc is
-# to add these comments:
-#
-#   <!-- toc -->
-#   <!-- tocstop -->
+# a pair of comments <!-- toc --> and <!-- tocstop -->.
 .PHONY: markdown-toc
 markdown-toc:
 	@if ! npm ls markdown-toc; then npm install; fi

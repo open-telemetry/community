@@ -2,7 +2,7 @@
 
 This file is intended to list all the assets controlled by OpenTelemetry.
 
-<!-- Re-generate TOC with `markdown-toc --no-first-h1 -i` -->
+<!-- Re-generate TOC with `make markdown-toc` -->
 
 <!-- toc -->
 
