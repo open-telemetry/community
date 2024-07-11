@@ -18,6 +18,24 @@ concerns.
 
 <!-- toc -->
 
+- [Technical committee members](#technical-committee-members)
+  * [Armin Ruech](#armin-ruech)
+  * [Bogdan Drutu](#bogdan-drutu)
+  * [Carlos Alberto](#carlos-alberto)
+  * [Jack Berg](#jack-berg)
+  * [Josh MacDonald](#josh-macdonald)
+  * [Josh Suereth](#josh-suereth)
+  * [Liudmila Molkova](#liudmila-molkova)
+  * [Reiley Yang](#reiley-yang)
+  * [Tigran Najaryan](#tigran-najaryan)
+  * [Yuri Shkuro](#yuri-shkuro)
+- [Maintainers and approvers](#maintainers-and-approvers)
+  * [Alex Boten](#alex-boten)
+  * [Daniel Dyla](#daniel-dyla)
+  * [Dan Jaglowski](#dan-jaglowski)
+  * [Juraci Paixão Kröhling](#juraci-paixao-krohling)
+  * [Tom Tan](#tom-tan)
+
 <!-- tocstop -->
 
 ## Technical committee members
