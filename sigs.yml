@@ -449,7 +449,7 @@
     - name: 'Juraci Paixão Kröhling'
       github: jpkrohling
   - name: 'Java: SDK + Automatic Instrumentation'
-    meeting: Every Thursday at 09:00 PT with an additional meeting every other Thu at 09:00 China Standard Time
+    meeting: Every Thursday at 09:00 PT with an additional meeting every other Thu at 09:00 UTC+8
     notes:
       type: gDoc
       value: 1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw
@@ -657,6 +657,42 @@
         github: jpkrohling
       - name: Reiley Yang
         github: reyang
+    gcLiaison:
+      - name: 'Juraci Paixão Kröhling'
+        github: jpkrohling
+  - name: Project Tooling and Infrastructure
+    meeting: Weekly on Wednesday at 08:00 AM PT
+    notes:
+      type: gDoc
+      value: 1_dTP2XIaZoFjNiipkeMaGJN10NrhS20FiBTTJoQJeVM
+    chat:
+      - type: slack
+        name: '#otel-project-tooling'
+        id: C07BPU981PV
+    invites: calendar-project-tooling
+    sponsors:
+      - name: 'Austin Parker'
+        github: austinlparker
+      - name: 'Trask Stalnaker'
+        github: trask
+    gcLiaison:
+      - name: 'Austin Parker'
+        github: austinlparker
+  - name: Contributor Experience
+    meeting: TBA
+    notes:
+      type: gDoc
+      value: 1CTQI0p3QF8JP8reV8z_ggcs8KE5YVPpQGvAQknw4qP0
+    chat:
+      - type: slack
+        name: '#otel-contributor-experience'
+        id: C06TMJ2R0SK
+    invites: calendar-contributor-experience
+    sponsors:
+      - name: 'Juraci Paixão Kröhling'
+        github: jpkrohling
+      - name: 'Severin Neumann'
+        github: svrnm
     gcLiaison:
       - name: 'Juraci Paixão Kröhling'
         github: jpkrohling
