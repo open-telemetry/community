@@ -1,0 +1,72 @@
+name: Donation Proposal
+description: Propose to donate a preexisting project to the OpenTelemetry organization
+title: "[Donation Proposal]: "
+labels: ["donation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome to the OpenTelemetry project! 👋🎉
+        Please review the [Donation Guidelines](https://github.com/open-telemetry/community/blob/main/CONTRIBUTING.md#donations) before submitting this form.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please describe the project you want to donate.
+    validations:
+      required: true
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Benefits to the OpenTelemetry community
+      description: How may this project benefit the OpenTelemetry community?
+    validations:
+      required: true
+  - type: textarea
+    id: reasons
+    attributes:
+      label: Reasons for donation
+      description: |
+        Please explain why an OpenTelemetry donation is necessary to realize these benefits.
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: Repository
+      description: Where is the project currently hosted?
+    validations:
+      required: true
+  - type: textarea
+    id: usage
+    attributes:
+      label: Existing usage
+      description: Summary of existing usage of donated project.
+    validations:
+      required: true
+  - type: textarea
+    id: maintenance
+    attributes:
+      label: Maintenance
+      description: Please explain how the project is going to be maintained if the donation is accepted.
+    validations:
+      required: true
+  - type: textarea
+    id: license
+    attributes:
+      label: Licenses
+      description: How is the project's code currently licensed?
+    validations:
+      required: true
+  - type: textarea
+    id: trademarks
+    attributes:
+      label: Trademarks
+      description: List of trademarks
+    validations:
+      required: true
+  - type: textarea
+    id: other
+    attributes:
+      label: Other notes
+      description: Other things that the OpenTelemetry Technical or Governance committees should know.

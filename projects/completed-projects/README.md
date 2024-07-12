@@ -1,0 +1,1 @@
+This folder contains projects which have been completed, and are no longer meeting as a group.

@@ -65,7 +65,7 @@ The TC and entire technical community will follow any processes as may be specif
 
 From time to time, organizations may wish to donate existing code to
 OpenTelemetry. The basic process for donating code is described [in
-CONTRIBUTING.md](/CONTRIBUTING.md#donations).  Of note is the expectation that
+CONTRIBUTING.md](CONTRIBUTING.md#donations).  Of note is the expectation that
 the TC respond to donation proposals **within two weeks.**
 
 ## Elections
@@ -74,7 +74,7 @@ Leadership roles in OpenTelemetry project will be peer elected representatives o
 
 ### Election of TC Members
 
-New TC members can be nominated by any Member in Standing as defined in the [OpenTelemetry Governance Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md#members-of-standing), and must be sponsored by one of the existing TC members to bring it to a vote. A candidate can be elected to the TC by the super-majority vote (greater than two thirds) of the existing TC members. The voting by the TC members is anonymous. A multiple-candidate method, such as [Condorcet](http://en.wikipedia.org/wiki/Condorcet_method) or [Single Transferable Vote](http://en.wikipedia.org/wiki/Single_transferable_vote), may be used to conduct the vote, by phrasing the selections as:
+New TC members can be nominated by any Member in Standing as defined in the [OpenTelemetry Governance Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md#members-of-standing), and must be sponsored by one of the existing TC members to bring it to a vote. A candidate can be elected to the TC by the super-majority vote (greater than two thirds) of the existing TC members. The voting by the TC members is anonymous. A multiple-candidate method, such as [Condorcet](https://en.wikipedia.org/wiki/Condorcet_method) or [Single Transferable Vote](https://en.wikipedia.org/wiki/Single_transferable_vote), may be used to conduct the vote, by phrasing the selections as:
 
 * Vote for Nominee X
 * Vote against Nominee X
@@ -87,8 +87,8 @@ The TC will elect from amongst voting TC members a TC Chairperson to work on bui
 
 For election of persons (such as the TC Chairperson) by a vote of the TC voting members, a multiple-candidate method should be used, such as:
 
-* [Condorcet](http://en.wikipedia.org/wiki/Condorcet_method) or
-* [Single Transferable Vote](http://en.wikipedia.org/wiki/Single_transferable_vote)
+* [Condorcet](https://en.wikipedia.org/wiki/Condorcet_method) or
+* [Single Transferable Vote](https://en.wikipedia.org/wiki/Single_transferable_vote)
 
 Multiple-candidate methods may be reduced to simple election by plurality when there are only two candidates for one position to be filled. No election is required if there is only one candidate and no objections to the candidates election. Elections shall be done within the Projects by the collaborators active in the Project.
 
@@ -100,7 +100,13 @@ The TC follows a [Consensus Seeking](https://en.wikipedia.org/wiki/Consensus-see
 
 If an agenda item cannot reach a consensus a TC member can call for either a closing vote or a vote to table the issue to the next meeting. The call for a vote must be seconded by a majority of the TC or else the discussion will continue.
 
-For all votes, a simple majority of all TC members for, or against, the issue wins. A TC member may choose to participate in any vote through abstention.
+For all votes, a simple majority of a quorum of TC members for, or against, the issue wins. A TC member may choose to participate in any vote through abstention. A quorum is defined as > 1/2 of TC members voting for or against or explicitly abstaining. TC votes may be done synchronously or asynchronously. Asynchronous votes remain open for a period of time agreed upon by the TC when the issue is put to a vote. Aggregated TC vote results are shared publicly but the vote selections of individual members are not shared. The TC decides whether vote selections by members are anonymous or shared among members when the issue is put to a vote.
+
+### Requesting a TC decision
+
+When a project issue fails to reach consensus, OpenTelemetry [community members](./community-membership.md#member) may request that the TC make a decision. If the issue falls under a project with assigned [approvers](./community-membership.md#approver) and / or [maintainers](./community-membership.md#maintainer), at least two of those members should agree to and coordinate requesting a TC decision.
+
+The request for a TC decision must be made by a comment on a public issue. The comment must explicitly tag the TC team (@open-telemetry/technical-committee), and summarize the various options and their relative tradeoffs. A TC member should review the summary and may request additional details or other changes to more accurately frame the issue. The request will then be added to the TC agenda, and the TC will work towards a decision using the [TC voting process](#voting-on-project-issues).
 
 ## Project Roles
 

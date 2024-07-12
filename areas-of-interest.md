@@ -39,6 +39,14 @@ concerns.
 - OpenTracing compatibility
 - Semantic conventions
 
+### [Jack Berg](https://github.com/jack-berg), New Relic
+
+- Metrics API and SDK
+- Logging API and SDK
+- SDK configuration
+- OpenTelemetry Java
+- OpenTelemetry protocol
+
 ### [Josh MacDonald](https://github.com/jmacd), Lightstep
 
 - Metrics API and SDK and data model
@@ -51,27 +59,38 @@ concerns.
 ### [Josh Suereth](https://github.com/jsuereth), Google
 
 - Metrics API and SDK
-- OpenTelemtry Protocol
+- OpenTelemetry Protocol
 - Telemetry correlation (Trace <-> Metrics <-> Logs via Resource, Exemplars, etc.)
 - Protocol compatibility (OpenCensus, Prometheus, Statsd, etc.)
 - Semantic conventions
 
-### [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
+### [Liudmila Molkova](https://github.com/lmolkova), Microsoft
 
 - Trace API and SDK
+- Semantic conventions
+- Instrumentation
+
+### [Reiley Yang](https://github.com/reyang), Microsoft
+
+- Logging API and SDK
+- Metrics API and SDK
+- Trace API and SDK
+- OpenTelemetry .NET
+- OpenTelemetry C++
 - W3C trace context specification
 
 ### [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 
-- OpenTelemetry collector
 - OpenTelemetry protocol
 - OpenTelemetry schemas and versioning
 - Logging API and SDK
+- Entities
+- OpAMP
 
-### [Yuri Shkuro](https://github.com/yurishkuro), Facebook
+### [Yuri Shkuro](https://github.com/yurishkuro), Meta
 
 - Trace API and SDK
-- Jaeger trace ecosystem
+- Jaeger tracing compatibility
 - OpenTracing compatibility
 - W3C trace context specification
 
@@ -81,11 +100,11 @@ Maintainers and approvers are invited to list their areas of interest
 to further assist the community in finding appropriate points of
 contact.
 
-### [Alex Boten](https://github.com/codeboten), Lightstep
+### [Alex Boten](https://github.com/codeboten), Honeycomb
 
-- OpenTelemetry Python
 - OpenTelemetry Collector
-- OTel-Lambda support
+- OpenTelemetry Python
+- SDK configuration
 
 ### [Daniel Dyla](https://github.com/dyladan), Dynatrace
 
@@ -96,20 +115,17 @@ contact.
 
 ### [Dan Jaglowski](https://github.com/djaglowski), observIQ
 
-- OpenTelemetry log collection
-- Logging API and SDK
-- OpenTelemetry metric scrapers
-- Semantic conventions
-- Open Agent Management Protocol
+- OpenTelemetry collector
+- Log data model
+- Traditional log ingestion
+- Telemetry processing
 
-### [Reiley Yang](https://github.com/reyang), Microsoft
+### [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs
 
-- Logging API and SDK
-- Metrics API and SDK
-- Trace API and SDK
-- OpenTelemetry .NET
-- OpenTelemetry C++
-- W3C Trace Context Specification
+- OpenTelemetry Collector
+- Distributed tracing
+- Security
+- Sampling
 
 ### [Tom Tan](https://github.com/ThomsonTan), Microsoft
 
@@ -118,4 +134,4 @@ contact.
 - OpenTelemetry C++
 - OpenTelemetry Protocol
 
-<!-- ### [_Your name here_](http://github.com/your_name), Your Company -->
+<!-- ### [_Your name here_](https://github.com/your_name), Your Company -->
