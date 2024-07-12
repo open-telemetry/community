@@ -36,26 +36,23 @@ Link: https://console.equinix.com/projects/6f1c9af6-0470-42da-8f22-59d0df245f6b
   other assets on
 - Admin: Juraci Paixão Kröhling @jpkrohling and OTel TC via the mailing list address
 
-### GitHub-hosted runners
+### GitHub-hosted ARM64 runners
 
-We have the ability to create pay-as-you-go [GitHub runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners) for
-- Linux x64
-- Linux ARM64
-- Windows x64
-- Windows ARM64
+These Linux and Windows ARM64
+[GitHub-hosted runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners)
+are available to OpenTelemetry repositories:
 
-with various computing power
-- 2-core
-- 4-core
-- 8-core
-- 16-core
-- 32-core
-- 64-core
+- `otel-linux-arm64` (4-core)
+- `otel-windows-arm64` (4-core)
 
-In particular, Linux and Windows ARM64 runners have been created already named `otel-linux-arm64`
-and `otel-windows-arm64`, each with 4-cores and a concurrency limit (at the time of writing) of 20 jobs.
-Individual repositories need to be granted access to these runners, so please open a community issue
+At the time of writing, both of these runners have a concurrency limit of 20 jobs.
+
+Individual repositories need to be granted access to the runners, so please open a community issue
 if you would like to use them.
+
+Note: these pay-as-you-go GitHub-hosted runners for ARM64 are available for free for CNCF projects.
+CNCF and GitHub expect fair use of these provided resources.
+Please ensure your workloads are optimized to avoid unnecessary usage.
 
 ### Grafana organization for SIG Security
 
