@@ -14,12 +14,6 @@ the OpenTelemetry project are recommended to list their company
 affiliation, so that they may be contacted with vendor-specific
 concerns.
 
-<!-- Re-generate TOC with `markdown-toc --no-first-h1 -i` -->
-
-<!-- toc -->
-
-<!-- tocstop -->
-
 ## Technical committee members
 
 ### [Armin Ruech](https://github.com/arminru), Dynatrace
