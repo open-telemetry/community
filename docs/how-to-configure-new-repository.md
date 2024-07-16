@@ -81,6 +81,7 @@ Everything not mentioned is unchecked.
     * `EasyCLA`
 * Do not allow bypassing the above settings: :heavy_check_mark:
 * Restrict who can push to matching branches: :heavy_check_mark:
+  * Restrict pushes that create matching branches: :heavy_check_mark:
   * `Organization administrators, repository administrators, and users with the Maintain role`
 
 **Important:** the only ones of these rules which may be changed are
