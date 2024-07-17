@@ -219,7 +219,7 @@
     gcLiaison:
       - name: 'Daniel Gomez Blanco'
         github: danielgblanco
-  - name: 'Semantic Conventions: Sustainability'
+  - name: 'Semantic Conventions: Feature Flags'
     meeting: Every Second Monday at 7:30 PT
     notes:
       type: gDoc
