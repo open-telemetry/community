@@ -104,7 +104,7 @@ Link: https://community.cncf.io/opentelemetry/
 - Owners: CNCF
 - Lead Organizers (i.e. admins):
   - [@open-telemetry/sig-end-user-approvers](https://github.com/orgs/open-telemetry/teams/sig-end-user-approvers): listed on group page, registered using their personal CNCF Community accounts.
-  - [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee) not listed on the group page, using a single CNCF Community account set up using cncf-opentelemetry-governance@lists.cncf.io (credentials in 1Password).
+  - [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee) who can request changes via CNCF Service Desk tickets.
 
 
 ### opentelemetry-calendar-contributors Google Group
