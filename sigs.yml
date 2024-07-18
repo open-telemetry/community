@@ -150,7 +150,7 @@
     - name: Severin Neumann
       github: svrnm
   - name: 'Semantic Conventions: LLM'
-    meeting: Every Wednesday alternating between 08:00 and 16:00 PT
+    meeting: Every Wednesday alternating between 10:00 and 16:00 PT
     notes:
       type: gDoc
       value: 1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M
@@ -164,7 +164,7 @@
       github: alolita
     - name: Liudmila Molkova
       github: lmolkova
-    gcLiaison: 
+    gcLiaison:
     - name: Alolita Sharma
       github: alolita
   - name: 'Semantic Conventions: CI/CD'
@@ -219,6 +219,24 @@
     gcLiaison:
       - name: 'Daniel Gomez Blanco'
         github: danielgblanco
+  - name: 'Semantic Conventions: Feature Flags'
+    meeting: Every Second Monday at 7:30 PT
+    notes:
+      type: gDoc
+      value: 1x9hprUaUNlVCZMtFAqBcj6h50ukpT0hCAli7BzgWsTQ
+    chat:
+      - type: slack
+        name: '#otel-ff-semconv'
+        id: C07AES1JN56
+    invites: calendar-semconv
+    sponsors:
+      - name: Daniel Dyla
+        github: dyladan
+      - name: Alexander Wert
+        github: AlexanderWert
+    gcLiaison:
+      - name: Daniel Dyla
+        github: dyladan
   - name: 'Specification: Entities'
     meeting: Every other week on Thursday at 08:00 AM PT
     notes:
@@ -350,8 +368,7 @@
     - name: Trask Stalnaker
       github: trask
   - name: Collector
-    meeting: Every Wednesday at 09:00 PT plus monthly on first Wednesday at 00:00 PT
-      and on third Wednesday at 16:00 PT
+    meeting: "Wednesdays, rotating between the following time slots: 00:00 UTC, 12:00 UTC, 16:00 UTC"
     notes:
       type: gDoc
       value: 1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE
@@ -450,7 +467,7 @@
     - name: 'Juraci Paixão Kröhling'
       github: jpkrohling
   - name: 'Java: SDK + Automatic Instrumentation'
-    meeting: Every Thursday at 09:00 PT
+    meeting: Every Thursday at 09:00 PT with an additional meeting every other Thu at 09:00 UTC+8
     notes:
       type: gDoc
       value: 1WK9h4p55p8ZjPkxO75-ApI9m0wfea6ENZmMoFRvXSCw
@@ -553,7 +570,7 @@
         id: C01NCHR19SB
     invites: calendar-swift
     sponsors: []
-    gcLiaison: 
+    gcLiaison:
     - name: Alolita Sharma
       github: alolita
   - name: eBPF
@@ -658,6 +675,42 @@
         github: jpkrohling
       - name: Reiley Yang
         github: reyang
+    gcLiaison:
+      - name: 'Juraci Paixão Kröhling'
+        github: jpkrohling
+  - name: Project Tooling and Infrastructure
+    meeting: Weekly on Wednesday at 08:00 AM PT
+    notes:
+      type: gDoc
+      value: 1_dTP2XIaZoFjNiipkeMaGJN10NrhS20FiBTTJoQJeVM
+    chat:
+      - type: slack
+        name: '#otel-project-tooling'
+        id: C07BPU981PV
+    invites: calendar-project-tooling
+    sponsors:
+      - name: 'Austin Parker'
+        github: austinlparker
+      - name: 'Trask Stalnaker'
+        github: trask
+    gcLiaison:
+      - name: 'Austin Parker'
+        github: austinlparker
+  - name: Contributor Experience
+    meeting: TBA
+    notes:
+      type: gDoc
+      value: 1CTQI0p3QF8JP8reV8z_ggcs8KE5YVPpQGvAQknw4qP0
+    chat:
+      - type: slack
+        name: '#otel-contributor-experience'
+        id: C06TMJ2R0SK
+    invites: calendar-contributor-experience
+    sponsors:
+      - name: 'Juraci Paixão Kröhling'
+        github: jpkrohling
+      - name: 'Severin Neumann'
+        github: svrnm
     gcLiaison:
       - name: 'Juraci Paixão Kröhling'
         github: jpkrohling

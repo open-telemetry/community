@@ -63,6 +63,10 @@ There is an allocated time in the Semantic Conventions SIG for this project.
 
 For async conversation please use #otel-semconv-security slack channel from official CNCF slack workspace.
 
+## Security dashboard
+
+[Main dashboard](https://github.com/orgs/open-telemetry/projects/104/views/1) with all the issues and PRs related to the project.
+
 ## Timeline
 
 The goal is to have the security semantic conventions implemented by the end of 2024.

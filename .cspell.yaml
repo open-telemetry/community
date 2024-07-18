@@ -1,20 +1,20 @@
 version: 0.2
-ignorePaths: ["elections/**/*"]
+ignorePaths: ["elections/**/*", "tools/github/*"]
 # Ignore certain patterns in the sigs.yml file
 patterns:
-    - name: Slack Channel ID
-      pattern: "id: [A-Z0-9]{11}"
-    - name: Google Docs ID
-      pattern: "value: [a-zA-Z0-9-_]+"
-    - name: "GitHub Handle"
-      pattern: "@[a-zA-Z0-9-_]+\\b"
-    - name: "GitHub Handle in YML"
-      pattern: "github: [a-zA-Z0-9-_]+"
+  - name: Slack Channel ID
+    pattern: "id: [A-Z0-9]{11}"
+  - name: Google Docs ID
+    pattern: "value: [a-zA-Z0-9-_]+"
+  - name: "GitHub Handle"
+    pattern: "@[a-zA-Z0-9-_]+\\b"
+  - name: "GitHub Handle in YML"
+    pattern: "github: [a-zA-Z0-9-_]+"
 ignoreRegExpList:
-    - Slack Channel ID
-    - Google Docs ID
-    - GitHub Handle
-    - GitHub Handle in YML
+  - Slack Channel ID
+  - Google Docs ID
+  - GitHub Handle
+  - GitHub Handle in YML
 words:
     - Collibra
     - DASD
@@ -62,6 +62,8 @@ words:
     - codecentric
     - codecov
     - codeowners
+    - comms
+    - credly
     - danielgblanco
     - darren17082
     - davdai
@@ -140,6 +142,7 @@ words:
     - otel-ebpf
     - otep
     - otlp
+    - outreachy
     - paixão
     - pająk
     - passcodes
@@ -165,6 +168,8 @@ words:
     - sigelman
     - signup
     - skyscanner
+    - sloughter
+    - snyk
     - splk
     - stalnaker
     - subdir
@@ -187,4 +192,5 @@ words:
     - trendable
     - triager
     - triagers
+    - teamcity
     - yahn
