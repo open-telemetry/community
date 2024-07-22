@@ -201,24 +201,6 @@
     gcLiaison:
       - name: Trask Stalnaker
         github: trask
-  - name: 'Semantic Conventions: Sustainability'
-    meeting: Every Monday at 7:00 PT
-    notes:
-      type: gDoc
-      value: 1zeVZfuy8TKQuNdbAF8-dElWuzzTjzmTGuBwXf54HymM
-    chat:
-      - type: slack
-        name: '#otel-sustainability-semconv-sig'
-        id: C06RTM63YD6
-    invites: calendar-semconv
-    sponsors:
-      - name: Johannes Tax
-        github: pyohannes
-      - name: 'Daniel Gomez Blanco'
-        github: danielgblanco
-    gcLiaison:
-      - name: 'Daniel Gomez Blanco'
-        github: danielgblanco
   - name: 'Semantic Conventions: Feature Flags'
     meeting: Every Second Monday at 7:30 PT
     notes:
@@ -286,7 +268,7 @@
       - name: Alolita Sharma
         github: alolita
   - name: Functions as a Service (FAAS)
-    meeting: Every other Tuesday at 12:00 PM PT
+    meeting: Every other Wednesday at 8:00 AM PT
     notes:
       type: gDoc
       value: 187XYoQcXQ9JxS_5v2wvZ0NEysaJ02xoOYNXj08pT0zc
