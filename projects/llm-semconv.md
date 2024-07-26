@@ -59,7 +59,7 @@ who will benefit from these semantic conventions.
 Alternating weekly meetings to accommodate different time zones:
 
 - Week 1: Wednesdays at 10 AM PST
-- Week 2: Wednesdays at 4 PM PST
+- Week 2: Wednesdays at 11 PM PST
 
 ### Meeting Links
 
