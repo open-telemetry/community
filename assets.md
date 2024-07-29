@@ -291,6 +291,13 @@ The OpenTelemetry Bot addresses two common issues:
 
    [Personal Access Token]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
+### Slack
+
+The slack user [`OpenTelemetry Admin`](https://cloud-native.slack.com/archives/D07EGBA9V6E) is community owned and can be
+used for self-servicing slack (e.g. as Channel Manager to rename spaces).
+
+- Owners: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+
 ## Security
 
 The SIG Security has access to the following tools, with GC and TC members welcome to request access to them as well.
