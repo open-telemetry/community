@@ -315,6 +315,9 @@ The slack user [`OpenTelemetry Admin`](https://cloud-native.slack.com/archives/D
 used for self-servicing slack (e.g. as Channel Manager to rename spaces).
 
 - Owners: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+  (To login, go to <https://cloud-native.slack.com/>, click Sign In With Google and login as <admin@opentelemetry.io>.
+  Click `Cancel` when you are asked to open slack in the app, and wait for the link `use Slack in your browser` to be
+  available and use that.)
 
 ## Security
 
