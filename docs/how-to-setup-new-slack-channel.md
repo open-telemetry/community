@@ -33,11 +33,6 @@ The person who creates the channel, will be a Channel Manager by default and can
 Do also make the [`OpenTelemetry Admin`](https://cloud-native.slack.com/archives/D07EGBA9V6E) user a Channel Manager.
 [The Governance Committee manages this shared account](../assets.md#slack).
 
-> [!NOTE]
-> Channels that have been created before Channel Manager were added to Slack do not have one by default.
-> You might not need one, since the number of privileges a Channel Manager has are limited and rarely needed.
-> This may change in the future, but for now you do not need to actively request a Channel Manager being added.
-
 ### Bookmarks
 
 If the channel is for a specific SIG add bookmarks for the following resources:
