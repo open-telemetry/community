@@ -150,7 +150,7 @@
     - name: Severin Neumann
       github: svrnm
   - name: 'Semantic Conventions: LLM'
-    meeting: Every Wednesday alternating between 10:00 and 16:00 PT
+    meeting: Every Wednesday alternating between 10:00 and 23:00 PT
     notes:
       type: gDoc
       value: 1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M
@@ -643,7 +643,7 @@
     - name: Daniel Gomez Blanco
       github: danielgblanco
   - name: Security
-    meeting: Weekly on Wednesday at 08:30 AM PT
+    meeting: Bi-weekly on Wednesday at 14:00 UTC
     notes:
       type: gDoc
       value: 1P2xejC7lEkOV_Z-8E0oZPXLK5HOnUPNuRqKP0ZQ5fpg
@@ -679,7 +679,7 @@
       - name: 'Austin Parker'
         github: austinlparker
   - name: Contributor Experience
-    meeting: TBA
+    meeting: Every Monday alternating between 9:00 and 17:00 UTC
     notes:
       type: gDoc
       value: 1CTQI0p3QF8JP8reV8z_ggcs8KE5YVPpQGvAQknw4qP0

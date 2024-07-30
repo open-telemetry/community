@@ -107,13 +107,13 @@ years and 5 seats in odd years).
 
 ### Members of Standing
 
-Standing in the OpenTelemetry community will be defined by the union of:
+Members of Standing in the OpenTelemetry community are defined by the union of:
 
 - Active members - those with 20 contributions (PRs, Issues, Comments etc.) in
   the prior rolling year.
 - All approvers, and maintainers in the OpenTelemetry organization
 
-Members who don’t meet the criteria above and are part of the following are
+Members who don’t meet either criteria above and are part of the following are
 encouraged to help us evolve the definition of Member of Standing through the
 Exception Process outline below.
 
