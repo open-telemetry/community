@@ -1,12 +1,12 @@
-# Community membership
+# Membership, Roles, and Responsibilities
 
-This doc outlines the various responsibilities of contributor roles in
-OpenTelemetry. The OpenTelemetry project is subdivided into subprojects under
-(predominantly, but not exclusively) language-focused SIGs (Special Interest
-Group). Responsibilities for most roles are scoped to these subprojects (repos).
+OpenTelemetry is a project by, and for, its community. This document outlines
+the various roles and responsibilities of members, as well as the requirements
+for achieving each role. We encourage you to consider becoming a long-term
+contributor to the project, and moving up the ladder from member, all the way to
+maintainer!
 
-The OpenTelemetry [Governance Committee][] owns this document and process until
-delegated. They can be reached via e-mail <cncf-opentelemetry-governance@lists.cncf.io>.
+## Membership Levels
 
 | **Role**              | **Responsibilities**                                              | **Requirements**                                                                                                                           | **Defined by**                                                                                                |
 |-----------------------|-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -19,11 +19,13 @@ delegated. They can be reached via e-mail <cncf-opentelemetry-governance@lists.c
 
 ## New contributors
 
-New contributors should be welcomed to the community by existing members, helped
-with PR workflow, and directed to relevant documentation and communication
-channels.
+If you're a new contributor reading this guide -- welcome! We're excited you're
+here. New contributors should be welcomed and encouraged to participate in the
+project. Remember, contributions aren't limited to writing code, either --
+reporting bugs, writing documentation, working on the website, or being a part
+of our community management are all valuable.
 
-## Established community members
+## Established contributors
 
 Established community members are expected to demonstrate their adherence to the
 principles in this document, familiarity with project organization, roles,
@@ -253,36 +255,6 @@ maintainers about a vote to confirm you as a new maintainer. If the maintainer
 does not believe you are ready for the role, or the subproject is not in need
 of additional maintainers, they may suggest an alternate role or growth areas
 in order to improve your chances to become a maintainer in the future.
-
-### Resolving technical conflicts within a SIG
-
-From time to time, the Maintainers for a given OpenTelemetry SIG may be unable
-to reach consensus on a technical issue. While it's healthy and appropriate to
-make a sincere attempt to understand all points of view and consider the
-tradeoffs, it's also healthy to occasionally "disagree and commit."
-
-Within OpenTelemetry, SIG Maintainers are chosen specifically *because* they
-are domain experts, so we would like to keep as much of the decision-making
-authority with the SIG Maintainers rather than immediately "escalating" to the
-overall OpenTelemetry-wide Technical Committee. As such, this is
-OpenTelemetry's process for resolving technical issues where Maintainers cannot
-reach consensus:
-
-1. The SIG Maintainers should succinctly document the options under
-consideration as a GitHub issue within the SIG's respective repo (note that it
-is *not* required to document the complete framing and pros/cons – just the
-actual go-forward options themselves).
-2. Each SIG Maintainer must formally vote for their choice by commenting on
-that issue.
-3. The option receiving the most votes wins.
-4. If the vote is a tie, the OpenTelemetry TC should be brought into the
-discussion, and the TC itself gets a (single) tiebreaking vote.
-
-While inevitably these sorts of decisions will be disappointing for somebody,
-it's incredibly important for the project to maintain velocity and recognize
-that we are all coming to these sorts of technical issues with the best of
-intentions and remain aligned about the overall goals of the OpenTelemetry
-project.
 
 ## Emeritus Maintainer/Approver/Triager
 
