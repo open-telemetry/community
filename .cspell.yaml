@@ -18,11 +18,8 @@ ignoreRegExpList:
 words:
     - Collibra
     - DASD
-<<<<<<< HEAD
     - Docu
-=======
     - datadog
->>>>>>> main
     - dynatrace
     - easycla
     - eiffel
