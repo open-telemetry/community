@@ -59,4 +59,4 @@ This time will be determined based on the availability of interested parties.
 
 ## Project Board
 
-- [Project Tooling SIG](https://github.com/orgs/open-telemetry/projects/91/views/1)
+- [Project Infrastructure SIG](https://github.com/orgs/open-telemetry/projects/91/views/1)
