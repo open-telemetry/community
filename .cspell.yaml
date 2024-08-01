@@ -1,87 +1,96 @@
 version: 0.2
-ignorePaths: ["elections/**/*"]
+ignorePaths: ["elections/**/*", "tools/github/*"]
 # Ignore certain patterns in the sigs.yml file
 patterns:
-    - name: Slack Channel ID
-      pattern: "id: [A-Z0-9]{11}"
-    - name: Google Docs ID
-      pattern: "value: [a-zA-Z0-9-_]+"
+  - name: Slack Channel ID
+    pattern: "id: [A-Z0-9]{11}"
+  - name: Google Docs ID
+    pattern: "value: [a-zA-Z0-9-_]+"
+  - name: "GitHub Handle"
+    pattern: "@[a-zA-Z0-9-_]+\\b"
+  - name: "GitHub Handle in YML"
+    pattern: "github: [a-zA-Z0-9-_]+"
 ignoreRegExpList:
-    - Slack Channel ID
-    - Google Docs ID
+  - Slack Channel ID
+  - Google Docs ID
+  - GitHub Handle
+  - GitHub Handle in YML
 words:
+    - Collibra
     - DASD
+<<<<<<< HEAD
     - Docu
+=======
+    - datadog
+>>>>>>> main
     - dynatrace
     - easycla
     - eiffel
+    - elastic
     - emea
     - faas
-    - galkleinman
     - gitter
-    - gyliu513
+    - grafana
     - Hostmetrics
+    - isovalent
+    - labs
     - Liudmila
     - Nale
     - REXX
+    - scaphandre
     - Sysplex
     - acramsay
     - adot
-    - adrielp
-    - afrittoli
-    - alanwest
-    - alevenberg
     - alolita
     - amye
+    - andré
     - aniszczyk
     - apac
     - anoshin
-    - arbiv
     - armin
-    - arminru
-    - austinlparker
     - beedgen
+    - beemer
+    - bertysentry
     - blanco
     - bogdan
-    - bogdandrutu
     - boten
-    - breedx
     - calendar-agent-mgmt
     - calendar-ebpf
     - caramanolis
-    - carlosalberto
-    - cartermp
     - cdevents
+    - chrs
     - cicd
     - cijo
     - cncf
     - codeboten
+    - codecentric
     - codecov
     - codeowners
+    - comms
+    - credly
     - danielgblanco
     - darren17082
     - davdai
     - denisivan
     - dennisme
+    - dineshg
     - dmitrii
+    - dmitryax
     - dpauls
     - dnsmichi
     - dpauls
     - drewby
     - drutu
-    - dsotirakis
     - dyla
-    - dyladan
     - dynatrace
-    - e-backmark-ericsson
     - easycla
     - eiffel
-    - elfo404
     - emea
     - endsigs
-    - ericchapman80
     - faas
     - fong
+    - frzifus
+    - gbbr
     - gitter
     - gitdm
     - henrikrexed
@@ -90,37 +99,38 @@ words:
     - horovits
     - jackjia
     - jaglowski
-    - jcocchi
     - jemmic
-    - jigar
-    - jimporell
-    - jmacd
-    - joaopgrassi
-    - jpkrohling
-    - jsuereth
     - juraci
+    - kaiyan-sheng
     - kamphaus
     - kanzhelev
+    - kelnage
     - keptn
     - krzko
     - kröhling
     - kubecon
     - kuisathaverat
     - lalitb
+    - lambdanis
+    - lexis
     - liatrio
     - lightstep
-    - lmolkova
     - logz
     - lucavallin
+    - lukas
     - magnusbaeck
     - maintainership
     - mancuso
+    - marceloamaral
     - martinkuba
     - mateuszrzeszutek
     - mayur
     - mayurkale
+    - mdelfabro
     - mhausenblas
     - mirabella
+    - mjwolf
+    - mkorbi
     - molkova
     - msomasu
     - mtwo
@@ -129,11 +139,11 @@ words:
     - nakamura
     - neumann
     - neumüller
+    - nexis
     - nirga
+    - nikimanoledaki
     - novotny
     - observiq
-    - ocelotl
-    - oleg-nenashev
     - opentelemetry
     - opentelemetrybot
     - otel
@@ -142,37 +152,35 @@ words:
     - otel-ebpf
     - otep
     - otlp
+    - outreachy
     - paixão
-    - parsana
+    - pająk
     - passcodes
-    - patrickhousley
-    - pmpaulino
     - poncelow
     - proto
-    - pyohannes
+    - protos
     - pytest
+    - raesene
     - reiley
-    - reyang
-    - rrschulze
     - ruech
     - runtimes
     - rynn
+    - rossf7
     - salnikov
+    - sallyom
     - scavarda
-    - scheler
     - semconv
     - sergey
     - severin
     - sguyon
     - sharma
-    - sharrmander
     - shkuro
     - sigelman
     - signup
     - skyscanner
-    - sourabh1007
+    - sloughter
+    - snyk
     - splk
-    - srikanthccv
     - stalnaker
     - subdir
     - subproject
@@ -181,14 +189,11 @@ words:
     - sudivate
     - suereth
     - supermajority
-    - svrnm
     - tarnovski
-    - tedsuo
     - tekton
     - thisthat
     - tiebreaking
     - tigran
-    - tigrannajaryan
     - timebox
     - timeboxing
     - timeslot
@@ -197,9 +202,5 @@ words:
     - trendable
     - triager
     - triagers
-    - tsloughter
-    - tylerbenson
-    - xibz
-    - xoscar
+    - teamcity
     - yahn
-    - youngaaronm

@@ -14,12 +14,6 @@ the OpenTelemetry project are recommended to list their company
 affiliation, so that they may be contacted with vendor-specific
 concerns.
 
-<!-- Re-generate TOC with `markdown-toc --no-first-h1 -i` -->
-
-<!-- toc -->
-
-<!-- tocstop -->
-
 ## Technical committee members
 
 ### [Armin Ruech](https://github.com/arminru), Dynatrace
@@ -64,6 +58,12 @@ concerns.
 - Protocol compatibility (OpenCensus, Prometheus, Statsd, etc.)
 - Semantic conventions
 
+### [Liudmila Molkova](https://github.com/lmolkova), Microsoft
+
+- Trace API and SDK
+- Semantic conventions
+- Instrumentation
+
 ### [Reiley Yang](https://github.com/reyang), Microsoft
 
 - Logging API and SDK
@@ -75,10 +75,11 @@ concerns.
 
 ### [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 
-- OpenTelemetry collector
 - OpenTelemetry protocol
 - OpenTelemetry schemas and versioning
 - Logging API and SDK
+- Entities
+- OpAMP
 
 ### [Yuri Shkuro](https://github.com/yurishkuro), Meta
 

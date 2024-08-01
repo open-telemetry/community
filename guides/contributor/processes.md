@@ -155,6 +155,7 @@ Common new contributor PR issues are:
   introduce
 - Introducing change that should be first be approved by TC, for instance, the
   introduction of new terminology
+- Leaving the description blank or only including an issue number.
 
 ## Code Review
 

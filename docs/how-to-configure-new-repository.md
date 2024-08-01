@@ -37,8 +37,10 @@ by removing categories which overlap with issues.
 * The `foo-maintainers` team should be a member of the `foo-approvers` team,
   and the `foo-approvers` team should be a member of the `foo-triagers` team.
 * Every member of `foo-maintainers` should be included explicitly in `foo-approvers`
-  and `foo-triagers` with the "Maintainer" GitHub privileges. This allows
+  and `foo-triagers` with the "Maintainer" role. This allows
   repository maintainers to invite new approvers and triagers to the team.
+* Every member of `foo-maintainers` should have the "Maintainer" role on the `foo-maintainers` team.
+  This allows repository maintainers to invite new maintainers to the team.
 * The team `foo-triagers` has `Triage` permissions for the repository. If repository
   is using the Project Boards, `foo-triagers` should have `Write` permissions to
   have access to the Project Boards. Do not add members of `foo-triagers` to
@@ -79,6 +81,7 @@ Everything not mentioned is unchecked.
     * `EasyCLA`
 * Do not allow bypassing the above settings: :heavy_check_mark:
 * Restrict who can push to matching branches: :heavy_check_mark:
+  * Restrict pushes that create matching branches: :heavy_check_mark:
   * `Organization administrators, repository administrators, and users with the Maintain role`
 
 **Important:** the only ones of these rules which may be changed are
