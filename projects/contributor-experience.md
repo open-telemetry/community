@@ -97,12 +97,13 @@ GC/TC sponsors:
   
 Maintainers, approvers, and contributors:
 
-* [@svrnm](https://github.com/svrnm)
-* [@jpkrohling](https://github.com/jpkrohling)
-* [@mx-psi](https://github.com/mx-psi)
-* [@theletterf](https://github.com/theletterf)
-* [@musingvirtual](https://github.com/musingvirtual)
 * [@JamieDanielson](https://github.com/JamieDanielson)
+* [@jpkrohling](https://github.com/jpkrohling)
+* [@maryliag](https://github.com/maryliag)
+* [@musingvirtual](https://github.com/musingvirtual)
+* [@mx-psi](https://github.com/mx-psi)
+* [@svrnm](https://github.com/svrnm)
+* [@theletterf](https://github.com/theletterf)
 
 ## Meeting Times
 
