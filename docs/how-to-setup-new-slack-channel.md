@@ -1,8 +1,8 @@
-# How we setup new slack channel
+# How we setup new Slack channels
 
 ## Naming
 
-Most channels have a name pattern like `#otel-foo`. We recommend that pattern
+Most channels have a name pattern like `#otel-*`. We recommend that pattern
 for consistency.
 
 ## Channel Settings
