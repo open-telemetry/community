@@ -99,7 +99,7 @@ as CNCF IP Policy
 [dictates](https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy).
 This [blog post](https://www.cncf.io/blog/2017/02/01/cncf-recommends-aslv2/)
 explains the reasoning behind choosing this license.
-Refer to [CONTRIBUTING.md](https://github.com/open-telemetry/community/blob/master/CONTRIBUTING.md#code-attribution)
+Refer to [CONTRIBUTING.md](https://github.com/open-telemetry/community/tree/main/guides/contributor)
 for details on code attribution.
 
 ## Logos and Brand Guide
