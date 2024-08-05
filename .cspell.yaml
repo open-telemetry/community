@@ -18,7 +18,9 @@ ignoreRegExpList:
 words:
     - Collibra
     - DASD
+    - Docu
     - datadog
+    - devex
     - dynatrace
     - easycla
     - eiffel
@@ -88,7 +90,14 @@ words:
     - frzifus
     - gbbr
     - gitter
+    - gitdm
+    - henrikrexed
+    - heptio
+    - hongalex
+    - horovits
+    - jackjia
     - jaglowski
+    - javaagent
     - jemmic
     - juraci
     - kaiyan-sheng
