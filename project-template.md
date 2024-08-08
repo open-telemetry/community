@@ -41,7 +41,7 @@ Issues should be properly labeled to indicate what parts of the specification it
 
 Once approved, a project should be managed using a GitHub project board (see [open projects](https://github.com/orgs/open-telemetry/projects?query=is%3Aopen)). This project board should be pre-populated with issues that cover all known deliverables, organized by timeline milestones.
 
-Any [member](https://github.com/open-telemetry/community/blob/main/community-membership.md) associated with the project can create the board. Once created, the creator of the board should:
+Any [member](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md) associated with the project can create the board. Once created, the creator of the board should:
 
 - Assign `Admin` privileges on the project to the relevant project members (using a new or existing GitHub team).
 - Change the visibility of the project to `Public` in order to share project status and priorities outside of the OpenTelemetry organization.
