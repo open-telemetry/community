@@ -297,7 +297,7 @@ The OpenTelemetry Bot addresses two common issues:
    prevent accidental recursive workflow runs).
 
    The OpenTelemetry GitHub organization has a GitHub Action secret named `OPENTELEMETRYBOT_GITHUB_TOKEN`, which is a
-   [Personal Access Token][] for [@opentelemetrybot](https://github.com/opentelemetrybot) with `public_repo`
+   [Personal Access Token][] for [@opentelemetrybot](https://github.com/opentelemetrybot) with `repo`, `workflow` and `read:org`
    scope for the OpenTelemetry Bot that you can use to bypass this limitation.
 
    The personal access token also has `workflow` scope which is needed when merging upstream changes of
