@@ -350,7 +350,7 @@
     - name: Trask Stalnaker
       github: trask
   - name: Collector
-    meeting: Wednesday alternating between 09:00 PT, 17:00 PT, 20:00 UTC+8
+    meeting: Wednesday alternating between 09:00 PT, 05:00 PT, 17:00 PT
     notes:
       type: gDoc
       value: 1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE
