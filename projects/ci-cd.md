@@ -1,5 +1,7 @@
 # CI/CD Observability Semantic Conventions Working Group
 
+[**CI/CD Project Board**](https://github.com/orgs/open-telemetry/projects/79)
+
 ## Description
 
 The goal of this working group is define the semantic conventions for CI/CD Observability and outline 
@@ -84,7 +86,7 @@ The following is a list of prototypes, plugins, components, and CI/CD related to
 All stages will require a project lead, domain experts, and engineers at a minimum. 
 
 * @horovits Project Lead (Logz.io)
-* @adrielp (Liatrio)
+* @adrielp Project Lead (Liatrio)
 * @thisthat (Dynatrace, Keptn)
 * @acramsay (Liatrio)
 * @krzko (ANZ Bank)
@@ -121,17 +123,33 @@ This group will start meeting independently in the future as the project progres
 
 Estimated time-frame: 6-12 Months
 
-* Q1 Focus
-    * Kickoff
-    * Strategy
-    * Research and discovery
-    * OTEP Approval
-* Q2 Focus
-    * Semantic Conventions
-    * Specifications
-    * Prototype Developments
-* Q3 TBD
-* Q4 TBD
+### 2024
+
+- [x] Q1 Focus
+    - [x] Kickoff
+    - [x] Strategy
+    - [x] Research and discovery
+    - [ ] OTEP Approval
+- [x] Q2 Focus
+    - [x] Semantic Conventions
+    - [x] Specifications
+    - [ ] Prototype Developments
+- [ ] Q3 TBD
+    - [ ] (cont) Semantic Conventions
+        - [ ] More Registry Additions
+        - [ ] Signal specific conventions
+    - [ ] (cont) Prototype Development
+    - [ ] OTEP Environment Variable Specification Approval
+- [ ]  Q4 TBD
+    - [ ] (cont) Semantic Conventions
+        - [ ] Registry Stability Updates
+        - [ ] (cont) Signal specific conventions
+    - [ ] Environment Variable Specification Updated and Released
+    - [ ] Determine next steps for 2025
+
+### 2025 
+
+- [ ] TBD
 
 > Note: The working groups intent is to be nimble and able to adjust quickly.
 
