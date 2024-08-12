@@ -16,6 +16,7 @@ words:
     - faas
     - gitter
     - Hostmetrics
+    - hostmetricsreceiver
     - jemmic
     - keptn
     - kubecon
