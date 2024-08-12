@@ -1,20 +1,34 @@
 version: 0.2
-ignorePaths: ["elections/**/*"]
+ignorePaths: ["elections/**/*", "tools/github/*"]
+# Ignore certain patterns in the sigs.yml file
+patterns:
+  - name: Slack Channel ID
+    pattern: "id: [A-Z0-9]{11}"
+  - name: Google Docs ID
+    pattern: "value: [a-zA-Z0-9-_]+"
+  - name: "GitHub Handle"
+    pattern: "@[a-zA-Z0-9-_]+\\b"
+  - name: "GitHub Handle in YML"
+    pattern: "github: [a-zA-Z0-9-_]+"
+ignoreRegExpList:
+  - Slack Channel ID
+  - Google Docs ID
+  - GitHub Handle
+  - GitHub Handle in YML
 words:
-    - adot
-    - apac
-    - cdevents
-    - cicd
-    - cncf
-    - codecov
-    - codeowners
+    - Collibra
     - DASD
+    - Docu
+    - datadog
+    - devex
     - dynatrace
     - easycla
     - eiffel
+    - elastic
     - emea
     - faas
     - gitter
+    - grafana
     - Hostmetrics
     - hostmetricsreceiver
     - jemmic
@@ -33,148 +47,176 @@ words:
     - passcodes
     - proto
     - pytest
+    - isovalent
+    - labs
+    - Liudmila
+    - Nale
     - REXX
-    - runtimes
-    - signup
-    - skyscanner
-    - splk
-    - subdir
-    - subproject
-    - subprojects
-    - subrepository
-    - supermajority
+    - scaphandre
     - Sysplex
-    - tekton
-    - tiebreaking
-    - timebox
-    - timeboxing
-    - timeslot
-    - tocstop
-    - trendable
-    - triager
-    - triagers
-    # names and github handles
-    - alevenberg
     - acramsay
-    - adrielp
-    - afrittoli
-    - alanwest
+    - adot
     - alolita
     - amye
+    - andré
     - aniszczyk
-    - arbiv
+    - apac
+    - anoshin
     - armin
-    - arminru
-    - austinlparker
     - beedgen
+    - beemer
+    - bertysentry
     - blanco
     - bogdan
-    - bogdandrutu
     - boten
-    - breedx
+    - calendar-agent-mgmt
+    - calendar-ebpf
     - caramanolis
-    - carlosalberto
-    - cartermp
+    - cdevents
+    - chrs
+    - cicd
     - cijo
+    - cncf
     - codeboten
+    - codecentric
+    - codecov
+    - codeowners
+    - comms
+    - credly
     - danielgblanco
     - darren17082
     - davdai
     - denisivan
     - dennisme
+    - dineshg
+    - dmitrii
+    - dmitryax
     - dpauls
     - dnsmichi
+    - dpauls
     - drewby
     - drutu
-    - dsotirakis
     - dyla
-    - dyladan
-    - elfo404
-    - ericchapman80
-    - e-backmark-ericsson
+    - dynatrace
+    - easycla
+    - eiffel
+    - emea
+    - endsigs
+    - faas
     - fong
+    - frzifus
+    - gbbr
+    - gitter
+    - gitdm
     - henrikrexed
+    - heptio
     - hongalex
     - horovits
     - jackjia
     - jaglowski
-    - jcocchi
-    - jigar
-    - jimporell
-    - joaopgrassi
-    - jpkrohling
-    - jsuereth
+    - javaagent
+    - jemmic
     - juraci
+    - kaiyan-sheng
     - kamphaus
     - kanzhelev
-    - kröhling
+    - kelnage
+    - keptn
     - krzko
+    - kröhling
+    - kubecon
     - kuisathaverat
     - lalitb
-    - lmolkova
+    - lambdanis
+    - lexis
+    - liatrio
+    - lightstep
+    - logz
     - lucavallin
+    - lukas
     - magnusbaeck
+    - maintainership
     - mancuso
+    - marceloamaral
     - martinkuba
     - mateuszrzeszutek
     - mayur
     - mayurkale
+    - mdelfabro
     - mhausenblas
     - mirabella
+    - mjwolf
+    - mkorbi
     - molkova
     - msomasu
     - mtwo
     - mwear
     - najaryan
     - nakamura
-    - Nale
     - neumann
     - neumüller
+    - nexis
     - nirga
+    - nikimanoledaki
     - novotny
-    - ocelotl
-    - oleg-nenashev
+    - observiq
+    - opentelemetry
+    - opentelemetrybot
+    - otel
+    - otel-agentmanwg
+    - otel-comms
+    - otel-ebpf
+    - otep
+    - otlp
+    - outreachy
     - paixão
-    - parsana
-    - patrickhousley
-    - pmpaulino
+    - pająk
+    - passcodes
     - poncelow
-    - pyohannes
+    - proto
+    - protos
+    - pytest
+    - raesene
     - reiley
-    - reyang
-    - rrschulze
     - ruech
+    - runtimes
     - rynn
+    - rossf7
     - salnikov
+    - sallyom
     - scavarda
-    - scheler
     - semconv
     - sergey
     - severin
     - sguyon
     - sharma
-    - sharrmander
     - shkuro
     - sigelman
-    - sourabh1007
-    - srikanthccv
+    - signup
+    - skyscanner
+    - sloughter
+    - snyk
+    - splk
     - stalnaker
-    - suereth
+    - subdir
+    - subproject
+    - subprojects
+    - subrepository
     - sudivate
-    - svrnm
+    - suereth
+    - supermajority
     - tarnovski
-    - tedsuo
+    - tekton
     - thisthat
+    - tiebreaking
     - tigran
-    - tigrannajaryan
+    - timebox
+    - timeboxing
+    - timeslot
+    - tocstop
     - trask
-    - tsloughter
-    - tylerbenson
-    - xibz
-    - xoscar
+    - trendable
+    - triager
+    - triagers
+    - teamcity
     - yahn
-    - youngaaronm
-    # slack spaces
-    - otel-agentmanwg
-    - otel-comms
-    - otel-ebpf

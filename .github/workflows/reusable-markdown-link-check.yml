@@ -9,14 +9,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install markdown-link-check
-        run: npm install -g markdown-link-check@3
-
       - name: Run markdown-link-check
-        run: |
-          find . -type f \
-                 -name '*.md' \
-                 -not -path './elections/2019/governance-committee-election.md' \
-                 -not -path './elections/2020/governance-committee-election.md' \
-                 -not -path './elections/*/governance-committee-candidates.md' \
-               | xargs .github/scripts/markdown-link-check-with-retry.sh
+        run: make markdown-link-check

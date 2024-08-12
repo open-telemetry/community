@@ -1,8 +1,14 @@
 # <<PROJECT NAME>>
 
-## Description
+## Background and description
 
-Describe the goals, objectives, and requirements for the project. This include the motivations for starting the project now, as opposed to later.
+Add any background that may be needed to introduce the scope of this project.
+
+### Current challenges
+List the current challenges that this project aims to solve. Focus on the problem here, how it affects users and what the downsides are if nothing is done, rather than the solution.
+
+### Goals, objectives, and requirements
+Describe the aim of this project, including the goals, objectives and requirements needed to solve the challenges presented in the previous section. Include here the motivations for starting the project now, as opposed to later. Call out the benefits for the OpenTelemetry project when this project is completed.
 
 ## Deliverables
 
@@ -18,13 +24,10 @@ Who is currently planning to work on the project? If a project requires speciali
 
 Projects cannot be started until the following participants have been identified:
 * Every project needs a project lead, who is willing to bottom line the project and address any issues which are not handled by other project members.
-* At least two sponsoring TC members. TC sponsors are dedicated to attending meetings, reviewing proposals, and in general being aware of the state of the project and its technical details. TC sponsors guide the project through the spec process, keep the tracking issue up to date, and help to ensure that relevant community members provide input at the appropriate times.
+* At least two sponsoring TC or GC members. Sponsors are dedicated to attending meetings, reviewing proposals, and in general being aware of the state of the project and its technical details. Sponsors guide the project through the spec process, keep the tracking issue up to date, and help to ensure that relevant community members provide input at the appropriate times.
+* A GC liaison to facilitate this SIG's health and ensure project scope remains true to the project description. If a GC member is also a sponsor for this project, they are by default the GC liaison (see [GC check-ins](https://github.com/open-telemetry/community/blob/main/gc-check-ins.md)).
 * Engineers willing to write prototypes in at least two languages (if relevant to project). Languages should be fairly different from each other (for example: Java and Python).
 * Maintainers or approvers from those languages committed to reviewing the prototypes.
-
-## Meeting Times
-
-Once a project is started, the working group should meet regularly for discussion. These meeting times should be posted on the OpenTelemetry public calendar.
 
 ## Timeline
 
@@ -32,16 +35,24 @@ What is the expected timeline the project will aim to adhere to, and what resour
 
 ## Labels
 
-The tracking issue should be properly labeled to indicate what parts of the specification it is focused on.
-
-## Linked Issues and PRs
-
-All PRs, Issues, and OTEPs related to the project should link back to the tracking issue, so that they can be easily found. 
+Issues should be properly labeled to indicate what parts of the specification it is focused on. List here the labels applicable to this project.
 
 ## Project Board
 
-Once approved by TC, a project should be managed using a GitHub project board. This project board should be pre-populated with issues that cover all known deliverables, organized by timeline milestones.
+Once approved, a project should be managed using a GitHub project board (see [open projects](https://github.com/orgs/open-telemetry/projects?query=is%3Aopen)). This project board should be pre-populated with issues that cover all known deliverables, organized by timeline milestones.
 
-A [Technical Committee](https://github.com/open-telemetry/community/blob/main/community-members.md#technical-committee) (TC) member associated with the project can create the board, along with a new project-specific GitHub label to automatically associate issues and PRs with the project. The project lead and all other relevant project members should have edit access to the board.
+Any [member](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md) associated with the project can create the board. Once created, the creator of the board should:
 
-Once created, please link to the project board here.
+- Assign `Admin` privileges on the project to the relevant project members (using a new or existing GitHub team).
+- Change the visibility of the project to `Public` in order to share project status and priorities outside of the OpenTelemetry organization.
+- Configure project workflows to automatically add issues and PRs to the board based on repositories and labels.
+
+Once created, please add a link to the project board here.
+
+## SIG Meetings and Other Info
+
+Once a project is started, its corresponding SIG should meet regularly for discussion. These meeting times should be posted on the [OpenTelemetry public calendar](https://github.com/open-telemetry/community#calendar) and automatically recorded.
+
+Any relevant information related to the SIG (e.g. sponsors, meeting times, Slack channels, meeting notes, etc.) must be publicly available in the [community](https://github.com/open-telemetry/community) SIG tables, which can be updated via the [sigs.yml](https://github.com/open-telemetry/community/blob/main/sigs.yml) file and running `make table-generation`.
+
+See [How to create and configure meetings](https://github.com/open-telemetry/community/blob/main/docs/how-to-handle-public-calendar.md) for updating the public calendar or open an issue in the community repository so it's taken care of.

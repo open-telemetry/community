@@ -27,7 +27,7 @@ For Metrics: Tracking model performance by collecting and correlating data like 
 
 ## Staffing / Help Wanted
 
-We will gather further staff as the project is established. We need to 
+We will gather further staff as the project is established. We need to
 make sure there is enough representation across both vendors and customers
 who will benefit from these semantic conventions.
 
@@ -44,8 +44,10 @@ who will benefit from these semantic conventions.
 **Engineers:**
 
 - @nirga
+- @galkleinman
 - @sudivate
 - @cartermp
+- @gyliu513
 - *Positions open for more engineers*
 
 **Maintainers:**
@@ -56,14 +58,23 @@ who will benefit from these semantic conventions.
 
 Alternating weekly meetings to accommodate different time zones:
 
-- Week 1: Wednesdays at 8 AM PST
-- Week 2: Wednesdays at 4 PM PST
+- Week 1: Wednesdays at 10 AM PST
+- Week 2: Wednesdays at 11 PM PST
+
+### Meeting Links
+
+- Meeting Calendar: [calendar-semconv@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)
+- Meeting Notes: [Google Doc](https://docs.google.com/document/d/1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M)
+
+## Discussion
+
+* Slack: [#otel-llm-semconv-wg](https://cloud-native.slack.com/archives/C06KR7ARS3X)
 
 ## Timeline
 
 1. Initial Draft: February 2024
 1. Review and Refinement: April 2024
-1. Prototypes for .NET, Python, JS: June 2024 
+1. Prototypes for .NET, Python, JS: June 2024
 1. Initial Merge Target: July 2024
 1. Ongoing Review for Stability: Date TBD
 
@@ -74,8 +85,9 @@ Alternating weekly meetings to accommodate different time zones:
 ## Linked Issues and PRs
 
 - Issue: [Introduce semantic conventions for modern AI (LLMs, vector databases, etc.) #327](https://github.com/open-telemetry/semantic-conventions/issues/327)
-- PR: [Add LLM semantic conventions #639](https://github.com/open-telemetry/semantic-conventions/pull/639)
+- PR: [LLM Semantic Conventions: Initial PR #825](https://github.com/open-telemetry/semantic-conventions/pull/825)
+- PR: [Add LLM semantic conventions #639](https://github.com/open-telemetry/semantic-conventions/pull/639) - Closed/Replaced with 825
 
 ## Project Board
 
-To be established post-approval.
+* Project Board: [LLM Client Semantic Conventions](https://github.com/orgs/open-telemetry/projects/82)

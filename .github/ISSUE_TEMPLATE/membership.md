@@ -16,7 +16,7 @@ e.g. (at)example_user
 
 ### Requirements
 
-- [ ] I have reviewed the community membership guidelines (https://github.com/open-telemetry/community/blob/main/community-membership.md)
+- [ ] I have reviewed the community membership guidelines (https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md)
 - [ ] I have enabled 2FA on my GitHub account. See https://github.com/settings/security
 - [ ] I have subscribed to the [Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q) (use https://slack.cncf.io/ to get an invite)
 - [ ] I am actively contributing to 1 or more OpenTelemetry subprojects
@@ -37,4 +37,5 @@ Please remember, it is an applicant's responsibility to get their sponsors' conf
 
 - PRs reviewed / authored
 - Issues responded to
+- Community activities I organized/ran
 - SIG projects I am involved with
