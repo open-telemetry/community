@@ -30,6 +30,23 @@ words:
     - gitter
     - grafana
     - Hostmetrics
+    - hostmetricsreceiver
+    - jemmic
+    - keptn
+    - kubecon
+    - liatrio
+    - lightstep
+    - logz
+    - maintainership
+    - observiq
+    - opentelemetry
+    - opentelemetrybot
+    - otel
+    - otep
+    - otlp
+    - passcodes
+    - proto
+    - pytest
     - isovalent
     - labs
     - Liudmila
