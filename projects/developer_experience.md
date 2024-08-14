@@ -79,7 +79,7 @@ to the specification.
 
 ## Meeting Times
 
-Weekly meetings TBA.
+Wednesday 11:00 PT and 17:00 UTC+8
 
 ## Timeline
 
@@ -100,4 +100,4 @@ TBA
 
 ## Project Board
 
-TBA
+https://github.com/orgs/open-telemetry/projects/105

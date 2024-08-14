@@ -18,7 +18,9 @@ ignoreRegExpList:
 words:
     - Collibra
     - DASD
+    - Docu
     - datadog
+    - devex
     - dynatrace
     - easycla
     - eiffel
@@ -28,6 +30,23 @@ words:
     - gitter
     - grafana
     - Hostmetrics
+    - hostmetricsreceiver
+    - jemmic
+    - keptn
+    - kubecon
+    - liatrio
+    - lightstep
+    - logz
+    - maintainership
+    - observiq
+    - opentelemetry
+    - opentelemetrybot
+    - otel
+    - otep
+    - otlp
+    - passcodes
+    - proto
+    - pytest
     - isovalent
     - labs
     - Liudmila
@@ -88,7 +107,14 @@ words:
     - frzifus
     - gbbr
     - gitter
+    - gitdm
+    - henrikrexed
+    - heptio
+    - hongalex
+    - horovits
+    - jackjia
     - jaglowski
+    - javaagent
     - jemmic
     - juraci
     - kaiyan-sheng

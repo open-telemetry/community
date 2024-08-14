@@ -198,7 +198,7 @@ Ilan Rabinovitch leads the community and product teams at Datadog. He spends his
 - Github: [punya](https://github.com/punya)
 
 
-I’ve participated in the OpenTelemetry community for the past year, especially the Go and Collector SIGs. In addition to writing code, I help clarify contentious designs and onboard new contributors. As a [triager](../../community-membership.md#triager) for the collector repository, I help our busy maintainers and contributors to use their time efficiently.
+I’ve participated in the OpenTelemetry community for the past year, especially the Go and Collector SIGs. In addition to writing code, I help clarify contentious designs and onboard new contributors. As a [triager](../../guides/contributor/membership.md#triager) for the collector repository, I help our busy maintainers and contributors to use their time efficiently.
 
 Before getting involved in telemetry, I led teams at small-to-midsize companies that were shipping products and figuring out observability for the first time. I’d like to use the perspective I gained from that experience to advocate for simple designs that are easy for newcomers and small teams to adopt.
 

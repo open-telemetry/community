@@ -14,6 +14,10 @@ settings](../docs/how-to-configure-new-repository.md#repository-settings).
 
 * Required number of approvals before merging: `2`
 * Require conversation resolution before merging: :heavy_check_mark:
+* Status checks that are required:
+  * EasyCLA
+  * spelling-check
+  * table-check
 
 ### `**/**`
 
