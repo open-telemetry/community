@@ -12,6 +12,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [AWS account](#aws-account)
   * [Equinix bare metal](#equinix-bare-metal)
   * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
+  * [Oracle Cloud account](#oracle-cloud-account)
 - [Artifact repositories](#artifact-repositories)
   * [NuGet OpenTelemetry organization](#nuget-opentelemetry-organization)
   * [MyGet OpenTelemetryCNCF account](#myget-opentelemetrycncf-account)
@@ -99,6 +100,13 @@ Link: https://grafana.com/orgs/otelsigsecurity
 - Admins: Juraci Paixão Kröhling @jpkrohling & Armin Ruech @arminru
 
 The GitHub organization `open-telemetry-private` also exists for this purpose.
+
+### Oracle Cloud account
+
+Link: https://www.oracle.com/cloud/sign-in.html
+
+- Community account to run [CLOWarden](https://github.com/cncf/clowarden)
+- Admin: [@austinlparker](https://github.com/austinlparker)
 
 ## Artifact repositories
 
