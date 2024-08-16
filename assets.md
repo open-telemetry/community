@@ -90,6 +90,14 @@ Note: these pay-as-you-go GitHub-hosted runners for ARM64 are available for free
 CNCF and GitHub expect fair use of these provided resources.
 Please ensure your workloads are optimized to avoid unnecessary usage.
 
+### Google Cloud account
+
+Link: https://cloud.google.com
+
+- Community account to host https://go.opentelemetry.io
+- Admin: [@austinlparker](https://github.com/austinlparker)
+  (password is available in the OpenTelemetry Governance 1Password)
+
 ### Grafana organization for SIG Security
 
 Link: https://grafana.com/orgs/otelsigsecurity
@@ -107,6 +115,7 @@ Link: https://www.oracle.com/cloud/sign-in.html
 
 - Community account to run [CLOWarden](https://github.com/cncf/clowarden)
 - Admin: [@austinlparker](https://github.com/austinlparker)
+  (password is available in the OpenTelemetry Governance 1Password)
 
 ## Artifact repositories
 
