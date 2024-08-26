@@ -168,14 +168,14 @@
     - name: Alolita Sharma
       github: alolita
   - name: 'Semantic Conventions: CI/CD'
-    meeting: "Meets during Semantic Conventions: General"
+    meeting: "Every Thursday at 09:00 UTC-4"
     notes:
       type: gDoc
       value: 10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8
     chat:
       - type: slack
-        name: '#otel-semconv-security'
-        id: C0715DWUW7L
+        name: '#otel-cicd'
+        id: C0598R66XAP
     invites: calendar-semconv
     sponsors:
       - name: Josh Suereth
