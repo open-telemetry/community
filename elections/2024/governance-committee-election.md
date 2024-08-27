@@ -19,7 +19,7 @@ We highly encourage participation in this election cycle to ensure that the comm
 
 * If you've been nominated or are willing to nominate yourself: check the [charter document](../../governance-charter.md) and confirm you are ready for the commitment. Make sure to provide all necessary information before 11 October 2024 23:59 UTC
 * If you are an active community member: confirm that you are on the voters list (see [election announcements issue](https://github.com/open-telemetry/community/issues/{issue_number})) or register yourself before 18 October 2024 23:59 UTC.
-* Vote between 21 October 2024 00:00 UTC and 23 October 2024 23:59 UTC via the [voting link](https://vote.heliosvoting.org/helios/elections/{election_id}}/view)
+* Vote between 21 October 2024 00:00 UTC and 23 October 2024 23:59 UTC via the [voting link](https://vote.heliosvoting.org/helios/elections/176e7ca8-647d-11ef-9b9a-2a30e2a223da/view)
 * Keep being awesome and contributing to the project!
 
 # Vacancies
@@ -67,7 +67,7 @@ The Governance Committee or appointed people will contact every nominee directly
 
 # Voter Eligibility
 
-All [members of standing](../../governance-charter.md#members-of-standing) will automatically be eligible to vote. To confirm your eligibility status, see the [election announcements issue](https://github.com/open-telemetry/community/issues/{issue_number}}). If your code contributions do not meet eligibility requirements, but you believe your non-code contributions should make you eligible to vote, you can request an exemption by submitting an exemption [request form](https://forms.gle/GWuGZKku326pCLUo6).
+All [members of standing](../../governance-charter.md#members-of-standing) will automatically be eligible to vote. To confirm your eligibility status, see the [election announcements issue](https://github.com/open-telemetry/community/issues/{issue_number}}). If your code contributions do not meet eligibility requirements, but you believe your non-code contributions should make you eligible to vote, you can request an exemption by submitting an exemption [request form](https://forms.gle/LBvyRpNwZvqcJxUbA).
 
 One of two options will be available in the form to prove eligibility:
 
@@ -80,7 +80,7 @@ All exemption forms are private. Only the current governance and election commit
 
 # Vote
 
-Everyone with voting rights may log into [Helios Voting](https://vote.heliosvoting.org/helios/elections/{election_id}}/view) using their GitHub account. Voting will be approval voting, where each voter may select up to five candidates. The five candidates with the most votes win the election.
+Everyone with voting rights may log into [Helios Voting](https://vote.heliosvoting.org/helios/elections/176e7ca8-647d-11ef-9b9a-2a30e2a223da/view) using their GitHub account. Voting will be approval voting, where each voter may select up to five candidates. The five candidates with the most votes win the election.
 
 The election committee will accept late registrations to vote and requests to re-send the voting link via email to [cncf-opentelemetry-governance@lists.cncf.io](mailto:cncf-opentelemetry-governance@lists.cncf.io). We encourage pre-registration to minimize the effort required to run this election.
 
