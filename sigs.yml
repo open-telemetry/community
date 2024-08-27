@@ -168,10 +168,10 @@
     - name: Alolita Sharma
       github: alolita
   - name: 'Semantic Conventions: CI/CD'
-    meeting: "Every Thursday at 09:00 UTC-4"
+    meeting: Every Thursday at 06:00 PT
     notes:
       type: gDoc
-      value: 10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8
+      value: 1CdzXD16QpayEpPxae_3u-7BLyzv0GgzZrKvV7tTFDr0
     chat:
       - type: slack
         name: '#otel-cicd'
