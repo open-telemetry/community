@@ -183,8 +183,8 @@
       - name: Carlos Alberto
         github: carlosalberto
     gcLiaison:
-      - name: Trask Stalnaker
-        github: trask
+      - name: Daniel Gomez Blanco
+        github: danielgblanco
   - name: 'Semantic Conventions: Security'
     meeting: "Meets during Semantic Conventions: General"
     notes:
