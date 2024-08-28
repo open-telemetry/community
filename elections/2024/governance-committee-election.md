@@ -47,6 +47,8 @@ For the 2024 elections, [Helios Voting](https://vote.heliosvoting.org/) was chos
 
 Helios Voting also allows us to add GitHub handles to the list of voters in addition to email addresses. We need this, as we count contributions based on GitHub contributions and do not always have the contributor's actual email address. The disadvantage of Helios Voting is that it does not support ranked voting.
 
+**Note**: there is a current [issue](https://github.com/benadida/helios-server/issues/362) with capitalised GitHub handles and our automatic voter registration process on Helios Voting. As an eligible voter, if your GitHub handle contains uppercase characters, and you cannot see yourself as a voter on Helios Voting, please reach out to the election committee at  [cncf-opentelemetry-governance@lists.cncf.io](mailto:cncf-opentelemetry-governance@lists.cncf.io).
+
 The governance committee also evaluated [Condorcet Internet Voting Service](https://civs1.civs.us/) and [Elekto](https://elekto.dev/) but found that they had limitations making Helios Voting a better alternative. Specifically, CIVS [does not have GitHub integration](https://github.com/andrewcmyers/civs/issues/11) and Elekto is beta software with limited contributions, not recommended for production use. We welcome other suggestions for the future.
 
 # Nominations
