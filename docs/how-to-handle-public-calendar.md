@@ -22,9 +22,11 @@ This way anyone who wants to receive up-to-date invites can join one of those gr
 (see [Inviting attendees](#inviting-attendees) below).
 
 ## Steps
+
 To create or edit a meeting, you need to have access to the Public OpenTelemetry calendar (a shared Google calendar) and you must add a Zoom meeting link.
 
 ### Gaining Calendar Permissions
+
 All SIG maintainers can get access to edit the public OpenTelemetry calendar
 by submitting a request to join the google group
 [calendar-edit-permission@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-edit-permission).
@@ -35,12 +37,15 @@ Please keep the membership of this group up to date and accurate.
 
 ### Create the meeting
 
-:warning: The meeting must initially be created by the admin@opentelemetry.io account,
+:warning: The meeting must initially be created by the <admin@opentelemetry.io> account,
 otherwise synchronization to external calendars via the `calendar-*@opentelemetry.io` groups may not work.
 
 The following details need to be set properly:
+
 - Title
-- Timeslot (make sure to use the correct time zone - Pacific Time - as the dates for switching DST differs between countries)
+- Timeslot, with the right timezone set:
+  - All meeting hours between 2pm and 1am UTC are in Pacific Time (PT), with Daylight Saving Time.
+  - All meeting hours between 2am and 1pm UTC in UTC+8, without Daylight Saving Time.
 - Recurrence pattern (usually weekly or bi-weekly)
 - Location (see below for the Zoom links)
 - Description
@@ -55,6 +60,7 @@ The following details need to be set properly:
   - See guest list: yes
 
 ### Adding a Zoom link to a meeting
+
 Open an issue in the community repository, requesting a new Zoom link.
 By requesting a new Zoom link that is only associated with a single meeting series, the meeting recordings
 can be associated with a meeting name.
@@ -64,6 +70,7 @@ You can see which Zoom account any potentially conflicting meetings are using in
 (Note: posting the URLs publicly on GitHub leads to Zoom bombing by random bots).
 
 #### Zoom link generation process
+
 _This is the process that the person responding to Zoom link creation issues will follow. The instructions under this heading are for project admins (Governance Committee members) who have access to OpenTelemetry's Zoom account credentials._
 
 1. View the OpenTelemetry meeting calendar, and find your desired time slot, along with the meetings that occur immediately before, during, and after it.
@@ -73,22 +80,25 @@ _This is the process that the person responding to Zoom link creation issues wil
 5. Copy the newly generated unique Zoom link and paste it into the calendar event's description and location.
 
 ### Inviting attendees
+
 All meetings should invite a publicly joinable google group `calendar-...@opentelemetry.io` which is specific to the meeting series.
 The google group should be set up as follows:
 
-* Who can search for group: Anyone on the web
-* Who can join group: Anyone can join
-* Who can view conversations: Group members
-* Who can post: Group members
-* Who can view members: Group managers
+- Who can search for group: Anyone on the web
+- Who can join group: Anyone can join
+- Who can view conversations: Group members
+- Who can post: Group members
+- Who can view members: Group managers
 
 This allows anyone to subscribe to this specific meeting series by joining that google group.
 Please open a community issue to request the creation of a `calendar-...@opentelemetry.io` google group.
 
 ### Update the meetings overview
+
 All recurring meetings are listed in the [Community repo's README](../README.md#special-interest-groups), make sure to add/update the respective entry there.
 
 ## Zoom bombing prevention
+
 All meetings are created by Zoom with randomized passcodes, which are embedded into the shared calendar links.
-All members of opentelemetry-calendar-contributors@googlegroups.com have access to [this document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#)
+All members of <opentelemetry-calendar-contributors@googlegroups.com> have access to [this document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#)
 listing the host keys for our meetings and explaining how to deal with inappropriate behavior in Zoom.

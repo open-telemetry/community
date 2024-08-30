@@ -46,7 +46,7 @@ Members of the Technical Committee are the maintainers of
 [Project specs](https://github.com/open-telemetry/opentelemetry-specification)
 and [Proto definitions](https://github.com/open-telemetry/opentelemetry-proto).
 
-[Specification sponsors](./community-membership.md#specification-sponsor) are
+[Specification sponsors](./guides/contributor/membership.md#specification-sponsor) are
 trusted collaborators of the Technical Committee on Project specs and related
 repositories:
 

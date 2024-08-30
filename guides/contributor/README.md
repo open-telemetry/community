@@ -54,7 +54,7 @@ environment.
 
 - Review the [Mission, Vision, and Values](../../mission-vision-values.md) to
   understand the goals of the project.
-- Read the [Community Membership](../../community-membership.md) to understand
+- Read the [Community Membership](./membership.md) to understand
   the roles and responsibilities of the community.
 - As you gain experience, we encourage you to move up the ladder from member to
   triager, approver, and maintainer!
