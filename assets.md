@@ -116,7 +116,7 @@ Link: https://app.netlify.com/login
 
 - Used to manage domain names under opentelemetry.io
 - Used to publish https://opentelemetry.io
-- Admins: [@austinlparker](https://github.com/austinlparker), [@svrnm](https://github.com/svrnm)
+- Admins: [@austinlparker](https://github.com/austinlparker), [@svrnm](https://github.com/svrnm), [@chalin](https://github.com/chalin)
 
 ### Oracle Cloud account
 
