@@ -2,9 +2,9 @@
 
 ## Background and description
 
-As OpenTelemetry continues to mature around clientside instrumentation React Native poses a unique challenge. While the
+As OpenTelemetry continues to mature around client-side instrumentation React Native poses a unique challenge. While the
 existing JS packages are sufficient for most web development in React, React Native developers often cannot use them as
-they are built to assume either a serverside Node environment or a clientside Browser environment. In addition, while
+they are built to assume either a server-side Node environment or a client-side Browser environment. In addition, while
 the JS layer provides a useful abstraction there are often situations where the underlying mobile devices must be taken
 into account to provide a complete observability picture.
 
