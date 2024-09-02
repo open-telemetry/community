@@ -1,5 +1,5 @@
 version: 0.2
-ignorePaths: ["elections/**/*", "tools/github/*"]
+ignorePaths: ["elections/**/*", "tools/github/*", "scripts/**.py", "scripts/**.sh"]
 # Ignore certain patterns in the sigs.yml file
 patterns:
   - name: Slack Channel ID
@@ -21,6 +21,7 @@ words:
     - Docu
     - datadog
     - devex
+    - devstats
     - dynatrace
     - easycla
     - eiffel
