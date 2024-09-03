@@ -84,18 +84,20 @@ The initial set of approvers for each language must include:
     - @karthikscale3
     - @lzchen
     - @nirga
-    - TBD
   - contributors:
+    - @alizenhom
     - @lmolkova
-    - TBD
+    - *looking for more contributors*
 - JS
   - maintainers/approvers:
     - @drewby
     - @karthikscale3
     - @nirga
-    - TBD
+    - *looking for existing OTel JS approvers/maintainers for general JS & OTel feedback*
   - contributors:
-    - TBD
+    - @alizenhom
+    - *looking for more contributors*
+- Other languages: not in the scope (yet).
 
 ## Meeting Times
 
