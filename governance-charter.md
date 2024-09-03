@@ -1,6 +1,6 @@
 # OpenTelemetry Governance Committee Charter
 
-Last updated: December 2023
+Last updated: September 2024
 
 ## Overview
 
@@ -109,8 +109,8 @@ years and 5 seats in odd years).
 
 Members of Standing in the OpenTelemetry community are defined by the union of:
 
-- Active members - those with 20 contributions (PRs, Issues, Comments etc.) in
-  the prior rolling year.
+- Active contributors to the open-telemetry GitHub org - those with 20 contributions
+  (PRs, Issues, Comments etc.) in the prior rolling year.
 - All approvers, and maintainers in the OpenTelemetry organization
 
 Members who don’t meet either criteria above and are part of the following are
