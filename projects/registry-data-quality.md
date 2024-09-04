@@ -20,11 +20,11 @@ In the last months SIG Comms implemented a set of changes to the registry, to ma
 - [A JSON schema definition to verify registry entry format](https://github.com/open-telemetry/opentelemetry.io/pull/4805)
 - [Included the registry in many pages, including the sidebar navigation for all languages and the collector](https://github.com/open-telemetry/opentelemetry.io/pull/3932)
 
-Overall, the registry is in a good shape and is slowly turning into a place that people use for it's original intend.
+Overall, the registry is in a good shape and is slowly turning into a place that people use for its original intent.
 
 ### Current challenges
 
-While being reworks in incremental steps in the last few months, the registry is still facing a set of challenges, that require a bigger
+While being reworked in incremental steps in the last few months, the registry is still facing a set of challenges, that require a bigger
 review and eventually a collaboration across many SIGs to be addressed:
 
 1. Besides the update of package versions, the maintenance is a manual process:
