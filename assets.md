@@ -12,6 +12,8 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [AWS account](#aws-account)
   * [Equinix bare metal](#equinix-bare-metal)
   * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
+  * [Netlify](#netlify)
+  * [Oracle Cloud account](#oracle-cloud-account)
 - [Artifact repositories](#artifact-repositories)
   * [NuGet OpenTelemetry organization](#nuget-opentelemetry-organization)
   * [MyGet OpenTelemetryCNCF account](#myget-opentelemetrycncf-account)
@@ -89,6 +91,14 @@ Note: these pay-as-you-go GitHub-hosted runners for ARM64 are available for free
 CNCF and GitHub expect fair use of these provided resources.
 Please ensure your workloads are optimized to avoid unnecessary usage.
 
+### Google Cloud account
+
+Link: https://cloud.google.com
+
+- Community account to host https://go.opentelemetry.io
+- Admin: [@austinlparker](https://github.com/austinlparker)
+  (password is available in the OpenTelemetry Governance 1Password)
+
 ### Grafana organization for SIG Security
 
 Link: https://grafana.com/orgs/otelsigsecurity
@@ -99,6 +109,22 @@ Link: https://grafana.com/orgs/otelsigsecurity
 - Admins: Juraci Paixão Kröhling @jpkrohling & Armin Ruech @arminru
 
 The GitHub organization `open-telemetry-private` also exists for this purpose.
+
+### Netlify
+
+Link: https://app.netlify.com/login
+
+- Used to manage domain names under opentelemetry.io
+- Used to publish https://opentelemetry.io
+- Admins: [@austinlparker](https://github.com/austinlparker), [@svrnm](https://github.com/svrnm), [@chalin](https://github.com/chalin)
+
+### Oracle Cloud account
+
+Link: https://www.oracle.com/cloud/sign-in.html
+
+- Community account to run [CLOWarden](https://github.com/cncf/clowarden)
+- Admin: [@austinlparker](https://github.com/austinlparker)
+  (password is available in the OpenTelemetry Governance 1Password)
 
 ## Artifact repositories
 
