@@ -39,6 +39,10 @@ do
     handle="${BASH_REMATCH[1]}"
     contributions="${BASH_REMATCH[2]//[$'\r\n']}"
 
+    if [[ -z $handle ]]; then
+        continue
+    fi
+
     msg="${msg}\\n* @${handle}"
     ((counter++))
 
