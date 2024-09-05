@@ -28,7 +28,7 @@ Existing GenAI observability projects are driven independently by individual ven
 
 [OpenLLMetry](https://github.com/traceloop/openllmetry) project was created with the intention [to create space under CNCF](https://github.com/cncf/sandbox/issues/67) and gave a start to OTel [LLM Semantic Convention](https://github.com/open-telemetry/community/blob/main/projects/llm-semconv.md) project.
 
-OpenLLMetry provides general-purpose OTel instrumentations for GenAI clients, frameworks and related components; they are governed by the [Traceloop](https://www.traceloop.com/docs/introduction).
+OpenLLMetry provides general-purpose OTel instrumentations for GenAI clients, frameworks and related components; they are governed by [Traceloop](https://www.traceloop.com/docs/introduction).
 
 By providing GenAI community with the space under OpenTelemetry we will be able to start hosting vendor-agnostic instrumentation libraries (such as WIP one [OpenAI Python](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/2759)) and eventually we will be able to move popular OpenLLMetry-owned `opentelemetry-instrumentation-*` libraries to OTel (or to upstream libraries).
 
