@@ -55,10 +55,19 @@ This would help GenAI observability vendors that will depend on these libraries 
 
 ## Deliverables
 
-- develop common instrumentation libraries for popular GenAI clients and frameworks
-- suggest and, when possible, contribute them to upstream libraries
-- define and evolve GenAI Semantic Conventions
-- propose and implement changes in the OTel API/SDK/contrib/etc that are necessary for GenAI efforts
+Immediate term:
+- Ship OTel instrumentation libraries for OpenAI (or any other GenAI client) in Python and JS following exiting conventions
+
+Middle term:
+- Ship OpenTelemetry (or native) instrumentations for popular GenAI client libraries in Python and JS covering chat calls
+- Evolve GenAI semantic conventions to cover other popular GenAI operations such as embeddings, image or audio generation
+
+As a result we should have feature parity with OpenLLMetry for a set of client instrumentation libraries that all vendors can depends upon.
+
+Long term:
+- Implement instrumentations for GenAI orchestrators and LLM frameworks for popular libraries in different language
+- Evolve GenAI and other relevant conventions (DB) to cover complex multi-step scenarios such as RAG
+- Propose mature instrumentations to upstream libraries/frameworks
 
 ## Staffing / Help Wanted
 
@@ -84,30 +93,33 @@ The initial set of approvers for each language must include:
     - @karthikscale3
     - @lzchen
     - @nirga
-    - @xrmx 
+    - @xrmx
   - contributors:
     - @alizenhom
+    - @galkleinman
     - @lmolkova
     - *looking for more contributors*
-- JS
+- JavaScript
   - maintainers/approvers:
     - @drewby
     - @karthikscale3
     - @nirga
+    - @trentm
     - *looking for existing OTel JS approvers/maintainers for general JS & OTel feedback*
   - contributors:
     - @alizenhom
+    - @galkleinman
     - *looking for more contributors*
 - Other languages: not in the scope (yet).
 
 ## Meeting Times
 
-Alternating weekly meetings to accommodate different time zones:
+To be determined (will run a vote).
+
+We'll use LLM Semantic Convention meetings until more suitable time for new participants is determined:
 
 - Week 1: Wednesdays at 10 AM PST
 - Week 2: Wednesdays at 11 PM PST
-
-(will likely add more slots depending on the demand)
 
 ### Meeting Links
 
