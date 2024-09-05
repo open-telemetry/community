@@ -14,13 +14,13 @@ The scope of GenAI observability includes instrumentations of various GenAI clie
 
 Example Use Cases:
 
-- **Debugging**: Standardizing log data and error reporting for efficient error resolution in LLM applications.
-- **Evaluation**: Collecting signal for evaluation of LLM performance, including response accuracy, context retention, and user feedback.
-- **Cost Tracking**: Monitoring operational costs like computation time and API calls for resource optimization.
-- **AI Safety**: Monitoring for ethical LLM use, including privacy compliance, bias detection, and secure data handling.
-
-For Spans: Instrumentation and debugging guidance for multi-step LLM applications, with recommendations on user privacy and intellectual property security, marking sensitive attributes and events as opt-in.
-For Metrics: Tracking model performance by collecting and correlating data like model names, versions, parameters, latency, and evaluation scores.
+- **Debugging**: Tracing provides causality for multi-step LLM applications allowing to understand the operation flow and root-cause errors.
+- **Evaluation**: Input/output events record non-deterministic model responses that can be used for debugging or automated evaluations
+  measuring LLM response accuracy and other quality characteristics.
+- **AI Safety**: GenAI telemetry, along with specialized evaluators, can help ensure ethical use of LLMs, maintain privacy compliance, detect bias, and safeguard data security.
+- **Cost Tracking**: Usage metrics based on model self-reporting capabilities provide insights into operational costs.
+- **Performance optimization**: Latency, throughput, and error rate of LLM operations provide traditional performance monitoring layer for
+   applications running in production.
 
 ### Current challenges
 
@@ -150,6 +150,7 @@ We'll use LLM Semantic Convention meetings until more suitable time for new part
 - PR: [LLM Semantic Conventions: Initial PR #825](https://github.com/open-telemetry/semantic-conventions/pull/825)
 - PR: [Add LLM semantic conventions #639](https://github.com/open-telemetry/semantic-conventions/pull/639) - Closed/Replaced with 825
 - PR: [[WIP] Add Initial Support for Instrumenting OpenAI Python Library - Chat Completion Create](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/2759)
+
 ## Project Board
 
 * Project Board: [LLM Client Semantic Conventions](https://github.com/orgs/open-telemetry/projects/82)
