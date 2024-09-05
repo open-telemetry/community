@@ -54,6 +54,7 @@ repositories:
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace
 - [Robert Pająk](https://github.com/pellared), Splunk
+- [Severin Neumann](https://github.com/svrnm), Cisco
 - [Ted Young](https://github.com/tedsuo), Lightstep
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
