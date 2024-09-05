@@ -84,6 +84,7 @@ The initial set of approvers for each language must include:
     - @karthikscale3
     - @lzchen
     - @nirga
+    - @xrmx 
   - contributors:
     - @alizenhom
     - @lmolkova
