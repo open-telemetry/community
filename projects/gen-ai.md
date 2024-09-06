@@ -28,9 +28,9 @@ Existing GenAI observability projects are driven independently by individual ven
 
 [OpenLLMetry](https://github.com/traceloop/openllmetry) project was created with the intention [to create space under CNCF](https://github.com/cncf/sandbox/issues/67) and gave a start to OTel [LLM Semantic Convention](https://github.com/open-telemetry/community/blob/main/projects/llm-semconv.md) project.
 
-OpenLLMetry provides general-purpose OTel instrumentations for GenAI clients, frameworks and related components; they are governed by [Traceloop](https://www.traceloop.com/docs/introduction).
+GenAI Instrumentation libraries like OpenLLMetry, OpenLIT, LangTrace and other provides general-purpose OTel instrumentations for GenAI clients, frameworks and related components.
 
-By providing GenAI community with the space under OpenTelemetry we will be able to start hosting vendor-agnostic instrumentation libraries (such as WIP one [OpenAI Python](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/2759)) and eventually we will be able to move popular OpenLLMetry-owned `opentelemetry-instrumentation-*` libraries to OTel (or to upstream libraries).
+By providing GenAI community with the space under OpenTelemetry we will be able to start hosting vendor-agnostic instrumentation libraries (such as WIP one [OpenAI Python](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/2759)) and [OpenAI JS](https://github.com/open-telemetry/opentelemetry-js-contrib/pull/2402) and eventually we will be able to move instrumentations from current GenAI Observabilty tools to OTel (or to upstream libraries). 
 
 It helps GenAI observability community to
 
@@ -56,16 +56,16 @@ This would help GenAI observability vendors that will depend on these libraries 
 ## Deliverables
 
 Immediate term:
-- Ship OTel instrumentation libraries for OpenAI (or any other GenAI client) in Python and JS following exiting conventions
+- Ship OTel instrumentation libraries for OpenAI (or any other GenAI client) in Python and JS following existing conventions
 
 Middle term:
 - Ship OpenTelemetry (or native) instrumentations for popular GenAI client libraries in Python and JS covering chat calls
 - Evolve GenAI semantic conventions to cover other popular GenAI operations such as embeddings, image or audio generation
 
-As a result we should have feature parity with OpenLLMetry for a set of client instrumentation libraries that all vendors can depends upon.
+As a result we should have feature parity with the instrumentations of existing GenAI Observability vendors for a set of client instrumentation libraries that all vendors can depends upon.
 
 Long term:
-- Implement instrumentations for GenAI orchestrators and LLM frameworks for popular libraries in different language
+- Implement instrumentations for GenAI orchestrators and LLM frameworks for popular libraries in different languages
 - Evolve GenAI and other relevant conventions (DB) to cover complex multi-step scenarios such as RAG
 - Propose mature instrumentations to upstream libraries/frameworks
 
@@ -150,7 +150,7 @@ We'll use LLM Semantic Convention meetings until more suitable time for new part
 - PR: [LLM Semantic Conventions: Initial PR #825](https://github.com/open-telemetry/semantic-conventions/pull/825)
 - PR: [Add LLM semantic conventions #639](https://github.com/open-telemetry/semantic-conventions/pull/639) - Closed/Replaced with 825
 - PR: [[WIP] Add Initial Support for Instrumenting OpenAI Python Library - Chat Completion Create](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/2759)
-
+- PR: [[WIP] Add Initial Support for Instrumenting OpenAI JS Library - Chat Completion Create](https://github.com/open-telemetry/opentelemetry-js-contrib/pull/2402)
 ## Project Board
 
 * Project Board: [LLM Client Semantic Conventions](https://github.com/orgs/open-telemetry/projects/82)
