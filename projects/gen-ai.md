@@ -94,12 +94,14 @@ The initial set of approvers for each language must include:
 
 **Engineers:**
 - Python
-  - maintainers/approvers:
+  - maintainers:
+    - @lzchen
+    - TBD
+  - approvers/codeowners:
     - @drewby
     - @karthikscale3
-    - @lzchen
     - @nirga
-    - @xrmx
+    - @xrmx-
   - contributors:
     - @AmanAgarwal041
     - @alizenhom
@@ -109,11 +111,13 @@ The initial set of approvers for each language must include:
     - @patcher9
     - *looking for more contributors*
 - JavaScript
-  - maintainers/approvers:
+  - maintainers:
+    - @trentm
+    - TBD
+  - approvers/codeowners:
     - @drewby
     - @karthikscale3
     - @nirga
-    - @trentm
     - *looking for existing OTel JS approvers/maintainers for general JS & OTel feedback*
   - contributors:
     - @AmanAgarwal041
