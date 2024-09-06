@@ -101,7 +101,7 @@ The initial set of approvers for each language must include:
     - @drewby
     - @karthikscale3
     - @nirga
-    - @xrmx-
+    - @xrmx
   - contributors:
     - @AmanAgarwal041
     - @alizenhom
