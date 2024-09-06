@@ -15,12 +15,17 @@ The scope of GenAI observability includes instrumentations of various GenAI clie
 Example Use Cases:
 
 - **Debugging**: Tracing provides causality for multi-step LLM applications allowing to understand the operation flow and root-cause errors.
-- **Evaluation**: Input/output events record non-deterministic model responses that can be used for debugging or automated evaluations
-  measuring LLM response accuracy and other quality characteristics.
+- **Evaluation**: Prompt/completion events record non-deterministic model responses that can be used for debugging or automated evaluations
+  measuring LLM response accuracy and other quality characteristics. In addition to automated analysis, recording user feedback tied to LLM outputs
+  can provide insights into the quality of model outputs and how they affect user engagement.
 - **AI Safety**: GenAI telemetry, along with specialized evaluators, can help ensure ethical use of LLMs, maintain privacy compliance, detect bias, and safeguard data security.
 - **Cost Tracking**: Usage metrics based on model self-reporting capabilities provide insights into operational costs.
 - **Performance optimization**: Latency, throughput, and error rate of LLM operations provide traditional performance monitoring layer for
    applications running in production.
+- **Incident Response Automation**: Integrating observability data with AI operations platforms can enable automated incident responses,
+  such as restarting failing model components or scaling up resources in response to increased demand, without manual intervention.
+- **Version Control and Rollback**: Tracking model versions in observability data helps monitor the performance impact of model updates,
+  allowing quick rollback to previous versions in case a new release introduces errors or degradations in quality.
 
 ### Current challenges
 
@@ -30,7 +35,7 @@ Existing GenAI observability projects are driven independently by individual ven
 
 GenAI Instrumentation libraries like OpenLLMetry, OpenLIT, LangTrace and other provides general-purpose OTel instrumentations for GenAI clients, frameworks and related components.
 
-By providing GenAI community with the space under OpenTelemetry we will be able to start hosting vendor-agnostic instrumentation libraries (such as WIP one [OpenAI Python](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/2759)) and [OpenAI JS](https://github.com/open-telemetry/opentelemetry-js-contrib/pull/2402) and eventually we will be able to move instrumentations from current GenAI Observabilty tools to OTel (or to upstream libraries). 
+By providing GenAI community with the space under OpenTelemetry we will be able to start hosting vendor-agnostic instrumentation libraries (such as WIP one [OpenAI Python](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/2759)) and [OpenAI JS](https://github.com/open-telemetry/opentelemetry-js-contrib/pull/2402) and eventually we will be able to move instrumentations from current GenAI Observability tools to OTel (or to upstream libraries).
 
 It helps GenAI observability community to
 
@@ -62,7 +67,8 @@ Middle term:
 - Ship OpenTelemetry (or native) instrumentations for popular GenAI client libraries in Python and JS covering chat calls
 - Evolve GenAI semantic conventions to cover other popular GenAI operations such as embeddings, image or audio generation
 
-As a result we should have feature parity with the instrumentations of existing GenAI Observability vendors for a set of client instrumentation libraries that all vendors can depends upon.
+As a result we should have feature parity with the instrumentations of existing GenAI Observability vendors for a set of client
+instrumentation libraries that all vendors can depend upon.
 
 Long term:
 - Implement instrumentations for GenAI orchestrators and LLM frameworks for popular libraries in different languages
