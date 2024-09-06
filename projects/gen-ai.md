@@ -95,9 +95,12 @@ The initial set of approvers for each language must include:
     - @nirga
     - @xrmx
   - contributors:
+    - @AmanAgarwal041
     - @alizenhom
     - @galkleinman
+    - @gyliu513
     - @lmolkova
+    - @patcher9
     - *looking for more contributors*
 - JavaScript
   - maintainers/approvers:
@@ -107,8 +110,10 @@ The initial set of approvers for each language must include:
     - @trentm
     - *looking for existing OTel JS approvers/maintainers for general JS & OTel feedback*
   - contributors:
+    - @AmanAgarwal041
     - @alizenhom
     - @galkleinman
+    - @patcher9
     - *looking for more contributors*
 - Other languages: not in the scope (yet).
 

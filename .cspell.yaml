@@ -16,6 +16,7 @@ ignoreRegExpList:
   - GitHub Handle
   - GitHub Handle in YML
 words:
+    - Arize
     - Ashpole
     - Collibra
     - Coralogix
@@ -38,6 +39,8 @@ words:
     - keptn
     - kubecon
     - k8sclusterreceiver
+    - Langfuse
+    - Langtrace
     - liatrio
     - lightstep
     - logz
@@ -110,6 +113,7 @@ words:
     - fong
     - frzifus
     - gbbr
+    - genai
     - gitter
     - gitdm
     - henrikrexed
@@ -146,6 +150,7 @@ words:
     - mateuszrzeszutek
     - mayur
     - mayurkale
+    - Metry
     - mdelfabro
     - mhausenblas
     - mirabella
@@ -210,6 +215,7 @@ words:
     - sudivate
     - suereth
     - supermajority
+    - Traceloop
     - tarnovski
     - tekton
     - thisthat
