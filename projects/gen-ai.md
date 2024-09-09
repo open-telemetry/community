@@ -31,7 +31,7 @@ Example Use Cases:
 
 Existing GenAI observability projects are driven independently by individual vendors which don't have a common space to collaborate on common instrumentation libraries.
 
-[OpenLLMetry](https://github.com/traceloop/openllmetry) project was created with the intention [to create space under CNCF](https://github.com/cncf/sandbox/issues/67) and gave a start to OTel [LLM Semantic Convention](https://github.com/open-telemetry/community/blob/main/projects/llm-semconv.md) project.
+[OpenLLMetry](https://github.com/traceloop/openllmetry) project was created with the intention [to create space under CNCF](https://github.com/cncf/sandbox/issues/67) and gave a start to OTel [LLM Semantic Convention](https://github.com/open-telemetry/community/pull/1928) project.
 
 GenAI Instrumentation libraries like OpenLLMetry, OpenLIT, LangTrace and other provides general-purpose OTel instrumentations for GenAI clients, frameworks and related components.
 
@@ -49,7 +49,7 @@ GenAI observability project is a new OTel cross-cutting SIG that intends to prov
 
 It includes:
 
-- LLM Semantic Conventions
+- GenAI Semantic Conventions
 - Instrumentations for GenAI client libraries, frameworks, or other components.
 
 The eventual goal is to contribute instrumentation libraries to upstream components or to otel-contrib repos when upstream contributions are not possible.
@@ -71,7 +71,7 @@ As a result we should have feature parity with the instrumentations of existing 
 instrumentation libraries that all vendors can depend upon.
 
 Long term:
-- Implement instrumentations for GenAI orchestrators and LLM frameworks for popular libraries in different languages
+- Implement instrumentations for GenAI orchestrators and GenAI frameworks for popular libraries in different languages
 - Evolve GenAI and other relevant conventions (DB) to cover complex multi-step scenarios such as RAG
 - Propose mature instrumentations to upstream libraries/frameworks
 
@@ -79,7 +79,7 @@ Long term:
 
 The initial set of approvers for each language must include:
 
-- representatives of at least 2 different observability vendors that are active members of OTel LLM SemConv WG
+- representatives of at least 2 different observability vendors that are active members of OTel GenAI SemConv WG
 - at least one existing approver or maintainer of the contrib, instrumentation or core OTel repo in the corresponding language
 
 **Project Leads:**
@@ -93,39 +93,31 @@ The initial set of approvers for each language must include:
 - TBD
 
 **Engineers:**
-- Python
-  - maintainers:
+
+- **initial** maintainers (based on the existing membership in the corresponding repos)
+  - Python
     - @lzchen
-    - TBD
-  - approvers/codeowners:
-    - @drewby
-    - @karthikscale3
-    - @nirga
     - @xrmx
-  - contributors:
-    - @AmanAgarwal041
-    - @alizenhom
-    - @galkleinman
-    - @gyliu513
-    - @lmolkova
-    - @patcher9
-    - *looking for more contributors*
-- JavaScript
-  - maintainers:
-    - @trentm
     - TBD
-  - approvers/codeowners:
-    - @drewby
-    - @karthikscale3
-    - @nirga
-    - *looking for existing OTel JS approvers/maintainers for general JS & OTel feedback*
-  - contributors:
-    - @AmanAgarwal041
-    - @alizenhom
-    - @galkleinman
-    - @patcher9
-    - *looking for more contributors*
-- Other languages: not in the scope (yet).
+  - JavaScript
+    - @trentm
+    - *looking for existing OTel JS maintainers for general JS & OTel feedback*
+    - TBD
+- **initial** JS and Python approvers/codeowners (based on LLM Semantic Convention project involvement):
+  - @drewby
+  - @karthikscale3
+  - @nirga
+- contributors:
+  - @AmanAgarwal041 (JS & Python)
+  - @alizenhom (JS & Python)
+  - @codefromthecrypt (JS & Python)
+  - @galkleinman (JS & Python)
+  - @gyliu513 (JS & Python)
+  - @lmolkova (Python)
+  - @patcher9 (JS & Python)
+  - *looking for more contributors*
+
+Other languages are not in the scope (yet).
 
 ## Meeting Times
 
@@ -134,7 +126,7 @@ To be determined (will run a vote).
 We'll use LLM Semantic Convention meetings until more suitable time for new participants is determined:
 
 - Week 1: Wednesdays at 10 AM PST
-- Week 2: Wednesdays at 11 PM PST
+- Week 2: Thursday 14:00 UTC+8
 
 ### Meeting Links
 
@@ -153,7 +145,7 @@ We'll use LLM Semantic Convention meetings until more suitable time for new part
   - Stable conventions: Date TBD
 - Official OTel Instrumentation libraries for popular clients in JS and Python:
   - OpenAI instrumentation library shipped: Nov 2024
-  - Other popular client instrumentations supported by OpenLLMetry: Apr 2025
+  - Other popular client instrumentations supported by GenAI observability vendors: Apr 2025
 
 ## Labels
 
