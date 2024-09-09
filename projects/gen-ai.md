@@ -94,7 +94,7 @@ The initial set of approvers for each language must include:
 
 **Engineers:**
 
-- **initial** maintainers (based on the existing membership in the corresponding repos)
+- **initial** maintainers (based on the existing membership in the corresponding repo)
   - Python
     - @lzchen
     - @xrmx
@@ -103,7 +103,7 @@ The initial set of approvers for each language must include:
     - @trentm
     - *looking for existing OTel JS maintainers for general JS & OTel feedback*
     - TBD
-- **initial** JS and Python approvers/codeowners (based on LLM Semantic Convention project involvement):
+- **initial** JS and Python GenAI component/code owners (based on LLM Semantic Convention project involvement):
   - @drewby
   - @karthikscale3
   - @nirga
