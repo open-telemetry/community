@@ -12,6 +12,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [AWS account](#aws-account)
   * [Equinix bare metal](#equinix-bare-metal)
   * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
+  * [Netlify](#netlify)
   * [Oracle Cloud account](#oracle-cloud-account)
 - [Artifact repositories](#artifact-repositories)
   * [NuGet OpenTelemetry organization](#nuget-opentelemetry-organization)
@@ -108,6 +109,14 @@ Link: https://grafana.com/orgs/otelsigsecurity
 - Admins: Juraci Paixão Kröhling @jpkrohling & Armin Ruech @arminru
 
 The GitHub organization `open-telemetry-private` also exists for this purpose.
+
+### Netlify
+
+Link: https://app.netlify.com/login
+
+- Used to manage domain names under opentelemetry.io
+- Used to publish https://opentelemetry.io
+- Admins: [@austinlparker](https://github.com/austinlparker), [@svrnm](https://github.com/svrnm), [@chalin](https://github.com/chalin)
 
 ### Oracle Cloud account
 
