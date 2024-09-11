@@ -58,15 +58,7 @@ python app.py owner/repo --test-issue ISSUE_NUMBER
 The script:
 
 1. Fetches open issues from the specified repository.
-2. For each issue with a "triage:deciding:" label:
+2. For each issue with a "triage:deciding:*" label:
    - Retrieves all events and comments associated with the issue.
-   - Checks if the issue has had any meaningful activity in the last two weeks.
-   - If no recent activity is found and other criteria are met, adds the "triage:followup" label.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+   - Checks if the issue has had any meaningful activity since the last triage occurred.
+   - If recent activity is found and other criteria are met, adds the "triage:followup" label.
