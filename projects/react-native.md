@@ -29,26 +29,19 @@ to capture.
 developer to be able to gather this telemetry from the native layer and be able to connect it with a particular operation
 or view rendered on the JS layer to uncover performance issues.
 
-### Goals, objectives, and requirements
-
-The goal of this project is to establish a SIG that will build on the existing OTel Javascript packages to provide
-instrumentation for app developers that build in React Native. As OpenTelemetry grows to capture telemetry from new
-systems and types of applications, it should provide tooling for these types of hybrid mobile applications that are
-not directly built in the Android and iOS ecosystems.
-
-React Native presents a unique scenario for OpenTelemetry: a seemingly-familiar ecosystem, written in Javascript, with
-tooling that might not be appropriate for the core OTel JavaScript packages. A separate SIG could decide the proper way to
-build on top of the Javascript repos to provide mobile-specific instrumentation.
-
 ## Deliverables
 
 - Add a React Native example application to the opentelemetry-demo repo (to evolve as further deliverables are completed)
-- A strategy for re-using packages from the JS repos in a RN environment
-  - an implementation of this strategy for the existing JS tracer provider and fetch/xhr instrumentations
+- Updates to the existing Web Tracer Provider and fetch/xhr instrumentation packages so that they can be used reliably in 
+a RN environment
+  - In addition, a strategy should be developed for how to deal with similar packages going forward, questions to answer
+include: How do we name things so that it's clear when they can be used in either a web or RN app vs. just web? How can
+we still re-use most of a package's code when a small section relies on a Web only API? What testing can be added to
+these packages to detect breaking changes for RN apps
 - React-friendly wrappers over the existing OpenTelemetry JS API (using hooks, components, etc.)
 - JS Wrappers over the OpenTelemetry Android and Swift SDKs to allow them to be used in a RN app as Native Modules
 - A resource detector to automatically pull mobile client information for RN apps
-- Instrumentation libraries for popular React Native frameworks (Redux, React Navigation)
+- Instrumentation libraries for popular React Native frameworks (Redux, React Navigation, etc.)
 
 ## Staffing
 
