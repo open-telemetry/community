@@ -14,9 +14,20 @@ challenges and make it easier for React Native developers to instrument their ap
 ### Current challenges
 
 - React Native developers do not have working OpenTelemetry instrumentation examples for mobile apps.
+  - For example the [OpenTelemetry Demo](https://github.com/open-telemetry/opentelemetry-demo) does not currently 
+include a mobile app
 - The existing OTel Javascript packages can be used for React Native, but require workarounds that are subject to change
   with minor version updates.
-- The OTel Javascript packages leave gaps for telemetry coming from mobile devices, which React Native developers wish to capture.
+  - For example the Performance API is used in the opentelemetry-sdk-trace-web package as well as
+opentelemetry-instrumentation-fetch. This API has broad support across modern browsers, so it makes sense for the web
+packages to rely on it, however it is not implemented in React Native environments so developers there either need to
+polyfill it or carefully use the web packages in such a way that calls to this API are avoided. A small change to any
+web packages that used this API in a new spot could be breaking for instrumented RN apps.
+- The OTel Javascript packages leave gaps for telemetry coming from mobile devices, which React Native developers wish
+to capture.
+  - For example the OpenTelemetry Android SDK provides ANR detection as a feature. It would be useful for a React Native
+developer to be able to gather this telemetry from the native layer and be able to connect it with a particular operation
+or view rendered on the JS layer to uncover performance issues.
 
 ### Goals, objectives, and requirements
 
