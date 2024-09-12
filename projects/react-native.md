@@ -76,4 +76,7 @@ TBD
 
 ## SIG Meetings and Other Info
 
-TBD
+Rather than having a dedicated SIG meeting contributors to this project should attend the existing JS SIG meeting and
+provide periodic updates on progress. Due to the work being very language specific to JS this will help to keep the
+relevant approvers and maintainers in the loop on upcoming pull requests for deliverables. Other relevant SIGs (client-side,
+Android, Swift, etc.) should also be kept informed on relevant work as needed.
