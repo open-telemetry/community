@@ -50,12 +50,15 @@ and [Proto definitions](https://github.com/open-telemetry/opentelemetry-proto).
 trusted collaborators of the Technical Committee on Project specs and related
 repositories:
 
+- [Alex Boten](https://github.com/codeboten), Honeycomb
 - [Christian Neumüller](https://github.com/Oberon00), Dynatrace
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace
+- [David Ashpole](https://github.com/dashpole), Google
 - [Robert Pająk](https://github.com/pellared), Splunk
 - [Severin Neumann](https://github.com/svrnm), Cisco
 - [Ted Young](https://github.com/tedsuo), Lightstep
+- [Tristan Sloughter](https://github.com/tsloughter), MyDecisiveAI
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
 Emeritus sponsors (formerly approvers):
