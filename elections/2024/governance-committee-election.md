@@ -18,7 +18,7 @@ We highly encourage participation in this election cycle to ensure that the comm
 # TL;DR
 
 * If you've been nominated or are willing to nominate yourself: check the [charter document](../../governance-charter.md) and confirm you are ready for the commitment. Make sure to provide all necessary information before 11 October 2024 23:59 UTC
-* If you are an active community member: confirm that you are on the voters list (see [election announcements issue](https://github.com/open-telemetry/community/issues/{issue_number})) or register yourself before 18 October 2024 23:59 UTC.
+* If you are an active community member: confirm that you are on the voters list (see [election announcements issue](https://github.com/open-telemetry/community/issues/2329)) or register yourself before 18 October 2024 23:59 UTC.
 * Vote between 21 October 2024 00:00 UTC and 23 October 2024 23:59 UTC via the [voting link](https://vote.heliosvoting.org/helios/elections/176e7ca8-647d-11ef-9b9a-2a30e2a223da/view)
 * Keep being awesome and contributing to the project!
 
@@ -40,14 +40,14 @@ Four people must be elected in this election, each with two-year terms. Note tha
 
 # Voting process
 
-Anyone can track the 2024 election process via [this GitHub issue](https://github.com/open-telemetry/community/issues/{issue_number}). This year's election committee consists of governance committee members Austin Parker, Daniel Gomez Blanco, and Juraci Paixão Kröhling. None of whom are up for reelection this year.
+Anyone can track the 2024 election process via [this GitHub issue](https://github.com/open-telemetry/community/issues/2329). This year's election committee consists of governance committee members Austin Parker, Daniel Gomez Blanco, and Juraci Paixão Kröhling. None of whom are up for reelection this year.
 We strive for transparency in the election process and hold the community's interests as our priority. In particular, we will ensure that all documents and assets related to the 2024 election process are public, and we will attempt to record and distribute notes for any meetings held as part of this process.
 
 For the 2024 elections, [Helios Voting](https://vote.heliosvoting.org/) was chosen as it's a hosted solution with cryptographic guarantees that no GC members can meddle with the results. 
 
 Helios Voting also allows us to add GitHub handles to the list of voters in addition to email addresses. We need this, as we count contributions based on GitHub contributions and do not always have the contributor's actual email address. The disadvantage of Helios Voting is that it does not support ranked voting.
 
-**Note**: there is a current [issue](https://github.com/benadida/helios-server/issues/362) with capitalised GitHub handles and our automatic voter registration process on Helios Voting. As an eligible voter, if your GitHub handle contains uppercase characters, and you cannot see yourself as a voter on Helios Voting, please reach out to the election committee at  [cncf-opentelemetry-governance@lists.cncf.io](mailto:cncf-opentelemetry-governance@lists.cncf.io).
+**Note**: there is a current [issue](https://github.com/benadida/helios-server/issues/362) with capitalised GitHub handles and our automatic voter registration process on Helios Voting. We have taken steps to mitigate this issue. However, as an eligible voter, if your GitHub handle contains uppercase characters, and you cannot see yourself as a voter on Helios Voting, please reach out to the election committee at  [cncf-opentelemetry-governance@lists.cncf.io](mailto:cncf-opentelemetry-governance@lists.cncf.io).
 
 The governance committee also evaluated [Condorcet Internet Voting Service](https://civs1.civs.us/) and [Elekto](https://elekto.dev/) but found that they had limitations making Helios Voting a better alternative. Specifically, CIVS [does not have GitHub integration](https://github.com/andrewcmyers/civs/issues/11) and Elekto is beta software with limited contributions, not recommended for production use. We welcome other suggestions for the future.
 
@@ -69,7 +69,7 @@ The Governance Committee or appointed people will contact every nominee directly
 
 # Voter Eligibility
 
-All [members of standing](../../governance-charter.md#members-of-standing) will automatically be eligible to vote. To confirm your eligibility status, see the [election announcements issue](https://github.com/open-telemetry/community/issues/{issue_number}}). If your code contributions do not meet eligibility requirements, but you believe your non-code contributions should make you eligible to vote, you can request an exemption by submitting an exemption [request form](https://forms.gle/LBvyRpNwZvqcJxUbA).
+All [members of standing](../../governance-charter.md#members-of-standing) will automatically be eligible to vote. To confirm your eligibility status, see the [election announcements issue](https://github.com/open-telemetry/community/issues/2329). If your code contributions do not meet eligibility requirements, but you believe your non-code contributions should make you eligible to vote, you can request an exemption by submitting an exemption [request form](https://forms.gle/LBvyRpNwZvqcJxUbA).
 
 One of two options will be available in the form to prove eligibility:
 
