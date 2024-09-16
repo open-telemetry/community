@@ -331,7 +331,7 @@ are met:
 - All TC members have approved the pull request or a majority of TC members have
   approved the pull request and no other TC member has objected by requesting
   changes on the pull request. In the case that all TC members have not given
-  approval, the pull request should stay open for a minimum of 5 days before
+  approval, the pull request should stay open for a minimum of 10 days before
   merging.
 
 The nominee is considered a specification sponsor after the pull request is
