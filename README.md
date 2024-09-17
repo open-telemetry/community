@@ -9,7 +9,7 @@ Table of Contents
 * [Governing Bodies](#governing-bodies)
 * [Areas of Interest](#areas-of-interest)
 * [Communication](#communication)
-  * [Discussions](#discussions)
+  * [Slack](#slack)
   * [Calendar](#calendar)
   * [Mailing Lists](#mailing-lists)
   * [Media](#media)
