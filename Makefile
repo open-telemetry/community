@@ -17,7 +17,7 @@ markdown-link-check:
 	@if ! npm ls markdown-link-check; then npm install; fi
 	find . -type f \
 		-name '*.md' \
-		-not -path './node_modules/*'
+		-not -path './node_modules/*' \
 		-not -path './elections/*/governance-committee-election.md' \
 		-not -path './elections/*/governance-committee-candidates.md' \
 		| xargs .github/scripts/markdown-link-check-with-retry.sh

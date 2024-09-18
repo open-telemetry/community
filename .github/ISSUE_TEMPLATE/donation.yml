@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Welcome to the OpenTelemetry project! 👋🎉
-        Please review the [Donation Guidelines](https://github.com/open-telemetry/community/blob/main/CONTRIBUTING.md#donations) before submitting this form.
+        Please review the [Donation Guidelines](https://github.com/open-telemetry/community/blob/main/guides/contributor/donations.md) before submitting this form.
   - type: textarea
     id: description
     attributes:

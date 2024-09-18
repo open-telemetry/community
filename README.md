@@ -9,7 +9,7 @@ Table of Contents
 * [Governing Bodies](#governing-bodies)
 * [Areas of Interest](#areas-of-interest)
 * [Communication](#communication)
-  * [Discussions](#discussions)
+  * [Slack](#slack)
   * [Calendar](#calendar)
   * [Mailing Lists](#mailing-lists)
   * [Media](#media)
@@ -54,9 +54,7 @@ interested parties and form new special interest groups.
 
 ## Communication
 
-### Discussions
-
-We use [GitHub discussions](https://github.com/open-telemetry/community/discussions) for most communications. Please join us there!
+### Slack
 
 For those who are brand new to OpenTelemetry and want to chat or get redirected to the appropriate place for a specific question, feel free to join [the CNCF OpenTelemetry Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q). If you are new, you can create a CNCF Slack account [here](https://slack.cncf.io/).
 
