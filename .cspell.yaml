@@ -18,6 +18,7 @@ ignoreRegExpList:
 words:
     - Ashpole
     - Collibra
+    - Coralogix
     - DASD
     - Docu
     - datadog
@@ -36,6 +37,7 @@ words:
     - jemmic
     - keptn
     - kubecon
+    - k8sclusterreceiver
     - liatrio
     - lightstep
     - logz
@@ -171,6 +173,7 @@ words:
     - otep
     - otlp
     - outreachy
+    - Prometheus
     - paixão
     - pająk
     - passcodes
