@@ -35,7 +35,7 @@ following:
 - Logo/landing page/marketing.
 - GitHub repository management, membership, and hosting.
 - Maintain relationships with CNCF. For instance, creating [documents describing
-  the project](https://github.com/cncf/toc/blob/main/proposals/sandbox/opentelemetry.adoc)
+  the project](https://github.com/cncf/toc/blob/main/projects/open-telemetry/otel-sandbox-proposal.adoc)
 - Define, evolve, and defend the **vision, values, mission, and scope** of the
   project - to establish and maintain the soul of OpenTelemetry.
 - Define and prioritize the roadmap for OpenTelemetry, as defined in the project
