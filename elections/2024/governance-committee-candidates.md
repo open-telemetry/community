@@ -6,6 +6,7 @@ In alphabetical order:
 
 - [Candidate Name](#candidate-name)
 - [Marylia Gutierrez](#marylia-gutierrez)
+- [Morgan McLean](#morgan-mclean)
 
 ---
 
@@ -42,5 +43,24 @@ I am committed to ensuring OpenTelemetry remains a thriving, inclusive project, 
 
 Thank you for your support!
 
+---
+
+### Morgan McLean
+![morgan-mclean](https://github.com/user-attachments/assets/62afbaec-4af1-4cf4-8287-ae19d8ce8528)
+
+- Company: [Splunk](https://www.splunk.com/en_us/products/observability.html) / Cisco
+- GitHub: [mtwo](https://github.com/mtwo)
+
+Morgan is one of the co-founders of OpenTelemetry and W3C Trace Context, and he currently serves on the Governance Committee. He was instrumental in the creation of OpenTelemetry and assembling and focusing its earliest contributors, and his work continues to have a broad impact on the project:
+
+- Oversaw the final drives towards the **beta and GA releases of both traces and metrics**
+- **Proposed and co-led the [addition of logs as a new OpenTelemetry signal]([url](https://www.youtube.com/watch?v=a1KZwfLr2PQ&t=26s))**
+- **Created the profiling SIG** to add profiles as a new OpenTelemetry signal, brought new members into the community to lead it, and managed the acceptance of the Elastic profiling agent to OpenTelemetry
+- **Runs the weekly maintainers check-in** and contributes to various SIGs, including profiles and .Net
+- **Created the OpenTelemetry Observatory** at Kubecon, which serves as a space for contributors to work together in person, and for new people to learn more about the project and get introduced to the community
+
+Morgan’s work on the governance committee has focused on everything from moderating and participating in technical discussions, to community outreach and organizing the project’s presence at Kubecon, driving the project towards release milestones, and more. If re-elected, he will focus on the release of profiling as a first-class signal, the implementation of OpAMP agent managment support within the Collector and other OpenTelemetry components, and making the getting started process as simple as possible.
+
+At Splunk, Morgan is responsible for much of the Observability Cloud platform, where he oversees Splunk's contributions to and adoption of OpenTelemetry. He previously worked on high-scale observability systems at Google, where he co-created and grew OpenCensus, OpenTelemetry, and the W3C TraceContext specification, and brought partners like Microsoft and Dynatrace into these projects. Prior to that he developed and operated high-scale e-commerce systems at Microsoft and developed high-performance client code at Microsoft and BioWare.
 
 ---
