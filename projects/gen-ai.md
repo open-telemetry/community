@@ -52,11 +52,18 @@ It includes:
 - GenAI Semantic Conventions
 - Instrumentations for GenAI client libraries, frameworks, or other components.
 
-The eventual goal is to contribute instrumentation libraries to upstream components or to otel-contrib repos when upstream contributions are not possible.
+The eventual goal is to contribute instrumentation libraries to upstream components. When it's not possible or when libraries need some time to mature,
+these libraries will evolve in contrib repositories.
 
-During initial development and experimentation, we may need to release libraries more frequently than it's possible for contrib and then may temporarily host instrumentation libraries in a `opentelemetry-{language}-genai` repository(ies).
+JS contrib provides component-ownership model with high level of [autonomy](https://github.com/open-telemetry/opentelemetry-js-contrib/blob/main/CONTRIBUTING.md#component-ownership).
+We can explore if this can be applied to Python.
 
-This would help GenAI observability vendors that will depend on these libraries to patch issues and adapt to external changes.
+> [!NOTE]
+> The release cadence of contrib repo needs to support releasing components relatively frequently to
+> patch issues and adapt to upstream changes so that GenAI observability vendors could depend on them.
+
+Python contrib repo is going to support [per-package release](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/2875) soon.
+JS contrib release is automated with Release Please - TBD.
 
 ## Deliverables
 
@@ -77,10 +84,9 @@ Long term:
 
 ## Staffing / Help Wanted
 
-The initial set of approvers for each language must include:
+The development will start in the OTel contrib repositories and/or in upstream libraries following ownership model that exist in this repo.
 
-- representatives of at least 2 different observability vendors that are active members of OTel GenAI SemConv WG
-- at least one existing approver or maintainer of the contrib, instrumentation or core OTel repo in the corresponding language
+Some of the repositories (such as opentelemetry-js-contrib) provide a lot of autonomy to the [component owners](https://github.com/open-telemetry/opentelemetry-js-contrib/blob/main/CONTRIBUTING.md#component-ownership).
 
 **Project Leads:**
 
@@ -93,28 +99,19 @@ The initial set of approvers for each language must include:
 - TBD
 
 **Engineers:**
-
-- **initial** maintainers (based on the existing membership in the corresponding repo)
-  - Python
-    - @lzchen
-    - @xrmx
-    - TBD
-  - JavaScript
-    - @trentm
-    - *looking for existing OTel JS maintainers for general JS & OTel feedback*
-    - TBD
-- **initial** JS and Python GenAI component/code owners (based on LLM Semantic Convention project involvement):
-  - @drewby
-  - @karthikscale3
-  - @nirga
-- contributors:
   - @AmanAgarwal041 (JS & Python)
   - @alizenhom (JS & Python)
   - @codefromthecrypt (JS & Python)
+  - @drewby (JS & Python)
   - @galkleinman (JS & Python)
   - @gyliu513 (JS & Python)
+  - @karthikscale3 (JS & Python)
   - @lmolkova (Python)
+  - @lzchen (Python)
+  - @nirga (JS & Python)
   - @patcher9 (JS & Python)
+  - @trentm (JS)
+  - @xrmx (Python)
   - *looking for more contributors*
 
 Other languages are not in the scope (yet).
