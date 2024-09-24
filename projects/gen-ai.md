@@ -99,31 +99,33 @@ Some of the repositories (such as opentelemetry-js-contrib) provide a lot of aut
 - TBD
 
 **Engineers:**
-  - @AmanAgarwal041 (JS & Python)
-  - @alizenhom (JS & Python)
-  - @codefromthecrypt (JS & Python)
-  - @drewby (JS & Python)
-  - @galkleinman (JS & Python)
-  - @gyliu513 (JS & Python)
-  - @karthikscale3 (JS & Python)
-  - @lmolkova (Python)
-  - @lzchen (Python)
-  - @nirga (JS & Python)
-  - @patcher9 (JS & Python)
-  - @trentm (JS)
-  - @xrmx (Python)
-  - *looking for more contributors*
+
+| Alias | Language | Company/Project | Time commitment |
+| ----- | -------- | ----------------|---------------- |
+| @AmanAgarwal041 | JS & Python | OpenLIT | |
+| @alizenhom  | JS & Python | Langtrace | |
+| @codefromthecrypt | JS & Python | Elastic | |
+| @drewby  | JS & Python | Microsoft | |
+| @galkleinman | JS & Python | Traceloop | |
+| @gyliu513 | JS & Python | IBM | |
+| @karthikscale3 | JS & Python | Langtrace | |
+| @lmolkova | Python | Microsoft | | 16 hours/week |
+| @lzchen | Python | Microsoft |  | |
+| @nirga  | JS & Python | Traceloop | |
+| @patcher9 | JS & Python | OpenLIT | |
+| @trentm | JS | Elastic | |
+| @xrmx | Python | Elastic | |
+
+*looking for more contributors*
 
 Other languages are not in the scope (yet).
 
 ## Meeting Times
 
-To be determined (will run a vote).
+We'll use GenAI LLM Semantic Convention meetings until more suitable time for new participants is determined:
 
-We'll use LLM Semantic Convention meetings until more suitable time for new participants is determined:
-
-- Week 1: Wednesdays at 10 AM PST
-- Week 2: Thursday 14:00 UTC+8
+- **Every week**: Wednesdays at 10 AM PST - Looking for alternative time to accommodate more time zones - https://strawpoll.com/e6Z2ApEKXgN
+- **Every other week**: Thursday 14:00 UTC+8
 
 ### Meeting Links
 
@@ -155,6 +157,7 @@ We'll use LLM Semantic Convention meetings until more suitable time for new part
 - PR: [Add LLM semantic conventions #639](https://github.com/open-telemetry/semantic-conventions/pull/639) - Closed/Replaced with 825
 - PR: [[WIP] Add Initial Support for Instrumenting OpenAI Python Library - Chat Completion Create](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/2759)
 - PR: [[WIP] Add Initial Support for Instrumenting OpenAI JS Library - Chat Completion Create](https://github.com/open-telemetry/opentelemetry-js-contrib/pull/2402)
+
 ## Project Board
 
 * Project Board: [LLM Client Semantic Conventions](https://github.com/orgs/open-telemetry/projects/82)
