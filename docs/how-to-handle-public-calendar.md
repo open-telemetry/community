@@ -53,6 +53,8 @@ The following details need to be set properly:
   - A link to the meeting notes
     - The meeting notes should be owned by the shared Governance Committee Google account.
       Having a document created can be requested from the GC via opening an issue in this repository.
+      The document permissions should be set so that anyone with the link can edit.
+      Under advanced permissions, "Editors can change permissions and share" should be unchecked.
 - Invited attendees (see below)
 - Guest permissions:
   - Modify event: no
