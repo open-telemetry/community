@@ -77,6 +77,7 @@ and it should be relatively short we only need to update conformance to the spec
 - @rogercoll (Elastic)
 - @jaronoff97 (Lightstep)
 - @povilasv (Coralogix)
+- @jinja2 (Splunk/Cisco)
 - ...
 
 **Sponsors:**
