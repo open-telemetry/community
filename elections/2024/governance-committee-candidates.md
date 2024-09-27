@@ -23,7 +23,7 @@ Short bio or reasoning to join the Governance Committee (no more than a short pa
 
 ### Adriana Villela
 
-![Adriana Villela](static/Adriana%20Villela%20-%202024-06-20%20-%20smaller.jpeg)
+![Adriana Villela](static/Adriana%20Villela%20-%202024-06-20%20-%20smaller.jpeg =x300)
 
 - Company: [ServiceNow](https://servicenow.com)
 - GitHub: [avillela](https://github.com/avillela)
