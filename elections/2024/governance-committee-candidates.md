@@ -5,6 +5,7 @@
 In alphabetical order:
 
 - [Candidate Name](#candidate-name)
+- [Adriana Villela](#adriana-villela)
 - [Marylia Gutierrez](#marylia-gutierrez)
 - [Morgan McLean](#morgan-mclean)
 
@@ -17,6 +18,15 @@ In alphabetical order:
 - GitHub: [candidate_github_handle](https://github.com/candidate_github_handle)
 
 Short bio or reasoning to join the Governance Committee (no more than a short paragraph)
+
+---
+
+### Adriana Villela
+
+- Company: [ServiceNow](https://servicenow.com)
+- GitHub: [avillela](https://github.com/avillela)
+
+I'm Adriana Villela, and I have been involved with OpenTelemetry since 2022. I am one of the maintainers of the OTel End User SIG, and I am also a CNCF Ambassador. I have been an early proponent of OpenTelemetry, since my days of working as a manager of the Observability Practices team at Tucows, where I convinced the entire organization of the importance of OpenTelemetry adoption before traces even went GA. I am a firm believer of this project and strive to contribute wherever I can - whether it's finding speakers for the End User SIG's [OTel in Practice](https://youtube.com/playlist?list=PLVYDBkQ1TdyxKgdGE4ThYLkNRCuLLYy9x&si=T6BMcqg09zik89OR) and [OTel Q&A](https://youtube.com/playlist?list=PLVYDBkQ1TdywIl9xKEo5_u7zlwY38dW43&si=aS53NEobEZ-f-HfK), collaborating with other SIGs to gather [user feedback](https://github.com/open-telemetry/sig-end-user/tree/main/end-user-surveysx), [documentation contributions](https://github.com/search?q=org%3Aopen-telemetry+avillela&type=pullrequests) (e.g. helping to make the OTel Operator more accessible), blog posts on the OTel blog, [my Medium blog](https://adri-v.medium.com/list/opentelemetry-92f897d8b31e), [my podcast])(https://youtube.com/@geekingout_pod), and [giving talks at conferences](https://youtube.com/playlist?list=PL2n5EpcOFZftDkMOL18RVKETHWTrvcKOD&si=mWd1-QNZWLIUoxFv) like KubeCon and Open Source Summit. I am committed to the OpenTelemetry project. One of my favourite aspects of the project is the community. Members are thoughtful, polite, and encouraging, providing a safe space to contribute, especially when it comes to feedback on things like pull requests, which is why I am always inspired to keep on contributing. I want to help keep that thoughtfulness and psychological safety alive.
 
 ---
 
