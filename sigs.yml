@@ -46,16 +46,16 @@
     gcLiaison:
     - name: Trask Stalnaker
       github: trask
-  - name: 'Specification: Events'
-    meeting: Friday at 10:00 PT
+  - name: 'Specification: Logs'
+    meeting: Tuesday at 10:00 PT
     notes:
       type: gDoc
       value: 1BKjQWP32FXL9g1cGbyj7DMXV1Uq_RL8_78rWaMBhN0A
     chat:
       - type: slack
-        name: '#otel-event'
+        name: '#otel-spec-logs'
         id: C062HUREGUV
-    invites: calendar-spec-events
+    invites: calendar-spec-logs
     sponsors:
       - name: Ted Young
         github: tedsuo
