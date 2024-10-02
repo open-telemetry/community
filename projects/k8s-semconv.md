@@ -87,6 +87,8 @@ and it should be relatively short we only need to update conformance to the spec
 
 **GC liaison:**
 
+- TBA
+
 **SemConv Maintainers:**
 
 - @open-telemetry/semconv-k8s-approvers
@@ -102,7 +104,7 @@ and it should be relatively short we only need to update conformance to the spec
 
 ## Project Board
 
-TBA
+[K8s SemConv SIG project board](https://github.com/orgs/open-telemetry/projects/114)
 
 ## SIG Meetings and Other Info
 
