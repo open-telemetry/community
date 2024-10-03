@@ -153,11 +153,11 @@
     meeting: Every other Wednesday at 08:00 PT
     notes:
       type: gDoc
-      value: TBA
+      value: 17DqFVlLvO43neXXTwlSd1zcKjSRA8P3d0Y444QNwUTQ
     chat:
       - type: slack
         name: '#otel-k8s-semconv-sig'
-        id: TBA
+        id: C07Q1L0FGKX
     invites: calendar-semconv
     sponsors:
       - name: Josh Suereth
