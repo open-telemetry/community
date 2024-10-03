@@ -87,6 +87,8 @@ and it should be relatively short we only need to update conformance to the spec
 
 **GC liaison:**
 
+- TBA
+
 **SemConv Maintainers:**
 
 - @open-telemetry/semconv-k8s-approvers
@@ -102,12 +104,12 @@ and it should be relatively short we only need to update conformance to the spec
 
 ## Project Board
 
-TBA
+[K8s SemConv SIG project board](https://github.com/orgs/open-telemetry/projects/114)
 
 ## SIG Meetings and Other Info
 
 *meeting time*: biweekly on Wednesday 8:00am PDT (+1 week offset from the Prometheus WG)
 
-*meeting-notes*: (TBA)
+*meeting-notes*: [Agenda](https://docs.google.com/document/d/17DqFVlLvO43neXXTwlSd1zcKjSRA8P3d0Y444QNwUTQ)
 
-*cncf-slack*: For async conversation please use #otel-k8s-semconv-sig slack channel from official CNCF slack workspace.
+*cncf-slack*: For async conversation please use [#otel-k8s-semconv-sig](https://cloud-native.slack.com/archives/C07Q1L0FGKX) slack channel from official CNCF slack workspace.
