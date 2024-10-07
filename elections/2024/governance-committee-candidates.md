@@ -109,7 +109,7 @@ If elected, I want to focus on several areas, including:
 
 - Improving the contributor experience by recognizing and rewarding contributors, clearly defining how they can get to be a formal role (triagers, approvers, maintainers...) and ensuring our community grows in a healthy way 
 - Ensuring maintainers have the tools they need to make the hard decisions, such as having decision processes that work and data about how users use OpenTelemetry in the wild  
-- Enable vendors, end user companies and other large organizations to contribute in a predictable way to OpenTelemetry with a better process to establish high-level 'project goals'    
+- Enabling vendors, end user companies and other large organizations to contribute in a predictable way to OpenTelemetry with a better process to establish high-level 'project goals'    
 - Continuing the journey of OpenTelemetry into an ecosystem, finding further avenues for collaboration with other projects, strengthening existing partnerships, and encouraging experimentation and new ideas.
 
 ---
