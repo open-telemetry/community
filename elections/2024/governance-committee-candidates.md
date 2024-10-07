@@ -6,6 +6,7 @@ In alphabetical order:
 
 - [Candidate Name](#candidate-name)
 - [Adriana Villela](#adriana-villela)
+- [Jamie Danielson](#jamie-danielson)
 - [Marylia Gutierrez](#marylia-gutierrez)
 - [Morgan McLean](#morgan-mclean)
 
@@ -29,6 +30,23 @@ Short bio or reasoning to join the Governance Committee (no more than a short pa
 - GitHub: [avillela](https://github.com/avillela)
 
 I'm Adriana Villela, and I have been involved with OpenTelemetry since 2022. I am one of the maintainers of the OTel End User SIG, and I am also a CNCF Ambassador. I have been an early proponent of OpenTelemetry, since my days of working as a manager of the Observability Practices team at Tucows, where I convinced the entire organization of the importance of OpenTelemetry adoption before traces even went GA. I am a firm believer of this project and strive to contribute wherever I can - whether it's finding speakers for the End User SIG's [OTel in Practice](https://youtube.com/playlist?list=PLVYDBkQ1TdyxKgdGE4ThYLkNRCuLLYy9x&si=T6BMcqg09zik89OR) and [OTel Q&A](https://youtube.com/playlist?list=PLVYDBkQ1TdywIl9xKEo5_u7zlwY38dW43&si=aS53NEobEZ-f-HfK), collaborating with other SIGs to gather [user feedback](https://github.com/open-telemetry/sig-end-user/tree/main/end-user-surveysx), [documentation contributions](https://github.com/search?q=org%3Aopen-telemetry+avillela&type=pullrequests) (e.g. helping to make the OTel Operator more accessible), blog posts on the OTel blog, [my Medium blog](https://adri-v.medium.com/list/opentelemetry-92f897d8b31e), [my podcast])(https://youtube.com/@geekingout_pod), and [giving talks at conferences](https://youtube.com/playlist?list=PL2n5EpcOFZftDkMOL18RVKETHWTrvcKOD&si=mWd1-QNZWLIUoxFv) like KubeCon and Open Source Summit. I am committed to the OpenTelemetry project. One of my favourite aspects of the project is the community. Members are thoughtful, polite, and encouraging, providing a safe space to contribute, especially when it comes to feedback on things like pull requests, which is why I am always inspired to keep on contributing. I want to help keep that thoughtfulness and psychological safety alive.
+
+---
+
+### Jamie Danielson
+
+![Jamie Danielson](static/jamie-danielson.png)
+
+- Company: [Honeycomb](https://www.honeycomb.io)
+- GitHub: [JamieDanielson](https://github.com/JamieDanielson)
+
+Hi there! I’m Jamie Danielson, a dedicated contributor to OpenTelemetry since 2021, when I started working at Honeycomb. My passion for community building, technical leadership, and project management, combined with my background as a maintainer of the JavaScript SIG, make me a strong candidate for the GC role.
+
+One of the main contributing factors for my [nomination to maintainer](https://github.com/open-telemetry/opentelemetry-js/pull/4824) was my ability to bring together folks and ideas from across the ecosystem and help prioritize work and drive things forward. One of the main factors that appeals to me about the [GC role](https://opentelemetry.io/blog/2024/otel-governance/) is the role I would play in project management. I have years of experience in managing projects and teams both in and out of tech. My background in accounting has helped hone my attention to detail, which is valuable when evaluating policies for a major project like OpenTelemetry.
+
+I regularly speak at conferences like KubeCon + CloudNativeCon to advocate for OpenTelemetry, fostering greater adoption and engagement. I’m committed to building a collaborative, respectful, and inclusive open source community, where people feel welcome and empowered to contribute.
+
+As a member of the GC, I would love to help set a steady pace of quality contributions, ensuring we continue to hit meaningful milestones and build a sustainable, future-proof project.
 
 ---
 
