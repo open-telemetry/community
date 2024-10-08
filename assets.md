@@ -18,6 +18,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [NuGet OpenTelemetry organization](#nuget-opentelemetry-organization)
   * [MyGet OpenTelemetryCNCF account](#myget-opentelemetrycncf-account)
   * [NPM OpenTelemetry Organization](#npm-opentelemetry-organization)
+  * [Crates](#crates)
   * [Maven](#maven)
   * [PyPI](#pypi)
 - [Communication channels](#communication-channels)
@@ -151,6 +152,12 @@ Link: https://www.npmjs.com/settings/opentelemetry/packages
 - Owner: Mayur Kale @mayurkale22
 - Admin: Daniel Dyla @dyladan
 - Member: Bogdan Drutu @bogdandrutu
+
+### Crates
+
+Link: https://crates.io/teams/github:open-telemetry:rust-publishers
+
+Owners: [@open-telemetry/rust-publishers](https://github.com/orgs/open-telemetry/teams/rust-publishers)
 
 ### Maven
 
