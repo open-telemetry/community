@@ -9,6 +9,8 @@ In alphabetical order:
 - [Jamie Danielson](#jamie-danielson)
 - [Marylia Gutierrez](#marylia-gutierrez)
 - [Morgan McLean](#morgan-mclean)
+- [Pablo Baeyens Fernández](#pablo-baeyens-fernández)
+- [Trask Stalnaker](#trask-stalnaker)
 
 ---
 
@@ -94,3 +96,44 @@ Morgan’s work on the governance committee has focused on everything from moder
 At Splunk, Morgan is responsible for much of the Observability Cloud platform, where he oversees Splunk's contributions to and adoption of OpenTelemetry. He previously worked on high-scale observability systems at Google, where he co-created and grew OpenCensus, OpenTelemetry, and the W3C TraceContext specification, and brought partners like Microsoft and Dynatrace into these projects. Prior to that he developed and operated high-scale e-commerce systems at Microsoft and developed high-performance client code at Microsoft and BioWare.
 
 ---
+
+### Pablo Baeyens Fernández
+
+![pablo-baeyens](static/pablo-baeyens.jpg)
+
+- Company: [Datadog](https://www.datadoghq.com/)
+- GitHub: [mx-psi](https://github.com/mx-psi)
+
+I am Pablo Baeyens (mx-psi), an OpenTelemetry maintainer and a contributor since 2020. You may know me from my work on the Collector SIG as a maintainer of core and contrib repositories, and my work on the System Semantic Conventions WG and the Contributor Experience SIG, which have made me one of the [top 10 contributors to the project](https://opentelemetry.devstats.cncf.io/d/9/developer-activity-counts-by-repository-group-table?orgId=1&var-period_name=Last%202%20years&var-metric=contributions&var-repogroup_name=All&var-country_name=All) in the last couple of years.
+
+If elected, I want to focus on several areas, including: 
+
+- Improving the contributor experience by recognizing and rewarding contributors, clearly defining how they can get to be a formal role (triagers, approvers, maintainers...) and ensuring our community grows in a healthy way 
+- Ensuring maintainers have the tools they need to make the hard decisions, such as having decision processes that work and data about how users use OpenTelemetry in the wild  
+- Enabling vendors, end user companies and other large organizations to contribute in a predictable way to OpenTelemetry with a better process to establish high-level 'project goals'    
+- Continuing the journey of OpenTelemetry into an ecosystem, finding further avenues for collaboration with other projects, strengthening existing partnerships, and encouraging experimentation and new ideas.
+
+---
+
+### Trask Stalnaker
+
+<img src="static/trask-stalnaker.png" alt="Trask Stalnaker" height="400" width="400">
+
+- Company: [Microsoft](https://www.microsoft.com/)
+- GitHub: [trask](https://github.com/trask)
+
+Hi! I have been in the observability space for over a decade and have been a very active
+OpenTelemetry community member since its early days.
+
+Over the past two years, as a first-time Governance Committee member, some interests and contributions were:
+
+- Responsiveness on community repo issues and project infrastructure needs
+- Triaging specification issues with a product management hat
+- Working toward stabilizing more components (HTTP semantic conventions, Database semantic conventions, Events)
+
+I'm also a long-time maintainer of the OpenTelemetry Java Instrumentation repository.
+
+I really enjoy being part of the OpenTelemetry community and work hard to help others have a positive experience here.
+I would love to continue my work on the Governance Committee over the next two years with your support.
+
+Thanks :heart:
