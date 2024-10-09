@@ -6,6 +6,7 @@ In alphabetical order:
 
 - [Candidate Name](#candidate-name)
 - [Adriana Villela](#adriana-villela)
+- [Alolita Sharma](#alolita-sharma)
 - [Daniel Dyla](#daniel-dyla)
 - [Jamie Danielson](#jamie-danielson)
 - [Marylia Gutierrez](#marylia-gutierrez)
@@ -36,7 +37,33 @@ I'm Adriana Villela, and I have been involved with OpenTelemetry since 2022. I a
 
 ---
 
-### Daniel Dyla
+### Alolita Sharma
+
+<img src="static/alolita-sharma-picture.png" alt="Alolita Sharma" height="400" width="400">
+
+- Company: [Apple](https://www.apple.com/)  
+- GitHub: [alolita](https://github.com/alolita)  
+- Personal Website: [alolitasharma.com](http://alolitasharma.com/)
+
+Hi! Please allow me to introduce myself. I am a CNCF Governing Board member where I’m an undistracted and passionate contributor to open source and open standards. I also chair the CNCF End User Technical Advisory Board (TAB) and co-chair the Observability TAG. For the past 4 years, I’ve been a member of the OpenTelemetry GC. I’ve also served on the boards of the OSI and the Unicode Consortium. In my day job, I lead the AIML observability team at Apple. With little regard for sleep, I’ve led observability and search teams at AWS and have managed engineering teams at IBM, PayPal, Twitter and Wikipedia.
+
+As a seasoned leader in observability and open source, I understand the superpower of collaboration and driving consensus. With a proven track record at industry giants like Apple, AWS, and IBM, I bring a deep understanding of the critical role observability plays in modern software development. If re-elected to the OTel GC, I will continue to drive OTel to be the de-facto observability standard that empowers observability everywhere.
+
+Here are some of my key accomplishments:
+
+* **CNCF Leadership:** Serving on the CNCF Governing Board, on the End User TAB, and co-chairing the Observability TAG, I've been instrumental in shaping the future of open observability standards.  
+* **OpenTelemetry Growth:** Over the past six years, I've played a pivotal role in fostering OTel's development. My key achievements include driving OTel metrics feature stability to achieve GA status, launching new SIGs for GenAI LLM Semantic Conventions, for OTel for Mainframes and for End Users. I’ve also promoted community engagement by establishing regular check-ins with maintainers from existing SIGs for Swift, Prometheus Interoperability, and GenAI LLM.  
+* **Industry Influence:** As a keynote speaker, I've been a vocal advocate for OTel. As an author, I recently wrote a foreword for the book "Learning OpenTelemetry" by Ted Young and Austin Parker. I’ve mentored observability leaders from industry giants like Apple, Adobe, JPMorgan and Capital One and have fostered OTel collaboration among major cloud providers such as AWS, GCP, Azure and Alibaba Cloud.
+
+If re-elected to the OTel GC, I will prioritize the following:
+
+1. **Graduation:** Accelerate OTel's transition to a graduated CNCF project, cementing its status as a foundational technology.  
+2. **Feature Completeness:** Ensure OTel supports essential features for metrics, logs and traces across various SDKs, while also embracing AI semantic conventions for future-proofing.  
+3. **Community Growth:** Foster broader global participation in the OTel community to promote collaboration and knowledge sharing.
+
+Join me in shaping the future of OpenTelemetry. Together, we can build a robust observability platform for everyone. Cast your ballot on October 21-23. Thank you for your support. 🙏
+
+---
 
 ![Daniel Dyla](static/daniel-dyla.jpg)
 
