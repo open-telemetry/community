@@ -96,7 +96,7 @@ Some of the repositories (such as opentelemetry-js-contrib) provide a lot of aut
 **Sponsoring Members:**
 
 - @lmolkova
-- TBD
+- @tedsuo
 
 **Engineers:**
 
@@ -110,7 +110,7 @@ Some of the repositories (such as opentelemetry-js-contrib) provide a lot of aut
 | @gyliu513 | JS & Python | IBM | |
 | @karthikscale3 | JS & Python | Langtrace | |
 | @lmolkova | Python | Microsoft | | 16 hours/week |
-| @lzchen | Python | Microsoft |  | |
+| @lzchen | Python | Microsoft | | 4 hours/week |
 | @nirga  | JS & Python | Traceloop | |
 | @patcher9 | JS & Python | OpenLIT | |
 | @trentm | JS | Elastic | |
