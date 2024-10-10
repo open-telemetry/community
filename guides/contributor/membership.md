@@ -264,11 +264,12 @@ time. These people may have expertise in one or more area of the project, but no
 longer have time to actively contribute or approve contributions. They are
 encouraged to reflect this by adding themselves to the `emeritus` section of the
 CONTRIBUTING, CODEOWNERS, or README of the subproject they are stepping away
-from. GitHub usernames listed under the `emeritus` section should be removed
-from the approvers list, and will no longer have any official responsibilities
-with the project. When a contributor returns to being more active, they may be
-promoted back to their previous position at the discretion of the current
-maintainers following the process defined above.
+from. Company affiliations should be removed at this time as they may change
+and may not be reflected accurately in the future. GitHub usernames listed under the
+`emeritus` section should be removed from the approvers list, and will no longer
+have any official responsibilities with the project. When a contributor returns
+to being more active, they may be promoted back to their previous position at
+the discretion of the current maintainers following the process defined above.
 
 ## Specification Sponsor
 
