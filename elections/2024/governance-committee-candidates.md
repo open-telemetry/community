@@ -4,7 +4,6 @@
 
 In alphabetical order:
 
-- [Candidate Name](#candidate-name)
 - [Adriana Villela](#adriana-villela)
 - [Alolita Sharma](#alolita-sharma)
 - [Daniel Dyla](#daniel-dyla)
