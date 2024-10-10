@@ -15,16 +15,6 @@ In alphabetical order:
 
 ---
 
-### Candidate Name
-![Candidate Name](static/candidate-name.png)
-
-- Company: [Company Name](https://example.com)
-- GitHub: [candidate_github_handle](https://github.com/candidate_github_handle)
-
-Short bio or reasoning to join the Governance Committee (no more than a short paragraph)
-
----
-
 ### Adriana Villela
 
 <img src="static/Adriana%20Villela%20-%202024-06-20%20-%20smaller.jpeg" height="300" />
