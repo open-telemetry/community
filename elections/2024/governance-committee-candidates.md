@@ -54,6 +54,8 @@ Join me in shaping the future of OpenTelemetry. Together, we can build a robust 
 
 ---
 
+### Daniel Dyla
+
 ![Daniel Dyla](static/daniel-dyla.jpg)
 
 - Company: [Dynatrace](https://dynatrace.com)
