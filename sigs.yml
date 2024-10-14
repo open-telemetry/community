@@ -149,6 +149,24 @@
     gcLiaison:
     - name: Severin Neumann
       github: svrnm
+  - name: 'Semantic Conventions: K8s'
+    meeting: Every other Wednesday at 08:00 PT
+    notes:
+      type: gDoc
+      value: 17DqFVlLvO43neXXTwlSd1zcKjSRA8P3d0Y444QNwUTQ
+    chat:
+      - type: slack
+        name: '#otel-k8s-semconv-sig'
+        id: C07Q1L0FGKX
+    invites: calendar-semconv
+    sponsors:
+      - name: Josh Suereth
+        github: jsuereth
+      - name: Alexander Wert
+        github: AlexanderWert
+    gcLiaison:
+      - name: Alolita Sharma
+        github: alolita
   - name: 'Semantic Conventions: LLM'
     meeting: Alternating between every other Wednesday 10:00 PT and every other Thursday 14:00 UTC+8
     notes:
