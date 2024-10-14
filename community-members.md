@@ -64,11 +64,11 @@ repositories:
 
 Emeritus sponsors (formerly approvers):
 
-- [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
-- [Daniel Jaglowski](https://github.com/djaglowski), observIQ
-- [David Poncelow](https://github.com/zenmoto), Splunk
-- [Leighton Chen](https://github.com/lzchen), Microsoft
-- [Nikita Salnikov-Tarnovski](https://github.com/iNikem), Splunk
+- [Christian Beedgen](https://github.com/kumoroku)
+- [Daniel Jaglowski](https://github.com/djaglowski)
+- [David Poncelow](https://github.com/zenmoto)
+- [Leighton Chen](https://github.com/lzchen)
+- [Nikita Salnikov-Tarnovski](https://github.com/iNikem)
 
 ## Semantic Conventions
 
@@ -180,14 +180,14 @@ Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/open
 
 ## Governance Committee Emeritus
 
-- [Ben Sigelman](https://github.com/bhs), Lightstep, until October 2023
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake, until October 2023
-- [Constance Caramanolis](https://github.com/ccaraman), Splunk, until October 2021
-- [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2022
-- [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
-- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google, until October 2021
-- [Yuri Shkuro](https://github.com/yurishkuro), Meta, until October 2023
+- [Ben Sigelman](https://github.com/bhs), until October 2023
+- [Bogdan Drutu](https://github.com/BogdanDrutu), until October 2023
+- [Constance Caramanolis](https://github.com/ccaraman), until October 2021
+- [Liz Fong-Jones](https://github.com/lizthegrey), until October 2022
+- [Sarah Novotny](https://github.com/SarahNovotny), until October 2021
+- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), until October 2021
+- [Yuri Shkuro](https://github.com/yurishkuro), until October 2023
 
 ## Technical Committee Emeritus
 
-- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
+- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev)

@@ -43,6 +43,9 @@
     },
     {
       "pattern" : "https://slack.cncf.io/"
+    },
+    {
+      "pattern" : "https://crates.io"
     }
   ]
 }

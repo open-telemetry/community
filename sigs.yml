@@ -164,7 +164,9 @@
         github: jsuereth
       - name: Alexander Wert
         github: AlexanderWert
-    gcLiaison: []
+    gcLiaison:
+      - name: Alolita Sharma
+        github: alolita
   - name: 'Semantic Conventions: LLM'
     meeting: Alternating between every other Wednesday 10:00 PT and every other Thursday 14:00 UTC+8
     notes:
