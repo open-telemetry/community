@@ -55,6 +55,9 @@ repositories:
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace
 - [David Ashpole](https://github.com/dashpole), Google
+- [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs
+- [Leighton Chen](https://github.com/lzchen), Microsoft
+- [Marc Alff](https://github.com/marcalff), Oracle
 - [Robert Pająk](https://github.com/pellared), Splunk
 - [Severin Neumann](https://github.com/svrnm), Cisco
 - [Ted Young](https://github.com/tedsuo), Lightstep
