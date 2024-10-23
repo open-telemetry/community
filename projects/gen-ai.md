@@ -160,5 +160,5 @@ We'll use GenAI Semantic Convention meetings until more suitable time for new pa
 
 ## Project Board
 
-* Project Board: [LLM Client Semantic Conventions](https://github.com/orgs/open-telemetry/projects/82)
+* Project Board: [GenAI Client Semantic Conventions](https://github.com/orgs/open-telemetry/projects/82)
 
