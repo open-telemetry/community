@@ -123,9 +123,9 @@ Other languages are not in the scope (yet).
 
 ## Meeting Times
 
-We'll use GenAI LLM Semantic Convention meetings until more suitable time for new participants is determined:
+We'll use GenAI Semantic Convention meetings until more suitable time for new participants is determined:
 
-- **Every week**: Wednesdays at 10 AM PST - Looking for alternative time to accommodate more time zones - https://strawpoll.com/e6Z2ApEKXgN
+- **Every week**: Thursday at 10 AM PST
 - **Every other week**: Thursday 14:00 UTC+8
 
 ### Meeting Links
@@ -135,8 +135,7 @@ We'll use GenAI LLM Semantic Convention meetings until more suitable time for ne
 
 ## Discussion
 
-* Slack: [#otel-llm-semconv-wg](https://cloud-native.slack.com/archives/C06KR7ARS3X)
-(TODO: rename to `#otel-gen-ai-wg`)
+* Slack: [#otel-genai-instrumentation-wg](https://cloud-native.slack.com/archives/C06KR7ARS3X)
 
 ## Timeline
 
@@ -162,4 +161,4 @@ We'll use GenAI LLM Semantic Convention meetings until more suitable time for ne
 ## Project Board
 
 * Project Board: [LLM Client Semantic Conventions](https://github.com/orgs/open-telemetry/projects/82)
-(TODO: rename to `GenAI Client Instrumentation`)
+

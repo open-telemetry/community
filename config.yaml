@@ -1090,7 +1090,7 @@ teams:
   - frzifus
   - jinja2
   - mx-psi
-- name: semconv-llm-approvers
+- name: semconv-genai-approvers
   maintainers:
   - lmolkova
   members:
@@ -1800,7 +1800,7 @@ repositories:
     semconv-http-approvers: write
     semconv-jvm-approvers: write
     semconv-k8s-approvers: write
-    semconv-llm-approvers: write
+    semconv-genai-approvers: write
     semconv-mobile-approvers: write
     semconv-security-approvers: write
     semconv-system-approvers: write
