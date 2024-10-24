@@ -100,22 +100,23 @@ Some of the repositories (such as opentelemetry-js-contrib) provide a lot of aut
 
 **Engineers:**
 
-| Alias | Language | Company/Project | Time commitment |
-| ----- | -------- | ----------------|---------------- |
-| @AmanAgarwal041 | JS & Python | OpenLIT | |
-| @alizenhom  | JS & Python | Langtrace | |
-| @codefromthecrypt | JS & Python | Elastic | |
-| @drewby  | JS & Python | Microsoft | |
-| @galkleinman | JS & Python | Traceloop | |
-| @gyliu513 | JS & Python | IBM | |
-| @karthikscale3 | JS & Python | Langtrace | |
-| @lmolkova | Python | Microsoft | | 16 hours/week |
-| @lzchen | Python | Microsoft | | 4 hours/week |
-| @nirga  | JS & Python | Traceloop | |
-| @patcher9 | JS & Python | OpenLIT | |
-| @trentm | JS | Elastic | |
-| @xrmx | Python | Elastic | |
-| @codefromthecrypt | JS & Python | Elastic | 4 hours/week |
+| Alias             | Language    | Company/Project | Time commitment |
+| ----------------- | ----------- | --------------- | --------------- |
+| @AmanAgarwal041   | JS & Python | OpenLIT         |                 |
+| @alizenhom        | JS & Python | Langtrace       |                 |
+| @codefromthecrypt | JS & Python | Elastic         |                 |
+| @drewby           | JS & Python | Microsoft       |                 |
+| @galkleinman      | JS & Python | Traceloop       |                 |
+| @gyliu513         | JS & Python | IBM             |                 |
+| @karthikscale3    | JS & Python | Langtrace       |                 |
+| @lmolkova         | Python      | Microsoft       | 16 hours/week   |
+| @lzchen           | Python      | Microsoft       | 4 hours/week    |
+| @nirga            | JS & Python | Traceloop       |                 |
+| @patcher9         | JS & Python | OpenLIT         |                 |
+| @trentm           | JS          | Elastic         |                 |
+| @xrmx             | Python      | Elastic         |                 |
+| @codefromthecrypt | JS & Python | Elastic         | 4 hours/week    |
+| @robcamer         | Python      | Microsoft       | 4 hours/week    |
 
 *looking for more contributors*
 
