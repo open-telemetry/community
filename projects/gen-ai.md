@@ -116,7 +116,7 @@ Some of the repositories (such as opentelemetry-js-contrib) provide a lot of aut
 | @trentm           | JS          | Elastic         |                 |
 | @xrmx             | Python      | Elastic         |                 |
 | @codefromthecrypt | JS & Python | Elastic         | 4 hours/week    |
-| @robcamer         | Python      | Microsoft       | 4 hours/week    |
+| @robcamer         | JS & Python | Microsoft       | 4 hours/week    |
 
 *looking for more contributors*
 
