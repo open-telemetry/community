@@ -32,10 +32,10 @@ Audit Logging is currently not within the scope of OpenTelemetry
 
 The goal of this project is to make OTEL fit for audit logging purposes that meet compliance requirements of enterprise software providers, in particular:
 
-- REQ-CON-01: Semantic conventions for application-level audit logs are defined
-- REQ-CON-02: Semantic conventions for infrastructure-level audit logs are defined
-- REQ-SRC-01: Guaranteed delivery of audit logs exported via OpenTelemetry SDK.
-- REQ-PIP-01: OTEL collector must provide guaranteed delivery of audit logs, including when its process is interrupted
+- REQ-CONV-01: Semantic conventions for application-level audit logs are defined
+- REQ-CONV-02: Semantic conventions for infrastructure-level audit logs are defined
+- REQ-APPL-01: Guaranteed delivery of audit logs exported via OpenTelemetry SDK.
+- REQ-PIPE-01: OTEL collector must provide guaranteed delivery of audit logs, including when its process is interrupted
 
 ## Deliverables
 
