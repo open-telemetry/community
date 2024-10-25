@@ -167,24 +167,24 @@
     gcLiaison:
       - name: Alolita Sharma
         github: alolita
-  - name: 'Semantic Conventions: LLM'
-    meeting: Alternating between every other Wednesday 10:00 PT and every other Thursday 14:00 UTC+8
+  - name: 'Semantic Conventions and Instrumentation: GenAI'
+    meeting: Alternating between every other Thursday 10:00 PT and every other Thursday 14:00 UTC+8
     notes:
       type: gDoc
       value: 1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M
     chat:
       - type: slack
-        name: '#otel-llm-semconv-wg'
+        name: '#otel-genai-instrumentation-wg'
         id: C06KR7ARS3X
     invites: calendar-semconv
     sponsors:
-    - name: Alolita Sharma
-      github: alolita
+    - name: Ted Young
+      github: tedsuo
     - name: Liudmila Molkova
       github: lmolkova
     gcLiaison:
-    - name: Alolita Sharma
-      github: alolita
+    - name: Ted Young
+      github: tedsuo
   - name: 'Semantic Conventions: CI/CD'
     meeting: Every Thursday at 06:00 PT
     notes:
