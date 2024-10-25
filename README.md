@@ -34,7 +34,7 @@ Table of Contents
 There is a lot to do! If you are interested in getting involved, here's how you can start:
 
 1. Check out our [contributor guide](./guides/contributor) to learn about our contribution process.
-2. Join our [Slack](#slack), attend our [community meetings](#calendar), and subscribe to our [mailing lists](#mailing-lists).
+2. Join our [Slack](#slack) and attend our [community meetings](#calendar).
 3. If you're interested in contributing to a specific part of the project, join the appropriate [Special Interest Group (SIG)](#special-interest-groups).
 
 Details for all of these items are below. We are a friendly, collaborative group and look forward to working together!
