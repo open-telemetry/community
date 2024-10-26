@@ -1,0 +1,75 @@
+# Generative AI Contribution Policy
+
+This policy provides general guidance for contributors and maintainers relating
+to the use of Generative AI in OpenTelemetry projects. This guidance supersedes
+and extends the policy defined in the [Linux Foundation Generative AI
+Policy](https://www.linuxfoundation.org/legal/generative-ai).
+
+## The Short Version
+
+While we welcome contributions from anyone, maintainers of individual
+projects may -- at their discretion -- hide or close issues, pull requests, or
+other contributions that are made totally or in part through generative AI
+tooling.
+
+## The Long Version
+
+Increasingly, we have observed a trend of contributors who are utilizing LLMs
+and other generative tools to participate in issues and create pull requests.
+Regurgitating the output of an LLM is unlikely to be particularly helpful, or
+valuable, to other contributors, maintainers, and end-users. OpenTelemetry is a
+complex, fast-moving project -- LLMs will often have stale data in their
+training sets, and are prone to offering output that is not relevant to the
+current state of the project. While LLMs can be incredibly powerful coding
+assistants they are not a substitute for human judgement and knowledge.
+
+With proper usage, Generative AI can be a valuable tool for writing code,
+documentation, tests, and more. This level of usage requires enough
+understanding of the project to evaluate the LLM output, and to know when to
+accept or reject it. Therefore, we ask that contributors do not rely on LLM
+output as the sole basis for their contributions.
+
+Examples of this include: -
+
+- Copying and pasting LLM output into issues or pull requests without any
+additional context or explanation.
+- Reviewing existing pull requests solely via
+LLMs, or using LLMs to respond to issues without any additional context or
+explanation.
+
+## Frequently Asked Questions - Contributors
+
+_Q: Can I use LLMs to help me write code, documentation, or tests?_
+Yes, this policy does not prohibit the use of LLMs to assist in writing code,
+documentation, or tests. However, we ask that you do not rely on LLM output as
+the sole basis for your contributions.
+
+_Q: Can I use LLMs to help me review pull requests, issues, or understand the code base?_
+Yes, this is also allowed -- and a good idea! You should use LLMs as a tool to
+assist in your understanding, but not as a replacement for your own judgement
+and ability.
+
+_Q: How do I know the difference between allowed and disallowed usages of LLMs?_
+"If you have to ask, you already know the answer." This policy is not a broad
+ban of LLMs, it is a request that you -- as an individual -- use them in a way
+that adds value to the project and respects the time of other contributors and
+maintainers. If you are using LLMs to help you write code, that is fine; You
+should be clear about this in pull requests and reviews. If you are using LLMs
+to understand code so that you can participate in issues or reviews, that is
+also fine -- but you should be clear about this as well. What is not fine is
+copying and pasting a GitHub issue into an LLM prompt and asking it to write the
+PR for you, then blindly submitting that response. You must be an active and
+willing participant in the process of contributing to OpenTelemetry.
+
+## Frequently Asked Questions - Maintainers
+
+_Q: Can I close or hide issues or pull requests that are made through LLMs?_
+Yes, as your discretion you may close or hide issues or pull requests that are
+made through LLMs. We ask that you provide a clear explanation for why you are
+doing so, and -- if possible -- provide guidance on how the contributor can
+improve their contribution.
+
+_Q: How do I address contributors who are making consistent, low-effort contributions via LLMs?_
+If an individual contributor continues to engage in low-effort PRs or issues,
+_and_ you have exhausted other avenues of communication, please escalate the
+situation to the OpenTelemetry Governance Committee.
