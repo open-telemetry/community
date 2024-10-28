@@ -78,6 +78,6 @@ _Q: Can I use LLM or Generative AI tooling to assist in my own work as a maintai
 In general, you should evaluate the output of LLMs -- regardless of how you use
 them -- in the same way you'd evaluate the output of a human contributor or
 non-AI tool. For example, tools like [Dosu](https://dosu.dev/) are being used in
-certain respositories to aid in code review and issue management. Remember that
+certain repositories to aid in code review and issue management. Remember that
 these tools can make mistakes, and use your best judgement when evaluating their
 output.
