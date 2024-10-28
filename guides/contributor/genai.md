@@ -29,7 +29,7 @@ understanding of the project to evaluate the LLM output, and to know when to
 accept or reject it. Therefore, we ask that contributors do not rely on LLM
 output as the sole basis for their contributions.
 
-Examples of this include: -
+Examples of this include:
 
 - Copying and pasting LLM output into issues or pull requests without any
 additional context or explanation.
@@ -73,3 +73,11 @@ _Q: How do I address contributors who are making consistent, low-effort contribu
 If an individual contributor continues to engage in low-effort PRs or issues,
 _and_ you have exhausted other avenues of communication, please escalate the
 situation to the OpenTelemetry Governance Committee.
+
+_Q: Can I use LLM or Generative AI tooling to assist in my own work as a maintainer?_
+In general, you should evaluate the output of LLMs -- regardless of how you use
+them -- in the same way you'd evaluate the output of a human contributor or
+non-AI tool. For example, tools like [Dosu](https://dosu.dev/) are being used in
+certain respositories to aid in code review and issue management. Remember that
+these tools can make mistakes, and use your best judgement when evaluating their
+output.
