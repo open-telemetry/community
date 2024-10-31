@@ -40,16 +40,19 @@ explanation.
 ## Frequently Asked Questions - Contributors
 
 _Q: Can I use LLMs to help me write code, documentation, or tests?_
+
 Yes, this policy does not prohibit the use of LLMs to assist in writing code,
 documentation, or tests. However, we ask that you do not rely on LLM output as
 the sole basis for your contributions.
 
 _Q: Can I use LLMs to help me review pull requests, issues, or understand the code base?_
+
 Yes, this is also allowed -- and a good idea! You should use LLMs as a tool to
 assist in your understanding, but not as a replacement for your own judgement
 and ability.
 
 _Q: How do I know the difference between allowed and disallowed usages of LLMs?_
+
 "If you have to ask, you already know the answer." This policy is not a broad
 ban of LLMs, it is a request that you -- as an individual -- use them in a way
 that adds value to the project and respects the time of other contributors and
@@ -64,17 +67,22 @@ willing participant in the process of contributing to OpenTelemetry.
 ## Frequently Asked Questions - Maintainers
 
 _Q: Can I close or hide issues or pull requests that are made through LLMs?_
+
 Yes, as your discretion you may close or hide issues or pull requests that are
 made through LLMs. We ask that you provide a clear explanation for why you are
 doing so, and -- if possible -- provide guidance on how the contributor can
 improve their contribution.
 
 _Q: How do I address contributors who are making consistent, low-effort contributions via LLMs?_
+
 If an individual contributor continues to engage in low-effort PRs or issues,
 _and_ you have exhausted other avenues of communication, please escalate the
-situation to the OpenTelemetry Governance Committee.
+situation to the OpenTelemetry Governance Committee. Per the [Code of Conduct](https://github.com/cncf/foundation/blob/main/code-of-conduct.md),
+contributors are expected to help maintain a positive environment, which would
+include following guidance and published policy.
 
 _Q: Can I use LLM or Generative AI tooling to assist in my own work as a maintainer?_
+
 In general, you should evaluate the output of LLMs -- regardless of how you use
 them -- in the same way you'd evaluate the output of a human contributor or
 non-AI tool. For example, tools like [Dosu](https://dosu.dev/) are being used in
