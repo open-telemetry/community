@@ -31,11 +31,13 @@ Table of Contents
 
 ## Get Involved
 
-There is a lot to do! If you are interested in getting involved, please join
-the mailing lists and attend the community meetings. If you're interested in
-contributing to a specific part of the project, please join the appropriate
-special interest group (SIG). Details for all of these items are below. We are
-a friendly, collaborative group and look forward to working together!
+There is a lot to do! If you are interested in getting involved, here's how you can start:
+
+1. Check out our [contributor guide](./guides/contributor) to learn about our contribution process.
+2. Join our [Slack](#slack) and attend our [community meetings](#calendar).
+3. If you're interested in contributing to a specific part of the project, join the appropriate [Special Interest Group (SIG)](#special-interest-groups).
+
+Details for all of these items are below. We are a friendly, collaborative group and look forward to working together!
 
 ## Governing Bodies
 
@@ -97,8 +99,6 @@ as CNCF IP Policy
 [dictates](https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy).
 This [blog post](https://www.cncf.io/blog/2017/02/01/cncf-recommends-aslv2/)
 explains the reasoning behind choosing this license.
-Refer to our [Contributor Guide](https://github.com/open-telemetry/community/tree/main/guides/contributor)
-for details on code attribution.
 
 ## Logos and Brand Guide
 
