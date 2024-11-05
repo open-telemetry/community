@@ -17,11 +17,17 @@ tooling.
 Increasingly, we have observed a trend of contributors who are utilizing LLMs
 and other generative tools to participate in issues and create pull requests.
 Regurgitating the output of an LLM is unlikely to be particularly helpful, or
-valuable, to other contributors, maintainers, and end-users. OpenTelemetry is a
-complex, fast-moving project -- LLMs will often have stale data in their
-training sets, and are prone to offering output that is not relevant to the
-current state of the project. While LLMs can be incredibly powerful coding
-assistants they are not a substitute for human judgement and knowledge.
+valuable, to other contributors, maintainers, and end-users for a couple of reasons.
+
+First, time is a very scarce resource for maintainers and approvers. Thoughtful,
+high-quality code reviews both essential to the success of OpenTelemetry, and
+require a significant time commitment. There is not enough time to give proper
+responses to low-effort pull requests without compromising our responsiveness to
+high-effort pull requests. Second, OpenTelemetry is a complex, fast-moving
+project -- LLMs will often have stale data in their training sets, and are prone
+to offering output that is not relevant to the current state of the project.
+While LLMs can be incredibly powerful coding assistants they are not a
+substitute for human judgement and knowledge.
 
 With proper usage, Generative AI can be a valuable tool for writing code,
 documentation, tests, and more. This level of usage requires enough
