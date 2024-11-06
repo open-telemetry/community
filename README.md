@@ -125,8 +125,7 @@ SIG-specific GitHub discussions.
 
 > [!NOTE]
 > The meeting times in the tables below are given in 24-hour notation.
-> All meeting hours between 2pm and 1am UTC are in Pacific Time (PT), with Daylight Saving Time.
-> All meeting hours between 2am and 1pm UTC in UTC+8, without Daylight Saving Time.
+> Meetings are either in Pacific Time (PT), with Daylight Saving Time, or UTC+8, without Daylight Saving Time.
 
 <!-- sigs -->
 ### Specification SIGs

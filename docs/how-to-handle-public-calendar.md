@@ -43,9 +43,9 @@ otherwise synchronization to external calendars via the `calendar-*@opentelemetr
 The following details need to be set properly:
 
 - Title
-- Timeslot, with the right timezone set:
-  - All meeting hours between 2pm and 1am UTC are in Pacific Time (PT), with Daylight Saving Time.
-  - All meeting hours between 2am and 1pm UTC in UTC+8, without Daylight Saving Time.
+- Timeslot, using one of the following timezones:
+  - Pacific Time (PT), with Daylight Saving Time.
+  - UTC+8, without Daylight Saving Time.
 - Recurrence pattern (usually weekly or bi-weekly)
 - Location (see below for the Zoom links)
 - Description
