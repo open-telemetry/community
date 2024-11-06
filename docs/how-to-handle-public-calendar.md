@@ -102,5 +102,6 @@ All recurring meetings are listed in the [Community repo's README](../README.md#
 ## Zoom bombing prevention
 
 All meetings are created by Zoom with randomized passcodes, which are embedded into the shared calendar links.
-All members of <opentelemetry-calendar-contributors@googlegroups.com> have access to [this document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#)
+All members of [calendar-edit-permission@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-edit-permission)
+have access to [this document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#)
 listing the host keys for our meetings and explaining how to deal with inappropriate behavior in Zoom.
