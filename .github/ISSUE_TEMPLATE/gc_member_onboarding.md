@@ -139,21 +139,6 @@ The new member must:
 
 - [ ] Validate they have write access to the documents listed above.
 
-### Google Calendar
-All OpenTelemetry public meetings are handled via Google Calendars (see [How to handle public calendar](https://github.com/open-telemetry/community/blob/main/docs/how-to-handle-public-calendar.md)
-for more details). People in the  `opentelemetry-calendar-contributors` Google
-Group have write access to the OpenTelemetry public calendar. To view and
-manage members of this group one must use the `admin@opentelemetry.io`
-account.
-
-The existing member must:
-
-- [ ] Add user as `Owner` of https://groups.google.com/g/opentelemetry-calendar-contributors.
-
-The new member must:
-
-- [ ] Validate they have `Owner` permissions on the group above.
-
 ### Zapier
 Zapier is used to sync meeting recordings from Zoom to a publicly viewable
 Google spreadsheet (see https://github.com/open-telemetry/community/blob/main/docs/how-meeting-recordings-upload-works.md
