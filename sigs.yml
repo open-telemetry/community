@@ -655,7 +655,7 @@
       - type: slack
         name: '#otel-sig-end-user'
         id: C01RT3MSWGZ
-    invites: calendar-user-research
+    invites: calendar-sig-end-user
     sponsors: []
     gcLiaison:
     - name: Daniel Gomez Blanco
