@@ -76,14 +76,15 @@ This project is a collaboration between SIG Communications (Docs Contributors) a
 * Staffing from SIG Communications
   * [@svrnm](https://github.com/svrnm) (Project Lead)
 
-* Staffing from `Language SIG 1`
-  * `tbd`
+* Staffing from SIG Java
+  * [@jack-berg](https://github.com/jack-berg)
 
 * Staffing from `Language SIG 2`
   * `tbd`
 
 * GC/TC Sponsors
-  * [@svrnm](https//github.com/svrnm)
+  * [@svrnm](https://github.com/svrnm)
+  * [@jack-berg](https://github.com/jack-berg)
 
 ## Timeline
 
