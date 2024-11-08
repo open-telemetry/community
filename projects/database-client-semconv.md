@@ -29,7 +29,7 @@ Get the database client semantic conventions to stability, and afterwards update
 
 ## Timeline
 
-Goal is to stabilize Database client semantic conventions 3 months after the working group kicks off.
+Goal is to stabilize Database client semantic conventions 3 months after the SIG kicks off.
 
 ## Project Board
 

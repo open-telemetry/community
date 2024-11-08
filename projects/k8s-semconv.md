@@ -1,4 +1,4 @@
-# K8s Conventions Working Group
+# K8s Conventions up
 
 ## Background and description
 
@@ -42,14 +42,14 @@ We are seeking domain experts to work on the introduction and stability of the K
 
 The goal is to follow @tedsuo's proposed [Semantic Convention Process](https://docs.google.com/document/d/1ghvajKaipiNZso3fDtyNxU7x1zx0_Eyd02OGpMGEpLE/edit#heading=h.xc2ft2cddhny).
 
-- Stage 1: Working Group Preparation
+- Stage 1: SIG Preparation
 - Stage 2: Stabilizing the Specification
 - Stage 3: Implementation
 
 ## Timeline
 
 Timeline
-Stage 1 (Working Group Preparation) is happening now.
+Stage 1 (SIG Preparation) is happening now.
 
 Stage 2 (Stabilizing the Specification) will begin as soon as we have adequate
 staffing for this project, and we coordinate weekly
@@ -108,7 +108,7 @@ and it should be relatively short we only need to update conformance to the spec
 
 ## SIG Meetings and Other Info
 
-*meeting time*: biweekly on Wednesday 8:00am PDT (+1 week offset from the Prometheus WG)
+*meeting time*: biweekly on Wednesday 8:00am PDT (+1 week offset from the SIG Prometheus Interoperability)
 
 *meeting-notes*: [Agenda](https://docs.google.com/document/d/17DqFVlLvO43neXXTwlSd1zcKjSRA8P3d0Y444QNwUTQ)
 
