@@ -368,7 +368,7 @@
     - name: Trask Stalnaker
       github: trask
   - name: Collector
-    meeting: Wednesday alternating between 09:00 PT, 05:00 PT, 17:00 PT
+    meeting: Alternating between Tuesday at 17:00 PT, Wednesday at 09:00 PT, and Wednesday at 05:00 PT
     notes:
       type: gDoc
       value: 1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE
@@ -653,9 +653,9 @@
       value: 1e-UNZA3Tuno9b53RQbe--whUcO0VIXF3P81oXsrBK6g
     chat:
       - type: slack
-        name: '#otel-user-research'
+        name: '#otel-sig-end-user'
         id: C01RT3MSWGZ
-    invites: calendar-user-research
+    invites: calendar-sig-end-user
     sponsors: []
     gcLiaison:
     - name: Daniel Gomez Blanco
