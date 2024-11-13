@@ -39,7 +39,7 @@ Select the most appropriate option:
 
 Once you select the type of contributor, proceed to Sign the CLA and follow the instructions to complete the signing process through DocuSign.
 
-After you have filled out  the information, Click "Finish" and you will be redirected back to your Pull Request.
+After you have filled out the information, click "Finish" and you will be redirected back to your Pull Request.
 
 #### 5. Look for an email indicating successful signup.
 
