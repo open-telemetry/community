@@ -126,7 +126,7 @@ Other languages are not in the scope (yet).
 We'll use GenAI Semantic Convention meetings until more suitable time for new participants is determined:
 
 - **Every other week**: Thursday at 10 AM PST
-- **Every other week**: Thursday 14:00 UTC+8
+- **Every other week**: Thursday at 4 PM PST
 
 ### Meeting Links
 
