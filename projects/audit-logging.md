@@ -39,6 +39,7 @@ The goal of this project is to make OTel fit for audit logging purposes that mee
 
 The following vendors are interested in improving this area:
 - SAP
+- Microsoft
 
 Other vendors are invited to join the discussion.
 
