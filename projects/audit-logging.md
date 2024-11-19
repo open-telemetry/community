@@ -26,7 +26,7 @@ The goal of this project is to make OTel fit for audit logging purposes that mee
 
 - REQ-CONV-01: Semantic conventions for application-level audit logs are defined
 - REQ-CONV-02: Semantic conventions for infrastructure-level audit logs are defined
-- REQ-APPL-01: Guaranteed delivery of audit logs exported via OpenTelemetry SDK.
+- REQ-APPL-01: Guaranteed delivery of audit logs exported via OpenTelemetry SDK
 - REQ-PIPE-01: OTel collector must provide guaranteed delivery of audit logs, including when its process is interrupted
 
 ## Deliverables
