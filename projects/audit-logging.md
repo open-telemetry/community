@@ -45,7 +45,9 @@ Other vendors are invited to join the discussion.
 ### Required staffing
 
 * Project lead: SAP (name tbd)
-* Sponsors: tbd
+* Sponsors:
+  - Reiley Yang (@reyang)
+  - tbd
 * GC liaison: tbd
 * Engineers:
   * SAP will provide a prototype in two languages (tbd; likely two of Java, JavaScript, Go)
