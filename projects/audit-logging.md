@@ -16,24 +16,24 @@ Examples of audit logs include:
 
 Audit Logging is currently not within the scope of OpenTelemetry
 
-- no semantic conventions for audit logs in OTEL
-- OTEL APIs/SDKs do not provide feedback to the application level whether data (in particular logs) have been successfully delivered to a remote endpoint. To guarantee delivery, either the SDK has to give those guarantees, or provide feedback to the application so that it can take care of guaranteed delivery itself.
-- OTEL collectors may lose audit logs in transit (i.e. no guarantee of delivery)
+- no semantic conventions for audit logs in OTel
+- OTel APIs/SDKs do not provide feedback to the application level whether data (in particular logs) have been successfully delivered to a remote endpoint. To guarantee delivery, either the SDK has to give those guarantees, or provide feedback to the application so that it can take care of guaranteed delivery itself.
+- OTel collectors may lose audit logs in transit (i.e. no guarantee of delivery)
 
 ### Goals, objectives, and requirements
 
-The goal of this project is to make OTEL fit for audit logging purposes that meet compliance requirements of enterprise software providers, in particular:
+The goal of this project is to make OTel fit for audit logging purposes that meet compliance requirements of enterprise software providers, in particular:
 
 - REQ-CONV-01: Semantic conventions for application-level audit logs are defined
 - REQ-CONV-02: Semantic conventions for infrastructure-level audit logs are defined
 - REQ-APPL-01: Guaranteed delivery of audit logs exported via OpenTelemetry SDK.
-- REQ-PIPE-01: OTEL collector must provide guaranteed delivery of audit logs, including when its process is interrupted
+- REQ-PIPE-01: OTel collector must provide guaranteed delivery of audit logs, including when its process is interrupted
 
 ## Deliverables
 
 - semantic convention for audit logs
-- extend OTEL APIs/SDKs for audit logging purposes (in collaboration with the respective SIG)
-- extend OTEL collector for audit logging purposes (in collaboration with the respective SIG)
+- extend OTel APIs/SDKs for audit logging purposes (in collaboration with the respective SIG)
+- extend OTel collector for audit logging purposes (in collaboration with the respective SIG)
 
 ## Staffing / Help Wanted
 
