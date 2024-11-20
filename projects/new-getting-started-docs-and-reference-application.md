@@ -48,7 +48,6 @@ The first step is to create a "specification" for this application. This involve
 * For valid input, `{"n":5,"result":5}`
 * For invalid input, `{"message":"n must be 1 <= n <= 90."}`
 
-...
 ```
 
 This specification will outline an application that demonstrates a wide range of OpenTelemetry features. Unlike the [Demo](https://github.com/open-telemetry/opentelemetry-demo/), this will be a single, straightforward application implemented in all supported languages, with simple business logic (e.g., Fibonacci calculations or a "roll the dice" feature).
