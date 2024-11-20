@@ -26,7 +26,6 @@ in alphabetical order:
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake
 - [Carlos Alberto](https://github.com/carlosalberto), Lightstep
 - [Jack Berg](https://github.com/jack-berg), New Relic
-- [Josh MacDonald](https://github.com/jmacd), Lightstep
 - [Josh Suereth](https://github.com/jsuereth), Google
 - [Liudmila Molkova](https://github.com/lmolkova), Microsoft
 - [Reiley Yang](https://github.com/reyang), Microsoft
