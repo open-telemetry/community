@@ -14,7 +14,7 @@ Examples of audit logs include:
 
 ### Current challenges
 
-Audit Logging is currently not within the scope of OpenTelemetry
+OpenTelemetry does not have a good solution for audit logging
 
 - no semantic conventions for audit logs in OTel
 - OTel APIs/SDKs do not provide feedback to the application level whether data (in particular logs) have been successfully delivered to a remote endpoint. To guarantee delivery, either the SDK has to give those guarantees, or provide feedback to the application so that it can take care of guaranteed delivery itself.
