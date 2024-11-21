@@ -51,7 +51,7 @@ Other vendors are invited to join the discussion.
 
 * Project lead: SAP (name tbd)
 * Sponsors:
-  - Reiley Yang (@reyang)
+  - @reyang
   - tbd
 * GC liaison: tbd
 * Engineers:
