@@ -71,7 +71,7 @@
       value: 10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8
     chat:
       - type: slack
-        name: '#otel-semantic-conventions-wg'
+        name: '#otel-semantic-conventions'
         id: C041APFBYQP
     invites: calendar-semconv
     sponsors:
@@ -91,7 +91,7 @@
       value: 1ygwXgOFRF01UfUOgMr_ElyL7fSDPchTKSrqfj-_HeyA
     chat:
       - type: slack
-        name: '#otel-semantic-conventions-wg'
+        name: '#otel-semantic-conventions'
         id: C041APFBYQP
     invites: calendar-semconv
     sponsors:
@@ -122,7 +122,7 @@
       value: 1zTi_Z4WBisytPnXTpwtnGOK-4Gv5oSTuMHvIQ8--5hg
     chat:
       - type: slack
-        name: '#otel-db-client-semconv-stability-wg'
+        name: '#otel-semconv-db-client-stability'
         id: C06HH05KNMC
     invites: calendar-semconv
     sponsors:
@@ -140,7 +140,7 @@
       value: 1p5TH57t43XpxA48onLzX4PIr3g6ydYKCtR_AUlsCnQk
     chat:
       - type: slack
-        name: '#otel-system-metrics-wg'
+        name: '#otel-system-metrics'
         id: C05CTFE9U4A
     invites: calendar-semconv
     sponsors:
@@ -174,7 +174,7 @@
       value: 1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M
     chat:
       - type: slack
-        name: '#otel-genai-instrumentation-wg'
+        name: '#otel-genai-instrumentation'
         id: C06KR7ARS3X
     invites: calendar-semconv
     sponsors:
@@ -278,7 +278,7 @@
       value: 19bnXziPn2MZ9wO6684UoI4D-LCjGL5bTJkGhux29bx8
     chat:
       - type: slack
-        name: '#otel-prometheus-wg'
+        name: '#otel-prometheus'
         id: C01LSCJBXDZ
     invites: calendar-prometheus
     sponsors: []
