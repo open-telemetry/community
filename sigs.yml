@@ -262,9 +262,9 @@
       value: 19WA5-ex8rNFIBIyVb5VqMXfWNmUQwppGhN8zBeNG0f4
     chat:
       - type: slack
-        name: '#otel-agentmanwg'
+        name: '#otel-opamp'
         id: C02J58HR58R
-    invites: calendar-agent-mgmt
+    invites: calendar-opamp
     sponsors:
       - name: Tigran Najaryan
         github: tigrannajaryan
