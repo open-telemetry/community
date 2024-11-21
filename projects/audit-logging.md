@@ -6,11 +6,11 @@ Audit logging describes the capability of capturing audit-trail relevant events 
 
 Unlike regular application logs, audit logs are usually subject to long retention periods and software providers must guarantee their completeness (i.e. guarantee of delivery).
 
-Examples of audit logs include:
-- permission changes (e.g. of a service account or application user)
-- modification of data
-- accessing sensitive information
+Examples of audit logs include: (see [Appendix B: Sample Audit Log Events])
 - failed login attempts
+- permission changes (e.g. of a service account or application user)
+- accessing sensitive information
+- modification of data
 
 ### Current challenges
 
@@ -186,3 +186,6 @@ An event consists of the event name, event-specific data, and general metadata. 
     initiator: john-doe
     k8sCluster: my-sample-cluster
   ```
+
+<!-- links -->
+[Appendix B: Sample Audit Log Events]: #appendix-b-sample-audit-log-events
