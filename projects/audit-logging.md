@@ -107,3 +107,82 @@ Note that this example may contain implementation details for illustration purpo
 The example is kept simple for illustration purposes. Many edge cases need to be discussed by the SIG, such as batch-sending of signals or handling of multiple export targets.
 
 It may turn out that all OTel receivers, processors, or exporters can be made compatible with guarantee of delivery for audit logging purposes.
+
+### Appendix B: Sample Audit Log Events
+
+The following list contains sample audit log events in a YAML format for better readability and intentionally do not follow any OTel-related schema.
+
+An event consists of the event name, event-specific data, and general metadata. The individual properties of these events would ideally be reflected in common or audit log-specific semantic conventions.
+
+- failed login attempts
+
+  ```yaml
+  event: UserLoginFailure
+  data:
+    loginMethod: oidc
+    failureReason: userLocked
+  metadata:
+    id: 50b925b5-0ba9-42f3-b476-8a6795000046
+    timestamp: 1732193414483
+    ip: 10.11.12.13
+    initiator: john-doe
+    application: payroll
+    tenant: fab54af9-f978-463e-9c02-f92db1afc2b4
+  ```
+
+- permission changes (e.g. of a service account or application user)
+
+  ```yaml
+  event: AuthnRoleToUserAdd
+  data:
+    user: jane-doe
+    role: editor
+  metadata:
+    id: 50b925b5-0ba9-42f3-b476-8a6795000046
+    timestamp: 1732193414483
+    ip: 10.11.12.13
+    initiator: john-doe
+    application: payroll
+    tenant: fab54af9-f978-463e-9c02-f92db1afc2b4
+  ```
+
+- accessing sensitive information
+
+  ```yaml
+  event: DppDataAccess
+  data:
+    channelType: web
+    channelId: https://payroll.example.com/user/jane-doe/compensation
+    dataSubjectType: employeeID
+    dataSubjectId: jane-doe
+    objectType: compensation
+    objectId: 1196f42b-8f12-4df0-9b1f-01c98d2c7291
+    attribute: salary
+    value: 50000
+  metadata:
+    id: 50b925b5-0ba9-42f3-b476-8a6795000046
+    timestamp: 1732193414483
+    ip: 10.11.12.13
+    initiator: john-doe
+    application: payroll
+    tenant: fab54af9-f978-463e-9c02-f92db1afc2b4
+  ```
+
+
+- modification of data
+
+  ```yaml
+  event: DataModification
+  data:
+    objectType: CronJob
+    objectId: my-sample-cronjob
+    attribute: schedule
+    oldValue: 0 0 1 * * # monthly
+    newValue: 0 0 1 1 * # annually
+  metadata:
+    id: 50b925b5-0ba9-42f3-b476-8a6795000046
+    timestamp: 1732193414483
+    ip: 10.11.12.13
+    initiator: john-doe
+    k8sCluster: my-sample-cluster
+  ```
