@@ -20,6 +20,8 @@ Audit Logging is currently not within the scope of OpenTelemetry
 - OTel APIs/SDKs do not provide feedback to the application level whether data (in particular logs) have been successfully delivered to a remote endpoint. To guarantee delivery, either the SDK has to give those guarantees, or provide feedback to the application so that it can take care of guaranteed delivery itself.
 - OTel collectors may lose audit logs in transit (i.e. no guarantee of delivery)
 
+See [Appendix A: Guarantee of Delivery] for more details
+
 ### Goals, objectives, and requirements
 
 The goal of this project is to make OTel fit for audit logging purposes that meet compliance requirements of enterprise software providers, in particular:
@@ -28,6 +30,8 @@ The goal of this project is to make OTel fit for audit logging purposes that mee
 - REQ-CONV-02: Semantic conventions for infrastructure-level audit logs are defined
 - REQ-APPL-01: Guaranteed delivery of audit logs exported via OpenTelemetry SDK
 - REQ-PIPE-01: OTel collector must provide guaranteed delivery of audit logs, including when its process is interrupted
+
+See [Appendix A: Guarantee of Delivery] for more details
 
 ## Deliverables
 
@@ -188,4 +192,5 @@ An event consists of the event name, event-specific data, and general metadata. 
   ```
 
 <!-- links -->
+[Appendix A: Guarantee of Delivery]: #appendix-a-guarantee-of-delivery
 [Appendix B: Sample Audit Log Events]: #appendix-b-sample-audit-log-events
