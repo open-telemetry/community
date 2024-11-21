@@ -53,7 +53,7 @@ Other vendors are invited to join the discussion.
 * Sponsors:
   - @reyang
   - tbd
-* GC liaison: tbd
+* GC liaison: @svrnm
 * Engineers:
   * SAP will provide a prototype in two languages (tbd; likely two of Java, JavaScript, Go)
 * Maintainers/approvers: tbd
