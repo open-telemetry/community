@@ -15,7 +15,7 @@ https://github.com/orgs/open-telemetry/projects/41
 
 The goal is to follow @tedsuo's proposed [Semantic Convention Process](https://docs.google.com/document/d/1ghvajKaipiNZso3fDtyNxU7x1zx0_Eyd02OGpMGEpLE/edit#heading=h.xc2ft2cddhny).
 
-* __Stage 1__: Working Group Preparation
+* __Stage 1__: SIG Preparation
 * __Stage 2__: Specification
 * __Stage 3__: Implementation
 
@@ -40,7 +40,7 @@ The goal is to follow @tedsuo's proposed [Semantic Convention Process](https://d
 
 ## Meeting Times
 
-Once a project is started, the working group should meet regularly for discussion. These meeting times should be posted on the OpenTelemetry public calendar.
+Once a project is started, the SIG should meet regularly for discussion. These meeting times should be posted on the OpenTelemetry public calendar.
 
 ## Timeline
 
