@@ -15,7 +15,7 @@ We want to ensure:
 * Cold start data capture and submission
 * The new TelemetryAPI is properly integrated and utilized by OpenTelemetry
 
-**This SIG will also serve as a interest group for all FAAS topics going forward.**
+**This SIG will also serve as an interest group for all FAAS topics going forward.**
 
 ## Deliverables
 

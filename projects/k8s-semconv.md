@@ -1,4 +1,4 @@
-# K8s Conventions up
+# K8s Conventions SIG
 
 ## Background and description
 
