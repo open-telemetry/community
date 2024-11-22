@@ -96,9 +96,9 @@ for group in data:
             calendar = f"[{invites}](https://groups.google.com/a/opentelemetry.io/g/{invites})"
         
         if group_name == "Specification SIGs":
-            markdown_content += f"| <a href=\"{short_name}\">{name}</a> | {meeting} | {notes} | {chats} | {calendar} | {tc_sponsors} | {gc_liaison} | \n"
+            markdown_content += f"| <a href=\"{short_name}\"></a>{name} | {meeting} | {notes} | {chats} | {calendar} | {tc_sponsors} | {gc_liaison} | \n"
         else:
-            markdown_content += f"| <a href=\"{short_name}\">{name}</a> | {meeting} | {notes} | {chats} | {calendar} | {gc_liaison} |\n"
+            markdown_content += f"| <a href=\"{short_name}\"></a>{name} | {meeting} | {notes} | {chats} | {calendar} | {gc_liaison} |\n"
 
     # Add a newline for spacing after the table
     markdown_content += "\n"
