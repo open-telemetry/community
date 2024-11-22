@@ -92,6 +92,8 @@ The google group should be set up as follows:
 - Who can post: Group members
 - Who can view members: Group managers
 
+And set admin@opentelemetry.io's own subscription to "No email" under the membership settings for that google group.
+
 This allows anyone to subscribe to this specific meeting series by joining that google group.
 Please open a community issue to request the creation of a `calendar-...@opentelemetry.io` google group.
 
