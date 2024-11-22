@@ -2,7 +2,7 @@
 
 ## Description
 
-As we see a growing interest from customers to use OpenTelemetry on the mainframe, we'd like to propose a working group to define and stabilize semantic conventions supporting the observability of the mainframe and to introduce instrumentation for programming languages present on the mainframe.
+As we see a growing interest from customers to use OpenTelemetry on the mainframe, we'd like to propose a SIG to define and stabilize semantic conventions supporting the observability of the mainframe and to introduce instrumentation for programming languages present on the mainframe.
 
 This proposal has been created as result of a [series of meetings](https://docs.google.com/document/d/14p-bpofozTL4n3jy6HZH_TKjoOXvog18G1HBRqq6liE/edit?pli=1#heading=h.pss2tdsd549w) for the topic “OpenTelemetry on Mainframe” with contributions from participants of multiple vendors and is based on [this document](https://docs.google.com/document/d/1SM5BmM4st8n4giWuqe1shqN98d37VG9C_-di1hG6sbg/edit#heading=h.q3h9nwmyzjva).  
 
@@ -34,7 +34,7 @@ Based on previous participation in the meeting for preparing this proposal, we f
 -   We invite everybody to join who is passionate about the mainframe.
 -   Two project leads who are willing to drive the project and address any issues which are not handled by other project members.
 -   At least two sponsoring TC (Technical Committee) members. TC sponsors are dedicated to attending meetings, reviewing proposals, and in general being aware of the state of the project and its technical details. TC sponsors guide the project through the spec process, keep the tracking issue up to date, and help to ensure that relevant community members provide input at the appropriate times.
--   Contributors from Semantic Conventions WG: \<to be added\>
+-   Contributors from Semantic Conventions SIG: \<to be added\>
 -   Maintainers or approvers: \<to be added\>
 
 ### Project Leads
