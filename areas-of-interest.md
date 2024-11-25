@@ -41,7 +41,7 @@ concerns.
 - OpenTelemetry Java
 - OpenTelemetry protocol
 
-### [Josh MacDonald](https://github.com/jmacd), Lightstep
+### [Josh MacDonald](https://github.com/jmacd), Microsoft
 
 - Metrics API and SDK and data model
 - Metrics collection infrastructure

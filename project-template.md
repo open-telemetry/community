@@ -20,6 +20,10 @@ In general, OTEPs are not accepted unless they come with working prototypes avai
 
 Who is currently planning to work on the project? If a project requires specialized domain expertise, please list it here. If a project is missing a critical mass of people in order to begin work, please clarify.
 
+### Industry outreach
+
+Who (people, companies) in the industry should be aware of this effort? Was there an attempt to get them onboard? What did they say?
+
 ### Required staffing
 
 Projects cannot be started until the following participants have been identified:

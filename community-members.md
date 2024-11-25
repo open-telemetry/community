@@ -6,15 +6,15 @@ This is the current Governance Committee, per the [Governance Committee
 Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md),
 in alphabetical order:
 
-- [Alolita Sharma](https://github.com/alolita), Apple, until October 2024
+- [Alolita Sharma](https://github.com/alolita), Apple, until October 2026
 - [Austin Parker](https://github.com/austinlparker), Honeycomb, until October 2025
-- [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2024
 - [Daniel Gomez Blanco](https://github.com/danielgblanco), Skyscanner, until October 2025
 - [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs, until October 2025
-- [Morgan McLean](https://github.com/mtwo), Splunk, until October 2024
+- [Morgan McLean](https://github.com/mtwo), Splunk, until October 2026
+- [Pablo Baeyens Fernandez](https://github.com/mx-psi), Datadog, until October 2026
 - [Severin Neumann](https://github.com/svrnm), Cisco, until October 2025
 - [Ted Young](https://github.com/tedsuo), Lightstep, until October 2025
-- [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2024
+- [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2026
 
 ## Technical Committee
 
@@ -26,7 +26,6 @@ in alphabetical order:
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake
 - [Carlos Alberto](https://github.com/carlosalberto), Lightstep
 - [Jack Berg](https://github.com/jack-berg), New Relic
-- [Josh MacDonald](https://github.com/jmacd), Lightstep
 - [Josh Suereth](https://github.com/jsuereth), Google
 - [Liudmila Molkova](https://github.com/lmolkova), Microsoft
 - [Reiley Yang](https://github.com/reyang), Microsoft
@@ -185,6 +184,7 @@ Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/open
 - [Ben Sigelman](https://github.com/bhs), until October 2023
 - [Bogdan Drutu](https://github.com/BogdanDrutu), until October 2023
 - [Constance Caramanolis](https://github.com/ccaraman), until October 2021
+- [Daniel Dyla](https://github.com/dyladan), until October 2024
 - [Liz Fong-Jones](https://github.com/lizthegrey), until October 2022
 - [Sarah Novotny](https://github.com/SarahNovotny), until October 2021
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), until October 2021
