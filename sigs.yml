@@ -255,7 +255,7 @@
     gcLiaison:
       - name: 'Severin Neumann'
         github: svrnm
-  - name: Agent Management
+  - name: OpAMP
     meeting: Every other Wednesday at 11:00 PT
     notes:
       type: gDoc
