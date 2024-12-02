@@ -15,7 +15,7 @@ We want to ensure:
 * Cold start data capture and submission
 * The new TelemetryAPI is properly integrated and utilized by OpenTelemetry
 
-**This SIG will also serve as a working group for all FAAS topics going forward.**
+**This SIG will also serve as an interest group for all FAAS topics going forward.**
 
 ## Deliverables
 
@@ -71,8 +71,8 @@ CET Option: Wednesday @ 7 am PST
 
 ## Timeline
 
-1. New working group will be kicked off in January
-2. The WG has 6 weeks to propose improvements to the specification and solutions - Beginning of March
+1. New SIG will be kicked off in January
+2. The SIG has 6 weeks to propose improvements to the specification and solutions - Beginning of March
 3. OTeps and the first implementation in JavaScript will be reviewed by the community - All of March
 4. Implementation - we want to start with JavaScript and Python as our first target implementation languages - Beginning of April
 
