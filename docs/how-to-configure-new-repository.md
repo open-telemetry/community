@@ -119,6 +119,27 @@ Same as for [`dependabot/**/**`](#branch-protection-rule-dependabot) above.
 This branch protection rule is not set up automatically, but can be added for any
 repositories that are using [Renovate](https://github.com/apps/renovate).
 
+Note: Since Renovate was enabled and disabled across all OpenTelemetry repositories at one point,
+you will need to follow one of these two options to re-onboard:
+
+Option 1:
+
+* Find the original `Configure Renovate` PR,
+  e.g. https://github.com/open-telemetry/semantic-conventions-java/pull/34,
+  and rename that PR to something else, e.g. `Configure Renovate - old`.
+* Enable Renovate on the repository (requires org admin permission).
+* Renovate will send a new onboarding PR to the repository,
+  e.g. https://github.com/open-telemetry/semantic-conventions-java/pull/95.
+
+Option 1:
+
+* Merge `renovate.json` to `main`.
+* Enable Renovate on the repository (requires org admin permission).
+* Go to Renovate, e.g. https://developer.mend.io/github/open-telemetry/opentelemetry-proto-go,
+  and run Actions > Run Renovate scan.
+* Renovate won't send a new onboarding PR in this case,
+  but will directly start sending PRs to update dependencies.
+
 #### Branch protection rule: `gh-readonly-queue/main/**`
 
 Same as for [`dependabot/**/**`](#branch-protection-rule-dependabot) above.
