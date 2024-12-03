@@ -20,6 +20,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [Crates](#crates)
   * [Maven](#maven)
   * [PyPI](#pypi)
+  * [PHP Extras](#PHP-Extras)
 - [Communication channels](#communication-channels)
   * [opentelemetry-calendar-contributors Google Group](#opentelemetry-calendar-contributors-google-group)
   * [OpenTelemetry Calendar Invites Google Group](#opentelemetry-calendar-invites-google-group)
@@ -165,6 +166,21 @@ but these individual OpenTelemetry members have been given rights to publish und
 Link: https://pypi.org/user/opentelemetry/
 
 - Owner: [@codeboten](https://github.com/codeboten)
+ 
+### PHP Extras
+
+##### SIG Extra Repositories: https://github.com/opentelemetry-php
+
+These read only repository clones are used in order to create split-repos, which are necessary for packagist php package publishing.
+
+##### Packagist: https://packagist.org/packages/open-telemetry/
+
+These are the published packages for opentelemetry-php (used by package managers like [composer](https://getcomposer.org))
+
+Owners:
+
+- [@bobstrecansky](https://github.com/bobstrecansky)
+- [@brettmc](https://github.com/brettmc)
 
 ## Communication channels
 
@@ -350,3 +366,4 @@ GitHub repository](https://github.com/open-telemetry/sig-security).
 
 * Advisories Dashboard
 * Snyk
+
