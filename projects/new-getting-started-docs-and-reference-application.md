@@ -80,6 +80,9 @@ This project is a collaboration between SIG Communications (Docs Contributors) a
 
   - [@jack-berg](https://github.com/jack-berg)
 
+- Staffing from SIG Ruby
+
+  - [@kaylareopelle](https://github.com/kaylareopelle)
 - Staffing from `Language SIG 2`
 
   - `tbd`
