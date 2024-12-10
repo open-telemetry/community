@@ -115,6 +115,12 @@ Triagers may be code contributors, but writing code is not a requirement for
 becoming a triager. Triagers are encouraged to be active participants in project
 meetings, chat rooms, and other discussion forums.
 
+Triagers belong to a specific [SIG](processes.md/#special-interest-groups-sigs).
+There can be multiple triager groups in a single SIG. For example, there can be
+different triager groups for different repositories owned by a SIG, or different
+triager groups for different areas of expertise (e.g. different languages in the
+documentation).
+
 ### Requirements
 
 - Nominated by a maintainer, with no objections from other maintainers.
@@ -141,6 +147,12 @@ workflow](https://help.github.com/en/articles/about-code-owners).
 
 Approver status can be scoped to a part of the codebase. For example, critical
 core components may have higher bar for becoming an approver.
+
+Approvers belong to a specific [SIG](processes.md/#special-interest-groups-sigs).
+There can be multiple approver groups in a single SIG. For example, there can be
+different approver groups for different repositories owned by a SIG, or different 
+approver groups for different areas of expertise (e.g. different languages in the
+documentation).
 
 ### Requirements
 
@@ -184,6 +196,12 @@ directly or through delegation of these responsibilities.
 
 Defined by: GitHub organization ownership, permissions and entry in `CODEOWNERS`
 files.
+
+Maintainers belong to a specific [SIG](processes.md/#special-interest-groups-sigs).
+There can be multiple maintainer groups in a single SIG. For example, there can be
+different maintainer groups for different repositories owned by a SIG, or different 
+maintainer groups for different areas of expertise (e.g. different languages in the
+documentation).
 
 ### Requirements
 
