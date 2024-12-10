@@ -26,7 +26,6 @@ in alphabetical order:
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake
 - [Carlos Alberto](https://github.com/carlosalberto), Lightstep
 - [Jack Berg](https://github.com/jack-berg), New Relic
-- [Josh MacDonald](https://github.com/jmacd), Lightstep
 - [Josh Suereth](https://github.com/jsuereth), Google
 - [Liudmila Molkova](https://github.com/lmolkova), Microsoft
 - [Reiley Yang](https://github.com/reyang), Microsoft
@@ -55,6 +54,7 @@ repositories:
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace
 - [David Ashpole](https://github.com/dashpole), Google
+- [Josh MacDonald](https://github.com/jmacd), Microsoft
 - [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs
 - [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Marc Alff](https://github.com/marcalff), Oracle
@@ -193,4 +193,5 @@ Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/open
 
 ## Technical Committee Emeritus
 
+- [Josh MacDonald](https://github.com/jmacd)
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev)
