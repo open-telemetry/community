@@ -73,18 +73,16 @@ An example of how this could look can be seen in this preview of the OpenTelemet
 This project is a collaboration between SIG Communications (Docs Contributors) and the SIGs responsible for implementing the API and SDK in their respective languages. No new SIGs need to be formed; however, we do need individuals to sign up and support this effort:
 
 - Staffing from SIG Communications
-
   - [@svrnm](https://github.com/svrnm) (Project Lead)
 
 - Staffing from SIG Java
-
   - [@jack-berg](https://github.com/jack-berg)
+  - [@lof000](https://github.com/lof000)
 
 - Staffing from SIG Ruby
-
   - [@kaylareopelle](https://github.com/kaylareopelle)
-- Staffing from `Language SIG 2`
 
+- Staffing from `Language SIG 3`
   - `tbd`
 
 - GC/TC Sponsors
