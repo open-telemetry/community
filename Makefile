@@ -1,6 +1,9 @@
 # All documents to be used in spell check.
 ALL_DOCS := $(shell find . -type f -name '*.md' -not -path './.github/*' -not -path './node_modules/*' | sort)
 
+# This is needed to make the /repo paths below work in Windows Git Bash
+export MSYS_NO_PATHCONV=1
+
 .PHONY: table-generation
 table-generation:
 	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/update-sig-tables.py --install;
