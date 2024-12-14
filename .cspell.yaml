@@ -93,6 +93,7 @@ words:
     - codecov
     - codeowners
     - comms
+    - conv
     - credly
     - danielgblanco
     - darren17082
@@ -120,8 +121,10 @@ words:
     - genai
     - gitter
     - gitdm
+    - gogrpc
     - henrikrexed
     - heptio
+    - hipstershop
     - hongalex
     - horovits
     - jackjia
@@ -173,6 +176,7 @@ words:
     - nikimanoledaki
     - novotny
     - observiq
+    - otelcol
     - opamp
     - OpenLIT
     - opentelemetry
@@ -188,6 +192,7 @@ words:
     - paixão
     - pająk
     - passcodes
+    - pdata
     - poncelow
     - proto
     - protos
@@ -214,6 +219,8 @@ words:
     - snyk
     - splk
     - stalnaker
+    - stef
+    - stefgen
     - subdir
     - subproject
     - subprojects
@@ -238,3 +245,4 @@ words:
     - teamcity
     - vtex
     - yahn
+    - zstd
