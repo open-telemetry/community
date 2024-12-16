@@ -107,8 +107,8 @@ Existing solutions, that can be used as a basis for the reference application:
 
 ## Project Board
 
-**tbd**
+to be created
 
 ## SIG Meetings and Other Info
 
-**tbd**
+to be done

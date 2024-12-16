@@ -196,6 +196,7 @@ words:
     - pytest
     - raesene
     - reiley
+    - rolldice
     - ruech
     - runtimes
     - rynn
@@ -238,5 +239,6 @@ words:
     - triager
     - triagers
     - teamcity
+    - uninstrumented
     - vtex
     - yahn
