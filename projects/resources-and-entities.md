@@ -99,7 +99,7 @@ Engineers willing to write prototypes and contribute:
 - Collector - Tigran Najaryan, Bogdan Drutu (maintainer), Dmitrii Anoshin (maintainer).
 
 ## Meeting Times
-Once a project is started, the working group should meet regularly for discussion. These meeting times should be posted on the OpenTelemetry public calendar.
+Once a project is started, the SIG should meet regularly for discussion. These meeting times should be posted on the OpenTelemetry public calendar.
 
 ## Timeline
 

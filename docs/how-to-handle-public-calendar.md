@@ -43,9 +43,9 @@ otherwise synchronization to external calendars via the `calendar-*@opentelemetr
 The following details need to be set properly:
 
 - Title
-- Timeslot, with the right timezone set:
-  - All meeting hours between 2pm and 1am UTC are in Pacific Time (PT), with Daylight Saving Time.
-  - All meeting hours between 2am and 1pm UTC in UTC+8, without Daylight Saving Time.
+- Timeslot, using one of the following timezones:
+  - Pacific Time (PT), with Daylight Saving Time.
+  - UTC+8, without Daylight Saving Time.
 - Recurrence pattern (usually weekly or bi-weekly)
 - Location (see below for the Zoom links)
 - Description
@@ -92,6 +92,8 @@ The google group should be set up as follows:
 - Who can post: Group members
 - Who can view members: Group managers
 
+And set admin@opentelemetry.io's own subscription to "No email" under the membership settings for that google group.
+
 This allows anyone to subscribe to this specific meeting series by joining that google group.
 Please open a community issue to request the creation of a `calendar-...@opentelemetry.io` google group.
 
@@ -102,5 +104,6 @@ All recurring meetings are listed in the [Community repo's README](../README.md#
 ## Zoom bombing prevention
 
 All meetings are created by Zoom with randomized passcodes, which are embedded into the shared calendar links.
-All members of <opentelemetry-calendar-contributors@googlegroups.com> have access to [this document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#)
+All members of [calendar-edit-permission@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-edit-permission)
+have access to [this document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#)
 listing the host keys for our meetings and explaining how to deal with inappropriate behavior in Zoom.
