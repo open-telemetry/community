@@ -84,19 +84,6 @@
     gcLiaison:
     - name: Trask Stalnaker
       github: trask
-  - name: 'Semantic Conventions: Tooling'
-    meeting: Wednesday at 07:00 PT
-    notes:
-      type: gDoc
-      value: 1ygwXgOFRF01UfUOgMr_ElyL7fSDPchTKSrqfj-_HeyA
-    chat:
-      - type: slack
-        name: '#otel-semantic-conventions'
-        id: C041APFBYQP
-    invites: calendar-semconv
-    sponsors:
-    - name: Josh Suereth
-      github: jsuereth
   - name: 'Semantic Conventions: Messaging'
     meeting: Thursday at 8:00 PT
     notes:
@@ -615,6 +602,22 @@
     gcLiaison:
     - name: 'Austin Parker'
       github: austinlparker
+  - name: 'Semantic Conventions: Tooling'
+    meeting: Wednesday at 07:00 PT
+    notes:
+      type: gDoc
+      value: 1ygwXgOFRF01UfUOgMr_ElyL7fSDPchTKSrqfj-_HeyA
+    chat:
+      - type: slack
+        name: '#otel-weaver'
+        id: C0697EXNTL3
+    invites: calendar-semconv
+    sponsors:
+    - name: Josh Suereth
+      github: jsuereth
+    gcLiaison:
+    - name: Trask Stalnaker
+      github: trask
 - name: Cross-Cutting SIGs
   sigs:
   - name: Maintainer Meeting
