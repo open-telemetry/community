@@ -35,6 +35,8 @@ The project goals are the following:
   Arrow.
 - Refine and stabilize Otel/STEF specification and encourage its implementation
   inside or outside Otel.
+- Evaluate additional use-cases that can be served by Otel/STEF, for example
+  direct-export from SDKs to a local file.
 
 Project non-goals:
 
