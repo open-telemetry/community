@@ -615,6 +615,9 @@
     sponsors:
     - name: Josh Suereth
       github: jsuereth
+    gcLiaison:
+    - name: Trask Stalnaker
+      github: trask
 - name: Cross-Cutting SIGs
   sigs:
   - name: Maintainer Meeting
