@@ -351,3 +351,118 @@ Otel/STEF outperforms existing formats on speed while matching or outperforming 
   pdata <-> Otel/STEF converters.
 - [stef-spec](https://github.com/tigrannajaryan/stef/tree/main/stef-spec): STEF Specification and Protobuf definitions.
 - [stefgen](https://github.com/tigrannajaryan/stef/tree/main/stefgen): Generates serializers from STEF schema.
+
+## Appendix A. Benchmark Results
+
+To reproduce tests and benchmarks go to
+[benchmarks](https://github.com/tigrannajaryan/stef/tree/main/benchmarks)
+and run `go test -run <test name>` or `go test -run noname -bench <benchmark name>`.
+
+### Big Batch Size Comparison
+
+This [test](https://github.com/tigrannajaryan/stef/blob/faa751ffd2c151cb56d6149a56e08d5ace6aa5f2/benchmarks/size_test.go#L92)
+encodes various data sets in one large batch.
+
+(Note: Otel ARROW is missing for astronomyshop.pb.zst since it fails on that particular dataset).
+
+"Ratio" column shows how much smaller the format is compared to OTLP. "By/pt" is bytes 
+per metric data point.
+
+```
+oteldemo-with-histogram.otlp.zst        Uncompressed           Zstd Compressed
+                                     Bytes Ratio By/pt        Bytes Ratio By/pt
+OTLP                               2107272  1.00 180.4       116224  1.00  10.0
+STEF                                215177  9.79  18.4        65100  1.79   5.6
+Otel ARROW                         1027487  2.05  88.0        88985  1.31   7.6
+Parquet                            6769343  0.31 579.6        86401  1.35   7.4
+
+astronomyshop.pb.zst                    Uncompressed           Zstd Compressed
+                                     Bytes Ratio By/pt        Bytes Ratio By/pt
+OTLP                             145844039  1.00 185.4      6304039  1.00   8.0
+STEF                               7405219 19.69   9.4      1647188  3.83   2.1
+Parquet                          463449273  0.31 589.0      1605365  3.93   2.0
+
+hipstershop.pb.zst                      Uncompressed           Zstd Compressed
+                                     Bytes Ratio By/pt        Bytes Ratio By/pt
+OTLP                              21148675  1.00 316.5       549012  1.00   8.2
+STEF                                430572 49.12   6.4        92229  5.95   1.4
+Otel ARROW                         5813446  3.64  87.0       236734  2.32   3.5
+Parquet                           45523313  0.46 681.3       206885  2.65   3.1
+
+hostandcollectormetrics.pb.zst          Uncompressed           Zstd Compressed
+                                     Bytes Ratio By/pt        Bytes Ratio By/pt
+OTLP                              22219873  1.00 106.6       846035  1.00   4.1
+STEF                               1258654 17.65   6.0        83020 10.19   0.4
+Otel ARROW                        11139870  1.99  53.5       205821  4.11   1.0
+Parquet                           54114959  0.41 259.7       130650  6.48   0.6
+```
+
+### Small Batch Size Comparison
+
+This [test](https://github.com/tigrannajaryan/stef/blob/faa751ffd2c151cb56d6149a56e08d5ace6aa5f2/benchmarks/size_test.go#L231)
+encodes various data sets in natural batch sizes as they are produced by Otel Collector.
+
+"Ratio" column shows how much smaller the format is compared to OTLP.
+
+```
+oteldemo-with-histogram.otlp   Comp     Bytes Ratio
+OTLP                           none   2107272 x 1.00
+STEF                           none    225412 x 9.35
+Otel ARROW                     none   1292654 x 1.63
+hostandcollectormetrics.pb     Comp     Bytes Ratio
+OTLP                           none  22219873 x 1.00
+STEF                           none   1352787 x 16.43
+Otel ARROW                     none  13662327 x 1.63
+astronomyshop.pb               Comp     Bytes Ratio
+OTLP                           none 145844039 x 1.00
+STEF                           none   9915697 x 14.71
+Otel ARROW                     none  92143355 x 1.58
+oteldemo-with-histogram.otlp   Comp     Bytes Ratio
+OTLP                           zstd    249074 x 1.00
+STEF                           zstd     85404 x 2.92
+Otel ARROW                     zstd    479510 x 0.52
+hostandcollectormetrics.pb     Comp     Bytes Ratio
+OTLP                           zstd   2750908 x 1.00
+STEF                           zstd    245856 x 11.19
+Otel ARROW                     zstd   4428191 x 0.62
+astronomyshop.pb               Comp     Bytes Ratio
+OTLP                           zstd  19855253 x 1.00
+STEF                           zstd   3377238 x 5.88
+Otel ARROW                     zstd  40924021 x 0.49
+```
+
+### Native Serialization Speed
+
+This [benchmark](https://github.com/tigrannajaryan/stef/blob/faa751ffd2c151cb56d6149a56e08d5ace6aa5f2/benchmarks/benchmarks_test.go#L52)
+shows the time it takes to convert and serialize from format's native in-memory 
+representation to the wire format and back.
+
+```
+BenchmarkSerializeNative/OTLP/none-10                 61          20202320 ns/op               302.2 ns/point
+BenchmarkSerializeNative/STEF/none-10                268           4127767 ns/op                61.74 ns/point
+BenchmarkSerializeNative/Otel_ARROW/none-10            2         637581500 ns/op              9537 ns/point
+BenchmarkSerializeNative/Parquet/none-10              14          74616205 ns/op              1116 ns/point
+BenchmarkDeserializeNative/OTLP/none-10               19          54340149 ns/op               812.7 ns/point
+BenchmarkDeserializeNative/STEF/none-10              674           1766272 ns/op                26.42 ns/point
+BenchmarkDeserializeNative/Otel_ARROW/none-10         10         108990904 ns/op              1630 ns/point
+BenchmarkDeserializeNative/Parquet/none-10             7         168741494 ns/op              2524 ns/point
+```
+
+### From/To Pdata Serialization Speed
+
+This [benchmark](https://github.com/tigrannajaryan/stef/blob/faa751ffd2c151cb56d6149a56e08d5ace6aa5f2/benchmarks/benchmarks_test.go#L137)
+shows the time it takes to convert and serialize from Collector pdata
+into the format, or deserialize from the format and convert to Pdata.
+
+These times are representative of what we would expect from a Collector 
+receiver/exporter implementation.
+
+```
+BenchmarkSerializeFromPdata/OTLP/none-10                      62          19029481 ns/op               284.7 ns/point
+BenchmarkSerializeFromPdata/STEF/none-10                      12          89845938 ns/op              1344 ns/point
+BenchmarkSerializeFromPdata/Otel_ARROW/none-10                 2         603604896 ns/op              9029 ns/point
+BenchmarkSerializeFromPdata/Parquet/none-10                    5         201956992 ns/op              3021 ns/point
+BenchmarkDeserializeToPdata/OTLP/none-10                      19          53900846 ns/op               806.1 ns/point
+BenchmarkDeserializeToPdata/STEF/none-10                      55          22592695 ns/op               338.0 ns/point
+BenchmarkDeserializeToPdata/Otel_ARROW/none-10                10         106528750 ns/op              1593 ns/point
+```

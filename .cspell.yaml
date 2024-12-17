@@ -20,6 +20,7 @@ words:
     - Alff
     - Arize
     - Ashpole
+    - astronomyshop
     - Baeyens
     - Collibra
     - Coralogix
@@ -37,6 +38,7 @@ words:
     - faas
     - gitter
     - grafana
+    - hostandcollectormetrics
     - Hostmetrics
     - hostmetricsreceiver
     - jemmic
@@ -53,6 +55,7 @@ words:
     - opentelemetry
     - opentelemetrybot
     - otel
+    - oteldemo
     - otep
     - otlp
     - passcodes
@@ -174,6 +177,7 @@ words:
     - nexis
     - nirga
     - nikimanoledaki
+    - noname
     - novotny
     - observiq
     - otelcol
