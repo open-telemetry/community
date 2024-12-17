@@ -19,8 +19,29 @@ Otel/STEF supports options that allow trading speed for size. At the highest
 speed setting it can be faster than OTLP (_including_ conversion to/from pdata), while 
 producing significantly smaller payloads.
 
-A draft specification and a prototype implementation of Otel/STEF is attached to thi
+A draft specification and a prototype implementation of Otel/STEF is attached to this
 proposal.
+
+### Design Principles
+
+Otel/STEF's design is optimized for fast serialization and compact representation at the 
+expense of other usage patterns. It chooses speed+size over other capabilities 
+that formats may have.
+
+The design principles are:
+
+- Fast sequential record-by-record reading/writing.
+- Minimal allocations during serialization/deserialization.
+- Stateful codec, optimized for avoiding repetitive work and duplicate data when used 
+  as a network protocol.
+
+Design non-goals are:
+
+- Random access to data by seeking to an arbitrary point in the stream.
+- Ability to keep the entire data batch in memory efficient and traverse it for 
+  processing purposes. Otel/STEF is not a replacement for Protobuf-based OTLP.
+- Ability to query (search) data by some criteria. Otel/STEF does not target Parquet's 
+  niche.
 
 ### Goals, objectives, and requirements
 
@@ -69,13 +90,13 @@ The benchmarks are run on the highest compression / slowest speed option.
 ### Wire Size
 
 The following benchmarks show zstd-compressed wire sizes of OTLP vs Otel/STEF vs Otel 
-Arrow. Benchmarks are run using
+Arrow Streaming Mode. Benchmarks are run using
 [Otel Arrow bench](https://github.com/open-telemetry/otel-arrow), with Otel/STEF
 prototype implementation added for comparison.
 
 Dataset `hipstershop_metrics.pb`:
 
-| BATCH SIZE         | OTLP                    | Otel/STEF                       | OTEL ARROW                      |
+| BATCH SIZE         | OTLP                    | Otel/STEF                       | OTEL ARROW + Stream Mode        |
 |--------------------|-------------------------|---------------------------------|---------------------------------|
 | Compressed (bytes) |                         |                                 |                                 |
 | batch_size: 128    | 4579  (total: 1.6 MB)   | 947 (x  4.83) (total: 323 kB)   | 2067 (x  2.22) (total: 705 kB)  |
@@ -86,7 +107,7 @@ Dataset `hipstershop_metrics.pb`:
 
 Dataset `multivariate-metrics.pb`:
 
-| BATCH SIZE         | OTLP                     | Otel/STEF                      | OTEL ARROW                       |
+| BATCH SIZE         | OTLP                     | Otel/STEF                      | OTEL ARROW + Stream Mode         |
 |--------------------|--------------------------|--------------------------------|----------------------------------|
 | Compressed (bytes) |                          |                                |                                  |
 | batch_size: 128    | 20355  (total: 1.6 MB)   | 1453 (x 14.00) (total: 115 kB) | 4114 (x  4.95) (total: 325 kB)   |
@@ -105,70 +126,70 @@ Otel/STEF vs Otel Arrow Phase 1.
 
 Dataset `hipstershop_metrics.pb`:
 
-| BATCH SIZE               | OTLP           | Otel/STEF              | OTEL ARROW              |
-|--------------------------|----------------|------------------------|-------------------------|
-| Exporter steps           |                |                        |                         |
-| OTLP -> OTel Arrow conv. |                |                        |                         |
-| batch_size: 128          | Not Applicable | 0.690ms/msg (x  0.00)  | 0.930ms/msg (x  0.00)   |
-| batch_size: 1024         | Not Applicable | 5.703ms/msg (x  0.00)  | 6.477ms/msg (x  0.00)   |
-| batch_size: 2048         | Not Applicable | 8.833ms/msg (x  0.00)  | 12.956ms/msg (x  0.00)  |
-| batch_size: 4096         | Not Applicable | 13.567ms/msg (x  0.00) | 28.200ms/msg (x  0.00)  |
-| batch_size: 16384        | Not Applicable | 41.819ms/msg (x  0.00) | 144.682ms/msg (x  0.00) |
-| Protobuf serialization   |                |                        |                         |
-| batch_size: 128          | 0.083ms/msg    | 0.247ms/msg (x  0.34)  | 0.004ms/msg (x 20.73)   |
-| batch_size: 1024         | 0.632ms/msg    | 1.840ms/msg (x  0.34)  | 0.012ms/msg (x 54.57)   |
-| batch_size: 2048         | 1.263ms/msg    | 3.094ms/msg (x  0.41)  | 0.024ms/msg (x 52.77)   |
-| batch_size: 4096         | 2.515ms/msg    | 2.929ms/msg (x  0.86)  | 0.026ms/msg (x 95.18)   |
-| batch_size: 16384        | 9.353ms/msg    | 4.611ms/msg (x  2.03)  | 0.119ms/msg (x 78.37)   |
-| Compression              |                |                        |                         |
-| batch_size: 128          | 0.193ms/msg    | 0.013ms/msg (x 14.39)  | 0.102ms/msg (x  1.90)   |
-| batch_size: 1024         | 1.097ms/msg    | 0.028ms/msg (x 39.79)  | 0.802ms/msg (x  1.37)   |
-| batch_size: 2048         | 1.508ms/msg    | 0.074ms/msg (x 20.40)  | 0.727ms/msg (x  2.07)   |
-| batch_size: 4096         | 2.746ms/msg    | 0.047ms/msg (x 58.74)  | 1.091ms/msg (x  2.52)   |
-| batch_size: 16384        | 9.026ms/msg    | 0.044ms/msg (x207.36)  | 3.256ms/msg (x  2.77)   |
-| Sub total                |                |                        |                         |
-| batch_size: 128          | 0.276ms/msg    | 0.951ms/msg (x  0.29)  | 1.036ms/msg (x  0.27)   |
-| batch_size: 1024         | 1.729ms/msg    | 7.571ms/msg (x  0.23)  | 7.291ms/msg (x  0.24)   |
-| batch_size: 2048         | 2.771ms/msg    | 12.001ms/msg (x  0.23) | 13.707ms/msg (x  0.20)  |
-| batch_size: 4096         | 5.262ms/msg    | 16.543ms/msg (x  0.32) | 29.318ms/msg (x  0.18)  |
-| batch_size: 16384        | 18.379ms/msg   | 46.474ms/msg (x  0.40) | 148.057ms/msg (x  0.12) |
-| Receiver steps           |                |                        |                         |
-| Decompression            |                |                        |                         |
-| batch_size: 128          | 0.063ms/msg    | 0.001ms/msg (x 43.02)  | 0.050ms/msg (x  1.24)   |
-| batch_size: 1024         | 0.376ms/msg    | 0.003ms/msg (x109.00)  | 0.247ms/msg (x  1.52)   |
-| batch_size: 2048         | 0.608ms/msg    | 0.007ms/msg (x 81.33)  | 0.460ms/msg (x  1.32)   |
-| batch_size: 4096         | 1.047ms/msg    | 0.007ms/msg (x150.92)  | 0.842ms/msg (x  1.24)   |
-| batch_size: 16384        | 3.233ms/msg    | 0.009ms/msg (x357.56)  | 2.665ms/msg (x  1.21)   |
-| Protobuf deserialization |                |                        |                         |
-| batch_size: 128          | 0.247ms/msg    | 0.224ms/msg (x  1.10)  | 0.005ms/msg (x 48.27)   |
-| batch_size: 1024         | 1.875ms/msg    | 1.697ms/msg (x  1.11)  | 0.021ms/msg (x 91.37)   |
-| batch_size: 2048         | 3.325ms/msg    | 2.665ms/msg (x  1.25)  | 0.032ms/msg (x103.28)   |
-| batch_size: 4096         | 6.900ms/msg    | 4.106ms/msg (x  1.68)  | 0.044ms/msg (x156.26)   |
-| batch_size: 16384        | 24.714ms/msg   | 11.596ms/msg (x  2.13) | 0.166ms/msg (x148.68)   |
-| OTel Arrow -> OTLP conv. |                |                        |                         |
-| batch_size: 128          | 0.000ms/msg    | 0.000ms/msg (x  0.73)  | 0.471ms/msg (x  0.00)   |
-| batch_size: 1024         | 0.000ms/msg    | 0.000ms/msg (x  0.60)  | 3.328ms/msg (x  0.00)   |
-| batch_size: 2048         | 0.000ms/msg    | 0.000ms/msg (x  0.66)  | 6.260ms/msg (x  0.00)   |
-| batch_size: 4096         | 0.000ms/msg    | 0.000ms/msg (x  0.40)  | 11.690ms/msg (x  0.00)  |
-| batch_size: 16384        | 0.000ms/msg    | 0.000ms/msg (x  0.94)  | 44.226ms/msg (x  0.00)  |
-| Sub total                |                |                        |                         |
-| batch_size: 128          | 0.310ms/msg    | 0.226ms/msg (x  1.37)  | 0.526ms/msg (x  0.59)   |
-| batch_size: 1024         | 2.251ms/msg    | 1.700ms/msg (x  1.32)  | 3.596ms/msg (x  0.63)   |
-| batch_size: 2048         | 3.933ms/msg    | 2.672ms/msg (x  1.47)  | 6.752ms/msg (x  0.58)   |
-| batch_size: 4096         | 7.947ms/msg    | 4.113ms/msg (x  1.93)  | 12.576ms/msg (x  0.63)  |
-| batch_size: 16384        | 27.947ms/msg   | 11.606ms/msg (x  2.41) | 47.057ms/msg (x  0.59)  |
-| ======================== |                |                        |                         |
-| End-to-end               |                |                        |                         |
-| Total                    |                |                        |                         |
-| batch_size: 128          | 0.586ms/msg    | 1.177ms/msg (x  0.50)  | 1.562ms/msg (x  0.38)   |
-| batch_size: 1024         | 3.980ms/msg    | 9.272ms/msg (x  0.43)  | 10.888ms/msg (x  0.37)  |
-| batch_size: 2048         | 6.704ms/msg    | 14.674ms/msg (x  0.46) | 20.459ms/msg (x  0.33)  |
-| batch_size: 4096         | 13.209ms/msg   | 20.656ms/msg (x  0.64) | 41.894ms/msg (x  0.32)  |
-| batch_size: 16384        | 46.327ms/msg   | 58.080ms/msg (x  0.80) | 195.115ms/msg (x  0.24) |
+| BATCH SIZE               | OTLP           | Otel/STEF              | OTEL ARROW + Stream Mode |
+|--------------------------|----------------|------------------------|--------------------------|
+| Exporter steps           |                |                        |                          |
+| OTLP -> OTel Arrow conv. |                |                        |                          |
+| batch_size: 128          | Not Applicable | 0.690ms/msg (x  0.00)  | 0.930ms/msg (x  0.00)    |
+| batch_size: 1024         | Not Applicable | 5.703ms/msg (x  0.00)  | 6.477ms/msg (x  0.00)    |
+| batch_size: 2048         | Not Applicable | 8.833ms/msg (x  0.00)  | 12.956ms/msg (x  0.00)   |
+| batch_size: 4096         | Not Applicable | 13.567ms/msg (x  0.00) | 28.200ms/msg (x  0.00)   |
+| batch_size: 16384        | Not Applicable | 41.819ms/msg (x  0.00) | 144.682ms/msg (x  0.00)  |
+| Protobuf serialization   |                |                        |                          |
+| batch_size: 128          | 0.083ms/msg    | 0.247ms/msg (x  0.34)  | 0.004ms/msg (x 20.73)    |
+| batch_size: 1024         | 0.632ms/msg    | 1.840ms/msg (x  0.34)  | 0.012ms/msg (x 54.57)    |
+| batch_size: 2048         | 1.263ms/msg    | 3.094ms/msg (x  0.41)  | 0.024ms/msg (x 52.77)    |
+| batch_size: 4096         | 2.515ms/msg    | 2.929ms/msg (x  0.86)  | 0.026ms/msg (x 95.18)    |
+| batch_size: 16384        | 9.353ms/msg    | 4.611ms/msg (x  2.03)  | 0.119ms/msg (x 78.37)    |
+| Compression              |                |                        |                          |
+| batch_size: 128          | 0.193ms/msg    | 0.013ms/msg (x 14.39)  | 0.102ms/msg (x  1.90)    |
+| batch_size: 1024         | 1.097ms/msg    | 0.028ms/msg (x 39.79)  | 0.802ms/msg (x  1.37)    |
+| batch_size: 2048         | 1.508ms/msg    | 0.074ms/msg (x 20.40)  | 0.727ms/msg (x  2.07)    |
+| batch_size: 4096         | 2.746ms/msg    | 0.047ms/msg (x 58.74)  | 1.091ms/msg (x  2.52)    |
+| batch_size: 16384        | 9.026ms/msg    | 0.044ms/msg (x207.36)  | 3.256ms/msg (x  2.77)    |
+| Sub total                |                |                        |                          |
+| batch_size: 128          | 0.276ms/msg    | 0.951ms/msg (x  0.29)  | 1.036ms/msg (x  0.27)    |
+| batch_size: 1024         | 1.729ms/msg    | 7.571ms/msg (x  0.23)  | 7.291ms/msg (x  0.24)    |
+| batch_size: 2048         | 2.771ms/msg    | 12.001ms/msg (x  0.23) | 13.707ms/msg (x  0.20)   |
+| batch_size: 4096         | 5.262ms/msg    | 16.543ms/msg (x  0.32) | 29.318ms/msg (x  0.18)   |
+| batch_size: 16384        | 18.379ms/msg   | 46.474ms/msg (x  0.40) | 148.057ms/msg (x  0.12)  |
+| Receiver steps           |                |                        |                          |
+| Decompression            |                |                        |                          |
+| batch_size: 128          | 0.063ms/msg    | 0.001ms/msg (x 43.02)  | 0.050ms/msg (x  1.24)    |
+| batch_size: 1024         | 0.376ms/msg    | 0.003ms/msg (x109.00)  | 0.247ms/msg (x  1.52)    |
+| batch_size: 2048         | 0.608ms/msg    | 0.007ms/msg (x 81.33)  | 0.460ms/msg (x  1.32)    |
+| batch_size: 4096         | 1.047ms/msg    | 0.007ms/msg (x150.92)  | 0.842ms/msg (x  1.24)    |
+| batch_size: 16384        | 3.233ms/msg    | 0.009ms/msg (x357.56)  | 2.665ms/msg (x  1.21)    |
+| Protobuf deserialization |                |                        |                          |
+| batch_size: 128          | 0.247ms/msg    | 0.224ms/msg (x  1.10)  | 0.005ms/msg (x 48.27)    |
+| batch_size: 1024         | 1.875ms/msg    | 1.697ms/msg (x  1.11)  | 0.021ms/msg (x 91.37)    |
+| batch_size: 2048         | 3.325ms/msg    | 2.665ms/msg (x  1.25)  | 0.032ms/msg (x103.28)    |
+| batch_size: 4096         | 6.900ms/msg    | 4.106ms/msg (x  1.68)  | 0.044ms/msg (x156.26)    |
+| batch_size: 16384        | 24.714ms/msg   | 11.596ms/msg (x  2.13) | 0.166ms/msg (x148.68)    |
+| OTel Arrow -> OTLP conv. |                |                        |                          |
+| batch_size: 128          | 0.000ms/msg    | 0.000ms/msg (x  0.73)  | 0.471ms/msg (x  0.00)    |
+| batch_size: 1024         | 0.000ms/msg    | 0.000ms/msg (x  0.60)  | 3.328ms/msg (x  0.00)    |
+| batch_size: 2048         | 0.000ms/msg    | 0.000ms/msg (x  0.66)  | 6.260ms/msg (x  0.00)    |
+| batch_size: 4096         | 0.000ms/msg    | 0.000ms/msg (x  0.40)  | 11.690ms/msg (x  0.00)   |
+| batch_size: 16384        | 0.000ms/msg    | 0.000ms/msg (x  0.94)  | 44.226ms/msg (x  0.00)   |
+| Sub total                |                |                        |                          |
+| batch_size: 128          | 0.310ms/msg    | 0.226ms/msg (x  1.37)  | 0.526ms/msg (x  0.59)    |
+| batch_size: 1024         | 2.251ms/msg    | 1.700ms/msg (x  1.32)  | 3.596ms/msg (x  0.63)    |
+| batch_size: 2048         | 3.933ms/msg    | 2.672ms/msg (x  1.47)  | 6.752ms/msg (x  0.58)    |
+| batch_size: 4096         | 7.947ms/msg    | 4.113ms/msg (x  1.93)  | 12.576ms/msg (x  0.63)   |
+| batch_size: 16384        | 27.947ms/msg   | 11.606ms/msg (x  2.41) | 47.057ms/msg (x  0.59)   |
+| ======================== |                |                        |                          |
+| End-to-end               |                |                        |                          |
+| Total                    |                |                        |                          |
+| batch_size: 128          | 0.586ms/msg    | 1.177ms/msg (x  0.50)  | 1.562ms/msg (x  0.38)    |
+| batch_size: 1024         | 3.980ms/msg    | 9.272ms/msg (x  0.43)  | 10.888ms/msg (x  0.37)   |
+| batch_size: 2048         | 6.704ms/msg    | 14.674ms/msg (x  0.46) | 20.459ms/msg (x  0.33)   |
+| batch_size: 4096         | 13.209ms/msg   | 20.656ms/msg (x  0.64) | 41.894ms/msg (x  0.32)   |
+| batch_size: 16384        | 46.327ms/msg   | 58.080ms/msg (x  0.80) | 195.115ms/msg (x  0.24)  |
 
 Dataset `multivariate-metrics.pb`:
 
-| BATCH SIZE               | OTLP           | Otel/STEF               | OTEL ARROW               |
+| BATCH SIZE               | OTLP           | Otel/STEF               | OTEL ARROW + Stream Mode |
 |--------------------------|----------------|-------------------------|--------------------------|
 | Exporter steps           |                |                         |                          |
 | OTLP -> OTel Arrow conv. |                |                         |                          |
