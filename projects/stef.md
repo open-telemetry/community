@@ -38,7 +38,7 @@ The design principles are:
 Design non-goals are:
 
 - Random access to data by seeking to an arbitrary point in the stream.
-- Ability to keep the entire data batch in memory efficient and traverse it for 
+- Ability to keep the entire data batch in memory efficiently and traverse it for 
   processing purposes. Otel/STEF is not a replacement for Protobuf-based OTLP.
 - Ability to query (search) data by some criteria. Otel/STEF does not target Parquet's 
   niche.
@@ -54,6 +54,9 @@ The project goals are the following:
 - Add Otel/STEF exporter and Otel/STEF receiver to Otel Collector.
 - Publish benchmark-justified guidelines on applicability of Otel/STEF vs OTLP vs Otel
   Arrow.
+- Explore the limitations of Otel/STEF, the impact of its statefulness and 
+  persistent connection on load balancers and servers that accept a large number of 
+  connections.
 - Refine and stabilize Otel/STEF specification and encourage its implementation
   inside or outside Otel.
 - Evaluate additional use-cases that can be served by Otel/STEF, for example
