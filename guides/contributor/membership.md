@@ -1,4 +1,4 @@
-# Membership, Roles, and Responsibilities
+CONTRIBUTING.md# Membership, Roles, and Responsibilities
 
 OpenTelemetry is a project by, and for, its community. This document outlines
 the various roles and responsibilities of members, as well as the requirements
