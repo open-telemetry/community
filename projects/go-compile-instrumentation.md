@@ -58,5 +58,5 @@ Note that members from UTC-5 would not be able to attend the meeting, so the pro
 
 ## Repo
 
-https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation
+open-telemetry/opentelemetry-go-compile-instrumentation
 
