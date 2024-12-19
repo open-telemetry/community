@@ -115,6 +115,15 @@ Triagers may be code contributors, but writing code is not a requirement for
 becoming a triager. Triagers are encouraged to be active participants in project
 meetings, chat rooms, and other discussion forums.
 
+Triagers belong to a specific [SIG][].
+There can be multiple triager groups in a single SIG. For example, there can be
+different triager groups for different repositories owned by a SIG, or different
+triager groups for different areas of expertise (e.g. different languages in the
+documentation). A SIG can set up additional triager groups for organizational
+purposes to help make it easier to refer to a group of contributors, such as for
+ownership within a repository, through requesting PR reviews, or for contacting
+elsewhere on GitHub.
+
 ### Requirements
 
 - Nominated by a maintainer, with no objections from other maintainers.
@@ -141,6 +150,16 @@ workflow](https://help.github.com/en/articles/about-code-owners).
 
 Approver status can be scoped to a part of the codebase. For example, critical
 core components may have higher bar for becoming an approver.
+
+Approvers belong to a specific [SIG][].
+There can be multiple approver groups in a single SIG. For example, there can be
+different approver groups for different repositories owned by a SIG, or different 
+approver groups for different areas of expertise (e.g. different languages in the
+documentation). A SIG can set up additional approver groups for organizational
+purposes to help make it easier to refer to a group of contributors, such as for
+ownership within a repository, through requesting PR reviews, or for contacting
+elsewhere on GitHub.
+
 
 ### Requirements
 
@@ -184,6 +203,15 @@ directly or through delegation of these responsibilities.
 
 Defined by: GitHub organization ownership, permissions and entry in `CODEOWNERS`
 files.
+
+Maintainers belong to a specific [SIG][].
+There can be multiple maintainer groups in a single SIG. For example, there can be
+different maintainer groups for different repositories owned by a SIG, or different 
+maintainer groups for different areas of expertise (e.g. different languages in the
+documentation). A SIG can set up additional maintainer groups for organizational
+purposes to help make it easier to refer to a group of contributors, such as for
+ownership within a repository, through requesting PR reviews, or for contacting
+elsewhere on GitHub.
 
 ### Requirements
 
@@ -342,3 +370,4 @@ merged. The merger should update the `spec-sponsors` team with the new member.
 [Technical Committee]: ../../tech-committee-charter.md
 [opentelemetry-specification]: https://github.com/open-telemetry/opentelemetry-specification
 [Members of Standing]: ../../governance-charter.md#members-of-standing
+[SIG]: ./processes.md#special-interest-groups-sigs
