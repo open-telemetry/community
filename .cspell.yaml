@@ -20,6 +20,7 @@ words:
     - Alff
     - Arize
     - Ashpole
+    - astronomyshop
     - Baeyens
     - Collibra
     - Coralogix
@@ -37,6 +38,7 @@ words:
     - faas
     - gitter
     - grafana
+    - hostandcollectormetrics
     - Hostmetrics
     - hostmetricsreceiver
     - jemmic
@@ -53,6 +55,7 @@ words:
     - opentelemetry
     - opentelemetrybot
     - otel
+    - oteldemo
     - otep
     - otlp
     - passcodes
@@ -93,6 +96,7 @@ words:
     - codecov
     - codeowners
     - comms
+    - conv
     - credly
     - danielgblanco
     - darren17082
@@ -120,8 +124,10 @@ words:
     - genai
     - gitter
     - gitdm
+    - gogrpc
     - henrikrexed
     - heptio
+    - hipstershop
     - hongalex
     - horovits
     - jackjia
@@ -173,8 +179,10 @@ words:
     - nexis
     - nirga
     - nikimanoledaki
+    - noname
     - novotny
     - observiq
+    - otelcol
     - opamp
     - OpenLIT
     - opentelemetry
@@ -190,6 +198,7 @@ words:
     - paixão
     - pająk
     - passcodes
+    - pdata
     - poncelow
     - proto
     - protos
@@ -217,6 +226,9 @@ words:
     - snyk
     - splk
     - stalnaker
+    - statefulness
+    - stef
+    - stefgen
     - subdir
     - subproject
     - subprojects
@@ -242,3 +254,4 @@ words:
     - uninstrumented
     - vtex
     - yahn
+    - zstd
