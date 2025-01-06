@@ -175,7 +175,7 @@ their environment (along with their status), and to (b) be able to make changes
 to the configuration of these artifacts or possibly even update agent binaries.
 
 Specification work is already underway to address both of these needs, and the
-agent management SIG has already produced a specification for OpAMP, the
+OpAMP SIG has already produced a specification for OpAMP, the
 protocol that will drive these interactions. Over time, the SIGs that develop
 various OpenTelemetry artifacts will need to implement OpAMP to enable these
 scenarios.

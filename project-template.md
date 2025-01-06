@@ -20,11 +20,15 @@ In general, OTEPs are not accepted unless they come with working prototypes avai
 
 Who is currently planning to work on the project? If a project requires specialized domain expertise, please list it here. If a project is missing a critical mass of people in order to begin work, please clarify.
 
+### Industry outreach
+
+Who (people, companies) in the industry should be aware of this effort? Was there an attempt to get them onboard? What did they say?
+
 ### Required staffing
 
 Projects cannot be started until the following participants have been identified:
 * Every project needs a project lead, who is willing to bottom line the project and address any issues which are not handled by other project members.
-* At least two sponsoring TC or GC members. Sponsors are dedicated to attending meetings, reviewing proposals, and in general being aware of the state of the project and its technical details. Sponsors guide the project through the spec process, keep the tracking issue up to date, and help to ensure that relevant community members provide input at the appropriate times.
+* At least two sponsoring [TC](community-members.md#technical-committee) or [GC](community-members.md#governance-committee) members (or [semantic convention maintainers](https://github.com/orgs/open-telemetry/teams/specs-semconv-maintainers) in the case of semantic convention SIGs). Sponsors are dedicated to attending meetings, reviewing proposals, and in general being aware of the state of the project and its technical details. Sponsors guide the project through the spec process, keep the tracking issue up to date, and help to ensure that relevant community members provide input at the appropriate times.
 * A GC liaison to facilitate this SIG's health and ensure project scope remains true to the project description. If a GC member is also a sponsor for this project, they are by default the GC liaison (see [GC check-ins](https://github.com/open-telemetry/community/blob/main/gc-check-ins.md)).
 * Engineers willing to write prototypes in at least two languages (if relevant to project). Languages should be fairly different from each other (for example: Java and Python).
 * Maintainers or approvers from those languages committed to reviewing the prototypes.

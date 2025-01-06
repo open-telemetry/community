@@ -35,7 +35,7 @@ following:
 - Logo/landing page/marketing.
 - GitHub repository management, membership, and hosting.
 - Maintain relationships with CNCF. For instance, creating [documents describing
-  the project](https://github.com/cncf/toc/blob/main/proposals/sandbox/opentelemetry.adoc)
+  the project](https://github.com/cncf/toc/blob/main/projects/open-telemetry/otel-sandbox-proposal.adoc)
 - Define, evolve, and defend the **vision, values, mission, and scope** of the
   project - to establish and maintain the soul of OpenTelemetry.
 - Define and prioritize the roadmap for OpenTelemetry, as defined in the project
@@ -61,7 +61,7 @@ Efforts and initiatives that are too large, detailed, or important to be
 resolved in an issue or pull request are referred to as *projects*. These
 larger efforts often require collaboration between subject matter experts,
 the Technical Committee, and OpenTelemetry community members, and involve
-the creation of either a SIG or a Working Group. The [project management](https://github.com/open-telemetry/community/blob/main/project-management.md)
+the creation of a SIG. The [project management](https://github.com/open-telemetry/community/blob/main/project-management.md)
 document describes the process for creating and executing projects of this size.
 
 The GC is responsible for reviewing project proposals, aligning their execution
@@ -70,7 +70,7 @@ clear goals and are staffed sufficiently to deliver on an agreed upon deadline.
 The Governance Committee is also responsible for deciding if a project is out of
 scope for the OpenTelemetry project.
 
-For proposals that involve [donating](https://github.com/open-telemetry/community/blob/main/CONTRIBUTING.md#donations)
+For proposals that involve [donating](https://github.com/open-telemetry/community/blob/main/guides/contributor/donations.md)
 code bases to OpenTelemetry, the Governance Committee is responsible for
 performing due diligence in determining if the donation is a strategic
 fit for OpenTelemetry before referring the donation to the TC for

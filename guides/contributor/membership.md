@@ -8,14 +8,14 @@ maintainer!
 
 ## Membership Levels
 
-| **Role**              | **Responsibilities**                                              | **Requirements**                                                                                                                           | **Defined by**                                                                                                |
-|-----------------------|-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| member                | active contributor in the community.  reviewer of PRs             | sponsored by 2 approvers or maintainers. multiple contributions to the project.                                                            | OpenTelemetry GitHub org member.                                                                              |
-| triager               | assist with project management and backlog organization.          | nominated by a maintainer. help with issues for one month.                                                                                 | CONTRIBUTING, CODEOWNERS, or the README.                                                                      |
-| approver              | approve incoming contributions                                    | highly experienced and active reviewer + contributor to a subproject                                                                       | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners) in GitHub                                 |
-| maintainer            | set direction and priorities for a subproject                     | demonstrated responsibility and excellent technical judgement for the subproject                                                           | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners), GitHub Team and repo ownership in GitHub |
-| emeritus              | position of honor for former maintainers, approvers, and triagers | must have previously held a community role and not have been removed from that role for a [Code of Conduct](code-of-conduct.md) violation. | Listed as an emeritus maintainer/approver/triager in CONTRIBUTING, CODEOWNERS, or README                      |
-| specification sponsor | trusted collaborators for the specification                       | nominated by [Technical Committee][]                                                                                                       | Listed in [Community Members -> Specification and Protos](./community-members.md#specifications-and-proto)    |
+| **Role**              | **Responsibilities**                                              | **Requirements**                                                                                                                                 | **Defined by**                                                                                                 |
+|-----------------------|-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| member                | active contributor in the community.  reviewer of PRs             | sponsored by 2 approvers or maintainers. multiple contributions to the project.                                                                  | OpenTelemetry GitHub org member.                                                                               |
+| triager               | assist with project management and backlog organization.          | nominated by a maintainer. help with issues for one month.                                                                                       | CONTRIBUTING, CODEOWNERS, or the README.                                                                       |
+| approver              | approve incoming contributions                                    | highly experienced and active reviewer + contributor to a subproject                                                                             | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners) in GitHub                                  |
+| maintainer            | set direction and priorities for a subproject                     | demonstrated responsibility and excellent technical judgement for the subproject                                                                 | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners), GitHub Team and repo ownership in GitHub  |
+| emeritus              | position of honor for former maintainers, approvers, and triagers | must have previously held a community role and not have been removed from that role for a [Code of Conduct](../../code-of-conduct.md) violation. | Listed as an emeritus maintainer/approver/triager in CONTRIBUTING, CODEOWNERS, or README                       |
+| specification sponsor | trusted collaborators for the specification                       | nominated by [Technical Committee][]                                                                                                             | Listed in [Community Members -> Specification and Protos](../../community-members.md#specifications-and-proto) |
 
 ## New contributors
 
@@ -58,7 +58,7 @@ Defined by: Member of the OpenTelemetry GitHub organization
 - [Joined the Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q)
   - [Get an invite to join CNCF](https://slack.cncf.io/)
 - Have read the [contributor
-  guide](https://github.com/open-telemetry/community/blob/main/CONTRIBUTING.md)
+  guide](https://github.com/open-telemetry/community/blob/main/guides/contributor)
 - Actively contributing to 1 or more subprojects.
 - Sponsored by 2 approvers. Note the following requirements for sponsors:
   - Sponsors must have close interactions with the prospective member - e.g.
@@ -115,6 +115,15 @@ Triagers may be code contributors, but writing code is not a requirement for
 becoming a triager. Triagers are encouraged to be active participants in project
 meetings, chat rooms, and other discussion forums.
 
+Triagers belong to a specific [SIG][].
+There can be multiple triager groups in a single SIG. For example, there can be
+different triager groups for different repositories owned by a SIG, or different
+triager groups for different areas of expertise (e.g. different languages in the
+documentation). A SIG can set up additional triager groups for organizational
+purposes to help make it easier to refer to a group of contributors, such as for
+ownership within a repository, through requesting PR reviews, or for contacting
+elsewhere on GitHub.
+
 ### Requirements
 
 - Nominated by a maintainer, with no objections from other maintainers.
@@ -141,6 +150,16 @@ workflow](https://help.github.com/en/articles/about-code-owners).
 
 Approver status can be scoped to a part of the codebase. For example, critical
 core components may have higher bar for becoming an approver.
+
+Approvers belong to a specific [SIG][].
+There can be multiple approver groups in a single SIG. For example, there can be
+different approver groups for different repositories owned by a SIG, or different 
+approver groups for different areas of expertise (e.g. different languages in the
+documentation). A SIG can set up additional approver groups for organizational
+purposes to help make it easier to refer to a group of contributors, such as for
+ownership within a repository, through requesting PR reviews, or for contacting
+elsewhere on GitHub.
+
 
 ### Requirements
 
@@ -185,6 +204,15 @@ directly or through delegation of these responsibilities.
 Defined by: GitHub organization ownership, permissions and entry in `CODEOWNERS`
 files.
 
+Maintainers belong to a specific [SIG][].
+There can be multiple maintainer groups in a single SIG. For example, there can be
+different maintainer groups for different repositories owned by a SIG, or different 
+maintainer groups for different areas of expertise (e.g. different languages in the
+documentation). A SIG can set up additional maintainer groups for organizational
+purposes to help make it easier to refer to a group of contributors, such as for
+ownership within a repository, through requesting PR reviews, or for contacting
+elsewhere on GitHub.
+
 ### Requirements
 
 Unlike the roles outlined above, the maintainers of a subproject are typically
@@ -206,7 +234,7 @@ The following apply to the subproject for which one would be a maintainer.
   defined by Technical Committee (TC). Bringing general questions and requests
   to the discussions as part of specifications project.
 - Scheduling SIG meetings using the [OpenTelemetry Public
-  Calendar](./docs/how-to-handle-public-calendar.md).
+  Calendar](../../docs/how-to-handle-public-calendar.md).
 
 ### Responsibilities and privileges
 
@@ -264,11 +292,12 @@ time. These people may have expertise in one or more area of the project, but no
 longer have time to actively contribute or approve contributions. They are
 encouraged to reflect this by adding themselves to the `emeritus` section of the
 CONTRIBUTING, CODEOWNERS, or README of the subproject they are stepping away
-from. GitHub usernames listed under the `emeritus` section should be removed
-from the approvers list, and will no longer have any official responsibilities
-with the project. When a contributor returns to being more active, they may be
-promoted back to their previous position at the discretion of the current
-maintainers following the process defined above.
+from. Company affiliations should be removed at this time as they may change
+and may not be reflected accurately in the future. GitHub usernames listed under the
+`emeritus` section should be removed from the approvers list, and will no longer
+have any official responsibilities with the project. When a contributor returns
+to being more active, they may be promoted back to their previous position at
+the discretion of the current maintainers following the process defined above.
 
 ## Specification Sponsor
 
@@ -277,10 +306,10 @@ work to review, approve, and sponsor [opentelemetry-specification][] issues and
 PRs.
 
 Members are defined
-in [Community Members -> Specification and Protos](./community-members.md#specifications-and-proto)
+in [Community Members -> Specification and Protos](../../community-members.md#specifications-and-proto)
 and are members of the `spec-sponsors` team (TODO: add link to github team when
 available). Specification sponsors SHOULD list
-their [areas of interest](./areas-of-interest.md).
+their [areas of interest](../../areas-of-interest.md).
 
 ### Requirements
 
@@ -331,13 +360,14 @@ are met:
 - All TC members have approved the pull request or a majority of TC members have
   approved the pull request and no other TC member has objected by requesting
   changes on the pull request. In the case that all TC members have not given
-  approval, the pull request should stay open for a minimum of 5 days before
+  approval, the pull request should stay open for a minimum of 10 days before
   merging.
 
 The nominee is considered a specification sponsor after the pull request is
 merged. The merger should update the `spec-sponsors` team with the new member.
 
-[Governance Committee]: ./governance-charter.md
-[Technical Committee]: ./tech-committee-charter.md
+[Governance Committee]: ../../governance-charter.md
+[Technical Committee]: ../../tech-committee-charter.md
 [opentelemetry-specification]: https://github.com/open-telemetry/opentelemetry-specification
-[Members of Standing]: ./governance-charter.md#members-of-standing
+[Members of Standing]: ../../governance-charter.md#members-of-standing
+[SIG]: ./processes.md#special-interest-groups-sigs

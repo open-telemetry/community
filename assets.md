@@ -8,7 +8,6 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 
 - [Credential Storage](#credential-storage)
 - [Community Resource Accounts](#community-resource-accounts)
-  * [Actuated](#actuated)
   * [AWS account](#aws-account)
   * [Equinix bare metal](#equinix-bare-metal)
   * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
@@ -18,6 +17,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [NuGet OpenTelemetry organization](#nuget-opentelemetry-organization)
   * [MyGet OpenTelemetryCNCF account](#myget-opentelemetrycncf-account)
   * [NPM OpenTelemetry Organization](#npm-opentelemetry-organization)
+  * [Crates](#crates)
   * [Maven](#maven)
   * [PyPI](#pypi)
 - [Communication channels](#communication-channels)
@@ -48,15 +48,6 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 
 ## Community Resource Accounts
-
-### Actuated
-
-Link: https://actuated.dev/blog/arm-ci-cncf-ampere
-Doc: [Using Actuated](docs/using-actuated.md)
-
-- GitHub App available for repositories to get ARM64 Actions runners.
-- Admin: N/A. The program is managed by the CNCF and Actuated. The only
-  available admin task is to add the GitHub App to a repository.
 
 ### AWS account
 
@@ -151,6 +142,12 @@ Link: https://www.npmjs.com/settings/opentelemetry/packages
 - Owner: Mayur Kale @mayurkale22
 - Admin: Daniel Dyla @dyladan
 - Member: Bogdan Drutu @bogdandrutu
+
+### Crates
+
+Link: https://crates.io/teams/github:open-telemetry:rust-publishers
+
+Owners: [@open-telemetry/rust-publishers](https://github.com/orgs/open-telemetry/teams/rust-publishers)
 
 ### Maven
 

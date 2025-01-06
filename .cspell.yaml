@@ -1,5 +1,6 @@
 version: 0.2
-ignorePaths: ["elections/**/*", "tools/github/*", "scripts/**/*.py", "scripts/**/*.sh"]
+ignorePaths:
+  ["elections/**/*", "tools/github/*", "scripts/**/*.py", "scripts/**/*.sh"]
 # Ignore certain patterns in the sigs.yml file
 patterns:
   - name: Slack Channel ID
@@ -16,10 +17,15 @@ ignoreRegExpList:
   - GitHub Handle
   - GitHub Handle in YML
 words:
+    - Alff
+    - Arize
     - Ashpole
+    - Baeyens
     - Collibra
+    - Coralogix
     - DASD
     - Docu
+    - Dosu
     - datadog
     - devex
     - devstats
@@ -36,6 +42,9 @@ words:
     - jemmic
     - keptn
     - kubecon
+    - k8sclusterreceiver
+    - Langfuse
+    - Langtrace
     - liatrio
     - lightstep
     - logz
@@ -108,6 +117,7 @@ words:
     - fong
     - frzifus
     - gbbr
+    - genai
     - gitter
     - gitdm
     - henrikrexed
@@ -144,6 +154,7 @@ words:
     - mateuszrzeszutek
     - mayur
     - mayurkale
+    - Metry
     - mdelfabro
     - mhausenblas
     - mirabella
@@ -151,6 +162,8 @@ words:
     - mkorbi
     - molkova
     - msomasu
+    - MSYS
+    - PATHCONV
     - mtwo
     - mwear
     - najaryan
@@ -162,6 +175,8 @@ words:
     - nikimanoledaki
     - novotny
     - observiq
+    - opamp
+    - OpenLIT
     - opentelemetry
     - opentelemetrybot
     - otel
@@ -171,6 +186,7 @@ words:
     - otep
     - otlp
     - outreachy
+    - Prometheus
     - paixão
     - pająk
     - passcodes
@@ -180,6 +196,7 @@ words:
     - pytest
     - raesene
     - reiley
+    - rolldice
     - ruech
     - runtimes
     - rynn
@@ -207,6 +224,7 @@ words:
     - sudivate
     - suereth
     - supermajority
+    - Traceloop
     - tarnovski
     - tekton
     - thisthat
@@ -221,4 +239,6 @@ words:
     - triager
     - triagers
     - teamcity
+    - uninstrumented
+    - vtex
     - yahn

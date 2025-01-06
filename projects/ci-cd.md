@@ -1,10 +1,10 @@
-# CI/CD Observability Semantic Conventions Working Group
+# CI/CD Observability Semantic Conventions SIG
 
 [**CI/CD Project Board**](https://github.com/orgs/open-telemetry/projects/79)
 
 ## Description
 
-The goal of this working group is define the semantic conventions for CI/CD Observability and outline 
+The goal of this SIG is define the semantic conventions for CI/CD Observability and outline 
 a path forward for the OpenTelemetry community. 
 
 ### Why
@@ -22,7 +22,7 @@ is heavily looking for solutions and watching the related OTEP with interest.
 
 ## Deliverables
 
-The CI/CD observability working group is planning to deliver the [CI/CD Observability OTEP](https://github.com/open-telemetry/oteps/pull/223/files) with prototypes in the following areas:
+The CI/CD observability SIG is planning to deliver the [CI/CD Observability OTEP](https://github.com/open-telemetry/oteps/pull/223/files) with prototypes in the following areas:
 
 Only a few technologies are named here, so this is not all encompassing. As we build out these conventions, specifications, and prototypes we'll want to ensure that Observability is done within:
 
@@ -44,7 +44,7 @@ Current, non-complete list of Deliverables:
 ### Related OTEP(s)
 
 A related OTEP that is of great interest to the CI/CD OTEP is that of [Environment Variables as Context Propagators](https://github.com/open-telemetry/opentelemetry-specification/issues/740).
-This OTEP might be driven through other working groups, and isn't the direct focus of this working group, but is has wide arching impacts to enabling distributed tracing in batch systems. 
+This OTEP might be driven through other SIGs, and isn't the direct focus of this SIG, but is has wide arching impacts to enabling distributed tracing in batch systems. 
 As we work to define semantic conventions for CI/CD observability, this OTEP will without a doubt come into play in some form and thus is being listed as related but not a direct deliverable.
 
 
@@ -57,7 +57,7 @@ The following is a list of prototypes, plugins, components, and CI/CD related to
 | Related Vendor | Prototype                                                                                                                                                   | Related Resources                                                                                    | Comments                                                                                                         |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | GitHub         | [GitHub Actions Receiver](https://github.com/krzko/opentelemetry-collector-contrib/tree/feat-add-githubactionseventreceiver/receiver/githubactionsreceiver) | [OTEL Issue 27460](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/27460)   | * Event logs to traces                                                                                           |
-| GitHub/GitLab  | [Git Provider Receiver](https://github.com/liatrio/liatrio-otel-collector/tree/main/receiver/gitproviderreceiver)                                           | [OTEL Issue 22028](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/22028)   | * Delivery metrics by scraping Git vendors                                                                       |
+| GitHub/GitLab  | [GitHub Receiver](https://github.com/liatrio/liatrio-otel-collector/tree/main/receiver/githubreceiver)/[GitLab Receiver](https://github.com/liatrio/liatrio-otel-collector/tree/main/receiver/gitlabreceiver) | [OTEL Issue 22028](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/22028)   | * Delivery metrics by scraping Git vendors                                                                       |
 | K8S            | [Keptn](https://lifecycle.keptn.sh/)                                                                                                                        | [Keptn GitHub Repo](https://github.com/keptn/lifecycle-toolkit)                                      | * Focused on observability in Kubernetes deployments                                                             |
 | Jenkins        | [OpenTelemetry plugin](https://plugins.jenkins.io/opentelemetry/)                                                                                           | [Plugin GitHub Repo](https://github.com/jenkinsci/opentelemetry-plugin)                              | * Tracing of Jenkins pipelines                                                                                   |
 | Jenkins        | [OpenTelemetry Agent Host Metrics](https://plugins.jenkins.io/opentelemetry-agent-metrics/)                                                                 |                                                                                                      | * Metrics for Jenkins hosts                                                                                      |
@@ -68,7 +68,7 @@ The following is a list of prototypes, plugins, components, and CI/CD related to
 | GitLab         | [Distributed Tracing](https://docs.gitlab.com/ee/operations/tracing.html)                                                                                   |                                                                                                      | * Tracing in GitLab pipelines                                                                                    |
 | pytest         | [pyTest OpenTelemetry plugin](https://pypi.org/project/pytest-otel/)                                                                                        |                                                                                                      | * Tracing of Python test                                                                                         |
 | Maven          | [Maven OpenTelemetry extension](https://github.com/open-telemetry/opentelemetry-java-contrib/blob/main/maven-extension/README.md)                           |                                                                                                      | * Tracing of Maven builds                                                                                        |
-| Ansible        | [Ansible OpenTelemetry Callback Plugin](https://docs.ansible.com/ansible/latest/collections/community/general/opentelemetry_callback.html)                  |                                                                                                      | * Tracing in Ansible playbooks                                                                                   |
+| Ansible        | [Ansible OpenTelemetry Callback Plugin](https://docs.ansible.com/ansible/latest/collections/community/general/opentelemetry_callback.html)                  |                                                                                                      | * Tracing and Logs in Ansible playbooks                                                                                   |
 | JUnit          | [JUnit to OpenTelemetry](https://github.com/mdelapenya/junit2otlp)                                                                                          |                                                                                                      | * Tracing of JUnit test results                                                                                  |
 | Eiffel         | [Eiffel CI/CD Event Protocol](https://eiffel-community.github.io/)                                                                                          |                                                                                                      | * Event protocol for CI/CD observability and interoperability                                                    |
 | CDEvents       | [CD Event Protocol](https://cdevents.dev/)                                                                                                                  |                                                                                                      | * Event protocol for CI/CD observability and interoperability                                                    |
@@ -154,7 +154,7 @@ Estimated time-frame: 6-12 Months
 
 - [ ] TBD
 
-> Note: The working groups intent is to be nimble and able to adjust quickly.
+> Note: The SIG's intent is to be nimble and able to adjust quickly.
 
 ## Labels
 
