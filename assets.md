@@ -20,7 +20,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [Crates](#crates)
   * [Maven](#maven)
   * [PyPI](#pypi)
-  * [PHP Extras](#PHP-Extras)
+  * [PHP Extras](#php-extras)
 - [Communication channels](#communication-channels)
   * [opentelemetry-calendar-contributors Google Group](#opentelemetry-calendar-contributors-google-group)
   * [OpenTelemetry Calendar Invites Google Group](#opentelemetry-calendar-invites-google-group)
