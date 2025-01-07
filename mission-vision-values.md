@@ -141,7 +141,7 @@ companies with commercial interests in OpenTelemetry, especially vendors in the
 observability space. That said, we expect community members to act in the best
 interests of the project. Each member’s priorities when acting as a maintainer
 or contributor for the project should represent the interests of the project
-and its community first before their other obligations (e.g. employer).
+and its community first before their own interests and other obligations (e.g. employer).
 
 ### Disclose potential conflicts of interest
 
