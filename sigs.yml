@@ -533,7 +533,7 @@
     meeting: Tuesday at 09:00 PT
     notes:
       type: gDoc
-      value: 1tGKuCsSnyT2McDncVJrMgg74_z8V06riWZa0Sr79I_4
+      value: 12upOzNk8c3SFTjsL6IRohCWMgzLKoknSCOOdMakbWo4
     chat:
       - type: slack
         name: '#otel-rust'
