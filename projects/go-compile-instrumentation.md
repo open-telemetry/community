@@ -38,7 +38,10 @@ We also welcome everyone interested in this area to participate in the discussio
 
 - Project Lead: @ralf0131(Alibaba Cloud), @dineshg13(Datadog), @pdelewski(QuesmaOrg)
 - Sponsoring GC Members: @jpkrohling
-- Seed Approvers: @yiyang0(Alibaba Cloud), @123liuziming(Alibaba Cloud), @RomainMuller(Datadog)
+
+Additionally, the following people will participate in the SIG and be added as approvers once they are OpenTelemetry Github org members:
+
+- Future Approvers: @yiyang0(Alibaba Cloud), @123liuziming(Alibaba Cloud), @RomainMuller(Datadog)
 
 ## Meeting Times
 
