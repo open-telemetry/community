@@ -17,7 +17,6 @@ table-check:
 
 .PHONY: markdown-link-check
 markdown-link-check:
-	docker pull lycheeverse/lychee
 	docker run --rm \
 		--mount 'type=bind,source=$(PWD),target=/home/repo' \
 		lycheeverse/lychee \
