@@ -3,7 +3,7 @@
 ## Governance Committee
 
 This is the current Governance Committee, per the [Governance Committee
-Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md),
+Charter](./governance-charter.md),
 in alphabetical order:
 
 - [Alolita Sharma](https://github.com/alolita), Apple, until October 2026

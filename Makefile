@@ -22,7 +22,6 @@ markdown-link-check:
 		lycheeverse/lychee \
 		--config home/repo/.lychee.toml \
 		--root-dir /home/repo \
-		--exclude-path home/repo/elections/ \
 		--verbose \
 		home/repo
 

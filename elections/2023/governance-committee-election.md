@@ -2,7 +2,7 @@
 
 Please see **[the list of candidates running in the election here](./governance-committee-candidates.md)**.
 
-This document lays out the 2023 election process per the OpenTelemetry governance committee [charter document](../../governance-charter.md#establishment-of-a-governance-committee) requirements.
+This document lays out the 2023 election process per the OpenTelemetry governance committee [charter document](../../governance-charter.md#elections) requirements.
 
 This election should fill five seats.
 
@@ -50,7 +50,7 @@ The governance committee also evaluated [Condorcet Internet Voting Service](http
 
 # Nominations
 
-As per [the charter document](../../governance-charter.md#establishment-of-a-governance-committee), anybody is eligible to run for the Governance Committee. During the "call for nomination" period, people can be nominated or nominate themselves by submitting a Pull Request adding said candidate to the [governance-committee-candidates.md](./governance-committee-candidates.md) file in the OpenTelemetry community repository. The template in that file includes the following columns:
+As per [the charter document](../../governance-charter.md#elections), anybody is eligible to run for the Governance Committee. During the "call for nomination" period, people can be nominated or nominate themselves by submitting a Pull Request adding said candidate to the [governance-committee-candidates.md](./governance-committee-candidates.md) file in the OpenTelemetry community repository. The template in that file includes the following columns:
 
 * Full name
 * GitHub alias
