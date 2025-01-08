@@ -144,14 +144,13 @@ other community members.
 It’s no secret that a good number of maintainers of the project are employed by
 companies with commercial interests in OpenTelemetry, especially vendors in the
 observability space. That said, we expect community members to act in the best
-interests of the project. Each member’s priorities can (and should!) align with
-those of their employers so that the relationship is beneficial to all parties,
-but when acting as a maintainer or contributor to the project, community members
-are expected to wear the project’s hat.
+interests of the project. Each member’s priorities when acting as a maintainer
+or contributor for the project should represent the interests of the project
+and its community first before their own interests and other obligations (e.g. employer).
 
 ### Disclose potential conflicts of interest
 
-Even within the project, people might have different hats: a Collector
+Even within the project, people may have different hats: a Collector
 maintainer might be part of the Governance Committee, a JavaScript maintainer
 might be part of the Technical Committee, and so on. When the context of your
 message can be ambiguous, make it clear which hat you are using. For instance,
