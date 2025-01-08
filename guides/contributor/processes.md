@@ -192,7 +192,7 @@ mention approvers or maintainers of this repository.
 
 ## Code attribution and licensing
 
-[License information](README.md#License) should be included in all source files where applicable.
+[License information](../../README.md#license) should be included in all source files where applicable.
 Either full or short version of the header should be used as described at [apache.org](https://www.apache.org/foundation/license-faq.html#Apply-My-Software).
 It is OK to exclude the year from the copyright notice. For the details on how to apply the copyright,
 see the next section.
