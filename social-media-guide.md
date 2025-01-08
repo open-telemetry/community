@@ -54,7 +54,7 @@ An example of content we should strive to regularly post:
 - New blog posts, videos, or other content from the project.
 - New major releases, especially if accompanied by a blog.
 - Ecosystem developments (new exporters, new instrumentation, new tools, etc.)
-- New SIGs, WGs, events, or other groups.
+- New SIGs, events, or other groups.
 - Surveys, polls, or other community engagement activities.
 
 ## Official Social Media Accounts

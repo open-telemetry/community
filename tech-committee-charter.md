@@ -64,8 +64,7 @@ The TC and entire technical community will follow any processes as may be specif
 ### Code Donations
 
 From time to time, organizations may wish to donate existing code to
-OpenTelemetry. The basic process for donating code is described [in
-CONTRIBUTING.md](CONTRIBUTING.md#donations).  Of note is the expectation that
+OpenTelemetry. The basic process for donating code is described [in the contributor guide](guides/contributor/donations.md).  Of note is the expectation that
 the TC respond to donation proposals **within two weeks.**
 
 ## Elections
@@ -104,7 +103,7 @@ For all votes, a simple majority of a quorum of TC members for, or against, the 
 
 ### Requesting a TC decision
 
-When a project issue fails to reach consensus, OpenTelemetry [community members](./community-membership.md#member) may request that the TC make a decision. If the issue falls under a project with assigned [approvers](./community-membership.md#approver) and / or [maintainers](./community-membership.md#maintainer), at least two of those members should agree to and coordinate requesting a TC decision.
+When a project issue fails to reach consensus, OpenTelemetry [community members](./guides/contributor/membership.md#member) may request that the TC make a decision. If the issue falls under a project with assigned [approvers](./community-membership.md#approver) and / or [maintainers](./community-membership.md#maintainer), at least two of those members should agree to and coordinate requesting a TC decision.
 
 The request for a TC decision must be made by a comment on a public issue. The comment must explicitly tag the TC team (@open-telemetry/technical-committee), and summarize the various options and their relative tradeoffs. A TC member should review the summary and may request additional details or other changes to more accurately frame the issue. The request will then be added to the TC agenda, and the TC will work towards a decision using the [TC voting process](#voting-on-project-issues).
 
@@ -112,6 +111,6 @@ The request for a TC decision must be made by a comment on a public issue. The c
 
 The OpenTelemetry project git repository is maintained by the TC and additional Maintainers who are added by the TC on an ongoing basis.
 
-Individuals making significant and valuable contributions, can move through the project to leadership roles as outlined in the [Community Membership](./community-membership.md) document. Modifications of the contents of the git repository are made on a collaborative basis as defined in the development process.
+Individuals making significant and valuable contributions, can move through the project to leadership roles as outlined in the [Community Membership](./guides/contributor/membership.md) document. Modifications of the contents of the git repository are made on a collaborative basis as defined in the development process.
 
 Project Members may opt to elevate (via [mail list](./#tc-technical-committee)) significant or controversial modifications, or modifications that have not found consensus to the TC for discussion. The TC will serve as the final arbiter where required. The TC will additionally publish and maintain a development process guide for people looking to participate in the development effort.

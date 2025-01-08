@@ -2,6 +2,43 @@
 
 This file is intended to list all the assets controlled by OpenTelemetry.
 
+<!-- Re-generate TOC with `make markdown-toc` -->
+
+<!-- toc -->
+
+- [Credential Storage](#credential-storage)
+- [Community Resource Accounts](#community-resource-accounts)
+  * [AWS account](#aws-account)
+  * [Equinix bare metal](#equinix-bare-metal)
+  * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
+  * [Netlify](#netlify)
+  * [Oracle Cloud account](#oracle-cloud-account)
+- [Artifact repositories](#artifact-repositories)
+  * [NuGet OpenTelemetry organization](#nuget-opentelemetry-organization)
+  * [MyGet OpenTelemetryCNCF account](#myget-opentelemetrycncf-account)
+  * [NPM OpenTelemetry Organization](#npm-opentelemetry-organization)
+  * [Crates](#crates)
+  * [Maven](#maven)
+  * [PyPI](#pypi)
+- [Communication channels](#communication-channels)
+  * [opentelemetry-calendar-contributors Google Group](#opentelemetry-calendar-contributors-google-group)
+  * [OpenTelemetry Calendar Invites Google Group](#opentelemetry-calendar-invites-google-group)
+  * [Mailing list cncf-opentelemetry-net-maintainers@lists.cncf.io](#mailing-list-cncf-opentelemetry-net-maintainerslistscncfio)
+  * [Mailing list cncf-opentelemetry-ruby@lists.cncf.io](#mailing-list-cncf-opentelemetry-rubylistscncfio)
+  * [Mailing list cncf-opentelemetry-governance@lists.cncf.io](#mailing-list-cncf-opentelemetry-governancelistscncfio)
+  * [YouTube channel OpenTelemetry](#youtube-channel-opentelemetry)
+  * [Zoom accounts](#zoom-accounts)
+  * [Zapier account](#zapier-account)
+  * [Google Workspace accounts](#google-workspace-accounts)
+  * [Google account for cncf-opentelemetry-governance@lists.cncf.io](#google-account-for-cncf-opentelemetry-governancelistscncfio)
+- [Bot accounts](#bot-accounts)
+  * [Easy CLA](#easy-cla)
+  * [Docker Hub](#docker-hub)
+  * [OpenTelemetry Bot](#opentelemetry-bot)
+- [Security](#security)
+
+<!-- tocstop -->
+
 ## Credential Storage
 
 - [1Password Teams](https://1password.com/)
@@ -27,6 +64,32 @@ Link: https://console.equinix.com/projects/6f1c9af6-0470-42da-8f22-59d0df245f6b
   other assets on
 - Admin: Juraci Paixão Kröhling @jpkrohling and OTel TC via the mailing list address
 
+### GitHub-hosted ARM64 runners
+
+These Linux and Windows ARM64
+[GitHub-hosted runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners)
+are available to OpenTelemetry repositories:
+
+- `otel-linux-arm64` (4-core)
+- `otel-windows-arm64` (4-core)
+
+At the time of writing, both of these runners have a concurrency limit of 20 jobs.
+
+Individual repositories need to be granted access to the runners, so please open a community issue
+if you would like to use them.
+
+Note: these pay-as-you-go GitHub-hosted runners for ARM64 are available for free for CNCF projects.
+CNCF and GitHub expect fair use of these provided resources.
+Please ensure your workloads are optimized to avoid unnecessary usage.
+
+### Google Cloud account
+
+Link: https://cloud.google.com
+
+- Community account to host https://go.opentelemetry.io
+- Admin: [@austinlparker](https://github.com/austinlparker)
+  (password is available in the OpenTelemetry Governance 1Password)
+
 ### Grafana organization for SIG Security
 
 Link: https://grafana.com/orgs/otelsigsecurity
@@ -35,6 +98,24 @@ Link: https://grafana.com/orgs/otelsigsecurity
   historical data on how quickly we respond to incidents
 - Users: SIG-Security Maintainers, Technical and Governance Committees
 - Admins: Juraci Paixão Kröhling @jpkrohling & Armin Ruech @arminru
+
+The GitHub organization `open-telemetry-private` also exists for this purpose.
+
+### Netlify
+
+Link: https://app.netlify.com/login
+
+- Used to manage domain names under opentelemetry.io
+- Used to publish https://opentelemetry.io
+- Admins: [@austinlparker](https://github.com/austinlparker), [@svrnm](https://github.com/svrnm), [@chalin](https://github.com/chalin)
+
+### Oracle Cloud account
+
+Link: https://www.oracle.com/cloud/sign-in.html
+
+- Community account to run [CLOWarden](https://github.com/cncf/clowarden)
+- Admin: [@austinlparker](https://github.com/austinlparker)
+  (password is available in the OpenTelemetry Governance 1Password)
 
 ## Artifact repositories
 
@@ -62,6 +143,12 @@ Link: https://www.npmjs.com/settings/opentelemetry/packages
 - Admin: Daniel Dyla @dyladan
 - Member: Bogdan Drutu @bogdandrutu
 
+### Crates
+
+Link: https://crates.io/teams/github:open-telemetry:rust-publishers
+
+Owners: [@open-telemetry/rust-publishers](https://github.com/orgs/open-telemetry/teams/rust-publishers)
+
 ### Maven
 
 Link: https://repo1.maven.org/maven2/io/opentelemetry/
@@ -80,6 +167,23 @@ Link: https://pypi.org/user/opentelemetry/
 - Owner: [@codeboten](https://github.com/codeboten)
 
 ## Communication channels
+
+### CNCF Community Group
+
+Used by the End-User SIG to organize events (e.g. OTel Q&A, OTel in Practice, feedback sessions, etc.).
+
+CNCF are the owners of the group, so certain requests (e.g. adding/removing organizers) need to be requested via on of these:
+
+* CNCF Service Desk
+* https://github.com/cncf/communitygroups/issues
+
+Link: https://community.cncf.io/opentelemetry/
+
+- Owners: CNCF
+- Lead Organizers (i.e. admins):
+  - [@open-telemetry/sig-end-user-approvers](https://github.com/orgs/open-telemetry/teams/sig-end-user-approvers): listed on group page, registered using their personal CNCF Community accounts.
+  - [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee) who can request changes via CNCF Service Desk tickets.
+
 
 ### opentelemetry-calendar-contributors Google Group
 
@@ -112,7 +216,7 @@ Link: https://groups.google.com/g/opentelemetry-calendar
 
 - Private mailing list for OpenTelemetry Governance Committee.
 - All GC members AND CNCF reps (Amye Scavarda Perrin, Chris Aniszczyk, Taylor Waggoner) are on the list and are list moderators.
-- Admin: [add member](https://lists.cncf.io/g/cncf-opentelemetry-governance/members).
+- Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
 
 ### YouTube channel OpenTelemetry
 
@@ -148,12 +252,23 @@ Link: https://zapier.com
 - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
   (GitHub password is available in the OpenTelemetry Governance 1Password)
 
-### Project Google account: cncf-opentelemetry-governance@lists.cncf.io
+### Google Workspace accounts
 
-- Used to manage the OpenTelemetry community calendar and Zoom
-- Owned by the governance committee
+- Accounts
+  - admin@opentelemetry.io
+- Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+- Used to manage the OpenTelemetry community calendar
+- Used to manage the [Google Custom Search](https://programmablesearchengine.google.com/) for [opentelemetry.io/search](https://opentelemetry.io/search/)
+
+### Google account for cncf-opentelemetry-governance@lists.cncf.io
+
+- Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+- Used for community Google Docs
+- Used to manage Zoom
 
 ## Bot accounts
+
+Related: [Guidelines for adding new GitHub extensions](./docs/using-github-extensions.md).
 
 ### Easy CLA
 
@@ -205,7 +320,7 @@ The OpenTelemetry Bot addresses two common issues:
    prevent accidental recursive workflow runs).
 
    The OpenTelemetry GitHub organization has a GitHub Action secret named `OPENTELEMETRYBOT_GITHUB_TOKEN`, which is a
-   [Personal Access Token][] for [@opentelemetrybot](https://github.com/opentelemetrybot) with `public_repo`
+   [Personal Access Token][] for [@opentelemetrybot](https://github.com/opentelemetrybot) with `repo`, `workflow` and `read:org`
    scope for the OpenTelemetry Bot that you can use to bypass this limitation.
 
    The personal access token also has `workflow` scope which is needed when merging upstream changes of
@@ -216,3 +331,22 @@ The OpenTelemetry Bot addresses two common issues:
    organization secret.
 
    [Personal Access Token]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
+### Slack
+
+The slack user [`OpenTelemetry Admin`](https://cloud-native.slack.com/archives/D07EGBA9V6E) is community owned and can be
+used for self-servicing slack (e.g. as Channel Manager to rename spaces).
+
+- Owners: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+  (To login, go to <https://cloud-native.slack.com/>, click Sign In With Google and login as <admin@opentelemetry.io>.
+  Click `Cancel` when you are asked to open slack in the app, and wait for the link `use Slack in your browser` to be
+  available and use that.)
+
+## Security
+
+The SIG Security has access to the following tools, with GC and TC members welcome to request access to them as well.
+Find more details under [`tools`](https://github.com/open-telemetry/sig-security/tree/main/tools/) on the [SIG Security
+GitHub repository](https://github.com/open-telemetry/sig-security).
+
+* Advisories Dashboard
+* Snyk

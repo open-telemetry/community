@@ -37,8 +37,10 @@ by removing categories which overlap with issues.
 * The `foo-maintainers` team should be a member of the `foo-approvers` team,
   and the `foo-approvers` team should be a member of the `foo-triagers` team.
 * Every member of `foo-maintainers` should be included explicitly in `foo-approvers`
-  and `foo-triagers` with the "Maintainer" GitHub privileges. This allows
+  and `foo-triagers` with the "Maintainer" role. This allows
   repository maintainers to invite new approvers and triagers to the team.
+* Every member of `foo-maintainers` should have the "Maintainer" role on the `foo-maintainers` team.
+  This allows repository maintainers to invite new maintainers to the team.
 * The team `foo-triagers` has `Triage` permissions for the repository. If repository
   is using the Project Boards, `foo-triagers` should have `Write` permissions to
   have access to the Project Boards. Do not add members of `foo-triagers` to
@@ -79,6 +81,7 @@ Everything not mentioned is unchecked.
     * `EasyCLA`
 * Do not allow bypassing the above settings: :heavy_check_mark:
 * Restrict who can push to matching branches: :heavy_check_mark:
+  * Restrict pushes that create matching branches: :heavy_check_mark:
   * `Organization administrators, repository administrators, and users with the Maintain role`
 
 **Important:** the only ones of these rules which may be changed are
@@ -116,6 +119,34 @@ Same as for [`dependabot/**/**`](#branch-protection-rule-dependabot) above.
 This branch protection rule is not set up automatically, but can be added for any
 repositories that are using [Renovate](https://github.com/apps/renovate).
 
+Note: Since Renovate was enabled and disabled across all OpenTelemetry repositories at one point,
+you will need to follow one of these two options to re-onboard:
+
+Option 1:
+
+* Find the original `Configure Renovate` PR,
+  e.g. https://github.com/open-telemetry/semantic-conventions-java/pull/34,
+  and rename that PR to something else, e.g. `Configure Renovate - old`.
+* Enable Renovate on the repository (requires org admin permission).
+* Renovate will send a new onboarding PR to the repository,
+  e.g. https://github.com/open-telemetry/semantic-conventions-java/pull/95.
+
+Option 1:
+
+* Merge `renovate.json` to `main`.
+* Enable Renovate on the repository (requires org admin permission).
+* Go to Renovate, e.g. https://developer.mend.io/github/open-telemetry/opentelemetry-proto-go,
+  and run Actions > Run Renovate scan.
+* Renovate won't send a new onboarding PR in this case,
+  but will directly start sending PRs to update dependencies.
+
+#### Branch protection rule: `gh-readonly-queue/main/**`
+
+Same as for [`dependabot/**/**`](#branch-protection-rule-dependabot) above.
+
+This branch protection rule is not set up automatically, but can be added for any
+repositories that are using merge queues.
+
 #### Branch protection rule: `**/**`
 
 Same as for [`main`](#branch-protection-rule-main) above.
@@ -125,6 +156,11 @@ Same as for [`main`](#branch-protection-rule-main) above.
 * Fork pull request workflows from outside collaborators
   * `Require approval for first-time contributors who are new to GitHub`
     * (this can also be `Require approval for first-time contributors`)
+
+### Code Security
+
+* Dependabot alerts: :heavy_check_mark:
+* Dependabot security updates: :heavy_check_mark:
 
 ## CODEOWNERS
 

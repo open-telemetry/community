@@ -1,61 +1,33 @@
-# OpenTelemetry Contributor Guide
+# Contribution Lifecycle and Processes
 
-Welcome to OpenTelemetry! This document is the single source of truth for how to
-contribute to the code base. Feel free to browse the [open
-issues](https://github.com/open-telemetry/community/issues?q=is%3Aissue+is%3Aopen+label%3Aarea%2Fcontributor-guide)
-and file new ones, all feedback welcome!
+OpenTelemetry is a big project, and can be overwhelming at first glance. This
+guide aims to help you understand how to find things to work on, how to find
+help, and how changes are merged and released.
 
-# Before you get started
+## Table of Contents
 
-## Sign the CLA
+- [Contribution Lifecycle and Processes](#contribution-lifecycle-and-processes)
+  - [Table of Contents](#table-of-contents)
+  - [Your First Contribution](#your-first-contribution)
+    - [Finding something to work on](#finding-something-to-work-on)
+    - [Find a good first topic](#find-a-good-first-topic)
+      - [Issue Assignment in Github](#issue-assignment-in-github)
+  - [Special Interest Groups (SIGs)](#special-interest-groups-sigs)
+      - [SIG structure](#sig-structure)
+    - [SIG-specific contributing guidelines](#sig-specific-contributing-guidelines)
+    - [File an Issue](#file-an-issue)
+  - [Workflows](#workflows)
+    - [Communication](#communication)
+  - [GitHub workflow](#github-workflow)
+  - [Open a Pull Request](#open-a-pull-request)
+  - [Code Review](#code-review)
+  - [Code attribution and licensing](#code-attribution-and-licensing)
+    - [Copyright Notices](#copyright-notices)
+  - [Specification Changes](#specification-changes)
+    - [Creating specification issues](#creating-specification-issues)
+    - [Issue lifecycle](#issue-lifecycle)
 
-Before you can contribute, you will need to sign the [Contributor License
-Agreement](https://docs.linuxfoundation.org/lfx/easycla/contributors).
-
-## Code attribution
-
-[License information](README.md#License) should be included in all source files where applicable.
-Either full or short version of the header should be used as described at [apache.org](https://www.apache.org/foundation/license-faq.html#Apply-My-Software).
-It is OK to exclude the year from the copyright notice. For the details on how to apply the copyright,
-see the next section.
-
-## Copyright Notices
-
-OpenTelemetry follows [CNCF recommendations](https://github.com/cncf/foundation/blob/master/copyright-notices.md)
-for copyright notices. We use "Copyright The OpenTelemetry Authors" notice form.
-
-According to CNCF recommendations if you are contributing third-party code
-you will need to [retain the original copyright notice](https://github.com/cncf/foundation/blob/master/copyright-notices.md#dont-change-someone-elses-notice-without-their-permission).
-
-Any contributed third-party code must originally be Apache 2.0-Licensed or must
-carry a permissive software license that is compatible when combining with
-Apache 2.0 License. At this moment, BSD and MIT are the only
-[OSI-approved licenses](https://opensource.org/licenses/alphabetical) known to be compatible.
-
-If you make substantial changes to the third-party code, _prepend_ the contributed
-third party file with OpenTelemetry's copyright notice.
-
-If the contributed code is not third-party code and you are the author we
-strongly encourage to avoid including your name in the notice and use the
-generic "Copyright The OpenTelemetry Authors" notice. See rationale for this
-recommendation [here](https://github.com/cncf/foundation/blob/master/copyright-notices.md#why-not-list-every-copyright-holder).
-
-## Code of Conduct
-
-Please make sure to read and observe our [Code of
-Conduct](https://github.com/open-telemetry/community/blob/master/code-of-conduct.md).
-
-## Community Expectations and Roles
-
-OpenTelemetry is a community project. Consequently, it is wholly dependent on
-its community to provide a productive, friendly, and collaborative environment.
-
-- See [Community
-  Membership](https://github.com/open-telemetry/community/blob/master/community-membership.md)
-  for a list the various responsibilities of contributor roles. You are
-  encouraged to move up this contributor ladder as you gain experience.
-
-# Your First Contribution
+## Your First Contribution
 
 Would you like to help make robust, modern telemetry a built-in feature of
 modern software? We will help you understand the organization of the project and
@@ -69,7 +41,7 @@ Channel](https://cloud-native.slack.com/archives/CJFCJHG4Q) ([Get an invite to j
 questions on [Stack
 Overflow](https://stackoverflow.com/questions/tagged/open-telemetry).
 
-## Find something to work on
+### Finding something to work on
 
 Help is always welcome! For example, documentation (like the text you are
 reading now) can always use improvement. There's always code that can be
@@ -104,7 +76,7 @@ Unfortunately, due to GitHub limitations we can only assign issues to org
 members or repo collaborators. Instead, please state in a comment that you
 intend to work on this issue and it will be assumed to be yours.
 
-### Learn about SIGs
+## Special Interest Groups (SIGs)
 
 #### SIG structure
 
@@ -137,7 +109,7 @@ Make sure to adhere to the repository specific policies or issue templates to
 provide detailed information that will help prompt answer and resolution of an
 issue.
 
-### Contributing
+## Workflows
 
 OpenTelemetry is open source, but many of the people working on it do so as
 their day job. In order to avoid forcing people to be "at work" effectively
@@ -183,6 +155,7 @@ Common new contributor PR issues are:
   introduce
 - Introducing change that should be first be approved by TC, for instance, the
   introduction of new terminology
+- Leaving the description blank or only including an issue number.
 
 ## Code Review
 
@@ -217,70 +190,54 @@ nuances:
 Note: if your pull request isn't getting enough attention, you can explicitly
 mention approvers or maintainers of this repository.
 
-# Community
+## Code attribution and licensing
 
-If you haven't noticed by now, we have a large, lively, and friendly open-source
-community. We depend on new people becoming members and regular code
-contributors, so we would like you to come join us! The [Community Membership
-Document](https://github.com/open-telemetry/community/blob/master/community-membership.md)
-covers membership processes and roles.
+[License information](README.md#License) should be included in all source files where applicable.
+Either full or short version of the header should be used as described at [apache.org](https://www.apache.org/foundation/license-faq.html#Apply-My-Software).
+It is OK to exclude the year from the copyright notice. For the details on how to apply the copyright,
+see the next section.
 
-## Donations
+### Copyright Notices
 
-Donations of preexisting code fall into two broad categories:
-* **Small donations:** Some donations only amount to a single PR and should
-  usually just be contributed as such
-* **Large or complex donations:** Other donations are much larger, require
-  ongoing maintenance of their own, and/or introduce nuanced licensing issues
+OpenTelemetry follows [CNCF recommendations](https://github.com/cncf/foundation/blob/master/copyright-notices.md)
+for copyright notices. We use "Copyright The OpenTelemetry Authors" notice form.
 
-Large donations – or small donations that turn up complex issues during PR
-review – should be referred to the Technical Committee (TC) by filing an issue
-in this `community` repository and tagging
-`@open-telemetry/technical-committee`. The TC will respond to donation
-proposals **within two weeks** (that is, after having time to meet and discuss
-live). If the TC has not responded to the donation request within that
-interval, the donating party can and should point to this document and request
-guidance at the TC's earliest convenience.
+According to CNCF recommendations if you are contributing third-party code
+you will need to [retain the original copyright notice](https://github.com/cncf/foundation/blob/master/copyright-notices.md#dont-change-someone-elses-notice-without-their-permission).
 
-All donated code requires a license compatible with the Apache Software License
-2.0, and donated code will require a change of copyright to reflect the
-OpenTelemetry Authors. The Governance Committee will also ask to review any
-trademarks (like the names of components) the donation can carry and make a
-decision to either remove those trademarks or transfer them to the CNCF.
+Any contributed third-party code must originally be Apache 2.0-Licensed or must
+carry a permissive software license that is compatible when combining with
+Apache 2.0 License. At this moment, BSD and MIT are the only
+[OSI-approved licenses](https://opensource.org/licenses/alphabetical) known to be compatible.
 
-### Donation process
+If you make substantial changes to the third-party code, _prepend_ the contributed
+third party file with OpenTelemetry's copyright notice.
 
-Broadly, these are the steps the OpenTelemetry Governance and Technical
-Committees follow to handle a prospective donation.
+If the contributed code is not third-party code and you are the author we
+strongly encourage to avoid including your name in the notice and use the
+generic "Copyright The OpenTelemetry Authors" notice. See rationale for this
+recommendation
+[here](https://github.com/cncf/foundation/blob/master/copyright-notices.md#why-not-list-every-copyright-holder).
 
-1. Per the above, the donating organization creates a GitHub issue using
-   the "Donation Proposal" form in the `community` repository.
-2. The Technical Committee (TC) will do diligence, write a report, and attach
-   that report to the GitHub issue. Writing the report may require meeting and
-   discussing alternative technologies with different vendors in the community
-   and can be a lengthy process. The TC member driving the report will post
-   updates and time estimates to the issue.
-3. The Governance Committee (GC) will consider the report and make a final
-   decision about the donation. The GC must ensure that the donation is aligned
-   with the overall OpenTelemetry project vision and roadmap and has a balanced
-   set of interested contributors and maintainers. The GC is also responsible
-   for driving awareness in the community about the contribution and making
-   sure all interested parties have a chance to object and/or contribute.
-4. If accepted, the contributing organization – particularly if it's a
-   commercial entity – must formally acknowledge via the GitHub issue that its
-   respective sales and marketing departments have received, understood, and
-   accepted the terms of the [OpenTelemetry marketing guidelines](https://github.com/open-telemetry/community/blob/main/marketing-guidelines.md).
-5. Given all of the above, the GitHub issue is closed and the donation moves
-   forward as agreed to by the TC and GC.
+## Specification Changes
 
-## Communication
+OpenTelemetry is driven by its
+[specification](https://github.com/open-telemetry/opentelemetry-specification)
+and [semantic conventions](https://github.com/open-telemetry/semantic-conventions).
+Making cross-cutting changes to the project will start in one of these two
+places. This section details how an idea becomes a specification change.
 
-- [General
-  Information](https://github.com/open-telemetry/community#Communication)
+### Creating specification issues
 
-## Events
+A specification issue can be big, or small. A good specification issue, though,
+will be clear, concise, and scoped to a single, well-defined problem. Be sure to
+include specific examples of the problem you're trying to solve by opening a
+specification issue, along with any prior art or other relevant documentation.
 
-OpenTelemetry participates in KubeCon + CloudNativeCon, held three times per
-year in China, Europe and in North America. Information about these and other
-community events is available on the CNCF [events](https://www.cncf.io/events/)
-pages.
+### Issue lifecycle
+
+Specification issues are regularly triaged by the Governance Committee (GC). The GC may accept,
+decline, or defer the issue until more details are added. Once an issue is
+accepted, it may need a sponsor from the TC who will be responsible for driving the
+issue to completion. Some issues may be small enough that they do not need a
+sponsor -- these issues can be worked on as soon as they are accepted.

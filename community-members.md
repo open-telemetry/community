@@ -6,15 +6,15 @@ This is the current Governance Committee, per the [Governance Committee
 Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md),
 in alphabetical order:
 
-- [Alolita Sharma](https://github.com/alolita), Apple, until October 2024
+- [Alolita Sharma](https://github.com/alolita), Apple, until October 2026
 - [Austin Parker](https://github.com/austinlparker), Honeycomb, until October 2025
-- [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2024
 - [Daniel Gomez Blanco](https://github.com/danielgblanco), Skyscanner, until October 2025
 - [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs, until October 2025
-- [Morgan McLean](https://github.com/mtwo), Splunk, until October 2024
+- [Morgan McLean](https://github.com/mtwo), Splunk, until October 2026
+- [Pablo Baeyens Fernandez](https://github.com/mx-psi), Datadog, until October 2026
 - [Severin Neumann](https://github.com/svrnm), Cisco, until October 2025
 - [Ted Young](https://github.com/tedsuo), Lightstep, until October 2025
-- [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2024
+- [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2026
 
 ## Technical Committee
 
@@ -26,8 +26,8 @@ in alphabetical order:
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake
 - [Carlos Alberto](https://github.com/carlosalberto), Lightstep
 - [Jack Berg](https://github.com/jack-berg), New Relic
-- [Josh MacDonald](https://github.com/jmacd), Lightstep
 - [Josh Suereth](https://github.com/jsuereth), Google
+- [Liudmila Molkova](https://github.com/lmolkova), Microsoft
 - [Reiley Yang](https://github.com/reyang), Microsoft
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 - [Yuri Shkuro](https://github.com/yurishkuro), Meta
@@ -37,7 +37,7 @@ in alphabetical order:
 These are community maintainers, responsible for cross-functional project communications,
 events, and other functions as needed.
 
-- [Austin Parker](https://github.com/austinlparker), Lightstep
+- [Austin Parker](https://github.com/austinlparker), Honeycomb
 
 ## Specifications and Proto
 
@@ -45,23 +45,32 @@ Members of the Technical Committee are the maintainers of
 [Project specs](https://github.com/open-telemetry/opentelemetry-specification)
 and [Proto definitions](https://github.com/open-telemetry/opentelemetry-proto).
 
-Trace Approvers:
+[Specification sponsors](./guides/contributor/membership.md#specification-sponsor) are
+trusted collaborators of the Technical Committee on Project specs and related
+repositories:
 
+- [Alex Boten](https://github.com/codeboten), Honeycomb
 - [Christian Neumüller](https://github.com/Oberon00), Dynatrace
-- [Nikita Salnikov-Tarnovski](https://github.com/iNikem), Splunk
-- [Ted Young](https://github.com/tedsuo), Lightstep
-
-Metrics Approvers:
-
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
+- [Daniel Dyla](https://github.com/dyladan), Dynatrace
+- [David Ashpole](https://github.com/dashpole), Google
+- [Josh MacDonald](https://github.com/jmacd), Microsoft
+- [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs
 - [Leighton Chen](https://github.com/lzchen), Microsoft
+- [Marc Alff](https://github.com/marcalff), Oracle
+- [Robert Pająk](https://github.com/pellared), Splunk
+- [Severin Neumann](https://github.com/svrnm), Cisco
+- [Ted Young](https://github.com/tedsuo), Lightstep
+- [Tristan Sloughter](https://github.com/tsloughter), MyDecisiveAI
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
-Logs Approvers:
+Emeritus sponsors (formerly approvers):
 
-- [Christian Beedgen](https://github.com/kumoroku), Sumo Logic
-- [Daniel Jaglowski](https://github.com/djaglowski), observIQ
-- [David Poncelow](https://github.com/zenmoto), Splunk
+- [Christian Beedgen](https://github.com/kumoroku)
+- [Daniel Jaglowski](https://github.com/djaglowski)
+- [David Poncelow](https://github.com/zenmoto)
+- [Leighton Chen](https://github.com/lzchen)
+- [Nikita Salnikov-Tarnovski](https://github.com/iNikem)
 
 ## Semantic Conventions
 
@@ -89,7 +98,7 @@ Repo: [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/op
 
 The [list of active members](https://github.com/open-telemetry/opentelemetry-dotnet#contributing) (both "approvers" and "maintainers") can be found in the [README.md](https://github.com/open-telemetry/opentelemetry-dotnet/blob/master/README.md#contributing) file in the [repo](https://github.com/open-telemetry/opentelemetry-dotnet).
 
-### Auto-Instrumentation Agent (aka Tracer)
+### .NET Auto-Instrumentation
 
 Repo: [open-telemetry/opentelemetry-dotnet-instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation).
 
@@ -149,6 +158,12 @@ Repo: [open-telemetry/opentelemetry-ruby](https://github.com/open-telemetry/open
 
 The list of active members (both "approvers" and "maintainers") for OpenTelemetry Ruby can be found in the [open-telemetry/opentelemetry-ruby README file](https://github.com/open-telemetry/opentelemetry-ruby#contributing).
 
+## Rust
+
+Repo: [open-telemetry/opentelemetry-rust](https://github.com/open-telemetry/opentelemetry-rust)
+
+The list of active members (both "approvers" and "maintainers") for OpenTelemetry Rust can be found in the [open-telemetry/opentelemetry-rust README file](https://github.com/open-telemetry/opentelemetry-rust/blob/main/README.md#approvers-and-maintainers).
+
 ## PHP
 
 Repo: [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opentelemetry-php)
@@ -165,20 +180,18 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/opentelemetry-demo)
 
-## Others
-
-Rust
-
 ## Governance Committee Emeritus
 
-- [Ben Sigelman](https://github.com/bhs), Lightstep, until October 2023
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake, until October 2023
-- [Constance Caramanolis](https://github.com/ccaraman), Splunk, until October 2021
-- [Liz Fong-Jones](https://github.com/lizthegrey), Honeycomb, until October 2022
-- [Sarah Novotny](https://github.com/SarahNovotny), Microsoft, until October 2021
-- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google, until October 2021
-- [Yuri Shkuro](https://github.com/yurishkuro), Meta, until October 2023
+- [Ben Sigelman](https://github.com/bhs), until October 2023
+- [Bogdan Drutu](https://github.com/BogdanDrutu), until October 2023
+- [Constance Caramanolis](https://github.com/ccaraman), until October 2021
+- [Daniel Dyla](https://github.com/dyladan), until October 2024
+- [Liz Fong-Jones](https://github.com/lizthegrey), until October 2022
+- [Sarah Novotny](https://github.com/SarahNovotny), until October 2021
+- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), until October 2021
+- [Yuri Shkuro](https://github.com/yurishkuro), until October 2023
 
 ## Technical Committee Emeritus
 
-- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), Google
+- [Josh MacDonald](https://github.com/jmacd)
+- [Sergey Kanzhelev](https://github.com/SergeyKanzhelev)
