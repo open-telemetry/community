@@ -20,6 +20,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [Crates](#crates)
   * [Maven](#maven)
   * [PyPI](#pypi)
+  * [PHP Extras](#php-extras)
 - [Communication channels](#communication-channels)
   * [opentelemetry-calendar-contributors Google Group](#opentelemetry-calendar-contributors-google-group)
   * [OpenTelemetry Calendar Invites Google Group](#opentelemetry-calendar-invites-google-group)
@@ -165,6 +166,22 @@ but these individual OpenTelemetry members have been given rights to publish und
 Link: https://pypi.org/user/opentelemetry/
 
 - Owner: [@codeboten](https://github.com/codeboten)
+ 
+### PHP Extras
+
+SIG Extra Repositories: https://github.com/opentelemetry-php
+
+Owners:
+
+- [@bobstrecansky](https://github.com/bobstrecansky)
+- [@brettmc](https://github.com/brettmc)
+
+Packagist: https://packagist.org/?query=open-telemetry
+
+Owners:
+
+- [@bobstrecansky](https://github.com/bobstrecansky)
+- [@brettmc](https://github.com/brettmc)
 
 ## Communication channels
 
