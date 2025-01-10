@@ -17,13 +17,13 @@ table-check:
 
 .PHONY: markdown-link-check
 markdown-link-check:
-	@if ! npm ls markdown-link-check; then npm install; fi
-	find . -type f \
-		-name '*.md' \
-		-not -path './node_modules/*' \
-		-not -path './elections/*/governance-committee-election.md' \
-		-not -path './elections/*/governance-committee-candidates.md' \
-		| xargs .github/scripts/markdown-link-check-with-retry.sh
+	docker run --rm \
+		--mount 'type=bind,source=$(PWD),target=/home/repo' \
+		lycheeverse/lychee \
+		--config home/repo/.lychee.toml \
+		--root-dir /home/repo \
+		--verbose \
+		home/repo
 
 # This target runs markdown-toc on all files that contain
 # a pair of comments <!-- toc --> and <!-- tocstop -->.

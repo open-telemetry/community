@@ -73,7 +73,7 @@ Leadership roles in OpenTelemetry project will be peer elected representatives o
 
 ### Election of TC Members
 
-New TC members can be nominated by any Member in Standing as defined in the [OpenTelemetry Governance Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md#members-of-standing), and must be sponsored by one of the existing TC members to bring it to a vote. A candidate can be elected to the TC by the super-majority vote (greater than two thirds) of the existing TC members. The voting by the TC members is anonymous. A multiple-candidate method, such as [Condorcet](https://en.wikipedia.org/wiki/Condorcet_method) or [Single Transferable Vote](https://en.wikipedia.org/wiki/Single_transferable_vote), may be used to conduct the vote, by phrasing the selections as:
+New TC members can be nominated by any Member in Standing as defined in the [OpenTelemetry Governance Charter](./governance-charter.md#members-of-standing), and must be sponsored by one of the existing TC members to bring it to a vote. A candidate can be elected to the TC by the super-majority vote (greater than two thirds) of the existing TC members. The voting by the TC members is anonymous. A multiple-candidate method, such as [Condorcet](https://en.wikipedia.org/wiki/Condorcet_method) or [Single Transferable Vote](https://en.wikipedia.org/wiki/Single_transferable_vote), may be used to conduct the vote, by phrasing the selections as:
 
 * Vote for Nominee X
 * Vote against Nominee X
@@ -103,7 +103,7 @@ For all votes, a simple majority of a quorum of TC members for, or against, the 
 
 ### Requesting a TC decision
 
-When a project issue fails to reach consensus, OpenTelemetry [community members](./guides/contributor/membership.md#member) may request that the TC make a decision. If the issue falls under a project with assigned [approvers](./community-membership.md#approver) and / or [maintainers](./community-membership.md#maintainer), at least two of those members should agree to and coordinate requesting a TC decision.
+When a project issue fails to reach consensus, OpenTelemetry [community members](./guides/contributor/membership.md#member) may request that the TC make a decision. If the issue falls under a project with assigned [approvers](./guides/contributor/membership.md#approver) and / or [maintainers](./guides/contributor/membership.md#maintainer), at least two of those members should agree to and coordinate requesting a TC decision.
 
 The request for a TC decision must be made by a comment on a public issue. The comment must explicitly tag the TC team (@open-telemetry/technical-committee), and summarize the various options and their relative tradeoffs. A TC member should review the summary and may request additional details or other changes to more accurately frame the issue. The request will then be added to the TC agenda, and the TC will work towards a decision using the [TC voting process](#voting-on-project-issues).
 
