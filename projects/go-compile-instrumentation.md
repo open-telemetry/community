@@ -1,4 +1,4 @@
-# Go compile time instrumentation
+# Bootstrap Go compile time instrumentation
 
 ## Description
 
@@ -22,7 +22,11 @@ By closely aligning with OpenTelemetry, the Go Compile Instrumentation SIG ensur
 ## Deliverables
 
 - A flexible and extensible instrumentation framework for Go at compile time
-- Out-of-box instrumentation for common libraries and frameworks in Go application
+- Out-of-box instrumentation for common libraries and frameworks in Go application. Initial support will be provided for key areas, each with one or two libraries. The proposed initial support for library instrumentation includes as follows and is subject to change:
+  - HTTP/RPC: gin, grpc
+  - Messaging: kafka
+  - Database: mysql
+  - NoSQL: redis
 - Comprehensive documentation that covers a wide array of topics, including how to use the framework, configuration options, advanced usage scenarios, and answers to FAQs
 
 ## Staffing/Help Wanted
@@ -63,3 +67,7 @@ Note that members from UTC-5 would not be able to attend the meeting, so the pro
 
 open-telemetry/opentelemetry-go-compile-instrumentation
 
+## Reference
+The project is a joint effort of donation proposal coming from Alibaba and Datadog, which are listed as follows:
+- https://github.com/open-telemetry/community/issues/2344
+- https://github.com/open-telemetry/community/issues/2497
