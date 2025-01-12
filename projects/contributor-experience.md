@@ -52,7 +52,7 @@ aspects as individuals and not in a team effort, notable:
 * Surveys by the End User SIG that aim towards contributor experience
 * _add more_
 
-Also related to this initiative is the [Check-In process of the Governance Committee](https://github.com/open-telemetry/community/blob/main/gc-check-ins.md)
+Also related to this initiative is the [Check-In process of the Governance Committee](../gc-check-ins.md)
 
 ### Goals, objectives, and requirements
 

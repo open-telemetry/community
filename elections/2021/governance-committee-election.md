@@ -79,7 +79,7 @@ As per
 anybody is eligible to run for the Governance Committee. During the “call for
 nomination” period, people can be nominated or nominate themselves by
 submitting a Pull Request adding said candidate to the
-[governance-committee-candidates.md](https://github.com/open-telemetry/community/blob/master/elections/2021/governance-committee-candidates.md)
+[governance-committee-candidates.md](./governance-committee-candidates.md)
 file in the OpenTelemetry community repository. The template in that file includes
 the following columns:
 * Full name

@@ -18,8 +18,8 @@ in alphabetical order:
 
 ## Technical Committee
 
-This is the current Technical Committee, per the [Technical Committee
-Charter](https://github.com/open-telemetry/community/blob/master/tech-committee-charter.md),
+This is the current Technical Committee, per the
+[Technical Committee Charter](./tech-committee-charter.md),
 in alphabetical order:
 
 - [Armin Ruech](https://github.com/arminru), Dynatrace
