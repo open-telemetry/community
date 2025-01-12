@@ -68,7 +68,7 @@ for group in data:
         short_name = None
         for chat in sig.get('chat', []):
             if chat.get('type') == 'slack':
-                short_name = chat.get('name').replace('#otel-', '')
+                short_name = 'sig-' + chat.get('name').replace('#otel-', '').replace('sig-', '')
                 break
 
         invites = sig.get('invites', 'none')
