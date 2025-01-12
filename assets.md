@@ -20,6 +20,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [Crates](#crates)
   * [Maven](#maven)
   * [PyPI](#pypi)
+  * [PHP Extras](#php-extras)
 - [Communication channels](#communication-channels)
   * [opentelemetry-calendar-contributors Google Group](#opentelemetry-calendar-contributors-google-group)
   * [OpenTelemetry Calendar Invites Google Group](#opentelemetry-calendar-invites-google-group)
@@ -165,6 +166,22 @@ but these individual OpenTelemetry members have been given rights to publish und
 Link: https://pypi.org/user/opentelemetry/
 
 - Owner: [@codeboten](https://github.com/codeboten)
+ 
+### PHP Extras
+
+SIG Extra Repositories: https://github.com/opentelemetry-php
+
+Owners:
+
+- [@bobstrecansky](https://github.com/bobstrecansky)
+- [@brettmc](https://github.com/brettmc)
+
+Packagist: https://packagist.org/?query=open-telemetry
+
+Owners:
+
+- [@bobstrecansky](https://github.com/bobstrecansky)
+- [@brettmc](https://github.com/brettmc)
 
 ## Communication channels
 
@@ -320,7 +337,7 @@ The OpenTelemetry Bot addresses two common issues:
    prevent accidental recursive workflow runs).
 
    The OpenTelemetry GitHub organization has a GitHub Action secret named `OPENTELEMETRYBOT_GITHUB_TOKEN`, which is a
-   [Personal Access Token][] for [@opentelemetrybot](https://github.com/opentelemetrybot) with `public_repo`
+   [Personal Access Token][] for [@opentelemetrybot](https://github.com/opentelemetrybot) with `repo`, `workflow` and `read:org`
    scope for the OpenTelemetry Bot that you can use to bypass this limitation.
 
    The personal access token also has `workflow` scope which is needed when merging upstream changes of

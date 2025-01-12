@@ -219,4 +219,4 @@ fill out the pre-registration form: https://forms.gle/9aqtXYm9BmZg7tjo9
 - enzian
 - cep21
 
-[charter]:https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee
+[charter]:../../governance-charter.md#elections

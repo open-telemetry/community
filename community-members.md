@@ -3,7 +3,7 @@
 ## Governance Committee
 
 This is the current Governance Committee, per the [Governance Committee
-Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md),
+Charter](./governance-charter.md),
 in alphabetical order:
 
 - [Alolita Sharma](https://github.com/alolita), Apple, until October 2026
@@ -54,6 +54,7 @@ repositories:
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace
 - [David Ashpole](https://github.com/dashpole), Google
+- [Josh MacDonald](https://github.com/jmacd), Microsoft
 - [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs
 - [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Marc Alff](https://github.com/marcalff), Oracle
@@ -192,4 +193,5 @@ Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/open
 
 ## Technical Committee Emeritus
 
+- [Josh MacDonald](https://github.com/jmacd)
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev)
