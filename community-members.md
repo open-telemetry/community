@@ -176,6 +176,12 @@ Repo: [open-telemetry/opentelemetry-swift](https://github.com/open-telemetry/ope
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Swift API & SDK can be found in the [open-telemetry/opentelemetry-swift CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-swift/blob/main/CONTRIBUTING.md).
 
+## Network collector
+
+Repos: [open-telemetry/opentelemetry-network](https://github.com/open-telemetry/opentelemetry-network) and [open-telemetry/opentelemetry-network-build-tools](https://github.com/open-telemetry/opentelemetry-network-build-tools)
+
+The list of active members (both "approvers" and "maintainers") for OpenTelemetry Rust can be found in the [open-telemetry/opentelemetry-network README file](https://github.com/open-telemetry/opentelemetry-network/blob/main/README.md#contributing).
+
 ## Community Demo
 
 Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/opentelemetry-demo)
