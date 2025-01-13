@@ -1,6 +1,7 @@
 # Generative AI Observability
 
->[!IMPORTANT] This project extends LLM Semantic Conventions project
+> [!IMPORTANT]
+> This project extends LLM Semantic Conventions project
 
 ## Description
 
