@@ -19,6 +19,9 @@ We want to ensure:
 
 By closely aligning with OpenTelemetry, the Go Compile Instrumentation SIG ensures that Go applications benefit from standardized, vendor-neutral, high-quality observability solutions that are both robust and easy to implement. Having one single, standard tool removes decision points from prospective developers, which makes the path to observability shorter & easier.
 
+## Project Board
+Project Board: https://github.com/orgs/open-telemetry/projects/130
+
 ## Deliverables
 
 - A flexible and extensible instrumentation framework for Go at compile time
@@ -40,12 +43,12 @@ We also welcome everyone interested in this area to participate in the discussio
 
 ### Required staffing
 
-- Project Lead: @ralf0131(Alibaba Cloud), @dineshg13(Datadog), @pdelewski(QuesmaOrg)
+- Project Lead: @ralf0131(Alibaba), @dineshg13(Datadog), @pdelewski(QuesmaOrg)
 - Sponsoring GC Members: @jpkrohling
 
 Additionally, the following people will participate in the SIG and be added as approvers once they are OpenTelemetry Github org members:
 
-- Future Approvers: @yiyang0(Alibaba Cloud), @123liuziming(Alibaba Cloud), @RomainMuller(Datadog)
+- Future Approvers: @yiyang0(Alibaba), @123liuziming(Alibaba), @RomainMuller(Datadog)
 
 ## Meeting Times
 
