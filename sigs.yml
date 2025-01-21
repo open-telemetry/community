@@ -460,9 +460,9 @@
       value: 1XkVahJfhf482d3WVHsvUUDaGzHc8TO3sqQlSS80mpGY
     chat:
       - type: slack
-        name: '#otel-go-compt-instr'
+        name: '#otel-go-compile-time-instr'
         id: C088D8GSSSF
-    invites: none
+    invites: calendar-go
     sponsors: []
     gcLiaison:
     - name: 'Juraci Paixão Kröhling'
