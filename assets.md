@@ -45,7 +45,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 
 Link: https://github.com/open-telemetry
 
-- Admins: [@open-telemetry/owners](https://github.com/orgs/open-telemetry/teams/owners
+- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
 
 ## Credential Storage
 
@@ -90,7 +90,7 @@ Note: these pay-as-you-go GitHub-hosted runners for ARM64 are available for free
 CNCF and GitHub expect fair use of these provided resources.
 Please ensure your workloads are optimized to avoid unnecessary usage.
 
-Admins: [@open-telemetry/owners](https://github.com/orgs/open-telemetry/teams/owners
+Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
 
 ### Google Cloud account
 
@@ -319,7 +319,7 @@ Important: You do not need to (and should not) give this account any permissions
 
 Link: [@opentelemetrybot](https://github.com/opentelemetrybot)
 
-- Admins: [@open-telemetry/owners](https://github.com/orgs/open-telemetry/teams/owners
+- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
   (GitHub password and associated 2FA for the `@opentelemetrybot` account are available in the GitHub Owners
   1Password)
 
