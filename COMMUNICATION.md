@@ -2,8 +2,7 @@
 
 ## Document purpose
 
-OpenTelemetry has a [Code of
-Conduct](https://github.com/open-telemetry/community/blob/master/code-of-conduct.md)
+OpenTelemetry has a [Code of Conduct](./code-of-conduct.md)
 where maintainers and community members pledge to foster a welcoming and open
 community. The code of conduct cites examples of unacceptable behavior by
 participants – like harassment, trolling or personal attacks – that would lead to
