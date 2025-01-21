@@ -226,7 +226,7 @@ mentors of new interns. My goal is to participate in all Outreachy cohorts for
 the next two years.
 
 For your reference, my 2021 platform can be found
-[here](https://github.com/open-telemetry/community/blob/main/elections/2021/governance-committee-candidates.md#Juraci-Paix%C3%A3o-Kr%C3%B6hling).
+[here](../2021/governance-committee-candidates.md#Juraci-Paix%C3%A3o-Kr%C3%B6hling).
 
 Thank you for your support in ensuring the continued growth and success of
 OpenTelemetry.

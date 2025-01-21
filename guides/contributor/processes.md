@@ -173,8 +173,7 @@ need you to:
   the bot sends you to guide you through the PR process
 
 Reviewers, the people giving the review, are highly encouraged to revisit the
-[Code of
-Conduct](https://github.com/open-telemetry/community/blob/master/code-of-conduct.md)
+[Code of Conduct](../../code-of-conduct.md)
 and must go above and beyond to promote a collaborative, respectful community.
 
 When reviewing PRs from others [The Gentle Art of Patch
@@ -207,8 +206,9 @@ you will need to [retain the original copyright notice](https://github.com/cncf/
 
 Any contributed third-party code must originally be Apache 2.0-Licensed or must
 carry a permissive software license that is compatible when combining with
-Apache 2.0 License. At this moment, BSD and MIT are the only
-[OSI-approved licenses](https://opensource.org/licenses/alphabetical) known to be compatible.
+Apache 2.0 License. The [CNCF Allowlist License Policy](https://github.com/cncf/foundation/blob/main/allowed-third-party-license-policy.md#cncf-allowlist-license-policy)
+describes the requirements for including third-party code in CNCF codebases,
+along with a list of approved compatible licenses.
 
 If you make substantial changes to the third-party code, _prepend_ the contributed
 third party file with OpenTelemetry's copyright notice.

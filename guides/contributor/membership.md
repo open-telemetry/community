@@ -57,8 +57,7 @@ Defined by: Member of the OpenTelemetry GitHub organization
     chat, email, and discussion forums)
 - [Joined the Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q)
   - [Get an invite to join CNCF](https://slack.cncf.io/)
-- Have read the [contributor
-  guide](https://github.com/open-telemetry/community/blob/main/guides/contributor)
+- Have read the [contributor guide](../../guides/contributor)
 - Actively contributing to 1 or more subprojects.
 - Sponsored by 2 approvers. Note the following requirements for sponsors:
   - Sponsors must have close interactions with the prospective member - e.g.
@@ -72,8 +71,8 @@ Defined by: Member of the OpenTelemetry GitHub organization
   against the
   [OpenTelemetry/community](https://github.com/open-telemetry/community) repo
   - Ensure your sponsors are `@mentioned` on the issue
-  - Complete every item on the checklist ([preview the current version of the
-    template](https://github.com/open-telemetry/community/blob/main/.github/ISSUE_TEMPLATE/membership.md))
+  - Complete every item on the checklist
+    ([preview the current version of the template](../../.github/ISSUE_TEMPLATE/membership.md))
   - Make sure that the list of contributions included is representative of your
     work on the project.
 - Have your sponsoring reviewers reply confirmation of sponsorship: `I support`
