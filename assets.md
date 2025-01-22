@@ -6,6 +6,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 
 <!-- toc -->
 
+- [GitHub organization](#github-organization)
 - [Credential Storage](#credential-storage)
 - [Community Resource Accounts](#community-resource-accounts)
   * [AWS account](#aws-account)
@@ -39,6 +40,12 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 - [Security](#security)
 
 <!-- tocstop -->
+
+## GitHub organization
+
+Link: https://github.com/open-telemetry
+
+- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
 
 ## Credential Storage
 
@@ -82,6 +89,8 @@ if you would like to use them.
 Note: these pay-as-you-go GitHub-hosted runners for ARM64 are available for free for CNCF projects.
 CNCF and GitHub expect fair use of these provided resources.
 Please ensure your workloads are optimized to avoid unnecessary usage.
+
+Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
 
 ### Google Cloud account
 
@@ -310,8 +319,8 @@ Important: You do not need to (and should not) give this account any permissions
 
 Link: [@opentelemetrybot](https://github.com/opentelemetrybot)
 
-- Admins: [@open-telemetry/technical-committee](https://github.com/orgs/open-telemetry/teams/technical-committee)
-  (GitHub password and associated 2FA for the `@opentelemetrybot` account are available in the Technical Committee
+- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
+  (GitHub password and associated 2FA for the `@opentelemetrybot` account are available in the GitHub Owners
   1Password)
 
 The OpenTelemetry Bot addresses two common issues:
