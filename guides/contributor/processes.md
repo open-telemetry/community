@@ -173,8 +173,7 @@ need you to:
   the bot sends you to guide you through the PR process
 
 Reviewers, the people giving the review, are highly encouraged to revisit the
-[Code of
-Conduct](https://github.com/open-telemetry/community/blob/master/code-of-conduct.md)
+[Code of Conduct](../../code-of-conduct.md)
 and must go above and beyond to promote a collaborative, respectful community.
 
 When reviewing PRs from others [The Gentle Art of Patch

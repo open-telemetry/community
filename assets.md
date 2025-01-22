@@ -337,7 +337,7 @@ The OpenTelemetry Bot addresses two common issues:
 
    It is recommended to push to branch names that start with `opentelemetrybot/`, and to add a branch protection
    rule for `opentelemetrybot/**/**` with the same setup as documented for
-   [`dependabot/**/**`](https://github.com/open-telemetry/community/blob/main/docs/how-to-configure-new-repository.md#branch-protection-rule-dependabot). Note that branch protection rule ordering matters, so you will need to
+   [`dependabot/**/**`](docs/how-to-configure-new-repository.md#branch-protection-rule-dependabot). Note that branch protection rule ordering matters, so you will need to
    delete the `**/**` branch protection rule temporarily, then add the `opentelemetrybot/**/**` branch protection
    rule, then add back the `**/**` branch protection rule.
 
