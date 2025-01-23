@@ -128,6 +128,11 @@ concerns.
 
 ### [Tristan Sloughter](https://github.com/tsloughter), MyDecisiveAI
 
+- Trace and Metrics API & SDK
+- OpenTelemetry Erlang
+- Developer Experience
+- SDK configuration
+
 ### [Tyler Yahn](https://github.com/MrAlias), Splunk
 
 ## Maintainers and approvers
