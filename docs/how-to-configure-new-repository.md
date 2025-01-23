@@ -29,7 +29,7 @@ the [code of conduct](../code-of-conduct.md). Maintainers who enable discussions
 are encouraged to configure the discussion categories to suit their needs, e.g.
 by removing categories which overlap with issues.
 
-### Collaborators and Teams
+### Collaborators and teams
 
 * Every repository has three teams associated with it. Typically for the
   repository `opentelemetry-foo` they will be named `foo-triagers`, `foo-approvers`,
@@ -41,13 +41,23 @@ by removing categories which overlap with issues.
   repository maintainers to invite new approvers and triagers to the team.
 * Every member of `foo-maintainers` should have the "Maintainer" role on the `foo-maintainers` team.
   This allows repository maintainers to invite new maintainers to the team.
-* The team `foo-triagers` has `Triage` permissions for the repository. If repository
-  is using the Project Boards, `foo-triagers` should have `Write` permissions to
-  have access to the Project Boards. Do not add members of `foo-triagers` to
-  the CODEOWNERS file, as their approvals should not count towards the required
-  number of approvals for merging.
-* The team `foo-approvers` has `Write` permissions for the repository.
-* The team `foo-maintainers` has `Maintain` permissions for the repository.
+
+#### Collaborators and teams > Manage access
+
+Teams should be granted proper permissions according to the following table:
+
+| Team                                | Role     |
+| ----------------------------------- | -------- |
+| open-telemetry/foo-approvers        | Write    |
+| open-telemetry/foo-maintainers      | Maintain |
+| open-telemetry/foo-triagers         | Triage   |
+| open-telemetry/governance-committee | Write    |
+| opentelemetrybot                    | Write    |
+
+If the repository is using the Project Boards, `foo-triagers` should have
+`Write` permissions to have access to the Project Boards. Do not add members of
+`foo-triagers` to the CODEOWNERS file, as their approvals should not count
+towards the required number of approvals for merging.
 
 If requested, `foo-maintainers` will be granted `Admin` permissions, and in return
 they must document any changes they make to the repository settings in a file named
