@@ -120,6 +120,12 @@ concerns.
 
 ### [Marc Alff](https://github.com/marcalff), Oracle
 
+- Trace API and SDK
+- Metrics API and SDK
+- SDK configuration
+- Security
+- OpenTelemetry C++
+
 ### [Robert Pająk](https://github.com/pellared), Splunk
 
 ### [Severin Neumann](https://github.com/svrnm), Cisco
