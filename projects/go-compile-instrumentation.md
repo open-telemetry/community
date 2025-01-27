@@ -71,6 +71,6 @@ Note that members from UTC-5 would not be able to attend the meeting, so the pro
 open-telemetry/opentelemetry-go-compile-instrumentation
 
 ## Reference
-The project is a joint effort of donation proposal coming from Alibaba and Datadog to replace [Instrgen](https://github.com/open-telemetry/opentelemetry-go-contrib/tree/main/instrgen). The proposals are listed as follows:
+The project is a joint effort of donation proposal coming from Alibaba and Datadog to replace [Instrgen](https://github.com/open-telemetry/opentelemetry-go-contrib/tree/v1.34.0/instrgen). The proposals are listed as follows:
 - https://github.com/open-telemetry/community/issues/2344
 - https://github.com/open-telemetry/community/issues/2497
