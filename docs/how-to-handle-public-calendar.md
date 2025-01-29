@@ -78,7 +78,11 @@ _This is the process that the person responding to Zoom link creation issues wil
 1. View the OpenTelemetry meeting calendar, and find your desired time slot, along with the meetings that occur immediately before, during, and after it.
 2. See which OpenTelemetry Zoom accounts are being used for the meetings immediately before, during, and after your desired time. The Zoom account name / number is typically listed in the description of each meeting; if it isn't, you can join a meeting (even if it isn't occurring now), click on the green shield icon in the top left, and see the account name / number in the 'host' field.
 3. Choose a Zoom account that isn't already being used for one of the meetings immediately before, during, or after your desired time slot. You may also choose a Zoom account that is being used *exactly* once immediately before, during, or after (we can run a maximum of two concurrent meetings with each account).
-4. Log into that Zoom account, click "Schedule a meeting", and create a recurring meeting with the desired meeting name and no fixed schedule.
+4. Log into that Zoom account, click "Schedule a meeting"
+   - Set the topic (this is what will show up in the
+     [meeting recording sheet](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s/edit))
+   - Set recurrence to "No fixed time"
+   - Save
 5. Copy the newly generated unique Zoom link and paste it into the calendar event's description and location.
 
 ### Inviting attendees
