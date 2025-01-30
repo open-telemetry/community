@@ -460,7 +460,7 @@
       value: 1XkVahJfhf482d3WVHsvUUDaGzHc8TO3sqQlSS80mpGY
     chat:
       - type: slack
-        name: '#otel-go-compile-time-instr'
+        name: '#otel-go-compile-instrumentation'
         id: C088D8GSSSF
     invites: calendar-go
     sponsors: []
