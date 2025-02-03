@@ -389,9 +389,6 @@ This GitHub App addresses two common issues:
    delete the `**/**` branch protection rule temporarily, then add the `otelbot/**/**` branch protection
    rule, then add back the `**/**` branch protection rule.
 
-   > [!WARNING]
-   > The otelbot GitHub needs to remain a public GitHub App in order for EasyCLA to be able to verify its CLA status.
-
 2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside a GitHub Action, workflows
    will not run on that new pull request without closing and re-opening it manually (this limitation is in place to
    prevent accidental recursive workflow runs).
@@ -413,6 +410,9 @@ This GitHub App addresses two common issues:
        GH_TOKEN: ${{ steps.app-token.outputs.token }}
      run: ...
    ```
+
+> [!WARNING]
+> The otelbot GitHub needs to remain a public GitHub App in order for EasyCLA to be able to verify its CLA status.
 
 ### Slack
 
