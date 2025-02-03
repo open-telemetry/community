@@ -37,6 +37,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [Easy CLA](#easy-cla)
   * [Docker Hub](#docker-hub)
   * [OpenTelemetry Bot](#opentelemetry-bot)
+  * [otelbot](#otelbot)
 - [Security](#security)
 
 <!-- tocstop -->
@@ -357,6 +358,58 @@ The OpenTelemetry Bot addresses two common issues:
    organization secret.
 
    [Personal Access Token]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
+### otelbot
+
+This is a GitHub App owned by [@open-telemetry](https://github.com) that you can use when
+automating common GitHub tasks in OpenTelemetry repos (e.g. release automation tasks).
+
+This GitHub App has the following permissions:
+
+- Read access to metadata
+- Read and write access to pull requests
+
+- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
+
+This GitHub App addresses two common issues:
+
+1. Since you can't push directly to `main` from workflows (due to branch protections), the next best thing is to
+   generate a pull request from the automation and use an account which has signed the CLA as the commit author.
+
+   The OpenTelemetry Bot account has signed the CNCF CLA, and you can assign it as the commit author in your automation:
+
+   ```
+   git config user.name otelbot
+   git config user.email 197425009+otelbot@users.noreply.github.com
+   ```
+
+   It is recommended to push to branch names that start with `otelbot/`, and to add a branch protection
+   rule for `otelbot/**/**` with the same setup as documented for
+   [`dependabot/**/**`](docs/how-to-configure-new-repository.md#branch-protection-rule-dependabot). Note that branch protection rule ordering matters, so you will need to
+   delete the `**/**` branch protection rule temporarily, then add the `otelbot/**/**` branch protection
+   rule, then add back the `**/**` branch protection rule.
+
+2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside a GitHub Action, workflows
+   will not run on that new pull request without closing and re-opening it manually (this limitation is in place to
+   prevent accidental recursive workflow runs).
+
+   The OpenTelemetry GitHub organization has a GitHub Action secret (`OTELBOT_PRIVATE_KEY`)
+   and a GitHub Action variable `OTELBOT_APP_ID` that can be used to create a GitHub App token
+   which will bypass this limitation, e.g.
+
+   ```
+   - uses: actions/create-github-app-token@v1
+     id: app-token
+     with:
+       app-id: ${{ vars.OTELBOT_APP_ID }}
+       private-key: ${{ secrets.OTELBOT_PRIVATE_KEY }}
+
+   - name: Create pull request
+     env:
+       # not using secrets.GITHUB_TOKEN since pull requests from that token do not trigger workflows
+       GH_TOKEN: ${{ steps.app-token.outputs.token }}
+     run: ...
+   ```
 
 ### Slack
 
