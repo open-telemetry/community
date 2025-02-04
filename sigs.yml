@@ -453,7 +453,7 @@
     gcLiaison:
     - name: 'Juraci Paixão Kröhling'
       github: jpkrohling
-  - name: 'GoLang: Compile Time Instrumentation'
+  - name: 'GoLang: Compile-Time Instrumentation'
     meeting: Every other Thursday at 08:00 UTC
     notes:
       type: gDoc
