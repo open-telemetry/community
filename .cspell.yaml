@@ -39,6 +39,7 @@ words:
     - grafana
     - Hostmetrics
     - hostmetricsreceiver
+    - Instrgen
     - jemmic
     - keptn
     - kubecon

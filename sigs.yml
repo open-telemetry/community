@@ -453,6 +453,20 @@
     gcLiaison:
     - name: 'Juraci Paixão Kröhling'
       github: jpkrohling
+  - name: 'GoLang: Compile-Time Instrumentation'
+    meeting: Every other Thursday at 08:00 UTC
+    notes:
+      type: gDoc
+      value: 1XkVahJfhf482d3WVHsvUUDaGzHc8TO3sqQlSS80mpGY
+    chat:
+      - type: slack
+        name: '#otel-go-compile-instrumentation'
+        id: C088D8GSSSF
+    invites: calendar-go
+    sponsors: []
+    gcLiaison:
+    - name: 'Juraci Paixão Kröhling'
+      github: jpkrohling
   - name: 'Java: SDK + Instrumentation'
     meeting: Thursday at 09:00 PT, and every other Thursday at 09:00 UTC+8
     notes:
