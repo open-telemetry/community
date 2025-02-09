@@ -14,6 +14,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
   * [Netlify](#netlify)
   * [Oracle Cloud account](#oracle-cloud-account)
+  * [FOSSA](#fossa)
 - [Artifact repositories](#artifact-repositories)
   * [NuGet OpenTelemetry organization](#nuget-opentelemetry-organization)
   * [MyGet OpenTelemetryCNCF account](#myget-opentelemetrycncf-account)
@@ -127,6 +128,15 @@ Link: https://www.oracle.com/cloud/sign-in.html
 - Community account to run [CLOWarden](https://github.com/cncf/clowarden)
 - Admin: [@austinlparker](https://github.com/austinlparker)
   (password is available in the OpenTelemetry Governance 1Password)
+
+### FOSSA
+
+We have an OpenTelemetry team under the CNCF's enterprise account. 
+
+Link: https://app.fossa.com/
+
+- Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
+- Team admins: [@austinlparker](https://github.com/austinlparker), [@reyang](https://github.com/reyang), [@trask](https://github.com/trask)
 
 ## Artifact repositories
 
