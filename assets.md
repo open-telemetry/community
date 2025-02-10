@@ -364,7 +364,7 @@ The OpenTelemetry Bot addresses two common issues:
 
 ### otelbot
 
-This is a GitHub App owned by [@open-telemetry](https://github.com) that you can use when
+This is a GitHub App owned by [@open-telemetry](https://github.com/open-telemetry) that you can use when
 automating common GitHub tasks in OpenTelemetry repos (e.g. release automation tasks).
 
 This GitHub App has the following permissions:
