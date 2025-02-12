@@ -313,8 +313,8 @@ For support:
 
 ### OpenTelemetry Bot
 
-> [!INFO]
-> Consider using [otelbot](#otelbot) GitHub app listed below instead.
+> [!NOTE]
+> Consider using [otelbot](#otelbot) GitHub App listed below instead.
 
 This is a community-owned bot account that you can use when automating common GitHub tasks
 (e.g. release automation tasks).
@@ -362,17 +362,17 @@ The OpenTelemetry Bot addresses two common issues:
 
    [Personal Access Token]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
-### otelbot
+### `otelbot`
 
-This is a GitHub App owned by [@open-telemetry](https://github.com/open-telemetry) that you can use when
-automating common GitHub tasks in OpenTelemetry repos (e.g. release automation tasks).
+This is a [GitHub App] owned by [@open-telemetry](https://github.com/open-telemetry) that you can use when
+automating common GitHub tasks in OpenTelemetry repos such as release automation tasks.
 
 This GitHub App has the following permissions:
 
 - Read access to metadata
 - Read and write access to pull requests
 
-- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
+- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
 This GitHub App addresses two common issues:
 
@@ -388,11 +388,12 @@ This GitHub App addresses two common issues:
 
    It is recommended to push to branch names that start with `otelbot/`, and to add a branch protection
    rule for `otelbot/**/**` with the same setup as documented for
-   [`dependabot/**/**`](docs/how-to-configure-new-repository.md#branch-protection-rule-dependabot). Note that branch protection rule ordering matters, so you will need to
-   delete the `**/**` branch protection rule temporarily, then add the `otelbot/**/**` branch protection
-   rule, then add back the `**/**` branch protection rule.
+   [`dependabot/**/**`](docs/how-to-configure-new-repository.md#branch-protection-rule-dependabot).
+   
+   > [!WARNING]
+   > Branch protection rule **ordering** matters, so you will need to delete the `**/**` branch protection rule temporarily, then add the `otelbot/**/**` branch protection rule, then add back the `**/**` branch protection rule.
 
-2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside a GitHub Action, workflows
+2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside a [GitHub Action], workflows
    will not run on that new pull request without closing and re-opening it manually (this limitation is in place to
    prevent accidental recursive workflow runs).
 
@@ -415,7 +416,10 @@ This GitHub App addresses two common issues:
    ```
 
 > [!WARNING]
-> The otelbot GitHub needs to remain a public GitHub App in order for EasyCLA to be able to verify its CLA status.
+> The `otelbot` is and needs to remain a **_public_ GitHub App** in order for EasyCLA to be able to verify its CLA status.
+
+[GitHub Action]: https://docs.github.com/en/actions
+[GitHub App]: https://docs.github.com/en/apps
 
 ### Slack
 
