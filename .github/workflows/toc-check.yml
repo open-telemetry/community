@@ -1,0 +1,13 @@
+name: Table of contents checking
+
+on:
+  pull_request:
+
+jobs:
+  toc-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: check TOC in assets.md
+        run: make markdown-toc-check
