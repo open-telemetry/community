@@ -373,7 +373,7 @@ This GitHub App addresses two common issues:
 ### OpenTelemetry Bot
 
 > [!NOTE]
-> Consider using [otelbot](#otelbot) GitHub App listed below instead.
+> Consider using the [otelbot](#otelbot) GitHub App instead.
 
 This is a community-owned bot account that you can use when automating common GitHub tasks
 (e.g. release automation tasks).
