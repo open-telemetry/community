@@ -11,10 +11,10 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 - [Community Resource Accounts](#community-resource-accounts)
   * [AWS account](#aws-account)
   * [Equinix bare metal](#equinix-bare-metal)
+  * [FOSSA](#fossa)
   * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
   * [Netlify](#netlify)
   * [Oracle Cloud account](#oracle-cloud-account)
-  * [FOSSA](#fossa)
 - [Artifact repositories](#artifact-repositories)
   * [NuGet OpenTelemetry organization](#nuget-opentelemetry-organization)
   * [MyGet OpenTelemetryCNCF account](#myget-opentelemetrycncf-account)
@@ -74,6 +74,15 @@ Link: https://console.equinix.com/projects/6f1c9af6-0470-42da-8f22-59d0df245f6b
   other assets on
 - Admin: Juraci Paixão Kröhling @jpkrohling and OTel TC via the mailing list address
 
+### FOSSA
+
+We have an OpenTelemetry team under the CNCF's enterprise account.
+
+Link: https://app.fossa.com/
+
+- Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
+- Team admins: [@austinlparker](https://github.com/austinlparker), [@reyang](https://github.com/reyang), [@trask](https://github.com/trask)
+
 ### GitHub-hosted ARM64 runners
 
 These Linux and Windows ARM64
@@ -128,15 +137,6 @@ Link: https://www.oracle.com/cloud/sign-in.html
 - Community account to run [CLOWarden](https://github.com/cncf/clowarden)
 - Admin: [@austinlparker](https://github.com/austinlparker)
   (password is available in the OpenTelemetry Governance 1Password)
-
-### FOSSA
-
-We have an OpenTelemetry team under the CNCF's enterprise account. 
-
-Link: https://app.fossa.com/
-
-- Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
-- Team admins: [@austinlparker](https://github.com/austinlparker), [@reyang](https://github.com/reyang), [@trask](https://github.com/trask)
 
 ## Artifact repositories
 
