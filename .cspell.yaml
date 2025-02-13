@@ -188,6 +188,7 @@ words:
     - otel-agentmanwg
     - otel-comms
     - otel-ebpf
+    - otelbot
     - otep
     - otlp
     - outreachy
