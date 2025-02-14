@@ -66,13 +66,20 @@ Link: http://cncf-aws-opentelemetry.signin.aws.amazon.com/
 - Community account to published Lambda layers
 - Admin: Alex Boten @codeboten & Anthony Mirabella @aneurysm9
 
-### Equinix bare metal
+### Equinix bare metal runners
 
-Link: https://console.equinix.com/projects/6f1c9af6-0470-42da-8f22-59d0df245f6b
+Reserved bare metal machines set up as
+[self-hosted runners](https://docs.github.com/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners)
+for the community to run performance tests.
 
-- Reserved bare metal machines for the community to run performance tests and
-  other assets on
-- Admin: Juraci Paixão Kröhling @jpkrohling and OTel TC via the mailing list address
+Equinix management console:
+- Link: https://console.equinix.com/projects/6f1c9af6-0470-42da-8f22-59d0df245f6b
+- Admins: Juraci Paixão Kröhling @jpkrohling and OTel TC via the mailing list address
+
+GitHub self-hosted runners:
+- `github-benchmark-runner` (16-core)
+- `self-hosted` (alias that repos are currently using for `github-benchmark-runner`)
+- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
 ### FOSSA
 
