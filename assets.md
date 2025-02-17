@@ -10,7 +10,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 - [Credential Storage](#credential-storage)
 - [Community Resource Accounts](#community-resource-accounts)
   * [AWS account](#aws-account)
-  * [Equinix bare metal](#equinix-bare-metal)
+  * [Equinix bare metal runners](#equinix-bare-metal-runners)
   * [FOSSA](#fossa)
   * [GitHub Actions large runners](#github-actions-large-runners)
   * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
