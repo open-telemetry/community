@@ -10,9 +10,9 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 - [Credential Storage](#credential-storage)
 - [Community Resource Accounts](#community-resource-accounts)
   * [AWS account](#aws-account)
-  * [Equinix bare metal](#equinix-bare-metal)
+  * [Equinix bare metal runners](#equinix-bare-metal-runners)
   * [FOSSA](#fossa)
-  * [GitHub-hosted ARM64 runners](#github-hosted-arm64-runners)
+  * [GitHub Actions large runners](#github-actions-large-runners)
   * [Google Cloud account](#google-cloud-account)
   * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
   * [Netlify](#netlify)
@@ -94,19 +94,13 @@ Link: https://app.fossa.com/
 - Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
 - Team admins: [@austinlparker](https://github.com/austinlparker), [@reyang](https://github.com/reyang), [@trask](https://github.com/trask)
 
-### GitHub-hosted ARM64 runners
+### GitHub Actions large runners
 
-These Linux and Windows ARM64
-[GitHub-hosted runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners)
-are available to OpenTelemetry repositories:
+Access to large runners is available to repositories on request (open a community issue),
+which will give access to the following runners:
 
-- `otel-linux-arm64` (4-core)
-- `otel-windows-arm64` (4-core)
-
-At the time of writing, both of these runners have a concurrency limit of 20 jobs.
-
-Individual repositories need to be granted access to the runners, so please open a community issue
-if you would like to use them.
+- `otel-linux-latest-8-cores`
+- `otel-windows-latest-8-cores`
 
 Note: these pay-as-you-go GitHub-hosted runners for ARM64 are available for free for CNCF projects.
 CNCF and GitHub expect fair use of these provided resources.
