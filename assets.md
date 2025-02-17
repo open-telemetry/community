@@ -40,7 +40,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 - [Bot accounts](#bot-accounts)
   * [Easy CLA](#easy-cla)
   * [Docker Hub](#docker-hub)
-  * [otelbot](#otelbot)
+  * [`otelbot`](#otelbot)
   * [OpenTelemetry Bot](#opentelemetry-bot)
   * [Slack](#slack)
 - [Security](#security)
