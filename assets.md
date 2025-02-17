@@ -11,6 +11,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 - [Community Resource Accounts](#community-resource-accounts)
   * [AWS account](#aws-account)
   * [Equinix bare metal](#equinix-bare-metal)
+  * [FOSSA](#fossa)
   * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
   * [Netlify](#netlify)
   * [Oracle Cloud account](#oracle-cloud-account)
@@ -72,6 +73,15 @@ Link: https://console.equinix.com/projects/6f1c9af6-0470-42da-8f22-59d0df245f6b
 - Reserved bare metal machines for the community to run performance tests and
   other assets on
 - Admin: Juraci Paixão Kröhling @jpkrohling and OTel TC via the mailing list address
+
+### FOSSA
+
+We have an OpenTelemetry team under the CNCF's enterprise account.
+
+Link: https://app.fossa.com/
+
+- Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
+- Team admins: [@austinlparker](https://github.com/austinlparker), [@reyang](https://github.com/reyang), [@trask](https://github.com/trask)
 
 ### GitHub-hosted ARM64 runners
 
@@ -336,11 +346,11 @@ This GitHub App addresses two common issues:
    ```
 
    It is recommended to push to branch names that start with `otelbot/`, and to add a branch protection
-   rule for `otelbot/**/**` with the same setup as documented for
-   [`dependabot/**/**`](docs/how-to-configure-new-repository.md#branch-protection-rule-dependabot).
+   rule for `otelbot/**/*` with the same setup as documented for
+   [`dependabot/**/*`](docs/how-to-configure-new-repository.md#branch-protection-rule-dependabot).
 
    > [!WARNING]
-   > Branch protection rule **ordering** matters, so you will need to delete the `**/**` branch protection rule temporarily, then add the `otelbot/**/**` branch protection rule, then add back the `**/**` branch protection rule.
+   > Branch protection rule **ordering** matters, so you will need to delete the `**/**` branch protection rule temporarily, then add the `otelbot/**/*` branch protection rule, then add back the `**/**` branch protection rule.
 
 2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside a [GitHub Action], workflows
    will not run on that new pull request without closing and re-opening it manually (this limitation is in place to
@@ -399,9 +409,9 @@ The OpenTelemetry Bot addresses two common issues:
    ```
 
    It is recommended to push to branch names that start with `opentelemetrybot/`, and to add a branch protection
-   rule for `opentelemetrybot/**/**` with the same setup as documented for
-   [`dependabot/**/**`](docs/how-to-configure-new-repository.md#branch-protection-rule-dependabot). Note that branch protection rule ordering matters, so you will need to
-   delete the `**/**` branch protection rule temporarily, then add the `opentelemetrybot/**/**` branch protection
+   rule for `opentelemetrybot/**/*` with the same setup as documented for
+   [`dependabot/**/*`](docs/how-to-configure-new-repository.md#branch-protection-rule-dependabot). Note that branch protection rule ordering matters, so you will need to
+   delete the `**/**` branch protection rule temporarily, then add the `opentelemetrybot/**/*` branch protection
    rule, then add back the `**/**` branch protection rule.
 
 2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside of a GitHub Action, workflows
