@@ -13,6 +13,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [Equinix bare metal runners](#equinix-bare-metal-runners)
   * [FOSSA](#fossa)
   * [GitHub Actions large runners](#github-actions-large-runners)
+  * [Google Cloud account](#google-cloud-account)
   * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
   * [Netlify](#netlify)
   * [Oracle Cloud account](#oracle-cloud-account)
@@ -25,6 +26,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [PyPI](#pypi)
   * [PHP Extras](#php-extras)
 - [Communication channels](#communication-channels)
+  * [CNCF Community Group](#cncf-community-group)
   * [opentelemetry-calendar-contributors Google Group](#opentelemetry-calendar-contributors-google-group)
   * [OpenTelemetry Calendar Invites Google Group](#opentelemetry-calendar-invites-google-group)
   * [Mailing list cncf-opentelemetry-net-maintainers@lists.cncf.io](#mailing-list-cncf-opentelemetry-net-maintainerslistscncfio)
@@ -38,8 +40,9 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 - [Bot accounts](#bot-accounts)
   * [Easy CLA](#easy-cla)
   * [Docker Hub](#docker-hub)
-  * [otelbot](#otelbot)
+  * [`otelbot`](#otelbot)
   * [OpenTelemetry Bot](#opentelemetry-bot)
+  * [Slack](#slack)
 - [Security](#security)
 
 <!-- tocstop -->
