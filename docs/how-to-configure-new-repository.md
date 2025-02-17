@@ -108,7 +108,7 @@ Everything not mentioned is unchecked.
 [Jira ticket](https://jira.linuxfoundation.org/plugins/servlet/desk/portal/4/create/143)
 with the EasyCLA team.
 
-#### Branch protection rule: `dependabot/**/**`
+#### Branch protection rule: `dependabot/**/*`
 
 Everything not mentioned is unchecked.
 
@@ -122,9 +122,9 @@ Everything not mentioned is unchecked.
 "Require status checks to pass before merging" both need to be `unchecked` so that
 these branches can be directly updated (without going through a pull request).
 
-#### Branch protection rule: `renovate/**/**`
+#### Branch protection rule: `renovate/**/*`
 
-Same as for [`dependabot/**/**`](#branch-protection-rule-dependabot) above.
+Same as for [`dependabot/**/*`](#branch-protection-rule-dependabot) above.
 
 This branch protection rule is not set up automatically, but can be added for any
 repositories that are using [Renovate](https://github.com/apps/renovate).
@@ -152,7 +152,7 @@ Option 1:
 
 #### Branch protection rule: `gh-readonly-queue/main/**`
 
-Same as for [`dependabot/**/**`](#branch-protection-rule-dependabot) above.
+Same as for [`dependabot/**/*`](#branch-protection-rule-dependabot) above.
 
 This branch protection rule is not set up automatically, but can be added for any
 repositories that are using merge queues.
