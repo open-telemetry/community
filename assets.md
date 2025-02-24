@@ -12,7 +12,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [AWS account](#aws-account)
   * [Equinix bare metal runners](#equinix-bare-metal-runners)
   * [FOSSA](#fossa)
-  * [GitHub Actions large runners](#github-actions-large-runners)
+  * [GitHub-hosted runners](#github-hosted-runners)
   * [Google Cloud account](#google-cloud-account)
   * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
   * [Netlify](#netlify)
@@ -94,15 +94,22 @@ Link: https://app.fossa.com/
 - Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
 - Team admins: [@austinlparker](https://github.com/austinlparker), [@reyang](https://github.com/reyang), [@trask](https://github.com/trask)
 
-### GitHub Actions large runners
+### GitHub-hosted runners
 
 Access to large runners is available to repositories on request (open a community issue),
-which will give access to the following runners:
+which will give access to the following GitHub-hosted runners:
 
 - `otel-linux-latest-8-cores`
 - `otel-windows-latest-8-cores`
 
-Note: these pay-as-you-go GitHub-hosted runners for ARM64 are available for free for CNCF projects.
+Windows ARM64 GitHub-hosted runners are also available if needed:
+
+- `otel-windows-arm64`
+
+(Linux ARM64 runners are
+[available for free to all public repositories](https://github.blog/changelog/2025-01-16-linux-arm64-hosted-runners-now-available-for-free-in-public-repositories-public-preview/))
+
+Note: these GitHub-hosted runners are pay-as-you-go.
 CNCF and GitHub expect fair use of these provided resources.
 Please ensure your workloads are optimized to avoid unnecessary usage.
 
