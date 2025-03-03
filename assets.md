@@ -99,6 +99,7 @@ Link: https://app.fossa.com/
 Access to large runners is available to repositories on request (open a community issue),
 which will give access to the following GitHub-hosted runners:
 
+- `otel-linux-latest-4-cores` (same number of cores as `ubuntu-latest` but more disk space)
 - `otel-linux-latest-8-cores`
 - `otel-windows-latest-8-cores`
 
