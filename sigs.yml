@@ -1,6 +1,6 @@
 - name: Specification SIGs
   sigs:
-  - name: 'Specification: General'
+  - name: 'Specification: General + OTel Maintainers Sync'
     meeting: Tuesday at 08:00 PT
     notes:
       type: gDoc
@@ -633,20 +633,6 @@
       github: trask
 - name: Cross-Cutting SIGs
   sigs:
-  - name: Maintainer Meeting
-    meeting: Monday at 09:00 PT
-    notes:
-      type: gDoc
-      value: 1_X2CTiDXmxk2JozBNwQ2uP8FfV1rxx9ISE5puHu0yIk
-    chat:
-      - type: slack
-        name: '#otel-maintainers'
-        id: C01NJ7V1KRC
-    invites: calendar-maintainer-meeting
-    sponsors: []
-    gcLiaison:
-       - name: Morgan McLean
-         github: mtwo
   - name: Communications (Website, [Documentation](https://opentelemetry.io/docs/),
       etc.)
     meeting: Every other Monday at 10:00 PT
