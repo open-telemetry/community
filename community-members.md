@@ -12,7 +12,7 @@ in alphabetical order:
 - [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs, until October 2025
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2026
 - [Pablo Baeyens Fernandez](https://github.com/mx-psi), Datadog, until October 2026
-- [Severin Neumann](https://github.com/svrnm), Cisco, until October 2025
+- [Severin Neumann](https://github.com/svrnm), Independent, until October 2025
 - [Ted Young](https://github.com/tedsuo), Lightstep, until October 2025
 - [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2026
 
@@ -58,7 +58,7 @@ repositories:
 - [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Marc Alff](https://github.com/marcalff), Oracle
 - [Robert Pająk](https://github.com/pellared), Splunk
-- [Severin Neumann](https://github.com/svrnm), Cisco
+- [Severin Neumann](https://github.com/svrnm), Independent
 - [Ted Young](https://github.com/tedsuo), Lightstep
 - [Tristan Sloughter](https://github.com/tsloughter), MyDecisiveAI
 - [Tyler Yahn](https://github.com/MrAlias), Splunk

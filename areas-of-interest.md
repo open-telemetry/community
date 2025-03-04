@@ -128,4 +128,11 @@ contact.
 - OpenTelemetry C++
 - OpenTelemetry Protocol
 
+### [Severin Neumann](https://github.com/svrnm/), Independent
+
+- Contributor Experience
+- Distributed Tracing
+- Documentation
+- Security
+
 <!-- ### [_Your name here_](https://github.com/your_name), Your Company -->
