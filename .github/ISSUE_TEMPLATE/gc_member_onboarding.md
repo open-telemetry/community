@@ -33,7 +33,7 @@ The new member must:
    2. [Concepts](https://opentelemetry.io/docs/concepts/)
    3. [Specification](https://opentelemetry.io/docs/specs/otel/)
 2. Have read and agreed to comply with the
-   [OpenTelemetry Governance Committee Charter](https://github.com/open-telemetry/community/blob/main/governance-charter.md)
+   [OpenTelemetry Governance Committee Charter](../../governance-charter.md)
    as per requirements to stand for election.
 3. Have an email address, Google account, and GitHub account and is willing
    to share those details with other GC members.

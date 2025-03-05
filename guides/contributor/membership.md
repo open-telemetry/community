@@ -57,8 +57,7 @@ Defined by: Member of the OpenTelemetry GitHub organization
     chat, email, and discussion forums)
 - [Joined the Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q)
   - [Get an invite to join CNCF](https://slack.cncf.io/)
-- Have read the [contributor
-  guide](https://github.com/open-telemetry/community/blob/main/guides/contributor)
+- Have read the [contributor guide](../../guides/contributor)
 - Actively contributing to 1 or more subprojects.
 - Sponsored by 2 approvers. Note the following requirements for sponsors:
   - Sponsors must have close interactions with the prospective member - e.g.
@@ -72,8 +71,8 @@ Defined by: Member of the OpenTelemetry GitHub organization
   against the
   [OpenTelemetry/community](https://github.com/open-telemetry/community) repo
   - Ensure your sponsors are `@mentioned` on the issue
-  - Complete every item on the checklist ([preview the current version of the
-    template](https://github.com/open-telemetry/community/blob/main/.github/ISSUE_TEMPLATE/membership.md))
+  - Complete every item on the checklist
+    ([preview the current version of the template](../../.github/ISSUE_TEMPLATE/membership.md))
   - Make sure that the list of contributions included is representative of your
     work on the project.
 - Have your sponsoring reviewers reply confirmation of sponsorship: `I support`
@@ -115,6 +114,15 @@ Triagers may be code contributors, but writing code is not a requirement for
 becoming a triager. Triagers are encouraged to be active participants in project
 meetings, chat rooms, and other discussion forums.
 
+Triagers belong to a specific [SIG][].
+There can be multiple triager groups in a single SIG. For example, there can be
+different triager groups for different repositories owned by a SIG, or different
+triager groups for different areas of expertise (e.g. different languages in the
+documentation). A SIG can set up additional triager groups for organizational
+purposes to help make it easier to refer to a group of contributors, such as for
+ownership within a repository, through requesting PR reviews, or for contacting
+elsewhere on GitHub.
+
 ### Requirements
 
 - Nominated by a maintainer, with no objections from other maintainers.
@@ -141,6 +149,16 @@ workflow](https://help.github.com/en/articles/about-code-owners).
 
 Approver status can be scoped to a part of the codebase. For example, critical
 core components may have higher bar for becoming an approver.
+
+Approvers belong to a specific [SIG][].
+There can be multiple approver groups in a single SIG. For example, there can be
+different approver groups for different repositories owned by a SIG, or different 
+approver groups for different areas of expertise (e.g. different languages in the
+documentation). A SIG can set up additional approver groups for organizational
+purposes to help make it easier to refer to a group of contributors, such as for
+ownership within a repository, through requesting PR reviews, or for contacting
+elsewhere on GitHub.
+
 
 ### Requirements
 
@@ -184,6 +202,15 @@ directly or through delegation of these responsibilities.
 
 Defined by: GitHub organization ownership, permissions and entry in `CODEOWNERS`
 files.
+
+Maintainers belong to a specific [SIG][].
+There can be multiple maintainer groups in a single SIG. For example, there can be
+different maintainer groups for different repositories owned by a SIG, or different 
+maintainer groups for different areas of expertise (e.g. different languages in the
+documentation). A SIG can set up additional maintainer groups for organizational
+purposes to help make it easier to refer to a group of contributors, such as for
+ownership within a repository, through requesting PR reviews, or for contacting
+elsewhere on GitHub.
 
 ### Requirements
 
@@ -342,3 +369,4 @@ merged. The merger should update the `spec-sponsors` team with the new member.
 [Technical Committee]: ../../tech-committee-charter.md
 [opentelemetry-specification]: https://github.com/open-telemetry/opentelemetry-specification
 [Members of Standing]: ../../governance-charter.md#members-of-standing
+[SIG]: ./processes.md#special-interest-groups-sigs

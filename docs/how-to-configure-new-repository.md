@@ -29,7 +29,7 @@ the [code of conduct](../code-of-conduct.md). Maintainers who enable discussions
 are encouraged to configure the discussion categories to suit their needs, e.g.
 by removing categories which overlap with issues.
 
-### Collaborators and Teams
+### Collaborators and teams
 
 * Every repository has three teams associated with it. Typically for the
   repository `opentelemetry-foo` they will be named `foo-triagers`, `foo-approvers`,
@@ -41,13 +41,23 @@ by removing categories which overlap with issues.
   repository maintainers to invite new approvers and triagers to the team.
 * Every member of `foo-maintainers` should have the "Maintainer" role on the `foo-maintainers` team.
   This allows repository maintainers to invite new maintainers to the team.
-* The team `foo-triagers` has `Triage` permissions for the repository. If repository
-  is using the Project Boards, `foo-triagers` should have `Write` permissions to
-  have access to the Project Boards. Do not add members of `foo-triagers` to
-  the CODEOWNERS file, as their approvals should not count towards the required
-  number of approvals for merging.
-* The team `foo-approvers` has `Write` permissions for the repository.
-* The team `foo-maintainers` has `Maintain` permissions for the repository.
+
+#### Collaborators and teams > Manage access
+
+Teams should be granted proper permissions according to the following table:
+
+| Team                                | Role     |
+| ----------------------------------- | -------- |
+| open-telemetry/foo-approvers        | Write    |
+| open-telemetry/foo-maintainers      | Maintain |
+| open-telemetry/foo-triagers         | Triage   |
+| open-telemetry/governance-committee | Write    |
+| opentelemetrybot                    | Write    |
+
+If the repository is using the Project Boards, `foo-triagers` should have
+`Write` permissions to have access to the Project Boards. Do not add members of
+`foo-triagers` to the CODEOWNERS file, as their approvals should not count
+towards the required number of approvals for merging.
 
 If requested, `foo-maintainers` will be granted `Admin` permissions, and in return
 they must document any changes they make to the repository settings in a file named
@@ -98,7 +108,7 @@ Everything not mentioned is unchecked.
 [Jira ticket](https://jira.linuxfoundation.org/plugins/servlet/desk/portal/4/create/143)
 with the EasyCLA team.
 
-#### Branch protection rule: `dependabot/**/**`
+#### Branch protection rule: `dependabot/**/*`
 
 Everything not mentioned is unchecked.
 
@@ -112,12 +122,40 @@ Everything not mentioned is unchecked.
 "Require status checks to pass before merging" both need to be `unchecked` so that
 these branches can be directly updated (without going through a pull request).
 
-#### Branch protection rule: `renovate/**/**`
+#### Branch protection rule: `renovate/**/*`
 
-Same as for [`dependabot/**/**`](#branch-protection-rule-dependabot) above.
+Same as for [`dependabot/**/*`](#branch-protection-rule-dependabot) above.
 
 This branch protection rule is not set up automatically, but can be added for any
 repositories that are using [Renovate](https://github.com/apps/renovate).
+
+Note: Since Renovate was enabled and disabled across all OpenTelemetry repositories at one point,
+you will need to follow one of these two options to re-onboard:
+
+Option 1:
+
+* Find the original `Configure Renovate` PR,
+  e.g. https://github.com/open-telemetry/semantic-conventions-java/pull/34,
+  and rename that PR to something else, e.g. `Configure Renovate - old`.
+* Enable Renovate on the repository (requires org admin permission).
+* Renovate will send a new onboarding PR to the repository,
+  e.g. https://github.com/open-telemetry/semantic-conventions-java/pull/95.
+
+Option 1:
+
+* Merge `renovate.json` to `main`.
+* Enable Renovate on the repository (requires org admin permission).
+* Go to Renovate, e.g. https://developer.mend.io/github/open-telemetry/opentelemetry-proto-go,
+  and run Actions > Run Renovate scan.
+* Renovate won't send a new onboarding PR in this case,
+  but will directly start sending PRs to update dependencies.
+
+#### Branch protection rule: `gh-readonly-queue/main/**`
+
+Same as for [`dependabot/**/*`](#branch-protection-rule-dependabot) above.
+
+This branch protection rule is not set up automatically, but can be added for any
+repositories that are using merge queues.
 
 #### Branch protection rule: `**/**`
 

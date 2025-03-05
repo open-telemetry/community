@@ -18,6 +18,7 @@ settings](../docs/how-to-configure-new-repository.md#repository-settings).
   * EasyCLA
   * spelling-check
   * table-check
+  * toc-check
 
 ### `**/**`
 

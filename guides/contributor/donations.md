@@ -35,7 +35,7 @@ Committees follow to handle a prospective donation.
    The GC is also responsible for driving awareness in the community about
    the contribution and making sure all interested parties have a chance to
    object and/or contribute. The GC should work with any appropriate Special Interest
-   Groups or Working Groups to evaluate the donation proposal, consider alternatives,
+   Groups to evaluate the donation proposal, consider alternatives,
    and ensure OpenTelemetry has the resources required to support the donation. When
    considering alternatives, the GC should consider at least the CNCF ecosystem,
    and may also consider other well-known open source projects or alternatives proposed
@@ -55,6 +55,6 @@ Committees follow to handle a prospective donation.
 5. If accepted, the contributing organization – particularly if it's a
    commercial entity – must formally acknowledge via the GitHub issue that its
    respective sales and marketing departments have received, understood, and
-   accepted the terms of the [OpenTelemetry marketing guidelines](https://github.com/open-telemetry/community/blob/main/marketing-guidelines.md).
+   accepted the terms of the [OpenTelemetry marketing guidelines](../../marketing-guidelines.md).
 6. Given all of the above, the GitHub issue is closed and the donation moves
    forward as agreed to by the TC and GC.

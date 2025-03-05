@@ -4,7 +4,7 @@ Please see **[the list of candidates running in the election here](./governance-
 
 This document lays out the 2021 election process per the OpenTelemetry
 governance committee
-[charter document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)
+[charter document](../../governance-charter.md#elections)
 requirements.
 
 In this election there are five seats that need to be filled. 
@@ -24,7 +24,7 @@ community is well-represented by the Governance Committee.
 # TL;DR
 
 * If you‘ve been nominated or are willing to nominate yourself: check the
-  [charter document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)
+  [charter document](../../governance-charter.md#elections)
   and confirm you are ready for the commitment. Make sure to provide all
   necessary information before 12:01am GMT on 2021/10/14
 * If you are an active community member: confirm that you are in the voters
@@ -56,7 +56,7 @@ election cycle, though they are welcome to run again for one of the five vacanci
 
 After this election and until October 2022, the Governance Committee will have
 9 seats, all of which will be elected positions. Please refer to the
-[charter document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee)
+[charter document](../../governance-charter.md#elections)
 for more information.
 
 
@@ -75,11 +75,11 @@ this process.
 # Nominations
 
 As per
-[the charter document](https://github.com/open-telemetry/community/blob/master/governance-charter.md#establishment-of-a-governance-committee),
+[the charter document](../../governance-charter.md#elections),
 anybody is eligible to run for the Governance Committee. During the “call for
 nomination” period, people can be nominated or nominate themselves by
 submitting a Pull Request adding said candidate to the
-[governance-committee-candidates.md](https://github.com/open-telemetry/community/blob/master/elections/2021/governance-committee-candidates.md)
+[governance-committee-candidates.md](./governance-committee-candidates.md)
 file in the OpenTelemetry community repository. The template in that file includes
 the following columns:
 * Full name
@@ -103,7 +103,7 @@ directly to ensure the commitment and desire to be nominated.
 
 # Voter Eligibility
 
-All [members of standing](https://github.com/open-telemetry/community/blob/master/governance-charter.md#members-of-standing)
+All [members of standing](../../governance-charter.md#members-of-standing)
 will automatically be eligible to vote. To confirm your eligibility status,
 see the [election announcements issue](https://github.com/open-telemetry/community/issues/852). If your code contributions do not meet
 eligibility requirements, but you believe your non-code contributions
@@ -115,7 +115,7 @@ One of two options will be available in the form to prove eligibility:
 * GitHub handle
 * List either…
   * Your contributions to OpenTelemetry that make you eligible to vote, or
-  * Your non-code contributions per the [Members of Standing section of the charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md#members-of-standing):
+  * Your non-code contributions per the [Members of Standing section of the charter](../../governance-charter.md#members-of-standing):
     particularly, your relationship to a well-known project that’s taken a hard
     dependency on OpenTelemetry, and/or your involvement with a well-known
     organization’s adoption of OpenTelemetry as an end-user.

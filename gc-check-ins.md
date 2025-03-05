@@ -9,7 +9,7 @@ As defined in the [charter of the GC](./governance-charter.md#regular-check-ins-
 The check in process is as follows:
 
 * For each SIG a GC member is appointed as a GC liaison. The name of that person is listed [here](https://github.com/open-telemetry/community/tree/main?tab=readme-ov-file#special-interest-groups).
-* If a GC member was the sponsor for [the formation of the SIG](https://github.com/open-telemetry/community/blob/main/project-management.md), they are by default the GC liaison for this SIG.
+* If a GC member was the sponsor for [the formation of the SIG](./project-management.md), they are by default the GC liaison for this SIG.
 * If a GC member is the maintainer themselves, they are by default the GC liaison for this SIG.
 * The GC liaison is appointed for the duration of the project lifecycle, or until they do not get reelected into the GC. Outside of that regular duration, a GC liaison can resign by providing a named successor.
 * The GC liaison is responsible to check in with the maintainers at least once per month. This can either happen via a (private, non recorded) meeting or through a text-based conversation initiated by the GC liaison.

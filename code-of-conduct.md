@@ -39,8 +39,7 @@ cncf-opentelemetry-governance@lists.cncf.io, which goes to all GC members. If
 you do not want your report to be received by all GC members, either because you
 want to submit a report anonymously or because one of the GC members has a
 conflict of interest, you may send your report directly to any individual GC
-member. The [current list of
-members](https://github.com/open-telemetry/community/blob/main/community-members.md#governance-committee)
+member. The [current list of members](./community-members.md#governance-committee)
 can be found on our community repository, and you can ping any of them directly
 on [CNCF’s Slack](https://slack.cncf.io)
 
