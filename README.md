@@ -44,7 +44,7 @@ Details for all of these items are below. We are a friendly, collaborative group
 * Governance Committee (GC): [Charter](./governance-charter.md), [Members](./community-members.md#governance-committee)
 * Technical Committee (TC): [Charter](./tech-committee-charter.md), [Members](./community-members.md#technical-committee)
 
-Both committees meet regularly, and the respective meeting notes are publicly available in the [GC meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8) and the [TC meeting notes](https://docs.google.com/document/d/1hOHPCu5TGenqTeWPB9qQB_qd33uITZBcvK1FnWxYJAw) Google Docs. The Governance Committee and Technical Committee meetings are also recorded (although occasionally, the meetings are not recorded due to discussion of sensitive topics)
+Both committees meet regularly, and the respective meeting notes are publicly available in the [GC meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8) and the [TC meeting notes](https://docs.google.com/document/d/1hOHPCu5TGenqTeWPB9qQB_qd33uITZBcvK1FnWxYJAw) Google Docs. The Governance Committee and Technical Committee meetings are also recorded (although occasionally, the meetings are not recorded due to discussion of sensitive topics).
 If you want to check out the recordings, head to the [meeting recordings](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s).
 
 ## Areas of Interest
