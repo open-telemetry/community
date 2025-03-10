@@ -73,6 +73,7 @@ The existing member must:
   - [opentelemetry-gc](https://cloud-native.slack.com/archives/C01S673T1NE)
   - [opentelemetry-gc-tc](https://cloud-native.slack.com/archives/C02KF2PPUV9)
   - [opentelemetry-gc-alum](https://cloud-native.slack.com/archives/C02KBUGC685)
+  - [opentelemetry-gc-end-user](https://cloud-native.slack.com/archives/C065JSPJN15)
 
 The new member must:
 
