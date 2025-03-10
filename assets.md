@@ -10,9 +10,12 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 - [Credential Storage](#credential-storage)
 - [Community Resource Accounts](#community-resource-accounts)
   * [AWS account](#aws-account)
-  * [Equinix bare metal runners](#equinix-bare-metal-runners)
   * [FOSSA](#fossa)
-  * [GitHub-hosted runners](#github-hosted-runners)
+  * [Special GitHub Action runners](#special-github-action-runners)
+    + [Large Linux runners](#large-linux-runners)
+    + [Large Windows runners](#large-windows-runners)
+    + [Windows ARM64 runners](#windows-arm64-runners)
+    + [Bare metal runners](#bare-metal-runners)
   * [Google Cloud account](#google-cloud-account)
   * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
   * [Netlify](#netlify)
@@ -70,7 +73,64 @@ Link: http://cncf-aws-opentelemetry.signin.aws.amazon.com/
 - Community account to published Lambda layers
 - Admin: Alex Boten @codeboten & Anthony Mirabella @aneurysm9
 
-### Equinix bare metal runners
+### FOSSA
+
+We have an OpenTelemetry team under the CNCF's enterprise account.
+
+Link: https://app.fossa.com/
+
+- Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
+- Team admins: [@austinlparker](https://github.com/austinlparker), [@reyang](https://github.com/reyang), [@trask](https://github.com/trask)
+
+### Special GitHub Action runners
+
+#### Large Linux runners
+
+CNCF provides the following large Linux runners which are available to all repositories:
+
+- [`oracle-16cpu-64gb-x86-64`](https://github.com/cncf/automation/tree/main/ci#custom-runners)
+- [`oracle-16cpu-64gb-arm64`](https://github.com/cncf/automation/tree/main/ci#custom-runners)
+
+Note that normal-sized Linux ARM64 runners are [available for free to all public
+repositories](https://github.blog/changelog/2025-01-16-linux-arm64-hosted-runners-now-available-for-free-in-public-repositories-public-preview/).
+
+CNCF and GitHub expect fair use of these provided resources.
+Please ensure your workloads are optimized to avoid unnecessary usage.
+
+Admins: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
+
+#### Large Windows runners
+
+Access to large Windows runners is available to repositories on request
+(open a community issue),
+which will give access to the following GitHub-hosted runner:
+
+- `otel-windows-latest-8-cores`
+
+Note: these runners are pay-as-you-go.
+CNCF and GitHub expect fair use of these provided resources.
+Please ensure your workloads are optimized to avoid unnecessary usage.
+
+Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
+
+#### Windows ARM64 runners
+
+Access to Windows ARM64 runners is available to repositories on request
+(open a community issue),
+which will give access to the following GitHub-hosted runner:
+
+- `otel-windows-arm64`
+
+Note that Linux ARM64 runners are [available for free to all public
+repositories](https://github.blog/changelog/2025-01-16-linux-arm64-hosted-runners-now-available-for-free-in-public-repositories-public-preview/).
+
+Note: these runners are pay-as-you-go.
+CNCF and GitHub expect fair use of these provided resources.
+Please ensure your workloads are optimized to avoid unnecessary usage.
+
+Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
+
+#### Bare metal runners
 
 Reserved bare metal machines set up as
 [self-hosted runners](https://docs.github.com/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners)
@@ -84,37 +144,6 @@ GitHub self-hosted runners:
 - `github-benchmark-runner` (16-core)
 - `self-hosted` (alias that repos are currently using for `github-benchmark-runner`)
 - Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
-
-### FOSSA
-
-We have an OpenTelemetry team under the CNCF's enterprise account.
-
-Link: https://app.fossa.com/
-
-- Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
-- Team admins: [@austinlparker](https://github.com/austinlparker), [@reyang](https://github.com/reyang), [@trask](https://github.com/trask)
-
-### GitHub-hosted runners
-
-Access to large runners is available to repositories on request (open a community issue),
-which will give access to the following GitHub-hosted runners:
-
-- `otel-linux-latest-4-cores` (same number of cores as `ubuntu-latest` but more disk space)
-- `otel-linux-latest-8-cores`
-- `otel-windows-latest-8-cores`
-
-Windows ARM64 GitHub-hosted runners are also available if needed:
-
-- `otel-windows-arm64`
-
-(Linux ARM64 runners are
-[available for free to all public repositories](https://github.blog/changelog/2025-01-16-linux-arm64-hosted-runners-now-available-for-free-in-public-repositories-public-preview/))
-
-Note: these GitHub-hosted runners are pay-as-you-go.
-CNCF and GitHub expect fair use of these provided resources.
-Please ensure your workloads are optimized to avoid unnecessary usage.
-
-Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
 
 ### Google Cloud account
 
