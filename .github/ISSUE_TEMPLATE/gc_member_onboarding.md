@@ -73,6 +73,7 @@ The existing member must:
   - [opentelemetry-gc](https://cloud-native.slack.com/archives/C01S673T1NE)
   - [opentelemetry-gc-tc](https://cloud-native.slack.com/archives/C02KF2PPUV9)
   - [opentelemetry-gc-alum](https://cloud-native.slack.com/archives/C02KBUGC685)
+  - [opentelemetry-gc-end-user](https://cloud-native.slack.com/archives/C065JSPJN15)
 
 The new member must:
 
@@ -178,7 +179,7 @@ capacity, in finding answers to these questions.
 - [ ] [Active Projects](https://github.com/open-telemetry/community/tree/main/projects):
   to understand current project deliverables and the challenges they aim to
   solve.
-- [ ] [Project Board](https://github.com/orgs/open-telemetry/projects/29):
+- [ ] [Project Board](https://github.com/orgs/open-telemetry/projects/135):
   including the individual project boards for each of these, they help
   understand the current state of the projects listed in the previous item.
 - [ ] [Community repo docs](https://github.com/open-telemetry/community/tree/main/docs):
