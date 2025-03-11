@@ -32,7 +32,7 @@ Groups are encouraged to define deadlines for any work which will require public
 
 ## Project Lifecycle
 
-All projects progress through a lifecycle. Projects are tracked on the [Project Board](https://github.com/orgs/open-telemetry/projects/29), which the community can use to get a high-level view of the OpenTelemetry roadmap.
+All projects progress through a lifecycle. Projects are tracked on the [Project Board](https://github.com/orgs/open-telemetry/projects/135), which the community can use to get a high-level view of the OpenTelemetry roadmap.
 
 The project lifecycle is as follows:
 
