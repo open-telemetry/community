@@ -3,23 +3,23 @@
 ## Governance Committee
 
 This is the current Governance Committee, per the [Governance Committee
-Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md),
+Charter](./governance-charter.md),
 in alphabetical order:
 
 - [Alolita Sharma](https://github.com/alolita), Apple, until October 2026
 - [Austin Parker](https://github.com/austinlparker), Honeycomb, until October 2025
 - [Daniel Gomez Blanco](https://github.com/danielgblanco), Skyscanner, until October 2025
-- [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs, until October 2025
+- [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden, until October 2025
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2026
 - [Pablo Baeyens Fernandez](https://github.com/mx-psi), Datadog, until October 2026
-- [Severin Neumann](https://github.com/svrnm), Cisco, until October 2025
+- [Severin Neumann](https://github.com/svrnm), Independent, until October 2025
 - [Ted Young](https://github.com/tedsuo), Lightstep, until October 2025
 - [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2026
 
 ## Technical Committee
 
-This is the current Technical Committee, per the [Technical Committee
-Charter](https://github.com/open-telemetry/community/blob/master/tech-committee-charter.md),
+This is the current Technical Committee, per the
+[Technical Committee Charter](./tech-committee-charter.md),
 in alphabetical order:
 
 - [Armin Ruech](https://github.com/arminru), Dynatrace
@@ -54,11 +54,12 @@ repositories:
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace
 - [David Ashpole](https://github.com/dashpole), Google
+- [Josh MacDonald](https://github.com/jmacd), Microsoft
 - [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs
 - [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Marc Alff](https://github.com/marcalff), Oracle
 - [Robert Pająk](https://github.com/pellared), Splunk
-- [Severin Neumann](https://github.com/svrnm), Cisco
+- [Severin Neumann](https://github.com/svrnm), Independent
 - [Ted Young](https://github.com/tedsuo), Lightstep
 - [Tristan Sloughter](https://github.com/tsloughter), MyDecisiveAI
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
@@ -175,6 +176,12 @@ Repo: [open-telemetry/opentelemetry-swift](https://github.com/open-telemetry/ope
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Swift API & SDK can be found in the [open-telemetry/opentelemetry-swift CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-swift/blob/main/CONTRIBUTING.md).
 
+## Network collector
+
+Repos: [open-telemetry/opentelemetry-network](https://github.com/open-telemetry/opentelemetry-network) and [open-telemetry/opentelemetry-network-build-tools](https://github.com/open-telemetry/opentelemetry-network-build-tools)
+
+The list of active members (both "approvers" and "maintainers") for OpenTelemetry Network can be found in the [open-telemetry/opentelemetry-network README file](https://github.com/open-telemetry/opentelemetry-network/blob/main/README.md#contributing).
+
 ## Community Demo
 
 Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/opentelemetry-demo)
@@ -192,4 +199,5 @@ Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/open
 
 ## Technical Committee Emeritus
 
+- [Josh MacDonald](https://github.com/jmacd)
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev)

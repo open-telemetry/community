@@ -1,6 +1,6 @@
 - name: Specification SIGs
   sigs:
-  - name: 'Specification: General'
+  - name: 'Specification: General + OTel Maintainers Sync'
     meeting: Tuesday at 08:00 PT
     notes:
       type: gDoc
@@ -84,19 +84,6 @@
     gcLiaison:
     - name: Trask Stalnaker
       github: trask
-  - name: 'Semantic Conventions: Tooling'
-    meeting: Wednesday at 07:00 PT
-    notes:
-      type: gDoc
-      value: 1ygwXgOFRF01UfUOgMr_ElyL7fSDPchTKSrqfj-_HeyA
-    chat:
-      - type: slack
-        name: '#otel-semantic-conventions'
-        id: C041APFBYQP
-    invites: calendar-semconv
-    sponsors:
-    - name: Josh Suereth
-      github: jsuereth
   - name: 'Semantic Conventions: Messaging'
     meeting: Thursday at 8:00 PT
     notes:
@@ -255,7 +242,7 @@
     gcLiaison:
       - name: 'Severin Neumann'
         github: svrnm
-  - name: Agent Management
+  - name: OpAMP
     meeting: Every other Wednesday at 11:00 PT
     notes:
       type: gDoc
@@ -383,7 +370,6 @@
       github: mx-psi
   - name: 'C++: SDK'
     meeting: Alternating between Monday at 13:00 PT and Wednesday at 09:00 PT
-      PT
     notes:
       type: gDoc
       value: 1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw
@@ -411,7 +397,7 @@
        - name: Morgan McLean
          github: mtwo
   - name: '.NET: SDK'
-    meeting: Tuesday alternating between 09:00 PT and 16:00 PT
+    meeting: Tuesday at 11:00 PT
     notes:
       type: gDoc
       value: 1yjjD6aBcLxlRazYrawukDgrhZMObwHARJbB9glWdHj8
@@ -461,6 +447,20 @@
       - type: slack
         name: '#otel-go-instrumentation'
         id: C03S01YSAS0
+    invites: calendar-go
+    sponsors: []
+    gcLiaison:
+    - name: 'Juraci Paixão Kröhling'
+      github: jpkrohling
+  - name: 'GoLang: Compile-Time Instrumentation'
+    meeting: Every other Thursday at 08:00 UTC
+    notes:
+      type: gDoc
+      value: 1XkVahJfhf482d3WVHsvUUDaGzHc8TO3sqQlSS80mpGY
+    chat:
+      - type: slack
+        name: '#otel-go-compile-instrumentation'
+        id: C088D8GSSSF
     invites: calendar-go
     sponsors: []
     gcLiaison:
@@ -546,7 +546,7 @@
     meeting: Tuesday at 09:00 PT
     notes:
       type: gDoc
-      value: 1tGKuCsSnyT2McDncVJrMgg74_z8V06riWZa0Sr79I_4
+      value: 12upOzNk8c3SFTjsL6IRohCWMgzLKoknSCOOdMakbWo4
     chat:
       - type: slack
         name: '#otel-rust'
@@ -615,22 +615,24 @@
     gcLiaison:
     - name: 'Austin Parker'
       github: austinlparker
-- name: Cross-Cutting SIGs
-  sigs:
-  - name: Maintainer Meeting
-    meeting: Monday at 09:00 PT
+  - name: 'Semantic Conventions: Tooling'
+    meeting: Wednesday at 07:00 PT
     notes:
       type: gDoc
-      value: 1_X2CTiDXmxk2JozBNwQ2uP8FfV1rxx9ISE5puHu0yIk
+      value: 1ygwXgOFRF01UfUOgMr_ElyL7fSDPchTKSrqfj-_HeyA
     chat:
       - type: slack
-        name: '#otel-maintainers'
-        id: C01NJ7V1KRC
-    invites: calendar-maintainer-meeting
-    sponsors: []
+        name: '#otel-weaver'
+        id: C0697EXNTL3
+    invites: calendar-semconv
+    sponsors:
+    - name: Josh Suereth
+      github: jsuereth
     gcLiaison:
-       - name: Morgan McLean
-         github: mtwo
+    - name: Trask Stalnaker
+      github: trask
+- name: Cross-Cutting SIGs
+  sigs:
   - name: Communications (Website, [Documentation](https://opentelemetry.io/docs/),
       etc.)
     meeting: Every other Monday at 10:00 PT

@@ -53,7 +53,7 @@ SIG meeting times: Friday 10am - 11am PT
 ### Timeline
 
 Completed:
-* [Provider based EventLogger API](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/logs/event-api.md)
+* [Provider based EventLogger API](https://github.com/open-telemetry/opentelemetry-specification/blob/v1.40.0/specification/logs/event-api.md)
 
 Q2 2024
 
