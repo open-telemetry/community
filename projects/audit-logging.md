@@ -49,14 +49,14 @@ Other vendors are invited to join the discussion.
 
 ### Required staffing
 
-* Project lead: SAP (name tbd)
+* Project lead: @hilmarf
 * Sponsors:
   - @reyang
   - tbd
 * GC liaison: @svrnm
-* Engineers for API/SDK:
-  * SAP will provide a prototype in two languages (tbd; likely two of Java, JavaScript, Go)
-* Engineers for OTel Collector: tbd
+* Engineers contributing to the SIG:
+  - @hilmarf
+  - ...
 * Maintainers/approvers: tbd
 
 ## Timeline
