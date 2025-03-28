@@ -192,6 +192,8 @@ words:
     - otelbot
     - otep
     - otlp
+    - OTAP
+    - OTTL
     - outreachy
     - Packagist
     - Prometheus
