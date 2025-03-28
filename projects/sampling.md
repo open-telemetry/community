@@ -3,13 +3,13 @@
 ## Description
 
 The OpenTelemetry Sampling project aims to improve sampling support in
-OpenTelemetry through protocol, API, and SDK support. This project
+OpenTelemetry through protocol, API, and SDK features. This project
 works with the W3C trace context group to coordinate distributed
 tracing protocols across the observability industry.
 
 The project aims to complete the OpenTelemetry SDK specification with
-support for consistent probability head sampling with configuration
-support in the SDKs.
+support for consistent probability head sampling with configurable SDK
+samplers.
 
 ## Project board
 
