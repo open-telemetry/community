@@ -13,7 +13,7 @@ in alphabetical order:
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2026
 - [Pablo Baeyens Fernandez](https://github.com/mx-psi), Datadog, until October 2026
 - [Severin Neumann](https://github.com/svrnm), Independent, until October 2025
-- [Ted Young](https://github.com/tedsuo), Lightstep, until October 2025
+- [Ted Young](https://github.com/tedsuo), Grafana Labs, until October 2025
 - [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2026
 
 ## Technical Committee
