@@ -17,7 +17,7 @@ https://github.com/orgs/open-telemetry/projects/133
 
 ## Deliverables
 
-The Sampling project has several of OTEPs to develop the foundation
+The Sampling project has several OTEPs to develop the foundation
 for probability sampling in OpenTelemetry.
 
 - [OTEP 168](https://github.com/open-telemetry/opentelemetry-specification/blob/main/oteps/trace/0168-sampling-propagation.md)
