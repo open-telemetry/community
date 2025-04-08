@@ -185,6 +185,7 @@ words:
     - OpenLIT
     - opentelemetry
     - opentelemetrybot
+    - ossf
     - otel
     - otel-agentmanwg
     - otel-comms
@@ -192,6 +193,8 @@ words:
     - otelbot
     - otep
     - otlp
+    - OTAP
+    - OTTL
     - outreachy
     - Packagist
     - Prometheus
@@ -212,6 +215,7 @@ words:
     - rossf7
     - salnikov
     - sallyom
+    - sarif
     - scavarda
     - semconv
     - sergey
