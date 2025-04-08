@@ -130,7 +130,7 @@ concerns.
 
 ### [Severin Neumann](https://github.com/svrnm), Cisco
 
-### [Ted Young](https://github.com/tedsuo), Lightstep
+### [Ted Young](https://github.com/tedsuo), Grafana Labs
 
 ### [Tristan Sloughter](https://github.com/tsloughter), MyDecisiveAI
 
