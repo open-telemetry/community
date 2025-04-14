@@ -74,7 +74,7 @@ Project approvers
 
 ## Meeting times
 
-T.D.B. depending on timezone interests.
+Every other Thursday at 8AM PT.
 
 ## Timeline
 
