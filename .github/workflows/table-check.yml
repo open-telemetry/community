@@ -2,6 +2,7 @@ name: SIG Table checking
 
 on:
   pull_request:
+  merge_group:
 
 jobs:
   table-check:

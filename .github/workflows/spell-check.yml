@@ -2,6 +2,7 @@ name: Spell checking
 
 on:
   pull_request:
+  merge_group:
 
 jobs:
   spelling-check:
