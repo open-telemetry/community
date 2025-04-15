@@ -52,7 +52,7 @@ Engineers contributing to the SIG
 
 ## Meeting times
 
-Thursdays 8AM PT
+Every other Thursday at 8AM PT.
 
 ## Timeline
 

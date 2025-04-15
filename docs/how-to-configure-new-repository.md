@@ -167,7 +167,9 @@ Same as for [`main`](#branch-protection-rule-main) above.
   * `Require approval for first-time contributors who are new to GitHub`
     * (this can also be `Require approval for first-time contributors`)
 
-### Code Security
+### Advanced Security
+
+#### Code Security
 
 * Dependabot alerts: :heavy_check_mark:
 * Dependabot security updates: :heavy_check_mark:
