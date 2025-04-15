@@ -227,8 +227,9 @@ but these individual OpenTelemetry members have been given rights to publish und
 
 Link: https://pypi.org/user/opentelemetry/
 
-- Owner: [@codeboten](https://github.com/codeboten)
- 
+- Owner: [@open-telemetry/python-maintainers](https://github.com/orgs/open-telemetry/teams/python-maintainers)
+  (password is available in the OpenTelemetry Python 1Password vault)
+
 ### PHP Extras
 
 SIG Extra Repositories: https://github.com/opentelemetry-php
