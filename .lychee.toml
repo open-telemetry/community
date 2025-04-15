@@ -6,6 +6,8 @@ exclude = [
     "https://slack.com/help/articles/8328303095443-Understand-Channel-Managers-in-Slack",
     "https://observe2020.io",
     "https://servicenow.com",
+    "https://sched.co",
+    "https://srecon19emea.sched.com",
     # excluding links to user profiles is done for performance
     # because there are a lot of links to user profiles in this repository
     # and GitHub extra throttles access to user profile pages
