@@ -44,8 +44,8 @@
     - name: Jack Berg
       github: jack-berg
     gcLiaison:
-    - name: Trask Stalnaker
-      github: trask
+    - name: Daniel Gomez Blanco
+      github: danielgblanco
   - name: 'Specification: Logs'
     meeting: Tuesday at 10:00 PT
     notes:
