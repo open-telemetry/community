@@ -84,24 +84,6 @@
     gcLiaison:
     - name: Trask Stalnaker
       github: trask
-  - name: 'Semantic Conventions: Messaging'
-    meeting: Thursday at 8:00 PT
-    notes:
-      type: gDoc
-      value: 1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE
-    chat:
-      - type: slack
-        name: '#otel-messaging'
-        id: C02Q4AAHDSA
-    invites: calendar-semconv
-    sponsors:
-      - name: Johannes Tax
-        github: pyohannes
-      - name: Liudmila Molkova
-        github: lmolkova
-    gcLiaison:
-    - name: Trask Stalnaker
-      github: trask
   - name: 'Semantic Conventions: Database'
     meeting: Wednesday at 9:30 PT and Friday at 8:30 PT
     notes:
