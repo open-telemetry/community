@@ -659,7 +659,7 @@
     - name: Daniel Gomez Blanco
       github: danielgblanco
   - name: Security
-    meeting: Every other Wednesday at 07:00 PT
+    meeting: Every Monday at 09:00 PT
     notes:
       type: gDoc
       value: 1P2xejC7lEkOV_Z-8E0oZPXLK5HOnUPNuRqKP0ZQ5fpg
@@ -669,13 +669,13 @@
         id: C05A85QC281
     invites: calendar-sig-security
     sponsors:
-      - name: 'Juraci Paixão Kröhling'
-        github: jpkrohling
+      - name: Trask Stalnaker
+        github: trask
       - name: Reiley Yang
         github: reyang
     gcLiaison:
-      - name: 'Juraci Paixão Kröhling'
-        github: jpkrohling
+      - name: Trask Stalnaker
+        github: trask
   - name: Project Infrastructure
     meeting: Thursday at 11:00 PT
     notes:
