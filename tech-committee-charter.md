@@ -79,7 +79,7 @@ Every TC member is required to provide a  minimum of one (1) *Escalation* sponso
 
 Every TC member is required to provide a minimum of two (2) *Guiding* or *Leading* sponsorships.
 
-Every TC member is limited to a maximum of two (2) *leading* sponsorships. This is to keep OpenTelemetry efforts focused and reduce fragmented attention on
+Every TC member is limited to a maximum of two (2) *Leading* sponsorships. This is to keep OpenTelemetry efforts focused and reduce fragmented attention on
 core issues.
 
 A TC member may have a time where they are not meeting the minimum sponsorship requirement, e.g. when major efforts have acheived results, and new projects are being formulated.
