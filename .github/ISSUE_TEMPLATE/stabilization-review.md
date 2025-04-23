@@ -12,7 +12,7 @@ Delete the guidance comments after filling in the form.
 
 # TC Review Request: <Component / Language> <Signal> (API / SDK / Collector-module)
 
-## 1. Promotion scope
+## 1. Review scope
 | Signal | Part of project | Current maturity | Target maturity |
 | ------ | --------------- | ---------------- | --------------- |
 | <Tracing \| Metrics \| Logs \| Profiles> | <API / SDK package / Other> | experimental / beta | **stable (GA)** |
