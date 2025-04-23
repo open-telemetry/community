@@ -14,7 +14,7 @@ Delete the guidance comments after filling in the form.
 
 ## 1. Promotion scope
 | Signal | Part of project | Current maturity | Target maturity |
-| ------ | -------------- | ---------------- | --------------- |
+| ------ | --------------- | ---------------- | --------------- |
 | <Tracing \| Metrics \| Logs \| Profiles> | <API / SDK package / Other> | experimental / beta | **stable (GA)** |
 
 ## 2. Motivation
