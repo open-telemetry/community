@@ -1,6 +1,6 @@
 ---
 name: TC Review Request
-about: Request a Technical Committee stability review (promotion to Stable/GA)
+about: Request a Technical Committee stability review (promotion to Stable)
 title: "TC Review Request: "
 labels: "area/stability"
 assignees: ""
@@ -15,33 +15,44 @@ Delete the guidance comments after filling in the form.
 ## 1. Review scope
 | Signal | Part of project | Current maturity | Target maturity |
 | ------ | --------------- | ---------------- | --------------- |
-| <Tracing \| Metrics \| Logs \| Profiles> | <API / SDK package / Other> | experimental / beta | **stable (GA)** |
+| <Tracing \| Metrics \| Logs \| Profiles> | <API / SDK package / Other> | experimental / beta | **stable** |
 
 ## 2. Motivation
-<Why are you requesting GA now? Adoption stats, user demand, risk mitigation, etc.>
+<Why are you requesting stability now? Adoption stats, user demand, risk mitigation, etc.>
 
 ## 3. Target version / tag
 `<org>/<repo>@<tag>` – commit `<sha>`
 
 ## 4. Links for reviewers
-* **Spec-compliance checklist:** <link>
-* **Compatibility matrix (if any):** <link>
+* **Spec compliance matrix:** <link to documentation of how your implementation meets each spec requirement>
+  <!-- 
+  Example compliance matrix format:
+  
+  ### Spec compliance matrix (Metrics SDK, spec @ 87c4a7f)
+
+  | § | Requirement (paraphrased) | Status | Notes / Links |
+  |---|---------------------------|--------|---------------|
+  | 6.1.1 | MeterProvider **MUST** be safe for concurrent use | ✅ | Covered by mutex in meter_provider.go#L45 |
+  | 6.1.2 | MeterProvider **MUST** return same Meter for identical name | ✅ | unit test `TestSameMeter` |
+  | 6.3.1 | SDK **MUST** implement PeriodicReader | ✅ | pkg/metric/reader/periodic_reader.go |
+  | 6.3.2 | SDK **SHOULD** implement ManualReader | ❌ | Tracked in #1234; planned before GA |
+  | 6.12 | **MUST_NOT** drop data on forced shutdown | ✅ | integration test `TestForceFlush` |
+  | … | … | … | … |
+  -->
 * **Public docs / getting-started sample:** <link>
 * **CHANGELOG draft:** <link>
-* **Open spec gaps referenced:**
-  * open-telemetry/opentelemetry-specification#NNNN – <summary>
 
 ## 5. Self-checklist
 - [ ] All **MUST / MUST_NOT** requirements implemented
-- [ ] [Spec Compliance Matrix](https://github.com/open-telemetry/opentelemetry-specification/blob/main/spec-compliance-matrix.md) populated and up-to-date
+- [ ] [Spec compliance matrix](https://github.com/open-telemetry/opentelemetry-specification/blob/main/spec-compliance-matrix.md) populated and up-to-date
 - [ ] Public API surface frozen & annotated as **Stable**
 - [ ] Docs & examples updated
-- [ ] CI green on **main** and on the release tag above
+- [ ] CI green on **main** and on the version/tag specified in section 3
 - [ ] ≥ 1 beta/RC used in production for ≥ 4 weeks
 - [ ] CHANGELOG & version bump prepared
 
 ## 6. Maintainer points-of-contact
-- @<handle> – SIG lead / shepherd
+- @<handle> – SIG lead / primary contact
 - @<handle> – backup
 
 ## 7. Requested reviewer expertise
