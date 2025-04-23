@@ -75,7 +75,7 @@ SIGs will be classified into three classifications of Sponsorship requirement:
 
 As part of their active leadership, every TC member will be required to sponsor SIGs across OpenTelemetry.
 
-Every TC member is required to provide a  minimum of one (1) *Escalation* sponsorship. All SIGs requiring escalation sponsorship will be divided across the TC.
+Every TC member is required to provide a minimum of one (1) *Escalation* sponsorship. All SIGs requiring escalation sponsorship will be divided across the TC.
 
 Every TC member is required to provide a minimum of two (2) *Guiding* or *Leading* sponsorships.
 
