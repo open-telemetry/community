@@ -45,6 +45,6 @@ Delete the guidance comments after filling in the form.
 - @<handle> – backup
 
 ## 7. Requested reviewer expertise
-<e.g., “Metrics SDK spec”, “Collector pipeline”, “Logs data-model”>
+<e.g., "Metrics SDK spec", "Collector pipeline", "Logs data-model">
 
 /cc @open-telemetry/technical-committee
