@@ -1,6 +1,6 @@
 ---
 name: TC Review Request
-about: Request a Technical-Committee stability review (promotion to Stable/GA)
+about: Request a Technical Committee stability review (promotion to Stable/GA)
 title: "TC Review Request: "
 labels: "area/stability"
 assignees: ""
