@@ -61,6 +61,30 @@ The development process will include a process for the TC to oversee and approve
 
 The TC and entire technical community will follow any processes as may be specified by the Cloud Native Computing Foundation relating to the intake and license compliance review of contributions, including the CNCF IP Policy.
 
+### Sponsorship Requirements
+
+The TC will establish and maintain sponsorship across the SIGs and subprojects of OpenTelemetry.
+
+SIGs will be classified into three classifications Sponsorship requirement:
+
+* *Escalation Sponsorship*: The TC sponsor will be a primary means of escalation of cross-project concerns from the SiG. This communication is primarily
+  offline, e.g. via CNCF slack or issue communication. The TC sponsor will check-in with SIG leadership quarterly.  Additionally, the TC will aide the SIG
+  in developing quarterly roadmaps during this check-in.
+* *Guiding Sponsorship*: The TC sponsor is an active participant of the SIG. The sponsor will help direct the SIGs efforts to match the technical goals of OpenTelemetry.
+* *Leading Sponsorship*: The TC sponsor is an active member of SIG leadership, driving the direct success of the project or proposal.
+
+As part of their active leadership, every TC member will be required to sponsor SIGs across OpenTelemetry.
+
+Every TC member is required to provide a  minimum of one (1) *Escalation* sponsorship. All SIGs requiring escalation sponsorship will be divided across the TC.
+
+Every TC member is required to provide a minimum of two (2) *Guiding* or *Leading* sponsorships.
+
+Every TC member is limited to a maximum of two (2) *leading* sponsorships. This is to keep OpenTelemetry efforts focused and reduce fragmented attention on
+core issues.
+
+A TC member may have a time where they are not meeting the minimum sponsorship requirement, e.g. when major efforts have acheived results, and new projects are being formulated.
+This time should not exceed a six month period.
+
 ### Code Donations
 
 From time to time, organizations may wish to donate existing code to
