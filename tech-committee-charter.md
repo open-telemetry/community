@@ -86,7 +86,7 @@ Every TC member is required to provide a minimum of two (2) *Guiding* or *Leadin
 Every TC member is limited to a maximum of two (2) *Leading* sponsorships. This is to keep OpenTelemetry efforts focused and reduce fragmented attention on
 core issues.
 
-A TC member may have a time where they are not meeting the minimum sponsorship requirement, e.g. when major efforts have acheived results, and new projects are being formulated.
+A TC member may have a time where they are not meeting the minimum sponsorship requirement, e.g. when major efforts have achieved results, and new projects are being formulated.
 This time should not exceed a six month period.
 
 ### Code Donations
