@@ -583,6 +583,20 @@
     gcLiaison:
     - name: Ted Young
       github: tedsuo
+  - name: eBPF Instrumentation
+    meeting: Wednesday at 08:00 PT
+    notes:
+      type: gDoc
+      value: 1ZkmUT2EHKfgtLqrgx3WI8aBy2QNyZeTwSKXxe3DI6Pw
+    chat:
+      - type: slack
+        name: '#otel-ebpf-instrumentation'
+        id: C08P9L4FPKJ
+    invites: calendar-ebpf-instrumentation
+    sponsors: []
+    gcLiaison:
+      - name:
+        github:
   - name: Kubernetes Operator
     meeting: Thursday at 09:00 PT
     notes:
