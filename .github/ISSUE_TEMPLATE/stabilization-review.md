@@ -49,7 +49,7 @@ Delete the guidance comments after filling in the form.
 - [ ] Docs & examples updated
 - [ ] CI green on **main** and on the version/tag specified in section 3
 - [ ] ≥ 1 beta/RC used in production for ≥ 4 weeks
-- [ ] CHANGELOG & version bump prepared
+- [ ] CHANGELOG prepared
 
 ## 6. Maintainer points-of-contact
 - @<handle> – SIG lead / primary contact
