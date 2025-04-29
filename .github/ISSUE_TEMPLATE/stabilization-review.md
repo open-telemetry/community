@@ -45,7 +45,7 @@ Delete the guidance comments after filling in the form.
 ## 5. Self-checklist
 - [ ] All **MUST / MUST NOT** requirements implemented
 - [ ] [Spec compliance matrix](https://github.com/open-telemetry/opentelemetry-specification/blob/main/spec-compliance-matrix.md) populated and up-to-date
-- [ ] Public API surface frozen & annotated as **Stable**
+- [ ] Public API surface frozen
 - [ ] Docs & examples updated
 - [ ] CI green on **main**
 - [ ] ≥ 1 beta/RC used in production for ≥ 4 weeks
