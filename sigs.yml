@@ -595,8 +595,8 @@
     invites: calendar-ebpf-instrumentation
     sponsors: []
     gcLiaison:
-      - name:
-        github:
+      - name: Severin Neumann
+        github: svrnm
   - name: Kubernetes Operator
     meeting: Thursday at 09:00 PT
     notes:
