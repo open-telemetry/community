@@ -43,7 +43,7 @@ Delete the guidance comments after filling in the form.
 * **CHANGELOG draft:** <link>
 
 ## 5. Self-checklist
-- [ ] All **MUST / MUST_NOT** requirements implemented
+- [ ] All **MUST / MUST NOT** requirements implemented
 - [ ] [Spec compliance matrix](https://github.com/open-telemetry/opentelemetry-specification/blob/main/spec-compliance-matrix.md) populated and up-to-date
 - [ ] Public API surface frozen & annotated as **Stable**
 - [ ] Docs & examples updated
