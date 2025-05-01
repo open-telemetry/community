@@ -39,17 +39,21 @@ What is the expected timeline the project will aim to adhere to, and what resour
 
 ## Labels
 
-Issues should be properly labeled to indicate what parts of the specification it is focused on. List here the labels applicable to this project.
+Issues should be properly labeled to indicate what parts of the specification it is focused on. List here the labels applicable to this project, and consider adding them to corresponding GitHub Project automation to include them automatically into the project backlog.
 
-## Project Board
+## GitHub Project
 
-Once approved, a project should be managed using a GitHub project board (see [open projects](https://github.com/orgs/open-telemetry/projects?query=is%3Aopen)). This project board should be pre-populated with issues that cover all known deliverables, organized by timeline milestones.
+Once approved, a project should be managed using a GitHub project board (see [open projects](https://github.com/open-telemetry/community/projects?query=is%3Aopen)). This project board should be pre-populated with issues that cover all known deliverables, organized by timeline milestones.
 
-Any [member](./guides/contributor/membership.md) associated with the project can create the board. Once created, the creator of the board should:
+Any [member](./guides/contributor/membership.md) associated with the project can create the board. Please use the existing [GitHub Project template](https://github.com/orgs/open-telemetry/projects/140) to create your project, replacing `{project_name}` where appropriate.
+
+Once created, the creator of the board should:
 
 - Assign `Admin` privileges on the project to the relevant project members (using a new or existing GitHub team).
 - Change the visibility of the project to `Public` in order to share project status and priorities outside of the OpenTelemetry organization.
 - Configure project workflows to automatically add issues and PRs to the board based on repositories and labels.
+
+See [project management](project-management.md#project-lifecycle) for more information about sharing project updates and status.
 
 Once created, please add a link to the project board here.
 
