@@ -1,5 +1,7 @@
 # <<PROJECT NAME>>
 
+Name your project here. This should be a short, descriptive name that describes the main goal of the project, not the SIG that may be formed as part of it. For instance, if the project is aimed at the first set of deliverables for the Foo SIG, name the project "Foo SIG Bootstrap" or "Initial Foo Implementation".
+
 ## Background and description
 
 Add any background that may be needed to introduce the scope of this project.
