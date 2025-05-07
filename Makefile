@@ -18,7 +18,6 @@ table-check:
 markdown-link-check:
 	docker run --rm \
 		--mount 'type=bind,source=$(PWD),target=/home/repo' \
-		-e GITHUB_TOKEN \
 		lycheeverse/lychee \
 		--config home/repo/.lychee.toml \
 		--root-dir /home/repo \
