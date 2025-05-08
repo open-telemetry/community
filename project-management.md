@@ -30,7 +30,7 @@ A project proposal can then be submitted by placing the project document in the 
 
 As the project progresses, the project document should be kept up to date, and the community [README](README.md) should be updated to include any new project meeting information (see [contributing guide](https://github.com/open-telemetry/community/blob/main/CONTRIBUTING.md#updating-sig-information-on-the-readmemd)).
 
-Project leads are encouraged to define deadlines for any work which will require public review, and to provide updates to the community in the form of [GitHub Project updates](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/sharing-project-updates). We have found that having scoped deliverables leads to an increased cadence in project work, and helps resolve debate. Deadlines also help with getting a more coherent public review, as they allow the review community to plan on making themselves available. If deadlines prove to be unrealistic, they can be always be updated.
+Project leads are encouraged to define timelines for any work which will require public review, and to provide updates to the community in the form of [GitHub Project updates](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/sharing-project-updates). We have found that having scoped deliverables leads to an increased cadence in project work, and helps resolve debate. Timelines also help with getting a more coherent public review, as they allow the review community to plan on making themselves available. If timelines prove to be unrealistic, they can be always be updated.
 
 ## Project Lifecycle
 
