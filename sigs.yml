@@ -337,7 +337,7 @@
     - name: Trask Stalnaker
       github: trask
   - name: Arrow
-    meeting: Every other Thursday at 8:00 PT
+    meeting: Alternating between Tuesday at 16:00 PT and Thursday at 8:00 PT
     notes:
       type: gDoc
       value: 1z8_Ra-ALDaYNa88mMj1gOZtOpLZLRk0-dZEmDjPmcUs
