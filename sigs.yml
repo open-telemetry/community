@@ -84,24 +84,6 @@
     gcLiaison:
     - name: Trask Stalnaker
       github: trask
-  - name: 'Semantic Conventions: Database'
-    meeting: Wednesday at 9:30 PT and Friday at 8:30 PT
-    notes:
-      type: gDoc
-      value: 1zTi_Z4WBisytPnXTpwtnGOK-4Gv5oSTuMHvIQ8--5hg
-    chat:
-      - type: slack
-        name: '#otel-semconv-db-client-stability'
-        id: C06HH05KNMC
-    invites: calendar-semconv
-    sponsors:
-      - name: Jack Berg
-        github: jack-berg
-      - name: Liudmila Molkova
-        github: lmolkova
-    gcLiaison:
-      - name: Trask Stalnaker
-        github: trask
   - name: 'Semantic Conventions: System Metrics'
     meeting: Thursday at 07:30 PT
     notes:
