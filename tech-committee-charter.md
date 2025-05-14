@@ -74,8 +74,8 @@ SIGs will be classified into three classifications of Sponsorship requirement:
 * *Leading Sponsorship*: The TC sponsor is an active member of SIG leadership, driving the direct success of the project or proposal.
 
 All SIGs within OpenTelemetry will be required to have some level of sponsorship requirement (at least *Escalation*). Higher level sponsorship automatically fulfills
-lower level sponsorship requirements, e.g. *Guiding* sponsorship fulfills an *Escalation* sponsorship requirement, as *Leading* sponsorship would fulfill an
-*Escalation* sponsorship requirement. Sponsorship is not exclusive. More than one TC member may sponsor a SIG.
+lower level sponsorship requirements, e.g. *Guiding* sponsorship fulfills an *Escalation* sponsorship requirement, as *Leading* sponsorship would fulfill a
+*Guiding* sponsorship requirement. Sponsorship is not exclusive. More than one TC member may sponsor a SIG.
 
 As part of their active leadership, every TC member will be required to sponsor SIGs across OpenTelemetry.
 
