@@ -63,7 +63,7 @@ The TC and entire technical community will follow any processes as may be specif
 
 ### Sponsorship Requirements
 
-The TC will establish and maintain sponsorship across the SIGs and subprojects of OpenTelemetry.
+The TC will establish and maintain sponsorship across OpenTelemetry SIGs.
 
 SIGs will be classified into three classifications of Sponsorship requirement:
 
