@@ -108,56 +108,7 @@ Everything not mentioned is unchecked.
 [Jira ticket](https://jira.linuxfoundation.org/plugins/servlet/desk/portal/4/create/143)
 with the EasyCLA team.
 
-#### Branch protection rule: `dependabot/**/*`
-
-Everything not mentioned is unchecked.
-
-* Allow force pushes: :heavy_check_mark:
-  * `Everyone` (all users with push access)
-    * (so that dependabot can rebase its pull requests)
-* Allow deletions: :heavy_check_mark:
-  * (so that branches can be deleted after merging)
-
-**Note:** "Require a pull request before merging" and
-"Require status checks to pass before merging" both need to be `unchecked` so that
-these branches can be directly updated (without going through a pull request).
-
-#### Branch protection rule: `renovate/**/*`
-
-Same as for [`dependabot/**/*`](#branch-protection-rule-dependabot) above.
-
-This branch protection rule is not set up automatically, but can be added for any
-repositories that are using [Renovate](https://github.com/apps/renovate).
-
-Note: Since Renovate was enabled and disabled across all OpenTelemetry repositories at one point,
-you will need to follow one of these two options to re-onboard:
-
-Option 1:
-
-* Find the original `Configure Renovate` PR,
-  e.g. https://github.com/open-telemetry/semantic-conventions-java/pull/34,
-  and rename that PR to something else, e.g. `Configure Renovate - old`.
-* Enable Renovate on the repository (requires org admin permission).
-* Renovate will send a new onboarding PR to the repository,
-  e.g. https://github.com/open-telemetry/semantic-conventions-java/pull/95.
-
-Option 1:
-
-* Merge `renovate.json` to `main`.
-* Enable Renovate on the repository (requires org admin permission).
-* Go to Renovate, e.g. https://developer.mend.io/github/open-telemetry/opentelemetry-proto-go,
-  and run Actions > Run Renovate scan.
-* Renovate won't send a new onboarding PR in this case,
-  but will directly start sending PRs to update dependencies.
-
-#### Branch protection rule: `gh-readonly-queue/main/**`
-
-Same as for [`dependabot/**/*`](#branch-protection-rule-dependabot) above.
-
-This branch protection rule is not set up automatically, but can be added for any
-repositories that are using merge queues.
-
-#### Branch protection rule: `**/**`
+#### Branch protection rule for other long-term branches, e.g., release branches
 
 Same as for [`main`](#branch-protection-rule-main) above.
 
@@ -194,3 +145,27 @@ adding branch protection rules, or adding a new triagers team),
 an issue in the community repository needs to be created to keep track of changes.
 Please use the "Repository Maintenance Request" issue template for such requests.
 For temporary permission changes, the issue should be kept open until the work is finished and permissions can be reverted again.
+
+## Renovate
+
+Note: Since Renovate was enabled and disabled across all OpenTelemetry repositories at one point,
+you will need to follow one of these two options to re-onboard:
+
+Option 1:
+
+* Find the original `Configure Renovate` PR,
+  e.g. https://github.com/open-telemetry/semantic-conventions-java/pull/34,
+  and rename that PR to something else, e.g. `Configure Renovate - old`.
+* Enable Renovate on the repository (requires org admin permission).
+* Renovate will send a new onboarding PR to the repository,
+  e.g. https://github.com/open-telemetry/semantic-conventions-java/pull/95.
+
+Option 1:
+
+* Merge `renovate.json` to `main`.
+* Enable Renovate on the repository (requires org admin permission).
+* Go to Renovate, e.g. https://developer.mend.io/github/open-telemetry/opentelemetry-proto-go,
+  and run Actions > Run Renovate scan.
+* Renovate won't send a new onboarding PR in this case,
+  but will directly start sending PRs to update dependencies.
+
