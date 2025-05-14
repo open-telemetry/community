@@ -79,10 +79,8 @@ lower level sponsorship requirements, e.g. *Guiding* sponsorship fulfills an *Es
 
 As part of their active leadership, every TC member will be required to sponsor SIGs across OpenTelemetry.
 
-All SIGs requiring escalation sponsorship will be divided across the TC. Every TC member is required to provide a minimum of one (1) *Escalation* sponsorship. 
-
-Every TC member is required to provide a minimum of at least three *Escalation* sponsorships and two *Guiding* sponsorships. Higher level sponsorship may be used to fulfill
-a lower level sponsorship requirement.
+All SIGs requiring escalation sponsorship will be divided across the TC. Every TC member is required to provide a minimum of at least three *Escalation* sponsorships
+and two *Guiding* sponsorships. Higher level sponsorship may be used to fulfill a lower level sponsorship requirement.
 
 Every TC member is limited to a maximum of two *Leading* sponsorships. This is to keep OpenTelemetry efforts focused and reduce fragmented attention on
 core issues.
