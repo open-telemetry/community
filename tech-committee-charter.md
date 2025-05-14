@@ -71,7 +71,7 @@ SIGs will be classified into three classifications of Sponsorship requirement:
   offline, e.g. via CNCF Slack or issue communication. The TC sponsor will participate in [GC check-ins](gc-check-ins.md) with SIG leadership.
   Additionally, the TC sponsor will aid the SIG in developing roadmaps during this check-in, and aligning to overall OpenTelemetry goals.
 * *Guiding Sponsorship*: The TC sponsor is an active participant of the SIG. The sponsor will help direct the SIGs efforts to match the technical goals of OpenTelemetry.
-* *Leading Sponsorship*: The TC sponsor is an active member of SIG leadership, driving the direct success of the project or proposal.
+* *Leading Sponsorship*: The TC sponsor is an active member of SIG leadership, responsible for driving the SIG's completion of charter goals.
 
 All SIGs within OpenTelemetry will be required to have some level of sponsorship requirement (at least *Escalation*). Higher level sponsorship automatically fulfills
 lower level sponsorship requirements, e.g. *Guiding* sponsorship fulfills an *Escalation* sponsorship requirement, as *Leading* sponsorship would fulfill a
