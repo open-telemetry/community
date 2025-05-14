@@ -370,6 +370,9 @@ This GitHub App addresses two common issues:
    git config user.email 197425009+otelbot@users.noreply.github.com
    ```
 
+   It is recommended to push to branch names that start with `otelbot/`,
+   to differentiate them from long-term branches which require branch protection rules.
+
 2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside a [GitHub Action], workflows
    will not run on that new pull request without closing and re-opening it manually (this limitation is in place to
    prevent accidental recursive workflow runs).
@@ -426,11 +429,8 @@ The OpenTelemetry Bot addresses two common issues:
    git config user.email 107717825+opentelemetrybot@users.noreply.github.com
    ```
 
-   It is recommended to push to branch names that start with `opentelemetrybot/`, and to add a branch protection
-   rule for `opentelemetrybot/**/*` with the same setup as documented for
-   [`dependabot/**/*`](docs/how-to-configure-new-repository.md#branch-protection-rule-dependabot). Note that branch protection rule ordering matters, so you will need to
-   delete the `**/**` branch protection rule temporarily, then add the `opentelemetrybot/**/*` branch protection
-   rule, then add back the `**/**` branch protection rule.
+   It is recommended to push to branch names that start with `opentelemetrybot/`,
+   to differentiate them from long-term branches which require branch protection rules.
 
 2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside of a GitHub Action, workflows
    will not run on that new pull request without closing and re-opening it manually (this limitation is in place to
