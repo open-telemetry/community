@@ -53,7 +53,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
 
 Link: https://github.com/open-telemetry
 
-- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
+- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
 ## Credential Storage
 
