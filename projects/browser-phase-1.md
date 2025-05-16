@@ -133,11 +133,11 @@ Expected due dates for code changes based on the above proposals:
 
 Expected due dates for step 2 proposals:
 * Browser runtime instrumentation proposal: TBD
-* Initial library instrumentaiton proposal: TBD
+* Initial library instrumentation proposal: TBD
 
 Expected due dates for code changes based on the above proposals:
 * Browser runtime instrumentation: TBD
-* Library instrumentaiton: TBD
+* Library instrumentation: TBD
 
 ## Labels
 
@@ -152,4 +152,4 @@ TBD
 **SIG Meeting time:**  
 proposing Thursdays 8am Pacific (please confirm if this works for you)
 
-Once the Broswer Instrumentation SIG begins, the current Client SIG will be retired.
+Once the Browser Instrumentation SIG begins, the current Client SIG will be retired.
