@@ -72,13 +72,6 @@ concerns.
 - Entities
 - OpAMP
 
-### [Yuri Shkuro](https://github.com/yurishkuro), Meta
-
-- Trace API and SDK
-- Jaeger tracing compatibility
-- OpenTracing compatibility
-- W3C trace context specification
-
 ## Specification sponsors
 
 ### [Alex Boten](https://github.com/codeboten), Honeycomb
