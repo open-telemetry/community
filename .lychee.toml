@@ -15,6 +15,22 @@ exclude = [
     "^https://github.com/[^/]+$",
 ]
 
+exclude_path = [
+    # regular expressions aren't supported: https://github.com/lycheeverse/lychee/issues/1608
+    "/home/repo/elections/2019/governance-committee-candidates.md",
+    "/home/repo/elections/2019/governance-committee-election.md",
+    "/home/repo/elections/2020/governance-committee-candidates.md",
+    "/home/repo/elections/2020/governance-committee-election.md",
+    "/home/repo/elections/2021/governance-committee-candidates.md",
+    "/home/repo/elections/2021/governance-committee-election.md",
+    "/home/repo/elections/2022/governance-committee-candidates.md",
+    "/home/repo/elections/2022/governance-committee-election.md",
+    "/home/repo/elections/2023/governance-committee-candidates.md",
+    "/home/repo/elections/2023/governance-committee-election.md",
+    "/home/repo/elections/2024/governance-committee-candidates.md",
+    "/home/repo/elections/2024/governance-committee-election.md",
+]
+
 # Retry configuration with more reasonable timeout values
 max_retries = 3
 # Wait time (in seconds) between retries with exponential backoff
