@@ -41,7 +41,10 @@ words:
     - hostmetricsreceiver
     - Instrgen
     - jemmic
+    - Kanal
+    - Karlie
     - keptn
+    - Kuba
     - kubecon
     - k8sclusterreceiver
     - Langfuse
@@ -58,6 +61,7 @@ words:
     - otlp
     - passcodes
     - proto
+    - Purvi
     - pytest
     - isovalent
     - labs
@@ -86,6 +90,7 @@ words:
     - calendar-ebpf
     - caramanolis
     - cdevents
+    - Cheler
     - chrs
     - cicd
     - cijo
@@ -215,6 +220,7 @@ words:
     - rossf7
     - salnikov
     - sallyom
+    - Santosh
     - sarif
     - scavarda
     - semconv
@@ -241,6 +247,7 @@ words:
     - tarnovski
     - tekton
     - thisthat
+    - Thiru
     - tiebreaking
     - tigran
     - timebox
