@@ -735,13 +735,31 @@
     notes:
       type: none
     chat:
-      - type: none
+      - type: slack
+        name: "#otel-localization-bn"
+        id: C08TBCSAY1F
+    sponsors:
+      - name: 'Severin Neumann'
+        github: svrnm
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
   - name: Chinese (zh-CN)
     meeting: ''
     notes:
       type: none
     chat:
-      - type: none
+      - type: slack
+        name: "#otel-localization-zhcn"
+        id: C08SSK25Y7L
+    sponsors:
+      - name: 'Severin Neumann'
+        github: svrnm
+      - name: 'Reiley Yang'
+        github: reyang
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
   - name: French (fr-FR)
     meeting: ''
     notes:

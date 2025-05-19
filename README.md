@@ -193,8 +193,8 @@ SIG-specific GitHub discussions.
 
 | Name | Meeting Time | Meeting Notes | Slack Channel | Meeting Invites Group | [Governance Committee](./community-members.md#governance-committee) Liaison |
 |------|--------------|---------------|---------------|-----------------|--------------------------------|
-| <a id="None"></a>Bengali (bn) |  |  |  |  |  |
-| <a id="None"></a>Chinese (zh-CN) |  |  |  |  |  |
+| <a id="sig-localization-bn"></a>Bengali (bn) |  |  | [#otel-localization-bn](https://cloud-native.slack.com/archives/C08TBCSAY1F) |  | [Severin Neumann](https://github.com/svrnm) |
+| <a id="sig-localization-zhcn"></a>Chinese (zh-CN) |  |  | [#otel-localization-zhcn](https://cloud-native.slack.com/archives/C08SSK25Y7L) |  | [Severin Neumann](https://github.com/svrnm) |
 | <a id="sig-localization-fr"></a>French (fr-FR) |  |  | [#otel-localization-fr](https://cloud-native.slack.com/archives/C07THD60YLF) |  | [Severin Neumann](https://github.com/svrnm) |
 | <a id="sig-localization-ja"></a>Japanese (ja-JA) | Every thirds Wednesday at 01:00 JST | [Google Doc](https://docs.google.com/document/d/1venl18Obvp3vD-lR_9Hj9k826s_weF0vzWe-TdaDkuY) | [#otel-localization-ja](https://cloud-native.slack.com/archives/C08SGPBN44E) | [calendar-ja-ja-localization](https://groups.google.com/a/opentelemetry.io/g/calendar-ja-ja-localization) | [Severin Neumann](https://github.com/svrnm) |
 | <a id="sig-localization-ptbr"></a>Portuguese (pt-BR) | Every second Wednesday at 7:15pm BST | [Google Doc](https://docs.google.com/document/d/1W1jJ4OTm53sbOp7CrbNBMvR_2Z8TQRCkwejqD4f21SE) | [#otel-localization-ptbr](https://cloud-native.slack.com/archives/C076LET8YSK) | [calendar-pt-br-localization](https://groups.google.com/a/opentelemetry.io/g/calendar-pt-br-localization) | [Severin Neumann](https://github.com/svrnm) |
