@@ -814,3 +814,6 @@
       - type: slack
         name: "#otel-localization-es"
         id: C07PVQVCHA6
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
