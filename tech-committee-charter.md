@@ -37,7 +37,6 @@ The TC is responsible for all technical development within the OpenTelemetry pro
 * Setting release dates
 * Quality standards for releases
 * Technical direction
-* GitHub repository management, membership and hosting
 * Development process and any coding standards
 * Approving changes to any specifications
 * Mediating technical discussions which have cross project impact
