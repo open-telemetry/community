@@ -31,7 +31,7 @@ We propose that the various existing browser clients bind to the new OTel Browse
 
 ### Step 1: Browser Fundamentals
 
-Review the current Tracing, Metrics, and Logs API packages. Identify what, if anything, would need to be changed to make these packages optimal for the browser. Discuss the pros and cons of implementing these changes by sharing the existing packages with NodeJS, or forking them to have a separate set of API packages just for the Browser.
+Review the current Tracing, Metrics, and Logs API packages. Identify what, if anything, would need to be changed to make these packages optimal for the browser. Discuss the pros and cons of implementing these changes by sharing the existing packages with NodeJS, or forking them to have a separate set of API packages just for the Browser. Please note that the goal of this review is not to deviate from the OpenTelemetry API specification, but to evaluate the practical limitations that the current API packages may place on browser instrumentation.
 
 OpenTelemetry API review:
 * Package size
