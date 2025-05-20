@@ -44,6 +44,8 @@ Data Modelling:
 * Navigation
 * Anonymous user ids (Manager)
 
+The SIG will also evaluate how best to maintain browser-specific packages, in terms of teams, repos, and other GitHub code management policies.
+
 ### Support
 
 We will also decide our compatibility story.
@@ -55,6 +57,8 @@ We will also decide our compatibility story.
 Once we are clear on what API packages we plan on using, we plan to implement an initial set of instrumentation packages for high priority browser libraries. The goal of this step is to provide enough of an initial ecosystem that end users and vendors can validate the decisions made in Step 1, along with the Semantic Conventions, so that we can stabilize these decisions based on real world feedback.
 
 During this phase, the SIG will not be focused on implementing a browser-optimized SDK. Instead, we will continue to use the existing OTel JS SDK as our reference implementation. Third party SDKs may also choose to bind to the OTel Browser API at this time.
+
+In some cases, browser instrumentation already exists but may be different from the new instrumentation we want to provide. This instrumentation should be treated as "de facto stable" and should not experience breaking changes until we are ready to issue a stable v1.0. New unstable versions of this instrumentation should be managed in a way that allow the SIG to move quickly without destabilizing any instrumentation currently in production.
 
 Instrumentation for the browser runtime:
 * Page load/unload
