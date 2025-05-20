@@ -44,8 +44,8 @@
     - name: Jack Berg
       github: jack-berg
     gcLiaison:
-    - name: Trask Stalnaker
-      github: trask
+    - name: Daniel Gomez Blanco
+      github: danielgblanco
   - name: 'Specification: Logs'
     meeting: Tuesday at 10:00 PT
     notes:
@@ -84,42 +84,6 @@
     gcLiaison:
     - name: Trask Stalnaker
       github: trask
-  - name: 'Semantic Conventions: Messaging'
-    meeting: Thursday at 8:00 PT
-    notes:
-      type: gDoc
-      value: 1dWHhyXnfVife-cQ2DW5-d5Ldp1Lq8Rre2UsHpyo8cEE
-    chat:
-      - type: slack
-        name: '#otel-messaging'
-        id: C02Q4AAHDSA
-    invites: calendar-semconv
-    sponsors:
-      - name: Johannes Tax
-        github: pyohannes
-      - name: Liudmila Molkova
-        github: lmolkova
-    gcLiaison:
-    - name: Trask Stalnaker
-      github: trask
-  - name: 'Semantic Conventions: Database'
-    meeting: Wednesday at 9:30 PT and Friday at 8:30 PT
-    notes:
-      type: gDoc
-      value: 1zTi_Z4WBisytPnXTpwtnGOK-4Gv5oSTuMHvIQ8--5hg
-    chat:
-      - type: slack
-        name: '#otel-semconv-db-client-stability'
-        id: C06HH05KNMC
-    invites: calendar-semconv
-    sponsors:
-      - name: Jack Berg
-        github: jack-berg
-      - name: Liudmila Molkova
-        github: lmolkova
-    gcLiaison:
-      - name: Trask Stalnaker
-        github: trask
   - name: 'Semantic Conventions: System Metrics'
     meeting: Thursday at 07:30 PT
     notes:
@@ -155,7 +119,7 @@
       - name: Alolita Sharma
         github: alolita
   - name: 'Semantic Conventions and Instrumentation: GenAI'
-    meeting: Alternating between every other Thursday 10:00 PT and every other Thursday 14:00 UTC+8
+    meeting: Every Tuesday 9:00 PT and every other Thursday 14:00 UTC+8
     notes:
       type: gDoc
       value: 1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M
@@ -354,6 +318,20 @@
     gcLiaison:
     - name: Trask Stalnaker
       github: trask
+  - name: Arrow
+    meeting: Alternating between Tuesday at 16:00 PT and Thursday at 8:00 PT
+    notes:
+      type: gDoc
+      value: 1z8_Ra-ALDaYNa88mMj1gOZtOpLZLRk0-dZEmDjPmcUs
+    chat:
+      - type: slack
+        name: '#otel-arrow'
+        id: C07S4Q67LTF
+    invites: calendar-arrow
+    sponsors: []
+    gcLiaison:
+      - name: 'Trask Stalnaker'
+        github: trask
   - name: Collector
     meeting: Alternating between Tuesday at 17:00 PT, Wednesday at 09:00 PT, and Wednesday at 05:00 PT
     notes:
@@ -526,7 +504,7 @@
     - name: Daniel Gomez Blanco
       github: danielgblanco
   - name: 'Ruby: SDK'
-    meeting: Tuesday at 09:00 PT
+    meeting: Tuesday at 10:00 PT
     notes:
       type: gDoc
       value: 1EaIbfDE1elWTWt3bhilggki_OCRJZoFCSYZJXgc9KsM
@@ -587,6 +565,20 @@
     gcLiaison:
     - name: Ted Young
       github: tedsuo
+  - name: eBPF Instrumentation
+    meeting: Wednesday at 08:00 PT
+    notes:
+      type: gDoc
+      value: 1ZkmUT2EHKfgtLqrgx3WI8aBy2QNyZeTwSKXxe3DI6Pw
+    chat:
+      - type: slack
+        name: '#otel-ebpf-instrumentation'
+        id: C08P9L4FPKJ
+    invites: calendar-ebpf-instrumentation
+    sponsors: []
+    gcLiaison:
+      - name: Severin Neumann
+        github: svrnm
   - name: Kubernetes Operator
     meeting: Thursday at 09:00 PT
     notes:
@@ -635,7 +627,7 @@
   sigs:
   - name: Communications (Website, [Documentation](https://opentelemetry.io/docs/),
       etc.)
-    meeting: Every other Monday at 10:00 PT
+    meeting: Every other Wednesday at 10:00 PT
     notes:
       type: gDoc
       value: 1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY
@@ -663,7 +655,7 @@
     - name: Daniel Gomez Blanco
       github: danielgblanco
   - name: Security
-    meeting: Every other Wednesday at 07:00 PT
+    meeting: Every Monday at 09:00 PT
     notes:
       type: gDoc
       value: 1P2xejC7lEkOV_Z-8E0oZPXLK5HOnUPNuRqKP0ZQ5fpg
@@ -673,15 +665,15 @@
         id: C05A85QC281
     invites: calendar-sig-security
     sponsors:
-      - name: 'Juraci Paixão Kröhling'
-        github: jpkrohling
+      - name: Trask Stalnaker
+        github: trask
       - name: Reiley Yang
         github: reyang
     gcLiaison:
-      - name: 'Juraci Paixão Kröhling'
-        github: jpkrohling
+      - name: Trask Stalnaker
+        github: trask
   - name: Project Infrastructure
-    meeting: Wednesday at 08:00 PT
+    meeting: Thursday at 11:00 PT
     notes:
       type: gDoc
       value: 1_dTP2XIaZoFjNiipkeMaGJN10NrhS20FiBTTJoQJeVM

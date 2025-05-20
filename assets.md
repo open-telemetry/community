@@ -14,7 +14,6 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [Special GitHub Action runners](#special-github-action-runners)
     + [Large Linux runners](#large-linux-runners)
     + [Large Windows runners](#large-windows-runners)
-    + [Windows ARM64 runners](#windows-arm64-runners)
     + [Bare metal runners](#bare-metal-runners)
   * [Google Cloud account](#google-cloud-account)
   * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
@@ -106,23 +105,6 @@ Access to large Windows runners is available to repositories on request
 which will give access to the following GitHub-hosted runner:
 
 - `otel-windows-latest-8-cores`
-
-Note: these runners are pay-as-you-go.
-CNCF and GitHub expect fair use of these provided resources.
-Please ensure your workloads are optimized to avoid unnecessary usage.
-
-Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
-
-#### Windows ARM64 runners
-
-Access to Windows ARM64 runners is available to repositories on request
-(open a community issue),
-which will give access to the following GitHub-hosted runner:
-
-- `otel-windows-arm64`
-
-Note that Linux ARM64 runners are [available for free to all public
-repositories](https://github.blog/changelog/2025-01-16-linux-arm64-hosted-runners-now-available-for-free-in-public-repositories-public-preview/).
 
 Note: these runners are pay-as-you-go.
 CNCF and GitHub expect fair use of these provided resources.
@@ -227,8 +209,9 @@ but these individual OpenTelemetry members have been given rights to publish und
 
 Link: https://pypi.org/user/opentelemetry/
 
-- Owner: [@codeboten](https://github.com/codeboten)
- 
+- Owner: [@open-telemetry/python-maintainers](https://github.com/orgs/open-telemetry/teams/python-maintainers)
+  (password is available in the OpenTelemetry Python 1Password vault)
+
 ### PHP Extras
 
 SIG Extra Repositories: https://github.com/opentelemetry-php

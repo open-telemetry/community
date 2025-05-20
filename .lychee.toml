@@ -1,16 +1,34 @@
 include_fragments = true
 
-accept = ["200..=299", "401", "403"]
+# Accept 429 (rate limiting) to prevent failures
+accept = ["200..=299", "401", "403", "429"]
 
 exclude = [
-    "https://slack.com/help/articles/8328303095443-Understand-Channel-Managers-in-Slack",
-    "https://observe2020.io",
-    "https://servicenow.com",
     # excluding links to user profiles is done for performance
     # because there are a lot of links to user profiles in this repository
     # and GitHub extra throttles access to user profile pages
-    "^https://github.com/[^/]+$"
+    "^https://github.com/[^/]+$",
 ]
 
-# better to be safe and avoid failures
-max_retries = 6
+exclude_path = [
+    # regular expressions aren't supported: https://github.com/lycheeverse/lychee/issues/1608
+    "/home/repo/elections/2019/governance-committee-candidates.md",
+    "/home/repo/elections/2019/governance-committee-election.md",
+    "/home/repo/elections/2020/governance-committee-candidates.md",
+    "/home/repo/elections/2020/governance-committee-election.md",
+    "/home/repo/elections/2021/governance-committee-candidates.md",
+    "/home/repo/elections/2021/governance-committee-election.md",
+    "/home/repo/elections/2022/governance-committee-candidates.md",
+    "/home/repo/elections/2022/governance-committee-election.md",
+    "/home/repo/elections/2023/governance-committee-candidates.md",
+    "/home/repo/elections/2023/governance-committee-election.md",
+    "/home/repo/elections/2024/governance-committee-candidates.md",
+    "/home/repo/elections/2024/governance-committee-election.md",
+]
+
+# Retry configuration with more reasonable timeout values
+max_retries = 3
+# Wait time (in seconds) between retries with exponential backoff
+retry_wait_time = 1
+# Reduce number of concurrent requests to avoid triggering rate limits
+max_concurrency = 75
