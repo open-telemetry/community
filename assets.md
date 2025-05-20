@@ -344,7 +344,15 @@ For support:
 
 ### Docker Hub
 
-- We publish images from CI to Docker hub using https://hub.docker.com/u/otelbot account. The bot is registered using cncf-opentelemetry-tc@lists.cncf.io email address and Technical Committee members are owners of this account. The Admin for bot security credentials for CI is @tigrannajaryan
+https://hub.docker.com/u/otel is a Docker-Sponsored Open Source organization.
+
+Minimum-scoped Docker Hub organization access tokens should be used to push images.
+
+- Admins
+  - [@austinlparker](https://github.com/austinlparker)
+  - [@jsuereth](https://github.com/jsuereth)
+  - [@tigrannajaryan](https://github.com/tigrannajaryan)
+  - [@trask](https://github.com/trask)
 
 ### `otelbot`
 
