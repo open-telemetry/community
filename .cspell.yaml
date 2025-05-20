@@ -54,6 +54,8 @@ words:
     - opentelemetry
     - opentelemetrybot
     - otel
+    - otel-localization-ptbr
+    - otel-localization-zhcn
     - otep
     - otlp
     - passcodes
