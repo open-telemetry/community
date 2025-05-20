@@ -152,6 +152,6 @@ TBD
 ## SIG Meetings and Other Info
 
 **SIG Meeting time:**  
-proposing Thursdays 8am Pacific (please confirm if this works for you)
+Proposing a weekly 30 min meeting, Thursdays 8:30am Pacific (please confirm if this works for you)
 
 Once the Browser Instrumentation SIG begins, the current Client SIG will be retired.
