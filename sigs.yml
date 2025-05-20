@@ -775,7 +775,7 @@
       - name: 'Severin Neumann'
         github: svrnm
   - name: Japanese (ja-JA)
-    meeting: Every thirds Wednesday at 01:00 JST
+    meeting: Every third Wednesday at 01:00 JST
     notes:
       type: gDoc
       value: 1venl18Obvp3vD-lR_9Hj9k826s_weF0vzWe-TdaDkuY
