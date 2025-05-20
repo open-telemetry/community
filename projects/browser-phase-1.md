@@ -109,6 +109,8 @@ When bootstrapping our browser work, we want to make sure that the existing Open
 * Martin Kuba
 * Purvi Kanal
 * Hector Hernandez (Microsoft)
+* David Luna
+* Marco Schäfer
 
 ### Additional SIG Members
 
