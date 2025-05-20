@@ -12,19 +12,25 @@ Examples of audit logs include: (see [Appendix B: Examples of Audit Log Events])
 - accessing sensitive information
 - modification of data
 
+We intend to tackle this in phases:
+- In Phase 1 (_in progress_), we are **building an end-to-end prototype** to refine the challenges and requirements for audit logging in OTel and to showcase potential solutions. This is time-boxed until end of September 2025. We are set up to run this without a formal OTel project sign-off.
+- In Phase 2, we intend to **contribute functional extensions upstream** back to OTel. We will work towards signing off this project proposal and either join existing SIGs or form a separate one. The results from Phase 1 should help us in the discussions with the maintainers to make our proposed extensions/changes more tangible.
+- In Phase 3, we plan to **work on semantic conventions** for audit logging.
+
 ### Current challenges
 
 OpenTelemetry does not have a good solution for audit logging
 
 - no semantic conventions for audit logs in OTel
-- OTel APIs/SDKs do not provide feedback to the application level whether data (in particular logs) have been successfully delivered to a remote endpoint. To guarantee delivery, either the SDK has to give those guarantees, or provide feedback to the application so that it can take care of guaranteed delivery itself.
-- OTel Collector instances may lose audit logs in transit (i.e. no guarantee of delivery)
+- lack of delivery guarantees in OTel, e.g.:
+    - OTel APIs/SDKs do not provide feedback to the application level whether data (in particular logs) have been successfully delivered to a remote endpoint. To guarantee delivery, either the SDK has to give those guarantees, or provide feedback to the application so that it can take care of guaranteed delivery itself.
+    - OTel Collector instances may lose audit logs in transit (i.e. no guarantee of delivery)
 
 See [Appendix A: Guarantee of Delivery] for more details
 
 ### Goals, objectives, and requirements
 
-The goal of this project is to make OTel fit for audit logging purposes that meet compliance requirements of enterprise software providers, in particular:
+The goal of this project is to make OTel fit for audit logging purposes that meet compliance requirements of enterprise software providers, in particular: (_to be refined by Phase 1_)
 
 - REQ-01: Semantic conventions for application-level audit logs are defined
 - REQ-02: Semantic conventions for infrastructure-level audit logs are defined
@@ -35,9 +41,17 @@ See [Appendix A: Guarantee of Delivery] for more details
 
 ## Deliverables
 
-- semantic convention for audit logs
+Phase 1 (_in progress_, see repo [audit-log-poc-for-otel](https://github.com/apeirora/audit-log-poc-for-otel)):
+- end-to-end prototype of a setup that produces audit logs uses OTel to deliver them to a sink.
+- list of gaps in OTel with regard to delivering audit logs
+- prototype implementations to close selected gaps
+
+Phase 2:
 - extend OTel APIs/SDKs for audit logging purposes (in collaboration with the respective SIG)
 - extend OTel Collector for audit logging purposes (in collaboration with the respective SIG)
+
+Phase 3:
+- semantic convention for audit logs
 
 ## Staffing / Help Wanted
 
@@ -61,7 +75,9 @@ Other vendors are invited to join the discussion.
 
 ## Timeline
 
-TBD based on community involvement.
+- Phase 1: until end of September 2025 (approx.)
+- Phase 2: tbd
+- Phase 3: tbd
 
 ## Labels
 
