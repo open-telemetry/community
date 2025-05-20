@@ -30,7 +30,6 @@ in alphabetical order:
 - [Liudmila Molkova](https://github.com/lmolkova), Microsoft
 - [Reiley Yang](https://github.com/reyang), Microsoft
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
-- [Yuri Shkuro](https://github.com/yurishkuro), Meta
 
 ## Community Management
 
@@ -201,3 +200,4 @@ Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/open
 
 - [Josh MacDonald](https://github.com/jmacd)
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev)
+- [Yuri Shkuro](https://github.com/yurishkuro)
