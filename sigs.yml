@@ -728,3 +728,92 @@
     gcLiaison:
       - name: 'Austin Parker'
         github: austinlparker
+- name: Localization Teams (part of SIG Communications)
+  sigs:
+  - name: Bengali (bn)
+    meeting: ''
+    notes:
+      type: none
+    chat:
+      - type: slack
+        name: "#otel-localization-bn"
+        id: C08TBCSAY1F
+    sponsors:
+      - name: 'Severin Neumann'
+        github: svrnm
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+  - name: Chinese (zh-CN)
+    meeting: ''
+    notes:
+      type: none
+    chat:
+      - type: slack
+        name: "#otel-localization-zhcn"
+        id: C08SSK25Y7L
+    sponsors:
+      - name: 'Severin Neumann'
+        github: svrnm
+      - name: 'Reiley Yang'
+        github: reyang
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+  - name: French (fr-FR)
+    meeting: ''
+    notes:
+      type: none
+    chat:
+      - type: slack
+        name: "#otel-localization-fr"
+        id: C07THD60YLF
+    sponsors:
+      - name: 'Severin Neumann'
+        github: svrnm
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+  - name: Japanese (ja-JA)
+    meeting: Every third Wednesday at 01:00pm JST
+    notes:
+      type: gDoc
+      value: 1venl18Obvp3vD-lR_9Hj9k826s_weF0vzWe-TdaDkuY
+    chat:
+      - type: slack
+        name: "#otel-localization-ja"
+        id: C08SGPBN44E
+    invites: calendar-ja-ja-localization
+    sponsors:
+      - name: 'Severin Neumann'
+        github: svrnm
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+  - name: Portuguese (pt-BR)
+    meeting: Every second Wednesday at 7:15pm BST
+    notes:
+      type: gDoc
+      value: 1W1jJ4OTm53sbOp7CrbNBMvR_2Z8TQRCkwejqD4f21SE
+    chat:
+      - type: slack
+        name: "#otel-localization-ptbr"
+        id: C076LET8YSK
+    invites: calendar-pt-br-localization
+    sponsors:
+      - name: 'Juraci Paixão Kröhling'
+        github: jpkrohling
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+  - name: Spanish (es-ES)
+    meeting: ''
+    notes:
+      type: none
+    chat:
+      - type: slack
+        name: "#otel-localization-es"
+        id: C07PVQVCHA6
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
