@@ -807,13 +807,15 @@
       - name: 'Severin Neumann'
         github: svrnm
   - name: Spanish (es-ES)
-    meeting: ''
+    meeting: 'Every second Tuesday at 12:45pm UTC-3, 10:45am UTC-5'
     notes:
-      type: none
+      type: gDoc
+      value: 1LAhaPQfZ9IBjXZ1Y3misVV0Gp8Y8CVvoOVChV89Q0s0
     chat:
       - type: slack
         name: "#otel-localization-es"
         id: C07PVQVCHA6
+    invites: calendar-es-es-localization
     gcLiaison:
       - name: 'Severin Neumann'
         github: svrnm
