@@ -1,4 +1,4 @@
-# Resolving technical conflicts within a SIG
+# Resolving Technical Conflicts Within a SIG
 
 From time to time, the Maintainers for a given OpenTelemetry SIG may be unable
 to reach consensus on a technical issue. While it's healthy and appropriate to
