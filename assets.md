@@ -338,7 +338,7 @@ Link: https://publish.buffer.com/
 
 Link: https://www.linkedin.com/company/opentelemetry
 
-### Mastadon
+### Mastodon
 
 Link: https://fosstodon.org/@opentelemetry
 
