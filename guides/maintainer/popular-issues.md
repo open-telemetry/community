@@ -27,10 +27,8 @@ general direction of the project.
 While maintainers may use these reactions to prioritize issues, they’re **not
 expected to solely base their issue prioritization on popularity**. Other
 matters (e.g. security, spec compliance) may take precedence over individual
-popular issues.
-
-In addition, particular issues may be blocked by ongoing or future work, and
-cannot be actioned until those are completed.
+popular issues. In addition, particular issues may be blocked by ongoing or
+future work, required to be completed before those can be addressed.
 
 ## Communicating Priorities
 
