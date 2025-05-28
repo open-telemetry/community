@@ -60,6 +60,33 @@ The development process will include a process for the TC to oversee and approve
 
 The TC and entire technical community will follow any processes as may be specified by the Cloud Native Computing Foundation relating to the intake and license compliance review of contributions, including the CNCF IP Policy.
 
+### Sponsorship Requirements
+
+The TC will establish and maintain sponsorship across OpenTelemetry SIGs.
+
+SIGs will be classified into three classifications of Sponsorship requirement:
+
+* *Escalation Sponsorship*: The TC sponsor will be a primary means of escalation of cross-project concerns from the SIG. This communication is primarily
+  offline, e.g. via CNCF Slack or issue communication. The TC sponsor will participate in [GC check-ins](gc-check-ins.md) with SIG leadership.
+  Additionally, the TC sponsor will aid the SIG in developing roadmaps during this check-in, and aligning to overall OpenTelemetry goals.
+* *Guiding Sponsorship*: The TC sponsor is an active participant of the SIG. The sponsor will help direct the SIGs efforts to match the technical goals of OpenTelemetry.
+* *Leading Sponsorship*: The TC sponsor is an active member of SIG leadership, responsible for driving the SIG's completion of charter goals.
+
+All SIGs within OpenTelemetry will be required to have some level of sponsorship requirement (at least *Escalation*). Higher level sponsorship automatically fulfills
+lower level sponsorship requirements, e.g. *Guiding* sponsorship fulfills an *Escalation* sponsorship requirement, as *Leading* sponsorship would fulfill a
+*Guiding* sponsorship requirement. Sponsorship is not exclusive. More than one TC member may sponsor a SIG.
+
+As part of their active leadership, every TC member will be required to sponsor SIGs across OpenTelemetry.
+
+All SIGs requiring escalation sponsorship will be divided across the TC. Every TC member is required to provide a minimum of at least three *Escalation* sponsorships
+and two *Guiding* sponsorships. Higher level sponsorship may be used to fulfill a lower level sponsorship requirement.
+
+Every TC member is limited to a maximum of two *Leading* sponsorships. This is to keep OpenTelemetry efforts focused and reduce fragmented attention on
+core issues.
+
+A TC member may have a time where they are not meeting the minimum sponsorship requirement, e.g. when major efforts have achieved results, and new projects are being formulated.
+This time should not exceed a six month period.
+
 ### Code Donations
 
 From time to time, organizations may wish to donate existing code to
