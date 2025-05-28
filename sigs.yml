@@ -783,7 +783,7 @@
       - type: slack
         name: "#otel-localization-ja"
         id: C08SGPBN44E
-    invites: calendar-ja-ja-localization
+    invites: calendar-localization-ja
     sponsors:
       - name: 'Severin Neumann'
         github: svrnm
@@ -799,7 +799,7 @@
       - type: slack
         name: "#otel-localization-ptbr"
         id: C076LET8YSK
-    invites: calendar-pt-br-localization
+    invites: calendar-localization-ptbr
     sponsors:
       - name: 'Juraci Paixão Kröhling'
         github: jpkrohling
@@ -815,7 +815,7 @@
       - type: slack
         name: "#otel-localization-es"
         id: C07PVQVCHA6
-    invites: calendar-es-es-localization
+    invites: calendar-localization-es
     gcLiaison:
       - name: 'Severin Neumann'
         github: svrnm
