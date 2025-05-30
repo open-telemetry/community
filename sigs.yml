@@ -551,16 +551,16 @@
     gcLiaison:
     - name: Alolita Sharma
       github: alolita
-  - name: eBPF
+  - name: Network
     meeting: Tuesday at 09:00 PT
     notes:
       type: gDoc
       value: 13GK915hdDQ9sUYzUIWi4pOfJK68EE935ugutUgL3yOw
     chat:
       - type: slack
-        name: '#otel-ebpf'
+        name: '#otel-network'
         id: C02AB15583A
-    invites: calendar-ebpf
+    invites: calendar-network
     sponsors: []
     gcLiaison:
     - name: Ted Young
