@@ -159,7 +159,11 @@ repositories that are using merge queues.
 
 #### Branch protection rule: `**/**`
 
-Same as for [`main`](#branch-protection-rule-main) above.
+* Require status checks to pass before merging: :heavy_check_mark:
+  * Require branches to be up to date before merging: :heavy_check_mark:
+  * Status checks that are required:
+    * `EasyCLA`
+* Do not allow bypassing the above settings: :heavy_check_mark:
 
 ### Actions > General
 
