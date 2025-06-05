@@ -51,7 +51,6 @@ Teams should be granted proper permissions according to the following table:
 | open-telemetry/foo-approvers        | Write    |
 | open-telemetry/foo-maintainers      | Maintain |
 | open-telemetry/foo-triagers         | Triage   |
-| open-telemetry/governance-committee | Write    |
 
 If the repository is using the Project Boards, `foo-triagers` should have
 `Write` permissions to have access to the Project Boards. Do not add members of
