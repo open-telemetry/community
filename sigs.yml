@@ -62,8 +62,8 @@
       - name: Trask Stalnaker
         github: trask
     gcLiaison:
-    - name: Ted Young
-      github: tedsuo
+    - name: Trask Stalnaker
+      github: trask
   - name: 'Semantic Conventions: General'
     meeting: Monday at 08:00 PT
     notes:
@@ -316,8 +316,8 @@
     invites: calendar-android
     sponsors: []
     gcLiaison:
-    - name: Trask Stalnaker
-      github: trask
+    - name: Ted Young
+      github: tedsuo
   - name: Arrow
     meeting: Alternating between Tuesday at 16:00 PT and Thursday at 8:00 PT
     notes:
