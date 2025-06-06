@@ -97,8 +97,9 @@ Options include:
 **GC Liaison:** Daniel Gomez Blanco
 
 **Sponsors:**
-* Ted Young
-* SPONSOR NEEDED
+* Ted Young - Spec Maintainer Sponsor
+* Daniel Dyla - JS Maintainer Sponsor
+* Carlos Alberto Cortez – TC Escalating Sponsor
 
 **Implementation Engineers:**
 * Martin Kuba
