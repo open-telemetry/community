@@ -90,6 +90,10 @@ Options include:
 
 ## Staffing / Help Wanted
 
+### Industry Outreach
+
+There are a number of existing RUM/Client observability implementations. Representatives from a wide selection of companies that have experience with browser observability are present in the SIG. This includes Microsoft, New Relic, DynaTrace, HoneyComb, Grafana Labs, and Cisco, among others. We plan for further outreach among end users once we have working code for them to review.
+
 ### Required Staffing
 
 **Project Lead:** Ted Young
