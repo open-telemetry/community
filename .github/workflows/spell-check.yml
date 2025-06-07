@@ -9,9 +9,6 @@ permissions:
 
 jobs:
   spelling-check:
-    permissions:
-      contents: read  # for streetsidesoftware/cspell-action to fetch files for commit
-      pull-requests: read  # for streetsidesoftware/cspell-action to fetch commits for PR
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
