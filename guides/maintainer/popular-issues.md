@@ -10,7 +10,7 @@ reactions on GitHub issues they'd like to be worked on, as indicated in our
 - Avoid redundant, unproductive comments like _"I have this issue too"_, which
   are difficult to compare across issues, and provide no context for triage.
 
-In addition to these benefits, this standardised approach helps the wider
+In addition to these benefits, this standardized approach helps the wider
 OpenTelemetry community by making it easier for end-users to highlight important
 issues without requiring them to join SIG meetings or Slack channels. This also
 allows the End-User SIG to focus on specific topics that demonstrate how user
