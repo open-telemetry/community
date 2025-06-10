@@ -1,7 +1,6 @@
 include_fragments = true
 
-# Accept 429 (rate limiting) to prevent failures
-accept = ["200..=299", "401", "403", "429"]
+accept = ["200..=299", "401", "403"]
 
 exclude = [
     # excluding links to user profiles is done for performance
@@ -28,7 +27,9 @@ exclude_path = [
 
 # Retry configuration with more reasonable timeout values
 max_retries = 3
+
 # Wait time (in seconds) between retries with exponential backoff
 retry_wait_time = 1
+
 # Reduce number of concurrent requests to avoid triggering rate limits
-max_concurrency = 75
+max_concurrency = 4
