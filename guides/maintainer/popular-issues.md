@@ -1,22 +1,21 @@
 # Managing Expectations on Popular GitHub Issues
 
 Within OpenTelemetry, we encourage end-users and community members to leave 👍
-reactions on GitHub issues, as indicated in our
-[website](https://opentelemetry.io/community).
-
-This unified approach makes it easier for end-users to highlight important
-issues without requiring them to join SIG meetings or Slack channels. By
-showcasing the impact of highly-voted issues, the End-User SIG can later
-demonstrate how user input shapes OpenTelemetry, boosting engagement and
-strengthening the feedback loop.
-
-GitHub issue reactions help maintainers to:
+reactions on GitHub issues they'd like to be worked on, as indicated in our
+[website](https://opentelemetry.io/community). This can help maintainers to:
 
 - Get a high-level signal that measures the interest from the community in
   particular issues, in a way that can be evaluated and compared across one or
   many repositories.
-- Avoid redundant, unproductive comments like "I have this issue too", which
+- Avoid redundant, unproductive comments like _"I have this issue too"_, which
   are difficult to compare across issues, and provide no context for triage.
+
+In addition to these benefits, this standardised approach helps the wider
+OpenTelemetry community by making it easier for end-users to highlight important
+issues without requiring them to join SIG meetings or Slack channels. This also
+allows the End-User SIG to focus on specific topics that demonstrate how user
+input shapes OpenTelemetry, boosting engagement and strengthening the feedback
+loop.
 
 ## Popularity Does Not Imply Priority
 
@@ -25,10 +24,12 @@ independently, balancing their priorities while remaining aligned with the
 general direction of the project.
 
 While maintainers may use these reactions to prioritize issues, they’re **not
-expected to solely base their issue prioritization on popularity**. Other
-matters (e.g. security, spec compliance) may take precedence over individual
-popular issues. In addition, particular issues may be blocked by ongoing or
-future work, required to be completed before those can be addressed.
+expected to solely base their issue prioritization on popularity**. Cases where
+popular issues are not prioritized include (but are not limited to):
+
+* High-priority SIG work (e.g. security, spec compliance).
+* Issues that require other work to be completed before they can be addressed.
+* Requests or proposals not aligning with the direction of the project.
 
 ## Communicating Priorities
 
@@ -60,9 +61,9 @@ We recommend using the following footnote on issue templates to ensure users
 have direct access to guidance on how OpenTelemetry uses issue reactions.
 
 ```markdown
-<sub>**Tip**: React with 👍 to help prioritize this issue. Add more useful info in comments to help maintainers triage it. Learn more [here](https://opentelemetry.io/community/).</sub>
+<sub>**Tip**: React with 👍 to help prioritize this issue. Please use comments to provide useful context, avoiding comments like `+1` or `me too`, to helps us triage it. Learn more [here](https://opentelemetry.io/community/).</sub>
 ```
 
 Which renders as:
 
-<sub>**Tip**: React with 👍 to help prioritize this issue. Add more useful info in comments to help maintainers triage it. Learn more [here](https://opentelemetry.io/community/).</sub>
+<sub>**Tip**: React with 👍 to help prioritize this issue. Please use comments to provide useful context, avoiding comments like `+1` or `me too`, to helps us triage it. Learn more [here](https://opentelemetry.io/community/).</sub>
