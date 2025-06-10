@@ -31,4 +31,4 @@ exclude_path = [
 max_retries = 6
 
 # this helps slow down the rate of requests to avoid rate limiting
-max_concurrency = 4
+max_concurrency = 16
