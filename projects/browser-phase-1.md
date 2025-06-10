@@ -49,7 +49,8 @@ The SIG will also evaluate how best to maintain browser-specific packages, in te
 ### Support
 
 We will also decide our compatibility story.
-* Which versions of which browsers do we plan to officially support?
+* Which Browser features and APIs do we require to be present?
+* Based on those features, which browser versions will we support?
 * Will we aim support electron at this time?
 
 ### Step 2: Core Instrumentation
