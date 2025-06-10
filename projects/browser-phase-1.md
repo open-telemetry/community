@@ -102,7 +102,7 @@ There are a number of existing RUM/Client observability implementations. Represe
 
 **Sponsors:**
 * Ted Young - Spec Maintainer Sponsor
-* Daniel Dyla - JS Maintainer Sponsor
+* Daniel Dyla - Spec Maintainer Sponsor
 * Carlos Alberto Cortez – TC Escalating Sponsor
 
 **Implementation Engineers:**
