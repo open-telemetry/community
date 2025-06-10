@@ -97,18 +97,18 @@ There are a number of existing RUM/Client observability implementations. Represe
 
 ### Required Staffing
 
-**Project Lead:** Ted Young
+**Project Lead:** Ted Young (Grafana Labs)
 
-**GC Liaison:** Daniel Gomez Blanco
+**GC Liaison:** Daniel Gomez Blanco (New Relic)
 
 **Sponsors:**
-* Ted Young - Spec Maintainer Sponsor
-* Daniel Dyla - Spec Maintainer Sponsor
+* Ted Young - Spec Maintainer Sponsor (Grafana Labs)
+* Daniel Dyla - Spec Maintainer Sponsor (Dynatrace)
 * Carlos Alberto Cortez – TC Escalating Sponsor
 
 **Implementation Engineers:**
-* Martin Kuba
-* Purvi Kanal
+* Martin Kuba (ServiceNow)
+* Purvi Kanal (Honeycomb)
 * Nev Wylie (Microsoft)
 * Karlie L (Microsoft)
 
@@ -116,17 +116,17 @@ There are a number of existing RUM/Client observability implementations. Represe
 **NodeJS Maintainers and Approvers:**
 
 When bootstrapping our browser work, we want to make sure that the existing OpenTelemetry Javascript community is involved. Existing OTel JS maintainers and approvers should participate in this project to help ensure that it is successful.
-* Martin Kuba
-* Purvi Kanal
+* Martin Kuba (ServiceNow)
+* Purvi Kanal (Honeycomb)
 * Hector Hernandez (Microsoft)
-* David Luna
+* David Luna (Elastic)
 
 ### Additional SIG Members
 
 **Design review:**
 * Ram Thiru (Microsoft)
 * Santosh Cheler (Cisco / Splunk)
-* Marco Schäfer
+* Marco Schäfer (Grafana Labs)
 
 ## Timeline
 
