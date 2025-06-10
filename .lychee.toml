@@ -25,11 +25,8 @@ exclude_path = [
     "/home/repo/elections/2024/governance-committee-election.md",
 ]
 
-# Retry configuration with more reasonable timeout values
-max_retries = 3
+# better to be safe and avoid failures
+max_retries = 6
 
-# Wait time (in seconds) between retries with exponential backoff
-retry_wait_time = 1
-
-# Reduce number of concurrent requests to avoid triggering rate limits
+# this helps slow down the rate of requests to avoid rate limiting
 max_concurrency = 4
