@@ -7,6 +7,8 @@ exclude = [
     # because there are a lot of links to user profiles in this repository
     # and GitHub extra throttles access to user profile pages
     "^https://github.com/[^/]+$",
+    # this 404s when not hit from a browser
+    "^https://www.linuxfoundation.org/legal/generative-ai$",
 ]
 
 exclude_path = [
