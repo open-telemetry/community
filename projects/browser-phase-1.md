@@ -109,8 +109,10 @@ There are a number of existing RUM/Client observability implementations. Represe
 **Implementation Engineers:**
 * Martin Kuba (ServiceNow)
 * Purvi Kanal (Honeycomb)
-* Nev Wylie (Microsoft)
 * Karlie L (Microsoft)
+* Ken Rimple (Honeycomb)
+* Jared Freeze (Embrace)
+* Joaquín Díaz (Embrace)
 
 	
 **NodeJS Maintainers and Approvers:**
