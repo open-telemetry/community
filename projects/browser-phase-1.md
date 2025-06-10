@@ -156,7 +156,7 @@ Expected due dates for code changes based on the above proposals:
 
 ## Project Board
 
-TBD
+https://github.com/orgs/open-telemetry/projects/146/views/1
 
 ## SIG Meetings and Other Info
 
