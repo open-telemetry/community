@@ -59,14 +59,9 @@ An example of content we should strive to regularly post:
 
 ## Official Social Media Accounts
 
-The following is a list of official OpenTelemetry social media accounts:
-
-- Twitter: [@opentelemetry](https://twitter.com/opentelemetry)
-- Mastodon: [@opentelemetry@fosstodon.org](https://fosstodon.org/@opentelemetry)
-- LinkedIn: [OpenTelemetry](https://www.linkedin.com/company/opentelemetry/)
-- YouTube: [@otel-official](https://youtube.com/@otel-official)
+The list of social media channels owned and run by the OpenTelemetry project can be found in the [assets file](./assets.md).
 
 ## Questions and Feedback
 
 If you have questions or feedback about these guidelines, please reach out to
-Austin Parker on the CNCF Slack or email the [comms mailing list](mailto:cncf-opentelemetry-comms@lists.cncf.io).
+Austin Parker on the CNCF Slack or [raise an issue](https://github.com/open-telemetry/community/issues/new/choose).
