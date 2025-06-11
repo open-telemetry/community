@@ -1,13 +1,14 @@
 include_fragments = true
 
-# Accept 429 (rate limiting) to prevent failures
-accept = ["200..=299", "401", "403", "429"]
+accept = ["200..=299", "401", "403"]
 
 exclude = [
     # excluding links to user profiles is done for performance
     # because there are a lot of links to user profiles in this repository
     # and GitHub extra throttles access to user profile pages
     "^https://github.com/[^/]+$",
+    # this 404s when not hit from a browser
+    "^https://www.linuxfoundation.org/legal/generative-ai$",
 ]
 
 exclude_path = [
@@ -26,9 +27,8 @@ exclude_path = [
     "/home/repo/elections/2024/governance-committee-election.md",
 ]
 
-# Retry configuration with more reasonable timeout values
-max_retries = 3
-# Wait time (in seconds) between retries with exponential backoff
-retry_wait_time = 1
-# Reduce number of concurrent requests to avoid triggering rate limits
-max_concurrency = 75
+# better to be safe and avoid failures
+max_retries = 6
+
+# this helps slow down the rate of requests to avoid rate limiting
+max_concurrency = 16
