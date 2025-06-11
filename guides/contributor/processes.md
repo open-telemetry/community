@@ -209,9 +209,9 @@ carry a permissive software license that is compatible when combining with
 Apache-2.0 License. 
 
 If you directly incorporate or vendor Apache-2.0 license compatible third-party code, follow
-the [CNCF Recommendations for Attribution Notices](https://github.com/cncf/foundation/blob/main/recommendations-for-attribution.md).
+the [CNCF Recommendations for Attribution Notices](https://github.com/cncf/foundation/blob/main/policies-guidance/recommendations-for-attribution.md).
 
-The [CNCF Allowlist License Policy](https://github.com/cncf/foundation/blob/main/allowed-third-party-license-policy.md#cncf-allowlist-license-policy)
+The [CNCF Allowlist License Policy](https://github.com/cncf/foundation/blob/main/policies-guidance/allowed-third-party-license-policy.md#cncf-allowlist-license-policy)
 describes the requirements for depending on third-party code in CNCF codebases,
 along with a list of approved compatible licenses.
 
