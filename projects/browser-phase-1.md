@@ -97,39 +97,39 @@ There are a number of existing RUM/Client observability implementations. Represe
 
 ### Required Staffing
 
-**Project Lead:** Ted Young (Grafana Labs)
+**Project Lead:** @tedsuo (Grafana Labs)
 
-**GC Liaison:** Daniel Gomez Blanco (New Relic)
+**GC Liaison:** @danielgblanco (New Relic)
 
 **Sponsors:**
-* Ted Young - Spec Maintainer Sponsor (Grafana Labs)
-* Daniel Dyla - Spec Maintainer Sponsor (Dynatrace)
-* Carlos Alberto Cortez – TC Escalating Sponsor
+* @tedsuo - Spec Maintainer Sponsor (Grafana Labs)
+* @dyladan  - Spec Maintainer Sponsor (Dynatrace)
+* @carlosalberto – TC Escalating Sponsor
 
 **Implementation Engineers:**
-* Martin Kuba (ServiceNow)
-* Purvi Kanal (Honeycomb)
-* Karlie L (Microsoft)
-* Ken Rimple (Honeycomb)
-* Jared Freeze (Embrace)
-* Joaquín Díaz (Embrace)
-* Abinet Debele (Cisco)
+* @martinkuba (ServiceNow)
+* @pkanal (Honeycomb)
+* @Karlie-777 (Microsoft)
+* @krimple (Honeycomb)
+* @overbalance (Embrace)
+* @joaquin-diaz (Embrace)
+* @Abinet18 (Cisco)
 
 	
 **NodeJS Maintainers and Approvers:**
 
 When bootstrapping our browser work, we want to make sure that the existing OpenTelemetry Javascript community is involved. Existing OTel JS maintainers and approvers should participate in this project to help ensure that it is successful.
-* Martin Kuba (ServiceNow)
-* Purvi Kanal (Honeycomb)
-* Hector Hernandez (Microsoft)
-* David Luna (Elastic)
+* @@martinkuba (ServiceNow)
+* @pkanal (Honeycomb)
+* @hectorhdzg (Microsoft)
+* @david-luna (Elastic)
 
 ### Additional SIG Members
 
 **Design review:**
-* Ram Thiru (Microsoft)
-* Santosh Cheler (Cisco / Splunk)
-* Marco Schäfer (Grafana Labs)
+* @ramthi (Microsoft)
+* @scheler (Cisco / Splunk)
+* @codecapitano (Grafana Labs)
 
 ## Timeline
 
