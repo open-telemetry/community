@@ -206,12 +206,14 @@ you will need to [retain the original copyright notice](https://github.com/cncf/
 
 Any contributed third-party code must originally be Apache 2.0-Licensed or must
 carry a permissive software license that is compatible when combining with
-Apache 2.0 License. The [CNCF Allowlist License Policy](https://github.com/cncf/foundation/blob/main/allowed-third-party-license-policy.md#cncf-allowlist-license-policy)
-describes the requirements for including third-party code in CNCF codebases,
-along with a list of approved compatible licenses.
+Apache-2.0 License. 
 
-If you make substantial changes to the third-party code, _prepend_ the contributed
-third party file with OpenTelemetry's copyright notice.
+If you directly incorporate or vendor Apache-2.0 license compatible third-party code, follow
+the [CNCF Recommendations for Attribution Notices](https://github.com/cncf/foundation/blob/main/policies-guidance/recommendations-for-attribution.md).
+
+The [CNCF Allowlist License Policy](https://github.com/cncf/foundation/blob/main/policies-guidance/allowed-third-party-license-policy.md#cncf-allowlist-license-policy)
+describes the requirements for depending on third-party code in CNCF codebases,
+along with a list of approved compatible licenses.
 
 If the contributed code is not third-party code and you are the author we
 strongly encourage to avoid including your name in the notice and use the

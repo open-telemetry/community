@@ -3,6 +3,9 @@ name: Reusable - Markdown link check
 on:
   workflow_call:
 
+permissions:
+  contents: read
+
 jobs:
   markdown-link-check:
     runs-on: ubuntu-latest
@@ -11,3 +14,6 @@ jobs:
 
       - name: Run markdown-link-check
         run: make markdown-link-check
+        env:
+          # see https://lychee.cli.rs/troubleshooting/rate-limits/#github-rate-limiting
+          GITHUB_TOKEN: ${{ github.token }}

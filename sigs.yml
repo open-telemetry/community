@@ -62,8 +62,8 @@
       - name: Trask Stalnaker
         github: trask
     gcLiaison:
-    - name: Ted Young
-      github: tedsuo
+    - name: Trask Stalnaker
+      github: trask
   - name: 'Semantic Conventions: General'
     meeting: Monday at 08:00 PT
     notes:
@@ -316,8 +316,8 @@
     invites: calendar-android
     sponsors: []
     gcLiaison:
-    - name: Trask Stalnaker
-      github: trask
+    - name: Ted Young
+      github: tedsuo
   - name: Arrow
     meeting: Alternating between Tuesday at 16:00 PT and Thursday at 8:00 PT
     notes:
@@ -431,7 +431,7 @@
     - name: 'Juraci Paixão Kröhling'
       github: jpkrohling
   - name: 'GoLang: Compile-Time Instrumentation'
-    meeting: Every other Thursday at 08:00 UTC
+    meeting: Every Thursday at 08:00 UTC
     notes:
       type: gDoc
       value: 1XkVahJfhf482d3WVHsvUUDaGzHc8TO3sqQlSS80mpGY
@@ -551,16 +551,16 @@
     gcLiaison:
     - name: Alolita Sharma
       github: alolita
-  - name: eBPF
+  - name: Network
     meeting: Tuesday at 09:00 PT
     notes:
       type: gDoc
       value: 13GK915hdDQ9sUYzUIWi4pOfJK68EE935ugutUgL3yOw
     chat:
       - type: slack
-        name: '#otel-ebpf'
+        name: '#otel-network'
         id: C02AB15583A
-    invites: calendar-ebpf
+    invites: calendar-network
     sponsors: []
     gcLiaison:
     - name: Ted Young
@@ -728,3 +728,94 @@
     gcLiaison:
       - name: 'Austin Parker'
         github: austinlparker
+- name: Localization Teams (part of SIG Communications)
+  sigs:
+  - name: Bengali (bn)
+    meeting: ''
+    notes:
+      type: none
+    chat:
+      - type: slack
+        name: "#otel-localization-bn"
+        id: C08TBCSAY1F
+    sponsors:
+      - name: 'Severin Neumann'
+        github: svrnm
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+  - name: Chinese (zh-CN)
+    meeting: ''
+    notes:
+      type: none
+    chat:
+      - type: slack
+        name: "#otel-localization-zhcn"
+        id: C08SSK25Y7L
+    sponsors:
+      - name: 'Severin Neumann'
+        github: svrnm
+      - name: 'Reiley Yang'
+        github: reyang
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+  - name: French (fr-FR)
+    meeting: ''
+    notes:
+      type: none
+    chat:
+      - type: slack
+        name: "#otel-localization-fr"
+        id: C07THD60YLF
+    sponsors:
+      - name: 'Severin Neumann'
+        github: svrnm
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+  - name: Japanese (ja-JA)
+    meeting: Every third Wednesday at 01:00pm JST
+    notes:
+      type: gDoc
+      value: 1venl18Obvp3vD-lR_9Hj9k826s_weF0vzWe-TdaDkuY
+    chat:
+      - type: slack
+        name: "#otel-localization-ja"
+        id: C08SGPBN44E
+    invites: calendar-localization-ja
+    sponsors:
+      - name: 'Severin Neumann'
+        github: svrnm
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+  - name: Portuguese (pt-BR)
+    meeting: Every second Wednesday at 7:15pm BST
+    notes:
+      type: gDoc
+      value: 1W1jJ4OTm53sbOp7CrbNBMvR_2Z8TQRCkwejqD4f21SE
+    chat:
+      - type: slack
+        name: "#otel-localization-ptbr"
+        id: C076LET8YSK
+    invites: calendar-localization-ptbr
+    sponsors:
+      - name: 'Juraci Paixão Kröhling'
+        github: jpkrohling
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+  - name: Spanish (es-ES)
+    meeting: 'Every second Tuesday at 12:45pm UTC-3, 10:45am UTC-5'
+    notes:
+      type: gDoc
+      value: 1LAhaPQfZ9IBjXZ1Y3misVV0Gp8Y8CVvoOVChV89Q0s0
+    chat:
+      - type: slack
+        name: "#otel-localization-es"
+        id: C07PVQVCHA6
+    invites: calendar-localization-es
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm

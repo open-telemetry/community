@@ -21,6 +21,7 @@ words:
     - Arize
     - Ashpole
     - Baeyens
+    - calendar-localization-ptbr
     - Collibra
     - Coralogix
     - DASD
@@ -57,6 +58,8 @@ words:
     - opentelemetry
     - opentelemetrybot
     - otel
+    - otel-localization-ptbr
+    - otel-localization-zhcn
     - otep
     - otlp
     - passcodes
@@ -218,6 +221,7 @@ words:
     - Quesma
     - raesene
     - reiley
+    - roadmaps
     - rolldice
     - ruech
     - runtimes
