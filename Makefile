@@ -18,7 +18,7 @@ table-check:
 markdown-link-check:
 	docker run --rm \
 		--mount 'type=bind,source=$(PWD),target=/home/repo' \
-		lycheeverse/lychee@sha256:2e3786630482c41f9f2dd081e06d7da1c36d66996e8cf6573409b8bc418d48c4 \
+		lycheeverse/lychee:sha-639c74e@sha256:ce2e490d25e886fb0b4b859feaea78bf0e36b7ce542c5e0393ff91b7e28517ad \
 		--config home/repo/.lychee.toml \
 		--root-dir /home/repo \
 		--verbose \
