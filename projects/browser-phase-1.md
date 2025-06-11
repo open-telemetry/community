@@ -130,6 +130,7 @@ When bootstrapping our browser work, we want to make sure that the existing Open
 * @ramthi (Microsoft)
 * @scheler (Cisco / Splunk)
 * @codecapitano (Grafana Labs)
+* metal-messiah (New Relic)
 
 ## Timeline
 
