@@ -113,6 +113,7 @@ There are a number of existing RUM/Client observability implementations. Represe
 * Ken Rimple (Honeycomb)
 * Jared Freeze (Embrace)
 * Joaquín Díaz (Embrace)
+* Abinet Debele (Cisco)
 
 	
 **NodeJS Maintainers and Approvers:**
