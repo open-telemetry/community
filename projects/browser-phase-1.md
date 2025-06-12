@@ -52,6 +52,7 @@ We will also decide our compatibility story.
 * Which Browser features and APIs do we require to be present?
 * Based on those features, which browser versions will we support?
 * Will we aim support electron at this time?
+* Do any considerations need to be made for web assembly?
 
 ### Step 2: Core Instrumentation
 
@@ -87,6 +88,7 @@ Options include:
 * Implement a browser-specific SDK.
 * Implement a more efficient client protocol.
 * Implement a public gateway for client protocols.
+* Support for web assembly.
 * TBD
 
 ## Staffing / Help Wanted
