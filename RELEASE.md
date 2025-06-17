@@ -96,8 +96,9 @@
 
 | Repository | Release Doc | Frequency | Automation | Release Maintainers |
 | ---------- | ---------- | --------- | ---------- | ------------------- |
-| opentelemetry-collector | [docs/release.md](https://github.com/open-telemetry/opentelemetry-collector/blob/main/docs/release.md) | Bi‑weekly | Prepare PR + GH Actions | [CODEOWNERS](https://github.com/open-telemetry/opentelemetry-collector/blob/main/.github/CODEOWNERS) |
-| opentelemetry-collector-contrib | Same as core | Bi‑weekly (after core) | Prepare PR + GH Actions | [CODEOWNERS](https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/.github/CODEOWNERS) |
+| opentelemetry-collector | [docs/release.md](https://github.com/open-telemetry/opentelemetry-collector/blob/main/docs/release.md) | Bi‑weekly | Prepare PR + GH Actions | [`open-telemetry/collector-approvers` team](https://github.com/open-telemetry/opentelemetry-collector/blob/main/docs/release.md#release-manager) |
+| opentelemetry-collector-contrib | Same as core | Bi‑weekly (after core) | Prepare PR + GH Actions | [`open-telemetry/collector-approvers` team](https://github.com/open-telemetry/opentelemetry-collector/blob/main/docs/release.md#release-manager) |
+| opentelemetry-collector-releases | Same as core | Bi‑weekly (after contrib) | Prepare PR + GH Actions | [`open-telemetry/collector-approvers` team](https://github.com/open-telemetry/opentelemetry-collector/blob/main/docs/release.md#release-manager) |
 
 ### Operator & Other Components
 
