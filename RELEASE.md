@@ -1,4 +1,3 @@
-<!--cspell:ignore npmjs, Makefiles--->
 # OpenTelemetry Release Processes Overview
 
 ## Common Release Practices
@@ -64,7 +63,7 @@
 | Repository | Release Doc | Frequency | Automation | Release Maintainers |
 | ---------- | ---------- | --------- | ---------- | ------------------- |
 | opentelemetry-ruby | [CONTRIBUTING → Releases](https://github.com/open-telemetry/opentelemetry-ruby/blob/main/CONTRIBUTING.md#releases) | Monthly | Toys scripts + GH Actions | [CODEOWNERS](https://github.com/open-telemetry/opentelemetry-ruby/blob/main/CODEOWNERS) |
-| opentelemetry-ruby-contrib | Same as above | Monthly (aligned) | Automated with core | [CODEOWNERS](https://github.com/open-telemetry/opentelemetry-ruby/blob/main/.github/CODEOWNERS) |
+| opentelemetry-ruby-contrib | Same as above | Monthly (aligned) | Automated with core | [CODEOWNERS](https://github.com/open-telemetry/opentelemetry-ruby/blob/main/CODEOWNERS) |
 
 ### PHP (SIG PHP)
 
