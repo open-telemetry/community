@@ -1,10 +1,10 @@
 # OpenTelemetry Release Processes Overview
 
 ## Common Release Practices
-  * **Semantic Versioning (SemVer)** is used in every repository (`vMAJOR.MINOR.PATCH`).
+  * **Semantic Versioning (SemVer)** is used in every repository (`vMAJOR.MINOR.PATCH`). See our [Versioning and Stability](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/versioning-and-stability.md) policy for more information.
   * CHANGELOGs keep an **“Unreleased”** section that is promoted to a versioned section during a release.
   * Releases are tagged from the default branch or a dedicated *release/x.y* branch; tags are always prefixed with **v**.
-  * GitHub Actions (or equivalent CI) prepare release PRs, bump versions, draft release notes, publish artifacts, and create Git tags.
+  * GitHub Actions prepare release PRs, bump versions, draft release notes, publish artifacts, and create Git tags.
   * Each release produces a GitHub Release plus language‑specific artifacts (Maven Central, NuGet, PyPI, NPM, RubyGems, crates.io, Packagist, Docker Hub, etc.).
   * A designated **maintainer or release manager** triggers/approves the workflows and verifies the release checklist.
 
