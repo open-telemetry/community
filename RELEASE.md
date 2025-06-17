@@ -26,8 +26,8 @@
 | Repository | Release Doc | Frequency | Automation | Release Maintainers |
 | ---------- | ---------- | --------- | ---------- | ------------------- |
 | opentelemetry-java | [RELEASING.md](https://github.com/open-telemetry/opentelemetry-java/blob/main/RELEASING.md) | Monthly | GitHub Actions (prepare + publish) | [CODEOWNERS](https://github.com/open-telemetry/opentelemetry-java/blob/main/.github/CODEOWNERS) |
-| opentelemetry-java-contrib | [RELEASING.md](https://github.com/open-telemetry/opentelemetry-java-contrib/blob/main/RELEASING.md) | Monthly (aligned) | GitHub Actions (partial) | [CODEOWNERS](https://github.com/open-telemetry/opentelemetry-java-contrib/blob/main/.github/CODEOWNERS) |
-| opentelemetry-java-instrumentation | [RELEASING.md](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/RELEASING.md) | Monthly | Gradle scripts + GH Actions | [CODEOWNERS](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/.github/CODEOWNERS) |
+| opentelemetry-java-contrib | [RELEASING.md](https://github.com/open-telemetry/opentelemetry-java-contrib/blob/main/RELEASING.md) | Monthly | GitHub Actions (prepare + publish) | [CODEOWNERS](https://github.com/open-telemetry/opentelemetry-java-contrib/blob/main/.github/CODEOWNERS) |
+| opentelemetry-java-instrumentation | [RELEASING.md](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/RELEASING.md) | Monthly | GitHub Actions (prepare + publish) | [CODEOWNERS](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/.github/CODEOWNERS) |
 
 ### .NET (SIG . NET)
 
