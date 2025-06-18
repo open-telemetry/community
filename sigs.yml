@@ -332,6 +332,26 @@
     gcLiaison:
       - name: 'Trask Stalnaker'
         github: trask
+  - name: Browser
+    meeting: Thursday at 8:30 PT
+    notes:
+      type: gDoc
+      value: 1G3yBAV5SzWBO3mmsBUos5bsn4yxsqkS1MLWl1urVojQ
+    chat:
+      - type: slack
+        name: '#otel-client-side-telemetry' # Temporary until migration off Slack
+        id: C0239SYARD2
+    invites: calendar-browser
+    sponsors:
+      - name: 'Carlos Alberto'
+        github: carlosalberto
+      - name: 'Daniel Dyla'
+        github: dyladan
+      - name: 'Ted Young'
+        github: tedsuo
+    gcLiaison:
+      - name: 'Daniel Gomez Blanco'
+        github: danielgblanco
   - name: Collector
     meeting: Alternating between Tuesday at 17:00 PT, Wednesday at 09:00 PT, and Wednesday at 05:00 PT
     notes:
