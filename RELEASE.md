@@ -54,8 +54,8 @@
 
 | Repository | Release Doc | Frequency | Automation | Release Maintainers |
 | ---------- | ----------- | --------- | ---------- | ------------------- |
-| opentelemetry-js | [Releasing Guide](https://github.com/open-telemetry/opentelemetry-js/blob/main/doc/contributing/releasing.md) | ~Every 4-6 weeks | Release PR + Publish workflow | [@open-telemetry/js-maintainers](https://github.com/orgs/open-telemetry/teams/js-maintainers) |
-| opentelemetry-js-contrib | n/a | Monthly (aligned) | Partial | [@open-telemetry/js-contrib-maintainers](https://github.com/orgs/open-telemetry/teams/js-contrib-maintainers) |
+| opentelemetry-js | [Releasing Guide](https://github.com/open-telemetry/opentelemetry-js/blob/main/doc/contributing/releasing.md) | ~bi-weekly, on-demand (after SemConv release) | Release PR + Publish workflow | [@open-telemetry/javascript-maintainers](https://github.com/orgs/open-telemetry/teams/javascript-maintainers) |
+| opentelemetry-js-contrib | n/a | ~bi-weekly (after core), on-demand | GitHub Actions | [@open-telemetry/javascript-maintainers](https://github.com/orgs/open-telemetry/teams/javascript-maintainers) |
 
 ### Ruby (SIG Ruby)
 
