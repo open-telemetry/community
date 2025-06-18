@@ -14,7 +14,7 @@ Social media content should not be commercial in nature and should consist of or
 
 ## Submitting content for social media
 
-* Raise an issue with the following details:
+* [Raise a community issue](https://github.com/open-telemetry/community/issues/new/) with the following details:
   * Title of the content
   * Description of the content
   * If applicable, a list of technologies used in the content. Make sure that all of them are open source and prefer CNCF projects over non-CNCF projects
