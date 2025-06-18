@@ -1,13 +1,16 @@
 # RPC Semantic Convention Stability
 
-### Goals, objectives, and requirements
+## Goals, objectives, and requirements
 
-- Update RPC semantic conventions to be consistent with the naming conventions that
+- Define the scope of what is an RPC system? Graph QL, WebSockets, SSE over HTTP, MCP, SignalR, WCF, etc?
+  Are logical operations like AWS SDK calls (REST over HTTP) RPC calls?
+- Update non-streaming RPC semantic conventions to be consistent with the naming conventions that
   have been established through HTTP and Database semantic convention stabilization.
-- Work with the gRPC team. Hopefully we can leverage the work they've done
-  defining [gRPC metrics](https://github.com/grpc/proposal/blob/master/A66-otel-stats.md),
-  and hopefully we can collaborate on having a single definition for gRPC spans.
-- Mark the RPC semantic conventions as stable.
+- Alignment with the gRPC team and clear guidance for users who are currently confused
+  because of differences between OpenTelemetry semantic conventions
+  [gRPC semantic conventions](https://github.com/grpc/proposal/blob/master/A66-otel-stats.md).
+- Stabilize the non-streaming RPC semantic conventions.
+- Stretch goal: Stabilize streaming RPC semantic conventions.
 
 ## Deliverables
 
@@ -17,11 +20,13 @@ Stable RPC semantic conventions.
 
 * @trask project lead / GC sponsor
 * @lmolkova project lead / TC sponsor
-* ...
+* @mconnew domain expert from [CoreWCF](https://github.com/CoreWCF/CoreWCF)
+* 
 
 ### Industry outreach
 
-We are planning to reach out to the gRPC team via [@jsuereth](https://github.com/jsuereth).
+- @JamesNK from .Net gRPC library - open to us reaching out as needed
+- 
 
 ### Required staffing
 
@@ -34,7 +39,7 @@ Projects cannot be started until the following participants have been identified
 
 ## Timeline
 
-Starting in mid-May. Targeting completion by KubeCon North America 2025.
+Starting in mid-July. Targeting completion by KubeCon North America 2025.
 
 ## Labels
 
