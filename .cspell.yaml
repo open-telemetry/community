@@ -17,13 +17,19 @@ ignoreRegExpList:
   - GitHub Handle
   - GitHub Handle in YML
 words:
+  - Abinet
   - Alff
   - Arize
   - Ashpole
   - Baeyens
+  - calendar-localization-ptbr
+  - Cheler
   - Collibra
   - Coralogix
+  - Cortez
   - DASD
+  - Debele
+  - Díaz
   - Docu
   - Dosu
   - datadog
@@ -41,7 +47,11 @@ words:
   - hostmetricsreceiver
   - Instrgen
   - jemmic
+  - Joaquín
+  - Kanal
+  - Karlie
   - keptn
+  - Kuba
   - kubecon
   - k8sclusterreceiver
   - Langfuse
@@ -61,6 +71,7 @@ words:
   - otlp
   - passcodes
   - proto
+  - Purvi
   - pytest
   - isovalent
   - labs
@@ -220,8 +231,10 @@ words:
   - rossf7
   - salnikov
   - sallyom
+  - Santosh
   - sarif
   - scavarda
+  - schäfer
   - semconv
   - sergey
   - severin
@@ -242,6 +255,7 @@ words:
   - sudivate
   - suereth
   - supermajority
+  - Thiru
   - Traceloop
   - tarnovski
   - tekton
