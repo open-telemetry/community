@@ -14,7 +14,7 @@
 | ------ | -------- |
 | **Versioning after 1.0** | No breaking changes in the 1.x line; major bump required for breaking changes. |
 | **Unreleased versions** | Suffixes like `-SNAPSHOT`, `.dev`, `beta.n` are kept on `main` and stripped for the release commit. |
-| **Artifact registries** | Maven Central (Java), NuGet (.NET), PyPI (Python), npmjs.com (JS), RubyGems (Ruby), crates.io (Rust), Packagist (PHP), Docker Hub (Collector/Images). |
+| **Artifact registries** | Maven Central (Java), NuGet (.NET), PyPI (Python), npmjs.com (JS), RubyGems (Ruby), crates.io (Rust), Packagist (PHP), PECL (PHP), Docker Hub (Collector/Images). |
 | **Version‑bump tooling** | Gradle scripts, MinVer, `cargo release`, `npm version`, Toys scripts, Makefiles, custom GH Actions. |
 
 ---
@@ -71,8 +71,9 @@
 
 | Repository | Release Doc | Frequency | Automation | Release Maintainers |
 | ---------- | ---------- | --------- | ---------- | ------------------- |
-| opentelemetry-php | n/a | Monthly | GH Actions + Packagist auto‑sync | n/a |
-| opentelemetry-php-contrib | Follows core | Ad‑hoc | Manual tagging | n/a |
+| opentelemetry-php | n/a | Ad-hoc | GH Actions + [scripting](https://github.com/opentelemetry-php/dev-tools) + Packagist auto‑sync | n/a |
+| opentelemetry-php-contrib | Follows core | Ad‑hoc | Follows core | n/a |
+| opentelemetry-php-instrumentation | Follows core | Ad‑hoc | GH Actions + scripting + PECL manual upload | n/a |
 
 ### C++ (SIG C++)
 
