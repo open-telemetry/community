@@ -112,6 +112,7 @@
 | opentelemetry-specification | [CHANGELOG](https://github.com/open-telemetry/opentelemetry-specification/blob/main/CHANGELOG.md) | Monthly | Manual (TC oversight) | [@open-telemetry/specification-maintainers](https://github.com/orgs/open-telemetry/teams/specification-maintainers) |
 | semantic-conventions | [RELEASING.md](https://github.com/open-telemetry/semantic-conventions/blob/main/RELEASING.md) | On demand | GitHub Actions (prepare) | [@open-telemetry/specs-semconv-maintainers](https://github.com/orgs/open-telemetry/teams/specs-semconv-maintainers) |
 | opentelemetry-proto | [RELEASING.md](https://github.com/open-telemetry/opentelemetry-proto/blob/main/RELEASING.md) | On demand | Manual | [@open-telemetry/proto-maintainers](https://github.com/orgs/open-telemetry/teams/proto-maintainers) |
+| opentelemetry-proto-go | [RELEASING.md](https://github.com/open-telemetry/opentelemetry-proto-go/blob/main/RELEASING.md) | On demand after proto | Make scripts (manual) | [@open-telemetry/proto-go-maintainers](https://github.com/orgs/open-telemetry/teams/proto-go-maintainers) |
 | weaver | [CONTRIBUTING.md](https://github.com/open-telemetry/weaver/blob/main/CONTRIBUTING.md#creating-a-new-release-for-the-weaver-project) | ~ Every 4-6 weeks | [@open-telemetry/weaver-maintainers](https://github.com/orgs/open-telemetry/teams/weaver-maintainers) |
 
 ---
