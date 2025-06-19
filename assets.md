@@ -123,8 +123,7 @@ Equinix management console:
 - Admins: Juraci Paixão Kröhling @jpkrohling and OTel TC via the mailing list address
 
 GitHub self-hosted runners:
-- `github-benchmark-runner` (16-core)
-- `self-hosted` (alias that repos are currently using for `github-benchmark-runner`)
+- `equinix-bare-metal` (16-core)
 - Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
 ### Google Cloud account
