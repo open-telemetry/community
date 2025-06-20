@@ -34,7 +34,6 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [Mailing list cncf-opentelemetry-net-maintainers@lists.cncf.io](#mailing-list-cncf-opentelemetry-net-maintainerslistscncfio)
   * [Mailing list cncf-opentelemetry-ruby@lists.cncf.io](#mailing-list-cncf-opentelemetry-rubylistscncfio)
   * [Mailing list cncf-opentelemetry-governance@lists.cncf.io](#mailing-list-cncf-opentelemetry-governancelistscncfio)
-
   * [Zoom accounts](#zoom-accounts)
   * [Zapier account](#zapier-account)
   * [Google Workspace accounts](#google-workspace-accounts)
@@ -43,7 +42,7 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [BlueSky](#bluesky)
   * [Buffer](#buffer)
   * [LinkedIn](#linkedin)
-  * [Mastadon](#mastodon)
+  * [Mastodon](#mastodon)
   * [YouTube](#youtube)
 - [Bot accounts](#bot-accounts)
   * [Easy CLA](#easy-cla)
