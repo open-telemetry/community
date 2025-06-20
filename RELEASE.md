@@ -14,7 +14,7 @@
 | ------ | -------- |
 | **Versioning after 1.0** | No breaking changes in the 1.x line; major bump required for breaking changes. |
 | **Unreleased versions** | Suffixes like `-SNAPSHOT`, `.dev`, `beta.n` are kept on `main` and stripped for the release commit. |
-| **Artifact registries** | Maven Central (Java), NuGet (.NET), PyPI (Python), npmjs.com (JS), RubyGems (Ruby), crates.io (Rust), Packagist (PHP), PECL (PHP), Docker Hub (Collector/Images). |
+| **Artifact registries** | crates.io (Rust), Docker Hub (Collector/Images), Maven Central (Java), npmjs.com (JS), NuGet (.NET), Packagist (PHP), PECL (PHP), PyPI (Python), RubyGems (Ruby) |
 | **Version‑bump tooling** | Gradle scripts, MinVer, `cargo release`, `npm version`, Toys scripts, Makefiles, custom GH Actions. |---
 
 ## Release Process by SIG / Component
