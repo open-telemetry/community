@@ -21,7 +21,7 @@ Social media content should not be commercial in nature and should consist of or
   * Name of all SIGs that are related to the content
   * Name of one SIG that is sponsoring the content
 
-Members of `@open-telemetry/social-media-approvers` will triage your issue and request reviews from the appropriate SIGs.
+Your issue will be tagged with `area:social-media` and members of `@open-telemetry/social-media-approvers` will triage your issue and request reviews from the appropriate SIGs.
 
 ## Example 1
 
