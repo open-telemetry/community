@@ -34,11 +34,16 @@ This file is intended to list all the assets controlled by OpenTelemetry.
   * [Mailing list cncf-opentelemetry-net-maintainers@lists.cncf.io](#mailing-list-cncf-opentelemetry-net-maintainerslistscncfio)
   * [Mailing list cncf-opentelemetry-ruby@lists.cncf.io](#mailing-list-cncf-opentelemetry-rubylistscncfio)
   * [Mailing list cncf-opentelemetry-governance@lists.cncf.io](#mailing-list-cncf-opentelemetry-governancelistscncfio)
-  * [YouTube channel OpenTelemetry](#youtube-channel-opentelemetry)
   * [Zoom accounts](#zoom-accounts)
   * [Zapier account](#zapier-account)
   * [Google Workspace accounts](#google-workspace-accounts)
   * [Google account for cncf-opentelemetry-governance@lists.cncf.io](#google-account-for-cncf-opentelemetry-governancelistscncfio)
+- [Social media channels](#social-media-channels)
+  * [BlueSky](#bluesky)
+  * [Buffer](#buffer)
+  * [LinkedIn](#linkedin)
+  * [Mastodon](#mastodon)
+  * [YouTube](#youtube)
 - [Bot accounts](#bot-accounts)
   * [Easy CLA](#easy-cla)
   * [Docker Hub](#docker-hub)
@@ -280,14 +285,6 @@ Link: https://groups.google.com/g/opentelemetry-calendar
 - All GC members AND CNCF reps (Amye Scavarda Perrin, Chris Aniszczyk, Taylor Waggoner) are on the list and are list moderators.
 - Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
 
-### YouTube channel OpenTelemetry
-
-Link: https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos
-
-- Ask any of the following people if you need to manage the feed:
-  - Owners: Amye Scavarda Perrin (CNCF rep), Sergey Kanzhelev
-  - Managers: Alolita Sharma, Alan West, Austin Parker, Ben Sigelman, Eddy Nakamura
-
 ### Zoom accounts
 
 - Accounts
@@ -327,6 +324,34 @@ Link: https://zapier.com
 - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 - Used for community Google Docs
 - Used to manage Zoom
+
+## Social media channels
+
+### BlueSky
+
+Link: https://bsky.app/profile/opentelemetry.io
+
+### Buffer
+
+Used to publish to the different social media channels.
+
+Link: https://publish.buffer.com/
+
+### LinkedIn
+
+Link: https://www.linkedin.com/company/opentelemetry
+
+### Mastodon
+
+Link: https://fosstodon.org/@opentelemetry
+
+### YouTube
+
+Link: https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos
+
+- Ask any of the following people if you need to manage the feed:
+  - Owners: Amye Scavarda Perrin (CNCF rep), Sergey Kanzhelev
+  - Managers: Alolita Sharma, Alan West, Austin Parker, Ben Sigelman, Eddy Nakamura
 
 ## Bot accounts
 
