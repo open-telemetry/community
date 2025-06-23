@@ -675,7 +675,7 @@
     - name: Daniel Gomez Blanco
       github: danielgblanco
   - name: Security
-    meeting: Every Monday at 09:00 PT
+    meeting: Every other Monday at 09:00 PT
     notes:
       type: gDoc
       value: 1P2xejC7lEkOV_Z-8E0oZPXLK5HOnUPNuRqKP0ZQ5fpg
