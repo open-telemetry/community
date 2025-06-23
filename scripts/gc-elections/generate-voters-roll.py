@@ -1,10 +1,13 @@
 import csv
 import os
-import requests
 import time
+
+import requests
 
 VOTERS_ROLL_PATH = os.getenv('VOTERS_ROLL_PATH', './voters-roll.csv')
 GH_TOKEN = os.getenv('GITHUB_TOKEN')
+PROJECT = os.getenv("PROJECT", "opentelemetry")
+SERVER = f"{PROJECT}.devstats.cncf.io"
 
 
 # Get GitHub login from lowercase username
@@ -28,9 +31,9 @@ def get_github_login(username):
 
 # Use devstats to get users and contributions with more than 20 contributions in the last year
 def get_users_and_contributions():
-    print("Getting contributions data from opentelemetry.devstats.cncf.io")
+    print(f"Getting contributions data from {SERVER}")
     # Define the URL and headers
-    url = 'https://opentelemetry.devstats.cncf.io/api/ds/query'
+    url = f"https://{SERVER}/api/ds/query"
     headers = {
         'Accept': 'application/json',
         'content-type': 'application/json'
