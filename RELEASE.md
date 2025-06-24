@@ -64,7 +64,7 @@
 | opentelemetry-ruby | [CONTRIBUTING → Releases](https://github.com/open-telemetry/opentelemetry-ruby/blob/main/CONTRIBUTING.md#releases) | Weekly, on-demand | Toys scripts + GitHub Actions | [@open-telemetry/ruby-maintainers](https://github.com/orgs/open-telemetry/teams/ruby-maintainers) |
 | opentelemetry-ruby-contrib | [CONTRIBUTING → Releases](https://github.com/open-telemetry/opentelemetry-ruby-contrib/blob/main/CONTRIBUTING.md#releases) | Weekly, on-demand | Toys scripts + GitHub Actions | [@open-telemetry/ruby-maintainers](https://github.com/orgs/open-telemetry/teams/ruby-maintainers) |
 
-### PHP (SIG PHP) ⚠️ Needs input from PHP SIG
+### PHP (SIG PHP)
 
 | Repository | Release Doc | Frequency | Automation | Release Maintainers |
 | ---------- | ----------- | --------- | ---------- | ------------------- |
