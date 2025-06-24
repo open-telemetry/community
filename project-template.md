@@ -1,6 +1,8 @@
 # <<PROJECT NAME>>
 
-Name your project here. This should be a short, descriptive name that describes the main goal of the project, not the SIG that may be formed as part of it. For instance, if the project is aimed at the first set of deliverables for the Foo SIG, name the project "Foo SIG Bootstrap" or "Initial Foo Implementation".
+Name your project here. This should be a short, descriptive name that describes the main goal of the project, or the main deliverable, not the SIG that may be formed as part of it.
+
+For instance, if the project is aimed at the first set of deliverables for the Foo SIG, name the project "Foo SIG Bootstrap" or "Initial Foo Implementation", not "Foo SIG".
 
 ## Background and description
 
@@ -20,20 +22,35 @@ In general, OTEPs are not accepted unless they come with working prototypes avai
 
 ## Staffing / Help Wanted
 
-Who is currently planning to work on the project? If a project requires specialized domain expertise, please list it here. If a project is missing a critical mass of people in order to begin work, please clarify.
-
 ### Industry outreach
 
 Who (people, companies) in the industry should be aware of this effort? Was there an attempt to get them onboard? What did they say?
 
 ### Required staffing
 
-Projects cannot be started until the following participants have been identified:
-* Every project needs a project lead, who is willing to bottom line the project and address any issues which are not handled by other project members.
-* At least two sponsoring [TC](community-members.md#technical-committee) or [GC](community-members.md#governance-committee) members (or [semantic convention maintainers](https://github.com/orgs/open-telemetry/teams/specs-semconv-maintainers) in the case of semantic convention SIGs), or community members delegated by them. Sponsors are dedicated to attending meetings, reviewing proposals, and in general being aware of the state of the project and its technical details. Sponsors guide the project through the spec process, keep the tracking issue up to date, and help to ensure that relevant community members provide input at the appropriate times.
-* A GC liaison to facilitate this SIG's health and ensure project scope remains true to the project description. If a GC member is also a sponsor for this project, they are by default the GC liaison (see [GC check-ins](./gc-check-ins.md)).
-* Engineers willing to write prototypes in at least two languages (if relevant to project). Languages should be fairly different from each other (for example: Java and Python).
-* Maintainers or approvers from those languages committed to reviewing the prototypes.
+Who is planning to work on the project? If a project requires specialized domain expertise, please list it here. If an existing or new SIG is missing a critical mass of people in order to begin work, please clarify in the "other staffing" section below. See [project proposal](project-management.md#project-proposal) for more details.
+
+(For projects driven by existing SIGs)
+#### SIG(s)
+<SIG NAME>
+
+#### Other Staffing
+
+(For projects that require a new SIG)
+#### Project Leads(s)
+<NAMES>
+
+#### TC Sponsor
+<NAME>
+
+#### Delegated TC Sponsor (Optional)
+<NAME>
+
+#### GC Liaison
+<NAME>
+
+#### Other staffing
+<NAMES>
 
 ## Timeline
 
@@ -45,7 +62,7 @@ Issues should be properly labeled to indicate what parts of the specification it
 
 ## GitHub Project
 
-Once approved, a project should be managed using a GitHub project board (see [open projects](https://github.com/open-telemetry/community/projects?query=is%3Aopen)). This project board should be pre-populated with issues that cover all known deliverables, organized by timeline milestones.
+Once approved, a project should be managed using a GitHub project (see [open projects](https://github.com/open-telemetry/community/projects?query=is%3Aopen)). This project should be pre-populated with issues that cover all known deliverables, organized by timeline milestones.
 
 Any [member](./guides/contributor/membership.md) associated with the project can create the board. Please use the existing [GitHub Project template](https://github.com/orgs/open-telemetry/projects/140) to create your project, replacing `{project_name}` where appropriate.
 
@@ -59,7 +76,7 @@ See [project management](project-management.md#project-lifecycle) for more infor
 
 Once created, please add a link to the project board here.
 
-## SIG Meetings and Other Info
+## SIG Meetings and Other Info (New SIGs Only)
 
 Once a project is started, its corresponding SIG should meet regularly for discussion. These meeting times should be posted on the [OpenTelemetry public calendar](https://github.com/open-telemetry/community#calendar) and automatically recorded.
 

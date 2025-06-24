@@ -1,36 +1,65 @@
 # Project Management
 
-The OpenTelemetry community has limited bandwidth for managing changes which expand the scope of OpenTelemetry, or impact many SIGs (Special Interest Groups) within OpenTelemetry.
+The OpenTelemetry community has limited bandwidth for managing work which expands the scope of OpenTelemetry, impacts many SIGs (Special Interest Groups) within OpenTelemetry, or becomes the main focus of any given SIG.
 
 These are common scenarios which have this kind of impact:
 
 * Non-trivial changes to the [OpenTelemetry Specification](https://github.com/open-telemetry/opentelemetry-specification).
 * Non-trivial changes to the [OpenTelemetry Semantic Conventions](https://github.com/open-telemetry/semantic-conventions).
-  * Non-trivial being: introducing new conventions, forming a new SIG around a subject, topic or technology and stabilization efforts.
-* A new SIG being formed.
+  * Non-trivial being: introducing new conventions, forming a new SIG around a subject, topic or technology, and stabilization efforts.
+* A new SIG being formed, focusing on a set of initial set of deliverables before stabilizing.
 * An existing SIG taking on new work which will affect the OpenTelemetry project as a whole, and will need review from the broader community.
+* An existing SIG working on a major roadmap item, which focuses their efforts for a specified length of time.
 
-Any changes which fall into one of the above categories must first create a project proposal and gain approval from the GC (Governance Committee) and TC (Technical Committee) before work begins.
+Any changes which fall into one of the above categories benefit from creating a project proposal and gaining approval from the GC (Governance Committee) and TC (Technical Committee) before work begins. In addition to gaining wider support from the community, projects also help increase awareness across the industry, encouraging participation and improving communication of roadmap items.
 
 The list of current projects, along with their most recent status, is available in our [community projects](https://github.com/open-telemetry/community/projects?query=is%3Aopen) page, which the community can use to get a high-level view of the OpenTelemetry roadmap. Project proposals currently under review can be tracked via their respective [open pull requests](https://github.com/open-telemetry/community/pulls?q=is%3Aopen+is%3Apr+label%3Aarea%2Fproject-proposal).
 
+## Relationship Between Projects and SIGs
+
+OpenTelemetry projects may either be carried out within the remit of existing SIGs, or require the creation of a new SIG to initially work on the deliverables outlined in a project proposal.
+
+A new SIG is generally required when the project expands the scope of OpenTelemetry, be it on specification, semantic conventions, or implementation. After the project is completed, the corresponding SIG may dissolve if the work delivered can be maintained by other existing SIGs going forward, or it may continue to operate and move onto other objectives.
+
+Special care should be put into defining the scope of a given project, especially when it requires a new SIG. A project is not synonymous to a SIG charter, so limiting the scope to an initial set of deliverables can avoid projects that never finish. 
+
+A project may also be created to signal a significant effort, or milestone, from one or more existing SIGs. As documented in the [project proposal](#project-proposal) section below, a project from an existing SIG requires significantly less logistics to get started, providing a way for SIGs to publicise their current milestones.
+
 ## Project Proposal
 
-At minimum, projects require the following resources to be successful:
+Projects require the following resources to be successful:
 
-* A clearly defined set of goals and deliverables.
+* A clearly defined set of problems to solve, goals, and deliverables.
 * Timelines for when the deliverables will be ready for review by the broader community.
-* Two TC/GC members, or community members delegated by them, to sponsor the project.
-  These two sponsors should be from different companies.
-* A group of designers and subject matter experts, dedicating a significant amount of their work time to the project. These participants are needed to design the spec, write a set of OTEPs, and create multiple prototypes. This group needs to meet with each other (and with their sponsors) on a regular basis to develop a successful set of proposals.
+* One or more existing SIGs that will work on this project, or the following required staffing if the project requires a new SIG:
+  * Project lead(s), who are willing to bottom line the project and address any issues which are not handled by other project members.
+    * These will ultimately become SIG maintainers, or approvers for semantic conventions SIGs.
+  * Sponsorship from OpenTelemetry leadership, see [Project Sponsorship](#project-sponsorship).
+  * If relevant to project:
+    * Engineers willing to write prototypes in at least two languages. Languages should be fairly different from each other, for example Java and Python.
+    * Maintainers or approvers from those languages committed to reviewing the prototypes.
 
-To propose a project, a**project document** must be created using the [project proposal template](project-template.md) as a guide. This document will be used as the initial proposal for the project.
+To propose a project, a **project document** must be created using the [project proposal template](project-template.md) as a guide. This document will be used as the initial proposal for the project.
 
 A project proposal can then be submitted by placing the project document in the [projects](projects/) folder and making a pull request against the community repo.
 
 As the project progresses, the project document should be kept up to date, and the community [README](README.md) should be updated to include any new project meeting information (see [contributing guide](https://github.com/open-telemetry/community/blob/main/CONTRIBUTING.md#updating-sig-information-on-the-readmemd)).
 
 Project leads are encouraged to define timelines for any work which will require public review, and to provide updates to the community in the form of [GitHub Project updates](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/sharing-project-updates). We have found that having scoped deliverables leads to an increased cadence in project work, and helps resolve debate. Timelines also help with getting a more coherent public review, as they allow the review community to plan on making themselves available. If timelines prove to be unrealistic, they can be always be updated.
+
+## Project Sponsorship
+
+All projects require sponsorship, ensuring those leading and working on the project are supported and set up for success.
+
+If a project is created as part of an existing SIG, the project lead(s), TC sponsor, and GC liaison of the project will correspond to the SIG maintainers, TC sponsor, and GC liaison.
+
+If a project involves the creation of a new SIG, it cannot be started until the following have been agreed:
+
+* A [TC](community-members.md#technical-committee) sponsor according to [TC sponsorship requirements](tech-committee-charter.md#sponsorship-requirements).
+  * In the case of semantic convention SIGs, [semantic convention maintainers](https://github.com/orgs/open-telemetry/teams/specs-semconv-maintainers) or community members delegated by them can act as sponsors, supported by a _TC Escalation Sponsor_.
+* A [GC](community-members.md#governance-committee) liaison to facilitate this SIG's health and ensure project scope remains true to the project description (see [GC check-ins](./gc-check-ins.md)).
+
+
 
 ## Project Lifecycle
 
