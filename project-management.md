@@ -7,7 +7,7 @@ These are common scenarios which have this kind of impact:
 * Non-trivial changes to the [OpenTelemetry Specification](https://github.com/open-telemetry/opentelemetry-specification).
 * Non-trivial changes to the [OpenTelemetry Semantic Conventions](https://github.com/open-telemetry/semantic-conventions).
   * Non-trivial being: introducing new conventions, forming a new SIG around a subject, topic or technology, and stabilization efforts.
-* A new SIG being formed, focusing on a set of initial set of deliverables before stabilizing.
+* A new SIG being formed, focusing on an initial set of deliverables before stabilizing.
 * An existing SIG taking on new work which will affect the OpenTelemetry project as a whole, and will need review from the broader community.
 * An existing SIG working on a major roadmap item, which focuses their efforts for a specified length of time.
 
