@@ -23,7 +23,7 @@ A new SIG is generally required when the project expands the scope of OpenTeleme
 
 Special care should be put into defining the scope of a given project, especially when it requires a new SIG. A project is not synonymous to a SIG charter, so limiting the scope to an initial set of deliverables can avoid projects that never finish. 
 
-A project may also be created to signal a significant effort, or milestone, from one or more existing SIGs. As documented in the [project proposal](#project-proposal) section below, a project from an existing SIG requires significantly less logistics to get started, providing a way for SIGs to publicise their current milestones.
+A project may also be created to signal a significant effort, or milestone, from one or more existing SIGs. As documented in the [project proposal](#project-proposal) section below, a project from an existing SIG requires significantly less logistics to get started, providing a way for SIGs to publicize their current milestones.
 
 ## Project Proposal
 
