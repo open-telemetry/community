@@ -33,7 +33,7 @@ Videos are being recorded using one of [zoom accounts](../assets.md#zoom-account
 
 - If older than 6 months, check the ['Zoom recordings archive' spreadsheet](https://docs.google.com/spreadsheets/d/1U34Ae4D8EMhMbrFujdSRjoHBae3o9pvptLO1c6X4RPI/edit?usp=sharing) for the meeting link.
 - Otherwise
-  - Find the zoom account corresponding to the meeting link. Mapping from static rooms to the account may be found in the zoom bombing document referred from [this page](../docs/how-to-handle-public-calendar.md#zoom-bombing-prevention).
+  - Find the zoom account corresponding to the meeting link. Mapping from static rooms to the account may be found in the zoom bombing document referred from [this page](../docs/how-to-handle-public-calendar.md#zoom-abuse-prevention).
   - If non OpenTelemetry zoom account was used, there will be no recording available. Please contact the owner of the zoom account linked from the event.
   - In the zoom account, check if the meeting recording present. If recording is there, it is a Zapier integration issue.
   - If recording is missing in zoom account, check the meeting room settings. Make sure that automatic meeting recording is enabled.
