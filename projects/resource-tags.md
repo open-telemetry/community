@@ -26,7 +26,7 @@ The goal of this project is to define a shared understanding for a set of common
 
 * [Define the initial set of standardized tags and their recommended structure or values]
 * [Ensure alignment with existing OpenTelemetry resource attributes where applicable]
-* [Collaborate with OCSF and other cloud providers for cross-domain alignment]
+* [Collaborate with the open source community and other cloud providers for cross-domain alignment]
 
 ---
 ## Deliverables
