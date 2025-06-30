@@ -70,7 +70,7 @@
 | ---------- | ----------- | --------- | ---------- | ------------------- |
 | opentelemetry-php | n/a | Ad-hoc | GitHub Actions + [scripting](https://github.com/opentelemetry-php/dev-tools) + Packagist auto-sync | [Release Maintainers](https://github.com/open-telemetry/opentelemetry-php/blob/main/CONTRIBUTING.md#maintainers) |
 | opentelemetry-php-contrib | Follows core | Ad-hoc | Follows core | [Release Maintainers](https://github.com/open-telemetry/opentelemetry-php-contrib/blob/main/CONTRIBUTING.md#maintainers) |
-| opentelemetry-php-instrumentation | Follows core | Ad-hoc | GitHub Actions + scripting + PECL manual upload | [Release Maintainers](https://github.com/open-telemetry/opentelemetry-php-instrumentation/blob/main/CONTRIBUTING.md#maintainers) |
+| opentelemetry-php-instrumentation | Follows core | Ad-hoc | GitHub Actions + scripting + PECL manual upload | [Release Maintainers](https://github.com/open-telemetry/opentelemetry-php-instrumentation#maintainers) |
 
 ### C++ (SIG C++)
 
