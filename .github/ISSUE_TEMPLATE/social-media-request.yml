@@ -50,21 +50,6 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: content-type
-    attributes:
-      label: Content Type
-      description: What type of content are you submitting?
-      options:
-        - Blog post
-        - Video content
-        - Social media post
-        - Issue/Discussion promotion
-        - Event promotion
-        - Other
-    validations:
-      required: true
-
   - type: textarea
     id: technologies
     attributes:
@@ -92,7 +77,7 @@ body:
         - SIG Instrumentation
         - SIG Specification
     validations:
-      required: true
+      required: false
 
   - type: input
     id: sponsoring-sig
@@ -131,4 +116,4 @@ body:
         - Critical - Event-related with fixed deadline
       default: 0
     validations:
-      required: true
+      required: false
