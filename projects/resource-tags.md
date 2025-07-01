@@ -34,19 +34,17 @@ The goal of this project is to define a shared understanding for a set of common
 This section outlines the initial set of resource-level attributes the working group will define, along with their expected types, example values, and rationale. Where applicable, we build on existing OTel attributes (e.g., deployment.environment); in other cases, we propose new attributes or namespaces to fill key gaps in representing organizational and data context.
 
 ## Initial Attribute Scope
-
-| Attribute              | Allowed Values                                                               |
-|------------------------|---------------------------------------------------------------|
-| `deployment.environment` | `"production"`, `"staging"`, `"development"`, `"testing"`                |
-| `application`           | Dynamic values (e.g., `"my-application"`)                                   |
-| `owner`                | Dynamic values (e.g., `"team@example.com"`, `"team-id"`)                    |
-| `cost_center`          | Dynamic values (e.g., `"cc-1234"`, `"us-west-finance"`)                      |
-| `business_unit`        | Dynamic values (e.g., `"marketing"`, `"sales"`)                              |
-| `data_sensitivity`     | `"high"`, `"medium"`, `"low"`                                                |
-| `criticality`          | `"mission_critical"`, `"high"`, `"medium"`, `"low"`                          
-
+| Attribute              | Allowed Values                                                             |
+|------------------------|----------------------------------------------------------|
+| deployment.environment | "production", "staging", "development", "testing"                         |
+| service.name           | Dynamic values (e.g., "my-application")                                   |
+| owner                  | Dynamic values (e.g., "team@example.com", "team-id")                      |
+| cost_center            | Dynamic values (e.g., "cc-1234", "us-west-finance")                       |
+| business_unit          | Dynamic values (e.g., "marketing", "sales")                               |
+| data_sensitivity       | "high", "medium", "low"                                                   |
+| criticality            | "mission_critical", "high", "medium", "low"                               |
+                   
 ---
-
 
 ## Deliverables
 Initial deliverables will include:
@@ -55,8 +53,6 @@ Initial deliverables will include:
 * Recommended value sets and usage guidance for applicable resource attributes 
 * Alignment with existing OpenTelemetry resource attributes where relevant
 * Documentation and examples for adoption by cloud providers, observability platforms, and security tools
-
-As adoption grows, we expect to expand this set iteratively based on feedback from users and collaborators across the ecosystem.
 
 ---
 ## Staffing / Help Wanted
