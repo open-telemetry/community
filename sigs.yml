@@ -339,8 +339,8 @@
       value: 1G3yBAV5SzWBO3mmsBUos5bsn4yxsqkS1MLWl1urVojQ
     chat:
       - type: slack
-        name: '#otel-client-side-telemetry' # Temporary until migration off Slack
-        id: C0239SYARD2
+        name: '#otel-browser'
+        id: C093P0AMP0T
     invites: calendar-browser
     sponsors:
       - name: 'Carlos Alberto'
