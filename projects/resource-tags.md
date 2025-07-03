@@ -52,6 +52,7 @@ Initial deliverables will include:
 * A specification defining semantic conventions for the scoped set of resource attributes: environment, application, owner, cost_center, business_unit, criticality and data_sensitivity
 * Recommended value sets and usage guidance for applicable resource attributes 
 * Alignment with existing OpenTelemetry resource attributes where relevant
+* Build prototype ResourceDetectors that retrieve standardized attributes from platform metadata services and surface these attributes as part of OpenTelemetry resource data.
 * Documentation and examples for adoption by cloud providers, observability platforms, and security tools
 
 ---
@@ -68,13 +69,26 @@ The goal is to follow @tedsuo's proposed [Semantic Convention Process](https://d
 ---
 ### Required staffing
 
-- @trask (Microsoft) 
-- @reyang (Microsoft) 
-- @ymotongpoo (Amazon)
-- @horovits (Amazon)
-- @ralf0131 (Alibaba)
-- @janhvi31 (Google) 
-- @jsuereth (Google) 
+**Project Leads:**
+
+- @janhvi31 (Google)
+
+**Domain Experts:**
+
+- @ralf0131 (Alibaba)  
+- @horovits (Amazon)  
+- @ymotongpoo (Amazon)  
+- @reyang (Microsoft)
+
+**Sponsors:**
+
+- @trask (Microsoft) — GC Sponsor  
+- @jsuereth (Google) — TC Sponsor (escalating sponsorship level, pending confirmation)
+
+**Semantic Convention Maintainers:**
+
+- @trask (Microsoft)  
+- @jsuereth (Google)
  
 ---
 
