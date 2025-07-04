@@ -8,8 +8,9 @@ everyone is welcome to contribute to them!
 
 - [Contributor Guide](./contributor/README.md)
   - [Policy on Generative AI Contributions](./contributor/genai.md)
-  - [Donations of pre-existing code](./contributor/donations.md)
-  - [Becoming a member of the OpenTelemetry project](./contributor/membership.md)
+  - [Donations of Pre-Existing Code](./contributor/donations.md)
+  - [Becoming a Member of the OpenTelemetry Project](./contributor/membership.md)
   - [The Contribution Lifecycle](./contributor/processes.md)
 - [Maintainer Guide](./maintainer/README.md)
-  - [Resolving technical conflicts](./maintainer/conflict-resolution.md)
+  - [Resolving Technical Conflicts](./maintainer/conflict-resolution.md)
+  - [Managing Popular GitHub Issues](./maintainer/popular-issues.md)
