@@ -1,4 +1,4 @@
-# Managing Expectations on Popular GitHub Issues
+# Managing Popular GitHub Issues
 
 Within OpenTelemetry, we encourage end-users and community members to leave 👍
 reactions on GitHub issues they'd like to be worked on, as indicated in our
@@ -60,6 +60,10 @@ The most popular issues for a given SIG can be found:
 We recommend using the following footnote on issue templates to ensure users
 have direct access to guidance on how OpenTelemetry uses issue reactions.
 
+### Markdown Templates
+
+Add this to the bottom of the `.md` file. 
+
 ```markdown
 <sub>**Tip**: [React](https://github.blog/news-insights/product-news/add-reactions-to-pull-requests-issues-and-comments/) with 👍 to help prioritize this issue. Please use comments to provide useful context, avoiding `+1` or `me too`, to help us triage it. Learn more [here](https://opentelemetry.io/community/end-user/issue-participation/).</sub>
 ```
@@ -67,3 +71,31 @@ have direct access to guidance on how OpenTelemetry uses issue reactions.
 Which renders as:
 
 <sub>**Tip**: [React](https://github.blog/news-insights/product-news/add-reactions-to-pull-requests-issues-and-comments/) with 👍 to help prioritize this issue. Please use comments to provide useful context, avoiding `+1` or `me too`, to help us triage it. Learn more [here](https://opentelemetry.io/community/end-user/issue-participation/).</sub>
+
+### Issue Forms
+
+As covered in this
+[feedback discussion topic](https://github.com/orgs/community/discussions/63402#discussioncomment-10341167),
+it is not possible to create `markdown` elements that render on the resulting
+issue body. As such, we recommend using a dropdown element with a default
+option.
+
+```yaml
+  - type: dropdown
+    attributes:
+      label: Tip
+      description: This element is static, used to render a helpful sub-heading for end-users and community members to help prioritize issues. Please leave as is.
+      options:
+        - <sub>[React](https://github.blog/news-insights/product-news/add-reactions-to-pull-requests-issues-and-comments/) with 👍 to help prioritize this issue. Please use comments to provide useful context, avoiding `+1` or `me too`, to help us triage it. Learn more [here](https://opentelemetry.io/community/end-user/issue-participation/).</sub>
+      default: 0
+```
+
+In the issue form, this renders as:
+
+![issue-form-tip.png](issue-form-tip.png)
+
+In the resulting issue, this renders as:
+
+### Tip
+
+<sub>[React](https://github.blog/news-insights/product-news/add-reactions-to-pull-requests-issues-and-comments/)with 👍 to help prioritize this issue. Please use comments to provide useful context, avoiding `+1` or `me too`, to help us triage it. Learn more [here](https://opentelemetry.io/community/end-user/issue-participation/).</sub>
