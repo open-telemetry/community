@@ -8,7 +8,7 @@ project.
 
 - [What is a Maintainer?](#what-is-a-maintainer)
 - [Resolving Technical Conflicts](#resolving-technical-conflicts)
-- [Managing Expectations on Popular GitHub Issues](#managing-expectations-on-popular-github-issues)
+- [Managing Popular GitHub Issues](#managing-popular-github-issues)
 
 ## What is a Maintainer?
 
@@ -20,9 +20,9 @@ The [Resolving Technical Conflicts](conflict-resolution.md) guide contains
 advice on handling scenarios where consensus cannot be reached within a SIG,
 and an escalation path may be sought.
 
-## Managing Expectations on Popular GitHub Issues
+## Managing Popular GitHub Issues
 
-The [Managing Expectations on Popular GitHub Issues](popular-issues.md) doc
+The [Managing Popular GitHub Issues](popular-issues.md) doc
 contains guidance for maintainers to encourage user feedback via GitHub
 reactions, and how to balance those with other work to prioritize work for their
 SIG.

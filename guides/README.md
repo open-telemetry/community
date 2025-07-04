@@ -13,4 +13,4 @@ everyone is welcome to contribute to them!
   - [The Contribution Lifecycle](./contributor/processes.md)
 - [Maintainer Guide](./maintainer/README.md)
   - [Resolving Technical Conflicts](./maintainer/conflict-resolution.md)
-  - [Managing Expectations on Popular GitHub Issues](./maintainer/popular-issues.md)
+  - [Managing Popular GitHub Issues](./maintainer/popular-issues.md)
