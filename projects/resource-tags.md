@@ -43,7 +43,7 @@ This section outlines the initial set of resource-level attributes the working g
 | cost_center            | Dynamic values (e.g., "cc-1234", "us-west-finance")                                                                                                                   |
 | business_unit          | Dynamic values (e.g., "marketing", "sales")                                                                                                                           |
 | data_sensitivity       | "high", "medium", "low"                                                                                                                                               |
-| data_category          | "pii", "demographic", "credential", "government_id", "document", "contextual_information", "industry_finance", "industry_health", "industry_telecommunications" |
+| data_category          | "pii", "demographic", "credential", "government_id", "document", "contextual_information", "industry_finance", "industry_health", "industry_telecommunications"       |
 | criticality            | "mission_critical", "high", "medium", "low"                                                                                                                           |
 ---
 
