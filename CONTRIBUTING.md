@@ -14,12 +14,3 @@ To regenerate those tables after updating any `sigs.yml` content, run:
 ```bash
 make table-generation
 ```
-
-## Updating the assets.md page
-
-The [`assets.md`](assets.md) page has an auto-generated table of contents.
-To regenerate the table of contents after updating any headings on that page, run:
-
-```bash
-make markdown-toc
-```

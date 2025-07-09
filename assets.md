@@ -2,58 +2,6 @@
 
 This file is intended to list all the assets controlled by OpenTelemetry.
 
-<!-- Re-generate TOC with `make markdown-toc` -->
-
-<!-- toc -->
-
-- [GitHub organization](#github-organization)
-- [Credential Storage](#credential-storage)
-- [Community Resource Accounts](#community-resource-accounts)
-  * [AWS account](#aws-account)
-  * [FOSSA](#fossa)
-  * [Special GitHub Action runners](#special-github-action-runners)
-    + [Large Linux runners](#large-linux-runners)
-    + [Large Windows runners](#large-windows-runners)
-    + [Bare metal runners](#bare-metal-runners)
-  * [Google Cloud account](#google-cloud-account)
-  * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
-  * [Netlify](#netlify)
-  * [Oracle Cloud account](#oracle-cloud-account)
-- [Artifact repositories](#artifact-repositories)
-  * [NuGet OpenTelemetry organization](#nuget-opentelemetry-organization)
-  * [MyGet OpenTelemetryCNCF account](#myget-opentelemetrycncf-account)
-  * [NPM OpenTelemetry Organization](#npm-opentelemetry-organization)
-  * [Crates](#crates)
-  * [Maven](#maven)
-  * [PyPI](#pypi)
-  * [PHP Extras](#php-extras)
-- [Communication channels](#communication-channels)
-  * [CNCF Community Group](#cncf-community-group)
-  * [opentelemetry-calendar-contributors Google Group](#opentelemetry-calendar-contributors-google-group)
-  * [OpenTelemetry Calendar Invites Google Group](#opentelemetry-calendar-invites-google-group)
-  * [Mailing list cncf-opentelemetry-net-maintainers@lists.cncf.io](#mailing-list-cncf-opentelemetry-net-maintainerslistscncfio)
-  * [Mailing list cncf-opentelemetry-ruby@lists.cncf.io](#mailing-list-cncf-opentelemetry-rubylistscncfio)
-  * [Mailing list cncf-opentelemetry-governance@lists.cncf.io](#mailing-list-cncf-opentelemetry-governancelistscncfio)
-  * [Zoom accounts](#zoom-accounts)
-  * [Zapier account](#zapier-account)
-  * [Google Workspace accounts](#google-workspace-accounts)
-  * [Google account for cncf-opentelemetry-governance@lists.cncf.io](#google-account-for-cncf-opentelemetry-governancelistscncfio)
-- [Social media channels](#social-media-channels)
-  * [BlueSky](#bluesky)
-  * [Buffer](#buffer)
-  * [LinkedIn](#linkedin)
-  * [Mastodon](#mastodon)
-  * [YouTube](#youtube)
-- [Bot accounts](#bot-accounts)
-  * [Easy CLA](#easy-cla)
-  * [Docker Hub](#docker-hub)
-  * [`otelbot`](#otelbot)
-  * [OpenTelemetry Bot](#opentelemetry-bot)
-  * [Slack](#slack)
-- [Security](#security)
-
-<!-- tocstop -->
-
 ## GitHub organization
 
 Link: https://github.com/open-telemetry
@@ -128,8 +76,7 @@ Equinix management console:
 - Admins: Juraci Paixão Kröhling @jpkrohling and OTel TC via the mailing list address
 
 GitHub self-hosted runners:
-- `github-benchmark-runner` (16-core)
-- `self-hosted` (alias that repos are currently using for `github-benchmark-runner`)
+- `equinix-bare-metal` (16-core)
 - Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
 ### Google Cloud account
