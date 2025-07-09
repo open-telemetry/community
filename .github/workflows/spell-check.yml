@@ -12,6 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - uses: streetsidesoftware/cspell-action@ad35d5e5f85f4690dadb33f568e4b963d6a358f0 # v7.1.0
+      - uses: streetsidesoftware/cspell-action@157048954070986ce4315d0813573a2d8faee361 # v7.1.1
         with:
           config: .cspell.yaml
