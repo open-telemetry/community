@@ -24,11 +24,13 @@ At minimum, projects require the following resources to be successful:
   These two sponsors should be from different companies.
 * A group of designers and subject matter experts, dedicating a significant amount of their work time to the project. These participants are needed to design the spec, write a set of OTEPs, and create multiple prototypes. This group needs to meet with each other (and with their sponsors) on a regular basis to develop a successful set of proposals.
 
-To propose a project, a**project document** must be created using the [project proposal template](project-template.md) as a guide. This document will be used as the initial proposal for the project.
+To propose a project, a **project document** must be created using the [project proposal template](project-template.md) as a guide. This document will be used as the initial proposal for the project. With the exception of sections labeled as "Optional" or "Post-Approval", all sections of the template must be filled out.
 
 A project proposal can then be submitted by placing the project document in the [projects](projects/) folder and making a pull request against the community repo.
 
 As the project progresses, the project document should be kept up to date, and the community [README](README.md) should be updated to include any new project meeting information (see [contributing guide](https://github.com/open-telemetry/community/blob/main/CONTRIBUTING.md#updating-sig-information-on-the-readmemd)).
+
+The project template may be updated and new or existing sections may become required for new projects. Existing projects are not required to update their project documents to the latest template.
 
 Project leads are encouraged to define timelines for any work which will require public review, and to provide updates to the community in the form of [GitHub Project updates](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/sharing-project-updates). We have found that having scoped deliverables leads to an increased cadence in project work, and helps resolve debate. Timelines also help with getting a more coherent public review, as they allow the review community to plan on making themselves available. If timelines prove to be unrealistic, they can be always be updated.
 
