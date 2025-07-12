@@ -168,6 +168,8 @@ repositories that are using merge queues.
 * Fork pull request workflows from outside collaborators
   * `Require approval for first-time contributors who are new to GitHub`
     * (this can also be `Require approval for first-time contributors`)
+* Workflow permissions
+  * Read repository contents and packages permissions: :heavy_check_mark:
 
 ### Advanced Security
 
