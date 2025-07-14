@@ -9,6 +9,8 @@ exclude = [
     "^https://github.com/[^/]+$",
     # this 404s when not hit from a browser
     "^https://www.linuxfoundation.org/legal/generative-ai$",
+    # this is a private repo
+    "https://github.com/open-telemetry/admin",
 ]
 
 exclude_path = [
