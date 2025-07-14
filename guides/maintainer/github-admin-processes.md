@@ -1,12 +1,12 @@
-# GitHub Administration Process
+# GitHub Administration Processes
 
-This document outlines how the GitHub administration process is handled within the OpenTelemetry organization.
+This document outlines how GitHub administration processes are handled within the OpenTelemetry organization.
 
 ## Principles
 
 1. **Transparency**: Document and communicate all changes
 2. **Collaboration**: Involve affected SIGs in decision-making processes
-3. **Responsiveness**: Move quickly on maintainer requests
+3. **Responsiveness**: Respond quickly to maintainer requests
 
 ## Guidelines
 
