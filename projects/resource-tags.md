@@ -1,4 +1,4 @@
-# Resource Tags Working Group
+# Resource Metadata Standardization SIG
 
 ## Background and Description
 
