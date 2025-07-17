@@ -22,7 +22,7 @@ In general, OTEPs are not accepted unless they come with working prototypes avai
 
 Who is currently planning to work on the project? If a project requires specialized domain expertise, please list it here. If a project is missing a critical mass of people in order to begin work, please clarify.
 
-### Industry outreach
+### Industry outreach (Optional)
 
 Who (people, companies) in the industry should be aware of this effort? Was there an attempt to get them onboard? What did they say?
 
@@ -39,11 +39,11 @@ Projects cannot be started until the following participants have been identified
 
 What is the expected timeline the project will aim to adhere to, and what resources and deliverables will be needed for each portion of the timeline? If the project has not been started, please describe this timeline in relative terms (one month in, two weeks later, etc). If a project has started, please include actual dates.
 
-## Labels
+## Labels (Optional)
 
 Issues should be properly labeled to indicate what parts of the specification it is focused on. List here the labels applicable to this project, and consider adding them to corresponding GitHub Project automation to include them automatically into the project backlog.
 
-## GitHub Project
+## GitHub Project (Post-Approval)
 
 Once approved, a project should be managed using a GitHub project board (see [open projects](https://github.com/open-telemetry/community/projects?query=is%3Aopen)). This project board should be pre-populated with issues that cover all known deliverables, organized by timeline milestones.
 
@@ -59,7 +59,7 @@ See [project management](project-management.md#project-lifecycle) for more infor
 
 Once created, please add a link to the project board here.
 
-## SIG Meetings and Other Info
+## SIG Meetings and Other Info (Post-Approval)
 
 Once a project is started, its corresponding SIG should meet regularly for discussion. These meeting times should be posted on the [OpenTelemetry public calendar](https://github.com/open-telemetry/community#calendar) and automatically recorded.
 
