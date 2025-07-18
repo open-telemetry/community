@@ -10,7 +10,7 @@ body:
       value: |
         Thank you for submitting content for OpenTelemetry's social media channels!
         
-        Please ensure your content follows our [Social Media Guide](../social-media-guide.md) and [Marketing Guidelines](../marketing-guidelines.md).
+        Please ensure your content follows our [Social Media Guide](https://github.com/open-telemetry/community/blob/main/social-media-guide.md) and [Marketing Guidelines](https://opentelemetry.io/community/marketing-guidelines/).
         
         **Important**: Content should not be commercial in nature and should consist of original content that applies broadly to the OpenTelemetry community.
 
@@ -20,9 +20,9 @@ body:
       label: Guidelines Acknowledgment
       description: Please confirm you have reviewed the required guidelines
       options:
-        - label: I have read and understand the [Social Media Guide](../social-media-guide.md)
+        - label: I have read and understand the [Social Media Guide](https://github.com/open-telemetry/community/blob/main/social-media-guide.md)
           required: true
-        - label: I have read and understand the [Marketing Guidelines](../marketing-guidelines.md)
+        - label: I have read and understand the [Marketing Guidelines](https://opentelemetry.io/community/marketing-guidelines/)
           required: true
         - label: This content is not commercial in nature and applies broadly to the OpenTelemetry community
           required: true
