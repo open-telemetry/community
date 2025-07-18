@@ -105,7 +105,7 @@ Please open a community issue to request the creation of a `calendar-...@opentel
 
 All recurring meetings are listed in the [Community repo's README](../README.md#special-interest-groups), make sure to add/update the respective entry there.
 
-## Zoom bombing prevention
+## Zoom abuse prevention
 
 All meetings are created by Zoom with randomized passcodes, which are embedded into the shared calendar links.
 All members of [calendar-edit-permission@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-edit-permission)
