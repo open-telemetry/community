@@ -464,6 +464,20 @@
     gcLiaison:
     - name: 'Juraci Paixão Kröhling'
       github: jpkrohling
+  - name: 'Injector'
+    meeting: Monday at 09:30 PT
+    notes:
+      type: gDoc
+      value: TODO
+    chat:
+      - type: slack
+        name: '#otel-injector'
+        id: C09025GKPAL
+    invites: calendar-injector
+    sponsors: []
+    gcLiaison:
+      - name: TODO
+        github: TODO
   - name: 'Java: SDK + Instrumentation'
     meeting: Thursday at 09:00 PT, and every other Thursday at 09:00 UTC+8
     notes:
