@@ -170,24 +170,6 @@
     gcLiaison:
       - name: Trask Stalnaker
         github: trask
-  - name: 'Semantic Conventions: Feature Flags'
-    meeting: Every other Monday at 07:30 PT
-    notes:
-      type: gDoc
-      value: 1x9hprUaUNlVCZMtFAqBcj6h50ukpT0hCAli7BzgWsTQ
-    chat:
-      - type: slack
-        name: '#otel-ff-semconv'
-        id: C07AES1JN56
-    invites: calendar-semconv
-    sponsors:
-      - name: Daniel Dyla
-        github: dyladan
-      - name: Alexander Wert
-        github: AlexanderWert
-    gcLiaison:
-      - name: 'Pablo Baeyens'
-        github: mx-psi
   - name: 'Specification: Entities'
     meeting: Every other Thursday at 08:00 PT
     notes:
