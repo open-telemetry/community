@@ -476,8 +476,8 @@
     invites: calendar-injector
     sponsors: []
     gcLiaison:
-      - name: TODO
-        github: TODO
+      - name: Morgan McLean
+        github: mtwo
   - name: 'Java: SDK + Instrumentation'
     meeting: Thursday at 09:00 PT, and every other Thursday at 09:00 UTC+8
     notes:
