@@ -468,7 +468,7 @@
     meeting: Monday at 09:30 PT
     notes:
       type: gDoc
-      value: TODO
+      value: 10bZsPhjbJHt-vamRg5kqHQf4ZANUiLOJxP9HYCONe94
     chat:
       - type: slack
         name: '#otel-injector'
