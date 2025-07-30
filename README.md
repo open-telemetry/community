@@ -199,6 +199,7 @@ SIG-specific GitHub discussions.
 | <a id="sig-localization-ja"></a>Japanese (ja-JA) | Every third Wednesday at 01:00pm JST | [Google Doc](https://docs.google.com/document/d/1venl18Obvp3vD-lR_9Hj9k826s_weF0vzWe-TdaDkuY) | [#otel-localization-ja](https://cloud-native.slack.com/archives/C08SGPBN44E) | [calendar-localization-ja](https://groups.google.com/a/opentelemetry.io/g/calendar-localization-ja) | [Severin Neumann](https://github.com/svrnm) |
 | <a id="sig-localization-ptbr"></a>Portuguese (pt-BR) | Every second Wednesday at 7:15pm BST | [Google Doc](https://docs.google.com/document/d/1W1jJ4OTm53sbOp7CrbNBMvR_2Z8TQRCkwejqD4f21SE) | [#otel-localization-ptbr](https://cloud-native.slack.com/archives/C076LET8YSK) | [calendar-localization-ptbr](https://groups.google.com/a/opentelemetry.io/g/calendar-localization-ptbr) | [Severin Neumann](https://github.com/svrnm) |
 | <a id="sig-localization-es"></a>Spanish (es-ES) | Every second Tuesday at 12:45pm UTC-3, 10:45am UTC-5 | [Google Doc](https://docs.google.com/document/d/1LAhaPQfZ9IBjXZ1Y3misVV0Gp8Y8CVvoOVChV89Q0s0) | [#otel-localization-es](https://cloud-native.slack.com/archives/C07PVQVCHA6) | [calendar-localization-es](https://groups.google.com/a/opentelemetry.io/g/calendar-localization-es) | [Severin Neumann](https://github.com/svrnm) |
+| <a id="sig-localization-uk"></a>Ukrainian (uk-UA) |  |  | [#otel-localization-uk](https://cloud-native.slack.com/archives/C097ZNPM3LK) |  | [Severin Neumann](https://github.com/svrnm) |
 
 <!-- endsigs -->
 ## Related groups
