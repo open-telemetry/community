@@ -821,3 +821,20 @@
     gcLiaison:
       - name: 'Severin Neumann'
         github: svrnm
+    sponsors:
+      - name: 'Severin Neumann'
+        github: svrnm
+  - name: Ukrainian (uk-UA)
+    meeting: ''
+    notes:
+      type: none
+    chat:
+      - type: slack
+        name: "#otel-localization-uk"
+        id: C097ZNPM3LK
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+    sponsors:
+      - name: 'Severin Neumann'
+        github: svrnm
