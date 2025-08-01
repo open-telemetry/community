@@ -595,6 +595,16 @@
     gcLiaison:
     - name: 'Juraci Paixão Kröhling'
       github: jpkrohling
+  - name: Kubernetes Helm Charts
+    meeting: ''
+    notes:
+      type: none
+    chat:
+      - type: slack
+        name: '#otel-helm'
+        id: C03HVLM8LAH
+    sponsors: []
+    gcLiaison: []
   - name: Community Demo Application
     meeting: Wednesday at 08:00 PT
     notes:
