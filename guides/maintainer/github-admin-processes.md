@@ -43,7 +43,7 @@ community issue or admin PR is opened.
 
 ### Single Repository Changes
 
-For changes affecting a single repository:
+For changes affecting a single repository owned by a single SIG:
 - **If a repository maintainer** opens the admin PR or community issue, the change will be
   implemented as soon as possible
 - **If a GitHub admin** opens the admin PR or community issue and a repository maintainer
@@ -59,3 +59,7 @@ For changes affecting a single repository:
   maintainers are encouraged to commit to a specific timeline for resolving the underlying issue
   (e.g., "we would like to revert this change; we will work on fixing this problem within the
   next two weeks").
+
+  Changes that affect a single repository owned by multiple SIGs should follow the same
+  process, but the change should have the approval of at least one maintainer from each
+  affected SIG.
