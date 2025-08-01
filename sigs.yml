@@ -371,6 +371,9 @@
       - https://github.com/open-telemetry/opentelemetry-collector
       - https://github.com/open-telemetry/opentelemetry-collector-contrib
       - https://github.com/open-telemetry/opentelemetry-collector-releases
+      - https://github.com/open-telemetry/opentelemetry-go-build-tools
+      - https://github.com/open-telemetry/opentelemetry-go-vanityurls
+      - https://github.com/open-telemetry/govanityurls
   - name: 'C++: SDK'
     meeting: Alternating between Monday at 13:00 PT and Wednesday at 09:00 PT
     notes:
