@@ -596,13 +596,15 @@
     - name: 'Juraci Paixão Kröhling'
       github: jpkrohling
   - name: Kubernetes Helm Charts
-    meeting: ''
+    meeting: "Meets during OpenTelemetry Operator"
     notes:
-      type: none
+      type: gDoc
+      value: 1Unbs2qp_j5kp8FfL_lRH-ld7i5EOQpsq0I4djkOOSL4
     chat:
       - type: slack
         name: '#otel-helm'
         id: C03HVLM8LAH
+    invites: calendar-k8s-operator
     sponsors: []
     gcLiaison:
     - name: Daniel Gomez Blanco
