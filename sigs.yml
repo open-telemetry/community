@@ -640,7 +640,6 @@
       github: tedsuo
     repositories:
       - https://github.com/open-telemetry/opentelemetry-network
-      - https://github.com/open-telemetry/opentelemetry-network-build-tools
   - name: eBPF Instrumentation
     meeting: Wednesday at 08:00 PT
     notes:
