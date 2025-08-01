@@ -604,7 +604,9 @@
         name: '#otel-helm'
         id: C03HVLM8LAH
     sponsors: []
-    gcLiaison: []
+    gcLiaison:
+    - name: Daniel Gomez Blanco
+      github: danielgblanco
   - name: Community Demo Application
     meeting: Wednesday at 08:00 PT
     notes:
