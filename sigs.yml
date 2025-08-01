@@ -12,6 +12,10 @@
     invites: calendar-spec-general
     sponsors: []
     gcLiaison: []
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-specification
+      - https://github.com/open-telemetry/opentelemetry-proto
+      - https://github.com/open-telemetry/build-tools
   - name: 'Specification: Sampling'
     meeting: Thursday at 08:00 PT
     notes:
@@ -46,6 +50,8 @@
     gcLiaison:
     - name: Daniel Gomez Blanco
       github: danielgblanco
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-configuration
   - name: 'Specification: Logs'
     meeting: Tuesday at 10:00 PT
     notes:
@@ -84,6 +90,8 @@
     gcLiaison:
     - name: Trask Stalnaker
       github: trask
+    repositories:
+      - https://github.com/open-telemetry/semantic-conventions
   - name: 'Semantic Conventions: System Metrics'
     meeting: Thursday at 07:30 PT
     notes:
@@ -204,6 +212,9 @@
     gcLiaison:
       - name: Ted Young
         github: tedsuo
+    repositories:
+      - https://github.com/open-telemetry/opamp-go
+      - https://github.com/open-telemetry/opamp-spec
   - name: Prometheus Interoperability
     meeting: Every other Wednesday at 08:00 PT
     notes:
@@ -232,6 +243,8 @@
     gcLiaison:
       - name: 'Austin Parker'
         github: austinlparker
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-lambda
   - name: Profiling
     meeting: Every other Thursday at 08:00 PT
     notes:
@@ -250,6 +263,8 @@
     gcLiaison:
       - name: Morgan McLean
         github: mtwo
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-ebpf-profiler
   - name: OpenTelemetry on Mainframes
     meeting: Wednesday at 10:00 PT
     notes:
@@ -300,6 +315,8 @@
     gcLiaison:
     - name: Ted Young
       github: tedsuo
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-android
   - name: Arrow
     meeting: Alternating between Tuesday at 16:00 PT and Thursday at 8:00 PT
     notes:
@@ -314,6 +331,8 @@
     gcLiaison:
       - name: 'Trask Stalnaker'
         github: trask
+    repositories:
+      - https://github.com/open-telemetry/otel-arrow
   - name: Browser
     meeting: Thursday at 8:30 PT
     notes:
@@ -348,6 +367,13 @@
     gcLiaison:
     - name: 'Pablo Baeyens'
       github: mx-psi
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-collector
+      - https://github.com/open-telemetry/opentelemetry-collector-contrib
+      - https://github.com/open-telemetry/opentelemetry-collector-releases
+      - https://github.com/open-telemetry/opentelemetry-go-build-tools
+      - https://github.com/open-telemetry/opentelemetry-go-vanityurls
+      - https://github.com/open-telemetry/govanityurls
   - name: 'C++: SDK'
     meeting: Alternating between Monday at 13:00 PT and Wednesday at 09:00 PT
     notes:
@@ -362,6 +388,10 @@
     gcLiaison:
     - name: 'Severin Neumann'
       github: svrnm
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-cpp
+      - https://github.com/open-telemetry/opentelemetry-cpp-contrib
+      - https://github.com/open-telemetry/cpp-build-tools
   - name: '.NET: Automatic Instrumentation'
     meeting: Wednesday at 09:00 PT
     notes:
@@ -376,6 +406,8 @@
     gcLiaison:
        - name: Morgan McLean
          github: mtwo
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation
   - name: '.NET: SDK'
     meeting: Tuesday at 11:00 PT
     notes:
@@ -390,6 +422,9 @@
     gcLiaison:
        - name: Morgan McLean
          github: mtwo
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-dotnet
+      - https://github.com/open-telemetry/opentelemetry-dotnet-contrib
   - name: 'Erlang/Elixir: SDK'
     meeting: Every other Thursday at 09:00 PT
     notes:
@@ -404,6 +439,9 @@
     gcLiaison:
     - name: 'Austin Parker'
       github: austinlparker
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-erlang
+      - https://github.com/open-telemetry/opentelemetry-erlang-contrib
   - name: 'GoLang: SDK'
     meeting: Thursday alternating between 09:00 PT and 10:00 PT
     notes:
@@ -418,6 +456,13 @@
     gcLiaison:
     - name: Ted Young
       github: tedsuo
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-go
+      - https://github.com/open-telemetry/opentelemetry-go-contrib
+      - https://github.com/open-telemetry/opentelemetry-go-build-tools
+      - https://github.com/open-telemetry/opentelemetry-go-vanityurls
+      - https://github.com/open-telemetry/opentelemetry-proto-go
+      - https://github.com/open-telemetry/govanityurls
   - name: 'GoLang: Automatic Instrumentation'
     meeting: Every other Tuesday at 09:30 PT
     notes:
@@ -432,6 +477,8 @@
     gcLiaison:
     - name: 'Juraci Paixão Kröhling'
       github: jpkrohling
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-go-instrumentation
   - name: 'GoLang: Compile-Time Instrumentation'
     meeting: Every Thursday at 08:00 UTC
     notes:
@@ -446,6 +493,8 @@
     gcLiaison:
     - name: 'Juraci Paixão Kröhling'
       github: jpkrohling
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation
   - name: 'Java: SDK + Instrumentation'
     meeting: Thursday at 09:00 PT, and every other Thursday at 09:00 UTC+8
     notes:
@@ -460,6 +509,13 @@
     gcLiaison:
     - name: Trask Stalnaker
       github: trask
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-java
+      - https://github.com/open-telemetry/opentelemetry-java-instrumentation
+      - https://github.com/open-telemetry/opentelemetry-java-contrib
+      - https://github.com/open-telemetry/opentelemetry-java-examples
+      - https://github.com/open-telemetry/opentelemetry-proto-java
+      - https://github.com/open-telemetry/semantic-conventions-java
   - name: 'JavaScript: SDK'
     meeting: Wednesday at 09:00 PT
     notes:
@@ -477,6 +533,9 @@
     gcLiaison:
     - name: 'Pablo Baeyens'
       github: mx-psi
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-js
+      - https://github.com/open-telemetry/opentelemetry-js-contrib
   - name: 'PHP: SDK'
     meeting: Wednesday at 10:30 PT
     notes:
@@ -491,6 +550,10 @@
     gcLiaison:
     - name: 'Severin Neumann'
       github: svrnm
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-php
+      - https://github.com/open-telemetry/opentelemetry-php-contrib
+      - https://github.com/open-telemetry/opentelemetry-php-instrumentation
   - name: 'Python: SDK'
     meeting: Thursday at 09:00 PT
     notes:
@@ -505,6 +568,9 @@
     gcLiaison:
     - name: Daniel Gomez Blanco
       github: danielgblanco
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-python
+      - https://github.com/open-telemetry/opentelemetry-python-contrib
   - name: 'Ruby: SDK'
     meeting: Tuesday at 10:00 PT
     notes:
@@ -522,6 +588,9 @@
     gcLiaison:
     - name: Ted Young
       github: tedsuo
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-ruby
+      - https://github.com/open-telemetry/opentelemetry-ruby-contrib
   - name: 'Rust: SDK'
     meeting: Tuesday at 09:00 PT
     notes:
@@ -539,6 +608,9 @@
     gcLiaison:
     - name: Ted Young
       github: tedsuo
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-rust
+      - https://github.com/open-telemetry/opentelemetry-rust-contrib
   - name: 'Swift: SDK'
     meeting: Thursday at 09:00 PT
     notes:
@@ -553,6 +625,8 @@
     gcLiaison:
     - name: Alolita Sharma
       github: alolita
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-swift
   - name: Network
     meeting: Tuesday at 09:00 PT
     notes:
@@ -567,6 +641,8 @@
     gcLiaison:
     - name: Ted Young
       github: tedsuo
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-network
   - name: eBPF Instrumentation
     meeting: Wednesday at 08:00 PT
     notes:
@@ -581,6 +657,8 @@
     gcLiaison:
       - name: Severin Neumann
         github: svrnm
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation
   - name: Kubernetes Operator
     meeting: Thursday at 09:00 PT
     notes:
@@ -595,6 +673,8 @@
     gcLiaison:
     - name: 'Juraci Paixão Kröhling'
       github: jpkrohling
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-operator
   - name: Community Demo Application
     meeting: Wednesday at 08:00 PT
     notes:
@@ -609,6 +689,8 @@
     gcLiaison:
     - name: 'Austin Parker'
       github: austinlparker
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-demo
   - name: 'Semantic Conventions: Tooling'
     meeting: Wednesday at 07:00 PT
     notes:
@@ -625,6 +707,8 @@
     gcLiaison:
     - name: Trask Stalnaker
       github: trask
+    repositories:
+      - https://github.com/open-telemetry/weaver
 - name: Cross-Cutting SIGs
   sigs:
   - name: Communications (Website, [Documentation](https://opentelemetry.io/docs/),
@@ -642,6 +726,8 @@
     gcLiaison:
     - name: 'Severin Neumann'
       github: svrnm
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry.io
   - name: End-User SIG
     meeting: Every other Thursday at 10:00 PT
     notes:
@@ -656,6 +742,8 @@
     gcLiaison:
     - name: Daniel Gomez Blanco
       github: danielgblanco
+    repositories:
+      - https://github.com/open-telemetry/sig-end-user
   - name: Security
     meeting: Every other Monday at 09:00 PT
     notes:
@@ -674,6 +762,8 @@
     gcLiaison:
       - name: Trask Stalnaker
         github: trask
+    repositories:
+      - https://github.com/open-telemetry/sig-security
   - name: Project Infrastructure
     meeting: Thursday at 11:00 PT
     notes:
@@ -692,6 +782,10 @@
     gcLiaison:
       - name: 'Austin Parker'
         github: austinlparker
+    repositories:
+      - https://github.com/open-telemetry/sig-project-infra
+      - https://github.com/open-telemetry/changelog.opentelemetry.io
+      - https://github.com/open-telemetry/assign-reviewers-action
   - name: Contributor Experience
     meeting: Monday alternating between 10:00 PT and 17:00 UTC+8
     notes:
@@ -710,6 +804,8 @@
     gcLiaison:
       - name: 'Juraci Paixão Kröhling'
         github: jpkrohling
+    repositories:
+      - https://github.com/open-telemetry/sig-contributor-experience
   - name: Developer Experience
     meeting: Wednesday 11:00 PT and 17:00 UTC+8
     notes:
@@ -730,6 +826,8 @@
     gcLiaison:
       - name: 'Austin Parker'
         github: austinlparker
+    repositories:
+      - https://github.com/open-telemetry/sig-developer-experience
 - name: Localization Teams (part of SIG Communications)
   sigs:
   - name: Bengali (bn)
