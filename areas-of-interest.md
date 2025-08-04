@@ -49,9 +49,10 @@ concerns.
 - Protocol compatibility (OpenCensus, Prometheus, Statsd, etc.)
 - Semantic conventions
 
-### [Liudmila Molkova](https://github.com/lmolkova), Microsoft
+### [Liudmila Molkova](https://github.com/lmolkova), Grafana Labs
 
 - Trace API and SDK
+- Logging API and SDK
 - Semantic conventions
 - Instrumentation
 
