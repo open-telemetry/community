@@ -35,17 +35,23 @@ This section outlines the initial set of resource-level attributes the working g
 
 ## Initial Attribute Scope
 
-| Attribute              | Allowed Values                                                                                                                                                       |
-|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| deployment.environment | "production", "staging", "development", "testing"                                                                                                                     |
-| service.name           | Dynamic values (e.g., "my-application")                                                                                                                               |
-| owner                  | Dynamic values (e.g., "team@example.com", "team-id")                                                                                                                  |
-| cost_center            | Dynamic values (e.g., "cc-1234", "us-west-finance")                                                                                                                   |
-| business_unit          | Dynamic values (e.g., "marketing", "sales")                                                                                                                           |
-| data_sensitivity       | "high", "medium", "low"                                                                                                                                               |
-| data_category          | "pii", "demographic", "credential", "government_id", "document", "contextual_information", "industry_finance", "industry_health", "industry_telecommunications"       |
-| criticality            | "mission_critical", "high", "medium", "low"                                                                                                                           |
----
+
+| Attribute              | Allowed Values                                                       | Proposed OpenTelemetry Attribute        |
+|------------------------|----------------------------------------------------------------------|---------------------------------------  |
+| deployment.environment | "production", "staging", "development", "testing"                    | `deployment.environment` 
+                                                                                                           *(existing, as part of this proposal we'll stabilize it)* 
+| service.name           | Dynamic values (e.g., "my-application")                              | `service.name`  *(existing)*            |
+| owner                  | Dynamic values (e.g., "team@example.com", "team-id")                 | `service.owner` *(proposed)*            |
+| cost_center            | Dynamic values (e.g., "cc-1234", "us-west-finance")                  | `service.cost_center`   *(proposed)*    |
+| business_unit          | Dynamic values (e.g., "marketing", "sales")                          | `service.business_unit` *(proposed)*    |
+| data_sensitivity       | "high", "medium", "low"                                              | `data.sensitivity` *(proposed)*         |
+| criticality            | "mission_critical", "high", "medium", "low"                          | `data.criticality` *(proposed)*         |
+| data_category          | "pii", "demographic", "credential", "government_id", "document       | `data.category`    *(proposed)*         |
+                               "contextual_information", "industry_finance", "industry_health",
+                               "industry_telecommunications" 
+
+
+---  
 
 ## Deliverables
 Initial deliverables will include:
