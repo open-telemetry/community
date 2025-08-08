@@ -244,9 +244,17 @@ The following apply to the subproject for which one would be a maintainer.
 - Define milestones and releases.
   - Decides on when PRs are merged to control the release scope.
 - Mentor and guide approvers, reviewers, and contributors to the subproject.
-- Escalate *reviewer*, *approver*, *maintainer* and other workflow concerns
-  (i.e. responsiveness, availability, and general contributor community health)
-  to the TC.
+- Escalate *reviewer*, *approver*, *maintainer* and other concerns to leadership
+  via appropriate channels:
+  - Workflow concerns (i.e. responsiveness, availability, and general
+    contributor community health) should be escalated to the corresponding GC
+    liaison for the subproject, either as part of regular
+    [GC check-ins](../../gc-check-ins.md) or ad-hoc.
+  - [Code of Conduct](../../code-of-conduct.md) violations, following documented
+    process, should be reported to the GC.
+  - Technical conflicts, after other internal approaches have been exhausted,
+    should be escalated to the TC (see relevant
+    [guidance](../maintainer/conflict-resolution.md)).
 - Ensure continued health of subproject:
   - Adequate test coverage to confidently release
   - Tests are passing reliably (i.e. not flaky) and are fixed when they fail
