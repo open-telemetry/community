@@ -34,8 +34,7 @@ In this case, projects help coordinate resources across SIGs, e.g. reviewing pro
 As documented under [Project Lifecycle](#project-lifecycle), all projects require a [GitHub project](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) (i.e. a board), and for this to be kept up to date to communicate the status towards milestones and deliverables.
 
 Existing SIGs may also to use GitHub projects freely and independently, to track their ongoing work or communicate status of individual milestones.
-This is considered a good practice to provide a clear view of work in progress to the community
-However, it is not a requirement.
+This is considered a good practice to provide a clear view of work in progress to the community.
 
 The use of GitHub projects for this purpose does not require the creation of project proposals or approval from GC or TC.
 
