@@ -56,7 +56,8 @@ Projects require the following resources to be successful:
 * Project leads and contributors willing to work on the project, see [Project Staffing](#project-staffing).
 * Sponsorship from OpenTelemetry leadership, see [Project Sponsorship](#project-sponsorship).
 
-To propose a project, a **project document** must be created using the [project proposal template](project-template.md) as a guide. This document will be used as the initial proposal for the project. . With the exception of sections labeled as "Optional" or "Post-Approval", all sections of the template must be filled out.
+To propose a project, a **project document** must be created using the [project proposal template](project-template.md) as a guide. This document will be used as the initial proposal for the project.
+With the exception of sections labeled as "Optional" or "Post-Approval", all sections of the template must be filled out.
 
 A project proposal can then be submitted by placing the project document in the [projects](projects/) folder and making a pull request against the `community` repo.
 
