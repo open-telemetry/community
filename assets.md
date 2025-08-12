@@ -63,21 +63,20 @@ Note: these runners are pay-as-you-go.
 CNCF and GitHub expect fair use of these provided resources.
 Please ensure your workloads are optimized to avoid unnecessary usage.
 
-Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
+Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
 #### Bare metal runners
 
-Reserved bare metal machines set up as
-[self-hosted runners](https://docs.github.com/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners)
-for the community to run performance tests.
+Access to bare metal runners for benchmarking is available to repositories on request
+(open a community issue),
+which will give access to the following GitHub-hosted runner:
 
-Equinix management console:
-- Link: https://console.equinix.com/projects/6f1c9af6-0470-42da-8f22-59d0df245f6b
-- Admins: Juraci Paixão Kröhling @jpkrohling and OTel TC via the mailing list address
+- `oracle-bare-metal-64cpu-512gb-x86-64`
 
-GitHub self-hosted runners:
-- `equinix-bare-metal` (16-core)
-- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+Note: there is only one bare metal runner at this time, so
+please ensure your workloads are optimized to avoid unnecessary usage.
+
+Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
 ### Google Cloud account
 
