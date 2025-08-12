@@ -675,6 +675,22 @@
       github: jpkrohling
     repositories:
       - https://github.com/open-telemetry/opentelemetry-operator
+  - name: Kubernetes Helm Charts
+    meeting: "Meets during OpenTelemetry Operator and OpenTelemetry Collector"
+    notes:
+      type: gDoc
+      value: 1Unbs2qp_j5kp8FfL_lRH-ld7i5EOQpsq0I4djkOOSL4
+    chat:
+      - type: slack
+        name: '#otel-helm'
+        id: C03HVLM8LAH
+    invites: calendar-k8s-operator
+    sponsors: []
+    gcLiaison:
+    - name: Daniel Gomez Blanco
+      github: danielgblanco
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-helm-charts
   - name: Community Demo Application
     meeting: Wednesday at 08:00 PT
     notes:
