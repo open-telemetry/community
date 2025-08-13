@@ -2,7 +2,8 @@
 
 Within OpenTelemetry, we encourage end-users and community members to leave 👍
 reactions on GitHub issues they'd like to be worked on, as indicated in our
-[website](https://opentelemetry.io/community). This can help maintainers to:
+[website](https://opentelemetry.io/community/end-user/issue-participation/).
+This can help maintainers to:
 
 - Get a high-level signal that measures the interest from the community in
   particular issues, in a way that can be evaluated and compared across one or
