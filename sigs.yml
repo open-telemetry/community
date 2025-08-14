@@ -54,6 +54,8 @@
       github: danielgblanco
     repositories:
       - https://github.com/open-telemetry/opentelemetry-configuration
+    roadmapProjectIDs:
+        - 38
   - name: 'Specification: Logs'
     meeting: Tuesday at 10:00 PT
     notes:
