@@ -37,7 +37,8 @@ See [Project Staffing](/project-management.md#project-staffing)
 Name(s) of project lead(s)
 
 #### Other Staffing
-Names and expected contribution of any other contributors
+Names and expected contribution of any other contributors.
+Please also include maintainers or approvers from other SIGs committed to reviewing prototypes.
 
 ### Sponsorship
 See [Project Sponsorship](/project-management.md#project-sponsorship)
