@@ -94,8 +94,7 @@ Once set up, the SIG-specific OTelBot can be used in GitHub Actions workflows li
     # Your automation commands here
 ```
 
-For git operations that require commits, you should continue to use the regular otelbot
-since that is already on the EasyCLA allowlist:
+Note: you should continue to use the regular otelbot as the commit author since it is already on the EasyCLA allowlist:
 
 ```bash
 git config user.name otelbot
