@@ -1,11 +1,11 @@
 # OpenTelemetry Roadmap Management
 
-The **[OpenTelemetry Roadmap](https://github.com/orgs/open-telemetry/projects/155)** provides a high-level, cross-cutting view of major initiatives, their status, and target completion dates across the entire project.
+The **[OpenTelemetry Roadmap](https://github.com/orgs/open-telemetry/projects/158)** provides a high-level, cross-cutting view of major initiatives, their status, and target completion dates across the entire project.
 This consolidated view, managed by the GC (Governance Committee) and TC (Technical Committee), helps community members and adopters understand the project's direction and when to expect key deliverables.
 
 ## Consolidated Roadmap View
 
-Publicly available at **[OpenTelemetry Roadmap](https://github.com/orgs/open-telemetry/projects/155)**, this view is currently backed by issues in the [open-telemetry/.roadmap](https://github.com/open-telemetry/.roadmap) repository.
+Publicly available at **[OpenTelemetry Roadmap](https://github.com/orgs/open-telemetry/projects/158)**, this view is currently backed by issues in the [open-telemetry/.roadmap](https://github.com/open-telemetry/.roadmap) repository.
 These issues are populated automatically from a selected subset of GitHub [projects](https://github.com/orgs/open-telemetry/projects?query=is%3Aopen) in order to overcome [limitations](https://github.com/orgs/community/discussions/157993) in GitHub's native [project](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) functionality.
 
 Some of these projects correspond to initiatives entirely driven within the scope of specific SIGs (Special Interest Groups), and some correspond to cross-cutting initiatives that require SIGs –existing or needing creation– to follow the [Project Management](./project-management.md) process.

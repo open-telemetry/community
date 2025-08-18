@@ -14,7 +14,7 @@ These are common scenarios which have this kind of impact:
 Any changes which fall into one of the above categories must first create a project proposal and gain approval from the GC (Governance Committee) and TC (Technical Committee) before work begins.
 
 The list of current projects is available in the [projects](./projects) directory.
-Their most recent status, along with other roadmap items is available on the [OpenTelemetry Roadmap](https://github.com/orgs/open-telemetry/projects/155).
+Their most recent status, along with other roadmap items is available on the [OpenTelemetry Roadmap](https://github.com/orgs/open-telemetry/projects/158).
 
 Project proposals currently under review can be tracked via their respective [open pull requests](https://github.com/open-telemetry/community/pulls?q=is%3Aopen+is%3Apr+label%3Aarea%2Fproject-proposal).
 
@@ -40,7 +40,7 @@ The use of GitHub projects for this purpose does not require the creation of pro
 
 ### OpenTelemetry Roadmap
 
-The [OpenTelemetry Roadmap](https://github.com/orgs/open-telemetry/projects/155) contains a high-level view of all major deliverables across the whole project.
+The [OpenTelemetry Roadmap](https://github.com/orgs/open-telemetry/projects/158) contains a high-level view of all major deliverables across the whole project.
 This roadmap view is built from the information and status contained in specific GitHub projects across OpenTelemetry.
 
 All approved proposals under the [projects](./projects) directory are implicitly part of the OpenTelemetry Roadmap, along with other SIG-specific projects explicitly added to said roadmap.
