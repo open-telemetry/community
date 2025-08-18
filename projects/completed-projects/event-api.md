@@ -1,5 +1,9 @@
 ### Description
 
+> [!IMPORTANT]
+> This project has been discontinued after the approach to Logs (and Events) was reconsidered as part of [OTEP 0265](https://github.com/open-telemetry/opentelemetry-specification/blob/main/oteps/0265-event-vision.md).
+> Work has moved to provide a public-facing Logs API that includes the capability to emit OpenTelemetry Events, under the Logs SIG.
+
 The Client / RUM Sig is looking to finalize, complete and resolve the outstanding issues / PR's that exist around the Event API / SDK and the Semantic Conventions that defines what an "event" is.
 
 ### Project Board
