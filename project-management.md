@@ -82,7 +82,9 @@ The following staffing requirements must be met for any project proposal.
 
 All projects require sponsorship, ensuring those leading and working on the project are supported and set up for success.
 
-If a project is led by an existing SIG, TC sponsor and GC liaison for that SIG are assumed to be the sponsor and liaison for the project.
+If a project proposal is led by an existing SIG, TC sponsor and GC liaison for that SIG are assumed to be the sponsor and liaison for the new project.
+However, before approving the project, TC sponsorship level must be reviewed by the current TC sponsor.
+This ensures that the existing SIG is sufficiently supported if its scope is extended.
 
 If a project involves the creation of a new SIG, it cannot be started until the following have been agreed:
 
