@@ -59,7 +59,7 @@ repositories:
 - [Marc Alff](https://github.com/marcalff), Oracle
 - [Robert Pająk](https://github.com/pellared), Splunk
 - [Severin Neumann](https://github.com/svrnm), Independent
-- [Ted Young](https://github.com/tedsuo), Lightstep
+- [Ted Young](https://github.com/tedsuo), Grafana Labs
 - [Tristan Sloughter](https://github.com/tsloughter), MyDecisiveAI
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
@@ -68,7 +68,6 @@ Emeritus sponsors (formerly approvers):
 - [Christian Beedgen](https://github.com/kumoroku)
 - [Daniel Jaglowski](https://github.com/djaglowski)
 - [David Poncelow](https://github.com/zenmoto)
-- [Leighton Chen](https://github.com/lzchen)
 - [Nikita Salnikov-Tarnovski](https://github.com/iNikem)
 
 ## Semantic Conventions
