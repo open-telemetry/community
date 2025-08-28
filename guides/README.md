@@ -16,8 +16,8 @@ everyone is welcome to contribute to them!
 
 ## Policies and Community Standards
 
-In addition to these guides, familiarize yourself with our community policies and standards:
+In addition to these guides, familiarize yourself with our community policies:
 
-- [Code of Conduct](../code-of-conduct.md) - Our community standards and expectations
-- [Generative AI Policy](../policies/genai.md) - Guidelines for using AI tools in contributions
-- [Third-party Meeting Recordings Policy](../policies/third-party-meeting-recordings.md) - Rules for recording and transcribing meetings
+- [Code of Conduct](../code-of-conduct.md)
+- [Generative AI Policy](../policies/genai.md)
+- [Third-party Meeting Recordings Policy](../policies/third-party-meeting-recordings.md)

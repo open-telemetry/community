@@ -51,7 +51,14 @@ Examples of this include:
 
 ### Human Responsibility and Control
 
-The human driving any contribution—whether as an author, reviewer, or maintainer—must remain in control of the process and bear full responsibility for the final output. This means actively reviewing, understanding, and validating any LLM-generated content before submission. You cannot delegate your responsibility to an AI tool, nor can you claim that an AI made an error as a defense for problematic contributions. The human contributor is accountable for ensuring that all content, regardless of its origin, meets project standards, follows established policies, and contributes meaningfully to the OpenTelemetry ecosystem.
+The human driving any contribution—whether as an author, reviewer, or maintainer—must
+remain in control of the process and bear full responsibility for the final output.
+This means actively reviewing, understanding, and validating any LLM-generated content
+before submission. You cannot delegate your responsibility to an AI tool, nor can you
+claim that an AI made an error as a defense for problematic contributions. The human
+contributor is accountable for ensuring that all content, regardless of its origin,
+meets project standards, follows established policies, and contributes meaningfully
+to the OpenTelemetry project.
 
 ## Frequently Asked Questions - Contributors
 
