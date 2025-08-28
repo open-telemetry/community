@@ -8,12 +8,12 @@ Despite their ubiquity, these tags are not standardized across providers and oft
 
 Note: These metadata fields are commonly referred to as tags by cloud providers like AWS, Azure, and GCP. However, to remain consistent with OpenTelemetry conventions, we will refer to them as attributes throughout this proposal.
 
-This Working Group proposes to define semantic conventions for a set of commonly used resource attributes, such as environment, application, owner, data_category and data_sensitivity etc and incorporate them into the OpenTelemetry specification. Standardizing the meaning of these attributes will allow telemetry pipelines to treat them as first-class, interoperable metadata. For example, resource detectors in OpenTelemetry can surface these resource attributes from platform metadata, making them accessible to downstream tools in a consistent format. With shared semantics in place, observability and security platforms can enable features like governance-aware dashboards, suggest default security postures, cross-cloud resource attribution etc without relying on cloud- or vendor-specific integrations.
+This SIG proposes to define semantic conventions for a scoped set of commonly used resource attributes, such as deployment.environment.name, service.owner, service.cost_center, service.business_unit and service.criticality and incorporate them into the OpenTelemetry specification. 'deployment.environment.name' already exists; as part of this proposal, we plan to stabilize them. Standardizing the meaning of these attributes will allow telemetry pipelines to treat them as first-class, interoperable metadata. For example, resource detectors in OpenTelemetry can surface these resource attributes from platform metadata, making them accessible to downstream tools in a consistent format. With shared semantics in place, observability and security platforms can enable features like governance-aware dashboards, suggest default security postures, cross-cloud resource attribution etc without relying on cloud- or vendor-specific integrations.
 ---
 
 ### Current Challenges
 
-- **No shared semantics**: Common resource attributes like `environment`, `owner`, or `cost_center` are widely used but lack standardized meaning, leading to inconsistent usage and interpretation.
+- **No shared semantics**: Common resource attributes like `owner`, or `cost_center` are widely used but lack standardized meaning, leading to inconsistent usage and interpretation.
 
 - **Cross-cloud fragmentation**: Implemented differently across providers, making it hard to reason about resources in a consistent way across clouds and tools.
 
@@ -23,7 +23,7 @@ This Working Group proposes to define semantic conventions for a set of commonly
 
 ### Goals, objectives, and requirements
 
-The goal of this project is to define a shared understanding for a set of commonly used resource attributes, such as `environment`, `owner`, `cost_center` (see Initial Attribute Scope section for the full list). These definitions will make it easier for OpenTelemetry and related tools to interpret and act on tag metadata consistently—supporting better automation, governance, and observability across environments. Initial areas of work include:
+The goal of this project is to define a shared understanding for a set of commonly used resource attributes. Initial areas of work include:
 
 * [Define the scoped set of resource attributes and their recommended values]
 * [Ensure alignment with existing OpenTelemetry resource attributes where applicable]
@@ -31,32 +31,24 @@ The goal of this project is to define a shared understanding for a set of common
 
 ---
 ## Initial Attribute Scope and Proposals
-This section outlines the initial set of resource-level attributes the working group will define, along with their expected types, example values, and rationale. Where applicable, we build on existing OTel attributes (e.g., deployment.environment); in other cases, we propose new attributes or namespaces to fill key gaps in representing organizational and data context.
+This section outlines the initial set of resource-level attributes, their expected types, example values, and rationale. Where applicable, we build on existing OTel attributes; in other cases, we propose new attributes/namespaces.
 
 ## Initial Attribute Scope
 
-
-| Attribute              | Allowed Values                                                       | Proposed OpenTelemetry Attribute        |
-|------------------------|----------------------------------------------------------------------|---------------------------------------  |
-| deployment.environment | "production", "staging", "development", "testing"                    | `deployment.environment` 
-                                                                                                           *(existing, as part of this proposal we'll stabilize it)* 
-| service.name           | Dynamic values (e.g., "my-application")                              | `service.name`  *(existing)*            |
-| owner                  | Dynamic values (e.g., "team@example.com", "team-id")                 | `service.owner` *(proposed)*            |
-| cost_center            | Dynamic values (e.g., "cc-1234", "us-west-finance")                  | `service.cost_center`   *(proposed)*    |
-| business_unit          | Dynamic values (e.g., "marketing", "sales")                          | `service.business_unit` *(proposed)*    |
-| data_sensitivity       | "high", "medium", "low"                                              | `data.sensitivity` *(proposed)*         |
-| criticality            | "mission_critical", "high", "medium", "low"                          | `data.criticality` *(proposed)*         |
-| data_category          | "pii", "demographic", "credential", "government_id", "document       | `data.category`    *(proposed)*         |
-                               "contextual_information", "industry_finance", "industry_health",
-                               "industry_telecommunications" 
-
-
+| Attribute                   | Allowed Values                                                                      | OpenTelemetry Attribute                                  |
+|-----------------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------|
+| deployment.environment.name | "production", "staging", "development", "testing"                                   | `deployment.environment.name` *(existing; will  
+                                                                                                                                stabilize as part of this proposal)*           |
+| owner                       | Dynamic values (e.g., "team@example.com", "team-id")                                | `service.owner` *(proposed)*                             |
+| cost_center                 | Dynamic values (e.g., "cc-1234", "us-west-finance")                                 | `service.cost_center` *(proposed)*                       |
+| business_unit               | Dynamic values (e.g., "marketing", "sales")                                         | `service.business_unit` *(proposed)*                     |
+| criticality                 | "mission_critical", "high", "medium", "low"                                         | `service.criticality` *(proposed)*                       |    
 ---  
 
 ## Deliverables
 Initial deliverables will include:
 
-* A specification defining semantic conventions for the scoped set of resource attributes: environment, application, owner, cost_center, business_unit, criticality ,data_category and data_sensitivity including a classification of these attributes by domain (e.g., Operations, Security, Finance).  
+* A specification defining semantic conventions for the scoped set of resource attributes including a classification of these attributes by domain (e.g., Operations, Security, Finance).  
 * Recommended value sets and usage guidance for applicable resource attributes 
 * Alignment with existing OpenTelemetry resource attributes where relevant
 * Build prototype ResourceDetectors that retrieve standardized attributes from platform metadata services and surface these attributes as part of OpenTelemetry resource data.
@@ -104,7 +96,7 @@ The goal is to follow @tedsuo's proposed [Semantic Convention Process](https://d
 
 ## Timeline
 
-Stage 1 (Working Group Preparation) is currently underway. We are aligning on the initial scoped set of attributes (environment, application, owner, cost_center, business_unit, criticality, data_category and data_sensitivity), gathering contributors, and identifying sponsors and maintainers.
+Stage 1 (Working Group Preparation) is currently underway. We are aligning on the initial scoped set of attributes, gathering contributors, and identifying sponsors and maintainers.
 
 Stage 2 (Stabilizing the Specification) will begin once we have adequate staffing and have aligned on a meeting schedule (currently targeting bi-weekly sessions). 
 
