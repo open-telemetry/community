@@ -7,10 +7,17 @@ the OpenTelemetry community. These should be considered a living resource, and
 everyone is welcome to contribute to them!
 
 - [Contributor Guide](./contributor/README.md)
-  - [Policy on Generative AI Contributions](./contributor/genai.md)
   - [Donations of Pre-Existing Code](./contributor/donations.md)
   - [Becoming a Member of the OpenTelemetry Project](./contributor/membership.md)
   - [The Contribution Lifecycle](./contributor/processes.md)
 - [Maintainer Guide](./maintainer/README.md)
   - [Resolving Technical Conflicts](./maintainer/conflict-resolution.md)
   - [Managing Popular GitHub Issues](./maintainer/popular-issues.md)
+
+## Policies and Community Standards
+
+In addition to these guides, familiarize yourself with our community policies and standards:
+
+- [Code of Conduct](../code-of-conduct.md) - Our community standards and expectations
+- [Generative AI Policy](../policies/genai.md) - Guidelines for using AI tools in contributions
+- [Third-party Meeting Recordings Policy](../policies/third-party-meeting-recordings.md) - Rules for recording and transcribing meetings
