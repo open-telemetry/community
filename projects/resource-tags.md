@@ -41,7 +41,7 @@ This section outlines the initial set of resource-level attributes, their expect
                                                                                                                                                       stabilize as part of this proposal)* |
 | owner                       | Dynamic values (e.g., "team@example.com", "team-id")                                | `service.owner`            *(proposed)*                              |
 | criticality                 | "mission_critical", "high", "medium", "low"                                         | `service.criticality`      *(proposed)*                              |    
-| data_sensitivity            | "high", "medium", "low"                                                             | `data.data_sensitivity`    *(proposing a new entity for this)*                              | 
+| data_sensitivity            | "high", "medium", "low"                                                             | `data.sensitivity`    *(proposing a new entity for this)*                              | 
 ---  
 
 ## Deliverables
