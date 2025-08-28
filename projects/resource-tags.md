@@ -35,14 +35,13 @@ This section outlines the initial set of resource-level attributes, their expect
 
 ## Initial Attribute Scope
 
-| Attribute                   | Allowed Values                                                                      | OpenTelemetry Attribute                                  |
-|-----------------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------|
+| Resource Attribute          | Allowed Values                                                                      | OpenTelemetry Attribute                                              |
+|-----------------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | deployment.environment.name | "production", "staging", "development", "testing"                                   | `deployment.environment.name` *(existing; will  
-                                                                                                                                stabilize as part of this proposal)*           |
-| owner                       | Dynamic values (e.g., "team@example.com", "team-id")                                | `service.owner` *(proposed)*                             |
-| cost_center                 | Dynamic values (e.g., "cc-1234", "us-west-finance")                                 | `service.cost_center` *(proposed)*                       |
-| business_unit               | Dynamic values (e.g., "marketing", "sales")                                         | `service.business_unit` *(proposed)*                     |
-| criticality                 | "mission_critical", "high", "medium", "low"                                         | `service.criticality` *(proposed)*                       |    
+                                                                                                                                                      stabilize as part of this proposal)* |
+| owner                       | Dynamic values (e.g., "team@example.com", "team-id")                                | `service.owner`            *(proposed)*                              |
+| criticality                 | "mission_critical", "high", "medium", "low"                                         | `service.criticality`      *(proposed)*                              |    
+| data_sensitivity            | "high", "medium", "low"                                                             | `data.data_sensitivity`    *(proposing a new entity for this)*                              | 
 ---  
 
 ## Deliverables
