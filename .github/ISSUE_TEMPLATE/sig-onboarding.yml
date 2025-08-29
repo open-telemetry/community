@@ -1,0 +1,50 @@
+name: SIG Onboarding
+description: Onboard a new SIG
+title: "Onboard SIG: "
+labels: ["sig-onboarding"]
+assignees:
+  - ""
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to onboard a new SIG.
+  
+  - type: input
+    id: sig-name
+    attributes:
+      label: SIG Name
+      description: Name of the SIG to onboard
+      placeholder: "e.g., Security"
+    validations:
+      required: true
+
+  - type: input
+    id: assignee
+    attributes:
+      label: Assignee
+      description: GC Liaison responsible for completing the onboarding
+      placeholder: "@username"
+    validations:
+      required: true
+
+  - type: input
+    id: pr-link
+    attributes:
+      label: Project Proposal PR
+      description: Link to the PR that led to this onboarding
+      placeholder: "https://github.com/open-telemetry/community/pull/XXXX"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Onboarding Checklist
+      description: Complete all items below
+      options:
+        - label: Project Board
+        - label: Add Meeting Times, GC Liaison, Slack Channel, Google Doc to sigs.yml
+        - label: SIG Slack Channel
+        - label: GitHub Teams

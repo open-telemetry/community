@@ -2,7 +2,7 @@
 
 ## Description
 
-OpenTelemetry's usage of Resource has a number of known problems (see listed below). The Project's and the SIG's charter is to solve these and related problems. 
+OpenTelemetry's usage of Resource has a number of known problems (see listed below). The Project's and the SIG's charter is to solve these and related problems.
 
 The background work on these problems and coming up with potential solutions have been in progress for more than a year now, with participation of the listed sponsors and other interested contributors. We have been waiting until there is sufficient understanding of what and how we would like to solve these problems and also until we are certain there is significant available contributing capacity and interest.
 
@@ -20,7 +20,7 @@ The problem with such usage is that by looking at the Resource attributes it is 
 
 The Resource is one set of attributes, which contains all attributes of all entities that the Resource represents. It is impossible to tell which of these attributes identify the entity (or entities) and which are non-identifying, i.e. purely descriptive.
 
-This lack of precise identity makes it difficult or impossible to identify the same entities reported in different Resources. 
+This lack of precise identity makes it difficult or impossible to identify the same entities reported in different Resources.
 
 ### Problem 3: Lack of Mutable Attributes
 
@@ -37,7 +37,7 @@ It is clear that the strictly "immutable" definition of the Resource is not suff
 
 Today every attribute in an OpenTelemetry Resource, according to the metric data model, is used to determine the identity of a metric. Given known issues in metric time-series database implementations around cardinality, this can cause major issues if Resources are allowed to leverage high cardinality attributes.
 
-Given many Resource attribute semantic conventions today were defined for tracing instrumentation, we do find many high cardinality definitions, e.g. the [Process](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/resource/process.md#process) resource includes `pid` and and `parent_pid`, which are known to churn between instances of an application and would lead to higher cardinality streams. 
+Given many Resource attribute semantic conventions today were defined for tracing instrumentation, we do find many high cardinality definitions, e.g. the [Process](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/resource/process.md#process) resource includes `pid` and and `parent_pid`, which are known to churn between instances of an application and would lead to higher cardinality streams.
 
 Many metric backends are simply erasing resource attributes from metrics to workaround the issue.  Here's an example [solution for prometheus](https://github.com/open-telemetry/opentelemetry-specification/issues/1782), and [another proposal for yet another point-fix for prometheus](https://github.com/open-telemetry/opentelemetry-specification/pull/2736).
 
@@ -45,7 +45,7 @@ However, these workarounds prevent Metrics users from regaining descriptive attr
 
 Source: [see this issue](https://github.com/open-telemetry/opentelemetry-specification/issues/2775).
 
-### Further Reading 
+### Further Reading
 
 For more details on the problems and proposed solutions please [see this document](https://docs.google.com/document/d/1VUdBRInLEhO_0ABAoiLEssB1CQO_IcD5zDnaMEha42w/edit).
 
@@ -115,8 +115,4 @@ All PRs, Issues, and OTEPs related to the project should link back to the tracki
 
 ## Project Board
 
-Once approved by TC, a project should be managed using a GitHub project board. This project board should be pre-populated with issues that cover all known deliverables, organized by timeline milestones.
-
-A Technical Committee (TC) member associated with the project can create the board, along with a new project-specific GitHub label to automatically associate issues and PRs with the project. The project lead and all other relevant project members should have edit access to the board.
-
-Once created, please link to the project board here.
+[Entities and Resource project board](https://github.com/orgs/open-telemetry/projects/85)

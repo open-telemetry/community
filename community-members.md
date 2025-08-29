@@ -27,10 +27,9 @@ in alphabetical order:
 - [Carlos Alberto](https://github.com/carlosalberto), Lightstep
 - [Jack Berg](https://github.com/jack-berg), New Relic
 - [Josh Suereth](https://github.com/jsuereth), Google
-- [Liudmila Molkova](https://github.com/lmolkova), Microsoft
+- [Liudmila Molkova](https://github.com/lmolkova), Grafana Labs
 - [Reiley Yang](https://github.com/reyang), Microsoft
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
-- [Yuri Shkuro](https://github.com/yurishkuro), Meta
 
 ## Community Management
 
@@ -60,7 +59,7 @@ repositories:
 - [Marc Alff](https://github.com/marcalff), Oracle
 - [Robert Pająk](https://github.com/pellared), Splunk
 - [Severin Neumann](https://github.com/svrnm), Independent
-- [Ted Young](https://github.com/tedsuo), Lightstep
+- [Ted Young](https://github.com/tedsuo), Grafana Labs
 - [Tristan Sloughter](https://github.com/tsloughter), MyDecisiveAI
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
@@ -69,7 +68,6 @@ Emeritus sponsors (formerly approvers):
 - [Christian Beedgen](https://github.com/kumoroku)
 - [Daniel Jaglowski](https://github.com/djaglowski)
 - [David Poncelow](https://github.com/zenmoto)
-- [Leighton Chen](https://github.com/lzchen)
 - [Nikita Salnikov-Tarnovski](https://github.com/iNikem)
 
 ## Semantic Conventions
@@ -201,3 +199,4 @@ Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/open
 
 - [Josh MacDonald](https://github.com/jmacd)
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev)
+- [Yuri Shkuro](https://github.com/yurishkuro)

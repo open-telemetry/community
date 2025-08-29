@@ -18,25 +18,8 @@ table-check:
 markdown-link-check:
 	docker run --rm \
 		--mount 'type=bind,source=$(PWD),target=/home/repo' \
-		lycheeverse/lychee \
+		lycheeverse/lychee:sha-639c74e@sha256:ce2e490d25e886fb0b4b859feaea78bf0e36b7ce542c5e0393ff91b7e28517ad \
 		--config home/repo/.lychee.toml \
 		--root-dir /home/repo \
 		--verbose \
 		home/repo
-
-# This target runs markdown-toc on all files that contain
-# a pair of comments <!-- toc --> and <!-- tocstop -->.
-.PHONY: markdown-toc
-markdown-toc:
-	@if ! npm ls markdown-toc; then npm install; fi
-	@for f in $(ALL_DOCS); do \
-		if grep -q '<!-- tocstop -->' $$f; then \
-			echo markdown-toc: processing $$f; \
-				npx --no -- markdown-toc --no-first-h1 --no-stripHeadingTags -i $$f || exit 1; \
-		else \
-			echo markdown-toc: no TOC markers, skipping $$f; \
-		fi; \
-	done
-
-markdown-toc-check: markdown-toc
-	git diff --exit-code ':*.md' || (echo 'Generated markdown Table of Contents is out of date, please run "make markdown-toc" and commit the changes in this PR.' && exit 1)

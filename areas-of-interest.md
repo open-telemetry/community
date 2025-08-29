@@ -49,9 +49,10 @@ concerns.
 - Protocol compatibility (OpenCensus, Prometheus, Statsd, etc.)
 - Semantic conventions
 
-### [Liudmila Molkova](https://github.com/lmolkova), Microsoft
+### [Liudmila Molkova](https://github.com/lmolkova), Grafana Labs
 
 - Trace API and SDK
+- Logging API and SDK
 - Semantic conventions
 - Instrumentation
 
@@ -71,13 +72,6 @@ concerns.
 - Logging API and SDK
 - Entities
 - OpAMP
-
-### [Yuri Shkuro](https://github.com/yurishkuro), Meta
-
-- Trace API and SDK
-- Jaeger tracing compatibility
-- OpenTracing compatibility
-- W3C trace context specification
 
 ## Specification sponsors
 

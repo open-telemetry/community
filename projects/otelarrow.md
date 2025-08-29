@@ -74,7 +74,11 @@ Project approvers
 
 ## Meeting times
 
-Every other Thursday at 8AM PT.
+Bi-weekly Thursday at 08:00 PT.
+
+Bi-weekly Tuesday at 16:00 PT.
+
+See the [Calendar](../README.md#calendar) to find upcoming meetings.
 
 ## Timeline
 

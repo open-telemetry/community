@@ -2,59 +2,11 @@
 
 This file is intended to list all the assets controlled by OpenTelemetry.
 
-<!-- Re-generate TOC with `make markdown-toc` -->
-
-<!-- toc -->
-
-- [GitHub organization](#github-organization)
-- [Credential Storage](#credential-storage)
-- [Community Resource Accounts](#community-resource-accounts)
-  * [AWS account](#aws-account)
-  * [FOSSA](#fossa)
-  * [Special GitHub Action runners](#special-github-action-runners)
-    + [Large Linux runners](#large-linux-runners)
-    + [Large Windows runners](#large-windows-runners)
-    + [Windows ARM64 runners](#windows-arm64-runners)
-    + [Bare metal runners](#bare-metal-runners)
-  * [Google Cloud account](#google-cloud-account)
-  * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
-  * [Netlify](#netlify)
-  * [Oracle Cloud account](#oracle-cloud-account)
-- [Artifact repositories](#artifact-repositories)
-  * [NuGet OpenTelemetry organization](#nuget-opentelemetry-organization)
-  * [MyGet OpenTelemetryCNCF account](#myget-opentelemetrycncf-account)
-  * [NPM OpenTelemetry Organization](#npm-opentelemetry-organization)
-  * [Crates](#crates)
-  * [Maven](#maven)
-  * [PyPI](#pypi)
-  * [PHP Extras](#php-extras)
-- [Communication channels](#communication-channels)
-  * [CNCF Community Group](#cncf-community-group)
-  * [opentelemetry-calendar-contributors Google Group](#opentelemetry-calendar-contributors-google-group)
-  * [OpenTelemetry Calendar Invites Google Group](#opentelemetry-calendar-invites-google-group)
-  * [Mailing list cncf-opentelemetry-net-maintainers@lists.cncf.io](#mailing-list-cncf-opentelemetry-net-maintainerslistscncfio)
-  * [Mailing list cncf-opentelemetry-ruby@lists.cncf.io](#mailing-list-cncf-opentelemetry-rubylistscncfio)
-  * [Mailing list cncf-opentelemetry-governance@lists.cncf.io](#mailing-list-cncf-opentelemetry-governancelistscncfio)
-  * [YouTube channel OpenTelemetry](#youtube-channel-opentelemetry)
-  * [Zoom accounts](#zoom-accounts)
-  * [Zapier account](#zapier-account)
-  * [Google Workspace accounts](#google-workspace-accounts)
-  * [Google account for cncf-opentelemetry-governance@lists.cncf.io](#google-account-for-cncf-opentelemetry-governancelistscncfio)
-- [Bot accounts](#bot-accounts)
-  * [Easy CLA](#easy-cla)
-  * [Docker Hub](#docker-hub)
-  * [`otelbot`](#otelbot)
-  * [OpenTelemetry Bot](#opentelemetry-bot)
-  * [Slack](#slack)
-- [Security](#security)
-
-<!-- tocstop -->
-
 ## GitHub organization
 
 Link: https://github.com/open-telemetry
 
-- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
+- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
 ## Credential Storage
 
@@ -111,39 +63,20 @@ Note: these runners are pay-as-you-go.
 CNCF and GitHub expect fair use of these provided resources.
 Please ensure your workloads are optimized to avoid unnecessary usage.
 
-Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
-
-#### Windows ARM64 runners
-
-Access to Windows ARM64 runners is available to repositories on request
-(open a community issue),
-which will give access to the following GitHub-hosted runner:
-
-- `otel-windows-arm64`
-
-Note that Linux ARM64 runners are [available for free to all public
-repositories](https://github.blog/changelog/2025-01-16-linux-arm64-hosted-runners-now-available-for-free-in-public-repositories-public-preview/).
-
-Note: these runners are pay-as-you-go.
-CNCF and GitHub expect fair use of these provided resources.
-Please ensure your workloads are optimized to avoid unnecessary usage.
-
-Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
+Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
 #### Bare metal runners
 
-Reserved bare metal machines set up as
-[self-hosted runners](https://docs.github.com/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners)
-for the community to run performance tests.
+Access to bare metal runners for benchmarking is available to repositories on request
+(open a community issue),
+which will give access to the following GitHub-hosted runner:
 
-Equinix management console:
-- Link: https://console.equinix.com/projects/6f1c9af6-0470-42da-8f22-59d0df245f6b
-- Admins: Juraci Paixão Kröhling @jpkrohling and OTel TC via the mailing list address
+- `oracle-bare-metal-64cpu-512gb-x86-64`
 
-GitHub self-hosted runners:
-- `github-benchmark-runner` (16-core)
-- `self-hosted` (alias that repos are currently using for `github-benchmark-runner`)
-- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+Note: there is only one bare metal runner at this time, so
+please ensure your workloads are optimized to avoid unnecessary usage.
+
+Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
 ### Google Cloud account
 
@@ -298,14 +231,6 @@ Link: https://groups.google.com/g/opentelemetry-calendar
 - All GC members AND CNCF reps (Amye Scavarda Perrin, Chris Aniszczyk, Taylor Waggoner) are on the list and are list moderators.
 - Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
 
-### YouTube channel OpenTelemetry
-
-Link: https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos
-
-- Ask any of the following people if you need to manage the feed:
-  - Owners: Amye Scavarda Perrin (CNCF rep), Sergey Kanzhelev
-  - Managers: Alolita Sharma, Alan West, Austin Parker, Ben Sigelman, Eddy Nakamura
-
 ### Zoom accounts
 
 - Accounts
@@ -346,6 +271,34 @@ Link: https://zapier.com
 - Used for community Google Docs
 - Used to manage Zoom
 
+## Social media channels
+
+### BlueSky
+
+Link: https://bsky.app/profile/opentelemetry.io
+
+### Buffer
+
+Used to publish to the different social media channels.
+
+Link: https://publish.buffer.com/
+
+### LinkedIn
+
+Link: https://www.linkedin.com/company/opentelemetry
+
+### Mastodon
+
+Link: https://fosstodon.org/@opentelemetry
+
+### YouTube
+
+Link: https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos
+
+- Ask any of the following people if you need to manage the feed:
+  - Owners: Amye Scavarda Perrin (CNCF rep), Sergey Kanzhelev
+  - Managers: Alolita Sharma, Alan West, Austin Parker, Ben Sigelman, Eddy Nakamura
+
 ## Bot accounts
 
 Related: [Guidelines for adding new GitHub extensions](./docs/using-github-extensions.md).
@@ -362,7 +315,15 @@ For support:
 
 ### Docker Hub
 
-- We publish images from CI to Docker hub using https://hub.docker.com/u/otelbot account. The bot is registered using cncf-opentelemetry-tc@lists.cncf.io email address and Technical Committee members are owners of this account. The Admin for bot security credentials for CI is @tigrannajaryan
+https://hub.docker.com/u/otel is a Docker-Sponsored Open Source organization.
+
+Minimum-scoped Docker Hub organization access tokens should be used to push images.
+
+- Admins
+  - [@austinlparker](https://github.com/austinlparker)
+  - [@jsuereth](https://github.com/jsuereth)
+  - [@tigrannajaryan](https://github.com/tigrannajaryan)
+  - [@trask](https://github.com/trask)
 
 ### `otelbot`
 

@@ -51,8 +51,6 @@ Teams should be granted proper permissions according to the following table:
 | open-telemetry/foo-approvers        | Write    |
 | open-telemetry/foo-maintainers      | Maintain |
 | open-telemetry/foo-triagers         | Triage   |
-| open-telemetry/governance-committee | Write    |
-| opentelemetrybot                    | Write    |
 
 If the repository is using the Project Boards, `foo-triagers` should have
 `Write` permissions to have access to the Project Boards. Do not add members of
@@ -159,13 +157,19 @@ repositories that are using merge queues.
 
 #### Branch protection rule: `**/**`
 
-Same as for [`main`](#branch-protection-rule-main) above.
+* Require status checks to pass before merging: :heavy_check_mark:
+  * Require branches to be up to date before merging: :heavy_check_mark:
+  * Status checks that are required:
+    * `EasyCLA`
+* Do not allow bypassing the above settings: :heavy_check_mark:
 
 ### Actions > General
 
 * Fork pull request workflows from outside collaborators
   * `Require approval for first-time contributors who are new to GitHub`
     * (this can also be `Require approval for first-time contributors`)
+* Workflow permissions
+  * Read repository contents and packages permissions: :heavy_check_mark:
 
 ### Advanced Security
 

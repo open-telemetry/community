@@ -179,8 +179,7 @@ capacity, in finding answers to these questions.
 - [ ] [Active Projects](https://github.com/open-telemetry/community/tree/main/projects):
   to understand current project deliverables and the challenges they aim to
   solve.
-- [ ] [Project Board](https://github.com/orgs/open-telemetry/projects/135):
-  including the individual project boards for each of these, they help
+- [ ] [Projects](https://github.com/open-telemetry/community/projects?query=is%3Aopen):
   understand the current state of the projects listed in the previous item.
 - [ ] [Community repo docs](https://github.com/open-telemetry/community/tree/main/docs):
   for instructions on how to work with calendars, configuring repositories,

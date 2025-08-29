@@ -1,0 +1,119 @@
+name: Social Media Content Request
+description: Submit content for publication on OpenTelemetry social media channels
+title: "[Social Media]: "
+labels: ["area:social-media"]
+assignees:
+  - "@open-telemetry/social-media-approvers"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for submitting content for OpenTelemetry's social media channels!
+        
+        Please ensure your content follows our [Social Media Guide](https://github.com/open-telemetry/community/blob/main/social-media-guide.md) and [Marketing Guidelines](https://opentelemetry.io/community/marketing-guidelines/).
+        
+        **Important**: Content should not be commercial in nature and should consist of original content that applies broadly to the OpenTelemetry community.
+
+  - type: checkboxes
+    id: guidelines-check
+    attributes:
+      label: Guidelines Acknowledgment
+      description: Please confirm you have reviewed the required guidelines
+      options:
+        - label: I have read and understand the [Social Media Guide](https://github.com/open-telemetry/community/blob/main/social-media-guide.md)
+          required: true
+        - label: I have read and understand the [Marketing Guidelines](https://opentelemetry.io/community/marketing-guidelines/)
+          required: true
+        - label: This content is not commercial in nature and applies broadly to the OpenTelemetry community
+          required: true
+
+  - type: input
+    id: content-title
+    attributes:
+      label: Content Title
+      description: What is the title of the content you want to publish?
+      placeholder: e.g., "Setting up OpenTelemetry Collector for Kubernetes"
+    validations:
+      required: true
+
+  - type: textarea
+    id: content-description
+    attributes:
+      label: Content Description
+      description: Provide a detailed description of the content you want to publish
+      placeholder: |
+        Describe the content, its purpose, target audience, and key takeaways.
+        
+        For videos: Include outline or link to raw material
+        For posts: Include the main points or draft content
+        For promotion requests: Explain why this should be promoted
+    validations:
+      required: true
+
+  - type: textarea
+    id: technologies
+    attributes:
+      label: Technologies Used
+      description: |
+        List any technologies mentioned or used in the content.
+        **Note**: All technologies should be open source. CNCF projects are preferred over non-CNCF projects.
+      placeholder: |
+        e.g.,
+        - OpenTelemetry Collector (CNCF)
+        - Kubernetes (CNCF)
+        - Prometheus (CNCF)
+        - Jaeger (CNCF)
+    validations:
+      required: false
+
+  - type: textarea
+    id: related-sigs
+    attributes:
+      label: Related SIGs
+      description: List all SIGs that are related to this content
+      placeholder: |
+        e.g.,
+        - SIG Collector
+        - SIG Instrumentation
+        - SIG Specification
+    validations:
+      required: false
+
+  - type: input
+    id: sponsoring-sig
+    attributes:
+      label: Sponsoring SIG
+      description: Which SIG is sponsoring/taking ownership of this content?
+      placeholder: e.g., "SIG Collector"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: |
+        Provide any additional context, links, or information that would help reviewers understand and evaluate your request.
+        
+        This could include:
+        - Links to existing content or raw materials
+        - Specific issues or discussions to promote
+        - Timeline requirements
+        - Target audience details
+      placeholder: Include any relevant links, deadlines, or special considerations
+    validations:
+      required: false
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency Level
+      description: How urgent is this request?
+      options:
+        - Low - No specific timeline
+        - Medium - Would like to publish within 2-4 weeks
+        - High - Time-sensitive (within 1-2 weeks)
+        - Critical - Event-related with fixed deadline
+      default: 0
+    validations:
+      required: false
