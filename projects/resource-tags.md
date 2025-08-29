@@ -8,12 +8,18 @@ Despite their ubiquity, these tags are not standardized across providers and oft
 
 Note: These metadata fields are commonly referred to as tags by cloud providers like AWS, Azure, and GCP. However, to remain consistent with OpenTelemetry conventions, we will refer to them as attributes throughout this proposal.
 
-This SIG proposes to define semantic conventions for a scoped set of commonly used resource attributes, such as deployment.environment.name, service.owner, service.cost_center, service.business_unit and service.criticality and incorporate them into the OpenTelemetry specification. 'deployment.environment.name' already exists; as part of this proposal, we plan to stabilize them. Standardizing the meaning of these attributes will allow telemetry pipelines to treat them as first-class, interoperable metadata. For example, resource detectors in OpenTelemetry can surface these resource attributes from platform metadata, making them accessible to downstream tools in a consistent format. With shared semantics in place, observability and security platforms can enable features like governance-aware dashboards, suggest default security postures, cross-cloud resource attribution etc without relying on cloud- or vendor-specific integrations.
+This SIG proposes to define semantic conventions for a scoped set of commonly used resource attributes across three phases:
+
+Phase 1: Extend the Service entity with new attributes (service.owner, service.criticality).
+Phase 2: Stabilize the 'deployment.environment.name' attribute in the service entity.
+Phase 3: Create a new entity for data-related attributes, starting with data.sensitivity.
+
+Standardizing the meaning of these attributes will allow telemetry pipelines to treat them as first-class, interoperable metadata. For example, resource detectors in OpenTelemetry can surface these resource attributes from platform metadata, making them accessible to downstream tools in a consistent format. With shared semantics in place, observability and security platforms can enable features like governance-aware dashboards, default security posture suggestions, and cross-cloud resource attribution without relying on cloud- or vendor-specific integrations.
 ---
 
 ### Current Challenges
 
-- **No shared semantics**: Common resource attributes like `owner`, or `cost_center` are widely used but lack standardized meaning, leading to inconsistent usage and interpretation.
+- **No shared semantics**: Common resource attributes like `owner`, or `criticality` are widely used but lack standardized meaning, leading to inconsistent usage and interpretation.
 
 - **Cross-cloud fragmentation**: Implemented differently across providers, making it hard to reason about resources in a consistent way across clouds and tools.
 
@@ -35,13 +41,12 @@ This section outlines the initial set of resource-level attributes, their expect
 
 ## Initial Attribute Scope
 
-| Resource Attribute          | Allowed Values                                                                      | OpenTelemetry Attribute                                              |
-|-----------------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| deployment.environment.name | "production", "staging", "development", "testing"                                   | `deployment.environment.name` *(existing; will  
-                                                                                                                                                      stabilize as part of this proposal)* |
-| owner                       | Dynamic values (e.g., "team@example.com", "team-id")                                | `service.owner`            *(proposed)*                              |
-| criticality                 | "mission_critical", "high", "medium", "low"                                         | `service.criticality`      *(proposed)*                              |    
-| data_sensitivity            | "high", "medium", "low"                                                             | `data.sensitivity`    *(proposing a new entity for this)*                              | 
+| Entity     | Attribute    | Allowed Values                                                            | OpenTelemetry Attribute       | Status                  |
+|------------|-----------------------------|------------------------------------------------------------|-------------------------------|-------------------------|
+| Service    | owner                       | Dynamic values (e.g., "team@example.com", "team-id")       | `service.owner`               | Proposed                |
+| Service    | criticality                 | "mission_critical", "high", "medium", "low"                | `service.criticality`         | Proposed                |
+| Service    | deployment.environment.name | "production", "staging", "development", "testing"          | `deployment.environment.name` | Existing (to stabilize) |
+| Data       | sensitivity                 | "high", "medium", "low"                                    | `data.sensitivity`            | Proposed (new entity)   |
 ---  
 
 ## Deliverables
