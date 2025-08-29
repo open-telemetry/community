@@ -39,7 +39,7 @@ Projects cannot be started until the following participants have been identified
 
 ## Timeline
 
-Starting in mid-July. Targeting completion by KubeCon North America 2025.
+Starting in early September. Targeting completion by KubeCon Europe 2026.
 
 ## Labels
 
