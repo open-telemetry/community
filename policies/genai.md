@@ -12,7 +12,13 @@ projects may -- at their discretion -- hide or close issues, pull requests, or
 other contributions that are made totally or in part through generative AI
 tooling.
 
+The human driving any contribution is responsible for ensuring that LLM-generated
+content aligns with project guidelines and policies, especially this Generative AI
+document and the aforementioned Linux Foundation Generative AI Policy.
+
 ## The Long Version
+
+### General Guidelines for Generative AI Usage
 
 Increasingly, we have observed a trend of contributors who are utilizing LLMs
 and other generative tools to participate in issues and create pull requests.
@@ -38,10 +44,21 @@ output as the sole basis for their contributions.
 Examples of this include:
 
 - Copying and pasting LLM output into issues or pull requests without any
-additional context or explanation.
+  additional context or explanation.
 - Reviewing existing pull requests solely via
-LLMs, or using LLMs to respond to issues without any additional context or
-explanation.
+  LLMs, or using LLMs to respond to issues without any additional context or
+  explanation.
+
+### Human Responsibility and Control
+
+The human driving any contribution — whether as an author, reviewer, or maintainer — must
+remain in control of the process and bear full responsibility for the final output.
+This means actively reviewing, understanding, and validating any LLM-generated content
+before submission. You cannot delegate your responsibility to an AI tool, nor can you
+claim that an AI made an error as a defense for problematic contributions. The human
+contributor is accountable for ensuring that all content, regardless of its origin,
+meets project standards, follows established policies, and contributes meaningfully
+to the OpenTelemetry project.
 
 ## Frequently Asked Questions - Contributors
 
