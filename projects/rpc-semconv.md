@@ -21,7 +21,7 @@ Stable RPC semantic conventions.
 * @trask project lead / GC sponsor
 * @lmolkova project lead / TC sponsor
 * @mconnew domain expert from [CoreWCF](https://github.com/CoreWCF/CoreWCF)
-* albumenj domain expert from [Apache Dubbo](https://github.com/apache/dubbo)
+* @albumenj domain expert from [Apache Dubbo](https://github.com/apache/dubbo)
 * @SteveRao lead for [Apache Dubbo Java instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation/tree/main/instrumentation/apache-dubbo-2.7)
 
 ### Industry outreach
