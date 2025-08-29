@@ -26,7 +26,7 @@ Stable RPC semantic conventions.
 
 ### Industry outreach
 
-- @JamesNK from .Net gRPC library - open to us reaching out as needed
+- @JamesNK from .NET gRPC library - open to us reaching out as needed
 
 ### Required staffing
 
