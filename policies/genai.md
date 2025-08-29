@@ -13,7 +13,7 @@ other contributions that are made totally or in part through generative AI
 tooling.
 
 The human driving any contribution is responsible for ensuring that LLM-generated
-content aligns with project guidelines and policies, especially this generative
+content aligns with project guidelines and policies, especially this Generative AI
 document and the aforementioned Linux Foundation Generative AI Policy.
 
 ## The Long Version
@@ -51,7 +51,7 @@ Examples of this include:
 
 ### Human Responsibility and Control
 
-The human driving any contribution—whether as an author, reviewer, or maintainer—must
+The human driving any contribution — whether as an author, reviewer, or maintainer — must
 remain in control of the process and bear full responsibility for the final output.
 This means actively reviewing, understanding, and validating any LLM-generated content
 before submission. You cannot delegate your responsibility to an AI tool, nor can you
