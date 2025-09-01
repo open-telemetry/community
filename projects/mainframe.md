@@ -39,7 +39,7 @@ Based on previous participation in the meeting for preparing this proposal, we f
 
 ### Project Leads
 [\@rrschulze](https://github.com/rrschulze) <br />
-[\@youngaaronm](https://github.com/youngaaronm) 
+[\@gshriver](https://github.com/gshriver) 
 
 ### Staffing 
 [\@MacNale](https://github.com/MacNale) <br />
@@ -120,3 +120,6 @@ The focus of this track will be on mapping the mainframe concepts and metrics on
 
 #### z/OS syslog Write-to-Operator (WTO) example
 ![zos_logs3](https://github.com/open-telemetry/community/assets/140042958/02e74fc0-b8fe-4e23-9aaf-67aab28d4a18)
+
+
+[def]: https://github.com/gshriver
