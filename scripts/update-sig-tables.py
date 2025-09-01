@@ -98,7 +98,7 @@ for group in data:
         if group_name == "Specification SIGs":
             markdown_content += f"| {name}&nbsp;<a id=\"{short_name}\" href=\"#{short_name}\"><sup>🔗</sup></a> | {meeting} | {notes} | {chats} | {calendar} | {tc_sponsors} | {gc_liaison} | \n"
         else:
-            markdown_content += f"| {name}<a id=\"{short_name}\" href=\"#{short_name}\">&nbsp;<sup>🔗</sup></a> | {meeting} | {notes} | {chats} | {calendar} | {gc_liaison} |\n"
+            markdown_content += f"| {name}&nbsp;<a id=\"{short_name}\" href=\"#{short_name}\"><sup>🔗</sup></a> | {meeting} | {notes} | {chats} | {calendar} | {gc_liaison} |\n"
 
     # Add a newline for spacing after the table
     markdown_content += "\n"
