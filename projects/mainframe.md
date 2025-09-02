@@ -39,7 +39,7 @@ Based on previous participation in the meeting for preparing this proposal, we f
 
 ### Project Leads
 [\@rrschulze](https://github.com/rrschulze) <br />
-[\@youngaaronm](https://github.com/youngaaronm) 
+[\@gshriver](https://github.com/gshriver) 
 
 ### Staffing 
 [\@MacNale](https://github.com/MacNale) <br />
