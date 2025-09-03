@@ -11,8 +11,8 @@ Note: These metadata fields are commonly referred to as tags by cloud providers 
 This SIG proposes to define semantic conventions for a scoped set of commonly used resource attributes across three phases:
 
 Phase 1: Extend the Service entity with new attributes (service.owner, service.criticality).
-Phase 2: Stabilize the 'deployment.environment.name' attribute in the service entity.
-Phase 3: Create a new entity for data-related attributes, starting with data.sensitivity.
+Phase 2: Stabilize deployment.environment.name attribute and finish model for deployment related entities.
+Phase 3: Formulate a plan for tagging resources with sensitivity labels, and interaction with other telemetry.
 
 Standardizing the meaning of these attributes will allow telemetry pipelines to treat them as first-class, interoperable metadata. For example, resource detectors in OpenTelemetry can surface these resource attributes from platform metadata, making them accessible to downstream tools in a consistent format. With shared semantics in place, observability and security platforms can enable features like governance-aware dashboards, default security posture suggestions, and cross-cloud resource attribution without relying on cloud- or vendor-specific integrations.
 ---
