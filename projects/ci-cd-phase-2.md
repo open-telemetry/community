@@ -32,15 +32,25 @@ This phase targets three core areas for immediate impact:
 
 1. **SDK Environment Variable Context Propagation**: Implement the spec across
    multiple OpenTelemetry languages for first class, native support.
+   - Python
+   - Go
+   - C#
+   - Javascript
 2. **Enhanced Signal Attribute Conventions**: Establish additional attribute
    conventions for CI/CD-specific signals including build metadata, deployment
-   context, issues, incidents, and pipeline execution details.
+   context, issues, incidents, logs/events, test results, and pipeline execution
+   details.
 3. **Beta Stabilization**: Move core CI/CD semantic conventions and SDK
    implementations from experimental to beta status
-4. **Increase Adoption**: Work towards getting one or more key technologies
+4. **Increase Adoption**: Work towards getting one or more new technologies
    adoption of the OpenTelemetry conventions.
+5. **Extend Adoption**: 
 
 ## Phase 2 Staffing & Responsibilities
+
+### GC Liaison
+
+* @danielgblanco (GC Liaison)
 
 ### TC Sponsorship
 
@@ -53,6 +63,11 @@ This phase targets three core areas for immediate impact:
 **Project Leadership**:
 * @horovits Project Lead (AWS)
 * @adrielp Project Lead (Liatrio)
+
+**Project Members**:
+* @martincostello
+* @kamphaus
+* @niwoerner
 
 ### Phase 2 Resource Requirements
 
