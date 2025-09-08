@@ -384,6 +384,35 @@ This GitHub App addresses two common issues:
 [GitHub Action]: https://docs.github.com/en/actions
 [GitHub App]: https://docs.github.com/en/apps
 
+### `otelbot` (SIG-specific)
+
+SIG-specific `otelbot` GitHub apps are for repositories that need to run automations
+with permissions beyond the main `otelbot`.
+Each of these apps is scoped to a single repository with dedicated credentials.
+
+**Usage in GitHub Actions**:
+
+(replacing `_JAVA_CONTRIB_` with the SIG-specific name)
+
+```yaml
+- uses: actions/create-github-app-token@v1
+  id: app-token
+  with:
+    app-id: ${{ vars.OTELBOT_JAVA_CONTRIB_APP_ID }}
+    private-key: ${{ secrets.OTELBOT_JAVA_CONTRIB_PRIVATE_KEY }}
+
+- name: Automated task
+  env:
+    GH_TOKEN: ${{ steps.app-token.outputs.token }}
+  run: |
+    # otelbot is on the EasyCLA allowlist
+    git config user.name otelbot
+    git config user.email 197425009+otelbot@users.noreply.github.com
+    # Your automation commands here
+```
+
+- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+
 ### OpenTelemetry Bot
 
 > [!NOTE]
