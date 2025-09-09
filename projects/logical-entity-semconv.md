@@ -31,9 +31,9 @@ Standardizing the meaning of these attributes will allow telemetry pipelines to 
 
 The goal of this project is to define a shared understanding for a set of commonly used resource attributes. Initial areas of work include:
 
-* [Define the scoped set of resource attributes and their recommended values]
-* [Ensure alignment with existing OpenTelemetry resource attributes where applicable]
-* [Collaborate with the open source community and other cloud providers for cross-domain alignment]
+* Define the scoped set of resource attributes and their recommended values
+* Ensure alignment with existing OpenTelemetry resource attributes where applicable
+* Collaborate with the open source community and other cloud providers for cross-domain alignment
 
 ---
 ## Initial Attribute Scope and Proposals
