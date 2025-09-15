@@ -95,6 +95,7 @@ The goal is to follow @tedsuo's proposed [Semantic Convention Process](https://d
 
 - @trask (Microsoft)  
 - @jsuereth (Google)
+- @joaopgrassi (Dynatrace)
  
 ---
 
