@@ -1,4 +1,4 @@
-# Logical Entity Semconv SIG
+# Service and Deployment Semconv SIG
 
 ## Background and Description
 
