@@ -1,4 +1,4 @@
-# Service and Deployment Semconv SIG
+# Service and Deployment Semantic Conventions
 
 ## Background and Description
 
