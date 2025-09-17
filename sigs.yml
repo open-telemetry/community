@@ -333,8 +333,7 @@
     gcLiaison:
     - name: Daniel Gomez Blanco
       github: danielgblanco
-    roadmapProjectIDs:
-      - 19
+    roadmapProjectIDs: []
 - name: Implementation SIGs
   sigs:
   - name: 'Android: SDK + Automatic Instrumentation'
