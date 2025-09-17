@@ -119,6 +119,6 @@ To be created once proposal is approved.
 
 - **Meeting cadence**: Biweekly
 - **Time**: TBD
-- **Slack**: Proposed new channel `#otel-logical-entity-semconv-sig` on CNCF Slack
+- **Slack**: Proposed new channel `#otel-service-and-deployment-semconv-sig` on CNCF Slack
 - **Notes and recordings**: Will be maintained publicly and shared via the OpenTelemetry community calendar
 
