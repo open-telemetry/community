@@ -89,7 +89,7 @@ The goal is to follow @tedsuo's proposed [Semantic Convention Process](https://d
 **Sponsors:**
 
 - @trask (Microsoft) — GC Sponsor  
-- @jsuereth (Google) — TC Sponsor (escalating sponsorship level, pending confirmation)
+- @jsuereth (Google) — TC Sponsor (escalating sponsorship level)
 
 **Semantic Convention Maintainers:**
 
