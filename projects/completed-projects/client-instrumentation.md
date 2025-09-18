@@ -1,5 +1,11 @@
 # Client Instrumentation
 
+> [!IMPORTANT]
+> This project has been discontinued.
+> Browser-specific work has been moved to https://github.com/orgs/open-telemetry/projects/146.
+> 
+> SIG Client-Side is now focusing solely on cross-cutting aspects for both mobile and browser (e.g. sessions)
+
 ## Description
 
 We believe that in order for OpenTelemetry to be adopted across the board, it needs to have a good support for client applications. Client instrumentation has some unique challenges that are currently not well supported.
