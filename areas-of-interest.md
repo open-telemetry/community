@@ -103,7 +103,7 @@ concerns.
 - Trace sampling algorithms
 - Trace API & SDK
 
-### [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs
+### [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden
 
 - OpenTelemetry Collector
 - Distributed tracing
