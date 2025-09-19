@@ -191,26 +191,8 @@ Multi-language expansion beyond research phase will depend on interest and engag
 
 ## GitHub Project (Post-Approval)
 
-Once approved, a project should be managed using a [GitHub project](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects). This project should be pre-populated with issues that cover all known deliverables, organized by timeline milestones.
-
-Any [member](./guides/contributor/membership.md) associated with the project can create the board.
-Please use the existing [GitHub Project template](https://github.com/orgs/open-telemetry/projects/140) to create your project, replacing placeholders as appropriate.
-
-Once created, the creator of the board should:
-
-- Assign `Admin` privileges on the project to the relevant project members (using a new or existing GitHub team).
-- Change the visibility of the project to `Public` in order to share project status and priorities outside the OpenTelemetry organization (default in template).
-- Configure project workflows to automatically add issues and PRs to the board based on repositories and labels.
-
-See [Project Lifecycle](project-management.md#project-lifecycle) for more information about sharing project updates and status.
-
-Once created, please add a link to the project board here.
+TBD
 
 ## SIG Meetings, Roadmap, and Other Info (Post-Approval)
 
-Once a project is started, its corresponding SIG should meet regularly for discussion. These meeting times should be posted on the [OpenTelemetry public calendar](https://github.com/open-telemetry/community#calendar) and automatically recorded.
-
-Any relevant information related to the SIG (e.g. sponsors, meeting times, Slack channels, meeting notes, etc.) must be publicly available in the [community](https://github.com/open-telemetry/community) SIG tables, which can be updated via the [sigs.yml](./sigs.yml) file and running `make table-generation`.
-Please ensure that GitHub project ID is added to `roadmap_project_ids` to include this project in the OpenTelemetry Roadmap (see [Roadmap Management](./roadmap-management.md) for more information).
-
-See [How to create and configure meetings](./docs/how-to-handle-public-calendar.md) for updating the public calendar or open an issue in the community repository so it's taken care of.
+TBD
