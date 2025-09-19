@@ -32,9 +32,9 @@ This POC was created as part of an [effort](https://github.com/open-telemetry/op
 by the Java SIG, which focused on analyzing the 250+ instrumentations in the Java agent, and created structured metadata
 for each that could then be used to generate documentation.
 
-We would like to productionize this POC, and make it an official part of the OpenTelemetry documentation. We will 
-create a standalone website that can be hosted on the OpenTelemetry domain, and integrate it into the official OpenTelemetry
-documentation.
+We would like to rebuild and make this POC production-ready, and make it an official part of the OpenTelemetry 
+documentation. We will create a standalone website that can be hosted on the OpenTelemetry domain, and integrate it into
+the official OpenTelemetry documentation.
 
 ### Current challenges
 
@@ -89,7 +89,7 @@ processes.
 - Production-ready web application rebuilt from the existing proof-of-concept
 - Automated extraction of structured metadata from instrumentation source code
 - Scalable data architecture to replace the current 2MB+ JSON file approach
-- Multi-language support demonstrated through Javascript and Collector implementations
+- Extraction and availability of metadata for Javascript and Collector components to validate multi-language applicability
 
 ## Deliverables
 
@@ -112,21 +112,22 @@ OpenTelemetry domain knowledge to transform the existing proof-of-concept into a
 ### SIG
 
 This project will be led by a cross-cutting effort coordinating with the Java SIG (primary implementation) and
-Communications SIG (documentation integration). A new dedicated SIG or working group may be formed if the project scope 
-expands significantly during execution.
+Communications SIG (documentation integration). A new dedicated SIG or working group will be formed to help manage 
+and move this project forward. 
 
 ### Required staffing
 
 #### Project Leads(s)
 
 * @jaydeluca (Grafana Labs)
+* @svrnm (Causely)
 * Looking for other leads with experience in OpenTelemetry instrumentation and/or web application development
 
 #### TC Sponsor
 TBD
 
 #### GC Liaison
-TBD
+* @svrnm (Severin Neumann)
 
 #### Other Staffing
 
