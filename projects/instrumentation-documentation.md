@@ -2,11 +2,17 @@
 
 ## Background and description
 
+Related issues:
+
+* [Java Instrumentation Metadata System](https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/13468)
+  * [Associated Github Project](https://github.com/orgs/open-telemetry/projects/153?query=sort%3Aupdated-desc+is%3Aopen)
+* [Java Instrumentation Documentation](https://github.com/open-telemetry/opentelemetry.io/issues/7740)
+
 This project is primarily focused on Java instrumentation, but the concepts and tooling could be applied to other
 languages (and the collector) as well, and we intend to explore that.
 
-As a user, contributor, or maintainer of official Java OpenTelemetry instrumentations, I want documentation that can
-answer the following questions:
+As a user, contributor, or maintainer of official [Java OpenTelemetry instrumentations](https://github.com/open-telemetry/opentelemetry-java-instrumentation),
+I want documentation that can answer the following questions:
 
 * What technologies and libraries are instrumented by the agent or have standalone instrumentation libraries I can use?
 * Which versions of the various libraries or technologies are supported?
@@ -17,10 +23,10 @@ answer the following questions:
 * Are there any configurations I can enable to get more/less metrics or spans for the libraries I use?
 * I’m about to upgrade my Java agent from version x to version y, what telemetry or attributes changed?
 
-A proof of concept "Instrumentation Explorer" website was created that can do all of this. It allows users to 
-explore the different instrumentations and see the emitted telemetry. It allows them to see how spans, metrics, 
-and their associated attributes change when different configuration options are changed, and it allows for comparing 
-the telemetry across different versions of the Java agent.
+A proof of concept "[Instrumentation Explorer](https://jaydeluca.github.io/instrumentation-explorer/)" website was 
+created that can do all of this. It allows users to explore the different instrumentations and see the emitted telemetry.
+It allows them to see how spans, metrics, and their associated attributes change when different configuration options are
+changed, and it allows for comparing the telemetry across different versions of the Java agent.
 
 This POC was created as part of an [effort](https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/13468)
 by the Java SIG, which focused on analyzing the 250+ instrumentations in the Java agent, and created structured metadata
@@ -88,7 +94,7 @@ processes.
 ## Deliverables
 
 **Production-Ready Instrumentation Explorer for Java**
-* Refactored data pipeline replacing current 2MB+ JSON approach with a more scalable data architecture
+* Refactored data pipeline and data architecture for managing the source metadata by agent version
 * Rebuilt web application with professional UI/UX and responsive design
 * Production and Staging deployment infrastructure with CI/CD
 * Integration with OpenTelemetry.io documentation ecosystem
