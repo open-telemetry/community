@@ -118,7 +118,9 @@ To be created once proposal is approved.
 ## SIG Meetings and Communication
 
 - **Meeting cadence**: Biweekly
-- **Time**: TBD
+- **Time**: This meeting will alternate between two slots to accommodate global time zones:
+  - **Slot A (PT-Friendly):** Thursdays at 8:00 AM PT
+  - **Slot B (Asia-Friendly):** Thursdays at 5:30 PM IST
 - **Slack**: Proposed new channel `#otel-service-and-deployment-semconv-sig` on CNCF Slack
 - **Notes and recordings**: Will be maintained publicly and shared via the OpenTelemetry community calendar
 
