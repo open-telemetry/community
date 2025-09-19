@@ -1,4 +1,4 @@
-# Instrumentation Documentation (Explorer)
+# OpenTelemetry Ecosystem Explorer
 
 ## Background and description
 
@@ -8,8 +8,8 @@ Related issues:
   * [Associated Github Project](https://github.com/orgs/open-telemetry/projects/153?query=sort%3Aupdated-desc+is%3Aopen)
 * [Java Instrumentation Documentation](https://github.com/open-telemetry/opentelemetry.io/issues/7740)
 
-This project is primarily focused on Java instrumentation, but the concepts and tooling could be applied to other
-languages (and the collector) as well, and we intend to explore that.
+This project is initially primarily focused on Java instrumentation, but the concepts and tooling could be applied to
+other languages (and the collector) as well, and we intend to explore that.
 
 As a user, contributor, or maintainer of official [Java OpenTelemetry instrumentations](https://github.com/open-telemetry/opentelemetry-java-instrumentation),
 I want documentation that can answer the following questions:
@@ -64,7 +64,7 @@ instrumentations that are not listed there at all.
 
 ### Goals, objectives, and requirements
 
-The aim of this project is to create an Instrumentation Explorer web application that provides a user interface to
+The aim of this project is to create an Ecosystem Explorer web application that provides a user interface to
 explore instrumentation components across the OpenTelemetry ecosystem. The platform will be powered by structured
 metadata and documentation extracted directly from instrumentation project source code, maintained through automated
 processes.
@@ -93,7 +93,7 @@ processes.
 
 ## Deliverables
 
-**Production-Ready Instrumentation Explorer for Java**
+**Production-Ready Ecosystem Explorer for Java**
 * Refactored data pipeline and data architecture for managing the source metadata by agent version
 * Rebuilt web application with professional UI/UX and responsive design
 * Production and Staging deployment infrastructure with CI/CD
