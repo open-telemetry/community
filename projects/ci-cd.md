@@ -137,22 +137,22 @@ Estimated time-frame: 6-12 Months
     - [x] Semantic Conventions
     - [x] Specifications
     - [ ] Prototype Developments
-- [ ] Q3 TBD
-    - [ ] (cont) Semantic Conventions
-        - [ ] More Registry Additions
-        - [ ] Signal specific conventions
-    - [ ] (cont) Prototype Development
-    - [ ] OTEP Environment Variable Specification Approval
-- [ ]  Q4 TBD
-    - [ ] (cont) Semantic Conventions
+- [x] Q3 TBD
+    - [x] (cont) Semantic Conventions
+        - [x] More Registry Additions
+        - [x] Signal specific conventions
+    - [x] (cont) Prototype Development
+    - [x] OTEP Environment Variable Specification Approval
+- [x]  Q4 TBD
+    - [x] (cont) Semantic Conventions
         - [ ] Registry Stability Updates
         - [ ] (cont) Signal specific conventions
-    - [ ] Environment Variable Specification Updated and Released
-    - [ ] Determine next steps for 2025
+    - [x] Environment Variable Specification Updated and Released
+    - [x] Determine next steps for 2025
 
 ### 2025 
 
-- [ ] TBD
+- [x] Propose phase 2 of the CICD SIG
 
 > Note: The SIG's intent is to be nimble and able to adjust quickly.
 
