@@ -7,6 +7,8 @@ Related issues:
 * [Java Instrumentation Metadata System](https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/13468)
   * [Associated Github Project](https://github.com/orgs/open-telemetry/projects/153?query=sort%3Aupdated-desc+is%3Aopen)
 * [Java Instrumentation Documentation](https://github.com/open-telemetry/opentelemetry.io/issues/7740)
+* [Registry Data Quality Improvements Project Proposal](https://github.com/open-telemetry/community/pull/2246)
+* [Expose Collector component metadata in registry](https://github.com/open-telemetry/opentelemetry.io/issues/4921)
 
 This project is initially primarily focused on Java instrumentation, but the concepts and tooling could be applied to
 other languages (and the collector) as well, and we intend to explore that.
@@ -34,7 +36,8 @@ for each that could then be used to generate documentation.
 
 We would like to rebuild and make this POC production-ready, and make it an official part of the OpenTelemetry 
 documentation. We will create a standalone website that can be hosted on the OpenTelemetry domain, and integrate it into
-the official OpenTelemetry documentation.
+the official OpenTelemetry documentation. We will also work to replicate this approach for collector components, and
+the Javascript instrumentation.
 
 ### Current challenges
 
@@ -59,8 +62,9 @@ often have to make updates in several places. Most projects do a great job of ke
 source code, but there isn't an existing process for ensuring that documentation is kept in sync.
 
 The OpenTelemetry.io website has rich content related to SDKs, APIs, and concepts, but there is a gap when it comes to
-instrumentation. The registry has some information, but it can be lacking important context and there are many 
-instrumentations that are not listed there at all.
+instrumentation. The [registry](https://opentelemetry.io/ecosystem/registry/) has some information, but it can be
+lacking important context and there are many instrumentations that are not listed there at all. There have been
+several discussions about improving or replacing the registry, and this project could be a good opportunity to do so.
 
 ### Goals, objectives, and requirements
 
@@ -83,6 +87,9 @@ processes.
 3. Integrate with the existing OpenTelemetry.io documentation ecosystem in a seamless manner
 
 4. Implement automated maintenance workflows that keep documentation synchronized with source code changes
+
+5. Replace the need for the existing [registry](https://opentelemetry.io/ecosystem/registry/), which covers only a subset of
+  the available information and is not comprehensive
 
 **Technical Requirements:**
 
@@ -113,7 +120,7 @@ OpenTelemetry domain knowledge to transform the existing proof-of-concept into a
 
 This project will be led by a cross-cutting effort coordinating with the Java SIG (primary implementation) and
 Communications SIG (documentation integration). A new dedicated SIG or working group will be formed to help manage 
-and move this project forward. 
+and move this project forward.
 
 ### Required staffing
 
