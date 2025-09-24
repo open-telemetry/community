@@ -25,13 +25,13 @@ We highly encourage participation in this election cycle to ensure that the comm
 Current governance committee members (alphabetical order):
 
 - [Alolita Sharma](https://github.com/alolita), Apple, until October 2026
-- [Austin Parker](https://github.com/austinlparker), Honeycomb, until October 2025
-- [Daniel Gomez Blanco](https://github.com/danielgblanco), New Relic, until October 2025
-- [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden, until October 2025
+- **[Austin Parker](https://github.com/austinlparker), Honeycomb, until October 2025**
+- **[Daniel Gomez Blanco](https://github.com/danielgblanco), New Relic, until October 2025**
+- **[Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden, until October 2025**
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2026
 - [Pablo Baeyens Fernandez](https://github.com/mx-psi), Datadog, until October 2026
-- [Severin Neumann](https://github.com/svrnm), Causely, until October 2025
-- [Ted Young](https://github.com/tedsuo), Grafana Labs, until October 2025
+- **[Severin Neumann](https://github.com/svrnm), Causely, until October 2025**
+- **[Ted Young](https://github.com/tedsuo), Grafana Labs, until October 2025**
 - [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2026
 
 Five people must be elected in this election, each with two-year terms. Note that four current Governance Committee members end terms as part of this election cycle, though they are welcome to run again for one of the four vacancies.
