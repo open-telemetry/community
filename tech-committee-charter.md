@@ -26,7 +26,7 @@ No more than one-fourth (25%) of the TC members may be affiliated with the same 
 
 The TC may, at its discretion, invite any number of non-voting observers to participate in the public portion of TC discussions and meetings.
 
-The TC shall meet regularly using tools that enable participation by the community. The meeting shall be directed by a rotating TC member.
+The TC shall meet regularly using tools that enable participation by the community. The meeting shall be directed by a rotating TC member. TC members are expected to regularly participate in TC activities.
 
 In the case where an individual TC member -- within any six month period -- attends fewer than 25% of the regularly scheduled meetings, does not participate in TC discussions, and does not participate in TC votes, the member shall be automatically removed from the TC. The member may be invited to continue attending TC meetings as an observer.
 
