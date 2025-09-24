@@ -38,7 +38,7 @@ Five people must be elected in this election, each with two-year terms. Note tha
 
 # Voting process
 
-Anyone can track the 2025 election process via [this GitHub issue](https://github.com/open-telemetry/community/issues/3001). This year's election committee consists of governance committee members Morgan McLean, Trask Stalnaker, and Pablo Bayens Fernandez. None of whom are up for reelection this year.
+Anyone can track the 2025 election process via [this GitHub issue](https://github.com/open-telemetry/community/issues/3001). This year's election committee consists of governance committee members Morgan McLean, Trask Stalnaker, and Pablo Baeyens Fernandez. None of whom are up for reelection this year.
 We strive for transparency in the election process and hold the community's interests as our priority. In particular, we will ensure that all documents and assets related to the 2025 election process are public, and we will attempt to record and distribute notes for any meetings held as part of this process.
 
 For the 2025 elections, [Helios Voting](https://vote.heliosvoting.org/) was chosen as it's a hosted solution with cryptographic guarantees that no GC members can meddle with the results. 
