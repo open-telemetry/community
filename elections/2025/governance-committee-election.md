@@ -30,7 +30,7 @@ Current governance committee members (alphabetical order):
 - [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden, until October 2025
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2026
 - [Pablo Baeyens Fernandez](https://github.com/mx-psi), Datadog, until October 2026
-- [Severin Neumann](https://github.com/svrnm), Cisco, until October 2025
+- [Severin Neumann](https://github.com/svrnm), Causely, until October 2025
 - [Ted Young](https://github.com/tedsuo), Lightstep, until October 2025
 - [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2026
 
