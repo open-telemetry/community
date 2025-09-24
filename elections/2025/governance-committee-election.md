@@ -27,7 +27,7 @@ Current governance committee members (alphabetical order):
 - [Alolita Sharma](https://github.com/alolita), Apple, until October 2026
 - [Austin Parker](https://github.com/austinlparker), Honeycomb, until October 2025
 - [Daniel Gomez Blanco](https://github.com/danielgblanco), New Relic, until October 2025
-- [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs, until October 2025
+- [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden, until October 2025
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2026
 - [Pablo Baeyens Fernandez](https://github.com/mx-psi), Datadog, until October 2026
 - [Severin Neumann](https://github.com/svrnm), Cisco, until October 2025
