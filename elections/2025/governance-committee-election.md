@@ -34,7 +34,7 @@ Current governance committee members (alphabetical order):
 - **[Ted Young](https://github.com/tedsuo), Grafana Labs, until October 2025**
 - [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2026
 
-Five people must be elected in this election, each with two-year terms. Note that four current Governance Committee members end terms as part of this election cycle, though they are welcome to run again for one of the four vacancies.
+Five people must be elected in this election, each with two-year terms. Note that five current Governance Committee members end terms as part of this election cycle, though they are welcome to run again for one of the five vacancies.
 
 # Voting process
 
