@@ -47,7 +47,7 @@ def get_users_and_contributions():
                     "uid": "P172949F98CB31475",
                     "type": "postgres"
                 },
-                "rawSql": "select sub.name as name, sub.value as contributions from (select split_part(name, '$$$', 1) as name, sum(value) as value from shdev where series = 'hdev_contributionsallall' and period = 'y' group by split_part(name, '$$$', 1) ) sub where sub.value >= 20 order by name",
+                "rawSql": "select sub.name as name, sub.value as contributions from (select split_part(name, '$$$', 1) as name, sum(value) as value from shdev where series = 'hdev_contributionsopentelemetryall' and period = 'y' group by split_part(name, '$$$', 1) ) sub where sub.value >= 20 order by name",
                 "format": "table"
             }
         ],
