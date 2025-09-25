@@ -413,56 +413,14 @@ Each of these apps is scoped to a single repository with dedicated credentials.
 
 - Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
-### OpenTelemetry Bot
+### `@opentelemetrybot` GitHub user
 
-> [!NOTE]
-> Consider using the [otelbot](#otelbot) GitHub App instead.
+[@opentelemetrybot](https://github.com/opentelemetrybot) is a GitHub user
+that can be used for automation that requires a real GitHub user rather than a GitHub App.
 
-This is a community-owned bot account that you can use when automating common GitHub tasks
-(e.g. release automation tasks).
-
-Important: You do not need to (and should not) give this account any permissions to any OpenTelemetry repository.
-
-Link: [@opentelemetrybot](https://github.com/opentelemetrybot)
-
-- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
-  (GitHub password and associated 2FA for the `@opentelemetrybot` account are available in the GitHub Owners
-  1Password)
-
-The OpenTelemetry Bot addresses two common issues:
-
-1. Since you can't push directly to `main` from workflows (due to branch protections), the next best thing is to
-   generate a pull request from the automation and use an account which has signed the CLA as the commit author.
-
-   The OpenTelemetry Bot account has signed the CNCF CLA, and you can assign it as the commit author in your automation:
-
-   ```
-   git config user.name opentelemetrybot
-   git config user.email 107717825+opentelemetrybot@users.noreply.github.com
-   ```
-
-   It is recommended to push to branch names that start with `opentelemetrybot/`, and to add a branch protection
-   rule for `opentelemetrybot/**/*` with the same setup as documented for
-   [`dependabot/**/*`](docs/how-to-configure-new-repository.md#branch-protection-rule-dependabot). Note that branch protection rule ordering matters, so you will need to
-   delete the `**/**` branch protection rule temporarily, then add the `opentelemetrybot/**/*` branch protection
-   rule, then add back the `**/**` branch protection rule.
-
-2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside of a GitHub Action, workflows
-   will not run on that new pull request without closing and re-opening it manually (this limitation is in place to
-   prevent accidental recursive workflow runs).
-
-   The OpenTelemetry GitHub organization has a GitHub Action secret named `OPENTELEMETRYBOT_GITHUB_TOKEN`, which is a
-   [Personal Access Token][] for [@opentelemetrybot](https://github.com/opentelemetrybot) with `repo`, `workflow` and `read:org`
-   scope for the OpenTelemetry Bot that you can use to bypass this limitation.
-
-   The personal access token also has `workflow` scope which is needed when merging upstream changes of
-   `.github/workflow` files into opentelemetrybot's forks (these forks are used for automatically opening PRs against
-   external repos).
-
-   Maintainers can open an issue in the community repository to have their repository granted access to this
-   organization secret.
-
-   [Personal Access Token]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+For example, the [open-telemetry/opentelemetry-operator](https://github.com/open-telemetry/opentelemetry-operator)
+repository has an automation that sends PRs to external GitHub organizations, and so a real GitHub user
+is required (at least without asking the external GitHub organization to install a GitHub App).
 
 ### Slack
 
