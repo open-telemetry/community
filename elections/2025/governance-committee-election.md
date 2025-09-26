@@ -86,7 +86,7 @@ Per Helios Voting, voting is entirely private: nobody will know any individual's
 
 # Results
 
-Voting will close on 29 October 2025 at 23:59 UTC. Nominees will be stack ranked. If a nominee becomes ineligible (for instance, if more than three topmost nominees work for the same company), the election committee will skip those nominees and pick the nominee with the next-highest score. The exact scores for each candidate will be public.
+Voting will close at the end of the day on 29 October 2025 (technically, 23:59 in the International Date Line West time zone / 30 October 2025 noon UTC). Nominees will be stack ranked. If a nominee becomes ineligible (for instance, if more than three topmost nominees work for the same company), the election committee will skip those nominees and pick the nominee with the next-highest score. The exact scores for each candidate will be public.
 
 # Schedule
 
