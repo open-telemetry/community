@@ -84,7 +84,7 @@ Link: https://cloud.google.com
 
 - Community account to host https://go.opentelemetry.io
 - Admin: [@austinlparker](https://github.com/austinlparker)
-  (password is available in the OpenTelemetry Governance 1Password, it is the same as admin@opentelemetry.io "Google Workspace account")
+  (password is the same as admin@opentelemetry.io "Google Workspace account", available in the OpenTelemetry Governance 1Password)
 
 ### Grafana organization for SIG Security
 
