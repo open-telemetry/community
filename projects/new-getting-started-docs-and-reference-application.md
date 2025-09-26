@@ -58,10 +58,6 @@ Once the specification is available, each SIG that implements the API and SDK in
 
 Once at least one SIG provides this application, the documentation can be updated to include the new learning experience, utilizing this application. We will leverage existing tools to [extract code excerpts](https://github.com/open-telemetry/opentelemetry.io/tree/main/tools) from external repositories and import the code directly into the website.
 
-An example of how this could look can be seen in this preview of the OpenTelemetry Documentation:
-
-<https://deploy-preview-5376--opentelemetry.netlify.app/docs/learn/getting-started/>
-
 ## Deliverables
 
 - A specification for the reference application
