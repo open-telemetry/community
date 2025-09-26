@@ -49,7 +49,7 @@ The governance committee also evaluated [Condorcet Internet Voting Service](http
 
 # Nominations
 
-As per [the charter document](../../governance-charter.md#eligibility-for-candidacy), anybody is eligible to run for the Governance Committee if they fulfill the requirements. During the "call for nomination" period, people can be nominated or nominate themselves by submitting a Pull Request adding said candidate to the [governance-committee-candidates.md](./governance-committee-candidates.md) file in the OpenTelemetry [community](https://github.com/open-telemetry/community) repository. The template in that file includes the following columns:
+As per [the charter document](../../governance-charter.md#eligibility-for-candidacy), anybody is eligible to be a nominee for the Governance Committee. During the "call for nomination" period, people can be nominated or nominate themselves by submitting a Pull Request adding said candidate to the [governance-committee-candidates.md](./governance-committee-candidates.md) file in the OpenTelemetry [community](https://github.com/open-telemetry/community) repository. The template in that file includes the following columns:
 
 * Full name
 * GitHub alias
