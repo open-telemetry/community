@@ -1013,3 +1013,17 @@
     sponsors:
       - name: 'Severin Neumann'
         github: svrnm
+  - name: Romanian (ro-RO)
+    meeting: ''
+    notes:
+      type: none
+    chat:
+      - type: slack
+        name: "#otel-localization-ro"
+        id: C09E9KNNLP4
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+    sponsors:
+      - name: 'Severin Neumann'
+        github: svrnm
