@@ -864,7 +864,7 @@
       - https://github.com/open-telemetry/changelog.opentelemetry.io
       - https://github.com/open-telemetry/assign-reviewers-action
   - name: Contributor Experience
-    meeting: Monday alternating between 10:00 PT and 17:00 UTC+8
+    meeting: Every other Monday at 10:00 PT
     notes:
       type: gDoc
       value: 1CTQI0p3QF8JP8reV8z_ggcs8KE5YVPpQGvAQknw4qP0
