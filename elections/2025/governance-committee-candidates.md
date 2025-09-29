@@ -11,8 +11,8 @@ In alphabetical order:
 ### Austin Parker
 ![Austin Parker](static/austin_parker.png)
 
-- Company: honeycomb.io
-- GitHub: austinparker
+- Company: [honeycomb.io](https://honeycomb.io)
+- GitHub: [austinlparker](https://github.com/austinlparker)
 
 I'm Austin Parker, current Governance Committee member and long-time OpenTelemetry contributor. Since the earliest days of the project, I've been a consistent advocate for users, contributors, maintainers, and organizations adopting OpenTelemetry. Outside of OpenTelemetry, I'm Director of Open Source at honeycomb.io, a chair of Observability Day at KubeCon, and an author/speaker on OpenTelemetry and observability-related topics. Recently, like everyone else, I've been getting into AI! Neat stuff.
 
