@@ -6,6 +6,7 @@ In alphabetical order:
 
 - [Austin Parker](#austin-parker) 
 - [Juraci Paixão Kröhling](#juraci-paixão-kröhling)
+- [Virginia Diana Todea](#virginia-diana-todea)
 
 ---
 
@@ -48,3 +49,18 @@ My commitment to the project has also led me to start several side projects afte
 If re-elected, my focus will be on telemetry quality: working with different stakeholders, including end-users, to improve the quality and efficiency of telemetry created with our diverse OpenTelemetry tools. Re-election would also give me renewed strength to continue my side-mission of creating quality content and organizing OTel Night.
 
 ---
+
+### Virginia Diana Todea
+
+![Virginia Diana Todea](static/diana-todea.webp)
+
+- Company: [VictoriaMetrics](https://victoriametrics.com/)
+- GitHub: [didiViking](https://github.com/didiViking)
+
+I'm Diana Todea, active member and contributor to OpenTelemetry since 2024. My contributions to the OTel ecosystem include: OTel exam developer, Spanish localization SIG member and contributor, creator of Romanian localization SIG, speaker at 11 events and conferences on OTel topic (including Cloud Native Days, KCDs). I'm a co-organizer of Cloud Native Days Romania and co-lead of Neurodiversity working group, part of the CNCF Merge-Forward initiative. OpenTelemetry has been a central part of my professional and community life since my first contribution. Beyond code, I care deeply about empowering contributors, making the project accessible, and fostering a welcoming, inclusive culture. Serving on the GC would allow me to help others scale their impact across the project, ensuring OTel continues to thrive as a vendor-neutral observability standard.
+
+If elected, I will focus on growing the contributor base by building on localization and other entry points to create repeatable frameworks and mentorship programs that help new communities start contributions. This will lower barriers for non-English speakers and will create a scalable, cross-community contributor pipeline, including engagement with CNCF and related projects.
+
+If elected, I will enable and scale community-led events by developing playbooks, mentorship programs, and shared resources to help contributors organize local OTel events worldwide. The main objective will be to ensure events become sustainable engines for adoption and engagement, while also encouraging joint workshops and collaboration across projects.
+
+As a supporter of underrepresented groups in tech, I will promote inclusion across the community, providing  SIG leads and maintainers with inclusive practices, mentorship frameworks, and resources so they can support contributors from underrepresented groups effectively. Provide guidance that scales beyond OTel itself, helping contributors thrive across the broader ecosystem.
