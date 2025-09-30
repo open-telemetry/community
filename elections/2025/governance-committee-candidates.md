@@ -6,6 +6,7 @@ In alphabetical order:
 
 - [Austin Parker](#austin-parker) 
 - [Juraci Paixão Kröhling](#juraci-paixão-kröhling)
+- [Marylia Gutierrez](#marylia-gutierrez)
 
 ---
 
@@ -48,3 +49,36 @@ My commitment to the project has also led me to start several side projects afte
 If re-elected, my focus will be on telemetry quality: working with different stakeholders, including end-users, to improve the quality and efficiency of telemetry created with our diverse OpenTelemetry tools. Re-election would also give me renewed strength to continue my side-mission of creating quality content and organizing OTel Night.
 
 ---
+
+### Marylia Gutierrez
+
+<img src="static/marylia.png" height="300" />
+
+- Company: [Grafana Labs](https://grafana.com)
+- GitHub: [maryliag](https://github.com/maryliag)
+
+I'm Marylia Gutierrez, a dedicated software engineer with a deep passion for open source and observability, backed by several years of hands-on experience in the industry. I currently contribute to OpenTelemetry as part of my role at Grafana Labs, providing me the focus and flexibility to dedicate substantial time and energy to the Governance Committee. 
+
+I'm an active contributor on different projects:
+- **Database Semantic Conventions (Approver)**: I was a core contributor to the stabilization of database semantic conventions, the second successful semantic convention stabilization in OTel
+- **JavaScript SDK (Approver)**: I developed several features and improvements, including database stabilization, node runtime metrics, and most recently, declarative configuration. I also helped establish a process for reviewing old PRs, which reduced our open PRs to less than one page, improving the contributor experience
+- **Contributor Experience (Maintainer)**: I work to improve the contributor experience, with items being done such as the creation and analysis of surveys on merged PRs to gather feedback, setting up a new `#opentelemetry-new-contributors` channel, and writing a blog post with guidance on [How to Contribute to OpenTelemetry](https://opentelemetry.io/blog/2025/contribute-to-otel/), as well as organizing action on the feedback received.
+- **Portuguese Localization (Approver)**: I create content in Portuguese and am the top reviewer of PRs, making OpenTelemetry more accessible to Portuguese speakers.
+- **Documentation (Triager)**: I assist with documentation in general.
+
+My broad involvement across these areas enables me to bridge specification work, SDK implementation, and community health. This combination directly aligns with the Governance Committee's stewardship of both technical direction and project sustainability.
+
+My passion for advocacy extends beyond code. I regularly create and share content about OpenTelemetry and Observability, in both English and Portuguese, through my personal [website](http://marylia.dev) and public talks (e.g. [KubeCon London](https://www.youtube.com/watch?v=Rf9NceXXRuw), [Humans of OTel interviews](https://www.youtube.com/watch?v=eZ3OrhxUAmU), [Humans of OTel Live at KubeCon](https://www.youtube.com/watch?v=EL0UkhvFAmY), [In Love with OTel Panel](https://www.youtube.com/watch?v=1CUMo-b50-Q), [LEAP 2.0 Panel](https://www.youtube.com/watch?v=738ZE05vt3w), [Observable Talk](https://www.youtube.com/watch?v=n0U4WMTWqbM&t=1330s), [CNCF Meetup Toronto](https://community.cncf.io/events/details/cncf-cloud-native-toronto-presents-october-toronto-cncf-meetup-end-user-stories/)). I also contribute to events, such as serving on the Open Source Summit Program Committee.
+
+I have welcomed and mentored several newcomers to the area, including via [Outreachy internships](https://opentelemetry.io/blog/2025/outreachy-internship/), new joiners in Portuguese localization, and helping with the creation of the video [What is OTel?](https://www.youtube.com/watch?v=iEEIabOha8U), that has over 33k views. Through contributor-experience work, talks, panels and posts, I’ve focused on lowering the barrier to first contributions and improving newcomer journeys.
+
+I bring a combination of perspectives to the Governance Committee: not only as a contributor to the OpenTelemetry project but also from my previous roles managing observability teams at Cockroach Labs and developing internal observability tools at IBM. These experiences have given me a rich understanding of the end-user journey with observability tools.
+
+As a member of the Governance Committee, my focus will be to foster inclusivity and contributor success. My direct involvement with various SIGs will enable me to channel their needs and ensure that our contributor experience strategy remains focused on growing a diverse and engaged community. By joining the Governance Committee I will be in a unique position to amplify my advocacy efforts, driving strategic initiatives to expand our reach and directly influence the onboarding process for new contributors and users of OpenTelemetry, while keeping a good balance for existing approvers/maintainers.
+
+I am committed to ensuring OpenTelemetry remains a thriving, inclusive project, and I believe my experience, leadership, and advocacy will help me contribute effectively to the Governance Committee’s mission.
+
+OpenTelemetry's strength lies in its people. My candidacy reflects a vision where technical progress and community growth are inseparable. I would be honored to serve on the Governance Committee to continue advancing both.
+
+Thank you for your support!
+
