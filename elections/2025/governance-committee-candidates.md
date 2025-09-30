@@ -52,7 +52,7 @@ If re-elected, my focus will be on telemetry quality: working with different sta
 
 ### Virginia Diana Todea
 
-![Virginia Diana Todea](static/diana-todea.webp)
+![Virginia Diana Todea](static/diana_todea.webp)
 
 - Company: [VictoriaMetrics](https://victoriametrics.com/)
 - GitHub: [didiViking](https://github.com/didiViking)
