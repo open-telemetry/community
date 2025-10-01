@@ -7,6 +7,7 @@ In alphabetical order:
 - [Austin Parker](#austin-parker) 
 - [Juraci Paixão Kröhling](#juraci-paixão-kröhling)
 - [Marylia Gutierrez](#marylia-gutierrez)
+- [Severin Neumann](#severin-neumann)
 
 ---
 
@@ -82,3 +83,30 @@ OpenTelemetry's strength lies in its people. My candidacy reflects a vision wher
 
 Thank you for your support!
 
+---
+
+### Severin Neumann
+![Severin Neumann](static/severin_neumann.png)
+
+- Company: [Causely](https://causely.ai)
+- GitHub: [svrnm](https://github.com/svrnm)
+
+Hi, I’m Severin Neumann, long-time OpenTelemetry contributor, maintainer of SIG Comms and SIG Contributor Experience, and current member of the Governance Committee. My focus has always been on building and sustaining the community, making OpenTelemetry approachable, visible, and healthy for contributors and adopters alike.
+
+One of my proudest accomplishments in the past 12 months was launching and driving the localization project, enabling our docs and outreach to reach a global contributor base.
+
+It has been a big honor and learning experience to be part of the Governance Committee for the last two years. [When I first ran](https://github.com/open-telemetry/community/blob/main/elections/2023/governance-committee-candidates.md#severin-neumann), I committed to strengthening contributor experience. Over the last term, I’ve delivered on that through:
+
+- [Establishing the SIG Check-in process](https://github.com/open-telemetry/community/blame/main/gc-check-ins.md), creating a regular, transparent feedback loop with all SIGs.
+- [Founding the Contributor Experience SIG](https://github.com/open-telemetry/community/blob/main/projects/contributor-experience.md), which now plays a key role in onboarding and community health.
+- Supporting project management, ensuring that initiatives are documented, tracked, and communicated.
+- Handling conflict resolution and mediation, helping maintain a healthy and collaborative community environment.
+- General health of the community work, from elections and processes to addressing blockers raised by contributors.
+
+If re-elected, I want to continue strengthening governance and contributor experience. Specifically, I will:
+
+- Focus on initiatives that lower barriers for new contributors and support existing contributors in their growth.
+- Improve our project management and governance processes so the project can scale sustainably.
+- Strengthen our relationships with other CNCF projects and the wider open source ecosystem, ensuring OpenTelemetry continues to thrive as a cornerstone project.
+
+I’m grateful to everyone in the community for your trust and collaboration over the past two years. OpenTelemetry’s growth is only possible because of your efforts, and I’d be honored to continue serving as a Governance Committee member to help our community thrive.
