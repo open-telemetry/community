@@ -4,11 +4,63 @@
 
 In alphabetical order:
 
+- [Antoine Toulme](#antoine-toulme)
 - [Austin Parker](#austin-parker) 
 - [Juraci Paixão Kröhling](#juraci-paixão-kröhling)
 - [Marylia Gutierrez](#marylia-gutierrez)
 
 ---
+
+### Antoine Toulme
+
+<img src="static/antoine-toulme.jpg" height="300" alt="Antoine Toulme"/>
+
+- Company: [Splunk](https://www.splunk.com)
+- GitHub: [atoulme](https://github.com/atoulme)
+
+I'm Antoine Toulme, a long time open source enthusiast and product manager.
+I have been involved in open source since 2007, with committer and advisory roles
+under the Eclipse Foundation, the Apache Software Foundation and the Hyperledger
+Foundation.
+
+I have been active with OpenTelemetry since 2020 and am a maintainer of
+OpenTelemetry Collector [Contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib/#contributing),
+and OpenTelemetry [Injector](https://github.com/open-telemetry/opentelemetry-injector),
+approver of Collector [Core](https://github.com/open-telemetry/opentelemetry-collector/#contributing)
+and [Operator](https://github.com/open-telemetry/opentelemetry-operator).
+
+I sponsored approximately [39 components](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues?q=is%3Aissue%20%20label%3A%22Accepted%20Component%22%20(commenter%3Aatoulme%20%22I%20can%20sponsor%22)%20OR%20(commenter%3Aatoulme%20%22I%20will%20sponsor%22)) 
+and have authored many collector components, such as the Splunk HEC [receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/splunkhecreceiver)
+and [exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/splunkhecexporter),
+the [filestats](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/filestatsreceiver)
+receiver, the [haproxy](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/haproxyreceiver)
+receiver, the [otlpjsonfile](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/otlpjsonfilereceiver)
+receiver.
+I have pushed a lot of code, and I probably just broke the build again.
+
+My goal is to make OpenTelemetry ubiquitous: easy to adopt and tempting with contribution opportunities.
+
+You can see some of the effort through our work on enhancing the [OpenTelemetry Operator out-of-the-box experience](https://github.com/open-telemetry/opentelemetry-operator/pull/3830), 
+or our work on the [Injector project](https://github.com/open-telemetry/opentelemetry-injector).
+
+I have shown up on the project and helped push forward every day ([my activity on Collector contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib/pulls?q=commenter%3Aatoulme)). 
+I found this [piece by Rands](https://randsinrepose.com/archives/just-hard-work/) mirrors my experience, and makes me immensely proud.
+
+I create automations that help the project scale, for example
+[tagging first time contributions](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/41944)
+so we can prioritize those first encounters. I also try to streamline manual reviews into automated checks, for example
+by adding a [GitHub codeowners check](https://github.com/open-telemetry/opentelemetry-go-build-tools/tree/main/githubgen),
+or a [Golang API checker](https://github.com/open-telemetry/opentelemetry-go-build-tools/tree/main/checkapi).
+
+If elected, I intend to take my approach to help grow the project further: community first, innovating for impact, and process automation to scale.
+
+You might see me poking fun around; I launched successfully https://ottl.fun as a conversation piece to the excellent https://ottl.run,
+and I intend to run again this year my [OTel WareZ experiment](https://github.com/otel-warez).
+Having fun and playing together is so important to me.
+
+I hope to continue to be the ["worst player in the band"](https://www.goodreads.com/quotes/392893-always-be-the-worst-guy-in-every-band-you-re-in) - where you all play beautiful melodies, and I'm happy to be your roadie.
+
+Thank you for your consideration and your support.
 
 ### Austin Parker
 ![Austin Parker](static/austin_parker.png)
