@@ -25,7 +25,9 @@ in alphabetical order:
 - [Armin Ruech](https://github.com/arminru), Dynatrace
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake
 - [Carlos Alberto](https://github.com/carlosalberto), Lightstep
+- [David Ashpole](https://github.com/dashpole), Google
 - [Jack Berg](https://github.com/jack-berg), New Relic
+- [Josh MacDonald](https://github.com/jmacd), Microsoft
 - [Josh Suereth](https://github.com/jsuereth), Google
 - [Liudmila Molkova](https://github.com/lmolkova), Grafana Labs
 - [Reiley Yang](https://github.com/reyang), Microsoft
@@ -52,8 +54,6 @@ repositories:
 - [Christian Neumüller](https://github.com/Oberon00), Dynatrace
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace
-- [David Ashpole](https://github.com/dashpole), Google
-- [Josh MacDonald](https://github.com/jmacd), Microsoft
 - [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden
 - [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Marc Alff](https://github.com/marcalff), Oracle
