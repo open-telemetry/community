@@ -86,6 +86,7 @@ Thank you for your support!
 ---
 
 ### Severin Neumann
+
 ![Severin Neumann](static/severin_neumann.png)
 
 - Company: [Causely](https://causely.ai)
@@ -95,15 +96,15 @@ Hi, I’m Severin Neumann, long-time OpenTelemetry contributor, maintainer of SI
 
 One of my proudest accomplishments in the past 12 months was launching and driving the localization project, enabling our docs and outreach to reach a global contributor base.
 
-It has been a big honor and learning experience to be part of the Governance Committee for the last two years. [When I first ran](https://github.com/open-telemetry/community/blob/main/elections/2023/governance-committee-candidates.md#severin-neumann), I committed to strengthening contributor experience. Over the last term, I’ve delivered on that through:
+It has been a big honor and learning experience to be part of the Governance Committee for the last two years. [When I first ran](https://github.com/open-telemetry/community/blob/main/elections/2023/governance-committee-candidates.md#severin-neumann), I committed to strengthening contributor experience. Over the last term, I’ve delivered on that commitment by:
 
 - [Establishing the SIG Check-in process](https://github.com/open-telemetry/community/blame/main/gc-check-ins.md), creating a regular, transparent feedback loop with all SIGs.
 - [Founding the Contributor Experience SIG](https://github.com/open-telemetry/community/blob/main/projects/contributor-experience.md), which now plays a key role in onboarding and community health.
-- Supporting project management, ensuring that initiatives are documented, tracked, and communicated.
+- Supporting project management to ensure initiatives are documented, tracked, and communicated.
 - Handling conflict resolution and mediation, helping maintain a healthy and collaborative community environment.
-- General health of the community work, from elections and processes to addressing blockers raised by contributors.
+- Contributing to the overall health of the community, from policies and processes to unblocking contributors.
 
-If re-elected, I want to continue strengthening governance and contributor experience. Specifically, I will:
+If re-elected, I want to continue strengthening governance and contributor experience. In particular, I will:
 
 - Focus on initiatives that lower barriers for new contributors and support existing contributors in their growth.
 - Improve our project management and governance processes so the project can scale sustainably.
