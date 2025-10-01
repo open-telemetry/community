@@ -7,7 +7,7 @@
 
 Generative AI observability is evolving fast. The industry is still learning how to use GenAI products which creates new opportunities and challenges in the observability space. GenAI observability is focused on development time and verbose telemetry. Non-deterministic nature of GenAI creates the need to measure the quality and safety of responses which become part of observability.
 
-There are multiple GenAI-focused observability projects out there such as [Arize Phoenix](https://arize.com/docs/phoenix), [Langfuse](https://langfuse.com/), [LangSmith](https://www.langchain.com/langsmith), [Langtrace](https://langtrace.ai/), [OpenLit](https://github.com/openlit/openlit), [Traceloop](https://www.traceloop.com/docs/introduction) and many others.
+There are multiple GenAI-focused observability projects out there such as [Arize Phoenix](https://arize.com/docs/phoenix), [Langfuse](https://langfuse.com/), [LangSmith](https://www.langchain.com/langsmith), [Langtrace](https://langtrace.ai/), [Maxim AI](https://getmaxim.ai), [OpenLit](https://github.com/openlit/openlit), [Traceloop](https://www.traceloop.com/docs/introduction) and many others.
 
 Some of these projects are based on OpenTelemetry, others are "inspired by" it, but don't have out-of-the-box integration with OTel.
 
