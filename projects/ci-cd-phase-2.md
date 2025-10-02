@@ -37,14 +37,21 @@ This phase targets three core areas for immediate impact:
    - C#
    - Javascript
 2. **Enhanced Signal Attribute Conventions**: Establish additional attribute
-   conventions for CI/CD-specific signals including build metadata, deployment
-   context, issues, incidents, logs/events, test results, and pipeline execution
-   details.
-3. **Beta Stabilization**: Move core CI/CD semantic conventions and SDK
+   conventions for CI/CD-specific trace, metrics, and logs for the following
+   namespaces and domains:
+   - build
+   - deployment
+   - issues
+   - incidents
+   - test
+   - pipeline
+3. **Beta Stabilization**: Move core CI/CD semantic conventions and collector
    implementations from experimental to beta status
 4. **Increase Adoption**: Work towards getting one or more new technologies
    adoption of the OpenTelemetry conventions.
-5. **Extend Adoption**: 
+5. **Stretch Goal**: Figure out how to enable better support for long running
+   traces via [Issue #1648](https://github.com/open-telemetry/semantic-conventions/issues/1648).
+
 
 ## Phase 2 Staffing & Responsibilities
 
