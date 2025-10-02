@@ -66,7 +66,8 @@ I hope to continue to be the ["worst player in the band"](https://www.goodreads.
 Thank you for your consideration and your support.
 
 ### Austin Parker
-![Austin Parker](static/austin_parker.png)
+
+<img src="static/austin_parker.png" height="300" alt="Austin Parker"/>
 
 - Company: [honeycomb.io](https://honeycomb.io)
 - GitHub: [austinlparker](https://github.com/austinlparker)
@@ -88,7 +89,7 @@ Thank you for your vote. It is, truly, an honor to serve this community.
 
 ### Damien Mathieu
 
-![Damien Mathieu](static/dmathieu.jpg)
+<img src="static/dmathieu.jpg" height="300" alt="Damien Mathieu"/>
 
 - Company: [Elastic](https://elastic.co)
 - GitHub: [dmathieu](https://github.com/dmathieu)
@@ -119,7 +120,7 @@ My deep involvement as a maintainer and contributor of many SIGs has given me th
 
 ### Juraci Paixão Kröhling
 
-![Juraci Paixão Kröhling](static/jpkroehling.webp)
+<img src="static/jpkroehling.webp" height="300" alt="Juraci Paixão Kröhling"/>
 
 - Company: [OllyGarden](https://ollygarden.com)
 - GitHub: [jpkrohling](https://github.com/jpkrohling)
@@ -138,7 +139,7 @@ If re-elected, my focus will be on telemetry quality: working with different sta
 
 ### Marylia Gutierrez
 
-<img src="static/marylia.png" height="300" />
+<img src="static/marylia.png" height="300" alt="Marylia Gutierrez"/>
 
 - Company: [Grafana Labs](https://grafana.com)
 - GitHub: [maryliag](https://github.com/maryliag)
@@ -172,7 +173,7 @@ Thank you for your support!
 
 ### Severin Neumann
 
-![Severin Neumann](static/severin_neumann.png)
+<img src="static/severin_neumann.png" height="300" alt="Severin Neumann"/>
 
 - Company: [Causely](https://causely.ai)
 - GitHub: [svrnm](https://github.com/svrnm)
@@ -199,7 +200,7 @@ I’m grateful to everyone in the community for your trust and collaboration ove
 
 ### Virginia Diana Todea
 
-![Virginia Diana Todea](static/diana_todea.webp)
+<img src="static/diana_todea.webp" height="300" alt="Virginia Diana Todea"/>
 
 - Company: [VictoriaMetrics](https://victoriametrics.com/)
 - GitHub: [didiViking](https://github.com/didiViking)
