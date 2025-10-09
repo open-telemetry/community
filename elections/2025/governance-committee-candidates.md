@@ -7,6 +7,7 @@ In alphabetical order:
 - [Antoine Toulme](#antoine-toulme)
 - [Austin Parker](#austin-parker) 
 - [Damien Mathieu](#damien-mathieu)
+- [Dinesh Gurumurthy](#dinesh-gurumurthy)
 - [Juraci Paixão Kröhling](#juraci-paixão-kröhling)
 - [Marylia Gutierrez](#marylia-gutierrez)
 - [Severin Neumann](#severin-neumann)
@@ -115,6 +116,27 @@ Here is my pledge:
 * **Preserve and Evolve Our Foundations**: To support our future, we need governance processes that remain transparent, balanced, and adaptable. I will help refine and maintain the systems that already work well while ensuring they continue to scale with the growth of our community.
 
 My deep involvement as a maintainer and contributor of many SIGs has given me the cross-project insight needed to make this vision a reality.
+
+---
+
+### Dinesh Gurumurthy 
+
+<img src="static/dinesh.jpg" height="300" alt="Dinesh Gurumurthy"/>
+
+**Company:** [Datadog](https://www.datadoghq.com/)  
+**GitHub:** [dineshg13](https://github.com/dineshg13/)
+
+I’m Dinesh Gurumurthy, a Staff Engineer at Datadog working on OpenTelemetry. Before venturing into OpenTelemetry, I  was mostly focused on building large-scale distributed systems. At Datadog, I initially built reference tables that help correlate telemetry signals with reference data. Three years ago, I established a dedicated team for OpenTelemetry to kick off Datadog’s OpenTelemetry Journey. 
+
+Since then, I have been deeply involved in community efforts and in driving OpenTelemetry adoption at Datadog. I was involved in multiple community efforts, notably as an early member of [the OpenTelemetry Go Instrumentation](https://github.com/open-telemetry/opentelemetry-go-instrumentation) project. I helped facilitate the donation of Datadog’s [Orchestrion](https://github.com/DataDog/orchestrion) project, which led to the creation of [opentelemetry-go-compile-instrumentation](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation). I contributed to the [Schema Processor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/schemaprocessor) in the OpenTelemetry Collector and presented a [talk at SREcon25](https://www.usenix.org/conference/srecon25americas/presentation/gurumurthy) Americas on OpenTelemetry semantics and schema evolution.
+
+Internally at Datadog, I led the development of the [Datadog Distribution of the OpenTelemetry Collector](https://docs.datadoghq.com/opentelemetry/setup/ddot_collector/). It required a deep understanding of OpenTelemetry collector framework and how to seamlessly architect a distribution that works as well as Datadog Agent. As part of the Datadog OpenTelemetry team, I have worked directly with some of our largest Customers to help them adopt OpenTelemetry and solve their critical problems. 
+
+The OpenTelemetry community has done an excellent job over the years in building continued trust and establishing itself as a go-to place for any observability needs. Within Datadog, we are seeing a gigantic shift in OpenTelemetry adoption. With this adoption, we are seeing an increasing number of questions from customers regarding OpenTelemetry support and various aspects of how to use OpenTelemetry to address their needs.
+
+If elected to the Governance Committee, I would like to bring a fresh, pragmatic, user-centric perspective—bridging the gap between those building OpenTelemetry and those adopting it at scale. OpenTelemetry has become an all-encompassing combination of both specifications and tooling. With this increasing complexity, there is an apparent lack of User stories and user journey in the approach of OpenTelemetry. My focus will be on making OpenTelemetry easier to adopt and contribute to, while reducing ambiguity for users, and helping the community build tools that accelerate their success. I have an exceptional knack for unblocking issues and setting ambitious goals to solve complex problems, which I aim to bring to the table. 
+
+Thanks for your vote\!\! It would be a true honor to serve the community at this next milestone.
 
 ---
 
