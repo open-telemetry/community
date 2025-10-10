@@ -33,7 +33,7 @@ concerns.
 - OpenTracing compatibility
 - Semantic conventions
 
-### [Jack Berg](https://github.com/jack-berg), New Relic
+### [Jack Berg](https://github.com/jack-berg), Grafana Labs
 
 - Metrics API and SDK
 - Logging API and SDK
