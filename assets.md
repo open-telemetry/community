@@ -12,7 +12,7 @@ Link: https://github.com/open-telemetry
 
 - [1Password Teams](https://1password.com/)
   - Team account: https://opentelemetry.1password.com/
-  - https://github.com/1Password/1password-teams-open-source#opentelemetry
+  - https://github.com/1Password/for-open-source
   - PR: https://github.com/1Password/1password-teams-open-source/pull/364
   - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 
@@ -40,8 +40,8 @@ Link: https://app.fossa.com/
 
 CNCF provides the following large Linux runners which are available to all repositories:
 
-- [`oracle-16cpu-64gb-x86-64`](https://github.com/cncf/automation/tree/main/ci#custom-runners)
-- [`oracle-16cpu-64gb-arm64`](https://github.com/cncf/automation/tree/main/ci#custom-runners)
+- [`oracle-16cpu-64gb-x86-64`](https://github.com/cncf/automation/blob/main/ci/README.MD#custom-runners)
+- [`oracle-16cpu-64gb-arm64`](https://github.com/cncf/automation/blob/main/ci/README.MD#custom-runners)
 
 Note that normal-sized Linux ARM64 runners are [available for free to all public
 repositories](https://github.blog/changelog/2025-01-16-linux-arm64-hosted-runners-now-available-for-free-in-public-repositories-public-preview/).

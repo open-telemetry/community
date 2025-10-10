@@ -1,8 +1,22 @@
+timeout = 30
+retry_wait_time = 5
+max_retries = 6
+max_concurrency = 4
+
+# Check link anchors
 include_fragments = true
 
 accept = ["200..=299", "401", "403"]
 
+remap = [
+  # workaround for https://github.com/lycheeverse/lychee/issues/1729
+  'https://github.com/(.*?)/(.*?)/blob/(.*?)/(.*#.*)$ https://raw.githubusercontent.com/$1/$2/$3/$4',
+  'https://docs.google.com/(.*)#.*$ https://docs.google.com/$1',
+]
+
 exclude = [
+    # workaround for https://github.com/lycheeverse/lychee/issues/1729
+    '^https://github.com/.*/(pull|issues|commit|compare)/.*#.*$',
     # excluding links to user profiles is done for performance
     # because there are a lot of links to user profiles in this repository
     # and GitHub extra throttles access to user profile pages
@@ -11,26 +25,12 @@ exclude = [
     "^https://www.linuxfoundation.org/legal/generative-ai$",
     # this is a private repo
     "https://github.com/open-telemetry/admin",
+    # for performance reasons
+    '^https://github.com/open-telemetry/community/(issues|pull)/\d+$',
+    'https://gitter.im/open-telemetry/opentelemetry-rust',
+    'https://up-for-grabs.net.*'
 ]
 
 exclude_path = [
-    # regular expressions aren't supported: https://github.com/lycheeverse/lychee/issues/1608
-    "/home/repo/elections/2019/governance-committee-candidates.md",
-    "/home/repo/elections/2019/governance-committee-election.md",
-    "/home/repo/elections/2020/governance-committee-candidates.md",
-    "/home/repo/elections/2020/governance-committee-election.md",
-    "/home/repo/elections/2021/governance-committee-candidates.md",
-    "/home/repo/elections/2021/governance-committee-election.md",
-    "/home/repo/elections/2022/governance-committee-candidates.md",
-    "/home/repo/elections/2022/governance-committee-election.md",
-    "/home/repo/elections/2023/governance-committee-candidates.md",
-    "/home/repo/elections/2023/governance-committee-election.md",
-    "/home/repo/elections/2024/governance-committee-candidates.md",
-    "/home/repo/elections/2024/governance-committee-election.md",
+    ".*/elections/.*/governance-committee-(candidates|election).md",
 ]
-
-# better to be safe and avoid failures
-max_retries = 6
-
-# this helps slow down the rate of requests to avoid rate limiting
-max_concurrency = 16

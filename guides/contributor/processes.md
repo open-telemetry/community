@@ -89,7 +89,7 @@ SIG's part of OpenTelemetry.
 A SIG is an open, community effort. Anybody is welcome to jump into a SIG and
 begin fixing issues, critiquing design proposals and reviewing code. SIGs have
 regular [video
-meetings](https://github.com/open-telemetry/community#special-interest-groups)
+meetings](https://github.com/open-telemetry/community/blob/main/README.md#special-interest-groups)
 which everyone is welcome to attend.
 
 ### SIG-specific contributing guidelines
@@ -124,12 +124,12 @@ to ask a question or send a pull request.
 ### Communication
 
 It is best to contact your
-[SIG](https://github.com/open-telemetry/community#Special-Interest-Groups) for
+[SIG](https://github.com/open-telemetry/community/blob/main/README.md#special-interest-groups) for
 issues related to the SIG's topic. Your SIG will be able to help you much more
 quickly than a general question would.
 
 For general questions and troubleshooting, use the [standard lines of
-communication](https://github.com/open-telemetry/community#Communication).
+communication](https://github.com/open-telemetry/community/blob/main/README.md#communication).
 
 ## GitHub workflow
 
