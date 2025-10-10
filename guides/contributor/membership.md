@@ -263,6 +263,10 @@ The following apply to the subproject for which one would be a maintainer.
 - Work with other maintainers to maintain the project's overall health and
   success holistically.
 
+See also the blog post [A day in the life of an OpenTelemetry
+maintainer](https://opentelemetry.io/blog/2025/day-opentelemetry-maintainer/)
+for more details on the day-to-day tasks required of maintainers.
+
 ### Becoming a Maintainer
 
 Unless stated otherwise in a SIG charter ratified by the Technical Committee,
