@@ -12,7 +12,6 @@ remap = [
   # workaround for https://github.com/lycheeverse/lychee/issues/1729
   'https://github.com/(.*?)/(.*?)/blob/(.*?)/(.*#.*)$ https://raw.githubusercontent.com/$1/$2/$3/$4',
   'https://docs.google.com/(.*)#.*$ https://docs.google.com/$1',
-  'https://en.shop.doag.org/(.*)#.*$ https://en.shop.doag.org/$1'
 ]
 
 exclude = [
