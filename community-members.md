@@ -26,7 +26,7 @@ in alphabetical order:
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake
 - [Carlos Alberto](https://github.com/carlosalberto), Lightstep
 - [David Ashpole](https://github.com/dashpole), Google
-- [Jack Berg](https://github.com/jack-berg), New Relic
+- [Jack Berg](https://github.com/jack-berg), Grafana Labs
 - [Josh MacDonald](https://github.com/jmacd), Microsoft
 - [Josh Suereth](https://github.com/jsuereth), Google
 - [Liudmila Molkova](https://github.com/lmolkova), Grafana Labs
