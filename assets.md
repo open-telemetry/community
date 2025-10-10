@@ -12,7 +12,7 @@ Link: https://github.com/open-telemetry
 
 - [1Password Teams](https://1password.com/)
   - Team account: https://opentelemetry.1password.com/
-  - https://github.com/1Password/1password-teams-open-source#opentelemetry
+  - https://github.com/1Password/for-open-source
   - PR: https://github.com/1Password/1password-teams-open-source/pull/364
   - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 
