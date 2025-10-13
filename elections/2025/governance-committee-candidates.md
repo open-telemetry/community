@@ -139,7 +139,7 @@ This has been my focus over the last two years as a GC member, where I…
 
 I firmly believe that the success of OpenTelemetry isn't just about adopting a new tool with old practices.
 It requires a fundamental shift in how we, as an industry, think about instrumenting software, from end users to OSS library maintainers.
-This conviction comes from nearly a decade as an observability practitioner, including my previous role at Skyscanner, where I led the re-architecture of its observability platform with a focus on OpenTelemetry adoption, from client-side all the way down to cloud infrastructure.
+This conviction comes from nearly a decade as an observability practitioner, including my previous role at Skyscanner, where I led the [re-architecture of its entire observability platform](https://medium.com/@SkyscannerEng/skyscanners-journey-to-effective-observability-655167a49d2f) with a focus on OpenTelemetry adoption, from client-side all the way down to cloud infrastructure.
 It's also the reason I became a maintainer of the End User SIG, giving the community a platform for direct feedback and participation.
 This conviction is what gets me out of bed every morning, and it's the focus of my current role as a Principal Observability Architect at New Relic, where I partner with end users to ensure their OpenTelemetry adoption strategies succeed at scale and align with their business priorities.
 
