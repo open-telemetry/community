@@ -7,6 +7,7 @@ In alphabetical order:
 - [Antoine Toulme](#antoine-toulme)
 - [Austin Parker](#austin-parker) 
 - [Damien Mathieu](#damien-mathieu)
+- [Dan Gomez Blanco](#dan-gomez-blanco)
 - [Dinesh Gurumurthy](#dinesh-gurumurthy)
 - [Juraci Paixão Kröhling](#juraci-paixão-kröhling)
 - [Marylia Gutierrez](#marylia-gutierrez)
@@ -116,6 +117,41 @@ Here is my pledge:
 * **Preserve and Evolve Our Foundations**: To support our future, we need governance processes that remain transparent, balanced, and adaptable. I will help refine and maintain the systems that already work well while ensuring they continue to scale with the growth of our community.
 
 My deep involvement as a maintainer and contributor of many SIGs has given me the cross-project insight needed to make this vision a reality.
+
+---
+
+### Dan Gomez Blanco
+
+<img src="static/dan_gomezblanco.jpg" height="300" alt="Dan Gomez Blanco"/>
+
+- Company: [New Relic](https://newrelic.com)
+- GitHub: [danielgblanco](https://github.com/danielgblanco)
+
+Hi! I'm Dan Gomez Blanco and I'm asking for your vote for re-election to the OpenTelemetry Governance Committee.
+I am running to continue strengthening our community by amplifying end user voices, improving clarity around our roadmap and project management, and expanding our outreach to the broader open-source ecosystem.
+This has been my focus over the last two years as a GC member, where I…
+
+- Aligned the use of GitHub project updates with our [project lifecycle](https://github.com/open-telemetry/community/blob/main/project-management.md#project-lifecycle) as a way to track and communicate progress towards cross-cutting initiatives.
+- Implemented our [roadmap management](https://github.com/open-telemetry/community/blob/main/roadmap-management.md) process, empowering SIGs to independently plan and surface their priorities in a common format.
+- Defined and promoted guidance for [end users](https://opentelemetry.io/community/end-user/issue-participation/) and [maintainers](https://github.com/open-telemetry/community/blob/main/guides/maintainer/popular-issues.md) to improve communication around GitHub issue prioritization.
+- Co-organized our first [Community Awards](https://opentelemetry.io/blog/2024/community-awards/), focusing on recognizing those humans that make our community stronger.
+- Supported the End-User SIG to create and manage [OpenTelemetry Live](https://community.cncf.io/opentelemetry-live/), our CNCF Community Group, helping to bring together end users from across the globe.
+
+I firmly believe that the success of OpenTelemetry isn't just about adopting a new tool with old practices.
+It requires a fundamental shift in how we, as an industry, think about instrumenting software, from end users to OSS library maintainers.
+This conviction comes from nearly a decade as an observability practitioner, including my previous role at Skyscanner, where I led the [re-architecture of its entire observability platform](https://medium.com/@SkyscannerEng/skyscanners-journey-to-effective-observability-655167a49d2f) with a focus on OpenTelemetry adoption, from client-side all the way down to cloud infrastructure.
+It's also the reason I became a maintainer of the End User SIG, giving the community a platform for direct feedback and participation.
+This conviction is what gets me out of bed every morning, and it's the focus of my current role as a Principal Observability Architect at New Relic, where I partner with end users to ensure their OpenTelemetry adoption strategies succeed at scale and align with their business priorities.
+
+If re-elected, I will continue to apply this same user-centric, value-driven lens to the Governance Committee's work to help solve the most pressing issues our end users experience in adopting OpenTelemetry effectively and efficiently.
+
+To do this, I will work to ensure a tight feedback loop guides our strategy, keeping the real-world adoption journey at the center of our decisions and helping to make the golden path of adoption the path of least resistance.
+I will also continue to prioritize effective project management and clear roadmaps that support our SIGs in delivering impactful work as we scale.
+Finally, I believe that making OpenTelemetry an industry standard requires sharing this vision broadly.
+I will continue to build bridges to the wider ecosystem through outreach activities (see my my [personal website](https://dangb.me) for details), and to collaborate in parallel initiatives like [Instrumentation Score](https://instrumentation-score.com/) or the [IEEE Standard for Systems Observability across DevOps](https://standards.ieee.org/ieee/2675.2/11839/).
+
+Thank you for your consideration.
+I would be honored to have your vote to continue serving this incredible project and community.
 
 ---
 
