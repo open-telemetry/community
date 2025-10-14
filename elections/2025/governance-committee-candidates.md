@@ -4,15 +4,18 @@
 
 In alphabetical order:
 
-- [Antoine Toulme](#antoine-toulme)
-- [Austin Parker](#austin-parker) 
-- [Damien Mathieu](#damien-mathieu)
-- [Dan Gomez Blanco](#dan-gomez-blanco)
-- [Dinesh Gurumurthy](#dinesh-gurumurthy)
-- [Juraci Paixão Kröhling](#juraci-paixão-kröhling)
-- [Marylia Gutierrez](#marylia-gutierrez)
-- [Severin Neumann](#severin-neumann)
-- [Virginia Diana Todea](#virginia-diana-todea)
+- [2025 OpenTelemetry Governance Committee Candidates](#2025-opentelemetry-governance-committee-candidates)
+  - [List of candidates](#list-of-candidates)
+    - [Antoine Toulme](#antoine-toulme)
+    - [Austin Parker](#austin-parker)
+    - [Damien Mathieu](#damien-mathieu)
+    - [Dan Gomez Blanco](#dan-gomez-blanco)
+    - [Dinesh Gurumurthy](#dinesh-gurumurthy)
+    - [Juraci Paixão Kröhling](#juraci-paixão-kröhling)
+    - [Marylia Gutierrez](#marylia-gutierrez)
+    - [Severin Neumann](#severin-neumann)
+    - [Ted Young](#ted-young)
+    - [Virginia Diana Todea](#virginia-diana-todea)
 
 ---
 
@@ -255,6 +258,56 @@ If re-elected, I want to continue strengthening governance and contributor exper
 - Strengthen our relationships with other CNCF projects and the wider open source ecosystem, ensuring OpenTelemetry continues to thrive as a cornerstone project.
 
 I’m grateful to everyone in the community for your trust and collaboration over the past two years. OpenTelemetry’s growth is only possible because of your efforts, and I’d be honored to continue serving as a Governance Committee member to help our community thrive.
+
+---
+
+### Ted Young
+
+![Ted Young photo](static/ted-young.jpg)
+
+- Company: Grafana Labs
+- GitHub: [tedsuo](https://github.com/tedsuo)
+
+Hello, I'm one of the OpenTelemetry co-founders. Traditionally, my primary focus
+has been on API design, technical project management, and facilitation. For every
+new project within OpenTelemetry, my ethos has been to reach out to find new collaborators,
+give them the support that they need and set them up for success. When a project
+is stuck on techincal design, or is missing a designer, then I will also help
+bottom line the design work. Examples include the many aspects of the tracing
+system, context propagation, error reporting, and our overall approach to stability
+and backwards compatibility. When things feel slow or blocked, I can be relied upon
+to show up and get them moving again.
+
+I also facilitate conflict resolution, and I am available to all community members
+whenever they are experiencing any difficulty or frustration. In general, I try to
+keep OpenTelemetry a friendly, drama-free environment where collaboration is easy and enjoyable.
+
+Here's what's new. OpenTelemetry has finished it's initial mandate to create an
+integrated system of tracing, metrics, and logs. While we have many exciting new
+features and domains that we would love to expand the project into, I believe we
+need to spend the next year focused more on stability, onboarding, and ease of use.
+
+I believe that many SDK maintainers have had a long time to think and recieve feedback
+from their communities. At the same time, we now have a number features ready to
+be implemented to improve the installation and management of SDKs and instrumentation.
+Config files, OpAMP, the Operator, and the new Injector are all examples of pieces
+that can be integrated into an amazing experience for first time users looking to
+do a large-scale rollout of OpenTelemetry.
+
+If re-elected, I will focus my efforts this term on getting SDK maintainers the space
+and support they need to make an installation experience that integrates these features,
+while also focusing on any language-specific usability issues that they would like to address.
+
+In order to do this, I believe we have to restrain the number of other features
+and initiatives that affect the SDKs. OpenTelemetry can move fast if we simplify.
+By making installation and ease of use a priority over other features, we can make
+sure that maintainers have the space to cook.
+
+I've enjoyed working with all of you over this crazy journey, and I look forward
+to doing it again next year! If you feel the same, please lend me your vote for
+another term.
+
+---
 
 ### Virginia Diana Todea
 
