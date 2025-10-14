@@ -263,9 +263,9 @@ I’m grateful to everyone in the community for your trust and collaboration ove
 
 ### Ted Young
 
-![Ted Young photo](static/ted-young.jpg)
+<img src="static/ted-young.jpg" height="300" alt="Ted Young"/>
 
-- Company: Grafana Labs
+- Company: [Grafana Labs](https://grafana.com)
 - GitHub: [tedsuo](https://github.com/tedsuo)
 
 Hello, I'm one of the OpenTelemetry co-founders. Traditionally, my primary focus
