@@ -61,9 +61,7 @@ This phase targets three core areas for immediate impact:
 
 ### TC Sponsorship
 
-<!-- TODO: Vet that they still want to be sponsors -->
 * @carlosalberto (TC Sponsor)
-* @jsuereth (TC Sponsor)
 
 ### Phase 2 Team Structure
 
