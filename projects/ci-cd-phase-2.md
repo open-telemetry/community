@@ -37,8 +37,8 @@ This phase targets three core areas for immediate impact:
    - C#
    - Javascript
 2. **Enhanced Signal Attribute Conventions**: Establish additional attribute
-   conventions for CI/CD-specific trace, metrics, and logs for the following
-   namespaces and domains:
+   conventions for CI/CD-specific trace, metrics, and logs telemetry for the
+   following namespaces and domains:
    - build
    - deployment
    - issues
@@ -71,6 +71,9 @@ This phase targets three core areas for immediate impact:
 * @horovits Project Lead (AWS)
 * @adrielp Project Lead (Liatrio)
 
+**Approvers**:
+* @open-telemetry/semconv-cicd-approvers
+
 **Project Members**:
 * @martincostello
 * @kamphaus
@@ -90,13 +93,13 @@ This phase targets three core areas for immediate impact:
 
 ## Meeting Times
 
-This SIG will meeting weekly on Wednesdays at 06:00 PT. (Tentative)
+This SIG will meet weekly on Wednesdays at 06:00 PT. (Tentative)
 
 ## Phase 2 Timeline
 
-**Duration**: 6 months (targeting completion by end of 2025)
+**Duration**: 6 months (targeting completion by mid-2026)
 
-> Note: Timeline is aggressive but achievable with focused scope and dedicated
+> Note: The timeline is aggressive but achievable with focused scope and dedicated
 > resources and we will continue to be agile/nimble.
 
 ## Labels
