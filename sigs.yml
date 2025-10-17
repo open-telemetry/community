@@ -279,8 +279,8 @@
     invites: calendar-prometheus
     sponsors: []
     gcLiaison:
-      - name: Alolita Sharma
-        github: alolita
+      - name: Pablo Baeyens
+        github: mx-psi
   - name: Functions as a Service (FAAS)
     meeting: Every other Thursday at 8:00 PT
     notes:
@@ -608,8 +608,8 @@
     invites: calendar-js
     sponsors: []
     gcLiaison:
-    - name: 'Pablo Baeyens'
-      github: mx-psi
+    - name: Ted Young
+      github: tedsuo
     repositories:
       - https://github.com/open-telemetry/opentelemetry-js
       - https://github.com/open-telemetry/opentelemetry-js-contrib
