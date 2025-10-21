@@ -113,6 +113,17 @@ Link: https://www.oracle.com/cloud/sign-in.html
 - Admin: [@austinlparker](https://github.com/austinlparker)
   (password is available in the OpenTelemetry Governance 1Password)
 
+### Develocity
+
+We have a [Develocity](https://gradle.com/develocity/) instance
+available to Java projects using Gradle build system.
+
+Link: https://develocity.opentelemetry.io
+
+- GitHub organization secret: `DEVELOCITY_ACCESS_KEY`
+- Secret stored in the OpenTelemetry Java 1Password vault
+- Admin: [@trask](https://github.com/trask)
+
 ## Artifact repositories
 
 ### NuGet OpenTelemetry organization
