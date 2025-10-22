@@ -78,7 +78,7 @@ All exemption forms are private. Only the current governance and election commit
 
 # Vote
 
-Everyone with voting rights may log into [Helios Voting](https://vote.heliosvoting.org/helios/elections/f94a7c58-990b-11f0-a16d-5270fb641b4c/view) using their GitHub account. Voting happens through approval voting, where each voter may select up to four candidates. The four candidates with the most votes win the election.
+Everyone with voting rights may log into [Helios Voting](https://vote.heliosvoting.org/helios/elections/f94a7c58-990b-11f0-a16d-5270fb641b4c/view) using their GitHub account. Voting happens through approval voting, where each voter may select up to five candidates. The five candidates with the most votes win the election.
 
 The election committee will accept late registrations to vote and requests to re-send the voting link via email to [cncf-opentelemetry-governance@lists.cncf.io](mailto:cncf-opentelemetry-governance@lists.cncf.io). We encourage pre-registration to minimize the effort required to run this election.
 
