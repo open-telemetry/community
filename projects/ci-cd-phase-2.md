@@ -75,7 +75,7 @@ This phase targets three core areas for immediate impact:
 **Project Members**:
 * @martincostello
 * @kamphaus
-* @niwoerner
+* @niwoerner (OllyGarden)
 
 ### Phase 2 Resource Requirements
 
