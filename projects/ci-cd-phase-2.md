@@ -67,7 +67,7 @@ This phase targets three core areas for immediate impact:
 
 **Project Leadership**:
 * @horovits Project Lead (AWS)
-* @adrielp Project Lead (Liatrio)
+* @adrielp Project Lead (Grainger)
 
 **Approvers**:
 * @open-telemetry/semconv-cicd-approvers
