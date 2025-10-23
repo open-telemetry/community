@@ -73,7 +73,7 @@ This phase targets three core areas for immediate impact:
 * @open-telemetry/semconv-cicd-approvers
 
 **Project Members**:
-* @martincostello
+* @martincostello (Grafana Labs)
 * @kamphaus
 * @niwoerner (OllyGarden)
 
