@@ -101,5 +101,5 @@ Voting will close at the end of the day on 29 October 2025 (technically, 23:59 i
 | 20 October 2025           | List of nominees is finalized on [community](https://github.com/open-telemetry/community) GitHub and advertised via mailing list and Slack |
 | 24 October 2025 23:59 UTC | Deadline to apply for a member of standing exemption                                                                                       |
 | 27 October 2025 ~~00:00~~ 12:00 UTC | Voting period begins                                                                                                             |
-| 29 October 2025 23:59 ILDW | Voting ends                                                                                                                               |
+| 30 October 2025 11:59 UTC | Voting ends                                                                                                                               |
 | 31 October 2025           | Results are announced                                                                                                                      |
