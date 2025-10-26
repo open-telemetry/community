@@ -17,7 +17,7 @@ We highly encourage participation in this election cycle to ensure that the comm
 
 * If you've been nominated or are willing to nominate yourself: check the [charter document](../../governance-charter.md) and confirm you are ready for the commitment. Make sure to provide all necessary information before 17 October 2025 23:59 UTC
 * If you are an active community member: confirm that you are on the [voters list](https://github.com/open-telemetry/community/blob/main/elections/2025/voters-roll.csv) or register yourself before 24 October 2025 23:59 UTC.
-* Vote between 27 October 2025 ~~00:00~~ noon UTC and end of day 29 October 2025 23:59 via the [voting link](https://github.com/open-telemetry/community/blob/main/elections/2025/governance-committee-election.md)
+* Vote between 27 October 2025 ~~00:00~~ 12:00 UTC and end of day 29 October 2025 23:59 via the [voting link](https://github.com/open-telemetry/community/blob/main/elections/2025/governance-committee-election.md)
 * Keep being awesome and contributing to the project!
 
 # Vacancies
