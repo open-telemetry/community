@@ -17,14 +17,14 @@ Adopting OpenTelemetry implies changes in multiple parts of an organization.
 The components required for a complete implementation are naturally distributed across different areas of responsibility.
 
 For instance, application teams or library maintainers interact with the OpenTelemetry API to add domain-specific instrumentation.
-Platform teams often aim to provide consistent SDK configuration, while supporting centralised telemetry pipelines.
+Platform teams often aim to provide consistent SDK configuration, while supporting centralized telemetry pipelines.
 While infrastructure teams may be responsible for ensuring telemetry from hosts and other devices is collected in a standard fashion.
 
 When these efforts are not coordinated, the resulting telemetry can become fragmented, and adoption suffers, failing to deliver the end-to-end observability part of OTel's core promise.
 
 #### There is no "one-size-fits-all" architecture
 
-While OTel adoption may trigger new conversations about platform engineering strategy (i.e. [Reverse Conway Manoeuvre](https://www.agileanalytics.cloud/blog/team-topologies-the-reverse-conway-manoeuvre)), the project's goal is to cater to all organizational structures, not to force a specific one.
+While OTel adoption may trigger new conversations about platform engineering strategy (i.e. [Reverse Conway Maneuver](https://www.agileanalytics.cloud/blog/team-topologies-the-reverse-conway-manoeuvre)), the project's goal is to cater to all organizational structures, not to force a specific one.
 
 The resulting architectures will (and should) look different depending on the organization's model. For instance:
 
@@ -48,8 +48,8 @@ Blueprints must bridge this gap, starting from the problem and mapping it to a s
 Currently, feedback in OpenTelemetry is mainly gathered via surveys and interviews conducted by the End-User SIG.
 These are normally focused on specific components, or helping specific SIGs prioritize work.
 
-This creates a risk that development efforts in different parts of OTel are not always informed by the most pressing optimisations from the perspective of adoption.
-We may be optimising components in a silo, while a user's main pain point is connecting them.
+This creates a risk that development efforts in different parts of OTel are not always informed by the most pressing optimizations from the perspective of adoption.
+We may be optimizing components in a silo, while a user's main pain point is connecting them.
 These blueprints, by capturing common patterns, can serve as that feedback mechanism to help guide the project's priorities.
 
 ### Goals, objectives, and requirements
@@ -113,7 +113,7 @@ Dan Gomez Blanco (@danielgblanco)
 
 #### Other Staffing
 
-- Members of End-User SIG willing to help coordinate with end-users, create templates, analyse reference architectures, and write up blueprints:
+- Members of End-User SIG willing to help coordinate with end-users, create templates, analyze reference architectures, and write up blueprints:
   - TBD
 - End-Users willing to contribute reference architectures:
   - TBD
