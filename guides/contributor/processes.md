@@ -165,7 +165,7 @@ To make it easier for your PR to receive reviews, consider the reviewers will
 need you to:
 
 - follow the project and repository coding conventions
-- write [good commit messages](https://chris.beams.io/posts/git-commit/)
+- write [good commit messages](https://cbea.ms/git-commit/)
 - break large changes into a logical series of smaller patches which
   individually make easily understandable changes, and in aggregate solve a
   broader issue
