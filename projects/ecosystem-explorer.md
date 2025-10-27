@@ -39,7 +39,7 @@ documentation. We will create a standalone website that can be hosted on the Ope
 the official OpenTelemetry documentation. We will also work to replicate this approach for collector components, and
 the Javascript instrumentation.
 
-### Current challenges
+### Current challenges with instrumentation documentation
 
 The instrumentation projects are large code bases with many different components, often with behavior that changes 
 depending on certain versions of the libraries in use in your code base, or if certain configuration options are enabled.
@@ -66,6 +66,46 @@ instrumentation. The [registry](https://opentelemetry.io/ecosystem/registry/) ha
 lacking important context and there are many instrumentations that are not listed there at all. There have been
 several discussions about improving or replacing the registry, and this project could be a good opportunity to do so.
 
+### Project Scope and Architecture
+
+This project encompasses multiple distinct layers, each with different stakeholders and responsibilities:
+
+1. Metadata Format Definition
+- Purpose: Define standardized schemas and formats for describing instrumentation components
+- Current State:
+  - Collector has existing metadata formats
+  - Java instrumentation metadata schemas are being defined
+  - Additional formats will be needed for other languages and components
+- Stakeholders: OpenTelemetry SIGs (by & for SIG use)
+- Approach: Use what exists, define what we need, collaborate with SIGs as they define their own
+2. Metadata Creation
+- Purpose: Generate actual metadata files that conform to the defined formats
+- Current State:
+  - Collector generates its own metadata
+  - Java instrumentation metadata generation is in progress
+  - Weaver may handle some generation tasks
+- Stakeholders: OpenTelemetry SIGs and third-party contributors (e.g., custom collector components, external instrumentation libraries)
+- Approach: Enable SIGs and third parties to generate metadata for their components
+
+3. Metadata Collection & Centralization
+- Purpose: Aggregate all metadata into a unified, automatically-maintained source of truth
+- Components:
+  - Collector metadata syncing mechanisms
+  - Website automation (existing)
+  - New registry infrastructure with automated freshness guarantees
+- Stakeholders: Primary consumers are this project (explorer, registry), but third parties (Backstage, etc.) can consume it as well
+- Approach: Build a new centralized registry that automatically keeps data current
+
+4. Visualization & User Experience
+- Purpose: Provide user-friendly interfaces for exploring and understanding the ecosystem
+- Components: The Ecosystem Explorer web application (and potentially Registry 2.0)
+- Stakeholders: End users, contributors evaluating instrumentation options
+- Approach: Build the explorer as one representation; encourage others to build alternative visualizations
+
+Project Focus: This project primarily focuses on layers 3 and 4 (collection/centralization and visualization),
+while working closely with SIGs on layers 1 and 2 (format definition and metadata creation) to ensure all aspects of 
+the ecosystem can be represented.
+
 ### Goals, objectives, and requirements
 
 The aim of this project is to create an Ecosystem Explorer web application that provides a user interface to
@@ -79,7 +119,8 @@ processes.
     - Discover what technologies and libraries are instrumented
     - Understand what telemetry will be emitted (spans, metrics, attributes)
     - Compare telemetry across different versions and configurations
-    - Access current documentation that addresses the scattered information problem identified in the challenges section
+    - Access current documentation that addresses the scattered information problem identified in the "challenges" 
+      section above
 
 2. Establish a reusable documentation model that other language SIGs can adopt for their instrumentation projects,
   starting with Java and expanding to Javascript and Collector components
@@ -95,21 +136,39 @@ processes.
 
 - Production-ready web application rebuilt from the existing proof-of-concept
 - Automated extraction of structured metadata from instrumentation source code
-- Scalable data architecture to replace the current 2MB+ JSON file approach
-- Extraction and availability of metadata for Javascript and Collector components to validate multi-language applicability
+- Scalable data architecture for storing and serving metadata
+- Extraction and availability of metadata for Javascript and Collector components, to validate multi-language 
+  applicability
 
 ## Deliverables
 
-**Production-Ready Ecosystem Explorer for Java**
-* Refactored data pipeline and data architecture for managing the source metadata by agent version
-* Rebuilt web application with professional UI/UX and responsive design
-* Production and Staging deployment infrastructure with CI/CD
+The deliverables align with the four architectural layers described above, with this project primarily delivering
+layers 3 and 4, while coordinating with SIGs on layers 1 and 2:
+
+Layer 1 & 2 Coordination: Metadata Formats and Generation (Adjacent to this project)
+* Collaborate with Java SIG on finalizing metadata format definitions
+* Document metadata schemas and generation templates that other SIGs can adopt
+* Coordinate with Collector maintainers on metadata format alignment
+* Provide feedback and requirements from the consumption side (layers 3 & 4)
+
+Layer 3: Centralized Metadata Registry (Primary deliverable)
+* New centralized registry infrastructure that aggregates metadata from all sources
+* Automated synchronization mechanisms (e.g., Collector syncer, GitHub automation)
+* API and data access patterns for third-party consumption (Backstage, other tools)
+* Data pipeline architecture for managing metadata by component version
+
+Layer 4: Ecosystem Explorer (Primary deliverable)
+* Production-ready web application rebuilt from the POC
+* Professional UI/UX with responsive design for exploring instrumentations
+* Version comparison capabilities
+* Configuration impact visualization
+* Production and staging deployment infrastructure with CI/CD
 * Integration with OpenTelemetry.io documentation ecosystem
 
-**Multi-Language Exploration**
-* Research and prototype implementations to validate the approach for other languages and components
-* Documentation and metadata models and templates that other language SIGs can adopt
-* Assessment of Javascript instrumentation and Collector component applicability
+Multi-Language Validation
+* Prototype implementations for JavaScript instrumentation and Collector components
+* Assessment reports validating the approach across different languages
+* Reference documentation for other language SIGs to adopt the model
 
 ## Staffing / Help Wanted
 
@@ -138,19 +197,19 @@ TBD
 
 #### Other Staffing
 
-**Frontend/UX Development (2+ contributors needed)**
+Frontend/UX Development (2+ contributors needed)
 - Frontend development skills for web application
 - UI/UX design experience for data visualization and user experience
 - Responsive design and accessibility expertise
 - Experience with modern web frameworks and deployment pipelines
 
-**Documentation and Integration (1+ contributors needed)**
+Documentation and Integration (1+ contributors needed)
 - OpenTelemetry ecosystem knowledge for integration with OpenTelemetry.io
 - Technical documentation and content strategy experience
 - SEO and discoverability optimization
 - Community engagement and adoption support
 
-**Backend/Infrastructure (1+ contributors needed)**
+Backend/Infrastructure (1+ contributors needed)
 - Data pipeline / Python scripting experience
 - CI/CD and deployment automation
 
@@ -166,24 +225,24 @@ Who (people, companies) in the industry should be aware of this effort? Was ther
 This timeline assumes project approval and resource allocation as outlined in the staffing section. Until staffing is
 confirmed and expected time commitments are known, this timeline is in flux.
 
-**Phase 1: Foundation and Planning (Months 1-2)**
+Phase 1: Foundation and Planning (Months 1-2)
 - Establish project infrastructure, GitHub project board, and team coordination
 - Complete technical assessment of existing POC and data architecture requirements
 - Finalize UI/UX design requirements and technical specifications
 - Set up development, testing, and staging environments
 
-**Phase 2: Core Platform Development (Months 3-8)**
+Phase 2: Core Platform Development (Months 3-8)
 - Refactor and rebuild data pipeline with scalable architecture
 - Develop production-ready web application with professional UI/UX
 - Implement automated metadata extraction from Java instrumentation repositories
 
-**Phase 3: Integration and Multi-Language Research (Months 9-11)**
+Phase 3: Integration and Multi-Language Research (Months 9-11)
 - Integration with OpenTelemetry.io documentation ecosystem
 - Conduct JavaScript and Collector component research and prototyping
 - Create documentation templates and adoption guidance for other language SIGs
 - Beta testing with Java SIG and selected community members
 
-**Phase 4: Production Launch (Month 12)**
+Phase 4: Production Launch (Month 12)
 - Production deployment and monitoring setup
 - Community rollout and adoption support
 - Documentation and maintenance procedure finalization
@@ -194,7 +253,7 @@ Multi-language expansion beyond research phase will depend on interest and engag
 
 ## Labels
 
-`instrumentation-docs` for all PRs and issues related to this project.
+`ecosystem-explorer` for all PRs and issues related to this project.
 
 ## GitHub Project (Post-Approval)
 
