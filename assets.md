@@ -345,8 +345,10 @@ This GitHub App has the following permissions:
 
 - Read access to metadata
 - Read and write access to pull requests
+- Read access to org members and teams
 
-- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+Admins
+- [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
 This GitHub App addresses two common issues:
 
