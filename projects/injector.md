@@ -14,7 +14,7 @@ Currently, system operators have no mechanism for installing OpenTelemetry clien
 There are several language-specific installation efforts supported by the
 OpenTelemetry Operator, providing coverage for a limited number of use cases. Using
 LD_PRELOAD, we can extend this set of use cases to six languages, and remove the
-requirement that the users be running kubernetes. Running linux will still be a
+requirement that the users be running Kubernetes. Running Linux will still be a
 requirement.
 
 Note: This SIG is concerned with the OpenTelemetry Injector mechanism itself. We
