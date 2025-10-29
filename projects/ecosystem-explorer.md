@@ -177,9 +177,8 @@ OpenTelemetry domain knowledge to transform the existing proof-of-concept into a
 
 ### SIG
 
-This project will be led by a cross-cutting effort coordinating with the Java SIG (primary implementation) and
-Communications SIG (documentation integration). A new dedicated SIG or working group will be formed to help manage 
-and move this project forward.
+This project will be led by a cross-cutting effort coordinating with the Java, Collector, and Communications SIGs. A 
+new dedicated SIG or working group will be formed to help manage and move this project forward.
 
 ### Required staffing
 
@@ -193,7 +192,14 @@ and move this project forward.
 TBD
 
 #### GC Liaison
-* @svrnm (Severin Neumann)
+* @svrnm (Severin Neumann - Causely)
+
+
+#### Engineers
+
+* @mx-psi (Pablo Baeyens - Datadog) - Collector ecosystem
+* @jaydeluca (Jay DeLuca - Grafana Labs) - Java ecosystem
+
 
 #### Other Staffing
 
