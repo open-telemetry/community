@@ -108,7 +108,7 @@ and it should be relatively short we only need to update conformance to the spec
 
 ## SIG Meetings and Other Info
 
-*meeting time*: biweekly on Wednesday 8:00am PDT (+1 week offset from the SIG Prometheus Interoperability)
+*meeting time*: biweekly on Tuesday 7:30am PDT
 
 *meeting-notes*: [Agenda](https://docs.google.com/document/d/17DqFVlLvO43neXXTwlSd1zcKjSRA8P3d0Y444QNwUTQ)
 
