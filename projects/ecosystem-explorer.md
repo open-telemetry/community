@@ -199,6 +199,8 @@ TBD
 
 * @mx-psi (Pablo Baeyens - Datadog) - Collector ecosystem
 * @jaydeluca (Jay DeLuca - Grafana Labs) - Java ecosystem
+* @vitorvasc (Vitor Vasconcellos - Mercado Libre)  
+
 
 
 #### Other Staffing
