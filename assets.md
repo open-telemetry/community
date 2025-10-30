@@ -78,6 +78,17 @@ please ensure your workloads are optimized to avoid unnecessary usage.
 
 Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
+#### Linux/s390x runners
+
+IBM provides linux/s390x runners for build and test automation on this platform. Access to these runners is available to repositories on request; please open a community issue to request access. The following runners are currently available:
+
+- `ubuntu-24.04-s390x`
+- `ubuntu-22.04-s390x`
+
+Note: In response to your request, IBM may ask for additional information such as primary use cases for the runner or the link to the current existing actions workflow file(s). At this stage, the action runners are sized to fulfill common build and unit test tasks.
+
+Admin: [@rrschulze](https://github.com/rrschulze)
+
 ### Google Cloud account
 
 Link: https://cloud.google.com
