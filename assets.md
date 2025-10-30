@@ -89,7 +89,6 @@ Note: In response to your request, IBM may ask for additional information such a
 
 Admin: [@rrschulze](https://github.com/rrschulze)
 
-
 ### Google Cloud account
 
 Link: https://cloud.google.com
