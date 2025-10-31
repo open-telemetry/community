@@ -121,6 +121,7 @@ The existing member must:
   privileges as existing members, to the following mailing lists:
   - https://lists.cncf.io/g/cncf-opentelemetry-governance
   - https://lists.cncf.io/g/cncf-otel-zoomadmins
+- [ ] Add email from the new member to the `governance-committee@opentelemetry.io` Google group.
 - [ ] Open CNCF Service Desk ticket to invite new member as `Member` to 
   https://lists.cncf.io/g/cncf-opentelemetry-maintainers
 
@@ -151,8 +152,8 @@ The new member must:
 ## Meetings and Ceremonies
 As per GC charter, all members are expected to attend the following meetings:
 
-- Governance Committee Meeting (every Thursday 11:00 Pacific Time).
-- Governance/Technical Committee Joint Meeting (every second Thursday of the month,
+- Governance Committee Meeting (every [Wednesday 8:00 Pacific Time](https://dateful.com/convert/pst-pdt-pacific-time?t=0800)).
+- Governance/Technical Committee Joint Meeting (every second Wednesday of the month,
   coinciding with the Governance Committee Meeting).
 
 The dates and times of these meetings may be discussed and updated after every
