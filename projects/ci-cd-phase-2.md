@@ -1,7 +1,6 @@
 # CI/CD Observability SIG Phase 2
 
-<!-- TODO: Potentially create a new project board -->
-[**CI/CD Project Board**](https://github.com/orgs/open-telemetry/projects/79)
+[**CI/CD Project Board**](https://github.com/orgs/open-telemetry/projects/171)
 
 ## Overview
 
@@ -91,7 +90,7 @@ This phase targets three core areas for immediate impact:
 
 ## Meeting Times
 
-This SIG will meet weekly on Wednesdays at 06:00 PT. (Tentative)
+This SIG will meet weekly on Tuesdays at 07:00 PT.
 
 ## Phase 2 Timeline
 
