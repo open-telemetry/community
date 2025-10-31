@@ -7,13 +7,13 @@ Charter](./governance-charter.md),
 in alphabetical order:
 
 - [Alolita Sharma](https://github.com/alolita), Apple, until October 2026
-- [Austin Parker](https://github.com/austinlparker), Honeycomb, until October 2025
-- [Daniel Gomez Blanco](https://github.com/danielgblanco), New Relic, until October 2025
-- [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden, until October 2025
+- [Austin Parker](https://github.com/austinlparker), Honeycomb, until October 2027
+- [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden, until October 2027
+- [Marylia Gutierrez](https://github.com/maryliag), Grafana Labs, until October 2027
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2026
 - [Pablo Baeyens Fernandez](https://github.com/mx-psi), Datadog, until October 2026
-- [Severin Neumann](https://github.com/svrnm), Independent, until October 2025
-- [Ted Young](https://github.com/tedsuo), Grafana Labs, until October 2025
+- [Severin Neumann](https://github.com/svrnm), Causely, until October 2027
+- [Ted Young](https://github.com/tedsuo), Grafana Labs, until October 2027
 - [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2026
 
 ## Technical Committee
@@ -190,6 +190,7 @@ Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/open
 - [Bogdan Drutu](https://github.com/BogdanDrutu), until October 2023
 - [Constance Caramanolis](https://github.com/ccaraman), until October 2021
 - [Daniel Dyla](https://github.com/dyladan), until October 2024
+- [Daniel Gomez Blanco](https://github.com/danielgblanco), until October 2025
 - [Liz Fong-Jones](https://github.com/lizthegrey), until October 2022
 - [Sarah Novotny](https://github.com/SarahNovotny), until October 2021
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), until October 2021
