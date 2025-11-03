@@ -135,6 +135,7 @@ The existing member must:
 
 - [ ] Give new member write access to:
   - [OpenTelemetry Governance Committee meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8)
+- [ ] Add email from the new member to the `governance-committee@opentelemetry.io` Google group.
 
 The new member must:
 
@@ -151,8 +152,8 @@ The new member must:
 ## Meetings and Ceremonies
 As per GC charter, all members are expected to attend the following meetings:
 
-- Governance Committee Meeting (every Thursday 11:00 Pacific Time).
-- Governance/Technical Committee Joint Meeting (every second Thursday of the month,
+- Governance Committee Meeting (every [Wednesday 8:00 Pacific Time](https://dateful.com/convert/pst-pdt-pacific-time?t=0800)).
+- Governance/Technical Committee Joint Meeting (every second Wednesday of the month,
   coinciding with the Governance Committee Meeting).
 
 The dates and times of these meetings may be discussed and updated after every
