@@ -10,7 +10,7 @@ System operators are end users who have access to deployment and management tool
 for their organization's services, but do not have access to the source code or
 command line invocations for those services.
 
-Currently, system operators have no mechanism for installing OpenTelemetry clients.
+Currently, system operators have very limited choices for installing OpenTelemetry clients.
 There are several language-specific installation efforts supported by the
 OpenTelemetry Operator, providing coverage for a limited number of use cases. Using
 LD_PRELOAD, we can extend this set of use cases to six languages, and remove the
