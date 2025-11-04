@@ -171,7 +171,7 @@
       - name: Daniel Gomez Blanco
         github: danielgblanco
     roadmapProjectIDs:
-      - 79
+      - 171
   - name: 'Semantic Conventions: RPC'
     meeting: Every Wednesday at 17:00 PT
     notes:
