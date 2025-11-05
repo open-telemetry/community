@@ -155,7 +155,7 @@
     roadmapProjectIDs:
       - 82
   - name: 'Semantic Conventions: CI/CD'
-    meeting: Every Thursday at 06:00 PT
+    meeting: Every Tuesday at 07:00 PT
     notes:
       type: gDoc
       value: 1CdzXD16QpayEpPxae_3u-7BLyzv0GgzZrKvV7tTFDr0
@@ -165,15 +165,13 @@
         id: C0598R66XAP
     invites: calendar-semconv
     sponsors:
-      - name: Josh Suereth
-        github: jsuereth
       - name: Carlos Alberto
         github: carlosalberto
     gcLiaison:
       - name: Daniel Gomez Blanco
         github: danielgblanco
     roadmapProjectIDs:
-      - 79
+      - 171
   - name: 'Semantic Conventions: RPC'
     meeting: Every Wednesday at 17:00 PT
     notes:
