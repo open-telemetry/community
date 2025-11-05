@@ -156,7 +156,7 @@ The CNCF FOSSA Service is a static code checker that codifies and monitors the p
 
 The existing member must:
 
-- [ ] Send an email to cncf-maintainer-changes@cncf.io to request invitation to [FOSSA](https://app.fossa.com/)
+- [ ] Send an email to cncf-maintainer-changes@cncf.io to request invitation of the new member to [FOSSA](https://app.fossa.com/)
 - [ ] After invite is accepted, add them to the [OpenTelemetry Team](https://app.fossa.com/account/settings/organization/teams/78675).
 
 The new member must:
