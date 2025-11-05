@@ -55,7 +55,7 @@ The existing member must:
       via email.
 - [ ] After invite is accepted, add them to the `Owners` group as a `Manager`.
 
-The  current member must:
+The new member must:
 
 - [ ] Accept invitation and create new account on [OpenTelemetry 1Password](https://opentelemetry.1password.com).
 - [ ] Validate they have `Manager` access to `Owners` group, and that the group
@@ -141,6 +141,8 @@ The new member must:
 
 - [ ] Validate they have write access to the documents listed above.
 
+_Note: Confidential documents shared only between GC members are stored under the admin google account and never shared with private accounts. To see/edit them, you must login into the admin google account._
+
 ### Zapier
 Zapier is used to sync meeting recordings from Zoom to a publicly viewable
 Google spreadsheet (see https://github.com/open-telemetry/community/blob/main/docs/how-meeting-recordings-upload-works.md
@@ -148,6 +150,18 @@ for more details).
 
 The new member must:
 - [ ] Validate they can log in to https://zapier.com with the credentials in 1Password.
+
+### FOSSA
+The CNCF FOSSA Service is a static code checker that codifies and monitors the project's compliance with the [CNCF's 3rd Party License policy](https://github.com/cncf/foundation/blob/main/policies-guidance/allowed-third-party-license-policy.md#cncf-allowlist-license-policy).
+
+The existing member must:
+- [ ] Send an email to cncf-maintainer-changes@cncf.io to request invitation to [FOSSA](https://app.fossa.com/)
+- [ ] After invite is accepted, add them to the [OpenTelemetry Team](https://app.fossa.com/account/settings/organization/teams/78675).
+
+The new member must:
+
+- [ ] Accept invitation and create account.
+- [ ] Validate they are in the [OpenTelemetry Team](https://app.fossa.com/account/settings/organization/teams/78675).
 
 ## Meetings and Ceremonies
 As per GC charter, all members are expected to attend the following meetings:
