@@ -158,7 +158,7 @@ Layer 1 & 2 Coordination: Metadata Formats and Generation (Adjacent to this proj
 
 Layer 3: Centralized Metadata Registry (Primary deliverable)
 * New centralized registry infrastructure that aggregates metadata from all sources
-* Automated synchronization mechanisms (e.g., Collector syncer, GitHub automation)
+* Automated synchronization mechanisms (e.g., Collector synchronizer, GitHub automation)
 * API and data access patterns for third-party consumption (Backstage, other tools)
 * Data pipeline architecture for managing metadata by component version
 
