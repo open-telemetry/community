@@ -18,11 +18,13 @@ ignoreRegExpList:
   - GitHub Handle in YML
 words:
   - Abinet
+  - agentic
   - Alain
   - Alff
   - Arize
   - Aronoff
   - Ashpole
+  - austinlparker
   - automations
   - Baeyens
   - calendar-localization-ptbr
@@ -194,6 +196,7 @@ words:
   - mjwolf
   - mkorbi
   - molkova
+  - mottibec
   - msomasu
   - MSYS
   - PATHCONV
@@ -216,6 +219,7 @@ words:
   - opentelemetrybot
   - ossf
   - otel
+  - otelcol
   - otel-agentmanwg
   - otel-comms
   - otel-ebpf
@@ -230,6 +234,7 @@ words:
   - Prometheus
   - paixão
   - pająk
+  - pavolloffay
   - passcodes
   - poncelow
   - proto
@@ -256,6 +261,7 @@ words:
   - severin
   - sguyon
   - sharma
+  - shiftyp
   - shkuro
   - sigelman
   - signup
