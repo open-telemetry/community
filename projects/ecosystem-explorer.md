@@ -182,8 +182,9 @@ OpenTelemetry domain knowledge to transform the existing proof-of-concept into a
 
 ### SIG
 
-This project will be led by a cross-cutting effort coordinating with the Java, Collector, and Communications SIGs. A 
-new dedicated SIG or working group will be formed to help manage and move this project forward.
+This project will be led by a cross-cutting effort coordinating with the Java, Collector, and Communications SIGs. A
+working group will be formed under the Communications SIG to manage the overall project, and the Communications SIG
+meetings will be used for project updates and coordination.
 
 ### Required staffing
 
