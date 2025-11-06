@@ -115,7 +115,7 @@
     roadmapProjectIDs:
       - 55
   - name: 'Semantic Conventions: K8s'
-    meeting: Every other Wednesday at 08:00 PT
+    meeting: Every other Tuesday at 07:30 PT
     notes:
       type: gDoc
       value: 17DqFVlLvO43neXXTwlSd1zcKjSRA8P3d0Y444QNwUTQ
@@ -155,7 +155,7 @@
     roadmapProjectIDs:
       - 82
   - name: 'Semantic Conventions: CI/CD'
-    meeting: Every Thursday at 06:00 PT
+    meeting: Every Tuesday at 07:00 PT
     notes:
       type: gDoc
       value: 1CdzXD16QpayEpPxae_3u-7BLyzv0GgzZrKvV7tTFDr0
@@ -165,15 +165,13 @@
         id: C0598R66XAP
     invites: calendar-semconv
     sponsors:
-      - name: Josh Suereth
-        github: jsuereth
       - name: Carlos Alberto
         github: carlosalberto
     gcLiaison:
       - name: Daniel Gomez Blanco
         github: danielgblanco
     roadmapProjectIDs:
-      - 79
+      - 171
   - name: 'Semantic Conventions: RPC'
     meeting: Every Wednesday at 17:00 PT
     notes:
@@ -210,8 +208,26 @@
         github: trask
     roadmapProjectIDs:
       - 104
+  - name: 'Semantic Conventions: Service and Deployment'
+    meeting: Alternating between Thursday at 08:00 PT and Thursday at 12:00 UTC
+    notes:
+      type: gDoc
+      value: 1Fy6yXfZqrwN_oHw95Bdfg_0hzUgzlk3VO5wA1invgkI
+    chat:
+      - type: slack
+        name: '#otel-service-and-deployment-semconv-sig'
+        id: C09HLNSSJSE
+    invites: calendar-semconv
+    sponsors:
+      - name: Josh Suereth
+        github: jsuereth
+    gcLiaison:
+      - name: Trask Stalnaker
+        github: trask
+    roadmapProjectIDs:
+      - 168
   - name: 'Specification: Entities'
-    meeting: Every other Thursday at 08:00 PT
+    meeting: Every Monday at 09:00 PT
     notes:
       type: gDoc
       value: 15Yt9ss2_EhuFPqItPbk4vjfpeRDAQ5WCUVuY_kCeOAo
@@ -261,8 +277,8 @@
     invites: calendar-prometheus
     sponsors: []
     gcLiaison:
-      - name: Alolita Sharma
-        github: alolita
+      - name: Pablo Baeyens
+        github: mx-psi
   - name: Functions as a Service (FAAS)
     meeting: Every other Thursday at 8:00 PT
     notes:
@@ -333,8 +349,7 @@
     gcLiaison:
     - name: Daniel Gomez Blanco
       github: danielgblanco
-    roadmapProjectIDs:
-      - 19
+    roadmapProjectIDs: []
 - name: Implementation SIGs
   sigs:
   - name: 'Android: SDK + Automatic Instrumentation'
@@ -591,8 +606,8 @@
     invites: calendar-js
     sponsors: []
     gcLiaison:
-    - name: 'Pablo Baeyens'
-      github: mx-psi
+    - name: Ted Young
+      github: tedsuo
     repositories:
       - https://github.com/open-telemetry/opentelemetry-js
       - https://github.com/open-telemetry/opentelemetry-js-contrib
@@ -789,7 +804,7 @@
   sigs:
   - name: Communications (Website, [Documentation](https://opentelemetry.io/docs/),
       etc.)
-    meeting: Every other Wednesday at 10:00 PT
+    meeting: Every other Tuesday at 09:00 PT
     notes:
       type: gDoc
       value: 1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY
@@ -865,7 +880,7 @@
       - https://github.com/open-telemetry/changelog.opentelemetry.io
       - https://github.com/open-telemetry/assign-reviewers-action
   - name: Contributor Experience
-    meeting: Monday alternating between 10:00 PT and 17:00 UTC+8
+    meeting: Every other Monday at 10:00 PT
     notes:
       type: gDoc
       value: 1CTQI0p3QF8JP8reV8z_ggcs8KE5YVPpQGvAQknw4qP0
@@ -1008,6 +1023,20 @@
       - type: slack
         name: "#otel-localization-uk"
         id: C097ZNPM3LK
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+    sponsors:
+      - name: 'Severin Neumann'
+        github: svrnm
+  - name: Romanian (ro-RO)
+    meeting: ''
+    notes:
+      type: none
+    chat:
+      - type: slack
+        name: "#otel-localization-ro"
+        id: C09E9KNNLP4
     gcLiaison:
       - name: 'Severin Neumann'
         github: svrnm

@@ -106,7 +106,7 @@ Triagers assist the maintainers and approvers with project management and
 backlog organization. The specific workflows and triage requirements depend on
 the project, and are set by the project maintainers.
 
-Defined by: [Triage permissions](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level),
+Defined by: [Triage permissions](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization#permissions-for-each-role),
 with the names of the current Triagers committed to git, either in CONTRIBUTING,
 CODEOWNERS, or the bottom of the README.
 
@@ -262,6 +262,10 @@ The following apply to the subproject for which one would be a maintainer.
 - Ensure a healthy process for discussion and decision making is in place.
 - Work with other maintainers to maintain the project's overall health and
   success holistically.
+
+See also the blog post [A day in the life of an OpenTelemetry
+maintainer](https://opentelemetry.io/blog/2025/day-opentelemetry-maintainer/)
+for more details on the day-to-day tasks required of maintainers.
 
 ### Becoming a Maintainer
 

@@ -24,7 +24,7 @@ words:
   - automations
   - Baeyens
   - calendar-localization-ptbr
-  - causely
+  - Causely
   - Cheler
   - Collibra
   - Coralogix
@@ -36,6 +36,7 @@ words:
   - Dosu
   - Dubbo
   - datadog
+  - Develocity
   - devex
   - devstats
   - dynatrace
@@ -64,6 +65,7 @@ words:
   - logz
   - maintainership
   - Makefiles
+  - Marylia
   - observiq
   - opentelemetry
   - opentelemetrybot

@@ -80,15 +80,18 @@ The new member must:
 - [ ] Create a [CNCF Slack](https://slack.cncf.io/) account if they do not
   already have one.
 
-### CNCF Service Desk
+### CNCF Service Desk and Mailing Lists
 Interactions between the OpenTelemetry GC and CNCF are mostly driven via Service
 Desk tickets. Members can create tickets to discuss access to systems, licensing,
 funds, marketing, press, etc.
 
 The existing member must:
 
-- [ ] Create a Service Desk ticket to invite new member via email and add it to
-  OpenTelemetry group.
+- [ ] Send an email to cncf-maintainer-changes@cncf.io to request invitations to the Service Desk
+      and mailing lists for the new member
+      - https://lists.cncf.io/g/cncf-opentelemetry-governance (moderator)
+      - https://lists.cncf.io/g/cncf-opentelemetry-announce (moderator)
+      - https://lists.cncf.io/g/cncf-opentelemetry-maintainers (member)
 
 The new member must:
 
@@ -96,6 +99,20 @@ The new member must:
 - [ ] Validate they have access to the [CNCF Service Desk](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)
   (see more information about Service Desk in the [docs](https://github.com/cncf/servicedesk#readme)).
 - [ ] Validate they have access to [OpenTelemetry Requests](https://cncfservicedesk.atlassian.net/servicedesk/customer/user/requests?page=1&reporter=org-31).
+- [ ] Accept invitations to mailing lists above, creating an account on https://lists.cncf.io
+  if necessary, using their preferred email address.
+
+### Additional Mailing List
+
+The existing member must:
+
+- [ ] Invite new member as `Moderator`, ensuring that they have the same
+  privileges as existing members, to the following mailing list:
+  - https://lists.cncf.io/g/cncf-otel-zoomadmins
+
+The new member must:
+- [ ] Accept invitations to mailing list above, creating an account on https://lists.cncf.io
+  if necessary, using their preferred email address.
 
 ### GitHub
 Most of the management, enablement, support and documentation work done by GC
@@ -111,23 +128,6 @@ The existing member must:
 - [ ] Add new member to the list of GC members in [open-telemetry/community/community-members.md](https://github.com/open-telemetry/community/blob/main/community-members.md).
 - [ ] Add new member in the `OpenTelemetry (Governance Committee)` section of [cncf/foundation/project-maintainers.csv](https://github.com/cncf/foundation/blob/main/project-maintainers.csv)
 
-### Mailing Lists
-The following mailing lists ensure that communications reach all necessary
-members of this group.
-
-The existing member must:
-
-- [ ] Invite new member as `Moderator`, ensuring that they have the same
-  privileges as existing members, to the following mailing lists:
-  - https://lists.cncf.io/g/cncf-opentelemetry-governance
-  - https://lists.cncf.io/g/cncf-otel-zoomadmins
-- [ ] Open CNCF Service Desk ticket to invite new member as `Member` to 
-  https://lists.cncf.io/g/cncf-opentelemetry-maintainers
-
-The new member must:
-- [ ] Accept invitations to mailing lists above, creating an account on https://lists.cncf.io
-  if necessary, using their preferred email address.
-
 ### Google Drive
 OpenTelemetry handles minutes and other ad-hoc documents in Google Drive.
 
@@ -135,6 +135,7 @@ The existing member must:
 
 - [ ] Give new member write access to:
   - [OpenTelemetry Governance Committee meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8)
+- [ ] Add email from the new member to the `governance-committee@opentelemetry.io` Google group.
 
 The new member must:
 
@@ -151,8 +152,8 @@ The new member must:
 ## Meetings and Ceremonies
 As per GC charter, all members are expected to attend the following meetings:
 
-- Governance Committee Meeting (every Thursday 11:00 Pacific Time).
-- Governance/Technical Committee Joint Meeting (every second Thursday of the month,
+- Governance Committee Meeting (every [Wednesday 8:00 Pacific Time](https://dateful.com/convert/pst-pdt-pacific-time?t=0800)).
+- Governance/Technical Committee Joint Meeting (every second Wednesday of the month,
   coinciding with the Governance Committee Meeting).
 
 The dates and times of these meetings may be discussed and updated after every

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-import pip
+import subprocess
 import sys
 
 # in the Makefile we use a unmodified python container to run this script, so we need to install pyyaml if it's not already installed
 if (len(sys.argv) > 1) and (sys.argv[1] == "--install"):
-    pip.main(['install', 'pyyaml'])
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pyyaml'])
     sys.argv = sys.argv[1:]
 
 import yaml

@@ -39,6 +39,11 @@ documentation. We will create a standalone website that can be hosted on the Ope
 the official OpenTelemetry documentation. We will also work to replicate this approach for collector components, and
 the Javascript instrumentation.
 
+This project is focused on the user facing documentation generation aspect of the overall Ecosystem Explorer effort.
+The way in which the underlying metadata is generated or maintained by each SIG/project is out of scope for this project.
+It is highly encouraged that as much of the metadata generation is done using
+[weaver tooling](https://github.com/open-telemetry/weaver), especially the area of semantic conventions and signals.
+
 ### Current challenges with instrumentation documentation
 
 The instrumentation projects are large code bases with many different components, often with behavior that changes 
@@ -70,15 +75,16 @@ several discussions about improving or replacing the registry, and this project 
 
 This project encompasses multiple distinct layers, each with different stakeholders and responsibilities:
 
-1. Metadata Format Definition
+1. Metadata Format Definition (Out of scope for this project)
 - Purpose: Define standardized schemas and formats for describing instrumentation components
 - Current State:
   - Collector has existing metadata formats
   - Java instrumentation metadata schemas are being defined
   - Additional formats will be needed for other languages and components
 - Stakeholders: OpenTelemetry SIGs (by & for SIG use)
-- Approach: Use what exists, define what we need, collaborate with SIGs as they define their own
-2. Metadata Creation
+  - Approach: Use what exists, define what we need, collaborate with SIGs as they define their own. Weaver will be used
+    wherever possible.
+2. Metadata Creation (Out of scope for this project)
 - Purpose: Generate actual metadata files that conform to the defined formats
 - Current State:
   - Collector generates its own metadata
@@ -86,7 +92,6 @@ This project encompasses multiple distinct layers, each with different stakehold
   - Weaver may handle some generation tasks
 - Stakeholders: OpenTelemetry SIGs and third-party contributors (e.g., custom collector components, external instrumentation libraries)
 - Approach: Enable SIGs and third parties to generate metadata for their components
-
 3. Metadata Collection & Centralization
 - Purpose: Aggregate all metadata into a unified, automatically-maintained source of truth
 - Components:
@@ -95,7 +100,6 @@ This project encompasses multiple distinct layers, each with different stakehold
   - New registry infrastructure with automated freshness guarantees
 - Stakeholders: Primary consumers are this project (explorer, registry), but third parties (Backstage, etc.) can consume it as well
 - Approach: Build a new centralized registry that automatically keeps data current
-
 4. Visualization & User Experience
 - Purpose: Provide user-friendly interfaces for exploring and understanding the ecosystem
 - Components: The Ecosystem Explorer web application (and potentially Registry 2.0)
@@ -104,7 +108,8 @@ This project encompasses multiple distinct layers, each with different stakehold
 
 Project Focus: This project primarily focuses on layers 3 and 4 (collection/centralization and visualization),
 while working closely with SIGs on layers 1 and 2 (format definition and metadata creation) to ensure all aspects of 
-the ecosystem can be represented.
+the ecosystem can be represented. Weaver should be leveraged wherever possible to help standardize the metadata management
+strategies across SIGs.
 
 ### Goals, objectives, and requirements
 

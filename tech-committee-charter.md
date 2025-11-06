@@ -26,7 +26,7 @@ No more than one-fourth (25%) of the TC members may be affiliated with the same 
 
 The TC may, at its discretion, invite any number of non-voting observers to participate in the public portion of TC discussions and meetings.
 
-The TC shall meet regularly using tools that enable participation by the community The meeting shall be directed by the TC Chairperson. Responsibility for directing individual meetings may be delegated by the TC Chairperson to any other TC member. TC members are expected to regularly participate in TC activities.
+The TC shall meet regularly using tools that enable participation by the community. The meeting shall be directed by a rotating TC member. TC members are expected to regularly participate in TC activities.
 
 In the case where an individual TC member -- within any six month period -- attends fewer than 25% of the regularly scheduled meetings, does not participate in TC discussions, and does not participate in TC votes, the member shall be automatically removed from the TC. The member may be invited to continue attending TC meetings as an observer.
 
@@ -106,17 +106,6 @@ New TC members can be nominated by any Member in Standing as defined in the [Ope
 
 The voting should remain open for a minimum of 5 business days.
 
-### Election of TC Chair
-
-The TC will elect from amongst voting TC members a TC Chairperson to work on building an agenda for TC meetings. The TC shall hold annual elections to select a TC Chairperson; there are no limits on the number of terms a TC Chairperson may serve.
-
-For election of persons (such as the TC Chairperson) by a vote of the TC voting members, a multiple-candidate method should be used, such as:
-
-* [Condorcet](https://en.wikipedia.org/wiki/Condorcet_method) or
-* [Single Transferable Vote](https://en.wikipedia.org/wiki/Single_transferable_vote)
-
-Multiple-candidate methods may be reduced to simple election by plurality when there are only two candidates for one position to be filled. No election is required if there is only one candidate and no objections to the candidates election. Elections shall be done within the Projects by the collaborators active in the Project.
-
 ## Voting on project issues
 
 For internal project decisions, Maintainers shall operate under Lazy Consensus, a decision-making policy which assumes general consent if no responses are posted within a defined period. The TC shall establish appropriate guidelines for implementing Lazy Consensus (e.g. expected notification and review time periods) within the development process.
@@ -139,4 +128,4 @@ The OpenTelemetry project git repository is maintained by the TC and additional 
 
 Individuals making significant and valuable contributions, can move through the project to leadership roles as outlined in the [Community Membership](./guides/contributor/membership.md) document. Modifications of the contents of the git repository are made on a collaborative basis as defined in the development process.
 
-Project Members may opt to elevate (via [mail list](./#tc-technical-committee)) significant or controversial modifications, or modifications that have not found consensus to the TC for discussion. The TC will serve as the final arbiter where required. The TC will additionally publish and maintain a development process guide for people looking to participate in the development effort.
+Project Members may opt to elevate (via [mail list](./README.md#mailing-lists)) significant or controversial modifications, or modifications that have not found consensus to the TC for discussion. The TC will serve as the final arbiter where required. The TC will additionally publish and maintain a development process guide for people looking to participate in the development effort.

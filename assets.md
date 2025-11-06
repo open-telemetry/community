@@ -12,7 +12,7 @@ Link: https://github.com/open-telemetry
 
 - [1Password Teams](https://1password.com/)
   - Team account: https://opentelemetry.1password.com/
-  - https://github.com/1Password/1password-teams-open-source#opentelemetry
+  - https://github.com/1Password/for-open-source
   - PR: https://github.com/1Password/1password-teams-open-source/pull/364
   - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 
@@ -40,8 +40,8 @@ Link: https://app.fossa.com/
 
 CNCF provides the following large Linux runners which are available to all repositories:
 
-- [`oracle-16cpu-64gb-x86-64`](https://github.com/cncf/automation/tree/main/ci#custom-runners)
-- [`oracle-16cpu-64gb-arm64`](https://github.com/cncf/automation/tree/main/ci#custom-runners)
+- [`oracle-16cpu-64gb-x86-64`](https://github.com/cncf/automation/blob/main/ci/README.MD#custom-runners)
+- [`oracle-16cpu-64gb-arm64`](https://github.com/cncf/automation/blob/main/ci/README.MD#custom-runners)
 
 Note that normal-sized Linux ARM64 runners are [available for free to all public
 repositories](https://github.blog/changelog/2025-01-16-linux-arm64-hosted-runners-now-available-for-free-in-public-repositories-public-preview/).
@@ -78,13 +78,24 @@ please ensure your workloads are optimized to avoid unnecessary usage.
 
 Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
+#### Linux/s390x runners
+
+IBM provides linux/s390x runners for build and test automation on this platform. Access to these runners is available to repositories on request; please open a community issue to request access. The following runners are currently available:
+
+- `ubuntu-24.04-s390x`
+- `ubuntu-22.04-s390x`
+
+Note: In response to your request, IBM may ask for additional information such as primary use cases for the runner or the link to the current existing actions workflow file(s). At this stage, the action runners are sized to fulfill common build and unit test tasks.
+
+Admin: [@rrschulze](https://github.com/rrschulze)
+
 ### Google Cloud account
 
 Link: https://cloud.google.com
 
 - Community account to host https://go.opentelemetry.io
 - Admin: [@austinlparker](https://github.com/austinlparker)
-  (password is available in the OpenTelemetry Governance 1Password)
+  (password is the same as admin@opentelemetry.io "Google Workspace account", available in the OpenTelemetry Governance 1Password)
 
 ### Grafana organization for SIG Security
 
@@ -112,6 +123,17 @@ Link: https://www.oracle.com/cloud/sign-in.html
 - Community account to run [CLOWarden](https://github.com/cncf/clowarden)
 - Admin: [@austinlparker](https://github.com/austinlparker)
   (password is available in the OpenTelemetry Governance 1Password)
+
+### Develocity
+
+We have a [Develocity](https://gradle.com/develocity/) instance
+available to Java projects using Gradle build system.
+
+Link: https://develocity.opentelemetry.io
+
+- GitHub organization secret: `DEVELOCITY_ACCESS_KEY`
+- Secret stored in the OpenTelemetry Java 1Password vault
+- Admin: [@trask](https://github.com/trask)
 
 ## Artifact repositories
 
@@ -334,8 +356,10 @@ This GitHub App has the following permissions:
 
 - Read access to metadata
 - Read and write access to pull requests
+- Read access to org members and teams
 
-- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+Admins
+- [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
 This GitHub App addresses two common issues:
 
@@ -413,56 +437,14 @@ Each of these apps is scoped to a single repository with dedicated credentials.
 
 - Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
-### OpenTelemetry Bot
+### `@opentelemetrybot` GitHub user
 
-> [!NOTE]
-> Consider using the [otelbot](#otelbot) GitHub App instead.
+[@opentelemetrybot](https://github.com/opentelemetrybot) is a GitHub user
+that can be used for automation that requires a real GitHub user rather than a GitHub App.
 
-This is a community-owned bot account that you can use when automating common GitHub tasks
-(e.g. release automation tasks).
-
-Important: You do not need to (and should not) give this account any permissions to any OpenTelemetry repository.
-
-Link: [@opentelemetrybot](https://github.com/opentelemetrybot)
-
-- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins
-  (GitHub password and associated 2FA for the `@opentelemetrybot` account are available in the GitHub Owners
-  1Password)
-
-The OpenTelemetry Bot addresses two common issues:
-
-1. Since you can't push directly to `main` from workflows (due to branch protections), the next best thing is to
-   generate a pull request from the automation and use an account which has signed the CLA as the commit author.
-
-   The OpenTelemetry Bot account has signed the CNCF CLA, and you can assign it as the commit author in your automation:
-
-   ```
-   git config user.name opentelemetrybot
-   git config user.email 107717825+opentelemetrybot@users.noreply.github.com
-   ```
-
-   It is recommended to push to branch names that start with `opentelemetrybot/`, and to add a branch protection
-   rule for `opentelemetrybot/**/*` with the same setup as documented for
-   [`dependabot/**/*`](docs/how-to-configure-new-repository.md#branch-protection-rule-dependabot). Note that branch protection rule ordering matters, so you will need to
-   delete the `**/**` branch protection rule temporarily, then add the `opentelemetrybot/**/*` branch protection
-   rule, then add back the `**/**` branch protection rule.
-
-2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside of a GitHub Action, workflows
-   will not run on that new pull request without closing and re-opening it manually (this limitation is in place to
-   prevent accidental recursive workflow runs).
-
-   The OpenTelemetry GitHub organization has a GitHub Action secret named `OPENTELEMETRYBOT_GITHUB_TOKEN`, which is a
-   [Personal Access Token][] for [@opentelemetrybot](https://github.com/opentelemetrybot) with `repo`, `workflow` and `read:org`
-   scope for the OpenTelemetry Bot that you can use to bypass this limitation.
-
-   The personal access token also has `workflow` scope which is needed when merging upstream changes of
-   `.github/workflow` files into opentelemetrybot's forks (these forks are used for automatically opening PRs against
-   external repos).
-
-   Maintainers can open an issue in the community repository to have their repository granted access to this
-   organization secret.
-
-   [Personal Access Token]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+For example, the [open-telemetry/opentelemetry-operator](https://github.com/open-telemetry/opentelemetry-operator)
+repository has an automation that sends PRs to external GitHub organizations, and so a real GitHub user
+is required (at least without asking the external GitHub organization to install a GitHub App).
 
 ### Slack
 
