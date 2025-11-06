@@ -2,7 +2,7 @@
 
 ## Background and description
 
-The OpenTelemetry project consists of a large number of components, including collectors, SDKs, and instrumentation libraries, which are often configured and managed separately. This distribution of components poses a major operational challenge which is universally recognized by the community [1], [2].
+The OpenTelemetry project consists of a large number of components, including collector, SDKs, and instrumentation libraries, which are often configured and managed separately. This distribution of components poses a major operational challenge which is universally recognized by the community [1], [2].
 
 Agentic workflows, powered by AI and language models, present a significant opportunity to simplify the deployment, configuration, and management of the OpenTelemetry stack. An agent could, for example, analyze telemetry data, suggest configuration changes to optimize performance, or automatically instrument new services.
 
