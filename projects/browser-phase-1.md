@@ -101,7 +101,7 @@ There are a number of existing RUM/Client observability implementations. Represe
 
 **Project Lead:** @tedsuo (Grafana Labs)
 
-**GC Liaison:** @danielgblanco (New Relic)
+**GC Liaison:** @tedsuo (New Relic)
 
 **Sponsors:**
 * @tedsuo - Spec Maintainer Sponsor (Grafana Labs)
