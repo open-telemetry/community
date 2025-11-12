@@ -50,8 +50,8 @@
     - name: Jack Berg
       github: jack-berg
     gcLiaison:
-    - name: Daniel Gomez Blanco
-      github: danielgblanco
+    - name: Marylia Gutierrez
+      github: maryliag
     repositories:
       - https://github.com/open-telemetry/opentelemetry-configuration
     roadmapProjectIDs:
@@ -168,8 +168,8 @@
       - name: Carlos Alberto
         github: carlosalberto
     gcLiaison:
-      - name: Daniel Gomez Blanco
-        github: danielgblanco
+      - name: Marylia Gutierrez
+        github: maryliag
     roadmapProjectIDs:
       - 171
   - name: 'Semantic Conventions: RPC'
@@ -347,8 +347,8 @@
     invites: calendar-client-side
     sponsors: []
     gcLiaison:
-    - name: Daniel Gomez Blanco
-      github: danielgblanco
+    - name: Ted Young
+      github: tedsuo
     roadmapProjectIDs: []
 - name: Implementation SIGs
   sigs:
@@ -404,8 +404,8 @@
       - name: 'Ted Young'
         github: tedsuo
     gcLiaison:
-      - name: 'Daniel Gomez Blanco'
-        github: danielgblanco
+      - name: Ted Young
+        github: tedsuo
     roadmapProjectIDs:
       - 146
   - name: Collector
@@ -511,8 +511,8 @@
     invites: calendar-go
     sponsors: []
     gcLiaison:
-    - name: Ted Young
-      github: tedsuo
+    - name: Marylia Gutierrez
+      github: maryliag
     repositories:
       - https://github.com/open-telemetry/opentelemetry-go
       - https://github.com/open-telemetry/opentelemetry-go-contrib
@@ -606,8 +606,8 @@
     invites: calendar-js
     sponsors: []
     gcLiaison:
-    - name: Ted Young
-      github: tedsuo
+    - name: Marylia Gutierrez
+      github: maryliag
     repositories:
       - https://github.com/open-telemetry/opentelemetry-js
       - https://github.com/open-telemetry/opentelemetry-js-contrib
@@ -641,8 +641,8 @@
     invites: calendar-python
     sponsors: []
     gcLiaison:
-    - name: Daniel Gomez Blanco
-      github: danielgblanco
+    - name: Marylia Gutierrez
+      github: maryliag
     repositories:
       - https://github.com/open-telemetry/opentelemetry-python
       - https://github.com/open-telemetry/opentelemetry-python-contrib
@@ -762,8 +762,8 @@
     invites: calendar-k8s-operator
     sponsors: []
     gcLiaison:
-    - name: Daniel Gomez Blanco
-      github: danielgblanco
+    - name: Pablo Baeyens
+      github: mx-psi
     repositories:
       - https://github.com/open-telemetry/opentelemetry-helm-charts
   - name: Community Demo Application
@@ -796,8 +796,8 @@
     - name: Josh Suereth
       github: jsuereth
     gcLiaison:
-    - name: Trask Stalnaker
-      github: trask
+    - name: 'Juraci Paixão Kröhling'
+      github: jpkrohling
     repositories:
       - https://github.com/open-telemetry/weaver
 - name: Cross-Cutting SIGs
@@ -833,8 +833,8 @@
     invites: calendar-sig-end-user
     sponsors: []
     gcLiaison:
-    - name: Daniel Gomez Blanco
-      github: danielgblanco
+    - name: Marylia Gutierrez
+      github: maryliag
     repositories:
       - https://github.com/open-telemetry/sig-end-user
   - name: Security
@@ -895,8 +895,8 @@
       - name: 'Severin Neumann'
         github: svrnm
     gcLiaison:
-      - name: 'Juraci Paixão Kröhling'
-        github: jpkrohling
+      - name: Marylia Gutierrez
+        github: maryliag
     repositories:
       - https://github.com/open-telemetry/sig-contributor-experience
   - name: Developer Experience
