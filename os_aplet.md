@@ -1,4 +1,4 @@
-# OpenTelemetry Community Code of Conduct
+# OS Aplet ❤️ OpenTelemetry Community Code of Conduct
 
 The OpenTelemetry project aims to be a welcoming place where new and existing
 members feel safe to respectfully share their opinions and disagreements. We
