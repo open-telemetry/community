@@ -58,8 +58,8 @@ new dedicated SIG or working group will be formed to help manage and move this p
 
 #### Project Leads(s)
 
-* @pavolloffay (Red Hat)
-* Looking for other leads with experience in OpenTelemetry instrumentation and collector.
+* [@pavolloffay](https://github.com/pavolloffay) (Red Hat)
+* [@niwoerner](https://github.com/niwoerner) (OllyGarden)
 
 #### TC Sponsor
 
@@ -71,13 +71,20 @@ TBD
 
 #### Engineers
 
-TBD
+* [adrielp](https://github.com/adrielp)
+* [shiftyp](https://github.com/shiftyp)
 
 #### Other Staffing
 
 ### Industry outreach (Optional)
 
-Who (people, companies) in the industry should be aware of this effort? Was there an attempt to get them onboard? What did they say?
+Following users have built OpenTelemetry MCP servers:
+
+* [otel-mcp](https://github.com/austinlparker) - author of [otel-mcp](https://github.com/austinlparker/otel-mcp)
+* [mottibec](https://github.com/mottibec) - author of [otelcol-mcp](https://github.com/mottibec/otelcol-mcp)
+* [shiftyp](https://github.com/shiftyp) - author of [otel-mcp-server](https://github.com/shiftyp/otel-mcp-server)
+
+There will be [OpenTelemetry MCP blog post](https://github.com/open-telemetry/opentelemetry.io/pull/8331/) which promote the SIG.
 
 ## Expected Timeline
 
