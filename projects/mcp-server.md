@@ -18,13 +18,15 @@ The proliferation of these projects demonstrates strong community interest and t
 * [austinlparker/otel-mcp](https://github.com/austinlparker/otel-mcp): Handles collector configuration and data profiling.
 * [mottibec/otelcol-mcp](https://github.com/mottibec/otelcol-mcp): Focuses on collector configuration.
 * [shiftyp/otel-mcp-server](https://github.com/shiftyp/otel-mcp-server): Provides data profiling, but requires OpenSearch.
-* [liatrio-labs/otel-instrumentation-mcp](https://github.com/liatrio-labs/otel-instrumentation-mcp ): Manages instrumentation.
+* [liatrio-labs/otel-instrumentation-mcp](https://github.com/liatrio-labs/otel-instrumentation-mcp): Manages instrumentation.
+* [traceloop/opentelemetry-mcp-server](https://github.com/traceloop/opentelemetry-mcp-server):  Provides data profiling by connecting to Jaeger, Tempo and Traceloop
 
 Each of these servers uses a different approach, particularly for collector configuration and data profiling. This fragmentation creates confusion for users and hinders the development of a unified, agent-driven management plan for OpenTelemetry.
 
 ### Project Scope and Architecture
 
-The scope of this project is to create OpenTelemetry MCP server(s) to simplify deployment and management of the OpenTelemetry stack.
+The scope of this project is to create OpenTelemetry MCP server(s) to simplify deployment, management of the OpenTelemetry stack
+and provide data profiling/intelligence capabilities.
 
 ### Goals, objectives, and requirements
 
