@@ -25,8 +25,8 @@ Each of these servers uses a different approach, particularly for collector conf
 
 ### Project Scope and Architecture
 
-The scope of this project is to create OpenTelemetry MCP server(s) to simplify deployment, management of the OpenTelemetry stack
-and provide data profiling/intelligence capabilities.
+The scope of this project is to create OpenTelemetry MCP server(s) to simplify deployment and day-2 operations.
+The MCP server should also provide data profiling/intelligence capabilities to support the day-2 operation use-cases.
 
 ### Goals, objectives, and requirements
 
