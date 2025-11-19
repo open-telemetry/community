@@ -1030,9 +1030,10 @@
       - name: 'Severin Neumann'
         github: svrnm
   - name: Romanian (ro-RO)
-    meeting: ''
+    meeting: 'Monthly on a different day, at a different time (see Slack channel)'
     notes:
-      type: none
+      type: gDoc
+      value: 1bvLFPDKMs2fw7750dKLvgL3BWRy5jLWJrivApOThDVg
     chat:
       - type: slack
         name: "#otel-localization-ro"
