@@ -1030,7 +1030,7 @@
       - name: 'Severin Neumann'
         github: svrnm
   - name: Romanian (ro-RO)
-    meeting: 'Monthly on a different day, at a different time'
+    meeting: 'Monthly on a different day, at a different time (see Slack channel)'
     notes:
       type: gDoc
       value: 1bvLFPDKMs2fw7750dKLvgL3BWRy5jLWJrivApOThDVg
