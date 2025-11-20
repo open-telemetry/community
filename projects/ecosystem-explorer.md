@@ -10,44 +10,34 @@ Related issues:
 * [Registry Data Quality Improvements Project Proposal](https://github.com/open-telemetry/community/pull/2246)
 * [Expose Collector component metadata in registry](https://github.com/open-telemetry/opentelemetry.io/issues/4921)
 
-This project is initially primarily focused on Java instrumentation, but the concepts and tooling could be applied to
-other languages (and the collector) as well, and we intend to explore that.
 
-As a user, contributor, or maintainer of official [Java OpenTelemetry instrumentations](https://github.com/open-telemetry/opentelemetry-java-instrumentation),
-I want documentation that can answer the following questions:
+The OpenTelemetry ecosystem is vast and constantly evolving, with numerous instrumentation libraries and 
+other components being developed and maintained by various SIGs and third-party contributors. As
+the ecosystem grows, it becomes increasingly challenging for users to discover, understand, and effectively utilize
+the available options.
 
-* What technologies and libraries are instrumented by the agent or have standalone instrumentation libraries I can use?
-* Which versions of the various libraries or technologies are supported?
-* How do I install and use the standalone instrumentation libraries?
-* The library I use is supported, what kind of spans and metrics will be emitted when I use it?
-* What attributes will the spans and metrics have?
-* Are there any configurations I can enable to get additional or different attributes on my metrics or spans?
-* Are there any configurations I can enable to get more/less metrics or spans for the libraries I use?
-* I’m about to upgrade my Java agent from version x to version y, what telemetry or attributes changed?
+The [OpenTelemetry Registry](https://opentelemetry.io/ecosystem/registry/) was created to help users find components in
+the ecosystem, but it has limitations in terms of the depth of information provided, and requires a lot of manual upkeep.
+
+Maintainers of various components are starting to adopt new metadata generation strategies, often leveraging
+[weaver tooling](https://github.com/open-telemetry/weaver), to create structured metadata about their components. The
+availability of this information provides a data source for building better documentation and exploration tools.
+We see this project as an evolution of the registry concept, providing a more comprehensive and user-friendly way to explore
+the OpenTelemetry ecosystem, while automating the collection and publishing of the information so maintainers can 
+keep it close to their code and not have to worry about updating multiple places.
 
 A proof of concept "[Instrumentation Explorer](https://jaydeluca.github.io/instrumentation-explorer/)" website was 
-created that can do all of this. It allows users to explore the different instrumentations and see the emitted telemetry.
+created for the Java Agent that demonstrates a lot of new functionality that can be achieved with this structured 
+metadata. It allows users to explore the different instrumentations and see the emitted telemetry.
 It allows them to see how spans, metrics, and their associated attributes change when different configuration options are
 changed, and it allows for comparing the telemetry across different versions of the Java agent.
 
-This POC was created as part of an [effort](https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/13468)
-by the Java SIG, which focused on analyzing the 250+ instrumentations in the Java agent, and created structured metadata
-for each that could then be used to generate documentation.
-
-We would like to rebuild and make this POC production-ready, and make it an official part of the OpenTelemetry 
-documentation. We will create a standalone website that can be hosted on the OpenTelemetry domain, and integrate it into
-the official OpenTelemetry documentation. We will also work to replicate this approach for collector components, and
-the Javascript instrumentation.
-
 This project is focused on the user facing documentation generation aspect of the overall Ecosystem Explorer effort.
-The way in which the underlying metadata is generated or maintained by each SIG/project is out of scope for this project.
-It is highly encouraged that as much of the metadata generation is done using
+The way in which the underlying metadata is generated or maintained by each SIG/project is a collaborative dependency 
+for this project. It is highly encouraged that as much of the metadata generation is done using
 [weaver tooling](https://github.com/open-telemetry/weaver), especially the area of semantic conventions and signals.
 
 ### Current challenges with instrumentation documentation
-
-The instrumentation projects are large code bases with many different components, often with behavior that changes 
-depending on certain versions of the libraries in use in your code base, or if certain configuration options are enabled.
 
 There are varying degrees of existing documentation for different instrumentation components, but it can be difficult to
 find, and might not have all the information needed to understand the whole picture. Much of this documentation
@@ -75,7 +65,7 @@ several discussions about improving or replacing the registry, and this project 
 
 This project encompasses multiple distinct layers, each with different stakeholders and responsibilities:
 
-1. Metadata Format Definition (Out of scope for this project)
+1. Metadata Format Definition (Collaborative dependency)
 - Purpose: Define standardized schemas and formats for describing instrumentation components
 - Current State:
   - Collector has existing metadata formats
@@ -84,7 +74,7 @@ This project encompasses multiple distinct layers, each with different stakehold
 - Stakeholders: OpenTelemetry SIGs (by & for SIG use)
   - Approach: Use what exists, define what we need, collaborate with SIGs as they define their own. Weaver will be used
     wherever possible.
-2. Metadata Creation (Out of scope for this project)
+2. Metadata Creation (Collaborative dependency)
 - Purpose: Generate actual metadata files that conform to the defined formats
 - Current State:
   - Collector generates its own metadata
@@ -114,7 +104,7 @@ strategies across SIGs.
 ### Goals, objectives, and requirements
 
 The aim of this project is to create an Ecosystem Explorer web application that provides a user interface to
-explore instrumentation components across the OpenTelemetry ecosystem. The platform will be powered by structured
+explore components across the OpenTelemetry ecosystem. The platform will be powered by structured
 metadata and documentation extracted directly from instrumentation project source code, maintained through automated
 processes.
 
@@ -206,29 +196,9 @@ TBD
 * @mx-psi (Pablo Baeyens - Datadog) - Collector ecosystem
 * @jaydeluca (Jay DeLuca - Grafana Labs) - Java ecosystem
 * @vitorvasc (Vitor Vasconcellos - Mercado Libre)  
+* @mikeblum - (Mike Blum) - Go ecosystem
+* @maryliag - (Marylia Gutierrez - Grafana Labs) - Javascript ecosystem
 
-
-
-#### Other Staffing
-
-Frontend/UX Development (2+ contributors needed)
-- Frontend development skills for web application
-- UI/UX design experience for data visualization and user experience
-- Responsive design and accessibility expertise
-- Experience with modern web frameworks and deployment pipelines
-
-Documentation and Integration (1+ contributors needed)
-- OpenTelemetry ecosystem knowledge for integration with OpenTelemetry.io
-- Technical documentation and content strategy experience
-- SEO and discoverability optimization
-- Community engagement and adoption support
-
-Backend/Infrastructure (1+ contributors needed)
-- Data pipeline / Python scripting experience
-- CI/CD and deployment automation
-
-
-* TBD - Frontend Developer(s) with experience in React or similar frameworks
 
 ### Industry outreach (Optional)
 
@@ -271,7 +241,7 @@ Multi-language expansion beyond research phase will depend on interest and engag
 
 ## GitHub Project (Post-Approval)
 
-TBD
+https://github.com/orgs/open-telemetry/projects/175
 
 ## SIG Meetings, Roadmap, and Other Info (Post-Approval)
 
