@@ -182,7 +182,7 @@ meetings will be used for project updates and coordination.
 
 * @jaydeluca (Grafana Labs)
 * @svrnm (Causely)
-* Looking for other leads with experience in OpenTelemetry instrumentation and/or web application development
+* @mx-psi (Datadog)
 
 #### TC Sponsor
 TBD
