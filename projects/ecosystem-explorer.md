@@ -185,7 +185,7 @@ meetings will be used for project updates and coordination.
 * @mx-psi (Datadog)
 
 #### TC Sponsor
-TBD
+* @jack-berg (Grafana Labs)
 
 #### GC Liaison
 * @svrnm (Severin Neumann - Causely)
