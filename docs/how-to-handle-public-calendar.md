@@ -59,7 +59,8 @@ The following details need to be set properly:
 - Guest permissions:
   - Modify event: no
   - Invite others: no
-  - See guest list: yes
+  - See guest list: no
+    (this is important so that notifications aren't sent every time someone accepts / declines a meeting)
 
 ### Adding a Zoom link to a meeting
 
