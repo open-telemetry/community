@@ -127,6 +127,7 @@ See [Project Staffing](/project-management.md#project-staffing)
 
 #### Project Leads(s)
 Dan Gomez Blanco (@danielgblanco)
+Damien Mathieu (@dmathieu)
 
 #### Other Staffing
 
