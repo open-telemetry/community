@@ -26,12 +26,14 @@ When these efforts are not coordinated, the resulting telemetry can become fragm
 
 While OTel adoption may trigger new conversations about platform engineering strategy (i.e. [Reverse Conway Maneuver](https://www.agileanalytics.cloud/blog/team-topologies-the-reverse-conway-manoeuvre)), the project's goal is to cater to all organizational structures, not to force a specific one.
 
-The resulting architectures will (and should) look different depending on the organization's model. For instance:
+The resulting architectures will (and should) look different depending on the organization's model.
+For instance:
 
 - A company with federated, autonomous teams might favour a pattern of team-level Collectors routing to a central gateway.
 - An organization with a strong central platform team might provide a "paved road" via a fully managed Collector layer and base SDK configurations.
 
-Both are valid approaches. The challenge is that our guidance must be flexible enough to present these different patterns, acknowledging that a "one-size-fits-all" deployment model will not work.
+Both are valid approaches.
+The challenge is that our guidance must be flexible enough to present these different patterns, acknowledging that a "one-size-fits-all" deployment model will not work.
 
 #### Documentation is typically focused on specific solutions, not challenges
 
@@ -45,6 +47,7 @@ Adopters often start with a problem, such as "How do I provide stable SDK config
 Blueprints must bridge this gap, starting from the problem and mapping it to a set of principles and actionable patterns.
 
 #### Feedback is often component-specific, not strategic
+
 Currently, feedback in OpenTelemetry is mainly gathered via surveys and interviews conducted by the End-User SIG.
 These are normally focused on specific components, or helping specific SIGs prioritize work.
 
@@ -52,13 +55,19 @@ This creates a risk that development efforts in different parts of OTel are not 
 We may be optimizing components in a silo, while a user's main pain point is connecting them.
 These blueprints, by capturing common patterns, can serve as that feedback mechanism to help guide the project's priorities.
 
+#### Sharing learnings from highly regulated environments
+
+Signing up to an _OTel in Practice_ or _OTel Me_ session organized by the End-User SIG is not always easy, or even an option, for end users in highly regulated environments.
+This is due to the inherent lack of framework or standard format in these sessions, paired with rules and regulations in place in these organizations to avoid publicly sharing sensitive information.
+
 ### Goals, objectives, and requirements
 #### Goals
 
 The high-level goals of this project are to:
 
 - Enable scalable adoption of OpenTelemetry by providing clear, challenge-oriented guidance.
-- Create a formal feedback loop from end-users to the project, capturing common patterns and challenges to help guide future development.
+- Improve feedback loops from end-users to maintainers, capturing common patterns and challenges to help guide future development.
+- Provide a set of templates to capture reference architectures and design blueprints, allowing end users to easily communicate to stakeholders in their organization the type of information that will be publicly shared.
 
 #### Objectives
 
@@ -66,10 +75,14 @@ To achieve these goals, this project will:
 
 - Define a standard, repeatable process for capturing and publishing end-user reference architectures.
 - Define a standard, strategic template for authoring blueprints that map common challenges to OTel-based solutions.
-- Publish an initial set of 5 (TBD) reference architectures from end users that have successfully adopted OpenTelemetry at scale.
-- Identify most common 3 (TBD) environments and challenges as the base for an initial set of blueprints.
-- Publish this initial set of 3 (TBD) blueprints, collating best practices as seen in the field.
+- Publish an initial set of 5 reference architectures from end users that have successfully adopted OpenTelemetry at scale.
+- Identify most common 3 environments and challenges as the base for an initial set of blueprints.
+- Publish this initial set of 3 blueprints, collating best practices as seen in the field.
 - Establish a clear, discoverable location for this content on the OpenTelemetry website, managed by the End-User SIG.
+
+**Note:** DevEx SIG has already been documenting reference architectures with end-users.
+They have so far conducted 4 interviews and document them as reference architectures.
+Ideally, all these reference architectures will be hosted in the same space as others.
 
 #### Why now?
 
@@ -98,12 +111,16 @@ After this project is complete, the End User SIG will expand the library of refe
 
 ## Staffing / Help Wanted
 
-### Industry outreach (Optional)
+### Industry outreach
 
-**TO-DO** (this PR is raised in draft state to help socialize with end users and industry before continuing)
+End users were contacted during KubeCon NA, providing very positive feedback in this initiative and willingness to contribute.
+
+Solutions/observability architects/consultants from organizations like New Relic, Splunk and Grafana were contacted and are interested in joining this effort.
+
+We will also reach out to past guests of sessions organized by the End-User SIG to encourage their participation.
 
 ### SIG
-End-User SIG
+End-User SIG & DevEx SIG
 
 ### Required staffing
 See [Project Staffing](/project-management.md#project-staffing)
@@ -113,8 +130,9 @@ Dan Gomez Blanco (@danielgblanco)
 
 #### Other Staffing
 
-- Members of End-User SIG willing to help coordinate with end-users, create templates, analyze reference architectures, and write up blueprints:
-  - TBD
+- Contributors/architects willing to help coordinate with end-users, create templates, analyze reference architectures, and write up blueprints:
+  - Jacob Aronoff (@jaronoff97)
+  - Lukasz Ciukaj (@luke6Lh43)
 - End-Users willing to contribute reference architectures:
   - TBD
 - Maintainers/approvers from Comms SIG to help reviewing and copy editing
@@ -131,14 +149,14 @@ TBD
 TBD
 
 #### GC Liaison
-Dan Gomez Blanco
+TBD
 
 ## Expected Timeline
 
-First month: Decide on initial format for reference architectures and blueprint documents.
-6-9 moths: Gather and document reference architectures from end users, identify most common challenges, and collate blueprints.
+- 1 month: Decide on initial format for reference architectures and blueprint documents, and which verticals/architecture types to write blueprints for.
+- 3-6 moths: Gather and document reference architectures from end users, identify most common challenges, and collate blueprints.
 
-## Labels (Optional)
+## Labels
 
 `otel-blueprints`
 
