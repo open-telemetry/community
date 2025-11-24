@@ -4,9 +4,9 @@
 
 The OpenTelemetry project consists of a large number of components, including collector, SDKs, and instrumentation libraries, which are often configured and managed separately. This distribution of components poses a major operational challenge which is universally recognized by the community [1], [2].
 
-Agentic workflows, powered by AI and language models, present a significant opportunity to simplify the deployment, configuration, and management of the OpenTelemetry stack. An agent could, for example, analyze telemetry data, suggest configuration changes to optimize performance, or automatically instrument new services.
+Large language models (LLMs), present a significant opportunity to simplify the adoption, implementation, and management of the OpenTelemetry stack. An AI agent could, for example, analyze telemetry data, facilitate configuration changes, or assist and simplify the instrument process.
 
-However, to support this process, a standardized interface is required for an AI agent to interact with the OpenTelemetry ecosystem. The Model Context Protocol (MCP) provides an idiomatic approach for this interaction.
+However, to support this process, a standardized interface is required for LLMs to interact with the OpenTelemetry ecosystem. The Model Context Protocol (MCP) provides an idiomatic approach for this interaction.
 
 At the moment, the OpenTelemetry project does not have an official, standard MCP server. This has led to the creation of several independent, open-source projects to fill the gap.
 
@@ -19,9 +19,11 @@ The proliferation of these projects demonstrates strong community interest and t
 * [mottibec/otelcol-mcp](https://github.com/mottibec/otelcol-mcp): Focuses on collector configuration.
 * [shiftyp/otel-mcp-server](https://github.com/shiftyp/otel-mcp-server): Provides data profiling, but requires OpenSearch.
 * [liatrio-labs/otel-instrumentation-mcp](https://github.com/liatrio-labs/otel-instrumentation-mcp): Manages instrumentation.
-* [traceloop/opentelemetry-mcp-server](https://github.com/traceloop/opentelemetry-mcp-server):  Provides data profiling by connecting to Jaeger, Tempo and Traceloop
+* [traceloop/opentelemetry-mcp-server](https://github.com/traceloop/opentelemetry-mcp-server): Provides data profiling by connecting to Jaeger, Tempo and Traceloop.
 
-Each of these servers uses a different approach, particularly for collector configuration and data profiling. This fragmentation creates confusion for users and hinders the development of a unified, agent-driven management plan for OpenTelemetry.
+Each of these servers uses a different approach, particularly for collector configuration and data profiling.
+This fragmentation creates confusion for users in terms of installation and configuration. It is less effective
+as multiple competing tools fill up context window and provide overlapping functionality.
 
 ### Project Scope and Architecture
 
@@ -30,12 +32,26 @@ The MCP server should also provide data profiling/intelligence capabilities to s
 
 ### Goals, objectives, and requirements
 
-Goals:
-* Simplify collector deployment, configuration and management
+The goals are divided into categories. However, some common goals apply to all created MCP(s):
+
+* A common installation and configuration
+
+#### Collector
+
+* Deployment, configuration and management
 * Simplify writing OpenTelemetry Transformation Language (OTTL)
-* Simplify writing PII rules in a given organization
-* Simplify instrumentation configuration
+* Simplify writing PII rules based on the received data
+
+#### Instrumentation
+
+* SDK configuration
+* Auto-instrumentation configuration
 * Identify instrumentation issues: single span traces, broken traces, high cardinality attributes
+
+#### Semantic conventions
+
+* Weaver schema generation
+* Context optimized querying of the official semantic conventions registry
 
 ## Deliverables
 
