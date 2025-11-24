@@ -60,13 +60,18 @@ contributor is accountable for ensuring that all content, regardless of its orig
 meets project standards, follows established policies, and contributes meaningfully
 to the OpenTelemetry project.
 
+To help foster transparency and collaboration, a human who contributes content that
+was primarily created by generative AI tools should freely and openly disclose this fact
+in advance.
+
 ## Frequently Asked Questions - Contributors
 
 _Q: Can I use LLMs to help me write code, documentation, or tests?_
 
 Yes, this policy does not prohibit the use of LLMs to assist in writing code,
 documentation, or tests. However, we ask that you do not rely on LLM output as
-the sole basis for your contributions.
+the sole basis for your contributions. When LLMs are used to generate the bulk
+of a contribution, this fact should be disclosed freely and willingly.
 
 _Q: Can I use LLMs to help me review pull requests, issues, or understand the code base?_
 
@@ -112,3 +117,10 @@ non-AI tool. For example, tools like [Dosu](https://dosu.dev/) are being used in
 certain repositories to aid in code review and issue management. Remember that
 these tools can make mistakes, and use your best judgement when evaluating their
 output.
+
+_Q: Can I ask a contributor to disclose if LLM or Generative AI tools were used to 
+create a contribution?_
+
+Yes. Authors should voluntarily offer this information, but it could have been
+overlooked. Knowing when these tools are used can help project maintainers
+to more effectively perform their duties.
