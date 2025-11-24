@@ -121,6 +121,5 @@ output.
 _Q: Can I ask a contributor to disclose if LLM or Generative AI tools were used to 
 create a contribution?_
 
-Yes. Authors should voluntarily offer this information, but it could have been
-overlooked. Knowing when these tools are used can help project maintainers
+Yes. Knowing when these tools are used can help project maintainers
 to more effectively perform their duties.
