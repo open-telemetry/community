@@ -112,7 +112,7 @@ repository](https://github.com/cncf/artwork/tree/master/projects/opentelemetry).
 ## Special Interest Groups
 
 We organize the community into Special Interest Groups (SIGs) to
-improve our workflow and more efficiently manage a community project. While meetings are expected to happen regularly, they are subject to contributors' availability and may be rescheduled or changed at time. Check our [public calendar](https://github.com/open-telemetry/community#calendar) and SIG-specific GitHub discussions for meeting changes and cancellations. All meetings happen over Zoom, have a meeting notes document, and are recorded and [available on Zoom cloud](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s).
+improve our workflow and more efficiently manage a community project. While meetings are expected to happen regularly, they are subject to contributors' availability and may be rescheduled or changed at time. Check our [public calendar](https://github.com/open-telemetry/community#calendar) and SIG-specific GitHub discussions for meeting changes and cancellations. All meetings happen over Zoom, have a meeting notes document, and are recorded and [available in the meeting recordings spreadsheet](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s).
 
 Please do not hesitate to contact SIG owners if the proposed time of the
 meeting or tools used is unavailable for you. For instance, it is a good
