@@ -56,7 +56,7 @@ This phase targets three core areas for immediate impact:
 
 ### GC Liaison
 
-* @danielgblanco (GC Liaison)
+* @maryliag (GC Liaison)
 
 ### TC Sponsorship
 
