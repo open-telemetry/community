@@ -70,7 +70,7 @@ _Q: Can I use LLMs to help me write code, documentation, or tests?_
 
 Yes, this policy does not prohibit the use of LLMs to assist in writing code,
 documentation, or tests. However, we ask that you do not rely on LLM output as
-the sole basis for your contributions. When LLMs are used to generate the bulk
+the sole basis for your contributions. When GenAI is used to generate the bulk
 of a contribution, this fact should be disclosed freely and willingly.
 
 _Q: Can I use LLMs to help me review pull requests, issues, or understand the code base?_
@@ -118,7 +118,7 @@ certain repositories to aid in code review and issue management. Remember that
 these tools can make mistakes, and use your best judgement when evaluating their
 output.
 
-_Q: Can I ask a contributor to disclose if LLM or Generative AI tools were used to 
+_Q: Can I ask a contributor to disclose if Generative AI tools were used to
 create a contribution?_
 
 Yes. Knowing when these tools are used can help project maintainers
