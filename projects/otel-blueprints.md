@@ -144,7 +144,7 @@ Damien Mathieu (@dmathieu)
 See [Project Sponsorship](/project-management.md#project-sponsorship)
 
 #### TC Sponsor
-TBD
+Reiley Yang (@reyang)
 
 #### Delegated TC Sponsor (Optional)
 TBD
