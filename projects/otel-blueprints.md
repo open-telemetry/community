@@ -134,6 +134,9 @@ Damien Mathieu (@dmathieu)
 - Contributors/architects willing to help coordinate with end-users, create templates, analyze reference architectures, and write up blueprints:
   - Jacob Aronoff (@jaronoff97)
   - Lukasz Ciukaj (@luke6Lh43)
+  - Alain Pham (@alainpham)
+  - ChaosKyle (@ChaosKyle)
+  - Brad Schmitt (@bpschmitt)
 - End-Users willing to contribute reference architectures:
   - TBD
 - Maintainers/approvers from Comms SIG to help reviewing and copy editing
