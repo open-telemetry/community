@@ -20,7 +20,7 @@
     meeting: Thursday at 08:00 PT
     notes:
       type: gDoc
-      value: 1gASMhmxNt9qCa8czEMheGlUW2xpORiYoD7dBD7aNtbQ
+      value: 1NqhCcePaj--L8CUIBWV6lblR0nUD8ai6AzkW9_YcEOg
     chat:
       - type: slack
         name: '#otel-sampling'
