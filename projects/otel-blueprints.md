@@ -140,7 +140,7 @@ Damien Mathieu (@dmathieu)
 - End-Users willing to contribute reference architectures:
   - TBD
 - Maintainers/approvers from Comms SIG to help reviewing and copy editing
-  - TBD
+  - Tiffany Hrabusa (@tiffany76 )
 - Others
 
 ### Sponsorship
