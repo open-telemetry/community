@@ -61,8 +61,7 @@ meets project standards, follows established policies, and contributes meaningfu
 to the OpenTelemetry project.
 
 To help foster transparency and collaboration, a human who contributes content that
-was primarily created by generative AI tools should freely and openly disclose this fact
-in advance.
+was primarily created by generative AI tools should freely and openly disclose this fact.
 
 ## Frequently Asked Questions - Contributors
 
