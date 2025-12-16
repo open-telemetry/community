@@ -153,7 +153,7 @@ Reiley Yang (@reyang)
 TBD
 
 #### GC Liaison
-TBD
+Marylia Gutierrez (@maryliag)
 
 ## Expected Timeline
 
