@@ -138,7 +138,7 @@ Damien Mathieu (@dmathieu)
   - ChaosKyle (@ChaosKyle)
   - Brad Schmitt (@bpschmitt)
 - End-Users willing to contribute reference architectures:
-  - TBD
+  - Neil Fordyce, Skyscanner
 - Maintainers/approvers from Comms SIG to help reviewing and copy editing
   - Tiffany Hrabusa (@tiffany76 )
 - Others
