@@ -2,7 +2,7 @@
 
 ## Background and description
 
-The OpenTelemetry project consists of a large number of components, including collector, SDKs, and instrumentation libraries, which are often configured and managed separately. This distribution of components poses a major operational challenge which is universally recognized by the community [1], [2].
+The OpenTelemetry project consists of a large number of components, including collector, SDKs, and instrumentation libraries, which are often configured and managed separately. This distribution of components poses a major operational challenge which is universally recognized by the community [1](https://opentelemetry.io/blog/2025/otel-rocks/), [2](https://www.youtube.com/watch?v=xEu8_Aeo_-o).
 
 Large language models (LLMs), present a significant opportunity to simplify the adoption, implementation, and management of the OpenTelemetry stack. An AI agent could, for example, analyze telemetry data, facilitate configuration changes, or assist and simplify the instrumentation process.
 
@@ -25,7 +25,7 @@ Each of these servers uses a different approach, particularly for collector conf
 This fragmentation creates confusion for users in terms of installation and configuration. It is less effective
 as multiple competing tools fill up context window and provide overlapping functionality.
 
-### Project Scope and Architecture
+## Project Scope and Architecture
 
 The scope of this project is to create OpenTelemetry MCP server(s) to simplify deployment and day-2 operations.
 The MCP server should also provide data profiling/intelligence capabilities to support the day-2 operation use-cases.
@@ -52,6 +52,11 @@ The goals are divided into categories. However, some common goals apply to all c
 
 * Weaver schema generation
 * Context optimized querying of the official semantic conventions registry
+
+### Non Goals
+
+* MCP servers should not implement any telemetry backend related use-cases.
+* MCP servers should not have a shadow knowledge base or documentation, they will pull this information from docs, upstream repositories, and [ecosystem explorer](https://github.com/open-telemetry/community/pull/3000).
 
 ## Deliverables
 
@@ -82,11 +87,11 @@ This effort will be hosted in the existing Developer Experience SIG.
 
 #### TC Sponsor
 
-Not needed.
+Existing Developer Experience SIG TC sponsor.
 
 #### GC Liaison
- 
-* [@austinlparker](https://github.com/austinlparker) (Austin Parker - Honeycomb) - existing SIG developer experience liaison.
+
+Existing SIG Developer Experience liaison - [@austinlparker](https://github.com/austinlparker) (Austin Parker - Honeycomb).
 
 #### Engineers
 
