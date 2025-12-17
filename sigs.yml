@@ -269,7 +269,7 @@
     meeting: Every other Wednesday at 08:00 PT
     notes:
       type: gDoc
-      value: 19bnXziPn2MZ9wO6684UoI4D-LCjGL5bTJkGhux29bx8
+      value: 1OijO_NZyR7gb7AvUj_KxKbcbsN09XQmq_ExZeDlgEOg
     chat:
       - type: slack
         name: '#otel-prometheus'
@@ -283,7 +283,7 @@
     meeting: Every other Thursday at 8:00 PT
     notes:
       type: gDoc
-      value: 187XYoQcXQ9JxS_5v2wvZ0NEysaJ02xoOYNXj08pT0zc
+      value: 16dGljp7YY7jgzxydDKsin8DQCCx6HQqdQHorDxTx6SQ
     chat:
       - type: slack
         name: '#otel-faas'
@@ -412,7 +412,7 @@
     meeting: Alternating between Tuesday at 17:00 PT, Wednesday at 09:00 PT, and Wednesday at 05:00 PT
     notes:
       type: gDoc
-      value: 1r2JC5MB7GupCE7N32EwGEXs9V_YIsPgoFiLP4VWVMkE
+      value: 1AeWpwxjMPm8jOAZymCB3BrwwmNiJiKOO7dc4EvVq3x0
     chat:
       - type: slack
         name: '#otel-collector'
@@ -435,7 +435,7 @@
     meeting: Alternating between Monday at 13:00 PT and Wednesday at 09:00 PT
     notes:
       type: gDoc
-      value: 1i1E4-_y4uJ083lCutKGDhkpi3n4_e774SBLi9hPLocw
+      value: 1rdF6GZcCqH9huo3oqur5x_McsPS_qQ9OPSRFjIqndm8
     chat:
       - type: slack
         name: '#otel-cpp'
@@ -633,7 +633,7 @@
     meeting: Thursday at 09:00 PT
     notes:
       type: gDoc
-      value: 1CIMGoIOZ-c3-igzbd6_Pnxx1SjAkjwqoYSUWxPY8XIs
+      value: 18w8zOBm_mbety0OqlPwxc7dvnfu641EgmrO4AdJef0U
     chat:
       - type: slack
         name: '#otel-python'
