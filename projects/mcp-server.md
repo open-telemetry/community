@@ -97,6 +97,7 @@ Existing SIG Developer Experience liaison - [@austinlparker](https://github.com/
 
 * [@adrielp](https://github.com/adrielp)
 * [@shiftyp](https://github.com/shiftyp)
+* [@johannaojeling](https://github.com/johannaojeling)
 
 #### Other Staffing
 
