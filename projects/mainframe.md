@@ -62,7 +62,7 @@ The TC is supportive of the mainframe effort given that it doesn’t stretch exi
 [https://cloud-native.slack.com/archives/C05PXDFTCPJ](https://cloud-native.slack.com/archives/C05PXDFTCPJ)
 
 ## Meeting Times 
--   For now, proposing: Tuesdays at 10 a.m. PDT.
+-   For now, proposing: Wednesday at 10 a.m. PT.
 
 ## Timeline
 Start of workgroup in January 2024. The focus is on the implementation of three topics in separate tracks: Semantic Conventions, Code Instrumentation and Collector Enhancements. All three tracks are of equal importance, whereby some of the activities for the track Collector Enhancements rely on the results of the track Semantic Conventions, e.g., when metrics about the virtualization layers of the mainframe have to be gathered. Based on the learnings from the SDK implementation for COBOL, the track for Code instrumentation will provide further SDK implementations for other mainframe-specific languages.
