@@ -105,11 +105,11 @@ Existing SIG Developer Experience liaison - [@austinlparker](https://github.com/
 
 The following users have built OpenTelemetry MCP servers:
 
-* [otel-mcp](https://github.com/austinlparker) - author of [otel-mcp](https://github.com/austinlparker/otel-mcp)
-* [mottibec](https://github.com/mottibec) - author of [otelcol-mcp](https://github.com/mottibec/otelcol-mcp)
-* [shiftyp](https://github.com/shiftyp) - author of [otel-mcp-server](https://github.com/shiftyp/otel-mcp-server)
+* [@austinlparker](https://github.com/austinlparker) - author of [otel-mcp](https://github.com/austinlparker/otel-mcp)
+* [@mottibec](https://github.com/mottibec) - author of [otelcol-mcp](https://github.com/mottibec/otelcol-mcp)
+* [@shiftyp](https://github.com/shiftyp) - author of [otel-mcp-server](https://github.com/shiftyp/otel-mcp-server)
 
-There will be [OpenTelemetry MCP blog post](https://github.com/open-telemetry/opentelemetry.io/pull/8331/) which promote the SIG.
+There will be [OpenTelemetry MCP call for contributors post](https://github.com/open-telemetry/opentelemetry.io/pull/8629) which promote the project.
 
 ## Expected Timeline
 
@@ -126,7 +126,7 @@ Phase 2: Data profiling via collector (Months 1-2)
 Phase 3: Instrumentation (Months 1-2)
 - Identify broken traces
 - Identify single span traces
-- Identify high cardinality traces
+- Identify high cardinality metrics
 - Instrumentation configuration
 
 ## Labels
