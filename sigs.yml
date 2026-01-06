@@ -667,7 +667,7 @@
       - https://github.com/open-telemetry/opentelemetry-ruby
       - https://github.com/open-telemetry/opentelemetry-ruby-contrib
   - name: 'Rust: SDK'
-    meeting: Tuesday at 09:00 PT
+    meeting: Alternating between Tuesday at 09:00 AM PT and Wednesday at 8:00 AM PT
     notes:
       type: gDoc
       value: 12upOzNk8c3SFTjsL6IRohCWMgzLKoknSCOOdMakbWo4
