@@ -125,6 +125,9 @@ SIG-specific GitHub discussions.
 > The meeting times in the tables below are given in 24-hour notation.
 > Meetings are either in Pacific Time (PT), with Daylight Saving Time, or UTC+8, without Daylight Saving Time.
 
+> [!NOTE]
+> The tables below are auto-generated. To make changes, see [CONTRIBUTING.md](./CONTRIBUTING.md#updating-sig-information-on-the-readmemd).
+
 <!-- sigs -->
 ### Specification SIGs
 
