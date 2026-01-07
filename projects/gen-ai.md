@@ -127,10 +127,8 @@ Other languages are not in the scope (yet).
 
 ## Meeting Times
 
-We'll use GenAI Semantic Convention meetings until more suitable time for new participants is determined:
-
-- **Every other week**: Thursday at 10 AM PST
-- **Every other week**: Thursday 14:00 UTC+8
+- General GenAI topics: every Tuesday 9:00 PT, every other Tuesday 10:00 UTC+8
+- Agent-related topics: every Monday 9:00 PT
 
 ### Meeting Links
 
