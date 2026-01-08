@@ -18,14 +18,17 @@ ignoreRegExpList:
   - GitHub Handle in YML
 words:
   - Abinet
+  - Alain
   - Alff
   - Arize
+  - Aronoff
   - Ashpole
   - automations
   - Baeyens
   - calendar-localization-ptbr
   - Causely
   - Cheler
+  - Ciukaj
   - Collibra
   - Coralogix
   - Cortez
@@ -64,6 +67,7 @@ words:
   - lightstep
   - logz
   - Luca
+  - Lukasz
   - maintainership
   - Makefiles
   - Marylia
@@ -76,6 +80,7 @@ words:
   - otep
   - otlp
   - passcodes
+  - Pham
   - proto
   - Purvi
   - pytest
@@ -138,6 +143,7 @@ words:
   - endsigs
   - faas
   - fong
+  - Fordyce
   - frzifus
   - gbbr
   - genai
@@ -147,6 +153,7 @@ words:
   - heptio
   - hongalex
   - horovits
+  - Hrabusa
   - instrgen
   - jackjia
   - jaglowski
@@ -242,6 +249,7 @@ words:
   - sarif
   - scavarda
   - schäfer
+  - Schmitt
   - semconv
   - sergey
   - severin
