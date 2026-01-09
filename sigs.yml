@@ -837,6 +837,8 @@
       github: maryliag
     repositories:
       - https://github.com/open-telemetry/sig-end-user
+    roadmapProjectIDs:
+      - 181
   - name: Security
     meeting: Every other Monday at 09:00 PT
     notes:
