@@ -160,18 +160,18 @@ Marylia Gutierrez (@maryliag)
 - 1 month: Decide on initial format for reference architectures and blueprint documents, and which verticals/architecture types to write blueprints for.
 - 3-6 moths: Gather and document reference architectures from end users, identify most common challenges, and collate blueprints.
 
+Please see [project](https://github.com/orgs/open-telemetry/projects/181) status updates (under project details, top right-hand corner) for an updated timeline.
+
 ## Labels
 
 `otel-blueprints`
 
 ## GitHub Project (Post-Approval)
 
-**TO-DO**
+https://github.com/orgs/open-telemetry/projects/181
 
 ## SIG Meetings, Roadmap, and Other Info (Post-Approval)
 
-* Slack channel: [#otel-sig-end-user](https://cloud-native.slack.com/archives/C01RT3MSWGZ)
+* Slack channel: [#otel-blueprints](https://cloud-native.slack.com/archives/C0A844D6ZCH)
 * Meeting notes:  [End-User SIG Meeting Notes](https://docs.google.com/document/d/1e-UNZA3Tuno9b53RQbe--whUcO0VIXF3P81oXsrBK6g)
-* Meeting times: Every other Thursday at 10:00 PT
-
-**TO-DO**: Roadmap item will be added after new GH project is created.
+* Meeting times: Every other Thursday at 10:00 PT (Note: currently being discussed)
