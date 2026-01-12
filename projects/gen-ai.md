@@ -127,7 +127,7 @@ Other languages are not in the scope (yet).
 
 ## Meeting Times
 
-- General GenAI topics: every Tuesday 9:00 PT, every other Tuesday 10:00 UTC+8
+- General GenAI topics: every Tuesday 9:00 PT, every other Tuesday 9:00 UTC+8 (Monday 17:00 PT)
 - Agent-related topics: every Monday 9:00 PT
 
 ### Meeting Links

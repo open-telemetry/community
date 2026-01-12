@@ -135,7 +135,7 @@
     roadmapProjectIDs:
       - 114
   - name: 'Semantic Conventions and Instrumentation: GenAI'
-    meeting: "General GenAI topics: every Tuesday 9:00 PT, every other Tuesday 10:00 UTC+8; agent-related topics: every Monday 9:00 PT"
+    meeting: "General GenAI topics: every Tuesday 9:00 PT, every other Tuesday 9:00 UTC+8 (Monday 17:00 PT); agent-related topics: every Monday 9:00 PT"
     notes:
       type: gDoc
       value: 1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M
