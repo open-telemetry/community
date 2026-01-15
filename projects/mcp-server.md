@@ -44,10 +44,10 @@ The initial focus will be on integrating the following areas:
 
 #### Collector
 
-The Collector follows a fast two-week release cadence, which requiries constant maintenance to stay up to date and avoid breaking changes. Additionally configuring the collector correctly and writing valid OTTL statements is important for effective usage, but requires domain expertise and isn't always trivial. General-purpose coding agents struggle here because they lack up-to-date knowledge of recent releases and aren't specialized for Collector workflows.
+The Collector follows a fast two-week release cadence, which requires constant maintenance to stay up to date and avoid breaking changes. Additionally configuring the collector correctly and writing valid OTTL statements is important for effective usage, but requires domain expertise and isn't always trivial. General-purpose coding agents struggle here because they lack up-to-date knowledge of recent releases and aren't specialized for Collector workflows.
 
 * Enable agents to read and write valid Collector configuration.
-* Enable agents to handle API breaking changes (e.g. deprecations, removals, renamings) in the configuration and collector Golang API.
+* Enable agents to handle API breaking changes (e.g. deprecations, removals, renaming) in the configuration and collector Golang API.
 * Enable agents to upgrade collector.
 * Enable agents to write valid OpenTelemetry Transformation Language (OTTL).
 * Enable agents to troubleshoot collector issues.
@@ -156,7 +156,7 @@ Phase 3: Instrumentation use-cases
 
 TBD
 
-## Githus Repository
+## Githab Repository
 
 * Request: https://github.com/open-telemetry/community/issues/3198
 
