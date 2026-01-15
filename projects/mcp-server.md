@@ -156,7 +156,7 @@ Phase 3: Instrumentation use-cases
 
 TBD
 
-## Githab Repository
+## GitHub Repository
 
 * Request: https://github.com/open-telemetry/community/issues/3198
 
