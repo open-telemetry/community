@@ -675,9 +675,6 @@
       - type: slack
         name: '#otel-rust'
         id: C03GDP0H023
-      - type: other
-        name: Gitter
-        link: https://gitter.im/open-telemetry/opentelemetry-rust
     invites: calendar-rust
     sponsors: []
     gcLiaison:
