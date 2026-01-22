@@ -34,8 +34,9 @@ Maintenance is also complex. The ecosystem evolves rapidly, introducing frequent
 
 ## Project Scope and Architecture
 
-The scope of this project is to enable **Agentic Workflows** for OpenTelemetry to simplify deployment, configuration, and day-2 operations across the OpenTelemetry project (collectors, SDKs, instrumentation, semantic conventions). To support this workflow, a standardized interface is required for Agents and LLMs to interact with the OpenTelemetry ecosystem. The projet will focus on [The Model Context Protocol (MCP)](https://modelcontextprotocol.io/) and [Agent Skills](https://agentskills.io/home) concepts to provide this interface for agents to interact with the OpenTelemetry projects. The goal of this SIG is to deliver
-reference implementation of MCP server(s) and/or Agent Skills for the OpenTelemetry project and ensure coherent behaviour and end user experience.
+The scope of this project is to enable **Agentic Workflows** for OpenTelemetry to simplify deployment, configuration, and day-2 operations across the OpenTelemetry project (collectors, SDKs, instrumentation, semantic conventions). To support this workflow, a standardized interface is required for Agents and LLMs to interact with the OpenTelemetry ecosystem. The projet will focus on [The Model Context Protocol (MCP)](https://modelcontextprotocol.io/) and [Agent Skills](https://agentskills.io/home) concepts to provide this interface for agents to interact with the OpenTelemetry projects. 
+
+The goal of this SIG is to deliver reference implementation of MCP server(s) and/or Agent Skills for the OpenTelemetry project in coordination with existing SIGs to ensure coherent behaviour and end user experience. We will establish bi-directional collaboration to ensure implementation ownership is mutually agreed upon, such that each new component has a clear owner/maintainer aligned with best practices of the targeted SIGs.
 
 ### Goals, objectives, and requirements
 
