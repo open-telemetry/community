@@ -8,13 +8,7 @@ Donations of preexisting code fall into two broad categories:
   ongoing maintenance of their own, and/or introduce nuanced licensing issues
 
 Large donations – or small donations that turn up complex issues during PR
-review – should be referred to the Technical Committee (TC) by filing an issue
-in this `community` repository and tagging
-`@open-telemetry/technical-committee`. The TC will respond to donation
-proposals **within two weeks** (that is, after having time to meet and discuss
-live). If the TC has not responded to the donation request within that
-interval, the donating party can and should point to this document and request
-guidance at the TC's earliest convenience.
+review – should follow the [donation process](#donation-process).
 
 All donated code requires a license compatible with the Apache Software License
 2.0, and donated code will require a change of copyright to reflect the
@@ -27,8 +21,10 @@ decision to either remove those trademarks or transfer them to the CNCF.
 Broadly, these are the steps the OpenTelemetry Governance and Technical
 Committees follow to handle a prospective donation.
 
-1. Per the above, the donating organization creates a GitHub issue using
-   the "Donation Proposal" form in the `community` repository.
+1. The donating organization creates a GitHub issue using the "Donation
+   Proposal" form in the `community` repository. Various steps in this process
+   involve back and forth communication with the donating organization,
+   which is expected to be engaged and responsive.
 2. The GC will evaluate the proposal to ensure that
    the donation is aligned with the overall OpenTelemetry project vision
    and roadmap and has a balanced set of interested contributors and maintainers.
@@ -45,11 +41,13 @@ Committees follow to handle a prospective donation.
    integrated into the OpenTelemetry project in a way that meets the quality, security,
    and privacy standards of the project without violating stable specification or OpenTelemetry Enhancement Proposals (OTEPs).
    The TC will summarize their findings, and make a recommendation to either
-   accept or reject the proposal, conditionally or unconditionally, in a report which will
-   be attached to the donation proposal issue. Writing the report may require meeting
-   and discussing alternative technologies with different vendors in the community and
-   can be a lengthy process. The TC member driving the report will post updates and time
-   estimates to the issue.
+   accept or reject the proposal, conditionally or unconditionally, in a report
+   which will be attached to the donation proposal issue. Writing the report may
+   require meeting and discussing alternative technologies with different
+   vendors. The amount of time for the TC member to produce the report varies based
+   on the complexity of the donation, existing competing priorities, and other
+   factors. However, generally TC members should aim to produce the initial
+   report within a month or begin providing regular status updates on the issue.
 4. The GC will consider the report and make a final decision about the donation,
    and document that decision on the donation proposal issue.
 5. If accepted, the contributing organization – particularly if it's a
