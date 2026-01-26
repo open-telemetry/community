@@ -10,6 +10,8 @@ At the moment, the OpenTelemetry project does not have official support for thes
 
 As AI tooling becomes a standard part of developer workflows. Users, which are looking to extend their agents with tooling optimized for OpenTelemetry, have no easy way to discover what's available in the ecosystem. There's no central place to learn which MCP servers or other tools exist, what capabilities they offer, or where to file issues/requests.
 
+This project is also motivated by the need to support the [Stability Proposal](https://opentelemetry.io/blog/2025/stability-proposal-announcement/) and [[Graduation] OpenTelemetry Graduation Application](https://github.com/cncf/toc/issues/1739). While the [OTEP: Stable by Default](https://github.com/open-telemetry/opentelemetry-specification/pull/4813) initiative aims to default to stable components, a large portion of the ecosystem—including the majority of collector components—remains in alpha or beta, creating complexity for users around potential breaking changes. This project aims to bridge this gap without adding core functionality or duplicating documentation. Instead, it focuses on making OpenTelemetry easier to use and more stable by enriching the ecosystem with new agentic workflows.
+
 ### Existing OpenTelemetry MCP Servers
 
 The proliferation of these projects demonstrates strong community interest and the clear potential of this technology:
