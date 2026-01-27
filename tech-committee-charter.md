@@ -35,7 +35,7 @@ In the case where an individual TC member -- within any six month period -- atte
 The TC is responsible for all technical development within the OpenTelemetry project, including:
 
 * Setting release dates
-* Quality standards for releases
+* Quality standards for releases, including [stability reviews](guides/contributor/processes.md#tc-stability-review)
 * Technical direction
 * Development process and any coding standards
 * Approving changes to any specifications

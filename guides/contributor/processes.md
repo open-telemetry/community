@@ -189,6 +189,22 @@ nuances:
 Note: if your pull request isn't getting enough attention, you can explicitly
 mention approvers or maintainers of this repository.
 
+## TC Stability Review
+
+Language implementation maintainers
+may [request a TC review](../../.github/ISSUE_TEMPLATE/stabilization-review.md)
+prior to stabilizing major areas. The TC should review these requests during the
+regular TC meetings, and promptly assign a member as responsible for the review.
+The assigned TC member will engage with the SDK, supporting resources (e.g.
+docs / examples), and maintainers, and will provide feedback in the form of
+issues on the respective repository. The amount of time for the TC member to
+report feedback varies, but TC members should aim to produce initial feedback
+within a month or begin providing status updates on the issue. During the review
+process, the maintainers of the respective language SDK are expected to be
+responsive to any requests for assistance and to issues opened. In other words,
+a TC stability review is a dialogue requiring engagement from both the TC and
+language SDK maintainers.
+
 ## Code attribution and licensing
 
 [License information](../../README.md#license) should be included in all source files where applicable.
