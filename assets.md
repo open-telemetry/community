@@ -120,7 +120,6 @@ Link: https://app.netlify.com/login
 
 Link: https://www.oracle.com/cloud/sign-in.html
 
-- Community account to run [CLOWarden](https://github.com/cncf/clowarden)
 - Admin: [@austinlparker](https://github.com/austinlparker)
   (password is available in the OpenTelemetry Governance 1Password)
 
