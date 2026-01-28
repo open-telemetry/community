@@ -174,4 +174,4 @@ https://github.com/orgs/open-telemetry/projects/181
 
 * Slack channel: [#otel-blueprints](https://cloud-native.slack.com/archives/C0A844D6ZCH)
 * Meeting notes:  [End-User SIG Meeting Notes](https://docs.google.com/document/d/1e-UNZA3Tuno9b53RQbe--whUcO0VIXF3P81oXsrBK6g)
-* Meeting times: Every other Thursday at 10:00 PT (Note: currently being discussed)
+* Meeting times: Every other Thursday at 10:00 PT (alternating with general End-User SIG meetings)
