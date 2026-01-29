@@ -38,7 +38,8 @@ in alphabetical order:
 These are community maintainers, responsible for cross-functional project communications,
 events, and other functions as needed.
 
-- [Austin Parker](https://github.com/austinlparker), Honeycomb
+- [Adriana Villela](https://github.com/avillela), Dynatrace
+- [Reese Lee](https://github.com/reese-lee), New Relic
 
 ## Specifications and Proto
 
