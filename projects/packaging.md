@@ -10,6 +10,7 @@ The ultimate goal is to provide an excellent experience via:
 ```
 
 **Note:** Due to the predominance of adoption of Linux as the “Cloud computing” OS, and specifically Debian and Red Hat distributions, the SIG focuses on system packages for the DEB and RPM ecosystem. Windows is an OS that we acknowledge also needs a simple OpenTelemetry experience, but it is out of the initial scope for reasons of priorities, bandwidth and lack of expertise in the founding members of the SIG.
+
 **Note:** The deliverables of the Profiler SIG would likely also benefit from being packaged. This is out of scope for the foreseeable future for reasons of priorities and bandwidth in the founding members of the SIG.
 
 ## Background and description
