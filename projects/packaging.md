@@ -30,9 +30,9 @@ Publish modular, well-integrated system packages for:
 * OBI
 * OpenTelemetry Injector
 * SDK+autoinstrumentation for Java, .NET, Node.js and Python (with potentially Python and Ruby if bandwidth allows)
-* Make the existing OpenTelemetry Collector system packages from the Releases project in the APT and RPM repositories
+* Make the existing OpenTelemetry Collector system packages from the [Releases repository](https://github.com/open-telemetry/opentelemetry-collector-releases) in the APT and RPM repositories
 * Define versioning policies and how they align with the packaging versioning policies of Debian, Ubuntu and Red Hat
-* Make declarative configuration a first-class citizen of the system packages
+* Make [declarative configuration](https://github.com/open-telemetry/opentelemetry-configuration) a first-class citizen of the system packages
 
 #### Why now?
 
