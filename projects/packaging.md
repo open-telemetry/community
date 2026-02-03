@@ -1,6 +1,6 @@
 # OpenTelemetry System Packaging
 
-The goal of the Packaging SIG is to provide a product-like, idiomatic experience to provide a seamless experience of monitoring applications running on (virtual) hosts through a combination of the [OpenTelemetry Injector](http://github.com/open-telemetry/opentelemetry-injector[]) injecting SDKs and autoinstrumentations, [OpenTelemetry eBPF Instrumentation (OBI)](https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation), and the OpenTelemetry Collector.
+The goal of the Packaging SIG is to provide a product-like, idiomatic experience to provide a seamless experience of monitoring applications running on (virtual) hosts through a combination of the [OpenTelemetry Injector](https://github.com/open-telemetry/opentelemetry-injector) injecting SDKs and autoinstrumentations, [OpenTelemetry eBPF Instrumentation (OBI)](https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation), and the OpenTelemetry Collector.
 
 This SIG takes over and continues work about system packaging started in the Injector SIG (see [project](https://github.com/open-telemetry/community/pull/3097)), joining forces with the OBI SIG to provide a cohesive experience and better coverage for the various application runtimes.
 The ultimate goal is to provide an excellent experience via:
