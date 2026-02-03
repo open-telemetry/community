@@ -67,9 +67,13 @@ TODO
 
 ## Staffing / Help Wanted
 
+[`@mmanciop`](https://github.com/mmanciop) (Dash0): DEB system packages, injector
+
+TODO
+
 ### Industry outreach (Optional)
 
-[Michele](https://github.com/mmanciop) tried to reach out to Canonical for help with DEB packaging, but while generally interested, they have not committed to helping.
+[`@mmanciop`](https://github.com/mmanciop) tried to reach out to Canonical for help with DEB packaging, but while generally interested, they have not committed to helping.
 
 Need more expertise in packaging RPM, right now the expertise in the SIG is mostly with DEB
 
