@@ -17,9 +17,9 @@ The ultimate goal is to provide an excellent experience via:
 
 ### Current challenges
 
-Adopting OpenTelemetry can be a difficult task for most users without significant expertise in observability. Modifying applications to add and maintain SDKs and their setup is a chore that most developers would rather avoid. A lot of practitioners, and especially those without expert-level skills in observability (which is the overwhelming majority of people out there needing observability) are perfectly fine starting their observability journey by using auto-instrumentations, especially for those languages with good instrumentation coverage and mature SDKs.
+Adopting OpenTelemetry can be a difficult task for most users without significant expertise in observability. Modifying applications to add and maintain SDKs and their setup is a chore that most developers would rather avoid. A lot of practitioners, and especially those without expert-level skills in observability (which is the overwhelming majority of people out there needing observability) are perfectly fine starting their observability journey by using autoinstrumentation, especially for those languages with good instrumentation coverage and mature SDKs.
 
-Packaging OBI, the OpenTelemetry Injector and autoinstrumentations in system packages, modular and well integrated with the existing OpenTelemetry Collector system packages, will provide an easy, satisfactory experience for users needing to monitor applications running on Linux-based (virtual) hosts. An {apt|yum} install opentelemetry experience that results in non-containerized applications monitored out of the box is going to allow ops personas to gain observability with a workflow they are familiar with, and to be able to “deploy OpenTelemetry at scale” with tools they already use in their workflows.
+Packaging OBI, the OpenTelemetry Injector and language-specific autoinstrumentation in system packages, modular and well integrated with the existing OpenTelemetry Collector system packages, will provide an easy, satisfactory experience for users needing to monitor applications running on Linux-based (virtual) hosts. An {apt|yum} install opentelemetry experience that results in non-containerized applications monitored out of the box is going to allow ops personas to gain observability with a workflow they are familiar with, and to be able to “deploy OpenTelemetry at scale” with tools they already use in their workflows.
 
 ### Goals, objectives, and requirements
 
@@ -38,7 +38,7 @@ Packaging OBI, the OpenTelemetry Injector and autoinstrumentations in system pac
 
 #### Why now?
 
-We feel OpenTelemetry needs to provide a more product-like, batteries-included experience to newcomers, especially operators used to the ease of adoption of some proprietary vendors. This is especially critical for organizations in which operators are in charge of maintaining observability setups, without the ability of modifying single applications. We want to make the experience of getting library-level telemetry from autoinstrumentations straightforward and seamless.
+We feel OpenTelemetry needs to provide a more product-like, batteries-included experience to newcomers, especially operators used to the ease of adoption of some proprietary vendors. This is especially critical for organizations in which operators are in charge of maintaining observability setups, without the ability of modifying single applications. We want to make the experience of getting library-level telemetry from autoinstrumentation straightforward and seamless.
 
 #### Requirements
 
