@@ -68,7 +68,7 @@ TODO
 ## Staffing / Help Wanted
 
 [`@mmanciop`](https://github.com/mmanciop) (Dash0): DEB system packages, injector
-
+[`@atoulme`](https://github.com/atoulme) (Splunk): System packages, injector, collector, Java ecosystem
 TODO
 
 ### Industry outreach (Optional)
