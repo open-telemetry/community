@@ -133,7 +133,7 @@ vendor-provided distributions.
 
 ### Next deliverables
 
-* Python autoinstrumentation support
+* Python auto-instrumentation support
 
 **Note:** further progress in terms of system packages is being spun up as a new
 ["system packaging"](https://github.com/open-telemetry/community/pull/3252) project.
@@ -168,7 +168,7 @@ N/A
 
 ## Expected Timeline
 
-* Python autoinstrumentation support Beta by March 2026
+* Python auto-instrumentation support Beta by March 2026
 
 ## GitHub Project (Post-Approval)
 
