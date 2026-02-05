@@ -112,31 +112,35 @@ instrumentation.
 
 ## Deliverables
 
-We intend to deliver:
-A ready-made, LD_PRELOAD injector of production quality that will work regardless of
+### Previous deliverables
+
+* A ready-made, LD_PRELOAD injector of production quality that will work regardless of
 the GNU LibC flavor used in the linked application, and be inert when the linked
 application does not contain a LibC. This is already available in the
 opentelemetry-injector, with one last major feature-functionality drop to be donated
 by Dash0 (support for dynamically-linked binaries that do not link a LibC).
 
-A proof of concept of system packaging for Java and Node.js OTel SDKs and
+* A proof of concept of system packaging for Java and Node.js OTel SDKs and
 auto-instrumentations for Debian-based Linux distributions that provides the `apt
 install opentelemetry` experience. We want to set up packages not to be monolithic,
 but rather separate the injector concern from language-specific SDKs, and in so
 doing, provide a baseline for observability vendors to build upon with their own
 OpenTelemetry distributions.
 
-A document outlining a draft of the packaging architecture outline describing how to
+* A document outlining a draft of the packaging architecture outline describing how to
 structure modular .deb system packages so that end users can opt into
 vendor-provided distributions.
+
+### Next deliverables
+
+* Python auto-instrumentation support
+
+**Note:** further progress in terms of system packages is being spun up as a new
+["system packaging"](https://github.com/open-telemetry/community/pull/3252) project.
 
 ## Staffing / Help Wanted
 
 ### Industry outreach (Optional)
-
-We (Michele) tried to reach out to Canonical for help with .deb packaging, but while
-generally interested, they cannot pitch in on a short-enough notice to make the
-Kubecon timeline.
 
 ### SIG
 
@@ -164,17 +168,7 @@ N/A
 
 ## Expected Timeline
 
-Our first deadline is November 10th, 2025, Observability Day co-located with
-KubeCon + CloudNativeCon North America 2025.
-
-We want to:
-
-* Cut the first release of the OpenTelemetry injector.
-* Demo a proof of concept of an `apt install opentelemetry` experience that works
-  for Java and Node.js.
-* Propose a first draft of the packaging architecture outline describing how to
-  structure modular .deb system packages so that end users can opt into
-  vendor-provided distributions.
+* Python auto-instrumentation support Beta by March 2026
 
 ## GitHub Project (Post-Approval)
 
