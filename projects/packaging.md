@@ -69,6 +69,7 @@ TODO
 
 [`@mmanciop`](https://github.com/mmanciop) (Dash0): DEB system packages, injector
 [`@atoulme`](https://github.com/atoulme) (Splunk): System packages, injector, collector, Java ecosystem
+[`@x1unix`](https://github.com/x1unix) (Grafana Labs): DEB/RPM system packages
 TODO
 
 ### Industry outreach (Optional)
