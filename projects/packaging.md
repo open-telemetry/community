@@ -9,10 +9,6 @@ The ultimate goal is to provide an excellent experience via:
 {apt|yum} install opentelemetry
 ```
 
-**Note:** Due to the predominance of adoption of Linux as the “Cloud computing” OS, and specifically Debian and Red Hat distributions, the SIG focuses on system packages for the DEB and RPM ecosystem. Windows is an OS that we acknowledge also needs a simple OpenTelemetry experience, but it is out of the initial scope for reasons of priorities, bandwidth and lack of expertise in the founding members of the SIG.
-
-**Note:** The deliverables of the Profiler SIG would likely also benefit from being packaged. This is out of scope for the foreseeable future for reasons of priorities and bandwidth in the founding members of the SIG.
-
 ## Background and description
 
 ### Current challenges
@@ -35,6 +31,14 @@ Packaging OBI, the OpenTelemetry Injector and language-specific auto-instrumenta
 * Define versioning policies and how they align with the packaging versioning policies of Debian, Ubuntu and Red Hat.
 * Extensible to vendor packages: It should be possible for vendor system packages to provide alternatives to upstream system packages, especially for collector and auto-instrumentation system packages.
 * Make [declarative configuration](https://github.com/open-telemetry/opentelemetry-configuration) a first-class citizen of the system packages.
+
+#### Out of scope
+
+* **OS other than Debian- and RHEL derivatives:** Due to the predominance of adoption of Linux as the “Cloud computing” OS, and specifically Debian and Red Hat distributions, the SIG focuses on system packages for the DEB and RPM ecosystem. Windows is an OS that we acknowledge also needs a simple OpenTelemetry experience, but it is out of the initial scope for reasons of priorities, bandwidth and lack of expertise in the founding members of the SIG.
+
+* **Profilers:** The deliverables of the Profiler SIG would likely also benefit from being packaged. This is out of scope for the foreseeable future for reasons of priorities and bandwidth in the founding members of the SIG.
+
+* **Building container images:** While the OpenTelemetry Injector and auto-instrumentation packages would likely be reusable for building container images, this is not a primary goal at this time. On Kubernetes, the auto-instrumentation by the OpenTelemetry Operator provides a better, more flexible experience than "hardcoding" auto-instrumentations in the container image. However, if we see feedback from the community asking for support for the "Docker on (virtual) host" scenario, adding it to the scope should be possible with relatively little effort.
 
 #### Why now?
 
@@ -59,7 +63,6 @@ We feel OpenTelemetry needs to provide a more product-like, batteries-included e
 #### Benefits
 
 Idiomatic, dead-simple process to set up the monitoring of applications running in Linux virtual hosts with the same tooling used to deploy (most of) the software to monitor.
-The Injector and auto-instrumentation packages would likely also be reusable while building container images, but that is not a primary goal at this time.
 
 ## Deliverables
 
@@ -70,6 +73,8 @@ TODO
 [`@mmanciop`](https://github.com/mmanciop) (Dash0): DEB system packages, injector
 [`@atoulme`](https://github.com/atoulme) (Splunk): System packages, injector, collector, Java ecosystem
 [`@x1unix`](https://github.com/x1unix) (Grafana Labs): DEB/RPM system packages
+[`@douglascamata`](https://github.com/douglascamata) (Coralogix): system packages, collector, Ruby, Python
+
 TODO
 
 ### Industry outreach (Optional)
