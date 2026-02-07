@@ -15,7 +15,7 @@ By doing so, we would enable two distinct developer communities:
 2. **C developers**: Who can leverage the Zig OpenTelemetry implementation directly through C ABI compatibility
 
 The aforementioned work-in-progress SDK implementations exist at [zig-o11y/opentelemetry-sdk](https://github.com/zig-o11y/opentelemetry-sdk), demonstrating community interest and initial technical feasibility.
-A completementary Semantic Convention library is developed at [zig-o11y/opentelemetry-semconv](https://github.com/zig-o11y/opentelemetry-semconv).
+A complementary Semantic Convention library is developed at [zig-o11y/opentelemetry-semconv](https://github.com/zig-o11y/opentelemetry-semconv).
 However, these efforts are fragmented and lack official OpenTelemetry support, governance, and long-term maintenance commitments.
 
 ### Current challenges
@@ -101,7 +101,7 @@ Once formed, the future work of the SIG will be to adhere to the practice existi
 - performance benchmarks
 - security audit of implementation
 - create a production deployment guide
-- maitain versioning and compatibility policy
+- maintain versioning and compatibility policy
 - create the first stable release (v1.0.0)
 
 ## Staffing / Help Wanted
@@ -145,7 +145,7 @@ These individuals will become SIG maintainers upon project approval.
 #### Contributors
 
 We haven't had continued external contributions that haven't turned into maintainer roles.
-We hope that by making Zig support official, more contrinbutors will step in.
+We hope that by making Zig support official, more contributors will step in.
 
 **Additional Contributors Sought:**
 - Engineers with Zig experience willing to contribute to SDK implementation
