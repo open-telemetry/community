@@ -611,6 +611,25 @@
     repositories:
       - https://github.com/open-telemetry/opentelemetry-js
       - https://github.com/open-telemetry/opentelemetry-js-contrib
+ - name: ‘Kotlin: SDK'
+    meeting: Monday at 09:00 PT
+    notes:
+      type: gDoc
+      value: 
+    chat:
+      - type: slack
+        name: '#otel-kotlin’
+        id: C08NRCD4R4G
+      - type: other
+        name: GitHub Discussions
+        link: https://github.com/open-telemetry/opentelemetry-kotlin/discussions
+    invites: calendar-kotlin
+    sponsors: []
+    gcLiaison:
+    - name: Alolita Sharma
+      github: alolita
+    repositories:
+      - https://github.com/open-telemetry/opentelemetry-kotlin      
   - name: 'PHP: SDK'
     meeting: Wednesday at 10:30 PT
     notes:
