@@ -26,7 +26,7 @@ Packaging OBI, the OpenTelemetry Injector and language-specific auto-instrumenta
 * Publish modular, well-integrated system packages for:
   * OBI
   * OpenTelemetry Injector
-  * SDK+auto-instrumentation for Java, .NET, Node.js and Python (with potentially Python and Ruby if bandwidth allows)
+  * SDK+auto-instrumentation for Java, .NET, Node.js and Python (with potentially PHP and Ruby if bandwidth allows)
 * Make the existing OpenTelemetry Collector system packages from the [Releases repository](https://github.com/open-telemetry/opentelemetry-collector-releases) in the APT and RPM repositories.
 * Define versioning policies and how they align with the packaging versioning policies of Debian, Ubuntu and Red Hat.
 * Extensible to vendor packages: It should be possible for vendor system packages to provide alternatives to upstream system packages, especially for collector and auto-instrumentation system packages.
