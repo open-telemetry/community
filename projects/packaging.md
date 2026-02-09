@@ -24,7 +24,7 @@ Packaging OBI, the OpenTelemetry Injector and language-specific auto-instrumenta
 * Create the infrastructure to publish APT and RPM repositories for OpenTelemetry system packages.
   * We would love to explore publishing the packages in universe (Debian, Ubuntu) and EPEL (RHEL) repositories, as opposed to creating separate repositories; but we acknowledge that, as long as the packaging and associated policies are mature, we will likely need to host OpenTelemetry-specific package repositories.
 * Publish modular, well-integrated system packages for:
-  * OBI
+  * OBI, with focus on Go
   * OpenTelemetry Injector
   * SDK+auto-instrumentation for Java, .NET, Node.js and Python (with potentially PHP and Ruby if bandwidth allows)
 * Make the existing OpenTelemetry Collector system packages from the [Releases repository](https://github.com/open-telemetry/opentelemetry-collector-releases) in the APT and RPM repositories.
