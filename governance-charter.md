@@ -1,24 +1,35 @@
 # OpenTelemetry Governance Committee Charter
 
-Last updated: September 2024
+Last updated: February 2026
 
 ## Overview
 
-This document describes the goals, the scope and the structure of the
-OpenTelemetry Governance Committee (GC). It describes the election process for
-the Governance Committee and how the committee operates.
+This document outlines the mission, scope, and objectives of the OpenTelemetry
+Governance Committee (GC). It describes the election process for the Governance
+Committee and how the committee operates.
 
-## Goals
+## Mission
 
-The initial role of the governance committee is to **instantiate the formal
-process for OpenTelemetry governance**. In addition to defining the initial
-governance process, the bootstrap committee strongly believes that **it is
-important to provide a means for iterating** the processes defined by the
-governance committee. We do not believe that we will get it right the first
-time, or possibly ever, and won’t even complete the governance development in a
-single shot. The role of the governance committee is to be a live, responsive
-body that can refactor and reform as necessary to adapt to a changing project
-and community.
+The Governance Committee is the governing body of the OpenTelemetry project,
+providing decision-making and oversight pertaining to the project's governance
+policies, [project management](./project-management.md), community health, and
+strategic direction. The GC serves as a steward for the project's
+[mission, vision, and values](./mission-vision-values.md) and defines its
+non-technical governance structures.
+
+## How
+
+- Adapt the role and structure of the Governance Committee as needed to meet the
+  evolving needs of the project. Governance processes are never complete;
+  iteration is expected and encouraged.
+- Responsibilities not explicitly delegated to other parties — such as the
+  [Technical Committee](./tech-committee-charter.md), SIGs, or
+  [Community Managers](#community-manager-role) — reside with the Governance
+  Committee.
+- All management responsibilities should be delegated to other parties where
+  possible.
+- All technical responsibilities should be delegated to the TC and SIGs; the
+  GC should not retain technical decision-making authority itself.
 
 ## Scope
 
