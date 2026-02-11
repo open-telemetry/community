@@ -17,7 +17,7 @@ strategic direction. The GC serves as a steward for the project's
 [mission, vision, and values](./mission-vision-values.md) and defines its
 non-technical governance structures.
 
-## How
+## Approach
 
 - Adapt the role and structure of the Governance Committee as needed to meet the
   evolving needs of the project. Governance processes are never complete;
