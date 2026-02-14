@@ -137,7 +137,7 @@ The following individuals have expressed interest and commitment to leading this
 
 - **@inge4pres** (Francesco) - Project initiator, proposed lead, maintainer
 - **@kmos** - (Giovanni) Maintainer
-- **@hndrk** (Hendrik) Maintainer
+- **@hendriknielaender** (Hendrik) Maintainer
 - **@kakkoyun** (Kemal) - Supporting lead
 
 These individuals will become SIG maintainers upon project approval.
