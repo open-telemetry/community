@@ -267,6 +267,7 @@ Link: https://groups.google.com/g/opentelemetry-calendar
   To join https://lists.cncf.io/g/cncf-otel-zoomadmins, go to that URL and click "Apply For Membership In This Group".
   Then ask in the [#opentelemetry-gc](https://cloud-native.slack.com/archives/C01S673T1NE) for someone to approve your
   membership and then to give you owner rights.
+  Messages take ~7 minutes to show on the [Pending folder](https://lists.cncf.io/g/cncf-otel-zoomadmins/pending).
 
 ### Zapier account
 
