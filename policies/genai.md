@@ -13,8 +13,8 @@ other contributions that are made totally or in part through generative AI
 tooling.
 
 This is especially important when you communicate through issues, comments or Slack.
-We want to hear your ideas, not just what an LLM generates. Perfect English is not 
-required; we would rather hear directly from you.
+We want to hear your ideas, not just what an LLM generates, even if your English 
+or communication skills are not 'perfect'.
 
 The human driving any contribution is responsible for ensuring that LLM-generated
 content aligns with project guidelines and policies, especially this Generative AI
