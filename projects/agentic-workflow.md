@@ -89,6 +89,11 @@ This project requires a blend of OpenTelemetry collector, documentation and inst
 
 This effort will be hosted in the existing Collector SIG.
 
+Sponsors for this effort are:
+
+* [@dmitryax](https://github.com/dmitryax) (Splunk)
+* [@codeboten](https://github.com/codeboten) (OHoneycomb)
+
 ### Required staffing
 
 #### Project Leads(s)
@@ -110,6 +115,7 @@ Existing Collector SIG liaison.
 * [@shiftyp](https://github.com/shiftyp)
 * [@johannaojeling](https://github.com/johannaojeling)
 * [@vitorvasc](https://github.com/vitorvasc)
+* [@nr-nfajardo](https://github.com/nr-nfajardo)
 
 #### Other Staffing
 
