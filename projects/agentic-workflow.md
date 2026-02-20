@@ -142,8 +142,6 @@ confirmed and expected time commitments are known, this timeline is in flux.
 
 TBD
 
-## GitHub Repository
-
-* Request: https://github.com/open-telemetry/community/issues/3198
-
 ## SIG Meetings, Roadmap, and Other Info (Post-Approval)
+
+All communication will be done in the existing Collector SIG.
