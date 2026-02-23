@@ -85,10 +85,6 @@ Need more expertise in packaging RPM, right now the expertise in the SIG is most
 
 otel-packaging
 
-### Staffing
-
-TODO
-
 ### Sponsorship
 
 See [Project Sponsorship](/project-management.md#project-sponsorship)
