@@ -75,8 +75,6 @@ TODO
 [`@x1unix`](https://github.com/x1unix) (Grafana Labs): DEB/RPM system packages
 [`@douglascamata`](https://github.com/douglascamata) (Coralogix): system packages, collector, Ruby, Python
 
-TODO
-
 ### Industry outreach (Optional)
 
 [`@mmanciop`](https://github.com/mmanciop) tried to reach out to Canonical for help with DEB packaging, but while generally interested, they have not committed to helping.
