@@ -181,8 +181,8 @@ but these individual OpenTelemetry members have been given rights to publish und
 
 Link: https://pypi.org/user/opentelemetry/
 
-- Owner: [@open-telemetry/python-maintainers](https://github.com/orgs/open-telemetry/teams/python-maintainers)
-  (password is available in the OpenTelemetry Python 1Password vault)
+- Account email: python-maintainers@opentelemetry.io ([google group](https://groups.google.com/u/1/a/opentelemetry.io/g/python-maintainers))
+- Password: Available in the OpenTelemetry Python 1Password vault
 
 ### PHP Extras
 
