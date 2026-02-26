@@ -135,10 +135,11 @@ Outreach will be conducted through:
 
 The following individuals have expressed interest and commitment to leading this project:
 
-- **@inge4pres** (Francesco) - Project initiator, proposed lead, maintainer
-- **@kmos** - (Giovanni) Maintainer
-- **@hendriknielaender** (Hendrik) Maintainer
-- **@kakkoyun** (Kemal) - Supporting lead
+- **@inge4pres** (Francesco, Elastic) - Project initiator, maintainer
+- **@kmos** - (Giovanni, Read Hat) Maintainer
+- **@hendriknielaender** (Hendrik, Taxdoo Gmbh) Maintainer
+- **@kakkoyun** (Kemal, DataDog) - Supporting lead
+- **@jaronoff97** (Jacob, Tero) - Supporting lead
 
 These individuals will become SIG maintainers upon project approval.
 
