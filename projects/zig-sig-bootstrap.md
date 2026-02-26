@@ -194,8 +194,12 @@ This maintenance burden is acknowledged and accepted by the project leads as par
 ## References
 
 - Issue #2514: [Zig SIG: current level of interest?](https://github.com/open-telemetry/community/issues/2514)
+- Zig Programming Language: https://ziglang.org
 - Existing implementations:
   - https://github.com/zig-o11y/opentelemetry-sdk
   - https://github.com/zig-o11y/opentelemetry-semconv
   - https://github.com/zig-o11y/opentelemetry-proto
-- Zig Programming Language: https://ziglang.org
+
+## License and copyright
+
+The existing implementations mentioned above have a MIT license and the copyright holders are willing to donate them to CNCF.
