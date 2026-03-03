@@ -615,7 +615,7 @@
     meeting: Monday at 09:00 PT
     notes:
       type: gDoc
-      value: 
+      value: 1dzYPuJTV5usXHKAFL596SRwSlATEj_Z37GPODB73Oms
     chat:
       - type: slack
         name: '#otel-kotlin’
