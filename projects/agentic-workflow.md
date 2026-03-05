@@ -101,9 +101,6 @@ Sponsors for this effort are:
 * [@pavolloffay](https://github.com/pavolloffay) (Red Hat)
 * [@niwoerner](https://github.com/niwoerner) (OllyGarden)
 
-#### TC Sponsor
-
-Existing Collector SIG TC sponsor.
 
 #### GC Liaison
 
