@@ -162,23 +162,11 @@ We hope that by making Zig support official, more contributors will step in.
 
 #### TC Sponsor
 
-**[TO BE DETERMINED]**
-
-This project requires a TC sponsors who can provide at minimum "Guiding" level sponsorship to help align the SIG's efforts with OpenTelemetry's technical goals.
-We're actively looking for a sponsor.
+Joshua MacDonald ([@jmacd](https://github.com/jmacd))
 
 #### GC Liaison
 
-**[TO BE DETERMINED]**
-
-This project requires a GC liaison to facilitate SIG health and ensure the project scope remains aligned with the proposal.
-
-Desired liaison characteristics:
-- Familiarity with SIG formation and governance processes
-- Ability to participate in quarterly check-ins
-- Interest in growing the OpenTelemetry ecosystem
-
-_Note_: @svrnm has already engaged in issue #2514, may be a potential liaison
+Alolita Sharma ([@alolita](https://github.com/alolita))
 
 ### Zig Version Compatibility Strategy
 
