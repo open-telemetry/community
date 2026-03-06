@@ -137,7 +137,7 @@ The following individuals have expressed interest and commitment to leading this
 
 - **@inge4pres** (Francesco, Elastic) - Maintainer
 - **@kmos** (Giovanni, Red Hat) - Maintainer
-- **@hendriknielaender** (Hendrik, Taxdoo Gmbh) - Maintainer
+- **@hendriknielaender** (Hendrik, independent) - Maintainer
 - **@kakkoyun** (Kemal, DataDog) - Approver
 - **@jaronoff97** (Jacob, Tero) - Approver
 
