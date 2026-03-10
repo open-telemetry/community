@@ -999,7 +999,7 @@
       - name: 'Severin Neumann'
         github: svrnm
   - name: Spanish (es-ES)
-    meeting: 'Every second Tuesday at 12:45pm UTC-3, 10:45am UTC-5'
+    meeting: 'Every second Tuesday at 8:30am UTC-3'
     notes:
       type: gDoc
       value: 1LAhaPQfZ9IBjXZ1Y3misVV0Gp8Y8CVvoOVChV89Q0s0
