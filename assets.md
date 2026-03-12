@@ -156,9 +156,10 @@ Link: https://www.myget.org/feed/Packages/opentelemetry
 Link: https://www.npmjs.com/settings/opentelemetry/packages
 
 - Ask any of the following people if you need access
-- Owner: Mayur Kale @mayurkale22
-- Admin: Daniel Dyla @dyladan
-- Member: Bogdan Drutu @bogdandrutu
+- Owner: OpenTelemetry account `npmjs-account` (GC/TC have access to it)
+- Member: Daniel Dyla @dyladan
+- Member: Marc Pichler @pichlermarc
+- Member: Trent Mick @trentm
 
 ### Crates
 
