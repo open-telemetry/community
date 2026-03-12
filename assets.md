@@ -159,6 +159,7 @@ Link: https://www.npmjs.com/settings/opentelemetry/packages
 - Owner: OpenTelemetry account `npmjs-account` (GC/TC have access to it)
 - Member: Daniel Dyla @dyladan
 - Member: Marc Pichler @pichlermarc
+- Member: Trent Mick @trentm
 
 ### Crates
 
