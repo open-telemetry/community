@@ -71,12 +71,21 @@ Access to bare metal runners for benchmarking is available to repositories on re
 (open a community issue),
 which will give access to the following GitHub-hosted runner:
 
-- `oracle-bare-metal-64cpu-512gb-x86-64`
+- `oracle-bare-metal-64cpu-512gb-x86-64` (Oracle Linux 8)
+- `oracle-bare-metal-64cpu-1024gb-x86-64-ubuntu-24` (Ubuntu 24)
+
+We are currently transitioning from the Oracle Linux 8 runner to the
+Ubuntu 24 runner. Once the transition is complete, the Oracle Linux 8 runner
+will be decommissioned.
 
 Note: there is only one bare metal runner at this time, so
 please ensure your workloads are optimized to avoid unnecessary usage.
 
 Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+
+SSH private keys are available in the SIG Project Infrastructure 1Password vault.
+
+[How to provision an Oracle bare metal runner](docs/how-to-provision-bare-metal-runner.md)
 
 #### Linux/s390x runners
 
