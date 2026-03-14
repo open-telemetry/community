@@ -14,9 +14,7 @@ INACTIVITY_MONTHS = 4
 
 # Repos to skip entirely
 IGNORED_REPOS = {
-    "admin",
     "community",
-    "opentelemetry-ebpf-profiler-ghsa-7jcw-7r7m-wp3p",
     "sig-contributor-experience",
     "sig-developer-experience",
 }
@@ -119,9 +117,9 @@ def get_team_members(team_slug):
     return [m["login"] for m in members]
 
 def get_team_repos(team_slug):
-    """Get all repos assigned to a team."""
+    """Get all public repos assigned to a team."""
     repos = paginate_rest(f"{REST_API}/orgs/{ORG}/teams/{team_slug}/repos")
-    return [r["name"] for r in repos]
+    return [r["name"] for r in repos if not r.get("private", False)]
 
 def fetch_repo_issue_events(repo, cutoff):
     """Fetch issue events (labeled, unlabeled, closed) from a repo since cutoff.
