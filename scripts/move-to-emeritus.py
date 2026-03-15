@@ -16,6 +16,7 @@ INACTIVITY_MONTHS = 4
 IGNORED_REPOS = {
     "community",
     "cpp-build-tools", # Low traffic and stable repo
+    "opentelemetry-network", # Low traffic and stable repo
     "sig-contributor-experience", # Majority of work is done outside of github
     "sig-developer-experience", # Majority of work is done outside of github
     "sig-end-user", # Majority of work is done outside of github
@@ -127,8 +128,8 @@ def get_team_repos(team_slug, cutoff):
         and r.get("created_at", "")[:10] <= cutoff
     ]
 
-def fetch_repo_issue_events(repo, cutoff):
-    """Fetch issue events (labeled, unlabeled, closed) from a repo since cutoff.
+def fetch_repo_issue_events(repo, cutoff, event_types=None):
+    """Fetch issue events from a repo since cutoff.
 
     Returns a list of (actor_login, event_type) tuples.
     Stops paginating once events are older than the cutoff date.
@@ -139,7 +140,7 @@ def fetch_repo_issue_events(repo, cutoff):
     query_string = urllib.parse.urlencode(params)
     url = f"{url}?{query_string}"
 
-    relevant_events = {"labeled", "unlabeled", "closed"}
+    relevant_events = event_types or {"labeled", "unlabeled", "closed"}
 
     while url:
         resp = request_with_retry("GET", url)
@@ -309,18 +310,17 @@ def check_maintainer_activity(usernames, repos, cutoff):
     """Check if maintainers are active across any of the given repos since cutoff.
 
     Returns a set of usernames that have been active.
-    A maintainer is considered active only if they satisfy BOTH:
-      - (reviewed PRs OR commented on PRs OR merged PRs)  AND
-      - authored PRs
-    Criteria accumulate across repos in the same team.
-    Short-circuits once a user satisfies both sides.
+    A maintainer is considered active if they did ANY of the following
+    on any repo in the team:
+      - Reviewed PRs
+      - Commented on PRs
+      - Merged PRs
+      - Authored PRs
+    Short-circuits once a user is found active.
     """
     if not usernames or not repos:
         return set()
 
-    # Track which criteria each user has met
-    has_engagement = set()  # reviewed OR commented
-    has_authored = set()
     active = set()
     remaining = set(usernames)
 
@@ -369,16 +369,22 @@ def check_maintainer_activity(usernames, repos, cutoff):
                 authored = (data["data"].get(f"{safe}_authored") or {}).get(
                     "issueCount", 0
                 )
-                if reviews > 0 or pr_comments > 0:
-                    has_engagement.add(user)
-                if authored > 0:
-                    has_authored.add(user)
-                if user in has_engagement and user in has_authored:
+                if reviews > 0 or pr_comments > 0 or authored > 0:
                     active.add(user)
                     remaining.discard(user)
 
             if not remaining:
                 return active
+
+        # Check who merged PRs via issue events (actor = person who clicked merge)
+        if remaining:
+            events = fetch_repo_issue_events(repo, cutoff, event_types={"merged"})
+            for actor, _ in events:
+                if actor in remaining:
+                    active.add(actor)
+                    remaining.discard(actor)
+                    if not remaining:
+                        break
 
     return active
 
