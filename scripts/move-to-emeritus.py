@@ -15,8 +15,10 @@ INACTIVITY_MONTHS = 4
 # Repos to skip entirely
 IGNORED_REPOS = {
     "community",
-    "sig-contributor-experience",
-    "sig-developer-experience",
+    "cpp-build-tools", # Low traffic and stable repo
+    "sig-contributor-experience", # Majority of work is done outside of github
+    "sig-developer-experience", # Majority of work is done outside of github
+    "sig-end-user", # Majority of work is done outside of github
 }
 
 # For these repos, only check the listed team slugs (all others are ignored)
@@ -116,10 +118,14 @@ def get_team_members(team_slug):
     members = paginate_rest(f"{REST_API}/orgs/{ORG}/teams/{team_slug}/members")
     return [m["login"] for m in members]
 
-def get_team_repos(team_slug):
-    """Get all public repos assigned to a team."""
+def get_team_repos(team_slug, cutoff):
+    """Get all public repos assigned to a team, excluding repos created after cutoff."""
     repos = paginate_rest(f"{REST_API}/orgs/{ORG}/teams/{team_slug}/repos")
-    return [r["name"] for r in repos if not r.get("private", False)]
+    return [
+        r["name"] for r in repos
+        if not r.get("private", False)
+        and r.get("created_at", "")[:10] <= cutoff
+    ]
 
 def fetch_repo_issue_events(repo, cutoff):
     """Fetch issue events (labeled, unlabeled, closed) from a repo since cutoff.
@@ -418,7 +424,7 @@ def main():
             name = team["name"]
             team_name_lower = name.lower()
             members = get_team_members(slug)
-            repos = get_team_repos(slug)
+            repos = get_team_repos(slug, cutoff)
 
             # Filter out ignored repos
             repos = [r for r in repos if r not in IGNORED_REPOS]
