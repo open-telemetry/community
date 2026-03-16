@@ -1021,3 +1021,17 @@
     sponsors:
       - name: 'Severin Neumann'
         github: svrnm
+  - name: Polish (pl-PL)
+    meeting: ''
+    notes:
+      type: none
+    chat:
+      - type: slack
+        name: "#otel-localization-pl"
+        id: C0ALHN9V7PT
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+    sponsors:
+      - name: 'Severin Neumann'
+        github: svrnm
