@@ -414,6 +414,8 @@ def main():
 
     # Results: repo -> list of (username, team_name, role_label)
     inactive_report = {}
+    # Track total maintainer count per repo (across all maintainer teams)
+    repo_maintainer_count = {}
 
     for role in ROLES:
         keyword = role["keyword"]
@@ -452,6 +454,12 @@ def main():
             if not members or not repos:
                 continue
 
+            # Track maintainer counts per repo
+            if keyword == "maintainer":
+                for repo in repos:
+                    repo_maintainer_count.setdefault(repo, set())
+                    repo_maintainer_count[repo].update(members)
+
             active_users = check_fn(members, repos, cutoff)
             inactive = [u for u in members if u not in active_users]
             if inactive:
@@ -472,10 +480,31 @@ def main():
     print(f"(no activity since {cutoff})")
     print("=" * 60)
 
+    # Pre-compute maintainer health warnings per repo
+    repo_warnings = {}
+    for repo, inactive in inactive_report.items():
+        if repo not in repo_maintainer_count:
+            continue
+        inactive_maintainers = {
+            user for user, _, role_label in inactive
+            if role_label == "Maintainer"
+        }
+        if not inactive_maintainers:
+            continue
+        total = len(repo_maintainer_count[repo])
+        remaining = total - len(inactive_maintainers & repo_maintainer_count[repo])
+        if remaining <= 1:
+            if remaining == 0:
+                repo_warnings[repo] = f"  WARNING: {total} -> 0 maintainers (repo will have NO maintainers!)"
+            else:
+                repo_warnings[repo] = f"  WARNING: {total} -> {remaining} maintainer (repo will have only 1 maintainer!)"
+
     total_inactive = 0
     seen = set()
     for repo, inactive in sorted(inactive_report.items()):
         print(f"\n{ORG}/{repo}:")
+        if repo in repo_warnings:
+            print(repo_warnings[repo])
         for user, team_name, role_label in sorted(inactive):
             print(f"  - @{user}  ({role_label}, team: {team_name})")
             if (user, team_name) not in seen:
