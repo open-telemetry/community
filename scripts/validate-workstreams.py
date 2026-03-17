@@ -129,6 +129,11 @@ def validate_workstreams_semantics(workstreams: list[dict], people: dict) -> lis
         wid  = w.get("id", "(unknown)")
         kind = w.get("kind", "")
 
+        if "sigCategory" in w and kind != "sig":
+            errors.append(
+                f"[{wid}] sigCategory is only valid on kind 'sig'"
+            )
+
         person_roles = {next(iter(pr)) for pr in w.get("people", [])}
         for required_role in KIND_REQUIRED_ROLES.get(kind, set()):
             if required_role not in person_roles:

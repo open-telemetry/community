@@ -34,6 +34,17 @@ items:
       name:
         type: string
         minLength: 1
+      # Grouping category. Only valid on kind: sig. Absent means specification (the default).
+      # Enforcement of the kind constraint is in scripts/validate-workstreams.py.
+      sigCategory:
+        type: string
+        enum:
+          # Specification-related SIG (default when omitted).
+          - specification
+          # Language SDK or instrumentation SIG.
+          - implementation
+          # Cross-language, community-wide concern.
+          - cross-cutting
       # ID of the parent workstream. Optional.
       # Kind constraints are enforced by scripts/validate-workstreams.py.
       parent:
