@@ -4,13 +4,20 @@
 - id: sampling
   kind: sig
   name: "Specification: Sampling"
-
   people:
     - role: gcLiaison
       github: jpkrohling
     - role: tcSponsor
       github: jmacd
-      tcSponsorLevel: tbd    # sponsorship level not yet classified
+      tcSponsorLevel: tbd
+  resources:
+    - meeting:
+        schedule: "Thursday at 08:00 PT"
+        calendarInviteGroup: calendar-spec-sampling
+        gDocNotes: 1NqhCcePaj--L8CUIBWV6lblR0nUD8ai6AzkW9_YcEOg
+    - slack:
+        name: "#otel-sampling"
+        id: C027DS6GZD3
 
 # ---------------------------------------------------------------------------
 # Working group example: Generative AI Observability
@@ -19,17 +26,28 @@
 - id: gen-ai
   kind: working-group
   name: "Generative AI Observability"
-
   people:
     - role: gcLiaison
       github: tedsuo
     - role: tcSponsor
       github: lmolkova
-      tcSponsorLevel: tbd    # sponsorship level not yet classified
+      tcSponsorLevel: tbd
     - role: lead
       github: drewby
     - role: lead
       github: nirga
+  resources:
+    - meeting:
+        schedule: "General GenAI topics: every Tuesday 9:00 PT, every other Tuesday 9:00 UTC+8"
+        calendarInviteGroup: calendar-semconv
+        gDocNotes: 1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M
+    - meeting:
+        schedule: "Agent-related topics: every Monday 9:00 PT"
+        calendarInviteGroup: calendar-semconv
+    - slack:
+        name: "#otel-genai-instrumentation"
+        id: C06KR7ARS3X
+    - roadmapProject: 82
 
 # ---------------------------------------------------------------------------
 # Enhancement example: Probability Sampling
@@ -37,7 +55,6 @@
 - id: probability-sampling
   kind: enhancement
   name: "Probability Sampling"
-
   people:
     - role: lead
       github: jmacd
