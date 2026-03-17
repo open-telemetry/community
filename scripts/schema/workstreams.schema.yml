@@ -89,12 +89,12 @@ items:
             enum:
               # Lightest engagement. Participates in GC check-ins, aids roadmap,
               # and is the primary escalation path.
-              - escalation
+              - escalating
               # Active SIG participant; helps direct toward OTel goals.
-              # Fulfils escalation obligations.
+              # Fulfils escalating obligations.
               - guiding
               # Active SIG leadership; drives charter completion.
-              # Fulfils guiding and escalation obligations. Max 2 per TC member.
+              # Fulfils guiding and escalating obligations. Max 2 per TC member.
               - leading
               # Level required but not yet determined.
               - tbd
