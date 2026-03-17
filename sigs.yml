@@ -611,14 +611,14 @@
     repositories:
       - https://github.com/open-telemetry/opentelemetry-js
       - https://github.com/open-telemetry/opentelemetry-js-contrib
- - name: ‘Kotlin: SDK'
+  - name: 'Kotlin: SDK'
     meeting: Monday at 09:00 PT
     notes:
       type: gDoc
       value: 1dzYPuJTV5usXHKAFL596SRwSlATEj_Z37GPODB73Oms
     chat:
       - type: slack
-        name: '#otel-kotlin’
+        name: '#otel-kotlin'
         id: C08NRCD4R4G
       - type: other
         name: GitHub Discussions
