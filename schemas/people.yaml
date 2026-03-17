@@ -1,0 +1,31 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+description: people.yml — a flat object keyed by GitHub handle.
+
+type: object
+additionalProperties:
+  "$ref": "#/$defs/person"
+
+"$defs":
+
+  person:
+    type: object
+    required: [name, membership]
+    additionalProperties: false
+    properties:
+      name:
+        type: string
+        minLength: 1
+      membership:
+        type: array
+        minItems: 1
+        items:
+          type: string
+          enum:
+            # Governance Committee member.
+            - gc-member
+            # Technical Committee member.
+            # TC members are implicitly spec-sponsors per charter.
+            - tc-member
+            # Trusted collaborator with approval rights on the
+            # specification repository.
+            - spec-sponsor

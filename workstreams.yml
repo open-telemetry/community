@@ -1,0 +1,43 @@
+# ---------------------------------------------------------------------------
+# SIG example: Specification: Sampling
+# ---------------------------------------------------------------------------
+- id: sampling
+  kind: sig
+  name: "Specification: Sampling"
+
+  people:
+    - role: gcLiaison
+      github: jpkrohling
+    - role: tcSponsor
+      github: jmacd
+      tcSponsorLevel: tbd    # sponsorship level not yet classified
+
+# ---------------------------------------------------------------------------
+# Working group example: Generative AI Observability
+# Source: projects/gen-ai.md
+# ---------------------------------------------------------------------------
+- id: gen-ai
+  kind: working-group
+  name: "Generative AI Observability"
+
+  people:
+    - role: gcLiaison
+      github: tedsuo
+    - role: tcSponsor
+      github: lmolkova
+      tcSponsorLevel: tbd    # sponsorship level not yet classified
+    - role: lead
+      github: drewby
+    - role: lead
+      github: nirga
+
+# ---------------------------------------------------------------------------
+# Enhancement example: Probability Sampling
+# ---------------------------------------------------------------------------
+- id: probability-sampling
+  kind: enhancement
+  name: "Probability Sampling"
+
+  people:
+    - role: lead
+      github: jmacd

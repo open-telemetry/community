@@ -1,0 +1,82 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+description: >-
+  workstreams.yml — an array of workstreams tracking the OpenTelemetry
+  community's key efforts. Conditional rules (per-kind required roles,
+  per-kind valid statuses, membership requirements) are enforced by
+  scripts/validate-workstreams.py to keep this schema simple and readable.
+
+type: array
+items:
+  "$ref": "#/$defs/workstream"
+
+"$defs":
+
+  workstream:
+    type: object
+    required: [id, kind, name, people]
+    additionalProperties: false
+    properties:
+      id:
+        description: Stable slug, unique across all workstreams.
+        type: string
+        minLength: 1
+      kind:
+        type: string
+        enum:
+          # Permanent operational group with recurring meetings,
+          # a GC liaison, and a TC sponsor.
+          - sig
+          # Bounded effort with defined deliverables and a finite timeline.
+          # Corresponds to a 'project' in /projects/*.md.
+          # Any kind may be associated with a project proposal document.
+          - working-group
+          # A specific tracked feature or spec change, typically an OTEP.
+          - enhancement
+      name:
+        type: string
+        minLength: 1
+      people:
+        type: array
+        items:
+          "$ref": "#/$defs/personRole"
+
+  personRole:
+    type: object
+    required: [role, github]
+    additionalProperties: false
+    properties:
+      role:
+        type: string
+        enum:
+          # GC member facilitating health of a SIG or working-group.
+          # Required on: sig, working-group.
+          - gcLiaison
+          # TC member sponsoring a SIG or working-group.
+          # Required on: sig, working-group. Must have a tcSponsorLevel.
+          - tcSponsor
+          # Person accountable for driving the workstream forward.
+          # Required on: working-group, enhancement.
+          - lead
+          # Trusted collaborator with approval rights on the spec repository.
+          # TC members are a superset and may fill this role.
+          # Optional on: enhancement.
+          - specSponsor
+      github:
+        description: GitHub handle, or 'tbd' if not yet assigned.
+        type: string
+        minLength: 1
+      tcSponsorLevel:
+        description: Required when role is tcSponsor. 'tbd' if level not yet determined.
+        type: string
+        enum:
+          # Lightest engagement. Participates in GC check-ins, aids roadmap,
+          # and is the primary escalation path.
+          - escalation
+          # Active SIG participant; helps direct toward OTel goals.
+          # Fulfils escalation obligations.
+          - guiding
+          # Active SIG leadership; drives charter completion.
+          # Fulfils guiding and escalation obligations. Max 2 per TC member.
+          - leading
+          # Level required but not yet determined.
+          - tbd

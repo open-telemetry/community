@@ -1,0 +1,96 @@
+# Maps GitHub handle -> display name and community membership roles.
+#
+# membership values:
+#   gc-member     Governance Committee member
+#   tc-member     Technical Committee member (also implicitly a spec-sponsor per charter)
+#   spec-sponsor  Trusted collaborator with approval rights on the specification repository
+
+# Governance Committee
+alolita:
+  name: Alolita Sharma
+  membership: [gc-member]
+austinlparker:
+  name: Austin Parker
+  membership: [gc-member]
+jpkrohling:
+  name: "Juraci Paixão Kröhling"
+  membership: [gc-member, spec-sponsor]
+maryliag:
+  name: Marylia Gutierrez
+  membership: [gc-member]
+mtwo:
+  name: Morgan McLean
+  membership: [gc-member]
+mx-psi:
+  name: Pablo Baeyens Fernandez
+  membership: [gc-member]
+svrnm:
+  name: Severin Neumann
+  membership: [gc-member, spec-sponsor]
+tedsuo:
+  name: Ted Young
+  membership: [gc-member, spec-sponsor]
+trask:
+  name: Trask Stalnaker
+  membership: [gc-member]
+
+# Technical Committee (TC members are also implicitly spec-sponsors per charter)
+arminru:
+  name: Armin Ruech
+  membership: [tc-member]
+BogdanDrutu:
+  name: Bogdan Drutu
+  membership: [tc-member]
+carlosalberto:
+  name: Carlos Alberto
+  membership: [tc-member]
+dashpole:
+  name: David Ashpole
+  membership: [tc-member]
+jack-berg:
+  name: Jack Berg
+  membership: [tc-member]
+jmacd:
+  name: Josh MacDonald
+  membership: [tc-member]
+jsuereth:
+  name: Josh Suereth
+  membership: [tc-member]
+lmolkova:
+  name: Liudmila Molkova
+  membership: [tc-member]
+reyang:
+  name: Reiley Yang
+  membership: [tc-member]
+tigrannajaryan:
+  name: Tigran Najaryan
+  membership: [tc-member]
+
+# Specification sponsors (beyond TC/GC members listed above)
+codeboten:
+  name: Alex Boten
+  membership: [spec-sponsor]
+Oberon00:
+  name: "Christian Neumüller"
+  membership: [spec-sponsor]
+cijothomas:
+  name: Cijo Thomas
+  membership: [spec-sponsor]
+dyladan:
+  name: Daniel Dyla
+  membership: [spec-sponsor]
+lzchen:
+  name: Leighton Chen
+  membership: [spec-sponsor]
+marcalff:
+  name: Marc Alff
+  membership: [spec-sponsor]
+pellared:
+  name: "Robert Pająk"
+  membership: [spec-sponsor]
+tsloughter:
+  name: Tristan Sloughter
+  membership: [spec-sponsor]
+MrAlias:
+  name: Tyler Yahn
+  membership: [spec-sponsor]
