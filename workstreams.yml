@@ -51,5 +51,6 @@
 - id: probability-sampling
   kind: enhancement
   name: "Probability Sampling"
+  parent: sampling
   people:
     - lead: jmacd

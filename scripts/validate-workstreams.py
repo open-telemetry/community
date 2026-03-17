@@ -19,12 +19,12 @@ import yaml
 import jsonschema
 
 REPO_ROOT    = Path(__file__).parent.parent
-SCHEMAS_DIR  = REPO_ROOT / "schemas"
+SCRIPTS_DIR  = REPO_ROOT / "scripts"
 
 PEOPLE_FILE        = REPO_ROOT / "people.yml"
 WORKSTREAMS_FILE   = REPO_ROOT / "workstreams.yml"
-PEOPLE_SCHEMA      = SCHEMAS_DIR / "people.yaml"
-WORKSTREAMS_SCHEMA = SCHEMAS_DIR / "workstreams.yaml"
+PEOPLE_SCHEMA      = SCRIPTS_DIR / "schema" / "people.schema.yml"
+WORKSTREAMS_SCHEMA = SCRIPTS_DIR / "schema" / "workstreams.schema.yml"
 
 TBD = "tbd"
 
@@ -32,6 +32,12 @@ KIND_REQUIRED_ROLES = {
     "sig":           {"gcLiaison", "tcSponsor"},
     "working-group": {"gcLiaison", "tcSponsor", "lead"},
     "enhancement":   {"lead"},
+}
+
+VALID_PARENT_KINDS = {
+    "sig":           {"sig"},
+    "working-group": {"sig"},
+    "enhancement":   {"sig", "working-group"},
 }
 
 MEMBERSHIP_REQUIRED_ROLES = {"gcLiaison", "tcSponsor", "specSponsor"}
@@ -83,6 +89,41 @@ def validate_workstreams_semantics(workstreams: list[dict], people: dict) -> lis
         if wid in seen_ids:
             errors.append(f"[{wid}] Duplicate workstream id")
         seen_ids.add(wid)
+
+    id_to_workstream = {w["id"]: w for w in workstreams if "id" in w}
+
+    for w in workstreams:
+        wid       = w.get("id", "(unknown)")
+        kind      = w.get("kind", "")
+        parent_id = w.get("parent")
+
+        if parent_id is None:
+            continue
+
+        if parent_id == wid:
+            errors.append(f"[{wid}] parent references itself")
+            continue
+
+        if parent_id not in id_to_workstream:
+            errors.append(f"[{wid}] parent '{parent_id}' does not exist")
+            continue
+
+        parent_kind = id_to_workstream[parent_id].get("kind", "")
+        if parent_kind not in VALID_PARENT_KINDS.get(kind, set()):
+            errors.append(
+                f"[{wid}] kind '{kind}' cannot have a parent of kind '{parent_kind}'"
+            )
+
+    for w in workstreams:
+        wid     = w.get("id", "(unknown)")
+        visited = set()
+        current = wid
+        while current is not None:
+            if current in visited:
+                errors.append(f"[{wid}] parent chain contains a cycle")
+                break
+            visited.add(current)
+            current = id_to_workstream.get(current, {}).get("parent")
 
     for w in workstreams:
         wid  = w.get("id", "(unknown)")
