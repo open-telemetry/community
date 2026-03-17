@@ -249,6 +249,7 @@ def check_approver_activity(usernames, repos, cutoff):
     on ANY repo in the team:
       - Added a comment on a PR
       - Approved / reviewed a PR
+      - Added a comment on an issue
     Short-circuits: once a user is found active on one repo, they are
     not checked on the remaining repos.
     """
@@ -274,11 +275,15 @@ def check_approver_activity(usernames, repos, cutoff):
                 safe = "u_" + re.sub(r"[^a-zA-Z0-9]", "_", user)
                 pr_comment_q = f'type:pr repo:{ORG}/{repo} commenter:{user} updated:>={cutoff}'
                 review_q = f'type:pr repo:{ORG}/{repo} reviewed-by:{user} updated:>={cutoff}'
+                issue_comment_q = f'type:issue repo:{ORG}/{repo} commenter:{user} updated:>={cutoff}'
                 aliases.append(
                     f'{safe}_pr_comments: search(query: "{pr_comment_q}", type: ISSUE, first: 1) {{ issueCount }}'
                 )
                 aliases.append(
                     f'{safe}_reviews: search(query: "{review_q}", type: ISSUE, first: 1) {{ issueCount }}'
+                )
+                aliases.append(
+                    f'{safe}_issue_comments: search(query: "{issue_comment_q}", type: ISSUE, first: 1) {{ issueCount }}'
                 )
 
             query = "query { " + "\n".join(aliases) + " }"
@@ -296,7 +301,10 @@ def check_approver_activity(usernames, repos, cutoff):
                 reviews = (data["data"].get(f"{safe}_reviews") or {}).get(
                     "issueCount", 0
                 )
-                if pr_comments > 0 or reviews > 0:
+                issue_comments = (data["data"].get(f"{safe}_issue_comments") or {}).get(
+                    "issueCount", 0
+                )
+                if pr_comments > 0 or reviews > 0 or issue_comments > 0:
                     active.add(user)
                     remaining.discard(user)
 
@@ -316,6 +324,7 @@ def check_maintainer_activity(usernames, repos, cutoff):
       - Commented on PRs
       - Merged PRs
       - Authored PRs
+      - Commented on issues
     Short-circuits once a user is found active.
     """
     if not usernames or not repos:
@@ -341,6 +350,7 @@ def check_maintainer_activity(usernames, repos, cutoff):
                 review_q = f'type:pr repo:{ORG}/{repo} reviewed-by:{user} updated:>={cutoff}'
                 comment_q = f'type:pr repo:{ORG}/{repo} commenter:{user} updated:>={cutoff}'
                 author_q = f'type:pr repo:{ORG}/{repo} author:{user} created:>={cutoff}'
+                issue_comment_q = f'type:issue repo:{ORG}/{repo} commenter:{user} updated:>={cutoff}'
                 aliases.append(
                     f'{safe}_reviews: search(query: "{review_q}", type: ISSUE, first: 1) {{ issueCount }}'
                 )
@@ -349,6 +359,9 @@ def check_maintainer_activity(usernames, repos, cutoff):
                 )
                 aliases.append(
                     f'{safe}_authored: search(query: "{author_q}", type: ISSUE, first: 1) {{ issueCount }}'
+                )
+                aliases.append(
+                    f'{safe}_issue_comments: search(query: "{issue_comment_q}", type: ISSUE, first: 1) {{ issueCount }}'
                 )
 
             query = "query { " + "\n".join(aliases) + " }"
@@ -369,7 +382,10 @@ def check_maintainer_activity(usernames, repos, cutoff):
                 authored = (data["data"].get(f"{safe}_authored") or {}).get(
                     "issueCount", 0
                 )
-                if reviews > 0 or pr_comments > 0 or authored > 0:
+                issue_comments = (data["data"].get(f"{safe}_issue_comments") or {}).get(
+                    "issueCount", 0
+                )
+                if reviews > 0 or pr_comments > 0 or authored > 0 or issue_comments > 0:
                     active.add(user)
                     remaining.discard(user)
 
