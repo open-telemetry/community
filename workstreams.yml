@@ -1,6 +1,7 @@
 - id: spec-general
   kind: sig
   name: 'Specification: General + OTel Maintainers Sync'
+  parent: none
   people:
   - gcLiaison: tbd
   - tcSponsor:
@@ -227,6 +228,7 @@
 - id: opamp
   kind: sig
   name: OpAMP
+  parent: none
   people:
   - gcLiaison: tedsuo
   - tcSponsor:
@@ -245,6 +247,7 @@
 - id: prometheus-interop
   kind: sig
   name: Prometheus Interoperability
+  parent: none
   people:
   - gcLiaison: mx-psi
   - tcSponsor:
@@ -261,6 +264,7 @@
 - id: faas
   kind: sig
   name: Functions as a Service (FAAS)
+  parent: none
   people:
   - gcLiaison: austinlparker
   - tcSponsor:
@@ -278,6 +282,7 @@
 - id: profiling
   kind: sig
   name: Profiling
+  parent: none
   people:
   - gcLiaison: mtwo
   - tcSponsor:
@@ -298,6 +303,7 @@
 - id: mainframes
   kind: sig
   name: OpenTelemetry on Mainframes
+  parent: none
   people:
   - gcLiaison: mtwo
   - tcSponsor:
@@ -314,6 +320,7 @@
 - id: client-instrumentation
   kind: sig
   name: Client Instrumentation
+  parent: none
   people:
   - gcLiaison: tedsuo
   - tcSponsor:
@@ -331,6 +338,7 @@
   kind: sig
   sigCategory: implementation
   name: 'Android: SDK + Automatic Instrumentation'
+  parent: none
   people:
   - gcLiaison: tedsuo
   - tcSponsor:
@@ -349,6 +357,7 @@
   kind: sig
   sigCategory: implementation
   name: Arrow
+  parent: none
   people:
   - gcLiaison: trask
   - tcSponsor:
@@ -368,6 +377,7 @@
   kind: sig
   sigCategory: implementation
   name: Browser
+  parent: none
   people:
   - gcLiaison: tedsuo
   - tcSponsor:
@@ -386,6 +396,7 @@
   kind: sig
   sigCategory: implementation
   name: Collector
+  parent: none
   people:
   - gcLiaison: mx-psi
   - tcSponsor:
@@ -410,6 +421,7 @@
   kind: sig
   sigCategory: implementation
   name: 'C++: SDK'
+  parent: none
   people:
   - gcLiaison: svrnm
   - tcSponsor:
@@ -430,6 +442,7 @@
   kind: sig
   sigCategory: implementation
   name: '.NET: Automatic Instrumentation'
+  parent: none
   people:
   - gcLiaison: mtwo
   - tcSponsor:
@@ -448,6 +461,7 @@
   kind: sig
   sigCategory: implementation
   name: '.NET: SDK'
+  parent: none
   people:
   - gcLiaison: mtwo
   - tcSponsor:
@@ -467,6 +481,7 @@
   kind: sig
   sigCategory: implementation
   name: 'Erlang/Elixir: SDK'
+  parent: none
   people:
   - gcLiaison: austinlparker
   - tcSponsor:
@@ -486,6 +501,7 @@
   kind: sig
   sigCategory: implementation
   name: 'GoLang: SDK'
+  parent: none
   people:
   - gcLiaison: maryliag
   - tcSponsor:
@@ -509,6 +525,7 @@
   kind: sig
   sigCategory: implementation
   name: 'GoLang: Automatic Instrumentation'
+  parent: none
   people:
   - gcLiaison: jpkrohling
   - tcSponsor:
@@ -527,6 +544,7 @@
   kind: sig
   sigCategory: implementation
   name: 'GoLang: Compile-Time Instrumentation'
+  parent: none
   people:
   - gcLiaison: jpkrohling
   - tcSponsor:
@@ -546,6 +564,7 @@
   kind: sig
   sigCategory: implementation
   name: Injector
+  parent: none
   people:
   - gcLiaison: mtwo
   - tcSponsor:
@@ -564,6 +583,7 @@
   kind: sig
   sigCategory: implementation
   name: 'Java: SDK + Instrumentation'
+  parent: none
   people:
   - gcLiaison: trask
   - tcSponsor:
@@ -587,6 +607,7 @@
   kind: sig
   sigCategory: implementation
   name: 'JavaScript: SDK'
+  parent: none
   people:
   - gcLiaison: maryliag
   - tcSponsor:
@@ -607,6 +628,7 @@
   kind: sig
   sigCategory: implementation
   name: 'PHP: SDK'
+  parent: none
   people:
   - gcLiaison: svrnm
   - tcSponsor:
@@ -627,6 +649,7 @@
   kind: sig
   sigCategory: implementation
   name: 'Python: SDK'
+  parent: none
   people:
   - gcLiaison: maryliag
   - tcSponsor:
@@ -646,6 +669,7 @@
   kind: sig
   sigCategory: implementation
   name: 'Ruby: SDK'
+  parent: none
   people:
   - gcLiaison: tedsuo
   - tcSponsor:
@@ -666,6 +690,7 @@
   kind: sig
   sigCategory: implementation
   name: 'Rust: SDK'
+  parent: none
   people:
   - gcLiaison: tedsuo
   - tcSponsor:
@@ -685,6 +710,7 @@
   kind: sig
   sigCategory: implementation
   name: 'Swift: SDK'
+  parent: none
   people:
   - gcLiaison: alolita
   - tcSponsor:
@@ -703,6 +729,7 @@
   kind: sig
   sigCategory: implementation
   name: Network
+  parent: none
   people:
   - gcLiaison: tedsuo
   - tcSponsor:
@@ -721,6 +748,7 @@
   kind: sig
   sigCategory: implementation
   name: eBPF Instrumentation
+  parent: none
   people:
   - gcLiaison: svrnm
   - tcSponsor:
@@ -739,6 +767,7 @@
   kind: sig
   sigCategory: implementation
   name: Kubernetes Operator
+  parent: none
   people:
   - gcLiaison: jpkrohling
   - tcSponsor:
@@ -757,6 +786,7 @@
   kind: sig
   sigCategory: implementation
   name: Kubernetes Helm Charts
+  parent: none
   people:
   - gcLiaison: mx-psi
   - tcSponsor:
@@ -775,6 +805,7 @@
   kind: sig
   sigCategory: implementation
   name: Community Demo Application
+  parent: none
   people:
   - gcLiaison: austinlparker
   - tcSponsor:
@@ -812,6 +843,7 @@
   kind: sig
   sigCategory: cross-cutting
   name: Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)
+  parent: none
   people:
   - gcLiaison: svrnm
   - tcSponsor:
@@ -831,6 +863,7 @@
   kind: sig
   sigCategory: cross-cutting
   name: End-User SIG
+  parent: none
   people:
   - gcLiaison: maryliag
   - tcSponsor:
@@ -850,6 +883,7 @@
   kind: sig
   sigCategory: cross-cutting
   name: Security
+  parent: none
   people:
   - gcLiaison: trask
   - tcSponsor:
@@ -868,6 +902,7 @@
   kind: sig
   sigCategory: cross-cutting
   name: Project Infrastructure
+  parent: none
   people:
   - gcLiaison: austinlparker
   - tcSponsor:
@@ -888,6 +923,7 @@
   kind: sig
   sigCategory: cross-cutting
   name: Contributor Experience
+  parent: none
   people:
   - gcLiaison: maryliag
   - tcSponsor:
@@ -906,6 +942,7 @@
   kind: sig
   sigCategory: cross-cutting
   name: Developer Experience
+  parent: none
   people:
   - gcLiaison: austinlparker
   - tcSponsor:

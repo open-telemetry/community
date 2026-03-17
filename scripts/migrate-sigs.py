@@ -117,10 +117,7 @@ def convert_sig(sig: dict, tc_members: set[str], group_name: str = "") -> dict:
     if category := GROUP_CATEGORY.get(group_name):
         ws["sigCategory"] = category
     ws["name"] = name
-
-    parent = PARENT_MAP.get(wid)
-    if parent:
-        ws["parent"] = parent
+    ws["parent"] = PARENT_MAP.get(wid, "none")
 
     # --- people ---
     people = []

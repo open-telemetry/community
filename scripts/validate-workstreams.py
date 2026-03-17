@@ -26,7 +26,8 @@ WORKSTREAMS_FILE   = REPO_ROOT / "workstreams.yml"
 PEOPLE_SCHEMA      = SCRIPTS_DIR / "schema" / "people.schema.yml"
 WORKSTREAMS_SCHEMA = SCRIPTS_DIR / "schema" / "workstreams.schema.yml"
 
-TBD = "tbd"
+TBD  = "tbd"
+NONE = "none"
 
 KIND_REQUIRED_ROLES = {
     "sig":           {"gcLiaison", "tcSponsor"},
@@ -97,7 +98,7 @@ def validate_workstreams_semantics(workstreams: list[dict], people: dict) -> lis
         kind      = w.get("kind", "")
         parent_id = w.get("parent")
 
-        if parent_id is None:
+        if parent_id is None or parent_id == NONE:
             continue
 
         if parent_id == wid:
@@ -118,7 +119,7 @@ def validate_workstreams_semantics(workstreams: list[dict], people: dict) -> lis
         wid     = w.get("id", "(unknown)")
         visited = set()
         current = wid
-        while current is not None:
+        while current is not None and current != NONE:
             if current in visited:
                 errors.append(f"[{wid}] parent chain contains a cycle")
                 break

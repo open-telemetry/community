@@ -12,7 +12,7 @@ items:
 
   workstream:
     type: object
-    required: [id, kind, name, people]
+    required: [id, kind, name, parent, people]
     additionalProperties: false
     properties:
       # Stable slug, unique across all workstreams.
@@ -45,7 +45,7 @@ items:
           - implementation
           # Cross-language, community-wide concern.
           - cross-cutting
-      # ID of the parent workstream. Optional.
+      # ID of the parent workstream, or 'none' for a top-level workstream.
       # Kind constraints are enforced by scripts/validate-workstreams.py.
       parent:
         type: string
