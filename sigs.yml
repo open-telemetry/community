@@ -960,6 +960,20 @@
     gcLiaison:
       - name: 'Severin Neumann'
         github: svrnm
+  - name: Polish (pl-PL)
+    meeting: ''
+    notes:
+      type: none
+    chat:
+      - type: slack
+        name: "#otel-localization-pl"
+        id: C0ALHN9V7PT
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+    sponsors:
+      - name: 'Severin Neumann'
+        github: svrnm
   - name: Portuguese (pt-BR)
     meeting: Every second Wednesday at 7:15pm BST
     notes:
@@ -974,6 +988,21 @@
       - name: 'Juraci Paixão Kröhling'
         github: jpkrohling
     gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+  - name: Romanian (ro-RO)
+    meeting: 'Monthly on a different day, at a different time (see Slack channel)'
+    notes:
+      type: gDoc
+      value: 1bvLFPDKMs2fw7750dKLvgL3BWRy5jLWJrivApOThDVg
+    chat:
+      - type: slack
+        name: "#otel-localization-ro"
+        id: C09E9KNNLP4
+    gcLiaison:
+      - name: 'Severin Neumann'
+        github: svrnm
+    sponsors:
       - name: 'Severin Neumann'
         github: svrnm
   - name: Spanish (es-ES)
@@ -1000,35 +1029,6 @@
       - type: slack
         name: "#otel-localization-uk"
         id: C097ZNPM3LK
-    gcLiaison:
-      - name: 'Severin Neumann'
-        github: svrnm
-    sponsors:
-      - name: 'Severin Neumann'
-        github: svrnm
-  - name: Romanian (ro-RO)
-    meeting: 'Monthly on a different day, at a different time (see Slack channel)'
-    notes:
-      type: gDoc
-      value: 1bvLFPDKMs2fw7750dKLvgL3BWRy5jLWJrivApOThDVg
-    chat:
-      - type: slack
-        name: "#otel-localization-ro"
-        id: C09E9KNNLP4
-    gcLiaison:
-      - name: 'Severin Neumann'
-        github: svrnm
-    sponsors:
-      - name: 'Severin Neumann'
-        github: svrnm
-  - name: Polish (pl-PL)
-    meeting: ''
-    notes:
-      type: none
-    chat:
-      - type: slack
-        name: "#otel-localization-pl"
-        id: C0ALHN9V7PT
     gcLiaison:
       - name: 'Severin Neumann'
         github: svrnm
