@@ -5,11 +5,10 @@
   kind: sig
   name: "Specification: Sampling"
   people:
-    - role: gcLiaison
-      github: jpkrohling
-    - role: tcSponsor
-      github: jmacd
-      tcSponsorLevel: tbd
+    - gcLiaison: jpkrohling
+    - tcSponsor:
+        username: jmacd
+        level: tbd
   resources:
     - meeting:
         schedule: "Thursday at 08:00 PT"
@@ -27,15 +26,12 @@
   kind: working-group
   name: "Generative AI Observability"
   people:
-    - role: gcLiaison
-      github: tedsuo
-    - role: tcSponsor
-      github: lmolkova
-      tcSponsorLevel: tbd
-    - role: lead
-      github: drewby
-    - role: lead
-      github: nirga
+    - gcLiaison: tedsuo
+    - tcSponsor:
+        username: lmolkova
+        level: tbd
+    - lead: drewby
+    - lead: nirga
   resources:
     - meeting:
         schedule: "General GenAI topics: every Tuesday 9:00 PT, every other Tuesday 9:00 UTC+8"
@@ -56,5 +52,4 @@
   kind: enhancement
   name: "Probability Sampling"
   people:
-    - role: lead
-      github: jmacd
+    - lead: jmacd

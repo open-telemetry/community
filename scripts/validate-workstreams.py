@@ -60,6 +60,20 @@ def validate_people_semantics(people: dict) -> list[str]:
     return []
 
 
+def _entry_role_and_username(entry: dict) -> tuple[str, str | None]:
+    """Return (role, username) from a single-key people entry.
+    Returns (role, None) for team entries (maintainers) that have no username."""
+    role = next(iter(entry))
+    val  = entry[role]
+    if role == "tcSponsor":
+        username = val.get("username", "") if isinstance(val, dict) else ""
+    elif role == "maintainers":
+        username = None
+    else:
+        username = val if isinstance(val, str) else ""
+    return role, username
+
+
 def validate_workstreams_semantics(workstreams: list[dict], people: dict) -> list[str]:
     errors: list[str] = []
 
@@ -74,7 +88,7 @@ def validate_workstreams_semantics(workstreams: list[dict], people: dict) -> lis
         wid  = w.get("id", "(unknown)")
         kind = w.get("kind", "")
 
-        person_roles = {pr.get("role") for pr in w.get("people", [])}
+        person_roles = {next(iter(pr)) for pr in w.get("people", [])}
         for required_role in KIND_REQUIRED_ROLES.get(kind, set()):
             if required_role not in person_roles:
                 errors.append(
@@ -82,39 +96,32 @@ def validate_workstreams_semantics(workstreams: list[dict], people: dict) -> lis
                 )
 
         for pr in w.get("people", []):
-            if pr.get("role") == "tcSponsor" and "tcSponsorLevel" not in pr:
-                errors.append(
-                    f"[{wid}] tcSponsor '{pr.get('github')}' is missing 'tcSponsorLevel'"
-                )
+            role, username = _entry_role_and_username(pr)
 
-        for pr in w.get("people", []):
-            role   = pr.get("role")
-            handle = pr.get("github", "")
-
-            if handle == TBD or role not in MEMBERSHIP_REQUIRED_ROLES:
+            if username is None or username == TBD or role not in MEMBERSHIP_REQUIRED_ROLES:
                 continue
 
-            if handle not in people:
+            if username not in people:
                 errors.append(
-                    f"[{wid}] '{handle}' is assigned {role} "
+                    f"[{wid}] '{username}' is assigned {role} "
                     "but is not found in people.yml"
                 )
                 continue
 
-            membership = set(people[handle].get("membership", []))
+            membership = set(people[username].get("membership", []))
 
             if role == "gcLiaison" and "gc-member" not in membership:
                 errors.append(
-                    f"[{wid}] '{handle}' is assigned gcLiaison but is not a gc-member"
+                    f"[{wid}] '{username}' is assigned gcLiaison but is not a gc-member"
                 )
             elif role == "tcSponsor" and "tc-member" not in membership:
                 errors.append(
-                    f"[{wid}] '{handle}' is assigned tcSponsor but is not a tc-member"
+                    f"[{wid}] '{username}' is assigned tcSponsor but is not a tc-member"
                 )
             elif role == "specSponsor":
                 if "spec-sponsor" not in membership and "tc-member" not in membership:
                     errors.append(
-                        f"[{wid}] '{handle}' is assigned specSponsor "
+                        f"[{wid}] '{username}' is assigned specSponsor "
                         "but is not a spec-sponsor or tc-member"
                     )
 

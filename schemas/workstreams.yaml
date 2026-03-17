@@ -38,7 +38,7 @@ items:
       people:
         type: array
         items:
-          "$ref": "#/$defs/personRole"
+          "$ref": "#/$defs/peopleEntry"
       resources:
         type: array
         items:
@@ -104,43 +104,62 @@ items:
         type: string
         minLength: 1
 
-  personRole:
+  peopleEntry:
+    description: >-
+      A person or team associated with a workstream. Each entry is a single-key
+      object where the key names the role and the value identifies the person or team.
     type: object
-    required: [role, github]
+    minProperties: 1
+    maxProperties: 1
     additionalProperties: false
     properties:
-      role:
-        type: string
-        enum:
-          # GC member facilitating health of a SIG or working-group.
-          # Required on: sig, working-group.
-          - gcLiaison
-          # TC member sponsoring a SIG or working-group.
-          # Required on: sig, working-group. Must have a tcSponsorLevel.
-          - tcSponsor
-          # Person accountable for driving the workstream forward.
-          # Required on: working-group, enhancement.
-          - lead
-          # Trusted collaborator with approval rights on the spec repository.
-          # TC members are a superset and may fill this role.
-          # Optional on: enhancement.
-          - specSponsor
-      github:
-        description: GitHub handle, or 'tbd' if not yet assigned.
+      # GC member facilitating health of a SIG or working-group.
+      # Required on: sig, working-group.
+      gcLiaison:
+        description: GitHub username, or 'tbd' if not yet assigned.
         type: string
         minLength: 1
-      tcSponsorLevel:
-        description: Required when role is tcSponsor. 'tbd' if level not yet determined.
+      # TC member sponsoring a SIG or working-group.
+      # Required on: sig, working-group.
+      tcSponsor:
+        type: object
+        required: [username, level]
+        additionalProperties: false
+        properties:
+          username:
+            description: GitHub username, or 'tbd' if not yet assigned.
+            type: string
+            minLength: 1
+          level:
+            description: "'tbd' if level not yet determined."
+            type: string
+            enum:
+              # Lightest engagement. Participates in GC check-ins, aids roadmap,
+              # and is the primary escalation path.
+              - escalation
+              # Active SIG participant; helps direct toward OTel goals.
+              # Fulfils escalation obligations.
+              - guiding
+              # Active SIG leadership; drives charter completion.
+              # Fulfils guiding and escalation obligations. Max 2 per TC member.
+              - leading
+              # Level required but not yet determined.
+              - tbd
+      # Person accountable for driving the workstream forward.
+      # Required on: working-group, enhancement.
+      lead:
+        description: GitHub username, or 'tbd' if not yet assigned.
         type: string
-        enum:
-          # Lightest engagement. Participates in GC check-ins, aids roadmap,
-          # and is the primary escalation path.
-          - escalation
-          # Active SIG participant; helps direct toward OTel goals.
-          # Fulfils escalation obligations.
-          - guiding
-          # Active SIG leadership; drives charter completion.
-          # Fulfils guiding and escalation obligations. Max 2 per TC member.
-          - leading
-          # Level required but not yet determined.
-          - tbd
+        minLength: 1
+      # Trusted collaborator with approval rights on the spec repository.
+      # TC members are a superset and may fill this role.
+      # Optional on: enhancement.
+      specSponsor:
+        description: GitHub username, or 'tbd' if not yet assigned.
+        type: string
+        minLength: 1
+      # GitHub team responsible for maintaining the workstream's deliverables.
+      # Value is a GitHub team slug, e.g. open-telemetry/java-maintainers.
+      maintainers:
+        type: string
+        minLength: 1
