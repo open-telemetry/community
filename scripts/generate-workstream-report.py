@@ -28,6 +28,7 @@ with open(PEOPLE_FILE) as f:
     _people_data = yaml.safe_load(f)
 
 people_info = _people_data.get("people", {})   # login -> {name, company}
+teams_data  = _people_data.get("teams", {})    # team-slug -> [logins]
 
 
 def sig_category(ws):
@@ -84,7 +85,6 @@ TC_LEVEL_STYLES = {
 
 chart_lines = []
 node_classes = {}  # nid -> level key, collected during render_node
-wg_nodes = set()   # nids that are working-groups, to receive pill classDef
 
 
 def highest_tc_level(ws_id):
@@ -138,10 +138,11 @@ def render_node(ws, indent=2):
     label = build_label(ws)
     pad = " " * indent
 
-    chart_lines.append(f'{pad}{nid}["{label}"]')
-    node_classes[nid] = highest_tc_level(ws["id"])
     if ws.get("kind") == "working-group":
-        wg_nodes.add(nid)
+        chart_lines.append(f'{pad}{nid}(["{label}"])')
+    else:
+        chart_lines.append(f'{pad}{nid}["{label}"]')
+    node_classes[nid] = highest_tc_level(ws["id"])
     for child in sorted(children[ws["id"]], key=child_sort_key):
         chart_lines.append(f'{pad}{nid} --> {node_id(child["id"])}')
         render_node(child, indent)
@@ -159,7 +160,6 @@ chart_lines.append("")
 
 for lvl, style in TC_LEVEL_STYLES.items():
     chart_lines.append(f"  classDef tc_{lvl} {style}")
-chart_lines.append("  classDef wg_pill rx:30,ry:30")
 chart_lines.append("")
 
 for ws in sorted((ws for ws in all_items if is_top_level(ws)), key=child_sort_key):
@@ -167,12 +167,53 @@ for ws in sorted((ws for ws in all_items if is_top_level(ws)), key=child_sort_ke
 chart_lines.append("")
 
 for nid, lvl in node_classes.items():
-    classes = f"tc_{lvl},wg_pill" if nid in wg_nodes else f"tc_{lvl}"
-    chart_lines.append(f"  class {nid} {classes}")
+    chart_lines.append(f"  class {nid} tc_{lvl}")
 chart_lines.append("")
 
 chart_lines.append("```")
 mermaid_section = "\n".join(chart_lines)
+
+
+# ─── Section 2: TC sponsorship pivot table ────────────────────────────────────
+
+TC_LEVELS = ["leading", "guiding", "escalating", "tbd"]
+
+# pivot: login (lowercase) -> level -> count
+tc_pivot = defaultdict(lambda: defaultdict(int))
+for ws in all_items:
+    for entry in ws.get("people", []):
+        if "tcSponsor" in entry:
+            u = entry["tcSponsor"].get("username", "")
+            level = entry["tcSponsor"].get("level") or "tbd"
+            if u and u != "tbd":
+                tc_pivot[u.lower()][level] += 1
+
+
+def tc_pivot_table():
+    tc_members = sorted(
+        teams_data.get("technical-committee", []),
+        key=lambda u: people_info.get(u, {}).get("name", u).split()[-1].lower(),
+    )
+
+    header = "| Member | " + " | ".join(lvl.capitalize() for lvl in TC_LEVELS) + " | Total |"
+    sep    = "|--------|" + "---------|" * len(TC_LEVELS) + "---------|"
+    rows   = ["## TC Sponsorship Summary\n", header, sep]
+
+    col_totals = defaultdict(int)
+    for u in tc_members:
+        name = people_info.get(u, {}).get("name", u)
+        cells = []
+        row_total = 0
+        for lvl in TC_LEVELS:
+            count = tc_pivot[u.lower()].get(lvl, 0)
+            col_totals[lvl] += count
+            row_total += count
+            cells.append(str(count) if count else "")
+        rows.append(f"| [{name}](https://github.com/{u}) | " + " | ".join(cells) + f" | {row_total} |")
+
+    total_cells = " | ".join(str(col_totals[lvl]) for lvl in TC_LEVELS)
+    rows.append(f"| **Total** | {total_cells} | {sum(col_totals.values())} |")
+    return "\n".join(rows)
 
 
 # ─── Legend ───────────────────────────────────────────────────────────────────
@@ -200,6 +241,8 @@ LEGEND = """\
 
 # ─── Assemble output ──────────────────────────────────────────────────────────
 
+unsponsored_count = sum(1 for ws in all_items if highest_tc_level(ws["id"]) == "none")
+
 output = f"""\
 # Workstream Report
 
@@ -208,6 +251,10 @@ output = f"""\
 ## Workstream Hierarchy
 
 {mermaid_section}
+
+{tc_pivot_table()}
+
+{unsponsored_count} workstream(s) have no TC sponsor assigned.
 """
 
 with open(OUTPUT_FILE, "w") as f:
