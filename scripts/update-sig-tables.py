@@ -13,23 +13,31 @@ import yaml
 run_in_check_mode = (len(sys.argv) > 1) and (sys.argv[1] == "--check")
 
 WORKSTREAMS_FILE = "workstreams.yml"
-PEOPLE_FILE = "people.yml"
-markdown_file = "README.md"
+METADATA_FILE    = "people.yml"
+markdown_file    = "README.md"
 
 start_marker = "<!-- sigs -->"
 end_marker = "<!-- endsigs -->"
 
 with open(WORKSTREAMS_FILE) as f:
     workstreams = yaml.safe_load(f)
-with open(PEOPLE_FILE) as f:
-    people = yaml.safe_load(f)
+
+try:
+    with open(METADATA_FILE) as f:
+        _metadata = yaml.safe_load(f)
+    _people = _metadata.get("people", {})
+except FileNotFoundError:
+    print(
+        f"Warning: {METADATA_FILE} not found — display names will fall back to GitHub handles.",
+        file=sys.stderr,
+    )
+    _people = {}
 
 
 def person_link(username):
     if not username or username == "tbd":
         return ""
-    person = people.get(username, {})
-    name = person.get("name", username)
+    name = _people.get(username, {}).get("name", username)
     return f"[{name}](https://github.com/{username})"
 
 

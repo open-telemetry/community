@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """
-Validates people.yml and workstreams.yml.
+Validates workstreams.yml.
 
 Usage:
     python scripts/validate-workstreams.py [--install]
 
 Pass --install to auto-install dependencies (pyyaml, jsonschema) before running.
+
+People validation (gcLiaison/tcSponsor/specSponsor membership checks) requires
+people.yml, which is checked into the repository. Validation fails if it is missing.
 """
 
 import subprocess
@@ -21,10 +24,16 @@ import jsonschema
 REPO_ROOT    = Path(__file__).parent.parent
 SCRIPTS_DIR  = REPO_ROOT / "scripts"
 
-PEOPLE_FILE        = REPO_ROOT / "people.yml"
 WORKSTREAMS_FILE   = REPO_ROOT / "workstreams.yml"
-PEOPLE_SCHEMA      = SCRIPTS_DIR / "schema" / "people.schema.yml"
 WORKSTREAMS_SCHEMA = SCRIPTS_DIR / "schema" / "workstreams.schema.yml"
+PEOPLE_FILE        = REPO_ROOT / "people.yml"
+
+# GitHub team slug → role key used in workstreams.yml
+TEAM_ROLES = {
+    "governance-committee": "gc-member",
+    "technical-committee":  "tc-member",
+    "spec-sponsors":       "spec-sponsor",
+}
 
 TBD  = "tbd"
 NONE = "none"
@@ -63,10 +72,6 @@ def validate_against_schema(data: object, schema: dict, label: str) -> list[str]
     return errors
 
 
-def validate_people_semantics(people: dict) -> list[str]:
-    return []
-
-
 def _entry_role_and_username(entry: dict) -> tuple[str, str | None]:
     """Return (role, username) from a single-key people entry.
     Returns (role, None) for team entries (maintainers) that have no username."""
@@ -81,7 +86,7 @@ def _entry_role_and_username(entry: dict) -> tuple[str, str | None]:
     return role, username
 
 
-def validate_workstreams_semantics(workstreams: list[dict], people: dict) -> list[str]:
+def validate_workstreams_semantics(workstreams: list[dict], people_data: dict) -> list[str]:
     errors: list[str] = []
 
     seen_ids: set[str] = set()
@@ -142,35 +147,32 @@ def validate_workstreams_semantics(workstreams: list[dict], people: dict) -> lis
                     f"[{wid}] kind '{kind}' requires at least one '{required_role}'"
                 )
 
+        teams = people_data.get("teams", {})
+        gc_members    = {u.lower() for u in teams.get("governance-committee", [])}
+        tc_members    = {u.lower() for u in teams.get("technical-committee", [])}
+        spec_sponsors = {u.lower() for u in teams.get("spec-sponsors", [])} | tc_members
+
         for pr in w.get("people", []):
             role, username = _entry_role_and_username(pr)
 
             if username is None or username == TBD or role not in MEMBERSHIP_REQUIRED_ROLES:
                 continue
 
-            if username not in people:
+            if role == "gcLiaison" and username.lower() not in gc_members:
                 errors.append(
-                    f"[{wid}] '{username}' is assigned {role} "
-                    "but is not found in people.yml"
+                    f"[{wid}] '{username}' is assigned gcLiaison "
+                    "but is not in the governance-committee team"
                 )
-                continue
-
-            membership = set(people[username].get("membership", []))
-
-            if role == "gcLiaison" and "gc-member" not in membership:
+            elif role == "tcSponsor" and username.lower() not in tc_members:
                 errors.append(
-                    f"[{wid}] '{username}' is assigned gcLiaison but is not a gc-member"
+                    f"[{wid}] '{username}' is assigned tcSponsor "
+                    "but is not in the technical-committee team"
                 )
-            elif role == "tcSponsor" and "tc-member" not in membership:
+            elif role == "specSponsor" and username.lower() not in spec_sponsors:
                 errors.append(
-                    f"[{wid}] '{username}' is assigned tcSponsor but is not a tc-member"
+                    f"[{wid}] '{username}' is assigned specSponsor "
+                    "but is not in the spec-sponsors or technical-committee team"
                 )
-            elif role == "specSponsor":
-                if "spec-sponsor" not in membership and "tc-member" not in membership:
-                    errors.append(
-                        f"[{wid}] '{username}' is assigned specSponsor "
-                        "but is not a spec-sponsor or tc-member"
-                    )
 
     return errors
 
@@ -178,17 +180,19 @@ def validate_workstreams_semantics(workstreams: list[dict], people: dict) -> lis
 def main() -> None:
     all_errors: list[str] = []
 
-    people_schema      = load_schema(PEOPLE_SCHEMA)
     workstreams_schema = load_schema(WORKSTREAMS_SCHEMA)
+    workstreams_data   = load_yaml(WORKSTREAMS_FILE)
 
-    people_data      = load_yaml(PEOPLE_FILE)
-    workstreams_data = load_yaml(WORKSTREAMS_FILE)
-
-    all_errors += validate_against_schema(people_data, people_schema, "people.yml")
     all_errors += validate_against_schema(workstreams_data, workstreams_schema, "workstreams.yml")
 
+    if not PEOPLE_FILE.exists():
+        print(f"Error: {PEOPLE_FILE.name} not found.", file=sys.stderr)
+        sys.exit(1)
+
+    with open(PEOPLE_FILE) as f:
+        people_data = yaml.safe_load(f)
+
     if not all_errors:
-        all_errors += validate_people_semantics(people_data)
         all_errors += validate_workstreams_semantics(workstreams_data, people_data)
 
     if all_errors:
@@ -197,7 +201,7 @@ def main() -> None:
         sys.exit(1)
 
     count = len(workstreams_data)
-    print(f"OK — {count} workstream(s) and {len(people_data)} people validated.")
+    print(f"OK — {count} workstream(s) validated (membership checks enabled).")
 
 
 if __name__ == "__main__":

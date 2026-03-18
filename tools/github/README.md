@@ -2,7 +2,6 @@
 
 This document and directory contain information about all configured GitHub
 applications and integrations with the OpenTelemetry organization.
-
 | Name                                                         | Description                                          | Scopes                      | Notes                                                                  |
 |--------------------------------------------------------------|------------------------------------------------------|-----------------------------|------------------------------------------------------------------------|
 | [Allstar App](https://github.com/ossf/allstar)               | Enforces security policies                           | TBD                         | TBD                                                                    |

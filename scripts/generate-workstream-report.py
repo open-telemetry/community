@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Generate workstreams.md: Mermaid SIG hierarchy + community member coverage tables."""
+"""Generate workstreams.md: Mermaid SIG hierarchy chart with legend.
+
+Usage:
+    python scripts/generate-workstream-report.py [--install]
+"""
 
 import re
 import subprocess
@@ -13,7 +17,6 @@ if (len(sys.argv) > 1) and (sys.argv[1] == "--install"):
 
 import yaml
 
-run_in_check_mode = (len(sys.argv) > 1) and (sys.argv[1] == "--check")
 
 WORKSTREAMS_FILE = "workstreams.yml"
 PEOPLE_FILE = "people.yml"
@@ -22,11 +25,9 @@ OUTPUT_FILE = "workstreams.md"
 with open(WORKSTREAMS_FILE) as f:
     all_items = yaml.safe_load(f)
 with open(PEOPLE_FILE) as f:
-    people = yaml.safe_load(f)
+    _people_data = yaml.safe_load(f)
 
-# Only SIGs (not working-groups)
-sigs = [ws for ws in all_items if ws.get("kind") == "sig"]
-id_to_sig = {ws["id"]: ws for ws in sigs}
+people_info = _people_data.get("people", {})   # login -> {name, company}
 
 
 def sig_category(ws):
@@ -110,12 +111,12 @@ def build_label(ws):
         if "gcLiaison" in entry:
             u = entry["gcLiaison"]
             if u and u != "tbd":
-                gc_liaisons.append(people.get(u, {}).get("name", u))
+                gc_liaisons.append(people_info.get(u, {}).get("name", u))
         elif "tcSponsor" in entry:
             u = entry["tcSponsor"].get("username")
             level = entry["tcSponsor"].get("level") or "tbd"
             if u and u != "tbd":
-                display_name = people.get(u, {}).get("name", u)
+                display_name = people_info.get(u, {}).get("name", u)
                 tc_sponsors.append(f"{display_name} ({level})")
 
     lines = [name, kind_str]
@@ -166,142 +167,25 @@ chart_lines.append("```")
 mermaid_section = "\n".join(chart_lines)
 
 
-# ─── Section 2: People tables ─────────────────────────────────────────────────
+# ─── Legend ───────────────────────────────────────────────────────────────────
 
-# Build person -> role -> [workstream_names]
-# For tcSponsor: role key is the level (e.g. "leading", "guiding", "escalating", "tbd")
-person_roles = defaultdict(lambda: defaultdict(list))
+LEGEND = """\
+## Legend
 
-for ws in sigs:
-    ws_name = clean_label(ws["name"])  # strip any markdown links from the name
-    for entry in ws.get("people", []):
-        if "gcLiaison" in entry:
-            u = entry["gcLiaison"]
-            if u and u != "tbd":
-                person_roles[u]["gcLiaison"].append(ws_name)
-        elif "tcSponsor" in entry:
-            u = entry["tcSponsor"].get("username")
-            if u and u != "tbd":
-                level = entry["tcSponsor"].get("level") or "tbd"
-                person_roles[u][level].append(ws_name)
-        elif "specSponsor" in entry:
-            u = entry["specSponsor"]
-            if u and u != "tbd":
-                person_roles[u]["specSponsor"].append(ws_name)
+**Node color** — TC sponsorship level:
 
-TC_LEVELS = ["leading", "guiding", "escalating", "tbd"]
+| Color | Level | Meaning |
+|-------|-------|---------|
+| Green | Leading | TC sponsor actively driving the workstream |
+| Blue | Guiding | TC sponsor providing guidance |
+| Purple | Escalating | TC sponsor available for escalation |
+| Gray | TBD | Sponsor assigned, level not yet determined |
+| Red | None | No TC sponsor assigned |
 
+**Name suffix** — SIG category: `(spec)` Specification · `(impl)` Implementation · `(cross)` Cross-cutting
 
-def sort_by_last_name(usernames):
-    def key(u):
-        name = people.get(u, {}).get("name", u)
-        parts = name.split()
-        return parts[-1].lower() if parts else name.lower()
-    return sorted(usernames, key=key)
-
-
-def fmt_ws(names):
-    """Comma-separated workstream names sorted alphabetically."""
-    return ", ".join(sorted(names)) if names else ""
-
-
-def person_link(u):
-    name = people.get(u, {}).get("name", u)
-    return f"[{name}](https://github.com/{u})"
-
-
-tc_members = sort_by_last_name(
-    [u for u, p in people.items() if "tc-member" in p.get("membership", [])]
-)
-gc_members = sort_by_last_name(
-    [u for u, p in people.items() if "gc-member" in p.get("membership", [])]
-)
-spec_sponsors = sort_by_last_name(
-    [u for u, p in people.items() if "spec-sponsor" in p.get("membership", [])]
-)
-
-
-def tc_table():
-    sep = "|--------|" + "-----------|" * len(TC_LEVELS)
-    header = "| Member | " + " | ".join(f"TC: {lvl}" for lvl in TC_LEVELS) + " |"
-    rows = ["### Technical Committee\n", header, sep]
-    totals = {lvl: 0 for lvl in TC_LEVELS}
-    for u in tc_members:
-        cells = []
-        for lvl in TC_LEVELS:
-            ws = person_roles[u].get(lvl, [])
-            totals[lvl] += len(ws)
-            cells.append(fmt_ws(ws))
-        rows.append(f"| {person_link(u)} | " + " | ".join(cells) + " |")
-    total_cells = " | ".join(str(totals[lvl]) for lvl in TC_LEVELS)
-    rows.append(f"| **Total** | {total_cells} |")
-    return "\n".join(rows)
-
-
-def gc_table():
-    rows = [
-        "### Governance Committee\n",
-        "| Member | GC Liaison |",
-        "|--------|-----------|",
-    ]
-    for u in gc_members:
-        gc_cell = fmt_ws(person_roles[u].get("gcLiaison", []))
-        rows.append(f"| {person_link(u)} | {gc_cell} |")
-    return "\n".join(rows)
-
-
-def sponsorship_gaps_table():
-    id_to_ws = {ws["id"]: ws for ws in all_items}
-
-    rows = [
-        "## Sponsorship Gaps\n",
-        "Workstreams with no assigned TC sponsor (**Unsponsored**) or with a sponsor "
-        "whose level has not yet been determined (**Level TBD**).\n",
-        "| Workstream | Kind | Category | TC Status |",
-        "|------------|------|----------|-----------|",
-    ]
-
-    def category_cell(ws):
-        if ws.get("kind") == "sig":
-            return CAT_ABBREV[sig_category(ws)]
-        parent_ws = id_to_ws.get(ws.get("parent", "none"))
-        if parent_ws:
-            return f"(child of {clean_label(parent_ws['name'])})"
-        return ""
-
-    gaps = []
-    for ws in all_items:
-        lvl = highest_tc_level(ws["id"])
-        if lvl == "none":
-            status = "Unsponsored"
-        elif lvl == "tbd":
-            status = "Level TBD"
-        else:
-            continue
-        gaps.append((status, ws["name"], ws, category_cell(ws)))
-
-    # Sort: Unsponsored first, then Level TBD; alphabetically within each group
-    gaps.sort(key=lambda x: (x[0] != "Unsponsored", x[1]))
-
-    for status, name, ws, cat in gaps:
-        kind = ws.get("kind", "sig")
-        rows.append(f"| {clean_label(name)} | {kind} | {cat} | {status} |")
-
-    rows.append(f"\n_{len([g for g in gaps if g[0] == 'Unsponsored'])} unsponsored, "
-                f"{len([g for g in gaps if g[0] == 'Level TBD'])} level TBD_")
-    return "\n".join(rows)
-
-
-def spec_sponsors_table():
-    rows = [
-        "### Specification Sponsors\n",
-        "| Sponsor | Spec Sponsor |",
-        "|---------|-------------|",
-    ]
-    for u in spec_sponsors:
-        spec_cell = fmt_ws(person_roles[u].get("specSponsor", []))
-        rows.append(f"| {person_link(u)} | {spec_cell} |")
-    return "\n".join(rows)
+**Arrows** (`-->`) — parent workstream points to child workstream\
+"""
 
 
 # ─── Assemble output ──────────────────────────────────────────────────────────
@@ -309,35 +193,13 @@ def spec_sponsors_table():
 output = f"""\
 # Workstream Report
 
+{LEGEND}
+
 ## Workstream Hierarchy
 
 {mermaid_section}
-
-{sponsorship_gaps_table()}
-
-## Community Member Coverage
-
-{tc_table()}
-
-{gc_table()}
-
-{spec_sponsors_table()}
 """
 
-if run_in_check_mode:
-    try:
-        with open(OUTPUT_FILE) as f:
-            existing = f.read()
-    except FileNotFoundError:
-        print(f"{OUTPUT_FILE} not found.", file=sys.stderr)
-        sys.exit(1)
-    if existing == output:
-        print(f"{OUTPUT_FILE} is up to date.")
-        sys.exit(0)
-    else:
-        print(f"{OUTPUT_FILE} is out of date.", file=sys.stderr)
-        sys.exit(1)
-else:
-    with open(OUTPUT_FILE, "w") as f:
-        f.write(output)
-    print(f"Wrote {OUTPUT_FILE}.")
+with open(OUTPUT_FILE, "w") as f:
+    f.write(output)
+print(f"Wrote {OUTPUT_FILE}.")

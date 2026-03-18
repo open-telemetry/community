@@ -1,5 +1,21 @@
 # Workstream Report
 
+## Legend
+
+**Node color** — TC sponsorship level:
+
+| Color | Level | Meaning |
+|-------|-------|---------|
+| Green | Leading | TC sponsor actively driving the workstream |
+| Blue | Guiding | TC sponsor providing guidance |
+| Purple | Escalating | TC sponsor available for escalation |
+| Gray | TBD | Sponsor assigned, level not yet determined |
+| Red | None | No TC sponsor assigned |
+
+**Name suffix** — SIG category: `(spec)` Specification · `(impl)` Implementation · `(cross)` Cross-cutting
+
+**Arrows** (`-->`) — parent workstream points to child workstream
+
 ## Workstream Hierarchy
 
 ```mermaid
@@ -14,7 +30,7 @@ graph LR
 
   spec_general["Specification: General + OTel Maintainers Sync<br/>Kind: sig (spec)"]
   spec_general --> sampling
-  sampling["Specification: Sampling<br/>Kind: sig (spec)<br/>GC: Juraci Paixão Kröhling<br/>TC: Josh MacDonald (guiding)"]
+  sampling["Specification: Sampling<br/>Kind: sig (spec)<br/>GC: Juraci Paixão Kröhling<br/>TC: Joshua MacDonald (guiding)"]
   spec_general --> spec_logs
   spec_logs["Specification: Logs<br/>Kind: sig (spec)<br/>GC: Trask Stalnaker<br/>TC: Liudmila Molkova (guiding)"]
   spec_general --> semconv_general
@@ -26,9 +42,9 @@ graph LR
   semconv_general --> gen_ai
   gen_ai["Semantic Conventions and Instrumentation: GenAI<br/>Kind: sig (spec)<br/>GC: Ted Young<br/>TC: Liudmila Molkova (leading)"]
   semconv_general --> semconv_cicd
-  semconv_cicd["Semantic Conventions: CI/CD<br/>Kind: sig (spec)<br/>GC: Marylia Gutierrez<br/>TC: Carlos Alberto (escalating)"]
+  semconv_cicd["Semantic Conventions: CI/CD<br/>Kind: sig (spec)<br/>GC: Marylia Gutierrez<br/>TC: Carlos Alberto Cortez (escalating)"]
   semconv_cicd --> cicd_phase_2
-  cicd_phase_2["CI/CD Observability SIG Phase 2<br/>Kind: working-group<br/>GC: Marylia Gutierrez<br/>TC: Carlos Alberto (tbd)"]
+  cicd_phase_2["CI/CD Observability SIG Phase 2<br/>Kind: working-group<br/>GC: Marylia Gutierrez<br/>TC: Carlos Alberto Cortez (tbd)"]
   semconv_general --> semconv_rpc
   semconv_rpc["Semantic Conventions: RPC<br/>Kind: sig (spec)<br/>GC: Trask Stalnaker<br/>TC: Liudmila Molkova (guiding)"]
   semconv_general --> semconv_security
@@ -44,11 +60,11 @@ graph LR
   faas["Functions as a Service (FAAS)<br/>Kind: sig (spec)<br/>GC: Austin Parker"]
   profiling["Profiling<br/>Kind: sig (spec)<br/>GC: Morgan McLean<br/>TC: Josh Suereth (guiding), Tigran Najaryan (guiding)"]
   mainframes["OpenTelemetry on Mainframes<br/>Kind: sig (spec)<br/>GC: Morgan McLean"]
-  client_instrumentation["Client Instrumentation<br/>Kind: sig (spec)<br/>GC: Ted Young<br/>TC: Carlos Alberto (escalating)"]
+  client_instrumentation["Client Instrumentation<br/>Kind: sig (spec)<br/>GC: Ted Young<br/>TC: Carlos Alberto Cortez (escalating)"]
   android["Android: SDK + Automatic Instrumentation<br/>Kind: sig (impl)<br/>GC: Ted Young<br/>TC: Jack Berg (tbd)"]
-  arrow["Arrow<br/>Kind: sig (impl)<br/>GC: Trask Stalnaker<br/>TC: Josh MacDonald (leading)"]
-  browser["Browser<br/>Kind: sig (impl)<br/>GC: Ted Young<br/>TC: Carlos Alberto (tbd)"]
-  collector["Collector<br/>Kind: sig (impl)<br/>GC: Pablo Baeyens<br/>TC: Bogdan Drutu (guiding), Josh MacDonald (guiding)"]
+  arrow["Arrow<br/>Kind: sig (impl)<br/>GC: Trask Stalnaker<br/>TC: Joshua MacDonald (leading)"]
+  browser["Browser<br/>Kind: sig (impl)<br/>GC: Ted Young<br/>TC: Carlos Alberto Cortez (tbd)"]
+  collector["Collector<br/>Kind: sig (impl)<br/>GC: Pablo Baeyens<br/>TC: BogdanDrutu (guiding), Joshua MacDonald (guiding)"]
   collector --> agentic_workflow
   agentic_workflow["OpenTelemetry Collector Agentic Workflows<br/>Kind: working-group<br/>GC: Pablo Baeyens"]
   collector --> collector_v1
@@ -62,7 +78,7 @@ graph LR
   go_compile_instr["GoLang: Compile-Time Instrumentation<br/>Kind: sig (impl)<br/>GC: Juraci Paixão Kröhling<br/>TC: David Ashpole (escalating)"]
   injector["Injector<br/>Kind: sig (impl)<br/>GC: Morgan McLean"]
   java_sdk_instrumentation["Java: SDK + Instrumentation<br/>Kind: sig (impl)<br/>GC: Trask Stalnaker<br/>TC: Jack Berg (leading)"]
-  javascript_sdk["JavaScript: SDK<br/>Kind: sig (impl)<br/>GC: Marylia Gutierrez<br/>TC: Carlos Alberto (tbd)"]
+  javascript_sdk["JavaScript: SDK<br/>Kind: sig (impl)<br/>GC: Marylia Gutierrez<br/>TC: Carlos Alberto Cortez (tbd)"]
   php_sdk["PHP: SDK<br/>Kind: sig (impl)<br/>GC: Severin Neumann<br/>TC: Jack Berg (tbd)"]
   python_sdk["Python: SDK<br/>Kind: sig (impl)<br/>GC: Marylia Gutierrez<br/>TC: Reiley Yang (tbd)"]
   ruby_sdk["Ruby: SDK<br/>Kind: sig (impl)<br/>GC: Ted Young<br/>TC: Armin Ruech (tbd)"]
@@ -101,7 +117,7 @@ graph LR
   project_infra["Project Infrastructure<br/>Kind: sig (cross)<br/>GC: Austin Parker<br/>TC: Armin Ruech (tbd)"]
   contributor_experience["Contributor Experience<br/>Kind: sig (cross)<br/>GC: Marylia Gutierrez<br/>TC: Liudmila Molkova (escalating)"]
   developer_experience["Developer Experience<br/>Kind: sig (cross)<br/>GC: Austin Parker<br/>TC: Liudmila Molkova (escalating)"]
-  zig_sig_bootstrap["Bootstrap Zig Special Interest Group<br/>Kind: working-group<br/>GC: Alolita Sharma<br/>TC: Josh MacDonald (tbd)"]
+  zig_sig_bootstrap["Bootstrap Zig Special Interest Group<br/>Kind: working-group<br/>GC: Alolita Sharma<br/>TC: Joshua MacDonald (tbd)"]
 
   class spec_general tc_none
   class sampling tc_guiding
@@ -169,93 +185,3 @@ graph LR
   class zig_sig_bootstrap tc_tbd
 
 ```
-
-## Sponsorship Gaps
-
-Workstreams with no assigned TC sponsor (**Unsponsored**) or with a sponsor whose level has not yet been determined (**Level TBD**).
-
-| Workstream | Kind | Category | TC Status |
-|------------|------|----------|-----------|
-| Bengali (bn) | sig | cross | Unsponsored |
-| Collector v1 | working-group | (child of Collector) | Unsponsored |
-| French (fr-FR) | sig | cross | Unsponsored |
-| Functions as a Service (FAAS) | sig | spec | Unsponsored |
-| Injector | sig | impl | Unsponsored |
-| Japanese (ja-JA) | sig | cross | Unsponsored |
-| Kubernetes Helm Charts | sig | impl | Unsponsored |
-| OpenTelemetry Collector Agentic Workflows | working-group | (child of Collector) | Unsponsored |
-| OpenTelemetry on Mainframes | sig | spec | Unsponsored |
-| Portuguese (pt-BR) | sig | cross | Unsponsored |
-| Romanian (ro-RO) | sig | cross | Unsponsored |
-| Spanish (es-ES) | sig | cross | Unsponsored |
-| Specification: General + OTel Maintainers Sync | sig | spec | Unsponsored |
-| Ukrainian (uk-UA) | sig | cross | Unsponsored |
-| Android: SDK + Automatic Instrumentation | sig | impl | Level TBD |
-| Bootstrap Zig Special Interest Group | working-group |  | Level TBD |
-| Browser | sig | impl | Level TBD |
-| CI/CD Observability SIG Phase 2 | working-group | (child of Semantic Conventions: CI/CD) | Level TBD |
-| Chinese (zh-CN) | sig | cross | Level TBD |
-| Communications (Website, Documentation, etc.) | sig | cross | Level TBD |
-| End-User SIG | sig | cross | Level TBD |
-| Erlang/Elixir: SDK | sig | impl | Level TBD |
-| JavaScript: SDK | sig | impl | Level TBD |
-| New Getting Started Documentation and Reference Application | working-group | (child of Communications (Website, Documentation, etc.)) | Level TBD |
-| OTel Blueprints | working-group | (child of End-User SIG) | Level TBD |
-| OpenTelemetry Ecosystem Explorer | working-group | (child of Communications (Website, Documentation, etc.)) | Level TBD |
-| PHP: SDK | sig | impl | Level TBD |
-| Project Infrastructure | sig | cross | Level TBD |
-| Python: SDK | sig | impl | Level TBD |
-| Ruby: SDK | sig | impl | Level TBD |
-| Semantic Conventions: Service and Deployment | sig | spec | Level TBD |
-| Swift: SDK | sig | impl | Level TBD |
-
-_14 unsponsored, 18 level TBD_
-
-## Community Member Coverage
-
-### Technical Committee
-
-| Member | TC: leading | TC: guiding | TC: escalating | TC: tbd |
-|--------|-----------|-----------|-----------|-----------|
-| [Carlos Alberto](https://github.com/carlosalberto) |  |  | Client Instrumentation, Semantic Conventions: CI/CD | Browser, JavaScript: SDK |
-| [David Ashpole](https://github.com/dashpole) | GoLang: SDK, Prometheus Interoperability, Semantic Conventions: K8s |  | GoLang: Automatic Instrumentation, GoLang: Compile-Time Instrumentation, Kubernetes Operator, Network, eBPF Instrumentation |  |
-| [Jack Berg](https://github.com/jack-berg) | Java: SDK + Instrumentation |  |  | Android: SDK + Automatic Instrumentation, Communications (Website, Documentation, etc.), End-User SIG, PHP: SDK |
-| [Bogdan Drutu](https://github.com/BogdanDrutu) |  | Collector |  |  |
-| [Josh MacDonald](https://github.com/jmacd) | Arrow | Collector, Specification: Sampling |  |  |
-| [Liudmila Molkova](https://github.com/lmolkova) | Semantic Conventions and Instrumentation: GenAI, Semantic Conventions: General, Semantic Conventions: Tooling | Semantic Conventions: RPC, Specification: Logs | Contributor Experience, Developer Experience |  |
-| [Tigran Najaryan](https://github.com/tigrannajaryan) | OpAMP, Specification: Entities | Profiling |  |  |
-| [Armin Ruech](https://github.com/arminru) | Semantic Conventions: General |  |  | Project Infrastructure, Ruby: SDK |
-| [Josh Suereth](https://github.com/jsuereth) | Semantic Conventions: General, Semantic Conventions: Tooling, Specification: Entities | Profiling | Semantic Conventions: Security, Semantic Conventions: System Metrics | Erlang/Elixir: SDK, Semantic Conventions: Service and Deployment |
-| [Reiley Yang](https://github.com/reyang) | Security |  | .NET: Automatic Instrumentation, .NET: SDK, C++: SDK, Community Demo Application, Rust: SDK | Chinese (zh-CN), Python: SDK, Swift: SDK |
-| **Total** | 15 | 7 | 16 | 13 |
-
-### Governance Committee
-
-| Member | GC Liaison |
-|--------|-----------|
-| [Pablo Baeyens](https://github.com/mx-psi) | Collector, Kubernetes Helm Charts, Prometheus Interoperability, Semantic Conventions: System Metrics |
-| [Marylia Gutierrez](https://github.com/maryliag) | Contributor Experience, End-User SIG, GoLang: SDK, JavaScript: SDK, Python: SDK, Semantic Conventions: CI/CD |
-| [Juraci Paixão Kröhling](https://github.com/jpkrohling) | GoLang: Automatic Instrumentation, GoLang: Compile-Time Instrumentation, Kubernetes Operator, Semantic Conventions: Tooling, Specification: Sampling |
-| [Morgan McLean](https://github.com/mtwo) | .NET: Automatic Instrumentation, .NET: SDK, Injector, OpenTelemetry on Mainframes, Profiling |
-| [Severin Neumann](https://github.com/svrnm) | Bengali (bn), C++: SDK, Chinese (zh-CN), Communications (Website, Documentation, etc.), French (fr-FR), Japanese (ja-JA), PHP: SDK, Portuguese (pt-BR), Romanian (ro-RO), Spanish (es-ES), Specification: Entities, Ukrainian (uk-UA), eBPF Instrumentation |
-| [Austin Parker](https://github.com/austinlparker) | Community Demo Application, Developer Experience, Erlang/Elixir: SDK, Functions as a Service (FAAS), Project Infrastructure |
-| [Alolita Sharma](https://github.com/alolita) | Semantic Conventions: K8s, Swift: SDK |
-| [Trask Stalnaker](https://github.com/trask) | Arrow, Java: SDK + Instrumentation, Security, Semantic Conventions: General, Semantic Conventions: RPC, Semantic Conventions: Security, Semantic Conventions: Service and Deployment, Specification: Logs |
-| [Ted Young](https://github.com/tedsuo) | Android: SDK + Automatic Instrumentation, Browser, Client Instrumentation, Network, OpAMP, Ruby: SDK, Rust: SDK, Semantic Conventions and Instrumentation: GenAI |
-
-### Specification Sponsors
-
-| Sponsor | Spec Sponsor |
-|---------|-------------|
-| [Marc Alff](https://github.com/marcalff) |  |
-| [Alex Boten](https://github.com/codeboten) |  |
-| [Leighton Chen](https://github.com/lzchen) |  |
-| [Daniel Dyla](https://github.com/dyladan) | OpenTelemetry on Mainframes |
-| [Juraci Paixão Kröhling](https://github.com/jpkrohling) |  |
-| [Severin Neumann](https://github.com/svrnm) |  |
-| [Christian Neumüller](https://github.com/Oberon00) |  |
-| [Robert Pająk](https://github.com/pellared) |  |
-| [Tristan Sloughter](https://github.com/tsloughter) |  |
-| [Cijo Thomas](https://github.com/cijothomas) |  |
-| [Tyler Yahn](https://github.com/MrAlias) |  |
-| [Ted Young](https://github.com/tedsuo) | Semantic Conventions and Instrumentation: GenAI, Specification: Logs |
