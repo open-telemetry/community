@@ -206,7 +206,7 @@
   - gcLiaison: trask
   - tcSponsor:
       username: jsuereth
-      level: tbd
+      level: escalating
   resources:
   - meeting:
       schedule: Alternating between Thursday at 08:00 PT and Thursday at 12:00 UTC
@@ -402,7 +402,7 @@
   - gcLiaison: tedsuo
   - tcSponsor:
       username: carlosalberto
-      level: tbd
+      level: esclating
   resources:
   - meeting:
       schedule: Thursday at 8:30 PT
@@ -509,7 +509,7 @@
   - gcLiaison: austinlparker
   - tcSponsor:
       username: jsuereth
-      level: tbd
+      level: escalating
   resources:
   - meeting:
       schedule: Every other Thursday at 09:00 PT
@@ -635,7 +635,7 @@
   - gcLiaison: maryliag
   - tcSponsor:
       username: carlosalberto
-      level: tbd
+      level: escalating
   resources:
   - meeting:
       schedule: Wednesday at 09:00 PT
@@ -656,7 +656,7 @@
   - gcLiaison: svrnm
   - tcSponsor:
       username: jack-berg
-      level: tbd
+      level: escalating
   resources:
   - meeting:
       schedule: Wednesday at 10:30 PT
@@ -677,7 +677,7 @@
   - gcLiaison: maryliag
   - tcSponsor:
       username: reyang
-      level: tbd
+      level: escalating
   resources:
   - meeting:
       schedule: Thursday at 09:00 PT
@@ -697,7 +697,7 @@
   - gcLiaison: tedsuo
   - tcSponsor:
       username: arminru
-      level: tbd
+      level: escalating
   resources:
   - meeting:
       schedule: Tuesday at 10:00 PT
@@ -738,7 +738,7 @@
   - gcLiaison: alolita
   - tcSponsor:
       username: reyang
-      level: tbd
+      level: escalating
   resources:
   - meeting:
       schedule: Thursday at 09:00 PT
@@ -874,7 +874,7 @@
   - gcLiaison: svrnm
   - tcSponsor:
       username: jack-berg
-      level: tbd
+      level: esclating
   resources:
   - meeting:
       schedule: Every other Tuesday at 09:00 PT
@@ -894,7 +894,7 @@
   - gcLiaison: maryliag
   - tcSponsor:
       username: jack-berg
-      level: tbd
+      level: escalating
   resources:
   - meeting:
       schedule: Every Thursday at 10:00 PT (alternating OTel Blueprints and general meetings)
@@ -933,7 +933,7 @@
   - gcLiaison: austinlparker
   - tcSponsor:
       username: arminru
-      level: tbd
+      level: escalating
   resources:
   - meeting:
       schedule: Thursday at 11:00 PT
@@ -1129,7 +1129,7 @@
   - gcLiaison: maryliag
   - tcSponsor:
       username: reyang
-      level: tbd
+      level: esclating
   - lead: danielgblanco
   - lead: dmathieu
   resources:
@@ -1180,7 +1180,7 @@
   - gcLiaison: svrnm
   - tcSponsor:
       username: jack-berg
-      level: tbd
+      level: esclating
   - lead: jaydeluca
   - lead: svrnm
   - lead: mx-psi

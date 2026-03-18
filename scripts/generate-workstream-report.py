@@ -84,6 +84,7 @@ TC_LEVEL_STYLES = {
 
 chart_lines = []
 node_classes = {}  # nid -> level key, collected during render_node
+wg_nodes = set()   # nids that are working-groups, to receive pill classDef
 
 
 def highest_tc_level(ws_id):
@@ -139,6 +140,8 @@ def render_node(ws, indent=2):
 
     chart_lines.append(f'{pad}{nid}["{label}"]')
     node_classes[nid] = highest_tc_level(ws["id"])
+    if ws.get("kind") == "working-group":
+        wg_nodes.add(nid)
     for child in sorted(children[ws["id"]], key=child_sort_key):
         chart_lines.append(f'{pad}{nid} --> {node_id(child["id"])}')
         render_node(child, indent)
@@ -156,6 +159,7 @@ chart_lines.append("")
 
 for lvl, style in TC_LEVEL_STYLES.items():
     chart_lines.append(f"  classDef tc_{lvl} {style}")
+chart_lines.append("  classDef wg_pill rx:30,ry:30")
 chart_lines.append("")
 
 for ws in sorted((ws for ws in all_items if is_top_level(ws)), key=child_sort_key):
@@ -163,7 +167,8 @@ for ws in sorted((ws for ws in all_items if is_top_level(ws)), key=child_sort_ke
 chart_lines.append("")
 
 for nid, lvl in node_classes.items():
-    chart_lines.append(f"  class {nid} tc_{lvl}")
+    classes = f"tc_{lvl},wg_pill" if nid in wg_nodes else f"tc_{lvl}"
+    chart_lines.append(f"  class {nid} {classes}")
 chart_lines.append("")
 
 chart_lines.append("```")
@@ -184,6 +189,8 @@ LEGEND = """\
 | Purple | Escalating | TC sponsor available for escalation |
 | Gray | TBD | Sponsor assigned, level not yet determined |
 | Red | None | No TC sponsor assigned |
+
+**Node shape** — workstream kind: rectangle = SIG · pill = Working Group
 
 **Name suffix** — SIG category: `(spec)` Specification · `(impl)` Implementation · `(cross)` Cross-cutting
 
