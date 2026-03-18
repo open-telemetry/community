@@ -126,6 +126,11 @@ def build_label(ws):
     return "<br/>".join(lines)
 
 
+def child_sort_key(ws):
+    """Sort key: more children first, alphabetical by name as tiebreaker."""
+    return (-len(children[ws["id"]]), ws["name"])
+
+
 def render_node(ws, indent=2):
     """Emit a node label then recurse into children, connecting via edges."""
     nid = node_id(ws["id"])
@@ -134,7 +139,7 @@ def render_node(ws, indent=2):
 
     chart_lines.append(f'{pad}{nid}["{label}"]')
     node_classes[nid] = highest_tc_level(ws["id"])
-    for child in children[ws["id"]]:
+    for child in sorted(children[ws["id"]], key=child_sort_key):
         chart_lines.append(f'{pad}{nid} --> {node_id(child["id"])}')
         render_node(child, indent)
 
@@ -153,9 +158,8 @@ for lvl, style in TC_LEVEL_STYLES.items():
     chart_lines.append(f"  classDef tc_{lvl} {style}")
 chart_lines.append("")
 
-for ws in all_items:
-    if is_top_level(ws):
-        render_node(ws)
+for ws in sorted((ws for ws in all_items if is_top_level(ws)), key=child_sort_key):
+    render_node(ws)
 chart_lines.append("")
 
 for nid, lvl in node_classes.items():
