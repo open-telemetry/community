@@ -31,10 +31,6 @@ people_info = _people_data.get("people", {})   # login -> {name, company}
 teams_data  = _people_data.get("teams", {})    # team-slug -> [logins]
 
 
-def sig_category(ws):
-    return ws.get("sigCategory")
-
-
 def node_id(ws_id):
     """Convert workstream ID to Mermaid-safe identifier (alphanumeric + underscore)."""
     return ws_id.replace("-", "_")
@@ -64,14 +60,30 @@ for ws in all_items:
             if u and u != "tbd":
                 ws_tc_levels[ws["id"]][level] += 1
 
+BUDGET_LEVELS = ["leading", "guiding", "escalating"]
+
+_subtree_memo: dict = {}
+
+
+def subtree_tc_levels(ws_id):
+    """Recursively sum TC level counts for ws_id and all its descendants."""
+    if ws_id in _subtree_memo:
+        return _subtree_memo[ws_id]
+    result: dict = dict(ws_tc_levels[ws_id])
+    for child in children[ws_id]:
+        for lvl, count in subtree_tc_levels(child["id"]).items():
+            result[lvl] = result.get(lvl, 0) + count
+    _subtree_memo[ws_id] = result
+    return result
+
+
+level_totals = {
+    lvl: sum(ws_tc_levels[ws["id"]].get(lvl, 0) for ws in all_items)
+    for lvl in BUDGET_LEVELS
+}
+
 
 # ─── Section 1: Mermaid chart ─────────────────────────────────────────────────
-
-CAT_ABBREV = {
-    "specification": "spec",
-    "implementation": "impl",
-    "cross-cutting": "cross",
-}
 
 # Highest TC level wins for color; "none" = no assigned sponsors
 TC_LEVEL_PRIORITY = ["leading", "guiding", "escalating", "tbd", "none"]
@@ -99,12 +111,6 @@ def highest_tc_level(ws_id):
 def build_label(ws):
     """Build a multi-line Mermaid node label for a workstream."""
     name = clean_label(ws["name"])
-    kind = ws.get("kind", "sig")
-
-    if kind == "sig":
-        kind_str = f"Kind: sig ({CAT_ABBREV[sig_category(ws)]})"
-    else:
-        kind_str = f"Kind: {kind}"
 
     gc_liaisons = []
     tc_sponsors = []
@@ -118,12 +124,37 @@ def build_label(ws):
             level = entry["tcSponsor"].get("level") or "tbd"
             if u and u != "tbd":
                 display_name = people_info.get(u, {}).get("name", u)
-                tc_sponsors.append(f"{display_name} ({level})")
+                level_abbrev = {"leading": "L", "guiding": "G", "escalating": "E"}.get(level, level)
+                tc_sponsors.append(f"{display_name} ({level_abbrev})")
 
-    lines = [name, kind_str]
+    lines = [name]
     if gc_liaisons:
         lines.append("GC: " + ", ".join(gc_liaisons))
-    lines.append("TC: " + (", ".join(tc_sponsors) if tc_sponsors else "unsponsored"))
+    if tc_sponsors:
+        chunks = [", ".join(tc_sponsors[i:i+3]) for i in range(0, len(tc_sponsors), 3)]
+        tc_str = "<br/>".join(chunks)
+    else:
+        tc_str = "tbd"
+    lines.append("TC: " + tc_str)
+
+    own = ws_tc_levels[ws["id"]]
+    sub = subtree_tc_levels(ws["id"])
+    abbrevs = {"leading": "L", "guiding": "G", "escalating": "E"}
+    parts = []
+    for lvl in BUDGET_LEVELS:
+        o = own.get(lvl, 0)
+        s = sub.get(lvl, 0)
+        denom = level_totals.get(lvl, 0)
+        if o == 0 and s == 0 or denom == 0:
+            continue
+        o_pct = round(o / denom * 100)
+        s_pct = round(s / denom * 100)
+        if o == s:
+            parts.append(f"{abbrevs[lvl]}:{o_pct}%")
+        else:
+            parts.append(f"{abbrevs[lvl]}:{o_pct}% ({s_pct}%)")
+    lines.append("TC Coverage: " + (" · ".join(parts) if parts else "tbd"))
+
     return "<br/>".join(lines)
 
 
@@ -233,9 +264,9 @@ LEGEND = """\
 
 **Node shape** — workstream kind: rectangle = SIG · pill = Working Group
 
-**Name suffix** — SIG category: `(spec)` Specification · `(impl)` Implementation · `(cross)` Cross-cutting
+**Arrows** (`-->`) — parent workstream points to child workstream
 
-**Arrows** (`-->`) — parent workstream points to child workstream\
+**TC Coverage line** — `TC Coverage: L:x% (y%) · G:x% (y%) · E:x% (y%)` — share of all Leading / Guiding / Escalating sponsorships assigned to this workstream. Figure in parentheses rolls up all child workstreams; parentheses omitted when the workstream has no children contributing at that level. `tbd` when no sponsor is assigned.\
 """
 
 
