@@ -71,12 +71,21 @@ Access to bare metal runners for benchmarking is available to repositories on re
 (open a community issue),
 which will give access to the following GitHub-hosted runner:
 
-- `oracle-bare-metal-64cpu-512gb-x86-64`
+- `oracle-bare-metal-64cpu-512gb-x86-64` (Oracle Linux 8)
+- `oracle-bare-metal-64cpu-1024gb-x86-64-ubuntu-24` (Ubuntu 24)
+
+We are currently transitioning from the Oracle Linux 8 runner to the
+Ubuntu 24 runner. Once the transition is complete, the Oracle Linux 8 runner
+will be decommissioned.
 
 Note: there is only one bare metal runner at this time, so
 please ensure your workloads are optimized to avoid unnecessary usage.
 
 Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+
+SSH private keys are available in the SIG Project Infrastructure 1Password vault.
+
+[How to provision an Oracle bare metal runner](docs/how-to-provision-bare-metal-runner.md)
 
 #### Linux/s390x runners
 
@@ -114,7 +123,7 @@ Link: https://app.netlify.com/login
 
 - Used to manage domain names under opentelemetry.io
 - Used to publish https://opentelemetry.io
-- Admins: [@austinlparker](https://github.com/austinlparker), [@svrnm](https://github.com/svrnm), [@chalin](https://github.com/chalin)
+- Admins: [@austinlparker](https://github.com/austinlparker), [@svrnm](https://github.com/svrnm), [@chalin](https://github.com/chalin), [@trask](https://github.com/trask)
 
 ### Oracle Cloud account
 
@@ -156,9 +165,10 @@ Link: https://www.myget.org/feed/Packages/opentelemetry
 Link: https://www.npmjs.com/settings/opentelemetry/packages
 
 - Ask any of the following people if you need access
-- Owner: Mayur Kale @mayurkale22
-- Admin: Daniel Dyla @dyladan
-- Member: Bogdan Drutu @bogdandrutu
+- Owner: OpenTelemetry account `npmjs-account` (GC/TC have access to it)
+- Member: Daniel Dyla @dyladan
+- Member: Marc Pichler @pichlermarc
+- Member: Trent Mick @trentm
 
 ### Crates
 
@@ -181,8 +191,8 @@ but these individual OpenTelemetry members have been given rights to publish und
 
 Link: https://pypi.org/user/opentelemetry/
 
-- Owner: [@open-telemetry/python-maintainers](https://github.com/orgs/open-telemetry/teams/python-maintainers)
-  (password is available in the OpenTelemetry Python 1Password vault)
+- Account email: python-maintainers@opentelemetry.io ([google group](https://groups.google.com/u/1/a/opentelemetry.io/g/python-maintainers))
+- Password: Available in the OpenTelemetry Python 1Password vault
 
 ### PHP Extras
 
@@ -267,6 +277,7 @@ Link: https://groups.google.com/g/opentelemetry-calendar
   To join https://lists.cncf.io/g/cncf-otel-zoomadmins, go to that URL and click "Apply For Membership In This Group".
   Then ask in the [#opentelemetry-gc](https://cloud-native.slack.com/archives/C01S673T1NE) for someone to approve your
   membership and then to give you owner rights.
+  Messages take ~7 minutes to show on the [Pending folder](https://lists.cncf.io/g/cncf-otel-zoomadmins/pending).
 
 ### Zapier account
 

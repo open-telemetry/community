@@ -18,11 +18,13 @@ ignoreRegExpList:
   - GitHub Handle in YML
 words:
   - Abinet
+  - agentic
   - Alain
   - Alff
   - Arize
   - Aronoff
   - Ashpole
+  - austinlparker
   - automations
   - Baeyens
   - calendar-localization-ptbr
@@ -48,8 +50,10 @@ words:
   - elastic
   - emea
   - faas
+  - Francesco
   - gitter
   - grafana
+  - Hendrik
   - Hostmetrics
   - hostmetricsreceiver
   - Instrgen
@@ -58,6 +62,7 @@ words:
   - Kanal
   - Karlie
   - keptn
+  - Kemal
   - Kuba
   - kubecon
   - k8sclusterreceiver
@@ -145,6 +150,7 @@ words:
   - faas
   - fong
   - Fordyce
+  - Furst
   - frzifus
   - gbbr
   - genai
@@ -194,9 +200,12 @@ words:
   - mjwolf
   - mkorbi
   - molkova
+  - mottibec
   - msomasu
+  - Morgado
   - MSYS
   - PATHCONV
+  - Pichler
   - mtwo
   - mwear
   - npmjs
@@ -216,6 +225,7 @@ words:
   - opentelemetrybot
   - ossf
   - otel
+  - otelcol
   - otel-agentmanwg
   - otel-comms
   - otel-ebpf
@@ -230,6 +240,7 @@ words:
   - Prometheus
   - paixão
   - pająk
+  - pavolloffay
   - passcodes
   - poncelow
   - proto
@@ -257,6 +268,7 @@ words:
   - severin
   - sguyon
   - sharma
+  - shiftyp
   - shkuro
   - sigelman
   - signup
@@ -274,6 +286,8 @@ words:
   - sudivate
   - suereth
   - supermajority
+  - Tero
+  - Tigerbeetle
   - Thiru
   - Traceloop
   - tarnovski
@@ -290,8 +304,10 @@ words:
   - triagers
   - teamcity
   - uninstrumented
+  - usermod
   - Vasconcellos
   - Villela
   - Vitor
+  - VNIC
   - vtex
   - yahn
