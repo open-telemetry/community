@@ -272,11 +272,32 @@ LEGEND = """\
 
 # ─── Assemble output ──────────────────────────────────────────────────────────
 
-unsponsored_count = sum(1 for ws in all_items if highest_tc_level(ws["id"]) == "none")
+GENERATED_BEGIN = "<!-- BEGIN GENERATED -->"
+GENERATED_END   = "<!-- END GENERATED -->"
 
-output = f"""\
+DEFAULT_PREAMBLE = """\
 # Workstream Report
 
+> **Note:** This report reflects structural data only — workstream membership,
+> TC sponsorship assignments, and parent/child relationships. It does not capture
+> the full picture of who is actively contributing, what is being worked on, or
+> the health of any given area. Use it as a starting point for conversation, not
+> a definitive measure of activity or coverage.
+
+"""
+
+# Preserve any hand-written preamble above the generated marker.
+try:
+    with open(OUTPUT_FILE) as f:
+        existing = f.read()
+    begin_idx = existing.find(GENERATED_BEGIN)
+    preamble = existing[:begin_idx] if begin_idx != -1 else DEFAULT_PREAMBLE
+except FileNotFoundError:
+    preamble = DEFAULT_PREAMBLE
+
+unsponsored_count = sum(1 for ws in all_items if highest_tc_level(ws["id"]) == "none")
+
+generated = f"""\
 {LEGEND}
 
 ## Workstream Hierarchy
@@ -289,5 +310,6 @@ output = f"""\
 """
 
 with open(OUTPUT_FILE, "w") as f:
-    f.write(output)
+    f.write(preamble)
+    f.write(f"{GENERATED_BEGIN}\n{generated}{GENERATED_END}\n")
 print(f"Wrote {OUTPUT_FILE}.")
