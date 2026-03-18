@@ -43,6 +43,8 @@ graph LR
   getting_started_docs(["New Getting Started Documentation and Reference Application<br/>Kind: working-group<br/>GC: Severin Neumann<br/>TC: Jack Berg (tbd)"])
   communications --> ecosystem_explorer
   ecosystem_explorer(["OpenTelemetry Ecosystem Explorer<br/>Kind: working-group<br/>GC: Severin Neumann<br/>TC: Jack Berg (escalating)"])
+  communications --> localization_pl
+  localization_pl["Polish (pl-PL)<br/>Kind: sig (cross)<br/>GC: Severin Neumann<br/>TC: unsponsored"]
   communications --> localization_pt_br
   localization_pt_br["Portuguese (pt-BR)<br/>Kind: sig (cross)<br/>GC: Severin Neumann<br/>TC: unsponsored"]
   communications --> localization_ro
@@ -105,6 +107,7 @@ graph LR
   injector["Injector<br/>Kind: sig (impl)<br/>GC: Morgan McLean<br/>TC: Jack Berg (guiding)"]
   java_sdk_instrumentation["Java: SDK + Instrumentation<br/>Kind: sig (impl)<br/>GC: Trask Stalnaker<br/>TC: Jack Berg (leading)"]
   javascript_sdk["JavaScript: SDK<br/>Kind: sig (impl)<br/>GC: Marylia Gutierrez<br/>TC: Carlos Alberto Cortez (escalating)"]
+  kotlin["Kotlin: SDK<br/>Kind: sig (impl)<br/>GC: Alolita Sharma<br/>TC: Carlos Alberto Cortez (guiding)"]
   k8s_helm_charts["Kubernetes Helm Charts<br/>Kind: sig (impl)<br/>GC: Pablo Baeyens<br/>TC: unsponsored"]
   k8s_operator["Kubernetes Operator<br/>Kind: sig (impl)<br/>GC: Juraci Paixão Kröhling<br/>TC: David Ashpole (escalating)"]
   network["Network<br/>Kind: sig (impl)<br/>GC: Ted Young<br/>TC: David Ashpole (escalating)"]
@@ -128,6 +131,7 @@ graph LR
   class localization_ja tc_none
   class getting_started_docs tc_tbd
   class ecosystem_explorer tc_escalating
+  class localization_pl tc_none
   class localization_pt_br tc_none
   class localization_ro tc_none
   class localization_es tc_none
@@ -170,6 +174,7 @@ graph LR
   class injector tc_guiding
   class java_sdk_instrumentation tc_leading
   class javascript_sdk tc_escalating
+  class kotlin tc_guiding
   class k8s_helm_charts tc_none
   class k8s_operator tc_escalating
   class network tc_escalating
@@ -194,7 +199,7 @@ graph LR
 |--------|---------|---------|---------|---------|---------|
 | [David Ashpole](https://github.com/dashpole) | 3 |  | 5 |  | 8 |
 | [Jack Berg](https://github.com/jack-berg) | 1 | 1 | 5 | 1 | 8 |
-| [Carlos Alberto Cortez](https://github.com/carlosalberto) |  |  | 4 | 1 | 5 |
+| [Carlos Alberto Cortez](https://github.com/carlosalberto) |  | 1 | 4 | 1 | 6 |
 | [Bogdan Drutu](https://github.com/bogdandrutu) |  | 1 |  |  | 1 |
 | [Joshua MacDonald](https://github.com/jmacd) | 1 | 2 |  | 1 | 4 |
 | [Liudmila Molkova](https://github.com/lmolkova) | 3 | 2 | 2 |  | 7 |
@@ -202,6 +207,6 @@ graph LR
 | [Armin Ruech](https://github.com/arminru) | 1 |  | 2 |  | 3 |
 | [Josh Suereth](https://github.com/jsuereth) | 3 | 1 | 4 |  | 8 |
 | [Reiley Yang](https://github.com/reyang) | 1 |  | 8 | 1 | 10 |
-| **Total** | 15 | 8 | 30 | 4 | 57 |
+| **Total** | 15 | 9 | 30 | 4 | 58 |
 
-13 workstream(s) have no TC sponsor assigned.
+14 workstream(s) have no TC sponsor assigned.

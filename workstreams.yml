@@ -647,6 +647,26 @@
   - githubDiscussion: https://github.com/open-telemetry/opentelemetry-js/discussions
   - repository: open-telemetry/opentelemetry-js
   - repository: open-telemetry/opentelemetry-js-contrib
+- id: kotlin
+  kind: sig
+  sigCategory: implementation
+  name: 'Kotlin: SDK'
+  parent: none
+  people:
+  - gcLiaison: alolita
+  - tcSponsor:
+      username: carlosalberto
+      level: guiding
+  resources:
+  - meeting:
+      schedule: Monday at 09:00 PT
+      calendarInviteGroup: calendar-kotlin
+      gDocNotes: 1dzYPuJTV5usXHKAFL596SRwSlATEj_Z37GPODB73Oms
+  - slack:
+      name: '#otel-kotlin'
+      id: C08NRCD4R4G
+  - githubDiscussion: https://github.com/open-telemetry/opentelemetry-kotlin/discussions
+  - repository: open-telemetry/opentelemetry-kotlin
 - id: php-sdk
   kind: sig
   sigCategory: implementation
@@ -1110,6 +1130,20 @@
   - slack:
       name: '#otel-localization-ro'
       id: C09E9KNNLP4
+- id: localization-pl
+  kind: sig
+  sigCategory: cross-cutting
+  name: Polish (pl-PL)
+  parent: communications
+  people:
+  - gcLiaison: svrnm
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - slack:
+      name: '#otel-localization-pl'
+      id: C0ALHN9V7PT
 - id: agentic-workflow
   kind: working-group
   name: OpenTelemetry Collector Agentic Workflows
