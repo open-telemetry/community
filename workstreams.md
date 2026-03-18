@@ -3,7 +3,7 @@
 This is a visualization of the data in [workstreams.yml](workstreams.yml). (see [schema](scripts/schema/workstreams.schema.yml) and [validation](scripts/validate-workstreams.py) for more information)
 
 > [!WARNING]
-> Use with caution. Once we report on something, it quickly becomes a candidate for gamification-we need to resist the temptation to place too much emphasis on what is shown. This report is a tool and not a complete picture of the work being done. Some specific notes on interpretation:
+> Use with caution. Once we report on something, it quickly becomes a candidate for gamification. We need to resist the temptation to place too much emphasis on what is shown. This report is a tool and not a complete picture of the work being done. Some specific notes on interpretation:
 > * **Absence of workstream ≠ absence of work**: Not all work is represented as a workstream. For example, spec issues / OTEPs which do not fit the criteria for a SIG or working group are not well represented and can take significant effort.
 > * **TC sponsorship ≠ workstream leadership**: In some cases TC leads efforts, but even the workstreams with the highest TC sponsorship level (leading) depend on participation and leadership from other community members.
 > * **A note on counting**: This report tallies counts of workstreams, which can be misrepresenting as not all workstreams are equal in effort / activity.

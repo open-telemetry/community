@@ -28,13 +28,6 @@ WORKSTREAMS_FILE   = REPO_ROOT / "workstreams.yml"
 WORKSTREAMS_SCHEMA = SCRIPTS_DIR / "schema" / "workstreams.schema.yml"
 PEOPLE_FILE        = REPO_ROOT / "people.yml"
 
-# GitHub team slug → role key used in workstreams.yml
-TEAM_ROLES = {
-    "governance-committee": "gc-member",
-    "technical-committee":  "tc-member",
-    "spec-sponsors":       "spec-sponsor",
-}
-
 TBD  = "tbd"
 NONE = "none"
 
@@ -70,15 +63,12 @@ def validate_against_schema(data: object, schema: dict, label: str) -> list[str]
     return errors
 
 
-def _entry_role_and_username(entry: dict) -> tuple[str, str | None]:
-    """Return (role, username) from a single-key people entry.
-    Returns (role, None) for team entries (maintainers) that have no username."""
+def _entry_role_and_username(entry: dict) -> tuple[str, str]:
+    """Return (role, username) from a single-key people entry."""
     role = next(iter(entry))
     val  = entry[role]
     if role == "tcSponsor":
         username = val.get("username", "") if isinstance(val, dict) else ""
-    elif role == "maintainers":
-        username = None
     else:
         username = val if isinstance(val, str) else ""
     return role, username
@@ -153,7 +143,7 @@ def validate_workstreams_semantics(workstreams: list[dict], people_data: dict) -
         for pr in w.get("people", []):
             role, username = _entry_role_and_username(pr)
 
-            if username is None or username == TBD or role not in MEMBERSHIP_REQUIRED_ROLES:
+            if username == TBD or role not in MEMBERSHIP_REQUIRED_ROLES:
                 continue
 
             if role == "gcLiaison" and username.lower() not in gc_members:

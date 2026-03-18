@@ -107,12 +107,6 @@ items:
       specSponsor:
         type: string
         minLength: 1
-      # GitHub team responsible for maintaining the workstream's deliverables.
-      # Value is a GitHub team slug, e.g. open-telemetry/java-maintainers.
-      maintainers:
-        type: string
-        minLength: 1
-
   # A resource associated with a workstream. Each entry is a single-key
   # object where the key names the resource type and the value is the resource data.
   resource:
