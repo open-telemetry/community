@@ -29,8 +29,6 @@ items:
           # Corresponds to a 'project' in /projects/*.md.
           # Any kind may be associated with a project proposal document.
           - working-group
-          # A specific tracked feature or spec change, typically an OTEP.
-          - enhancement
       name:
         type: string
         minLength: 1
@@ -99,13 +97,13 @@ items:
               # Level required but not yet determined.
               - tbd
       # Person accountable for driving the workstream forward.
-      # Required on: working-group, enhancement. GitHub username, or 'tbd' if not yet assigned.
+      # Required on: working-group. GitHub username, or 'tbd' if not yet assigned.
       lead:
         type: string
         minLength: 1
       # Trusted collaborator with approval rights on the spec repository.
       # TC members are a superset and may fill this role.
-      # Optional on: enhancement. GitHub username, or 'tbd' if not yet assigned.
+      # GitHub username, or 'tbd' if not yet assigned.
       specSponsor:
         type: string
         minLength: 1

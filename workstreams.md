@@ -28,7 +28,7 @@ graph LR
   classDef tc_tbd fill:#f5f5f5,stroke:#9e9e9e,color:#424242
   classDef tc_none fill:#ffcdd2,stroke:#e53935,color:#b71c1c
 
-  spec_general["Specification: General + OTel Maintainers Sync<br/>Kind: sig (spec)"]
+  spec_general["Specification: General + OTel Maintainers Sync<br/>Kind: sig (spec)<br/>TC: unsponsored"]
   spec_general --> sampling
   sampling["Specification: Sampling<br/>Kind: sig (spec)<br/>GC: Juraci Paixão Kröhling<br/>TC: Joshua MacDonald (guiding)"]
   spec_general --> spec_logs
@@ -57,18 +57,18 @@ graph LR
   spec_entities["Specification: Entities<br/>Kind: sig (spec)<br/>GC: Severin Neumann<br/>TC: Josh Suereth (leading), Tigran Najaryan (leading)"]
   opamp["OpAMP<br/>Kind: sig (spec)<br/>GC: Ted Young<br/>TC: Tigran Najaryan (leading)"]
   prometheus_interop["Prometheus Interoperability<br/>Kind: sig (spec)<br/>GC: Pablo Baeyens<br/>TC: David Ashpole (leading)"]
-  faas["Functions as a Service (FAAS)<br/>Kind: sig (spec)<br/>GC: Austin Parker"]
+  faas["Functions as a Service (FAAS)<br/>Kind: sig (spec)<br/>GC: Austin Parker<br/>TC: unsponsored"]
   profiling["Profiling<br/>Kind: sig (spec)<br/>GC: Morgan McLean<br/>TC: Josh Suereth (guiding), Tigran Najaryan (guiding)"]
-  mainframes["OpenTelemetry on Mainframes<br/>Kind: sig (spec)<br/>GC: Morgan McLean"]
+  mainframes["OpenTelemetry on Mainframes<br/>Kind: sig (spec)<br/>GC: Morgan McLean<br/>TC: unsponsored"]
   client_instrumentation["Client Instrumentation<br/>Kind: sig (spec)<br/>GC: Ted Young<br/>TC: Carlos Alberto Cortez (escalating)"]
   android["Android: SDK + Automatic Instrumentation<br/>Kind: sig (impl)<br/>GC: Ted Young<br/>TC: Jack Berg (tbd)"]
   arrow["Arrow<br/>Kind: sig (impl)<br/>GC: Trask Stalnaker<br/>TC: Joshua MacDonald (leading)"]
   browser["Browser<br/>Kind: sig (impl)<br/>GC: Ted Young<br/>TC: Carlos Alberto Cortez (tbd)"]
   collector["Collector<br/>Kind: sig (impl)<br/>GC: Pablo Baeyens<br/>TC: BogdanDrutu (guiding), Joshua MacDonald (guiding)"]
   collector --> agentic_workflow
-  agentic_workflow["OpenTelemetry Collector Agentic Workflows<br/>Kind: working-group<br/>GC: Pablo Baeyens"]
+  agentic_workflow["OpenTelemetry Collector Agentic Workflows<br/>Kind: working-group<br/>GC: Pablo Baeyens<br/>TC: unsponsored"]
   collector --> collector_v1
-  collector_v1["Collector v1<br/>Kind: working-group<br/>GC: Juraci Paixão Kröhling"]
+  collector_v1["Collector v1<br/>Kind: working-group<br/>GC: Juraci Paixão Kröhling<br/>TC: unsponsored"]
   cpp["C++: SDK<br/>Kind: sig (impl)<br/>GC: Severin Neumann<br/>TC: Reiley Yang (escalating)"]
   dotnet_auto_instr[".NET: Automatic Instrumentation<br/>Kind: sig (impl)<br/>GC: Morgan McLean<br/>TC: Reiley Yang (escalating)"]
   dotnet[".NET: SDK<br/>Kind: sig (impl)<br/>GC: Morgan McLean<br/>TC: Reiley Yang (escalating)"]
@@ -76,7 +76,7 @@ graph LR
   go["GoLang: SDK<br/>Kind: sig (impl)<br/>GC: Marylia Gutierrez<br/>TC: David Ashpole (leading)"]
   go_auto_instr["GoLang: Automatic Instrumentation<br/>Kind: sig (impl)<br/>GC: Juraci Paixão Kröhling<br/>TC: David Ashpole (escalating)"]
   go_compile_instr["GoLang: Compile-Time Instrumentation<br/>Kind: sig (impl)<br/>GC: Juraci Paixão Kröhling<br/>TC: David Ashpole (escalating)"]
-  injector["Injector<br/>Kind: sig (impl)<br/>GC: Morgan McLean"]
+  injector["Injector<br/>Kind: sig (impl)<br/>GC: Morgan McLean<br/>TC: unsponsored"]
   java_sdk_instrumentation["Java: SDK + Instrumentation<br/>Kind: sig (impl)<br/>GC: Trask Stalnaker<br/>TC: Jack Berg (leading)"]
   javascript_sdk["JavaScript: SDK<br/>Kind: sig (impl)<br/>GC: Marylia Gutierrez<br/>TC: Carlos Alberto Cortez (tbd)"]
   php_sdk["PHP: SDK<br/>Kind: sig (impl)<br/>GC: Severin Neumann<br/>TC: Jack Berg (tbd)"]
@@ -87,25 +87,25 @@ graph LR
   network["Network<br/>Kind: sig (impl)<br/>GC: Ted Young<br/>TC: David Ashpole (escalating)"]
   ebpf_instrumentation["eBPF Instrumentation<br/>Kind: sig (impl)<br/>GC: Severin Neumann<br/>TC: David Ashpole (escalating)"]
   k8s_operator["Kubernetes Operator<br/>Kind: sig (impl)<br/>GC: Juraci Paixão Kröhling<br/>TC: David Ashpole (escalating)"]
-  k8s_helm_charts["Kubernetes Helm Charts<br/>Kind: sig (impl)<br/>GC: Pablo Baeyens"]
+  k8s_helm_charts["Kubernetes Helm Charts<br/>Kind: sig (impl)<br/>GC: Pablo Baeyens<br/>TC: unsponsored"]
   community_demo["Community Demo Application<br/>Kind: sig (impl)<br/>GC: Austin Parker<br/>TC: Reiley Yang (escalating)"]
   communications["Communications (Website, Documentation, etc.)<br/>Kind: sig (cross)<br/>GC: Severin Neumann<br/>TC: Jack Berg (tbd)"]
   communications --> localization_bn
-  localization_bn["Bengali (bn)<br/>Kind: sig (cross)<br/>GC: Severin Neumann"]
+  localization_bn["Bengali (bn)<br/>Kind: sig (cross)<br/>GC: Severin Neumann<br/>TC: unsponsored"]
   communications --> localization_zh_cn
   localization_zh_cn["Chinese (zh-CN)<br/>Kind: sig (cross)<br/>GC: Severin Neumann<br/>TC: Reiley Yang (tbd)"]
   communications --> localization_fr
-  localization_fr["French (fr-FR)<br/>Kind: sig (cross)<br/>GC: Severin Neumann"]
+  localization_fr["French (fr-FR)<br/>Kind: sig (cross)<br/>GC: Severin Neumann<br/>TC: unsponsored"]
   communications --> localization_ja
-  localization_ja["Japanese (ja-JA)<br/>Kind: sig (cross)<br/>GC: Severin Neumann"]
+  localization_ja["Japanese (ja-JA)<br/>Kind: sig (cross)<br/>GC: Severin Neumann<br/>TC: unsponsored"]
   communications --> localization_pt_br
-  localization_pt_br["Portuguese (pt-BR)<br/>Kind: sig (cross)<br/>GC: Severin Neumann"]
+  localization_pt_br["Portuguese (pt-BR)<br/>Kind: sig (cross)<br/>GC: Severin Neumann<br/>TC: unsponsored"]
   communications --> localization_es
-  localization_es["Spanish (es-ES)<br/>Kind: sig (cross)<br/>GC: Severin Neumann"]
+  localization_es["Spanish (es-ES)<br/>Kind: sig (cross)<br/>GC: Severin Neumann<br/>TC: unsponsored"]
   communications --> localization_uk
-  localization_uk["Ukrainian (uk-UA)<br/>Kind: sig (cross)<br/>GC: Severin Neumann"]
+  localization_uk["Ukrainian (uk-UA)<br/>Kind: sig (cross)<br/>GC: Severin Neumann<br/>TC: unsponsored"]
   communications --> localization_ro
-  localization_ro["Romanian (ro-RO)<br/>Kind: sig (cross)<br/>GC: Severin Neumann"]
+  localization_ro["Romanian (ro-RO)<br/>Kind: sig (cross)<br/>GC: Severin Neumann<br/>TC: unsponsored"]
   communications --> ecosystem_explorer
   ecosystem_explorer["OpenTelemetry Ecosystem Explorer<br/>Kind: working-group<br/>GC: Severin Neumann<br/>TC: Jack Berg (tbd)"]
   communications --> getting_started_docs

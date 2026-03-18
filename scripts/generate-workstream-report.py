@@ -122,8 +122,7 @@ def build_label(ws):
     lines = [name, kind_str]
     if gc_liaisons:
         lines.append("GC: " + ", ".join(gc_liaisons))
-    if tc_sponsors:
-        lines.append("TC: " + ", ".join(tc_sponsors))
+    lines.append("TC: " + (", ".join(tc_sponsors) if tc_sponsors else "unsponsored"))
     return "<br/>".join(lines)
 
 
