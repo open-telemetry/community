@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import argparse
 import json
 import os
 import re
@@ -8,6 +9,30 @@ import urllib.request
 import urllib.error
 import urllib.parse
 from datetime import datetime, timedelta, timezone
+
+DEBUG = False
+
+def debug(msg):
+    if DEBUG:
+        print(f"  [DEBUG] {msg}")
+
+def _search_fields():
+    """Return the GraphQL fields to request inside a search() block."""
+    if DEBUG:
+        return "issueCount nodes { ... on Issue { number } ... on PullRequest { number } }"
+    return "issueCount"
+
+def _extract_numbers(search_result):
+    """Extract issue/PR numbers from a GraphQL search result dict."""
+    if not search_result:
+        return []
+    return [n["number"] for n in search_result.get("nodes", []) if "number" in n]
+
+def _fmt_numbers(numbers):
+    """Format a list of issue/PR numbers for debug display."""
+    if not numbers:
+        return ""
+    return " #" + ", #".join(str(n) for n in numbers)
 
 ORG = "open-telemetry"
 INACTIVITY_MONTHS = 4
@@ -131,7 +156,7 @@ def get_team_repos(team_slug, cutoff):
 def fetch_repo_issue_events(repo, cutoff, event_types=None):
     """Fetch issue events from a repo since cutoff.
 
-    Returns a list of (actor_login, event_type) tuples.
+    Returns a list of (actor_login, event_type, issue_number) tuples.
     Stops paginating once events are older than the cutoff date.
     """
     results = []
@@ -153,8 +178,9 @@ def fetch_repo_issue_events(repo, cutoff, event_types=None):
                 return results
             if event.get("event") in relevant_events:
                 actor = (event.get("actor") or {}).get("login", "")
+                issue_number = (event.get("issue") or {}).get("number", "")
                 if actor:
-                    results.append((actor, event["event"]))
+                    results.append((actor, event["event"], issue_number))
 
         link = resp.headers.get("Link", "")
         next_url = None
@@ -165,38 +191,159 @@ def fetch_repo_issue_events(repo, cutoff, event_types=None):
 
     return results
 
-def _check_comments_graphql(remaining, repo, cutoff):
-    """Check for comment activity via GraphQL. Returns set of active usernames."""
-    active = set()
-    remaining_list = list(remaining)
-    batch_size = 10
-    for i in range(0, len(remaining_list), batch_size):
-        batch_users = [u for u in remaining_list[i : i + batch_size] if u in remaining]
-        if not batch_users:
+def _check_comments_rest(remaining, repo, cutoff, comment_type=None):
+    """Check for comment activity via REST API. Returns dict of {username: [issue_numbers]}.
+
+    Uses the issues/comments endpoint with since= parameter, then verifies
+    that the comment's created_at is actually within the cutoff period.
+
+    comment_type: None = all, "pr" = only PR comments, "issue" = only issue comments.
+    """
+    active = {}
+    target_users = set(remaining)
+    url = f"{REST_API}/repos/{ORG}/{repo}/issues/comments"
+    params = {"since": f"{cutoff}T00:00:00Z", "per_page": 100, "sort": "created", "direction": "desc"}
+    query_string = urllib.parse.urlencode(params)
+    url = f"{url}?{query_string}"
+
+    while url:
+        resp = request_with_retry("GET", url)
+        comments = read_json(resp)
+
+        for comment in comments:
+            created = comment.get("created_at", "")[:10]
+            if created < cutoff:
+                # Comments are sorted newest-first; stop once we pass cutoff
+                return active
+
+            user = (comment.get("user") or {}).get("login", "")
+            if user not in target_users:
+                continue
+
+            # Filter by comment type if requested
+            html_url = comment.get("html_url", "")
+            is_pr = "/pull/" in html_url
+            if comment_type == "pr" and not is_pr:
+                continue
+            if comment_type == "issue" and is_pr:
+                continue
+
+            # Extract issue/PR number from the issue_url
+            issue_url = comment.get("issue_url", "")
+            number = issue_url.rstrip("/").split("/")[-1] if issue_url else ""
+
+            active.setdefault(user, [])
+            if number and number not in [str(n) for n in active[user]]:
+                active[user].append(int(number))
+            target_users.discard(user)
+            if not target_users:
+                return active
+
+        link = resp.headers.get("Link", "")
+        next_url = None
+        for part in link.split(","):
+            if 'rel="next"' in part:
+                next_url = part.split("<")[1].split(">")[0]
+        url = next_url
+
+    return active
+
+
+def _check_reviews_rest(remaining, repo, cutoff):
+    """Check for PR review activity via REST API. Returns dict of {username: [pr_numbers]}.
+
+    Uses the pulls/comments endpoint (review comments) with since= parameter,
+    then verifies that the comment's created_at is actually within the cutoff period.
+    Also checks the pulls/{number}/reviews endpoint for approval/request-changes reviews.
+    """
+    active = {}
+    target_users = set(remaining)
+
+    # 1. Check review comments (inline code comments on PRs)
+    url = f"{REST_API}/repos/{ORG}/{repo}/pulls/comments"
+    params = {"since": f"{cutoff}T00:00:00Z", "per_page": 100, "sort": "created", "direction": "desc"}
+    query_string = urllib.parse.urlencode(params)
+    url = f"{url}?{query_string}"
+
+    while url:
+        resp = request_with_retry("GET", url)
+        comments = read_json(resp)
+
+        for comment in comments:
+            created = comment.get("created_at", "")[:10]
+            if created < cutoff:
+                break
+
+            user = (comment.get("user") or {}).get("login", "")
+            if user not in target_users:
+                continue
+
+            pr_url = comment.get("pull_request_url", "")
+            number = int(pr_url.rstrip("/").split("/")[-1]) if pr_url else 0
+
+            active.setdefault(user, [])
+            if number and number not in active[user]:
+                active[user].append(number)
+            target_users.discard(user)
+            if not target_users:
+                return active
+        else:
+            # Only follow pagination if we didn't break (all comments still within cutoff)
+            link = resp.headers.get("Link", "")
+            next_url = None
+            for part in link.split(","):
+                if 'rel="next"' in part:
+                    next_url = part.split("<")[1].split(">")[0]
+            url = next_url
             continue
+        # Broke out of inner loop (hit cutoff), stop paginating
+        break
 
-        aliases = []
-        for user in batch_users:
-            safe = "u_" + re.sub(r"[^a-zA-Z0-9]", "_", user)
-            comment_q = f'repo:{ORG}/{repo} commenter:{user} updated:>={cutoff}'
-            aliases.append(
-                f'{safe}_comments: search(query: "{comment_q}", type: ISSUE, first: 1) {{ issueCount }}'
-            )
+    if not target_users:
+        return active
 
-        query = "query { " + "\n".join(aliases) + " }"
-        resp = request_with_retry("POST", GRAPHQL_API, data={"query": query})
-        data = read_json(resp)
-        if "errors" in data:
-            print(f"GraphQL errors: {data['errors']}", file=sys.stderr)
-            sys.exit(1)
+    # 2. Check recent PRs for approval/changes-requested reviews
+    #    List recently updated PRs, then check their reviews for target users
+    pr_url = f"{REST_API}/repos/{ORG}/{repo}/pulls"
+    params = {"state": "all", "sort": "updated", "direction": "desc", "per_page": 100}
+    query_string = urllib.parse.urlencode(params)
+    pr_url = f"{pr_url}?{query_string}"
 
-        for user in batch_users:
-            safe = "u_" + re.sub(r"[^a-zA-Z0-9]", "_", user)
-            comments = (data["data"].get(f"{safe}_comments") or {}).get(
-                "issueCount", 0
-            )
-            if comments > 0:
-                active.add(user)
+    while pr_url:
+        resp = request_with_retry("GET", pr_url)
+        prs = read_json(resp)
+
+        for pr in prs:
+            updated = pr.get("updated_at", "")[:10]
+            if updated < cutoff:
+                return active
+
+            pr_number = pr.get("number", 0)
+            reviews_url = f"{REST_API}/repos/{ORG}/{repo}/pulls/{pr_number}/reviews"
+            rev_resp = request_with_retry("GET", reviews_url)
+            reviews = read_json(rev_resp)
+
+            for review in reviews:
+                submitted = review.get("submitted_at", "")[:10]
+                if submitted < cutoff:
+                    continue
+                reviewer = (review.get("user") or {}).get("login", "")
+                if reviewer not in target_users:
+                    continue
+
+                active.setdefault(reviewer, [])
+                if pr_number not in active[reviewer]:
+                    active[reviewer].append(pr_number)
+                target_users.discard(reviewer)
+                if not target_users:
+                    return active
+
+        link = resp.headers.get("Link", "")
+        next_url = None
+        for part in link.split(","):
+            if 'rel="next"' in part:
+                next_url = part.split("<")[1].split(">")[0]
+        pr_url = next_url
 
     return active
 
@@ -223,22 +370,27 @@ def check_triager_activity(usernames, repos, cutoff):
         if not remaining:
             break
 
-        # 1. Check comments via GraphQL search
-        found = _check_comments_graphql(remaining, repo, cutoff)
-        active.update(found)
-        remaining -= found
+        # 1. Check comments via REST API
+        found = _check_comments_rest(remaining, repo, cutoff)
+        for user, numbers in found.items():
+            debug(f"triager {user} active on {repo}: commented on issue/PR{_fmt_numbers(numbers)}")
+        active.update(found.keys())
+        remaining -= found.keys()
         if not remaining:
             return active
 
         # 2. Check label changes and issue closes via REST issue events
         events = fetch_repo_issue_events(repo, cutoff)
-        for actor, _ in events:
+        for actor, event_type, issue_num in events:
             if actor in remaining:
+                debug(f"triager {actor} active on {repo}: {event_type} event #{issue_num}")
                 active.add(actor)
                 remaining.discard(actor)
                 if not remaining:
                     break
 
+    for user in remaining:
+        debug(f"triager {user}: not active")
     return active
 
 def check_approver_activity(usernames, repos, cutoff):
@@ -263,54 +415,35 @@ def check_approver_activity(usernames, repos, cutoff):
         if not remaining:
             break
 
-        remaining_list = list(remaining)
-        batch_size = 10
-        for i in range(0, len(remaining_list), batch_size):
-            batch_users = [u for u in remaining_list[i : i + batch_size] if u in remaining]
-            if not batch_users:
-                continue
+        # 1. Check PR comments via REST (avoids updated:>= false positives)
+        found_pr = _check_comments_rest(remaining, repo, cutoff, comment_type="pr")
+        for user, numbers in found_pr.items():
+            debug(f"approver {user} active on {repo}: PR comments{_fmt_numbers(numbers)}")
+            active.add(user)
+            remaining.discard(user)
+        if not remaining:
+            return active
 
-            aliases = []
-            for user in batch_users:
-                safe = "u_" + re.sub(r"[^a-zA-Z0-9]", "_", user)
-                pr_comment_q = f'type:pr repo:{ORG}/{repo} commenter:{user} updated:>={cutoff}'
-                review_q = f'type:pr repo:{ORG}/{repo} reviewed-by:{user} updated:>={cutoff}'
-                issue_comment_q = f'type:issue repo:{ORG}/{repo} commenter:{user} updated:>={cutoff}'
-                aliases.append(
-                    f'{safe}_pr_comments: search(query: "{pr_comment_q}", type: ISSUE, first: 1) {{ issueCount }}'
-                )
-                aliases.append(
-                    f'{safe}_reviews: search(query: "{review_q}", type: ISSUE, first: 1) {{ issueCount }}'
-                )
-                aliases.append(
-                    f'{safe}_issue_comments: search(query: "{issue_comment_q}", type: ISSUE, first: 1) {{ issueCount }}'
-                )
+        # 2. Check issue comments via REST
+        found_issue = _check_comments_rest(remaining, repo, cutoff, comment_type="issue")
+        for user, numbers in found_issue.items():
+            debug(f"approver {user} active on {repo}: issue comments{_fmt_numbers(numbers)}")
+            active.add(user)
+            remaining.discard(user)
+        if not remaining:
+            return active
 
-            query = "query { " + "\n".join(aliases) + " }"
-            resp = request_with_retry("POST", GRAPHQL_API, data={"query": query})
-            data = read_json(resp)
-            if "errors" in data:
-                print(f"GraphQL errors: {data['errors']}", file=sys.stderr)
-                sys.exit(1)
+        # 3. Check PR reviews via REST
+        found_reviews = _check_reviews_rest(remaining, repo, cutoff)
+        for user, numbers in found_reviews.items():
+            debug(f"approver {user} active on {repo}: PR reviews{_fmt_numbers(numbers)}")
+            active.add(user)
+            remaining.discard(user)
+        if not remaining:
+            return active
 
-            for user in batch_users:
-                safe = "u_" + re.sub(r"[^a-zA-Z0-9]", "_", user)
-                pr_comments = (data["data"].get(f"{safe}_pr_comments") or {}).get(
-                    "issueCount", 0
-                )
-                reviews = (data["data"].get(f"{safe}_reviews") or {}).get(
-                    "issueCount", 0
-                )
-                issue_comments = (data["data"].get(f"{safe}_issue_comments") or {}).get(
-                    "issueCount", 0
-                )
-                if pr_comments > 0 or reviews > 0 or issue_comments > 0:
-                    active.add(user)
-                    remaining.discard(user)
-
-            if not remaining:
-                return active
-
+    for user in remaining:
+        debug(f"approver {user}: not active")
     return active
 
 
@@ -337,6 +470,34 @@ def check_maintainer_activity(usernames, repos, cutoff):
         if not remaining:
             break
 
+        # 1. Check PR comments via REST (avoids updated:>= false positives)
+        found_pr = _check_comments_rest(remaining, repo, cutoff, comment_type="pr")
+        for user, numbers in found_pr.items():
+            debug(f"maintainer {user} active on {repo}: PR comments{_fmt_numbers(numbers)}")
+            active.add(user)
+            remaining.discard(user)
+        if not remaining:
+            return active
+
+        # 2. Check issue comments via REST
+        found_issue = _check_comments_rest(remaining, repo, cutoff, comment_type="issue")
+        for user, numbers in found_issue.items():
+            debug(f"maintainer {user} active on {repo}: issue comments{_fmt_numbers(numbers)}")
+            active.add(user)
+            remaining.discard(user)
+        if not remaining:
+            return active
+
+        # 3. Check PR reviews via REST
+        found_reviews = _check_reviews_rest(remaining, repo, cutoff)
+        for user, numbers in found_reviews.items():
+            debug(f"maintainer {user} active on {repo}: PR reviews{_fmt_numbers(numbers)}")
+            active.add(user)
+            remaining.discard(user)
+        if not remaining:
+            return active
+
+        # 4. Check authored PRs via GraphQL (author + created:>= is accurate)
         remaining_list = list(remaining)
         batch_size = 10
         for i in range(0, len(remaining_list), batch_size):
@@ -347,21 +508,10 @@ def check_maintainer_activity(usernames, repos, cutoff):
             aliases = []
             for user in batch_users:
                 safe = "u_" + re.sub(r"[^a-zA-Z0-9]", "_", user)
-                review_q = f'type:pr repo:{ORG}/{repo} reviewed-by:{user} updated:>={cutoff}'
-                comment_q = f'type:pr repo:{ORG}/{repo} commenter:{user} updated:>={cutoff}'
                 author_q = f'type:pr repo:{ORG}/{repo} author:{user} created:>={cutoff}'
-                issue_comment_q = f'type:issue repo:{ORG}/{repo} commenter:{user} updated:>={cutoff}'
+                fields = _search_fields()
                 aliases.append(
-                    f'{safe}_reviews: search(query: "{review_q}", type: ISSUE, first: 1) {{ issueCount }}'
-                )
-                aliases.append(
-                    f'{safe}_pr_comments: search(query: "{comment_q}", type: ISSUE, first: 1) {{ issueCount }}'
-                )
-                aliases.append(
-                    f'{safe}_authored: search(query: "{author_q}", type: ISSUE, first: 1) {{ issueCount }}'
-                )
-                aliases.append(
-                    f'{safe}_issue_comments: search(query: "{issue_comment_q}", type: ISSUE, first: 1) {{ issueCount }}'
+                    f'{safe}_authored: search(query: "{author_q}", type: ISSUE, first: 1) {{ {fields} }}'
                 )
 
             query = "query { " + "\n".join(aliases) + " }"
@@ -373,35 +523,29 @@ def check_maintainer_activity(usernames, repos, cutoff):
 
             for user in batch_users:
                 safe = "u_" + re.sub(r"[^a-zA-Z0-9]", "_", user)
-                reviews = (data["data"].get(f"{safe}_reviews") or {}).get(
-                    "issueCount", 0
-                )
-                pr_comments = (data["data"].get(f"{safe}_pr_comments") or {}).get(
-                    "issueCount", 0
-                )
-                authored = (data["data"].get(f"{safe}_authored") or {}).get(
-                    "issueCount", 0
-                )
-                issue_comments = (data["data"].get(f"{safe}_issue_comments") or {}).get(
-                    "issueCount", 0
-                )
-                if reviews > 0 or pr_comments > 0 or authored > 0 or issue_comments > 0:
+                authored_result = data["data"].get(f"{safe}_authored") or {}
+                authored = authored_result.get("issueCount", 0)
+                if authored > 0:
+                    debug(f"maintainer {user} active on {repo}: authored PRs ({authored}){_fmt_numbers(_extract_numbers(authored_result))}")
                     active.add(user)
                     remaining.discard(user)
 
             if not remaining:
                 return active
 
-        # Check who merged PRs via issue events (actor = person who clicked merge)
+        # 5. Check who merged PRs via issue events (actor = person who clicked merge)
         if remaining:
             events = fetch_repo_issue_events(repo, cutoff, event_types={"merged"})
-            for actor, _ in events:
+            for actor, _, issue_num in events:
                 if actor in remaining:
+                    debug(f"maintainer {actor} active on {repo}: merged PR #{issue_num}")
                     active.add(actor)
                     remaining.discard(actor)
                     if not remaining:
                         break
 
+    for user in remaining:
+        debug(f"maintainer {user}: not active")
     return active
 
 
@@ -425,6 +569,13 @@ ROLES = [
 
 
 def main():
+    global DEBUG
+    parser = argparse.ArgumentParser(description="Check for inactive org members")
+    parser.add_argument("--debug", action="store_true",
+                        help="Print why each member was marked as active")
+    args = parser.parse_args()
+    DEBUG = args.debug
+
     cutoff = get_cutoff_date()
     print(f"Checking for inactivity since {cutoff} ...\n")
 
