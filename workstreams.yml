@@ -46,6 +46,7 @@
   - repository: open-telemetry/opentelemetry-specification
   - repository: open-telemetry/opentelemetry-proto
   - repository: open-telemetry/build-tools
+  - repository: open-telemetry/opentelemetry-configuration
 - id: sampling
   kind: sig
   sigCategory: specification
@@ -550,7 +551,7 @@
 - id: go
   kind: sig
   sigCategory: implementation
-  name: 'GoLang: SDK'
+  name: 'Go: SDK'
   parent: none
   people:
   - gcLiaison: maryliag
@@ -574,7 +575,7 @@
 - id: go-auto-instr
   kind: sig
   sigCategory: implementation
-  name: 'GoLang: Automatic Instrumentation'
+  name: 'Go: Automatic Instrumentation'
   parent: none
   people:
   - gcLiaison: jpkrohling
@@ -593,7 +594,7 @@
 - id: go-compile-instr
   kind: sig
   sigCategory: implementation
-  name: 'GoLang: Compile-Time Instrumentation'
+  name: 'Go: Compile-Time Instrumentation'
   parent: none
   people:
   - gcLiaison: jpkrohling
