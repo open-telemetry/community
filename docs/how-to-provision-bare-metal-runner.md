@@ -34,6 +34,40 @@ Oracle Cloud Infrastructure (OCI).
 
 ## Step 2: Set up the instance
 
+### Increase the boot volume
+
+The default boot volume (46.6 GB) is not large enough for runner workloads.
+Increase it to at least 256 GB:
+
+1. In the [Oracle Cloud Console](https://www.oracle.com/cloud/sign-in.html),
+   navigate to the instance details page
+2. Under **Resources** (left sidebar), click **Boot volume**
+3. Click the boot volume name
+4. Click **Edit**
+5. Increase **Volume Size (in GB)** to **256** (or larger) and click
+   **Save Changes**
+6. SSH into the instance and run a rescan so the OS sees the new size:
+
+   ```bash
+   sudo dd iflag=direct if=/dev/oracleoci/oraclevda of=/dev/null count=1
+   echo "1" | sudo tee /sys/block/sda/device/rescan
+   ```
+
+7. Extend the partition and filesystem:
+
+   ```bash
+   sudo growpart /dev/sda 1
+   sudo resize2fs /dev/sda1
+   ```
+
+8. Verify the new size:
+
+   ```bash
+   df -h /
+   ```
+
+### Install required software
+
 SSH into the instance and install required software:
 
 ```bash

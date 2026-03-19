@@ -53,9 +53,11 @@ words:
   - Francesco
   - gitter
   - grafana
+  - growpart
   - Hendrik
   - Hostmetrics
   - hostmetricsreceiver
+  - iflag
   - Instrgen
   - jemmic
   - Joaquín
@@ -79,6 +81,8 @@ words:
   - observiq
   - opentelemetry
   - opentelemetrybot
+  - oracleoci
+  - oraclevda
   - otel
   - otel-localization-ptbr
   - otel-localization-zhcn
@@ -89,6 +93,7 @@ words:
   - proto
   - Purvi
   - pytest
+  - rescan
   - isovalent
   - labs
   - Liudmila
