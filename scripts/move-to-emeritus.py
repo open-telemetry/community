@@ -153,54 +153,21 @@ def get_team_repos(team_slug, cutoff):
         and r.get("created_at", "")[:10] <= cutoff
     ]
 
-def fetch_repo_issue_events(repo, cutoff, event_types=None):
-    """Fetch issue events from a repo since cutoff.
+# ---------------------------------------------------------------------------
+# Cached per-repo data (fetched once, reused across all role checks)
+# ---------------------------------------------------------------------------
+_repo_comments_cache = {}   # repo -> {user: {"pr": [numbers], "issue": [numbers]}}
+_repo_events_cache = {}     # repo -> [(actor, event_type, issue_number), ...]
 
-    Returns a list of (actor_login, event_type, issue_number) tuples.
-    Stops paginating once events are older than the cutoff date.
+def _get_repo_commenters(repo, cutoff):
+    """Fetch and cache all commenters on a repo since cutoff.
+
+    Returns dict: {username: {"pr": [numbers], "issue": [numbers]}}
     """
-    results = []
-    url = f"{REST_API}/repos/{ORG}/{repo}/issues/events"
-    params = {"per_page": 100}
-    query_string = urllib.parse.urlencode(params)
-    url = f"{url}?{query_string}"
+    if repo in _repo_comments_cache:
+        return _repo_comments_cache[repo]
 
-    relevant_events = event_types or {"labeled", "unlabeled", "closed"}
-
-    while url:
-        resp = request_with_retry("GET", url)
-        events = read_json(resp)
-
-        for event in events:
-            created = event.get("created_at", "")[:10]
-            if created < cutoff:
-                # Events are returned newest-first; stop once we pass cutoff
-                return results
-            if event.get("event") in relevant_events:
-                actor = (event.get("actor") or {}).get("login", "")
-                issue_number = (event.get("issue") or {}).get("number", "")
-                if actor:
-                    results.append((actor, event["event"], issue_number))
-
-        link = resp.headers.get("Link", "")
-        next_url = None
-        for part in link.split(","):
-            if 'rel="next"' in part:
-                next_url = part.split("<")[1].split(">")[0]
-        url = next_url
-
-    return results
-
-def _check_comments_rest(remaining, repo, cutoff, comment_type=None):
-    """Check for comment activity via REST API. Returns dict of {username: [issue_numbers]}.
-
-    Uses the issues/comments endpoint with since= parameter, then verifies
-    that the comment's created_at is actually within the cutoff period.
-
-    comment_type: None = all, "pr" = only PR comments, "issue" = only issue comments.
-    """
-    active = {}
-    target_users = set(remaining)
+    commenters = {}
     url = f"{REST_API}/repos/{ORG}/{repo}/issues/comments"
     params = {"since": f"{cutoff}T00:00:00Z", "per_page": 100, "sort": "created", "direction": "desc"}
     query_string = urllib.parse.urlencode(params)
@@ -213,31 +180,23 @@ def _check_comments_rest(remaining, repo, cutoff, comment_type=None):
         for comment in comments:
             created = comment.get("created_at", "")[:10]
             if created < cutoff:
-                # Comments are sorted newest-first; stop once we pass cutoff
-                return active
+                _repo_comments_cache[repo] = commenters
+                return commenters
 
             user = (comment.get("user") or {}).get("login", "")
-            if user not in target_users:
+            if not user:
                 continue
 
-            # Filter by comment type if requested
             html_url = comment.get("html_url", "")
             is_pr = "/pull/" in html_url
-            if comment_type == "pr" and not is_pr:
-                continue
-            if comment_type == "issue" and is_pr:
-                continue
+            kind = "pr" if is_pr else "issue"
 
-            # Extract issue/PR number from the issue_url
             issue_url = comment.get("issue_url", "")
-            number = issue_url.rstrip("/").split("/")[-1] if issue_url else ""
+            number = int(issue_url.rstrip("/").split("/")[-1]) if issue_url else 0
 
-            active.setdefault(user, [])
-            if number and number not in [str(n) for n in active[user]]:
-                active[user].append(int(number))
-            target_users.discard(user)
-            if not target_users:
-                return active
+            commenters.setdefault(user, {"pr": [], "issue": []})
+            if number and number not in commenters[user][kind]:
+                commenters[user][kind].append(number)
 
         link = resp.headers.get("Link", "")
         next_url = None
@@ -246,104 +205,147 @@ def _check_comments_rest(remaining, repo, cutoff, comment_type=None):
                 next_url = part.split("<")[1].split(">")[0]
         url = next_url
 
-    return active
+    _repo_comments_cache[repo] = commenters
+    return commenters
 
 
-def _check_reviews_rest(remaining, repo, cutoff):
-    """Check for PR review activity via REST API. Returns dict of {username: [pr_numbers]}.
+def _get_repo_events(repo, cutoff):
+    """Fetch and cache all issue events for a repo since cutoff.
 
-    Uses the pulls/comments endpoint (review comments) with since= parameter,
-    then verifies that the comment's created_at is actually within the cutoff period.
-    Also checks the pulls/{number}/reviews endpoint for approval/request-changes reviews.
+    Returns list of (actor, event_type, issue_number) tuples.
     """
-    active = {}
-    target_users = set(remaining)
+    if repo in _repo_events_cache:
+        return _repo_events_cache[repo]
 
-    # 1. Check review comments (inline code comments on PRs)
-    url = f"{REST_API}/repos/{ORG}/{repo}/pulls/comments"
-    params = {"since": f"{cutoff}T00:00:00Z", "per_page": 100, "sort": "created", "direction": "desc"}
+    results = []
+    url = f"{REST_API}/repos/{ORG}/{repo}/issues/events"
+    params = {"per_page": 100}
     query_string = urllib.parse.urlencode(params)
     url = f"{url}?{query_string}"
 
     while url:
         resp = request_with_retry("GET", url)
-        comments = read_json(resp)
+        events = read_json(resp)
 
-        for comment in comments:
-            created = comment.get("created_at", "")[:10]
+        for event in events:
+            created = event.get("created_at", "")[:10]
             if created < cutoff:
-                break
-
-            user = (comment.get("user") or {}).get("login", "")
-            if user not in target_users:
-                continue
-
-            pr_url = comment.get("pull_request_url", "")
-            number = int(pr_url.rstrip("/").split("/")[-1]) if pr_url else 0
-
-            active.setdefault(user, [])
-            if number and number not in active[user]:
-                active[user].append(number)
-            target_users.discard(user)
-            if not target_users:
-                return active
-        else:
-            # Only follow pagination if we didn't break (all comments still within cutoff)
-            link = resp.headers.get("Link", "")
-            next_url = None
-            for part in link.split(","):
-                if 'rel="next"' in part:
-                    next_url = part.split("<")[1].split(">")[0]
-            url = next_url
-            continue
-        # Broke out of inner loop (hit cutoff), stop paginating
-        break
-
-    if not target_users:
-        return active
-
-    # 2. Check recent PRs for approval/changes-requested reviews
-    #    List recently updated PRs, then check their reviews for target users
-    pr_url = f"{REST_API}/repos/{ORG}/{repo}/pulls"
-    params = {"state": "all", "sort": "updated", "direction": "desc", "per_page": 100}
-    query_string = urllib.parse.urlencode(params)
-    pr_url = f"{pr_url}?{query_string}"
-
-    while pr_url:
-        resp = request_with_retry("GET", pr_url)
-        prs = read_json(resp)
-
-        for pr in prs:
-            updated = pr.get("updated_at", "")[:10]
-            if updated < cutoff:
-                return active
-
-            pr_number = pr.get("number", 0)
-            reviews_url = f"{REST_API}/repos/{ORG}/{repo}/pulls/{pr_number}/reviews"
-            rev_resp = request_with_retry("GET", reviews_url)
-            reviews = read_json(rev_resp)
-
-            for review in reviews:
-                submitted = review.get("submitted_at", "")[:10]
-                if submitted < cutoff:
-                    continue
-                reviewer = (review.get("user") or {}).get("login", "")
-                if reviewer not in target_users:
-                    continue
-
-                active.setdefault(reviewer, [])
-                if pr_number not in active[reviewer]:
-                    active[reviewer].append(pr_number)
-                target_users.discard(reviewer)
-                if not target_users:
-                    return active
+                _repo_events_cache[repo] = results
+                return results
+            actor = (event.get("actor") or {}).get("login", "")
+            issue_number = (event.get("issue") or {}).get("number", "")
+            if actor:
+                results.append((actor, event.get("event", ""), issue_number))
 
         link = resp.headers.get("Link", "")
         next_url = None
         for part in link.split(","):
             if 'rel="next"' in part:
                 next_url = part.split("<")[1].split(">")[0]
-        pr_url = next_url
+        url = next_url
+
+    _repo_events_cache[repo] = results
+    return results
+
+
+def _check_comments(remaining, repo, cutoff, comment_type=None):
+    """Check for comment activity using cached repo data. Returns dict of {username: [numbers]}.
+
+    comment_type: None = all, "pr" = only PR comments, "issue" = only issue comments.
+    """
+    commenters = _get_repo_commenters(repo, cutoff)
+    active = {}
+    for user in remaining:
+        if user not in commenters:
+            continue
+        data = commenters[user]
+        if comment_type == "pr":
+            numbers = data["pr"]
+        elif comment_type == "issue":
+            numbers = data["issue"]
+        else:
+            numbers = data["pr"] + data["issue"]
+        if numbers:
+            active[user] = numbers
+    return active
+
+
+def _check_events(remaining, repo, cutoff, event_types):
+    """Check for issue event activity using cached repo data.
+
+    Returns dict of {username: [(event_type, issue_number), ...]}.
+    """
+    all_events = _get_repo_events(repo, cutoff)
+    active = {}
+    found = set()
+    for actor, event_type, issue_number in all_events:
+        if actor in remaining and actor not in found and event_type in event_types:
+            active.setdefault(actor, [])
+            active[actor].append((event_type, issue_number))
+            found.add(actor)
+    return active
+
+
+def _check_reviews(remaining, repo, cutoff):
+    """Check for PR review activity. Returns dict of {username: [pr_numbers]}.
+
+    Uses GraphQL to find candidate PRs (reviewed-by + updated:>=), then
+    verifies actual review dates via REST on only those specific PRs.
+    """
+    if not remaining:
+        return {}
+
+    active = {}
+    remaining_set = set(remaining)
+    remaining_list = list(remaining_set)
+    batch_size = 10
+
+    for i in range(0, len(remaining_list), batch_size):
+        batch_users = [u for u in remaining_list[i : i + batch_size] if u in remaining_set]
+        if not batch_users:
+            continue
+
+        # GraphQL: find candidate PRs per user
+        aliases = []
+        for user in batch_users:
+            safe = "u_" + re.sub(r"[^a-zA-Z0-9]", "_", user)
+            review_q = f'type:pr repo:{ORG}/{repo} reviewed-by:{user} updated:>={cutoff}'
+            aliases.append(
+                f'{safe}_reviews: search(query: "{review_q}", type: ISSUE, first: 5) '
+                f'{{ nodes {{ ... on PullRequest {{ number }} }} }}'
+            )
+
+        query = "query { " + "\n".join(aliases) + " }"
+        resp = request_with_retry("POST", GRAPHQL_API, data={"query": query})
+        data = read_json(resp)
+        if "errors" in data:
+            print(f"GraphQL errors: {data['errors']}", file=sys.stderr)
+            sys.exit(1)
+
+        # For each user with candidates, verify review dates via REST
+        for user in batch_users:
+            if user not in remaining_set:
+                continue
+            safe = "u_" + re.sub(r"[^a-zA-Z0-9]", "_", user)
+            result = data["data"].get(f"{safe}_reviews") or {}
+            candidate_prs = [n["number"] for n in result.get("nodes", []) if "number" in n]
+
+            for pr_number in candidate_prs:
+                reviews_url = f"{REST_API}/repos/{ORG}/{repo}/pulls/{pr_number}/reviews"
+                rev_resp = request_with_retry("GET", reviews_url)
+                reviews = read_json(rev_resp)
+
+                for review in reviews:
+                    submitted = review.get("submitted_at", "")[:10]
+                    reviewer = (review.get("user") or {}).get("login", "")
+                    if reviewer == user and submitted >= cutoff:
+                        active.setdefault(user, [])
+                        if pr_number not in active[user]:
+                            active[user].append(pr_number)
+                        remaining_set.discard(user)
+                        break
+                if user not in remaining_set:
+                    break
 
     return active
 
@@ -371,7 +373,7 @@ def check_triager_activity(usernames, repos, cutoff):
             break
 
         # 1. Check comments via REST API
-        found = _check_comments_rest(remaining, repo, cutoff)
+        found = _check_comments(remaining, repo, cutoff)
         for user, numbers in found.items():
             debug(f"triager {user} active on {repo}: commented on issue/PR{_fmt_numbers(numbers)}")
         active.update(found.keys())
@@ -379,15 +381,13 @@ def check_triager_activity(usernames, repos, cutoff):
         if not remaining:
             return active
 
-        # 2. Check label changes and issue closes via REST issue events
-        events = fetch_repo_issue_events(repo, cutoff)
-        for actor, event_type, issue_num in events:
-            if actor in remaining:
-                debug(f"triager {actor} active on {repo}: {event_type} event #{issue_num}")
-                active.add(actor)
-                remaining.discard(actor)
-                if not remaining:
-                    break
+        # 2. Check label changes and issue closes via cached issue events
+        found_events = _check_events(remaining, repo, cutoff, {"labeled", "unlabeled", "closed"})
+        for actor, event_list in found_events.items():
+            event_type, issue_num = event_list[0]
+            debug(f"triager {actor} active on {repo}: {event_type} event #{issue_num}")
+            active.add(actor)
+            remaining.discard(actor)
 
     for user in remaining:
         debug(f"triager {user}: not active")
@@ -416,7 +416,7 @@ def check_approver_activity(usernames, repos, cutoff):
             break
 
         # 1. Check PR comments via REST (avoids updated:>= false positives)
-        found_pr = _check_comments_rest(remaining, repo, cutoff, comment_type="pr")
+        found_pr = _check_comments(remaining, repo, cutoff, comment_type="pr")
         for user, numbers in found_pr.items():
             debug(f"approver {user} active on {repo}: PR comments{_fmt_numbers(numbers)}")
             active.add(user)
@@ -425,7 +425,7 @@ def check_approver_activity(usernames, repos, cutoff):
             return active
 
         # 2. Check issue comments via REST
-        found_issue = _check_comments_rest(remaining, repo, cutoff, comment_type="issue")
+        found_issue = _check_comments(remaining, repo, cutoff, comment_type="issue")
         for user, numbers in found_issue.items():
             debug(f"approver {user} active on {repo}: issue comments{_fmt_numbers(numbers)}")
             active.add(user)
@@ -434,7 +434,7 @@ def check_approver_activity(usernames, repos, cutoff):
             return active
 
         # 3. Check PR reviews via REST
-        found_reviews = _check_reviews_rest(remaining, repo, cutoff)
+        found_reviews = _check_reviews(remaining, repo, cutoff)
         for user, numbers in found_reviews.items():
             debug(f"approver {user} active on {repo}: PR reviews{_fmt_numbers(numbers)}")
             active.add(user)
@@ -471,7 +471,7 @@ def check_maintainer_activity(usernames, repos, cutoff):
             break
 
         # 1. Check PR comments via REST (avoids updated:>= false positives)
-        found_pr = _check_comments_rest(remaining, repo, cutoff, comment_type="pr")
+        found_pr = _check_comments(remaining, repo, cutoff, comment_type="pr")
         for user, numbers in found_pr.items():
             debug(f"maintainer {user} active on {repo}: PR comments{_fmt_numbers(numbers)}")
             active.add(user)
@@ -480,7 +480,7 @@ def check_maintainer_activity(usernames, repos, cutoff):
             return active
 
         # 2. Check issue comments via REST
-        found_issue = _check_comments_rest(remaining, repo, cutoff, comment_type="issue")
+        found_issue = _check_comments(remaining, repo, cutoff, comment_type="issue")
         for user, numbers in found_issue.items():
             debug(f"maintainer {user} active on {repo}: issue comments{_fmt_numbers(numbers)}")
             active.add(user)
@@ -489,7 +489,7 @@ def check_maintainer_activity(usernames, repos, cutoff):
             return active
 
         # 3. Check PR reviews via REST
-        found_reviews = _check_reviews_rest(remaining, repo, cutoff)
+        found_reviews = _check_reviews(remaining, repo, cutoff)
         for user, numbers in found_reviews.items():
             debug(f"maintainer {user} active on {repo}: PR reviews{_fmt_numbers(numbers)}")
             active.add(user)
@@ -533,16 +533,14 @@ def check_maintainer_activity(usernames, repos, cutoff):
             if not remaining:
                 return active
 
-        # 5. Check who merged PRs via issue events (actor = person who clicked merge)
+        # 5. Check who merged PRs via cached issue events
         if remaining:
-            events = fetch_repo_issue_events(repo, cutoff, event_types={"merged"})
-            for actor, _, issue_num in events:
-                if actor in remaining:
-                    debug(f"maintainer {actor} active on {repo}: merged PR #{issue_num}")
-                    active.add(actor)
-                    remaining.discard(actor)
-                    if not remaining:
-                        break
+            found_merged = _check_events(remaining, repo, cutoff, {"merged"})
+            for actor, event_list in found_merged.items():
+                _, issue_num = event_list[0]
+                debug(f"maintainer {actor} active on {repo}: merged PR #{issue_num}")
+                active.add(actor)
+                remaining.discard(actor)
 
     for user in remaining:
         debug(f"maintainer {user}: not active")
