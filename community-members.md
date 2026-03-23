@@ -116,6 +116,12 @@ Repo: [open-telemetry/opentelemetry-go-instrumentation](https://github.com/open-
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Go auto-instrumentation can be found in the [open-telemetry/opentelemetry-go-instrumentation CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-go-instrumentation/blob/main/CONTRIBUTING.md#appovers-and-maintainers).
 
+### Golang Compile Time Instrumentation
+
+Repo: [open-telemetry/opentelemetry-go-compile-instrumentation](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation)
+
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Go compile time instrumentation can be found in the [open-telemetry/opentelemetry-go-compile-instrumentation CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation/blob/main/CONTRIBUTING.md#approvers-and-maintainers).
+
 ## JavaScript
 
 Repo: [open-telemetry/opentelemetry-js](https://github.com/open-telemetry/opentelemetry-js)
