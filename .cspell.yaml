@@ -77,8 +77,10 @@ words:
   - Lukasz
   - maintainership
   - Makefiles
+  - NUMA
   - Marylia
   - observiq
+  - OCPUs
   - opentelemetry
   - opentelemetrybot
   - oracleoci
