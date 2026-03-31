@@ -1,0 +1,67 @@
+name: Move inactive members to Emeritus
+
+on:
+  workflow_dispatch:
+  schedule:
+    # At 05:00, every Monday
+    - cron: 0 5 1 * *
+
+permissions:
+  contents: read
+
+jobs:
+  move-to-emeritus:
+    name: Move inactive members to emeritus
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2.2.1
+        id: otelbot-token
+        with:
+          app-id: ${{ vars.OTELBOT_DOCS_APP_ID }}
+          private-key: ${{ secrets.OTELBOT_DOCS_PRIVATE_KEY }}
+
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        with:
+          repository: owner/other-repo
+          token: ${{ secrets.CROSS_REPO_PAT }}
+          path: other-repo
+
+      - name: Run script
+        id: emeritus
+        run: |
+          output=$(node scripts/move-to-emeritus/move-to-emeritus.js)
+          echo "$output"
+          pr_body_path=$(echo "$output" | grep '^pr-body-path=' | cut -d= -f2-)
+          echo "pr-body-path=$pr_body_path" >> "$GITHUB_OUTPUT"
+        env:
+          GITHUB_TOKEN: ${{ steps.otelbot-token.outputs.token }}
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet README.md; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Use CLA approved github bot
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name otelbot
+          git config user.email 197425009+otelbot@users.noreply.github.com
+
+      # update cd other-repo to the correct path
+      - name: Create/Update Move to Emeritus PR
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          cd other-repo 
+          git checkout -b otelbot/move-inactive-to-emeritus
+          git add README.md
+          git commit -m "chore: move inactive members to emeritus"
+          git push --set-upstream origin otelbot/move-inactive-to-emeritus --force
+          gh pr create --repo owner/other-repo --title 'chore: move inactive members to emeritus' --body-file ./.tmp/emeritus-pr-body.md || gh pr edit otelbot/move-inactive-to-emeritus --body-file ./.tmp/emeritus-pr-body.md
+        env:
+          GITHUB_TOKEN: ${{ steps.otelbot-token.outputs.token }}
+
