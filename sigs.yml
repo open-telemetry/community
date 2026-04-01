@@ -772,8 +772,8 @@
     invites: calendar-demo-app
     sponsors: []
     gcLiaison:
-    - name: 'Austin Parker'
-      github: austinlparker
+    - name: Marylia Gutierrez
+      github: maryliag
     repositories:
       - https://github.com/open-telemetry/opentelemetry-demo
   - name: 'Semantic Conventions: Tooling'
