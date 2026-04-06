@@ -92,7 +92,7 @@ This effort will be hosted in the existing Collector SIG.
 Sponsors for this effort are:
 
 * [@dmitryax](https://github.com/dmitryax) (Splunk)
-* [@codeboten](https://github.com/codeboten) (OHoneycomb)
+* [@codeboten](https://github.com/codeboten) (Honeycomb)
 
 ### Required staffing
 
