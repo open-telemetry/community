@@ -173,6 +173,7 @@ def get_team_repos(team_slug, cutoff):
 # ---------------------------------------------------------------------------
 _repo_comments_cache = {}   # repo -> {user: {"pr": [numbers], "issue": [numbers]}}
 _repo_events_cache = {}     # repo -> [(actor, event_type, issue_number), ...]
+_user_display_names = {}    # username -> display name (from GitHub API)
 
 def _get_repo_commenters(repo, cutoff):
     """Fetch and cache all commenters on a repo since cutoff.
@@ -752,8 +753,30 @@ def _add_to_emeritus(readme, emeritus_title, member_entry, header_level=3):
     return readme + new_section
 
 
+def _get_display_name(username):
+    """Fetch and cache a user's display name from the GitHub API.
+
+    Returns the display name, or None if not available.
+    """
+    if username in _user_display_names:
+        return _user_display_names[username]
+
+    try:
+        url = f"{REST_API}/users/{username}"
+        resp = request_with_retry("GET", url)
+        data = read_json(resp)
+        name = data.get("name") or None
+        _user_display_names[username] = name
+        return name
+    except Exception:
+        _user_display_names[username] = None
+        return None
+
+
 def _to_emeritus_entry(username, role_label, display_name=None):
     """Create an emeritus entry line with previous role."""
+    if not display_name:
+        display_name = _get_display_name(username)
     name = display_name or f"@{username}"
     return f"- [{name}](https://github.com/{username}), {role_label}"
 
@@ -851,7 +874,7 @@ def _build_pr_body(repo, changes, cutoff, warning=None):
 
     for user, role_label, teams in sorted(changes):
         teams_str = ", ".join(teams)
-        body += f"- @{user} ({role_label}, team(s): {teams_str})\n"
+        body += f"- @{user} ({role_label}, Remove from team(s): {teams_str})\n"
     body += "\n"
 
     body += (
