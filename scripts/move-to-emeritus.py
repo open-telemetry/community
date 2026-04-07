@@ -1,3 +1,15 @@
+# Usage:
+#     # Check all repos and print report
+#     python move-to-emeritus.py
+#    
+#     # Check only a specific repo
+#     python move-to-emeritus.py --repo opentelemetry-collector
+#    
+#     # Create PRs to move inactive members to emeritus (after verifying the report)
+#     python move-to-emeritus.py --create-prs
+#
+# Note: the script can be safely re-run multiple times. If a PR already exists for a repo, its body will be updated with the latest info.
+#
 #!/usr/bin/env python3
 import argparse
 import base64
@@ -688,21 +700,36 @@ def _add_to_emeritus(readme, emeritus_title, member_entry, header_level=3):
             return readme
 
         lines = section_text.split("\n")
-        last_member_idx = -1
+
+        # Separate member lines from non-member lines
+        member_lines = [l for l in lines if l.startswith("- [")]
+        member_lines.append(member_entry)
+
+        # Sort alphabetically by display name (text inside [...])
+        def _sort_key(line):
+            m = re.match(r'^- \[([^\]]+)\]', line)
+            return m.group(1).lower() if m else line.lower()
+        member_lines.sort(key=_sort_key)
+
+        # Rebuild: header + blank lines, then sorted members, then trailing content
+        first_member_idx = None
+        last_member_idx = None
         for i, line in enumerate(lines):
             if line.startswith("- ["):
+                if first_member_idx is None:
+                    first_member_idx = i
                 last_member_idx = i
 
-        if last_member_idx >= 0:
-            lines.insert(last_member_idx + 1, member_entry)
+        if first_member_idx is not None:
+            new_lines = lines[:first_member_idx] + member_lines + lines[last_member_idx + 1:]
         else:
             # No members yet — insert after header + blank line
             insert_idx = 1
             while insert_idx < len(lines) and lines[insert_idx].strip() == "":
                 insert_idx += 1
-            lines.insert(insert_idx, member_entry)
+            new_lines = lines[:insert_idx] + member_lines + lines[insert_idx:]
 
-        new_section = "\n".join(lines)
+        new_section = "\n".join(new_lines)
         return readme[:start] + new_section + readme[end:]
 
     # Section doesn't exist — create it
@@ -820,8 +847,9 @@ def _build_pr_body(repo, changes, cutoff, warning=None):
         f"since **{cutoff}** and are being moved to emeritus:\n\n"
     )
 
-    for user, role_label in sorted(changes):
-        body += f"- @{user}, {role_label}\n"
+    for user, role_label, teams in sorted(changes):
+        teams_str = ", ".join(teams)
+        body += f"- @{user} ({role_label}, team(s): {teams_str})\n"
     body += "\n"
 
     body += (
@@ -852,41 +880,52 @@ def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
         readme, file_sha, file_path = result
         original_readme = readme
 
-        # Deduplicate by (username, role_label)
-        seen = set()
-        unique = []
+        # Consolidate: per user, pick highest role and collect all role sections
+        role_priority = {"Triager": 0, "Approver": 1, "Maintainer": 2}
+        user_info = {}  # user -> {"role": str, "roles": set, "teams": list}
         for user, team_name, role_label in inactive_list:
-            key = (user, role_label)
-            if key not in seen:
-                seen.add(key)
-                unique.append((user, team_name, role_label))
+            if user not in user_info:
+                user_info[user] = {"role": role_label, "roles": {role_label}, "teams": [team_name]}
+            else:
+                user_info[user]["roles"].add(role_label)
+                if team_name not in user_info[user]["teams"]:
+                    user_info[user]["teams"].append(team_name)
+                if role_priority.get(role_label, -1) > role_priority.get(user_info[user]["role"], -1):
+                    user_info[user]["role"] = role_label
 
         changes = []  # (username, role_label) for PR body
         header_level = 3  # default
-        for user, _team_name, role_label in unique:
-            section_name = ROLE_SECTIONS.get(role_label)
-            if not section_name:
-                continue
-
-            # Determine display name and header level from the role section
+        for user, info in sorted(user_info.items()):
+            # Try to find display name from any role section
             display_name = None
-            section = _find_section(readme, section_name)
-            if section:
-                start, end, header_level = section
-                for m in _parse_members(readme[start:end]):
-                    if m["username"].lower() == user.lower():
-                        display_name = m["name"]
+            for role_label in info["roles"]:
+                section_name = ROLE_SECTIONS.get(role_label)
+                if not section_name:
+                    continue
+                section = _find_section(readme, section_name)
+                if section:
+                    start, end, header_level = section
+                    for m in _parse_members(readme[start:end]):
+                        if m["username"].lower() == user.lower():
+                            display_name = m["name"]
+                            break
+                    if display_name:
                         break
 
-            # Remove from role section (if present)
-            modified = _remove_member_line(readme, section_name, user)
-            if modified is not None:
-                readme = modified
+            # Remove from ALL role sections the user appears in
+            for role_label in info["roles"]:
+                section_name = ROLE_SECTIONS.get(role_label)
+                if not section_name:
+                    continue
+                modified = _remove_member_line(readme, section_name, user)
+                if modified is not None:
+                    readme = modified
 
-            # Add to single Emeritus section
-            entry = _to_emeritus_entry(user, role_label, display_name)
+            # Add to single Emeritus section with highest role
+            highest_role = info["role"]
+            entry = _to_emeritus_entry(user, highest_role, display_name)
             readme = _add_to_emeritus(readme, EMERITUS_SECTION, entry, header_level)
-            changes.append((user, role_label))
+            changes.append((user, highest_role, sorted(info["teams"])))
 
         if readme == original_readme:
             print("  No README changes needed, skipping.")
@@ -924,21 +963,29 @@ def main():
                         help="Print why each member was marked as active")
     parser.add_argument("--create-prs", action="store_true",
                         help="Create PRs to move inactive members to emeritus in each repo")
+    parser.add_argument("--repo", type=str, default=None,
+                        help="Only check a specific repo (e.g. opentelemetry-python)")
     args = parser.parse_args()
     DEBUG = args.debug
 
     cutoff = get_cutoff_date()
     print(f"Checking for inactivity since {cutoff} ...\n")
 
-    # Results: repo -> list of (username, team_name, role_label)
-    inactive_report = {}
-    # Track total maintainer count per repo (across all maintainer teams)
+    role_priority = {"Triager": 0, "Approver": 1, "Maintainer": 2}
+    check_fns = {
+        "Triager": check_triager_activity,
+        "Approver": check_approver_activity,
+        "Maintainer": check_maintainer_activity,
+    }
+
+    # Phase 1: Collect all user-team-repo relationships
+    # user -> {"role": highest role, "entries": [(team_name, role_label)], "repos": set}
+    all_user_data = {}
     repo_maintainer_count = {}
 
     for role in ROLES:
         keyword = role["keyword"]
         label = role["label"]
-        check_fn = role["check_fn"]
 
         teams = get_teams_by_role(keyword)
         if not teams:
@@ -951,6 +998,10 @@ def main():
             team_name_lower = name.lower()
             members = get_team_members(slug)
             repos = get_team_repos(slug, cutoff)
+
+            # Filter to a single repo if --repo is specified
+            if args.repo:
+                repos = [r for r in repos if r == args.repo]
 
             # Filter out ignored repos
             repos = [r for r in repos if r not in IGNORED_REPOS]
@@ -978,15 +1029,58 @@ def main():
                     repo_maintainer_count.setdefault(repo, set())
                     repo_maintainer_count[repo].update(members)
 
-            active_users = check_fn(members, repos, cutoff)
-            inactive = [u for u in members if u not in active_users]
-            if inactive:
-                for repo in repos:
-                    inactive_report.setdefault(repo, [])
-                    for user in inactive:
-                        inactive_report[repo].append((user, name, label))
+            # Record user data
+            for user in members:
+                if user not in all_user_data:
+                    all_user_data[user] = {
+                        "role": label,
+                        "priority": role_priority[label],
+                        "entries": [],
+                        "repos": set(),
+                    }
+                all_user_data[user]["entries"].append((name, label))
+                all_user_data[user]["repos"].update(repos)
+                if role_priority[label] > all_user_data[user]["priority"]:
+                    all_user_data[user]["role"] = label
+                    all_user_data[user]["priority"] = role_priority[label]
 
         print()
+
+    if not all_user_data:
+        print("No users found to check.")
+        return
+
+    # Phase 2: Check activity using only the highest role's criteria
+    by_role = {}  # role_label -> [usernames]
+    for user, data in all_user_data.items():
+        by_role.setdefault(data["role"], []).append(user)
+
+    all_active = set()
+    for role_label in ["Maintainer", "Approver", "Triager"]:
+        users = by_role.get(role_label, [])
+        if not users:
+            continue
+        # Union of all repos for users in this group
+        group_repos = set()
+        for user in users:
+            group_repos.update(all_user_data[user]["repos"])
+
+        check_fn = check_fns[role_label]
+        print(f"Checking {role_label.lower()} activity for {len(users)} user(s) "
+              f"across {len(group_repos)} repo(s)...")
+        active = check_fn(users, list(group_repos), cutoff)
+        all_active.update(active)
+
+    # Phase 3: Build inactive report
+    # repo -> list of (username, team_name, role_label)
+    inactive_report = {}
+    for user, data in all_user_data.items():
+        if user in all_active:
+            continue
+        for repo in data["repos"]:
+            inactive_report.setdefault(repo, [])
+            for team_name, role_label in data["entries"]:
+                inactive_report[repo].append((user, team_name, role_label))
 
     # Print report
     if not inactive_report:
@@ -1018,18 +1112,30 @@ def main():
                 repo_warnings[repo] = f"  WARNING: {total} -> {remaining} maintainer. Repo will have only 1 maintainer! Consider adding new maintainers before merging this PR."
 
     total_inactive = 0
-    seen = set()
     for repo, inactive in sorted(inactive_report.items()):
         print(f"\n{ORG}/{repo}:")
         if repo in repo_warnings:
             print(repo_warnings[repo])
-        for user, team_name, role_label in sorted(inactive):
-            print(f"  - @{user}  ({role_label}, team: {team_name})")
-            if (user, team_name) not in seen:
-                total_inactive += 1
-                seen.add((user, team_name))
 
-    print(f"\nTotal: {total_inactive} inactive member(s) across team(s)")
+        # Consolidate: per user, pick highest role and collect all teams
+        user_info = {}  # user -> {"role": str, "teams": list}
+        for user, team_name, role_label in inactive:
+            if user not in user_info:
+                user_info[user] = {"role": role_label, "teams": [team_name]}
+            else:
+                if team_name not in user_info[user]["teams"]:
+                    user_info[user]["teams"].append(team_name)
+                if role_priority.get(role_label, -1) > role_priority.get(user_info[user]["role"], -1):
+                    user_info[user]["role"] = role_label
+
+        for user in sorted(user_info):
+            info = user_info[user]
+            teams = ", ".join(sorted(info["teams"]))
+            print(f"  - @{user}  ({info['role']}, team(s): {teams})")
+
+        total_inactive += len(user_info)
+
+    print(f"\nTotal: {total_inactive} inactive member(s) across repo(s)")
 
     # Create PRs if requested
     if args.create_prs:
