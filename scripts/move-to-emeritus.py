@@ -54,6 +54,8 @@ INACTIVITY_MONTHS = 4
 IGNORED_REPOS = {
     "community",
     "cpp-build-tools", # Low traffic and stable repo
+    "govanityurls", # Low traffic repo
+    "opentelemetry-go-build-tools", # Low traffic repo
     "opentelemetry-network", # Low traffic and stable repo
     "sig-contributor-experience", # Majority of work is done outside of github
     "sig-developer-experience", # Majority of work is done outside of github
