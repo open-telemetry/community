@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import base64
 import json
 import os
 import re
@@ -565,12 +566,364 @@ ROLES = [
     },
 ]
 
+# Mapping from role label to README section name for the active role
+ROLE_SECTIONS = {
+    "Maintainer": "Maintainers",
+    "Approver": "Approvers",
+    "Triager": "Triagers",
+}
+
+EMERITUS_SECTION = "Emeritus"
+
+BRANCH_NAME = "otelbot/move-inactive-to-emeritus"
+
+EMERITUS_INFO = (
+    "For more information about the emeritus role, see the\n"
+    "[community repository]"
+    "(https://github.com/open-telemetry/community/blob/main/guides/contributor/"
+    "membership.md#emeritus-maintainerapprovertriager)."
+)
+
+
+# ---------------------------------------------------------------------------
+# README parsing and modification
+# ---------------------------------------------------------------------------
+
+def fetch_readme(repo):
+    """Fetch README.md from a repo via the Contents API.
+
+    Returns (content_string, sha, path) or None if not found.
+    """
+    url = f"{REST_API}/repos/{ORG}/{repo}/readme"
+    try:
+        resp = request_with_retry("GET", url)
+        data = read_json(resp)
+        content = base64.b64decode(data["content"]).decode("utf-8")
+        return content, data["sha"], data["path"]
+    except urllib.error.HTTPError:
+        return None
+
+
+def _find_section(readme, section_name):
+    """Find a section in the README by name (case-insensitive).
+
+    Returns (start, end, header_level) or None.
+    start/end are character offsets into the readme string.
+    """
+    pattern = re.compile(
+        rf'^(#{{{2},3}})\s+{re.escape(section_name)}\s*$',
+        re.MULTILINE | re.IGNORECASE,
+    )
+    match = pattern.search(readme)
+    if not match:
+        return None
+
+    header_level = len(match.group(1))
+    start = match.start()
+
+    # End at the next header at same or higher level
+    end_pattern = re.compile(rf'^#{{{1},{header_level}}}(?!#)\s', re.MULTILINE)
+    end_match = end_pattern.search(readme, match.end())
+    end = end_match.start() if end_match else len(readme)
+
+    return start, end, header_level
+
+
+def _parse_members(text):
+    """Parse member entries from a README section text.
+
+    Returns list of dicts: {"name", "username", "line"}
+    """
+    member_re = re.compile(
+        r'^- \[([^\]]+)\]\(https://github\.com/([^)]+)\)(?:,\s*(.+))?$',
+        re.MULTILINE,
+    )
+    members = []
+    for m in member_re.finditer(text):
+        members.append({
+            "name": m.group(1),
+            "username": m.group(2),
+            "line": m.group(0),
+        })
+    return members
+
+
+def _remove_member_line(readme, section_name, username):
+    """Remove a member's line from a section by GitHub username.
+
+    Returns modified readme, or None if the user was not found in the section.
+    """
+    section = _find_section(readme, section_name)
+    if not section:
+        return None
+
+    start, end, _ = section
+    section_text = readme[start:end]
+
+    member_re = re.compile(
+        rf'^- \[[^\]]+\]\(https://github\.com/{re.escape(username)}\).*\n?',
+        re.MULTILINE | re.IGNORECASE,
+    )
+    match = member_re.search(section_text)
+    if not match:
+        return None
+
+    new_section = section_text[: match.start()] + section_text[match.end() :]
+    return readme[:start] + new_section + readme[end:]
+
+
+def _add_to_emeritus(readme, emeritus_title, member_entry, header_level=3):
+    """Add a member entry to an emeritus section. Creates the section if needed.
+
+    Returns the modified readme string.
+    """
+    section = _find_section(readme, emeritus_title)
+
+    if section:
+        start, end, _ = section
+        section_text = readme[start:end]
+
+        # Skip if already present
+        if member_entry in section_text:
+            return readme
+
+        lines = section_text.split("\n")
+        last_member_idx = -1
+        for i, line in enumerate(lines):
+            if line.startswith("- ["):
+                last_member_idx = i
+
+        if last_member_idx >= 0:
+            lines.insert(last_member_idx + 1, member_entry)
+        else:
+            # No members yet — insert after header + blank line
+            insert_idx = 1
+            while insert_idx < len(lines) and lines[insert_idx].strip() == "":
+                insert_idx += 1
+            lines.insert(insert_idx, member_entry)
+
+        new_section = "\n".join(lines)
+        return readme[:start] + new_section + readme[end:]
+
+    # Section doesn't exist — create it
+    hashes = "#" * header_level
+    new_section = f"\n{hashes} {emeritus_title}\n\n{member_entry}\n\n{EMERITUS_INFO}\n"
+
+    # Try to insert before "Learn more about roles"
+    idx = readme.find("\nLearn more about roles")
+    if idx >= 0:
+        return readme[:idx] + new_section + "\n" + readme[idx + 1 :]
+
+    # Try before ## Licenses / ## License
+    for marker in ["\n## Licenses", "\n## License"]:
+        idx = readme.find(marker)
+        if idx >= 0:
+            return readme[:idx] + new_section + readme[idx:]
+
+    return readme + new_section
+
+
+def _to_emeritus_entry(username, role_label, display_name=None):
+    """Create an emeritus entry line with previous role."""
+    name = display_name or f"@{username}"
+    return f"- [{name}](https://github.com/{username}), {role_label}"
+
+
+# ---------------------------------------------------------------------------
+# Branch / PR creation via GitHub API
+# ---------------------------------------------------------------------------
+
+def _get_default_branch_sha(repo):
+    """Return (sha, default_branch_name) for a repo."""
+    url = f"{REST_API}/repos/{ORG}/{repo}"
+    resp = request_with_retry("GET", url)
+    data = read_json(resp)
+    default_branch = data["default_branch"]
+
+    ref_url = f"{REST_API}/repos/{ORG}/{repo}/git/ref/heads/{default_branch}"
+    ref_resp = request_with_retry("GET", ref_url)
+    ref_data = read_json(ref_resp)
+    return ref_data["object"]["sha"], default_branch
+
+
+def _ensure_branch(repo, branch, base_sha):
+    """Create or force-update a branch to point at base_sha."""
+    ref_url = f"{REST_API}/repos/{ORG}/{repo}/git/refs/heads/{branch}"
+    try:
+        request_with_retry("GET", ref_url)
+        # Branch exists — update it
+        request_with_retry("PATCH", ref_url, data={"sha": base_sha, "force": True})
+    except urllib.error.HTTPError:
+        # Branch doesn't exist — create it
+        create_url = f"{REST_API}/repos/{ORG}/{repo}/git/refs"
+        request_with_retry("POST", create_url, data={
+            "ref": f"refs/heads/{branch}",
+            "sha": base_sha,
+        })
+
+
+def _update_file(repo, path, content, sha, branch, message):
+    """Update a file on a branch via the Contents API."""
+    url = f"{REST_API}/repos/{ORG}/{repo}/contents/{path}"
+    encoded = base64.b64encode(content.encode("utf-8")).decode("ascii")
+    request_with_retry("PUT", url, data={
+        "message": message,
+        "content": encoded,
+        "sha": sha,
+        "branch": branch,
+    })
+
+
+def _create_pr(repo, branch, base, title, body):
+    """Create a PR. If one already exists for the branch, update its body."""
+    url = f"{REST_API}/repos/{ORG}/{repo}/pulls"
+    try:
+        resp = request_with_retry("POST", url, data={
+            "title": title,
+            "body": body,
+            "head": branch,
+            "base": base,
+        })
+        pr = read_json(resp)
+        return pr.get("html_url", "")
+    except urllib.error.HTTPError as e:
+        if e.code == 422:
+            # PR likely already exists — find and update it
+            list_url = (
+                f"{REST_API}/repos/{ORG}/{repo}/pulls"
+                f"?head={ORG}:{branch}&state=open"
+            )
+            resp = request_with_retry("GET", list_url)
+            prs = read_json(resp)
+            if prs:
+                pr_number = prs[0]["number"]
+                patch_url = f"{REST_API}/repos/{ORG}/{repo}/pulls/{pr_number}"
+                request_with_retry("PATCH", patch_url, data={
+                    "title": title,
+                    "body": body,
+                })
+                return prs[0].get("html_url", "")
+        raise
+
+
+# ---------------------------------------------------------------------------
+# Orchestration: process repos and open PRs
+# ---------------------------------------------------------------------------
+
+def _build_pr_body(repo, changes, cutoff, warning=None):
+    """Build the PR body markdown for a repo."""
+    body = "## Move inactive members to emeritus\n\n"
+    if warning:
+        body += f"> **Warning:** {warning}\n\n"
+    body += (
+        f"The following members have had no activity in `{ORG}/{repo}` "
+        f"since **{cutoff}** and are being moved to emeritus:\n\n"
+    )
+
+    for user, role_label in sorted(changes):
+        body += f"- @{user}, {role_label}\n"
+    body += "\n"
+
+    body += (
+        "Activity was checked for: PR reviews, PR authorship, "
+        "issue/PR comments, label changes, and issue closes.\n\n"
+        f"This PR was automatically generated by the "
+        f"[move-to-emeritus workflow]"
+        f"(https://github.com/{ORG}/community/actions/workflows/"
+        f"move-to-emeritus.yml).\n"
+    )
+    return body
+
+
+def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
+    """For each repo with inactive members, modify its README and open a PR."""
+    print("\n" + "=" * 60)
+    print("CREATING PULL REQUESTS")
+    print("=" * 60)
+
+    for repo, inactive_list in sorted(inactive_report.items()):
+        print(f"\nProcessing {ORG}/{repo}...")
+
+        # Fetch README
+        result = fetch_readme(repo)
+        if result is None:
+            print(f"  Could not fetch README for {ORG}/{repo}, skipping.")
+            continue
+        readme, file_sha, file_path = result
+        original_readme = readme
+
+        # Deduplicate by (username, role_label)
+        seen = set()
+        unique = []
+        for user, team_name, role_label in inactive_list:
+            key = (user, role_label)
+            if key not in seen:
+                seen.add(key)
+                unique.append((user, team_name, role_label))
+
+        changes = []  # (username, role_label) for PR body
+        header_level = 3  # default
+        for user, _team_name, role_label in unique:
+            section_name = ROLE_SECTIONS.get(role_label)
+            if not section_name:
+                continue
+
+            # Determine display name and header level from the role section
+            display_name = None
+            section = _find_section(readme, section_name)
+            if section:
+                start, end, header_level = section
+                for m in _parse_members(readme[start:end]):
+                    if m["username"].lower() == user.lower():
+                        display_name = m["name"]
+                        break
+
+            # Remove from role section (if present)
+            modified = _remove_member_line(readme, section_name, user)
+            if modified is not None:
+                readme = modified
+
+            # Add to single Emeritus section
+            entry = _to_emeritus_entry(user, role_label, display_name)
+            readme = _add_to_emeritus(readme, EMERITUS_SECTION, entry, header_level)
+            changes.append((user, role_label))
+
+        if readme == original_readme:
+            print("  No README changes needed, skipping.")
+            continue
+
+        # Create branch, commit, and PR
+        try:
+            base_sha, default_branch = _get_default_branch_sha(repo)
+            _ensure_branch(repo, BRANCH_NAME, base_sha)
+            _update_file(
+                repo, file_path, readme, file_sha, BRANCH_NAME,
+                "Move inactive members to emeritus",
+            )
+
+            warning = repo_warnings.get(repo)
+            # Strip leading whitespace/WARNING: prefix for cleaner PR body
+            if warning:
+                warning = warning.strip().removeprefix("WARNING: ")
+
+            pr_body = _build_pr_body(repo, changes, cutoff, warning)
+            pr_url = _create_pr(
+                repo, BRANCH_NAME, default_branch,
+                "Move inactive members to emeritus",
+                pr_body,
+            )
+            print(f"  PR: {pr_url}")
+        except Exception as e:
+            print(f"  ERROR creating PR for {ORG}/{repo}: {e}", file=sys.stderr)
+
 
 def main():
     global DEBUG
     parser = argparse.ArgumentParser(description="Check for inactive org members")
     parser.add_argument("--debug", action="store_true",
                         help="Print why each member was marked as active")
+    parser.add_argument("--create-prs", action="store_true",
+                        help="Create PRs to move inactive members to emeritus in each repo")
     args = parser.parse_args()
     DEBUG = args.debug
 
@@ -660,9 +1013,9 @@ def main():
         remaining = total - len(inactive_maintainers & repo_maintainer_count[repo])
         if remaining <= 1:
             if remaining == 0:
-                repo_warnings[repo] = f"  WARNING: {total} -> 0 maintainers (repo will have NO maintainers!)"
+                repo_warnings[repo] = f"  WARNING: {total} -> 0 maintainers. Repo will have NO maintainers! Consider adding new maintainers before merging this PR."
             else:
-                repo_warnings[repo] = f"  WARNING: {total} -> {remaining} maintainer (repo will have only 1 maintainer!)"
+                repo_warnings[repo] = f"  WARNING: {total} -> {remaining} maintainer. Repo will have only 1 maintainer! Consider adding new maintainers before merging this PR."
 
     total_inactive = 0
     seen = set()
@@ -677,6 +1030,10 @@ def main():
                 seen.add((user, team_name))
 
     print(f"\nTotal: {total_inactive} inactive member(s) across team(s)")
+
+    # Create PRs if requested
+    if args.create_prs:
+        create_emeritus_prs(inactive_report, repo_warnings, cutoff)
 
 
 if __name__ == "__main__":
