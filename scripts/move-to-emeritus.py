@@ -57,6 +57,10 @@ IGNORED_REPOS = {
     "govanityurls", # Low traffic repo
     "opentelemetry-go-build-tools", # Low traffic repo
     "opentelemetry-network", # Low traffic and stable repo
+    "opentelemetry-specification", # Too complex for simple checks. More checks can be added in the future
+    "semantic-conventions", # Too complex for simple checks. More checks can be added in the future
+    "opentelemetry-proto", # Too complex for simple checks. More checks can be added in the future
+    "opentelemetry-proto-java", # Too complex for simple checks. More checks can be added in the future
     "sig-contributor-experience", # Majority of work is done outside of github
     "sig-developer-experience", # Majority of work is done outside of github
     "sig-end-user", # Majority of work is done outside of github
@@ -75,7 +79,7 @@ REPO_ALLOWED_TEAMS = {
 # For these repos, ignore teams whose name contains any of the listed keywords
 REPO_IGNORED_TEAM_KEYWORDS = {
     "opentelemetry-js": ["browser"],
-    "opentelemetry-js-contrib": ["browser"],
+    "opentelemetry-js-contrib": ["browser", "javascript-contrib-triagers"], # Contrib triager is a complex team working similar to codeowners, so we skip it for now
 }
 
 token = os.environ.get("GITHUB_TOKEN")
