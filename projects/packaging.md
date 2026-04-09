@@ -74,6 +74,7 @@ TODO
 [`@atoulme`](https://github.com/atoulme) (Splunk): System packages, injector, collector, Java ecosystem
 [`@x1unix`](https://github.com/x1unix) (Grafana Labs): DEB/RPM system packages
 [`@douglascamata`](https://github.com/douglascamata) (Coralogix): system packages, collector, Ruby, Python
+[`@dmathieu`](https://github.com/dmathieu) (Elastic): Go, collector
 
 ### Industry outreach (Optional)
 
