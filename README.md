@@ -101,7 +101,7 @@ explains the reasoning behind choosing this license.
 ## Logos and Brand Guide
 
 The OpenTelemetry logos and brand guide can be found in the [CNCF artwork
-repository](https://github.com/cncf/artwork/tree/master/projects/opentelemetry). In addition, a [Google Slides template](https://docs.google.com/presentation/d/1Neab3OZ3c-m5kOE37iZXEVpK4Pjj6xGTJEUuUzLQJvk/edit?usp=sharing) is also available.
+repository](https://github.com/cncf/artwork/tree/master/projects/opentelemetry). In addition, a [Google Slides template](https://docs.google.com/presentation/d/16Dnax74oG7i_zBEpYQBGlf8mX72pRWehYz1LrIqlTvw/edit?slide=id.g3d3aa3b316c_0_0) is also available.
 
 ## How to
 

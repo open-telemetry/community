@@ -45,22 +45,18 @@ However, these workarounds prevent Metrics users from regaining descriptive attr
 
 Source: [see this issue](https://github.com/open-telemetry/opentelemetry-specification/issues/2775).
 
-### Further Reading
-
-For more details on the problems and proposed solutions please [see this document](https://docs.google.com/document/d/1VUdBRInLEhO_0ABAoiLEssB1CQO_IcD5zDnaMEha42w/edit).
-
 ## Deliverables
 
 We plan to deliver the following:
 
-- A specification of a new [concept of Entities](https://docs.google.com/document/d/1VUdBRInLEhO_0ABAoiLEssB1CQO_IcD5zDnaMEha42w/edit#heading=h.psbmkrtahy3d) and a definition of telemetry's Producing Entity concept.
+- A specification of a new concept of Entities and a definition of telemetry's Producing Entity concept.
 - A backward-compatible extension of the concept of the Resource that seamlessly integrates with the concept of Entities.
 - Precise solutions that target each of the problems listed above.
 - A new entity signal, represented as events that describe how entities change over time. All other signals (logs, traces, metrics) will be correlated with entity signals, allowing to answer new interesting questions.
-- An [extension of OTLP](https://docs.google.com/document/d/1VUdBRInLEhO_0ABAoiLEssB1CQO_IcD5zDnaMEha42w/edit#heading=h.dovorfw3l4sf) retaining full interoperability with existing senders and receivers. OTLP will allow recording extended resources and the new entity signal.
+- An extension of OTLP retaining full interoperability with existing senders and receivers. OTLP will allow recording extended resources and the new entity signal.
 - A definition and implementation of new behaviors for the Collector that leverage newly available entity information:
   - To produce information about entities it observes.
-  - To [enrich telemetry](https://docs.google.com/document/d/1VUdBRInLEhO_0ABAoiLEssB1CQO_IcD5zDnaMEha42w/edit#heading=h.ij8yjheo645z) that passes through it by additional entity-related information it possesses.
+  - To enrich telemetry that passes through it by additional entity-related information it possesses.
 - A set of core Entities and stable semantic conventions for those entities
   - To bootstrap consistent identity for Otel users: Service, Process, Host, Container and k8s.
   - A set of prototype resource/entity detection code in multiple languages.

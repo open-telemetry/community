@@ -74,7 +74,7 @@ which will give access to the following GitHub-hosted runner:
 - `oracle-bare-metal-64cpu-512gb-x86-64` (Oracle Linux 8)
 - `oracle-bare-metal-64cpu-1024gb-x86-64-ubuntu-24` (Ubuntu 24)
 
-`oracle-bare-metal-64cpu-512gb-x86-64` hardware specification ([BM.Standard.E2.64](https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm#previous-generation)):
+`oracle-bare-metal-64cpu-512gb-x86-64` hardware specification (BM.Standard.E2.64):
 
 | Component | Specification |
 |---|---|
