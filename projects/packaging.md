@@ -1,4 +1,4 @@
-# OpenTelemetry System Packaging
+# OpenTelemetry System Packaging (Phase 1)
 
 The goal of the Packaging SIG is to provide a product-like, idiomatic experience to provide a seamless experience of monitoring applications running on (virtual) hosts through a combination of the [OpenTelemetry Injector](https://github.com/open-telemetry/opentelemetry-injector) injecting SDKs and auto-instrumentation packages, [OpenTelemetry eBPF Instrumentation (OBI)](https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation), and the OpenTelemetry Collector.
 
@@ -66,7 +66,26 @@ Idiomatic, dead-simple process to set up the monitoring of applications running 
 
 ## Deliverables
 
-TODO
+### Phase 1
+* Build an `opentelemetry` package that installs all of the sub-packages.
+* Design a release cadence and configuration for the `opentelemetry` package.
+* Design all of the configuration, scaffolding and layout to start adding individual sub-packages.
+* Build a package for the Collector.
+* Build a package for OBI.
+* Identify which languages have blocking issues, and cannot be added. Record these blockers as issues, and discuss them with language maintainers to determine a viable timeline for improvement in each language.
+* For languages that do not have blocking issues, add the SDK, plugins, and instrumentation behind the `unstable` flag. During phase 1, no languages should be installable without the `unstable` flag as we still may break any piece of our design.
+
+Once we have some languages available behind the `unstable` flag, we can get feedback from the community on the design, and interate until we are satisfied with the overall system. That is the goal of Phase 1.
+
+### Phase 2 (Future work)
+Once the community is satisfied with the overall design, we can begin stabilizing individual languages. Based on what we learn in phase 1, a phase 2 project file will be drafted. Most likely it will do the following, working on a SIG by SIG basis.
+
+* Identify which instrumentation packages are ready to be marked as stable.
+* Only marking packages as stable once there is a plan for how they will be maintained.
+
+Note that while updating stable instrumentation packages to improved versions of semantic conventions is an important goal for our stable-by-design workstream, it is out of scope for the packaging SIG. The goal of this effort is simply to mark the "de-facto stable" packages as stable.
+
+In parallel, work can be done via the SemConv Tooling SIG to create tools that lower the cost for maintaining and updating instrumentation packages.
 
 ## Staffing / Help Wanted
 
@@ -92,7 +111,7 @@ See [Project Sponsorship](/project-management.md#project-sponsorship)
 
 #### TC Sponsor
 
-Name of TC sponsor
+Name of TC sponsor (Escalating)
 
 #### Delegated TC Sponsor (Optional)
 
