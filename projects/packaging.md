@@ -75,7 +75,7 @@ Idiomatic, dead-simple process to set up the monitoring of applications running 
 * Identify which languages have blocking issues, and cannot be added. Record these blockers as issues, and discuss them with language maintainers to determine a viable timeline for improvement in each language.
 * For languages that do not have blocking issues, add the SDK, plugins, and instrumentation behind the `unstable` flag. During phase 1, no languages should be installable without the `unstable` flag as we still may break any piece of our design.
 
-Once we have some languages available behind the `unstable` flag, we can get feedback from the community on the design, and interate until we are satisfied with the overall system. That is the goal of Phase 1.
+Once we have some languages available behind the `unstable` flag, we can get feedback from the community on the design, and iterate until we are satisfied with the overall system. That is the goal of Phase 1.
 
 ### Phase 2 (Future work)
 Once the community is satisfied with the overall design, we can begin stabilizing individual languages. Based on what we learn in phase 1, a phase 2 project file will be drafted. Most likely it will do the following, working on a SIG by SIG basis.
