@@ -1,0 +1,1159 @@
+- id: spec-general
+  kind: sig
+  sigCategory: specification
+  name: 'Specification: General + OTel Maintainers Sync'
+  parent: none
+  people:
+  - gcLiaison: tbd
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Tuesday at 08:00 PT
+      calendarInviteGroup: calendar-spec-general
+      gDocNotes: 1pdvPeKjA8v8w_fGKAN68JjWBmVJtPCpqdi9IZrd6eEo
+  - slack:
+      name: '#otel-specification'
+      id: C01N7PP1THC
+  - repository: open-telemetry/opentelemetry-specification
+  - repository: open-telemetry/opentelemetry-proto
+  - repository: open-telemetry/build-tools
+- id: sampling
+  kind: sig
+  sigCategory: specification
+  name: 'Specification: Sampling'
+  parent: spec-general
+  people:
+  - gcLiaison: jpkrohling
+  - tcSponsor:
+      username: jmacd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Thursday at 08:00 PT
+      calendarInviteGroup: calendar-spec-sampling
+      gDocNotes: 1NqhCcePaj--L8CUIBWV6lblR0nUD8ai6AzkW9_YcEOg
+  - slack:
+      name: '#otel-sampling'
+      id: C027DS6GZD3
+  - roadmapProject: 133
+- id: spec-logs
+  kind: sig
+  sigCategory: specification
+  name: 'Specification: Logs'
+  parent: spec-general
+  people:
+  - gcLiaison: trask
+  - specSponsor: tedsuo
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Tuesday at 10:00 PT
+      calendarInviteGroup: calendar-spec-logs
+      gDocNotes: 1BKjQWP32FXL9g1cGbyj7DMXV1Uq_RL8_78rWaMBhN0A
+  - slack:
+      name: '#otel-spec-logs'
+      id: C062HUREGUV
+- id: semconv-general
+  kind: sig
+  sigCategory: specification
+  name: 'Semantic Conventions: General'
+  parent: spec-general
+  people:
+  - gcLiaison: trask
+  - tcSponsor:
+      username: arminru
+      level: tbd
+  - tcSponsor:
+      username: jsuereth
+      level: tbd
+  - tcSponsor:
+      username: reyang
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Monday at 08:00 PT
+      calendarInviteGroup: calendar-semconv
+      gDocNotes: 10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8
+  - slack:
+      name: '#otel-semantic-conventions'
+      id: C041APFBYQP
+  - repository: open-telemetry/semantic-conventions
+- id: semconv-system-metrics
+  kind: sig
+  sigCategory: specification
+  name: 'Semantic Conventions: System Metrics'
+  parent: semconv-general
+  people:
+  - gcLiaison: mx-psi
+  - tcSponsor:
+      username: jsuereth
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Thursday at 07:30 PT
+      calendarInviteGroup: calendar-semconv
+      gDocNotes: 1p5TH57t43XpxA48onLzX4PIr3g6ydYKCtR_AUlsCnQk
+  - slack:
+      name: '#otel-system-metrics'
+      id: C05CTFE9U4A
+  - roadmapProject: 55
+- id: semconv-k8s
+  kind: sig
+  sigCategory: specification
+  name: 'Semantic Conventions: K8s'
+  parent: semconv-general
+  people:
+  - gcLiaison: alolita
+  - tcSponsor:
+      username: jsuereth
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every other Tuesday at 07:30 PT
+      calendarInviteGroup: calendar-semconv
+      gDocNotes: 17DqFVlLvO43neXXTwlSd1zcKjSRA8P3d0Y444QNwUTQ
+  - slack:
+      name: '#otel-k8s-semconv-sig'
+      id: C07Q1L0FGKX
+  - roadmapProject: 114
+- id: semconv-genai
+  kind: sig
+  sigCategory: specification
+  name: 'Semantic Conventions and Instrumentation: GenAI'
+  parent: semconv-general
+  people:
+  - gcLiaison: tedsuo
+  - specSponsor: tedsuo
+  - tcSponsor:
+      username: lmolkova
+      level: tbd
+  resources:
+  - meeting:
+      schedule: 'General GenAI topics: every Tuesday 9:00 PT, every other Tuesday
+        9:00 UTC+8; agent-related topics: every Monday 9:00 PT'
+      calendarInviteGroup: calendar-semconv
+      gDocNotes: 1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M
+  - slack:
+      name: '#otel-genai-instrumentation'
+      id: C06KR7ARS3X
+  - roadmapProject: 82
+- id: semconv-cicd
+  kind: sig
+  sigCategory: specification
+  name: 'Semantic Conventions: CI/CD'
+  parent: semconv-general
+  people:
+  - gcLiaison: maryliag
+  - tcSponsor:
+      username: carlosalberto
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every Tuesday at 07:00 PT
+      calendarInviteGroup: calendar-semconv
+      gDocNotes: 1CdzXD16QpayEpPxae_3u-7BLyzv0GgzZrKvV7tTFDr0
+  - slack:
+      name: '#otel-cicd'
+      id: C0598R66XAP
+  - roadmapProject: 171
+- id: semconv-rpc
+  kind: sig
+  sigCategory: specification
+  name: 'Semantic Conventions: RPC'
+  parent: semconv-general
+  people:
+  - gcLiaison: trask
+  - tcSponsor:
+      username: lmolkova
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every Wednesday at 17:00 PT
+      calendarInviteGroup: calendar-semconv
+      gDocNotes: 11AtPWuaNGl2MfhRwgWqNbnjAPtK06jMKWh5-_YbWuHE
+  - slack:
+      name: '#otel-semconv-rpc-stability'
+      id: C09D3TRKMED
+  - roadmapProject: 161
+- id: semconv-security
+  kind: sig
+  sigCategory: specification
+  name: 'Semantic Conventions: Security'
+  parent: semconv-general
+  people:
+  - gcLiaison: trask
+  - tcSponsor:
+      username: jsuereth
+      level: tbd
+  resources:
+  - meeting:
+      schedule: 'Meets during Semantic Conventions: General'
+      calendarInviteGroup: calendar-semconv
+      gDocNotes: 10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8
+  - slack:
+      name: '#otel-semconv-security'
+      id: C0715DWUW7L
+  - roadmapProject: 104
+- id: semconv-service-deployment
+  kind: sig
+  sigCategory: specification
+  name: 'Semantic Conventions: Service and Deployment'
+  parent: semconv-general
+  people:
+  - gcLiaison: trask
+  - tcSponsor:
+      username: jsuereth
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Alternating between Thursday at 08:00 PT and Thursday at 12:00 UTC
+      calendarInviteGroup: calendar-semconv
+      gDocNotes: 1Fy6yXfZqrwN_oHw95Bdfg_0hzUgzlk3VO5wA1invgkI
+  - slack:
+      name: '#otel-service-and-deployment-semconv-sig'
+      id: C09HLNSSJSE
+  - roadmapProject: 168
+- id: spec-entities
+  kind: sig
+  sigCategory: specification
+  name: 'Specification: Entities'
+  parent: spec-general
+  people:
+  - gcLiaison: svrnm
+  - tcSponsor:
+      username: jsuereth
+      level: tbd
+  - tcSponsor:
+      username: tigrannajaryan
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every Monday at 09:00 PT
+      calendarInviteGroup: calendar-entities
+      gDocNotes: 15Yt9ss2_EhuFPqItPbk4vjfpeRDAQ5WCUVuY_kCeOAo
+  - slack:
+      name: '#otel-entities'
+      id: C06QEG97W7L
+  - roadmapProject: 85
+- id: opamp
+  kind: sig
+  sigCategory: specification
+  name: OpAMP
+  parent: none
+  people:
+  - gcLiaison: tedsuo
+  - tcSponsor:
+      username: tigrannajaryan
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every other Tuesday at 09:00 PT
+      calendarInviteGroup: calendar-opamp
+      gDocNotes: 19WA5-ex8rNFIBIyVb5VqMXfWNmUQwppGhN8zBeNG0f4
+  - slack:
+      name: '#otel-opamp'
+      id: C02J58HR58R
+  - repository: open-telemetry/opamp-go
+  - repository: open-telemetry/opamp-spec
+- id: prometheus-interop
+  kind: sig
+  sigCategory: specification
+  name: Prometheus Interoperability
+  parent: none
+  people:
+  - gcLiaison: mx-psi
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every other Wednesday at 08:00 PT
+      calendarInviteGroup: calendar-prometheus
+      gDocNotes: 1OijO_NZyR7gb7AvUj_KxKbcbsN09XQmq_ExZeDlgEOg
+  - slack:
+      name: '#otel-prometheus'
+      id: C01LSCJBXDZ
+- id: faas
+  kind: sig
+  sigCategory: specification
+  name: Functions as a Service (FAAS)
+  parent: none
+  people:
+  - gcLiaison: austinlparker
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every other Thursday at 8:00 PT
+      calendarInviteGroup: calendar-faas
+      gDocNotes: 16dGljp7YY7jgzxydDKsin8DQCCx6HQqdQHorDxTx6SQ
+  - slack:
+      name: '#otel-faas'
+      id: C04HVBETC9Z
+  - repository: open-telemetry/opentelemetry-lambda
+- id: profiling
+  kind: sig
+  sigCategory: specification
+  name: Profiling
+  parent: none
+  people:
+  - gcLiaison: mtwo
+  - tcSponsor:
+      username: jsuereth
+      level: tbd
+  - tcSponsor:
+      username: tigrannajaryan
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every other Thursday at 08:00 PT
+      calendarInviteGroup: calendar-profiling
+      gDocNotes: 19UqPPPlGE83N37MhS93uRlxsP1_wGxQ33Qv6CDHaEp0
+  - slack:
+      name: '#otel-profiles'
+      id: C03J794L0BV
+  - repository: open-telemetry/opentelemetry-ebpf-profiler
+- id: mainframes
+  kind: sig
+  sigCategory: specification
+  name: OpenTelemetry on Mainframes
+  parent: none
+  people:
+  - gcLiaison: mtwo
+  - specSponsor: dyladan
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Wednesday at 10:00 PT
+      calendarInviteGroup: calendar-mainframe
+      gDocNotes: 14p-bpofozTL4n3jy6HZH_TKjoOXvog18G1HBRqq6liE
+  - slack:
+      name: '#otel-mainframes'
+      id: C05PXDFTCPJ
+- id: client-instrumentation
+  kind: sig
+  sigCategory: specification
+  name: Client Instrumentation
+  parent: none
+  people:
+  - gcLiaison: tedsuo
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every other Tuesday at 09:00 PT
+      calendarInviteGroup: calendar-client-side
+      gDocNotes: 16Vsdh-DM72AfMg_FIt9yT9ExEWF4A_vRbQ3jRNBe09w
+  - slack:
+      name: '#otel-client-side-telemetry'
+      id: C0239SYARD2
+- id: android
+  kind: sig
+  sigCategory: implementation
+  name: 'Android: SDK + Automatic Instrumentation'
+  parent: none
+  people:
+  - gcLiaison: tedsuo
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Tuesday at 08:00 PT
+      calendarInviteGroup: calendar-android
+      gDocNotes: 1W72oElAJuYx3efM9wkH5l1iksdfwmTSkVl-H7KHTLnY
+  - slack:
+      name: '#otel-android'
+      id: C05J0T9K27Q
+  - repository: open-telemetry/opentelemetry-android
+- id: arrow
+  kind: sig
+  sigCategory: implementation
+  name: Arrow
+  parent: none
+  people:
+  - gcLiaison: trask
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Alternating between Tuesday at 16:00 PT and Thursday at 8:00 PT
+      calendarInviteGroup: calendar-arrow
+      gDocNotes: 1z8_Ra-ALDaYNa88mMj1gOZtOpLZLRk0-dZEmDjPmcUs
+  - slack:
+      name: '#otel-arrow'
+      id: C07S4Q67LTF
+  - repository: open-telemetry/otel-arrow
+  - roadmapProject: 139
+- id: browser
+  kind: sig
+  sigCategory: implementation
+  name: Browser
+  parent: none
+  people:
+  - gcLiaison: tedsuo
+  - tcSponsor:
+      username: carlosalberto
+      level: tbd
+  - specSponsor: dyladan
+  - specSponsor: tedsuo
+  resources:
+  - meeting:
+      schedule: Thursday at 8:30 PT
+      calendarInviteGroup: calendar-browser
+      gDocNotes: 1G3yBAV5SzWBO3mmsBUos5bsn4yxsqkS1MLWl1urVojQ
+  - slack:
+      name: '#otel-browser'
+      id: C093P0AMP0T
+  - roadmapProject: 146
+- id: collector
+  kind: sig
+  sigCategory: implementation
+  name: Collector
+  parent: none
+  people:
+  - gcLiaison: mx-psi
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: 'Alternating between Tuesday at 17:00 PT, Wednesday at 09:00 PT, and
+        Wednesday at 05:00 PT'
+      calendarInviteGroup: calendar-collector
+      gDocNotes: 1AeWpwxjMPm8jOAZymCB3BrwwmNiJiKOO7dc4EvVq3x0
+  - slack:
+      name: '#otel-collector'
+      id: C01N6P7KR6W
+  - repository: open-telemetry/opentelemetry-collector
+  - roadmapProject: 83
+  - repository: open-telemetry/opentelemetry-collector-contrib
+  - repository: open-telemetry/opentelemetry-collector-releases
+  - repository: open-telemetry/opentelemetry-go-build-tools
+  - repository: open-telemetry/opentelemetry-go-vanityurls
+  - repository: open-telemetry/govanityurls
+- id: cpp
+  kind: sig
+  sigCategory: implementation
+  name: 'C++: SDK'
+  parent: none
+  people:
+  - gcLiaison: svrnm
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Alternating between Monday at 13:00 PT and Wednesday at 09:00 PT
+      calendarInviteGroup: calendar-cpp
+      gDocNotes: 1rdF6GZcCqH9huo3oqur5x_McsPS_qQ9OPSRFjIqndm8
+  - slack:
+      name: '#otel-cpp'
+      id: C01N3AT62SJ
+  - repository: open-telemetry/opentelemetry-cpp
+  - repository: open-telemetry/opentelemetry-cpp-contrib
+  - repository: open-telemetry/cpp-build-tools
+- id: dotnet-auto-instr
+  kind: sig
+  sigCategory: implementation
+  name: '.NET: Automatic Instrumentation'
+  parent: none
+  people:
+  - gcLiaison: mtwo
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Wednesday at 09:00 PT
+      calendarInviteGroup: calendar-dotnet
+      gDocNotes: 1dYdwRQVE3zu0vlp_lqGctNm0dCQUkDo2LfScUJzpuT8
+  - slack:
+      name: '#otel-dotnet-auto-instr'
+      id: C01NR1YLSE7
+  - repository: open-telemetry/opentelemetry-dotnet-instrumentation
+- id: dotnet
+  kind: sig
+  sigCategory: implementation
+  name: '.NET: SDK'
+  parent: none
+  people:
+  - gcLiaison: mtwo
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Tuesday at 11:00 PT
+      calendarInviteGroup: calendar-dotnet
+      gDocNotes: 1yjjD6aBcLxlRazYrawukDgrhZMObwHARJbB9glWdHj8
+  - slack:
+      name: '#otel-dotnet'
+      id: C01N3BC2W7Q
+  - repository: open-telemetry/opentelemetry-dotnet
+  - repository: open-telemetry/opentelemetry-dotnet-contrib
+- id: erlang-elixir
+  kind: sig
+  sigCategory: implementation
+  name: 'Erlang/Elixir: SDK'
+  parent: none
+  people:
+  - gcLiaison: austinlparker
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every other Thursday at 09:00 PT
+      calendarInviteGroup: calendar-erlang
+      gDocNotes: 1EbBiRjBc_cBf0T_B5OtNRPhbD4jdBrVYJAy8euCDrUI
+  - slack:
+      name: '#otel-erlang-elixir'
+      id: C01N75YMZCN
+  - repository: open-telemetry/opentelemetry-erlang
+  - repository: open-telemetry/opentelemetry-erlang-contrib
+- id: go
+  kind: sig
+  sigCategory: implementation
+  name: 'Go: SDK'
+  parent: none
+  people:
+  - gcLiaison: maryliag
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Thursday alternating between 09:00 PT and 10:00 PT
+      calendarInviteGroup: calendar-go
+      gDocNotes: 1E5e7Ld0NuU1iVvf-42tOBpu2VBBLYnh73GJuITGJTTU
+  - slack:
+      name: '#otel-go'
+      id: C01NPAXACKT
+  - repository: open-telemetry/opentelemetry-go
+  - repository: open-telemetry/opentelemetry-go-contrib
+  - repository: open-telemetry/opentelemetry-go-build-tools
+  - repository: open-telemetry/opentelemetry-go-vanityurls
+  - repository: open-telemetry/opentelemetry-proto-go
+  - repository: open-telemetry/govanityurls
+- id: go-auto-instr
+  kind: sig
+  sigCategory: implementation
+  name: 'Go: Automatic Instrumentation'
+  parent: none
+  people:
+  - gcLiaison: jpkrohling
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every other Tuesday at 09:30 PT
+      calendarInviteGroup: calendar-go
+      gDocNotes: 1P6am_r_cxCX1HcpDQlznrTrTOvwN2whshL0f58lXSWI
+  - slack:
+      name: '#otel-go-instrumentation'
+      id: C03S01YSAS0
+  - repository: open-telemetry/opentelemetry-go-instrumentation
+- id: go-compile-instr
+  kind: sig
+  sigCategory: implementation
+  name: 'Go: Compile-Time Instrumentation'
+  parent: none
+  people:
+  - gcLiaison: jpkrohling
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every Thursday at 08:00 UTC
+      calendarInviteGroup: calendar-go
+      gDocNotes: 1XkVahJfhf482d3WVHsvUUDaGzHc8TO3sqQlSS80mpGY
+  - slack:
+      name: '#otel-go-compile-instrumentation'
+      id: C088D8GSSSF
+  - repository: open-telemetry/opentelemetry-go-compile-instrumentation
+  - roadmapProject: 130
+- id: injector
+  kind: sig
+  sigCategory: implementation
+  name: Injector
+  parent: none
+  people:
+  - gcLiaison: mtwo
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Monday at 09:30 PT
+      calendarInviteGroup: calendar-injector
+      gDocNotes: 10bZsPhjbJHt-vamRg5kqHQf4ZANUiLOJxP9HYCONe94
+  - slack:
+      name: '#otel-injector'
+      id: C09025GKPAL
+  - repository: open-telemetry/opentelemetry-injector
+- id: java-sdk-instrumentation
+  kind: sig
+  sigCategory: implementation
+  name: 'Java: SDK + Instrumentation'
+  parent: none
+  people:
+  - gcLiaison: trask
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Thursday at 09:00 PT, and every other Thursday at 09:00 UTC+8
+      calendarInviteGroup: calendar-java
+      gDocNotes: 1D7ZD93LxSWexHeztHohRp5yeoTzsi9Dj1HRm7Tad-hM
+  - slack:
+      name: '#otel-java'
+      id: C014L2KCTE3
+  - repository: open-telemetry/opentelemetry-java
+  - repository: open-telemetry/opentelemetry-java-instrumentation
+  - repository: open-telemetry/opentelemetry-java-contrib
+  - repository: open-telemetry/opentelemetry-java-examples
+  - repository: open-telemetry/opentelemetry-proto-java
+  - repository: open-telemetry/semantic-conventions-java
+- id: javascript-sdk
+  kind: sig
+  sigCategory: implementation
+  name: 'JavaScript: SDK'
+  parent: none
+  people:
+  - gcLiaison: maryliag
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Wednesday at 09:00 PT
+      calendarInviteGroup: calendar-js
+      gDocNotes: 1tCyoQK49WVcE-x8oryZOTTToFm7sIeUhxFPm9g-qL1k
+  - slack:
+      name: '#otel-js'
+      id: C01NL1GRPQR
+  - githubDiscussion: https://github.com/open-telemetry/opentelemetry-js/discussions
+  - repository: open-telemetry/opentelemetry-js
+  - repository: open-telemetry/opentelemetry-js-contrib
+- id: kotlin
+  kind: sig
+  sigCategory: implementation
+  name: 'Kotlin: SDK'
+  parent: none
+  people:
+  - gcLiaison: alolita
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Monday at 09:00 PT
+      calendarInviteGroup: calendar-kotlin
+      gDocNotes: 1dzYPuJTV5usXHKAFL596SRwSlATEj_Z37GPODB73Oms
+  - slack:
+      name: '#otel-kotlin'
+      id: C08NRCD4R4G
+  - githubDiscussion: https://github.com/open-telemetry/opentelemetry-kotlin/discussions
+  - repository: open-telemetry/opentelemetry-kotlin
+- id: php-sdk
+  kind: sig
+  sigCategory: implementation
+  name: 'PHP: SDK'
+  parent: none
+  people:
+  - gcLiaison: svrnm
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Wednesday at 10:30 PT
+      calendarInviteGroup: calendar-php
+      gDocNotes: 1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI
+  - slack:
+      name: '#otel-php'
+      id: C01NFPCV44V
+  - repository: open-telemetry/opentelemetry-php
+  - repository: open-telemetry/opentelemetry-php-contrib
+  - repository: open-telemetry/opentelemetry-php-instrumentation
+- id: python-sdk
+  kind: sig
+  sigCategory: implementation
+  name: 'Python: SDK'
+  parent: none
+  people:
+  - gcLiaison: maryliag
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Thursday at 09:00 PT
+      calendarInviteGroup: calendar-python
+      gDocNotes: 18w8zOBm_mbety0OqlPwxc7dvnfu641EgmrO4AdJef0U
+  - slack:
+      name: '#otel-python'
+      id: C01PD4HUVBL
+  - repository: open-telemetry/opentelemetry-python
+  - repository: open-telemetry/opentelemetry-python-contrib
+- id: ruby-sdk
+  kind: sig
+  sigCategory: implementation
+  name: 'Ruby: SDK'
+  parent: none
+  people:
+  - gcLiaison: tedsuo
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Tuesday at 10:00 PT
+      calendarInviteGroup: calendar-ruby
+      gDocNotes: 1EaIbfDE1elWTWt3bhilggki_OCRJZoFCSYZJXgc9KsM
+  - slack:
+      name: '#otel-ruby'
+      id: C01NWKKMKMY
+  - githubDiscussion: https://github.com/open-telemetry/opentelemetry-ruby/discussions
+  - repository: open-telemetry/opentelemetry-ruby
+  - repository: open-telemetry/opentelemetry-ruby-contrib
+- id: rust-sdk
+  kind: sig
+  sigCategory: implementation
+  name: 'Rust: SDK'
+  parent: none
+  people:
+  - gcLiaison: tedsuo
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: 'Alternating between Tuesday at 09:00 AM PT and Wednesday at 8:00
+        AM PT'
+      calendarInviteGroup: calendar-rust
+      gDocNotes: 12upOzNk8c3SFTjsL6IRohCWMgzLKoknSCOOdMakbWo4
+  - slack:
+      name: '#otel-rust'
+      id: C03GDP0H023
+  - repository: open-telemetry/opentelemetry-rust
+  - repository: open-telemetry/opentelemetry-rust-contrib
+- id: swift-sdk
+  kind: sig
+  sigCategory: implementation
+  name: 'Swift: SDK'
+  parent: none
+  people:
+  - gcLiaison: alolita
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Thursday at 09:00 PT
+      calendarInviteGroup: calendar-swift
+      gDocNotes: 1LugL8r4bAkbTxZ1Gq_6j_8SDv1LuZaNeUdR-QLN4d48
+  - slack:
+      name: '#otel-swift'
+      id: C01NCHR19SB
+  - repository: open-telemetry/opentelemetry-swift
+- id: network
+  kind: sig
+  sigCategory: implementation
+  name: Network
+  parent: none
+  people:
+  - gcLiaison: tedsuo
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Tuesday at 09:00 PT
+      calendarInviteGroup: calendar-network
+      gDocNotes: 13GK915hdDQ9sUYzUIWi4pOfJK68EE935ugutUgL3yOw
+  - slack:
+      name: '#otel-network'
+      id: C02AB15583A
+  - repository: open-telemetry/opentelemetry-network
+- id: ebpf-instrumentation
+  kind: sig
+  sigCategory: implementation
+  name: eBPF Instrumentation
+  parent: none
+  people:
+  - gcLiaison: svrnm
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Wednesday at 08:00 PT
+      calendarInviteGroup: calendar-ebpf-instrumentation
+      gDocNotes: 1ZkmUT2EHKfgtLqrgx3WI8aBy2QNyZeTwSKXxe3DI6Pw
+  - slack:
+      name: '#otel-ebpf-instrumentation'
+      id: C08P9L4FPKJ
+  - repository: open-telemetry/opentelemetry-ebpf-instrumentation
+- id: k8s-operator
+  kind: sig
+  sigCategory: implementation
+  name: Kubernetes Operator
+  parent: none
+  people:
+  - gcLiaison: jpkrohling
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Thursday at 09:00 PT
+      calendarInviteGroup: calendar-k8s-operator
+      gDocNotes: 1Unbs2qp_j5kp8FfL_lRH-ld7i5EOQpsq0I4djkOOSL4
+  - slack:
+      name: '#otel-operator'
+      id: C033BJ8BASU
+  - repository: open-telemetry/opentelemetry-operator
+- id: k8s-helm-charts
+  kind: sig
+  sigCategory: implementation
+  name: Kubernetes Helm Charts
+  parent: none
+  people:
+  - gcLiaison: mx-psi
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Meets during OpenTelemetry Operator and OpenTelemetry Collector
+      calendarInviteGroup: calendar-k8s-operator
+      gDocNotes: 1Unbs2qp_j5kp8FfL_lRH-ld7i5EOQpsq0I4djkOOSL4
+  - slack:
+      name: '#otel-helm'
+      id: C03HVLM8LAH
+  - repository: open-telemetry/opentelemetry-helm-charts
+- id: community-demo
+  kind: sig
+  sigCategory: implementation
+  name: Community Demo Application
+  parent: none
+  people:
+  - gcLiaison: maryliag
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Wednesday at 08:00 PT
+      calendarInviteGroup: calendar-demo-app
+      gDocNotes: 16f-JOjKzLgWxULRxY8TmpM_FjlI1sthvKurnqFz9x98
+  - slack:
+      name: '#otel-community-demo'
+      id: C03B4CWV4DA
+  - repository: open-telemetry/opentelemetry-demo
+- id: semconv-tooling
+  kind: sig
+  sigCategory: implementation
+  name: 'Semantic Conventions: Tooling'
+  parent: semconv-general
+  people:
+  - gcLiaison: jpkrohling
+  - tcSponsor:
+      username: jsuereth
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Wednesday at 07:00 PT
+      calendarInviteGroup: calendar-semconv
+      gDocNotes: 1ygwXgOFRF01UfUOgMr_ElyL7fSDPchTKSrqfj-_HeyA
+  - slack:
+      name: '#otel-weaver'
+      id: C0697EXNTL3
+  - repository: open-telemetry/weaver
+- id: communications
+  kind: sig
+  sigCategory: cross-cutting
+  name: 'Communications (Website, [Documentation](https://opentelemetry.io/docs/),
+    etc.)'
+  parent: none
+  people:
+  - gcLiaison: svrnm
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every other Tuesday at 09:00 PT
+      calendarInviteGroup: calendar-comms
+      gDocNotes: 1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY
+  - slack:
+      name: '#otel-comms'
+      id: C02UN96HZH6
+  - repository: open-telemetry/opentelemetry.io
+  - roadmapProject: 129
+- id: end-user
+  kind: sig
+  sigCategory: cross-cutting
+  name: End-User SIG
+  parent: none
+  people:
+  - gcLiaison: maryliag
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: 'Every Thursday at 10:00 PT (alternating OTel Blueprints and general
+        meetings)'
+      calendarInviteGroup: calendar-sig-end-user
+      gDocNotes: 1e-UNZA3Tuno9b53RQbe--whUcO0VIXF3P81oXsrBK6g
+  - slack:
+      name: '#otel-sig-end-user'
+      id: C01RT3MSWGZ
+  - repository: open-telemetry/sig-end-user
+  - roadmapProject: 181
+- id: security
+  kind: sig
+  sigCategory: cross-cutting
+  name: Security
+  parent: none
+  people:
+  - gcLiaison: trask
+  - tcSponsor:
+      username: reyang
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every other Monday at 09:00 PT
+      calendarInviteGroup: calendar-sig-security
+      gDocNotes: 1P2xejC7lEkOV_Z-8E0oZPXLK5HOnUPNuRqKP0ZQ5fpg
+  - slack:
+      name: '#otel-sig-security'
+      id: C05A85QC281
+  - repository: open-telemetry/sig-security
+- id: project-infra
+  kind: sig
+  sigCategory: cross-cutting
+  name: Project Infrastructure
+  parent: none
+  people:
+  - gcLiaison: austinlparker
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Thursday at 11:00 PT
+      calendarInviteGroup: calendar-project-infra
+      gDocNotes: 1_dTP2XIaZoFjNiipkeMaGJN10NrhS20FiBTTJoQJeVM
+  - slack:
+      name: '#otel-project-infra'
+      id: C07BPU981PV
+  - repository: open-telemetry/sig-project-infra
+  - repository: open-telemetry/changelog.opentelemetry.io
+  - repository: open-telemetry/assign-reviewers-action
+- id: contributor-experience
+  kind: sig
+  sigCategory: cross-cutting
+  name: Contributor Experience
+  parent: none
+  people:
+  - gcLiaison: maryliag
+  - specSponsor: jpkrohling
+  - specSponsor: svrnm
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every other Monday at 10:00 PT
+      calendarInviteGroup: calendar-contributor-experience
+      gDocNotes: 1CTQI0p3QF8JP8reV8z_ggcs8KE5YVPpQGvAQknw4qP0
+  - slack:
+      name: '#otel-contributor-experience'
+      id: C06TMJ2R0SK
+  - repository: open-telemetry/sig-contributor-experience
+- id: developer-experience
+  kind: sig
+  sigCategory: cross-cutting
+  name: Developer Experience
+  parent: none
+  people:
+  - gcLiaison: austinlparker
+  - specSponsor: tedsuo
+  - tcSponsor:
+      username: lmolkova
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Wednesday 11:00 PT and 17:00 UTC+8
+      calendarInviteGroup: calendar-developer-experience
+      gDocNotes: 1QDZYAvGJbqgodJaTxRPmRZh-fEJjb6XstvPUst6h50w
+  - slack:
+      name: '#otel-devex'
+      id: C01S42U83B2
+  - repository: open-telemetry/sig-developer-experience
+- id: localization-bn
+  kind: sig
+  sigCategory: cross-cutting
+  name: Bengali (bn)
+  parent: communications
+  people:
+  - gcLiaison: svrnm
+  - specSponsor: svrnm
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - slack:
+      name: '#otel-localization-bn'
+      id: C08TBCSAY1F
+- id: localization-zh-cn
+  kind: sig
+  sigCategory: cross-cutting
+  name: Chinese (zh-CN)
+  parent: communications
+  people:
+  - gcLiaison: svrnm
+  - specSponsor: svrnm
+  - tcSponsor:
+      username: reyang
+      level: tbd
+  resources:
+  - slack:
+      name: '#otel-localization-zhcn'
+      id: C08SSK25Y7L
+- id: localization-fr
+  kind: sig
+  sigCategory: cross-cutting
+  name: French (fr-FR)
+  parent: communications
+  people:
+  - gcLiaison: svrnm
+  - specSponsor: svrnm
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - slack:
+      name: '#otel-localization-fr'
+      id: C07THD60YLF
+- id: localization-ja
+  kind: sig
+  sigCategory: cross-cutting
+  name: Japanese (ja-JA)
+  parent: communications
+  people:
+  - gcLiaison: svrnm
+  - specSponsor: svrnm
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every third Wednesday at 01:00pm JST
+      calendarInviteGroup: calendar-localization-ja
+      gDocNotes: 1venl18Obvp3vD-lR_9Hj9k826s_weF0vzWe-TdaDkuY
+  - slack:
+      name: '#otel-localization-ja'
+      id: C08SGPBN44E
+- id: localization-pl
+  kind: sig
+  sigCategory: cross-cutting
+  name: Polish (pl-PL)
+  parent: communications
+  people:
+  - gcLiaison: svrnm
+  - specSponsor: svrnm
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - slack:
+      name: '#otel-localization-pl'
+      id: C0ALHN9V7PT
+- id: localization-pt-br
+  kind: sig
+  sigCategory: cross-cutting
+  name: Portuguese (pt-BR)
+  parent: communications
+  people:
+  - gcLiaison: svrnm
+  - specSponsor: jpkrohling
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every second Wednesday at 7:15pm BST
+      calendarInviteGroup: calendar-localization-ptbr
+      gDocNotes: 1W1jJ4OTm53sbOp7CrbNBMvR_2Z8TQRCkwejqD4f21SE
+  - slack:
+      name: '#otel-localization-ptbr'
+      id: C076LET8YSK
+- id: localization-ro
+  kind: sig
+  sigCategory: cross-cutting
+  name: Romanian (ro-RO)
+  parent: communications
+  people:
+  - gcLiaison: svrnm
+  - specSponsor: svrnm
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Monthly on a different day, at a different time (see Slack channel)
+      gDocNotes: 1bvLFPDKMs2fw7750dKLvgL3BWRy5jLWJrivApOThDVg
+  - slack:
+      name: '#otel-localization-ro'
+      id: C09E9KNNLP4
+- id: localization-es
+  kind: sig
+  sigCategory: cross-cutting
+  name: Spanish (es-ES)
+  parent: communications
+  people:
+  - gcLiaison: svrnm
+  - specSponsor: svrnm
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - meeting:
+      schedule: Every second Friday at 8:30am UTC-3
+      calendarInviteGroup: calendar-localization-es
+      gDocNotes: 1LAhaPQfZ9IBjXZ1Y3misVV0Gp8Y8CVvoOVChV89Q0s0
+  - slack:
+      name: '#otel-localization-es'
+      id: C07PVQVCHA6
+- id: localization-uk
+  kind: sig
+  sigCategory: cross-cutting
+  name: Ukrainian (uk-UA)
+  parent: communications
+  people:
+  - gcLiaison: svrnm
+  - specSponsor: svrnm
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  resources:
+  - slack:
+      name: '#otel-localization-uk'
+      id: C097ZNPM3LK

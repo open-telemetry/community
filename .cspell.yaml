@@ -1,7 +1,7 @@
 version: 0.2
 ignorePaths:
-  ["elections/**/*", "tools/github/*", "scripts/**/*.py", "scripts/**/*.sh"]
-# Ignore certain patterns in the sigs.yml file
+  ["elections/**/*", "tools/github/*", "scripts/**/*.py", "scripts/**/*.sh", "workstreams.yml", "people.yml"]
+# Ignore certain patterns in the workstreams.yml file
 patterns:
   - name: Slack Channel ID
     pattern: "id: [A-Z0-9]{11}"
@@ -317,4 +317,6 @@ words:
   - Vitor
   - VNIC
   - vtex
+  - workstream
+  - workstreams
   - yahn

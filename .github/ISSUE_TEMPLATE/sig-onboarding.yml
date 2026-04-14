@@ -45,6 +45,6 @@ body:
       description: Complete all items below
       options:
         - label: Project Board
-        - label: Add Meeting Times, GC Liaison, Slack Channel, Google Doc to sigs.yml
+        - label: Add Meeting Times, GC Liaison, Slack Channel, Google Doc to workstreams.yml
         - label: SIG Slack Channel
         - label: GitHub Teams
