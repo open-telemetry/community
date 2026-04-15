@@ -71,7 +71,7 @@ Idiomatic, dead-simple process to set up the monitoring of applications running 
 In tentative order:
 
 * Design all of the configuration, scaffolding and layout to start adding more auto-instrumentation packages.
-* Trim the injector system packages not to include autoinstrumentations, and move its definition in the Packaging SIG repository.
+* Trim the injector system packages not to include auto-instrumentations, and move its definition in the Packaging SIG repository.
 * Build a package for OBI.
 * Design how to integrate the existing core- and contrib collector packages in the package ecosystem.
 * Identify which languages have blocking issues, and cannot be added to the overall system of packages. Record these blockers as issues, and discuss them with language maintainers to determine a viable timeline for improvement in each language.
