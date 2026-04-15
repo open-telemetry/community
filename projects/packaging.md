@@ -67,25 +67,26 @@ Idiomatic, dead-simple process to set up the monitoring of applications running 
 ## Deliverables
 
 ### Phase 1
+
 * Build an `opentelemetry` package that installs all of the sub-packages.
 * Design a release cadence and configuration for the `opentelemetry` package.
 * Design all of the configuration, scaffolding and layout to start adding individual sub-packages.
-* Build a package for the Collector.
-* Build a package for OBI.
+* Build a package for the Collector and OBI.
 * Identify which languages have blocking issues, and cannot be added. Record these blockers as issues, and discuss them with language maintainers to determine a viable timeline for improvement in each language.
-* For languages that do not have blocking issues, add the SDK, plugins, and instrumentation behind the `unstable` flag. During phase 1, no languages should be installable without the `unstable` flag as we still may break any piece of our design.
+* For languages that do not have blocking issues, create a system package using the existing bundles and configuration options available in that language. We believe that these languages are Java, .NET, JS and Python. But there may be more based on our investigations.
 
-Once we have some languages available behind the `unstable` flag, we can get feedback from the community on the design, and iterate until we are satisfied with the overall system. That is the goal of Phase 1.
+Once we have the initial set of languages available, we can get feedback from the community on the design, and iterate until we are satisfied with the overall system. That is the goal of Phase 1.
 
 ### Phase 2 (Future work)
+
 Once the community is satisfied with the overall design, we can begin stabilizing individual languages. Based on what we learn in phase 1, a phase 2 project file will be drafted. Most likely it will do the following, working on a SIG by SIG basis.
 
-* Identify which instrumentation packages are ready to be marked as stable.
-* Only marking packages as stable once there is a plan for how they will be maintained.
+* Based on our research, work with each missing language SIG to help make them available as system packages.
+* Add any additional features identified through community feedback.
 
-Note that while updating stable instrumentation packages to improved versions of semantic conventions is an important goal for our stable-by-design workstream, it is out of scope for the packaging SIG. The goal of this effort is simply to mark the "de-facto stable" packages as stable.
+### Out of Scope
 
-In parallel, work can be done via the SemConv Tooling SIG to create tools that lower the cost for maintaining and updating instrumentation packages.
+Note that while stable-by-default is and important goal for OpenTelemetry, it is a separate effort from the system packaging SIG. Control over which instrumentation packages are installed will be managed by declarative config, and will be independent from the installation mechanism.
 
 ## Staffing / Help Wanted
 
