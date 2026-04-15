@@ -111,11 +111,11 @@ See [Project Sponsorship](/project-management.md#project-sponsorship)
 
 #### TC Sponsor
 
-Name of TC sponsor (Escalating)
+[`@tigrannajaryan`](https://github.com/tigrannajaryan) (Escalating)
 
 #### Delegated TC Sponsor (Optional)
 
-Name of delegated TC sponsor
+[`@atoulme`](https://github.com/atoulme)
 
 #### GC Liaison
 
