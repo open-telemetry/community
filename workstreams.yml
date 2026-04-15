@@ -524,7 +524,7 @@
 - id: go
   kind: sig
   sigCategory: implementation
-  name: 'Go: SDK'
+  name: 'GoLang: SDK'
   parent: none
   people:
   - gcLiaison: maryliag
@@ -548,7 +548,7 @@
 - id: go-auto-instr
   kind: sig
   sigCategory: implementation
-  name: 'Go: Automatic Instrumentation'
+  name: 'GoLang: Automatic Instrumentation'
   parent: none
   people:
   - gcLiaison: jpkrohling
@@ -567,7 +567,7 @@
 - id: go-compile-instr
   kind: sig
   sigCategory: implementation
-  name: 'Go: Compile-Time Instrumentation'
+  name: 'GoLang: Compile-Time Instrumentation'
   parent: none
   people:
   - gcLiaison: jpkrohling
