@@ -130,13 +130,12 @@ items:
     additionalProperties: false
     properties:
       name:
-        # Must start with #otel-.
         type: string
-        minLength: 1
+        pattern: '^#otel-'
       id:
         # Slack channel ID, e.g. C014L2KCTE3.
         type: string
-        minLength: 1
+        pattern: '^C[A-Z0-9]{10}$'
 
   meetingResource:
     type: object
