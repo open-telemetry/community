@@ -19,11 +19,11 @@ markdown_file    = "README.md"
 start_marker = "<!-- sigs -->"
 end_marker = "<!-- endsigs -->"
 
-with open(WORKSTREAMS_FILE) as f:
+with open(WORKSTREAMS_FILE, encoding="utf-8") as f:
     workstreams = yaml.safe_load(f)
 
 try:
-    with open(METADATA_FILE) as f:
+    with open(METADATA_FILE, encoding="utf-8") as f:
         _metadata = yaml.safe_load(f)
     _people = _metadata.get("people", {})
 except FileNotFoundError:
@@ -146,7 +146,7 @@ def render_group(group_name, sigs, show_sponsors):
     return content
 
 
-with open(markdown_file) as f:
+with open(markdown_file, encoding="utf-8") as f:
     content = f.read()
 
 top_part = content.split(start_marker, 1)[0]
@@ -162,14 +162,14 @@ markdown_content += end_marker
 result = top_part + markdown_content + bottom_part
 
 if run_in_check_mode:
-    with open(markdown_file) as f:
+    with open(markdown_file, encoding="utf-8") as f:
         original = f.read()
     if original == result:
         sys.exit(0)
     else:
         sys.exit(1)
 else:
-    with open(markdown_file, "w") as f:
+    with open(markdown_file, "w", encoding="utf-8") as f:
         f.write(result)
 
 # Inform the user that the markdown file has been updated
