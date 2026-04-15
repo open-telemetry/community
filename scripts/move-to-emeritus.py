@@ -306,33 +306,87 @@ def _check_events(remaining, repo, cutoff, event_types):
     return active
 
 
+def _verify_review_candidates(user, candidate_prs, repo, cutoff):
+    """Verify candidate PRs via REST to confirm actual review dates.
+
+    Returns the first PR number with a confirmed recent review, or None.
+    """
+    for pr_number in candidate_prs:
+        reviews_url = f"{REST_API}/repos/{ORG}/{repo}/pulls/{pr_number}/reviews"
+        rev_resp = request_with_retry("GET", reviews_url)
+        reviews = read_json(rev_resp)
+        for review in reviews:
+            submitted = review.get("submitted_at", "")[:10]
+            reviewer = (review.get("user") or {}).get("login", "")
+            if reviewer == user and submitted >= cutoff:
+                return pr_number
+    return None
+
+
+def _check_reviews_paginated(user, repo, cutoff, start_cursor):
+    """Paginate through remaining GraphQL results for a single user.
+
+    Called only when the batched first page didn't confirm activity.
+    Returns a PR number with confirmed review, or None.
+    """
+    safe = "u_" + re.sub(r"[^a-zA-Z0-9]", "_", user)
+    review_q = f'type:pr repo:{ORG}/{repo} reviewed-by:{user} updated:>={cutoff}'
+    cursor = start_cursor
+
+    while cursor:
+        query = (
+            f'query {{ {safe}_reviews: search(query: "{review_q}", type: ISSUE, first: 10, after: "{cursor}") '
+            f'{{ pageInfo {{ hasNextPage endCursor }} nodes {{ ... on PullRequest {{ number }} }} }} }}'
+        )
+        resp = request_with_retry("POST", GRAPHQL_API, data={"query": query})
+        data = read_json(resp)
+        if "errors" in data:
+            print(f"GraphQL errors: {data['errors']}", file=sys.stderr)
+            sys.exit(1)
+
+        result = data["data"].get(f"{safe}_reviews") or {}
+        candidate_prs = [n["number"] for n in result.get("nodes", []) if "number" in n]
+
+        pr = _verify_review_candidates(user, candidate_prs, repo, cutoff)
+        if pr is not None:
+            return pr
+
+        page_info = result.get("pageInfo", {})
+        if not page_info.get("hasNextPage"):
+            break
+        cursor = page_info.get("endCursor")
+
+    return None
+
+
 def _check_reviews(remaining, repo, cutoff):
     """Check for PR review activity. Returns dict of {username: [pr_numbers]}.
 
-    Uses GraphQL to find candidate PRs (reviewed-by + updated:>=), then
-    verifies actual review dates via REST on only those specific PRs.
+    Batches the first GraphQL page for up to 10 users at a time, then
+    REST-verifies candidates. Users not confirmed active from the first page
+    are paginated individually through remaining results.
     """
     if not remaining:
         return {}
 
     active = {}
-    remaining_set = set(remaining)
-    remaining_list = list(remaining_set)
+    remaining_list = list(remaining)
     batch_size = 10
+    page_size = 10
 
     for i in range(0, len(remaining_list), batch_size):
-        batch_users = [u for u in remaining_list[i : i + batch_size] if u in remaining_set]
+        batch_users = remaining_list[i : i + batch_size]
         if not batch_users:
             continue
 
-        # GraphQL: find candidate PRs per user
+        # Batched first-page GraphQL query for all users in this batch
         aliases = []
         for user in batch_users:
             safe = "u_" + re.sub(r"[^a-zA-Z0-9]", "_", user)
             review_q = f'type:pr repo:{ORG}/{repo} reviewed-by:{user} updated:>={cutoff}'
             aliases.append(
-                f'{safe}_reviews: search(query: "{review_q}", type: ISSUE, first: 5) '
-                f'{{ nodes {{ ... on PullRequest {{ number }} }} }}'
+                f'{safe}_reviews: search(query: "{review_q}", type: ISSUE, first: {page_size}) '
+                f'{{ pageInfo {{ hasNextPage endCursor }} nodes {{ ... on PullRequest {{ number }} }} }}'
             )
 
         query = "query { " + "\n".join(aliases) + " }"
@@ -342,30 +396,24 @@ def _check_reviews(remaining, repo, cutoff):
             print(f"GraphQL errors: {data['errors']}", file=sys.stderr)
             sys.exit(1)
 
-        # For each user with candidates, verify review dates via REST
+        # Verify candidates and paginate if needed
         for user in batch_users:
-            if user not in remaining_set:
-                continue
             safe = "u_" + re.sub(r"[^a-zA-Z0-9]", "_", user)
             result = data["data"].get(f"{safe}_reviews") or {}
             candidate_prs = [n["number"] for n in result.get("nodes", []) if "number" in n]
 
-            for pr_number in candidate_prs:
-                reviews_url = f"{REST_API}/repos/{ORG}/{repo}/pulls/{pr_number}/reviews"
-                rev_resp = request_with_retry("GET", reviews_url)
-                reviews = read_json(rev_resp)
+            pr = _verify_review_candidates(user, candidate_prs, repo, cutoff)
+            if pr is not None:
+                active[user] = [pr]
+                continue
 
-                for review in reviews:
-                    submitted = review.get("submitted_at", "")[:10]
-                    reviewer = (review.get("user") or {}).get("login", "")
-                    if reviewer == user and submitted >= cutoff:
-                        active.setdefault(user, [])
-                        if pr_number not in active[user]:
-                            active[user].append(pr_number)
-                        remaining_set.discard(user)
-                        break
-                if user not in remaining_set:
-                    break
+            # First page didn't confirm activity — paginate if more pages exist
+            page_info = result.get("pageInfo", {})
+            if page_info.get("hasNextPage"):
+                cursor = page_info.get("endCursor")
+                pr = _check_reviews_paginated(user, repo, cutoff, cursor)
+                if pr is not None:
+                    active[user] = [pr]
 
     return active
 
@@ -1083,29 +1131,53 @@ def main():
         print("No users found to check.")
         return
 
-    # Phase 2: Check activity per team using only the highest role's criteria
-    # A user is active for a team if they have activity on ANY of that team's repos.
-    # Build team -> role -> [users] mapping
-    team_role_users = {}  # team_name -> {role_label -> [usernames]}
-    for user, data in all_user_data.items():
-        for team_name in data["team_repos"]:
-            team_role_users.setdefault(team_name, {})
-            team_role_users[team_name].setdefault(data["role"], []).append(user)
+    # Phase 2: Check activity per repo using the user's highest role for that repo.
+    # If a user is on X-maintainer and X-approver (both covering repo X),
+    # they are checked with maintainer criteria only. Activity on any repo in a
+    # team satisfies that team.
 
-    # team_name -> set of active usernames (across that team's repos)
-    team_active = {}
-    print(f"Checking activity per team across {len(team_role_users)} team(s)...")
-    for team_name in sorted(team_role_users):
-        repos = list(team_repos_map[team_name])
-        active_for_team = set()
+    # Step 2a: For each user+repo, determine the highest role across all teams
+    # user_repo_role: {user -> {repo -> highest_role}}
+    user_repo_role = {}
+    for user, data in all_user_data.items():
+        for team_name, role_label in data["entries"]:
+            for repo in data["team_repos"].get(team_name, set()):
+                user_repo_role.setdefault(user, {})
+                current = user_repo_role[user].get(repo)
+                if current is None or role_priority[role_label] > role_priority[current]:
+                    user_repo_role[user][repo] = role_label
+
+    # Step 2b: Group by (repo, role) for batched checking
+    repo_role_users = {}  # repo -> {role_label -> set(usernames)}
+    for user, repo_roles in user_repo_role.items():
+        for repo, role_label in repo_roles.items():
+            repo_role_users.setdefault(repo, {})
+            repo_role_users[repo].setdefault(role_label, set()).add(user)
+
+    # Step 2c: Check activity per repo
+    repo_active = {}  # repo -> set of active usernames
+    all_repos = sorted(repo_role_users.keys())
+    print(f"Checking activity across {len(all_repos)} repo(s)...")
+    for repo in all_repos:
+        active_on_repo = set()
         for role_label in ["Maintainer", "Approver", "Triager"]:
-            users = team_role_users[team_name].get(role_label, [])
+            users = list(repo_role_users[repo].get(role_label, []))
             if not users:
                 continue
             check_fn = check_fns[role_label]
-            active = check_fn(users, repos, cutoff)
-            active_for_team.update(active)
-        team_active[team_name] = active_for_team
+            active = check_fn(users, [repo], cutoff)
+            active_on_repo.update(active)
+        repo_active[repo] = active_on_repo
+
+    # Step 2d: Map repo-level activity back to teams.
+    # A user is active for a team if they are active on ANY of that team's repos.
+    team_active = {}  # team_name -> set of active usernames
+    for user, data in all_user_data.items():
+        for team_name in data["team_repos"]:
+            for repo in data["team_repos"][team_name]:
+                if user in repo_active.get(repo, set()):
+                    team_active.setdefault(team_name, set()).add(user)
+                    break
 
     # Phase 3: Build inactive report
     # repo -> list of (username, team_name, role_label)
