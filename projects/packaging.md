@@ -48,7 +48,7 @@ We feel OpenTelemetry needs to provide a more product-like, batteries-included e
 
 * **Enterprise-ready:** The OpenTelemetry package repositories must be easy to add a trusted package repository to the Linux system.
 * **Easy mode is easy:** `{apt|yum} install opentelemetry` and some lightweight configurations in `/etc` should be all the user needs to do to set up auto-instrumentation of the applications running on the system.
-**Note:** There is much more we could do to configure the collector, e.g., automatically set up syslog / journald receivers, host resource detectors, and more. But that is outside the current scope.
+  **Note:** There is much more we could do to configure the collector, e.g., automatically set up syslog / journald receivers, host resource detectors, and more. But that is outside the current scope.
 * **Cohesive:** OBI and the Injector need to “play nice together,” to avoid double instrumentation of processes that both support. Whether OBI or the Injector have precedence over one another, or whether they are “alternatives” (as in: packages that cannot be installed at the same time, but fulfill the requirement set out by the same meta-package) is TBD.
 * **Extensible to vendor packages:** It should be possible for vendor system packages to provide alternatives to upstream system packages, especially for collector and auto-instrumentation system packages.
 * **Declarative configuration:** OBI and the SDKs injected by the OpenTelemetry Injector should default to using declarative configuration.
@@ -68,18 +68,24 @@ Idiomatic, dead-simple process to set up the monitoring of applications running 
 
 ### Phase 1
 
-* Build an `opentelemetry` package that installs all of the sub-packages.
-* Design a release cadence and configuration for the `opentelemetry` package.
-* Design all of the configuration, scaffolding and layout to start adding individual sub-packages.
-* Build a package for the Collector and OBI.
-* Identify which languages have blocking issues, and cannot be added. Record these blockers as issues, and discuss them with language maintainers to determine a viable timeline for improvement in each language.
-* For languages that do not have blocking issues, create a system package using the existing bundles and configuration options available in that language. We believe that these languages are Java, .NET, JS and Python. But there may be more based on our investigations.
+In tentative order:
+
+* Design all of the configuration, scaffolding and layout to start adding more auto-instrumentation packages.
+* Trim the injector system packages not to include autoinstrumentations, and move its definition in the Packaging SIG repository.
+* Build a package for OBI.
+* Design how to integrate the existing core- and contrib collector packages in the package ecosystem.
+* Identify which languages have blocking issues, and cannot be added to the overall system of packages. Record these blockers as issues, and discuss them with language maintainers to determine a viable timeline for improvement in each language.
+* For languages that do not have blocking issues, create the auto-instrumentation system package using the existing bundles and configuration options available in that language.
+* Build the `opentelemetry` package that installs the injector, OBI, and all auto-instrumentation packages.
+* Design a release cadence and configuration for the `opentelemetry` package, the injector package and auto-instrumentation packages.
 
 Once we have the initial set of languages available, we can get feedback from the community on the design, and iterate until we are satisfied with the overall system. That is the goal of Phase 1.
 
 ### Phase 2 (Future work)
 
-Once the community is satisfied with the overall design, we can begin stabilizing individual languages. Based on what we learn in phase 1, a phase 2 project file will be drafted. Most likely it will do the following, working on a SIG by SIG basis.
+Once the community is satisfied with the overall design, we can begin stabilizing individual languages, the structrue of packages and their interactions.
+Based on what we learn in phase 1, a phase 2 project file will be drafted.
+Most likely it will do the following, working on a SIG by SIG basis:
 
 * Based on our research, work with each missing language SIG to help make them available as system packages.
 * Add any additional features identified through community feedback.
