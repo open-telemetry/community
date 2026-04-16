@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Usage:
 #     # Check all repos and print report
 #     python move-to-emeritus.py
@@ -10,7 +11,6 @@
 #
 # Note: the script can be safely re-run multiple times. If a PR already exists for a repo, its body will be updated with the latest info.
 #
-#!/usr/bin/env python3
 import argparse
 import base64
 import json
