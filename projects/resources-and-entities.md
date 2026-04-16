@@ -45,6 +45,10 @@ However, these workarounds prevent Metrics users from regaining descriptive attr
 
 Source: [see this issue](https://github.com/open-telemetry/opentelemetry-specification/issues/2775).
 
+### Further Reading
+
+For more details on the problems and proposed solutions please [see this document](https://docs.google.com/document/d/19zYskz-uhHFwCPU7Djpv0MtUxkX9Orm4sjPM_6w6rtY/edit?tab=t.0).
+
 ## Deliverables
 
 We plan to deliver the following:
