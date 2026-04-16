@@ -2,10 +2,13 @@
 # Usage:
 #     # Check all repos and print report
 #     python move-to-emeritus.py
-#    
+#
+#     # Check all repos with debug output (shows why each member was marked active/inactive)
+#     python move-to-emeritus.py --debug
+#
 #     # Check only a specific repo
 #     python move-to-emeritus.py --repo opentelemetry-collector
-#    
+#
 #     # Create PRs to move inactive members to emeritus (after verifying the report)
 #     python move-to-emeritus.py --create-prs
 #
