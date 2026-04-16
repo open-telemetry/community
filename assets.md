@@ -71,12 +71,37 @@ Access to bare metal runners for benchmarking is available to repositories on re
 (open a community issue),
 which will give access to the following GitHub-hosted runner:
 
-- `oracle-bare-metal-64cpu-512gb-x86-64`
+- `oracle-bare-metal-64cpu-512gb-x86-64` (Oracle Linux 8)
+- `oracle-bare-metal-64cpu-1024gb-x86-64-ubuntu-24` (Ubuntu 24)
+
+`oracle-bare-metal-64cpu-512gb-x86-64` hardware specification (BM.Standard.E2.64):
+
+| Component | Specification |
+|---|---|
+| Processor | 2-socket AMD EPYC 7551 (2.0 GHz base, 3.0 GHz max boost) |
+| OCPUs | 64 (128 vCPUs), 32 per socket |
+| Memory | 512 GB (8 NUMA nodes, 64 GB per node) |
+
+`oracle-bare-metal-64cpu-1024gb-x86-64-ubuntu-24` hardware specification ([BM.Standard3.64](https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm#bm-standard)):
+
+| Component | Specification |
+|---|---|
+| Processor | 2-socket Intel Xeon Platinum 8358 (2.6 GHz base, 3.4 GHz max turbo) |
+| OCPUs | 64 (128 vCPUs), 32 per socket |
+| Memory | 1024 GB (2 NUMA nodes, 512 GB per node) |
+
+We are currently transitioning from the Oracle Linux 8 runner to the
+Ubuntu 24 runner. Once the transition is complete, the Oracle Linux 8 runner
+will be decommissioned.
 
 Note: there is only one bare metal runner at this time, so
 please ensure your workloads are optimized to avoid unnecessary usage.
 
 Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+
+SSH private keys are available in the SIG Project Infrastructure 1Password vault.
+
+[How to provision an Oracle bare metal runner](docs/how-to-provision-bare-metal-runner.md)
 
 #### Linux/s390x runners
 
@@ -156,9 +181,10 @@ Link: https://www.myget.org/feed/Packages/opentelemetry
 Link: https://www.npmjs.com/settings/opentelemetry/packages
 
 - Ask any of the following people if you need access
-- Owner: Mayur Kale @mayurkale22
-- Admin: Daniel Dyla @dyladan
-- Member: Bogdan Drutu @bogdandrutu
+- Owner: OpenTelemetry account `npmjs-account` (GC/TC have access to it)
+- Member: Daniel Dyla @dyladan
+- Member: Marc Pichler @pichlermarc
+- Member: Trent Mick @trentm
 
 ### Crates
 

@@ -53,9 +53,11 @@ words:
   - Francesco
   - gitter
   - grafana
+  - growpart
   - Hendrik
   - Hostmetrics
   - hostmetricsreceiver
+  - iflag
   - Instrgen
   - jemmic
   - Joaquín
@@ -75,10 +77,14 @@ words:
   - Lukasz
   - maintainership
   - Makefiles
+  - NUMA
   - Marylia
   - observiq
+  - OCPUs
   - opentelemetry
   - opentelemetrybot
+  - oracleoci
+  - oraclevda
   - otel
   - otel-localization-ptbr
   - otel-localization-zhcn
@@ -89,6 +95,7 @@ words:
   - proto
   - Purvi
   - pytest
+  - rescan
   - isovalent
   - labs
   - Liudmila
@@ -205,6 +212,7 @@ words:
   - Morgado
   - MSYS
   - PATHCONV
+  - Pichler
   - mtwo
   - mwear
   - npmjs
@@ -303,8 +311,10 @@ words:
   - triagers
   - teamcity
   - uninstrumented
+  - usermod
   - Vasconcellos
   - Villela
   - Vitor
+  - VNIC
   - vtex
   - yahn
