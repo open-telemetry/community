@@ -92,7 +92,7 @@ This effort will be hosted in the existing Collector SIG.
 Sponsors for this effort are:
 
 * [@dmitryax](https://github.com/dmitryax) (Splunk)
-* [@codeboten](https://github.com/codeboten) (OHoneycomb)
+* [@codeboten](https://github.com/codeboten) (Honeycomb)
 
 ### Required staffing
 
@@ -138,8 +138,8 @@ confirmed and expected time commitments are known, this timeline is in flux.
 
 ## GitHub Project (Post-Approval)
 
-TBD
+https://github.com/orgs/open-telemetry/projects/191
 
 ## SIG Meetings, Roadmap, and Other Info (Post-Approval)
 
-All communication will be done in the existing Collector SIG.
+All communication will be done in the existing Collector SIG. There is a dedicated Slack channel for the project, [#otel-collector-mcp](https://cloud-native.slack.com/archives/C0AP6EQ32S1).
