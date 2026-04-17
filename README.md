@@ -101,7 +101,7 @@ explains the reasoning behind choosing this license.
 ## Logos and Brand Guide
 
 The OpenTelemetry logos and brand guide can be found in the [CNCF artwork
-repository](https://github.com/cncf/artwork/tree/master/projects/opentelemetry). In addition, a [Google Slides template](https://docs.google.com/presentation/d/1Neab3OZ3c-m5kOE37iZXEVpK4Pjj6xGTJEUuUzLQJvk/edit?usp=sharing) is also available.
+repository](https://github.com/cncf/artwork/tree/master/projects/opentelemetry). In addition, a [Google Slides template](https://docs.google.com/presentation/d/16Dnax74oG7i_zBEpYQBGlf8mX72pRWehYz1LrIqlTvw/edit?slide=id.g3d3aa3b316c_0_0) is also available.
 
 ## How to
 
@@ -178,7 +178,7 @@ SIG-specific GitHub discussions.
 | eBPF Instrumentation&nbsp;<a id="sig-ebpf-instrumentation" href="#sig-ebpf-instrumentation"><sup>🔗</sup></a> | Wednesday at 08:00 PT | [Google Doc](https://docs.google.com/document/d/1ZkmUT2EHKfgtLqrgx3WI8aBy2QNyZeTwSKXxe3DI6Pw) | [#otel-ebpf-instrumentation](https://cloud-native.slack.com/archives/C08P9L4FPKJ) | [calendar-ebpf-instrumentation](https://groups.google.com/a/opentelemetry.io/g/calendar-ebpf-instrumentation) | [Severin Neumann](https://github.com/svrnm) |
 | Kubernetes Operator&nbsp;<a id="sig-operator" href="#sig-operator"><sup>🔗</sup></a> | Thursday at 09:00 PT | [Google Doc](https://docs.google.com/document/d/1Unbs2qp_j5kp8FfL_lRH-ld7i5EOQpsq0I4djkOOSL4) | [#otel-operator](https://cloud-native.slack.com/archives/C033BJ8BASU) | [calendar-k8s-operator](https://groups.google.com/a/opentelemetry.io/g/calendar-k8s-operator) | [Juraci Paixão Kröhling](https://github.com/jpkrohling) |
 | Kubernetes Helm Charts&nbsp;<a id="sig-helm" href="#sig-helm"><sup>🔗</sup></a> | Meets during OpenTelemetry Operator and OpenTelemetry Collector | [Google Doc](https://docs.google.com/document/d/1Unbs2qp_j5kp8FfL_lRH-ld7i5EOQpsq0I4djkOOSL4) | [#otel-helm](https://cloud-native.slack.com/archives/C03HVLM8LAH) | [calendar-k8s-operator](https://groups.google.com/a/opentelemetry.io/g/calendar-k8s-operator) | [Pablo Baeyens](https://github.com/mx-psi) |
-| Community Demo Application&nbsp;<a id="sig-community-demo" href="#sig-community-demo"><sup>🔗</sup></a> | Wednesday at 08:00 PT | [Google Doc](https://docs.google.com/document/d/16f-JOjKzLgWxULRxY8TmpM_FjlI1sthvKurnqFz9x98) | [#otel-community-demo](https://cloud-native.slack.com/archives/C03B4CWV4DA) | [calendar-demo-app](https://groups.google.com/a/opentelemetry.io/g/calendar-demo-app) | [Austin Parker](https://github.com/austinlparker) |
+| Community Demo Application&nbsp;<a id="sig-community-demo" href="#sig-community-demo"><sup>🔗</sup></a> | Wednesday at 08:00 PT | [Google Doc](https://docs.google.com/document/d/16f-JOjKzLgWxULRxY8TmpM_FjlI1sthvKurnqFz9x98) | [#otel-community-demo](https://cloud-native.slack.com/archives/C03B4CWV4DA) | [calendar-demo-app](https://groups.google.com/a/opentelemetry.io/g/calendar-demo-app) | [Marylia Gutierrez](https://github.com/maryliag) |
 | Semantic Conventions: Tooling&nbsp;<a id="sig-weaver" href="#sig-weaver"><sup>🔗</sup></a> | Wednesday at 07:00 PT | [Google Doc](https://docs.google.com/document/d/1ygwXgOFRF01UfUOgMr_ElyL7fSDPchTKSrqfj-_HeyA) | [#otel-weaver](https://cloud-native.slack.com/archives/C0697EXNTL3) | [calendar-semconv](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv) | [Juraci Paixão Kröhling](https://github.com/jpkrohling) |
 
 ### Cross-Cutting SIGs

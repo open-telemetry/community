@@ -123,6 +123,7 @@ The following users have built OpenTelemetry MCP servers:
 * [@austinlparker](https://github.com/austinlparker) - author of [otel-mcp](https://github.com/austinlparker/otel-mcp)
 * [@mottibec](https://github.com/mottibec) - author of [otelcol-mcp](https://github.com/mottibec/otelcol-mcp)
 * [@shiftyp](https://github.com/shiftyp) - author of [otel-mcp-server](https://github.com/shiftyp/otel-mcp-server)
+* [@henrikrexed](https://github.com/henrikrexed) - author of [otel-collector-mcp](https://github.com/henrikrexed/otel-collector-mcp)
 
 There will be [OpenTelemetry MCP call for contributors post](https://github.com/open-telemetry/opentelemetry.io/pull/8629) to promote the project.
 
