@@ -1,0 +1,39 @@
+name: Issue management - Triage Project Proposals
+
+on:
+  pull_request:
+    types: [opened, reopened]
+    paths:
+      - 'projects/**'
+
+permissions:
+  contents: read
+
+jobs:
+  triage:
+    permissions:
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for reviewed label
+        id: check_label
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          labels=$(gh pr view $PR_NUMBER --repo $REPO --json labels --jq '.labels[].name')
+          if echo "$labels" | grep -q "triage:tc-reviewed"; then
+            echo "should_triage=false" >> $GITHUB_OUTPUT
+          else
+            echo "should_triage=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Add TC review label
+        if: steps.check_label.outputs.should_triage == 'true'
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh pr edit $PR_NUMBER --repo $REPO --add-label "triage:tc-inbox"
