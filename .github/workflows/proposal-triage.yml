@@ -1,4 +1,4 @@
-name: Issue management - Triage Proposals
+name: Issue management - Triage Project Proposals
 
 on:
   pull_request:
