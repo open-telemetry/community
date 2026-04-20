@@ -917,8 +917,7 @@
       level: tbd
   resources:
   - meeting:
-      schedule: 'Every Thursday at 10:00 PT (alternating OTel Blueprints and general
-        meetings)'
+      schedule: 'Alternating between Monday at 08:00 PT (Blueprints) and Thursday at 10:00 PT (General)'
       calendarInviteGroup: calendar-sig-end-user
       gDocNotes: 1e-UNZA3Tuno9b53RQbe--whUcO0VIXF3P81oXsrBK6g
   - slack:

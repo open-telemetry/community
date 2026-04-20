@@ -92,7 +92,7 @@ This effort will be hosted in the existing Collector SIG.
 Sponsors for this effort are:
 
 * [@dmitryax](https://github.com/dmitryax) (Splunk)
-* [@codeboten](https://github.com/codeboten) (OHoneycomb)
+* [@codeboten](https://github.com/codeboten) (Honeycomb)
 
 ### Required staffing
 
@@ -123,6 +123,7 @@ The following users have built OpenTelemetry MCP servers:
 * [@austinlparker](https://github.com/austinlparker) - author of [otel-mcp](https://github.com/austinlparker/otel-mcp)
 * [@mottibec](https://github.com/mottibec) - author of [otelcol-mcp](https://github.com/mottibec/otelcol-mcp)
 * [@shiftyp](https://github.com/shiftyp) - author of [otel-mcp-server](https://github.com/shiftyp/otel-mcp-server)
+* [@henrikrexed](https://github.com/henrikrexed) - author of [otel-collector-mcp](https://github.com/henrikrexed/otel-collector-mcp)
 
 There will be [OpenTelemetry MCP call for contributors post](https://github.com/open-telemetry/opentelemetry.io/pull/8629) to promote the project.
 
@@ -137,8 +138,8 @@ confirmed and expected time commitments are known, this timeline is in flux.
 
 ## GitHub Project (Post-Approval)
 
-TBD
+https://github.com/orgs/open-telemetry/projects/191
 
 ## SIG Meetings, Roadmap, and Other Info (Post-Approval)
 
-All communication will be done in the existing Collector SIG.
+All communication will be done in the existing Collector SIG. There is a dedicated Slack channel for the project, [#otel-collector-mcp](https://cloud-native.slack.com/archives/C0AP6EQ32S1).
