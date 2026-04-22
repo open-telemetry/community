@@ -6,8 +6,9 @@
 #     # Check all repos with debug output (shows why each member was marked active/inactive)
 #     python move-to-emeritus.py --debug
 #
-#     # Check only a specific repo
+#     # Check only specific repo(s)
 #     python move-to-emeritus.py --repo opentelemetry-collector
+#     python move-to-emeritus.py --repo opentelemetry-collector opentelemetry-python
 #
 #     # Create PRs to move inactive members to emeritus (after verifying the report)
 #     python move-to-emeritus.py --create-prs
@@ -1042,8 +1043,8 @@ def main():
                         help="Print why each member was marked as active")
     parser.add_argument("--create-prs", action="store_true",
                         help="Create PRs to move inactive members to emeritus in each repo")
-    parser.add_argument("--repo", type=str, default=None,
-                        help="Only check a specific repo (e.g. opentelemetry-python)")
+    parser.add_argument("--repo", nargs="+", default=None,
+                        help="Only check specific repo(s) (e.g. opentelemetry-python opentelemetry-collector)")
     args = parser.parse_args()
     DEBUG = args.debug
 
@@ -1080,9 +1081,9 @@ def main():
             members = get_team_members(slug)
             repos = get_team_repos(slug, cutoff)
 
-            # Filter to a single repo if --repo is specified
+            # Filter to a list of repos if --repo is specified
             if args.repo:
-                repos = [r for r in repos if r == args.repo]
+                repos = [r for r in repos if r in args.repo]
 
             # Filter out ignored repos
             repos = [r for r in repos if r not in IGNORED_REPOS]

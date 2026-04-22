@@ -17,8 +17,8 @@ jobs:
       - uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2.2.1
         id: otelbot-token
         with:
-          app-id: ${{ vars.OTELBOT_DOCS_APP_ID }}
-          private-key: ${{ secrets.OTELBOT_DOCS_PRIVATE_KEY }}
+          app-id: ${{ vars.OTELBOT_APP_ID }}
+          private-key: ${{ secrets.OTELBOT_PRIVATE_KEY }}
           owner: open-telemetry
 
       - name: Checkout repo
@@ -30,6 +30,6 @@ jobs:
           python-version: '3.12'
 
       - name: Run move-to-emeritus script
-        run: python scripts/move-to-emeritus.py --create-prs
+        run: python scripts/move-to-emeritus.py --create-prs --repo opentelemetry-js opentelemetry-js-contrib opentelemetry-java opentelemetry-java-contrib # Only checking a few repos for now since we want to verify the script works as expected before running it on all repos
         env:
           GITHUB_TOKEN: ${{ steps.otelbot-token.outputs.token }}
