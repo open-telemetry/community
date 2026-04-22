@@ -4,17 +4,19 @@ ALL_DOCS := $(shell find . -type f -name '*.md' -not -path './.github/*' -not -p
 # This is needed to make the /repo paths below work in Windows Git Bash
 export MSYS_NO_PATHCONV=1
 
-.PHONY: table-generation
-table-generation:
+.PHONY: generate
+generate:
 	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/update-sig-tables.py --install;
+	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/update-community-members.py --install;
 
 .PHONY: validate-sigs
 validate-sigs:
 	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/validate-workstreams.py --install;
 
-.PHONY: table-check
-table-check:
+.PHONY: check-generate
+check-generate:
 	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/update-sig-tables.py --install --check;
+	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/update-community-members.py --install --check;
 
 .PHONY: markdown-link-check
 markdown-link-check:
