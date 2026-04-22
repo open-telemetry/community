@@ -8,9 +8,11 @@ export MSYS_NO_PATHCONV=1
 table-generation:
 	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/update-sig-tables.py --install;
 
+.PHONY: validate-sigs
 validate-sigs:
-	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/validate-sigs.py --install;
+	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/validate-workstreams.py --install;
 
+.PHONY: table-check
 table-check:
 	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/update-sig-tables.py --install --check;
 

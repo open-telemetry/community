@@ -7,9 +7,9 @@ requirements and recommendations.
 
 ## Updating SIG information on the README.md
 
-The SIG tables on the [README.md](README.md) page are generated from [`sigs.yml`](sigs.yml).
+The SIG tables on the [README.md](README.md) page are generated from [`workstreams.yml`](workstreams.yml) and [`people.yml`](people.yml).
 
-To regenerate those tables after updating any `sigs.yml` content, run:
+To regenerate those tables after updating any `workstreams.yml` content, run:
 
 ```bash
 make table-generation

@@ -1,10 +1,10 @@
 version: 0.2
 ignorePaths:
-  ["elections/**/*", "tools/github/*", "scripts/**/*.py", "scripts/**/*.sh"]
-# Ignore certain patterns in the sigs.yml file
+  ["elections/**/*", "tools/github/*", "scripts/**/*.py", "scripts/**/*.sh", "workstreams.yml", "people.yml"]
+# Ignore certain patterns in the workstreams.yml file
 patterns:
   - name: Slack Channel ID
-    pattern: "id: [A-Z0-9]{11}"
+    pattern: "\\bC[A-Z0-9]{10}\\b"
   - name: Google Docs ID
     pattern: "value: [a-zA-Z0-9-_]+"
   - name: "GitHub Handle"
@@ -257,6 +257,7 @@ words:
   - raesene
   - reiley
   - readmemd
+  - rollup
   - roadmaps
   - rolldice
   - ruech
@@ -317,4 +318,6 @@ words:
   - Vitor
   - VNIC
   - vtex
+  - workstream
+  - workstreams
   - yahn
