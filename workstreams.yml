@@ -207,7 +207,7 @@
   - gcLiaison: trask
   - tcSponsor:
       username: jsuereth
-      level: escalating
+      level: guiding
   resources:
   - meeting:
       schedule: Alternating between Thursday at 08:00 PT and Thursday at 12:00 UTC
