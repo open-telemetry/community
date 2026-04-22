@@ -305,6 +305,9 @@
   - gcLiaison: mtwo
   - tcSponsor:
       username: jsuereth
+      level: escalating
+  - tcSponsor:
+      username: tigrannajaryan
       level: guiding
   - tcSponsor:
       username: tigrannajaryan
