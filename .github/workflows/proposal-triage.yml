@@ -1,7 +1,7 @@
 name: Issue management - Triage Project Proposals
 
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, reopened]
     paths:
       - 'projects/**'
