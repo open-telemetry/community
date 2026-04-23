@@ -53,12 +53,14 @@ people:
   alolita:
     name: Alolita Sharma
     company: Apple
+    termEnd: October 2026
   arminru:
     name: Armin Ruech
     company: Dynatrace
   austinlparker:
     name: Austin Parker
     company: Honeycomb
+    termEnd: October 2027
   bogdandrutu:
     name: Bogdan Drutu
     company: Snowflake
@@ -86,6 +88,7 @@ people:
   jpkrohling:
     name: Juraci Paixão Kröhling
     company: OllyGarden
+    termEnd: October 2027
   jsuereth:
     name: Josh Suereth
     company: Google
@@ -101,12 +104,15 @@ people:
   maryliag:
     name: Marylia Gutierrez
     company: Grafana Labs
+    termEnd: October 2027
   mtwo:
     name: Morgan McLean
     company: Splunk
+    termEnd: October 2026
   mx-psi:
     name: Pablo Baeyens
     company: Datadog
+    termEnd: October 2026
   pellared:
     name: Robert Pająk
     company: Splunk
@@ -116,15 +122,18 @@ people:
   svrnm:
     name: Severin Neumann
     company: Causely
+    termEnd: October 2027
   tedsuo:
     name: Ted Young
     company: Grafana Labs
+    termEnd: October 2027
   tigrannajaryan:
     name: Tigran Najaryan
     company: Splunk
   trask:
     name: Trask Stalnaker
     company: Microsoft
+    termEnd: October 2026
   tsloughter:
     name: Tristan Sloughter
     company: MyDecisiveAI
