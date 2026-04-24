@@ -104,7 +104,7 @@ def get_cutoff_date():
     cutoff = now - timedelta(days=INACTIVITY_MONTHS * 30)
     return cutoff.strftime("%Y-%m-%d")
 
-def request_with_retry(method, url, data=None, retries=3):
+def request_with_retry(method, url, data=None, retries=5):
     for attempt in range(1, retries + 1):
         req = urllib.request.Request(url, headers=HEADERS, method=method)
         if data is not None:
@@ -113,7 +113,7 @@ def request_with_retry(method, url, data=None, retries=3):
         else:
             body = None
         try:
-            resp = urllib.request.urlopen(req, body)
+            resp = urllib.request.urlopen(req, body, timeout=30)
             return resp
         except urllib.error.HTTPError as e:
             if e.code in (403, 429):
@@ -131,6 +131,12 @@ def request_with_retry(method, url, data=None, retries=3):
             print(f"Attempt {attempt} failed: HTTP {e.code}")
             if attempt < retries:
                 time.sleep(1)
+            else:
+                raise
+        except (TimeoutError, OSError) as e:
+            print(f"Attempt {attempt} failed: {e}")
+            if attempt < retries:
+                time.sleep(2)
             else:
                 raise
     return None
