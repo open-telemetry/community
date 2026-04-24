@@ -1,7 +1,9 @@
+# This workflow should NOT ever run code from an untrusted source and care needs to be taken crafting 
+# this workflow and reviewing it to ensure secrets are not leaked.
 name: Issue management - Triage Project Proposals
 
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, reopened]
     paths:
       - 'projects/**'
