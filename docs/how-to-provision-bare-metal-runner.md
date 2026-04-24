@@ -85,6 +85,28 @@ sudo usermod -aG docker $USER
 # See https://docs.github.com/en/actions/writing-workflows/choosing-where-your-workflow-runs/running-jobs-in-a-container
 ```
 
+### Configure Docker build cache garbage collection
+
+Docker and BuildKit support automatic garbage collection for unused build cache.
+
+```bash
+sudo tee /etc/docker/daemon.json >/dev/null <<'EOF'
+{
+   "builder": {
+      "gc": {
+         "enabled": true,
+         "defaultKeepStorage": "20GB"
+      }
+   }
+}
+EOF
+
+sudo systemctl restart docker
+```
+
+This lets Docker reclaim old BuildKit cache on its own and avoids running cache
+cleanup against an active build.
+
 ## Step 3: Set up GitHub self-hosted runner
 
 1. Go to the [org runner settings](https://github.com/organizations/open-telemetry/settings/actions/runners)

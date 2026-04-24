@@ -1,0 +1,139 @@
+teams:
+  governance-committee:
+  - alolita
+  - austinlparker
+  - jpkrohling
+  - maryliag
+  - mtwo
+  - mx-psi
+  - svrnm
+  - tedsuo
+  - trask
+  technical-committee:
+  - arminru
+  - bogdandrutu
+  - carlosalberto
+  - dashpole
+  - jack-berg
+  - jmacd
+  - jsuereth
+  - lmolkova
+  - reyang
+  - tigrannajaryan
+  spec-sponsors:
+  - MrAlias
+  - Oberon00
+  - arminru
+  - bogdandrutu
+  - carlosalberto
+  - cijothomas
+  - codeboten
+  - dashpole
+  - dyladan
+  - jack-berg
+  - jmacd
+  - jpkrohling
+  - jsuereth
+  - lmolkova
+  - lzchen
+  - marcalff
+  - pellared
+  - reyang
+  - svrnm
+  - tedsuo
+  - tigrannajaryan
+  - tsloughter
+people:
+  MrAlias:
+    name: Tyler Yahn
+    company: Splunk
+  Oberon00:
+    name: Christian Neumüller
+    company: Dynatrace
+  alolita:
+    name: Alolita Sharma
+    company: Apple
+    termEnd: October 2026
+  arminru:
+    name: Armin Ruech
+    company: Dynatrace
+  austinlparker:
+    name: Austin Parker
+    company: Honeycomb
+    termEnd: October 2027
+  bogdandrutu:
+    name: Bogdan Drutu
+    company: Snowflake
+  carlosalberto:
+    name: Carlos Alberto Cortez
+    company: Lightstep
+  cijothomas:
+    name: Cijo Thomas
+    company: Microsoft
+  codeboten:
+    name: Alex Boten
+    company: Honeycomb
+  dashpole:
+    name: David Ashpole
+    company: Google
+  dyladan:
+    name: Daniel Dyla
+    company: Dynatrace
+  jack-berg:
+    name: Jack Berg
+    company: Grafana Labs
+  jmacd:
+    name: Joshua MacDonald
+    company: Microsoft
+  jpkrohling:
+    name: Juraci Paixão Kröhling
+    company: OllyGarden
+    termEnd: October 2027
+  jsuereth:
+    name: Josh Suereth
+    company: Google
+  lmolkova:
+    name: Liudmila Molkova
+    company: Grafana Labs
+  lzchen:
+    name: Leighton Chen
+    company: Microsoft
+  marcalff:
+    name: Marc Alff
+    company: Oracle
+  maryliag:
+    name: Marylia Gutierrez
+    company: Grafana Labs
+    termEnd: October 2027
+  mtwo:
+    name: Morgan McLean
+    company: Splunk
+    termEnd: October 2026
+  mx-psi:
+    name: Pablo Baeyens
+    company: Datadog
+    termEnd: October 2026
+  pellared:
+    name: Robert Pająk
+    company: Splunk
+  reyang:
+    name: Reiley Yang
+    company: Microsoft
+  svrnm:
+    name: Severin Neumann
+    company: Causely
+    termEnd: October 2027
+  tedsuo:
+    name: Ted Young
+    company: Grafana Labs
+    termEnd: October 2027
+  tigrannajaryan:
+    name: Tigran Najaryan
+    company: Splunk
+  trask:
+    name: Trask Stalnaker
+    company: Microsoft
+    termEnd: October 2026
+  tsloughter:
+    name: Tristan Sloughter
+    company: MyDecisiveAI
