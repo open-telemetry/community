@@ -3,10 +3,38 @@
   sigCategory: specification
   name: 'Specification: General + OTel Maintainers Sync'
   parent: none
+  tcSponsorship: collective
   people:
   - gcLiaison: tbd
   - tcSponsor:
-      username: tbd
+      username: arminru
+      level: tbd
+  - tcSponsor:
+      username: bogdandrutu
+      level: tbd
+  - tcSponsor:
+      username: carlosalberto
+      level: tbd
+  - tcSponsor:
+      username: dashpole
+      level: tbd
+  - tcSponsor:
+      username: jack-berg
+      level: tbd
+  - tcSponsor:
+      username: jmacd
+      level: tbd
+  - tcSponsor:
+      username: jsuereth
+      level: tbd
+  - tcSponsor:
+      username: lmolkova
+      level: tbd
+  - tcSponsor:
+      username: reyang
+      level: tbd
+  - tcSponsor:
+      username: tigrannajaryan
       level: tbd
   resources:
   - meeting:

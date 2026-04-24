@@ -89,7 +89,11 @@ def extract_row_data(ws):
                 tc_sponsors.append(link)
 
     gc_str = "<br/>".join(gc_liaisons)
-    sponsor_str = ",<br/>".join(tc_sponsors)
+
+    if ws.get("tcSponsorship") == "collective":
+        sponsor_str = "[Technical Committee](./community-members.md#technical-committee)"
+    else:
+        sponsor_str = ",<br/>".join(tc_sponsors)
 
     return meeting_schedule, notes_link, chat_str, calendar, sponsor_str, gc_str
 
