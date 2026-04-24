@@ -104,6 +104,8 @@ def get_cutoff_date():
     cutoff = now - timedelta(days=INACTIVITY_MONTHS * 30)
     return cutoff.strftime("%Y-%m-%d")
 
+MAX_RATE_LIMIT_WAIT = 300  # cap waits at 5 min to avoid token expiry
+
 def request_with_retry(method, url, data=None, retries=5):
     for attempt in range(1, retries + 1):
         req = urllib.request.Request(url, headers=HEADERS, method=method)
@@ -125,14 +127,20 @@ def request_with_retry(method, url, data=None, retries=5):
                     wait = max(0, int(reset_time) - int(time.time())) + 1
                 else:
                     wait = 60
+                wait = min(wait, MAX_RATE_LIMIT_WAIT)
                 print(f"Rate limited. Waiting {wait}s before retry...")
                 time.sleep(wait)
                 continue
-            print(f"Attempt {attempt} failed: HTTP {e.code}")
-            if attempt < retries:
-                time.sleep(1)
-            else:
-                raise
+            if 500 <= e.code < 600:
+                # Transient server error — retry with backoff
+                print(f"Attempt {attempt} failed: HTTP {e.code}")
+                if attempt < retries:
+                    time.sleep(2 ** attempt)
+                else:
+                    raise
+                continue
+            # 4xx (other than 429/403): deterministic — don't retry
+            raise
         except (TimeoutError, OSError) as e:
             print(f"Attempt {attempt} failed: {e}")
             if attempt < retries:
