@@ -30,7 +30,7 @@ jobs:
           owner: open-telemetry
 
       - name: Check activity and build report
-        run: python -u scripts/move-to-emeritus.py --output /tmp/inactive-report.json
+        run: python -u scripts/move-to-emeritus.py --output /tmp/inactive-report.json --repo opentelemetry-js opentelemetry-js-contrib opentelemetry-java opentelemetry-java-contrib # Only checking a few repos for now since we want to verify the script works as expected before running it on all repos
         env:
           GITHUB_TOKEN: ${{ steps.check-token.outputs.token }}
 
