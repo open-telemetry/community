@@ -23,25 +23,15 @@ jobs:
           python-version: '3.12'
 
       - uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2.2.1
-        id: check-token
+        id: app-token
         with:
           app-id: ${{ vars.OTELBOT_APP_ID }}
           private-key: ${{ secrets.OTELBOT_PRIVATE_KEY }}
           owner: open-telemetry
 
-      - name: Check activity and build report
-        run: python -u scripts/move-to-emeritus.py --output /tmp/inactive-report.json --repo opentelemetry-js opentelemetry-js-contrib opentelemetry-java opentelemetry-java-contrib # Only checking a few repos for now since we want to verify the script works as expected before running it on all repos
+      - name: Check activity and create PRs
+        run: python -u scripts/move-to-emeritus.py --create-prs --repo opentelemetry-js opentelemetry-js-contrib opentelemetry-java opentelemetry-java-contrib # Only checking a few repos for now since we want to verify the script works as expected before running it on all repos
         env:
-          GITHUB_TOKEN: ${{ steps.check-token.outputs.token }}
-
-      - uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2.2.1
-        id: pr-token
-        with:
-          app-id: ${{ vars.OTELBOT_APP_ID }}
-          private-key: ${{ secrets.OTELBOT_PRIVATE_KEY }}
-          owner: open-telemetry
-
-      - name: Create PRs from report
-        run: python -u scripts/move-to-emeritus.py --input /tmp/inactive-report.json --create-prs
-        env:
-          GITHUB_TOKEN: ${{ steps.pr-token.outputs.token }}
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+          GITHUB_APP_ID: ${{ vars.OTELBOT_APP_ID }}
+          GITHUB_APP_PRIVATE_KEY: ${{ secrets.OTELBOT_PRIVATE_KEY }}
