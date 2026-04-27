@@ -44,6 +44,12 @@ items:
       parent:
         type: string
         minLength: 1
+      # Render sponsors as a single link to the TC rather than listing each member.
+      # Enforcement (every TC member listed as tcSponsor) is in scripts/validate-workstreams.py.
+      tcSponsorship:
+        type: string
+        enum:
+          - collective
       people:
         type: array
         items:
