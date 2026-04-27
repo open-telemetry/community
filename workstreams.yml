@@ -337,9 +337,6 @@
   - tcSponsor:
       username: tigrannajaryan
       level: guiding
-  - tcSponsor:
-      username: tigrannajaryan
-      level: guiding
   resources:
   - meeting:
       schedule: Every other Thursday at 08:00 PT
