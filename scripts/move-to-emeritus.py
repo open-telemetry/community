@@ -873,15 +873,18 @@ def _ensure_branch(repo, branch, base_sha):
     ref_url = f"{REST_API}/repos/{ORG}/{repo}/git/refs/heads/{branch}"
     try:
         request_with_retry("GET", ref_url)
-        # Branch exists — update it
-        request_with_retry("PATCH", ref_url, data={"sha": base_sha, "force": True})
-    except urllib.error.HTTPError:
+    except urllib.error.HTTPError as e:
+        if e.code != 404:
+            raise
         # Branch doesn't exist — create it
         create_url = f"{REST_API}/repos/{ORG}/{repo}/git/refs"
         request_with_retry("POST", create_url, data={
             "ref": f"refs/heads/{branch}",
             "sha": base_sha,
         })
+        return
+    # Branch exists — force-update it
+    request_with_retry("PATCH", ref_url, data={"sha": base_sha, "force": True})
 
 
 def _update_file(repo, path, content, sha, branch, message):
@@ -1059,8 +1062,25 @@ def main():
                         help="Create PRs to move inactive members to emeritus in each repo")
     parser.add_argument("--repo", nargs="+", default=None,
                         help="Only check specific repo(s) (e.g. opentelemetry-python opentelemetry-collector)")
+    parser.add_argument("--output", type=str, default=None,
+                        help="Save the inactive report to a JSON file (skips PR creation)")
+    parser.add_argument("--input", type=str, default=None,
+                        help="Load a previously saved report and create PRs (skips activity checking)")
     args = parser.parse_args()
     DEBUG = args.debug
+
+    # --input: skip activity checking and go straight to PR creation
+    if args.input:
+        with open(args.input) as f:
+            saved = json.load(f)
+        cutoff = saved["cutoff"]
+        inactive_report = {repo: [tuple(e) for e in entries]
+                           for repo, entries in saved["inactive_report"].items()}
+        repo_warnings = saved["repo_warnings"]
+        print(f"Loaded report from {args.input} (cutoff: {cutoff})")
+        if args.create_prs:
+            create_emeritus_prs(inactive_report, repo_warnings, cutoff)
+        return
 
     cutoff = get_cutoff_date()
     print(f"Checking for inactivity since {cutoff} ...\n")
@@ -1083,6 +1103,7 @@ def main():
         keyword = role["keyword"]
         label = role["label"]
 
+        print(f"Fetching {label.lower()} teams...")
         teams = get_teams_by_role(keyword)
         if not teams:
             print(f"No {label.lower()} teams found.\n")
@@ -1092,6 +1113,7 @@ def main():
             slug = team["slug"]
             name = team["name"]
             team_name_lower = name.lower()
+            print(f"  Fetching members and repos for '{name}'...")
             members = get_team_members(slug)
             repos = get_team_repos(slug, cutoff)
 
@@ -1265,6 +1287,17 @@ def main():
         total_inactive += len(user_info)
 
     print(f"\nTotal: {total_inactive} inactive member(s) across repo(s)")
+
+    # Save report to file if requested
+    if args.output:
+        with open(args.output, "w") as f:
+            json.dump({
+                "cutoff": cutoff,
+                "inactive_report": {repo: [list(e) for e in entries]
+                                    for repo, entries in inactive_report.items()},
+                "repo_warnings": repo_warnings,
+            }, f, indent=2)
+        print(f"Report saved to {args.output}")
 
     # Create PRs if requested
     if args.create_prs:

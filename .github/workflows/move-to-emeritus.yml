@@ -14,13 +14,6 @@ jobs:
     name: Move inactive members to emeritus
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2.2.1
-        id: otelbot-token
-        with:
-          app-id: ${{ vars.OTELBOT_APP_ID }}
-          private-key: ${{ secrets.OTELBOT_PRIVATE_KEY }}
-          owner: open-telemetry
-
       - name: Checkout repo
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
 
@@ -29,7 +22,26 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Run move-to-emeritus script
-        run: python scripts/move-to-emeritus.py --create-prs --repo opentelemetry-js opentelemetry-js-contrib opentelemetry-java opentelemetry-java-contrib # Only checking a few repos for now since we want to verify the script works as expected before running it on all repos
+      - uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2.2.1
+        id: check-token
+        with:
+          app-id: ${{ vars.OTELBOT_APP_ID }}
+          private-key: ${{ secrets.OTELBOT_PRIVATE_KEY }}
+          owner: open-telemetry
+
+      - name: Check activity and build report
+        run: python -u scripts/move-to-emeritus.py --output /tmp/inactive-report.json --repo opentelemetry-js opentelemetry-js-contrib opentelemetry-java opentelemetry-java-contrib # Only checking a few repos for now since we want to verify the script works as expected before running it on all repos
         env:
-          GITHUB_TOKEN: ${{ steps.otelbot-token.outputs.token }}
+          GITHUB_TOKEN: ${{ steps.check-token.outputs.token }}
+
+      - uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2.2.1
+        id: pr-token
+        with:
+          app-id: ${{ vars.OTELBOT_APP_ID }}
+          private-key: ${{ secrets.OTELBOT_PRIVATE_KEY }}
+          owner: open-telemetry
+
+      - name: Create PRs from report
+        run: python -u scripts/move-to-emeritus.py --input /tmp/inactive-report.json --create-prs
+        env:
+          GITHUB_TOKEN: ${{ steps.pr-token.outputs.token }}
