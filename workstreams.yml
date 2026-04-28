@@ -596,7 +596,7 @@
       level: tbd
   resources:
   - meeting:
-      schedule: Monday at 09:30 PT
+      schedule: Thursday at 08:00 PT
       calendarInviteGroup: calendar-injector
       gDocNotes: 10bZsPhjbJHt-vamRg5kqHQf4ZANUiLOJxP9HYCONe94
   - slack:
