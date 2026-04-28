@@ -5,14 +5,18 @@ on:
     # Hourly at minute 23
     - cron: "23 * * * *"
 
+concurrency:
+  group: stale-${{ github.repository }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
 jobs:
   stale:
     permissions:
-      issues: write  # for actions/stale to close stale issues
-      pull-requests: write  # for actions/stale to close stale PRs
+      issues: write # for actions/stale to close stale issues
+      pull-requests: write # for actions/stale to close stale PRs
     runs-on: ubuntu-latest
     steps:
       - uses: actions/stale@b5d41d4e1d5dceea10e7104786b73624c18a190f # v10.2.0
