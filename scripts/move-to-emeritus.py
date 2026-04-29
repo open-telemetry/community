@@ -13,6 +13,9 @@
 #     # Create PRs to move inactive members to emeritus (after verifying the report)
 #     python move-to-emeritus.py --create-prs
 #
+# Note: When GITHUB_APP_ID and GITHUB_APP_PRIVATE_KEY are set, the script automatically
+# refreshes its GitHub App token every 50 minutes so long-running jobs stay authenticated.
+#
 # Note: the script can be safely re-run multiple times. If a PR already exists for a repo, its body will be updated with the latest info.
 #
 import argparse
@@ -20,7 +23,9 @@ import base64
 import json
 import os
 import re
+import subprocess
 import sys
+import tempfile
 import time
 import urllib.request
 import urllib.error
@@ -99,6 +104,64 @@ HEADERS = {
 REST_API = "https://api.github.com"
 GRAPHQL_API = "https://api.github.com/graphql"
 
+_app_id = os.environ.get("GITHUB_APP_ID")
+_app_private_key = os.environ.get("GITHUB_APP_PRIVATE_KEY")
+_token_created_at = time.time() if (_app_id and _app_private_key) else None
+TOKEN_REFRESH_INTERVAL = 50 * 60  # refresh every 50 minutes
+
+def _b64url(data):
+    if isinstance(data, str):
+        data = data.encode()
+    return base64.urlsafe_b64encode(data).rstrip(b'=').decode()
+
+def _refresh_token():
+    """Generate a new GitHub App installation token and update HEADERS."""
+    global _token_created_at
+    print("Refreshing GitHub App token...")
+
+    now = int(time.time())
+    header = _b64url(json.dumps({"alg": "RS256", "typ": "JWT"}))
+    payload = _b64url(json.dumps({"iat": now - 60, "exp": now + 600, "iss": str(_app_id)}))
+    signing_input = f"{header}.{payload}"
+
+    fd, key_path = tempfile.mkstemp(suffix=".pem")
+    try:
+        with os.fdopen(fd, "w") as f:
+            f.write(_app_private_key)
+        result = subprocess.run(
+            ["openssl", "dgst", "-sha256", "-sign", key_path],
+            input=signing_input.encode(),
+            capture_output=True,
+            check=True,
+        )
+    finally:
+        os.unlink(key_path)
+
+    jwt_token = f"{signing_input}.{_b64url(result.stdout)}"
+    jwt_headers = {
+        "Authorization": f"Bearer {jwt_token}",
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "move-to-emeritus-script",
+    }
+
+    # Resolve installation ID for the org
+    req = urllib.request.Request(f"{REST_API}/orgs/{ORG}/installation", headers=jwt_headers)
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        installation_id = json.loads(resp.read())["id"]
+
+    # Exchange for an installation access token
+    req = urllib.request.Request(
+        f"{REST_API}/app/installations/{installation_id}/access_tokens",
+        headers=jwt_headers,
+        method="POST",
+    )
+    with urllib.request.urlopen(req, b"", timeout=30) as resp:
+        new_token = json.loads(resp.read())["token"]
+
+    HEADERS["Authorization"] = f"Bearer {new_token}"
+    _token_created_at = time.time()
+    print("GitHub App token refreshed.")
+
 def get_cutoff_date():
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=INACTIVITY_MONTHS * 30)
@@ -107,6 +170,8 @@ def get_cutoff_date():
 MAX_RATE_LIMIT_WAIT = 300  # cap waits at 5 min to avoid token expiry
 
 def request_with_retry(method, url, data=None, retries=5):
+    if _token_created_at is not None and time.time() - _token_created_at >= TOKEN_REFRESH_INTERVAL:
+        _refresh_token()
     for attempt in range(1, retries + 1):
         req = urllib.request.Request(url, headers=HEADERS, method=method)
         if data is not None:
@@ -116,9 +181,13 @@ def request_with_retry(method, url, data=None, retries=5):
             body = None
         try:
             resp = urllib.request.urlopen(req, body, timeout=30)
+            remaining = resp.headers.get("x-ratelimit-remaining")
+            if remaining is not None and int(remaining) < 100:
+                print(f"  [WARN] Rate limit low: {remaining} requests remaining")
             return resp
         except urllib.error.HTTPError as e:
             if e.code in (403, 429):
+                remaining = e.headers.get("x-ratelimit-remaining", "?")
                 retry_after = e.headers.get("retry-after")
                 reset_time = e.headers.get("x-ratelimit-reset")
                 if retry_after:
@@ -128,8 +197,10 @@ def request_with_retry(method, url, data=None, retries=5):
                 else:
                     wait = 60
                 wait = min(wait, MAX_RATE_LIMIT_WAIT)
-                print(f"Rate limited. Waiting {wait}s before retry...")
+                print(f"Rate limited ({remaining} remaining). Waiting {wait}s before retry...")
                 time.sleep(wait)
+                if _token_created_at is not None and time.time() - _token_created_at >= TOKEN_REFRESH_INTERVAL:
+                    _refresh_token()
                 continue
             if 500 <= e.code < 600:
                 # Transient server error — retry with backoff
@@ -171,10 +242,17 @@ def paginate_rest(url, params=None):
         url = next_url
     return results
 
+_all_teams_cache = None
+
+def _get_all_teams():
+    global _all_teams_cache
+    if _all_teams_cache is None:
+        _all_teams_cache = paginate_rest(f"{REST_API}/orgs/{ORG}/teams")
+    return _all_teams_cache
+
 def get_teams_by_role(role_keyword):
     """Get all org teams with the given keyword in the name."""
-    teams = paginate_rest(f"{REST_API}/orgs/{ORG}/teams")
-    return [t for t in teams if role_keyword in t["name"].lower()]
+    return [t for t in _get_all_teams() if role_keyword in t["name"].lower()]
 
 def get_team_members(team_slug):
     """Get all members of a team."""
@@ -685,8 +763,10 @@ def fetch_readme(repo):
         data = read_json(resp)
         content = base64.b64decode(data["content"]).decode("utf-8")
         return content, data["sha"], data["path"]
-    except urllib.error.HTTPError:
-        return None
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return None
+        raise
 
 
 def _find_section(readme, section_name):
@@ -891,12 +971,16 @@ def _update_file(repo, path, content, sha, branch, message):
     """Update a file on a branch via the Contents API."""
     url = f"{REST_API}/repos/{ORG}/{repo}/contents/{path}"
     encoded = base64.b64encode(content.encode("utf-8")).decode("ascii")
-    request_with_retry("PUT", url, data={
-        "message": message,
-        "content": encoded,
-        "sha": sha,
-        "branch": branch,
-    })
+    payload = {"message": message, "content": encoded, "sha": sha, "branch": branch}
+    try:
+        request_with_retry("PUT", url, data=payload)
+    except urllib.error.HTTPError as e:
+        if e.code != 422:
+            raise
+        # SHA mismatch — re-fetch the current file SHA from the branch and retry
+        resp = request_with_retry("GET", f"{url}?ref={branch}")
+        payload["sha"] = read_json(resp)["sha"]
+        request_with_retry("PUT", url, data=payload)
 
 
 def _create_pr(repo, branch, base, title, body):
@@ -928,6 +1012,8 @@ def _create_pr(repo, branch, base, title, body):
                     "body": body,
                 })
                 return prs[0].get("html_url", "")
+            detail = e.read().decode("utf-8", errors="replace")
+            print(f"  [ERROR] PR creation 422, no open PR found. GitHub said: {detail}", file=sys.stderr)
         raise
 
 
@@ -1062,25 +1148,8 @@ def main():
                         help="Create PRs to move inactive members to emeritus in each repo")
     parser.add_argument("--repo", nargs="+", default=None,
                         help="Only check specific repo(s) (e.g. opentelemetry-python opentelemetry-collector)")
-    parser.add_argument("--output", type=str, default=None,
-                        help="Save the inactive report to a JSON file (skips PR creation)")
-    parser.add_argument("--input", type=str, default=None,
-                        help="Load a previously saved report and create PRs (skips activity checking)")
     args = parser.parse_args()
     DEBUG = args.debug
-
-    # --input: skip activity checking and go straight to PR creation
-    if args.input:
-        with open(args.input) as f:
-            saved = json.load(f)
-        cutoff = saved["cutoff"]
-        inactive_report = {repo: [tuple(e) for e in entries]
-                           for repo, entries in saved["inactive_report"].items()}
-        repo_warnings = saved["repo_warnings"]
-        print(f"Loaded report from {args.input} (cutoff: {cutoff})")
-        if args.create_prs:
-            create_emeritus_prs(inactive_report, repo_warnings, cutoff)
-        return
 
     cutoff = get_cutoff_date()
     print(f"Checking for inactivity since {cutoff} ...\n")
@@ -1288,18 +1357,6 @@ def main():
 
     print(f"\nTotal: {total_inactive} inactive member(s) across repo(s)")
 
-    # Save report to file if requested
-    if args.output:
-        with open(args.output, "w") as f:
-            json.dump({
-                "cutoff": cutoff,
-                "inactive_report": {repo: [list(e) for e in entries]
-                                    for repo, entries in inactive_report.items()},
-                "repo_warnings": repo_warnings,
-            }, f, indent=2)
-        print(f"Report saved to {args.output}")
-
-    # Create PRs if requested
     if args.create_prs:
         create_emeritus_prs(inactive_report, repo_warnings, cutoff)
 
