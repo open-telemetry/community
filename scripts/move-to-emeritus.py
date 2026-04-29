@@ -13,9 +13,6 @@
 #     # Create PRs to move inactive members to emeritus (after verifying the report)
 #     python move-to-emeritus.py --create-prs
 #
-# Note: When GITHUB_APP_ID and GITHUB_APP_PRIVATE_KEY are set, the script automatically
-# refreshes its GitHub App token every 50 minutes so long-running jobs stay authenticated.
-#
 # Note: the script can be safely re-run multiple times. If a PR already exists for a repo, its body will be updated with the latest info.
 #
 import argparse
@@ -23,9 +20,7 @@ import base64
 import json
 import os
 import re
-import subprocess
 import sys
-import tempfile
 import time
 import urllib.request
 import urllib.error
@@ -104,64 +99,6 @@ HEADERS = {
 REST_API = "https://api.github.com"
 GRAPHQL_API = "https://api.github.com/graphql"
 
-_app_id = os.environ.get("GITHUB_APP_ID")
-_app_private_key = os.environ.get("GITHUB_APP_PRIVATE_KEY")
-_token_created_at = time.time() if (_app_id and _app_private_key) else None
-TOKEN_REFRESH_INTERVAL = 50 * 60  # refresh every 50 minutes
-
-def _b64url(data):
-    if isinstance(data, str):
-        data = data.encode()
-    return base64.urlsafe_b64encode(data).rstrip(b'=').decode()
-
-def _refresh_token():
-    """Generate a new GitHub App installation token and update HEADERS."""
-    global _token_created_at
-    print("Refreshing GitHub App token...")
-
-    now = int(time.time())
-    header = _b64url(json.dumps({"alg": "RS256", "typ": "JWT"}))
-    payload = _b64url(json.dumps({"iat": now - 60, "exp": now + 600, "iss": str(_app_id)}))
-    signing_input = f"{header}.{payload}"
-
-    fd, key_path = tempfile.mkstemp(suffix=".pem")
-    try:
-        with os.fdopen(fd, "w") as f:
-            f.write(_app_private_key)
-        result = subprocess.run(
-            ["openssl", "dgst", "-sha256", "-sign", key_path],
-            input=signing_input.encode(),
-            capture_output=True,
-            check=True,
-        )
-    finally:
-        os.unlink(key_path)
-
-    jwt_token = f"{signing_input}.{_b64url(result.stdout)}"
-    jwt_headers = {
-        "Authorization": f"Bearer {jwt_token}",
-        "Accept": "application/vnd.github+json",
-        "User-Agent": "move-to-emeritus-script",
-    }
-
-    # Resolve installation ID for the org
-    req = urllib.request.Request(f"{REST_API}/orgs/{ORG}/installation", headers=jwt_headers)
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        installation_id = json.loads(resp.read())["id"]
-
-    # Exchange for an installation access token
-    req = urllib.request.Request(
-        f"{REST_API}/app/installations/{installation_id}/access_tokens",
-        headers=jwt_headers,
-        method="POST",
-    )
-    with urllib.request.urlopen(req, b"", timeout=30) as resp:
-        new_token = json.loads(resp.read())["token"]
-
-    HEADERS["Authorization"] = f"Bearer {new_token}"
-    _token_created_at = time.time()
-    print("GitHub App token refreshed.")
-
 def get_cutoff_date():
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=INACTIVITY_MONTHS * 30)
@@ -170,8 +107,6 @@ def get_cutoff_date():
 MAX_RATE_LIMIT_WAIT = 300  # cap waits at 5 min to avoid token expiry
 
 def request_with_retry(method, url, data=None, retries=5):
-    if _token_created_at is not None and time.time() - _token_created_at >= TOKEN_REFRESH_INTERVAL:
-        _refresh_token()
     for attempt in range(1, retries + 1):
         req = urllib.request.Request(url, headers=HEADERS, method=method)
         if data is not None:
@@ -199,8 +134,6 @@ def request_with_retry(method, url, data=None, retries=5):
                 wait = min(wait, MAX_RATE_LIMIT_WAIT)
                 print(f"Rate limited ({remaining} remaining). Waiting {wait}s before retry...")
                 time.sleep(wait)
-                if _token_created_at is not None and time.time() - _token_created_at >= TOKEN_REFRESH_INTERVAL:
-                    _refresh_token()
                 continue
             if 500 <= e.code < 600:
                 # Transient server error — retry with backoff
@@ -932,11 +865,66 @@ def _to_emeritus_entry(username, role_label, display_name=None):
 
 
 # ---------------------------------------------------------------------------
-# Branch / PR creation via GitHub API
+# Branch / PR creation via GitHub API (fork-based)
 # ---------------------------------------------------------------------------
 
+_fork_owner_cache = None
+
+def _get_fork_owner():
+    """Return the login of the authenticated user (used as the fork owner)."""
+    global _fork_owner_cache
+    if _fork_owner_cache is None:
+        resp = request_with_retry("GET", f"{REST_API}/user")
+        _fork_owner_cache = read_json(resp)["login"]
+    return _fork_owner_cache
+
+
+def _ensure_fork(repo):
+    """Fork repo under the authenticated user's account, waiting until git is ready."""
+    owner = _get_fork_owner()
+    fork_url = f"{REST_API}/repos/{owner}/{repo}"
+
+    fork_exists = False
+    try:
+        data = read_json(request_with_retry("GET", fork_url))
+        if data.get("fork") and (data.get("parent") or {}).get("full_name") == f"{ORG}/{repo}":
+            fork_exists = True
+    except urllib.error.HTTPError as e:
+        if e.code != 404:
+            raise
+
+    if not fork_exists:
+        print(f"  Forking {ORG}/{repo} to {owner}...", flush=True)
+        request_with_retry("POST", f"{REST_API}/repos/{ORG}/{repo}/forks", data={})
+        for _ in range(12):
+            time.sleep(5)
+            try:
+                if read_json(request_with_retry("GET", fork_url)).get("fork"):
+                    fork_exists = True
+                    break
+            except urllib.error.HTTPError as e:
+                if e.code != 404:
+                    raise
+        if not fork_exists:
+            raise RuntimeError(f"Fork of {ORG}/{repo} did not appear after 60s")
+
+    # A fork's git objects are initialised asynchronously — the repo endpoint
+    # returns 200 before refs are accessible.  Poll until refs respond.
+    refs_url = f"{REST_API}/repos/{owner}/{repo}/git/refs/heads"
+    for attempt in range(1, 13):
+        try:
+            request_with_retry("GET", refs_url)
+            return
+        except urllib.error.HTTPError as e:
+            if e.code in (404, 409) and attempt < 12:
+                print(f"  Waiting for fork git to be ready (attempt {attempt}/12)...", flush=True)
+                time.sleep(5)
+            else:
+                raise
+
+
 def _get_default_branch_sha(repo):
-    """Return (sha, default_branch_name) for a repo."""
+    """Return (sha, default_branch_name) for the upstream repo."""
     url = f"{REST_API}/repos/{ORG}/{repo}"
     resp = request_with_retry("GET", url)
     data = read_json(resp)
@@ -948,28 +936,32 @@ def _get_default_branch_sha(repo):
     return ref_data["object"]["sha"], default_branch
 
 
-def _ensure_branch(repo, branch, base_sha):
-    """Create or force-update a branch to point at base_sha."""
-    ref_url = f"{REST_API}/repos/{ORG}/{repo}/git/refs/heads/{branch}"
+def _ensure_branch(owner, repo, branch, base_sha):
+    """Create or force-update a branch on owner/repo to point at base_sha."""
+    ref_url = f"{REST_API}/repos/{owner}/{repo}/git/refs/heads/{branch}"
+
+    branch_exists = False
     try:
-        request_with_retry("GET", ref_url)
+        refs = read_json(request_with_retry("GET", ref_url))
+        # GitHub returns an empty array (200) when no refs match a path with slashes
+        # in the branch name, rather than a 404.
+        branch_exists = bool(refs)
     except urllib.error.HTTPError as e:
         if e.code != 404:
             raise
-        # Branch doesn't exist — create it
-        create_url = f"{REST_API}/repos/{ORG}/{repo}/git/refs"
-        request_with_retry("POST", create_url, data={
+
+    if branch_exists:
+        request_with_retry("PATCH", ref_url, data={"sha": base_sha, "force": True})
+    else:
+        request_with_retry("POST", f"{REST_API}/repos/{owner}/{repo}/git/refs", data={
             "ref": f"refs/heads/{branch}",
             "sha": base_sha,
         })
-        return
-    # Branch exists — force-update it
-    request_with_retry("PATCH", ref_url, data={"sha": base_sha, "force": True})
 
 
-def _update_file(repo, path, content, sha, branch, message):
-    """Update a file on a branch via the Contents API."""
-    url = f"{REST_API}/repos/{ORG}/{repo}/contents/{path}"
+def _update_file(owner, repo, path, content, sha, branch, message):
+    """Update a file on a branch in owner/repo via the Contents API."""
+    url = f"{REST_API}/repos/{owner}/{repo}/contents/{path}"
     encoded = base64.b64encode(content.encode("utf-8")).decode("ascii")
     payload = {"message": message, "content": encoded, "sha": sha, "branch": branch}
     try:
@@ -983,34 +975,30 @@ def _update_file(repo, path, content, sha, branch, message):
         request_with_retry("PUT", url, data=payload)
 
 
-def _create_pr(repo, branch, base, title, body):
-    """Create a PR. If one already exists for the branch, update its body."""
+def _create_pr(repo, head_owner, branch, base, title, body):
+    """Open a cross-repo PR from head_owner/repo:branch into ORG/repo:base.
+
+    If a PR for that branch already exists, update its title and body instead.
+    """
     url = f"{REST_API}/repos/{ORG}/{repo}/pulls"
+    head = f"{head_owner}:{branch}"
     try:
         resp = request_with_retry("POST", url, data={
             "title": title,
             "body": body,
-            "head": branch,
+            "head": head,
             "base": base,
         })
-        pr = read_json(resp)
-        return pr.get("html_url", "")
+        return read_json(resp).get("html_url", "")
     except urllib.error.HTTPError as e:
         if e.code == 422:
             # PR likely already exists — find and update it
-            list_url = (
-                f"{REST_API}/repos/{ORG}/{repo}/pulls"
-                f"?head={ORG}:{branch}&state=open"
-            )
-            resp = request_with_retry("GET", list_url)
-            prs = read_json(resp)
+            list_url = f"{REST_API}/repos/{ORG}/{repo}/pulls?head={head}&state=open"
+            prs = read_json(request_with_retry("GET", list_url))
             if prs:
                 pr_number = prs[0]["number"]
                 patch_url = f"{REST_API}/repos/{ORG}/{repo}/pulls/{pr_number}"
-                request_with_retry("PATCH", patch_url, data={
-                    "title": title,
-                    "body": body,
-                })
+                request_with_retry("PATCH", patch_url, data={"title": title, "body": body})
                 return prs[0].get("html_url", "")
             detail = e.read().decode("utf-8", errors="replace")
             print(f"  [ERROR] PR creation 422, no open PR found. GitHub said: {detail}", file=sys.stderr)
@@ -1114,13 +1102,23 @@ def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
             print("  No README changes needed, skipping.")
             continue
 
-        # Create branch, commit, and PR
+        # Fork repo, create branch on fork, commit, and open cross-repo PR
         try:
+            fork_owner = _get_fork_owner()
             base_sha, default_branch = _get_default_branch_sha(repo)
-            _ensure_branch(repo, BRANCH_NAME, base_sha)
+            print(f"  Ensuring fork...", flush=True)
+            _ensure_fork(repo)
+            print(f"  Syncing fork with upstream...", flush=True)
+            try:
+                request_with_retry("POST",
+                    f"{REST_API}/repos/{fork_owner}/{repo}/merge-upstream",
+                    data={"branch": default_branch})
+            except urllib.error.HTTPError as e:
+                print(f"  [WARN] Could not sync fork with upstream: HTTP {e.code}", flush=True)
+            _ensure_branch(fork_owner, repo, BRANCH_NAME, base_sha)
             _update_file(
-                repo, file_path, readme, file_sha, BRANCH_NAME,
-                "Move inactive members to emeritus",
+                fork_owner, repo, file_path, readme, file_sha, BRANCH_NAME,
+                "chore: Move inactive members to emeritus",
             )
 
             warning = repo_warnings.get(repo)
@@ -1130,8 +1128,8 @@ def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
 
             pr_body = _build_pr_body(repo, changes, cutoff, warning)
             pr_url = _create_pr(
-                repo, BRANCH_NAME, default_branch,
-                "Move inactive members to emeritus",
+                repo, fork_owner, BRANCH_NAME, default_branch,
+                "chore: Move inactive members to emeritus",
                 pr_body,
             )
             print(f"  PR: {pr_url}")
