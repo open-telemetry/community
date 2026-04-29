@@ -1118,7 +1118,7 @@ def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
             _ensure_branch(fork_owner, repo, BRANCH_NAME, base_sha)
             _update_file(
                 fork_owner, repo, file_path, readme, file_sha, BRANCH_NAME,
-                "Move inactive members to emeritus",
+                "chore: Move inactive members to emeritus",
             )
 
             warning = repo_warnings.get(repo)
@@ -1129,7 +1129,7 @@ def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
             pr_body = _build_pr_body(repo, changes, cutoff, warning)
             pr_url = _create_pr(
                 repo, fork_owner, BRANCH_NAME, default_branch,
-                "Move inactive members to emeritus",
+                "chore: Move inactive members to emeritus",
                 pr_body,
             )
             print(f"  PR: {pr_url}")
