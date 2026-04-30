@@ -734,7 +734,7 @@ def _parse_members(text):
     Returns list of dicts: {"name", "username", "line"}
     """
     member_re = re.compile(
-        r'^[-*] \[([^\]]+)\]\(https://github\.com/([^)]+)\)(?:,\s*(.+))?$',
+        r'^[-*+] \[([^\]]+)\]\(https://github\.com/([^)]+)\)(?:,\s*(.+))?$',
         re.MULTILINE,
     )
     members = []
@@ -749,7 +749,7 @@ def _parse_members(text):
 
 def _detect_list_marker(section_text):
     """Return the list marker used in section_text ('*' or '-', default '-')."""
-    m = re.search(r'^([-*]) \[', section_text, re.MULTILINE)
+    m = re.search(r'^([-*+]) \[', section_text, re.MULTILINE)
     return m.group(1) if m else "-"
 
 
@@ -766,7 +766,7 @@ def _remove_member_line(readme, section_name, username):
     section_text = readme[start:end]
 
     member_re = re.compile(
-        rf'^[-*] \[[^\]]+\]\(https://github\.com/{re.escape(username)}\).*\n?',
+        rf'^[-*+] \[[^\]]+\]\(https://github\.com/{re.escape(username)}\).*\n?',
         re.MULTILINE | re.IGNORECASE,
     )
     match = member_re.search(section_text)
@@ -795,12 +795,12 @@ def _add_to_emeritus(readme, emeritus_title, member_entry, header_level=3):
         lines = section_text.split("\n")
 
         # Separate member lines from non-member lines
-        member_lines = [l for l in lines if re.match(r'^[-*] \[', l)]
+        member_lines = [l for l in lines if re.match(r'^[-*+] \[', l)]
         member_lines.append(member_entry)
 
         # Sort alphabetically by display name (text inside [...])
         def _sort_key(line):
-            m = re.match(r'^[-*] \[([^\]]+)\]', line)
+            m = re.match(r'^[-*+] \[([^\]]+)\]', line)
             return m.group(1).lower() if m else line.lower()
         member_lines.sort(key=_sort_key)
 
@@ -808,7 +808,7 @@ def _add_to_emeritus(readme, emeritus_title, member_entry, header_level=3):
         first_member_idx = None
         last_member_idx = None
         for i, line in enumerate(lines):
-            if re.match(r'^[-*] \[', line):
+            if re.match(r'^[-*+] \[', line):
                 if first_member_idx is None:
                     first_member_idx = i
                 last_member_idx = i
