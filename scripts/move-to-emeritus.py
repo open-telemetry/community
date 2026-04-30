@@ -68,7 +68,6 @@ IGNORED_REPOS = {
     "sig-contributor-experience", # Majority of work is done outside of github
     "sig-developer-experience", # Majority of work is done outside of github
     "sig-end-user", # Majority of work is done outside of github
-    "weaver", # There are no dedicate teams for this repo
 }
 
 # For these repos, only check the listed team slugs (all others are ignored)
@@ -86,6 +85,7 @@ REPO_IGNORED_TEAM_KEYWORDS = {
     "opentelemetry-js": ["browser"],
     "opentelemetry-js-contrib": ["browser", "javascript-contrib-triagers"], # Contrib triager is a complex team working similar to codeowners, so we skip it for now
     "opentelemetry-collector-releases": ["helm", "collector-contrib"], # Those teams are able to review PRs, but have low activity level
+    "weaver": ["semconv"], # Semconv team is a complex team that won't always be active, so we skip it for now
 }
 
 token = os.environ.get("GITHUB_TOKEN")
