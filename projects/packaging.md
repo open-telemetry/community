@@ -83,7 +83,7 @@ Once we have the initial set of languages available, we can get feedback from th
 
 ### Phase 2 (Future work)
 
-Once the community is satisfied with the overall design, we can begin stabilizing individual languages, the structrue of packages and their interactions.
+Once the community is satisfied with the overall design, we can begin stabilizing individual languages, the structure of packages and their interactions.
 Based on what we learn in phase 1, a phase 2 project file will be drafted.
 Most likely it will do the following, working on a SIG by SIG basis:
 
