@@ -25,10 +25,12 @@ items:
           # Permanent operational group with recurring meetings,
           # a GC liaison, and a TC sponsor.
           - sig
-          # Bounded effort with defined deliverables and a finite timeline.
-          # Corresponds to a 'project' in /projects/*.md.
+          # Time-bound effort with defined deliverables and exit criteria.
+          # Concludes when its deliverables are met, distinct from a
+          # permanent SIG. Either has no parent or is scoped under a parent SIG.
+          # Corresponds to a project proposal in /projects/*.md.
           # Any kind may be associated with a project proposal document.
-          - working-group
+          - initiative
       name:
         type: string
         minLength: 1
@@ -65,13 +67,13 @@ items:
     maxProperties: 1
     additionalProperties: false
     properties:
-      # GC member facilitating health of a SIG or working-group.
-      # Required on: sig, working-group. GitHub username, or 'tbd' if not yet assigned.
+      # GC member facilitating health of a SIG or initiative.
+      # Required on: sig, initiative. GitHub username, or 'tbd' if not yet assigned.
       gcLiaison:
         type: string
         minLength: 1
-      # TC member sponsoring a SIG or working-group.
-      # Required on: sig, working-group.
+      # TC member sponsoring a SIG or initiative.
+      # Required on: sig, initiative.
       tcSponsor:
         type: object
         required: [username, level]
@@ -97,7 +99,7 @@ items:
               # Level required but not yet determined.
               - tbd
       # Person accountable for driving the workstream forward.
-      # Required on: working-group. GitHub username, or 'tbd' if not yet assigned.
+      # Required on: initiative. GitHub username, or 'tbd' if not yet assigned.
       lead:
         type: string
         minLength: 1

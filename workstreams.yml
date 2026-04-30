@@ -1157,7 +1157,7 @@
       name: '#otel-localization-uk'
       id: C097ZNPM3LK
 - id: agentic-workflow
-  kind: working-group
+  kind: initiative
   name: OpenTelemetry Collector Agentic Workflows
   parent: collector
   people:
@@ -1168,7 +1168,7 @@
   - lead: pavolloffay
   - lead: niwoerner
 - id: otel-blueprints
-  kind: working-group
+  kind: initiative
   name: OTel Blueprints
   parent: end-user
   people:
@@ -1186,7 +1186,7 @@
       name: '#otel-blueprints'
       id: C0A844D6ZCH
 - id: zig-sig-bootstrap
-  kind: working-group
+  kind: initiative
   name: Bootstrap Zig Special Interest Group
   parent: none
   people:
@@ -1198,7 +1198,7 @@
   - lead: kmos
   - lead: hendriknielaender
 - id: collector-v1
-  kind: working-group
+  kind: initiative
   name: Collector v1
   parent: collector
   people:
@@ -1208,7 +1208,7 @@
       level: tbd
   - lead: tbd
 - id: cicd-phase-2
-  kind: working-group
+  kind: initiative
   name: CI/CD Observability SIG Phase 2
   parent: semconv-cicd
   people:
@@ -1219,7 +1219,7 @@
   - lead: horovits
   - lead: adrielp
 - id: ecosystem-explorer
-  kind: working-group
+  kind: initiative
   name: OpenTelemetry Ecosystem Explorer
   parent: communications
   people:
@@ -1233,7 +1233,7 @@
   resources:
   - roadmapProject: 175
 - id: getting-started-docs
-  kind: working-group
+  kind: initiative
   name: New Getting Started Documentation and Reference Application
   parent: communications
   people:

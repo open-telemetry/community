@@ -33,12 +33,12 @@ NONE = "none"
 
 KIND_REQUIRED_ROLES = {
     "sig":           {"gcLiaison", "tcSponsor"},
-    "working-group": {"gcLiaison", "tcSponsor", "lead"},
+    "initiative":    {"gcLiaison", "tcSponsor", "lead"},
 }
 
 VALID_PARENT_KINDS = {
     "sig":           {"sig"},
-    "working-group": {"sig"},
+    "initiative":    {"sig"},
 }
 
 MEMBERSHIP_REQUIRED_ROLES = {"gcLiaison", "tcSponsor", "specSponsor"}
