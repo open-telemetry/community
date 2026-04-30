@@ -749,7 +749,7 @@ def _parse_members(text):
 
 
 def _detect_list_marker(section_text):
-    """Return the list marker used in section_text ('*' or '-', default '-')."""
+    """Return the list marker used in section_text ('-', '*' or '+', default '-')."""
     m = re.search(r'^([-*+]) \[', section_text, re.MULTILINE)
     return m.group(1) if m else "-"
 
