@@ -1156,3 +1156,89 @@
   - slack:
       name: '#otel-localization-uk'
       id: C097ZNPM3LK
+- id: agentic-workflow
+  kind: working-group
+  name: OpenTelemetry Collector Agentic Workflows
+  parent: collector
+  people:
+  - gcLiaison: mx-psi
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  - lead: pavolloffay
+  - lead: niwoerner
+- id: otel-blueprints
+  kind: working-group
+  name: OTel Blueprints
+  parent: end-user
+  people:
+  - gcLiaison: maryliag
+  - tcSponsor:
+      username: reyang
+      level: escalating
+  - lead: danielgblanco
+  - lead: dmathieu
+  resources:
+  - meeting:
+      schedule: Every other Thursday at 10:00 PT (alternating with general End-User SIG meetings)
+      gDocNotes: 1e-UNZA3Tuno9b53RQbe--whUcO0VIXF3P81oXsrBK6g
+  - slack:
+      name: '#otel-blueprints'
+      id: C0A844D6ZCH
+- id: zig-sig-bootstrap
+  kind: working-group
+  name: Bootstrap Zig Special Interest Group
+  parent: none
+  people:
+  - gcLiaison: alolita
+  - tcSponsor:
+      username: jmacd
+      level: tbd
+  - lead: inge4pres
+  - lead: kmos
+  - lead: hendriknielaender
+- id: collector-v1
+  kind: working-group
+  name: Collector v1
+  parent: collector
+  people:
+  - gcLiaison: jpkrohling
+  - tcSponsor:
+      username: tbd
+      level: tbd
+  - lead: tbd
+- id: cicd-phase-2
+  kind: working-group
+  name: CI/CD Observability SIG Phase 2
+  parent: semconv-cicd
+  people:
+  - gcLiaison: maryliag
+  - tcSponsor:
+      username: carlosalberto
+      level: tbd
+  - lead: horovits
+  - lead: adrielp
+- id: ecosystem-explorer
+  kind: working-group
+  name: OpenTelemetry Ecosystem Explorer
+  parent: communications
+  people:
+  - gcLiaison: svrnm
+  - tcSponsor:
+      username: jack-berg
+      level: escalating
+  - lead: jaydeluca
+  - lead: svrnm
+  - lead: mx-psi
+  resources:
+  - roadmapProject: 175
+- id: getting-started-docs
+  kind: working-group
+  name: New Getting Started Documentation and Reference Application
+  parent: communications
+  people:
+  - gcLiaison: svrnm
+  - tcSponsor:
+      username: jack-berg
+      level: tbd
+  - lead: svrnm
