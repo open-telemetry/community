@@ -23,6 +23,6 @@ jobs:
           python-version: '3.12'
 
       - name: Check activity and create PRs
-        run: python -u scripts/move-to-emeritus.py --create-prs --repo opentelemetry-js opentelemetry-js-contrib opentelemetry-java opentelemetry-java-contrib # Only checking a few repos for now since we want to verify the script works as expected before running it on all repos
+        run: python -u scripts/move-to-emeritus.py --create-prs
         env:
           GITHUB_TOKEN: ${{ secrets.OPENTELEMETRYBOT_GITHUB_TOKEN }}
