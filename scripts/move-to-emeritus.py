@@ -68,6 +68,7 @@ IGNORED_REPOS = {
     "sig-contributor-experience", # Majority of work is done outside of github
     "sig-developer-experience", # Majority of work is done outside of github
     "sig-end-user", # Majority of work is done outside of github
+    "weaver", # There are no dedicate teams for this repo
 }
 
 # For these repos, only check the listed team slugs (all others are ignored)
