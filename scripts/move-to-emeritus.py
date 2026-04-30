@@ -84,6 +84,8 @@ REPO_ALLOWED_TEAMS = {
 REPO_IGNORED_TEAM_KEYWORDS = {
     "opentelemetry-js": ["browser"],
     "opentelemetry-js-contrib": ["browser", "javascript-contrib-triagers"], # Contrib triager is a complex team working similar to codeowners, so we skip it for now
+    "opentelemetry-collector-releases": ["helm", "collector-contrib"], # Those teams are able to review PRs, but have low activity level
+    "weaver": ["semconv"], # Semconv team is a complex team that won't always be active, so we skip it for now
 }
 
 token = os.environ.get("GITHUB_TOKEN")
@@ -733,7 +735,7 @@ def _parse_members(text):
     Returns list of dicts: {"name", "username", "line"}
     """
     member_re = re.compile(
-        r'^- \[([^\]]+)\]\(https://github\.com/([^)]+)\)(?:,\s*(.+))?$',
+        r'^[-*+] \[([^\]]+)\]\(https://github\.com/([^)]+)\)(?:,\s*(.+))?$',
         re.MULTILINE,
     )
     members = []
@@ -744,6 +746,12 @@ def _parse_members(text):
             "line": m.group(0),
         })
     return members
+
+
+def _detect_list_marker(section_text):
+    """Return the list marker used in section_text ('-', '*' or '+', default '-')."""
+    m = re.search(r'^([-*+]) \[', section_text, re.MULTILINE)
+    return m.group(1) if m else "-"
 
 
 def _remove_member_line(readme, section_name, username):
@@ -759,7 +767,7 @@ def _remove_member_line(readme, section_name, username):
     section_text = readme[start:end]
 
     member_re = re.compile(
-        rf'^- \[[^\]]+\]\(https://github\.com/{re.escape(username)}\).*\n?',
+        rf'^[-*+] \[[^\]]+\]\(https://github\.com/{re.escape(username)}\).*\n?',
         re.MULTILINE | re.IGNORECASE,
     )
     match = member_re.search(section_text)
@@ -788,12 +796,12 @@ def _add_to_emeritus(readme, emeritus_title, member_entry, header_level=3):
         lines = section_text.split("\n")
 
         # Separate member lines from non-member lines
-        member_lines = [l for l in lines if l.startswith("- [")]
+        member_lines = [l for l in lines if re.match(r'^[-*+] \[', l)]
         member_lines.append(member_entry)
 
         # Sort alphabetically by display name (text inside [...])
         def _sort_key(line):
-            m = re.match(r'^- \[([^\]]+)\]', line)
+            m = re.match(r'^[-*+] \[([^\]]+)\]', line)
             return m.group(1).lower() if m else line.lower()
         member_lines.sort(key=_sort_key)
 
@@ -801,7 +809,7 @@ def _add_to_emeritus(readme, emeritus_title, member_entry, header_level=3):
         first_member_idx = None
         last_member_idx = None
         for i, line in enumerate(lines):
-            if line.startswith("- ["):
+            if re.match(r'^[-*+] \[', line):
                 if first_member_idx is None:
                     first_member_idx = i
                 last_member_idx = i
@@ -856,12 +864,12 @@ def _get_display_name(username):
         return None
 
 
-def _to_emeritus_entry(username, role_label, display_name=None):
+def _to_emeritus_entry(username, role_label, display_name=None, marker="-"):
     """Create an emeritus entry line with previous role."""
     if not display_name:
         display_name = _get_display_name(username)
     name = display_name or f"@{username}"
-    return f"- [{name}](https://github.com/{username}), {role_label}"
+    return f"{marker} [{name}](https://github.com/{username}), {role_label}"
 
 
 # ---------------------------------------------------------------------------
@@ -1013,7 +1021,7 @@ def _build_pr_body(repo, changes, cutoff, warning=None):
     """Build the PR body markdown for a repo."""
     body = "## Move inactive members to emeritus\n\n"
     if warning:
-        body += f"> **Warning:** {warning}\n\n"
+        body += f"> [!CAUTION] \n> {warning}\n\n"
     body += (
         f"The following members have had no activity in `{ORG}/{repo}` "
         f"since **{cutoff}** and are being moved to emeritus:\n\n"
@@ -1026,7 +1034,7 @@ def _build_pr_body(repo, changes, cutoff, warning=None):
 
     body += (
         "> [!IMPORTANT]\n"
-        "> After merging, remove the user(s) from:\n"
+        "> After merging, a Maintainer should remove the user(s) from:\n"
         "> - The listed team(s) in GitHub\n"
         "> - Any relevant private channels on Slack\n"
         "> - Any relevant package managers used for publishing\n\n"
@@ -1071,8 +1079,9 @@ def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
         changes = []  # (username, role_label) for PR body
         header_level = 3  # default
         for user, info in sorted(user_info.items()):
-            # Try to find display name from any role section
+            # Try to find display name and detect list marker from any role section
             display_name = None
+            marker = "-"
             for role_label in info["roles"]:
                 section_name = ROLE_SECTIONS.get(role_label)
                 if not section_name:
@@ -1080,9 +1089,11 @@ def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
                 section = _find_section(readme, section_name)
                 if section:
                     start, end, header_level = section
-                    for m in _parse_members(readme[start:end]):
+                    section_text = readme[start:end]
+                    for m in _parse_members(section_text):
                         if m["username"].lower() == user.lower():
                             display_name = m["name"]
+                            marker = _detect_list_marker(section_text)
                             break
                     if display_name:
                         break
@@ -1098,7 +1109,7 @@ def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
 
             # Add to single Emeritus section with highest role
             highest_role = info["role"]
-            entry = _to_emeritus_entry(user, highest_role, display_name)
+            entry = _to_emeritus_entry(user, highest_role, display_name, marker=marker)
             readme = _add_to_emeritus(readme, EMERITUS_SECTION, entry, header_level)
             changes.append((user, highest_role, sorted(info["teams"])))
 
