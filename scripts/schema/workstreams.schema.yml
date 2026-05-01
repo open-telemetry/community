@@ -1,0 +1,156 @@
+# workstreams.yml — an array of workstreams tracking the OpenTelemetry
+# community's key efforts. Conditional rules (per-kind required roles,
+# membership requirements) are enforced by scripts/validate-workstreams.py
+# to keep this schema simple and readable.
+"$schema": https://json-schema.org/draft/2020-12/schema
+
+type: array
+items:
+  "$ref": "#/$defs/workstream"
+
+"$defs":
+
+  workstream:
+    type: object
+    required: [id, kind, name, parent, people]
+    additionalProperties: false
+    properties:
+      # Stable slug, unique across all workstreams.
+      id:
+        type: string
+        minLength: 1
+      kind:
+        type: string
+        enum:
+          # Permanent operational group with recurring meetings,
+          # a GC liaison, and a TC sponsor.
+          - sig
+      name:
+        type: string
+        minLength: 1
+      # Grouping category. Only valid on kind: sig. Absent means specification (the default).
+      # Enforcement of the kind constraint is in scripts/validate-workstreams.py.
+      sigCategory:
+        type: string
+        enum:
+          # Specification-related SIG (default when omitted).
+          - specification
+          # Language SDK or instrumentation SIG.
+          - implementation
+          # Cross-language, community-wide concern.
+          - cross-cutting
+      # ID of the parent workstream, or 'none' for a top-level workstream.
+      # Kind constraints are enforced by scripts/validate-workstreams.py.
+      parent:
+        type: string
+        minLength: 1
+      people:
+        type: array
+        items:
+          "$ref": "#/$defs/peopleEntry"
+      resources:
+        type: array
+        items:
+          "$ref": "#/$defs/resource"
+
+  # A person or team associated with a workstream. Each entry is a single-key
+  # object where the key names the role and the value identifies the person or team.
+  peopleEntry:
+    type: object
+    minProperties: 1
+    maxProperties: 1
+    additionalProperties: false
+    properties:
+      # GC member facilitating health of a SIG.
+      # Required on: sig. GitHub username, or 'tbd' if not yet assigned.
+      gcLiaison:
+        type: string
+        minLength: 1
+      # TC member sponsoring a SIG.
+      # Required on: sig.
+      tcSponsor:
+        type: object
+        required: [username, level]
+        additionalProperties: false
+        properties:
+          # GitHub username, or 'tbd' if not yet assigned.
+          username:
+            type: string
+            minLength: 1
+          # 'tbd' if level not yet determined.
+          level:
+            type: string
+            enum:
+              # Lightest engagement. Participates in GC check-ins, aids roadmap,
+              # and is the primary escalation path.
+              - escalating
+              # Active SIG participant; helps direct toward OTel goals.
+              # Fulfils escalating obligations.
+              - guiding
+              # Active SIG leadership; drives charter completion.
+              # Fulfils guiding and escalating obligations. Max 2 per TC member.
+              - leading
+              # Level required but not yet determined.
+              - tbd
+      # Trusted collaborator with approval rights on the spec repository.
+      # TC members are a superset and may fill this role.
+      # GitHub username, or 'tbd' if not yet assigned.
+      specSponsor:
+        type: string
+        minLength: 1
+  # A resource associated with a workstream. Each entry is a single-key
+  # object where the key names the resource type and the value is the resource data.
+  resource:
+    type: object
+    minProperties: 1
+    maxProperties: 1
+    additionalProperties: false
+    properties:
+      # GitHub repository as org/repo slug, e.g. open-telemetry/opentelemetry-java.
+      repository:
+        type: string
+        minLength: 1
+      # GitHub project board ID for roadmap rollup, e.g. 82.
+      roadmapProject:
+        type: integer
+      # GitHub Discussions URL.
+      githubDiscussion:
+        type: string
+        minLength: 1
+      # Slack channel.
+      slack:
+        "$ref": "#/$defs/slackResource"
+      # Meeting series: schedule, calendar invite group, and notes doc.
+      meeting:
+        "$ref": "#/$defs/meetingResource"
+
+  slackResource:
+    type: object
+    required: [name, id]
+    additionalProperties: false
+    properties:
+      name:
+        type: string
+        pattern: '^#otel-'
+      id:
+        # Slack channel ID, e.g. C014L2KCTE3.
+        type: string
+        pattern: '^C[A-Z0-9]{10}$'
+
+  meetingResource:
+    type: object
+    required: [schedule]
+    additionalProperties: false
+    properties:
+      schedule:
+        # Free-text meeting schedule, e.g. "Thursday at 09:00 PT".
+        type: string
+        minLength: 1
+      calendarInviteGroup:
+        # Google Groups name, e.g. calendar-java.
+        type: string
+        minLength: 1
+      gDocNotes:
+        # Google Doc ID for meeting notes.
+        type: string
+        minLength: 1

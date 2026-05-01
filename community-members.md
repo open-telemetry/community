@@ -6,15 +6,17 @@ This is the current Governance Committee, per the [Governance Committee
 Charter](./governance-charter.md),
 in alphabetical order:
 
+<!-- gc -->
 - [Alolita Sharma](https://github.com/alolita), Apple, until October 2026
 - [Austin Parker](https://github.com/austinlparker), Honeycomb, until October 2027
 - [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden, until October 2027
 - [Marylia Gutierrez](https://github.com/maryliag), Grafana Labs, until October 2027
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2026
-- [Pablo Baeyens Fernandez](https://github.com/mx-psi), Datadog, until October 2026
+- [Pablo Baeyens](https://github.com/mx-psi), Datadog, until October 2026
 - [Severin Neumann](https://github.com/svrnm), Causely, until October 2027
 - [Ted Young](https://github.com/tedsuo), Grafana Labs, until October 2027
 - [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2026
+<!-- endgc -->
 
 ## Technical Committee
 
@@ -22,16 +24,18 @@ This is the current Technical Committee, per the
 [Technical Committee Charter](./tech-committee-charter.md),
 in alphabetical order:
 
+<!-- tc -->
 - [Armin Ruech](https://github.com/arminru), Dynatrace
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake
-- [Carlos Alberto](https://github.com/carlosalberto), Lightstep
+- [Bogdan Drutu](https://github.com/bogdandrutu), Snowflake
+- [Carlos Alberto Cortez](https://github.com/carlosalberto), Lightstep
 - [David Ashpole](https://github.com/dashpole), Google
 - [Jack Berg](https://github.com/jack-berg), Grafana Labs
-- [Josh MacDonald](https://github.com/jmacd), Microsoft
 - [Josh Suereth](https://github.com/jsuereth), Google
+- [Joshua MacDonald](https://github.com/jmacd), Microsoft
 - [Liudmila Molkova](https://github.com/lmolkova), Grafana Labs
 - [Reiley Yang](https://github.com/reyang), Microsoft
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
+<!-- endtc -->
 
 ## Community Management
 
@@ -40,6 +44,7 @@ events, and other functions as needed.
 
 - [Adriana Villela](https://github.com/avillela), Dynatrace
 - [Reese Lee](https://github.com/reese-lee), New Relic
+- (Associate) [Julia Furst Morgado](https://github.com/juliafmorgado), Dash0
 
 ## Specifications and Proto
 
@@ -114,6 +119,12 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 Repo: [open-telemetry/opentelemetry-go-instrumentation](https://github.com/open-telemetry/opentelemetry-go-instrumentation)
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Go auto-instrumentation can be found in the [open-telemetry/opentelemetry-go-instrumentation CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-go-instrumentation/blob/main/CONTRIBUTING.md#appovers-and-maintainers).
+
+### Golang Compile Time Instrumentation
+
+Repo: [open-telemetry/opentelemetry-go-compile-instrumentation](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation)
+
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Go compile time instrumentation can be found in the [open-telemetry/opentelemetry-go-compile-instrumentation CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation/blob/main/CONTRIBUTING.md#approvers-and-maintainers).
 
 ## JavaScript
 

@@ -1,0 +1,167 @@
+teams:
+  governance-committee:
+  - alolita
+  - austinlparker
+  - jpkrohling
+  - maryliag
+  - mtwo
+  - mx-psi
+  - svrnm
+  - tedsuo
+  - trask
+  technical-committee:
+  - arminru
+  - bogdandrutu
+  - carlosalberto
+  - dashpole
+  - jack-berg
+  - jmacd
+  - jsuereth
+  - lmolkova
+  - reyang
+  - tigrannajaryan
+  spec-sponsors:
+  - MrAlias
+  - Oberon00
+  - arminru
+  - bogdandrutu
+  - carlosalberto
+  - cijothomas
+  - codeboten
+  - dashpole
+  - dyladan
+  - jack-berg
+  - jmacd
+  - jpkrohling
+  - jsuereth
+  - lmolkova
+  - lzchen
+  - marcalff
+  - pellared
+  - reyang
+  - svrnm
+  - tedsuo
+  - tigrannajaryan
+  - tsloughter
+people:
+  MrAlias:
+    name: Tyler Yahn
+    company: Splunk
+    slackMemberId: U01N9F13ERG
+  Oberon00:
+    name: Christian Neumüller
+    company: Dynatrace
+    slackMemberId: U01NM39DZFB
+  alolita:
+    name: Alolita Sharma
+    company: Apple
+    slackMemberId: U01J8KALC4F
+    termEnd: October 2026
+  arminru:
+    name: Armin Ruech
+    company: Dynatrace
+    slackMemberId: UM283PDT7
+  austinlparker:
+    name: Austin Parker
+    company: Honeycomb
+    slackMemberId: UDZA7D6AZ
+    termEnd: October 2027
+  bogdandrutu:
+    name: Bogdan Drutu
+    company: Snowflake
+    slackMemberId: UTZ7ZGZ9N
+  carlosalberto:
+    name: Carlos Alberto Cortez
+    company: Lightstep
+    slackMemberId: U0195U54X1T
+  cijothomas:
+    name: Cijo Thomas
+    company: Microsoft
+    slackMemberId: U01NNRZB1TK
+  codeboten:
+    name: Alex Boten
+    company: Honeycomb
+    slackMemberId: U018R7326HH
+  dashpole:
+    name: David Ashpole
+    company: Google
+    slackMemberId: U01BQ0KKLM8
+  dyladan:
+    name: Daniel Dyla
+    company: Dynatrace
+    slackMemberId: U01NEM0KTPW
+  jack-berg:
+    name: Jack Berg
+    company: Grafana Labs
+    slackMemberId: U01RSKN831D
+  jmacd:
+    name: Joshua MacDonald
+    company: Microsoft
+    slackMemberId: U083W33S01F
+  jpkrohling:
+    name: Juraci Paixão Kröhling
+    company: OllyGarden
+    slackMemberId: UK1GW8L76
+    termEnd: October 2027
+  jsuereth:
+    name: Josh Suereth
+    company: Google
+    slackMemberId: U01KV42PNBT
+  lmolkova:
+    name: Liudmila Molkova
+    company: Grafana Labs
+    slackMemberId: U025870USUV
+  lzchen:
+    name: Leighton Chen
+    company: Microsoft
+    slackMemberId: U01PF0U6WCU
+  marcalff:
+    name: Marc Alff
+    company: Oracle
+    slackMemberId: U03EQ67GS9Y
+  maryliag:
+    name: Marylia Gutierrez
+    company: Grafana Labs
+    slackMemberId: U06N3QB9K1T
+    termEnd: October 2027
+  mtwo:
+    name: Morgan McLean
+    company: Splunk
+    slackMemberId: U01EQLNMMHU
+    termEnd: October 2026
+  mx-psi:
+    name: Pablo Baeyens
+    company: Datadog
+    slackMemberId: U01N232463G
+    termEnd: October 2026
+  pellared:
+    name: Robert Pająk
+    company: Splunk
+    slackMemberId: U01N7C6V8EN
+  reyang:
+    name: Reiley Yang
+    company: Microsoft
+    slackMemberId: U01NA9DUCLT
+  svrnm:
+    name: Severin Neumann
+    company: Causely
+    slackMemberId: U01V5PFBBAQ
+    termEnd: October 2027
+  tedsuo:
+    name: Ted Young
+    company: Grafana Labs
+    slackMemberId: U08GBG57W75
+    termEnd: October 2027
+  tigrannajaryan:
+    name: Tigran Najaryan
+    company: Splunk
+    slackMemberId: UTMD3G6C9
+  trask:
+    name: Trask Stalnaker
+    company: Microsoft
+    slackMemberId: U0157BDJNBD
+    termEnd: October 2026
+  tsloughter:
+    name: Tristan Sloughter
+    company: MyDecisiveAI
+    slackMemberId: U01EJUHUSG2

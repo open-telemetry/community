@@ -258,6 +258,7 @@ The following apply to the subproject for which one would be a maintainer.
 - Ensure continued health of subproject:
   - Adequate test coverage to confidently release
   - Tests are passing reliably (i.e. not flaky) and are fixed when they fail
+  - Security advisories, alerts, reports and vulnerabilities are triaged and handled in a timely manner (see relevant [guidelines](https://github.com/open-telemetry/sig-security/blob/main/security-response.md))
   - Up-to-date and accurate [documentation](http://docs.opentelemetry.io/)
 - Ensure a healthy process for discussion and decision making is in place.
 - Work with other maintainers to maintain the project's overall health and

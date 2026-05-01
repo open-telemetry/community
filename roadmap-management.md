@@ -22,7 +22,7 @@ Specifically, the following project details are synced into their corresponding 
   * **Start Date**: The projected start of the work.
   * **Target Date**: The expected completion date.
 
-Other information, like the SIG leading a project, is collected from [sigs.yml](./sigs.yml).
+Other information, like the SIG leading a project, is collected from [workstreams.yml](./workstreams.yml).
 
 Project leads may use any other GitHub project features like short descriptions, milestones, etc. to manage individual projects. 
 
@@ -30,7 +30,7 @@ This mechanism allows for a centralized roadmap view while letting individual pr
 
 ## Roadmap Item Selection
 
-For a project to appear on the official roadmap, its ID must be added to [sigs.yml](./sigs.yml) in the list of `roadmapProjectIDs` under its corresponding SIG.
+For a project to appear on the official roadmap, its ID must be added to [workstreams.yml](./workstreams.yml) as a `roadmapProject` resource entry under its corresponding SIG.
 This is an opt-in process, coordinated by GC and TC.
 
 Current and potential roadmap items are evaluated by TC and GC, in collaboration with all SIGs, on an ongoing basis, and collectively reviewed at the annual OpenTelemetry Leadership Meeting.

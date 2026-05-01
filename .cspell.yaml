@@ -1,10 +1,10 @@
 version: 0.2
 ignorePaths:
-  ["elections/**/*", "tools/github/*", "scripts/**/*.py", "scripts/**/*.sh"]
-# Ignore certain patterns in the sigs.yml file
+  ["elections/**/*", "tools/github/*", "scripts/**/*.py", "scripts/**/*.sh", "workstreams.yml", "people.yml"]
+# Ignore certain patterns in the workstreams.yml file
 patterns:
   - name: Slack Channel ID
-    pattern: "id: [A-Z0-9]{11}"
+    pattern: "\\bC[A-Z0-9]{10}\\b"
   - name: Google Docs ID
     pattern: "value: [a-zA-Z0-9-_]+"
   - name: "GitHub Handle"
@@ -18,11 +18,13 @@ ignoreRegExpList:
   - GitHub Handle in YML
 words:
   - Abinet
+  - agentic
   - Alain
   - Alff
   - Arize
   - Aronoff
   - Ashpole
+  - austinlparker
   - automations
   - Baeyens
   - calendar-localization-ptbr
@@ -49,16 +51,21 @@ words:
   - emea
   - EPEL
   - faas
+  - Francesco
   - gitter
   - grafana
+  - growpart
+  - Hendrik
   - Hostmetrics
   - hostmetricsreceiver
+  - iflag
   - Instrgen
   - jemmic
   - Joaquín
   - Kanal
   - Karlie
   - keptn
+  - Kemal
   - Kuba
   - kubecon
   - k8sclusterreceiver
@@ -71,10 +78,14 @@ words:
   - Lukasz
   - maintainership
   - Makefiles
+  - NUMA
   - Marylia
   - observiq
+  - OCPUs
   - opentelemetry
   - opentelemetrybot
+  - oracleoci
+  - oraclevda
   - otel
   - otel-localization-ptbr
   - otel-localization-zhcn
@@ -85,6 +96,7 @@ words:
   - proto
   - Purvi
   - pytest
+  - rescan
   - isovalent
   - labs
   - Liudmila
@@ -142,10 +154,13 @@ words:
   - ebpf
   - eiffel
   - emea
+  - endgc
   - endsigs
+  - endtc
   - faas
   - fong
   - Fordyce
+  - Furst
   - frzifus
   - gbbr
   - genai
@@ -195,9 +210,12 @@ words:
   - mjwolf
   - mkorbi
   - molkova
+  - mottibec
   - msomasu
+  - Morgado
   - MSYS
   - PATHCONV
+  - Pichler
   - mtwo
   - mwear
   - npmjs
@@ -217,6 +235,7 @@ words:
   - opentelemetrybot
   - ossf
   - otel
+  - otelcol
   - otel-agentmanwg
   - otel-comms
   - otel-ebpf
@@ -231,6 +250,7 @@ words:
   - Prometheus
   - paixão
   - pająk
+  - pavolloffay
   - passcodes
   - poncelow
   - proto
@@ -240,6 +260,7 @@ words:
   - raesene
   - reiley
   - readmemd
+  - rollup
   - roadmaps
   - rolldice
   - ruech
@@ -258,6 +279,7 @@ words:
   - severin
   - sguyon
   - sharma
+  - shiftyp
   - shkuro
   - sigelman
   - signup
@@ -275,6 +297,8 @@ words:
   - sudivate
   - suereth
   - supermajority
+  - Tero
+  - Tigerbeetle
   - Thiru
   - Traceloop
   - tarnovski
@@ -291,9 +315,12 @@ words:
   - triagers
   - teamcity
   - uninstrumented
+  - usermod
   - Vasconcellos
   - Villela
   - Vitor
+  - VNIC
   - vtex
   - workstream
+  - workstreams
   - yahn

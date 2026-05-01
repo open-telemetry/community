@@ -12,6 +12,10 @@ projects may -- at their discretion -- hide or close issues, pull requests, or
 other contributions that are made totally or in part through generative AI
 tooling.
 
+This is especially important when you communicate through issues, comments or Slack.
+We want to hear your ideas, not just what an LLM generates, even if your English 
+or communication skills are not 'perfect'.
+
 The human driving any contribution is responsible for ensuring that LLM-generated
 content aligns with project guidelines and policies, especially this Generative AI
 document and the aforementioned Linux Foundation Generative AI Policy.
@@ -43,11 +47,11 @@ output as the sole basis for their contributions.
 
 Examples of this include:
 
-- Copying and pasting LLM output into issues or pull requests without any
+- Copying and pasting LLM output into Slack, issues or pull requests without any
   additional context or explanation.
 - Reviewing existing pull requests solely via
-  LLMs, or using LLMs to respond to issues without any additional context or
-  explanation.
+  LLMs, or using LLMs to respond to issues or Slack messages without any additional 
+  context or explanation.
 
 ### Human Responsibility and Control
 
@@ -62,6 +66,9 @@ to the OpenTelemetry project.
 
 To help foster transparency and collaboration, a human who contributes content that
 was primarily created by generative AI tools should freely and openly disclose this fact.
+
+For code contributions, the recommended method to disclose this is an 'Assisted-by:' commit
+message trailer that includes the model used (e.g. `Assisted-By: ChatGPT 5.2`).
 
 ## Frequently Asked Questions - Contributors
 
@@ -122,3 +129,25 @@ create a contribution?_
 
 Yes. Knowing when these tools are used can help project maintainers
 to more effectively perform their duties.
+
+_Q. What are best practices to help enforce these guidelines?_
+
+You may add a link to this policy and a checkbox to PR templates and automated
+messages for first-time contributors.
+
+To help with disclosure on code contributions, you may also add an
+[AGENTS.md](https://agents.md/) file which includes wording like the following:
+
+```md
+## Commit formatting
+
+We appreciate it if users disclose the use of AI tools when the significant part of a commit is
+taken from a tool without changes. When making a commit this should be disclosed through an
+Assisted-by: commit message trailer.
+
+Examples:
+
+Assisted-by: ChatGPT 5.2
+Assisted-by: Claude Opus 4.5
+```
+
