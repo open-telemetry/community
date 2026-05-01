@@ -64,7 +64,9 @@ IGNORED_REPOS = {
     "opentelemetry-specification", # Too complex for simple checks. More checks can be added in the future
     "semantic-conventions", # Too complex for simple checks. More checks can be added in the future
     "opentelemetry-proto", # Too complex for simple checks. More checks can be added in the future
-    "opentelemetry-proto-java", # Too complex for simple checks. More checks can be added in the future
+    "opentelemetry-proto-java", # Inherits maintainers/approvers from other repos
+    "opentelemetry-java-examples", # Inherits maintainers/approvers from other repos
+    "semantic-conventions-java", # Inherits maintainers/approvers from other repos
     "sig-contributor-experience", # Majority of work is done outside of github
     "sig-developer-experience", # Majority of work is done outside of github
     "sig-end-user", # Majority of work is done outside of github
