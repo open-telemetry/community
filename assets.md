@@ -23,7 +23,7 @@ Link: https://github.com/open-telemetry
 Link: http://cncf-aws-opentelemetry.signin.aws.amazon.com/
 
 - Community account to published Lambda layers
-- Admin: Alex Boten @codeboten & Anthony Mirabella @aneurysm9
+- Admin: Tyler Benson [@tylerbenson](https://github.com/tylerbenson), Serkan Özal [@serkan-ozal](https://github.com/serkan-ozal), Warre Pessers [@wpessers](https://github.com/wpessers)
 
 ### FOSSA
 
