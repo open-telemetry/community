@@ -19,6 +19,8 @@ items:
       id:
         type: string
         minLength: 1
+      # Any kind may be associated with a project proposal document
+      # under /projects/*.md.
       kind:
         type: string
         enum:
@@ -27,9 +29,8 @@ items:
           - sig
           # Time-bound effort with defined deliverables and exit criteria.
           # Concludes when its deliverables are met, distinct from a
-          # permanent SIG. Either has no parent or is scoped under a parent SIG.
-          # Corresponds to a project proposal in /projects/*.md.
-          # Any kind may be associated with a project proposal document.
+          # permanent SIG. Initiatives are scoped under a parent SIG, which
+          # manages the initiative's lifecycle.
           - initiative
       name:
         type: string
@@ -67,13 +68,13 @@ items:
     maxProperties: 1
     additionalProperties: false
     properties:
-      # GC member facilitating health of a SIG or initiative.
-      # Required on: sig, initiative. GitHub username, or 'tbd' if not yet assigned.
+      # GC member facilitating health of a SIG.
+      # Required on: sig. GitHub username, or 'tbd' if not yet assigned.
       gcLiaison:
         type: string
         minLength: 1
-      # TC member sponsoring a SIG or initiative.
-      # Required on: sig, initiative.
+      # TC member sponsoring a SIG.
+      # Required on: sig.
       tcSponsor:
         type: object
         required: [username, level]

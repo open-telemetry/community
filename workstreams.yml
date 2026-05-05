@@ -770,6 +770,16 @@
       name: '#otel-swift'
       id: C01NCHR19SB
   - repository: open-telemetry/opentelemetry-swift
+- id: zig-sdk
+  kind: sig
+  sigCategory: implementation
+  name: 'Zig: SDK'
+  parent: none
+  people:
+  - gcLiaison: alolita
+  - tcSponsor:
+      username: jmacd
+      level: tbd
 - id: network
   kind: sig
   sigCategory: implementation
@@ -1161,10 +1171,6 @@
   name: OpenTelemetry Collector Agentic Workflows
   parent: collector
   people:
-  - gcLiaison: mx-psi
-  - tcSponsor:
-      username: tbd
-      level: tbd
   - lead: pavolloffay
   - lead: niwoerner
 - id: otel-blueprints
@@ -1172,10 +1178,6 @@
   name: OTel Blueprints
   parent: end-user
   people:
-  - gcLiaison: maryliag
-  - tcSponsor:
-      username: reyang
-      level: escalating
   - lead: danielgblanco
   - lead: dmathieu
   resources:
@@ -1188,12 +1190,8 @@
 - id: zig-sig-bootstrap
   kind: initiative
   name: Bootstrap Zig Special Interest Group
-  parent: none
+  parent: zig-sdk
   people:
-  - gcLiaison: alolita
-  - tcSponsor:
-      username: jmacd
-      level: tbd
   - lead: inge4pres
   - lead: kmos
   - lead: hendriknielaender
@@ -1202,20 +1200,12 @@
   name: Collector v1
   parent: collector
   people:
-  - gcLiaison: jpkrohling
-  - tcSponsor:
-      username: tbd
-      level: tbd
   - lead: tbd
 - id: cicd-phase-2
   kind: initiative
   name: CI/CD Observability SIG Phase 2
   parent: semconv-cicd
   people:
-  - gcLiaison: maryliag
-  - tcSponsor:
-      username: carlosalberto
-      level: tbd
   - lead: horovits
   - lead: adrielp
 - id: ecosystem-explorer
@@ -1223,10 +1213,6 @@
   name: OpenTelemetry Ecosystem Explorer
   parent: communications
   people:
-  - gcLiaison: svrnm
-  - tcSponsor:
-      username: jack-berg
-      level: escalating
   - lead: jaydeluca
   - lead: svrnm
   - lead: mx-psi
@@ -1237,8 +1223,4 @@
   name: New Getting Started Documentation and Reference Application
   parent: communications
   people:
-  - gcLiaison: svrnm
-  - tcSponsor:
-      username: jack-berg
-      level: tbd
   - lead: svrnm

@@ -33,13 +33,19 @@ NONE = "none"
 
 KIND_REQUIRED_ROLES = {
     "sig":           {"gcLiaison", "tcSponsor"},
-    "initiative":    {"gcLiaison", "tcSponsor", "lead"},
+    "initiative":    {"lead"},
+}
+
+KIND_FORBIDDEN_ROLES = {
+    "initiative":    {"gcLiaison", "tcSponsor"},
 }
 
 VALID_PARENT_KINDS = {
     "sig":           {"sig"},
     "initiative":    {"sig"},
 }
+
+KINDS_REQUIRING_PARENT = {"initiative"}
 
 MEMBERSHIP_REQUIRED_ROLES = {"gcLiaison", "tcSponsor", "specSponsor"}
 
@@ -92,6 +98,8 @@ def validate_workstreams_semantics(workstreams: list[dict], people_data: dict) -
         parent_id = w.get("parent")
 
         if parent_id is None or parent_id == NONE:
+            if kind in KINDS_REQUIRING_PARENT:
+                errors.append(f"[{wid}] kind '{kind}' requires a parent")
             continue
 
         if parent_id == wid:
@@ -134,6 +142,11 @@ def validate_workstreams_semantics(workstreams: list[dict], people_data: dict) -
                 errors.append(
                     f"[{wid}] kind '{kind}' requires at least one '{required_role}'"
                 )
+        for forbidden_role in KIND_FORBIDDEN_ROLES.get(kind, set()) & person_roles:
+            errors.append(
+                f"[{wid}] kind '{kind}' must not specify '{forbidden_role}' "
+                "(inherited from parent SIG)"
+            )
 
         teams = people_data.get("teams", {})
         gc_members    = {u.lower() for u in teams.get("governance-committee", [])}
