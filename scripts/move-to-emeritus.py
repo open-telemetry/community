@@ -301,10 +301,11 @@ def _get_repo_events(repo, cutoff):
     return results
 
 
-def _check_comments(remaining, repo, cutoff, comment_type=None):
+def _check_comments(remaining, repo, cutoff, comment_type=None, exclude_pr=None):
     """Check for comment activity using cached repo data. Returns dict of {username: [numbers]}.
 
     comment_type: None = all, "pr" = only PR comments, "issue" = only issue comments.
+    exclude_pr: PR number to ignore (activity on the move-to-emeritus PR itself doesn't count).
     """
     commenters = _get_repo_commenters(repo, cutoff)
     active = {}
@@ -318,21 +319,26 @@ def _check_comments(remaining, repo, cutoff, comment_type=None):
             numbers = data["issue"]
         else:
             numbers = data["pr"] + data["issue"]
+        if exclude_pr is not None:
+            numbers = [n for n in numbers if n != exclude_pr]
         if numbers:
             active[user] = numbers
     return active
 
 
-def _check_events(remaining, repo, cutoff, event_types):
+def _check_events(remaining, repo, cutoff, event_types, exclude_pr=None):
     """Check for issue event activity using cached repo data.
 
     Returns dict of {username: [(event_type, issue_number), ...]}.
+    exclude_pr: issue/PR number to ignore.
     """
     all_events = _get_repo_events(repo, cutoff)
     active = {}
     found = set()
     for actor, event_type, issue_number in all_events:
         if actor in remaining and actor not in found and event_type in event_types:
+            if exclude_pr is not None and issue_number == exclude_pr:
+                continue
             active.setdefault(actor, [])
             active[actor].append((event_type, issue_number))
             found.add(actor)
@@ -356,11 +362,12 @@ def _verify_review_candidates(user, candidate_prs, repo, cutoff):
     return None
 
 
-def _check_reviews_paginated(user, repo, cutoff, start_cursor):
+def _check_reviews_paginated(user, repo, cutoff, start_cursor, exclude_pr=None):
     """Paginate through remaining GraphQL results for a single user.
 
     Called only when the batched first page didn't confirm activity.
     Returns a PR number with confirmed review, or None.
+    exclude_pr: PR number to skip.
     """
     safe = "u_" + re.sub(r"[^a-zA-Z0-9]", "_", user)
     review_q = f'type:pr repo:{ORG}/{repo} reviewed-by:{user} updated:>={cutoff}'
@@ -379,6 +386,8 @@ def _check_reviews_paginated(user, repo, cutoff, start_cursor):
 
         result = data["data"].get(f"{safe}_reviews") or {}
         candidate_prs = [n["number"] for n in result.get("nodes", []) if "number" in n]
+        if exclude_pr is not None:
+            candidate_prs = [n for n in candidate_prs if n != exclude_pr]
 
         pr = _verify_review_candidates(user, candidate_prs, repo, cutoff)
         if pr is not None:
@@ -392,12 +401,13 @@ def _check_reviews_paginated(user, repo, cutoff, start_cursor):
     return None
 
 
-def _check_reviews(remaining, repo, cutoff):
+def _check_reviews(remaining, repo, cutoff, exclude_pr=None):
     """Check for PR review activity. Returns dict of {username: [pr_numbers]}.
 
     Batches the first GraphQL page for up to 10 users at a time, then
     REST-verifies candidates. Users not confirmed active from the first page
     are paginated individually through remaining results.
+    exclude_pr: PR number to skip (activity on the move-to-emeritus PR itself doesn't count).
     """
     if not remaining:
         return {}
@@ -434,6 +444,8 @@ def _check_reviews(remaining, repo, cutoff):
             safe = "u_" + re.sub(r"[^a-zA-Z0-9]", "_", user)
             result = data["data"].get(f"{safe}_reviews") or {}
             candidate_prs = [n["number"] for n in result.get("nodes", []) if "number" in n]
+            if exclude_pr is not None:
+                candidate_prs = [n for n in candidate_prs if n != exclude_pr]
 
             pr = _verify_review_candidates(user, candidate_prs, repo, cutoff)
             if pr is not None:
@@ -444,14 +456,14 @@ def _check_reviews(remaining, repo, cutoff):
             page_info = result.get("pageInfo", {})
             if page_info.get("hasNextPage"):
                 cursor = page_info.get("endCursor")
-                pr = _check_reviews_paginated(user, repo, cutoff, cursor)
+                pr = _check_reviews_paginated(user, repo, cutoff, cursor, exclude_pr=exclude_pr)
                 if pr is not None:
                     active[user] = [pr]
 
     return active
 
 
-def check_triager_activity(usernames, repos, cutoff):
+def check_triager_activity(usernames, repos, cutoff, exclude_pr=None):
     """Check if triagers are active across any of the given repos since cutoff.
 
     Returns a set of usernames that have been active.
@@ -462,6 +474,7 @@ def check_triager_activity(usernames, repos, cutoff):
       - Closed an issue
     Short-circuits: once a user is found active on one repo, they are
     not checked on the remaining repos.
+    exclude_pr: PR number to exclude from activity (e.g. the move-to-emeritus PR itself).
     """
     if not usernames or not repos:
         return set()
@@ -474,7 +487,7 @@ def check_triager_activity(usernames, repos, cutoff):
             break
 
         # 1. Check comments via REST API
-        found = _check_comments(remaining, repo, cutoff)
+        found = _check_comments(remaining, repo, cutoff, exclude_pr=exclude_pr)
         for user, numbers in found.items():
             debug(f"triager {user} active on {repo}: commented on issue/PR{_fmt_numbers(numbers)}")
         active.update(found.keys())
@@ -483,7 +496,7 @@ def check_triager_activity(usernames, repos, cutoff):
             return active
 
         # 2. Check label changes and issue closes via cached issue events
-        found_events = _check_events(remaining, repo, cutoff, {"labeled", "unlabeled", "closed"})
+        found_events = _check_events(remaining, repo, cutoff, {"labeled", "unlabeled", "closed"}, exclude_pr=exclude_pr)
         for actor, event_list in found_events.items():
             event_type, issue_num = event_list[0]
             debug(f"triager {actor} active on {repo}: {event_type} event #{issue_num}")
@@ -494,7 +507,7 @@ def check_triager_activity(usernames, repos, cutoff):
         debug(f"triager {user}: not active")
     return active
 
-def check_approver_activity(usernames, repos, cutoff):
+def check_approver_activity(usernames, repos, cutoff, exclude_pr=None):
     """Check if approvers are active across any of the given repos since cutoff.
 
     Returns a set of usernames that have been active.
@@ -505,6 +518,7 @@ def check_approver_activity(usernames, repos, cutoff):
       - Added a comment on an issue
     Short-circuits: once a user is found active on one repo, they are
     not checked on the remaining repos.
+    exclude_pr: PR number to exclude from activity (e.g. the move-to-emeritus PR itself).
     """
     if not usernames or not repos:
         return set()
@@ -517,7 +531,7 @@ def check_approver_activity(usernames, repos, cutoff):
             break
 
         # 1. Check PR comments via REST (avoids updated:>= false positives)
-        found_pr = _check_comments(remaining, repo, cutoff, comment_type="pr")
+        found_pr = _check_comments(remaining, repo, cutoff, comment_type="pr", exclude_pr=exclude_pr)
         for user, numbers in found_pr.items():
             debug(f"approver {user} active on {repo}: PR comments{_fmt_numbers(numbers)}")
             active.add(user)
@@ -526,7 +540,7 @@ def check_approver_activity(usernames, repos, cutoff):
             return active
 
         # 2. Check issue comments via REST
-        found_issue = _check_comments(remaining, repo, cutoff, comment_type="issue")
+        found_issue = _check_comments(remaining, repo, cutoff, comment_type="issue", exclude_pr=exclude_pr)
         for user, numbers in found_issue.items():
             debug(f"approver {user} active on {repo}: issue comments{_fmt_numbers(numbers)}")
             active.add(user)
@@ -535,7 +549,7 @@ def check_approver_activity(usernames, repos, cutoff):
             return active
 
         # 3. Check PR reviews via REST
-        found_reviews = _check_reviews(remaining, repo, cutoff)
+        found_reviews = _check_reviews(remaining, repo, cutoff, exclude_pr=exclude_pr)
         for user, numbers in found_reviews.items():
             debug(f"approver {user} active on {repo}: PR reviews{_fmt_numbers(numbers)}")
             active.add(user)
@@ -548,7 +562,7 @@ def check_approver_activity(usernames, repos, cutoff):
     return active
 
 
-def check_maintainer_activity(usernames, repos, cutoff):
+def check_maintainer_activity(usernames, repos, cutoff, exclude_pr=None):
     """Check if maintainers are active across any of the given repos since cutoff.
 
     Returns a set of usernames that have been active.
@@ -560,6 +574,7 @@ def check_maintainer_activity(usernames, repos, cutoff):
       - Authored PRs
       - Commented on issues
     Short-circuits once a user is found active.
+    exclude_pr: PR number to exclude from activity (e.g. the move-to-emeritus PR itself).
     """
     if not usernames or not repos:
         return set()
@@ -572,7 +587,7 @@ def check_maintainer_activity(usernames, repos, cutoff):
             break
 
         # 1. Check PR comments via REST (avoids updated:>= false positives)
-        found_pr = _check_comments(remaining, repo, cutoff, comment_type="pr")
+        found_pr = _check_comments(remaining, repo, cutoff, comment_type="pr", exclude_pr=exclude_pr)
         for user, numbers in found_pr.items():
             debug(f"maintainer {user} active on {repo}: PR comments{_fmt_numbers(numbers)}")
             active.add(user)
@@ -581,7 +596,7 @@ def check_maintainer_activity(usernames, repos, cutoff):
             return active
 
         # 2. Check issue comments via REST
-        found_issue = _check_comments(remaining, repo, cutoff, comment_type="issue")
+        found_issue = _check_comments(remaining, repo, cutoff, comment_type="issue", exclude_pr=exclude_pr)
         for user, numbers in found_issue.items():
             debug(f"maintainer {user} active on {repo}: issue comments{_fmt_numbers(numbers)}")
             active.add(user)
@@ -590,7 +605,7 @@ def check_maintainer_activity(usernames, repos, cutoff):
             return active
 
         # 3. Check PR reviews via REST
-        found_reviews = _check_reviews(remaining, repo, cutoff)
+        found_reviews = _check_reviews(remaining, repo, cutoff, exclude_pr=exclude_pr)
         for user, numbers in found_reviews.items():
             debug(f"maintainer {user} active on {repo}: PR reviews{_fmt_numbers(numbers)}")
             active.add(user)
@@ -636,7 +651,7 @@ def check_maintainer_activity(usernames, repos, cutoff):
 
         # 5. Check who merged PRs via cached issue events
         if remaining:
-            found_merged = _check_events(remaining, repo, cutoff, {"merged"})
+            found_merged = _check_events(remaining, repo, cutoff, {"merged"}, exclude_pr=exclude_pr)
             for actor, event_list in found_merged.items():
                 _, issue_num = event_list[0]
                 debug(f"maintainer {actor} active on {repo}: merged PR #{issue_num}")
@@ -676,6 +691,7 @@ ROLE_SECTIONS = {
 EMERITUS_SECTION = "Emeritus"
 
 BRANCH_NAME = "otelbot/move-inactive-to-emeritus"
+ISSUE_TITLE = "chore: Remove inactive members from teams and channels"
 
 EMERITUS_INFO = (
     "For more information about the emeritus role, see the\n"
@@ -683,6 +699,38 @@ EMERITUS_INFO = (
     "(https://github.com/open-telemetry/community/blob/main/guides/contributor/"
     "membership.md#emeritus-maintainerapprovertriager)."
 )
+
+_emeritus_pr_cache = {}  # repo -> PR number or None
+
+
+def _get_emeritus_pr_number(repo):
+    """Return the open move-to-emeritus PR number for repo, or None if there isn't one.
+
+    Searches by head branch name rather than fork owner so it works regardless of
+    which user created the fork (e.g. local runs vs CI using opentelemetrybot).
+    """
+    if repo in _emeritus_pr_cache:
+        return _emeritus_pr_cache[repo]
+    result = None
+    try:
+        url = f"{REST_API}/repos/{ORG}/{repo}/pulls?state=open&per_page=100"
+        while url:
+            resp = request_with_retry("GET", url)
+            for pr in read_json(resp):
+                if pr.get("head", {}).get("ref") == BRANCH_NAME:
+                    result = pr["number"]
+                    break
+            if result:
+                break
+            link = resp.headers.get("Link", "")
+            url = None
+            for part in link.split(","):
+                if 'rel="next"' in part:
+                    url = part.split("<")[1].split(">")[0]
+    except Exception:
+        pass
+    _emeritus_pr_cache[repo] = result
+    return result
 
 
 # ---------------------------------------------------------------------------
@@ -791,8 +839,13 @@ def _add_to_emeritus(readme, emeritus_title, member_entry, header_level=3):
         start, end, _ = section
         section_text = readme[start:end]
 
-        # Skip if already present
-        if member_entry in section_text:
+        # Skip if user already present (match by username URL, not display name)
+        username_match = re.search(r'https://github\.com/([^)]+)', member_entry)
+        if username_match and re.search(
+            rf'https://github\.com/{re.escape(username_match.group(1))}[)/]',
+            section_text,
+            re.IGNORECASE,
+        ):
             return readme
 
         lines = section_text.split("\n")
@@ -1036,16 +1089,69 @@ def _build_pr_body(repo, changes, cutoff, warning=None):
 
     body += (
         "> [!IMPORTANT]\n"
-        "> After merging, a Maintainer should remove the user(s) from:\n"
-        "> - The listed team(s) in GitHub\n"
-        "> - Any relevant private channels on Slack\n"
-        "> - Any relevant package managers used for publishing\n\n"
+        "> Before merging, a Maintainer should remove the user(s) from:\n"
+        f"> - [ ] The listed team(s) in [GitHub](https://github.com/orgs/{ORG}/teams)\n"
+        "> - [ ] Any relevant private channels on Slack\n"
+        "> - [ ] Any relevant package managers used for publishing\n\n"
         "This PR was automatically generated by the "
         "[move-to-emeritus workflow]"
         f"(https://github.com/{ORG}/community/actions/workflows/"
         "move-to-emeritus.yml).\n"
     )
     return body
+
+
+def _build_issue_body(changes):
+    """Build the issue body for the follow-up cleanup issue."""
+    body = "## Remove inactive members from teams and channels\n\n"
+    body += (
+        "The following members have already been moved to emeritus in the README,"
+        " but still need to be removed from teams and channels.\n\n"
+    )
+    for user, role_label, teams in sorted(changes):
+        teams_str = ", ".join(teams)
+        body += f"- @{user} ({role_label}, Remove from team(s): {teams_str})\n"
+    body += "\n"
+    body += (
+        "> [!IMPORTANT]\n"
+        "> A Maintainer should remove the user(s) from:\n"
+        f"> - [ ] The listed team(s) in [GitHub](https://github.com/orgs/{ORG}/teams)\n"
+        "> - [ ] Any relevant private channels on Slack\n"
+        "> - [ ] Any relevant package managers used for publishing\n\n"
+        "This issue was automatically generated by the "
+        "[move-to-emeritus workflow]"
+        f"(https://github.com/{ORG}/community/actions/workflows/"
+        "move-to-emeritus.yml).\n"
+    )
+    return body
+
+
+def _create_followup_issue(repo, changes):
+    """Create a follow-up issue when the README is already up to date.
+
+    If an open issue with the same title already exists, update its body instead.
+    Returns the issue URL.
+    """
+    body = _build_issue_body(changes)
+    issues_url = f"{REST_API}/repos/{ORG}/{repo}/issues"
+
+    # Look for an existing open issue to update rather than creating a duplicate
+    url = f"{issues_url}?state=open&per_page=100"
+    while url:
+        resp = request_with_retry("GET", url)
+        for issue in read_json(resp):
+            if issue.get("title") == ISSUE_TITLE and not issue.get("pull_request"):
+                issue_number = issue["number"]
+                request_with_retry("PATCH", f"{issues_url}/{issue_number}", data={"body": body})
+                return issue.get("html_url", "")
+        link = resp.headers.get("Link", "")
+        url = None
+        for part in link.split(","):
+            if 'rel="next"' in part:
+                url = part.split("<")[1].split(">")[0]
+
+    resp = request_with_retry("POST", issues_url, data={"title": ISSUE_TITLE, "body": body})
+    return read_json(resp).get("html_url", "")
 
 
 def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
@@ -1116,7 +1222,13 @@ def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
             changes.append((user, highest_role, sorted(info["teams"])))
 
         if readme == original_readme:
-            print("  No README changes needed, skipping.")
+            print("  No README changes needed.")
+            if changes:
+                try:
+                    issue_url = _create_followup_issue(repo, changes)
+                    print(f"  Issue: {issue_url}")
+                except Exception as e:
+                    print(f"  ERROR creating issue for {ORG}/{repo}: {e}", file=sys.stderr)
             continue
 
         # Fork repo, create branch on fork, commit, and open cross-repo PR
@@ -1283,13 +1395,16 @@ def main():
     all_repos = sorted(repo_role_users.keys())
     print(f"Checking activity across {len(all_repos)} repo(s)...")
     for repo in all_repos:
+        # Exclude the existing move-to-emeritus PR so users who only commented/approved
+        # that PR are not mistakenly counted as active contributors.
+        emeritus_pr = _get_emeritus_pr_number(repo)
         active_on_repo = set()
         for role_label in ["Maintainer", "Approver", "Triager"]:
             users = list(repo_role_users[repo].get(role_label, []))
             if not users:
                 continue
             check_fn = check_fns[role_label]
-            active = check_fn(users, [repo], cutoff)
+            active = check_fn(users, [repo], cutoff, exclude_pr=emeritus_pr)
             active_on_repo.update(active)
         repo_active[repo] = active_on_repo
 
