@@ -124,7 +124,7 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 Repo: [open-telemetry/opentelemetry-go-compile-instrumentation](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation)
 
-The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Go compile time instrumentation can be found in the [open-telemetry/opentelemetry-go-compile-instrumentation CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation/blob/main/CONTRIBUTING.md#approvers-and-maintainers).
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Go compile time instrumentation can be found in the [open-telemetry/opentelemetry-go-compile-instrumentation README file](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation/blob/main/README.md#contributing).
 
 ## JavaScript
 
