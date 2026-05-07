@@ -144,3 +144,4 @@ Repo: TODO
 
 SIG Meeting
 
+Weekly Wednesdays 10am PT
