@@ -306,10 +306,12 @@ encouraged to reflect this by adding themselves to the `emeritus` section of the
 CONTRIBUTING, CODEOWNERS, or README of the subproject they are stepping away
 from. Company affiliations should be removed at this time as they may change
 and may not be reflected accurately in the future. GitHub usernames listed under the
-`emeritus` section should be removed from the approvers list, and will no longer
+`emeritus` section should be removed from the respective list, and will no longer
 have any official responsibilities with the project. When a contributor returns
 to being more active, they may be promoted back to their previous position at
 the discretion of the current maintainers following the process defined above.
+
+See also [Move to Emeritus](../../move-to-emeritus.md) script for more details on how members are being automatically flagged as inactive and moved to Emeritus.
 
 ## Specification Sponsor
 
