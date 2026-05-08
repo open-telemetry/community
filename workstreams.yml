@@ -668,6 +668,25 @@
       id: C08NRCD4R4G
   - githubDiscussion: https://github.com/open-telemetry/opentelemetry-kotlin/discussions
   - repository: open-telemetry/opentelemetry-kotlin
+- id: packaging
+  kind: sig
+  sigCategory: implementation
+  name: 'Packaging'
+  parent: none
+  people:
+    - gcLiaison: tedsuo
+    - tcSponsor:
+        username: tigrannajaryan
+        level: escalating
+  resources:
+    - meeting:
+        schedule: Wednesday at 10:00 PT
+        calendarInviteGroup: calendar-packaging
+        gDocNotes: TODO
+    - slack:
+        name: '#otel-packaging'
+        id: C0AD17NMBLZ
+    - repository: open-telemetry/opentelemetry-packaging
 - id: php-sdk
   kind: sig
   sigCategory: implementation
