@@ -127,7 +127,7 @@ SIG-specific GitHub discussions.
 
 > [!NOTE]
 > **All SIG meetings listed below are open to anyone.** Whether you're a
-> seasoned OpenTelemetry developer, just starting your journey, or simply
+> seasoned OpenTelemetry contributor, just starting your journey, or simply
 > curious about the work we do, you are more than welcome to join.
 
 <!-- The tables below are auto-generated. To make changes, see CONTRIBUTING.md#updating-sig-information-on-the-readmemd -->
