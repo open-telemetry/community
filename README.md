@@ -125,6 +125,11 @@ SIG-specific GitHub discussions.
 > The meeting times in the tables below are given in 24-hour notation.
 > Meetings are either in Pacific Time (PT), with Daylight Saving Time, or UTC+8, without Daylight Saving Time.
 
+> [!NOTE]
+> **All SIG meetings listed below are open to anyone.** Whether you're a
+> seasoned OpenTelemetry contributor, just starting your journey, or simply
+> curious about the work we do, you are more than welcome to join.
+
 <!-- The tables below are auto-generated. To make changes, see CONTRIBUTING.md#updating-sig-information-on-the-readmemd -->
 <!-- sigs -->
 ### Specification SIGs
