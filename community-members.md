@@ -91,7 +91,7 @@ Emeritus:
 - [Antony Mirabella](https://github.com/aneurysm9), AWS
 - [Jaana Dogan](https://github.com/rakyll), Google
 - [Josh Suereth](https://github.com/jsuereth), Google
-- [Juraj Michálek](https://github.com/jmichalek123), Grafana Labs 
+- [Juraj Michálek](https://github.com/jmichalek132), Grafana Labs 
 
 ## Semantic Conventions
 
