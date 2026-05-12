@@ -482,6 +482,14 @@ used for self-servicing slack (e.g. as Channel Manager to rename spaces).
   Click `Cancel` when you are asked to open slack in the app, and wait for the link `use Slack in your browser` to be
   available and use that.)
 
+#### Slack app
+
+Link: https://cloud-native.slack.com/marketplace/A0B37EY9PD2-opentelemetry-notifications
+
+- Slack capability: incoming webhook.
+- Owners: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+- App management link: https://api.slack.com/apps/A0B37EY9PD2
+
 ## Security
 
 The SIG Security has access to the following tools, with GC and TC members welcome to request access to them as well.
