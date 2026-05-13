@@ -51,15 +51,6 @@ What this project explicitly is not:
 - A ranking or comparison mechanism for CNCF projects.
 - A requirement for cloud native or OpenTelemetry projects.
 
-Why now:
-
-- Adoption has reached a point where the quality and consistency of OpenTelemetry support matters as much as its presence.
-- OpenTelemetry just reached CNCF Graduated status, which raises what users and downstream projects assume "supports OpenTelemetry" means. A shared vocabulary is easier to establish now than to retrofit later.
-- The draft framework has already been applied to real projects (Kubernetes ingress controllers including Traefik, Istio Gateway, Contour, Emissary, and kgateway). That exercise sharpened the boundary between project maturity and Collector pipeline capability, tightened the Level 3 definition for Semantic Conventions, clarified what is expected at the source versus what can be derived in the pipeline for Resource Attributes, and produced a question-based evaluation appendix.
-- Conversations with project maintainers (Dapr, kgateway, and others) show that going through the model can lead to real changes, including upstream dependency work that kicked off as a direct result of an evaluation.
-- The OpenTelemetry Governance Committee has indicated that this work should go through the formal project process for broader community input.
-- The work fits the wider goal of strengthening OpenTelemetry's role as an integration layer across CNCF, and picks up a thread from the cross-project collaboration track at Maintainer Summit NA.
-
 ## Deliverables
 
 1. **Maturity model document**: a published, community-reviewed maturity model describing OpenTelemetry support across the defined dimensions and global maturity levels. This includes:
