@@ -76,6 +76,23 @@ Emeritus sponsors (formerly approvers):
 - [David Poncelow](https://github.com/zenmoto)
 - [Nikita Salnikov-Tarnovski](https://github.com/iNikem)
 
+## Prometheus Interoperability
+
+Members of the [Prometheus<->OpenTelemetry Interoperability Working Group](https://github.com/orgs/open-telemetry/teams/prometheus-interoperability). Responsible for evolving the interoperability
+between Prometheus and OpenTelemetry, including specification of data model transformations and their implementations in several SDKs, Collector and other parts where
+the two communities intersect.
+
+- [Arthur Silva Sens](https://github.com/ArthurSens), Grafana Labs
+- [David Ashpole](http://github.com/dashpole), Google
+
+Emeritus:
+
+- [Alolita Sharma](https://github.com/alolita), Apple
+- [Antony Mirabella](https://github.com/aneurysm9), AWS
+- [Jaana Dogan](https://github.com/rakyll), Google
+- [Josh Suereth](https://github.com/jsuereth), Google
+- [Juraj Michálek](https://github.com/jmichalek132), Grafana Labs 
+
 ## Semantic Conventions
 
 Repo: [open-telemetry/semantic-conventions](https://github.com/open-telemetry/semantic-conventions)
