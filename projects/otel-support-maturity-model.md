@@ -93,13 +93,12 @@ Recommendation: discuss with TC and GC during proposal review. A working group u
 #### Project Lead(s)
 
 - **Kasper Borg Nissen** ([@kaspernissen](https://github.com/kaspernissen)), Dash0: author of the draft maturity model. Has been developing and validating the framework through blog posts, talks, and direct engagement with cloud native projects.
-- _Seeking one additional co-lead_: ideally from a different company and with complementary expertise (for example semantic conventions, OpenTelemetry SDK development, or an end-user/platform team perspective).
+- **Michael Hausenblas** ([@mhausenblas](https://github.com/mhausenblas)): brings the end-user perspective through his role at an end-user organization, and has committed to co-leading the project.
 
 #### Interested contributors
 
-The following people publicly expressed interest in contributing during the discussion on [issue #3247](https://github.com/open-telemetry/community/issues/3247). Specific roles and commitments will be confirmed as part of the proposal review:
+The following people publicly expressed interest in contributing during the discussion on [issue #3247](https://github.com/open-telemetry/community/issues/3247) and on this PR. Specific roles and commitments will be confirmed as part of the proposal review:
 
-- **Michael Hausenblas** ([@mhausenblas](https://github.com/mhausenblas)): end-user perspective; committed to participating as an OpenTelemetry end user.
 - **Mauricio Salatino** ([@salaboy](https://github.com/salaboy)): cross-project experience (Dapr, Knative); willing to help develop checklists and evaluations.
 - **Mehmet Baykara** ([@mbaykara](https://github.com/mbaykara)): working on an adjacent observability maturity model effort; willing to compare notes, review dimension wording, and contribute enterprise/customer adoption examples.
 - **Severin Neumann** ([@svrnm](https://github.com/svrnm)): SIG Communications / Docs perspective; expressed support for hosting on opentelemetry.io and helped frame the ownership question.
