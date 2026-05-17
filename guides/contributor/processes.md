@@ -21,6 +21,8 @@ help, and how changes are merged and released.
   - [GitHub workflow](#github-workflow)
   - [Open a Pull Request](#open-a-pull-request)
   - [Code Review](#code-review)
+  - [TC Stability Review](#tc-stability-review)
+    - [Specification deviations](#specification-deviations)
   - [Code attribution and licensing](#code-attribution-and-licensing)
     - [Copyright Notices](#copyright-notices)
   - [Specification Changes](#specification-changes)
@@ -204,6 +206,24 @@ process, the maintainers of the respective language SDK are expected to be
 responsive to any requests for assistance and to issues opened. In other words,
 a TC stability review is a dialogue requiring engagement from both the TC and
 language SDK maintainers.
+
+### Specification deviations
+
+Stable OpenTelemetry components are expected to satisfy all **MUST**,
+**MUST NOT**, and **REQUIRED** specification requirements. If maintainers believe
+a required part of the specification should not be implemented for a component,
+the exception is a product decision owned by the
+[Governance Committee](../../governance-charter.md), not only a
+component-specific decision.
+
+Specification exceptions are not recommended, but may be granted by the
+Governance Committee after review, discussion, and vote. This review and
+discussion may include recommendations from the Technical Committee,
+maintainers, or other SIGs.
+
+If an exception is granted, the component repository must document the deviation
+and make it clear to users. The Governance Committee may remove an exception if
+circumstances change, using similar review rigor.
 
 ## Code attribution and licensing
 

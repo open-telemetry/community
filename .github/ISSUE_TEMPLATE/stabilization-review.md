@@ -40,6 +40,7 @@ Delete the guidance comments after filling in the form.
   | … | … | … | … |
   -->
 * **Public docs / getting-started sample:** <link>
+* **Specification deviations:** <link to any approved GC exception and user-facing documentation, or `None`>
 * **CHANGELOG draft:** <link>
 
 <!--
@@ -51,7 +52,7 @@ It is ideal to perform a stabilization review before a release candidate is gene
 ## 5. Self-checklist
 
 - [ ] I understand the [TC review process](../../guides/contributor/processes.md#tc-stability-review) and commit to being responsive to any requests for assistance and to issues opened during the review. 
-- [ ] All **MUST / MUST NOT** requirements implemented
+- [ ] All **MUST**, **MUST NOT**, and **REQUIRED** specification requirements are implemented, except for any [specification deviations](../../guides/contributor/processes.md#specification-deviations) approved by the GC and documented in the component repository
 - [ ] [Spec compliance matrix](https://github.com/open-telemetry/opentelemetry-specification/blob/main/spec-compliance-matrix.md) populated and up-to-date
 - [ ] Docs & examples updated
 - [ ] Test suites passing
