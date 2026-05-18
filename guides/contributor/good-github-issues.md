@@ -20,8 +20,12 @@ All issue activity is governed by the
 ## Before You Open an Issue
 
 Search first. Duplicate issues split the conversation and make it harder to
-track what's already been decided. If you find something related, add what
-you know as a comment instead of opening a new report.
+track what's already been decided. If an existing issue covers what you're
+seeing, react to it to signal that it affects you and add any new details
+as a comment, rather than opening a duplicate. OpenTelemetry uses issue
+reactions to assess priority; see the
+[issue participation guide](https://opentelemetry.io/community/end-user/issue-participation/)
+for details.
 
 For support questions and "is this expected behavior" checks, use
 [Slack](https://cloud-native.slack.com/archives/CJFCJHG4Q). Issues are for
@@ -32,6 +36,8 @@ Use the repository's security policy (the "Security" tab on the repo page)
 to report it privately.
 
 ## Writing the Issue
+
+If the repository uses issue templates and the template includes a footer, leave it in place.
 
 ### Title
 
