@@ -52,14 +52,22 @@ include security, project management, performance, and long term support.
 
 ## Workstreams
 
-Based on the above challenges, there following workstreams need to be developed and managed as
+Based on the above challenges, the following workstreams need to be developed and managed as
 a roadmap to GA that can be presented to the community.
+
+* Stability: Collector v1.0
+* Stability: SemConv Tooling for Instrumentation
+* Stability: Instrumentation
+* Deployment: OpAMP v1.0
+* Deployment: Kubernetes Operator v1.0
+* Security
+* Roadmaps & Project Management
 
 ### Stability: Collector v1.0
 
 Managed by Collector SIG, the OpenTelemetry Collector needs to complete its roadmap for v1.0.
 
-### Stability: SemConv Tooling for managing instrumentation
+### Stability: SemConv Tooling for Instrumentation
 
 In order to lower the cost of manage instrumentation at scale, and to better support native
 instrumentation efforts, we need tooling that improves correctness while reducing the cost of
