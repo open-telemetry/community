@@ -59,6 +59,7 @@ a roadmap to GA that can be presented to the community.
 * Stability: SemConv Tooling for Instrumentation
 * Stability: Instrumentation
 * Deployment: OpAMP v1.0
+* Deployment: Packaging v1.0
 * Deployment: Kubernetes Operator v1.0
 * Security
 * Roadmaps & Project Management
