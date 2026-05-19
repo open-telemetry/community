@@ -31,9 +31,14 @@ For support questions and "is this expected behavior" checks, use
 [Slack](https://cloud-native.slack.com/archives/CJFCJHG4Q). Issues are for
 bugs and feature requests.
 
-If you're reporting a security vulnerability, do not open a public issue.
-Use the repository's security policy (the "Security" tab on the repo page)
+> [!CAUTION]
+> If you're reporting a security vulnerability, do NOT open a public issue.
+> Use the repository's security policy (the "Security" tab on the repo page)
 to report it privately.
+
+If you're unsure whether the bug is in the API or SDK, file in the SDK repo and maintainers will redirect if needed.
+
+If your issue is about whether a behavior is correct per the OpenTelemetry specification, link to the relevant spec section. This is especially useful for cross-language consistency questions.
 
 ## Writing the Issue
 
@@ -55,23 +60,20 @@ others don't), follow it.
 
 ### Description
 
-Say what you expected and what actually happened. These are often different
-in ways that matter, and the gap is usually the bug.
+Use the issue template if one is provided; it includes all the fields maintainers need.
+When creating an issue for a bug, include:
 
-Include steps to reproduce, written as if the reader has never seen your
-setup. A minimal config that still triggers the issue beats a full
-production config with everything redacted. Log output and stack traces go
-in code blocks, not screenshots, because text is searchable and copyable.
+- What you expected vs. what happened
+- Minimal reproduction steps, written as if the reader has never seen your setup. A minimal config that still triggers the issue beats a full production config with everything redacted
+- Log output and stack traces in code blocks, not screenshots, because text is searchable and copyable
+- SDK version, language runtime version, OS
+- Relevant configuration (exporter, propagator, sampler)
 
-When the environment might matter, include:
+When creating an issue for a feature request, include:
 
-- the component or SDK version
-- the runtime version (Go, Java, Python, etc.)
-- the OS and architecture
-
-For feature requests, lead with the problem you're trying to solve, not the
-solution you have in mind. That leaves room for someone to suggest an
-approach you hadn't considered.
+- Problem/motivation
+- Proposed solution (optional)
+- Alternatives considered
 
 ### Linking Related Issues
 
@@ -120,7 +122,7 @@ the common ones mean helps you find work.
 | `help wanted` | Contributions welcome. Usually needs more context than a good first issue. |
 | `bug` | Confirmed or suspected unintended behavior. |
 | `enhancement` | New capability, or an improvement to existing behavior. |
-| `question` | Needs clarification before anyone can act on it. |
+| `question` | Needs clarification before anyone can act on it. You can also use the Discussion tab for this case. |
 
 If a `good first issue` turns out to be larger than it looked, say so in a
 comment. Maintainers can re-label it and help adjust the scope.
@@ -134,4 +136,4 @@ leave a comment:
 > I'd like to work on this. I'll have a draft up by end of next week.
 
 That's enough to claim it without blocking anyone. If you get stuck or can't
-continue, drop a note in the thread so others know it's available again.
+continue, drop a note in the thread so others know it's available again. If you claim an issue and go quiet for 2–3 weeks, maintainers may reassign it.
