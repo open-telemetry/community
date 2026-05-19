@@ -36,8 +36,6 @@ bugs and feature requests.
 > Use the repository's security policy (the "Security" tab on the repo page)
 > to report it privately.
 
-If you're unsure whether the bug is in the API or SDK, file in the SDK repo and maintainers will redirect if needed.
-
 If your issue is about whether a behavior is correct per the OpenTelemetry specification, link to the relevant spec section. This is especially useful for cross-language consistency questions.
 
 ## Writing the Issue
