@@ -34,7 +34,7 @@ bugs and feature requests.
 > [!CAUTION]
 > If you're reporting a security vulnerability, do NOT open a public issue.
 > Use the repository's security policy (the "Security" tab on the repo page)
-to report it privately.
+> to report it privately.
 
 If you're unsure whether the bug is in the API or SDK, file in the SDK repo and maintainers will redirect if needed.
 
