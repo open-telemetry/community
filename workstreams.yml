@@ -207,25 +207,6 @@
       name: '#otel-semconv-rpc-stability'
       id: C09D3TRKMED
   - roadmapProject: 161
-- id: semconv-security
-  kind: sig
-  sigCategory: specification
-  name: 'Semantic Conventions: Security'
-  parent: semconv-general
-  people:
-  - gcLiaison: trask
-  - tcSponsor:
-      username: jsuereth
-      level: escalating
-  resources:
-  - meeting:
-      schedule: 'Meets during Semantic Conventions: General'
-      calendarInviteGroup: calendar-semconv
-      gDocNotes: 10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8
-  - slack:
-      name: '#otel-semconv-security'
-      id: C0715DWUW7L
-  - roadmapProject: 104
 - id: semconv-service-deployment
   kind: sig
   sigCategory: specification
