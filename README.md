@@ -19,6 +19,8 @@ Table of Contents
 * [Special Interest Groups](#special-interest-groups)
   * [Specification SIGs](#specification-sigs)
   * [Implementation SIGs](#implementation-sigs)
+  * [Cross-Cutting SIGs](#cross-cutting-sigs)
+  * [Localization Teams (part of SIG Communications)](#localization-teams-part-of-sig-communications)
 * [Related groups](#related-groups)
   * [W3C - Distributed Tracing Working Group](#w3c---distributed-tracing-working-group)
   * [Erlang Ecosystem Foundation – Observability Working Group](#erlang-ecosystem-foundation--observability-working-group)
