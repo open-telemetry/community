@@ -392,7 +392,7 @@ This GitHub App addresses two common issues:
 1. Since you can't push directly to `main` from workflows (due to branch protections), the next best thing is to
    generate a pull request from the automation and use an account which has signed the CLA as the commit author.
 
-   The OpenTelemetry Bot account has signed the CNCF CLA, and you can assign it as the commit author in your automation:
+   The `otelbot` GitHub App is on the EasyCLA allowlist, and you can assign it as the commit author in your automation:
 
    ```
    git config user.name otelbot
@@ -439,6 +439,12 @@ This GitHub App addresses two common issues:
 SIG-specific `otelbot` GitHub apps are for repositories that need to run automations
 with permissions beyond the main `otelbot`.
 Each of these apps is scoped to a single repository with dedicated credentials.
+
+> [!NOTE]
+> SIG-specific `otelbot` apps have not signed the CNCF CLA.
+> For commits, continue to use the regular `otelbot` identity above
+> (`otelbot <197425009+otelbot@users.noreply.github.com>`),
+> which is on the EasyCLA allowlist.
 
 **Usage in GitHub Actions**:
 
