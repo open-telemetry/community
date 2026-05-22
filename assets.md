@@ -440,11 +440,7 @@ SIG-specific `otelbot` GitHub apps are for repositories that need to run automat
 with permissions beyond the main `otelbot`.
 Each of these apps is scoped to a single repository with dedicated credentials.
 
-> [!NOTE]
-> SIG-specific `otelbot` apps have not signed the CNCF CLA.
-> For commits, continue to use the regular `otelbot` identity above
-> (`otelbot <197425009+otelbot@users.noreply.github.com>`),
-> which is on the EasyCLA allowlist.
+SIG-specific `otelbot` apps are on the EasyCLA allowlist.
 
 **Usage in GitHub Actions**:
 
