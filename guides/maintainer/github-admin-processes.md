@@ -78,10 +78,12 @@ There are cases when the maintains would want to have `Admin` permission:
   security advisories.
 
 Maintainers can request `Admin` permissions by the
-[open-telemetry/admin](https://github.com/open-telemetry/admin) PR process, here
-is [an example](https://github.com/open-telemetry/admin/pull/639). If requested,
-the maintainer will be granted `Admin` permissions, and in return they must
-document any changes they make to the repository settings in a file named
+[open-telemetry/admin](https://github.com/open-telemetry/admin) PR process and
+get approval from one other repository maintainer (approval from a GitHub Org
+Admin is not required). Here is [an
+example](https://github.com/open-telemetry/admin/pull/639). If requested, the
+maintainer will be granted `Admin` permissions, and in return they must document
+any changes they make to the repository settings in a file named
 `.github/repository-settings.md` in their repository (other than temporarily
 disabling "Do not allow bypassing the above settings", see branch protection
 rules below).
