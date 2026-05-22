@@ -395,8 +395,8 @@ This GitHub App addresses two common issues:
    The `otelbot` GitHub App is on the EasyCLA allowlist, and you can assign it as the commit author in your automation:
 
    ```
-   git config user.name otelbot
-   git config user.email 197425009+otelbot@users.noreply.github.com
+   git config user.name otelbot[bot]
+   git config user.email 197425009+otelbot[bot]@users.noreply.github.com
    ```
 
    It is recommended to push to branch names that start with `otelbot/`, and to add a branch protection
