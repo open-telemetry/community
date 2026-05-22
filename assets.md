@@ -453,19 +453,15 @@ SIG-specific `otelbot` apps are on the EasyCLA allowlist.
     app-id: ${{ vars.OTELBOT_JAVA_CONTRIB_APP_ID }}
     private-key: ${{ secrets.OTELBOT_JAVA_CONTRIB_PRIVATE_KEY }}
 
-- name: Get GitHub App User ID
-  id: get-user-id
-  env:
-    GH_TOKEN: ${{ steps.app-token.outputs.token }}
-  run: echo "user-id=$(gh api "/users/${{ steps.app-token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
-
 - name: Automated task
   env:
     GH_TOKEN: ${{ steps.app-token.outputs.token }}
+    APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
   run: |
     # SIG-specific otelbot apps are on the EasyCLA allowlist
-    git config user.name  "${{ steps.app-token.outputs.app-slug }}[bot]"
-    git config user.email "${{ steps.get-user-id.outputs.user-id }}+${{ steps.app-token.outputs.app-slug }}[bot]@users.noreply.github.com"
+    user_id=$(gh api "/users/${APP_SLUG}[bot]" --jq .id)
+    git config user.name  "${APP_SLUG}[bot]"
+    git config user.email "${user_id}+${APP_SLUG}[bot]@users.noreply.github.com"
     # Your automation commands here
 ```
 
