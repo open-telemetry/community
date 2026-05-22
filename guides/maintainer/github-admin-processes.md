@@ -70,7 +70,7 @@ By default, maintainers of a repository have the `Maintain` permission instead
 of the `Admin` permission. This is to protect the maintainers from making
 accidental/unintended changes that are sensitive and/or destructive.
 
-There are cases when the maintains would want to have `Admin` permission:
+There are cases when the maintainers would want to have `Admin` permission:
 
 - Make necessary changes that are not currently supported by the
   [open-telemetry/admin](https://github.com/open-telemetry/admin) PR process.
@@ -84,6 +84,6 @@ Admin is not required). Here is [an
 example](https://github.com/open-telemetry/admin/pull/639). If requested, the
 maintainer will be granted `Admin` permissions, and in return they must document
 any changes they make to the repository settings in a file named
-`.github/repository-settings.md` in their repository (other than temporarily
-disabling "Do not allow bypassing the above settings", see branch protection
-rules below).
+`.github/repository-settings.md` in their repository (other than bypassing
+branch protection rules in order to merge a security fix from a temporary
+private fork).
