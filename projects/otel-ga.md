@@ -66,7 +66,11 @@ a roadmap to GA that can be presented to the community.
 
 ### Stability: Collector v1.0
 
-Managed by Collector SIG, the OpenTelemetry Collector needs to complete its roadmap for v1.0.
+Managed by Collector SIG, the OpenTelemetry Collector needs to complete [its roadmap for v1.0](https://github.com/open-telemetry/opentelemetry-collector/blob/main/docs/ga-roadmap.md). This includes marking core APIs as well as a minimal OTLP distro as 1.x.
+
+The opentelemetry-collector-contrib repository contains over 200 hundred components. [Initial adopter interview findings](https://docs.google.com/document/d/1SQMdfYpCiBfpxtWDwASXVIl-PIzD9X4vdDPXYUphAF0/edit?tab=t.0) revealed that, although many of these are considered not 'core' and are instead community-supported, end-users rely on them. General availability therefore will include [the stability of additional priority components identified in 'phase 1'](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/44130).
+
+Marking further components or distros as 1.x is explicitly out of scope.
 
 ### Stability: SemConv Tooling for Instrumentation
 
