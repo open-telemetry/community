@@ -392,11 +392,11 @@ This GitHub App addresses two common issues:
 1. Since you can't push directly to `main` from workflows (due to branch protections), the next best thing is to
    generate a pull request from the automation and use an account which has signed the CLA as the commit author.
 
-   The OpenTelemetry Bot account has signed the CNCF CLA, and you can assign it as the commit author in your automation:
+   The `otelbot` GitHub App is on the EasyCLA allowlist, and you can assign it as the commit author in your automation:
 
    ```
-   git config user.name otelbot
-   git config user.email 197425009+otelbot@users.noreply.github.com
+   git config user.name otelbot[bot]
+   git config user.email 197425009+otelbot[bot]@users.noreply.github.com
    ```
 
    It is recommended to push to branch names that start with `otelbot/`, and to add a branch protection
@@ -440,24 +440,34 @@ SIG-specific `otelbot` GitHub apps are for repositories that need to run automat
 with permissions beyond the main `otelbot`.
 Each of these apps is scoped to a single repository with dedicated credentials.
 
+SIG-specific `otelbot` apps are on the EasyCLA allowlist.
+
 **Usage in GitHub Actions**:
 
 (replacing `_JAVA_CONTRIB_` with the SIG-specific name)
 
 ```yaml
+# Pattern follows the official actions/create-github-app-token example:
+# https://github.com/actions/create-github-app-token#configure-git-cli-for-an-apps-bot-user
 - uses: actions/create-github-app-token@v1
   id: app-token
   with:
     app-id: ${{ vars.OTELBOT_JAVA_CONTRIB_APP_ID }}
     private-key: ${{ secrets.OTELBOT_JAVA_CONTRIB_PRIVATE_KEY }}
 
+- name: Get GitHub App User ID
+  id: get-user-id
+  env:
+    GH_TOKEN: ${{ steps.app-token.outputs.token }}
+  run: echo "user-id=$(gh api "/users/${{ steps.app-token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
+
 - name: Automated task
   env:
     GH_TOKEN: ${{ steps.app-token.outputs.token }}
   run: |
-    # otelbot is on the EasyCLA allowlist
-    git config user.name otelbot
-    git config user.email 197425009+otelbot@users.noreply.github.com
+    # SIG-specific otelbot apps are on the EasyCLA allowlist
+    git config user.name  '${{ steps.app-token.outputs.app-slug }}[bot]'
+    git config user.email '${{ steps.get-user-id.outputs.user-id }}+${{ steps.app-token.outputs.app-slug }}[bot]@users.noreply.github.com'
     # Your automation commands here
 ```
 
