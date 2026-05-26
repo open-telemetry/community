@@ -77,7 +77,7 @@ There are cases when the maintainers would want to have `Admin` permission:
 - Handle (e.g., accept, publish, merge fixes from a private fork/branch, etc.)
   security advisories.
 
-Maintainers can request `Admin` permissions by the
+Maintainers can request temporary or permanent `Admin` permissions by the
 [open-telemetry/admin](https://github.com/open-telemetry/admin) PR process and
 get approval from one other repository maintainer (approval from a GitHub Org
 Admin is not required). Follow the steps documented [here](https://github.com/open-telemetry/admin#need-temporary-admin-rights).
