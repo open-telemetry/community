@@ -80,8 +80,8 @@ There are cases when the maintainers would want to have `Admin` permission:
 Maintainers can request `Admin` permissions by the
 [open-telemetry/admin](https://github.com/open-telemetry/admin) PR process and
 get approval from one other repository maintainer (approval from a GitHub Org
-Admin is not required). Here is [an
-example](https://github.com/open-telemetry/admin/pull/639). If requested, the
+Admin is not required). Follow the steps documented [here](https://github.com/open-telemetry/admin#need-temporary-admin-rights).
+If requested, the
 maintainer will be granted `Admin` permissions, and in return they must document
 any changes they make to the repository settings in a file named
 `.github/repository-settings.md` in their repository (other than bypassing
