@@ -9,7 +9,7 @@ if (len(sys.argv) > 1) and (sys.argv[1] == "--install"):
 
 import yaml
 
-# Do not safe the file but verify that it is different from the original one.
+# Do not save the file but verify that it is different from the original one.
 run_in_check_mode = (len(sys.argv) > 1) and (sys.argv[1] == "--check")
 
 WORKSTREAMS_FILE = "workstreams.yml"
