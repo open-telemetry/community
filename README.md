@@ -60,7 +60,11 @@ interested parties and form new special interest groups.
 
 ### Slack
 
-For those who are brand new to OpenTelemetry and want to chat or get redirected to the appropriate place for a specific question, feel free to join [the CNCF OpenTelemetry Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q). If you are new, you can create a CNCF Slack account [here](https://slack.cncf.io/).
+Those who are brand new to OpenTelemetry and want to connect with other contributors, get guidance on contribution etiquette, or learn about development processes are encouraged to join the CNCF OpenTelemetry Slack channel [#opentelemetry-new-contributors](https://cloud-native.slack.com/archives/C09H3MNMBQV).
+
+To follow project developments or chat about OpenTelemetry in general, feel free to join the [#opentelemetry](https://cloud-native.slack.com/archives/CJFCJHG4Q) Slack channel.
+
+If you are new to the CNCF Slack community, you can create an account [here](https://slack.cncf.io/).
 
 ### Calendar
 
