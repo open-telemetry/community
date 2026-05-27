@@ -63,3 +63,27 @@ For changes affecting a single repository owned by a single SIG:
   Changes that affect a single repository owned by multiple SIGs should follow the same
   process, but the change should have the approval of at least one maintainer from each
   affected SIG.
+
+### Request Repository Admin Permissions
+
+By default, maintainers of a repository have the `Maintain` permission instead
+of the `Admin` permission. This is to protect the maintainers from making
+accidental/unintended changes that are sensitive and/or destructive.
+
+There are cases when the maintainers would want to have `Admin` permission:
+
+- Make necessary changes that are not currently supported by the
+  [open-telemetry/admin](https://github.com/open-telemetry/admin) PR process.
+- Handle (e.g., accept, publish, merge fixes from a private fork/branch, etc.)
+  security advisories.
+
+Maintainers can request temporary or permanent `Admin` permissions by the
+[open-telemetry/admin](https://github.com/open-telemetry/admin) PR process and
+get approval from one other repository maintainer (approval from a GitHub Org
+Admin is not required). Follow the steps documented
+[here](https://github.com/open-telemetry/admin#need-temporary-admin-rights). If
+requested, the maintainer will be granted `Admin` permissions, and in return
+they must document any changes they make to the repository settings in a file
+named `.github/repository-settings.md` in their repository (other than bypassing
+branch protection rules in order to merge a security fix from a temporary
+private fork).
