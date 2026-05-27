@@ -711,7 +711,7 @@
       level: escalating
   resources:
   - meeting:
-      schedule: Wednesday at 10:30 PT
+      schedule: Wednesday at 08:00 EST
       calendarInviteGroup: calendar-php
       gDocNotes: 1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI
   - slack:
