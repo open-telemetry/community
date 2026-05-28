@@ -52,12 +52,13 @@ concerns.
 - Trace sampling algorithms
 - Trace API & SDK
 
-### [Liudmila Molkova](https://github.com/lmolkova), Grafana Labs
+### [Liudmila Molkova](https://github.com/lmolkova), Google
 
 - Trace API and SDK
 - Logging API and SDK
 - Semantic conventions
 - Instrumentation
+- OpenTelemetry Python
 
 ### [Reiley Yang](https://github.com/reyang), Microsoft
 
