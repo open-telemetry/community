@@ -2,7 +2,7 @@
 
 ## Description
 
-The Batching Configuration Standardization project is a collaborative effort between the OpenTelemetry Collector and OpenTelemetry Configuration projects to come up with a standard agreement on functional configuration for batching. The goal is to come up with a configuration that addresses user needs for batching in the Collector and in SDKs, which can be communicated to users in a unified way.
+The Batching Configuration Standardization project is a collaborative effort between the Collector, SDK, Declarative Configuration projects to come up with a standard agreement on functional configuration for batching. The goal is to come up with a configuration that addresses user needs for batching in the Collector and in SDKs, which can be communicated to users in a unified way.
 
 ## Background
 
@@ -11,8 +11,6 @@ The idea for this project began when groups in [the Collector](https://github.co
 ## Why It Matters
 
 This aligns closely with the new [General Availability for OpenTelemetry](https://github.com/open-telemetry/community/pull/3452) project. There is a desire across the project to present more unified and cohesive experience between different OpenTelemetry tools. Batching is a fundamental building block of both the Collector and SDKs, and is a complicated topic for new users. A unified specification for how to configure batching that can apply to the Collector and to SDKs means that users don't need to learn batching strategies twice to have a solid end-to-end understanding of their OpenTelemetry deployments.
-
-A centralized definition within the specification of batching configuration (and expected behaviour under that configuration) also makes the experience more consistent for users leveraging AI Agents; the batching details will be part of the overall specification that agents may be using as context/training data. 
 
 ## Deliverables
 
@@ -61,15 +59,18 @@ Implementers:
 
 ## Timeline
 
-* Gather Specification Requirements
-    - Initial meetings to collect batching requirements and start refining the design
-* Write OTEP
+We anticipate the effort of this project to be around 3 months. (This is purely an estimate of effort and not a declaration of how long the project will take; individual availability and potential redirections from the RFC period will likely make this project take longer)
+
+1. Gather Specification Requirements (2-3 Weeks)
+    - Initial meetings for open discussion on what the OTEP and spec updates need to address
+1. Write OTEP (2 Months)
     - Once there is consensus among the project group, an OTEP will be co-authored
-* Change Specification
+    - Large time estimate given for open RFC period
+1. Change Specification (2 weeks)
     - If the OTEP is accepted by the broader approval group, the necessary additions/changes will be made to the specification
-* Initial Implementation
-    - The initial reference implementations (at least one language, the Collector) will be initially implemented likely as a proof-of-concept for the OTEP, but once the specification is finalized the implementations can be refined and merged
-* Blog Post
+1. Initial Implementation (2 months, parallel with previous steps)
+    - The initial reference implementations (at least one language and the Collector) will be initially implemented as a proof-of-concept for the OTEP, but once the specification is finalized the implementations can be refined and merged
+1. Blog Post (1 week)
     - A public blog post will be created explaining the new unified batching configuration experience across the Collector and languages
-* Remaining language implementations
+1. Remaining language implementations (ongoing)
     - Any languages that were unstaffed during the initial project operation can follow as a long tail following the specification changes and initial reference implementations
