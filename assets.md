@@ -81,9 +81,11 @@ Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/ad
 
 #### Bare metal runners
 
-Access to bare metal runners for benchmarking is available to repositories on request
-(open a community issue),
-which will give access to the following GitHub-hosted runner:
+Bare metal runners are available for benchmarking workloads.
+See [How to use an Oracle bare metal runner](docs/how-to-use-bare-metal-runner.md)
+for how to request access and use the runner.
+
+Runner labels:
 
 - `oracle-bare-metal-64cpu-512gb-x86-64` (Oracle Linux 8)
 - `oracle-bare-metal-64cpu-1024gb-x86-64-ubuntu-24` (Ubuntu 24)
