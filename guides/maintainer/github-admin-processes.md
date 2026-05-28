@@ -76,6 +76,7 @@ There are cases when the maintainers would want to have `Admin` permission:
   [open-telemetry/admin](https://github.com/open-telemetry/admin) PR process.
 - Handle (e.g., accept, publish, merge fixes from a private fork/branch, etc.)
   security advisories.
+- Manage environment secrets (i.e. for restricting secret access to protected branches).
 
 Maintainers can request temporary or permanent `Admin` permissions by the
 [open-telemetry/admin](https://github.com/open-telemetry/admin) PR process and
