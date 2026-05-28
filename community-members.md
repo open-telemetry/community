@@ -30,7 +30,6 @@ in alphabetical order:
 - [Carlos Alberto Cortez](https://github.com/carlosalberto), Lightstep
 - [David Ashpole](https://github.com/dashpole), Google
 - [Jack Berg](https://github.com/jack-berg), Grafana Labs
-- [Josh Suereth](https://github.com/jsuereth), Google
 - [Joshua MacDonald](https://github.com/jmacd), Microsoft
 - [Liudmila Molkova](https://github.com/lmolkova), Grafana Labs
 - [Reiley Yang](https://github.com/reyang), Microsoft
