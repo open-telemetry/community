@@ -33,6 +33,8 @@ concerns.
 - OpenTracing compatibility
 - Semantic conventions
 
+### [David Ashpole](https://github.com/dashpole), Google
+
 ### [Jack Berg](https://github.com/jack-berg), Grafana Labs
 
 - Metrics API and SDK
@@ -41,13 +43,14 @@ concerns.
 - OpenTelemetry Java
 - OpenTelemetry protocol
 
-### [Josh Suereth](https://github.com/jsuereth), Google
+### [Josh MacDonald](https://github.com/jmacd), Microsoft
 
-- Metrics API and SDK
-- OpenTelemetry Protocol
-- Telemetry correlation (Trace <-> Metrics <-> Logs via Resource, Exemplars, etc.)
-- Protocol compatibility (OpenCensus, Prometheus, Statsd, etc.)
-- Semantic conventions
+- Metrics API and SDK and data model
+- Metrics collection infrastructure
+- Metrics protocol compatibility
+- OpenTelemetry protocol
+- Trace sampling algorithms
+- Trace API & SDK
 
 ### [Liudmila Molkova](https://github.com/lmolkova), Grafana Labs
 
@@ -92,16 +95,13 @@ concerns.
 - Trace and Metrics
 - Trace Sampling
 
-### [David Ashpole](https://github.com/dashpole), Google
+### [Josh Suereth](https://github.com/jsuereth), Google
 
-### [Josh MacDonald](https://github.com/jmacd), Microsoft
-
-- Metrics API and SDK and data model
-- Metrics collection infrastructure
-- Metrics protocol compatibility
-- OpenTelemetry protocol
-- Trace sampling algorithms
-- Trace API & SDK
+- Metrics API and SDK
+- OpenTelemetry Protocol
+- Telemetry correlation (Trace <-> Metrics <-> Logs via Resource, Exemplars, etc.)
+- Protocol compatibility (OpenCensus, Prometheus, Statsd, etc.)
+- Semantic conventions
 
 ### [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden
 
