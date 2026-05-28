@@ -25,9 +25,6 @@
       username: jmacd
       level: tbd
   - tcSponsor:
-      username: jsuereth
-      level: tbd
-  - tcSponsor:
       username: lmolkova
       level: tbd
   - tcSponsor:
@@ -96,9 +93,6 @@
       username: arminru
       level: leading
   - tcSponsor:
-      username: jsuereth
-      level: leading
-  - tcSponsor:
       username: lmolkova
       level: leading
   resources:
@@ -118,7 +112,7 @@
   people:
   - gcLiaison: mx-psi
   - tcSponsor:
-      username: jsuereth
+      username: tbd
       level: escalating
   resources:
   - meeting:
@@ -215,7 +209,7 @@
   people:
   - gcLiaison: trask
   - tcSponsor:
-      username: jsuereth
+      username: tbd
       level: guiding
   resources:
   - meeting:
@@ -233,9 +227,6 @@
   parent: spec-general
   people:
   - gcLiaison: svrnm
-  - tcSponsor:
-      username: jsuereth
-      level: leading
   - tcSponsor:
       username: tigrannajaryan
       level: guiding
@@ -312,9 +303,6 @@
   parent: none
   people:
   - gcLiaison: mtwo
-  - tcSponsor:
-      username: jsuereth
-      level: escalating
   - tcSponsor:
       username: tigrannajaryan
       level: guiding
@@ -521,7 +509,7 @@
   people:
   - gcLiaison: austinlparker
   - tcSponsor:
-      username: jsuereth
+      username: tbd
       level: escalating
   resources:
   - meeting:
@@ -903,9 +891,6 @@
   parent: semconv-general
   people:
   - gcLiaison: jpkrohling
-  - tcSponsor:
-      username: jsuereth
-      level: leading
   - tcSponsor:
       username: lmolkova
       level: leading
