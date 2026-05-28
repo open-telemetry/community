@@ -59,7 +59,7 @@ Implementers:
 
 ## Timeline
 
-We anticipate the effort of this project to be around 3 months. (This is purely an estimate of effort and not a declaration of how long the project will take; individual availability and potential redirections from the RFC period will likely make this project take longer)
+We anticipate the effort of this project to be around 3 months. (This is purely an estimate of effort and not a declaration of how long the project will take; individual availability and potential pivots during the RFC period will likely make this project take longer)
 
 1. Gather Specification Requirements (2-3 Weeks)
     - Initial meetings for open discussion on what the OTEP and spec updates need to address
