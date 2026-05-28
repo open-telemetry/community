@@ -10,7 +10,7 @@ The idea for this project began when groups in [the Collector](https://github.co
 
 ## Why It Matters
 
-This aligns closely with the new [General Availability for OpenTelemetry](https://github.com/open-telemetry/community/pull/3452) project. There is a desire across the project to present more unified and cohesive experience between different OpenTelemetry tools. Batching is a fundamental building block of both the Collector and SDKs, and is a complicated topic for new users. A unified specification for how to configure batching that can apply to the Collector and to SDKs means that users don't need to learn batching strategies twice to have a solid end-to-end understanding of their OpenTelemetry deployments.
+This project aligns closely with the push for General Availability for OpenTelemetry. There is a desire across the project to present more unified and cohesive experience between different OpenTelemetry tools, and batching is a fundamental building block of both the Collector and SDKs. A unified specification for how to configure batching that can apply to the Collector and to SDKs means that users don't need to learn different batching principles to be able to configure end-to-end resiliency of their OpenTelemetry deployments.
 
 ## Deliverables
 
