@@ -59,6 +59,7 @@ repositories:
 - [Christian Neumüller](https://github.com/Oberon00), Dynatrace
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace
+- [Josh Suereth](https://github.com/jsuereth), Google
 - [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden
 - [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Marc Alff](https://github.com/marcalff), Oracle
