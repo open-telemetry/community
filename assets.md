@@ -36,15 +36,30 @@ Link: https://app.fossa.com/
 
 ### Special GitHub Action runners
 
-#### Large Linux runners
+#### CNCF-hosted Linux runners
 
-CNCF provides the following large Linux runners which are available to all repositories:
+CNCF provides the following [Linux runners](https://github.com/cncf/automation/blob/main/ci/README.md#custom-runners)
+which are available to all repositories. Sizes range from the standard
+2 CPU / 8 GB (comparable to GitHub's `ubuntu-latest` and `ubuntu-24.04-arm`)
+up to 32 CPU / 128 GB:
 
-- [`oracle-16cpu-64gb-x86-64`](https://github.com/cncf/automation/blob/main/ci/README.md#custom-runners)
-- [`oracle-16cpu-64gb-arm64`](https://github.com/cncf/automation/blob/main/ci/README.md#custom-runners)
+x86/amd64 based:
 
-Note that normal-sized Linux ARM64 runners are [available for free to all public
-repositories](https://github.blog/changelog/2025-01-16-linux-arm64-hosted-runners-now-available-for-free-in-public-repositories-public-preview/).
+- `cncf-ubuntu-2-8-x86`
+- `cncf-ubuntu-4-16-x86`
+- `cncf-ubuntu-8-32-x86`
+- `cncf-ubuntu-16-64-x86`
+- `cncf-ubuntu-24-96-x86`
+- `cncf-ubuntu-32-128-x86`
+
+ARM based:
+
+- `cncf-ubuntu-2-8-arm`
+- `cncf-ubuntu-4-16-arm`
+- `cncf-ubuntu-8-32-arm`
+- `cncf-ubuntu-16-64-arm`
+- `cncf-ubuntu-24-96-arm`
+- `cncf-ubuntu-32-128-arm`
 
 CNCF and GitHub expect fair use of these provided resources.
 Please ensure your workloads are optimized to avoid unnecessary usage.
@@ -54,8 +69,7 @@ Admins: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.n
 #### Large Windows runners
 
 Access to large Windows runners is available to repositories on request
-(open a community issue),
-which will give access to the following GitHub-hosted runner:
+(open a community issue), which will give access to the following GitHub-hosted runner:
 
 - `otel-windows-latest-8-cores`
 
