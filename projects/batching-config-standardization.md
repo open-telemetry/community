@@ -18,11 +18,14 @@ A centralized definition within the specification of batching configuration (and
 
 This is intended to be a short-term project with a single goal and definitive successful ending (it will not be an ongoing SIG). The results of this project will likely be:
 
-* Consensus on batching config specification, manifesting first as an [OTEP](https://github.com/open-telemetry/opentelemetry-specification/tree/main/oteps#opentelemetry-enhancement-proposal-otep) followed by [an entry in the Configuration section of the specification](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/configuration/README.md)
+* Consensus on batching config specification
+    - This will manifest first as an [OTEP](https://github.com/open-telemetry/opentelemetry-specification/tree/main/oteps#opentelemetry-enhancement-proposal-otep)
+    - Some central specification entry so there is a generic place that SDKs and the Collector can agree on fundamental batching principles
+    - The necessary modifications will be made to the relevant areas of the SDK specification that already exist on batching (such as the [Batching processor section of the Trace SDK Specification](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/sdk.md#batching-processor) along with equivalent sections for each signal type)
 * At least two successful reference implementations of the specification
-    - A language will be chosen as the first example implementation of the spec
+    - At least one staffed language to serve as the first wave of SDK reference implementations of the spec (we may end up staffed to do multiple languages in the first wave)
     - The OpenTelemetry Collector will be a unique implementation that aligns with the specification as much as possible within the `sending_queue::batch` section of the `exporterhelper` shared batching configuration section
-* The most important core languages will follow as a long tail following the success of the initial reference implementation
+* Languages that may be unstaffed at the start will follow as a long tail following the success of initial reference implementations
 
 ## Staffing/Help Wanted
 
@@ -34,18 +37,26 @@ TC Sponsor: Josh MacDonald (@jmacd)
 
 GC Liaison: Pablo Baeyens (@mx-psi)
 
-Specification Designers:
+Participators:
 
 * Braydon Kains (@braydonk)
 * Ida Hou (@xuechunhou)
 * Israel Blancas (@iblancasa)
 * Josh MacDonald (@jmacd)
+* David Ashpole (@dashpole)
+* Cijo Thomas (@cijothomas)
 * More needed!
 
-Implementing Engineers:
+Implementers:
 
-* Ida Hou (@xuechunhou) (Collector)
-* Israel Blancas (@iblancasa) (Go)
+* Collector
+    - Ida Hou (@xuechunhou) (Collector)
+    - Braydon Kains (@braydonk) (Collector)
+* Go
+    - Israel Blancas (@iblancasa) (Go)
+    - David Ashpole (@dashpole) (Go)
+* Rust
+    - Cijo Thomas (@cijothomas) (Rust)
 * More needed for other languages!
 
 ## Timeline
@@ -54,11 +65,11 @@ Implementing Engineers:
     - Initial meetings to collect batching requirements and start refining the design
 * Write OTEP
     - Once there is consensus among the project group, an OTEP will be co-authored
-* Add Specification
-    - If the OTEP is accepted by the broader approval group, an entry will be added to the SDK Configuration Spec
+* Change Specification
+    - If the OTEP is accepted by the broader approval group, the necessary additions/changes will be made to the specification
 * Initial Implementation
-    - The initial reference implementations (one language, the Collector) will be initially implemented likely as a proof-of-concept for the OTEP, but once the specification is finalized the implementations can be refined and merged
+    - The initial reference implementations (at least one language, the Collector) will be initially implemented likely as a proof-of-concept for the OTEP, but once the specification is finalized the implementations can be refined and merged
 * Blog Post
     - A public blog post will be created explaining the new unified batching configuration experience across the Collector and languages
 * Remaining language implementations
-    - The most important core language implementations can be done in parallel with the previous two steps
+    - Any languages that were unstaffed during the initial project operation can follow as a long tail following the specification changes and initial reference implementations
