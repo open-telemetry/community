@@ -66,6 +66,7 @@ if run_in_check_mode:
     if original == result:
         sys.exit(0)
     else:
+        print(f"{MARKDOWN_FILE} is out of date. Run 'make generate' to update it.", file=sys.stderr)
         sys.exit(1)
 else:
     with open(MARKDOWN_FILE, "w", encoding="utf-8") as f:
