@@ -76,36 +76,41 @@ ssh ubuntu@<instance-ip>
 # Update packages
 sudo apt-get update && sudo apt-get upgrade -y
 
-# Install Docker and allow the runner to use it without sudo
-sudo apt-get install -y docker.io
+# Install Docker and cron, and allow the runner to use Docker without sudo
+sudo apt-get install -y docker.io cron
 sudo usermod -aG docker $USER
 
-# No other tools need to be installed on the host.
+# No workload-specific tools need to be installed on the host.
 # Workloads should use container-based workflows to bring their own dependencies.
 # See https://docs.github.com/en/actions/writing-workflows/choosing-where-your-workflow-runs/running-jobs-in-a-container
 ```
 
-### Configure Docker build cache garbage collection
+### Configure automatic runner storage cleanup
 
-Docker and BuildKit support automatic garbage collection for unused build cache.
+Self-hosted runner workloads can leave Docker images and build cache behind when
+jobs fail or are cancelled. Configure a daily cleanup job to remove unused
+Docker storage.
+
+Create the daily cleanup script:
 
 ```bash
-sudo tee /etc/docker/daemon.json >/dev/null <<'EOF'
-{
-   "builder": {
-      "gc": {
-         "enabled": true,
-         "defaultKeepStorage": "20GB"
-      }
-   }
-}
+sudo tee /etc/cron.daily/cleanup-runner-storage >/dev/null <<'EOF'
+#!/usr/bin/env bash
+set -eu
+
+# Remove Docker storage that is not in use by active containers.
+docker image prune -af --filter 'until=168h' >/dev/null
+docker builder prune -af --filter 'until=168h' --keep-storage 20GB >/dev/null
 EOF
 
-sudo systemctl restart docker
+sudo chmod 0755 /etc/cron.daily/cleanup-runner-storage
 ```
 
-This lets Docker reclaim old BuildKit cache on its own and avoids running cache
-cleanup against an active build.
+Verify that cron can discover the script:
+
+```bash
+sudo run-parts --list /etc/cron.daily | grep cleanup-runner-storage
+```
 
 ## Step 3: Set up GitHub self-hosted runner
 
