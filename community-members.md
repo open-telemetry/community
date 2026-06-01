@@ -45,6 +45,19 @@ events, and other functions as needed.
 - [Reese Lee](https://github.com/reese-lee), New Relic
 - (Associate) [Julia Furst Morgado](https://github.com/juliafmorgado), Dash0
 
+## GitHub Administrators
+
+These are the GitHub organization owners
+([@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)),
+responsible for [GitHub administration processes](./guides/maintainer/github-admin-processes.md):
+
+- [Armin Ruech](https://github.com/arminru), Dynatrace
+- [Josh Suereth](https://github.com/jsuereth), Google
+- [Marylia Gutierrez](https://github.com/maryliag), Grafana Labs
+- [Reiley Yang](https://github.com/reyang), Microsoft
+- [Severin Neumann](https://github.com/svrnm), Causely
+- [Trask Stalnaker](https://github.com/trask), Microsoft
+
 ## Specifications and Proto
 
 Members of the Technical Committee are the maintainers of
