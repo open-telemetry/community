@@ -963,27 +963,6 @@
       name: '#otel-sig-security'
       id: C05A85QC281
   - repository: open-telemetry/sig-security
-- id: project-infra
-  kind: sig
-  sigCategory: cross-cutting
-  name: Project Infrastructure
-  parent: none
-  people:
-  - gcLiaison: austinlparker
-  - tcSponsor:
-      username: arminru
-      level: escalating
-  resources:
-  - meeting:
-      schedule: Thursday at 11:00 PT
-      calendarInviteGroup: calendar-project-infra
-      gDocNotes: 1_dTP2XIaZoFjNiipkeMaGJN10NrhS20FiBTTJoQJeVM
-  - slack:
-      name: '#otel-project-infra'
-      id: C07BPU981PV
-  - repository: open-telemetry/sig-project-infra
-  - repository: open-telemetry/changelog.opentelemetry.io
-  - repository: open-telemetry/assign-reviewers-action
 - id: contributor-experience
   kind: sig
   sigCategory: cross-cutting

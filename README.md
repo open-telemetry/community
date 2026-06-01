@@ -5,29 +5,30 @@
 Table of Contents
 </summary>
 
-* [Get Involved](#get-involved)
-* [Governing Bodies](#governing-bodies)
-* [Areas of Interest](#areas-of-interest)
-* [Communication](#communication)
-  * [Slack](#slack)
-  * [Calendar](#calendar)
-  * [Mailing Lists](#mailing-lists)
-  * [Media](#media)
-* [License](#license)
-* [Logos and Brand Guide](#logos-and-brand-guide)
-* [How to](#how-to)
-* [Special Interest Groups](#special-interest-groups)
-  * [Specification SIGs](#specification-sigs)
-  * [Implementation SIGs](#implementation-sigs)
-  * [Cross-Cutting SIGs](#cross-cutting-sigs)
-  * [Localization Teams (part of SIG Communications)](#localization-teams-part-of-sig-communications)
-* [Related groups](#related-groups)
-  * [W3C - Distributed Tracing Working Group](#w3c---distributed-tracing-working-group)
-  * [Erlang Ecosystem Foundation – Observability Working Group](#erlang-ecosystem-foundation--observability-working-group)
-  * [CNCF TAG Observability - Technical Advisory Group](#cncf-tag-observability---technical-advisory-group)
-  * [K8s SIG - Instrumentation Special Interest Group](#k8s-sig---instrumentation-special-interest-group)
-  * [OpenMetrics](#openmetrics)
-  * [eBPF Foundation](#ebpf-foundation)
+- [ OpenTelemetry community content](#-opentelemetry-community-content)
+  - [Get Involved](#get-involved)
+  - [Governing Bodies](#governing-bodies)
+  - [Areas of Interest](#areas-of-interest)
+  - [Communication](#communication)
+    - [Slack](#slack)
+    - [Calendar](#calendar)
+    - [Mailing Lists](#mailing-lists)
+    - [Media](#media)
+  - [License](#license)
+  - [Logos and Brand Guide](#logos-and-brand-guide)
+  - [How to](#how-to)
+  - [Special Interest Groups](#special-interest-groups)
+    - [Specification SIGs](#specification-sigs)
+    - [Implementation SIGs](#implementation-sigs)
+    - [Cross-Cutting SIGs](#cross-cutting-sigs)
+    - [Localization Teams (part of SIG Communications)](#localization-teams-part-of-sig-communications)
+  - [Related groups](#related-groups)
+    - [W3C - Distributed Tracing Working Group](#w3c---distributed-tracing-working-group)
+    - [Erlang Ecosystem Foundation – Observability Working Group](#erlang-ecosystem-foundation--observability-working-group)
+    - [CNCF TAG Observability - Technical Advisory Group](#cncf-tag-observability---technical-advisory-group)
+    - [K8s SIG - Instrumentation Special Interest Group](#k8s-sig---instrumentation-special-interest-group)
+    - [OpenMetrics](#openmetrics)
+    - [eBPF Foundation](#ebpf-foundation)
 
 </details>
 
@@ -199,7 +200,6 @@ SIG-specific GitHub discussions.
 | Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)&nbsp;<a id="sig-comms" href="#sig-comms"><sup>🔗</sup></a> | Every other Tuesday at 09:00 PT | [Google Doc](https://docs.google.com/document/d/1wW0jLldwXN8Nptq2xmgETGbGn9eWP8fitvD5njM-xZY) | [#otel-comms](https://cloud-native.slack.com/archives/C02UN96HZH6) | [calendar-comms](https://groups.google.com/a/opentelemetry.io/g/calendar-comms) | [Severin Neumann](https://github.com/svrnm) |
 | End-User SIG&nbsp;<a id="sig-end-user" href="#sig-end-user"><sup>🔗</sup></a> | Alternating between Monday at 08:00 PT (Blueprints) and Thursday at 10:00 PT (General) | [Google Doc](https://docs.google.com/document/d/1e-UNZA3Tuno9b53RQbe--whUcO0VIXF3P81oXsrBK6g) | [#otel-sig-end-user](https://cloud-native.slack.com/archives/C01RT3MSWGZ) | [calendar-sig-end-user](https://groups.google.com/a/opentelemetry.io/g/calendar-sig-end-user) | [Marylia Gutierrez](https://github.com/maryliag) |
 | Security&nbsp;<a id="sig-security" href="#sig-security"><sup>🔗</sup></a> | Every other Monday at 09:00 PT | [Google Doc](https://docs.google.com/document/d/1P2xejC7lEkOV_Z-8E0oZPXLK5HOnUPNuRqKP0ZQ5fpg) | [#otel-sig-security](https://cloud-native.slack.com/archives/C05A85QC281) | [calendar-sig-security](https://groups.google.com/a/opentelemetry.io/g/calendar-sig-security) | [Trask Stalnaker](https://github.com/trask) |
-| Project Infrastructure&nbsp;<a id="sig-project-infra" href="#sig-project-infra"><sup>🔗</sup></a> | Thursday at 11:00 PT | [Google Doc](https://docs.google.com/document/d/1_dTP2XIaZoFjNiipkeMaGJN10NrhS20FiBTTJoQJeVM) | [#otel-project-infra](https://cloud-native.slack.com/archives/C07BPU981PV) | [calendar-project-infra](https://groups.google.com/a/opentelemetry.io/g/calendar-project-infra) | [Austin Parker](https://github.com/austinlparker) |
 | Contributor Experience&nbsp;<a id="sig-contributor-experience" href="#sig-contributor-experience"><sup>🔗</sup></a> | Every other Monday at 10:00 PT | [Google Doc](https://docs.google.com/document/d/1CTQI0p3QF8JP8reV8z_ggcs8KE5YVPpQGvAQknw4qP0) | [#otel-contributor-experience](https://cloud-native.slack.com/archives/C06TMJ2R0SK) | [calendar-contributor-experience](https://groups.google.com/a/opentelemetry.io/g/calendar-contributor-experience) | [Marylia Gutierrez](https://github.com/maryliag) |
 | Developer Experience&nbsp;<a id="sig-devex" href="#sig-devex"><sup>🔗</sup></a> | Wednesday 11:00 PT and 17:00 UTC+8 | [Google Doc](https://docs.google.com/document/d/1QDZYAvGJbqgodJaTxRPmRZh-fEJjb6XstvPUst6h50w) | [#otel-devex](https://cloud-native.slack.com/archives/C01S42U83B2) | [calendar-developer-experience](https://groups.google.com/a/opentelemetry.io/g/calendar-developer-experience) | [Austin Parker](https://github.com/austinlparker) |
 

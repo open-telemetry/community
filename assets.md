@@ -115,7 +115,7 @@ please ensure your workloads are optimized to avoid unnecessary usage.
 
 Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
-SSH private keys are available in the SIG Project Infrastructure 1Password vault.
+SSH private keys are available in the SIG GitHub Admins 1Password vault.
 
 [How to provision an Oracle bare metal runner](docs/how-to-provision-bare-metal-runner.md)
 
