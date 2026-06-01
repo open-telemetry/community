@@ -3,7 +3,7 @@
 ## Description
 
 This project establishes
-[`open-telemetry/benchmarks`](https://github.com/open-telemetry/benchmarks) as
+`open-telemetry/benchmarks` as
 the project-owned home for cross-language performance scenarios, with a public
 dashboard that tracks release-over-release results.
 
