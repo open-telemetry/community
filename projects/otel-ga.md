@@ -96,7 +96,12 @@ The biggest barrier to general availability is unstable instrumentation.
 In order to manage OpenTelemetry at scale, we need a control plane. Therefore, OpAMP needs
 to be stable and feature complete for its core set of management tasks.
 
-The OpAMP SIG is in charge of this project.
+The OpAMP SIG is in charge of this project. [Detailed roadmap here](https://docs.google.com/document/d/1DXXAZmm_pG2ls1zZTzXzUI9bBscunBmcpVbbbN267og/edit).
+
+* Collector supervision
+* Remote configuration
+* Health reporting
+* Release management
 
 ### Deployment: Packaging v1.0
 
