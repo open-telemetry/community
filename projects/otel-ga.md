@@ -1,13 +1,13 @@
-# OpenTelemetry GA: Completing our initial scope of work
+# OpenTelemetry General Availability: Completing our initial scope of work
 
-This project file identifies the remaining workstreams needed to complete delivery of the
-initial scope of work for OpenTelemetry: A telemetry system that delivers tracing,
-metrics, and logs from the most common software libraries and cloud infrastructures.
+This document identifies the remaining workstreams needed for the OpenTelemetry project as a whole
+to be considered generally available — i.e. an end-to-end platform where users can install, deploy,
+and operate tracing, metrics, and logs at scale using stable components.
 
-NOTE: This is a meta-project. It describes a set of workstreams at a high level, so that we can
-agree upon the overall scope of work needed for OpenTelemetry to be considered GA or "generally
-available." For that reason, it is missing some sections that would normally be in a project
-file. In the future we should develop better road-mapping tools, but this is what we have today.
+NOTE: many individual components (language APIs, SDKs, and a growing set of instrumentation libraries)
+are already at v1.0 today. The term "General Availability" as used here is intended to represent a
+higher-level milestone about the platform as a whole, not a comment on the status or version number of
+any particular component.
 
 ## Background and description
 
@@ -18,6 +18,11 @@ for OpenTelemetry to be considered "stable" or "generally available."
 The feedback on the initial proposal was that it was too open-ended, so this project attempts
 to redefine workstreams to be more specific as to which SIG is indented to work on them, and
 the concrete set of deliverables needed for OpenTelemetry to be considered GA.
+
+This document is a high-level roadmap, not an individual project. The purpose is to reach consensus
+on the overall scope of work needed for the original OpenTelemetry components to be considered a complete
+telemetry system consisting entirely of stable components. This goal is what we mean when we say that we
+want OpenTelemetry to be "generally available."
 
 ## Current challenges
 
@@ -170,10 +175,8 @@ OpenTelemetry does have compatibility and support requirements for various types
 components, such as APIs and plugin architectures. Once we have reached this milestone, we
 can revisit our compatibility requirements and long term support guarantees.
 
-### Better designs and architecture
+### Revised designs and architecture
 
 The core specification for tracing, metrics, and logs have all been completed. However, we
 are always learning. It's reasonable that we may want to revisit these designs, either to
 incorporate new developments within the industry, or to address fundamental performance issues.
-
-Let's finish shipping v1.0 first, before distracting ourselves with v2.0.
