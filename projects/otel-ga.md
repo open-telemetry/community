@@ -49,7 +49,7 @@ currently have tools that can install and manage all of OpenTelemetry at scale. 
 beginnings of these tools for Kubernetes and Linux, but they are not complete, and can only
 manage a portion of the OpenTelemetry components needed for a complete deployment.
 
-### Future-proofing
+### Future-proofing the project
 
 We've made it this far, but there are several aspects of the project that need to be improved
 in order continue maintaining OpenTelemetry after GA. The specific areas that were identified
@@ -60,16 +60,23 @@ include security, project management, performance, and long term support.
 Based on the above challenges, the following workstreams need to be developed and managed as
 a roadmap to GA that can be presented to the community.
 
-* Stability: Collector v1.0
-* Stability: SemConv Tooling for Instrumentation
-* Stability: Instrumentation
-* Deployment: OpAMP v1.0
-* Deployment: Packaging v1.0
-* Deployment: Kubernetes Operator v1.0
-* Security
-* Roadmaps & Project Management
+* Stability
+  * Collector v1.0
+  * Tooling for Instrumentation
+  * Instrumentation Stability & Management
+* Deployment
+  * OpAMP v1.0
+  * Linux Package Management v1.0
+  * Kubernetes Operator v1.0
+* Improvements
+  * Security
+  * Roadmaps & Project Management
+  * Performance & Benchmarking
+  * Long-Term Support
 
-### Stability: Collector v1.0
+## Stability
+
+### Collector v1.0
 
 Managed by Collector SIG, the OpenTelemetry Collector needs to complete [its roadmap for v1.0](https://github.com/open-telemetry/opentelemetry-collector/blob/main/docs/ga-roadmap.md). This includes marking core APIs as well as a minimal OTLP distro as 1.x.
 
@@ -77,7 +84,7 @@ The opentelemetry-collector-contrib repository contains over 200 hundred compone
 
 Marking further components or distros as 1.x is explicitly out of scope.
 
-### Stability: SemConv Tooling for Instrumentation
+### Tooling for Instrumentation
 
 In order to lower the cost of manage instrumentation at scale, and to better support native
 instrumentation efforts, we need tooling that improves correctness while reducing the cost of
@@ -87,7 +94,7 @@ maintaining instrumentation.  The SemConv Tooling SIG is in charge of this proje
 * AI coding
 * Test harnesses
 
-### Stability: Instrumentation
+### Instrumentation Stability & Management
 
 The biggest barrier to general availability is unstable instrumentation.
 
@@ -96,7 +103,9 @@ The biggest barrier to general availability is unstable instrumentation.
 * Badges and other forms of recognition
 * Native instrumentation push to move instrumentation out of OpenTelemetry.
 
-### Deployment: OpAMP v1.0
+## Deployment
+
+### OpAMP v1.0
 
 In order to manage OpenTelemetry at scale, we need a control plane. Therefore, OpAMP needs
 to be stable and feature complete for its core set of management tasks.
@@ -108,7 +117,7 @@ The OpAMP SIG is in charge of this project. [Detailed roadmap here](https://docs
 * Health reporting
 * Release management
 
-### Deployment: Packaging v1.0
+### Linux Package Management v1.0
 
 The Packaging SIG is in charge of this project.
 
@@ -117,7 +126,7 @@ The Packaging SIG is in charge of this project.
 * Language distributions for SDKs, plugins, and instrumentation
 * Declarative configuration for managing instrumentation and stability
 
-### Deployment: Kubernetes Operator v1.0
+### Kubernetes Operator v1.0
 
 The Kubernetes Operator needs several features in order to make OpenTelemetry generally
 available on Kubernetes. Operator SIG is in charge of this project.
@@ -127,6 +136,8 @@ available on Kubernetes. Operator SIG is in charge of this project.
 * All major languages supported.
 * Works with the same distributions and configuration options as developed by the package
   management SIG, so that end users only need to learn a single set of configuration patterns.
+
+## Improvements
 
 ### Security
 
@@ -154,16 +165,7 @@ The Governance Committee is in charge of this project, but everyone's input is n
 * Better ways to socialize the projects that need input.
 * Better ways to visualize the long term roadmap.
 
-## Out of scope
-
-There is additional work that we see as necessary for the success of the project. However, in
-order to stay focused as a community, we must limit the number of large projects that we take
-on at any one time – we cannot ask maintainers to have five or six "number one priorities."
-
-The following projects are seen as important for the long term success of OpenTelemetry, but
-not actually necessary to deliver stable components that are deployable at scale.
-
-### Performance / Benchmarking
+### Performance & Benchmarking
 
 OpenTelemetry maintainers are always encouraged to continue optimizing the performance
 of the code that they are in charge of.
@@ -172,11 +174,8 @@ of the code that they are in charge of.
 
 The primary goal of this initiative is to get all of the necessary components to v1.0.
 OpenTelemetry does have compatibility and support requirements for various types of
-components, such as APIs and plugin architectures. Once we have reached this milestone, we
-can revisit our compatibility requirements and long term support guarantees.
+components, such as APIs and plugin architectures. As part of reaching this milestone,
+we need to revisit our compatibility requirements and long-term support guarantees, to make
+sure that they accurately reflect our intentions.
 
-### Revised designs and architecture
-
-The core specification for tracing, metrics, and logs have all been completed. However, we
-are always learning. It's reasonable that we may want to revisit these designs, either to
-incorporate new developments within the industry, or to address fundamental performance issues.
+The Specification SIG is in charge of this project.
