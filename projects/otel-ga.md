@@ -167,8 +167,13 @@ The Governance Committee is in charge of this project, but everyone's input is n
 
 ### Performance & Benchmarking
 
-OpenTelemetry maintainers are always encouraged to continue optimizing the performance
-of the code that they are in charge of.
+To facilitate performance improvements, SDK maintainers have created a number of benchmarks for
+use within their individual SIGs. Based on a review of this work, we would like to create a
+set of standard benchmarks to be applied across all SDKs. This is both to help with performance
+improvements, and to help give end users a reasonable set of expectations when considering the use
+of our SDKs.
+
+The Specification SIG is in charge of this project.
 
 ### Long term support
 
