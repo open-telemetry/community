@@ -4,7 +4,7 @@ This document identifies the remaining workstreams needed for the OpenTelemetry 
 to be considered generally available — i.e. an end-to-end platform where users can install, deploy,
 and operate tracing, metrics, and logs at scale using stable components.
 
-NOTE: many individual components (language APIs, SDKs, and a growing set of instrumentation libraries)
+Please note that many individual components (language APIs, SDKs, and a growing set of instrumentation libraries)
 are already at v1.0 today. The term "General Availability" as used here is intended to represent a
 higher-level milestone about the platform as a whole, not a comment on the status or version number of
 any particular component.
@@ -73,6 +73,7 @@ a roadmap to GA that can be presented to the community.
   * Security
   * Roadmaps & Project Management
   * Performance & Benchmarking
+  * Self-Observability
   * Long-Term Support
 
 ## Stability
@@ -185,6 +186,18 @@ use within their individual SIGs. Based on a review of this work, we would like 
 set of standard benchmarks to be applied across all SDKs. This is both to help with performance
 improvements, and to help give end users a reasonable set of expectations when considering the use
 of our SDKs.
+
+The Specification SIG is in charge of this project.
+
+### Self-Observability
+
+OpenTelemetry is itself a high-throughput distributed sub-system. This means it needs to emit
+sufficient telemetry about itself in order to be observable, along with a set of playbooks
+to explain how to interpret this telemetry, and advise operators on how to implement basic dashboards
+and alerting needed to respond to common problems. In other words, OpenTelemetry itself should
+be a model citizen when it comes to being an observable system. As part of encouraging native
+instrumentation, we want to implement our own best practices in order to encourage others to
+improve the observability of their systems.
 
 The Specification SIG is in charge of this project.
 
