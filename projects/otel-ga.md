@@ -102,12 +102,14 @@ maintaining instrumentation.  The SemConv Tooling SIG is in charge of this proje
 
 ### Instrumentation Stability & Management
 
-The biggest barrier to general availability is unstable instrumentation.
+The biggest barrier to general availability is unstable instrumentation. The Specification SIG is
+in charge of this project, but it requires significant input from maintainers and the community.
 
 * Move away from the “community contrib” model for critical instrumentation packages.
 * Deploy the new SemConv tooling across all language ecosystems.
-* Badges and other forms of recognition
+* Badges and other forms of recognition.
 * Native instrumentation push to move instrumentation out of OpenTelemetry.
+* Update the spec with the new policy for defining stable telemetry.
 
 ## Deployment
 
