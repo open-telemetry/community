@@ -71,7 +71,7 @@ a roadmap that can be presented to the community.
   * Roadmaps & Project Management
   * Performance & Benchmarking
   * Self-Observability
-  * Long-Term Support
+  * Redefine Long-Term Support
 
 ## Stability
 
@@ -203,7 +203,7 @@ improve the observability of their systems.
 
 The Specification SIG is in charge of this project.
 
-### Long term support
+### Redefine Long term support
 
 The primary goal of this initiative is to get all of the necessary components to v1.0.
 OpenTelemetry does have compatibility and support requirements for various types of
