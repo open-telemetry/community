@@ -52,8 +52,9 @@ Concretely:
 
 This is a short project with a definitive ending. v1 is done when:
 
-1. `open-telemetry/benchmarks` exists, with the layout from OTEP 5109 and
-   `CODEOWNERS` set up.
+1. `open-telemetry/benchmarks` exists, with the layout from
+   [OTEP 5109](https://github.com/open-telemetry/opentelemetry-specification/pull/5118)
+   and `CODEOWNERS` set up.
 2. Scenario S1 is implemented and published for at least 2 languages.
 3. The dashboard is public and reachable from the repo README.
 
