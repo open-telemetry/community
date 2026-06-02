@@ -8,9 +8,11 @@ The Batching Configuration Standardization project is a collaborative effort bet
 
 The idea for this project began when groups in [the Collector](https://github.com/open-telemetry/opentelemetry-collector/issues/15132) and [the SDK](https://github.com/open-telemetry/opentelemetry-specification/issues/5068) proposed major changes to batching configuration around the same time. We decided to join forces and come up with a core specification for batching capabilities and configuration surface that can be shared by SDK Configuration and the Collector.
 
-## Why It Matters
+## Project Goals
 
 There is a desire across the project to present more unified and cohesive experience between different OpenTelemetry tools, and batching is a fundamental building block of both the Collector and SDKs. A unified specification for how to configure batching that can apply to the Collector and to SDKs means that users don't need to learn different batching principles to be able to configure end-to-end resiliency of their OpenTelemetry deployments.
+
+It will likely be impossible to make batching configuration **literally** identical between the Collector and SDK declarative config, as the foundational config mechanisms are completely distinct between them. The goal is to make it so that in both scenarios, the available behaviours to configure are clear and as similar as possible, and should feel familiar for users crossing over between the different configuration experiences.
 
 ## Deliverables
 
@@ -43,19 +45,26 @@ Participators:
 * Josh MacDonald (@jmacd)
 * David Ashpole (@dashpole)
 * Cijo Thomas (@cijothomas)
+* Aaron Abbott (@aabmass)
 * More needed!
 
 Implementers:
 
 * Collector
-    - Ida Hou (@xuechunhou) (Collector)
-    - Braydon Kains (@braydonk) (Collector)
+    - Ida Hou (@xuechunhou)
+    - Braydon Kains (@braydonk)
 * Go
-    - Israel Blancas (@iblancasa) (Go)
-    - David Ashpole (@dashpole) (Go)
+    - Israel Blancas (@iblancasa)
+    - David Ashpole (@dashpole)
 * Rust
-    - Cijo Thomas (@cijothomas) (Rust)
+    - Cijo Thomas (@cijothomas)
+* Python
+    - Aaron Abbott (@aabmass)
 * More needed for other languages!
+
+## Where We Operate
+
+The primary activity will be a Slack channel and ad-hoc organized meetings while we are in the initial design phase of the project. When concrete tasks exist, we may provision a GitHub Project Board if it seems appropriate.
 
 ## Timeline
 
