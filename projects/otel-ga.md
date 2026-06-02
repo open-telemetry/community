@@ -68,6 +68,7 @@ a roadmap to GA that can be presented to the community.
   * OpAMP v1.0
   * Linux Package Management v1.0
   * Kubernetes Operator v1.0
+  * Kubernetes Helm charts v1.0
 * Improvements
   * Security
   * Roadmaps & Project Management
@@ -129,13 +130,25 @@ The Packaging SIG is in charge of this project.
 ### Kubernetes Operator v1.0
 
 The Kubernetes Operator needs several features in order to make OpenTelemetry generally
-available on Kubernetes. Operator SIG is in charge of this project.
+available on Kubernetes. The Kubernetes SIG is in charge of this project.
 
 * The need for pod attribution and other manual configuration requirements that interfere
   with deploying OpenTelemetry at scale.
 * All major languages supported.
 * Works with the same distributions and configuration options as developed by the package
   management SIG, so that end users only need to learn a single set of configuration patterns.
+
+### Kubernetes Helm Charts v1.0
+
+In addition to the Operator, OpenTelemetry provides a set of helm charts for managing our suite
+of components. All of these charts are still versioned 0.X. At minimum, the following helm charts
+must become stable:
+
+* opentelemetry-operator when the Operator becomes v1.0
+* opentelemetry-collector when the Collector becomes v1.0
+
+The remaining helm charts either need a roadmap for v1.0, or a warning that they are still experimental
+and not meant to be run in production. The Kubernetes SIG is in charge of this project.
 
 ## Improvements
 
