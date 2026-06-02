@@ -85,30 +85,15 @@ Bare metal runners are available for benchmarking workloads.
 See [How to use an Oracle bare metal runner](docs/how-to-use-bare-metal-runner.md)
 for how to request access and use the runner.
 
-Runner labels:
+##### `oracle-bare-metal-64cpu-1024gb-x86-64-ubuntu-24`
 
-- `oracle-bare-metal-64cpu-512gb-x86-64` (Oracle Linux 8)
-- `oracle-bare-metal-64cpu-1024gb-x86-64-ubuntu-24` (Ubuntu 24)
-
-`oracle-bare-metal-64cpu-512gb-x86-64` hardware specification (BM.Standard.E2.64):
+Hardware specification ([BM.Standard3.64](https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm#bm-standard)):
 
 | Component | Specification |
-|---|---|
-| Processor | 2-socket AMD EPYC 7551 (2.0 GHz base, 3.0 GHz max boost) |
-| OCPUs | 64 (128 vCPUs), 32 per socket |
-| Memory | 512 GB (8 NUMA nodes, 64 GB per node) |
-
-`oracle-bare-metal-64cpu-1024gb-x86-64-ubuntu-24` hardware specification ([BM.Standard3.64](https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm#bm-standard)):
-
-| Component | Specification |
-|---|---|
+| --- | --- |
 | Processor | 2-socket Intel Xeon Platinum 8358 (2.6 GHz base, 3.4 GHz max turbo) |
 | OCPUs | 64 (128 vCPUs), 32 per socket |
 | Memory | 1024 GB (2 NUMA nodes, 512 GB per node) |
-
-We are currently transitioning from the Oracle Linux 8 runner to the
-Ubuntu 24 runner. Once the transition is complete, the Oracle Linux 8 runner
-will be decommissioned.
 
 Note: there is only one bare metal runner at this time, so
 please ensure your workloads are optimized to avoid unnecessary usage.
