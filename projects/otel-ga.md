@@ -1,46 +1,42 @@
-# OpenTelemetry General Availability: Completing our initial scope of work
+# Post-Graduation Roadmap: Completing our initial scope of work
 
 This document identifies the remaining workstreams needed for the OpenTelemetry project as a whole
-to be considered generally available — i.e. an end-to-end platform where users can install, deploy,
-and operate tracing, metrics, and logs at scale using stable components.
-
-Please note that many individual components (language APIs, SDKs, and a growing set of instrumentation libraries)
-are already at v1.0 today. The term "General Availability" as used here is intended to represent a
-higher-level milestone about the platform as a whole, not a comment on the status or version number of
-any particular component.
+to be considered a stable end-to-end platform where users can install, deploy, and operate tracing,
+metrics, and logs at scale. While we have many new and exciting projects that expand the scope of
+OpenTelemetry, we want to make sure that the original scope of the project is actually completed.
 
 ## Background and description
 
 As part of the [due diligence](https://github.com/cncf/toc/blob/main/projects/open-telemetry/otel-graduation-dd.md)
-for OpenTelemetry's graduation, a scope of work was identified as required in order
-for OpenTelemetry to be considered "stable" or "generally available."
+for OpenTelemetry's graduation, a number of features were identified by our end users as either
+missing or still marked as experimental, even though they were necessary components for OpenTelemetry to be
+used as a complete telemetry system.
 
-The feedback on the initial proposal was that it was too open-ended, so this project attempts
-to redefine workstreams to be more specific as to which SIG is indented to work on them, and
-the concrete set of deliverables needed for OpenTelemetry to be considered GA.
+The feedback on the initial proposal was that it was too open-ended, so this document attempts
+to redefine the workstreams to be more specific as to which SIG is indented to work on them, and
+the specific set of deliverables needed to meet our stability goals.
 
 This document is a high-level roadmap, not an individual project. The purpose is to reach consensus
 on the overall scope of work needed for the original OpenTelemetry components to be considered a complete
-telemetry system consisting entirely of stable components. This goal is what we mean when we say that we
-want OpenTelemetry to be "generally available."
+telemetry system consisting entirely of stable components, in a way that satisfies the feedback we received
+during graduation.
 
 ## Current challenges
 
 ### De facto stable
 
-Today, many components are "de facto" stable, meaning that they are versioned as 0.X and are
-technically still in beta, but are recommended to be used in production. This is confusing, as
-OpenTelemetry also has components marked 0.X that are genuinely experimental and should not be
-used in production. Additionally, some end user organizations have rules that prohibit them
-from deploying 0.X software to production.
+Many individual components (language APIs, SDKs, and a growing set of instrumentation libraries)
+are already at v1.0 today. However, there are also a number of important components that are
+"de facto" stable, meaning that they are versioned as 0.X and are technically still in beta,
+but are recommended to be used in production. This is confusing, as OpenTelemetry also has components
+marked 0.X that are genuinely experimental and should not be used in production. Additionally,
+some end user organizations have rules that prohibit them from deploying 0.X software to production.
 
 As part of graduation, it was requested that we provide a mechanism for indicating to end
 users which OpenTelemetry components are "production ready." Actually, we already have a
 mechanism for indicating this – the version number of the component. Going forward, we need to
-align "production readiness" with bumping a component to v1.0 or greater.
-
-In practice, this means finalizing the v1.0 roadmap for every component necessary for
-OpenTelemetry to be considered generally available.
+align "production readiness" with versioning by advancing all of these "de-facto stable" components
+to v1.0 or greater.
 
 ### Deploying at scale
 
@@ -52,13 +48,14 @@ manage a portion of the OpenTelemetry components needed for a complete deploymen
 ### Future-proofing the project
 
 We've made it this far, but there are several aspects of the project that need to be improved
-in order continue maintaining OpenTelemetry after GA. The specific areas that were identified
-include security, project management, performance, and long term support.
+in order continue maintaining all of these stable OpenTelemetry components over the next several
+years. The specific areas that were identified during graduation include security, project management,
+performance, and long term support.
 
 ## Workstreams
 
 Based on the above challenges, the following workstreams need to be developed and managed as
-a roadmap to GA that can be presented to the community.
+a roadmap that can be presented to the community.
 
 * Stability
   * Collector v1.0
@@ -85,7 +82,7 @@ This includes marking core APIs as well as a minimal OTLP distro as 1.x.
 
 The opentelemetry-collector-contrib repository contains over 200 hundred components. [Initial adopter interview findings](https://docs.google.com/document/d/1SQMdfYpCiBfpxtWDwASXVIl-PIzD9X4vdDPXYUphAF0/edit?tab=t.0)
 revealed that, although many of these are considered not 'core' and are instead community-supported,
-end-users rely on them. General availability therefore will include
+end-users rely on them. v1.0 therefore will include
 [the stability of additional priority components identified in 'phase 1'](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/44130).
 
 Marking further components or distros as 1.x is explicitly out of scope.
@@ -102,7 +99,7 @@ maintaining instrumentation.  The SemConv Tooling SIG is in charge of this proje
 
 ### Instrumentation Stability & Management
 
-The biggest barrier to general availability is unstable instrumentation. The Specification SIG is
+Currently, the biggest barrier to stability is instrumentation. The Specification SIG is
 in charge of this project, but it requires significant input from maintainers and the community.
 
 * Move away from the “community contrib” model for critical instrumentation packages.
@@ -136,8 +133,8 @@ The Packaging SIG is in charge of this project.
 
 ### Kubernetes Operator v1.0
 
-The Kubernetes Operator needs several features in order to make OpenTelemetry generally
-available on Kubernetes. The Kubernetes SIG is in charge of this project.
+The Kubernetes Operator is a critical component for managing OpenTelemetry at scale.
+The Kubernetes SIG is in charge of this project.
 
 * The need for pod attribution and other manual configuration requirements that interfere
   with deploying OpenTelemetry at scale.
@@ -175,9 +172,8 @@ While OpenTelemetry has been making many incremental improvements to its project
 tools and workflows, we have identified a need for larger changes to our project structure.
 
 OpenTelemetry always had a de-facto roadmap – first traces, then metrics, then logs. That
-roadmap is now complete. Once we have delivered this final set of work needed to make the
-original goals generally available, the roadmap is now unwritten. How will we write it as
-a community?
+roadmap is now complete. Once we have finished delivering this original scope of work, the roadmap
+will be unwritten. How will we write it as a community?
 
 The Governance Committee is in charge of this project, but everyone's input is needed.
 
