@@ -10,7 +10,7 @@ The idea for this project began when groups in [the Collector](https://github.co
 
 ## Why It Matters
 
-This project aligns closely with the push for General Availability for OpenTelemetry. There is a desire across the project to present more unified and cohesive experience between different OpenTelemetry tools, and batching is a fundamental building block of both the Collector and SDKs. A unified specification for how to configure batching that can apply to the Collector and to SDKs means that users don't need to learn different batching principles to be able to configure end-to-end resiliency of their OpenTelemetry deployments.
+There is a desire across the project to present more unified and cohesive experience between different OpenTelemetry tools, and batching is a fundamental building block of both the Collector and SDKs. A unified specification for how to configure batching that can apply to the Collector and to SDKs means that users don't need to learn different batching principles to be able to configure end-to-end resiliency of their OpenTelemetry deployments.
 
 ## Deliverables
 
@@ -20,8 +20,8 @@ This is intended to be a short-term project with a single goal and definitive su
     - This will manifest first as an [OTEP](https://github.com/open-telemetry/opentelemetry-specification/tree/main/oteps#opentelemetry-enhancement-proposal-otep)
     - Some central specification entry so there is a generic place that SDKs and the Collector can agree on fundamental batching principles
     - The necessary modifications will be made to the relevant areas of the SDK specification that already exist on batching (such as the [Batching processor section of the Trace SDK Specification](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/sdk.md#batching-processor) along with equivalent sections for each signal type)
-* At least two successful reference implementations of the specification
-    - At least one staffed language to serve as the first wave of SDK reference implementations of the spec (we may end up staffed to do multiple languages in the first wave)
+* At least three successful reference implementations of the specification
+    - At least two staffed languages to serve as the first wave of SDK reference implementations of the spec (we may end up staffed to do multiple languages in the first wave)
     - The OpenTelemetry Collector will be a unique implementation that aligns with the specification as much as possible within the `sending_queue::batch` section of the `exporterhelper` shared batching configuration section
 * Languages that may be unstaffed at the start will follow as a long tail following the success of initial reference implementations
 
@@ -69,7 +69,7 @@ We anticipate the effort of this project to be around 3 months. (This is purely 
 1. Change Specification (2 weeks)
     - If the OTEP is accepted by the broader approval group, the necessary additions/changes will be made to the specification
 1. Initial Implementation (2 months, parallel with previous steps)
-    - The initial reference implementations (at least one language and the Collector) will be initially implemented as a proof-of-concept for the OTEP, but once the specification is finalized the implementations can be refined and merged
+    - The initial reference implementations (at least two languages and the Collector) will be initially implemented as a proof-of-concept for the OTEP, but once the specification is finalized the implementations can be refined and merged
 1. Blog Post (1 week)
     - A public blog post will be created explaining the new unified batching configuration experience across the Collector and languages
 1. Remaining language implementations (ongoing)
