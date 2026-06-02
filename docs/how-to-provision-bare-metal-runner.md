@@ -29,7 +29,7 @@ Oracle Cloud Infrastructure (OCI).
      4. Select subnet **subnet-20240506-1118**
    - **SSH key**: Under **Add SSH keys**, select **Generate a key pair
      for me** and click **Download private key** to download it.
-     Store the private key in the SIG Project Infrastructure 1Password vault.
+     Store the private key in the GitHub Admins 1Password vault.
 6. Click **Create**
 
 ## Step 2: Set up the instance
