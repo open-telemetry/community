@@ -139,7 +139,7 @@ available on Kubernetes. The Kubernetes SIG is in charge of this project.
 
 * The need for pod attribution and other manual configuration requirements that interfere
   with deploying OpenTelemetry at scale.
-* All major languages supported.
+* All languages that have both auto-instrumentation and a stable SDK should be supported.
 * Works with the same distributions and configuration options as developed by the package
   management SIG, so that end users only need to learn a single set of configuration patterns.
 
