@@ -160,6 +160,18 @@ def validate_workstreams_semantics(workstreams: list[dict], people_data: dict) -
                     "but is not in the spec-sponsors or technical-committee team"
                 )
 
+        if w.get("tcSponsorship") == "collective":
+            listed = {
+                pr["tcSponsor"]["username"].lower()
+                for pr in w.get("people", [])
+                if "tcSponsor" in pr
+            }
+            if listed != tc_members:
+                errors.append(
+                    f"[{wid}] tcSponsorship='collective' requires listed tcSponsors "
+                    "to match the technical-committee team"
+                )
+
     return errors
 
 

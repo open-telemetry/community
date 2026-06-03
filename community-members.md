@@ -30,9 +30,8 @@ in alphabetical order:
 - [Carlos Alberto Cortez](https://github.com/carlosalberto), Lightstep
 - [David Ashpole](https://github.com/dashpole), Google
 - [Jack Berg](https://github.com/jack-berg), Grafana Labs
-- [Josh Suereth](https://github.com/jsuereth), Google
 - [Joshua MacDonald](https://github.com/jmacd), Microsoft
-- [Liudmila Molkova](https://github.com/lmolkova), Grafana Labs
+- [Liudmila Molkova](https://github.com/lmolkova), Google
 - [Reiley Yang](https://github.com/reyang), Microsoft
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 <!-- endtc -->
@@ -45,6 +44,19 @@ events, and other functions as needed.
 - [Adriana Villela](https://github.com/avillela), Dynatrace
 - [Reese Lee](https://github.com/reese-lee), New Relic
 - (Associate) [Julia Furst Morgado](https://github.com/juliafmorgado), Dash0
+
+## GitHub Administrators
+
+These are the GitHub organization owners
+([@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)),
+responsible for [GitHub administration processes](./guides/maintainer/github-admin-processes.md):
+
+- [Armin Ruech](https://github.com/arminru), Dynatrace
+- [Josh Suereth](https://github.com/jsuereth), Google
+- [Marylia Gutierrez](https://github.com/maryliag), Grafana Labs
+- [Reiley Yang](https://github.com/reyang), Microsoft
+- [Severin Neumann](https://github.com/svrnm), Causely
+- [Trask Stalnaker](https://github.com/trask), Microsoft
 
 ## Specifications and Proto
 
@@ -60,6 +72,7 @@ repositories:
 - [Christian Neumüller](https://github.com/Oberon00), Dynatrace
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace
+- [Josh Suereth](https://github.com/jsuereth), Google
 - [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden
 - [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Marc Alff](https://github.com/marcalff), Oracle
@@ -75,6 +88,23 @@ Emeritus sponsors (formerly approvers):
 - [Daniel Jaglowski](https://github.com/djaglowski)
 - [David Poncelow](https://github.com/zenmoto)
 - [Nikita Salnikov-Tarnovski](https://github.com/iNikem)
+
+## Prometheus Interoperability
+
+Members of the [Prometheus<->OpenTelemetry Interoperability Working Group](https://github.com/orgs/open-telemetry/teams/prometheus-interoperability). Responsible for evolving the interoperability
+between Prometheus and OpenTelemetry, including specification of data model transformations and their implementations in several SDKs, Collector and other parts where
+the two communities intersect.
+
+- [Arthur Silva Sens](https://github.com/ArthurSens), Grafana Labs
+- [David Ashpole](http://github.com/dashpole), Google
+
+Emeritus:
+
+- [Alolita Sharma](https://github.com/alolita), Apple
+- [Antony Mirabella](https://github.com/aneurysm9), AWS
+- [Jaana Dogan](https://github.com/rakyll), Google
+- [Josh Suereth](https://github.com/jsuereth), Google
+- [Juraj Michálek](https://github.com/jmichalek132), Grafana Labs 
 
 ## Semantic Conventions
 
@@ -124,7 +154,7 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 
 Repo: [open-telemetry/opentelemetry-go-compile-instrumentation](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation)
 
-The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Go compile time instrumentation can be found in the [open-telemetry/opentelemetry-go-compile-instrumentation CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation/blob/main/CONTRIBUTING.md#approvers-and-maintainers).
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Go compile time instrumentation can be found in the [open-telemetry/opentelemetry-go-compile-instrumentation README file](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation#contributing).
 
 ## JavaScript
 
@@ -210,5 +240,6 @@ Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/open
 
 ## Technical Committee Emeritus
 
+- [Josh Suereth](https://github.com/jsuereth)
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev)
 - [Yuri Shkuro](https://github.com/yurishkuro)

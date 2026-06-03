@@ -9,7 +9,7 @@ if (len(sys.argv) > 1) and (sys.argv[1] == "--install"):
 
 import yaml
 
-# Do not safe the file but verify that it is different from the original one.
+# Do not save the file but verify that it is different from the original one.
 run_in_check_mode = (len(sys.argv) > 1) and (sys.argv[1] == "--check")
 
 WORKSTREAMS_FILE = "workstreams.yml"
@@ -89,7 +89,11 @@ def extract_row_data(ws):
                 tc_sponsors.append(link)
 
     gc_str = "<br/>".join(gc_liaisons)
-    sponsor_str = ",<br/>".join(tc_sponsors)
+
+    if ws.get("tcSponsorship") == "collective":
+        sponsor_str = "[Technical Committee](./community-members.md#technical-committee)"
+    else:
+        sponsor_str = ",<br/>".join(tc_sponsors)
 
     return meeting_schedule, notes_link, chat_str, calendar, sponsor_str, gc_str
 
@@ -167,6 +171,7 @@ if run_in_check_mode:
     if original == result:
         sys.exit(0)
     else:
+        print(f"{markdown_file} is out of date. Run 'make generate' to update it.", file=sys.stderr)
         sys.exit(1)
 else:
     with open(markdown_file, "w", encoding="utf-8") as f:

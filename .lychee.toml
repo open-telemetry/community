@@ -26,6 +26,9 @@ exclude = [
     "^https://github.com/[^/]+$",
     # this 404s when not hit from a browser
     "^https://www.linuxfoundation.org/legal/generative-ai$",
+    # these 404 for non-collaborators on the Slack app
+    "^https://api.slack.com/apps/A0B37EY9PD2$",
+    "^https://cloud-native.slack.com/marketplace/A0B37EY9PD2-opentelemetry-notifications$",
     # this is a private repo
     "https://github.com/open-telemetry/admin",
     # for performance reasons

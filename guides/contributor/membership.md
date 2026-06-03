@@ -125,14 +125,47 @@ elsewhere on GitHub.
 
 ### Requirements
 
-- Nominated by a maintainer, with no objections from other maintainers.
-- Consistently interact with the community and help with issues for at least 1 month.
+- Has been performing the role's responsibilities (see below), within the
+  access they have, for at least 1 month.
 
 ### Responsibilities and privileges
 
 - Have an understanding of the goals and workflows defined by the maintainers.
 - Respond to new PRs and Issues by asking clarifying questions.
 - Organize the backlog by applying labels, milestones, assignees, and projects.
+
+### Becoming a Triager
+
+Unless stated otherwise in a SIG charter ratified by the Technical Committee,
+a new triager is elected by vote of the existing maintainers of the SIG.
+The vote is officially started when a pull request to add a new triager
+is opened, and ends when the pull request is merged. The pull request body
+should include links to the nominee's relevant activity. The pull request may
+be merged when the following conditions are met:
+
+- The person being nominated has accepted the nomination by approving the pull request
+- All maintainers have approved the pull request OR a majority of maintainers
+  have approved the pull request and no maintainer has objected by requesting
+  changes on the pull request. In the case that all maintainers have not given
+  approval, the pull request should stay open for a minimum of 5 days before merging.
+
+Existing triagers and approvers may also leave reviews on the pull request as
+a signal of support, but the merge condition is determined by maintainer
+approvals.
+
+The nominee is considered a triager after the pull request is merged.
+
+#### Self-nomination is encouraged
+
+If you feel like you meet the requirements above and are willing to take on
+the additional responsibilities and privileges of being a triager, it is
+recommended that you approach an existing maintainer about sponsoring your
+bid to become a triager. After you and your sponsor have discussed the role
+and its additional requirements and responsibilities, they may approach the
+other maintainers about a vote to confirm you as a new triager. If the
+maintainer does not believe you are ready for the role, or the subproject is
+not in need of additional triagers, they may suggest growth areas in order to
+improve your chances to become a triager in the future.
 
 ## Approver
 
@@ -165,13 +198,11 @@ elsewhere on GitHub.
 The following apply to the part of the codebase for which one would be an
 approver in the `CODEOWNERS` files.
 
-- Reviewer of the codebase for at least 1 month
-- Reviewer for or author of at least 10 substantial PRs to the codebase,
+- Has been performing the role's responsibilities (see below), within the
+  access they have, for at least 1 month.
+- Has reviewed or authored at least 10 substantial PRs to the codebase,
   with the definition of substantial subject to the maintainer's discretion
   (e.g. refactors/adds new functionality rather than one-line pulls).
-- Nominated by a maintainer
-  - With no objections from other maintainers
-  - Done through PR to update the `CODEOWNERS`.
 
 ### Responsibilities and privileges
 
@@ -187,6 +218,38 @@ approver in the `CODEOWNERS` files.
 - Expected to be responsive to review requests (inactivity for more than 1 month may result in suspension until active again)
 - Mentor contributors and reviewers
 - May approve code contributions for acceptance
+
+### Becoming an Approver
+
+Unless stated otherwise in a SIG charter ratified by the Technical Committee,
+a new approver is elected by vote of the existing maintainers of the SIG.
+The vote is officially started when a pull request to add a new approver
+is opened, and ends when the pull request is merged. The pull request body
+should include links to the nominee's relevant activity. The pull request may
+be merged when the following conditions are met:
+
+- The person being nominated has accepted the nomination by approving the pull request
+- All maintainers have approved the pull request OR a majority of maintainers
+  have approved the pull request and no maintainer has objected by requesting
+  changes on the pull request. In the case that all maintainers have not given
+  approval, the pull request should stay open for a minimum of 5 days before merging.
+
+Existing approvers may also leave reviews on the pull request as a signal of
+support, but the merge condition is determined by maintainer approvals.
+
+The nominee is considered an approver after the pull request is merged.
+
+#### Self-nomination is encouraged
+
+If you feel like you meet the requirements above and are willing to take on
+the additional responsibilities and privileges of being an approver, it is
+recommended that you approach an existing maintainer about sponsoring your
+bid to become an approver. After you and your sponsor have discussed the
+role and its additional requirements and responsibilities, they may approach
+the other maintainers about a vote to confirm you as a new approver. If the
+maintainer does not believe you are ready for the role, or the subproject is
+not in need of additional approvers, they may suggest growth areas in order
+to improve your chances to become an approver in the future.
 
 ## Maintainer
 
@@ -258,6 +321,7 @@ The following apply to the subproject for which one would be a maintainer.
 - Ensure continued health of subproject:
   - Adequate test coverage to confidently release
   - Tests are passing reliably (i.e. not flaky) and are fixed when they fail
+  - Security advisories, alerts, reports and vulnerabilities are triaged and handled in a timely manner (see relevant [guidelines](https://github.com/open-telemetry/sig-security/blob/main/security-response.md))
   - Up-to-date and accurate [documentation](http://docs.opentelemetry.io/)
 - Ensure a healthy process for discussion and decision making is in place.
 - Work with other maintainers to maintain the project's overall health and
@@ -305,10 +369,12 @@ encouraged to reflect this by adding themselves to the `emeritus` section of the
 CONTRIBUTING, CODEOWNERS, or README of the subproject they are stepping away
 from. Company affiliations should be removed at this time as they may change
 and may not be reflected accurately in the future. GitHub usernames listed under the
-`emeritus` section should be removed from the approvers list, and will no longer
+`emeritus` section should be removed from the respective list, and will no longer
 have any official responsibilities with the project. When a contributor returns
 to being more active, they may be promoted back to their previous position at
 the discretion of the current maintainers following the process defined above.
+
+See also [Move to Emeritus](../../move-to-emeritus.md) script for more details on how members are being automatically flagged as inactive and moved to Emeritus.
 
 ## Specification Sponsor
 
