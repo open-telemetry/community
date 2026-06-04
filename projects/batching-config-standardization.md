@@ -68,14 +68,14 @@ The primary activity will be a Slack channel and ad-hoc organized meetings while
 
 ## Timeline
 
-We anticipate the effort of this project to be around 3 months. (This is purely an estimate of effort and not a declaration of how long the project will take; individual availability and potential pivots during the RFC period will likely make this project take longer)
+We anticipate the effort of this project to be around 6 months. (This is purely an estimate of effort and not a declaration of how long the project will take; individual availability and potential pivots during the RFC period will likely make this project take longer)
 
 1. Gather Specification Requirements (2-3 Weeks)
     - Initial meetings for open discussion on what the OTEP and spec updates need to address
 1. Write OTEP (2 Months)
     - Once there is consensus among the project group, an OTEP will be co-authored
     - Large time estimate given for open RFC period
-1. Change Specification (2 weeks)
+1. Change Specification (2 months)
     - If the OTEP is accepted by the broader approval group, the necessary additions/changes will be made to the specification
 1. Initial Implementation (2 months, parallel with previous steps)
     - The initial reference implementations (at least two languages and the Collector) will be initially implemented as a proof-of-concept for the OTEP, but once the specification is finalized the implementations can be refined and merged
