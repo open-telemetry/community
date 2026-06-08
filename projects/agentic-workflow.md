@@ -60,7 +60,7 @@ Thus, the goals of this project are as follows:
 * Enable agents to troubleshoot collector issues.
 
 The mentioned goals might require enhancements in the collector repositories. We expect to make improvements in the documentation as it is the primary source for building skills and knowledge base for the agents.
-Another example is improvements in the collector configuration schema which is already being worked on in the collector SIG.
+Another example is improvements in the collector configuration schema, which is already being worked on by the collector SIG.
 
 #### Documentation and distribution
 
