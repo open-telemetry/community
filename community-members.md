@@ -58,37 +58,6 @@ responsible for [GitHub administration processes](./guides/maintainer/github-adm
 - [Severin Neumann](https://github.com/svrnm), Causely
 - [Trask Stalnaker](https://github.com/trask), Microsoft
 
-## Specifications and Proto
-
-Members of the Technical Committee are the maintainers of
-[Project specs](https://github.com/open-telemetry/opentelemetry-specification)
-and [Proto definitions](https://github.com/open-telemetry/opentelemetry-proto).
-
-[Specification sponsors](./guides/contributor/membership.md#specification-sponsor) are
-trusted collaborators of the Technical Committee on Project specs and related
-repositories:
-
-- [Alex Boten](https://github.com/codeboten), Honeycomb
-- [Christian Neumüller](https://github.com/Oberon00), Dynatrace
-- [Cijo Thomas](https://github.com/cijothomas), Microsoft
-- [Daniel Dyla](https://github.com/dyladan), Dynatrace
-- [Josh Suereth](https://github.com/jsuereth), Google
-- [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden
-- [Leighton Chen](https://github.com/lzchen), Microsoft
-- [Marc Alff](https://github.com/marcalff), Oracle
-- [Robert Pająk](https://github.com/pellared), Splunk
-- [Severin Neumann](https://github.com/svrnm), Independent
-- [Ted Young](https://github.com/tedsuo), Grafana Labs
-- [Tristan Sloughter](https://github.com/tsloughter), MyDecisiveAI
-- [Tyler Yahn](https://github.com/MrAlias), Splunk
-
-Emeritus sponsors (formerly approvers):
-
-- [Christian Beedgen](https://github.com/kumoroku)
-- [Daniel Jaglowski](https://github.com/djaglowski)
-- [David Poncelow](https://github.com/zenmoto)
-- [Nikita Salnikov-Tarnovski](https://github.com/iNikem)
-
 ## Prometheus Interoperability
 
 Members of the [Prometheus<->OpenTelemetry Interoperability Working Group](https://github.com/orgs/open-telemetry/teams/prometheus-interoperability). Responsible for evolving the interoperability
