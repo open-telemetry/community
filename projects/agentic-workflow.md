@@ -51,6 +51,8 @@ The goal of this project is to deliver an initial implementation of MCP server(s
 
 The Collector follows a fast two-week release cadence, which requires constant maintenance to stay up to date and avoid breaking changes. Additionally configuring the collector correctly and writing valid OTTL statements is important for effective usage, but requires domain expertise and isn't always trivial. General-purpose coding agents struggle here because they lack up-to-date knowledge of recent releases and aren't specialized for Collector workflows.
 
+Thus, the goals of this project are as follows:
+
 * Enable agents to read and write valid Collector configuration.
 * Enable agents to handle API breaking changes (e.g. deprecations, removals, renaming) in the configuration and collector Golang API.
 * Enable agents to upgrade collector.
@@ -62,7 +64,7 @@ Another example is improvements in the collector configuration schema which is a
 
 #### Documentation and distribution
 
-Coherent documentation and distribution of the agentic workflows are required to enable users install and manage the agentic workflows.
+Coherent documentation and distribution of the agentic workflows are required to enable users to install and manage the agentic workflows.
 
 * Introduce documentation for the Agentic Workflows.
 * Align distribution and installation of the components with the Agentic Workflows.
