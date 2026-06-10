@@ -170,7 +170,7 @@ Link: <https://accounts.google.com/ServiceLogin?service=androiddeveloper&passive
 
 - SDK is verified via admin@opentelemetry.io
 - Point of contact email is android-maintainers@opentelemetry.io
-- Admin: Android Maintainers
+- Admin: [@open-telemetry/android-maintainers](https://github.com/orgs/open-telemetry/teams/android-maintainers)
 
 ## Artifact repositories
 
