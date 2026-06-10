@@ -160,6 +160,18 @@ Link: https://develocity.opentelemetry.io
 - Secret stored in the OpenTelemetry Java 1Password vault
 - Admin: [@trask](https://github.com/trask)
 
+
+### Google Play SDK Console
+
+We have a [Google Play SDK Console](https://play.google.com/sdk-console/about/) for the Android SDK to get
+insights about the SDK.
+
+Link: <https://accounts.google.com/ServiceLogin?service=androiddeveloper&passive=true&continue=https%3A%2F%2Fplay.google.com%2Fsdk-console%2F>
+
+- SDK is verified via admin@opentelemetry.io
+- Point of contact email is android-maintainers@opentelemetry.io
+- Admin: [@open-telemetry/android-maintainers](https://github.com/orgs/open-telemetry/teams/android-maintainers)
+
 ## Artifact repositories
 
 ### NuGet OpenTelemetry organization
