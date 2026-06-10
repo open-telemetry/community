@@ -15,7 +15,7 @@ maintainer!
 | approver              | approve incoming contributions                                    | highly experienced and active reviewer + contributor to a subproject                                                                             | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners) in GitHub                                  |
 | maintainer            | set direction and priorities for a subproject                     | demonstrated responsibility and excellent technical judgement for the subproject                                                                 | [CODEOWNERS](https://help.github.com/en/articles/about-code-owners), GitHub Team and repo ownership in GitHub  |
 | emeritus              | position of honor for former maintainers, approvers, and triagers | must have previously held a community role and not have been removed from that role for a [Code of Conduct](../../code-of-conduct.md) violation. | Listed as an emeritus maintainer/approver/triager in CONTRIBUTING, CODEOWNERS, or README                       |
-| specification sponsor | trusted collaborators for the specification                       | nominated by [Technical Committee][]                                                                                                             | Listed in [Community Members -> Specification and Protos](../../community-members.md#specifications-and-proto) |
+| specification sponsor | trusted collaborators for the specification                       | nominated by [Technical Committee][]                                                                                                             | Listed in [opentelemetry-specification README](https://github.com/open-telemetry/opentelemetry-specification/blob/main/README.md#approvers) |
 
 ## New contributors
 
@@ -383,7 +383,7 @@ work to review, approve, and sponsor [opentelemetry-specification][] issues and
 PRs.
 
 Members are defined
-in [Community Members -> Specification and Protos](../../community-members.md#specifications-and-proto)
+in the [opentelemetry-specification README](https://github.com/open-telemetry/opentelemetry-specification/blob/main/README.md#approvers)
 and are members of the `spec-sponsors` team (TODO: add link to github team when
 available). Specification sponsors SHOULD list
 their [areas of interest](../../areas-of-interest.md).
