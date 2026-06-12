@@ -64,7 +64,7 @@ Those who are brand new to OpenTelemetry and want to connect with other contribu
 
 To follow project developments or chat about OpenTelemetry in general, feel free to join the [#opentelemetry](https://cloud-native.slack.com/archives/CJFCJHG4Q) Slack channel.
 
-If you are new to the CNCF Slack community, you can create an account [here](https://slack.cncf.io/).
+If you are new to the CNCF Slack community, you can [create an account](https://slack.cncf.io/).
 
 ### Calendar
 
