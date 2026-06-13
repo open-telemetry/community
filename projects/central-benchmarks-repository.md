@@ -66,6 +66,10 @@ the OTEP.
 
 This is a small project; staffing is intentionally minimal.
 
+### TC Sponsor
+
+- David Ashpole ([@dashpole](https://github.com/dashpole))
+
 ### Repository maintainers
 
 - Cijo Thomas ([@cijothomas](https://github.com/cijothomas))
