@@ -70,6 +70,10 @@ This is a small project; staffing is intentionally minimal.
 
 - David Ashpole ([@dashpole](https://github.com/dashpole))
 
+### GC Sponsor
+
+- Trask Stalnaker ([@trask](https://github.com/trask))
+
 ### Repository maintainers
 
 - Cijo Thomas ([@cijothomas](https://github.com/cijothomas))
