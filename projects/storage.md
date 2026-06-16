@@ -8,7 +8,7 @@ This proposal addresses the need for comprehensive storage observability by defi
 
 ### Goals
 
-- Storage users can capture infrastructure metrics and attibutes from storage systems with OpenTelemetry and export these to the tools of their choice.
+- Storage users can capture infrastructure metrics and attributes from storage systems with OpenTelemetry and export these to the tools of their choice.
 - Storage telemetry includes appropriate resource metadata that conforms to OpenTelemetry semantic conventions, enabling consistent observability across different storage technologies.
 - Define semantic conventions for key storage entities including:
   - Storage systems (hardware/software platforms providing data storage)
