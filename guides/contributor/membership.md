@@ -384,9 +384,8 @@ PRs.
 
 Members are defined
 in [Community Members -> Specification and Protos](../../community-members.md#specifications-and-proto)
-and are members of the `spec-sponsors` team (TODO: add link to github team when
-available). Specification sponsors SHOULD list
-their [areas of interest](../../areas-of-interest.md).
+and are members of the [@open-telemetry/spec-sponsors](https://github.com/orgs/open-telemetry/teams/spec-sponsors) team.
+Specification sponsors SHOULD list their [areas of interest](../../areas-of-interest.md).
 
 ### Requirements
 
