@@ -666,7 +666,6 @@
   - slack:
       name: '#otel-kotlin'
       id: C08NRCD4R4G
-  - githubDiscussion: https://github.com/open-telemetry/opentelemetry-kotlin/discussions
   - repository: open-telemetry/opentelemetry-kotlin
 - id: packaging
   kind: sig
