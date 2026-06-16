@@ -49,6 +49,13 @@ def sig_short_name(ws):
     return None
 
 
+def first_repository(ws):
+    for res in ws.get("resources", []):
+        if "repository" in res:
+            return res["repository"]
+    return None
+
+
 def extract_row_data(ws):
     meeting_schedule = ""
     notes_link = ""
@@ -122,7 +129,7 @@ for ws in workstreams:
         spec_sigs.append(ws)
 
 
-def render_group(group_name, sigs, show_sponsors):
+def render_group(group_name, sigs, show_sponsors, link_repo=False):
     content = f"### {group_name}\n\n"
     if show_sponsors:
         content += "| Name | Meeting Time | Meeting Notes | Slack Channel | Meeting Invites Group | [Sponsors](./project-management.md#project-proposal) | [Governance Committee](./community-members.md#governance-committee) Liaison |\n"
@@ -133,10 +140,13 @@ def render_group(group_name, sigs, show_sponsors):
 
     for ws in sigs:
         name = ws["name"]
+        repo = first_repository(ws)
         short_name = sig_short_name(ws)
         meeting, notes, chats, calendar, sponsors, gc = extract_row_data(ws)
 
         if short_name:
+            if link_repo and repo:
+                name = f"[{name}](https://github.com/{repo})"
             name_cell = f"{name}&nbsp;<a id=\"{short_name}\" href=\"#{short_name}\"><sup>🔗</sup></a>"
         else:
             name_cell = name
@@ -158,7 +168,7 @@ bottom_part = content.split(end_marker, 1)[1]
 
 markdown_content = start_marker + "\n"
 markdown_content += render_group("Specification SIGs", spec_sigs, show_sponsors=True)
-markdown_content += render_group("Implementation SIGs", impl_sigs, show_sponsors=False)
+markdown_content += render_group("Implementation SIGs", impl_sigs, show_sponsors=False, link_repo=True)
 markdown_content += render_group("Cross-Cutting SIGs", cross_sigs, show_sponsors=False)
 markdown_content += render_group("Localization Teams (part of SIG Communications)", localization_sigs, show_sponsors=False)
 markdown_content += end_marker
