@@ -68,10 +68,10 @@ We welcome contributors from various areas:
 - Maintainers or approvers
 
 ### Project Leads
-To be determined
+[@ramavadl](https://github.com/ramavadl)
 
 ### Staffing
-To be determined
+[@sanjlokh](https://github.com/sanjlokh)
 
 #### GC sponsors
 To be determined
