@@ -212,7 +212,7 @@ Requested — see pull request description.
 
 #### GC Liaison
 
-Requested — see pull request description.
+Severin Neumann (@svrnm) 
 
 ## Expected Timeline
 
