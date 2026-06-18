@@ -412,6 +412,7 @@
       name: '#otel-browser'
       id: C093P0AMP0T
   - roadmapProject: 146
+  - repository: open-telemetry/opentelemetry-browser
 - id: collector
   kind: sig
   sigCategory: implementation
