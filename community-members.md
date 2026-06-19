@@ -13,7 +13,7 @@ in alphabetical order:
 - [Marylia Gutierrez](https://github.com/maryliag), Grafana Labs, until October 2027
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2026
 - [Pablo Baeyens](https://github.com/mx-psi), Datadog, until October 2026
-- [Severin Neumann](https://github.com/svrnm), Causely, until October 2027
+- [Severin Neumann](https://github.com/svrnm), Bronto, until October 2027
 - [Ted Young](https://github.com/tedsuo), Grafana Labs, until October 2027
 - [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2026
 <!-- endgc -->
@@ -55,7 +55,7 @@ responsible for [GitHub administration processes](./guides/maintainer/github-adm
 - [Josh Suereth](https://github.com/jsuereth), Google
 - [Marylia Gutierrez](https://github.com/maryliag), Grafana Labs
 - [Reiley Yang](https://github.com/reyang), Microsoft
-- [Severin Neumann](https://github.com/svrnm), Causely
+- [Severin Neumann](https://github.com/svrnm), Bronto
 - [Trask Stalnaker](https://github.com/trask), Microsoft
 
 ## Prometheus Interoperability
