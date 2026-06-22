@@ -211,6 +211,23 @@ their behalf or sponsor candidates from partner organizations. Simply put,
 elections highlight individuals outside of their corporate role and should be
 treated as "brand free" activities.
 
+### Campaigning guidance
+
+Community members, including candidates, are free to campaign (e.g., ask others
+to vote for a particular candidate) in community OpenTelemetry spaces (e.g.,
+Slack channels, GitHub repos, SIG meetings) outside of official, public-facing
+content such as OpenTelemetry-sponsored social media content or the
+OpenTelemetry website.
+
+From the publication of the official list of nominees up until the closing of
+elections, OpenTelemetry-sponsored social media content must not feature or
+promote any particular candidate above others. Additionally, OpenTelemetry
+website publications authored by a candidate in that period must be approved by
+a majority of existing Governance Committee members who are not running in those
+elections.
+
+All campaigning must follow the Code of Conduct and community values.
+
 ## Refactoring or reforming the governance committee
 
 At any time the governance committee may vote, via supermajority (greater than
