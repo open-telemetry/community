@@ -3,7 +3,7 @@
 ## Background and description
 
 [Dart](https://dart.dev/) is a top-15 programming language and the language
-of [Flutter](https://flutter.dev/), one of the most popular cross-platform
+of [Flutter](https://flutter.dev/), one of the most popular multi-platform
 application frameworks. Dart runs on servers, desktop, mobile, and web —
 yet it is the last top-15 language without an officially maintained
 OpenTelemetry SDK. Prior community efforts, most notably
@@ -155,7 +155,7 @@ below). Outreach and promotion will be conducted through:
   ([@kevmoo](https://github.com/kevmoo)) has contributed to the API
   packages, and joint promotion of server-side Dart observability is in
   discussion with Abdallah Shaban
-  ([@abdallahshaban557](https://github.com/abdallahshaban557 )) and the Flutter/Dart developer-relations team.
+  ([@abdallahshaban557](https://github.com/abdallahshaban557 )) and the Flutter/Dart Outbound Product Management team.
 - **Conference talks** — Michael Bushe will present on OpenTelemetry at
   Dart/Flutter conferences.
 - **Social platforms** — sustained promotion on social channels.
