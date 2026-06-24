@@ -34,7 +34,8 @@ exclude = [
     # for performance reasons
     '^https://github.com/open-telemetry/community/(issues|pull)/\d+$',
     'https://gitter.im/open-telemetry/opentelemetry-rust',
-    'https://up-for-grabs.net.*'
+    'https://up-for-grabs.net.*',
+    'https://github.com/adrielp/otel-o11y-infra'
 ]
 
 exclude_path = [
