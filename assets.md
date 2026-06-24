@@ -532,8 +532,6 @@ events are converted to traces and sent to a Honeycomb Open Source account.
   by OpenTelemetry organization admins and [Adriel Perkins](https://github.com/adrielp)
 - The webhook endpoint goes through a CloudFlare Zero Trust account owned by
   Adriel Perkins.
-- The Honeycomb account is managed by Adriel Perkins with account assistance through
-  [Austin Parker](https://github.com/austinlparker)
 - The Kubernetes cluster is currently hosted in OpenTelemetry's Oracle Cloud
   Account on a dedicated Virtual Machine.
 
