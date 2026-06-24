@@ -213,10 +213,14 @@ treated as "brand free" activities.
 
 ### Campaigning guidance
 
-Community members, including candidates, are free to campaign (e.g., ask others
-to vote for a particular candidate) in community OpenTelemetry spaces (e.g.,
-Slack channels, GitHub repos, SIG meetings) outside of official, public-facing
-content such as OpenTelemetry-sponsored social media content or the
+All campaigning must follow the Code of Conduct and community values. In particular,
+it should not be disruptive to the normal functioning of community spaces or take an
+excessive amount of time.
+
+Community members, including candidates, are free to campaign under these conditions
+(e.g., ask others to vote for a particular candidate) in community OpenTelemetry
+spaces (e.g., Slack channels, GitHub repos, SIG meetings) outside of official,
+public-facing content such as OpenTelemetry-sponsored social media content or the
 OpenTelemetry website.
 
 From the publication of the official list of nominees up until the closing of
@@ -225,8 +229,6 @@ promote any particular candidate above others. Additionally, OpenTelemetry
 website publications authored by a candidate in that period must be approved by
 a majority of existing Governance Committee members who are not running in those
 elections.
-
-All campaigning must follow the Code of Conduct and community values.
 
 ## Refactoring or reforming the governance committee
 
