@@ -1,7 +1,7 @@
 # Writing a Good GitHub Issue
 
 Most issues that sit without a response for weeks aren't controversial or
-complex. They just don't have enough to go on.
+complex. They just don't have enough to get started.
 
 All issue activity is governed by the
 [OpenTelemetry Code of Conduct](../../code-of-conduct.md).
@@ -59,6 +59,7 @@ others don't), follow it.
 ### Description
 
 Use the issue template if one is provided; it includes all the fields maintainers need.
+
 When creating an issue for a bug, include:
 
 - What you expected vs. what happened
