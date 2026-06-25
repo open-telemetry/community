@@ -527,9 +527,12 @@ All GitHub actions emit webhook events through a GitHub application to an
 OpenTelemetry collector hosted in a Kubernetes cluster within Oracle Cloud. The
 events are converted to traces and sent to a Honeycomb Open Source account.
 
-- The infrastructure as code exists in [otel-o11y-infra](https://github.com/adrielp/otel-o11y-infra)
+- The infrastructure as code exists in the
+  [otel-o11y-infra](https://github.com/adrielp/otel-o11y-infra) private
+  repository.
 - The GitHub app exists within the OpenTelemetry GitHub account. It is managed
-  by OpenTelemetry organization admins and [Adriel Perkins](https://github.com/adrielp)
+  by OpenTelemetry organization admins and [Adriel
+  Perkins](https://github.com/adrielp)
 - The webhook endpoint goes through a CloudFlare Zero Trust account owned by
   Adriel Perkins.
 - The Kubernetes cluster is currently hosted in OpenTelemetry's Oracle Cloud
