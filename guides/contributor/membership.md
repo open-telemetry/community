@@ -382,11 +382,10 @@ Specification sponsors are trusted collaborators of the technical committee, and
 work to review, approve, and sponsor [opentelemetry-specification][] issues and
 PRs.
 
-Members are defined
-in the [opentelemetry-specification README](https://github.com/open-telemetry/opentelemetry-specification/blob/main/README.md#approvers)
-and are members of the `spec-sponsors` team (TODO: add link to github team when
-available). Specification sponsors SHOULD list
-their [areas of interest](../../areas-of-interest.md).
+Members are defined in the 
+[opentelemetry-specification README](https://github.com/open-telemetry/opentelemetry-specification/blob/main/README.md#approvers)
+and are members of the [@open-telemetry/spec-sponsors](https://github.com/orgs/open-telemetry/teams/spec-sponsors) team.
+Specification sponsors SHOULD list their [areas of interest](../../areas-of-interest.md).
 
 ### Requirements
 

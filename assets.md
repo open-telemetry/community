@@ -160,6 +160,18 @@ Link: https://develocity.opentelemetry.io
 - Secret stored in the OpenTelemetry Java 1Password vault
 - Admin: [@trask](https://github.com/trask)
 
+
+### Google Play SDK Console
+
+We have a [Google Play SDK Console](https://play.google.com/sdk-console/about/) for the Android SDK to get
+insights about the SDK.
+
+Link: <https://accounts.google.com/ServiceLogin?service=androiddeveloper&passive=true&continue=https%3A%2F%2Fplay.google.com%2Fsdk-console%2F>
+
+- SDK is verified via admin@opentelemetry.io
+- Point of contact email is android-maintainers@opentelemetry.io
+- Admin: [@open-telemetry/android-maintainers](https://github.com/orgs/open-telemetry/teams/android-maintainers)
+
 ## Artifact repositories
 
 ### NuGet OpenTelemetry organization
@@ -407,13 +419,12 @@ This GitHub App addresses two common issues:
    > [!WARNING]
    > Branch protection rule **ordering** matters, so you will need to delete the `**/**` branch protection rule temporarily, then add the `otelbot/**/*` branch protection rule, then add back the `**/**` branch protection rule.
 
-2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside a [GitHub Action], workflows
-   will not run on that new pull request without closing and re-opening it manually (this limitation is in place to
-   prevent accidental recursive workflow runs).
+2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside a [GitHub Action], workflows on that pull request
+   require approval from a user with write access to the repository before they can run.
 
    The OpenTelemetry GitHub organization has a GitHub Action secret (`OTELBOT_PRIVATE_KEY`)
    and a GitHub Action variable `OTELBOT_APP_ID` that can be used to create a GitHub App token
-   which will bypass this limitation, e.g.
+   which will bypass this manual approval step, e.g.
 
    ```
    - uses: actions/create-github-app-token@v1
@@ -424,7 +435,7 @@ This GitHub App addresses two common issues:
 
    - name: Create pull request
      env:
-       # not using secrets.GITHUB_TOKEN since pull requests from that token do not trigger workflows
+       # using a GitHub App token so workflows run automatically without requiring manual approval
        GH_TOKEN: ${{ steps.app-token.outputs.token }}
      run: ...
    ```
@@ -509,3 +520,21 @@ GitHub repository](https://github.com/open-telemetry/sig-security).
 
 * Advisories Dashboard
 * Snyk
+
+## GitHub Action Observability Infrastructure
+
+All GitHub actions emit webhook events through a GitHub application to an
+OpenTelemetry collector hosted in a Kubernetes cluster within Oracle Cloud. The
+events are converted to traces and sent to a Honeycomb Open Source account.
+
+- The infrastructure as code exists in the
+  [adrielp/otel-o11y-infra](https://github.com/adrielp/otel-o11y-infra) private
+  repository.
+- The GitHub app exists within the OpenTelemetry GitHub account. It is managed
+  by OpenTelemetry organization admins and [Adriel
+  Perkins](https://github.com/adrielp)
+- The webhook endpoint goes through a CloudFlare Zero Trust account owned by
+  Adriel Perkins.
+- The Kubernetes cluster is currently hosted in OpenTelemetry's Oracle Cloud
+  Account on a dedicated Virtual Machine.
+

@@ -107,7 +107,8 @@ appropriate OpenTelemetry subrepository.
 
 Make sure to adhere to the repository specific policies or issue templates to
 provide detailed information that will help prompt answer and resolution of an
-issue.
+issue. See [Writing a Good GitHub Issue](./good-github-issues.md) for guidance
+on what to include and how to connect issues to pull requests.
 
 ## Workflows
 
