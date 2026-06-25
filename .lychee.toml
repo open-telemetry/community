@@ -29,8 +29,9 @@ exclude = [
     # these 404 for non-collaborators on the Slack app
     "^https://api.slack.com/apps/A0B37EY9PD2$",
     "^https://cloud-native.slack.com/marketplace/A0B37EY9PD2-opentelemetry-notifications$",
-    # this is a private repo
+    # these are private repos
     "https://github.com/open-telemetry/admin",
+    'https://github.com/adrielp/otel-o11y-infra',
     # for performance reasons
     '^https://github.com/open-telemetry/community/(issues|pull)/\d+$',
     'https://gitter.im/open-telemetry/opentelemetry-rust',
