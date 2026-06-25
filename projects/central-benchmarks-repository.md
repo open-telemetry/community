@@ -99,6 +99,14 @@ folder is owned via `CODEOWNERS` by the approvers of the corresponding
 language SIG. This means onboarding a new language does not require any
 additional project-level staffing.
 
+While the v1 deliverables are time-boxed, the repository and dashboard are
+long-lived and need ongoing maintenance once v1 ships: the shared parts
+(scenarios, workflows, dashboard, top-level docs) are maintained by the
+repository maintainers above, and each per-language harness is maintained by
+its SIG's approvers via `CODEOWNERS`. Maintainers can be added as interest
+grows, and the standard emeritus process applies if one steps down, so the
+shared infrastructure stays staffed beyond the initial v1 effort.
+
 ## Timeline
 
 Once OTEP 5109 is accepted, the repository can be created and v1 wrapped
