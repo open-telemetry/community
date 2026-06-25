@@ -226,9 +226,9 @@ OpenTelemetry website.
 From the publication of the official list of nominees up until the closing of
 elections, OpenTelemetry-sponsored social media content must not feature or
 promote any particular candidate above others. Additionally, OpenTelemetry
-website publications authored by a candidate in that period must be approved by
-a majority of existing Governance Committee members who are not running in those
-elections.
+website publications (e.g. blog posts) authored by a candidate in that period must
+be approved by a majority of existing Governance Committee members who are not
+running in those elections.
 
 ## Refactoring or reforming the governance committee
 
