@@ -217,11 +217,11 @@ All campaigning must follow the Code of Conduct and community values. In particu
 it should not be disruptive to the normal functioning of community spaces or take an
 excessive amount of time.
 
-Community members, including candidates, are free to campaign under these conditions
-(e.g., ask others to vote for a particular candidate) in community OpenTelemetry
-spaces (e.g., Slack channels, SIG meetings) outside of Github and official,
-public-facing content such as OpenTelemetry-sponsored social media content or the
-OpenTelemetry website.
+Community members, including candidates, are free to campaign under these
+conditions (e.g., ask others to vote for a particular candidate) in some
+community OpenTelemetry spaces (e.g., Slack channels, SIG meetings). Campaigning
+on Github, in OpenTelemetry-sponsored social media content or in the
+OpenTelemetry website is not allowed.
 
 From the publication of the official list of nominees up until the closing of
 elections, OpenTelemetry-sponsored social media content must not feature or
