@@ -26,6 +26,16 @@ gives the project a single, citable answer to "how does OTel perform across
 languages, and how is that changing over time?" without each SIG having to
 give up its own internal CI benchmarking.
 
+Most language SIGs already run their own benchmarks; a few (e.g. JavaScript
+and Python) also publish them to their language docs on opentelemetry.io.
+This project does not change that: each SIG continues to own and run its own
+benchmarks, and may publish them to its language docs as it sees fit. The
+central repository adds one common, cross-language page built on standardized
+scenarios (starting with S1), so the same scenario can be compared across
+implementations. Migrating existing per-language benchmark pages into the
+central dashboard is out of scope for v1. The Collector benchmark is likewise
+out of scope: this project covers language API/SDK implementations.
+
 ## Why It Matters
 
 OpenTelemetry's
