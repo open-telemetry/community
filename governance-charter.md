@@ -219,7 +219,7 @@ excessive amount of time.
 
 Community members, including candidates, are free to campaign under these conditions
 (e.g., ask others to vote for a particular candidate) in community OpenTelemetry
-spaces (e.g., Slack channels, GitHub repos, SIG meetings) outside of official,
+spaces (e.g., Slack channels, SIG meetings) outside of Github and official,
 public-facing content such as OpenTelemetry-sponsored social media content or the
 OpenTelemetry website.
 
