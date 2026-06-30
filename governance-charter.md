@@ -214,7 +214,7 @@ treated as "brand free" activities.
 ### Campaigning guidance
 
 All campaigning must follow the Code of Conduct and community values. In particular,
-it should not be disruptive to the normal functioning of community spaces or take an
+it should not be disruptive to the normal functioning of community spaces or take up an
 excessive amount of time.
 
 Community members, including candidates, are free to campaign under these
