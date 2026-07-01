@@ -27,7 +27,7 @@ in alphabetical order:
 <!-- tc -->
 - [Armin Ruech](https://github.com/arminru), Dynatrace
 - [Bogdan Drutu](https://github.com/bogdandrutu), Snowflake
-- [Carlos Alberto Cortez](https://github.com/carlosalberto), Lightstep
+- [Carlos Alberto Cortez](https://github.com/carlosalberto), Dash0
 - [David Ashpole](https://github.com/dashpole), Google
 - [Jack Berg](https://github.com/jack-berg), Grafana Labs
 - [Joshua MacDonald](https://github.com/jmacd), Microsoft
