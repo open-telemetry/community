@@ -62,10 +62,10 @@ def additional_repository_details(repos):
         return ""
 
     items = "".join(
-        f"<li><a href=\"https://github.com/{repo}\">{repo.split('/')[-1]}</a></li>"
+        f"<li><sub><a href=\"https://github.com/{repo}\">{repo.split('/')[-1]}</a></sub></li>"
         for repo in repos[1:]
     )
-    return f"<details><summary>(more)</summary><ul>{items}</ul></details>"
+    return f"<details><summary><sub>(more)</sub></summary><ul>{items}</ul></details>"
 
 
 def extract_row_data(ws):
