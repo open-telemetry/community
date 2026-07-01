@@ -49,11 +49,23 @@ def sig_short_name(ws):
     return None
 
 
-def first_repository(ws):
+def repositories(ws):
+    repos = []
     for res in ws.get("resources", []):
         if "repository" in res:
-            return res["repository"]
-    return None
+            repos.append(res["repository"])
+    return repos
+
+
+def additional_repository_details(repos):
+    if len(repos) <= 1:
+        return ""
+
+    items = "".join(
+        f"<li><a href=\"https://github.com/{repo}\">{repo.split('/')[-1]}</a></li>"
+        for repo in repos[1:]
+    )
+    return f"<details><summary>(more)</summary><ul>{items}</ul></details>"
 
 
 def extract_row_data(ws):
@@ -140,14 +152,17 @@ def render_group(group_name, sigs, show_sponsors, link_repo=False):
 
     for ws in sigs:
         name = ws["name"]
-        repo = first_repository(ws)
+        repos = repositories(ws)
+        repo = repos[0] if repos else None
         short_name = sig_short_name(ws)
         meeting, notes, chats, calendar, sponsors, gc = extract_row_data(ws)
 
         if short_name:
+            repo_details = ""
             if link_repo and repo:
                 name = f"[{name}](https://github.com/{repo})"
-            name_cell = f"{name}&nbsp;<a id=\"{short_name}\" href=\"#{short_name}\"><sup>🔗</sup></a>"
+                repo_details = additional_repository_details(repos)
+            name_cell = f"{name}&nbsp;<a id=\"{short_name}\" href=\"#{short_name}\"><sup>🔗</sup></a>{repo_details}"
         else:
             name_cell = name
 
