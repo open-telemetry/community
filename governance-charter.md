@@ -220,7 +220,7 @@ excessive amount of time.
 Community members, including candidates, are free to campaign under these
 conditions (e.g., ask others to vote for a particular candidate) in some
 community OpenTelemetry spaces (e.g., Slack channels, SIG meetings). Campaigning
-on Github, in OpenTelemetry-sponsored social media content or in the
+on Github, in OpenTelemetry-sponsored social media content or on the
 OpenTelemetry website is not allowed.
 
 From the publication of the official list of nominees up until the closing of
