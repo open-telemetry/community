@@ -132,6 +132,7 @@ See [Project Staffing](/project-management.md#project-staffing)
 - **@jaronoff97** (Tero) – Maintainer
 - **@jsuereth** (Google) – Maintainer
 - **@dashpole** (Google) – Maintainer
+- **@menderico** (Google) – Maintainer
 - **@jackshirazi** (Elastic) – Maintainer
 
 #### Other Staffing
