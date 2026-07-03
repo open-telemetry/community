@@ -165,3 +165,17 @@ asked.
 Join `#opentelemetry` in the [CNCF Slack](https://slack.cncf.io/), or open an
 issue in the [community repository](https://github.com/open-telemetry/community/).
 We're glad you're here.
+
+## Appendix: Disclaimer
+
+To make your group's unofficial status clear, please add a disclaimer to your
+group's spaces (e.g. Slack channel topic, repository README, or event
+descriptions). You're welcome to copy the following:
+
+```md
+> [!NOTE]
+>
+> This is an [OpenTelemetry User Group](https://github.com/open-telemetry/community/blob/main/guides/contributor/user-groups.md).
+> It is not an official body within the OpenTelemetry project. It is subject to
+> the [CNCF Code of Conduct](https://github.com/open-telemetry/community/blob/main/code-of-conduct.md).
+```
