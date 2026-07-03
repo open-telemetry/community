@@ -486,7 +486,7 @@ SIG-specific `otelbot` apps are on the EasyCLA allowlist.
 - Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
 Use the [`create_otelbot_app.py`](https://github.com/open-telemetry/admin/blob/main/scripts/create_otelbot_app.py) script to create a new SIG-specific otelbot.
-Note: `open-telemetry/admin` is a private repository.
+Note: `open-telemetry/admin` is a private repository, accessible only for OpenTelemetry maintainers.
 
 ### `@opentelemetrybot` GitHub user
 
