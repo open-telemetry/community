@@ -461,10 +461,10 @@ SIG-specific `otelbot` apps are on the EasyCLA allowlist.
 ```yaml
 # Pattern follows the official actions/create-github-app-token example:
 # https://github.com/actions/create-github-app-token#configure-git-cli-for-an-apps-bot-user
-- uses: actions/create-github-app-token@v1
+- uses: actions/create-github-app-token@v3
   id: app-token
   with:
-    app-id: ${{ vars.OTELBOT_JAVA_CONTRIB_APP_ID }}
+    client-id: ${{ vars.OTELBOT_JAVA_CONTRIB_CLIENT_ID }}
     private-key: ${{ secrets.OTELBOT_JAVA_CONTRIB_PRIVATE_KEY }}
 
 - name: Get GitHub App User ID
@@ -484,6 +484,9 @@ SIG-specific `otelbot` apps are on the EasyCLA allowlist.
 ```
 
 - Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+
+Use the [`create_otelbot_app.py`](https://github.com/open-telemetry/admin/blob/main/scripts/create_otelbot_app.py) script to create a new SIG-specific otelbot.
+Note: `open-telemetry/admin` is a private repository.
 
 ### `@opentelemetrybot` GitHub user
 
