@@ -48,6 +48,7 @@ def discover_workflows(owner: str) -> list[tuple[str, str]]:
             "--limit", "1000",
         ],
         capture_output=True, text=True, encoding="utf-8", errors="replace",
+        timeout=120,
     )
     if proc.returncode != 0:
         raise RuntimeError(f"gh search code: {proc.stderr}")
@@ -149,7 +150,7 @@ def collect_jobs(
         )
         try:
             runs = list(gh_paginated(runs_path, "workflow_runs"))
-        except RuntimeError as e:
+        except Exception as e:
             msg = str(e).strip()
             errors.append(f"{repo} {wf_file}: {msg}")
             print(f"    ! {msg}", file=sys.stderr)
@@ -239,6 +240,8 @@ def main() -> int:
     p.add_argument("--owner", default="open-telemetry")
     p.add_argument("--output", default="baremetal-runner-report.md")
     args = p.parse_args()
+    if args.jobs_concurrency < 1:
+        p.error("--jobs-concurrency must be at least 1")
 
     now = datetime.now(timezone.utc)
     max_days = max(args.windows)
