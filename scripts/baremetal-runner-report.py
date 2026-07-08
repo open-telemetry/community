@@ -58,7 +58,10 @@ def discover_workflows(owner: str) -> list[tuple[str, str]]:
         path = result.get("path")
         if not repo or not path:
             continue
-        workflows.add((repo, os.path.basename(path)))
+        dirname, filename = os.path.split(path)
+        if dirname != ".github/workflows" or not filename.endswith((".yml", ".yaml")):
+            continue
+        workflows.add((repo, filename))
     return sorted(workflows)
 
 
