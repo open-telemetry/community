@@ -11,29 +11,15 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from typing import Iterable
 
 BAREMETAL_LABEL_PREFIX = "oracle-bare-metal"
-
-# (repo, workflow file path) — discovered via:
-#   gh search code 'oracle-bare-metal path:.github/workflows' --owner open-telemetry
-WORKFLOWS = [
-    ("open-telemetry/opentelemetry-go", "benchmark.yml"),
-    ("open-telemetry/opentelemetry-java", "benchmark-tags.yml"),
-    ("open-telemetry/opentelemetry-java", "benchmark.yml"),
-    ("open-telemetry/opentelemetry-python", "benchmarks.yml"),
-    ("open-telemetry/opentelemetry-rust", "benchmark.yml"),
-    ("open-telemetry/opentelemetry-js", "benchmark.yml"),
-    ("open-telemetry/opentelemetry-collector-contrib", "load-tests.yml"),
-    ("open-telemetry/otel-arrow", "pipeline-perf-on-label.yaml"),
-    ("open-telemetry/otel-arrow", "pipeline-perf-test-manual-pr.yaml"),
-    ("open-telemetry/otel-arrow", "pipeline-perf-test-continuous.yml"),
-    ("open-telemetry/otel-arrow", "pipeline-perf-test-nightly.yml"),
-]
 
 
 def gh_paginated(path: str, list_key: str) -> Iterable[dict]:
@@ -42,6 +28,7 @@ def gh_paginated(path: str, list_key: str) -> Iterable[dict]:
          "-H", "Accept: application/vnd.github+json",
          "--jq", f".{list_key}[]", path],
         capture_output=True, text=True, encoding="utf-8", errors="replace",
+        timeout=120,
     )
     if proc.returncode != 0:
         raise RuntimeError(f"gh api {path}: {proc.stderr}")
@@ -49,6 +36,29 @@ def gh_paginated(path: str, list_key: str) -> Iterable[dict]:
         line = line.strip()
         if line:
             yield json.loads(line)
+
+
+def discover_workflows(owner: str) -> list[tuple[str, str]]:
+    proc = subprocess.run(
+        [
+            "gh", "search", "code",
+            f"{BAREMETAL_LABEL_PREFIX} path:.github/workflows",
+            "--owner", owner,
+            "--json", "repository,path",
+            "--limit", "1000",
+        ],
+        capture_output=True, text=True, encoding="utf-8", errors="replace",
+    )
+    if proc.returncode != 0:
+        raise RuntimeError(f"gh search code: {proc.stderr}")
+    workflows = set()
+    for result in json.loads(proc.stdout or "[]"):
+        repo = result.get("repository", {}).get("nameWithOwner")
+        path = result.get("path")
+        if not repo or not path:
+            continue
+        workflows.add((repo, os.path.basename(path)))
+    return sorted(workflows)
 
 
 def parse_iso(ts: str) -> datetime:
@@ -66,11 +76,72 @@ def fmt_dur(seconds: float) -> str:
     return f"{s}s"
 
 
-def collect_jobs(since: datetime) -> list[dict]:
+def workflow_url(repo: str, wf_file: str) -> str:
+    return f"https://github.com/{repo}/blob/main/.github/workflows/{wf_file}"
+
+
+def collect_run_jobs(repo: str, wf_file: str, run: dict) -> tuple[list[dict], str | None]:
+    records: list[dict] = []
+    run_id = run["id"]
+    wf_name = run.get("name") or wf_file
+    run_started_at = run.get("run_started_at") or run.get("created_at")
+    try:
+        jobs = list(gh_paginated(
+            f"/repos/{repo}/actions/runs/{run_id}/jobs?per_page=100",
+            "jobs",
+        ))
+    except Exception as e:
+        return records, f"{repo} {wf_file} run {run_id}: {str(e).strip()}"
+    for job in jobs:
+        labels = job.get("labels") or []
+        if not any(
+            isinstance(lbl, str) and lbl.startswith(BAREMETAL_LABEL_PREFIX)
+            for lbl in labels
+        ):
+            continue
+        if job.get("conclusion") in ("skipped", "neutral"):
+            continue
+        if not (job.get("runner_name") and job.get("runner_group_id")):
+            continue
+        started, completed = job.get("started_at"), job.get("completed_at")
+        if not started or not completed:
+            continue
+        try:
+            started_dt = parse_iso(started)
+            dur = (parse_iso(completed) - started_dt).total_seconds()
+        except ValueError:
+            continue
+        if dur <= 0:
+            continue
+        qwait = 0.0
+        if run_started_at:
+            try:
+                qwait = max(
+                    0.0,
+                    (started_dt - parse_iso(run_started_at)).total_seconds(),
+                )
+            except ValueError:
+                qwait = 0.0
+        records.append({
+            "repo": repo,
+            "wf_file": wf_file,
+            "wf_name": wf_name,
+            "run_id": run_id,
+            "started": started_dt,
+            "duration": dur,
+            "qwait": qwait,
+        })
+    return records, None
+
+
+def collect_jobs(
+    workflows: list[tuple[str, str]], since: datetime, jobs_concurrency: int,
+) -> tuple[list[dict], list[str]]:
     """Return per-job records for every bare-metal job since `since`."""
     since_q = since.strftime("%Y-%m-%dT%H:%M:%SZ")
     records: list[dict] = []
-    for repo, wf_file in WORKFLOWS:
+    errors: list[str] = []
+    for repo, wf_file in workflows:
         print(f"  - {repo} :: {wf_file}", file=sys.stderr)
         runs_path = (
             f"/repos/{repo}/actions/workflows/{wf_file}/runs"
@@ -79,60 +150,25 @@ def collect_jobs(since: datetime) -> list[dict]:
         try:
             runs = list(gh_paginated(runs_path, "workflow_runs"))
         except RuntimeError as e:
-            print(f"    ! {e}", file=sys.stderr)
+            msg = str(e).strip()
+            errors.append(f"{repo} {wf_file}: {msg}")
+            print(f"    ! {msg}", file=sys.stderr)
             continue
-        for run in runs:
-            run_id = run["id"]
-            wf_name = run.get("name") or wf_file
-            run_started_at = run.get("run_started_at") or run.get("created_at")
-            try:
-                jobs = list(gh_paginated(
-                    f"/repos/{repo}/actions/runs/{run_id}/jobs?per_page=100",
-                    "jobs",
-                ))
-            except RuntimeError as e:
-                print(f"    ! run {run_id}: {e}", file=sys.stderr)
-                continue
-            for job in jobs:
-                labels = job.get("labels") or []
-                if not any(
-                    isinstance(lbl, str) and lbl.startswith(BAREMETAL_LABEL_PREFIX)
-                    for lbl in labels
-                ):
-                    continue
-                if job.get("conclusion") in ("skipped", "neutral"):
-                    continue
-                if not (job.get("runner_name") and job.get("runner_group_id")):
-                    continue
-                started, completed = job.get("started_at"), job.get("completed_at")
-                if not started or not completed:
-                    continue
-                try:
-                    dur = (parse_iso(completed) - parse_iso(started)).total_seconds()
-                except ValueError:
-                    continue
-                if dur <= 0:
-                    continue
-                qwait = 0.0
-                if run_started_at:
-                    try:
-                        qwait = max(
-                            0.0,
-                            (parse_iso(started) - parse_iso(run_started_at))
-                            .total_seconds(),
-                        )
-                    except ValueError:
-                        qwait = 0.0
-                records.append({
-                    "repo": repo,
-                    "wf_file": wf_file,
-                    "wf_name": wf_name,
-                    "run_id": run_id,
-                    "started": parse_iso(started),
-                    "duration": dur,
-                    "qwait": qwait,
-                })
-    return records
+        print(f"    {len(runs)} workflow runs", file=sys.stderr)
+        with ThreadPoolExecutor(max_workers=jobs_concurrency) as executor:
+            futures = [
+                executor.submit(collect_run_jobs, repo, wf_file, run)
+                for run in runs
+            ]
+            for index, future in enumerate(as_completed(futures), 1):
+                run_records, error = future.result()
+                records.extend(run_records)
+                if error:
+                    errors.append(error)
+                    print(f"    ! {error}", file=sys.stderr)
+                if index % 50 == 0 or index == len(futures):
+                    print(f"    processed {index}/{len(futures)} runs", file=sys.stderr)
+    return records, errors
 
 
 def render_table(records: list[dict], since: datetime) -> str:
@@ -164,9 +200,7 @@ def render_table(records: list[dict], since: datetime) -> str:
         avg = v["total"] / n_runs if n_runs else 0
         max_run = max(v["run_totals"].values(), default=0.0)
         repo_short = repo.split("/", 1)[1] if "/" in repo else repo
-        wf_link = (
-            f"https://github.com/{repo}/blob/main/.github/workflows/{wf_file}"
-        )
+        wf_link = workflow_url(repo, wf_file)
         out.append(
             f"| {repo_short} | [`{wf_file}`]({wf_link}) | "
             f"{n_runs} | {fmt_dur(v['total'])} | {fmt_dur(avg)} | "
@@ -175,12 +209,34 @@ def render_table(records: list[dict], since: datetime) -> str:
     return "\n".join(out)
 
 
+def render_workflows(workflows: list[tuple[str, str]]) -> str:
+    lines = ["## Discovered workflow files", ""]
+    for repo, wf_file in workflows:
+        repo_short = repo.split("/", 1)[1] if "/" in repo else repo
+        lines.append(f"- {repo_short}: [`{wf_file}`]({workflow_url(repo, wf_file)})")
+    return "\n".join(lines)
+
+
+def render_collection_notes(errors: list[str]) -> str:
+    if not errors:
+        return "## Collection notes\n\nNo API collection errors."
+    lines = ["## Collection notes", "", "The report skipped these API calls:"]
+    for error in errors:
+        lines.append(f"- {error}")
+    return "\n".join(lines)
+
+
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument(
         "--windows", type=int, nargs="+", default=[7, 30],
         help="One or more day windows to emit tables for.",
     )
+    p.add_argument(
+        "--jobs-concurrency", type=int, default=12,
+        help="Number of concurrent run job API calls.",
+    )
+    p.add_argument("--owner", default="open-telemetry")
     p.add_argument("--output", default="baremetal-runner-report.md")
     args = p.parse_args()
 
@@ -188,12 +244,23 @@ def main() -> int:
     max_days = max(args.windows)
     since_max = now - timedelta(days=max_days)
 
+    workflows = discover_workflows(args.owner)
+    print(f"Discovered {len(workflows)} bare-metal workflow files", file=sys.stderr)
     print(f"Fetching jobs since {since_max.isoformat()} "
           f"(max window {max_days} days)", file=sys.stderr)
-    records = collect_jobs(since_max)
+    records, errors = collect_jobs(workflows, since_max, args.jobs_concurrency)
     print(f"Collected {len(records)} bare-metal job records", file=sys.stderr)
 
-    sections: list[str] = []
+    sections: list[str] = [
+        "# Bare-metal runner report",
+        "",
+        f"Generated: {now.isoformat()}",
+        "",
+        render_workflows(workflows),
+        "",
+        render_collection_notes(errors),
+        "",
+    ]
     for days in sorted(args.windows):
         since = now - timedelta(days=days)
         sections.append(f"## Last {days} days")
