@@ -102,9 +102,9 @@ And set admin@opentelemetry.io's own subscription to "No email" under the member
 This allows anyone to subscribe to this specific meeting series by joining that google group.
 Please open a community issue to request the creation of a `calendar-...@opentelemetry.io` google group.
 
-### Update the meetings overview
+### Update SIG meeting information
 
-All recurring meetings are listed in the [Community repo's README](../README.md#special-interest-groups), make sure to add/update the respective entry there.
+See [Updating SIG information](../CONTRIBUTING.md#updating-sig-information) to update the [SIG overview](../README.md#special-interest-groups) and [SIG details](../sigs.md) pages.
 
 ## Zoom abuse prevention
 
