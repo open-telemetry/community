@@ -250,7 +250,7 @@ CNCF are the owners of the group, so certain requests (e.g. adding/removing orga
 * CNCF Service Desk
 * https://github.com/cncf/communitygroups/issues
 
-Link: https://community.cncf.io/opentelemetry-live/
+Link: https://ocgroups.dev/cncf/group/opentelemetry-live
 
 - Owners: CNCF
 - Lead Organizers (i.e. admins):
