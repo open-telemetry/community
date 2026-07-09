@@ -43,6 +43,7 @@ def discover_workflows(owner: str) -> list[tuple[str, str]]:
         [
             "gh", "search", "code",
             f"{BAREMETAL_LABEL_PREFIX} path:.github/workflows",
+            "--language", "YAML",
             "--owner", owner,
             "--json", "repository,path",
             "--limit", "1000",
