@@ -86,7 +86,7 @@ To create a new Zoom meeting on the Project Control Center, follow these instruc
 2. Click on the top right on Tools and click on "Project Control Center"
 3. On the left-hand column, click on "Collaboration", then "Meetings", then "Add Meeting"
 4. Fill in the meeting details and make sure to select the following options:
-    - Select "Add to public calendar" if it makes sense
+    - Select "Show in Public Calendar" if it makes sense
     - Deselect "Restrict to invited users"
     - Select "Auto-record from meeting start + generate transcript"
     - Leave participants list empty
