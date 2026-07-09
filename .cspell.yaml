@@ -78,6 +78,7 @@ words:
   - k8sclusterreceiver
   - Langfuse
   - Langtrace
+  - LFPCC
   - liatrio
   - lightstep
   - logz
