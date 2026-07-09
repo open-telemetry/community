@@ -411,6 +411,7 @@
   - slack:
       name: '#otel-browser'
       id: C093P0AMP0T
+  - repository: open-telemetry/opentelemetry-browser
   - roadmapProject: 146
 - id: collector
   kind: sig

@@ -204,6 +204,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1G3yBAV5SzWBO3mmsBUos5bsn4yxsqkS1MLWl1urVojQ)
 - **Meeting invites group:** [calendar-browser](https://groups.google.com/a/opentelemetry.io/g/calendar-browser)
 - **Slack channel:** [#otel-browser](https://cloud-native.slack.com/archives/C093P0AMP0T)
+- **Repositories:** [open-telemetry/opentelemetry-browser](https://github.com/open-telemetry/opentelemetry-browser)
 - **Roadmap projects:** [Browser roadmap](https://github.com/orgs/open-telemetry/projects/146)
 - **Technical Committee sponsors:** [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating)
 - **Spec sponsors:** [Daniel Dyla](https://github.com/dyladan), [Ted Young](https://github.com/tedsuo)
