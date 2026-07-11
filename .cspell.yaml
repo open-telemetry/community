@@ -18,6 +18,8 @@ ignoreRegExpList:
   - GitHub Handle in YML
 words:
   - Abinet
+  - Adriel
+  - adrielp
   - agentic
   - Alain
   - Alff
@@ -27,9 +29,11 @@ words:
   - austinlparker
   - automations
   - Baeyens
+  - Bronto
   - calendar-localization-ptbr
   - Causely
   - Cheler
+  - cijothomas
   - Ciukaj
   - Collibra
   - Coralogix
@@ -74,6 +78,7 @@ words:
   - k8sclusterreceiver
   - Langfuse
   - Langtrace
+  - LFPCC
   - liatrio
   - lightstep
   - logz

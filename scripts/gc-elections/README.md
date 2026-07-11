@@ -14,7 +14,7 @@ Although not required, it is recommended to set a `GITHUB_TOKEN` environment var
 Example usage:
 ```bash
 export GITHUB_TOKEN=your_token_here
-python generate-voters-roll.py
+python scripts/gc-elections/generate-voters-roll.py
 ```
 
 ## 2. Create GitHub comments
@@ -30,13 +30,13 @@ For this script to work, you must have the GitHub CLI (`gh`) installed and authe
 
 Example usage:
 ```bash
-./create-github-comments.sh -i https://github.com/open-telemetry/community/issues/1173 -d true
+bash scripts/gc-elections/create-github-comments.sh -i https://github.com/open-telemetry/community/issues/1173 -d true
 ```
 
 ## 3. Convert voters roll to Helios format
-The `convert-voters-roll-to-helios.py` script converts the voters roll file indicated by `$VOTERS_ROLL_PATH` to a format accepted by Helios Voting. It generates a new CSV file in `$VOTERS_ROLL_HELIOS_PATH`  with the GitHub logins of the eligible voters for the upcoming elections.
+The `convert-voter-roll-to-helios.py` script converts the voters roll file indicated by `$VOTERS_ROLL_PATH` to a format accepted by Helios Voting. It generates a new CSV file in `$VOTERS_ROLL_HELIOS_PATH`  with the GitHub logins of the eligible voters for the upcoming elections.
 
 Example usage:
 ```bash
-python convert-voters-roll-to-helios.py
+python scripts/gc-elections/convert-voter-roll-to-helios.py
 ```

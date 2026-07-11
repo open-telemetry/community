@@ -250,7 +250,7 @@ CNCF are the owners of the group, so certain requests (e.g. adding/removing orga
 * CNCF Service Desk
 * https://github.com/cncf/communitygroups/issues
 
-Link: https://community.cncf.io/opentelemetry-live/
+Link: https://ocgroups.dev/cncf/group/opentelemetry-live
 
 - Owners: CNCF
 - Lead Organizers (i.e. admins):
@@ -419,13 +419,12 @@ This GitHub App addresses two common issues:
    > [!WARNING]
    > Branch protection rule **ordering** matters, so you will need to delete the `**/**` branch protection rule temporarily, then add the `otelbot/**/*` branch protection rule, then add back the `**/**` branch protection rule.
 
-2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside a [GitHub Action], workflows
-   will not run on that new pull request without closing and re-opening it manually (this limitation is in place to
-   prevent accidental recursive workflow runs).
+2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside a [GitHub Action], workflows on that pull request
+   require approval from a user with write access to the repository before they can run.
 
    The OpenTelemetry GitHub organization has a GitHub Action secret (`OTELBOT_PRIVATE_KEY`)
    and a GitHub Action variable `OTELBOT_APP_ID` that can be used to create a GitHub App token
-   which will bypass this limitation, e.g.
+   which will bypass this manual approval step, e.g.
 
    ```
    - uses: actions/create-github-app-token@v1
@@ -436,7 +435,7 @@ This GitHub App addresses two common issues:
 
    - name: Create pull request
      env:
-       # not using secrets.GITHUB_TOKEN since pull requests from that token do not trigger workflows
+       # using a GitHub App token so workflows run automatically without requiring manual approval
        GH_TOKEN: ${{ steps.app-token.outputs.token }}
      run: ...
    ```
@@ -462,10 +461,10 @@ SIG-specific `otelbot` apps are on the EasyCLA allowlist.
 ```yaml
 # Pattern follows the official actions/create-github-app-token example:
 # https://github.com/actions/create-github-app-token#configure-git-cli-for-an-apps-bot-user
-- uses: actions/create-github-app-token@v1
+- uses: actions/create-github-app-token@v3
   id: app-token
   with:
-    app-id: ${{ vars.OTELBOT_JAVA_CONTRIB_APP_ID }}
+    client-id: ${{ vars.OTELBOT_JAVA_CONTRIB_CLIENT_ID }}
     private-key: ${{ secrets.OTELBOT_JAVA_CONTRIB_PRIVATE_KEY }}
 
 - name: Get GitHub App User ID
@@ -485,6 +484,9 @@ SIG-specific `otelbot` apps are on the EasyCLA allowlist.
 ```
 
 - Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+
+Use the [`create_otelbot_app.py`](https://github.com/open-telemetry/admin/blob/main/scripts/create_otelbot_app.py) script to create a new SIG-specific otelbot.
+Note: `open-telemetry/admin` is a private repository, accessible only for OpenTelemetry maintainers.
 
 ### `@opentelemetrybot` GitHub user
 
@@ -521,3 +523,21 @@ GitHub repository](https://github.com/open-telemetry/sig-security).
 
 * Advisories Dashboard
 * Snyk
+
+## GitHub Action Observability Infrastructure
+
+All GitHub actions emit webhook events through a GitHub application to an
+OpenTelemetry collector hosted in a Kubernetes cluster within Oracle Cloud. The
+events are converted to traces and sent to a Honeycomb Open Source account.
+
+- The infrastructure as code exists in the
+  [adrielp/otel-o11y-infra](https://github.com/adrielp/otel-o11y-infra) private
+  repository.
+- The GitHub app exists within the OpenTelemetry GitHub account. It is managed
+  by OpenTelemetry organization admins and [Adriel
+  Perkins](https://github.com/adrielp)
+- The webhook endpoint goes through a CloudFlare Zero Trust account owned by
+  Adriel Perkins.
+- The Kubernetes cluster is currently hosted in OpenTelemetry's Oracle Cloud
+  Account on a dedicated Virtual Machine.
+
