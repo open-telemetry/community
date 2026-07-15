@@ -67,8 +67,9 @@ foundation the rest of the ecosystem can build on.
 **Goals:**
 
 - Deliver a small scoped set of stable policies — **sampling, filtering, and
-  transformation** — that work consistently across OpenTelemetry. Additional
-  policy types can be added iteratively once these are successful.
+  scoped transformations** — that work consistently across OpenTelemetry. More
+  transform types and additional policy types can be added iteratively once
+  these are successful.
 - Split and stabilize the specification into two documents: a **data model**
   specification (the policy schema, matchers, and actions) and an
   **enforcement** specification (how a component evaluates policies, including
@@ -118,9 +119,8 @@ that can be enforced anywhere in the pipeline.
   across logs, metrics, and traces (not a translation into existing Collector
   configuration), including fail-open handling and match tracking.
 - **Experimental policies** for the initial scope: **sampling, filtering, and
-  attribute sanitization**. These are the crisp deliverables that let us prove
-  the model quickly; transformation and other policy types are deferred and
-  added iteratively.
+  scoped transformations**. Additional transform types for things like
+  datapoints and other policy types are deferred and added iteratively.
 - **Applied-policy reporting.** Scope and formalize how a component reports
   which policies are actually in effect — for example an OpAMP status tagged by
   policy version/UUID, or self-observability signals for SDKs — so operators can
