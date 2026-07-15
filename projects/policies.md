@@ -10,16 +10,25 @@ telemetry components process data. A Policy is an atomic, self-contained rule
 that declares a single intent — "match specific telemetry and apply an action" —
 and can be evaluated identically regardless of where it runs.
 
-Because Policies are self-contained, independent, and can be evaluated in
-parallel and scaled to thousands of rules without degradation. The same policy
-behaves the same way whether it executes inside an SDK, a Collector, or any
-other specification-compliant component, and policies are designed to be defined
+Policies are self-contained, independent, and can be evaluated in parallel and
+scaled to thousands of rules without degradation. The same policy behaves the
+same way whether it executes inside an SDK, a Collector, or any other
+specification-compliant component, and policies are designed to be defined
 centrally and distributed to running systems.
 
 This project coordinates the initial work needed to move Policies from an
-accepted OTEP to an accepted specification: defining the specification, defining
-the canonical Protobuf schemas, and building an initial prototype in the
-Collector for validation.
+accepted OTEP into stable, usable policies people can rely on across
+OpenTelemetry. Concretely, that means defining the data model and enforcement
+specifications, defining the canonical Protobuf schemas, and shipping an **alpha
+OpenTelemetry Collector component** that natively interprets and enforces
+Policies. There are existing policy implementations already found in
+[java-contrib](https://github.com/open-telemetry/opentelemetry-java-contrib) and
+Tero's Policy work ([1](https://github.com/usetero/policy),
+[2](https://github.com/usetero/policy-go),
+[3](https://github.com/usetero/policy-zig)) that this project can build on as a
+second implementation. "Done" for this project is a small set of stable policies
+you can interact with; the components and features we need fall out from making
+those policies successful.
 
 ### Current challenges
 
@@ -57,17 +66,26 @@ foundation the rest of the ecosystem can build on.
 
 **Goals:**
 
-- Refine and stabilize the Policy specification so that it is general, minimal,
-  and implementable consistently across logs, metrics, and traces.
+- Deliver a small scoped set of stable policies — **sampling, filtering, and
+  transformation** — that work consistently across OpenTelemetry. Additional
+  policy types can be added iteratively once these are successful.
+- Split and stabilize the specification into two documents: a **data model**
+  specification (the policy schema, matchers, and actions) and an
+  **enforcement** specification (how a component evaluates policies, including
+  the two-stage match then keep & transform model and the core guarantees).
+  Enforcment should also describe and require a set of conformance tests to
+  ensure that implementations are consistent.
 - Define the canonical Protobuf schema for Policies, with a human-authorable
   YAML representation and bidirectional conversion (including shorthand forms).
-- Build an initial prototype in the OpenTelemetry Collector that evaluates
-  policies through the two-stage model (match, then keep & transform) and honors
-  the core guarantees: atomicity, fail-open behavior, idempotence, and
-  data-model-based field references for portability.
-- Establish match tracking (hits/misses) so operators can observe policy
-  effectiveness.
-- Validate that the same policy semantics can later be implemented in SDKs.
+- Ship an alpha OpenTelemetry Collector component that **natively interprets and
+  enforces** policies (rather than translating them into existing Collector
+  configuration), honoring the core guarantees: atomicity, fail-open behavior,
+  idempotence, and data-model-based field references for portability.
+- Use the host component's existing self-observability (e.g. Collector processor
+  self-obs metrics) to expose policy match tracking (hits/misses) so operators
+  can observe policy effectiveness, and scope out how a component reports
+  _which_ policies are applied (e.g. an OpAMP status tagged by policy
+  version/UUID, or self-observability signals for SDKs).
 
 **Requirements the model must preserve:**
 
@@ -79,35 +97,43 @@ foundation the rest of the ecosystem can build on.
   runs identically across conformant runtimes.
 
 **Why now:** the OTEP has just merged and there is broad interest across SIGs.
-Coordinating the specification, schema, and a reference prototype now delivers
-immediately on the goals of the OTEP. Delivering this gives OpenTelemetry a
-common, governable way to express telemetry-processing intent that can be
-enforced anywhere in the pipeline.
+Coordinating the specification, schema, and an alpha Collector component now
+delivers immediately on the goals of the OTEP. Delivering this gives
+OpenTelemetry a common, governable way to express telemetry-processing intent
+that can be enforced anywhere in the pipeline.
 
 ## Deliverables
 
-- **Policy specification refinements.** Iterate on the merged OTEP into
-  specification text covering the two-stage execution model (match; keep &
-  transform), the matcher system (field selectors, match types, options,
-  `AttributePath` nested traversal), keep/sampling semantics for logs, metrics,
-  and traces, transform operations (remove, redact, rename, add), precedence
-  (most-restrictive-wins), and the error-handling taxonomy (parse, compilation,
-  runtime).
+- **Data model specification.** The policy schema itself: the matcher system
+  (field selectors, match types, options, `AttributePath` nested traversal),
+  actions, keep/sampling semantics for logs, metrics, and traces, and precedence
+  (most-restrictive-wins).
+- **Enforcement specification.** How a component evaluates policies: the
+  two-stage execution model (match; then keep & transform), the core guarantees
+  (atomicity, fail-open, idempotence, portability), and the error-handling
+  taxonomy (parse, compilation, runtime).
 - **Canonical Protobuf schema** for Policies, plus the YAML authoring format and
   documented bidirectional conversion including shorthand forms.
-- **Collector prototype** implementing policy evaluation across logs, metrics,
-  and traces, including fail-open handling and match tracking.
-- **Example policies** demonstrating transformation, sampling, and attribute
-  sanitization/redaction.
+- **Alpha Collector component** that natively interprets and enforces policies
+  across logs, metrics, and traces (not a translation into existing Collector
+  configuration), including fail-open handling and match tracking.
+- **Experimental policies** for the initial scope: **sampling, filtering, and
+  attribute sanitization**. These are the crisp deliverables that let us prove
+  the model quickly; transformation and other policy types are deferred and
+  added iteratively.
+- **Applied-policy reporting.** Scope and formalize how a component reports
+  which policies are actually in effect — for example an OpAMP status tagged by
+  policy version/UUID, or self-observability signals for SDKs — so operators can
+  see what is applied to a given instance.
 - **Integration direction** documenting how Policies relate to distribution
   mechanisms (e.g. OpAMP, the OpenTelemetry Operator) and to policy composition
   ("merger") — with dynamic distribution intentionally kept separate from core
   policy semantics so both can iterate independently.
 
-Per OTEP requirements, specification work will be backed by working prototypes
-in at least two languages/components before an OTEP for any follow-on refinement
-is accepted. These requirements should be discussed with a TC member before
-submitting.
+Following OpenTelemetry specification practice, the alpha component(s) — the
+Collector component here, plus the existing java-contrib implementation as a
+second — come before the specification is formalized. These requirements should
+be discussed with a TC member before submitting any follow-on OTEP.
 
 ## Staffing / Help Wanted
 
@@ -120,8 +146,8 @@ products, should be aware of this effort and are invited to participate.
 
 ### SIG
 
-A new Policies SIG will lead this work. Initial coordination and the reference
-prototype will happen in collaboration with the Collector SIG.
+A new Policies SIG will lead this work. Initial coordination and the alpha
+Collector component will happen in collaboration with the Collector SIG.
 
 ### Required staffing
 
@@ -129,17 +155,20 @@ See [Project Staffing](/project-management.md#project-staffing)
 
 #### Project Leads(s)
 
-- **@jaronoff97** (Tero) – Maintainer
-- **@jsuereth** (Google) – Maintainer
-- **@dashpole** (Google) – Maintainer
-- **@menderico** (Google) – Maintainer
-- **@jackshirazi** (Elastic) – Maintainer
+- **@jaronoff97** (Tero) – Maintainer; Operator, Helm, Injector
+- **@jsuereth** (Google) – Maintainer; Specification, Collector
+- **@dashpole** (Google) – Maintainer; Specification, Collector, Prometheus
+- **@menderico** (Google) – Maintainer; Collector
+- **@jackshirazi** (Elastic) – Maintainer; Java SDK/agent, author of the
+  existing policy implementation in
+  [java-contrib](https://github.com/open-telemetry/opentelemetry-java-contrib)
 
 #### Other Staffing
 
 Contributors from the Collector, SDK, Configuration, OpAMP, and Operator SIGs
 are being recruited. Maintainers/approvers from those SIGs committed to
-reviewing the specification and prototypes will be listed here as they commit.
+reviewing the specification and alpha components will be listed here as they
+commit.
 
 ### Sponsorship
 
@@ -162,19 +191,22 @@ TBD
 Relative to project start:
 
 - **Start:** form the Policies SIG, set up meetings and community table entries,
-  and align on the specification scope carried over from the OTEP.
+  and lock the initial policy scope (sampling, filtering, attribute
+  sanitization).
 - **~1 month in:** first draft of the canonical Protobuf schema and YAML
-  representation circulated for review.
-- **~2 months in:** initial Collector prototype covering the match and keep
-  stages for logs, metrics, and traces.
-- **~3–4 months in:** transform operations and match tracking in the prototype;
-  example policies published.
-- **Following:** validate the model with a second implementation (SDK) toward
-  meeting the two-language prototype requirement, and document integration with
+  representation, and the data model / enforcement specification split,
+  circulated for review.
+- **~2 months in:** alpha Collector component enforcing the initial policies,
+  covering the match and keep stages for logs, metrics, and traces.
+- **~3–4 months in:** match tracking and applied-policy reporting in the alpha
+  component; experimental policies published.
+- **Following:** align the java-contrib implementation as a second
+  implementation of the same policies, and document integration with
   distribution mechanisms (OpAMP/Operator).
 
-After the project starts, specific target dates will be tracked via GitHub
-project updates (see
+The SIG will give regular (roughly monthly) updates to the Maintainer and
+Specification SIGs. After the project starts, specific target dates will be
+tracked via GitHub project updates (see
 [Project Lifecycle](project-management.md#project-lifecycle)).
 
 ## Labels (Optional)
