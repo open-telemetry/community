@@ -23,10 +23,13 @@ This project makes OpenTelemetry viable for network-centric observability. We wi
   - Defining standard SNMP metrics
   - Defining standard SNMP trap logs
 
+- **Define and develop network-related entities and attributes**: Focus on network entity domains—Traffic (Application; Tunnel/Encapsulation; Control Plane), Forwarders, Endpoints, Forwarding/Data Plane, and Control Planes—by identifying entities within the 7-layer ISO model (in collaboration with the Entities SIG). Entities are groupings of attributes; work includes identifying core network attributes shared across scenarios, plus attributes required for standard instrumentation through OBI and the network receiver. Inventories will iterate as work progresses (Layer 5–7 entities remain to be identified).
+
+- **Stabilize a core set of network semantic conventions and corresponding instrumentations**: Not every convention will reach stability, but a primary goal is to find a core set of conventions applicable across multiple scenarios and drive those conventions, and the instrumentations that depend on them, to stability. Stabilizing core and instrumentation attributes is also the path to stable entity definitions. Conventions should be defined with the intent to stabilize as soon as confidence is high, to avoid widely adopted unstable conventions.
+
 - **Provide support and contributions across the broader OpenTelemetry ecosystem**: Addressing the objectives above establishes the foundation needed to support and contribute across the broader OpenTelemetry ecosystem. Key examples of these separate but related efforts include:
   - Improving the usability of network-related `opentelemetry-collector-contrib` receiver components (e.g., `snmpreceiver` and `netflowreceiver`) and adding an `snmptrapreceiver`.
   - Supporting other SIGs (such as OBI) with their network-related telemetry functions.
-  - Defining network-related entity definitions as a part of the Entities SIG.
 
 ## Deliverables
 
@@ -45,14 +48,23 @@ This project makes OpenTelemetry viable for network-centric observability. We wi
    - [Netflow metrics](https://github.com/open-telemetry/semantic-conventions/pull/3656) and [netflow trace spans](https://docs.mermin.dev/concepts/introduction-to-flow-traces)
    - Traceroute / network-path telemetry (hops, hop index, address/hostname/ASN, per-hop RTT, timeouts or unreachable outcomes)
    - BGP telemetry (ASN, advertised and withdrawn prefixes, route updates, and related metrics/log events)
-4. Establish network-related entities (e.g., network interface, subnet, proc).
+4. Establish network-related entities and attributes (initial inventory; refine as work progresses):
+   - Focus domains: Traffic (Application; Tunnel/Encapsulation; Control Plane), Forwarders, Endpoints, Forwarding/Data Plane, and Control Planes
+   - Approach entities via the 7-layer ISO model. Starting points:
+     - **Layer 2**: network interface, OSPF interface, 802.1d bridge, 802.1d bridge port, spanning tree
+     - **Layer 3**: IP subnet, BGP, BGP peer, OSPF, OSPF area, OSPF neighbor
+     - **Layer 4**: service access point (SAP — layer-4 network session/socket), TCP, UDP, session, flow
+     - **Layers 5–7**: still to be identified
+   - Identify core network attributes shared across entities and scenarios
+   - Identify instrumentation attributes required by OBI and the network receiver
 5. Define semantic conventions for common SNMP MIB objects and SNMP Trap events as OpenTelemetry logs.
 
 **Long-term:**
 
 1. Collaborate with the Collector SIG to provide official receivers for Netflow, SNMP, and SNMP Trap.
 2. Collaborate with the OBI SIG to instrument the network, targeting the generation of flow traces and metrics via eBPF.
-3. Define SNMP semantic conventions for less-common and vendor-specific MIBs.
+3. Stabilize the core network attribute set and the instrumentation attribute set required by OBI and the network receiver, and drive corresponding entity definitions toward stability.
+4. Define SNMP semantic conventions for less-common and vendor-specific MIBs.
 
 ## Staffing / Help Wanted
 
@@ -67,13 +79,13 @@ Network
 - Rob Cowart (@robcowart) (affiliation: entities)
 - Sven Cowart (@svencowart)  (affiliation: semconv)
 - Antonio Jimenez (@ajimenez1503)
-- Braydon Kains (@braydonk) (affiliation: system)
+- Braydon Kains (@braydonk) (affiliation: system + collectors)
 
 #### Other Staffing
 
 - Jake Smith (@jksmth)
 - Giuseppe Ognibene (@pinoOgni) (affiliation: obi)
-- Stephen Lang (@skl)
+- Stephen Lang (@skl) (affiliation: obi)
 - Mario Macias (@mariomac) (affiliation: obi)
 - Matthieu Noirbusson (@MatthieuNoirbusson)
 - Henrik Rexed (@henrikrexed)
@@ -83,7 +95,7 @@ Network
 
 #### TC Sponsor
 
-[TODO: Add TC Sponsor]
+Liudmila Molkova (@lmolkova)
 
 #### GC Liaison
 
@@ -91,11 +103,11 @@ Ted Young (@tedsuo)
 
 ## Expected Timeline
 
-- **Months 1-2**: Complete near-term deliverables (review core attributes, triage issues, establish namespace heuristics).
-- **Months 3-6**: Complete mid-term deliverables (expand attributes, establish protocol and flow metrics, define entities and SNMP standards).
-- **Months 7-18**: Complete long-term deliverables (collaborate on collector receivers, eBPF instrumentation, and vendor-specific MIBs).
+- **Months 1-2**: Complete near-term deliverables: review core attributes, triage issues, establish namespace heuristics.
+- **Months 3-6**: Complete mid-term deliverables: expand attributes, establish protocol and flow metrics, define entities and SNMP standards.
+- **Months 7-18**: Complete long-term deliverables: collaborate on collector receivers and eBPF instrumentation, stabilize a core set of conventions and corresponding instrumentations/entities once validated, and define vendor-specific MIBs.
 
-[TODO: After the project has started, please use GitHub project updates to set specific target start and completion dates (see [Project Lifecycle](project-management.md#project-lifecycle) for more information).]
+[TODO: After the project has started, please use GitHub project updates to set specific target start and completion dates (see [Project Lifecycle](../project-management.md#project-lifecycle) for more information).]
 
 ## Labels
 
@@ -112,7 +124,7 @@ Ted Young (@tedsuo)
 
 Once approved, a project should be managed using a [GitHub project](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects). This project should be pre-populated with issues that cover all known deliverables, organized by timeline milestones.
 
-Any [member](./guides/contributor/membership.md) associated with the project can create the board.
+Any [member](../guides/contributor/membership.md) associated with the project can create the board.
 Please use the existing [GitHub Project template](https://github.com/orgs/open-telemetry/projects/140) to create your project, replacing placeholders as appropriate.
 
 Once created, the creator of the board should:
@@ -121,7 +133,7 @@ Once created, the creator of the board should:
 - Change the visibility of the project to `Public` in order to share project status and priorities outside the OpenTelemetry organization (default in template).
 - Configure project workflows to automatically add issues and PRs to the board based on repositories and labels.
 
-See [Project Lifecycle](project-management.md#project-lifecycle) for more information about sharing project updates and status.
+See [Project Lifecycle](../project-management.md#project-lifecycle) for more information about sharing project updates and status.
 
 Once created, please add a link to the project board here.
 
@@ -129,7 +141,7 @@ Once created, please add a link to the project board here.
 
 Once a project is started, its corresponding SIG should meet regularly for discussion. These meeting times should be posted on the [OpenTelemetry public calendar](https://github.com/open-telemetry/community#calendar) and automatically recorded.
 
-Any relevant information related to the SIG (e.g. sponsors, meeting times, Slack channels, meeting notes, etc.) must be publicly available in the [community](https://github.com/open-telemetry/community) SIG tables, which can be updated via the [workstreams.yml](./workstreams.yml) file and running `make generate`.
-Please ensure that the GitHub project ID is added to [workstreams.yml](./workstreams.yml) as a `roadmapProject` resource entry under the corresponding SIG to include this project in the OpenTelemetry Roadmap (see [Roadmap Management](./roadmap-management.md) for more information).
+Any relevant information related to the SIG (e.g. sponsors, meeting times, Slack channels, meeting notes, etc.) must be publicly available in the [community](https://github.com/open-telemetry/community) SIG tables, which can be updated via the [workstreams.yml](../workstreams.yml) file and running `make generate`.
+Please ensure that the GitHub project ID is added to [workstreams.yml](../workstreams.yml) as a `roadmapProject` resource entry under the corresponding SIG to include this project in the OpenTelemetry Roadmap (see [Roadmap Management](../roadmap-management.md) for more information).
 
-See [How to create and configure meetings](./docs/how-to-handle-public-calendar.md) for updating the public calendar or open an issue in the community repository so it's taken care of.
+See [How to create and configure meetings](../docs/how-to-handle-public-calendar.md) for updating the public calendar or open an issue in the community repository so it's taken care of.
