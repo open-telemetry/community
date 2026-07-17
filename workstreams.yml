@@ -788,6 +788,16 @@
       name: '#otel-swift'
       id: C01NCHR19SB
   - repository: open-telemetry/opentelemetry-swift
+- id: zig-sdk
+  kind: sig
+  sigCategory: implementation
+  name: 'Zig: SDK'
+  parent: none
+  people:
+  - gcLiaison: alolita
+  - tcSponsor:
+      username: jmacd
+      level: tbd
 - id: network
   kind: sig
   sigCategory: implementation
@@ -1149,3 +1159,61 @@
   - slack:
       name: '#otel-localization-uk'
       id: C097ZNPM3LK
+- id: agentic-workflow
+  kind: initiative
+  name: OpenTelemetry Collector Agentic Workflows
+  parent: collector
+  people:
+  - lead: pavolloffay
+  - lead: niwoerner
+- id: otel-blueprints
+  kind: initiative
+  name: OTel Blueprints
+  parent: end-user
+  people:
+  - lead: danielgblanco
+  - lead: dmathieu
+  resources:
+  - meeting:
+      schedule: Every other Thursday at 10:00 PT (alternating with general End-User SIG meetings)
+      gDocNotes: 1e-UNZA3Tuno9b53RQbe--whUcO0VIXF3P81oXsrBK6g
+  - slack:
+      name: '#otel-blueprints'
+      id: C0A844D6ZCH
+- id: zig-sig-bootstrap
+  kind: initiative
+  name: Bootstrap Zig Special Interest Group
+  parent: zig-sdk
+  people:
+  - lead: inge4pres
+  - lead: kmos
+  - lead: hendriknielaender
+- id: collector-v1
+  kind: initiative
+  name: Collector v1
+  parent: collector
+  people:
+  - lead: tbd
+- id: cicd-phase-2
+  kind: initiative
+  name: CI/CD Observability SIG Phase 2
+  parent: semconv-cicd
+  people:
+  - lead: horovits
+  - lead: adrielp
+- id: ecosystem-explorer
+  kind: initiative
+  name: OpenTelemetry Ecosystem Explorer
+  parent: communications
+  people:
+  - lead: jaydeluca
+  - lead: svrnm
+  - lead: mx-psi
+  resources:
+  - roadmapProject: 175
+- id: getting-started-docs
+  kind: initiative
+  name: New Getting Started Documentation and Reference Application
+  parent: communications
+  people:
+  - lead: svrnm

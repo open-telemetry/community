@@ -19,12 +19,19 @@ items:
       id:
         type: string
         minLength: 1
+      # Any kind may be associated with a project proposal document
+      # under /projects/*.md.
       kind:
         type: string
         enum:
           # Permanent operational group with recurring meetings,
           # a GC liaison, and a TC sponsor.
           - sig
+          # Time-bound effort with defined deliverables and exit criteria.
+          # Concludes when its deliverables are met, distinct from a
+          # permanent SIG. Initiatives are scoped under a parent SIG, which
+          # manages the initiative's lifecycle.
+          - initiative
       name:
         type: string
         minLength: 1
@@ -98,6 +105,11 @@ items:
               - leading
               # Level required but not yet determined.
               - tbd
+      # Person accountable for driving the workstream forward.
+      # Required on: initiative. GitHub username, or 'tbd' if not yet assigned.
+      lead:
+        type: string
+        minLength: 1
       # Trusted collaborator with approval rights on the spec repository.
       # TC members are a superset and may fill this role.
       # GitHub username, or 'tbd' if not yet assigned.
