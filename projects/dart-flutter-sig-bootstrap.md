@@ -181,7 +181,6 @@ This project requires the creation of a new SIG: **Dart and Flutter SIG**.
 
 Committed maintainers, across four sponsoring organizations and one
 independent:
-
 - Yusuf Rosman ([@yuzurihaaa](https://github.com/yuzurihaaa)) — independent —
   contributed the Logs API; contributor to both the Workiva and Dartastic
   implementations.
@@ -194,9 +193,26 @@ independent:
 - Ben Bennett ([@benjaben](https://github.com/benjaben)) — Embrace — Embrace
   uses the Dartastic API in its products.
 
+- https://github.com/open-telemetry/community/issues/2718#issuecomment-4914074892
+
+
 Additional contributors sought via the Call for Contributors: Dart and
 Flutter engineers, documentation writers, and users willing to give
 feedback ahead of 1.0.
+----
+Update: The following contributors showed interest following up on 
+the Call for Contributors.  Their replies expressing interest is copied 
+here from the [The Donation Proposal](https://github.com/open-telemetry/community/issues/2718) (the Call linked there instead of here):
+
+- Harshit Kushwaha [(@harshitt13)](https://github.com/harshitt13)), OTel backend + Flutter engineer, [donation reply link](https://github.com/open-telemetry/community/issues/2718#issuecomment-4914074892), commits to 3-4 hours a week - he's already put in overtime
+- Muhammad Kamel [(@muhammadkamel)](https://github.com/muhammadkamel), Flutter framework contributor, [donation reply link]
+- Rohit Joshi [(@rohit482)](https://github.com/rohit482), longtime OTel user and Dartastic follower, [donation reply link](https://github.com/open-telemetry/community/issues/2718#issuecomment-4846499500) commits to 3-4 hrs weekly
+- [(@cnbleu)](https://github.com/cnbleu), extensive experience in Flutter, mobile iOS and Android, and RUM, [donation reply link](https://github.com/open-telemetry/community/issues/2718#issuecomment-4843210477), commits to 2-4 hours per week
+
+The `#otel-dart` channel on the [CNCF Slack](https://slack.cncf.io/) will be used for project communication.
+All contributors should join including the above four and ([@yuzurihaaa](https://github.com/yuzurihaaa)), ([@robert-northmind](https://github.com/robert-northmind)), ([@danexello](https://github.com/danexello)), ([@tamirh](https://github.com/tamirh)), ([@tamirh](https://github.com/tamirh)), ([@benjaben](https://github.com/benjaben)).
+The Slack channel is also included in the API and SDK's CONTRIBUTING.md document.
+----
 
 This project implements the existing OpenTelemetry specification; no OTEPs
 or specification changes are anticipated, so the cross-language prototype
