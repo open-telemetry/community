@@ -93,7 +93,10 @@ foundation the rest of the ecosystem can build on.
 - **Fail-open:** an invalid policy becomes inert rather than breaking valid
   policies or dropping telemetry.
 - **Atomic and self-contained:** one matcher set, one action set, no references
-  to other policies, no ordering dependency.
+  to other policies, no ordering dependency. This means no policy depends on
+  another policy having already been applied — it does not mean policies
+  cannot conflict or overwrite each other's effects; precedence rules (see
+  Deliverables) govern that.
 - **Portable:** field references use the OpenTelemetry data model so a policy
   runs identically across conformant runtimes.
 
@@ -207,7 +210,7 @@ Relative to project start:
 The SIG will give regular (roughly monthly) updates to the Maintainer and
 Specification SIGs. After the project starts, specific target dates will be
 tracked via GitHub project updates (see
-[Project Lifecycle](project-management.md#project-lifecycle)).
+[Project Lifecycle](/project-management.md#project-lifecycle)).
 
 ## Labels (Optional)
 
@@ -227,6 +230,6 @@ here.
 
 Meeting times, Slack channel, and meeting notes will be posted on the
 [OpenTelemetry public calendar](https://github.com/open-telemetry/community#calendar)
-and added to the community SIG tables via [workstreams.yml](./workstreams.yml)
+and added to the community SIG tables via [workstreams.yml](/workstreams.yml)
 (running `make generate`), including the GitHub project ID as a `roadmapProject`
 entry so the project appears in the OpenTelemetry Roadmap.
