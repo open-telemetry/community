@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import re
 import subprocess
 import sys
 
@@ -14,7 +15,8 @@ run_in_check_mode = (len(sys.argv) > 1) and (sys.argv[1] == "--check")
 
 WORKSTREAMS_FILE = "workstreams.yml"
 METADATA_FILE    = "people.yml"
-markdown_file    = "README.md"
+readme_file      = "README.md"
+sigs_file        = "sigs.md"
 
 start_marker = "<!-- sigs -->"
 end_marker = "<!-- endsigs -->"
@@ -41,19 +43,28 @@ def person_link(username):
     return f"[{name}](https://github.com/{username})"
 
 
-def sig_short_name(ws):
-    for res in ws.get("resources", []):
-        if "slack" in res:
-            channel_name = res["slack"]["name"]
-            return "sig-" + channel_name.replace("#otel-", "").replace("sig-", "")
-    return None
+def heading_anchor(text):
+    text = re.sub(r"\[([^\]]+)\]\([^\)]+\)", r"\1", text)
+    text = re.sub(r"[^a-z0-9\s-]", "", text.lower())
+    return text.strip().replace(" ", "-")
+
+
+def repository_link(repository):
+    return f"[{repository}](https://github.com/{repository})"
+
+
+def roadmap_project_link(project_id, name):
+    return f"[{name} roadmap](https://github.com/orgs/open-telemetry/projects/{project_id})"
 
 
 def extract_row_data(ws):
     meeting_schedule = ""
     notes_link = ""
-    chats = []
+    slack_channels = []
+    discussions = []
     calendar = ""
+    repositories = []
+    roadmap_projects = []
 
     for res in ws.get("resources", []):
         if "meeting" in res:
@@ -65,37 +76,46 @@ def extract_row_data(ws):
                 calendar = f"[{cal}](https://groups.google.com/a/opentelemetry.io/g/{cal})"
         elif "slack" in res:
             s = res["slack"]
-            chats.append(f"[{s['name']}](https://cloud-native.slack.com/archives/{s['id']})")
+            slack_channels.append(f"[{s['name']}](https://cloud-native.slack.com/archives/{s['id']})")
         elif "githubDiscussion" in res:
-            chats.append(f"[GitHub Discussions]({res['githubDiscussion']})")
-
-    chat_str = " and ".join(chats)
+            discussions.append(f"[GitHub Discussions]({res['githubDiscussion']})")
+        elif "repository" in res:
+            repositories.append(repository_link(res["repository"]))
+        elif "roadmapProject" in res:
+            roadmap_projects.append(roadmap_project_link(res["roadmapProject"], ws["name"]))
 
     gc_liaisons = []
     tc_sponsors = []
+    spec_sponsors = []
 
     for entry in ws.get("people", []):
         if "gcLiaison" in entry:
-            link = person_link(entry["gcLiaison"])
-            if link:
-                gc_liaisons.append(link)
+            gc_liaisons.append(person_link(entry["gcLiaison"]) or entry["gcLiaison"])
         elif "tcSponsor" in entry:
-            link = person_link(entry["tcSponsor"]["username"])
-            if link:
-                tc_sponsors.append(link)
+            sponsor = entry["tcSponsor"]
+            link = person_link(sponsor["username"]) or sponsor["username"]
+            level = sponsor.get("level")
+            if level and level != "tbd":
+                link = f"{link} ({level})"
+            tc_sponsors.append(link)
         elif "specSponsor" in entry:
-            link = person_link(entry["specSponsor"])
-            if link:
-                tc_sponsors.append(link)
-
-    gc_str = "<br/>".join(gc_liaisons)
+            spec_sponsors.append(person_link(entry["specSponsor"]) or entry["specSponsor"])
 
     if ws.get("tcSponsorship") == "collective":
-        sponsor_str = "[Technical Committee](./community-members.md#technical-committee)"
-    else:
-        sponsor_str = ",<br/>".join(tc_sponsors)
+        tc_sponsors = ["[Technical Committee](./community-members.md#technical-committee)"]
 
-    return meeting_schedule, notes_link, chat_str, calendar, sponsor_str, gc_str
+    return {
+        "meeting_schedule": meeting_schedule,
+        "notes_link": notes_link,
+        "slack_channels": slack_channels,
+        "discussions": discussions,
+        "calendar": calendar,
+        "repositories": repositories,
+        "roadmap_projects": roadmap_projects,
+        "gc_liaisons": gc_liaisons,
+        "tc_sponsors": tc_sponsors,
+        "spec_sponsors": spec_sponsors,
+    }
 
 
 # Categorize SIGs into groups, preserving workstreams.yml order within each group.
@@ -122,60 +142,97 @@ for ws in workstreams:
         spec_sigs.append(ws)
 
 
-def render_group(group_name, sigs, show_sponsors):
+def join_details(values):
+    return ", ".join(value for value in values if value)
+
+
+def render_group(group_name, sigs):
     content = f"### {group_name}\n\n"
-    if show_sponsors:
-        content += "| Name | Meeting Time | Meeting Notes | Slack Channel | Meeting Invites Group | [Sponsors](./project-management.md#project-proposal) | [Governance Committee](./community-members.md#governance-committee) Liaison |\n"
-        content += "|------|--------------|---------------|---------------|-----------------|--------------------------------|--------------------------------|\n"
-    else:
-        content += "| Name | Meeting Time | Meeting Notes | Slack Channel | Meeting Invites Group | [Governance Committee](./community-members.md#governance-committee) Liaison |\n"
-        content += "|------|--------------|---------------|---------------|-----------------|--------------------------------|\n"
+    content += "| Name | Meeting Time | Meeting Invites Group | Slack Channel | Details |\n"
+    content += "|------|--------------|-----------------------|---------------|---------|\n"
 
     for ws in sigs:
         name = ws["name"]
-        short_name = sig_short_name(ws)
-        meeting, notes, chats, calendar, sponsors, gc = extract_row_data(ws)
-
-        if short_name:
-            name_cell = f"{name}&nbsp;<a id=\"{short_name}\" href=\"#{short_name}\"><sup>🔗</sup></a>"
-        else:
-            name_cell = name
-
-        if show_sponsors:
-            content += f"| {name_cell} | {meeting} | {notes} | {chats} | {calendar} | {sponsors} | {gc} | \n"
-        else:
-            content += f"| {name_cell} | {meeting} | {notes} | {chats} | {calendar} | {gc} |\n"
+        data = extract_row_data(ws)
+        details = f"[Details](./{sigs_file}#{heading_anchor(name)})"
+        content += f"| {name} | {data['meeting_schedule']} | {data['calendar']} | {join_details(data['slack_channels'])} | {details} |\n"
 
     content += "\n"
     return content
 
 
-with open(markdown_file, encoding="utf-8") as f:
+def render_sig_details(ws):
+    data = extract_row_data(ws)
+    details = [
+        ("Meeting time", data["meeting_schedule"]),
+        ("Meeting notes", data["notes_link"]),
+        ("Meeting invites group", data["calendar"]),
+        ("Slack channel", join_details(data["slack_channels"])),
+        ("GitHub Discussions", join_details(data["discussions"])),
+        ("Repositories", join_details(data["repositories"])),
+        ("Roadmap projects", join_details(data["roadmap_projects"])),
+        ("Technical Committee sponsors", join_details(data["tc_sponsors"])),
+        ("Spec sponsors", join_details(data["spec_sponsors"])),
+        ("Governance Committee liaison", join_details(data["gc_liaisons"])),
+    ]
+
+    bullets = "".join(f"- **{label}:** {value}\n" for label, value in details if value)
+    return f"### {ws['name']}\n\n{bullets}\n"
+
+
+def render_sig_details_group(group_name, sigs):
+    content = f"## {group_name}\n\n"
+    for ws in sigs:
+        content += render_sig_details(ws)
+    return content
+
+
+def render_sigs_markdown():
+    content = "# OpenTelemetry Special Interest Groups\n\n"
+    content += "<!-- This file is auto-generated. To make changes, see CONTRIBUTING.md#updating-sig-information. -->\n\n"
+    content += "This page contains detailed information for all OpenTelemetry Special Interest Groups (SIGs).\n\n"
+    content += render_sig_details_group("Specification SIGs", spec_sigs)
+    content += render_sig_details_group("Implementation SIGs", impl_sigs)
+    content += render_sig_details_group("Cross-Cutting SIGs", cross_sigs)
+    content += render_sig_details_group("Localization Teams (part of SIG Communications)", localization_sigs)
+    return content.rstrip() + "\n"
+
+
+with open(readme_file, encoding="utf-8") as f:
     content = f.read()
 
 top_part = content.split(start_marker, 1)[0]
 bottom_part = content.split(end_marker, 1)[1]
 
 markdown_content = start_marker + "\n"
-markdown_content += render_group("Specification SIGs", spec_sigs, show_sponsors=True)
-markdown_content += render_group("Implementation SIGs", impl_sigs, show_sponsors=False)
-markdown_content += render_group("Cross-Cutting SIGs", cross_sigs, show_sponsors=False)
-markdown_content += render_group("Localization Teams (part of SIG Communications)", localization_sigs, show_sponsors=False)
+markdown_content += render_group("Specification SIGs", spec_sigs)
+markdown_content += render_group("Implementation SIGs", impl_sigs)
+markdown_content += render_group("Cross-Cutting SIGs", cross_sigs)
+markdown_content += render_group("Localization Teams (part of SIG Communications)", localization_sigs)
 markdown_content += end_marker
 
-result = top_part + markdown_content + bottom_part
+readme_result = top_part + markdown_content + bottom_part
+sigs_result = render_sigs_markdown()
+
+
+def file_matches(path, expected):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return f.read() == expected
+    except FileNotFoundError:
+        return False
 
 if run_in_check_mode:
-    with open(markdown_file, encoding="utf-8") as f:
-        original = f.read()
-    if original == result:
+    if file_matches(readme_file, readme_result) and file_matches(sigs_file, sigs_result):
         sys.exit(0)
     else:
-        print(f"{markdown_file} is out of date. Run 'make generate' to update it.", file=sys.stderr)
+        print(f"{readme_file} or {sigs_file} is out of date. Run 'make generate' to update it.", file=sys.stderr)
         sys.exit(1)
 else:
-    with open(markdown_file, "w", encoding="utf-8") as f:
-        f.write(result)
+    with open(readme_file, "w", encoding="utf-8") as f:
+        f.write(readme_result)
+    with open(sigs_file, "w", encoding="utf-8") as f:
+        f.write(sigs_result)
 
 # Inform the user that the markdown file has been updated
-print("The markdown file has been updated with the new SIG tables.")
+print("The markdown files have been updated with the new SIG tables.")

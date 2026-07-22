@@ -84,7 +84,8 @@ Once created, please add a link to the project board here.
 
 Once a project is started, its corresponding SIG should meet regularly for discussion. These meeting times should be posted on the [OpenTelemetry public calendar](https://github.com/open-telemetry/community#calendar) and automatically recorded.
 
-Any relevant information related to the SIG (e.g. sponsors, meeting times, Slack channels, meeting notes, etc.) must be publicly available in the [community](https://github.com/open-telemetry/community) SIG tables, which can be updated via the [workstreams.yml](./workstreams.yml) file and running `make generate`.
-Please ensure that the GitHub project ID is added to [workstreams.yml](./workstreams.yml) as a `roadmapProject` resource entry under the corresponding SIG to include this project in the OpenTelemetry Roadmap (see [Roadmap Management](./roadmap-management.md) for more information).
+SIG details such as sponsors, meeting times, Slack channels, and meeting notes must be publicly listed in the [community](https://github.com/open-telemetry/community) repository. See [Updating SIG information](./CONTRIBUTING.md#updating-sig-information) for how to update them.
+
+To include this project in the OpenTelemetry Roadmap, add the GitHub project ID to the corresponding SIG in [workstreams.yml](./workstreams.yml) as a `roadmapProject` resource entry (see [Roadmap Management](./roadmap-management.md) for more information).
 
 See [How to create and configure meetings](./docs/how-to-handle-public-calendar.md) for updating the public calendar or open an issue in the community repository so it's taken care of.
