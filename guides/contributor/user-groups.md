@@ -9,7 +9,7 @@ Making something *official* in OpenTelemetry, like forming a
 starting a new project, or donating code under the
 [project management](https://github.com/open-telemetry/community/blob/main/project-management.md)
 and [donation](https://github.com/open-telemetry/community/blob/main/guides/contributor/donations.md)
-guidelines, is deliberately a heavy process with real requirements. That
+guidelines, is deliberately a heavy process with well-defined requirements. That
 weight is necessary: once something is official, the project has to treat it as
 such and maintain it, and everyone on the outside will treat it as canonical
 OpenTelemetry work.
