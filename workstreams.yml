@@ -271,7 +271,7 @@
       level: leading
   resources:
   - meeting:
-      schedule: Every other Wednesday at 08:00 PT
+      schedule: Every other Friday at 08:00 PT
       calendarInviteGroup: calendar-prometheus
       gDocNotes: 1OijO_NZyR7gb7AvUj_KxKbcbsN09XQmq_ExZeDlgEOg
   - slack:
@@ -1095,10 +1095,6 @@
       username: tbd
       level: tbd
   resources:
-  - meeting:
-      schedule: Every second Wednesday at 7:15pm BST
-      calendarInviteGroup: calendar-localization-ptbr
-      gDocNotes: 1W1jJ4OTm53sbOp7CrbNBMvR_2Z8TQRCkwejqD4f21SE
   - slack:
       name: '#otel-localization-ptbr'
       id: C076LET8YSK

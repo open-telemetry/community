@@ -129,7 +129,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Prometheus Interoperability
 
-- **Meeting time:** Every other Wednesday at 08:00 PT
+- **Meeting time:** Every other Friday at 08:00 PT
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1OijO_NZyR7gb7AvUj_KxKbcbsN09XQmq_ExZeDlgEOg)
 - **Meeting invites group:** [calendar-prometheus](https://groups.google.com/a/opentelemetry.io/g/calendar-prometheus)
 - **Slack channel:** [#otel-prometheus](https://cloud-native.slack.com/archives/C01LSCJBXDZ)
@@ -552,9 +552,6 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Portuguese (pt-BR)
 
-- **Meeting time:** Every second Wednesday at 7:15pm BST
-- **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1W1jJ4OTm53sbOp7CrbNBMvR_2Z8TQRCkwejqD4f21SE)
-- **Meeting invites group:** [calendar-localization-ptbr](https://groups.google.com/a/opentelemetry.io/g/calendar-localization-ptbr)
 - **Slack channel:** [#otel-localization-ptbr](https://cloud-native.slack.com/archives/C076LET8YSK)
 - **Technical Committee sponsors:** tbd
 - **Spec sponsors:** [Juraci Paixão Kröhling](https://github.com/jpkrohling)

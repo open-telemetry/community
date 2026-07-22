@@ -1,16 +1,8 @@
 # How to create and configure meetings
 
-In OpenTelemetry we are using the CNCF's Zoom accounts. We currently own five
-identical zoom accounts.
+In OpenTelemetry we are using the [LFX Project Control Center](https://lfx.linuxfoundation.org/tools/pcc/) Zoom accounts. 
 
-All rooms are configured the same way. Some notes on meetings configuration:
-
-- **The host is not required** to join the meeting. Anybody can join the meeting.
-- **There is no time limit on the length of the meeting**. Please make sure nobody is
-  using this room for another meeting on the calendar when meeting is going long
-  over time.
-- **Auto-recording is enabled for all meetings**. All OpenTelemetry public meetings are recorded automatically
-  and [available on Zoom cloud](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s).
+We also currently own five legacy identical Zoom accounts that we are migrating away from, see [issue #3548](https://github.com/open-telemetry/community/issues/3548).
 
 Every meeting must contain a link to the meeting notes. The meeting notes
 document must be shared with write or commenting permissions. If giving edit permissions to everyone,
@@ -20,6 +12,18 @@ All meetings should invite a publicly joinable google group `calendar-...@opente
 and also the global [calendar-all@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-all).
 This way anyone who wants to receive up-to-date invites can join one of those groups
 (see [Inviting attendees](#inviting-attendees) below).
+
+## (Deprecated) Legacy Zoom account configuration
+
+All legacy Zoom rooms are configured the same way. Some notes on meetings configuration:
+
+- **The host is not required** to join the meeting. Anybody can join the meeting.
+- **There is no time limit on the length of the meeting**. Please make sure nobody is
+  using this room for another meeting on the calendar when meeting is going long
+  over time.
+- **Auto-recording is enabled for all meetings**. All OpenTelemetry public meetings are recorded automatically
+  and [available on Zoom cloud](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s).
+
 
 ## Steps
 
@@ -72,9 +76,26 @@ A single Zoom account should not be used for back-to-back meetings or for more t
 You can see which Zoom account any potentially conflicting meetings are using in the meeting descriptions.
 (Note: posting the URLs publicly on GitHub leads to Zoom bombing by random bots).
 
-#### Zoom link generation process
+#### LFPCC Zoom meeting configuration
 
-_This is the process that the person responding to Zoom link creation issues will follow. The instructions under this heading are for project admins (Governance Committee members) who have access to OpenTelemetry's Zoom account credentials._
+_This is the process that the person responding to Zoom link creation issues will follow. The instructions under this heading are for Governance Committee members or Technical Committee members who have access to the Project Control Center admin console._
+
+To create a new Zoom meeting on the Project Control Center, follow these instructions:
+
+1. Log into https://openprofile.dev/ with your Github account
+2. Click on the top right on Tools and click on "Project Control Center"
+3. On the left-hand column, click on "Collaboration", then "Meetings", then "Add Meeting"
+4. Fill in the meeting details and make sure to select the following options:
+    - Select "Show in Public Calendar" if it makes sense
+    - Deselect "Restrict to invited users"
+    - Select "Auto-record from meeting start + generate transcript"
+    - Leave participants list empty
+5. On the "Meetings" page, click on a day where the meeting is, click on the three dots button -> "Share meeting" to get the meeting link
+
+
+#### (Deprecated) Legacy Zoom link generation process
+
+_This is the legacy process that the person responding to Zoom link creation issues used to follow.This should be deleted after we have moved entirely off of the project's Zoom accounts._
 
 1. View the OpenTelemetry meeting calendar, and find your desired time slot, along with the meetings that occur immediately before, during, and after it.
 2. See which OpenTelemetry Zoom accounts are being used for the meetings immediately before, during, and after your desired time. The Zoom account name / number is typically listed in the description of each meeting; if it isn't, you can join a meeting (even if it isn't occurring now), click on the green shield icon in the top left, and see the account name / number in the 'host' field.

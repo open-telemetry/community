@@ -90,7 +90,7 @@ OpenTelemetry’s mission and vision describe where we want to go. OpenTelemetry
 engineering values describe how we want to get there.
 
 OpenTelemetry’s core engineering values are _compatibility_, _stability_,
-_resiliency_, and _performance_.
+_resiliency_, _performance_, and _self-observability_.
 
 ### We value _compatibility_
 
@@ -119,6 +119,12 @@ to degrade gracefully as needed.
 OpenTelemetry users should not have to choose between high-quality telemetry and
 a performant application. High performance is a requirement for OpenTelemetry,
 and unexpected interference effects in the host application are unacceptable.
+
+### We value _self-observability_
+
+OpenTelemetry components should be exemplars of well-observed software. We
+instrument our own SDKs, Collector, and tooling, practicing what we preach and
+leading by example.
 
 ## Community values
 

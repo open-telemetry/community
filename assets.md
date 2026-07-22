@@ -32,6 +32,9 @@ We have an OpenTelemetry team under the CNCF's enterprise account.
 Link: https://app.fossa.com/
 
 - Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
+- Before submitting a FOSSA support request, contact Robert Kielty via
+  [GitHub](https://github.com/RobertKielty) or
+  [CNCF Slack](https://cloud-native.slack.com/archives/D0749BJ8JR2).
 - Team admins: [@austinlparker](https://github.com/austinlparker), [@reyang](https://github.com/reyang), [@trask](https://github.com/trask)
 
 ### Special GitHub Action runners
