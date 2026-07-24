@@ -89,6 +89,7 @@ words:
   - NUMA
   - Marylia
   - observiq
+  - ocgroups
   - OCPUs
   - opentelemetry
   - opentelemetrybot
