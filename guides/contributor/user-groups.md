@@ -78,11 +78,17 @@ that's the project's main channel and the best place to start a conversation.
 
 For a User Group, the project can offer:
 
-- **A dedicated Slack channel** named `#otel-<name>` (e.g. `#otel-healthcare`),
+- **A dedicated Slack channel** named `#otel-ug-<name>` (e.g. `#otel-ug-healthcare`),
   with the OpenTelemetry Admin user as a channel manager. Ask in `#opentelemetry` and
-  an admin can create it.
-- **Access to the OpenTelemetry Zoom** for regular meetings, if your group wants
-  to meet synchronously.
+  an admin can create it. The `-ug-` prefix keeps User Group channels distinct
+  from project and SIG channels (which use `#otel-<name>`). A welcome message
+  for first-time joiners can be configured so newcomers know the channel
+  belongs to an OpenTelemetry User Group.
+- **A place to meet synchronously.** For regular video calls we recommend
+  [ocgroups.dev](https://ocgroups.dev/), the CNCF-provided solution for
+  community groups: organizers can create their own Zoom links and manage
+  recordings themselves. Access to the shared OpenTelemetry Zoom can also be
+  arranged if your group prefers that.
 
 ### Requirements when using official spaces
 
@@ -115,7 +121,9 @@ your group is an official OpenTelemetry product or that the project endorses it.
   community using OpenTelemetry, which is exactly what it is. If you're unsure
   whether a name is acceptable, ask the project, or reach out to
   [trademarks@linuxfoundation.org](mailto:trademarks@linuxfoundation.org).
-- **Slack channel:** `#otel-<name>` (e.g. `#otel-telco`). Do not name it `#opentelemetry-<name>`
+- **Slack channel:** `#otel-ug-<name>` (e.g. `#otel-ug-telco`). The `-ug-` prefix
+  marks the channel as a User Group and keeps it distinct from project and SIG
+  channels. Do not name it `#opentelemetry-<name>` or plain `#otel-<name>`.
 - **GitHub:** if your group wants a place for code or documents, use a **personal
   repository** — there's no need for (and we'd rather you not
   create) a separate GitHub organization. You may prefix the repository name with
@@ -153,7 +161,7 @@ for it, and the usual project paths are open:
   an existing SIG. See the
   [project management guidelines](https://github.com/open-telemetry/community/blob/main/project-management.md).
 - A group might turn out to be **adjacent to an existing SIG** — for instance the
-  [End-User SIG](https://github.com/open-telemetry/community/blob/main/community-members.md) —
+  [End-User SIG](https://opentelemetry.io/community/end-user/) —
   and the natural move is to bring the work there.
 
 None of this is an obvious or expected path — just a possible one. Groups that
