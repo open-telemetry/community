@@ -232,7 +232,7 @@
       level: guiding
   resources:
   - meeting:
-      schedule: Every Monday at 09:00 PT
+      schedule: Every Monday at 09:30 PT
       calendarInviteGroup: calendar-entities
       gDocNotes: 15Yt9ss2_EhuFPqItPbk4vjfpeRDAQ5WCUVuY_kCeOAo
   - slack:

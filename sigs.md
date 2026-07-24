@@ -109,7 +109,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Specification: Entities
 
-- **Meeting time:** Every Monday at 09:00 PT
+- **Meeting time:** Every Monday at 09:30 PT
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/15Yt9ss2_EhuFPqItPbk4vjfpeRDAQ5WCUVuY_kCeOAo)
 - **Meeting invites group:** [calendar-entities](https://groups.google.com/a/opentelemetry.io/g/calendar-entities)
 - **Slack channel:** [#otel-entities](https://cloud-native.slack.com/archives/C06QEG97W7L)
