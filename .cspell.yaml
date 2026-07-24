@@ -181,8 +181,11 @@ words:
   - hongalex
   - horovits
   - Hrabusa
+  - inodes
   - instrgen
+  - iqn
   - jackjia
+  - jbod
   - jaglowski
   - javaagent
   - jemmic
@@ -235,6 +238,8 @@ words:
   - neumann
   - neumüller
   - nexis
+  - ntfs
+  - nvme
   - nirga
   - nikimanoledaki
   - novotny
@@ -334,7 +339,9 @@ words:
   - Vasconcellos
   - Villela
   - Vitor
+  - volumegroup
   - VNIC
+  - wwpn
   - vtex
   - warre
   - workstream
