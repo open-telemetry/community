@@ -43,7 +43,7 @@ User Groups are **not**:
 
 - **A replacement for existing project work.** Areas the project already
   organizes around already have a home, i.e. the language implementations (.NET, Java, Go, …), the
-  Collector, semantic conventions, and so on. Use the
+  Collector, semantic convention domains, and so on. Use the
   existing SIG instead of starting a parallel group.
 - **An official body.** User Groups don't speak for the OpenTelemetry project,
   don't hold formal decision-making power, and aren't governed by the
