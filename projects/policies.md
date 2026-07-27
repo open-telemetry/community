@@ -74,7 +74,7 @@ foundation the rest of the ecosystem can build on.
   specification (the policy schema, matchers, and actions) and an
   **enforcement** specification (how a component evaluates policies, including
   the two-stage match then keep & transform model and the core guarantees).
-  Enforcment should also describe and require a set of conformance tests to
+  Enforcement should also describe and require a set of conformance tests to
   ensure that implementations are consistent.
 - Define the canonical Protobuf schema for Policies, with a human-authorable
   YAML representation and bidirectional conversion (including shorthand forms).
@@ -124,6 +124,11 @@ that can be enforced anywhere in the pipeline.
 - **Experimental policies** for the initial scope: **sampling, filtering, and
   scoped transformations**. Additional transform types for things like
   datapoints and other policy types are deferred and added iteratively.
+- **OBI prototype** enforcing the initial policies in the
+  [OpenTelemetry eBPF Instrumentation](https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation)
+  project, to exercise a distribution and enforcement model different from the
+  Collector's. This is a prototype for maintainer feedback only, not something
+  we expect to merge as part of this project.
 - **Applied-policy reporting.** Scope and formalize how a component reports
   which policies are actually in effect — for example an OpAMP status tagged by
   policy version/UUID, or self-observability signals for SDKs — so operators can
@@ -158,12 +163,12 @@ See [Project Staffing](/project-management.md#project-staffing)
 
 #### Project Leads(s)
 
-- **@jaronoff97** (Tero) – Maintainer; Operator, Helm, Injector
-- **@jsuereth** (Google) – Maintainer; Specification, Collector
-- **@dashpole** (Google) – Maintainer; Specification, Collector, Prometheus
-- **@menderico** (Google) – Maintainer; Collector
-- **@jackshirazi** (Elastic) – Maintainer; Java SDK/agent, author of the
-  existing policy implementation in
+- **@jaronoff97** (Tero) – Operator, Helm, Injector
+- **@jsuereth** (Google) – Specification, Collector
+- **@dashpole** (Google) – Specification, Collector, Prometheus
+- **@menderico** (Google) – Collector
+- **@jackshirazi** (Elastic) – Java SDK/agent, author of the existing policy
+  implementation in
   [java-contrib](https://github.com/open-telemetry/opentelemetry-java-contrib)
 
 #### Other Staffing
