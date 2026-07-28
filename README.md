@@ -166,7 +166,7 @@ Detailed SIG information, including meeting notes, repositories, sponsors, and l
 
 | Name | Meeting Time | Meeting Invites Group | Slack Channel | Details |
 |------|--------------|-----------------------|---------------|---------|
-| Android: SDK + Automatic Instrumentation | Tuesday at 08:00 PT | [calendar-android](https://groups.google.com/a/opentelemetry.io/g/calendar-android) | [#otel-android](https://cloud-native.slack.com/archives/C05J0T9K27Q) | [Details](./sigs.md#android-sdk--automatic-instrumentation) |
+| Android: SDK + Automatic Instrumentation | Thursday at 08:00 PT | [calendar-android](https://groups.google.com/a/opentelemetry.io/g/calendar-android) | [#otel-android](https://cloud-native.slack.com/archives/C05J0T9K27Q) | [Details](./sigs.md#android-sdk--automatic-instrumentation) |
 | Arrow | Alternating between Tuesday at 16:00 PT and Thursday at 8:00 PT | [calendar-arrow](https://groups.google.com/a/opentelemetry.io/g/calendar-arrow) | [#otel-arrow](https://cloud-native.slack.com/archives/C07S4Q67LTF) | [Details](./sigs.md#arrow) |
 | Browser | Thursday at 8:30 PT | [calendar-browser](https://groups.google.com/a/opentelemetry.io/g/calendar-browser) | [#otel-browser](https://cloud-native.slack.com/archives/C093P0AMP0T) | [Details](./sigs.md#browser) |
 | Collector | Alternating between Tuesday at 17:00 PT, Wednesday at 09:00 PT, and Wednesday at 05:00 PT | [calendar-collector](https://groups.google.com/a/opentelemetry.io/g/calendar-collector) | [#otel-collector](https://cloud-native.slack.com/archives/C01N6P7KR6W) | [Details](./sigs.md#collector) |

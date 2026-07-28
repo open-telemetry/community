@@ -364,7 +364,7 @@
       level: escalating
   resources:
   - meeting:
-      schedule: Tuesday at 08:00 PT
+      schedule: Thursday at 08:00 PT
       calendarInviteGroup: calendar-android
       gDocNotes: 1W72oElAJuYx3efM9wkH5l1iksdfwmTSkVl-H7KHTLnY
   - slack:
