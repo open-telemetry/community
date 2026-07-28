@@ -179,7 +179,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Android: SDK + Automatic Instrumentation
 
-- **Meeting time:** Tuesday at 08:00 PT
+- **Meeting time:** Thursday at 08:00 PT
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1W72oElAJuYx3efM9wkH5l1iksdfwmTSkVl-H7KHTLnY)
 - **Meeting invites group:** [calendar-android](https://groups.google.com/a/opentelemetry.io/g/calendar-android)
 - **Slack channel:** [#otel-android](https://cloud-native.slack.com/archives/C05J0T9K27Q)
