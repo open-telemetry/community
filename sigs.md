@@ -99,7 +99,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Semantic Conventions: Service and Deployment
 
-- **Meeting time:** Alternating between Thursday at 08:00 PT and Thursday at 12:00 UTC
+- **Meeting time:** Alternating between Thursday at 08:00 PT and Thursday at 05:30 UTC
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1Fy6yXfZqrwN_oHw95Bdfg_0hzUgzlk3VO5wA1invgkI)
 - **Meeting invites group:** [calendar-semconv](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)
 - **Slack channel:** [#otel-service-and-deployment-semconv-sig](https://cloud-native.slack.com/archives/C09HLNSSJSE)
