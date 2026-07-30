@@ -224,7 +224,7 @@ will be recruited as reviewers per the project staffing requirements.
 
 #### TC Sponsor
 
-Requested — see pull request description.
+Carlos Alberto Cortez ([@carlosalberto](https://github.com/carlosalberto)) — TC Escalating Sponsor
 
 #### GC Liaison
 
