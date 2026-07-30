@@ -76,8 +76,8 @@ foundation the rest of the ecosystem can build on.
   the two-stage match then keep & transform model and the core guarantees).
   Enforcement should also describe and require a set of conformance tests to
   ensure that implementations are consistent.
-- Define the canonical Protobuf schema for Policies, with a human-authorable
-  YAML representation and bidirectional conversion (including shorthand forms).
+- Define the canonical Protobuf schema for Policies, with a human-readable YAML
+  representation and bidirectional conversion (including shorthand forms).
 - Ship an alpha OpenTelemetry Collector component that **natively interprets and
   enforces** policies (rather than translating them into existing Collector
   configuration), honoring the core guarantees: atomicity, fail-open behavior,
