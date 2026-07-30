@@ -89,7 +89,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Semantic Conventions: RPC
 
-- **Meeting time:** Every Wednesday at 17:00 PT
+- **Meeting time:** Every other Thursday at 07:30 PT
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/11AtPWuaNGl2MfhRwgWqNbnjAPtK06jMKWh5-_YbWuHE)
 - **Meeting invites group:** [calendar-semconv](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)
 - **Slack channel:** [#otel-semconv-rpc-stability](https://cloud-native.slack.com/archives/C09D3TRKMED)

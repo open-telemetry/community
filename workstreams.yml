@@ -194,7 +194,7 @@
       level: guiding
   resources:
   - meeting:
-      schedule: Every Wednesday at 17:00 PT
+      schedule: Every other Thursday at 07:30 PT
       calendarInviteGroup: calendar-semconv
       gDocNotes: 11AtPWuaNGl2MfhRwgWqNbnjAPtK06jMKWh5-_YbWuHE
   - slack:
