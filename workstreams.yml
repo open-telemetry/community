@@ -213,7 +213,7 @@
       level: guiding
   resources:
   - meeting:
-      schedule: Alternating between Thursday at 08:00 PT and Thursday at 12:00 UTC
+      schedule: Alternating between Thursday at 08:00 PT and Thursday at 05:30 UTC
       calendarInviteGroup: calendar-semconv
       gDocNotes: 1Fy6yXfZqrwN_oHw95Bdfg_0hzUgzlk3VO5wA1invgkI
   - slack:
@@ -364,7 +364,7 @@
       level: escalating
   resources:
   - meeting:
-      schedule: Tuesday at 08:00 PT
+      schedule: Thursday at 08:00 PT
       calendarInviteGroup: calendar-android
       gDocNotes: 1W72oElAJuYx3efM9wkH5l1iksdfwmTSkVl-H7KHTLnY
   - slack:
