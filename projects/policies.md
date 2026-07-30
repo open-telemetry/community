@@ -94,8 +94,8 @@ foundation the rest of the ecosystem can build on.
   policies or dropping telemetry.
 - **Atomic and self-contained:** one matcher set, one action set, no references
   to other policies, no ordering dependency. This means no policy depends on
-  another policy having already been applied — it does not mean policies
-  cannot conflict or overwrite each other's effects; precedence rules (see
+  another policy having already been applied — it does not mean policies cannot
+  conflict or overwrite each other's effects; precedence rules (see
   Deliverables) govern that.
 - **Portable:** field references use the OpenTelemetry data model so a policy
   runs identically across conformant runtimes.
@@ -117,7 +117,10 @@ that can be enforced anywhere in the pipeline.
   (atomicity, fail-open, idempotence, portability), and the error-handling
   taxonomy (parse, compilation, runtime).
 - **Canonical Protobuf schema** for Policies, plus the YAML authoring format and
-  documented bidirectional conversion including shorthand forms.
+  documented bidirectional conversion including shorthand forms. Initially,
+  definitions will live in the opentelemetry-proto repository. Once the proto
+  definition is stable, we will also look into contributing a canonical JSON
+  Schema which will live in the opentelemetry-configuration repository.
 - **Alpha Collector component** that natively interprets and enforces policies
   across logs, metrics, and traces (not a translation into existing Collector
   configuration), including fail-open handling and match tracking.
