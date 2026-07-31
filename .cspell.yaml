@@ -1,6 +1,13 @@
 version: 0.2
 ignorePaths:
-  ["elections/**/*", "tools/github/*", "scripts/**/*.py", "scripts/**/*.sh", "workstreams.yml", "people.yml"]
+  [
+    "elections/**/*",
+    "tools/github/*",
+    "scripts/**/*.py",
+    "scripts/**/*.sh",
+    "workstreams.yml",
+    "people.yml",
+  ]
 # Ignore certain patterns in the workstreams.yml file
 patterns:
   - name: Slack Channel ID
@@ -18,6 +25,7 @@ ignoreRegExpList:
   - GitHub Handle in YML
 words:
   - Abinet
+  - Adell
   - Adriel
   - adrielp
   - agentic
@@ -76,6 +84,7 @@ words:
   - Karlie
   - keptn
   - Kemal
+  - Kielty
   - Kushwaha
   - Kuba
   - kubecon
@@ -114,6 +123,7 @@ words:
   - labs
   - Liudmila
   - Mathieu
+  - Matthieu
   - Nale
   - REXX
   - Rohit
@@ -148,6 +158,7 @@ words:
   - codecov
   - codeowners
   - comms
+  - Cowart
   - credly
   - danielgblanco
   - darren17082
@@ -187,6 +198,7 @@ words:
   - horovits
   - Hrabusa
   - instrgen
+  - ipfix
   - jackjia
   - jaglowski
   - javaagent
@@ -237,18 +249,23 @@ words:
   - npmjs
   - najaryan
   - nakamura
+  - netflow
+  - netflowreceiver
   - neumann
   - neumüller
   - nexis
   - nirga
   - nikimanoledaki
+  - Noirbusson
   - novotny
   - observiq
+  - Ognibene
   - Olly
   - opamp
   - OpenLIT
   - opentelemetry
   - opentelemetrybot
+  - ospf
   - ossf
   - otel
   - otelcol
@@ -278,6 +295,7 @@ words:
   - raesene
   - reiley
   - readmemd
+  - Rexed
   - rollup
   - roadmaps
   - rolldice
@@ -306,6 +324,9 @@ words:
   - sig-localization-zhcn
   - skyscanner
   - sloughter
+  - snmp
+  - snmpreceiver
+  - snmptrapreceiver
   - snyk
   - splk
   - stalnaker
@@ -320,6 +341,7 @@ words:
   - Tigerbeetle
   - Thiru
   - Traceloop
+  - traceroute
   - tarnovski
   - tekton
   - thisthat
@@ -335,6 +357,7 @@ words:
   - teamcity
   - uninstrumented
   - usermod
+  - vanityurls
   - Vasconcellos
   - Villela
   - Vitor

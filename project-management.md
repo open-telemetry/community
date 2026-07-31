@@ -61,7 +61,7 @@ With the exception of sections labeled as "Optional" or "Post-Approval", all sec
 
 A project proposal can then be submitted by placing the project document in the [projects](projects/) folder and making a pull request against the `community` repo.
 
-As the project progresses, the project document should be kept up to date, and the community [README](README.md) should be updated to include any new project meeting information (see [contributing guide](https://github.com/open-telemetry/community/blob/main/CONTRIBUTING.md#updating-sig-information-on-the-readmemd)).
+As the project progresses, the project document should be kept up to date, and the community SIG information should be updated to include any new project meeting information (see [contributing guide](CONTRIBUTING.md#updating-sig-information)).
 
 The project template may be updated and new or existing sections may become required for new projects. Existing projects are not required to update their project documents to the latest template.
 

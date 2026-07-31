@@ -43,7 +43,6 @@ events, and other functions as needed.
 
 - [Adriana Villela](https://github.com/avillela), Dynatrace
 - [Reese Lee](https://github.com/reese-lee), New Relic
-- (Associate) [Julia Furst Morgado](https://github.com/juliafmorgado), Dash0
 
 ## GitHub Administrators
 
