@@ -292,6 +292,7 @@
       schedule: Every other Thursday at 8:00 PT
       calendarInviteGroup: calendar-faas
       gDocNotes: 16dGljp7YY7jgzxydDKsin8DQCCx6HQqdQHorDxTx6SQ
+      lfxUrl: https://zoom-lfx.platform.linuxfoundation.org/meeting/93839598917?password=640722a5-c9f5-424c-bc01-f8a2066353d7
   - slack:
       name: '#otel-faas'
       id: C04HVBETC9Z
@@ -517,6 +518,7 @@
       schedule: Every other Thursday at 09:00 PT
       calendarInviteGroup: calendar-erlang
       gDocNotes: 1EbBiRjBc_cBf0T_B5OtNRPhbD4jdBrVYJAy8euCDrUI
+      lfxUrl: https://zoom-lfx.platform.linuxfoundation.org/meeting/99040410550?password=1dfe9f2d-c2e3-41e1-8046-427c284adf9a
   - slack:
       name: '#otel-erlang-elixir'
       id: C01N75YMZCN
@@ -1000,6 +1002,8 @@
       schedule: Wednesday 11:00 PT and 17:00 UTC+8
       calendarInviteGroup: calendar-developer-experience
       gDocNotes: 1QDZYAvGJbqgodJaTxRPmRZh-fEJjb6XstvPUst6h50w
+      lfxUrlNA: https://zoom-lfx.platform.linuxfoundation.org/meeting/92441126370?password=29d107b0-8a13-4d34-a38f-1cf4e9c10370
+      lfxUrlEU: https://zoom-lfx.platform.linuxfoundation.org/meeting/97457282174?password=3c1d07e2-8363-4c78-8622-56c197d9b07b
   - slack:
       name: '#otel-devex'
       id: C01S42U83B2
