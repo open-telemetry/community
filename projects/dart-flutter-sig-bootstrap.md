@@ -192,7 +192,7 @@ This project requires the creation of a new SIG: **Dart and Flutter SIG**.
 - Dane Bratz ([@danexello](https://github.com/danexello)) — Ello
 - Ben Bennett ([@benjaben](https://github.com/benjaben)) — Embrace
 - Muhammad Kamel ([@muhammadkamel](https://github.com/muhammadkamel)) — Phoonix-tech
-- Lee Hack ([@leehack](https://github.com/leehack)) — Unity
+- Jhin Lee ([@leehack](https://github.com/leehack)) — Unity
 - Tamir Hasain ([@tamirh](https://github.com/tamirh)) — Ello
 - Rohit Joshi ([@rohit482](https://github.com/rohit482))
 - [@cnbleu](https://github.com/cnbleu)
