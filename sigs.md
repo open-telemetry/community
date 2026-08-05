@@ -42,7 +42,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8)
 - **Meeting invites group:** [calendar-semconv](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)
 - **Slack channel:** [#otel-semantic-conventions](https://cloud-native.slack.com/archives/C041APFBYQP)
-- **Repositories:** [open-telemetry/semantic-conventions](https://github.com/open-telemetry/semantic-conventions)
+- **Repositories:** [open-telemetry/semantic-conventions](https://github.com/open-telemetry/semantic-conventions), [open-telemetry/semantic-conventions-conformance](https://github.com/open-telemetry/semantic-conventions-conformance)
 - **Technical Committee sponsors:** [Armin Ruech](https://github.com/arminru) (leading), [Liudmila Molkova](https://github.com/lmolkova) (leading)
 - **Governance Committee liaison:** [Trask Stalnaker](https://github.com/trask)
 

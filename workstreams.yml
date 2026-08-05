@@ -104,6 +104,7 @@
       name: '#otel-semantic-conventions'
       id: C041APFBYQP
   - repository: open-telemetry/semantic-conventions
+  - repository: open-telemetry/semantic-conventions-conformance
 - id: semconv-system-metrics
   kind: sig
   sigCategory: specification
