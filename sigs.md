@@ -218,7 +218,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-collector](https://cloud-native.slack.com/archives/C01N6P7KR6W)
 - **Repositories:** [open-telemetry/opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector), [open-telemetry/opentelemetry-collector-contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib), [open-telemetry/opentelemetry-collector-releases](https://github.com/open-telemetry/opentelemetry-collector-releases), [open-telemetry/opentelemetry-go-build-tools](https://github.com/open-telemetry/opentelemetry-go-build-tools), [open-telemetry/opentelemetry-go-vanityurls](https://github.com/open-telemetry/opentelemetry-go-vanityurls), [open-telemetry/govanityurls](https://github.com/open-telemetry/govanityurls)
 - **Roadmap projects:** [Collector roadmap](https://github.com/orgs/open-telemetry/projects/83)
-- **Technical Committee sponsors:** [Bogdan Drutu](https://github.com/bogdandrutu) (guiding), [Joshua MacDonald](https://github.com/jmacd) (guiding)
+- **Technical Committee sponsors:** [Joshua MacDonald](https://github.com/jmacd) (guiding)
 - **Governance Committee liaison:** [Pablo Baeyens](https://github.com/mx-psi)
 
 ### C++: SDK

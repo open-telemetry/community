@@ -10,9 +10,6 @@
       username: arminru
       level: tbd
   - tcSponsor:
-      username: bogdandrutu
-      level: tbd
-  - tcSponsor:
       username: carlosalberto
       level: tbd
   - tcSponsor:
@@ -420,9 +417,6 @@
   parent: none
   people:
   - gcLiaison: mx-psi
-  - tcSponsor:
-      username: bogdandrutu
-      level: guiding
   - tcSponsor:
       username: jmacd
       level: guiding
