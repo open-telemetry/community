@@ -2,6 +2,9 @@
 
 This file is intended to list all the assets controlled by OpenTelemetry.
 
+Requests to create, update, or access these assets can be submitted as an
+[OpenTelemetry community issue](https://github.com/open-telemetry/community/issues/new/choose).
+
 ## GitHub organization
 
 Link: https://github.com/open-telemetry
