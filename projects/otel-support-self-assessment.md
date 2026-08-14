@@ -92,7 +92,7 @@ Coordination touch points:
 #### Project Lead(s)
 
 - **Kasper Borg Nissen** ([@kaspernissen](https://github.com/kaspernissen)), Dash0: author of the original draft; has been developing and validating the underlying framework through blog posts, talks, and direct engagement with cloud native projects.
-- **Graziano Casto** ([@graz-dev](https://github.com/graz-dev)), Akamas: proposed the opt-in self-assessment framing that this revision is built around, and has volunteered to co-drive the work. Also Tech Lead in CNCF TAG Developer Experience, which is a useful channel for validating the guides with maintainers.
+- **Graziano Casto** ([@graz-dev](https://github.com/graz-dev)), Akamas: proposed the opt-in self-assessment framing that this revision is built around, and has volunteered to co-drive the work. Also Co-Chair in CNCF TAG Developer Experience, which is a useful channel for validating the guides with maintainers.
 
 _Pending confirmation:_ **Michael Hausenblas** ([@mhausenblas](https://github.com/mhausenblas)) volunteered to co-lead the earlier version of this proposal. Given the change in scope, he is being asked whether he wants to continue in that role.
 
