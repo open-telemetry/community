@@ -6,15 +6,17 @@ This is the current Governance Committee, per the [Governance Committee
 Charter](./governance-charter.md),
 in alphabetical order:
 
+<!-- gc -->
 - [Alolita Sharma](https://github.com/alolita), Apple, until October 2026
 - [Austin Parker](https://github.com/austinlparker), Honeycomb, until October 2027
 - [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden, until October 2027
 - [Marylia Gutierrez](https://github.com/maryliag), Grafana Labs, until October 2027
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2026
-- [Pablo Baeyens Fernandez](https://github.com/mx-psi), Datadog, until October 2026
-- [Severin Neumann](https://github.com/svrnm), Causely, until October 2027
+- [Pablo Baeyens](https://github.com/mx-psi), Datadog, until October 2026
+- [Severin Neumann](https://github.com/svrnm), Bronto, until October 2027
 - [Ted Young](https://github.com/tedsuo), Grafana Labs, until October 2027
 - [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2026
+<!-- endgc -->
 
 ## Technical Committee
 
@@ -22,16 +24,17 @@ This is the current Technical Committee, per the
 [Technical Committee Charter](./tech-committee-charter.md),
 in alphabetical order:
 
+<!-- tc -->
 - [Armin Ruech](https://github.com/arminru), Dynatrace
-- [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake
-- [Carlos Alberto](https://github.com/carlosalberto), Lightstep
+- [Bogdan Drutu](https://github.com/bogdandrutu), Snowflake
+- [Carlos Alberto Cortez](https://github.com/carlosalberto), Dash0
 - [David Ashpole](https://github.com/dashpole), Google
 - [Jack Berg](https://github.com/jack-berg), Grafana Labs
-- [Josh MacDonald](https://github.com/jmacd), Microsoft
-- [Josh Suereth](https://github.com/jsuereth), Google
-- [Liudmila Molkova](https://github.com/lmolkova), Grafana Labs
+- [Joshua MacDonald](https://github.com/jmacd), Microsoft
+- [Liudmila Molkova](https://github.com/lmolkova), Google
 - [Reiley Yang](https://github.com/reyang), Microsoft
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
+<!-- endtc -->
 
 ## Community Management
 
@@ -40,37 +43,36 @@ events, and other functions as needed.
 
 - [Adriana Villela](https://github.com/avillela), Dynatrace
 - [Reese Lee](https://github.com/reese-lee), New Relic
-- (Associate) [Julia Furst Morgado](https://github.com/juliafmorgado), Dash0
 
-## Specifications and Proto
+## GitHub Administrators
 
-Members of the Technical Committee are the maintainers of
-[Project specs](https://github.com/open-telemetry/opentelemetry-specification)
-and [Proto definitions](https://github.com/open-telemetry/opentelemetry-proto).
+These are the GitHub organization owners
+([@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)),
+responsible for [GitHub administration processes](./guides/maintainer/github-admin-processes.md):
 
-[Specification sponsors](./guides/contributor/membership.md#specification-sponsor) are
-trusted collaborators of the Technical Committee on Project specs and related
-repositories:
+- [Armin Ruech](https://github.com/arminru), Dynatrace
+- [Josh Suereth](https://github.com/jsuereth), Google
+- [Marylia Gutierrez](https://github.com/maryliag), Grafana Labs
+- [Reiley Yang](https://github.com/reyang), Microsoft
+- [Severin Neumann](https://github.com/svrnm), Bronto
+- [Trask Stalnaker](https://github.com/trask), Microsoft
 
-- [Alex Boten](https://github.com/codeboten), Honeycomb
-- [Christian Neumüller](https://github.com/Oberon00), Dynatrace
-- [Cijo Thomas](https://github.com/cijothomas), Microsoft
-- [Daniel Dyla](https://github.com/dyladan), Dynatrace
-- [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden
-- [Leighton Chen](https://github.com/lzchen), Microsoft
-- [Marc Alff](https://github.com/marcalff), Oracle
-- [Robert Pająk](https://github.com/pellared), Splunk
-- [Severin Neumann](https://github.com/svrnm), Independent
-- [Ted Young](https://github.com/tedsuo), Grafana Labs
-- [Tristan Sloughter](https://github.com/tsloughter), MyDecisiveAI
-- [Tyler Yahn](https://github.com/MrAlias), Splunk
+## Prometheus Interoperability
 
-Emeritus sponsors (formerly approvers):
+Members of the [Prometheus<->OpenTelemetry Interoperability Working Group](https://github.com/orgs/open-telemetry/teams/prometheus-interoperability). Responsible for evolving the interoperability
+between Prometheus and OpenTelemetry, including specification of data model transformations and their implementations in several SDKs, Collector and other parts where
+the two communities intersect.
 
-- [Christian Beedgen](https://github.com/kumoroku)
-- [Daniel Jaglowski](https://github.com/djaglowski)
-- [David Poncelow](https://github.com/zenmoto)
-- [Nikita Salnikov-Tarnovski](https://github.com/iNikem)
+- [Arthur Silva Sens](https://github.com/ArthurSens), Grafana Labs
+- [David Ashpole](http://github.com/dashpole), Google
+
+Emeritus:
+
+- [Alolita Sharma](https://github.com/alolita), Apple
+- [Antony Mirabella](https://github.com/aneurysm9), AWS
+- [Jaana Dogan](https://github.com/rakyll), Google
+- [Josh Suereth](https://github.com/jsuereth), Google
+- [Juraj Michálek](https://github.com/jmichalek132), Grafana Labs 
 
 ## Semantic Conventions
 
@@ -115,6 +117,12 @@ The list of active members (both "approvers" and "maintainers") for the OpenTele
 Repo: [open-telemetry/opentelemetry-go-instrumentation](https://github.com/open-telemetry/opentelemetry-go-instrumentation)
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Go auto-instrumentation can be found in the [open-telemetry/opentelemetry-go-instrumentation CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-go-instrumentation/blob/main/CONTRIBUTING.md#appovers-and-maintainers).
+
+### Golang Compile Time Instrumentation
+
+Repo: [open-telemetry/opentelemetry-go-compile-instrumentation](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation)
+
+The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Go compile time instrumentation can be found in the [open-telemetry/opentelemetry-go-compile-instrumentation README file](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation#contributing).
 
 ## JavaScript
 
@@ -200,5 +208,6 @@ Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/open
 
 ## Technical Committee Emeritus
 
+- [Josh Suereth](https://github.com/jsuereth)
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev)
 - [Yuri Shkuro](https://github.com/yurishkuro)

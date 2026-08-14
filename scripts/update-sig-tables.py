@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import re
 import subprocess
 import sys
 
@@ -9,117 +10,229 @@ if (len(sys.argv) > 1) and (sys.argv[1] == "--install"):
 
 import yaml
 
-# Do not safe the file but verify that it is different from the original one.
+# Do not save the file but verify that it is different from the original one.
 run_in_check_mode = (len(sys.argv) > 1) and (sys.argv[1] == "--check")
 
-# Define the YAML input file and the markdown file to be updated
-yaml_input = "sigs.yml"
-markdown_file = "README.md"
+WORKSTREAMS_FILE = "workstreams.yml"
+METADATA_FILE    = "people.yml"
+readme_file      = "README.md"
+sigs_file        = "sigs.md"
 
-# Define the markers
 start_marker = "<!-- sigs -->"
 end_marker = "<!-- endsigs -->"
 
-def format_chat(chat):
-    if chat['type'] == 'slack':
-        return f"[{chat['name']}](https://cloud-native.slack.com/archives/{chat['id']})"
-    elif chat['type'] == 'other':
-        return f"[{chat['name']}]({chat['link']})"
-    else:
+with open(WORKSTREAMS_FILE, encoding="utf-8") as f:
+    workstreams = yaml.safe_load(f)
+
+try:
+    with open(METADATA_FILE, encoding="utf-8") as f:
+        _metadata = yaml.safe_load(f)
+    _people = _metadata.get("people", {})
+except FileNotFoundError:
+    print(
+        f"Warning: {METADATA_FILE} not found — display names will fall back to GitHub handles.",
+        file=sys.stderr,
+    )
+    _people = {}
+
+
+def person_link(username):
+    if not username or username == "tbd":
         return ""
+    name = _people.get(username, {}).get("name", username)
+    return f"[{name}](https://github.com/{username})"
 
-# Read the YAML file
-with open(yaml_input, 'r') as file:
-    data = yaml.safe_load(file)
 
-# Extract the top and bottom parts of the existing markdown file
-with open(markdown_file, 'r') as file:
-    content = file.read()
-    top_part, bottom_part = content.split(start_marker, 1)[0], content.split(end_marker, 1)[1]
+def heading_anchor(text):
+    text = re.sub(r"\[([^\]]+)\]\([^\)]+\)", r"\1", text)
+    text = re.sub(r"[^a-z0-9\s-]", "", text.lower())
+    return text.strip().replace(" ", "-")
 
-# Generate the markdown content for each SIG group
-markdown_content = start_marker + '\n'
-for group in data:
-    # Group heading
-    group_name = group['name']
-    markdown_content += f"### {group_name}\n\n"
 
-    # Table headers
-    if group_name == "Specification SIGs":
-        markdown_content += "| Name | Meeting Time | Meeting Notes | Slack Channel | Meeting Invites Group | [Sponsors](./project-management.md#project-proposal) | [Governance Committee](./community-members.md#governance-committee) Liaison |\n"
-        markdown_content += "|------|--------------|---------------|---------------|-----------------|--------------------------------|--------------------------------|\n"
+def repository_link(repository):
+    return f"[{repository}](https://github.com/{repository})"
+
+
+def roadmap_project_link(project_id, name):
+    return f"[{name} roadmap](https://github.com/orgs/open-telemetry/projects/{project_id})"
+
+
+def extract_row_data(ws):
+    meeting_schedule = ""
+    notes_link = ""
+    slack_channels = []
+    discussions = []
+    calendar = ""
+    repositories = []
+    roadmap_projects = []
+
+    for res in ws.get("resources", []):
+        if "meeting" in res:
+            m = res["meeting"]
+            meeting_schedule = m.get("schedule", "")
+            if gdoc := m.get("gDocNotes"):
+                notes_link = f"[Google Doc](https://docs.google.com/document/d/{gdoc})"
+            if cal := m.get("calendarInviteGroup"):
+                calendar = f"[{cal}](https://groups.google.com/a/opentelemetry.io/g/{cal})"
+        elif "slack" in res:
+            s = res["slack"]
+            slack_channels.append(f"[{s['name']}](https://cloud-native.slack.com/archives/{s['id']})")
+        elif "githubDiscussion" in res:
+            discussions.append(f"[GitHub Discussions]({res['githubDiscussion']})")
+        elif "repository" in res:
+            repositories.append(repository_link(res["repository"]))
+        elif "roadmapProject" in res:
+            roadmap_projects.append(roadmap_project_link(res["roadmapProject"], ws["name"]))
+
+    gc_liaisons = []
+    tc_sponsors = []
+    spec_sponsors = []
+
+    for entry in ws.get("people", []):
+        if "gcLiaison" in entry:
+            gc_liaisons.append(person_link(entry["gcLiaison"]) or entry["gcLiaison"])
+        elif "tcSponsor" in entry:
+            sponsor = entry["tcSponsor"]
+            link = person_link(sponsor["username"]) or sponsor["username"]
+            level = sponsor.get("level")
+            if level and level != "tbd":
+                link = f"{link} ({level})"
+            tc_sponsors.append(link)
+        elif "specSponsor" in entry:
+            spec_sponsors.append(person_link(entry["specSponsor"]) or entry["specSponsor"])
+
+    if ws.get("tcSponsorship") == "collective":
+        tc_sponsors = ["[Technical Committee](./community-members.md#technical-committee)"]
+
+    return {
+        "meeting_schedule": meeting_schedule,
+        "notes_link": notes_link,
+        "slack_channels": slack_channels,
+        "discussions": discussions,
+        "calendar": calendar,
+        "repositories": repositories,
+        "roadmap_projects": roadmap_projects,
+        "gc_liaisons": gc_liaisons,
+        "tc_sponsors": tc_sponsors,
+        "spec_sponsors": spec_sponsors,
+    }
+
+
+# Categorize SIGs into groups, preserving workstreams.yml order within each group.
+spec_sigs = []
+impl_sigs = []
+cross_sigs = []
+localization_sigs = []
+
+for ws in workstreams:
+    if ws.get("kind") != "sig":
+        continue
+    category = ws.get("sigCategory")
+    parent = ws.get("parent", "none")
+
+    if category == "implementation":
+        impl_sigs.append(ws)
+    elif category == "cross-cutting":
+        if parent == "communications":
+            localization_sigs.append(ws)
+        else:
+            cross_sigs.append(ws)
     else:
-        markdown_content += "| Name | Meeting Time | Meeting Notes | Slack Channel | Meeting Invites Group | [Governance Committee](./community-members.md#governance-committee) Liaison |\n"
-        markdown_content += "|------|--------------|---------------|---------------|-----------------|--------------------------------|\n"
+        # specification (sigCategory absent or explicit)
+        spec_sigs.append(ws)
 
-    # Table rows for SIGs
-    for sig in group['sigs']:
-        name = sig['name']
-        meeting = sig.get('meeting', '')
-        notes_type = sig['notes'].get('type', '')
-        notes_value = sig['notes'].get('value', '')
 
-        chats = " and ".join(
-            [format_chat(chat) 
-            for chat in sig.get('chat', [])
-            if chat.get('name') and chat.get('type')]
-        )
+def join_details(values):
+    return ", ".join(value for value in values if value)
 
-        short_name = None
-        for chat in sig.get('chat', []):
-            if chat.get('type') == 'slack':
-                short_name = 'sig-' + chat.get('name').replace('#otel-', '').replace('sig-', '')
-                break
 
-        invites = sig.get('invites', 'none')
-        tc_sponsors = ",<br/>".join(
-            [f"[{sponsor['name']}](https://github.com/{sponsor['github']})"
-            for sponsor in sig.get('sponsors', [])
-            if sponsor.get('name') and sponsor.get('github')]
-        )
+def render_group(group_name, sigs):
+    content = f"### {group_name}\n\n"
+    content += "| Name | Meeting Time | Meeting Invites Group | Slack Channel | Details |\n"
+    content += "|------|--------------|-----------------------|---------------|---------|\n"
 
-        gc_liaison = "<br/>".join(
-            [f"[{liaison['name']}](https://github.com/{liaison['github']})"
-            for liaison in sig.get('gcLiaison', [])
-            if liaison.get('name') and liaison.get('github')]
-        )
+    for ws in sigs:
+        name = ws["name"]
+        data = extract_row_data(ws)
+        details = f"[Details](./{sigs_file}#{heading_anchor(name)})"
+        content += f"| {name} | {data['meeting_schedule']} | {data['calendar']} | {join_details(data['slack_channels'])} | {details} |\n"
 
-        # Construct notes and calendar entries based on type
-        if notes_type == "gDoc":
-            notes = f"[Google Doc](https://docs.google.com/document/d/{notes_value})"
-        else:
-            notes = notes_value
-        
-        if invites == "none":
-            calendar = ""
-        else:
-            calendar = f"[{invites}](https://groups.google.com/a/opentelemetry.io/g/{invites})"
-        
-        if group_name == "Specification SIGs":
-            markdown_content += f"| {name}&nbsp;<a id=\"{short_name}\" href=\"#{short_name}\"><sup>🔗</sup></a> | {meeting} | {notes} | {chats} | {calendar} | {tc_sponsors} | {gc_liaison} | \n"
-        else:
-            markdown_content += f"| {name}&nbsp;<a id=\"{short_name}\" href=\"#{short_name}\"><sup>🔗</sup></a> | {meeting} | {notes} | {chats} | {calendar} | {gc_liaison} |\n"
+    content += "\n"
+    return content
 
-    # Add a newline for spacing after the table
-    markdown_content += "\n"
 
+def render_sig_details(ws):
+    data = extract_row_data(ws)
+    details = [
+        ("Meeting time", data["meeting_schedule"]),
+        ("Meeting notes", data["notes_link"]),
+        ("Meeting invites group", data["calendar"]),
+        ("Slack channel", join_details(data["slack_channels"])),
+        ("GitHub Discussions", join_details(data["discussions"])),
+        ("Repositories", join_details(data["repositories"])),
+        ("Roadmap projects", join_details(data["roadmap_projects"])),
+        ("Technical Committee sponsors", join_details(data["tc_sponsors"])),
+        ("Spec sponsors", join_details(data["spec_sponsors"])),
+        ("Governance Committee liaison", join_details(data["gc_liaisons"])),
+    ]
+
+    bullets = "".join(f"- **{label}:** {value}\n" for label, value in details if value)
+    return f"### {ws['name']}\n\n{bullets}\n"
+
+
+def render_sig_details_group(group_name, sigs):
+    content = f"## {group_name}\n\n"
+    for ws in sigs:
+        content += render_sig_details(ws)
+    return content
+
+
+def render_sigs_markdown():
+    content = "# OpenTelemetry Special Interest Groups\n\n"
+    content += "<!-- This file is auto-generated. To make changes, see CONTRIBUTING.md#updating-sig-information. -->\n\n"
+    content += "This page contains detailed information for all OpenTelemetry Special Interest Groups (SIGs).\n\n"
+    content += render_sig_details_group("Specification SIGs", spec_sigs)
+    content += render_sig_details_group("Implementation SIGs", impl_sigs)
+    content += render_sig_details_group("Cross-Cutting SIGs", cross_sigs)
+    content += render_sig_details_group("Localization Teams (part of SIG Communications)", localization_sigs)
+    return content.rstrip() + "\n"
+
+
+with open(readme_file, encoding="utf-8") as f:
+    content = f.read()
+
+top_part = content.split(start_marker, 1)[0]
+bottom_part = content.split(end_marker, 1)[1]
+
+markdown_content = start_marker + "\n"
+markdown_content += render_group("Specification SIGs", spec_sigs)
+markdown_content += render_group("Implementation SIGs", impl_sigs)
+markdown_content += render_group("Cross-Cutting SIGs", cross_sigs)
+markdown_content += render_group("Localization Teams (part of SIG Communications)", localization_sigs)
 markdown_content += end_marker
 
-result = top_part + markdown_content + bottom_part
+readme_result = top_part + markdown_content + bottom_part
+sigs_result = render_sigs_markdown()
+
+
+def file_matches(path, expected):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return f.read() == expected
+    except FileNotFoundError:
+        return False
 
 if run_in_check_mode:
-    with open(markdown_file, 'r') as file:
-        original = file.read()
-    if original == result:
+    if file_matches(readme_file, readme_result) and file_matches(sigs_file, sigs_result):
         sys.exit(0)
     else:
+        print(f"{readme_file} or {sigs_file} is out of date. Run 'make generate' to update it.", file=sys.stderr)
         sys.exit(1)
 else:
-    # Write the updated markdown content to file
-    with open(markdown_file, 'w') as file:
-        file.write(top_part)
-        file.write(markdown_content)
-        file.write(bottom_part)
+    with open(readme_file, "w", encoding="utf-8") as f:
+        f.write(readme_result)
+    with open(sigs_file, "w", encoding="utf-8") as f:
+        f.write(sigs_result)
 
 # Inform the user that the markdown file has been updated
-print("The markdown file has been updated with the new SIG tables.")
+print("The markdown files have been updated with the new SIG tables.")

@@ -127,13 +127,15 @@ See [Project Staffing](/project-management.md#project-staffing)
 
 #### Project Leads(s)
 Dan Gomez Blanco (@danielgblanco)
-Damien Mathieu (@dmathieu)
+Lukasz Ciukaj (@luke6Lh43)
+Tiffany Hrabusa (@tiffany76 )
 
 #### Other Staffing
 
 - Contributors/architects willing to help coordinate with end-users, create templates, analyze reference architectures, and write up blueprints:
-  - Jacob Aronoff (@jaronoff97)
+  - Dan Gomez Blanco (@danielgblanco)
   - Lukasz Ciukaj (@luke6Lh43)
+  - Jacob Aronoff (@jaronoff97)
   - Alain Pham (@alainpham)
   - ChaosKyle (@ChaosKyle)
   - Brad Schmitt (@bpschmitt)

@@ -1,24 +1,27 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended",
-    "docker:pinDigests",
+    "config:best-practices",
     "helpers:pinGitHubActionDigestsToSemver"
   ],
   "packageRules": [
     {
-      // reduces the number of Renovate PRs
-      // (patch updates are typically non-breaking)
-      "groupName": "all patch versions",
-      "matchUpdateTypes": ["patch"],
-      "schedule": ["before 8am every weekday"]
+      groupName: 'github actions',
+      matchManagers: [
+        'github-actions',
+      ],
+      schedule: [
+        '* * 2 * *', // monthly, on the 2nd
+      ],
     },
     {
-      // avoids these Renovate PRs from trickling in throughout the week
-      // (consolidating the review process)
-      "matchUpdateTypes": ["minor", "major"],
-      "schedule": ["before 8am on Monday"]
-    }
+      matchManagers: [
+        '!github-actions',
+      ],
+      schedule: [
+        '* * 2 * *', // monthly, on the 2nd
+      ],
+    },
   ],
   "labels": [
     "dependencies"

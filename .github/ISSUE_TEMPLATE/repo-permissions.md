@@ -7,7 +7,7 @@ assignees: ''
 ---
 
 <!-- Please remember to change the title of this issue by replacing
- <REPOSITORY-NAME> with the actual respository name -->
+ <REPOSITORY-NAME> with the actual repository name -->
 
 ### Affected Repository
 

@@ -73,7 +73,7 @@ and it should be relatively short we only need to update conformance to the spec
 **Domain Experts:**
 
 - @dmitryax (Splunk/Cisco)
-- @TylerHelmuth (Honeycomb)
+- @TylerHelmuth (Grafana Labs)
 - @rogercoll (Elastic)
 - @jaronoff97 (Lightstep)
 - @povilasv (Coralogix)
@@ -96,7 +96,7 @@ and it should be relatively short we only need to update conformance to the spec
 **Collector's components code-owners:**
 
 - @dmitryax (Splunk/Cisco)
-- @TylerHelmuth (Honeycomb)
+- @TylerHelmuth (Grafana Labs)
 - @povilasv (Coralogix)
 - @ChrsMark (Elastic)
 

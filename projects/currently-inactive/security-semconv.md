@@ -2,7 +2,7 @@
 
 ## Description
 
-The purpose of this project is to bring in the security domain for the OpenTelemetry community. 
+The purpose of this project is to bring in the security domain for the OpenTelemetry community.
 
 As outlined in the [ECS OTEP](https://github.com/open-telemetry/oteps/blob/main/text/0199-support-elastic-common-schema-in-opentelemetry.md), the Elastic Common Schema (ECS) is currently being contributed to the semantic conventions schema. Given the significance of security within ECS, establishing this SIG is crucial as it will expedite the donation of ECS fields tailored to security use cases. Beyond expanding the schema, our aim is to craft a clear vision for the instrumentation required.
 
@@ -34,11 +34,11 @@ As outlined in the [ECS OTEP](https://github.com/open-telemetry/oteps/blob/main/
 
 ## Staffing / Help Wanted
 
-We are seeking security experts to collaborate with us in expanding the security domain within the community.  
+We are seeking security experts to collaborate with us in expanding the security domain within the community.
 
 ### Required staffing
 
-There is an open [PR](https://github.com/open-telemetry/semantic-conventions/issues/580) to create a `semconv-security-approver` group for all PRs related to security fields.  
+There is an open [PR](https://github.com/open-telemetry/semantic-conventions/issues/580) to create a `semconv-security-approver` group for all PRs related to security fields.
 
 * project lead: @trisch-me (Elastic)
 * domain expert: @mjwolf (Elastic)
@@ -51,7 +51,7 @@ There is an open [PR](https://github.com/open-telemetry/semantic-conventions/iss
 * TC sponsor: @reyang
 * TC sponsor: @jsuereth
 
-Need more 
+Need more
 - [ ] domain experts
 - [ ] potentially, maintainers of language-specific instrumentation may be needed if the need arises.
 

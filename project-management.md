@@ -61,7 +61,7 @@ With the exception of sections labeled as "Optional" or "Post-Approval", all sec
 
 A project proposal can then be submitted by placing the project document in the [projects](projects/) folder and making a pull request against the `community` repo.
 
-As the project progresses, the project document should be kept up to date, and the community [README](README.md) should be updated to include any new project meeting information (see [contributing guide](https://github.com/open-telemetry/community/blob/main/CONTRIBUTING.md#updating-sig-information-on-the-readmemd)).
+As the project progresses, the project document should be kept up to date, and the community SIG information should be updated to include any new project meeting information (see [contributing guide](CONTRIBUTING.md#updating-sig-information)).
 
 The project template may be updated and new or existing sections may become required for new projects. Existing projects are not required to update their project documents to the latest template.
 
@@ -100,6 +100,7 @@ Project leads should use it to plan work and communicate status updates to the c
 The project lifecycle is as follows:
 
 * A **Project Proposal** pull request is created, as described above. The pull request should be labeled as `area/project-proposal`, which opens it up for community review.
+  * Upon submission the `triage:tc-inbox` label will be applied. The technical committee will review the project proposal for scope, and technical alignment with other projects or SIGs to determine the appropriate level of sponsorship required. The TC will make comments and add the `triage:tc-reviewed` label when these activities are completed.
   * For a project to be approved, its pull request **must be approved by a majority of GC members**. If a project is approved, and all merge requirements are met, the pull request is merged.
 * One a project is **Approved**, project leads create the corresponding GitHub project and set up meetings and other logistics as documented in the project proposal template.
 * For the duration of the project, project leads, along with their GC liaisons, are expected to regularly (at minimum quarterly) [share project updates](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/sharing-project-updates) to communicate the status of the project to the wider community. The list of possible statuses any given project is static, and it represents the following:

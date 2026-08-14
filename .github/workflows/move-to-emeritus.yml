@@ -1,0 +1,28 @@
+name: Move inactive members to Emeritus
+
+on:
+  workflow_dispatch:
+  schedule:
+    # At 05:00, on the 1st of every month
+    - cron: '0 5 1 * *'
+
+permissions:
+  contents: read
+
+jobs:
+  move-to-emeritus:
+    name: Move inactive members to emeritus
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.14'
+
+      - name: Check activity and create PRs
+        run: python -u scripts/move-to-emeritus.py --create-prs
+        env:
+          GITHUB_TOKEN: ${{ secrets.OPENTELEMETRYBOT_GITHUB_TOKEN }}

@@ -56,7 +56,7 @@ In the second step, this specification should be expanded to include instruction
 
 Once the specification is available, each SIG that implements the API and SDK in their respective language can provide the application in both uninstrumented and instrumented forms as examples in their repository.
 
-Once at least one SIG provides this application, the documentation can be updated to include the new learning experience, utilizing this application. We will leverage existing tools to [extract code excerpts](https://github.com/open-telemetry/opentelemetry.io/tree/main/tools) from external repositories and import the code directly into the website.
+Once at least one SIG provides this application, the documentation can be updated to include the new learning experience, utilizing this application. We will leverage existing tools to [extract code excerpts](https://opentelemetry.io/docs/contributing/development/#tools) from external repositories and import the code directly into the website.
 
 ## Deliverables
 

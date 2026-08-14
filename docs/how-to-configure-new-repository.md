@@ -57,11 +57,10 @@ If the repository is using the Project Boards, `foo-triagers` should have
 `foo-triagers` to the CODEOWNERS file, as their approvals should not count
 towards the required number of approvals for merging.
 
-If requested, `foo-maintainers` will be granted `Admin` permissions, and in return
-they must document any changes they make to the repository settings in a file named
-`.github/repository-settings.md` in their repository (other than temporarily
-disabling "Do not allow bypassing the above settings", see branch protection rules
-below).
+There are cases when maintainers want to request for `Admin` permissions. Please
+check the [request repository admin
+permissions](../guides/maintainer/github-admin-processes.md#request-repository-admin-permissions)
+guideline.
 
 ### Branches
 
