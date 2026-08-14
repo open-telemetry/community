@@ -18,6 +18,7 @@ ignoreRegExpList:
   - GitHub Handle in YML
 words:
   - Abinet
+  - Akamas
   - Alain
   - Alff
   - Arize
@@ -25,13 +26,16 @@ words:
   - Ashpole
   - automations
   - Baeyens
+  - Baykara
   - calendar-localization-ptbr
+  - Casto
   - Causely
   - Cheler
   - Ciukaj
   - Collibra
   - Coralogix
   - Cortez
+  - Dapr
   - DASD
   - Debele
   - Díaz
@@ -50,6 +54,8 @@ words:
   - faas
   - gitter
   - grafana
+  - Graziano
+  - Hausenblas
   - Hostmetrics
   - hostmetricsreceiver
   - Instrgen
@@ -57,7 +63,9 @@ words:
   - Joaquín
   - Kanal
   - Karlie
+  - Kasper
   - keptn
+  - kgateway
   - Kuba
   - kubecon
   - k8sclusterreceiver
@@ -71,6 +79,8 @@ words:
   - maintainership
   - Makefiles
   - Marylia
+  - Mehmet
+  - Nissen
   - observiq
   - opentelemetry
   - opentelemetrybot
@@ -89,7 +99,9 @@ words:
   - Liudmila
   - Mathieu
   - Nale
+  - Rexed
   - REXX
+  - Salatino
   - scaphandre
   - Sysplex
   - acramsay
@@ -297,13 +309,3 @@ words:
   - Vitor
   - vtex
   - yahn
-  - Baykara
-  - Dapr
-  - Hausenblas
-  - Kasper
-  - kgateway
-  - Mehmet
-  - Nissen
-  - Rexed
-  - Salatino
-  - touchpoints
