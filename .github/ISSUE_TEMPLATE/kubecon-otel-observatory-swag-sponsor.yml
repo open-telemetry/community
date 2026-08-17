@@ -1,0 +1,45 @@
+name: KubeCon OTel Observatory Swag Sponsor
+description: Express your company's interest in sponsoring swag for the OTel Observatory booth at KubeCon.
+title: '[OTel Observatory Swag Sponsor]: <company>'
+labels:
+  - otel-observatory-swag
+assignees:
+  - avillela
+  - reese-lee
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your interest in sponsoring swag for the OTel Observatory booth at KubeCon! Please fill out the form below and we'll be in touch.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: What is your name?
+      placeholder: ex. Jane Doe
+    validations:
+      required: true
+  - type: input
+    id: contact_email
+    attributes:
+      label: Contact email
+      description: How can we get in touch with you?
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+  - type: input
+    id: company
+    attributes:
+      label: Your company
+      description: What company are you representing?
+      placeholder: ex. Acme Corp
+    validations:
+      required: true
+  - type: input
+    id: budget
+    attributes:
+      label: Budget
+      description: How much money is your company willing to spend on swag (in USD)?
+      placeholder: ex. $500
+    validations:
+      required: true
