@@ -6,6 +6,7 @@ labels:
 assignees:
   - avillela
   - reese-lee
+cspell:ignore: avillela reese-lee
 body:
   - type: markdown
     attributes:
