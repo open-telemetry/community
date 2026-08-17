@@ -396,12 +396,13 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Network
 
-- **Meeting time:** Tuesday at 09:00 PT
+- **Meeting time:** Monday at 07:00 PT
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/13GK915hdDQ9sUYzUIWi4pOfJK68EE935ugutUgL3yOw)
 - **Meeting invites group:** [calendar-network](https://groups.google.com/a/opentelemetry.io/g/calendar-network)
 - **Slack channel:** [#otel-network](https://cloud-native.slack.com/archives/C02AB15583A)
 - **Repositories:** [open-telemetry/opentelemetry-network](https://github.com/open-telemetry/opentelemetry-network)
-- **Technical Committee sponsors:** [David Ashpole](https://github.com/dashpole) (escalating)
+- **Roadmap projects:** [Network roadmap](https://github.com/orgs/open-telemetry/projects/202)
+- **Technical Committee sponsors:** [Liudmila Molkova](https://github.com/lmolkova) (escalating)
 - **Governance Committee liaison:** [Ted Young](https://github.com/tedsuo)
 
 ### eBPF Instrumentation
