@@ -101,6 +101,7 @@
       name: '#otel-semantic-conventions'
       id: C041APFBYQP
   - repository: open-telemetry/semantic-conventions
+  - repository: open-telemetry/semantic-conventions-conformance
 - id: semconv-system-metrics
   kind: sig
   sigCategory: specification
@@ -791,17 +792,18 @@
   people:
   - gcLiaison: tedsuo
   - tcSponsor:
-      username: dashpole
+      username: lmolkova
       level: escalating
   resources:
   - meeting:
-      schedule: Tuesday at 09:00 PT
+      schedule: Monday at 07:00 PT
       calendarInviteGroup: calendar-network
       gDocNotes: 13GK915hdDQ9sUYzUIWi4pOfJK68EE935ugutUgL3yOw
   - slack:
       name: '#otel-network'
       id: C02AB15583A
   - repository: open-telemetry/opentelemetry-network
+  - roadmapProject: 202
 - id: ebpf-instrumentation
   kind: sig
   sigCategory: implementation
