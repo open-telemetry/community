@@ -197,7 +197,7 @@ N/A
 
 #### GC Liaison
 
-TBD
+- @mx-psi (Datadog)
 
 ## Expected Timeline
 
