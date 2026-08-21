@@ -1,6 +1,6 @@
 # Contributing
 
-Welcome to OpenTelemetry community repository!
+Welcome to the OpenTelemetry community repository!
 
 Before you start - see OpenTelemetry general [contributing](guides/contributor/README.md)
 requirements and recommendations.
