@@ -737,11 +737,26 @@ def _get_emeritus_pr_number(repo):
 # README parsing and modification
 # ---------------------------------------------------------------------------
 
-def fetch_readme(repo):
-    """Fetch README.md from a repo via the Contents API.
+def fetch_repo_file(repo, path):
+    """Fetch a file from a repo via the Contents API.
 
     Returns (content_string, sha, path) or None if not found.
     """
+    encoded_path = urllib.parse.quote(path, safe="/")
+    url = f"{REST_API}/repos/{ORG}/{repo}/contents/{encoded_path}"
+    try:
+        resp = request_with_retry("GET", url)
+        data = read_json(resp)
+        content = base64.b64decode(data["content"]).decode("utf-8")
+        return content, data["sha"], data["path"]
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return None
+        raise
+
+
+def fetch_readme(repo):
+    """Fetch the repository's default README via the Contents API."""
     url = f"{REST_API}/repos/{ORG}/{repo}/readme"
     try:
         resp = request_with_retry("GET", url)
@@ -828,6 +843,56 @@ def _remove_member_line(readme, section_name, username):
     return readme[:start] + new_section + readme[end:]
 
 
+def _section_has_member(document, section_name, username):
+    """Return whether a role section contains a member's GitHub profile."""
+    section = _find_section(document, section_name)
+    if not section:
+        return False
+    start, end, _ = section
+    return any(
+        member["username"].lower() == username.lower()
+        for member in _parse_members(document[start:end])
+    )
+
+
+def _has_active_member(document, user_info):
+    """Return whether a document has any target user in an active role."""
+    return any(
+        _section_has_member(document, ROLE_SECTIONS[role], user)
+        for user, info in user_info.items()
+        for role in info["roles"]
+        if role in ROLE_SECTIONS
+    )
+
+
+def _has_emeritus_member(document, user_info):
+    """Return whether a document has any target user in Emeritus."""
+    return any(
+        _section_has_member(document, EMERITUS_SECTION, user)
+        for user in user_info
+    )
+
+
+def _find_membership_document(repo, user_info):
+    """Return the README or CONTRIBUTING file that holds active role entries."""
+    readme = fetch_readme(repo)
+    if readme and _has_active_member(readme[0], user_info):
+        return readme
+
+    contributing = fetch_repo_file(repo, "CONTRIBUTING.md")
+    if contributing and _has_active_member(contributing[0], user_info):
+        return contributing
+
+    # Preserve the follow-up issue path on later runs, after the active entry
+    # has already been moved to Emeritus. Prefer README for compatibility with
+    # the behavior before CONTRIBUTING support was added.
+    if readme and _has_emeritus_member(readme[0], user_info):
+        return readme
+    if contributing and _has_emeritus_member(contributing[0], user_info):
+        return contributing
+    return readme or contributing
+
+
 def _add_to_emeritus(readme, emeritus_title, member_entry, header_level=3):
     """Add a member entry to an emeritus section. Creates the section if needed.
 
@@ -897,6 +962,65 @@ def _add_to_emeritus(readme, emeritus_title, member_entry, header_level=3):
             return readme[:idx] + new_section + readme[idx:]
 
     return readme + new_section
+
+
+def _apply_emeritus_changes(document, user_info):
+    """Move documented active users to Emeritus.
+
+    Returns (updated_document, changes, missing_users). Users already listed as
+    Emeritus remain in changes so the existing follow-up issue path is kept.
+    """
+    changes = []
+    missing_users = []
+
+    for user, info in sorted(user_info.items()):
+        display_name = None
+        marker = "-"
+        header_level = 3
+        already_emeritus = _section_has_member(document, EMERITUS_SECTION, user)
+
+        for role_label in info["roles"]:
+            section_name = ROLE_SECTIONS.get(role_label)
+            if not section_name:
+                continue
+            section = _find_section(document, section_name)
+            if section:
+                start, end, header_level = section
+                section_text = document[start:end]
+                for member in _parse_members(section_text):
+                    if member["username"].lower() == user.lower():
+                        display_name = member["name"]
+                        marker = _detect_list_marker(section_text)
+                        break
+                if display_name:
+                    break
+
+        removed = False
+        for role_label in info["roles"]:
+            section_name = ROLE_SECTIONS.get(role_label)
+            if not section_name:
+                continue
+            modified = _remove_member_line(document, section_name, user)
+            if modified is not None:
+                document = modified
+                removed = True
+
+        highest_role = info["role"]
+        change = (user, highest_role, sorted(info["teams"]))
+        if removed:
+            entry = _to_emeritus_entry(
+                user, highest_role, display_name, marker=marker
+            )
+            document = _add_to_emeritus(
+                document, EMERITUS_SECTION, entry, header_level
+            )
+            changes.append(change)
+        elif already_emeritus:
+            changes.append(change)
+        else:
+            missing_users.append(user)
+
+    return document, changes, missing_users
 
 
 def _get_display_name(username):
@@ -1167,14 +1291,6 @@ def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
     for repo, inactive_list in sorted(inactive_report.items()):
         print(f"\nProcessing {ORG}/{repo}...")
 
-        # Fetch README
-        result = fetch_readme(repo)
-        if result is None:
-            print(f"  Could not fetch README for {ORG}/{repo}, skipping.")
-            continue
-        readme, file_sha, file_path = result
-        original_readme = readme
-
         # Consolidate: per user, pick highest role and collect all role sections
         role_priority = {"Triager": 0, "Approver": 1, "Maintainer": 2}
         user_info = {}  # user -> {"role": str, "roles": set, "teams": list}
@@ -1188,45 +1304,24 @@ def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
                 if role_priority.get(role_label, -1) > role_priority.get(user_info[user]["role"], -1):
                     user_info[user]["role"] = role_label
 
-        changes = []  # (username, role_label) for PR body
-        header_level = 3  # default
-        for user, info in sorted(user_info.items()):
-            # Try to find display name and detect list marker from any role section
-            display_name = None
-            marker = "-"
-            for role_label in info["roles"]:
-                section_name = ROLE_SECTIONS.get(role_label)
-                if not section_name:
-                    continue
-                section = _find_section(readme, section_name)
-                if section:
-                    start, end, header_level = section
-                    section_text = readme[start:end]
-                    for m in _parse_members(section_text):
-                        if m["username"].lower() == user.lower():
-                            display_name = m["name"]
-                            marker = _detect_list_marker(section_text)
-                            break
-                    if display_name:
-                        break
+        result = _find_membership_document(repo, user_info)
+        if result is None:
+            print(f"  Could not fetch README for {ORG}/{repo}, skipping.")
+            continue
 
-            # Remove from ALL role sections the user appears in
-            for role_label in info["roles"]:
-                section_name = ROLE_SECTIONS.get(role_label)
-                if not section_name:
-                    continue
-                modified = _remove_member_line(readme, section_name, user)
-                if modified is not None:
-                    readme = modified
+        document, file_sha, file_path = result
+        original_document = document
+        document, changes, missing_users = _apply_emeritus_changes(
+            document, user_info
+        )
+        for user in missing_users:
+            print(
+                f"  Could not find @{user} in an active role in "
+                f"{file_path}, skipping."
+            )
 
-            # Add to single Emeritus section with highest role
-            highest_role = info["role"]
-            entry = _to_emeritus_entry(user, highest_role, display_name, marker=marker)
-            readme = _add_to_emeritus(readme, EMERITUS_SECTION, entry, header_level)
-            changes.append((user, highest_role, sorted(info["teams"])))
-
-        if readme == original_readme:
-            print("  No README changes needed.")
+        if document == original_document:
+            print(f"  No {file_path} changes needed.")
             if changes:
                 try:
                     issue_url = _create_followup_issue(repo, changes)
@@ -1250,7 +1345,7 @@ def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
                 print(f"  [WARN] Could not sync fork with upstream: HTTP {e.code}", flush=True)
             _ensure_branch(fork_owner, repo, BRANCH_NAME, base_sha)
             _update_file(
-                fork_owner, repo, file_path, readme, file_sha, BRANCH_NAME,
+                fork_owner, repo, file_path, document, file_sha, BRANCH_NAME,
                 "chore: Move inactive members to emeritus",
             )
 
