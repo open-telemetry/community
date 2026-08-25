@@ -79,7 +79,7 @@ concerns.
 
 ## Specification sponsors
 
-### [Alex Boten](https://github.com/codeboten), Honeycomb
+### [Alex Boten](https://github.com/codeboten), Grafana Labs
 
 - OpenTelemetry Collector
 - OpenTelemetry Python

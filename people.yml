@@ -78,7 +78,7 @@ people:
     slackMemberId: U01NNRZB1TK
   codeboten:
     name: Alex Boten
-    company: Honeycomb
+    company: Grafana Labs
     slackMemberId: U018R7326HH
   dashpole:
     name: David Ashpole
