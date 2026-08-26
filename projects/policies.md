@@ -177,6 +177,7 @@ See [Project Staffing](/project-management.md#project-staffing)
 #### Other Staffing
 
 - **@dineshg13** (Datadog)
+- **@Logiraptor** (Grafana)
 
 Contributors from the Collector, SDK, Configuration, OpAMP, and Operator SIGs
 are being recruited. Maintainers/approvers from those SIGs committed to
