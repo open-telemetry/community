@@ -51,6 +51,8 @@ the body of one saved reply plus a short note on when to use it.
 - [genai-policy-violation.md](./replies/genai-policy-violation.md) — PR
   appears to violate the [Generative AI Contribution Policy](../policies/genai.md)
   and will be closed.
+- [needs-repro.md](./replies/needs-repro.md) — Issue lacks actionable detail;
+  ask the reporter for a minimal reproducible example.
 
 ## Adding a new template
 
