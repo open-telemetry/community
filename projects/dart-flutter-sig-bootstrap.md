@@ -175,13 +175,11 @@ This project requires the creation of a new SIG: **Dart and Flutter SIG**.
 
 - Michael Bushe ([@michaelbushe](https://github.com/michaelbushe)) — Mindful Software / Dartastic.io
 - César Munoz ([@likethesalad](https://github.com/likethesalad)) — Elastic
-- Martin Kuba ([@martinkuba](https://github.com/martinkuba)) — Grafana
+- Robert Magnusson ([@robert-northmind](https://github.com/robert-northmind)) — Grafana
 
 #### Approvers
 
 - Yusuf Rosman ([@yuzurihaaa](https://github.com/yuzurihaaa)) — independent
-- Robert Magnusson ([@robert-northmind](https://github.com/robert-northmind)) — Grafana
-- Kevin Moore ([@kevmoo](https://github.com/kevmoo)) — Google
 
 #### Triagers
 
@@ -189,6 +187,7 @@ This project requires the creation of a new SIG: **Dart and Flutter SIG**.
 
 #### Contributors
 
+- Kevin Moore ([@kevmoo](https://github.com/kevmoo)) — Google
 - Dane Bratz ([@danexello](https://github.com/danexello)) — Ello
 - Ben Bennett ([@benjaben](https://github.com/benjaben)) — Embrace
 - Muhammad Kamel ([@muhammadkamel](https://github.com/muhammadkamel)) — Phoonix-tech
