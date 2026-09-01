@@ -2,6 +2,9 @@
 
 This file is intended to list all the assets controlled by OpenTelemetry.
 
+Requests to create, update, or access these assets can be submitted as an
+[OpenTelemetry community issue](https://github.com/open-telemetry/community/issues/new/choose).
+
 ## GitHub organization
 
 Link: https://github.com/open-telemetry
@@ -32,6 +35,9 @@ We have an OpenTelemetry team under the CNCF's enterprise account.
 Link: https://app.fossa.com/
 
 - Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
+- Before submitting a FOSSA support request, contact Robert Kielty via
+  [GitHub](https://github.com/RobertKielty) or
+  [CNCF Slack](https://cloud-native.slack.com/archives/D0749BJ8JR2).
 - Team admins: [@austinlparker](https://github.com/austinlparker), [@reyang](https://github.com/reyang), [@trask](https://github.com/trask)
 
 ### Special GitHub Action runners
@@ -250,7 +256,7 @@ CNCF are the owners of the group, so certain requests (e.g. adding/removing orga
 * CNCF Service Desk
 * https://github.com/cncf/communitygroups/issues
 
-Link: https://community.cncf.io/opentelemetry-live/
+Link: https://ocgroups.dev/cncf/group/opentelemetry-live
 
 - Owners: CNCF
 - Lead Organizers (i.e. admins):
@@ -461,10 +467,10 @@ SIG-specific `otelbot` apps are on the EasyCLA allowlist.
 ```yaml
 # Pattern follows the official actions/create-github-app-token example:
 # https://github.com/actions/create-github-app-token#configure-git-cli-for-an-apps-bot-user
-- uses: actions/create-github-app-token@v1
+- uses: actions/create-github-app-token@v3
   id: app-token
   with:
-    app-id: ${{ vars.OTELBOT_JAVA_CONTRIB_APP_ID }}
+    client-id: ${{ vars.OTELBOT_JAVA_CONTRIB_CLIENT_ID }}
     private-key: ${{ secrets.OTELBOT_JAVA_CONTRIB_PRIVATE_KEY }}
 
 - name: Get GitHub App User ID
@@ -484,6 +490,9 @@ SIG-specific `otelbot` apps are on the EasyCLA allowlist.
 ```
 
 - Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+
+Use the [`create_otelbot_app.py`](https://github.com/open-telemetry/admin/blob/main/scripts/create_otelbot_app.py) script to create a new SIG-specific otelbot.
+Note: `open-telemetry/admin` is a private repository, accessible only for OpenTelemetry maintainers.
 
 ### `@opentelemetrybot` GitHub user
 

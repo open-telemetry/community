@@ -35,7 +35,9 @@ exclude = [
     # for performance reasons
     '^https://github.com/open-telemetry/community/(issues|pull)/\d+$',
     'https://gitter.im/open-telemetry/opentelemetry-rust',
-    'https://up-for-grabs.net.*'
+    'https://up-for-grabs.net.*',
+    # GitHub Projects URLs with query params return 400 when accessed without a browser session
+    '^https://github.com/open-telemetry/community/projects\?',
 ]
 
 exclude_path = [
