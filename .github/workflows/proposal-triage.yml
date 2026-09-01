@@ -3,7 +3,7 @@
 name: Issue management - Triage Project Proposals
 
 on:
-  pull_request_target:
+  pull_request_target: # zizmor: ignore[dangerous-triggers] labels PR metadata without checking out or executing PR code
     types: [opened, reopened]
     paths:
       - 'projects/**'

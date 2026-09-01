@@ -42,7 +42,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8)
 - **Meeting invites group:** [calendar-semconv](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)
 - **Slack channel:** [#otel-semantic-conventions](https://cloud-native.slack.com/archives/C041APFBYQP)
-- **Repositories:** [open-telemetry/semantic-conventions](https://github.com/open-telemetry/semantic-conventions)
+- **Repositories:** [open-telemetry/semantic-conventions](https://github.com/open-telemetry/semantic-conventions), [open-telemetry/semantic-conventions-conformance](https://github.com/open-telemetry/semantic-conventions-conformance)
 - **Technical Committee sponsors:** [Armin Ruech](https://github.com/arminru) (leading), [Liudmila Molkova](https://github.com/lmolkova) (leading)
 - **Governance Committee liaison:** [Trask Stalnaker](https://github.com/trask)
 
@@ -218,7 +218,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-collector](https://cloud-native.slack.com/archives/C01N6P7KR6W)
 - **Repositories:** [open-telemetry/opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector), [open-telemetry/opentelemetry-collector-contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib), [open-telemetry/opentelemetry-collector-releases](https://github.com/open-telemetry/opentelemetry-collector-releases), [open-telemetry/opentelemetry-go-build-tools](https://github.com/open-telemetry/opentelemetry-go-build-tools), [open-telemetry/opentelemetry-go-vanityurls](https://github.com/open-telemetry/opentelemetry-go-vanityurls), [open-telemetry/govanityurls](https://github.com/open-telemetry/govanityurls)
 - **Roadmap projects:** [Collector roadmap](https://github.com/orgs/open-telemetry/projects/83)
-- **Technical Committee sponsors:** [Bogdan Drutu](https://github.com/bogdandrutu) (guiding), [Joshua MacDonald](https://github.com/jmacd) (guiding)
+- **Technical Committee sponsors:** [Joshua MacDonald](https://github.com/jmacd) (guiding)
 - **Governance Committee liaison:** [Pablo Baeyens](https://github.com/mx-psi)
 
 ### C++: SDK
@@ -396,12 +396,13 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Network
 
-- **Meeting time:** Tuesday at 09:00 PT
+- **Meeting time:** Monday at 07:00 PT
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/13GK915hdDQ9sUYzUIWi4pOfJK68EE935ugutUgL3yOw)
 - **Meeting invites group:** [calendar-network](https://groups.google.com/a/opentelemetry.io/g/calendar-network)
 - **Slack channel:** [#otel-network](https://cloud-native.slack.com/archives/C02AB15583A)
 - **Repositories:** [open-telemetry/opentelemetry-network](https://github.com/open-telemetry/opentelemetry-network)
-- **Technical Committee sponsors:** [David Ashpole](https://github.com/dashpole) (escalating)
+- **Roadmap projects:** [Network roadmap](https://github.com/orgs/open-telemetry/projects/202)
+- **Technical Committee sponsors:** [Liudmila Molkova](https://github.com/lmolkova) (escalating)
 - **Governance Committee liaison:** [Ted Young](https://github.com/tedsuo)
 
 ### eBPF Instrumentation

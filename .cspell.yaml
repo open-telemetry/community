@@ -65,6 +65,7 @@ words:
   - EPEL
   - faas
   - Francesco
+  - gatekeeping
   - gitter
   - grafana
   - growpart
@@ -103,6 +104,7 @@ words:
   - NUMA
   - Marylia
   - observiq
+  - ocgroups
   - OCPUs
   - opentelemetry
   - opentelemetrybot
@@ -113,6 +115,7 @@ words:
   - otel-localization-zhcn
   - otep
   - otlp
+  - zizmor
   - passcodes
   - Pham
   - Phoonix
@@ -345,6 +348,7 @@ words:
   - traceroute
   - tarnovski
   - tekton
+  - telco
   - thisthat
   - tiebreaking
   - tigran
