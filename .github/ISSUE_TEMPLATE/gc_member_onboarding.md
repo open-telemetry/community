@@ -188,8 +188,8 @@ capacity, in finding answers to these questions.
 - [ ] [OpenTelemetry Code of Conduct](https://github.com/open-telemetry/community/blob/main/code-of-conduct.md):
   all GC members define, evolve, and defend the Code of Conduct.
 - [ ] [OpenTelemetry Governance Committee meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8):
-  to identify items currently in progress. [Meeting Recordings](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s)
-  can help get more details if needed.
+  to identify items currently in progress. [Meeting recordings](https://zoom-lfx.platform.linuxfoundation.org/meetings/opentelemetry)
+  provide more detail.
 - [ ] [Project Management](https://github.com/open-telemetry/community/blob/main/project-management.md):
   to understand the fundamentals of how projects are managed by the GC and TC.
 - [ ] [Active Projects](https://github.com/open-telemetry/community/tree/main/projects):
