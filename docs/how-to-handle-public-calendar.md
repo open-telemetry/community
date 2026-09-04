@@ -21,8 +21,9 @@ All legacy Zoom rooms are configured the same way. Some notes on meetings config
 - **There is no time limit on the length of the meeting**. Please make sure nobody is
   using this room for another meeting on the calendar when meeting is going long
   over time.
-- **Auto-recording is enabled for all meetings**. All OpenTelemetry public meetings are recorded automatically
-  and [available on Zoom cloud](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s).
+- **Auto-recording is enabled for all meetings**. Recordings of meetings held on the legacy
+  Zoom accounts are not on the LFX meetings page, see
+  [how meeting recordings work](how-meeting-recordings-upload-works.md#legacy-recordings).
 
 
 ## Steps
@@ -101,8 +102,8 @@ _This is the legacy process that the person responding to Zoom link creation iss
 2. See which OpenTelemetry Zoom accounts are being used for the meetings immediately before, during, and after your desired time. The Zoom account name / number is typically listed in the description of each meeting; if it isn't, you can join a meeting (even if it isn't occurring now), click on the green shield icon in the top left, and see the account name / number in the 'host' field.
 3. Choose a Zoom account that isn't already being used for one of the meetings immediately before, during, or after your desired time slot. You may also choose a Zoom account that is being used *exactly* once immediately before, during, or after (we can run a maximum of two concurrent meetings with each account).
 4. Log into that Zoom account, click "Schedule a meeting"
-   - Set the topic (this is what will show up in the
-     [meeting recording sheet](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s/edit))
+   - Set the topic (it appears in the
+     [legacy meeting recordings spreadsheet](how-meeting-recordings-upload-works.md#legacy-recordings))
    - Set recurrence to "No fixed time"
    - Save
 5. Copy the newly generated unique Zoom link and paste it into the calendar event's description and location.
