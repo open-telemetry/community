@@ -22,4 +22,5 @@ This spreadsheet is deprecated: it will become unavailable by the end of 2026, a
 it links to may become unavailable after that date.
 
 Entries older than 6 months were moved out of the public spreadsheet into the private
-['Zoom recordings archive' spreadsheet](https://docs.google.com/spreadsheets/d/1U34Ae4D8EMhMbrFujdSRjoHBae3o9pvptLO1c6X4RPI/edit?usp=sharing).
+['Zoom recordings archive' spreadsheet](https://docs.google.com/spreadsheets/d/1U34Ae4D8EMhMbrFujdSRjoHBae3o9pvptLO1c6X4RPI/edit?usp=sharing),
+and the recordings it links to may also be unavailable by the end of 2026.
