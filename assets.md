@@ -297,7 +297,7 @@ Link: https://groups.google.com/g/opentelemetry-calendar
 - All GC members AND CNCF reps (Amye Scavarda Perrin, Chris Aniszczyk, Taylor Waggoner) are on the list and are list moderators.
 - Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
 
-### Zoom accounts
+### (Deprecated) Zoom accounts
 
 - Accounts
   - cncf-opentelemetry@cncf.io
@@ -318,8 +318,8 @@ Link: https://groups.google.com/g/opentelemetry-calendar
 
 Link: https://zapier.com
 
-- Used to automatically add links to Zoom meeting recordings to a
-  [publicly viewable Google spreadsheet](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s)
+- Used to automatically add links to Zoom meeting recordings to the
+  [deprecated Google spreadsheet](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s)
 - Used to automatically add repo maintainers to new security incidents
 - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
   (GitHub password is available in the OpenTelemetry Governance 1Password)
