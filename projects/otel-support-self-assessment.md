@@ -59,21 +59,30 @@ The wording, granularity, and number of dimensions remain open for refinement as
 
 ## Deliverables
 
-1. **Self-assessment tooling.** Tooling a maintainer can point at their project's telemetry output and get back a report covering emitted signals, semantic convention alignment, resource attributes, standard configuration support, and context propagation, with concrete next steps and links into the guides. Delivered incrementally, starting with a prototype validated against volunteer projects. Requirements:
+1. **Project classification model.** A shared taxonomy of project classes, based on where a project sits architecturally with respect to telemetry rather than on what it does functionally. This is the first artifact, because both other deliverables depend on it: the tooling uses it to decide which checks apply to a given project, and the guides are organized around it. Classes are self-declared by the maintainer, never assigned by this project. 
+
+2. **Self-assessment tooling.** Tooling a maintainer can point at their own project's telemetry to get a factual report of what is emitted and where the gaps are, with concrete next steps and links into the guides. Delivered incrementally.
+
+**Scope for the first iteration: analysis of telemetry the maintainer already has.** The input is a captured OTLP payload produced by the project during something the maintainer already runs. The tool does not start the project, does not generate load, and does not re-run it under varying configuration. This keeps the first iteration deterministic and replayable, makes it usable in CI, and keeps the adoption cost close to zero.
+
+ Explicitly deferred to a later iteration: anything that requires the tool to execute the project or vary its configuration, including whether standard `OTEL_*` configuration is honored and end-to-end propagation across process boundaries. Those are covered in the guides for now, and can be revisited once the payload-level checks have proven useful.
+
+ Requirements:
    - Deterministic and objective. Where a check cannot be made automatically and objectively, it belongs in a guide, not in the tool's output.
-   - No score, grade, or level in the output.
-   - Run locally by the maintainer. This project does not host, collect, or publish results.
-   - Reuses existing rule sets, notably Instrumentation Score, rather than restating them.
+   - No score, grade or level in the output, and no aggregate count that invites one.
+   - Checks observable output, not implementation choices. 
+   - Run locally by the maintainer. This project does not host, collect or publish results.
+   - Reuses existing rule sets rather than restating them.
+   - Reports what was *not* checked, so that an empty findings list is not mistaken for a pass.
+   - Rule-to-class applicability expressed as data, so that classes and rules can be added without code changes.
 
-2. **Maintainer guides by project type.** Guidance on what good OpenTelemetry support looks like, with common pitfalls and worked examples:
-   - **Libraries**: adding native instrumentation, API-vs-SDK boundaries, and what to expose to the embedding application.
-   - **Services and infrastructure components** (databases, message brokers, proxies and gateways, controllers): emitting OTLP, writing and stewarding federated semantic conventions, and exposing standard configuration.
+3. **Maintainer guides by project type.** Guidance on what good OpenTelemetry support looks like, with common pitfalls and worked examples, organized around the classes above. 
 
-   OpenTelemetry Collector distributions are deliberately out of scope here; that class is covered by the separate Collector certification effort.
+OpenTelemetry Collector distributions are deliberately out of scope here; that class is covered by the separate Collector certification effort.
 
-3. **Publication on opentelemetry.io.** The guides published as community documentation, coordinated with SIG Docs on format and placement.
+4. **Publication on opentelemetry.io.** The guides published as community documentation, coordinated with SIG Docs on format and placement.
 
-4. **Companion blog post(s).** Announcing the guidance and tooling to the broader community, aimed at maintainers of projects that integrate with OpenTelemetry.
+5. **Companion blog post(s).** Announcing the guidance and tooling to the broader community, aimed at maintainers of projects that integrate with OpenTelemetry.
 
 ## Staffing / Help Wanted
 
