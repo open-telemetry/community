@@ -15,9 +15,9 @@ We highly encourage participation in this election cycle to ensure that the comm
 
 # TL;DR
 
-* If you've been nominated or are willing to nominate yourself: check the [charter document](../../governance-charter.md) and confirm you are ready for the commitment. Make sure to provide all necessary information before 16 October 2026 23:59 UTC
-* If you are an active community member: confirm that you are on the [voters list](https://github.com/open-telemetry/community/blob/main/elections/2026/voters-roll.csv) or register yourself before 23 October 2026 23:59 UTC.
-* Vote between 26 October 2026 12:00 UTC and end of day 28 October 2026 23:59 via the [voting link](https://github.com/open-telemetry/community/blob/main/elections/2026/governance-committee-election.md)
+* If you've been nominated or are willing to nominate yourself: check the [charter document](../../governance-charter.md) and confirm you are ready for the commitment. Make sure to provide all necessary information before 16 October 2026 23:59 [AoE](https://en.wikipedia.org/wiki/Anywhere_on_Earth)
+* If you are an active community member: confirm that you are on the [voters list](https://github.com/open-telemetry/community/blob/main/elections/2026/voters-roll.csv) or register yourself before 23 October 2026 23:59 AoE.
+* Vote between 26 October 2026 12:00 UTC and end of day 28 October 2026 23:59 AoE via the [voting link](https://github.com/open-telemetry/community/blob/main/elections/2026/governance-committee-election.md)
 * Keep being awesome and contributing to the project!
 
 # Vacancies
@@ -86,7 +86,7 @@ Per Helios Voting, voting is entirely private: nobody will know any individual's
 
 # Results
 
-Voting will close at the end of the day on 28 October 2026 (technically, 23:59 in the International Date Line West time zone / 29 October 2026 noon UTC). Nominees will be stack ranked. If a nominee becomes ineligible (for instance, if more than two topmost nominees work for the same company), the election committee will skip those nominees and pick the nominee with the next-highest score. The exact scores for each candidate will be public.
+Voting will close at the end of the day on 28 October 2026 (23:59 [AoE](https://en.wikipedia.org/wiki/Anywhere_on_Earth), i.e. 29 October 2026 11:59 UTC). Nominees will be stack ranked. If a nominee becomes ineligible (for instance, if more than two topmost nominees work for the same company), the election committee will skip those nominees and pick the nominee with the next-highest score. The exact scores for each candidate will be public.
 
 # Schedule
 
@@ -94,12 +94,12 @@ Voting will close at the end of the day on 28 October 2026 (technically, 23:59 i
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | September 2026             | This document announced                                                                                                                    |
 | September 2026             | Election blog post and call for nominations                                                                                                |
-| 16 October 2026 23:59 UTC  | End of call for nominations                                                                                                                |
+| 16 October 2026 23:59 AoE  | End of call for nominations                                                                                                                |
 | 19 October 2026            | On or before this date Election Committee verifies commitment of all candidates not self-nominated                                        |
 | 19 October 2026            | Nominees ratified and pull requests merged on or before this date                                                                          |
 | 19 October 2026            | Preliminary list of nominees announced after ratification of all nominees                                                                  |
 | 19 October 2026            | List of nominees is finalized on [community](https://github.com/open-telemetry/community) GitHub and advertised via mailing list and Slack |
-| 23 October 2026 23:59 UTC  | Deadline to apply for a member of standing exemption                                                                                       |
+| 23 October 2026 23:59 AoE  | Deadline to apply for a member of standing exemption                                                                                       |
 | 26 October 2026 12:00 UTC  | Voting period begins                                                                                                                        |
-| 29 October 2026 11:59 UTC  | Voting ends                                                                                                                                 |
+| 28 October 2026 23:59 AoE  | Voting ends                                                                                                                                 |
 | 30 October 2026            | Results are announced                                                                                                                       |
