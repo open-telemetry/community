@@ -8,6 +8,14 @@ permissions:
   contents: read
 
 jobs:
+  test-scripts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: test move-to-emeritus script
+        run: python -m unittest discover -s scripts/tests
   table-check:
     runs-on: ubuntu-latest
     steps:
