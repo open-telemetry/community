@@ -160,3 +160,15 @@ items:
         # Google Doc ID for meeting notes.
         type: string
         minLength: 1
+      lfxUrl:
+        # Linux Foundation (LFPCC) meeting URL.
+        type: string
+        minLength: 1
+      lfxUrlNA:
+        # Linux Foundation (LFPCC) meeting URL for NA timezone meeting.
+        type: string
+        minLength: 1
+      lfxUrlEU:
+        # Linux Foundation (LFPCC) meeting URL for EU timezone meeting.
+        type: string
+        minLength: 1
