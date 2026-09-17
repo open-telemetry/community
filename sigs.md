@@ -283,7 +283,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### GoLang: Compile-Time Instrumentation
 
-- **Meeting time:** Every Thursday at 08:00 UTC
+- **Meeting time:** Every Thursday at 09:30 UTC
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1XkVahJfhf482d3WVHsvUUDaGzHc8TO3sqQlSS80mpGY)
 - **Meeting invites group:** [calendar-go](https://groups.google.com/a/opentelemetry.io/g/calendar-go)
 - **Slack channel:** [#otel-go-compile-instrumentation](https://cloud-native.slack.com/archives/C088D8GSSSF)
