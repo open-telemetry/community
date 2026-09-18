@@ -1,4 +1,5 @@
 import csv
+import datetime
 import os
 import time
 
@@ -8,6 +9,13 @@ VOTERS_ROLL_PATH = os.getenv('VOTERS_ROLL_PATH', './voters-roll.csv')
 GH_TOKEN = os.getenv('GITHUB_TOKEN')
 PROJECT = os.getenv("PROJECT", "opentelemetry")
 SERVER = f"{PROJECT}.devstats.cncf.io"
+
+LFX_PROJECT = os.getenv("LFX_PROJECT", "opentelemetry")
+LFX_URL = "https://insights.linuxfoundation.org/api/widget/contributors/contributor-leaderboard"
+LFX_PAGE_SIZE = 1000
+_today = datetime.date.today()
+LFX_END_DATE = os.getenv("LFX_END_DATE", _today.isoformat())
+LFX_START_DATE = os.getenv("LFX_START_DATE", (_today - datetime.timedelta(days=365)).isoformat())
 
 
 # Get GitHub login from lowercase username
@@ -68,8 +76,8 @@ def get_users_and_contributions():
         return None
 
 
-# Create a CSV file with the voters rolls
-def create_voters_rolls(data):
+# Build the devstats-derived list of [login, contributions] rows
+def build_devstats_rows(data):
     frames = data['results']['A']['frames']
     rows = []
 
@@ -82,7 +90,61 @@ def create_voters_rolls(data):
             if login:
                 rows.append([login, contributions[i]])
 
-    # Write the data to a CSV file
+    return rows
+
+
+# Fetch the full paginated LFX contributor list for the configured date range
+def get_lfx_contributors():
+    print(f"Getting LFX contributors for {LFX_PROJECT} from {LFX_START_DATE} to {LFX_END_DATE}")
+    contributors = []
+    offset = 0
+    while True:
+        params = {
+            "project": LFX_PROJECT,
+            "startDate": LFX_START_DATE,
+            "endDate": LFX_END_DATE,
+            "limit": LFX_PAGE_SIZE,
+            "offset": offset,
+        }
+        response = requests.get(LFX_URL, params=params, timeout=30)
+        response.raise_for_status()
+        payload = response.json()
+        contributors.extend(payload["data"])
+        next_offset = payload["meta"]["offset"] + payload["meta"]["limit"]
+        if next_offset >= payload["meta"]["total"]:
+            break
+        offset = next_offset
+
+    print(f"Retrieved {len(contributors)} LFX contributors")
+    return contributors
+
+
+# Merge LFX contributors into the devstats rows.
+# For each LFX contributor:
+#   - skip if any of their handles is already present (case-insensitive)
+#   - otherwise add only the first handle in the array
+#   - skip if they have no GitHub handle at all
+def merge_lfx_contributors(rows, lfx_contributors):
+    existing = {row[0].lower() for row in rows}
+    added = 0
+
+    for c in lfx_contributors:
+        handles = c.get("githubHandleArray") or []
+        if not handles:
+            continue
+        if any(h.lower() in existing for h in handles):
+            continue
+        primary = handles[0]
+        rows.append([primary, c.get("contributions", "")])
+        existing.add(primary.lower())
+        added += 1
+
+    print(f"Added {added} new contributors from LFX")
+
+
+# Write the merged list, sorted case-insensitively by GitHub login
+def write_voters_rolls(rows):
+    rows.sort(key=lambda r: r[0].lower())
     print(f"Writing data to {VOTERS_ROLL_PATH}")
     with open(VOTERS_ROLL_PATH, mode='w', newline='') as file:
         writer = csv.writer(file)
@@ -90,6 +152,7 @@ def create_voters_rolls(data):
         file.write('\n')
 
 
-# Call the function
-devstas_data = get_users_and_contributions()
-create_voters_rolls(devstas_data)
+devstats_data = get_users_and_contributions()
+rows = build_devstats_rows(devstats_data)
+merge_lfx_contributors(rows, get_lfx_contributors())
+write_voters_rolls(rows)
