@@ -497,6 +497,25 @@
       id: C01N3BC2W7Q
   - repository: open-telemetry/opentelemetry-dotnet
   - repository: open-telemetry/opentelemetry-dotnet-contrib
+- id: dart-flutter
+  kind: sig
+  sigCategory: implementation
+  name: 'Dart and Flutter: SDK'
+  parent: none
+  people:
+  - gcLiaison: svrnm
+  - tcSponsor:
+      username: carlosalberto
+      level: escalating
+  resources:
+  - meeting:
+      schedule: tbd
+      calendarInviteGroup: calendar-dart
+      gDocNotes: 1sf7QPJ8DccDUyvaFypNec-4qXSG295CNOKlOSgatTlI
+  - slack:
+      name: '#otel-dart'
+      id: C027SBQGLS0
+  - repository: open-telemetry/opentelemetry-dart
 - id: erlang-elixir
   kind: sig
   sigCategory: implementation

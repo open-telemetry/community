@@ -251,6 +251,16 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Technical Committee sponsors:** [Reiley Yang](https://github.com/reyang) (escalating)
 - **Governance Committee liaison:** [Morgan McLean](https://github.com/mtwo)
 
+### Dart and Flutter: SDK
+
+- **Meeting time:** tbd
+- **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1sf7QPJ8DccDUyvaFypNec-4qXSG295CNOKlOSgatTlI)
+- **Meeting invites group:** [calendar-dart](https://groups.google.com/a/opentelemetry.io/g/calendar-dart)
+- **Slack channel:** [#otel-dart](https://cloud-native.slack.com/archives/C027SBQGLS0)
+- **Repositories:** [open-telemetry/opentelemetry-dart](https://github.com/open-telemetry/opentelemetry-dart)
+- **Technical Committee sponsors:** [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating)
+- **Governance Committee liaison:** [Severin Neumann](https://github.com/svrnm)
+
 ### Erlang/Elixir: SDK
 
 - **Meeting time:** Every other Thursday at 09:00 PT
