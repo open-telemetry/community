@@ -802,7 +802,6 @@
   - slack:
       name: '#otel-network'
       id: C02AB15583A
-  - repository: open-telemetry/opentelemetry-network
   - roadmapProject: 202
 - id: ebpf-instrumentation
   kind: sig
