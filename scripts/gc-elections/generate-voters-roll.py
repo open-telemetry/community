@@ -121,21 +121,24 @@ def get_lfx_contributors():
 
 # Merge LFX contributors into the devstats rows.
 # For each LFX contributor:
+#   - skip if their contribution count is below the threshold (50)
+#   - skip if they have no GitHub handle at all
 #   - skip if any of their handles is already present (case-insensitive)
 #   - otherwise add only the first handle in the array
-#   - skip if they have no GitHub handle at all
 def merge_lfx_contributors(rows, lfx_contributors):
     existing = {row[0].lower() for row in rows}
     added = 0
 
     for c in lfx_contributors:
+        if (c.get("contributions") or 0) < 50:
+            continue
         handles = c.get("githubHandleArray") or []
         if not handles:
             continue
         if any(h.lower() in existing for h in handles):
             continue
         primary = handles[0]
-        rows.append([primary, c.get("contributions", "")])
+        rows.append([primary, c["contributions"]])
         existing.add(primary.lower())
         added += 1
 
