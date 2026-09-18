@@ -18,19 +18,24 @@ python scripts/gc-elections/generate-voters-roll.py
 ```
 
 ## 2. Create GitHub comments
-Using the generated voters roll file indicated by `$VOTERS_ROLL_PATH`, the `create-github-comments.sh` script tags eligible voters on a given GitHub issue, inviting them to vote in the next election.
+Using the generated voters roll file indicated by `$VOTERS_ROLL_PATH`, the `create-github-comments.py` script tags eligible voters on a given GitHub issue, inviting them to vote in the next election.
 
-To workaround limits of mentions on a single comment, the script creates multiple comments in batches of 50 voters.
+The script is idempotent: it can be re-run safely after regenerating the voters roll:
+
+* If the issue has no existing voter-notification comments, all voters from the file are posted in batches of 50 per comment (to work around GitHub's mention limit).
+* If the issue already has voter-notification comments, the script reconciles them with the current file: it removes `@handle` lines from existing comments for handles no longer in the roll (deleting the comment if it loses all its mentions), and posts additional comments only for handles in the roll that are not yet tagged.
+
+Voter-notification comments are identified by an exact match on the header text, so unrelated conversation comments on the issue are left untouched.
 
 This script takes two arguments:
 * `-i issue_url`: the GitHub issue URL to add comments to (e.g. `https://github.com/open-telemetry/community/issues/1173`)
-* `-d bool`: dry-run mode, which only prints the comments that would be created without actually creating them (defaults to `true`).
+* `-d bool`: dry-run mode, which only prints the changes that would be made without applying them (defaults to `true`).
 
 For this script to work, you must have the GitHub CLI (`gh`) installed and authenticated.
 
 Example usage:
 ```bash
-bash scripts/gc-elections/create-github-comments.sh -i https://github.com/open-telemetry/community/issues/1173 -d true
+python scripts/gc-elections/create-github-comments.py -i https://github.com/open-telemetry/community/issues/1173 -d true
 ```
 
 ## 3. Convert voters roll to Helios format
