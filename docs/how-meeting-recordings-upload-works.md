@@ -14,7 +14,7 @@ in the list of past meetings.
 
 Recordings of meetings held before the migration to LFX are not on the meetings page.
 
-Meetings held on the [legacy Zoom accounts](../assets.md#zoom-accounts) were recorded to Zoom
+Meetings held on the [legacy Zoom accounts](../assets.md#deprecated-zoom-accounts) were recorded to Zoom
 cloud. Their links are on a
 [publicly viewable Google spreadsheet](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s).
 

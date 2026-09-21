@@ -591,7 +591,7 @@
       level: escalating
   resources:
   - meeting:
-      schedule: Every Thursday at 08:00 UTC
+      schedule: Every Thursday at 09:30 UTC
       calendarInviteGroup: calendar-go
       gDocNotes: 1XkVahJfhf482d3WVHsvUUDaGzHc8TO3sqQlSS80mpGY
   - slack:
@@ -611,7 +611,7 @@
       level: guiding
   resources:
   - meeting:
-      schedule: Thursday at 08:00 PT
+      schedule: Thursday at 08:30 PT
       calendarInviteGroup: calendar-injector
       gDocNotes: 10bZsPhjbJHt-vamRg5kqHQf4ZANUiLOJxP9HYCONe94
   - slack:
@@ -694,7 +694,7 @@
         level: escalating
   resources:
     - meeting:
-        schedule: Wednesday at 10:00 PT
+        schedule: Thursday at 8:00 PT
         calendarInviteGroup: calendar-packaging
         gDocNotes: 1NDY0rpntHeyEvx9xUg9WdiNyWa7Gq8YKUdjfM1a36GI
     - slack:
@@ -821,7 +821,6 @@
   - slack:
       name: '#otel-network'
       id: C02AB15583A
-  - repository: open-telemetry/opentelemetry-network
   - roadmapProject: 202
 - id: ebpf-instrumentation
   kind: sig

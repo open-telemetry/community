@@ -38,6 +38,9 @@ exclude = [
     'https://up-for-grabs.net.*',
     # GitHub Projects URLs with query params return 400 when accessed without a browser session
     '^https://github.com/open-telemetry/community/projects\?',
+    # these pages reject automated link-check requests
+    '^https://develocity\.opentelemetry\.io/?$',
+    '^https://docs\.ansible\.com/ansible/latest/collections/community/general/opentelemetry_callback\.html$',
 ]
 
 exclude_path = [

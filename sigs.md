@@ -293,7 +293,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### GoLang: Compile-Time Instrumentation
 
-- **Meeting time:** Every Thursday at 08:00 UTC
+- **Meeting time:** Every Thursday at 09:30 UTC
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1XkVahJfhf482d3WVHsvUUDaGzHc8TO3sqQlSS80mpGY)
 - **Meeting invites group:** [calendar-go](https://groups.google.com/a/opentelemetry.io/g/calendar-go)
 - **Slack channel:** [#otel-go-compile-instrumentation](https://cloud-native.slack.com/archives/C088D8GSSSF)
@@ -304,7 +304,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Injector
 
-- **Meeting time:** Thursday at 08:00 PT
+- **Meeting time:** Thursday at 08:30 PT
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/10bZsPhjbJHt-vamRg5kqHQf4ZANUiLOJxP9HYCONe94)
 - **Meeting invites group:** [calendar-injector](https://groups.google.com/a/opentelemetry.io/g/calendar-injector)
 - **Slack channel:** [#otel-injector](https://cloud-native.slack.com/archives/C09025GKPAL)
@@ -345,7 +345,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Packaging
 
-- **Meeting time:** Wednesday at 10:00 PT
+- **Meeting time:** Thursday at 8:00 PT
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1NDY0rpntHeyEvx9xUg9WdiNyWa7Gq8YKUdjfM1a36GI)
 - **Meeting invites group:** [calendar-packaging](https://groups.google.com/a/opentelemetry.io/g/calendar-packaging)
 - **Slack channel:** [#otel-packaging](https://cloud-native.slack.com/archives/C0AD17NMBLZ)
@@ -410,7 +410,6 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/13GK915hdDQ9sUYzUIWi4pOfJK68EE935ugutUgL3yOw)
 - **Meeting invites group:** [calendar-network](https://groups.google.com/a/opentelemetry.io/g/calendar-network)
 - **Slack channel:** [#otel-network](https://cloud-native.slack.com/archives/C02AB15583A)
-- **Repositories:** [open-telemetry/opentelemetry-network](https://github.com/open-telemetry/opentelemetry-network)
 - **Roadmap projects:** [Network roadmap](https://github.com/orgs/open-telemetry/projects/202)
 - **Technical Committee sponsors:** [Liudmila Molkova](https://github.com/lmolkova) (escalating)
 - **Governance Committee liaison:** [Ted Young](https://github.com/tedsuo)

@@ -130,7 +130,17 @@ See [Updating SIG information](../CONTRIBUTING.md#updating-sig-information) to u
 
 ## Zoom abuse prevention
 
-All meetings are created by Zoom with randomized passcodes, which are embedded into the shared calendar links.
-All members of [calendar-edit-permission@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/calendar-edit-permission)
-have access to [this document](https://docs.google.com/document/d/1gt9ctxKGPrM_XTINqLgkSxYypdrczHkt2znjwgBU4UU/edit#)
-listing the host keys for our meetings and explaining how to deal with inappropriate behavior in Zoom.
+To remove a participant from a meeting, you will need access to a host key. Host keys are managed by
+LFPCC and are randomized. You can request a host key from an OpenTelemetry GC member. Maintainers
+may also request to be added as meeting managers for their SIG meeting(s), which gives them access
+to the host key. Instructions on how to get the host key or give access to it to a specific person
+are available on [this video](https://www.youtube.com/watch?v=KOSRy4c4Yv8).
+
+Once you have a host key, follow these steps:
+1. Follow the instructions to [claim host in Zoom
+   Rooms](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0069032) using the host
+   key.
+2. Remove participants behaving poorly.
+3. Report misconduct to the Governance Committee. Include meeting date/time, name, Zoom ID, and
+   short description of what happened.
+
