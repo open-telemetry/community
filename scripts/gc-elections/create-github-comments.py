@@ -34,10 +34,20 @@ HEADER = (
 
 MENTION_RE = re.compile(r'^\* @([A-Za-z0-9][A-Za-z0-9-]*)\s*$', re.MULTILINE)
 ISSUE_URL_RE = re.compile(r'^https?://github\.com/([^/]+)/([^/]+)/issues/(\d+)/?$')
+TRUE_VALS = {'true', '1', 'yes', 'y'}
+FALSE_VALS = {'false', '0', 'no', 'n'}
 
 
 def parse_bool(v):
-    return str(v).strip().lower() in ('true', '1', 'yes', 'y')
+    s = str(v).strip().lower()
+    if s in TRUE_VALS:
+        return True
+    if s in FALSE_VALS:
+        return False
+    sys.exit(
+        f"invalid boolean value: {v!r} "
+        f"(expected one of {sorted(TRUE_VALS | FALSE_VALS)})"
+    )
 
 
 def parse_issue_url(url):
@@ -59,12 +69,15 @@ def load_voters(path):
     return handles
 
 
-def gh_json(args):
-    r = subprocess.run(['gh'] + args, capture_output=True, text=True, check=True)
-    out = r.stdout.strip()
-    if not out:
-        return []
-    return json.loads(out)
+def gh_paginate_list(api_path):
+    # `gh api --paginate` may emit one JSON array per page rather than one
+    # combined array. `--jq '.[]'` normalises to one item per line so we can
+    # parse each independently and get a single flat list.
+    r = subprocess.run(
+        ['gh', 'api', '--paginate', '--jq', '.[]', api_path],
+        capture_output=True, text=True, check=True,
+    )
+    return [json.loads(line) for line in r.stdout.splitlines() if line.strip()]
 
 
 def gh_run(args, input_text=None):
@@ -73,6 +86,15 @@ def gh_run(args, input_text=None):
 
 def build_body(handles):
     return HEADER + "\n\n" + "\n".join(f"* @{h}" for h in handles)
+
+
+def is_voter_comment(body):
+    # Match only comments whose first line is exactly the header, so unrelated
+    # conversation comments that happen to quote the invitation aren't touched.
+    if not body:
+        return False
+    lines = body.splitlines()
+    return bool(lines) and lines[0].strip() == HEADER
 
 
 def extract_mentions(body):
@@ -180,9 +202,10 @@ def main():
     print(f"Loaded {len(voters)} voter(s)")
 
     print(f"Fetching comments on {args.issue}")
-    all_comments = gh_json(['api', '--paginate',
-                            f'/repos/{owner}/{repo}/issues/{num}/comments'])
-    voter_comments = [c for c in all_comments if HEADER in (c.get('body') or '')]
+    all_comments = gh_paginate_list(
+        f'/repos/{owner}/{repo}/issues/{num}/comments'
+    )
+    voter_comments = [c for c in all_comments if is_voter_comment(c.get('body'))]
     print(f"Found {len(voter_comments)} existing voter-notification comment(s)")
 
     if not voter_comments:
