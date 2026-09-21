@@ -7,9 +7,16 @@ Two environment variables are used across these scripts to configure output file
 * `VOTERS_ROLL_HELIOS_PATH`: the path to the output CSV file with the voters roll in a format accepted by Helios Voting (defaults to `./voters-roll-helios.csv`).
 
 ## 1. Generate the voters roll
-The `generate-voters-roll.py` script generates a CSV file with the GitHub logins and contributions of the eligible voters for the upcoming elections. It queries the PostgreSQL Data Source backing `opentelemetry.devstats.cncf.io` to get the list of contributors eligible for voting. It then uses the GitHub REST API to get the GitHub login (capitalized) for each user.
+The `generate-voters-roll.py` script generates a CSV file with the GitHub logins and contributions of the eligible voters for the upcoming elections. It works in two steps:
+
+1. Queries the PostgreSQL Data Source backing `opentelemetry.devstats.cncf.io` to get the list of contributors with at least 20 contributions in the last year. It then uses the GitHub REST API to get the GitHub login (capitalized) for each user.
+2. Fetches the full contributor list from [LFX Insights](https://insights.linuxfoundation.org/project/opentelemetry/contributors) and adds any contributors that devstats missed. Only contributors with at least 50 contributions are considered. For a contributor with multiple GitHub handles, if any of them is already on the list the contributor is skipped; otherwise only the first handle is added.
+
+The merged list is written sorted case-insensitively by GitHub login.
 
 Although not required, it is recommended to set a `GITHUB_TOKEN` environment variable with a token with minimal permissions. This avoids GitHub's limits for unauthenticated requests.
+
+The LFX date range defaults to the last 365 days from today. Override it with `LFX_START_DATE` and `LFX_END_DATE` (ISO `YYYY-MM-DD`) if needed.
 
 Example usage:
 ```bash
