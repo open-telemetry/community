@@ -509,7 +509,7 @@
       level: escalating
   resources:
   - meeting:
-      schedule: tbd
+      schedule: Every other Friday at 8:00am GMT
       calendarInviteGroup: calendar-dart
       gDocNotes: 1sf7QPJ8DccDUyvaFypNec-4qXSG295CNOKlOSgatTlI
   - slack:

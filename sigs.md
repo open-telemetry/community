@@ -253,7 +253,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Dart and Flutter: SDK
 
-- **Meeting time:** tbd
+- **Meeting time:** Every other Friday at 8:00am GMT
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1sf7QPJ8DccDUyvaFypNec-4qXSG295CNOKlOSgatTlI)
 - **Meeting invites group:** [calendar-dart](https://groups.google.com/a/opentelemetry.io/g/calendar-dart)
 - **Slack channel:** [#otel-dart](https://cloud-native.slack.com/archives/C027SBQGLS0)
