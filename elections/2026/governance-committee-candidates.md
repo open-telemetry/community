@@ -7,6 +7,7 @@ In alphabetical order:
 <!-- Add a link to each candidate's section here, e.g.: -->
 <!-- - [Full Name](#full-name) -->
 - [Antoine Toulme](#antoine-toulme)
+- [Dan Gomez Blanco](#dan-gomez-blanco)
 - [Josh Suereth](#josh-suereth)
 
 ---
@@ -35,6 +36,32 @@ our work on the [injector project](https://github.com/open-telemetry/opentelemet
 
 I am an active committer ([my activity on Collector contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib/pulls?q=commenter%3Aatoulme)), KubeCon speaker ([Injector talk](https://www.youtube.com/watch?v=t0gLrt2jZYs),
 a [component and project sponsor](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues?q=is%3Aissue%20%20label%3A%22Accepted%20Component%22%20(commenter%3Aatoulme%20%22I%20can%20sponsor%22)%20OR%20(commenter%3Aatoulme%20%22I%20will%20sponsor%22)).
+
+---
+
+### Dan Gomez Blanco
+
+<img src="static/dan_gomezblanco.jpg" height="300" alt="Dan Gomez Blanco"/>
+
+- Company: [New Relic](https://newrelic.com)
+- GitHub: [danielgblanco](https://github.com/danielgblanco)
+
+I'm Dan Gomez Blanco, OpenTelemetry contributor since 2021. Initially as an end user driving OTel adoption at scale within Skyscanner, maintainer of the End-User SIG since 2024, and past GC member from 2023 to 2025.
+
+I've always been a public advocate for OTel best practice, not just for better observability, but to support the industry's shift towards platform engineering, since I believe OTel's success hinges on the sociotechnical aspects that make cross-cutting tooling easy to adopt into domain-specific logic. 
+That focus led me to write _Practical OpenTelemetry_, to my current role driving OTel adoption at even larger scale, and to recently launch the [OTel Blueprints and Reference Implementations](https://opentelemetry.io/blog/2026/blueprints-intro/) initiative within the End-User SIG.
+
+As a past Governance Committee member, I focused on streamlining our [project lifecycle](https://github.com/open-telemetry/community/blob/main/project-management.md#project-lifecycle) and [roadmap management](https://github.com/open-telemetry/community/blob/main/roadmap-management.md) practices, improving clarity for [issue prioritization](https://opentelemetry.io/community/end-user/issue-participation/) with end users, and recognizing the community for their awesome work (co-leading the creation of [OpenTelemetry Live](https://community.cncf.io/opentelemetry-live/) and [Community Awards](https://opentelemetry.io/blog/2024/community-awards/)).
+
+If elected, I want to evolve on that work and focus on:
+
+- **Cross-SIG communication, anchored to adoption**, avoiding knowledge silos and making sure cross-cutting SIG work stays grounded in the challenges faced adopting OTel across multiple domains.
+- **End-user prioritization**, giving end users a clear, actionable path to OTel architectures that solve real problems and deliver business outcomes, and making their feedback an actionable signal.
+- **Roadmap clarity**, helping new and existing contributors align their work commitments with project priorities, and giving end users a more accurate view of where the project is headed.
+
+Thank you for your consideration. I'd be honored to continue serving this community.
+
+---
 
 ### Josh Suereth
 
