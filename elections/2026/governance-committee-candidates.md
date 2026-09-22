@@ -6,9 +6,35 @@ In alphabetical order:
 
 <!-- Add a link to each candidate's section here, e.g.: -->
 <!-- - [Full Name](#full-name) -->
+- [Antoine Toulme](#antoine-toulme)
 - [Josh Suereth](#josh-suereth)
 
 ---
+
+### Antoine Toulme
+
+<img src="static/antoine-toulme.jpg" height="300" alt="Antoine Toulme"/>
+
+- Company: [Splunk](https://www.splunk.com)
+- GitHub: [atoulme](https://github.com/atoulme)
+
+I am Antoine Toulme, active with OpenTelemetry since 2020 and a maintainer of
+OpenTelemetry Collector [Contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib/#contributing),
+OpenTelemetry [Injector](https://github.com/open-telemetry/opentelemetry-injector),
+OpenTelemetry [Packaging](https://github.com/open-telemetry/opentelemetry-packaging)
+approver of Collector [Core](https://github.com/open-telemetry/opentelemetry-collector/#contributing)
+and [Operator](https://github.com/open-telemetry/opentelemetry-operator).
+
+If elected, my goal is to make OpenTelemetry ubiquitous:
+* Easy to adopt, comes with batteries included. It's not enough to make great software, it should run on every device. OpenTelemetry deserves a first-class installation experience and to be included into every OS out there.
+* Tempting with contribution opportunities, growing as a community of many practitioners. It has been an honor to help many users make their first commit with the project. I consider the number of new committers and approvers as the most critical health metric of the project.
+* Powered by automation to scale processes and response time. OpenTelemetry is maturing as a critical infrastructure. The project has done a great job coordinating with GitHub actions and regular meetings. I expect we will see even more the need for managing our bureaucracy effectively, reviewing existing processes, adopting change and absorbing feedback.
+
+I am working on this vision through the [OpenTelemetry Operator out-of-the-box experience](https://github.com/open-telemetry/opentelemetry-operator/pull/3830),
+our work on the [injector project](https://github.com/open-telemetry/opentelemetry-injector), and the push for [better packaging](https://github.com/open-telemetry/opentelemetry-packaging).
+
+I am an active committer ([my activity on Collector contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib/pulls?q=commenter%3Aatoulme)), KubeCon speaker ([Injector talk](https://www.youtube.com/watch?v=t0gLrt2jZYs),
+a [component and project sponsor](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues?q=is%3Aissue%20%20label%3A%22Accepted%20Component%22%20(commenter%3Aatoulme%20%22I%20can%20sponsor%22)%20OR%20(commenter%3Aatoulme%20%22I%20will%20sponsor%22)).
 
 ### Josh Suereth
 
