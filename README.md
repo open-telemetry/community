@@ -160,7 +160,7 @@ Detailed SIG information, including meeting notes, repositories, sponsors, and l
 | Functions as a Service (FAAS) | Every other Thursday at 8:00 PT | [calendar-faas](https://groups.google.com/a/opentelemetry.io/g/calendar-faas) | [#otel-faas](https://cloud-native.slack.com/archives/C04HVBETC9Z) | [Details](./sigs.md#functions-as-a-service-faas) |
 | Profiling | Every other Thursday at 08:00 PT | [calendar-profiling](https://groups.google.com/a/opentelemetry.io/g/calendar-profiling) | [#otel-profiles](https://cloud-native.slack.com/archives/C03J794L0BV) | [Details](./sigs.md#profiling) |
 | OpenTelemetry on Mainframes | Wednesday at 10:00 PT | [calendar-mainframe](https://groups.google.com/a/opentelemetry.io/g/calendar-mainframe) | [#otel-mainframes](https://cloud-native.slack.com/archives/C05PXDFTCPJ) | [Details](./sigs.md#opentelemetry-on-mainframes) |
-| Client Instrumentation | Every other Tuesday at 09:00 PT | [calendar-client-side](https://groups.google.com/a/opentelemetry.io/g/calendar-client-side) | [#otel-client-side-telemetry](https://cloud-native.slack.com/archives/C0239SYARD2) | [Details](./sigs.md#client-instrumentation) |
+| Client Instrumentation | Every Tuesday at 09:00 PT | [calendar-client-side](https://groups.google.com/a/opentelemetry.io/g/calendar-client-side) | [#otel-client-side-telemetry](https://cloud-native.slack.com/archives/C0239SYARD2) | [Details](./sigs.md#client-instrumentation) |
 
 ### Implementation SIGs
 

@@ -168,7 +168,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Client Instrumentation
 
-- **Meeting time:** Every other Tuesday at 09:00 PT
+- **Meeting time:** Every Tuesday at 09:00 PT
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/16Vsdh-DM72AfMg_FIt9yT9ExEWF4A_vRbQ3jRNBe09w)
 - **Meeting invites group:** [calendar-client-side](https://groups.google.com/a/opentelemetry.io/g/calendar-client-side)
 - **Slack channel:** [#otel-client-side-telemetry](https://cloud-native.slack.com/archives/C0239SYARD2)
