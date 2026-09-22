@@ -344,7 +344,7 @@
       level: escalating
   resources:
   - meeting:
-      schedule: Every other Tuesday at 09:00 PT
+      schedule: Every Tuesday at 09:00 PT
       calendarInviteGroup: calendar-client-side
       gDocNotes: 16Vsdh-DM72AfMg_FIt9yT9ExEWF4A_vRbQ3jRNBe09w
   - slack:
