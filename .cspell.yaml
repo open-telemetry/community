@@ -24,155 +24,165 @@ ignoreRegExpList:
   - GitHub Handle
   - GitHub Handle in YML
 words:
+  - Abdallah
   - Abinet
   - Adell
   - Adriel
-  - adrielp
-  - agentic
   - Alain
   - Alff
   - Arize
   - Aronoff
   - Ashpole
-  - austinlparker
-  - automations
   - Baeyens
+  - Blancas
+  - Bratz
+  - Braydon
   - Bronto
-  - calendar-localization-ptbr
+  - Bushe
   - Causely
   - Cheler
-  - cijothomas
   - Ciukaj
   - Collibra
   - Coralogix
   - Cortez
+  - Cowart
+  - César
   - DASD
   - Debele
-  - Díaz
+  - Develocity
   - Docu
   - Dogan
   - Dosu
   - Dubbo
-  - datadog
-  - Develocity
-  - devex
-  - devstats
-  - dynatrace
-  - easycla
-  - eiffel
-  - elastic
-  - emea
+  - Díaz
   - EPEL
-  - faas
+  - Ello
+  - Fordyce
   - Francesco
-  - gatekeeping
-  - gitter
-  - grafana
-  - growpart
+  - Furst
   - Harshit
+  - Hasain
   - Hendrik
   - Hostmetrics
-  - hostmetricsreceiver
-  - iflag
+  - Hrabusa
   - Instrgen
   - Jaana
-  - jemmic
   - Jhin
   - Joaquín
   - Joshi
   - Juraj
+  - Kains
   - Kamel
   - Kanal
   - Karlie
-  - keptn
   - Kemal
   - Kielty
-  - Kushwaha
   - Kuba
-  - kubecon
-  - k8sclusterreceiver
+  - Kushwaha
+  - LFPCC
   - Langfuse
   - Langtrace
-  - LFPCC
-  - liatrio
-  - lightstep
-  - logz
+  - Liudmila
   - Luca
   - Lukasz
-  - maintainership
+  - MSYS
+  - Magnusson
   - Makefiles
-  - NUMA
   - Marylia
-  - observiq
-  - ocgroups
-  - OCPUs
-  - opentelemetry
-  - opentelemetrybot
-  - oracleoci
-  - oraclevda
-  - otel
-  - otel-localization-ptbr
-  - otel-localization-zhcn
-  - otep
-  - otlp
-  - zizmor
-  - passcodes
-  - Pham
-  - Phoonix
-  - proto
-  - Purvi
-  - pytest
-  - rescan
-  - isovalent
-  - labs
-  - Liudmila
   - Mathieu
   - Matthieu
+  - Metry
+  - Michálek
+  - Morgado
+  - Muñoz
+  - NUMA
   - Nale
+  - Noirbusson
+  - OCPUs
+  - OTAP
+  - OTTL
+  - Ognibene
+  - Olly
+  - OpenLIT
+  - PATHCONV
+  - PECL
+  - Packagist
+  - Pham
+  - Phoonix
+  - Pichler
+  - Prometheus
+  - Purvi
+  - Quesma
   - REXX
+  - Rexed
   - Rohit
-  - scaphandre
+  - Rosman
+  - Santosh
+  - Schmitt
   - Sysplex
+  - Tamir
+  - Tero
+  - Thiru
+  - Tigerbeetle
+  - Traceloop
+  - VNIC
+  - Vasconcellos
+  - Villela
+  - Vitor
+  - Workiva
+  - Yusuf
   - acramsay
   - adot
+  - adrielp
+  - agentic
   - agentmanwg
   - alolita
   - amye
   - andré
   - aniszczyk
-  - apac
   - anoshin
+  - apac
   - armin
+  - austinlparker
+  - automations
   - beedgen
   - beemer
+  - behaviour
+  - behaviours
   - bertysentry
   - blanco
   - bogdan
   - boten
   - calendar-agent-mgmt
   - calendar-ebpf
+  - calendar-localization-ptbr
   - caramanolis
   - cdevents
   - chrs
   - cicd
   - cijo
+  - cijothomas
   - cncf
   - codeboten
   - codecentric
   - codecov
   - codeowners
   - comms
-  - Cowart
   - credly
   - danielgblanco
   - darren17082
+  - dartastic
+  - dartdoc
+  - datadog
   - davdai
   - denisivan
   - dennisme
+  - devex
+  - devrel
+  - devstats
   - dineshg
   - dmitrii
   - dmitryax
-  - dpauls
   - dnsmichi
   - dpauls
   - drewby
@@ -182,32 +192,38 @@ words:
   - easycla
   - ebpf
   - eiffel
+  - elastic
   - emea
   - endgc
   - endsigs
   - endtc
+  - exporterhelper
   - faas
   - fong
-  - Fordyce
-  - Furst
   - frzifus
+  - gatekeeping
   - gbbr
   - genai
-  - gitter
   - gitdm
+  - gitter
   - govanityurls
+  - grafana
+  - growpart
   - henrikrexed
   - heptio
   - hongalex
   - horovits
-  - Hrabusa
+  - hostmetricsreceiver
+  - iflag
   - instrgen
   - ipfix
+  - isovalent
   - jackjia
   - jaglowski
   - javaagent
   - jemmic
   - juraci
+  - k8sclusterreceiver
   - kaiyan-sheng
   - kamphaus
   - kanzhelev
@@ -217,6 +233,7 @@ words:
   - kröhling
   - kubecon
   - kuisathaverat
+  - labs
   - lalitb
   - lambdanis
   - lexis
@@ -234,9 +251,7 @@ words:
   - mateuszrzeszutek
   - mayur
   - mayurkale
-  - Metry
   - mdelfabro
-  - Michálek
   - mhausenblas
   - mirabella
   - mjwolf
@@ -244,13 +259,8 @@ words:
   - molkova
   - mottibec
   - msomasu
-  - Morgado
-  - MSYS
-  - PATHCONV
-  - Pichler
   - mtwo
   - mwear
-  - npmjs
   - najaryan
   - nakamura
   - netflow
@@ -258,62 +268,56 @@ words:
   - neumann
   - neumüller
   - nexis
-  - nirga
   - nikimanoledaki
-  - Noirbusson
+  - nirga
   - novotny
+  - npmjs
   - observiq
-  - Ognibene
-  - Olly
+  - ocgroups
   - opamp
-  - OpenLIT
   - opentelemetry
   - opentelemetrybot
+  - oracleoci
+  - oraclevda
   - ospf
   - ossf
   - otel
-  - otelcol
   - otel-agentmanwg
   - otel-comms
   - otel-ebpf
+  - otel-localization-ptbr
+  - otel-localization-zhcn
   - otelbot
+  - otelcol
   - otep
   - otlp
-  - OTAP
-  - OTTL
   - outreachy
-  - özal
-  - Packagist
-  - PECL
-  - Prometheus
   - paixão
   - pająk
-  - pavolloffay
   - passcodes
+  - pavolloffay
   - pessers
   - poncelow
   - proto
   - protos
   - pytest
-  - Quesma
   - raesene
-  - reiley
   - readmemd
-  - Rexed
-  - rollup
+  - reiley
+  - rescan
   - roadmaps
   - rolldice
+  - rollup
+  - rossf7
   - ruech
   - runtimes
   - rynn
-  - rossf7
-  - salnikov
   - sallyom
-  - Santosh
+  - salnikov
   - sarif
+  - scaphandre
   - scavarda
   - schäfer
-  - Schmitt
   - semconv
   - sergey
   - serkan
@@ -322,10 +326,10 @@ words:
   - sharma
   - shiftyp
   - shkuro
-  - sigelman
-  - signup
   - sig-localization-ptbr
   - sig-localization-zhcn
+  - sigelman
+  - signup
   - skyscanner
   - sloughter
   - snmp
@@ -341,12 +345,8 @@ words:
   - sudivate
   - suereth
   - supermajority
-  - Tero
-  - Tigerbeetle
-  - Thiru
-  - Traceloop
-  - traceroute
   - tarnovski
+  - teamcity
   - tekton
   - telco
   - thisthat
@@ -355,42 +355,19 @@ words:
   - timebox
   - timeboxing
   - timeslot
+  - traceroute
   - trask
   - trendable
   - triager
   - triagers
-  - teamcity
   - uninstrumented
+  - unstaffed
   - usermod
   - vanityurls
-  - Vasconcellos
-  - Villela
-  - Vitor
-  - VNIC
   - vtex
   - warre
   - workstream
   - workstreams
   - yahn
-  - Braydon
-  - Kains
-  - Blancas
-  - exporterhelper
-  - behaviour
-  - behaviours
-  - unstaffed
-  - Abdallah
-  - Bratz
-  - Bushe
-  - César
-  - dartastic
-  - dartdoc
-  - devrel
-  - Ello
-  - Hasain
-  - Magnusson
-  - Muñoz
-  - Rosman
-  - Tamir
-  - Workiva
-  - Yusuf
+  - zizmor
+  - özal
