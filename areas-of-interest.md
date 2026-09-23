@@ -16,6 +16,12 @@ concerns.
 
 ## Technical committee members
 
+### [Alex Boten](https://github.com/codeboten), Grafana Labs
+
+- OpenTelemetry Collector
+- OpenTelemetry Python
+- SDK configuration
+
 ### [Armin Ruech](https://github.com/arminru), Dynatrace
 
 - Trace API and SDK
@@ -78,12 +84,6 @@ concerns.
 - OpAMP
 
 ## Specification sponsors
-
-### [Alex Boten](https://github.com/codeboten), Grafana Labs
-
-- OpenTelemetry Collector
-- OpenTelemetry Python
-- SDK configuration
 
 ### [Christian Neumüller](https://github.com/Oberon00), Dynatrace
 
