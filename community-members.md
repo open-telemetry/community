@@ -33,6 +33,7 @@ in alphabetical order:
 - [Joshua MacDonald](https://github.com/jmacd), Microsoft
 - [Liudmila Molkova](https://github.com/lmolkova), Google
 - [Reiley Yang](https://github.com/reyang), Microsoft
+- [Robert Pająk](https://github.com/pellared), Splunk
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 <!-- endtc -->
 
