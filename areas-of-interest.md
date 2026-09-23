@@ -33,7 +33,7 @@ concerns.
 - OpenTelemetry collector
 - Metrics API and SDK
 
-### [Carlos Alberto](https://github.com/carlosalberto), Lightstep
+### [Carlos Alberto](https://github.com/carlosalberto), Dash0
 
 - Trace API and SDK
 - OpenTracing compatibility
