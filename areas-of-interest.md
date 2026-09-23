@@ -75,6 +75,16 @@ concerns.
 - OpenTelemetry C++
 - W3C trace context specification
 
+### [Robert Pająk](https://github.com/pellared), Splunk
+
+- OpenTelemetry Go
+- Logging API and SDK
+- OpenTelemetry protocol
+- Semantic conventions (logs and code attributes)
+- Context propagation
+- Automatic instrumentation (OBI and .NET)
+- Security
+
 ### [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 
 - OpenTelemetry protocol
@@ -120,8 +130,6 @@ concerns.
 - SDK configuration
 - Security
 - OpenTelemetry C++
-
-### [Robert Pająk](https://github.com/pellared), Splunk
 
 ### [Severin Neumann](https://github.com/svrnm), Cisco
 
