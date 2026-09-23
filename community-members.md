@@ -25,6 +25,7 @@ This is the current Technical Committee, per the
 in alphabetical order:
 
 <!-- tc -->
+- [Alex Boten](https://github.com/codeboten), Grafana Labs
 - [Armin Ruech](https://github.com/arminru), Dynatrace
 - [Carlos Alberto Cortez](https://github.com/carlosalberto), Dash0
 - [David Ashpole](https://github.com/dashpole), Google
