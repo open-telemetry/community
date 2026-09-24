@@ -356,6 +356,24 @@
   - slack:
       name: '#otel-client-side-telemetry'
       id: C0239SYARD2
+- id: policies
+  kind: sig
+  sigCategory: specification
+  name: Policies
+  parent: none
+  people:
+  - gcLiaison: mx-psi
+  - tcSponsor:
+      username: dashpole
+      level: guiding
+  resources:
+  - meeting:
+      schedule: Every other Monday at 07:00 PT
+      calendarInviteGroup: calendar-policies
+      gDocNotes: 1BezpR0k1Cs6e_HhTAGlVcgN1JvjbCojAsagLXQhgGnI
+  - slack:
+      name: '#otel-policies'
+      id: C0C0VFN9526
 - id: android
   kind: sig
   sigCategory: implementation

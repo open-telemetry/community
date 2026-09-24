@@ -175,6 +175,15 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Technical Committee sponsors:** [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating)
 - **Governance Committee liaison:** [Ted Young](https://github.com/tedsuo)
 
+### Policies
+
+- **Meeting time:** Every other Monday at 07:00 PT
+- **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1BezpR0k1Cs6e_HhTAGlVcgN1JvjbCojAsagLXQhgGnI)
+- **Meeting invites group:** [calendar-policies](https://groups.google.com/a/opentelemetry.io/g/calendar-policies)
+- **Slack channel:** [#otel-policies](https://cloud-native.slack.com/archives/C0C0VFN9526)
+- **Technical Committee sponsors:** [David Ashpole](https://github.com/dashpole) (guiding)
+- **Governance Committee liaison:** [Pablo Baeyens](https://github.com/mx-psi)
+
 ## Implementation SIGs
 
 ### Android: SDK + Automatic Instrumentation
