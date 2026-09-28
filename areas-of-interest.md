@@ -150,13 +150,6 @@ Maintainers and approvers are invited to list their areas of interest
 to further assist the community in finding appropriate points of
 contact.
 
-### [Dan Jaglowski](https://github.com/djaglowski), observIQ
-
-- OpenTelemetry collector
-- Log data model
-- Traditional log ingestion
-- Telemetry processing
-
 ### [Severin Neumann](https://github.com/svrnm/), Independent
 
 - Contributor Experience
