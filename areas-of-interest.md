@@ -157,13 +157,6 @@ contact.
 - Traditional log ingestion
 - Telemetry processing
 
-### [Tom Tan](https://github.com/ThomsonTan), Microsoft
-
-- Logging API and SDK
-- Trace API and SDK
-- OpenTelemetry C++
-- OpenTelemetry Protocol
-
 ### [Severin Neumann](https://github.com/svrnm/), Independent
 
 - Contributor Experience
