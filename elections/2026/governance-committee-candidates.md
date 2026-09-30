@@ -9,6 +9,7 @@ In alphabetical order:
 - [Antoine Toulme](#antoine-toulme)
 - [Dan Gomez Blanco](#dan-gomez-blanco)
 - [Josh Suereth](#josh-suereth)
+- [Pablo Baeyens Fernández](#pablo-baeyens-fernández)
 
 ---
 
@@ -79,6 +80,31 @@ As OpenTelemetry continues to grow in scale and adoption, our greatest asset, an
 - **Refining our process**: OpenTelemetry's processes are well defined, but in a community of volunteers and with dramatic industry shifts, we need to constantly refine our processes to address these evolving needs and opportunities.
 
 Thank you for your consideration and support!
+
+---
+
+### Pablo Baeyens Fernández
+
+<img src="static/pablo-baeyens.jpg" height="300" alt="Pablo Baeyens Fernández"/>
+
+- Company: [Datadog](https://www.datadoghq.com/)
+- GitHub: [mx-psi](https://github.com/mx-psi)
+
+I am Pablo Baeyens (mx-psi), current Governance Committee member. I have been an OpenTelemetry contributor since 2020, participating in semantic conventions, contributor experience, and the Collector, where I am a maintainer.
+
+During my first term on the Governance Committee I worked on initiatives like:
+
+- Dealing with LLM-related challenges: improving our [security model](https://github.com/open-telemetry/sig-security/pull/261), [GenAI usage policy](https://github.com/open-telemetry/community/pull/3283), and moderation efforts.
+- Ensuring [transparency during the graduation process](https://cloud-native.slack.com/archives/C01NJ7V1KRC/p1760630847110029?thread_ts=1760025448.877589&cid=C01NJ7V1KRC) and [aligning the Collector SIG](https://github.com/open-telemetry/opentelemetry-collector/issues/14065) to show the CNCF that we were ready for graduation.
+- [Sponsoring](https://github.com/open-telemetry/community/blob/main/projects/batching-config-standardization.md) [multiple](https://github.com/open-telemetry/community/blob/main/projects/agentic-workflow.md#gc-liaison) [projects](https://github.com/open-telemetry/community/blob/main/projects/policies.md), keeping our [processes](https://github.com/open-telemetry/community/pull/3538) and [tooling](https://github.com/open-telemetry/community/issues/3548) up to date, and making sure we leverage CNCF project opportunities and [collaborate with other CNCF projects](https://maintainersummiteu2026.sched.com/event/2EWep/project-meeting-prometheus-opentelemetry).
+
+A few areas I would like to focus on in a second term are:
+
+1. We are still figuring out how to deal with the impact of LLMs in our community, with community members now having to wear a moderator hat very often, and AI slop showing the weaknesses of our contributor workflows. There is a lot to improve on in terms of moderation policies and automation that I would like to make happen.
+2. Maintainers deserve more transparency and more participation in project opportunities and decision-making bodies. I would like to include more parts of the community in KubeCon Maintainer Track talks, and allow maintainers to [have more of a voice in the TC selection process](https://github.com/open-telemetry/community/issues/3453).
+3. We can and should automate more day-to-day duties and help follow best practices across all SIGs, introducing more shared workflows and improving Slack, project tracking, and SIG-specific automation.
+
+Thank you for considering me!
 
 <!--
 Add a new candidate section below using the template:
