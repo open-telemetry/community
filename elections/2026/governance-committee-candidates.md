@@ -9,6 +9,7 @@ In alphabetical order:
 - [Antoine Toulme](#antoine-toulme)
 - [Dan Gomez Blanco](#dan-gomez-blanco)
 - [Josh Suereth](#josh-suereth)
+- [Juliano Costa](#juliano-costa)
 - [Pablo Baeyens Fernández](#pablo-baeyens-fernández)
 
 ---
@@ -80,6 +81,29 @@ As OpenTelemetry continues to grow in scale and adoption, our greatest asset, an
 - **Refining our process**: OpenTelemetry's processes are well defined, but in a community of volunteers and with dramatic industry shifts, we need to constantly refine our processes to address these evolving needs and opportunities.
 
 Thank you for your consideration and support!
+
+---
+
+### Juliano Costa
+
+<img src="static/juliano-costa.jpg" height="300" alt="Juliano Costa"/>
+
+- Company: [Datadog](https://www.datadoghq.com/)
+- GitHub: [julianocosta89](https://github.com/julianocosta89)
+
+Hello there! I'm Juliano Costa. If you've ever deployed the OpenTelemetry Demo, there's a good chance we've already chatted. I've been contributing to OpenTelemetry since 2022, and today I'm an active maintainer on the [Demo](https://github.com/open-telemetry/opentelemetry-demo) and the [Developer Experience SIG](https://github.com/open-telemetry/sig-developer-experience), an approver on the [Helm Charts](https://github.com/open-telemetry/opentelemetry-helm-charts), and a regular contributor to our [docs](https://github.com/open-telemetry/opentelemetry.io). Across those repositories my contributions place me among the project's [top 30 contributors](https://insights.linuxfoundation.org/project/opentelemetry/contributors?timeRange=past365days&end=2026-10-02&start=2025-10-02) for the last year.
+
+I'm also a CNCF Ambassador, helping spread the word about OpenTelemetry everywhere I go, speaking and running hands-on workshops at [KubeCon, Observability Summit, ContainerDays, SREday, DevOpsDays, KCDs/Cloud Native Days, and local meetups](https://sessionize.com/julianocosta89), in both English and Portuguese.
+
+I like to call myself "OTel Customer Zero." The Demo is the one place in the project where every SDK, the Collector, the Helm charts, semantic conventions, and the docs all have to work together at once. We adopt new features before almost anyone outside the SIG that built them, we hit the rough edges first, and we carry that feedback back to the people who can fix it. That is the perspective I would bring to the Governance Committee: **a map of how the pieces fit together and where adoption actually breaks**. And because the Demo touches every part of the ecosystem, it is where many people make their very first OpenTelemetry contribution, and helping them land it well is some of the most rewarding work I do here.
+
+If elected, I will focus on:
+
+- **Making OpenTelemetry easier to adopt and use**, especially for end users, by driving the cross-SIG work that only shows up when you try to run the whole stack together.
+- **Spreading our events across more of the world**, so that the chance to meet this community in person does not depend on which region you happen to live in.
+- **Protecting maintainer time as contribution volume grows.** The Demo is a magnet for first-time and AI-generated pull requests, so I see this problem up close every week. I want to help us find practical approaches that keep the door open to genuine newcomers without burning out the people reviewing.
+
+The other candidates are an outstanding group and I have learned a lot from each one of them. OpenTelemetry is a great project because of its community, and I would be honored to help steward it. Thank you for your consideration.
 
 ---
 
