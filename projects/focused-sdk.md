@@ -33,7 +33,6 @@ There are a few different approaches available to solve the issue. Phase 1 of th
 * benchmarks to compare the existing native SDK with the proposed alternative artifact
 * documentation of the opinions and limitations of what this artifact supports, including decisions made to not support certain protocols or features of the native SDK
 
-The research for this project may produce small improvements to existing native SDKs, but it is not a requirement.
 
 ## Staffing / Help Wanted
 
