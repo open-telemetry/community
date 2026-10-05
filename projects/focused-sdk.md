@@ -4,7 +4,7 @@
 
 This project started as an investigation to mitigate some issues identified around memory allocations and global interpreter lock (GIL) contention in Python. As a result of testing an implementation that binds [Python to a C++ SDK](https://github.com/open-telemetry/community/issues/3483), a potential reduction in heap allocations by 10-15% and as much as 40% was observed.
 
-The project proposed here provides performance the benefits of an underlying SDK across Python initially and possibly other languages in the future. A secondary benefit, though not a goal, would be to allow end users and API implementers to experiment with features already supported in the underlying SDK, that may not yet be implemented in a native SDK.
+The project proposed here provides the performance benefits of an underlying SDK across Python initially and possibly other languages in the future. A secondary benefit, though not a goal, would be to allow end users and API implementers to experiment with features already supported in the underlying SDK, that may not yet be implemented in a native SDK.
 
 ### Current challenges
 
