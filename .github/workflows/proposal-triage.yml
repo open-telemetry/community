@@ -15,7 +15,7 @@ jobs:
   triage:
     permissions:
       pull-requests: write
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
       - name: Check for reviewed label
         id: check_label
