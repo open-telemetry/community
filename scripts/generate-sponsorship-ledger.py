@@ -73,7 +73,9 @@ gc_load = defaultdict(list)
 tc_load_by_level = defaultdict(lambda: defaultdict(list))
 
 for ws in workstreams:
-    category = ws.get("sigCategory", "other")
+    category = ws.get("sigCategory", False)
+    if not category:
+        next
     collective = ws.get("tcSponsorship") == "collective"
 
     gc_liaisons = [e["gcLiaison"] for e in ws.get("people", []) if "gcLiaison" in e]
