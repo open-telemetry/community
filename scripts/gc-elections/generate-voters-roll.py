@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+#
+# Copyright The OpenTelemetry Authors
+# SPDX-License-Identifier: Apache-2.0
+#
 import csv
 import datetime
 import os

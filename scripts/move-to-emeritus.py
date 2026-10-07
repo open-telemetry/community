@@ -1,20 +1,25 @@
 #!/usr/bin/env python3
-# Usage:
-#     # Check all repos and print report
-#     python move-to-emeritus.py
 #
-#     # Check all repos with debug output (shows why each member was marked active/inactive)
-#     python move-to-emeritus.py --debug
+# Copyright The OpenTelemetry Authors
+# SPDX-License-Identifier: Apache-2.0
 #
-#     # Check only specific repo(s)
-#     python move-to-emeritus.py --repo opentelemetry-collector
-#     python move-to-emeritus.py --repo opentelemetry-collector opentelemetry-python
-#
-#     # Create PRs to move inactive members to emeritus (after verifying the report)
-#     python move-to-emeritus.py --create-prs
-#
-# Note: the script can be safely re-run multiple times. If a PR already exists for a repo, its body will be updated with the latest info.
-#
+"""
+Usage:
+    # Check all repos and print report
+    python move-to-emeritus.py
+
+    # Check all repos with debug output (shows why each member was marked active/inactive)
+    python move-to-emeritus.py --debug
+
+    # Check only specific repo(s)
+    python move-to-emeritus.py --repo opentelemetry-collector
+    python move-to-emeritus.py --repo opentelemetry-collector opentelemetry-python
+
+    # Create PRs to move inactive members to emeritus (after verifying the report)
+    python move-to-emeritus.py --create-prs
+
+Note: the script can be safely re-run multiple times. If a PR already exists for a repo, its body will be updated with the latest info.
+"""
 import argparse
 import base64
 import json
