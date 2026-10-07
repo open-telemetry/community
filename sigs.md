@@ -32,7 +32,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1BKjQWP32FXL9g1cGbyj7DMXV1Uq_RL8_78rWaMBhN0A)
 - **Meeting invites group:** [calendar-spec-logs](https://groups.google.com/a/opentelemetry.io/g/calendar-spec-logs)
 - **Slack channel:** [#otel-spec-logs](https://cloud-native.slack.com/archives/C062HUREGUV)
-- **Technical Committee sponsors:** [Liudmila Molkova](https://github.com/lmolkova) (guiding), [Robert Pająk](https://github.com/pellared) (guiding)
+- **Technical Committee sponsors:** [Robert Pająk](https://github.com/pellared) (guiding)
 - **Spec sponsors:** [Ted Young](https://github.com/tedsuo)
 - **Governance Committee liaison:** [Trask Stalnaker](https://github.com/trask)
 
