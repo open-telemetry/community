@@ -31,12 +31,8 @@ PEOPLE_FILE        = REPO_ROOT / "people.yml"
 TBD  = "tbd"
 NONE = "none"
 
-KIND_REQUIRED_ROLES = {
-    "sig":           {"gcLiaison", "tcSponsor"},
-}
-
-VALID_PARENT_KINDS = {
-    "sig":           {"sig"},
+REQUIRED_ROLES = {
+    "gcLiaison", "tcSponsor",
 }
 
 MEMBERSHIP_REQUIRED_ROLES = {"gcLiaison", "tcSponsor", "specSponsor"}
@@ -101,10 +97,6 @@ def validate_workstreams_semantics(workstreams: list[dict], people_data: dict) -
             continue
 
         parent_kind = id_to_workstream[parent_id].get("kind", "")
-        if parent_kind not in VALID_PARENT_KINDS.get(kind, set()):
-            errors.append(
-                f"[{wid}] kind '{kind}' cannot have a parent of kind '{parent_kind}'"
-            )
 
     for w in workstreams:
         wid     = w.get("id", "(unknown)")
@@ -119,18 +111,12 @@ def validate_workstreams_semantics(workstreams: list[dict], people_data: dict) -
 
     for w in workstreams:
         wid  = w.get("id", "(unknown)")
-        kind = w.get("kind", "")
-
-        if "sigCategory" in w and kind != "sig":
-            errors.append(
-                f"[{wid}] sigCategory is only valid on kind 'sig'"
-            )
 
         person_roles = {next(iter(pr)) for pr in w.get("people", [])}
-        for required_role in KIND_REQUIRED_ROLES.get(kind, set()):
+        for required_role in REQUIRED_ROLES:
             if required_role not in person_roles:
                 errors.append(
-                    f"[{wid}] kind '{kind}' requires at least one '{required_role}'"
+                    f"[{wid}] SIG requires at least one '{required_role}'"
                 )
 
         teams = people_data.get("teams", {})
