@@ -1067,7 +1067,7 @@
   - specSponsor: svrnm
   - tcSponsor:
       username: reyang
-      level: tbd
+      level: guiding
   resources:
   - slack:
       name: '#otel-localization-zhcn'
