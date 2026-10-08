@@ -66,6 +66,7 @@ See [Project Sponsorship](/project-management.md#project-sponsorship)
 #### TC Sponsor
 
 Alex Boten (@codeboten)
+Reiley Yang (@reyang)
 
 #### GC Liaison
 
