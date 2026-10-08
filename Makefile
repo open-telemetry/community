@@ -8,6 +8,7 @@ export MSYS_NO_PATHCONV=1
 generate:
 	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/update-sig-tables.py --install;
 	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/update-community-members.py --install;
+	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/generate-sponsorship-ledger.py --install;
 
 .PHONY: validate-sigs
 validate-sigs:
@@ -17,6 +18,7 @@ validate-sigs:
 check-generate:
 	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/update-sig-tables.py --install --check;
 	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/update-community-members.py --install --check;
+	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/generate-sponsorship-ledger.py --install --check;
 
 .PHONY: markdown-link-check
 markdown-link-check:
