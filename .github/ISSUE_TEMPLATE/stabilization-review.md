@@ -2,7 +2,7 @@
 name: TC Review Request
 about: Request a Technical Committee stability review (promotion to Stable)
 title: "TC Review Request: "
-labels: "area/stability"
+labels: ["area/stability", "triage:tc-inbox"]
 assignees: ""
 ---
 
