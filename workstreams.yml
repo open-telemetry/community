@@ -1,5 +1,4 @@
 - id: spec-general
-  kind: sig
   sigCategory: specification
   name: 'Specification: General + OTel Maintainers Sync'
   parent: none
@@ -48,7 +47,6 @@
   - repository: open-telemetry/opentelemetry-proto
   - repository: open-telemetry/build-tools
 - id: sampling
-  kind: sig
   sigCategory: specification
   name: 'Specification: Sampling'
   parent: spec-general
@@ -67,7 +65,6 @@
       id: C027DS6GZD3
   - roadmapProject: 133
 - id: spec-logs
-  kind: sig
   sigCategory: specification
   name: 'Specification: Logs'
   parent: spec-general
@@ -86,7 +83,6 @@
       name: '#otel-spec-logs'
       id: C062HUREGUV
 - id: semconv-general
-  kind: sig
   sigCategory: specification
   name: 'Semantic Conventions: General'
   parent: spec-general
@@ -109,7 +105,6 @@
   - repository: open-telemetry/semantic-conventions
   - repository: open-telemetry/semantic-conventions-conformance
 - id: semconv-system-metrics
-  kind: sig
   sigCategory: specification
   name: 'Semantic Conventions: System Metrics'
   parent: semconv-general
@@ -128,7 +123,6 @@
       id: C05CTFE9U4A
   - roadmapProject: 55
 - id: semconv-k8s
-  kind: sig
   sigCategory: specification
   name: 'Semantic Conventions: K8s'
   parent: semconv-general
@@ -147,7 +141,6 @@
       id: C07Q1L0FGKX
   - roadmapProject: 114
 - id: semconv-genai
-  kind: sig
   sigCategory: specification
   name: 'Semantic Conventions and Instrumentation: GenAI'
   parent: semconv-general
@@ -168,7 +161,6 @@
       id: C06KR7ARS3X
   - roadmapProject: 82
 - id: semconv-cicd
-  kind: sig
   sigCategory: specification
   name: 'Semantic Conventions: CI/CD'
   parent: semconv-general
@@ -190,7 +182,6 @@
       id: C0598R66XAP
   - roadmapProject: 171
 - id: semconv-rpc
-  kind: sig
   sigCategory: specification
   name: 'Semantic Conventions: RPC'
   parent: semconv-general
@@ -209,7 +200,6 @@
       id: C09D3TRKMED
   - roadmapProject: 161
 - id: semconv-service-deployment
-  kind: sig
   sigCategory: specification
   name: 'Semantic Conventions: Service and Deployment'
   parent: semconv-general
@@ -228,7 +218,6 @@
       id: C09HLNSSJSE
   - roadmapProject: 168
 - id: spec-entities
-  kind: sig
   sigCategory: specification
   name: 'Specification: Entities'
   parent: spec-general
@@ -247,7 +236,6 @@
       id: C06QEG97W7L
   - roadmapProject: 85
 - id: opamp
-  kind: sig
   sigCategory: specification
   name: OpAMP
   parent: none
@@ -267,7 +255,6 @@
   - repository: open-telemetry/opamp-go
   - repository: open-telemetry/opamp-spec
 - id: prometheus-interop
-  kind: sig
   sigCategory: specification
   name: Prometheus Interoperability
   parent: none
@@ -285,7 +272,6 @@
       name: '#otel-prometheus'
       id: C01LSCJBXDZ
 - id: faas
-  kind: sig
   sigCategory: specification
   name: Functions as a Service (FAAS)
   parent: none
@@ -304,7 +290,6 @@
       id: C04HVBETC9Z
   - repository: open-telemetry/opentelemetry-lambda
 - id: profiling
-  kind: sig
   sigCategory: specification
   name: Profiling
   parent: none
@@ -323,7 +308,6 @@
       id: C03J794L0BV
   - repository: open-telemetry/opentelemetry-ebpf-profiler
 - id: mainframes
-  kind: sig
   sigCategory: specification
   name: OpenTelemetry on Mainframes
   parent: none
@@ -342,7 +326,6 @@
       name: '#otel-mainframes'
       id: C05PXDFTCPJ
 - id: client-instrumentation
-  kind: sig
   sigCategory: specification
   name: Client Instrumentation
   parent: none
@@ -360,7 +343,6 @@
       name: '#otel-client-side-telemetry'
       id: C0239SYARD2
 - id: policies
-  kind: sig
   sigCategory: specification
   name: Policies
   parent: none
@@ -378,7 +360,6 @@
       name: '#otel-policies'
       id: C0C0VFN9526
 - id: android
-  kind: sig
   sigCategory: implementation
   name: 'Android: SDK + Automatic Instrumentation'
   parent: none
@@ -397,7 +378,6 @@
       id: C05J0T9K27Q
   - repository: open-telemetry/opentelemetry-android
 - id: arrow
-  kind: sig
   sigCategory: implementation
   name: Arrow
   parent: none
@@ -417,7 +397,6 @@
   - repository: open-telemetry/otel-arrow
   - roadmapProject: 139
 - id: browser
-  kind: sig
   sigCategory: implementation
   name: Browser
   parent: none
@@ -439,7 +418,6 @@
   - repository: open-telemetry/opentelemetry-browser
   - roadmapProject: 146
 - id: collector
-  kind: sig
   sigCategory: implementation
   name: Collector
   parent: none
@@ -465,7 +443,6 @@
   - repository: open-telemetry/opentelemetry-go-vanityurls
   - repository: open-telemetry/govanityurls
 - id: cpp
-  kind: sig
   sigCategory: implementation
   name: 'C++: SDK'
   parent: none
@@ -486,7 +463,6 @@
   - repository: open-telemetry/opentelemetry-cpp-contrib
   - repository: open-telemetry/cpp-build-tools
 - id: dotnet-auto-instr
-  kind: sig
   sigCategory: implementation
   name: '.NET: Automatic Instrumentation'
   parent: none
@@ -508,7 +484,6 @@
       id: C01NR1YLSE7
   - repository: open-telemetry/opentelemetry-dotnet-instrumentation
 - id: dotnet
-  kind: sig
   sigCategory: implementation
   name: '.NET: SDK'
   parent: none
@@ -528,7 +503,6 @@
   - repository: open-telemetry/opentelemetry-dotnet
   - repository: open-telemetry/opentelemetry-dotnet-contrib
 - id: dart-flutter
-  kind: sig
   sigCategory: implementation
   name: 'Dart and Flutter: SDK'
   parent: none
@@ -547,7 +521,6 @@
       id: C027SBQGLS0
   - repository: open-telemetry/opentelemetry-dart
 - id: erlang-elixir
-  kind: sig
   sigCategory: implementation
   name: 'Erlang/Elixir: SDK'
   parent: none
@@ -567,7 +540,6 @@
   - repository: open-telemetry/opentelemetry-erlang
   - repository: open-telemetry/opentelemetry-erlang-contrib
 - id: go
-  kind: sig
   sigCategory: implementation
   name: 'GoLang: SDK'
   parent: none
@@ -594,7 +566,6 @@
   - repository: open-telemetry/opentelemetry-proto-go
   - repository: open-telemetry/govanityurls
 - id: go-auto-instr
-  kind: sig
   sigCategory: implementation
   name: 'GoLang: Automatic Instrumentation'
   parent: none
@@ -613,7 +584,6 @@
       id: C03S01YSAS0
   - repository: open-telemetry/opentelemetry-go-instrumentation
 - id: go-compile-instr
-  kind: sig
   sigCategory: implementation
   name: 'GoLang: Compile-Time Instrumentation'
   parent: none
@@ -633,7 +603,6 @@
   - repository: open-telemetry/opentelemetry-go-compile-instrumentation
   - roadmapProject: 130
 - id: injector
-  kind: sig
   sigCategory: implementation
   name: Injector
   parent: none
@@ -652,7 +621,6 @@
       id: C09025GKPAL
   - repository: open-telemetry/opentelemetry-injector
 - id: java-sdk-instrumentation
-  kind: sig
   sigCategory: implementation
   name: 'Java: SDK + Instrumentation'
   parent: none
@@ -676,7 +644,6 @@
   - repository: open-telemetry/opentelemetry-proto-java
   - repository: open-telemetry/semantic-conventions-java
 - id: javascript-sdk
-  kind: sig
   sigCategory: implementation
   name: 'JavaScript: SDK'
   parent: none
@@ -697,7 +664,6 @@
   - repository: open-telemetry/opentelemetry-js
   - repository: open-telemetry/opentelemetry-js-contrib
 - id: kotlin
-  kind: sig
   sigCategory: implementation
   name: 'Kotlin: SDK'
   parent: none
@@ -716,7 +682,6 @@
       id: C08NRCD4R4G
   - repository: open-telemetry/opentelemetry-kotlin
 - id: packaging
-  kind: sig
   sigCategory: implementation
   name: 'Packaging'
   parent: none
@@ -735,7 +700,6 @@
         id: C0AD17NMBLZ
     - repository: open-telemetry/opentelemetry-packaging
 - id: php-sdk
-  kind: sig
   sigCategory: implementation
   name: 'PHP: SDK'
   parent: none
@@ -756,7 +720,6 @@
   - repository: open-telemetry/opentelemetry-php-contrib
   - repository: open-telemetry/opentelemetry-php-instrumentation
 - id: python-sdk
-  kind: sig
   sigCategory: implementation
   name: 'Python: SDK'
   parent: none
@@ -776,7 +739,6 @@
   - repository: open-telemetry/opentelemetry-python
   - repository: open-telemetry/opentelemetry-python-contrib
 - id: ruby-sdk
-  kind: sig
   sigCategory: implementation
   name: 'Ruby: SDK'
   parent: none
@@ -797,7 +759,6 @@
   - repository: open-telemetry/opentelemetry-ruby
   - repository: open-telemetry/opentelemetry-ruby-contrib
 - id: rust-sdk
-  kind: sig
   sigCategory: implementation
   name: 'Rust: SDK'
   parent: none
@@ -818,7 +779,6 @@
   - repository: open-telemetry/opentelemetry-rust
   - repository: open-telemetry/opentelemetry-rust-contrib
 - id: swift-sdk
-  kind: sig
   sigCategory: implementation
   name: 'Swift: SDK'
   parent: none
@@ -837,7 +797,6 @@
       id: C01NCHR19SB
   - repository: open-telemetry/opentelemetry-swift
 - id: network
-  kind: sig
   sigCategory: implementation
   name: Network
   parent: none
@@ -856,7 +815,6 @@
       id: C02AB15583A
   - roadmapProject: 202
 - id: ebpf-instrumentation
-  kind: sig
   sigCategory: implementation
   name: eBPF Instrumentation
   parent: none
@@ -875,7 +833,6 @@
       id: C08P9L4FPKJ
   - repository: open-telemetry/opentelemetry-ebpf-instrumentation
 - id: k8s-operator
-  kind: sig
   sigCategory: implementation
   name: Kubernetes Operator
   parent: none
@@ -894,7 +851,6 @@
       id: C033BJ8BASU
   - repository: open-telemetry/opentelemetry-operator
 - id: k8s-helm-charts
-  kind: sig
   sigCategory: implementation
   name: Kubernetes Helm Charts
   parent: none
@@ -913,7 +869,6 @@
       id: C03HVLM8LAH
   - repository: open-telemetry/opentelemetry-helm-charts
 - id: community-demo
-  kind: sig
   sigCategory: implementation
   name: Community Demo Application
   parent: none
@@ -932,7 +887,6 @@
       id: C03B4CWV4DA
   - repository: open-telemetry/opentelemetry-demo
 - id: semconv-tooling
-  kind: sig
   sigCategory: implementation
   name: 'Semantic Conventions: Tooling'
   parent: semconv-general
@@ -951,7 +905,6 @@
       id: C0697EXNTL3
   - repository: open-telemetry/weaver
 - id: communications
-  kind: sig
   sigCategory: cross-cutting
   name: 'Communications (Website, [Documentation](https://opentelemetry.io/docs/),
     etc.)'
@@ -972,7 +925,6 @@
   - repository: open-telemetry/opentelemetry.io
   - roadmapProject: 129
 - id: end-user
-  kind: sig
   sigCategory: cross-cutting
   name: End-User SIG
   parent: none
@@ -992,7 +944,6 @@
   - repository: open-telemetry/sig-end-user
   - roadmapProject: 181
 - id: security
-  kind: sig
   sigCategory: cross-cutting
   name: Security
   parent: none
@@ -1011,7 +962,6 @@
       id: C05A85QC281
   - repository: open-telemetry/sig-security
 - id: contributor-experience
-  kind: sig
   sigCategory: cross-cutting
   name: Contributor Experience
   parent: none
@@ -1032,7 +982,6 @@
       id: C06TMJ2R0SK
   - repository: open-telemetry/sig-contributor-experience
 - id: developer-experience
-  kind: sig
   sigCategory: cross-cutting
   name: Developer Experience
   parent: none
@@ -1052,7 +1001,6 @@
       id: C01S42U83B2
   - repository: open-telemetry/sig-developer-experience
 - id: localization-bn
-  kind: sig
   sigCategory: cross-cutting
   name: Bengali (bn)
   parent: communications
@@ -1067,7 +1015,6 @@
       name: '#otel-localization-bn'
       id: C08TBCSAY1F
 - id: localization-zh-cn
-  kind: sig
   sigCategory: cross-cutting
   name: Chinese (zh-CN)
   parent: communications
@@ -1082,7 +1029,6 @@
       name: '#otel-localization-zhcn'
       id: C08SSK25Y7L
 - id: localization-fr
-  kind: sig
   sigCategory: cross-cutting
   name: French (fr-FR)
   parent: communications
@@ -1097,7 +1043,6 @@
       name: '#otel-localization-fr'
       id: C07THD60YLF
 - id: localization-ja
-  kind: sig
   sigCategory: cross-cutting
   name: Japanese (ja-JA)
   parent: communications
@@ -1116,7 +1061,6 @@
       name: '#otel-localization-ja'
       id: C08SGPBN44E
 - id: localization-pl
-  kind: sig
   sigCategory: cross-cutting
   name: Polish (pl-PL)
   parent: communications
@@ -1131,7 +1075,6 @@
       name: '#otel-localization-pl'
       id: C0ALHN9V7PT
 - id: localization-pt-br
-  kind: sig
   sigCategory: cross-cutting
   name: Portuguese (pt-BR)
   parent: communications
@@ -1146,7 +1089,6 @@
       name: '#otel-localization-ptbr'
       id: C076LET8YSK
 - id: localization-ro
-  kind: sig
   sigCategory: cross-cutting
   name: Romanian (ro-RO)
   parent: communications
@@ -1164,7 +1106,6 @@
       name: '#otel-localization-ro'
       id: C09E9KNNLP4
 - id: localization-es
-  kind: sig
   sigCategory: cross-cutting
   name: Spanish (es-ES)
   parent: communications
@@ -1183,7 +1124,6 @@
       name: '#otel-localization-es'
       id: C07PVQVCHA6
 - id: localization-uk
-  kind: sig
   sigCategory: cross-cutting
   name: Ukrainian (uk-UA)
   parent: communications

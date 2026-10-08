@@ -128,8 +128,6 @@ cross_sigs = []
 localization_sigs = []
 
 for ws in workstreams:
-    if ws.get("kind") != "sig":
-        continue
     category = ws.get("sigCategory")
     parent = ws.get("parent", "none")
 
