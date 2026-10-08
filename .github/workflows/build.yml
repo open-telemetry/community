@@ -28,3 +28,13 @@ jobs:
         env:
           # see https://lychee.cli.rs/troubleshooting/rate-limits/#github-rate-limiting
           GITHUB_TOKEN: ${{ github.token }}
+
+  license-check:
+    runs-on: ubuntu-slim
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Run license-check
+        run: make license-check

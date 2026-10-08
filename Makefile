@@ -28,3 +28,13 @@ markdown-link-check:
 		--root-dir /home/repo \
 		--verbose \
 		home/repo
+
+.PHONY: license-check
+license-check:
+	@licRes=$$(for f in $$(find . -type f \( -iname '*.py' -o -iname '*.sh' \) ! -path '**/third_party/*' ! -path './.git/*' ) ; do \
+	           awk '/Copyright The OpenTelemetry Authors|generated|GENERATED/ && NR<=4 { found=1; next } END { if (!found) print FILENAME }' $$f; \
+	   done); \
+	   if [ -n "$${licRes}" ]; then \
+	           echo "license header checking failed:"; echo "$${licRes}"; \
+	           exit 1; \
+	   fi
