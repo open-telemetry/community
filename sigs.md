@@ -32,7 +32,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1BKjQWP32FXL9g1cGbyj7DMXV1Uq_RL8_78rWaMBhN0A)
 - **Meeting invites group:** [calendar-spec-logs](https://groups.google.com/a/opentelemetry.io/g/calendar-spec-logs)
 - **Slack channel:** [#otel-spec-logs](https://cloud-native.slack.com/archives/C062HUREGUV)
-- **Technical Committee sponsors:** [Liudmila Molkova](https://github.com/lmolkova) (guiding)
+- **Technical Committee sponsors:** [Robert Pająk](https://github.com/pellared) (guiding)
 - **Spec sponsors:** [Ted Young](https://github.com/tedsuo)
 - **Governance Committee liaison:** [Trask Stalnaker](https://github.com/trask)
 
@@ -84,7 +84,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting invites group:** [calendar-semconv](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)
 - **Slack channel:** [#otel-cicd](https://cloud-native.slack.com/archives/C0598R66XAP)
 - **Roadmap projects:** [Semantic Conventions: CI/CD roadmap](https://github.com/orgs/open-telemetry/projects/171)
-- **Technical Committee sponsors:** [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating)
+- **Technical Committee sponsors:** [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating), [Robert Pająk](https://github.com/pellared) (guiding)
 - **Governance Committee liaison:** [Marylia Gutierrez](https://github.com/maryliag)
 
 ### Semantic Conventions: RPC
@@ -247,7 +247,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting invites group:** [calendar-dotnet](https://groups.google.com/a/opentelemetry.io/g/calendar-dotnet)
 - **Slack channel:** [#otel-dotnet-auto-instr](https://cloud-native.slack.com/archives/C01NR1YLSE7)
 - **Repositories:** [open-telemetry/opentelemetry-dotnet-instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation)
-- **Technical Committee sponsors:** [Reiley Yang](https://github.com/reyang) (escalating)
+- **Technical Committee sponsors:** [Reiley Yang](https://github.com/reyang) (escalating), [Robert Pająk](https://github.com/pellared) (guiding)
 - **Governance Committee liaison:** [Morgan McLean](https://github.com/mtwo)
 
 ### .NET: SDK
@@ -287,7 +287,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting invites group:** [calendar-go](https://groups.google.com/a/opentelemetry.io/g/calendar-go)
 - **Slack channel:** [#otel-go](https://cloud-native.slack.com/archives/C01NPAXACKT)
 - **Repositories:** [open-telemetry/opentelemetry-go](https://github.com/open-telemetry/opentelemetry-go), [open-telemetry/opentelemetry-go-contrib](https://github.com/open-telemetry/opentelemetry-go-contrib), [open-telemetry/opentelemetry-go-build-tools](https://github.com/open-telemetry/opentelemetry-go-build-tools), [open-telemetry/opentelemetry-go-vanityurls](https://github.com/open-telemetry/opentelemetry-go-vanityurls), [open-telemetry/opentelemetry-proto-go](https://github.com/open-telemetry/opentelemetry-proto-go), [open-telemetry/govanityurls](https://github.com/open-telemetry/govanityurls)
-- **Technical Committee sponsors:** [David Ashpole](https://github.com/dashpole) (leading)
+- **Technical Committee sponsors:** [David Ashpole](https://github.com/dashpole) (leading), [Robert Pająk](https://github.com/pellared) (guiding)
 - **Governance Committee liaison:** [Marylia Gutierrez](https://github.com/maryliag)
 
 ### GoLang: Automatic Instrumentation
@@ -565,7 +565,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 ### Polish (pl-PL)
 
 - **Slack channel:** [#otel-localization-pl](https://cloud-native.slack.com/archives/C0ALHN9V7PT)
-- **Technical Committee sponsors:** tbd
+- **Technical Committee sponsors:** [Robert Pająk](https://github.com/pellared) (guiding)
 - **Spec sponsors:** [Severin Neumann](https://github.com/svrnm)
 - **Governance Committee liaison:** [Severin Neumann](https://github.com/svrnm)
 

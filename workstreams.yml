@@ -75,7 +75,7 @@
   - gcLiaison: trask
   - specSponsor: tedsuo
   - tcSponsor:
-      username: lmolkova
+      username: pellared
       level: guiding
   resources:
   - meeting:
@@ -177,6 +177,9 @@
   - tcSponsor:
       username: carlosalberto
       level: escalating
+  - tcSponsor:
+      username: pellared
+      level: guiding
   resources:
   - meeting:
       schedule: Every Tuesday at 07:00 PT
@@ -492,6 +495,9 @@
   - tcSponsor:
       username: reyang
       level: escalating
+  - tcSponsor:
+      username: pellared
+      level: guiding
   resources:
   - meeting:
       schedule: Wednesday at 09:00 PT
@@ -570,6 +576,9 @@
   - tcSponsor:
       username: dashpole
       level: leading
+  - tcSponsor:
+      username: pellared
+      level: guiding
   resources:
   - meeting:
       schedule: Thursday alternating between 09:00 PT and 10:00 PT
@@ -1115,8 +1124,8 @@
   - gcLiaison: svrnm
   - specSponsor: svrnm
   - tcSponsor:
-      username: tbd
-      level: tbd
+      username: pellared
+      level: guiding
   resources:
   - slack:
       name: '#otel-localization-pl'
