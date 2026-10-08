@@ -57,8 +57,7 @@ New SIG needed with a new name
 
 #### Other Staffing
 
-Names and expected contribution of any other contributors.
-Please also include maintainers or approvers from other SIGs committed to reviewing prototypes.
+Engagement with the backing SDK is expected, level of involvement TBD.
 
 ### Sponsorship
 See [Project Sponsorship](/project-management.md#project-sponsorship)
