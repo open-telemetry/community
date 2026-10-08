@@ -4,7 +4,7 @@
 
 Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical Committee (TC) sponsor(s), followed by how many SIGs each GC and TC member is currently responsible for. For full per-SIG details (meetings, Slack, repos), see [sigs.md](./sigs.md).
 
-**60 SIGs** · **9 GC members** with at least one liaison assignment · **9 TC members** with at least one sponsor assignment · **1 SIG** missing a GC liaison · **13 SIGs** missing a TC sponsor
+**60 SIGs** · **9 GC members** with at least one liaison assignment · **10 TC members** with at least one sponsor assignment · **1 SIG** missing a GC liaison · **13 SIGs** missing a TC sponsor
 
 ## GC liaison load
 
@@ -33,6 +33,7 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 | [Tigran Najaryan](https://github.com/tigrannajaryan) | 1 | 2 | 1 | 0 | 4 |
 | [Joshua MacDonald](https://github.com/jmacd) | 1 | 2 | 0 | 0 | 3 |
 | [Armin Ruech](https://github.com/arminru) | 1 | 0 | 1 | 0 | 2 |
+| [Alex Boten](https://github.com/codeboten) | 1 | 0 | 0 | 0 | 1 |
 
 <details>
 <summary>SIGs sponsored, per TC member</summary>
@@ -46,6 +47,7 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 - **[Tigran Najaryan](https://github.com/tigrannajaryan)** (4 SIGs): OpAMP, Packaging, Profiling, Specification: Entities
 - **[Joshua MacDonald](https://github.com/jmacd)** (3 SIGs): Arrow, Collector, Specification: Sampling
 - **[Armin Ruech](https://github.com/arminru)** (2 SIGs): Ruby: SDK, Semantic Conventions: General
+- **[Alex Boten](https://github.com/codeboten)** (1 SIG): Collector
 
 </details>
 
@@ -83,7 +85,7 @@ _Sponsorship of "Specification: General + OTel Maintainers Sync" is collective a
 | Android: SDK + Automatic Instrumentation | [Ted Young](https://github.com/tedsuo) | [Jack Berg](https://github.com/jack-berg) (escalating) |
 | Arrow | [Trask Stalnaker](https://github.com/trask) | [Joshua MacDonald](https://github.com/jmacd) (leading) |
 | Browser | [Ted Young](https://github.com/tedsuo) | [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating) |
-| Collector | [Pablo Baeyens](https://github.com/mx-psi) | [Joshua MacDonald](https://github.com/jmacd) (guiding) |
+| Collector | [Pablo Baeyens](https://github.com/mx-psi) | [Joshua MacDonald](https://github.com/jmacd) (guiding), [Alex Boten](https://github.com/codeboten) (leading) |
 | C++: SDK | [Severin Neumann](https://github.com/svrnm) | [Reiley Yang](https://github.com/reyang) (escalating) |
 | .NET: Automatic Instrumentation | [Morgan McLean](https://github.com/mtwo) | [Reiley Yang](https://github.com/reyang) (escalating), [Robert Pająk](https://github.com/pellared) (guiding) |
 | .NET: SDK | [Morgan McLean](https://github.com/mtwo) | [Reiley Yang](https://github.com/reyang) (escalating) |
