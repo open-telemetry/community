@@ -10,6 +10,7 @@ In alphabetical order:
 - [Dan Gomez Blanco](#dan-gomez-blanco)
 - [Josh Suereth](#josh-suereth)
 - [Juliano Costa](#juliano-costa)
+- [Kemal Akkoyun](#kemal-akkoyun)
 - [Pablo Baeyens Fernández](#pablo-baeyens-fernández)
 
 ---
@@ -104,6 +105,33 @@ If elected, I will focus on:
 - **Protecting maintainer time as contribution volume grows.** The Demo is a magnet for first-time and AI-generated pull requests, so I see this problem up close every week. I want to help us find practical approaches that keep the door open to genuine newcomers without burning out the people reviewing.
 
 The other candidates are an outstanding group and I have learned a lot from each one of them. OpenTelemetry is a great project because of its community, and I would be honored to help steward it. Thank you for your consideration.
+
+---
+
+### Kemal Akkoyun
+
+<img src="static/kemal-akkoyun.jpg" height="300" alt="Kemal Akkoyun"/>
+
+- Company: [Datadog](https://www.datadoghq.com/)
+- GitHub: [kakkoyun](https://github.com/kakkoyun)
+
+OpenTelemetry [graduated](https://opentelemetry.io/blog/2026/otel-graduates/) this year. SIGs run themselves, and much of the Governance Committee's work from here is helping them do that well: [checking in](https://github.com/open-telemetry/community/blob/main/gc-check-ins.md) on their health, reviewing and staffing [new projects](https://github.com/open-telemetry/community/blob/main/project-management.md), keeping contributor roles fair, and working with CNCF and neighboring projects. I already do parts of this work as a SIG lead, a mentor, and a member of the Prometheus Steering Committee, and I'd like to do more of it for OpenTelemetry.
+
+I've worked on open source observability since 2019, mostly on Go, instrumentation, eBPF, and profiling. Much of that time went to the work that keeps a project healthy, like reviewing contributions and helping newcomers land their first change. I'm an emeritus maintainer of [Thanos](https://thanos.io/) and the [Prometheus Operator](https://prometheus-operator.dev/).
+
+Prometheus is where I can add the most. I'm a maintainer in [Prometheus](https://prometheus.io/) and was elected to its [inaugural Steering Committee](https://github.com/prometheus/governance/blob/main/elections/2026/steering-committee-election.md#results) in June. The projects share many users and contributors, and when a question comes up that neither can settle alone, someone with standing in both can take it to the right people early. I want to be that bridge between the two communities, and to help OpenTelemetry's [Prometheus Interoperability](https://github.com/open-telemetry/community/blob/main/sigs.md#prometheus-interoperability) SIG where I can.
+
+In OpenTelemetry I lead the [Go Compile-Time Instrumentation](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation) SIG. It [shipped v1](https://opentelemetry.io/blog/2026/go-compile-time-instrumentation-v1/) this summer and has maintainers from five organizations. I also helped bootstrap the [Zig SIG](https://github.com/open-telemetry/opentelemetry-zig). That work taught me to ask early whether a new SIG has enough maintainer time for the roadmap it proposes.
+
+I've mentored through [LFX Mentorship](https://mentorship.lfx.linuxfoundation.org/) and [Google Summer of Code](https://summerofcode.withgoogle.com/) since 2020, for Thanos, Prometheus, and OpenTelemetry. This year I also mentored in the OpenTelemetry cohort of Bloomberg's [Sustaining Open Source](https://www.cncf.io/blog/2026/03/31/sustaining-opentelemetry-moving-from-dependency-management-to-stewardship/) program with CNCF. I [speak](https://kakkoyun.me/talks/) about instrumentation at KubeCon, FOSDEM, and other conferences. Seeing a mentee become a maintainer is still the best part of this work for me.
+
+If elected, I would focus on:
+
+- Prometheus and OpenTelemetry. I'd be a direct link between the two governing bodies on shared questions like contributor roles and mentorship. I'd do the same with Kubernetes, where I've taken part in [SIG Instrumentation](https://github.com/kubernetes/community/tree/master/sig-instrumentation).
+- Healthy SIGs. I'd use SIG check-ins to ask where maintainers are stretched and follow up, with mentorship where it would help. I'd be a natural liaison for SIGs close to my own work, such as the [Go SIGs](https://github.com/open-telemetry/community/blob/main/sigs.md#golang-sdk), [Profiling](https://github.com/open-telemetry/community/blob/main/sigs.md#profiling), and [eBPF Instrumentation](https://github.com/open-telemetry/community/blob/main/sigs.md#ebpf-instrumentation).
+- Responsible AI use. My SIG learned this the hard way when our monthly pull requests nearly quadrupled this summer and review could not keep up. I'd help make the project's [AI guidance](https://github.com/open-telemetry/community/blob/main/policies/genai.md) part of everyday practice across SIGs, so contributors know what good AI-assisted work looks like and maintainers have shared ways to manage the volume.
+
+Thank you for considering me.
 
 ---
 
