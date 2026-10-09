@@ -178,6 +178,15 @@ Link: <https://accounts.google.com/ServiceLogin?service=androiddeveloper&passive
 - Point of contact email is android-maintainers@opentelemetry.io
 - Admin: [@open-telemetry/android-maintainers](https://github.com/orgs/open-telemetry/teams/android-maintainers)
 
+### Fedora COPR
+
+We have a [Fedora COPR](https://copr.fedorainfracloud.org/coprs/) account to build and publish RPM packages.
+
+Link: https://copr.fedorainfracloud.org/coprs/opentelemetry/
+
+- Point of contact email is packaging-maintainers@opentelemetry.io
+- Admin: [@open-telemetry/packaging-maintainers](https://github.com/orgs/open-telemetry/teams/packaging-maintainers)
+
 ## Artifact repositories
 
 ### NuGet OpenTelemetry organization
