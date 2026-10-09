@@ -426,6 +426,9 @@
   - tcSponsor:
       username: jmacd
       level: guiding
+  - tcSponsor:
+      username: codeboten
+      level: leading
   resources:
   - meeting:
       schedule: 'Alternating between Tuesday at 17:00 PT, Wednesday at 09:00 PT, and
