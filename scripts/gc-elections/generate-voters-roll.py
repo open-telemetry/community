@@ -124,12 +124,28 @@ def get_lfx_contributors():
     return contributors
 
 
+# Resolve an LFX contributor to a canonical GitHub login.
+# LFX handle arrays are not validated against GitHub and are not ordered by
+# recency, so the first entry is often a retired or renamed account. Return the
+# first handle the API resolves, or None if none of them is a live account.
+def resolve_lfx_handle(handles):
+    for handle in handles:
+        handle = handle.strip()
+        if not handle:
+            continue
+        login = get_github_login(handle)
+        if login:
+            return login
+    return None
+
+
 # Merge LFX contributors into the devstats rows.
 # For each LFX contributor:
 #   - skip if their contribution count is below the threshold (50)
 #   - skip if they have no GitHub handle at all
 #   - skip if any of their handles is already present (case-insensitive)
-#   - otherwise add only the first handle in the array
+#   - skip if none of their handles resolves to a GitHub account
+#   - otherwise add the canonical login of the first handle that resolves
 def merge_lfx_contributors(rows, lfx_contributors):
     existing = {row[0].lower() for row in rows}
     added = 0
@@ -140,11 +156,16 @@ def merge_lfx_contributors(rows, lfx_contributors):
         handles = c.get("githubHandleArray") or []
         if not handles:
             continue
-        if any(h.lower() in existing for h in handles):
+        if any(h.strip().lower() in existing for h in handles):
             continue
-        primary = handles[0]
-        rows.append([primary, c["contributions"]])
-        existing.add(primary.lower())
+        login = resolve_lfx_handle(handles)
+        if not login:
+            print(f"Skipping LFX contributor with no live GitHub account: {handles}")
+            continue
+        if login.lower() in existing:
+            continue
+        rows.append([login, c["contributions"]])
+        existing.add(login.lower())
         added += 1
 
     print(f"Added {added} new contributors from LFX")
