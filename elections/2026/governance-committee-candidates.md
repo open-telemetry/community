@@ -8,6 +8,7 @@ In alphabetical order:
 <!-- - [Full Name](#full-name) -->
 - [Antoine Toulme](#antoine-toulme)
 - [Dan Gomez Blanco](#dan-gomez-blanco)
+- [Huxing Zhang](#huxing-zhang)
 - [Josh Suereth](#josh-suereth)
 - [Juliano Costa](#juliano-costa)
 - [Kemal Akkoyun](#kemal-akkoyun)
@@ -63,6 +64,37 @@ If elected, I want to evolve on that work and focus on:
 - **Roadmap clarity**, helping new and existing contributors align their work commitments with project priorities, and giving end users a more accurate view of where the project is headed.
 
 Thank you for your consideration. I'd be honored to continue serving this community.
+
+---
+
+### Huxing Zhang
+
+<img src="static/huxing-zhang.jpg" height="300" alt="Huxing Zhang"/>
+
+- Company: [Alibaba](https://www.alibabagroup.com/)
+- GitHub: [ralf0131](https://github.com/ralf0131)
+
+I'm Huxing Zhang, a Staff Engineer at Alibaba working on observability and a maintainer of the [OpenTelemetry Go Compile-Time Instrumentation SIG](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation#maintainers). I also lead open source efforts in Alibaba Cloud's cloud-native application department and serve as [Alibaba Cloud's alternate representative on the CNCF Governing Board](https://www.cncf.io/wp-content/uploads/2025/04/CNCF-Governing-Board-Meeting-Minutes-2025-03-12.pdf). I am an [Apache Software Foundation Member](https://people.apache.org/phonebook.html?uid=huxing) and a PMC member of [Apache Tomcat](https://tomcat.apache.org/whoweare.html) and [Apache Dubbo](https://people.apache.org/phonebook.html?uid=huxing). A central part of my work is bringing engineers into open source communities and helping them become sustained contributors.
+
+At Alibaba, I have led and supported a team contributing across [OpenTelemetry Java instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation), [Go compile-time instrumentation](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation), [OpenTelemetry eBPF Instrumentation (OBI)](https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation), [GenAI semantic conventions](https://github.com/open-telemetry/semantic-conventions-genai), and [GenAI instrumentation](https://github.com/open-telemetry/opentelemetry-python-genai). These are collective efforts, built through our engineers' work and collaboration with upstream communities. Examples include [MyBatis instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation/pull/10258), [JSON Schema definitions for GenAI tools](https://github.com/open-telemetry/semantic-conventions/pull/3378), [shared GenAI utilities for inference events and richer message types](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/3994), and [Qwen-Agent instrumentation](https://github.com/open-telemetry/opentelemetry-python-genai/pull/310).
+
+Our contributors have taken on long-term responsibilities: Steve Rao is a [Java instrumentation approver](https://github.com/open-telemetry/opentelemetry-java-instrumentation#approvers), Minghui Zhang is a [GenAI semantic conventions approver](https://github.com/open-telemetry/semantic-conventions-genai/blob/main/CONTRIBUTING.md#approvers), and Haibin Zhang is an [OBI approver](https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation/blob/main/CONTRIBUTING.md#approvers). Helping engineers develop these relationships and earn the community's trust is an important part of my work.
+
+I also led [Alibaba's Go compile-time instrumentation donation](https://github.com/open-telemetry/community/issues/2344) and worked with contributors from Datadog, Quesma, and the wider community to [establish a shared, vendor-neutral project](https://github.com/open-telemetry/community/pull/2490). This experience taught me how to turn a company's investment into a community effort with shared ownership.
+
+Beyond engineering, I have [spoken at KubeCon](https://opentelemetry.io/blog/2024/kubecon-china/) and other community events, serve as a [lead organizer of KCD Hangzhou](https://www.cncf.io/wp-content/uploads/2026/01/KCD-Hangzhou-OID-China-2025-Transparency-Report.pdf), and actively [advocate for OpenTelemetry in China](https://observability.cn/article/ygg5p1i2sqkbgamq/). I also shared Alibaba's adoption experience through [OTel in Practice](https://opentelemetry.io/blog/2025/otip-alibaba/). These activities connect production users with contributors and help more people find their way into the community.
+
+If elected, I would focus on three areas:
+
+- **Make APAC adoption more visible and help it grow.** Through my work with companies in the region, I see OpenTelemetry adoption and production experience that rarely reach the wider community. I would help APAC companies, especially those in China, share case studies, challenges, and lessons through the [End-User SIG](https://opentelemetry.io/community/end-user/), OTel in Practice, community blogs, and conference talks. This exchange can inform upstream work and help other organizations adopt OpenTelemetry.
+
+- **Strengthen connections between APAC and the global community.** Building on my conference-organizing experience, I would work with local organizers, CNCF, and OpenTelemetry community members to support more observability and OpenTelemetry summits, meetups, and workshops in APAC. I would help lower time-zone and language barriers to participation and encourage contributions across code, documentation, localization, reviews, and community activities. Through mentoring and clearer contribution paths, I want to help people and companies in APAC build lasting relationships with SIGs and take on long-term maintenance responsibilities.
+
+- **Advance open standards for AI observability.** Building on our team's contributions to GenAI semantic conventions and instrumentation, I would support the relevant SIGs and [Technical Committee](https://github.com/open-telemetry/community/blob/main/tech-committee-charter.md) in advancing vendor-neutral observability standards for AI agents, model training, and inference. I would encourage closer integration between observability and evaluation, so that teams can connect system behavior, performance, and cost with assessments of AI quality and reliability. I would also help strengthen collaboration between OpenTelemetry and the Agentic AI Foundation (AAIF), particularly its [Observability & Traceability Working Group](https://aaif.io/working-groups/observability-traceability), by connecting contributors, sharing production use cases, and supporting joint discussions on semantic conventions and interoperability. My goal is to help these communities build on each other's work and reduce fragmentation across the AI ecosystem.
+
+I would bring my experience in Apache governance, building contribution teams, and cross-company collaboration to the Governance Committee. My goal is to help OpenTelemetry grow as a globally connected, vendor-neutral community where users can share their experience and contributors can grow into trusted stewards.
+
+Thank you for your consideration.
 
 ---
 
