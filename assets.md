@@ -129,6 +129,18 @@ Link: https://cloud.google.com
 - Admin: [@austinlparker](https://github.com/austinlparker)
   (password is the same as admin@opentelemetry.io "Google Workspace account", available in the OpenTelemetry Governance 1Password)
 
+### Google Cloud project for GKE Autopilot
+
+Used for testing and managing [GKE Autopilot partner workload allowlists](https://cloud.google.com/kubernetes-engine/docs/how-to/autopilot-partner-workload-allowlist#create-allowlist)
+(blessed to allow applying `WorkloadAllowlist` resources directly into clusters in this project without using an `AllowlistSynchronizer`).
+
+- Project: `gke-autopilot-allowlist` (ID: `gke-autopilot-allowlist-485818`)
+- Editors: [@dashpole](https://github.com/dashpole), [@svrnm](https://github.com/svrnm)
+- Allowlist repository: https://gke-ap-allowlist.googlesource.com/OpenTelemetry (Gerrit review UI: https://gke-ap-allowlist-review.googlesource.com)
+- Access groups (grant access to the allowlist repository and partner documentation):
+  - `obi-maintainers@opentelemetry.io`
+  - `ebpf-profiler-maintainers@opentelemetry.io`
+
 ### Grafana organization for SIG Security
 
 Link: https://grafana.com/orgs/otelsigsecurity
