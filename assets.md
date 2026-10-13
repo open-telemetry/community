@@ -28,6 +28,13 @@ Link: http://cncf-aws-opentelemetry.signin.aws.amazon.com/
 - Community account to published Lambda layers
 - Admin: Tyler Benson [@tylerbenson](https://github.com/tylerbenson), Serkan Özal [@serkan-ozal](https://github.com/serkan-ozal), Warre Pessers [@wpessers](https://github.com/wpessers)
 
+### Cloudflare account
+
+Link: https://dash.cloudflare.com/
+
+- Used for the OpenTelemetry Collector infrastructure for https://opentelemetry.io
+- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+
 ### FOSSA
 
 We have an OpenTelemetry team under the CNCF's enterprise account.
