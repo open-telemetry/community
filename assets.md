@@ -33,7 +33,7 @@ Link: http://cncf-aws-opentelemetry.signin.aws.amazon.com/
 Link: https://dash.cloudflare.com/
 
 - Used for the OpenTelemetry Collector infrastructure for https://opentelemetry.io
-- Admins: Unknown
+- Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
 
 ### FOSSA
 
