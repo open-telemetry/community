@@ -121,7 +121,7 @@ Thank you for your consideration and support!
 
 <img src="static/juliano-costa.jpg" height="300" alt="Juliano Costa"/>
 
-- Company: [Datadog](https://www.datadoghq.com/)
+- Company: In Transition
 - GitHub: [julianocosta89](https://github.com/julianocosta89)
 
 Hello there! I'm Juliano Costa. If you've ever deployed the OpenTelemetry Demo, there's a good chance we've already chatted. I've been contributing to OpenTelemetry since 2022, and today I'm an active maintainer on the [Demo](https://github.com/open-telemetry/opentelemetry-demo) and the [Developer Experience SIG](https://github.com/open-telemetry/sig-developer-experience), an approver on the [Helm Charts](https://github.com/open-telemetry/opentelemetry-helm-charts), and a regular contributor to our [docs](https://github.com/open-telemetry/opentelemetry.io). Across those repositories my contributions place me among the project's [top 30 contributors](https://insights.linuxfoundation.org/project/opentelemetry/contributors?timeRange=past365days&end=2026-10-02&start=2025-10-02) for the last year.
