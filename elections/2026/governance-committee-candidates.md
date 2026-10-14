@@ -13,6 +13,7 @@ In alphabetical order:
 - [Juliano Costa](#juliano-costa)
 - [Kemal Akkoyun](#kemal-akkoyun)
 - [Pablo Baeyens Fernández](#pablo-baeyens-fernández)
+- [Vibhanshu Singh](#vibhanshu-singh)
 
 ---
 
@@ -189,6 +190,31 @@ A few areas I would like to focus on in a second term are:
 3. We can and should automate more day-to-day duties and help follow best practices across all SIGs, introducing more shared workflows and improving Slack, project tracking, and SIG-specific automation.
 
 Thank you for considering me!
+
+---
+
+### Vibhanshu Singh
+
+<img src="static/vibhanshu-singh.jpg" height="300" alt="Vibhanshu Singh"/>
+
+- Company: Independent
+- GitHub: [singhvibhanshu](https://github.com/singhvibhanshu)
+
+I'm Vibhanshu Singh, a software engineer who spends most of my time in open source observability. I started contributing to OpenTelemetry in February 2026 and have since become an [OpenTelemetry organization member](https://github.com/open-telemetry/community/issues/3389), a [triager on Collector Contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib#triagers), and a [code owner of `pkg/pdatatest`](https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/.github/CODEOWNERS), the shared library that Collector components use to test the telemetry they produce. In that time I have landed [more than 125 merged pull requests in Collector Contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib/pulls?q=is%3Apr+author%3Asinghvibhanshu+is%3Amerged) plus several in Collector Core, and [reviewed more than 600](https://github.com/open-telemetry/opentelemetry-collector-contrib/pulls?q=is%3Apr+reviewed-by%3Asinghvibhanshu). The [2026 voter roll](https://github.com/open-telemetry/community/blob/main/elections/2026/voters-roll.csv) ranks my activity over the past year in the top twenty across the organization. I also contribute to neighboring CNCF projects such as [Jaeger](https://github.com/jaegertracing/jaeger/pulls?q=is%3Apr+author%3Asinghvibhanshu+is%3Amerged) and Kyverno.
+
+Most of my work is the kind that keeps a large project healthy rather than the kind that makes headlines:
+
+- **Keeping the Collector moving together.** I have [migrated a long tail of components to current semantic conventions](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/48373) and [promoted the associated feature gates](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/47969) so that users get consistent telemetry no matter which receiver or exporter they use, and I have [extended `pkg/pdatatest`](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/48734) so that component authors can write stronger tests with less effort.
+- **Reducing load on maintainers.** As a triager I label and route incoming issues and pull requests, [fix flaky tests](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50565) and [broken CI on main](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51123), [move inactive code owners to emeritus](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51750) and [flag unmaintained components](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51116), and align process between Core and Contrib, for example by renaming the `waiting-for-maintainers` label in [both](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51654) [repositories](https://github.com/open-telemetry/opentelemetry-collector/pull/16065).
+- **Fixing what breaks for users in production.** Examples include [an infinite loop in the AWS S3 receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/47062), [a Collector process left running by the OpAMP Supervisor](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50000), [an unbounded Thrift decoder in the Jaeger receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50628), and [advancing the Windows Service receiver to alpha](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/48221).
+
+I went from my first pull request to triager in a few months, so I know first-hand how welcoming this community is, and also where its processes are confusing or inconsistent for people who do not have a vendor team behind them. If elected, I would focus on:
+
+- **A clear, consistent path from first contribution to stewardship.** The steps to become a member, triager, approver, and maintainer differ across SIGs and often depend on who you happen to know. I would work with SIGs to make expectations, sponsorship, and recognition consistent and documented, building on the [membership guide](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md), so that individual and part-time contributors can grow into long-term roles.
+- **Shared practices for repository health.** Triage conventions, flaky test handling, CI stability, and the code-owner lifecycle are solved separately in every repository today. I would use [GC check-ins](https://github.com/open-telemetry/community/blob/main/gc-check-ins.md) to find where maintainers are stretched and help SIGs adopt shared automation and processes, so that scarce review capacity goes to reviewing.
+- **Coordinated cross-cutting change.** Semantic convention migrations, feature-gate lifecycles, and component stability levels only deliver value to end users when they move together across SIGs. I would help the GC and the Technical Committee make that coordination visible in the roadmap and communicate it clearly to users.
+
+I am newer to OpenTelemetry than the other candidates, and I got here because maintainers took time to review my work, answer my questions, and sponsor me when I asked. I have walked only the first steps of the contributor path so far, but those are the steps where a newcomer decides whether to stay, and as a triager and reviewer they are the steps where I already help others. On the Governance Committee I would work with SIGs to make the whole path clear, consistent, and welcoming for the next person, whoever they are and wherever they work. Thank you for your consideration.
 
 <!--
 Add a new candidate section below using the template:
