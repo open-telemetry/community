@@ -102,7 +102,6 @@ maintaining instrumentation.  The SemConv Tooling SIG is in charge of this proje
 Currently, the biggest barrier to stability is instrumentation. The Specification SIG is
 in charge of this project, but it requires significant input from maintainers and the community.
 
-* Move away from the “community contrib” model for critical instrumentation packages.
 * Deploy the new SemConv tooling across all language ecosystems.
 * Badges and other forms of recognition.
 * Native instrumentation push to move instrumentation out of OpenTelemetry.
