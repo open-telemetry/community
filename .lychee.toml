@@ -9,8 +9,8 @@ include_fragments = true
 accept = ["200..=299", "401", "403"]
 
 remap = [
-  # Check file contents directly to avoid GitHub blob page 503s and support anchors.
-  '^https://github\.com/([^/]+)/([^/]+)/blob/([^/]+)/(.*)$ https://raw.githubusercontent.com/$1/$2/$3/$4',
+  # workaround for https://github.com/lycheeverse/lychee/issues/1729
+  'https://github.com/(.*?)/(.*?)/blob/(.*?)/(.*#.*)$ https://raw.githubusercontent.com/$1/$2/$3/$4',
   'https://docs.google.com/(.*)#.*$ https://docs.google.com/$1',
 ]
 
@@ -33,8 +33,8 @@ exclude = [
     "^https://cloud\\.google\\.com/kubernetes-engine/docs/how-to/autopilot-partner-workload-allowlist",
     "^https://gke-ap-allowlist\\.googlesource\\.com/OpenTelemetry$",
     # these are private repos
-    '^https://(github\.com|raw\.githubusercontent\.com)/open-telemetry/admin(/|$)',
-    '^https://(github\.com|raw\.githubusercontent\.com)/adrielp/otel-o11y-infra(/|$)',
+    "https://github.com/open-telemetry/admin",
+    'https://github.com/adrielp/otel-o11y-infra',
     # for performance reasons
     '^https://github.com/open-telemetry/community/(issues|pull)/\d+$',
     'https://gitter.im/open-telemetry/opentelemetry-rust',
