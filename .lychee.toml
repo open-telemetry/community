@@ -9,8 +9,10 @@ include_fragments = true
 accept = ["200..=299", "401", "403"]
 
 remap = [
-  # workaround for https://github.com/lycheeverse/lychee/issues/1729
-  'https://github.com/(.*?)/(.*?)/blob/(.*?)/(.*#.*)$ https://raw.githubusercontent.com/$1/$2/$3/$4',
+  # GitHub's rendered blob pages can return intermittent 503s for valid file links.
+  # Check raw file contents to bypass page rendering and support anchor checks.
+  # See https://github.com/lycheeverse/lychee/issues/1729 for the anchor-check issue.
+  '^https://github\.com/([^/]+)/([^/]+)/blob/([^/]+)/(.*)$ https://raw.githubusercontent.com/$1/$2/$3/$4',
   'https://docs.google.com/(.*)#.*$ https://docs.google.com/$1',
 ]
 
@@ -32,9 +34,10 @@ exclude = [
     # these are restricted to GKE Autopilot partner access groups
     "^https://cloud\\.google\\.com/kubernetes-engine/docs/how-to/autopilot-partner-workload-allowlist",
     "^https://gke-ap-allowlist\\.googlesource\\.com/OpenTelemetry$",
-    # these are private repos
-    "https://github.com/open-telemetry/admin",
-    'https://github.com/adrielp/otel-o11y-infra',
+    # these repos are private; remapping runs before exclusions, so match both
+    # the GitHub URLs in the docs and their raw-content equivalents
+    '^https://(github\.com|raw\.githubusercontent\.com)/open-telemetry/admin(/|$)',
+    '^https://(github\.com|raw\.githubusercontent\.com)/adrielp/otel-o11y-infra(/|$)',
     # for performance reasons
     '^https://github.com/open-telemetry/community/(issues|pull)/\d+$',
     'https://gitter.im/open-telemetry/opentelemetry-rust',
