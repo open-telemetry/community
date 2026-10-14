@@ -36,8 +36,8 @@ exclude = [
     "^https://gke-ap-allowlist\\.googlesource\\.com/OpenTelemetry$",
     # these repos are private; remapping runs before exclusions, so match both
     # the GitHub URLs in the docs and their raw-content equivalents
-    '^https://(github\.com|raw\.githubusercontent\.com)/open-telemetry/admin(/|$)',
-    '^https://(github\.com|raw\.githubusercontent\.com)/adrielp/otel-o11y-infra(/|$)',
+    '^https://(github\.com|raw\.githubusercontent\.com)/open-telemetry/admin([/?#]|$)',
+    '^https://(github\.com|raw\.githubusercontent\.com)/adrielp/otel-o11y-infra([/?#]|$)',
     # for performance reasons
     '^https://github.com/open-telemetry/community/(issues|pull)/\d+$',
     'https://gitter.im/open-telemetry/opentelemetry-rust',
