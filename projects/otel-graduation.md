@@ -91,7 +91,7 @@ Marking further components or distros as 1.x is explicitly out of scope.
 
 In order to lower the cost of manage instrumentation at scale, and to better support native
 instrumentation efforts, we need tooling that improves correctness while reducing the cost of
-maintaining instrumentation.  The SemConv Tooling SIG is in charge of this project.
+maintaining instrumentation. The SemConv Tooling SIG is in charge of this project.
 
 * Weaver
 * AI coding
