@@ -13,6 +13,7 @@ In alphabetical order:
 - [Juliano Costa](#juliano-costa)
 - [Kemal Akkoyun](#kemal-akkoyun)
 - [Pablo Baeyens Fernández](#pablo-baeyens-fernández)
+- [Trask Stalnaker](#trask-stalnaker)
 
 ---
 
@@ -189,6 +190,36 @@ A few areas I would like to focus on in a second term are:
 3. We can and should automate more day-to-day duties and help follow best practices across all SIGs, introducing more shared workflows and improving Slack, project tracking, and SIG-specific automation.
 
 Thank you for considering me!
+
+---
+
+### Trask Stalnaker
+
+<img src="static/trask-stalnaker.png" height="300" alt="Trask Stalnaker"/>
+
+- Company: [Microsoft](https://www.microsoft.com/)
+- GitHub: [trask](https://github.com/trask)
+
+Hi! I've been an active member of the OpenTelemetry community since its early days
+and have served on the Governance Committee since 2022.
+
+Some of my interests and contributions over the past two years:
+
+- Stabilizing database semantic conventions
+- Moving GenAI and RPC semantic conventions toward stability
+- Self-service GitHub administration for maintainers through IaC
+- Rolling out supply chain security best practices
+- A [pull request dashboard](https://github.com/open-telemetry/shared-workflows/tree/main/pull-request-dashboard#pull-request-dashboard) that helps reviewers focus on the PRs where their attention is most valuable
+- [Stable-by-default guarantees](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/VERSIONING.md#compatibility-and-telemetry-stability-requirements) in the OpenTelemetry Java agent across more than 150 instrumentations
+
+I think this is both a challenging and exciting time for open source projects as
+AI adoption grows. The pull request dashboard grew out of my own needs as a
+maintainer, but there's so much more we can do.
+
+I really enjoy being part of the OpenTelemetry community and work hard to help others have a positive experience here.
+I would love to continue my work on the Governance Committee over the next two years with your support.
+
+Thanks :heart:
 
 <!--
 Add a new candidate section below using the template:
