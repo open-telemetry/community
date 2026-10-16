@@ -12,6 +12,7 @@ In alphabetical order:
 - [Josh Suereth](#josh-suereth)
 - [Juliano Costa](#juliano-costa)
 - [Kemal Akkoyun](#kemal-akkoyun)
+- [Matthew Cascio](#matthew-cascio)
 - [Pablo Baeyens Fernández](#pablo-baeyens-fernández)
 
 ---
