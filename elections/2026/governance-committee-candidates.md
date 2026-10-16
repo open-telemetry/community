@@ -12,6 +12,7 @@ In alphabetical order:
 - [Josh Suereth](#josh-suereth)
 - [Juliano Costa](#juliano-costa)
 - [Kemal Akkoyun](#kemal-akkoyun)
+- [Matthew Cascio](#matthew-cascio)
 - [Pablo Baeyens Fernández](#pablo-baeyens-fernández)
 - [Trask Stalnaker](#trask-stalnaker)
 - [Vibhanshu Singh](#vibhanshu-singh)
@@ -166,6 +167,29 @@ If elected, I would focus on:
 - Responsible AI use. My SIG learned this the hard way when our monthly pull requests nearly quadrupled this summer and review could not keep up. I'd help make the project's [AI guidance](https://github.com/open-telemetry/community/blob/main/policies/genai.md) part of everyday practice across SIGs, so contributors know what good AI-assisted work looks like and maintainers have shared ways to manage the volume.
 
 Thank you for considering me.
+
+---
+### Matthew Cascio
+<img src="static/matthew-cascio.jpg" height="300" width="300" alt="Matthew Cascio"/>
+
+- Company: [American Red Cross](https://redcross.org/code4good) (CNCF end-user member)
+- GitHub: [mcascio](https://github.com/mcascio)
+
+Greetings, I'm Matthew Cascio, Head of Enterprise Observability at the American Red Cross, where I've spent more than a decade helping a large, complex organization adopt observability at scale. I founded our observability and SRE practice in 2016 and built the standards, governance model, and five-tier maturity program now used across 85 SRE teams, 400+ practitioners, and 200+ mission-critical systems. That work earned New Relic's O11y for All award. Before the Red Cross, I built an early observability practice at Rosetta Stone during its global expansion and IPO.
+
+As a CNCF Ambassador, KCD organizer, and OpenTelemetry end-user, I've contributed community talks on observability and platform operations, most recently at [KCD Washington DC 2024](https://sessionize.com/s/matthew-cascio/observability-lessons-learned-at-american-red-cros/80823) and [Kubecrash Spring 2026](https://www.kubecrash.io/past-events-spring-2026#platform-engineering-in-the-real-world-ai-gotchas-and-lessons-learned). I bring a unique perspective connecting OTel open source standards with the needs of end-users in order to bring forward value for the larger end-user organization. In the context of American Red Cross, that means keeping our humanitarian mission operating reliably and efficiently so that we can continue to alleviate human suffering in the face of emergencies. OTel today is a critical component of our national blood services operation, providing roughly 40% of the nation's blood supply.
+
+I would be a strong candidate for the Governance Committee because I bring a rare combination of hands-on enterprise end-user experience and active community advocacy, and I can help ensure OpenTelemetry's direction reflects the needs of the organizations adopting it.
+
+If elected, I would like to focus on growing OTel into the clear and most reliable first-choice option for end-users:
+
+- **Developer experience and end-user adoption.** Closing the gap between documentation and production-scale deployments as identified in the 2025 Collector survey, particularly around start up workflows, documentation, troubleshooting and scalability.
+
+- **Localization and global reach.** Continue the momentum made with 2024's achievements in multilingual documentation and build on the wonderful KubeCon EU 2026 talk about lessons learned by Severin Neumann and Tiffany Hrabusa.
+
+- **Product Roadmap** Development of a clear and valuable product roadmap that addresses the challenges of adoption and operations at scale, including topics like stability by default, agentic workflows, conventions and extensibility.   
+
+Thank you for your consideration.
 
 ---
 
