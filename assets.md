@@ -309,18 +309,6 @@ Link: https://groups.google.com/g/opentelemetry-calendar
 
 - Owners: @mtwo
 
-### Maintainer email groups
-
-Shared maintainer contact addresses for security reports and external services:
-
-- [arrow-maintainers@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/arrow-maintainers)
-- [cpp-maintainers@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/cpp-maintainers)
-- [rust-maintainers@opentelemetry.io](https://groups.google.com/a/opentelemetry.io/g/rust-maintainers)
-
-Owner: admin@opentelemetry.io, managed by the [Governance Committee](https://github.com/orgs/open-telemetry/teams/governance-committee).
-
-See [How to manage maintainer email groups](docs/how-to-manage-maintainer-email-groups.md) for configuration and membership management.
-
 ### Mailing list cncf-opentelemetry-net-maintainers@lists.cncf.io
 
 - Used to register service accounts and as a NuGet OpenTelemetry organization e-mail. All .NET SIG maintainers are part of this list. Owned by CNCF.
@@ -586,3 +574,4 @@ events are converted to traces and sent to a Honeycomb Open Source account.
   Adriel Perkins.
 - The Kubernetes cluster is currently hosted in OpenTelemetry's Oracle Cloud
   Account on a dedicated Virtual Machine.
+

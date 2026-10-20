@@ -3,7 +3,6 @@
 Maintainer email groups provide shared `*-maintainers@opentelemetry.io` contact
 addresses for security reports and external services. They accept email from
 non-members while keeping conversations and membership details private to members.
-See the [asset inventory](../assets.md#maintainer-email-groups) for group addresses.
 
 ## Requesting a group
 
