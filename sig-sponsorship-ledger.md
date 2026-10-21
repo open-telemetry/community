@@ -4,7 +4,7 @@
 
 Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical Committee (TC) sponsor(s), followed by how many SIGs each GC and TC member is currently responsible for. For full per-SIG details (meetings, Slack, repos), see [sigs.md](./sigs.md).
 
-**60 SIGs** · **9 GC members** with at least one liaison assignment · **10 TC members** with at least one sponsor assignment · **1 SIG** missing a GC liaison · **12 SIGs** missing a TC sponsor
+**60 SIGs** · **9 GC members** with at least one liaison assignment · **10 TC members** with at least one sponsor assignment · **1 SIG** missing a GC liaison · **10 SIGs** missing a TC sponsor
 
 ## GC liaison load
 
@@ -31,9 +31,9 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 | [Jack Berg](https://github.com/jack-berg) | 1 | 1 | 4 | 0 | 6 |
 | [Robert Pająk](https://github.com/pellared) | 0 | 5 | 1 | 0 | 6 |
 | [Tigran Najaryan](https://github.com/tigrannajaryan) | 1 | 2 | 1 | 0 | 4 |
+| [Alex Boten](https://github.com/codeboten) | 1 | 0 | 2 | 0 | 3 |
 | [Joshua MacDonald](https://github.com/jmacd) | 1 | 2 | 0 | 0 | 3 |
 | [Armin Ruech](https://github.com/arminru) | 1 | 0 | 1 | 0 | 2 |
-| [Alex Boten](https://github.com/codeboten) | 1 | 0 | 0 | 0 | 1 |
 
 <details>
 <summary>SIGs sponsored, per TC member</summary>
@@ -45,9 +45,9 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 - **[Jack Berg](https://github.com/jack-berg)** (6 SIGs): Android: SDK + Automatic Instrumentation, Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.), End-User SIG, Injector, Java: SDK + Instrumentation, PHP: SDK
 - **[Robert Pająk](https://github.com/pellared)** (6 SIGs): .NET: Automatic Instrumentation, GoLang: SDK, OpenTelemetry on Mainframes, Polish (pl-PL), Semantic Conventions: CI/CD, Specification: Logs
 - **[Tigran Najaryan](https://github.com/tigrannajaryan)** (4 SIGs): OpAMP, Packaging, Profiling, Specification: Entities
+- **[Alex Boten](https://github.com/codeboten)** (3 SIGs): Collector, Kubernetes Helm Charts, Semantic Conventions: System Metrics
 - **[Joshua MacDonald](https://github.com/jmacd)** (3 SIGs): Arrow, Collector, Specification: Sampling
 - **[Armin Ruech](https://github.com/arminru)** (2 SIGs): Ruby: SDK, Semantic Conventions: General
-- **[Alex Boten](https://github.com/codeboten)** (1 SIG): Collector
 
 </details>
 
@@ -63,7 +63,7 @@ _Sponsorship of "Specification: General + OTel Maintainers Sync" is collective a
 | Specification: Sampling<br><sub>under Specification: General + OTel Maintainers Sync</sub> | [Juraci Paixão Kröhling](https://github.com/jpkrohling) | [Joshua MacDonald](https://github.com/jmacd) (guiding) |
 | Specification: Logs<br><sub>under Specification: General + OTel Maintainers Sync</sub> | [Trask Stalnaker](https://github.com/trask) | [Robert Pająk](https://github.com/pellared) (guiding) |
 | Semantic Conventions: General<br><sub>under Specification: General + OTel Maintainers Sync</sub> | [Trask Stalnaker](https://github.com/trask) | [Armin Ruech](https://github.com/arminru) (leading), [Liudmila Molkova](https://github.com/lmolkova) (leading) |
-| Semantic Conventions: System Metrics<br><sub>under Semantic Conventions: General</sub> | [Pablo Baeyens](https://github.com/mx-psi) | tbd (escalating) |
+| Semantic Conventions: System Metrics<br><sub>under Semantic Conventions: General</sub> | [Pablo Baeyens](https://github.com/mx-psi) | [Alex Boten](https://github.com/codeboten) (escalating) |
 | Semantic Conventions: K8s<br><sub>under Semantic Conventions: General</sub> | [Alolita Sharma](https://github.com/alolita) | [David Ashpole](https://github.com/dashpole) (leading) |
 | Semantic Conventions and Instrumentation: GenAI<br><sub>under Semantic Conventions: General</sub> | [Ted Young](https://github.com/tedsuo) | [Liudmila Molkova](https://github.com/lmolkova) (leading) |
 | Semantic Conventions: CI/CD<br><sub>under Semantic Conventions: General</sub> | [Marylia Gutierrez](https://github.com/maryliag) | [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating), [Robert Pająk](https://github.com/pellared) (guiding) |
@@ -107,7 +107,7 @@ _Sponsorship of "Specification: General + OTel Maintainers Sync" is collective a
 | Network | [Ted Young](https://github.com/tedsuo) | [Liudmila Molkova](https://github.com/lmolkova) (escalating) |
 | eBPF Instrumentation | [Severin Neumann](https://github.com/svrnm) | [David Ashpole](https://github.com/dashpole) (escalating) |
 | Kubernetes Operator | [Juraci Paixão Kröhling](https://github.com/jpkrohling) | [David Ashpole](https://github.com/dashpole) (escalating) |
-| Kubernetes Helm Charts | [Pablo Baeyens](https://github.com/mx-psi) | tbd |
+| Kubernetes Helm Charts | [Pablo Baeyens](https://github.com/mx-psi) | [Alex Boten](https://github.com/codeboten) (escalating) |
 | Community Demo Application | [Marylia Gutierrez](https://github.com/maryliag) | [Reiley Yang](https://github.com/reyang) (escalating) |
 | Semantic Conventions: Tooling<br><sub>under Semantic Conventions: General</sub> | [Juraci Paixão Kröhling](https://github.com/jpkrohling) | [Liudmila Molkova](https://github.com/lmolkova) (leading) |
 

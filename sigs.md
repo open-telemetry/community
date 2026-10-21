@@ -53,7 +53,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting invites group:** [calendar-semconv](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)
 - **Slack channel:** [#otel-system-metrics](https://cloud-native.slack.com/archives/C05CTFE9U4A)
 - **Roadmap projects:** [Semantic Conventions: System Metrics roadmap](https://github.com/orgs/open-telemetry/projects/55)
-- **Technical Committee sponsors:** tbd (escalating)
+- **Technical Committee sponsors:** [Alex Boten](https://github.com/codeboten) (escalating)
 - **Governance Committee liaison:** [Pablo Baeyens](https://github.com/mx-psi)
 
 ### Semantic Conventions: K8s
@@ -450,7 +450,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting invites group:** [calendar-k8s-operator](https://groups.google.com/a/opentelemetry.io/g/calendar-k8s-operator)
 - **Slack channel:** [#otel-helm](https://cloud-native.slack.com/archives/C03HVLM8LAH)
 - **Repositories:** [open-telemetry/opentelemetry-helm-charts](https://github.com/open-telemetry/opentelemetry-helm-charts)
-- **Technical Committee sponsors:** tbd
+- **Technical Committee sponsors:** [Alex Boten](https://github.com/codeboten) (escalating)
 - **Governance Committee liaison:** [Pablo Baeyens](https://github.com/mx-psi)
 
 ### Community Demo Application
