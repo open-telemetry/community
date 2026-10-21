@@ -53,7 +53,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting invites group:** [calendar-semconv](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)
 - **Slack channel:** [#otel-system-metrics](https://cloud-native.slack.com/archives/C05CTFE9U4A)
 - **Roadmap projects:** [Semantic Conventions: System Metrics roadmap](https://github.com/orgs/open-telemetry/projects/55)
-- **Technical Committee sponsors:** tbd (escalating)
+- **Technical Committee sponsors:** [Alex Boten](https://github.com/codeboten) (escalating)
 - **Governance Committee liaison:** [Pablo Baeyens](https://github.com/mx-psi)
 
 ### Semantic Conventions: K8s

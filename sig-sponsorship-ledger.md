@@ -33,7 +33,7 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 | [Tigran Najaryan](https://github.com/tigrannajaryan) | 1 | 2 | 1 | 0 | 4 |
 | [Joshua MacDonald](https://github.com/jmacd) | 1 | 2 | 0 | 0 | 3 |
 | [Armin Ruech](https://github.com/arminru) | 1 | 0 | 1 | 0 | 2 |
-| [Alex Boten](https://github.com/codeboten) | 1 | 0 | 0 | 0 | 1 |
+| [Alex Boten](https://github.com/codeboten) | 1 | 0 | 1 | 0 | 2 |
 
 <details>
 <summary>SIGs sponsored, per TC member</summary>
@@ -47,7 +47,7 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 - **[Tigran Najaryan](https://github.com/tigrannajaryan)** (4 SIGs): OpAMP, Packaging, Profiling, Specification: Entities
 - **[Joshua MacDonald](https://github.com/jmacd)** (3 SIGs): Arrow, Collector, Specification: Sampling
 - **[Armin Ruech](https://github.com/arminru)** (2 SIGs): Ruby: SDK, Semantic Conventions: General
-- **[Alex Boten](https://github.com/codeboten)** (1 SIG): Collector
+- **[Alex Boten](https://github.com/codeboten)** (2 SIGs): Collector, Semantic Conventions: System Metrics
 
 </details>
 
@@ -63,7 +63,7 @@ _Sponsorship of "Specification: General + OTel Maintainers Sync" is collective a
 | Specification: Sampling<br><sub>under Specification: General + OTel Maintainers Sync</sub> | [Juraci Paixão Kröhling](https://github.com/jpkrohling) | [Joshua MacDonald](https://github.com/jmacd) (guiding) |
 | Specification: Logs<br><sub>under Specification: General + OTel Maintainers Sync</sub> | [Trask Stalnaker](https://github.com/trask) | [Robert Pająk](https://github.com/pellared) (guiding) |
 | Semantic Conventions: General<br><sub>under Specification: General + OTel Maintainers Sync</sub> | [Trask Stalnaker](https://github.com/trask) | [Armin Ruech](https://github.com/arminru) (leading), [Liudmila Molkova](https://github.com/lmolkova) (leading) |
-| Semantic Conventions: System Metrics<br><sub>under Semantic Conventions: General</sub> | [Pablo Baeyens](https://github.com/mx-psi) | tbd (escalating) |
+| Semantic Conventions: System Metrics<br><sub>under Semantic Conventions: General</sub> | [Pablo Baeyens](https://github.com/mx-psi) | [Alex Boten](https://github.com/codeboten) (escalating) |
 | Semantic Conventions: K8s<br><sub>under Semantic Conventions: General</sub> | [Alolita Sharma](https://github.com/alolita) | [David Ashpole](https://github.com/dashpole) (leading) |
 | Semantic Conventions and Instrumentation: GenAI<br><sub>under Semantic Conventions: General</sub> | [Ted Young](https://github.com/tedsuo) | [Liudmila Molkova](https://github.com/lmolkova) (leading) |
 | Semantic Conventions: CI/CD<br><sub>under Semantic Conventions: General</sub> | [Marylia Gutierrez](https://github.com/maryliag) | [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating), [Robert Pająk](https://github.com/pellared) (guiding) |
