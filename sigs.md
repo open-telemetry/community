@@ -162,7 +162,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/14p-bpofozTL4n3jy6HZH_TKjoOXvog18G1HBRqq6liE)
 - **Meeting invites group:** [calendar-mainframe](https://groups.google.com/a/opentelemetry.io/g/calendar-mainframe)
 - **Slack channel:** [#otel-mainframes](https://cloud-native.slack.com/archives/C05PXDFTCPJ)
-- **Technical Committee sponsors:** tbd
+- **Technical Committee sponsors:** [Robert Pająk](https://github.com/pellared) (escalating)
 - **Spec sponsors:** [Daniel Dyla](https://github.com/dyladan)
 - **Governance Committee liaison:** [Morgan McLean](https://github.com/mtwo)
 
