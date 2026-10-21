@@ -4,7 +4,7 @@
 
 Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical Committee (TC) sponsor(s), followed by how many SIGs each GC and TC member is currently responsible for. For full per-SIG details (meetings, Slack, repos), see [sigs.md](./sigs.md).
 
-**60 SIGs** · **9 GC members** with at least one liaison assignment · **10 TC members** with at least one sponsor assignment · **1 SIG** missing a GC liaison · **13 SIGs** missing a TC sponsor
+**60 SIGs** · **9 GC members** with at least one liaison assignment · **10 TC members** with at least one sponsor assignment · **1 SIG** missing a GC liaison · **12 SIGs** missing a TC sponsor
 
 ## GC liaison load
 
@@ -29,7 +29,7 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 | [Liudmila Molkova](https://github.com/lmolkova) | 3 | 1 | 3 | 0 | 7 |
 | [Carlos Alberto Cortez](https://github.com/carlosalberto) | 0 | 1 | 5 | 0 | 6 |
 | [Jack Berg](https://github.com/jack-berg) | 1 | 1 | 4 | 0 | 6 |
-| [Robert Pająk](https://github.com/pellared) | 0 | 5 | 0 | 0 | 5 |
+| [Robert Pająk](https://github.com/pellared) | 0 | 5 | 1 | 0 | 6 |
 | [Tigran Najaryan](https://github.com/tigrannajaryan) | 1 | 2 | 1 | 0 | 4 |
 | [Joshua MacDonald](https://github.com/jmacd) | 1 | 2 | 0 | 0 | 3 |
 | [Armin Ruech](https://github.com/arminru) | 1 | 0 | 1 | 0 | 2 |
@@ -43,7 +43,7 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 - **[Liudmila Molkova](https://github.com/lmolkova)** (7 SIGs): Contributor Experience, Developer Experience, Network, Semantic Conventions and Instrumentation: GenAI, Semantic Conventions: General, Semantic Conventions: RPC, Semantic Conventions: Tooling
 - **[Carlos Alberto Cortez](https://github.com/carlosalberto)** (6 SIGs): Browser, Client Instrumentation, Dart and Flutter: SDK, JavaScript: SDK, Kotlin: SDK, Semantic Conventions: CI/CD
 - **[Jack Berg](https://github.com/jack-berg)** (6 SIGs): Android: SDK + Automatic Instrumentation, Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.), End-User SIG, Injector, Java: SDK + Instrumentation, PHP: SDK
-- **[Robert Pająk](https://github.com/pellared)** (5 SIGs): .NET: Automatic Instrumentation, GoLang: SDK, Polish (pl-PL), Semantic Conventions: CI/CD, Specification: Logs
+- **[Robert Pająk](https://github.com/pellared)** (6 SIGs): .NET: Automatic Instrumentation, GoLang: SDK, OpenTelemetry on Mainframes, Polish (pl-PL), Semantic Conventions: CI/CD, Specification: Logs
 - **[Tigran Najaryan](https://github.com/tigrannajaryan)** (4 SIGs): OpAMP, Packaging, Profiling, Specification: Entities
 - **[Joshua MacDonald](https://github.com/jmacd)** (3 SIGs): Arrow, Collector, Specification: Sampling
 - **[Armin Ruech](https://github.com/arminru)** (2 SIGs): Ruby: SDK, Semantic Conventions: General
@@ -74,7 +74,7 @@ _Sponsorship of "Specification: General + OTel Maintainers Sync" is collective a
 | Prometheus Interoperability | [Pablo Baeyens](https://github.com/mx-psi) | [David Ashpole](https://github.com/dashpole) (leading) |
 | Functions as a Service (FAAS) | [Austin Parker](https://github.com/austinlparker) | tbd |
 | Profiling | [Morgan McLean](https://github.com/mtwo) | [Tigran Najaryan](https://github.com/tigrannajaryan) (guiding) |
-| OpenTelemetry on Mainframes | [Morgan McLean](https://github.com/mtwo) | tbd |
+| OpenTelemetry on Mainframes | [Morgan McLean](https://github.com/mtwo) | [Robert Pająk](https://github.com/pellared) (escalating) |
 | Client Instrumentation | [Ted Young](https://github.com/tedsuo) | [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating) |
 | Policies | [Pablo Baeyens](https://github.com/mx-psi) | [David Ashpole](https://github.com/dashpole) (guiding) |
 

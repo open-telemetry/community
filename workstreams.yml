@@ -315,8 +315,8 @@
   - gcLiaison: mtwo
   - specSponsor: dyladan
   - tcSponsor:
-      username: tbd
-      level: tbd
+      username: pellared
+      level: escalating
   resources:
   - meeting:
       schedule: Wednesday at 10:00 PT
