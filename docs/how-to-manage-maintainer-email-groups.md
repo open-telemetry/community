@@ -64,6 +64,6 @@ Group owners and managers can add and remove recipients through the group's
 **Members** page. New recipients should normally be subscribed to **Each email**.
 Give the **Manager** role to people responsible for maintaining the recipient list.
 
-Keep membership aligned with the corresponding GitHub maintainer team. Do not
-assume that changes to a GitHub team automatically update Google Group membership.
+Keep membership aligned with the corresponding GitHub maintainer team.
+Changes to a GitHub team do **not** automatically update Google Group membership.
 Review the recipient list when maintainers join or leave.
