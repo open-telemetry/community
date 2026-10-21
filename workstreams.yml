@@ -860,8 +860,8 @@
   people:
   - gcLiaison: mx-psi
   - tcSponsor:
-      username: tbd
-      level: tbd
+      username: codeboten
+      level: escalating
   resources:
   - meeting:
       schedule: Meets during OpenTelemetry Operator and OpenTelemetry Collector

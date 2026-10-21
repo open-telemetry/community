@@ -450,7 +450,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting invites group:** [calendar-k8s-operator](https://groups.google.com/a/opentelemetry.io/g/calendar-k8s-operator)
 - **Slack channel:** [#otel-helm](https://cloud-native.slack.com/archives/C03HVLM8LAH)
 - **Repositories:** [open-telemetry/opentelemetry-helm-charts](https://github.com/open-telemetry/opentelemetry-helm-charts)
-- **Technical Committee sponsors:** tbd
+- **Technical Committee sponsors:** [Alex Boten](https://github.com/codeboten) (escalating)
 - **Governance Committee liaison:** [Pablo Baeyens](https://github.com/mx-psi)
 
 ### Community Demo Application
