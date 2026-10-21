@@ -4,7 +4,7 @@
 
 Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical Committee (TC) sponsor(s), followed by how many SIGs each GC and TC member is currently responsible for. For full per-SIG details (meetings, Slack, repos), see [sigs.md](./sigs.md).
 
-**60 SIGs** · **9 GC members** with at least one liaison assignment · **10 TC members** with at least one sponsor assignment · **1 SIG** missing a GC liaison · **11 SIGs** missing a TC sponsor
+**60 SIGs** · **9 GC members** with at least one liaison assignment · **10 TC members** with at least one sponsor assignment · **1 SIG** missing a GC liaison · **10 SIGs** missing a TC sponsor
 
 ## GC liaison load
 
