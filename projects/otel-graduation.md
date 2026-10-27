@@ -204,10 +204,9 @@ The Specification SIG is in charge of this project.
 
 ### Redefine Long term support
 
-The primary goal of this initiative is to get all of the necessary components to v1.0.
 OpenTelemetry does have compatibility and support requirements for various types of
-components, such as APIs and plugin architectures. As part of reaching this milestone,
-we need to revisit our compatibility requirements and long-term support guarantees, to make
-sure that they accurately reflect our intentions.
+components, such as APIs and plugin architectures. However, they were written a long time ago.
+As part of reaching this milestone, we need to revisit our compatibility requirements and
+long-term support guarantees, to make sure that they continue to accurately reflect our intentions.
 
 The Specification SIG is in charge of this project.
