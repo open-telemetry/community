@@ -260,9 +260,9 @@ Pick the body from the templates below.
 >
 > We have received your request for exemption from the \<YEAR\>
 > OpenTelemetry GC Election voter eligibility. We're happy to inform you
-> that, according to [this comment](<COMMENT_URL>) in our announcements
-> GitHub issue, you were already automatically eligible thanks to your
-> contributions to the project.
+> that, according to \[this comment\]\(\<COMMENT_URL\>\) in our
+> announcements GitHub issue, you were already automatically eligible
+> thanks to your contributions to the project.
 >
 > Thanks for taking an interest in the election process, and happy
 > voting!
@@ -315,7 +315,7 @@ where the submitter's handle appears (from the
 > For updates on the election process, we encourage you to subscribe to
 > the official Election Announcements Issue, where you'll find important
 > information. You may also validate your registration by following the
-> process described in [this comment](<COMMENT_URL>).
+> process described in \[this comment\]\(\<COMMENT_URL\>\).
 >
 > Thank you for your participation in this election, and we wish you a
 > great voting experience!
