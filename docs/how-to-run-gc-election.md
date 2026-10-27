@@ -118,50 +118,23 @@ until after the voter roll is loaded.
 
 ## Voter roll generation
 
-Scripts live in [scripts/gc-elections/](../scripts/gc-elections/). Full
-usage docs for each script are in
+All scripts live in [scripts/gc-elections/](../scripts/gc-elections/). Usage
+for each one is documented in
 [scripts/gc-elections/README.md](../scripts/gc-elections/README.md).
 
 Run them in this order:
 
-1. **Generate the voter roll:**
-
-   ```bash
-   export GITHUB_TOKEN=<a token with minimal permissions>
-   python scripts/gc-elections/generate-voters-roll.py
-   ```
-
-   Produces `./voters-roll.csv` with GitHub logins and contribution counts.
-   The script pulls from both CNCF DevStats and LFX Insights. Commit this
-   as `elections/<year>/voters-roll.csv`.
-
-2. **Tag eligible voters in the announcements issue:**
-
-   ```bash
-   # dry run first
-   VOTERS_ROLL_PATH=elections/<year>/voters-roll.csv \
-     python scripts/gc-elections/create-github-comments.py \
-     -i <announcements-issue-url> -d true
-
-   # then post for real
-   VOTERS_ROLL_PATH=elections/<year>/voters-roll.csv \
-     python scripts/gc-elections/create-github-comments.py \
-     -i <announcements-issue-url> -d false
-   ```
-
-   The script is idempotent — if you regenerate the roll later and re-run,
-   it only adds comments for newly added voters and removes `@`-mentions
+1. **Generate the voter roll** with `generate-voters-roll.py`. Produces
+   `voters-roll.csv` with GitHub logins and contribution counts, merged
+   from CNCF DevStats and LFX Insights. Commit the output as
+   `elections/<year>/voters-roll.csv`.
+2. **Tag eligible voters in the announcements issue** with
+   `create-github-comments.py`, pointing at the issue created in the
+   previous section. The script is idempotent: regenerating the roll and
+   re-running will only add `@`-mentions for new voters and remove them
    for voters no longer on the roll.
-
-3. **Convert to Helios format:**
-
-   ```bash
-   VOTERS_ROLL_PATH=elections/<year>/voters-roll.csv \
-     python scripts/gc-elections/convert-voter-roll-to-helios.py
-   ```
-
-   Produces `./voters-roll-helios.csv` with one `github,<handle>` row per
-   voter.
+3. **Convert to Helios format** with `convert-voter-roll-to-helios.py`.
+   Produces `voters-roll-helios.csv` ready to upload to Helios.
 
 ## Uploading voters to Helios
 
@@ -179,6 +152,176 @@ In the Helios admin UI for your election:
 
 Re-uploads are additive, not replacing. See the troubleshooting section
 below for how to add individual voters mid-election.
+
+## Voter eligibility exemptions
+
+Not every eligible contributor shows up in the automatically-generated
+roll (DevStats and LFX miss contributions that aren't tracked by git
+identity, and non-code contributors don't appear at all). The exemption
+flow lets those contributors request to be added manually.
+
+### The exemption form
+
+Create a new Google Form for the current cycle. Make sure the form is set
+up so that only the election committee can see responses. Configure it
+with the following content:
+
+**Form title**
+
+```
+OpenTelemetry <YEAR> Governance Committee Election Voter Registration
+```
+
+**Form description** (shown above the first question)
+
+```
+OpenTelemetry's <YEAR> Governance Committee election will be held
+<VOTING_START_DATE> to <VOTING_END_DATE>. This form allows for members of
+standing who are not automatically detected as members of standing by
+their code contributions to request an exemption so that they may vote in
+the election.
+
+All exemption forms are private to the Election Committee and will not be
+used for any purpose other than the OpenTelemetry election.
+```
+
+**Section header** (shown as an un-answerable instruction block above the
+input fields)
+
+```
+PLEASE READ: ONLY FILL THIS OUT IF YOU HAVEN'T AUTOMATICALLY BEEN DEEMED
+A MEMBER OF STANDING
+```
+
+Include a short note here pointing to the current cycle's voter roll
+(`elections/<year>/voters-roll.csv`) and asking the submitter to confirm
+their handle is not already on it before continuing.
+
+**Questions**
+
+| # | Label | Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| 1 | `GitHub Username` | Short answer | Yes | — |
+| 2 | `Preferred Email` | Short answer | Yes | — |
+| 3 | `List of Contributions / Reasoning for Eligibility` | Paragraph | Yes | `We welcome voters who have a stake in OpenTelemetry's success but do not meet the requirements based on commit/GitHub activity. Please provide rationale here.` |
+
+**Settings**
+
+* Collect email addresses: optional (question 2 already captures it).
+* Limit to one response per account: no (not every voter has a Google
+  account).
+* Allow response editing: optional.
+* Response destination: a Google Sheet in the election committee's drive
+  so decisions can be tracked alongside each submission.
+
+Once the form is published, link it from the announcements issue (the
+`<GOOGLE_FORM_URL>` placeholder in the announcement template above).
+Communicate the submission deadline in the same issue — a few days before
+voting opens is customary.
+
+### Reviewing requests
+
+After the submission deadline, the election committee reviews each
+request:
+
+1. Validate the request against the charter's
+   [Members of Standing](../governance-charter.md#members-of-standing)
+   criteria — either direct contribution evidence or non-code involvement
+   (a dependent project, an end-user adoption, etc.).
+2. If the committee is unanimous, record the decision.
+3. If the committee disagrees, hold a vote among the committee. Majority
+   wins.
+4. If no majority is reached, escalate to the remaining Governance
+   Committee members for a tiebreak vote.
+
+For every approved request:
+
+* Add the GitHub handle to `elections/<year>/voters-roll.csv` (alphabetical
+  order).
+* Re-run `create-github-comments.py` so they're `@`-mentioned in the
+  announcements issue.
+
+For every rejected request, no changes to the roll.
+
+### Notifying submitters
+
+Email the submitter at the address from their form response. Subject for
+all three cases:
+
+```
+<YEAR> OpenTelemetry GC Election Voter Eligibility
+```
+
+Pick the body from the templates below.
+
+#### Case 1 — Submitter is already on the voter roll
+
+> Dear contributor,
+>
+> We have received your request for exemption from the \<YEAR\>
+> OpenTelemetry GC Election voter eligibility. We're happy to inform you
+> that, according to [this comment](<COMMENT_URL>) in our announcements
+> GitHub issue, you were already automatically eligible thanks to your
+> contributions to the project.
+>
+> Thanks for taking an interest in the election process, and happy
+> voting!
+>
+> Best wishes,
+> OpenTelemetry Governance Committee
+
+Replace `<COMMENT_URL>` with the specific announcements-issue comment
+where the submitter's handle appears (from the
+`create-github-comments.py` run).
+
+#### Case 2 — Request rejected
+
+> Dear user,
+>
+> We regret to inform you that your request for a voter eligibility
+> exemption in the upcoming OpenTelemetry GC Election has been rejected.
+> As stipulated in our voter eligibility conditions, for exemptions to
+> be approved we require evidence of one of the following:
+>
+> * Your contributions to OpenTelemetry that make you eligible to vote,
+>   or
+> * Your non-code contributions per the Members of Standing section of
+>   the charter: particularly, your relationship to a well-known project
+>   that's taken a hard dependency on OpenTelemetry, or your involvement
+>   with a well-known organization's adoption of OpenTelemetry as an
+>   end-user.
+>
+> We could not verify any of the above in the information provided as
+> part of your application.
+>
+> Thank you for your interest. We look forward to your future
+> contributions!
+>
+> Best regards,
+> The OpenTelemetry Governance Committee
+
+#### Case 3 — Request approved
+
+> Dear contributor,
+>
+> We're pleased to inform you that your request for a voter eligibility
+> exemption has been approved. Your GitHub username has been added to
+> our voting system, Helios Voting, and you are now eligible to cast
+> your vote in the \<YEAR\> OpenTelemetry GC Election.
+>
+> The voting period will take place between \<START_DATETIME_UTC\> and
+> \<END_DATETIME_UTC\>.
+>
+> For updates on the election process, we encourage you to subscribe to
+> the official Election Announcements Issue, where you'll find important
+> information. You may also validate your registration by following the
+> process described in [this comment](<COMMENT_URL>).
+>
+> Thank you for your participation in this election, and we wish you a
+> great voting experience!
+>
+> Best regards,
+> The OpenTelemetry Governance Committee
 
 ## Finalizing and opening voting
 
