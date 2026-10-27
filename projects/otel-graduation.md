@@ -188,7 +188,7 @@ set of standard benchmarks to be applied across all SDKs. This is both to help w
 improvements, and to help give end users a reasonable set of expectations when considering the use
 of our SDKs.
 
-The Specification SIG is in charge of this project.
+The Specification SIG is in charge of this project and will handle this as part of the [Central OpenTelemetry Benchmarks Repository project](https://github.com/open-telemetry/community/blob/main/projects/central-benchmarks-repository.md).
 
 ### Self-Observability
 
