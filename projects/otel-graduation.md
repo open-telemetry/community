@@ -200,7 +200,7 @@ be a model citizen when it comes to being an observable system. As part of encou
 instrumentation, we want to implement our own best practices in order to encourage others to
 improve the observability of their systems.
 
-The Specification SIG is in charge of this project.
+The Specification and Semantic Conventions SIGs are in charge of this project.
 
 ### Redefine Long term support
 
