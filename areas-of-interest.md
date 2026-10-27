@@ -16,6 +16,12 @@ concerns.
 
 ## Technical committee members
 
+### [Alex Boten](https://github.com/codeboten), Grafana Labs
+
+- OpenTelemetry Collector
+- OpenTelemetry Python
+- SDK configuration
+
 ### [Armin Ruech](https://github.com/arminru), Dynatrace
 
 - Trace API and SDK
@@ -27,11 +33,13 @@ concerns.
 - OpenTelemetry collector
 - Metrics API and SDK
 
-### [Carlos Alberto](https://github.com/carlosalberto), Lightstep
+### [Carlos Alberto](https://github.com/carlosalberto), Dash0
 
 - Trace API and SDK
 - OpenTracing compatibility
 - Semantic conventions
+
+### [David Ashpole](https://github.com/dashpole), Google
 
 ### [Jack Berg](https://github.com/jack-berg), Grafana Labs
 
@@ -41,20 +49,22 @@ concerns.
 - OpenTelemetry Java
 - OpenTelemetry protocol
 
-### [Josh Suereth](https://github.com/jsuereth), Google
+### [Josh MacDonald](https://github.com/jmacd), Microsoft
 
-- Metrics API and SDK
-- OpenTelemetry Protocol
-- Telemetry correlation (Trace <-> Metrics <-> Logs via Resource, Exemplars, etc.)
-- Protocol compatibility (OpenCensus, Prometheus, Statsd, etc.)
-- Semantic conventions
+- Metrics API and SDK and data model
+- Metrics collection infrastructure
+- Metrics protocol compatibility
+- OpenTelemetry protocol
+- Trace sampling algorithms
+- Trace API & SDK
 
-### [Liudmila Molkova](https://github.com/lmolkova), Grafana Labs
+### [Liudmila Molkova](https://github.com/lmolkova), Google
 
 - Trace API and SDK
 - Logging API and SDK
 - Semantic conventions
 - Instrumentation
+- OpenTelemetry Python
 
 ### [Reiley Yang](https://github.com/reyang), Microsoft
 
@@ -65,6 +75,16 @@ concerns.
 - OpenTelemetry C++
 - W3C trace context specification
 
+### [Robert Pająk](https://github.com/pellared), Splunk
+
+- OpenTelemetry Go
+- Logging API and SDK
+- OpenTelemetry protocol
+- Semantic conventions (logs and code attributes)
+- Context propagation
+- Automatic instrumentation (OBI and .NET)
+- Security
+
 ### [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 
 - OpenTelemetry protocol
@@ -74,12 +94,6 @@ concerns.
 - OpAMP
 
 ## Specification sponsors
-
-### [Alex Boten](https://github.com/codeboten), Honeycomb
-
-- OpenTelemetry Collector
-- OpenTelemetry Python
-- SDK configuration
 
 ### [Christian Neumüller](https://github.com/Oberon00), Dynatrace
 
@@ -92,16 +106,13 @@ concerns.
 - Trace and Metrics
 - Trace Sampling
 
-### [David Ashpole](https://github.com/dashpole), Google
+### [Josh Suereth](https://github.com/jsuereth), Google
 
-### [Josh MacDonald](https://github.com/jmacd), Microsoft
-
-- Metrics API and SDK and data model
-- Metrics collection infrastructure
-- Metrics protocol compatibility
-- OpenTelemetry protocol
-- Trace sampling algorithms
-- Trace API & SDK
+- Metrics API and SDK
+- OpenTelemetry Protocol
+- Telemetry correlation (Trace <-> Metrics <-> Logs via Resource, Exemplars, etc.)
+- Protocol compatibility (OpenCensus, Prometheus, Statsd, etc.)
+- Semantic conventions
 
 ### [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden
 
@@ -119,8 +130,6 @@ concerns.
 - SDK configuration
 - Security
 - OpenTelemetry C++
-
-### [Robert Pająk](https://github.com/pellared), Splunk
 
 ### [Severin Neumann](https://github.com/svrnm), Cisco
 
@@ -140,20 +149,6 @@ concerns.
 Maintainers and approvers are invited to list their areas of interest
 to further assist the community in finding appropriate points of
 contact.
-
-### [Dan Jaglowski](https://github.com/djaglowski), observIQ
-
-- OpenTelemetry collector
-- Log data model
-- Traditional log ingestion
-- Telemetry processing
-
-### [Tom Tan](https://github.com/ThomsonTan), Microsoft
-
-- Logging API and SDK
-- Trace API and SDK
-- OpenTelemetry C++
-- OpenTelemetry Protocol
 
 ### [Severin Neumann](https://github.com/svrnm/), Independent
 

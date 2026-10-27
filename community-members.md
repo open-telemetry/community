@@ -13,7 +13,7 @@ in alphabetical order:
 - [Marylia Gutierrez](https://github.com/maryliag), Grafana Labs, until October 2027
 - [Morgan McLean](https://github.com/mtwo), Splunk, until October 2026
 - [Pablo Baeyens](https://github.com/mx-psi), Datadog, until October 2026
-- [Severin Neumann](https://github.com/svrnm), Causely, until October 2027
+- [Severin Neumann](https://github.com/svrnm), Bronto, until October 2027
 - [Ted Young](https://github.com/tedsuo), Grafana Labs, until October 2027
 - [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2026
 <!-- endgc -->
@@ -25,15 +25,15 @@ This is the current Technical Committee, per the
 in alphabetical order:
 
 <!-- tc -->
+- [Alex Boten](https://github.com/codeboten), Grafana Labs
 - [Armin Ruech](https://github.com/arminru), Dynatrace
-- [Bogdan Drutu](https://github.com/bogdandrutu), Snowflake
-- [Carlos Alberto Cortez](https://github.com/carlosalberto), Lightstep
+- [Carlos Alberto Cortez](https://github.com/carlosalberto), Dash0
 - [David Ashpole](https://github.com/dashpole), Google
 - [Jack Berg](https://github.com/jack-berg), Grafana Labs
-- [Josh Suereth](https://github.com/jsuereth), Google
 - [Joshua MacDonald](https://github.com/jmacd), Microsoft
-- [Liudmila Molkova](https://github.com/lmolkova), Grafana Labs
+- [Liudmila Molkova](https://github.com/lmolkova), Google
 - [Reiley Yang](https://github.com/reyang), Microsoft
+- [Robert Pająk](https://github.com/pellared), Splunk
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
 <!-- endtc -->
 
@@ -44,37 +44,19 @@ events, and other functions as needed.
 
 - [Adriana Villela](https://github.com/avillela), Dynatrace
 - [Reese Lee](https://github.com/reese-lee), New Relic
-- (Associate) [Julia Furst Morgado](https://github.com/juliafmorgado), Dash0
 
-## Specifications and Proto
+## GitHub Administrators
 
-Members of the Technical Committee are the maintainers of
-[Project specs](https://github.com/open-telemetry/opentelemetry-specification)
-and [Proto definitions](https://github.com/open-telemetry/opentelemetry-proto).
+These are the GitHub organization owners
+([@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)),
+responsible for [GitHub administration processes](./guides/maintainer/github-admin-processes.md):
 
-[Specification sponsors](./guides/contributor/membership.md#specification-sponsor) are
-trusted collaborators of the Technical Committee on Project specs and related
-repositories:
-
-- [Alex Boten](https://github.com/codeboten), Honeycomb
-- [Christian Neumüller](https://github.com/Oberon00), Dynatrace
-- [Cijo Thomas](https://github.com/cijothomas), Microsoft
-- [Daniel Dyla](https://github.com/dyladan), Dynatrace
-- [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden
-- [Leighton Chen](https://github.com/lzchen), Microsoft
-- [Marc Alff](https://github.com/marcalff), Oracle
-- [Robert Pająk](https://github.com/pellared), Splunk
-- [Severin Neumann](https://github.com/svrnm), Independent
-- [Ted Young](https://github.com/tedsuo), Grafana Labs
-- [Tristan Sloughter](https://github.com/tsloughter), MyDecisiveAI
-- [Tyler Yahn](https://github.com/MrAlias), Splunk
-
-Emeritus sponsors (formerly approvers):
-
-- [Christian Beedgen](https://github.com/kumoroku)
-- [Daniel Jaglowski](https://github.com/djaglowski)
-- [David Poncelow](https://github.com/zenmoto)
-- [Nikita Salnikov-Tarnovski](https://github.com/iNikem)
+- [Armin Ruech](https://github.com/arminru), Dynatrace
+- [Josh Suereth](https://github.com/jsuereth), Google
+- [Marylia Gutierrez](https://github.com/maryliag), Grafana Labs
+- [Reiley Yang](https://github.com/reyang), Microsoft
+- [Severin Neumann](https://github.com/svrnm), Bronto
+- [Trask Stalnaker](https://github.com/trask), Microsoft
 
 ## Prometheus Interoperability
 
@@ -203,12 +185,6 @@ Repo: [open-telemetry/opentelemetry-swift](https://github.com/open-telemetry/ope
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Swift API & SDK can be found in the [open-telemetry/opentelemetry-swift CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-swift/blob/main/CONTRIBUTING.md).
 
-## Network collector
-
-Repos: [open-telemetry/opentelemetry-network](https://github.com/open-telemetry/opentelemetry-network) and [open-telemetry/opentelemetry-network-build-tools](https://github.com/open-telemetry/opentelemetry-network-build-tools)
-
-The list of active members (both "approvers" and "maintainers") for OpenTelemetry Network can be found in the [open-telemetry/opentelemetry-network README file](https://github.com/open-telemetry/opentelemetry-network/blob/main/README.md#contributing).
-
 ## Community Demo
 
 Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/opentelemetry-demo)
@@ -227,5 +203,7 @@ Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/open
 
 ## Technical Committee Emeritus
 
+- [Bogdan Drutu](https://github.com/bogdandrutu)
+- [Josh Suereth](https://github.com/jsuereth)
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev)
 - [Yuri Shkuro](https://github.com/yurishkuro)

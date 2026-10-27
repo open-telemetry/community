@@ -12,24 +12,16 @@ items:
 
   workstream:
     type: object
-    required: [id, kind, name, parent, people]
+    required: [id, name, parent, people]
     additionalProperties: false
     properties:
       # Stable slug, unique across all workstreams.
       id:
         type: string
         minLength: 1
-      kind:
-        type: string
-        enum:
-          # Permanent operational group with recurring meetings,
-          # a GC liaison, and a TC sponsor.
-          - sig
       name:
         type: string
         minLength: 1
-      # Grouping category. Only valid on kind: sig. Absent means specification (the default).
-      # Enforcement of the kind constraint is in scripts/validate-workstreams.py.
       sigCategory:
         type: string
         enum:

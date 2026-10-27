@@ -9,7 +9,7 @@ Large language models (LLMs) and Agentic Workflows present a significant opportu
 At the moment, the OpenTelemetry project does not have official support for these workflows. This has led to the creation of several independent, open-source projects (MCP servers) to fill the gap.
 The [Can AI instrument OpenTelemetry](https://quesma.com/benchmarks/otel/) Benchmark demonstrates the complexity of instrumentation process and shows the gap of successfully using AI agents with OpenTelemetry.
 
-As AI tooling becomes a standard part of developer workflows. Users, which are looking to extend their agents with tooling optimized for OpenTelemetry, have no easy way to discover what's available in the ecosystem. There's no central place to learn which MCP servers or other tools exist, what capabilities they offer, or where to file issues/requests.
+As AI tooling becomes a standard part of developer workflows, users who are looking to extend their agents with tooling optimized for OpenTelemetry have no easy way to discover what's available in the ecosystem. There's no central place to learn which MCP servers or other tools exist, what capabilities they offer, or where to file issues/requests.
 
 This project is also motivated by the need to support the [Stability Proposal](https://opentelemetry.io/blog/2025/stability-proposal-announcement/) and [[Graduation] OpenTelemetry Graduation Application](https://github.com/cncf/toc/issues/1739). While the [OTEP: Stable by Default](https://github.com/open-telemetry/opentelemetry-specification/pull/4813) initiative aims to default to stable components, a large portion of the ecosystem—including the majority of collector components—remains in alpha or beta, creating complexity for users around potential breaking changes. This project aims to bridge this gap without adding core functionality or duplicating documentation. Instead, it focuses on making OpenTelemetry easier to use and more stable by enriching the ecosystem with new agentic workflows.
 
@@ -51,6 +51,8 @@ The goal of this project is to deliver an initial implementation of MCP server(s
 
 The Collector follows a fast two-week release cadence, which requires constant maintenance to stay up to date and avoid breaking changes. Additionally configuring the collector correctly and writing valid OTTL statements is important for effective usage, but requires domain expertise and isn't always trivial. General-purpose coding agents struggle here because they lack up-to-date knowledge of recent releases and aren't specialized for Collector workflows.
 
+Thus, the goals of this project are as follows:
+
 * Enable agents to read and write valid Collector configuration.
 * Enable agents to handle API breaking changes (e.g. deprecations, removals, renaming) in the configuration and collector Golang API.
 * Enable agents to upgrade collector.
@@ -58,11 +60,11 @@ The Collector follows a fast two-week release cadence, which requires constant m
 * Enable agents to troubleshoot collector issues.
 
 The mentioned goals might require enhancements in the collector repositories. We expect to make improvements in the documentation as it is the primary source for building skills and knowledge base for the agents.
-Another example is improvements in the collector configuration schema which is already being worked on in the collector SIG.
+Another example is improving the collector configuration schema, which is already being worked on by the collector SIG.
 
 #### Documentation and distribution
 
-Coherent documentation and distribution of the agentic workflows are required to enable users install and manage the agentic workflows.
+Coherent documentation and distribution of the agentic workflows are required to enable users to install and manage the agentic workflows.
 
 * Introduce documentation for the Agentic Workflows.
 * Align distribution and installation of the components with the Agentic Workflows.

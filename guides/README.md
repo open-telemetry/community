@@ -10,6 +10,8 @@ everyone is welcome to contribute to them!
   - [Donations of Pre-Existing Code](./contributor/donations.md)
   - [Becoming a Member of the OpenTelemetry Project](./contributor/membership.md)
   - [The Contribution Lifecycle](./contributor/processes.md)
+  - [Writing a Good GitHub Issue](./contributor/good-github-issues.md)
+  - [OpenTelemetry User Groups](./contributor/user-groups.md)
 - [Maintainer Guide](./maintainer/README.md)
   - [Resolving Technical Conflicts](./maintainer/conflict-resolution.md)
   - [Managing Popular GitHub Issues](./maintainer/popular-issues.md)

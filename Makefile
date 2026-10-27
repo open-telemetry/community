@@ -8,6 +8,7 @@ export MSYS_NO_PATHCONV=1
 generate:
 	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/update-sig-tables.py --install;
 	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/update-community-members.py --install;
+	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/generate-sponsorship-ledger.py --install;
 
 .PHONY: validate-sigs
 validate-sigs:
@@ -17,6 +18,7 @@ validate-sigs:
 check-generate:
 	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/update-sig-tables.py --install --check;
 	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/update-community-members.py --install --check;
+	docker run --rm -v ${PWD}:/repo -w /repo python:3-alpine python ./scripts/generate-sponsorship-ledger.py --install --check;
 
 .PHONY: markdown-link-check
 markdown-link-check:
@@ -28,3 +30,13 @@ markdown-link-check:
 		--root-dir /home/repo \
 		--verbose \
 		home/repo
+
+.PHONY: license-check
+license-check:
+	@licRes=$$(for f in $$(find . -type f \( -iname '*.py' -o -iname '*.sh' \) ! -path '**/third_party/*' ! -path './.git/*' ) ; do \
+	           awk '/Copyright The OpenTelemetry Authors|generated|GENERATED/ && NR<=4 { found=1; next } END { if (!found) print FILENAME }' $$f; \
+	   done); \
+	   if [ -n "$${licRes}" ]; then \
+	           echo "license header checking failed:"; echo "$${licRes}"; \
+	           exit 1; \
+	   fi

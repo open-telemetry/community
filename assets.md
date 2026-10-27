@@ -2,6 +2,9 @@
 
 This file is intended to list all the assets controlled by OpenTelemetry.
 
+Requests to create, update, or access these assets can be submitted as an
+[OpenTelemetry community issue](https://github.com/open-telemetry/community/issues/new/choose).
+
 ## GitHub organization
 
 Link: https://github.com/open-telemetry
@@ -25,6 +28,13 @@ Link: http://cncf-aws-opentelemetry.signin.aws.amazon.com/
 - Community account to published Lambda layers
 - Admin: Tyler Benson [@tylerbenson](https://github.com/tylerbenson), Serkan Özal [@serkan-ozal](https://github.com/serkan-ozal), Warre Pessers [@wpessers](https://github.com/wpessers)
 
+### Cloudflare account
+
+Link: https://dash.cloudflare.com/
+
+- Used for the OpenTelemetry Collector infrastructure for https://opentelemetry.io
+- Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
+
 ### FOSSA
 
 We have an OpenTelemetry team under the CNCF's enterprise account.
@@ -32,19 +42,37 @@ We have an OpenTelemetry team under the CNCF's enterprise account.
 Link: https://app.fossa.com/
 
 - Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
+- Before submitting a FOSSA support request, contact Robert Kielty via
+  [GitHub](https://github.com/RobertKielty) or
+  [CNCF Slack](https://cloud-native.slack.com/archives/D0749BJ8JR2).
 - Team admins: [@austinlparker](https://github.com/austinlparker), [@reyang](https://github.com/reyang), [@trask](https://github.com/trask)
 
 ### Special GitHub Action runners
 
-#### Large Linux runners
+#### CNCF-hosted Linux runners
 
-CNCF provides the following large Linux runners which are available to all repositories:
+CNCF provides the following [Linux runners](https://github.com/cncf/automation/blob/main/ci/README.md#custom-runners)
+which are available to all repositories. Sizes range from the standard
+2 CPU / 8 GB (comparable to GitHub's `ubuntu-latest` and `ubuntu-24.04-arm`)
+up to 32 CPU / 128 GB:
 
-- [`oracle-16cpu-64gb-x86-64`](https://github.com/cncf/automation/blob/main/ci/README.md#custom-runners)
-- [`oracle-16cpu-64gb-arm64`](https://github.com/cncf/automation/blob/main/ci/README.md#custom-runners)
+x86/amd64 based:
 
-Note that normal-sized Linux ARM64 runners are [available for free to all public
-repositories](https://github.blog/changelog/2025-01-16-linux-arm64-hosted-runners-now-available-for-free-in-public-repositories-public-preview/).
+- `cncf-ubuntu-2-8-x86`
+- `cncf-ubuntu-4-16-x86`
+- `cncf-ubuntu-8-32-x86`
+- `cncf-ubuntu-16-64-x86`
+- `cncf-ubuntu-24-96-x86`
+- `cncf-ubuntu-32-128-x86`
+
+ARM based:
+
+- `cncf-ubuntu-2-8-arm`
+- `cncf-ubuntu-4-16-arm`
+- `cncf-ubuntu-8-32-arm`
+- `cncf-ubuntu-16-64-arm`
+- `cncf-ubuntu-24-96-arm`
+- `cncf-ubuntu-32-128-arm`
 
 CNCF and GitHub expect fair use of these provided resources.
 Please ensure your workloads are optimized to avoid unnecessary usage.
@@ -54,8 +82,7 @@ Admins: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.n
 #### Large Windows runners
 
 Access to large Windows runners is available to repositories on request
-(open a community issue),
-which will give access to the following GitHub-hosted runner:
+(open a community issue), which will give access to the following GitHub-hosted runner:
 
 - `otel-windows-latest-8-cores`
 
@@ -67,39 +94,26 @@ Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/ad
 
 #### Bare metal runners
 
-Access to bare metal runners for benchmarking is available to repositories on request
-(open a community issue),
-which will give access to the following GitHub-hosted runner:
+Bare metal runners are available for benchmarking workloads.
+See [How to use an Oracle bare metal runner](docs/how-to-use-bare-metal-runner.md)
+for how to request access and use the runner.
 
-- `oracle-bare-metal-64cpu-512gb-x86-64` (Oracle Linux 8)
-- `oracle-bare-metal-64cpu-1024gb-x86-64-ubuntu-24` (Ubuntu 24)
+##### `oracle-bare-metal-64cpu-1024gb-x86-64-ubuntu-24`
 
-`oracle-bare-metal-64cpu-512gb-x86-64` hardware specification (BM.Standard.E2.64):
-
-| Component | Specification |
-|---|---|
-| Processor | 2-socket AMD EPYC 7551 (2.0 GHz base, 3.0 GHz max boost) |
-| OCPUs | 64 (128 vCPUs), 32 per socket |
-| Memory | 512 GB (8 NUMA nodes, 64 GB per node) |
-
-`oracle-bare-metal-64cpu-1024gb-x86-64-ubuntu-24` hardware specification ([BM.Standard3.64](https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm#bm-standard)):
+Hardware specification ([BM.Standard3.64](https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm#bm-standard)):
 
 | Component | Specification |
-|---|---|
+| --- | --- |
 | Processor | 2-socket Intel Xeon Platinum 8358 (2.6 GHz base, 3.4 GHz max turbo) |
 | OCPUs | 64 (128 vCPUs), 32 per socket |
 | Memory | 1024 GB (2 NUMA nodes, 512 GB per node) |
-
-We are currently transitioning from the Oracle Linux 8 runner to the
-Ubuntu 24 runner. Once the transition is complete, the Oracle Linux 8 runner
-will be decommissioned.
 
 Note: there is only one bare metal runner at this time, so
 please ensure your workloads are optimized to avoid unnecessary usage.
 
 Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
-SSH private keys are available in the SIG Project Infrastructure 1Password vault.
+SSH private keys are available in the SIG GitHub Admins 1Password vault.
 
 [How to provision an Oracle bare metal runner](docs/how-to-provision-bare-metal-runner.md)
 
@@ -121,6 +135,18 @@ Link: https://cloud.google.com
 - Community account to host https://go.opentelemetry.io
 - Admin: [@austinlparker](https://github.com/austinlparker)
   (password is the same as admin@opentelemetry.io "Google Workspace account", available in the OpenTelemetry Governance 1Password)
+
+### Google Cloud project for GKE Autopilot
+
+Used for testing and managing [GKE Autopilot partner workload allowlists](https://cloud.google.com/kubernetes-engine/docs/how-to/autopilot-partner-workload-allowlist#create-allowlist)
+(blessed to allow applying `WorkloadAllowlist` resources directly into clusters in this project without using an `AllowlistSynchronizer`).
+
+- Project: `gke-autopilot-allowlist` (ID: `gke-autopilot-allowlist-485818`)
+- Editors: [@dashpole](https://github.com/dashpole), [@svrnm](https://github.com/svrnm)
+- Allowlist repository: https://gke-ap-allowlist.googlesource.com/OpenTelemetry (Gerrit review UI: https://gke-ap-allowlist-review.googlesource.com)
+- Access groups (grant access to the allowlist repository and partner documentation):
+  - `obi-maintainers@opentelemetry.io`
+  - `ebpf-profiler-maintainers@opentelemetry.io`
 
 ### Grafana organization for SIG Security
 
@@ -158,6 +184,27 @@ Link: https://develocity.opentelemetry.io
 - GitHub organization secret: `DEVELOCITY_ACCESS_KEY`
 - Secret stored in the OpenTelemetry Java 1Password vault
 - Admin: [@trask](https://github.com/trask)
+
+
+### Google Play SDK Console
+
+We have a [Google Play SDK Console](https://play.google.com/sdk-console/about/) for the Android SDK to get
+insights about the SDK.
+
+Link: <https://accounts.google.com/ServiceLogin?service=androiddeveloper&passive=true&continue=https%3A%2F%2Fplay.google.com%2Fsdk-console%2F>
+
+- SDK is verified via admin@opentelemetry.io
+- Point of contact email is android-maintainers@opentelemetry.io
+- Admin: [@open-telemetry/android-maintainers](https://github.com/orgs/open-telemetry/teams/android-maintainers)
+
+### Fedora COPR
+
+We have a [Fedora COPR](https://copr.fedorainfracloud.org/coprs/) account to build and publish RPM packages.
+
+Link: https://copr.fedorainfracloud.org/coprs/opentelemetry/
+
+- Point of contact email is packaging-maintainers@opentelemetry.io
+- Admin: [@open-telemetry/packaging-maintainers](https://github.com/orgs/open-telemetry/teams/packaging-maintainers)
 
 ## Artifact repositories
 
@@ -237,7 +284,7 @@ CNCF are the owners of the group, so certain requests (e.g. adding/removing orga
 * CNCF Service Desk
 * https://github.com/cncf/communitygroups/issues
 
-Link: https://community.cncf.io/opentelemetry-live/
+Link: https://ocgroups.dev/cncf/group/opentelemetry-live
 
 - Owners: CNCF
 - Lead Organizers (i.e. admins):
@@ -278,7 +325,7 @@ Link: https://groups.google.com/g/opentelemetry-calendar
 - All GC members AND CNCF reps (Amye Scavarda Perrin, Chris Aniszczyk, Taylor Waggoner) are on the list and are list moderators.
 - Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
 
-### Zoom accounts
+### (Deprecated) Zoom accounts
 
 - Accounts
   - cncf-opentelemetry@cncf.io
@@ -299,8 +346,8 @@ Link: https://groups.google.com/g/opentelemetry-calendar
 
 Link: https://zapier.com
 
-- Used to automatically add links to Zoom meeting recordings to a
-  [publicly viewable Google spreadsheet](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s)
+- Used to automatically add links to Zoom meeting recordings to the
+  [deprecated Google spreadsheet](https://docs.google.com/spreadsheets/d/1SYKfjYhZdm2Wh2Cl6KVQalKg_m4NhTPZqq-8SzEVO6s)
 - Used to automatically add repo maintainers to new security incidents
 - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
   (GitHub password is available in the OpenTelemetry Governance 1Password)
@@ -392,11 +439,11 @@ This GitHub App addresses two common issues:
 1. Since you can't push directly to `main` from workflows (due to branch protections), the next best thing is to
    generate a pull request from the automation and use an account which has signed the CLA as the commit author.
 
-   The OpenTelemetry Bot account has signed the CNCF CLA, and you can assign it as the commit author in your automation:
+   The `otelbot` GitHub App is on the EasyCLA allowlist, and you can assign it as the commit author in your automation:
 
    ```
-   git config user.name otelbot
-   git config user.email 197425009+otelbot@users.noreply.github.com
+   git config user.name otelbot[bot]
+   git config user.email 197425009+otelbot[bot]@users.noreply.github.com
    ```
 
    It is recommended to push to branch names that start with `otelbot/`, and to add a branch protection
@@ -406,13 +453,12 @@ This GitHub App addresses two common issues:
    > [!WARNING]
    > Branch protection rule **ordering** matters, so you will need to delete the `**/**` branch protection rule temporarily, then add the `otelbot/**/*` branch protection rule, then add back the `**/**` branch protection rule.
 
-2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside a [GitHub Action], workflows
-   will not run on that new pull request without closing and re-opening it manually (this limitation is in place to
-   prevent accidental recursive workflow runs).
+2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside a [GitHub Action], workflows on that pull request
+   require approval from a user with write access to the repository before they can run.
 
    The OpenTelemetry GitHub organization has a GitHub Action secret (`OTELBOT_PRIVATE_KEY`)
    and a GitHub Action variable `OTELBOT_APP_ID` that can be used to create a GitHub App token
-   which will bypass this limitation, e.g.
+   which will bypass this manual approval step, e.g.
 
    ```
    - uses: actions/create-github-app-token@v1
@@ -423,7 +469,7 @@ This GitHub App addresses two common issues:
 
    - name: Create pull request
      env:
-       # not using secrets.GITHUB_TOKEN since pull requests from that token do not trigger workflows
+       # using a GitHub App token so workflows run automatically without requiring manual approval
        GH_TOKEN: ${{ steps.app-token.outputs.token }}
      run: ...
    ```
@@ -440,28 +486,41 @@ SIG-specific `otelbot` GitHub apps are for repositories that need to run automat
 with permissions beyond the main `otelbot`.
 Each of these apps is scoped to a single repository with dedicated credentials.
 
+SIG-specific `otelbot` apps are on the EasyCLA allowlist.
+
 **Usage in GitHub Actions**:
 
 (replacing `_JAVA_CONTRIB_` with the SIG-specific name)
 
 ```yaml
-- uses: actions/create-github-app-token@v1
+# Pattern follows the official actions/create-github-app-token example:
+# https://github.com/actions/create-github-app-token#configure-git-cli-for-an-apps-bot-user
+- uses: actions/create-github-app-token@v3
   id: app-token
   with:
-    app-id: ${{ vars.OTELBOT_JAVA_CONTRIB_APP_ID }}
+    client-id: ${{ vars.OTELBOT_JAVA_CONTRIB_CLIENT_ID }}
     private-key: ${{ secrets.OTELBOT_JAVA_CONTRIB_PRIVATE_KEY }}
+
+- name: Get GitHub App User ID
+  id: get-user-id
+  env:
+    GH_TOKEN: ${{ steps.app-token.outputs.token }}
+  run: echo "user-id=$(gh api "/users/${{ steps.app-token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
 
 - name: Automated task
   env:
     GH_TOKEN: ${{ steps.app-token.outputs.token }}
   run: |
-    # otelbot is on the EasyCLA allowlist
-    git config user.name otelbot
-    git config user.email 197425009+otelbot@users.noreply.github.com
+    # SIG-specific otelbot apps are on the EasyCLA allowlist
+    git config user.name  '${{ steps.app-token.outputs.app-slug }}[bot]'
+    git config user.email '${{ steps.get-user-id.outputs.user-id }}+${{ steps.app-token.outputs.app-slug }}[bot]@users.noreply.github.com'
     # Your automation commands here
 ```
 
 - Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+
+Use the [`create_otelbot_app.py`](https://github.com/open-telemetry/admin/blob/main/scripts/create_otelbot_app.py) script to create a new SIG-specific otelbot.
+Note: `open-telemetry/admin` is a private repository, accessible only for OpenTelemetry maintainers.
 
 ### `@opentelemetrybot` GitHub user
 
@@ -498,3 +557,21 @@ GitHub repository](https://github.com/open-telemetry/sig-security).
 
 * Advisories Dashboard
 * Snyk
+
+## GitHub Action Observability Infrastructure
+
+All GitHub actions emit webhook events through a GitHub application to an
+OpenTelemetry collector hosted in a Kubernetes cluster within Oracle Cloud. The
+events are converted to traces and sent to a Honeycomb Open Source account.
+
+- The infrastructure as code exists in the
+  [adrielp/otel-o11y-infra](https://github.com/adrielp/otel-o11y-infra) private
+  repository.
+- The GitHub app exists within the OpenTelemetry GitHub account. It is managed
+  by OpenTelemetry organization admins and [Adriel
+  Perkins](https://github.com/adrielp)
+- The webhook endpoint goes through a CloudFlare Zero Trust account owned by
+  Adriel Perkins.
+- The Kubernetes cluster is currently hosted in OpenTelemetry's Oracle Cloud
+  Account on a dedicated Virtual Machine.
+

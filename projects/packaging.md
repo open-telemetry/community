@@ -96,11 +96,11 @@ Note that while stable-by-default is and important goal for OpenTelemetry, it is
 
 ## Staffing / Help Wanted
 
-[`@mmanciop`](https://github.com/mmanciop) (Dash0): DEB system packages, injector
-[`@atoulme`](https://github.com/atoulme) (Splunk): System packages, injector, collector, Java ecosystem
-[`@x1unix`](https://github.com/x1unix) (Grafana Labs): DEB/RPM system packages
-[`@douglascamata`](https://github.com/douglascamata) (Coralogix): system packages, collector, Ruby, Python
-[`@dmathieu`](https://github.com/dmathieu) (Elastic): Go, collector
+* [`@mmanciop`](https://github.com/mmanciop) (Dash0): DEB system packages, injector
+* [`@atoulme`](https://github.com/atoulme) (Splunk): System packages, injector, collector, Java ecosystem
+* [`@x1unix`](https://github.com/x1unix) (Grafana Labs): DEB/RPM system packages
+* [`@douglascamata`](https://github.com/douglascamata) (Coralogix): system packages, collector, Ruby, Python
+* [`@dmathieu`](https://github.com/dmathieu) (Elastic): Go, collector
 
 ### Industry outreach (Optional)
 
@@ -110,7 +110,7 @@ Need more expertise in packaging RPM, right now the expertise in the SIG is most
 
 ### SIG
 
-otel-packaging
+[#otel-packaging](https://cloud-native.slack.com/archives/C0AD17NMBLZ)
 
 ### Sponsorship
 
@@ -138,10 +138,16 @@ TODO
 
 ## GitHub Project (Post-Approval)
 
+[Packaging roadmap](https://github.com/orgs/open-telemetry/projects/197)
+
 ## SIG Meetings, Roadmap, and Other Info (Post-Approval)
 
-Repo: TODO
+### Repository
+[Repository](https://github.com/open-telemetry/opentelemetry-packaging)
 
-SIG Meeting
-
+### SIG meeting
 Weekly Wednesdays 10am PT
+
+[SIG Meeting notes](https://docs.google.com/document/d/1NDY0rpntHeyEvx9xUg9WdiNyWa7Gq8YKUdjfM1a36GI/edit)
+
+Please join this [Google group](https://groups.google.com/a/opentelemetry.io/g/calendar-packaging) to join the group calendar and receive an invitation to the meeting.

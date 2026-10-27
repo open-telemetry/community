@@ -11,13 +11,13 @@ teams:
   - trask
   technical-committee:
   - arminru
-  - bogdandrutu
   - carlosalberto
+  - codeboten
   - dashpole
   - jack-berg
   - jmacd
-  - jsuereth
   - lmolkova
+  - pellared
   - reyang
   - tigrannajaryan
   spec-sponsors:
@@ -72,7 +72,7 @@ people:
     slackMemberId: UTZ7ZGZ9N
   carlosalberto:
     name: Carlos Alberto Cortez
-    company: Lightstep
+    company: Dash0
     slackMemberId: U0195U54X1T
   cijothomas:
     name: Cijo Thomas
@@ -80,7 +80,7 @@ people:
     slackMemberId: U01NNRZB1TK
   codeboten:
     name: Alex Boten
-    company: Honeycomb
+    company: Grafana Labs
     slackMemberId: U018R7326HH
   dashpole:
     name: David Ashpole
@@ -109,7 +109,7 @@ people:
     slackMemberId: U01KV42PNBT
   lmolkova:
     name: Liudmila Molkova
-    company: Grafana Labs
+    company: Google
     slackMemberId: U025870USUV
   lzchen:
     name: Leighton Chen
@@ -144,7 +144,7 @@ people:
     slackMemberId: U01NA9DUCLT
   svrnm:
     name: Severin Neumann
-    company: Causely
+    company: Bronto
     slackMemberId: U01V5PFBBAQ
     termEnd: October 2027
   tedsuo:

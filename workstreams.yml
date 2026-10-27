@@ -1,5 +1,4 @@
 - id: spec-general
-  kind: sig
   sigCategory: specification
   name: 'Specification: General + OTel Maintainers Sync'
   parent: none
@@ -10,10 +9,10 @@
       username: arminru
       level: tbd
   - tcSponsor:
-      username: bogdandrutu
+      username: carlosalberto
       level: tbd
   - tcSponsor:
-      username: carlosalberto
+      username: codeboten
       level: tbd
   - tcSponsor:
       username: dashpole
@@ -25,10 +24,10 @@
       username: jmacd
       level: tbd
   - tcSponsor:
-      username: jsuereth
+      username: lmolkova
       level: tbd
   - tcSponsor:
-      username: lmolkova
+      username: pellared
       level: tbd
   - tcSponsor:
       username: reyang
@@ -48,7 +47,6 @@
   - repository: open-telemetry/opentelemetry-proto
   - repository: open-telemetry/build-tools
 - id: sampling
-  kind: sig
   sigCategory: specification
   name: 'Specification: Sampling'
   parent: spec-general
@@ -67,7 +65,6 @@
       id: C027DS6GZD3
   - roadmapProject: 133
 - id: spec-logs
-  kind: sig
   sigCategory: specification
   name: 'Specification: Logs'
   parent: spec-general
@@ -75,7 +72,7 @@
   - gcLiaison: trask
   - specSponsor: tedsuo
   - tcSponsor:
-      username: lmolkova
+      username: pellared
       level: guiding
   resources:
   - meeting:
@@ -86,7 +83,6 @@
       name: '#otel-spec-logs'
       id: C062HUREGUV
 - id: semconv-general
-  kind: sig
   sigCategory: specification
   name: 'Semantic Conventions: General'
   parent: spec-general
@@ -94,9 +90,6 @@
   - gcLiaison: trask
   - tcSponsor:
       username: arminru
-      level: leading
-  - tcSponsor:
-      username: jsuereth
       level: leading
   - tcSponsor:
       username: lmolkova
@@ -110,15 +103,15 @@
       name: '#otel-semantic-conventions'
       id: C041APFBYQP
   - repository: open-telemetry/semantic-conventions
+  - repository: open-telemetry/semantic-conventions-conformance
 - id: semconv-system-metrics
-  kind: sig
   sigCategory: specification
   name: 'Semantic Conventions: System Metrics'
   parent: semconv-general
   people:
   - gcLiaison: mx-psi
   - tcSponsor:
-      username: jsuereth
+      username: codeboten
       level: escalating
   resources:
   - meeting:
@@ -130,7 +123,6 @@
       id: C05CTFE9U4A
   - roadmapProject: 55
 - id: semconv-k8s
-  kind: sig
   sigCategory: specification
   name: 'Semantic Conventions: K8s'
   parent: semconv-general
@@ -149,7 +141,6 @@
       id: C07Q1L0FGKX
   - roadmapProject: 114
 - id: semconv-genai
-  kind: sig
   sigCategory: specification
   name: 'Semantic Conventions and Instrumentation: GenAI'
   parent: semconv-general
@@ -170,7 +161,6 @@
       id: C06KR7ARS3X
   - roadmapProject: 82
 - id: semconv-cicd
-  kind: sig
   sigCategory: specification
   name: 'Semantic Conventions: CI/CD'
   parent: semconv-general
@@ -179,6 +169,9 @@
   - tcSponsor:
       username: carlosalberto
       level: escalating
+  - tcSponsor:
+      username: pellared
+      level: guiding
   resources:
   - meeting:
       schedule: Every Tuesday at 07:00 PT
@@ -189,7 +182,6 @@
       id: C0598R66XAP
   - roadmapProject: 171
 - id: semconv-rpc
-  kind: sig
   sigCategory: specification
   name: 'Semantic Conventions: RPC'
   parent: semconv-general
@@ -200,45 +192,25 @@
       level: guiding
   resources:
   - meeting:
-      schedule: Every Wednesday at 17:00 PT
+      schedule: Every other Thursday at 07:30 PT
       calendarInviteGroup: calendar-semconv
       gDocNotes: 11AtPWuaNGl2MfhRwgWqNbnjAPtK06jMKWh5-_YbWuHE
   - slack:
       name: '#otel-semconv-rpc-stability'
       id: C09D3TRKMED
   - roadmapProject: 161
-- id: semconv-security
-  kind: sig
-  sigCategory: specification
-  name: 'Semantic Conventions: Security'
-  parent: semconv-general
-  people:
-  - gcLiaison: trask
-  - tcSponsor:
-      username: jsuereth
-      level: escalating
-  resources:
-  - meeting:
-      schedule: 'Meets during Semantic Conventions: General'
-      calendarInviteGroup: calendar-semconv
-      gDocNotes: 10xG7DNKWRhxNmFGt3yYd3980a9uwS8lMl2LvQL3VNK8
-  - slack:
-      name: '#otel-semconv-security'
-      id: C0715DWUW7L
-  - roadmapProject: 104
 - id: semconv-service-deployment
-  kind: sig
   sigCategory: specification
   name: 'Semantic Conventions: Service and Deployment'
   parent: semconv-general
   people:
   - gcLiaison: trask
   - tcSponsor:
-      username: jsuereth
+      username: tbd
       level: guiding
   resources:
   - meeting:
-      schedule: Alternating between Thursday at 08:00 PT and Thursday at 12:00 UTC
+      schedule: Alternating between Thursday at 08:00 PT and Thursday at 05:30 UTC
       calendarInviteGroup: calendar-semconv
       gDocNotes: 1Fy6yXfZqrwN_oHw95Bdfg_0hzUgzlk3VO5wA1invgkI
   - slack:
@@ -246,21 +218,17 @@
       id: C09HLNSSJSE
   - roadmapProject: 168
 - id: spec-entities
-  kind: sig
   sigCategory: specification
   name: 'Specification: Entities'
   parent: spec-general
   people:
   - gcLiaison: svrnm
   - tcSponsor:
-      username: jsuereth
-      level: leading
-  - tcSponsor:
       username: tigrannajaryan
       level: guiding
   resources:
   - meeting:
-      schedule: Every Monday at 09:00 PT
+      schedule: Every Monday at 09:30 PT
       calendarInviteGroup: calendar-entities
       gDocNotes: 15Yt9ss2_EhuFPqItPbk4vjfpeRDAQ5WCUVuY_kCeOAo
   - slack:
@@ -268,7 +236,6 @@
       id: C06QEG97W7L
   - roadmapProject: 85
 - id: opamp
-  kind: sig
   sigCategory: specification
   name: OpAMP
   parent: none
@@ -288,7 +255,6 @@
   - repository: open-telemetry/opamp-go
   - repository: open-telemetry/opamp-spec
 - id: prometheus-interop
-  kind: sig
   sigCategory: specification
   name: Prometheus Interoperability
   parent: none
@@ -299,14 +265,13 @@
       level: leading
   resources:
   - meeting:
-      schedule: Every other Wednesday at 08:00 PT
+      schedule: Every other Friday at 08:00 PT
       calendarInviteGroup: calendar-prometheus
       gDocNotes: 1OijO_NZyR7gb7AvUj_KxKbcbsN09XQmq_ExZeDlgEOg
   - slack:
       name: '#otel-prometheus'
       id: C01LSCJBXDZ
 - id: faas
-  kind: sig
   sigCategory: specification
   name: Functions as a Service (FAAS)
   parent: none
@@ -325,15 +290,11 @@
       id: C04HVBETC9Z
   - repository: open-telemetry/opentelemetry-lambda
 - id: profiling
-  kind: sig
   sigCategory: specification
   name: Profiling
   parent: none
   people:
   - gcLiaison: mtwo
-  - tcSponsor:
-      username: jsuereth
-      level: escalating
   - tcSponsor:
       username: tigrannajaryan
       level: guiding
@@ -347,7 +308,6 @@
       id: C03J794L0BV
   - repository: open-telemetry/opentelemetry-ebpf-profiler
 - id: mainframes
-  kind: sig
   sigCategory: specification
   name: OpenTelemetry on Mainframes
   parent: none
@@ -355,8 +315,8 @@
   - gcLiaison: mtwo
   - specSponsor: dyladan
   - tcSponsor:
-      username: tbd
-      level: tbd
+      username: pellared
+      level: escalating
   resources:
   - meeting:
       schedule: Wednesday at 10:00 PT
@@ -366,7 +326,6 @@
       name: '#otel-mainframes'
       id: C05PXDFTCPJ
 - id: client-instrumentation
-  kind: sig
   sigCategory: specification
   name: Client Instrumentation
   parent: none
@@ -377,14 +336,30 @@
       level: escalating
   resources:
   - meeting:
-      schedule: Every other Tuesday at 09:00 PT
+      schedule: Every Tuesday at 09:00 PT
       calendarInviteGroup: calendar-client-side
       gDocNotes: 16Vsdh-DM72AfMg_FIt9yT9ExEWF4A_vRbQ3jRNBe09w
   - slack:
       name: '#otel-client-side-telemetry'
       id: C0239SYARD2
+- id: policies
+  sigCategory: specification
+  name: Policies
+  parent: none
+  people:
+  - gcLiaison: mx-psi
+  - tcSponsor:
+      username: dashpole
+      level: guiding
+  resources:
+  - meeting:
+      schedule: Every other Monday at 07:00 PT
+      calendarInviteGroup: calendar-policies
+      gDocNotes: 1BezpR0k1Cs6e_HhTAGlVcgN1JvjbCojAsagLXQhgGnI
+  - slack:
+      name: '#otel-policies'
+      id: C0C0VFN9526
 - id: android
-  kind: sig
   sigCategory: implementation
   name: 'Android: SDK + Automatic Instrumentation'
   parent: none
@@ -395,7 +370,7 @@
       level: escalating
   resources:
   - meeting:
-      schedule: Tuesday at 08:00 PT
+      schedule: Thursday at 08:00 PT
       calendarInviteGroup: calendar-android
       gDocNotes: 1W72oElAJuYx3efM9wkH5l1iksdfwmTSkVl-H7KHTLnY
   - slack:
@@ -403,7 +378,6 @@
       id: C05J0T9K27Q
   - repository: open-telemetry/opentelemetry-android
 - id: arrow
-  kind: sig
   sigCategory: implementation
   name: Arrow
   parent: none
@@ -423,7 +397,6 @@
   - repository: open-telemetry/otel-arrow
   - roadmapProject: 139
 - id: browser
-  kind: sig
   sigCategory: implementation
   name: Browser
   parent: none
@@ -442,20 +415,20 @@
   - slack:
       name: '#otel-browser'
       id: C093P0AMP0T
+  - repository: open-telemetry/opentelemetry-browser
   - roadmapProject: 146
 - id: collector
-  kind: sig
   sigCategory: implementation
   name: Collector
   parent: none
   people:
   - gcLiaison: mx-psi
   - tcSponsor:
-      username: bogdandrutu
-      level: guiding
-  - tcSponsor:
       username: jmacd
       level: guiding
+  - tcSponsor:
+      username: codeboten
+      level: leading
   resources:
   - meeting:
       schedule: 'Alternating between Tuesday at 17:00 PT, Wednesday at 09:00 PT, and
@@ -473,7 +446,6 @@
   - repository: open-telemetry/opentelemetry-go-vanityurls
   - repository: open-telemetry/govanityurls
 - id: cpp
-  kind: sig
   sigCategory: implementation
   name: 'C++: SDK'
   parent: none
@@ -494,7 +466,6 @@
   - repository: open-telemetry/opentelemetry-cpp-contrib
   - repository: open-telemetry/cpp-build-tools
 - id: dotnet-auto-instr
-  kind: sig
   sigCategory: implementation
   name: '.NET: Automatic Instrumentation'
   parent: none
@@ -503,6 +474,9 @@
   - tcSponsor:
       username: reyang
       level: escalating
+  - tcSponsor:
+      username: pellared
+      level: guiding
   resources:
   - meeting:
       schedule: Wednesday at 09:00 PT
@@ -513,7 +487,6 @@
       id: C01NR1YLSE7
   - repository: open-telemetry/opentelemetry-dotnet-instrumentation
 - id: dotnet
-  kind: sig
   sigCategory: implementation
   name: '.NET: SDK'
   parent: none
@@ -532,15 +505,32 @@
       id: C01N3BC2W7Q
   - repository: open-telemetry/opentelemetry-dotnet
   - repository: open-telemetry/opentelemetry-dotnet-contrib
+- id: dart-flutter
+  sigCategory: implementation
+  name: 'Dart and Flutter: SDK'
+  parent: none
+  people:
+  - gcLiaison: svrnm
+  - tcSponsor:
+      username: carlosalberto
+      level: escalating
+  resources:
+  - meeting:
+      schedule: Every other Friday at 8:00am GMT
+      calendarInviteGroup: calendar-dart
+      gDocNotes: 1sf7QPJ8DccDUyvaFypNec-4qXSG295CNOKlOSgatTlI
+  - slack:
+      name: '#otel-dart'
+      id: C027SBQGLS0
+  - repository: open-telemetry/opentelemetry-dart
 - id: erlang-elixir
-  kind: sig
   sigCategory: implementation
   name: 'Erlang/Elixir: SDK'
   parent: none
   people:
   - gcLiaison: austinlparker
   - tcSponsor:
-      username: jsuereth
+      username: tbd
       level: escalating
   resources:
   - meeting:
@@ -553,7 +543,6 @@
   - repository: open-telemetry/opentelemetry-erlang
   - repository: open-telemetry/opentelemetry-erlang-contrib
 - id: go
-  kind: sig
   sigCategory: implementation
   name: 'GoLang: SDK'
   parent: none
@@ -562,6 +551,9 @@
   - tcSponsor:
       username: dashpole
       level: leading
+  - tcSponsor:
+      username: pellared
+      level: guiding
   resources:
   - meeting:
       schedule: Thursday alternating between 09:00 PT and 10:00 PT
@@ -577,7 +569,6 @@
   - repository: open-telemetry/opentelemetry-proto-go
   - repository: open-telemetry/govanityurls
 - id: go-auto-instr
-  kind: sig
   sigCategory: implementation
   name: 'GoLang: Automatic Instrumentation'
   parent: none
@@ -596,7 +587,6 @@
       id: C03S01YSAS0
   - repository: open-telemetry/opentelemetry-go-instrumentation
 - id: go-compile-instr
-  kind: sig
   sigCategory: implementation
   name: 'GoLang: Compile-Time Instrumentation'
   parent: none
@@ -607,7 +597,7 @@
       level: escalating
   resources:
   - meeting:
-      schedule: Every Thursday at 08:00 UTC
+      schedule: Every Thursday at 09:30 UTC
       calendarInviteGroup: calendar-go
       gDocNotes: 1XkVahJfhf482d3WVHsvUUDaGzHc8TO3sqQlSS80mpGY
   - slack:
@@ -616,7 +606,6 @@
   - repository: open-telemetry/opentelemetry-go-compile-instrumentation
   - roadmapProject: 130
 - id: injector
-  kind: sig
   sigCategory: implementation
   name: Injector
   parent: none
@@ -627,7 +616,7 @@
       level: guiding
   resources:
   - meeting:
-      schedule: Thursday at 08:00 PT
+      schedule: Thursday at 08:30 PT
       calendarInviteGroup: calendar-injector
       gDocNotes: 10bZsPhjbJHt-vamRg5kqHQf4ZANUiLOJxP9HYCONe94
   - slack:
@@ -635,7 +624,6 @@
       id: C09025GKPAL
   - repository: open-telemetry/opentelemetry-injector
 - id: java-sdk-instrumentation
-  kind: sig
   sigCategory: implementation
   name: 'Java: SDK + Instrumentation'
   parent: none
@@ -659,7 +647,6 @@
   - repository: open-telemetry/opentelemetry-proto-java
   - repository: open-telemetry/semantic-conventions-java
 - id: javascript-sdk
-  kind: sig
   sigCategory: implementation
   name: 'JavaScript: SDK'
   parent: none
@@ -680,7 +667,6 @@
   - repository: open-telemetry/opentelemetry-js
   - repository: open-telemetry/opentelemetry-js-contrib
 - id: kotlin
-  kind: sig
   sigCategory: implementation
   name: 'Kotlin: SDK'
   parent: none
@@ -697,10 +683,8 @@
   - slack:
       name: '#otel-kotlin'
       id: C08NRCD4R4G
-  - githubDiscussion: https://github.com/open-telemetry/opentelemetry-kotlin/discussions
   - repository: open-telemetry/opentelemetry-kotlin
 - id: packaging
-  kind: sig
   sigCategory: implementation
   name: 'Packaging'
   parent: none
@@ -711,7 +695,7 @@
         level: escalating
   resources:
     - meeting:
-        schedule: Wednesday at 10:00 PT
+        schedule: Thursday at 8:00 PT
         calendarInviteGroup: calendar-packaging
         gDocNotes: 1NDY0rpntHeyEvx9xUg9WdiNyWa7Gq8YKUdjfM1a36GI
     - slack:
@@ -719,7 +703,6 @@
         id: C0AD17NMBLZ
     - repository: open-telemetry/opentelemetry-packaging
 - id: php-sdk
-  kind: sig
   sigCategory: implementation
   name: 'PHP: SDK'
   parent: none
@@ -730,7 +713,7 @@
       level: escalating
   resources:
   - meeting:
-      schedule: Wednesday at 10:30 PT
+      schedule: Wednesday at 08:00 EST
       calendarInviteGroup: calendar-php
       gDocNotes: 1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI
   - slack:
@@ -740,7 +723,6 @@
   - repository: open-telemetry/opentelemetry-php-contrib
   - repository: open-telemetry/opentelemetry-php-instrumentation
 - id: python-sdk
-  kind: sig
   sigCategory: implementation
   name: 'Python: SDK'
   parent: none
@@ -760,7 +742,6 @@
   - repository: open-telemetry/opentelemetry-python
   - repository: open-telemetry/opentelemetry-python-contrib
 - id: ruby-sdk
-  kind: sig
   sigCategory: implementation
   name: 'Ruby: SDK'
   parent: none
@@ -781,7 +762,6 @@
   - repository: open-telemetry/opentelemetry-ruby
   - repository: open-telemetry/opentelemetry-ruby-contrib
 - id: rust-sdk
-  kind: sig
   sigCategory: implementation
   name: 'Rust: SDK'
   parent: none
@@ -802,7 +782,6 @@
   - repository: open-telemetry/opentelemetry-rust
   - repository: open-telemetry/opentelemetry-rust-contrib
 - id: swift-sdk
-  kind: sig
   sigCategory: implementation
   name: 'Swift: SDK'
   parent: none
@@ -821,26 +800,24 @@
       id: C01NCHR19SB
   - repository: open-telemetry/opentelemetry-swift
 - id: network
-  kind: sig
   sigCategory: implementation
   name: Network
   parent: none
   people:
   - gcLiaison: tedsuo
   - tcSponsor:
-      username: dashpole
+      username: lmolkova
       level: escalating
   resources:
   - meeting:
-      schedule: Tuesday at 09:00 PT
+      schedule: Monday at 07:00 PT
       calendarInviteGroup: calendar-network
       gDocNotes: 13GK915hdDQ9sUYzUIWi4pOfJK68EE935ugutUgL3yOw
   - slack:
       name: '#otel-network'
       id: C02AB15583A
-  - repository: open-telemetry/opentelemetry-network
+  - roadmapProject: 202
 - id: ebpf-instrumentation
-  kind: sig
   sigCategory: implementation
   name: eBPF Instrumentation
   parent: none
@@ -859,7 +836,6 @@
       id: C08P9L4FPKJ
   - repository: open-telemetry/opentelemetry-ebpf-instrumentation
 - id: k8s-operator
-  kind: sig
   sigCategory: implementation
   name: Kubernetes Operator
   parent: none
@@ -878,15 +854,14 @@
       id: C033BJ8BASU
   - repository: open-telemetry/opentelemetry-operator
 - id: k8s-helm-charts
-  kind: sig
   sigCategory: implementation
   name: Kubernetes Helm Charts
   parent: none
   people:
   - gcLiaison: mx-psi
   - tcSponsor:
-      username: tbd
-      level: tbd
+      username: codeboten
+      level: escalating
   resources:
   - meeting:
       schedule: Meets during OpenTelemetry Operator and OpenTelemetry Collector
@@ -897,7 +872,6 @@
       id: C03HVLM8LAH
   - repository: open-telemetry/opentelemetry-helm-charts
 - id: community-demo
-  kind: sig
   sigCategory: implementation
   name: Community Demo Application
   parent: none
@@ -916,15 +890,11 @@
       id: C03B4CWV4DA
   - repository: open-telemetry/opentelemetry-demo
 - id: semconv-tooling
-  kind: sig
   sigCategory: implementation
   name: 'Semantic Conventions: Tooling'
   parent: semconv-general
   people:
   - gcLiaison: jpkrohling
-  - tcSponsor:
-      username: jsuereth
-      level: leading
   - tcSponsor:
       username: lmolkova
       level: leading
@@ -938,7 +908,6 @@
       id: C0697EXNTL3
   - repository: open-telemetry/weaver
 - id: communications
-  kind: sig
   sigCategory: cross-cutting
   name: 'Communications (Website, [Documentation](https://opentelemetry.io/docs/),
     etc.)'
@@ -959,7 +928,6 @@
   - repository: open-telemetry/opentelemetry.io
   - roadmapProject: 129
 - id: end-user
-  kind: sig
   sigCategory: cross-cutting
   name: End-User SIG
   parent: none
@@ -970,7 +938,7 @@
       level: escalating
   resources:
   - meeting:
-      schedule: 'Alternating between Monday at 08:00 PT (Blueprints) and Thursday at 10:00 PT (General)'
+      schedule: 'Alternating between Monday at 09:00 PT (Blueprints) and Thursday at 10:00 PT (General)'
       calendarInviteGroup: calendar-sig-end-user
       gDocNotes: 1e-UNZA3Tuno9b53RQbe--whUcO0VIXF3P81oXsrBK6g
   - slack:
@@ -979,7 +947,6 @@
   - repository: open-telemetry/sig-end-user
   - roadmapProject: 181
 - id: security
-  kind: sig
   sigCategory: cross-cutting
   name: Security
   parent: none
@@ -997,29 +964,7 @@
       name: '#otel-sig-security'
       id: C05A85QC281
   - repository: open-telemetry/sig-security
-- id: project-infra
-  kind: sig
-  sigCategory: cross-cutting
-  name: Project Infrastructure
-  parent: none
-  people:
-  - gcLiaison: austinlparker
-  - tcSponsor:
-      username: arminru
-      level: escalating
-  resources:
-  - meeting:
-      schedule: Thursday at 11:00 PT
-      calendarInviteGroup: calendar-project-infra
-      gDocNotes: 1_dTP2XIaZoFjNiipkeMaGJN10NrhS20FiBTTJoQJeVM
-  - slack:
-      name: '#otel-project-infra'
-      id: C07BPU981PV
-  - repository: open-telemetry/sig-project-infra
-  - repository: open-telemetry/changelog.opentelemetry.io
-  - repository: open-telemetry/assign-reviewers-action
 - id: contributor-experience
-  kind: sig
   sigCategory: cross-cutting
   name: Contributor Experience
   parent: none
@@ -1040,7 +985,6 @@
       id: C06TMJ2R0SK
   - repository: open-telemetry/sig-contributor-experience
 - id: developer-experience
-  kind: sig
   sigCategory: cross-cutting
   name: Developer Experience
   parent: none
@@ -1060,7 +1004,6 @@
       id: C01S42U83B2
   - repository: open-telemetry/sig-developer-experience
 - id: localization-bn
-  kind: sig
   sigCategory: cross-cutting
   name: Bengali (bn)
   parent: communications
@@ -1075,7 +1018,6 @@
       name: '#otel-localization-bn'
       id: C08TBCSAY1F
 - id: localization-zh-cn
-  kind: sig
   sigCategory: cross-cutting
   name: Chinese (zh-CN)
   parent: communications
@@ -1090,7 +1032,6 @@
       name: '#otel-localization-zhcn'
       id: C08SSK25Y7L
 - id: localization-fr
-  kind: sig
   sigCategory: cross-cutting
   name: French (fr-FR)
   parent: communications
@@ -1105,7 +1046,6 @@
       name: '#otel-localization-fr'
       id: C07THD60YLF
 - id: localization-ja
-  kind: sig
   sigCategory: cross-cutting
   name: Japanese (ja-JA)
   parent: communications
@@ -1124,7 +1064,6 @@
       name: '#otel-localization-ja'
       id: C08SGPBN44E
 - id: localization-pl
-  kind: sig
   sigCategory: cross-cutting
   name: Polish (pl-PL)
   parent: communications
@@ -1132,14 +1071,13 @@
   - gcLiaison: svrnm
   - specSponsor: svrnm
   - tcSponsor:
-      username: tbd
-      level: tbd
+      username: pellared
+      level: guiding
   resources:
   - slack:
       name: '#otel-localization-pl'
       id: C0ALHN9V7PT
 - id: localization-pt-br
-  kind: sig
   sigCategory: cross-cutting
   name: Portuguese (pt-BR)
   parent: communications
@@ -1150,15 +1088,10 @@
       username: tbd
       level: tbd
   resources:
-  - meeting:
-      schedule: Every second Wednesday at 7:15pm BST
-      calendarInviteGroup: calendar-localization-ptbr
-      gDocNotes: 1W1jJ4OTm53sbOp7CrbNBMvR_2Z8TQRCkwejqD4f21SE
   - slack:
       name: '#otel-localization-ptbr'
       id: C076LET8YSK
 - id: localization-ro
-  kind: sig
   sigCategory: cross-cutting
   name: Romanian (ro-RO)
   parent: communications
@@ -1176,7 +1109,6 @@
       name: '#otel-localization-ro'
       id: C09E9KNNLP4
 - id: localization-es
-  kind: sig
   sigCategory: cross-cutting
   name: Spanish (es-ES)
   parent: communications
@@ -1195,7 +1127,6 @@
       name: '#otel-localization-es'
       id: C07PVQVCHA6
 - id: localization-uk
-  kind: sig
   sigCategory: cross-cutting
   name: Ukrainian (uk-UA)
   parent: communications
