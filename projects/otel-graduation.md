@@ -33,10 +33,12 @@ marked 0.X that are genuinely experimental and should not be used in production.
 some end user organizations have rules that prohibit them from deploying 0.X software to production.
 
 As part of graduation, it was requested that we provide a mechanism for indicating to end
-users which OpenTelemetry components are "production ready." Actually, we already have a
-mechanism for indicating this – the version number of the component. Going forward, we need to
-align "production readiness" with versioning by advancing all of these "de-facto stable" components
-to v1.0 or greater.
+users which OpenTelemetry components are "production ready." Part of this mechanism is the version
+number, meaning that we must bump all of these "de-facto stable" components to v1.0 or greater, so
+that 0.X correctly indicates that a component is not yet recommended for production use.
+
+However, stable components may continue to add experimental features. So in addition to a version number,
+OpenTelemetry will also need to develop a feature-level stability indicator.
 
 ### Deploying at scale
 
