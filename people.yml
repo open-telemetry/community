@@ -86,10 +86,18 @@ people:
     name: David Ashpole
     company: Google
     slackMemberId: U01BQ0KKLM8
+  dmitryax:
+    name: Dmitry Anoshin 
+    company: Splunk
+    slackMemberId: U027X6T4GDU
   dyladan:
     name: Daniel Dyla
     company: Dynatrace
     slackMemberId: U01NEM0KTPW
+  evan-bradley:
+    name: Evan Bradley
+    company: Dynatrace
+    slackMemberId: U03J1P68GPM
   jack-berg:
     name: Jack Berg
     company: Grafana Labs
