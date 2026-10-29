@@ -85,19 +85,26 @@ Interactions between the OpenTelemetry GC and CNCF are mostly driven via Service
 Desk tickets. Members can create tickets to discuss access to systems, licensing,
 funds, marketing, press, etc.
 
+Access to the Service Desk and to
+https://lists.cncf.io/g/cncf-opentelemetry-maintainers is granted
+automatically once the new member is in the `servicedesk` team of
+[open-telemetry/.project](https://github.com/open-telemetry/.project/blob/main/maintainers.yaml)
+(see the GitHub section below) and has linked their GitHub account to their
+Linux Foundation ID (LFID).
+
 The existing member must:
 
-- [ ] Send an email to cncf-maintainer-changes@cncf.io to request invitations to the Service Desk
-      and mailing lists for the new member
-      - https://lists.cncf.io/g/cncf-opentelemetry-governance (moderator)
-      - https://lists.cncf.io/g/cncf-opentelemetry-announce (moderator)
-      - https://lists.cncf.io/g/cncf-opentelemetry-maintainers (member)
+- [ ] Send an email to cncf-maintainer-changes@cncf.io to request that the new
+  member be added as `Moderator` to the following mailing lists:
+  - https://lists.cncf.io/g/cncf-opentelemetry-governance
+  - https://lists.cncf.io/g/cncf-opentelemetry-announce
 
 The new member must:
 
-- [ ] Link their GitHub account to their Linux Foundation ID (LFID) at
-  [openprofile.dev](https://openprofile.dev). CNCF uses this link to grant
-  access to the Service Desk and the project maintainer mailing lists.
+- [ ] In their [LFX profile](https://openprofile.dev), connect their GitHub
+  account under Identities and set the email address they want CNCF to use as
+  their primary email. CNCF takes the name, primary email, and affiliation for
+  the Service Desk and the maintainer mailing list from this profile.
 - [ ] Accept invitation to CNCF Service Desk and create an account.
 - [ ] Validate they have access to the [CNCF Service Desk](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)
   (see more information about Service Desk in the [docs](https://github.com/cncf/servicedesk#readme)).
@@ -136,7 +143,8 @@ The existing member must:
   [open-telemetry/opentelemetry.io](https://github.com/open-telemetry/opentelemetry.io/pulls?q=is%3Apr+%22Update+community+members%22)
   and then in [open-telemetry/.project](https://github.com/open-telemetry/.project/pulls).
   Validate the new member is listed in the `servicedesk` team of
-  [maintainers.yaml](https://github.com/open-telemetry/.project/blob/main/maintainers.yaml).
+  [maintainers.yaml](https://github.com/open-telemetry/.project/blob/main/maintainers.yaml),
+  which grants their Service Desk and maintainer mailing list access.
 
 ### Google Drive
 OpenTelemetry handles minutes and other ad-hoc documents in Google Drive.

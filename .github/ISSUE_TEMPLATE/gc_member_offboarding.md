@@ -49,11 +49,8 @@ The existing member must:
   - [opentelemetry-gc-tc](https://cloud-native.slack.com/archives/C02KF2PPUV9)
   - [opentelemetry-gc-end-user](https://cloud-native.slack.com/archives/C065JSPJN15)
 - [ ] Send an email to cncf-maintainer-changes@cncf.io to request removal from:
-  - the CNCF Service Desk OpenTelemetry group
   - https://lists.cncf.io/g/cncf-opentelemetry-governance
   - https://lists.cncf.io/g/cncf-opentelemetry-announce (moderator)
-  - https://lists.cncf.io/g/cncf-opentelemetry-maintainers, unless they are
-    still a maintainer elsewhere in OpenTelemetry
   - the [FOSSA OpenTelemetry Team](https://app.fossa.com/account/settings/organization/teams/78675)
 - [ ] Remove the departing member from https://lists.cncf.io/g/cncf-otel-zoomadmins.
 - [ ] Ask TC to remove the departing member from the
@@ -65,6 +62,9 @@ The existing member must:
   and then in [open-telemetry/.project](https://github.com/open-telemetry/.project/pulls).
   Validate the departing member is no longer listed in the `servicedesk` team of
   [maintainers.yaml](https://github.com/open-telemetry/.project/blob/main/maintainers.yaml).
+  This removes their Service Desk access and, unless they are still a
+  maintainer elsewhere in OpenTelemetry, their access to
+  https://lists.cncf.io/g/cncf-opentelemetry-maintainers.
 - [ ] Remove the departing member from the `governance-committee@opentelemetry.io`
   Google group. This also removes their access to the GC meeting notes.
 - [ ] Remove the departing member from the Governance Committee Meeting and the
