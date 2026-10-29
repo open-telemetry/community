@@ -64,7 +64,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-k8s-semconv-sig](https://cloud-native.slack.com/archives/C07Q1L0FGKX)
 - **Roadmap projects:** [Semantic Conventions: K8s roadmap](https://github.com/orgs/open-telemetry/projects/114)
 - **Technical Committee sponsors:** [David Ashpole](https://github.com/dashpole) (leading)
-- **Governance Committee liaison:** [Alolita Sharma](https://github.com/alolita)
+- **Governance Committee liaison:** tbd
 
 ### Semantic Conventions and Instrumentation: GenAI
 
@@ -154,7 +154,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-profiles](https://cloud-native.slack.com/archives/C03J794L0BV)
 - **Repositories:** [open-telemetry/opentelemetry-ebpf-profiler](https://github.com/open-telemetry/opentelemetry-ebpf-profiler)
 - **Technical Committee sponsors:** [Tigran Najaryan](https://github.com/tigrannajaryan) (guiding)
-- **Governance Committee liaison:** [Morgan McLean](https://github.com/mtwo)
+- **Governance Committee liaison:** tbd
 
 ### OpenTelemetry on Mainframes
 
@@ -164,7 +164,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-mainframes](https://cloud-native.slack.com/archives/C05PXDFTCPJ)
 - **Technical Committee sponsors:** [Robert Pająk](https://github.com/pellared) (escalating)
 - **Spec sponsors:** [Daniel Dyla](https://github.com/dyladan)
-- **Governance Committee liaison:** [Morgan McLean](https://github.com/mtwo)
+- **Governance Committee liaison:** tbd
 
 ### Client Instrumentation
 
@@ -248,7 +248,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-dotnet-auto-instr](https://cloud-native.slack.com/archives/C01NR1YLSE7)
 - **Repositories:** [open-telemetry/opentelemetry-dotnet-instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation)
 - **Technical Committee sponsors:** [Reiley Yang](https://github.com/reyang) (escalating), [Robert Pająk](https://github.com/pellared) (guiding)
-- **Governance Committee liaison:** [Morgan McLean](https://github.com/mtwo)
+- **Governance Committee liaison:** tbd
 
 ### .NET: SDK
 
@@ -258,7 +258,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-dotnet](https://cloud-native.slack.com/archives/C01N3BC2W7Q)
 - **Repositories:** [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet), [open-telemetry/opentelemetry-dotnet-contrib](https://github.com/open-telemetry/opentelemetry-dotnet-contrib)
 - **Technical Committee sponsors:** [Reiley Yang](https://github.com/reyang) (escalating)
-- **Governance Committee liaison:** [Morgan McLean](https://github.com/mtwo)
+- **Governance Committee liaison:** tbd
 
 ### Dart and Flutter: SDK
 
@@ -319,7 +319,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-injector](https://cloud-native.slack.com/archives/C09025GKPAL)
 - **Repositories:** [open-telemetry/opentelemetry-injector](https://github.com/open-telemetry/opentelemetry-injector)
 - **Technical Committee sponsors:** [Jack Berg](https://github.com/jack-berg) (guiding)
-- **Governance Committee liaison:** [Morgan McLean](https://github.com/mtwo)
+- **Governance Committee liaison:** tbd
 
 ### Java: SDK + Instrumentation
 
@@ -350,7 +350,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-kotlin](https://cloud-native.slack.com/archives/C08NRCD4R4G)
 - **Repositories:** [open-telemetry/opentelemetry-kotlin](https://github.com/open-telemetry/opentelemetry-kotlin)
 - **Technical Committee sponsors:** [Carlos Alberto Cortez](https://github.com/carlosalberto) (guiding)
-- **Governance Committee liaison:** [Alolita Sharma](https://github.com/alolita)
+- **Governance Committee liaison:** tbd
 
 ### Packaging
 
@@ -411,7 +411,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-swift](https://cloud-native.slack.com/archives/C01NCHR19SB)
 - **Repositories:** [open-telemetry/opentelemetry-swift](https://github.com/open-telemetry/opentelemetry-swift)
 - **Technical Committee sponsors:** [Reiley Yang](https://github.com/reyang) (escalating)
-- **Governance Committee liaison:** [Alolita Sharma](https://github.com/alolita)
+- **Governance Committee liaison:** tbd
 
 ### Network
 

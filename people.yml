@@ -1,10 +1,10 @@
 teams:
   governance-committee:
-  - alolita
   - austinlparker
+  - danielgblanco
   - jpkrohling
+  - jsuereth
   - maryliag
-  - mtwo
   - mx-psi
   - svrnm
   - tedsuo
@@ -56,7 +56,6 @@ people:
     name: Alolita Sharma
     company: Apple
     slackMemberId: U01J8KALC4F
-    termEnd: October 2026
   arminru:
     name: Armin Ruech
     company: Dynatrace
@@ -82,6 +81,10 @@ people:
     name: Alex Boten
     company: Grafana Labs
     slackMemberId: U018R7326HH
+  danielgblanco:
+    name: Daniel Gomez Blanco
+    company: New Relic
+    termEnd: October 2028
   dashpole:
     name: David Ashpole
     company: Google
@@ -115,6 +118,7 @@ people:
     name: Josh Suereth
     company: Google
     slackMemberId: U01KV42PNBT
+    termEnd: October 2028
   lmolkova:
     name: Liudmila Molkova
     company: Google
@@ -136,12 +140,11 @@ people:
     name: Morgan McLean
     company: Splunk
     slackMemberId: U01EQLNMMHU
-    termEnd: October 2026
   mx-psi:
     name: Pablo Baeyens
     company: Datadog
     slackMemberId: U01N232463G
-    termEnd: October 2026
+    termEnd: October 2028
   pellared:
     name: Robert Pająk
     company: Splunk
@@ -168,7 +171,7 @@ people:
     name: Trask Stalnaker
     company: Microsoft
     slackMemberId: U0157BDJNBD
-    termEnd: October 2026
+    termEnd: October 2028
   tsloughter:
     name: Tristan Sloughter
     company: MyDecisiveAI
