@@ -44,6 +44,14 @@ teams:
   - tigrannajaryan
   - tsloughter
 people:
+  ChrsMark:
+    name: Christos Markou
+    company: Elastic
+    slackMemberId: U03F51GMPFZ
+  MovieStoreGuy:
+    name: Sean Marciniak
+    company: Splunk
+    slackMemberId: U01RTRM2SN8
   MrAlias:
     name: Tyler Yahn
     company: Splunk
@@ -52,14 +60,26 @@ people:
     name: Christian Neumüller
     company: Dynatrace
     slackMemberId: U01NM39DZFB
+  TylerHelmuth:
+    name: Tyler Helmuth
+    company: Grafana Labs
+    slackMemberId: U02U7S9LJCU
   alolita:
     name: Alolita Sharma
     company: Apple
     slackMemberId: U01J8KALC4F
+  andrzej-stencel:
+    name: Andrzej Stencel
+    company: Elastic
+    slackMemberId: U071UQ6C81F
   arminru:
     name: Armin Ruech
     company: Dynatrace
     slackMemberId: UM283PDT7
+  atoulme:
+    name: Antoine Toulme
+    company: Splunk
+    slackMemberId: U022ZHK314J
   austinlparker:
     name: Austin Parker
     company: Honeycomb
@@ -69,6 +89,10 @@ people:
     name: Bogdan Drutu
     company: Snowflake
     slackMemberId: UTZ7ZGZ9N
+  braydonk:
+    name: Braydon Kains
+    company: Google
+    slackMemberId: U047D3ETU8P
   carlosalberto:
     name: Carlos Alberto Cortez
     company: Dash0
@@ -97,6 +121,10 @@ people:
     name: Daniel Dyla
     company: Dynatrace
     slackMemberId: U01NEM0KTPW
+  edmocosta:
+    name: Edmo Vamerlatti Costa
+    company: Elastic
+    slackMemberId: U07M54BNFSP
   evan-bradley:
     name: Evan Bradley
     company: Dynatrace
@@ -153,6 +181,10 @@ people:
     name: Reiley Yang
     company: Microsoft
     slackMemberId: U01NA9DUCLT
+  songy23:
+    name: Yang Song
+    company: Datadog
+    slackMemberId: U01N232463G
   svrnm:
     name: Severin Neumann
     company: Bronto
