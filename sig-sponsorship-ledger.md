@@ -4,7 +4,7 @@
 
 Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical Committee (TC) sponsor(s), followed by how many SIGs each GC and TC member is currently responsible for. For full per-SIG details (meetings, Slack, repos), see [sigs.md](./sigs.md).
 
-**60 SIGs** · **9 GC members** with at least one liaison assignment · **10 TC members** with at least one sponsor assignment · **1 SIG** missing a GC liaison · **10 SIGs** missing a TC sponsor
+**60 SIGs** · **7 GC members** with at least one liaison assignment · **10 TC members** with at least one sponsor assignment · **9 SIGs** missing a GC liaison · **10 SIGs** missing a TC sponsor
 
 ## GC liaison load
 
@@ -15,9 +15,7 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 | [Marylia Gutierrez](https://github.com/maryliag) | 7 | Semantic Conventions: CI/CD, GoLang: SDK, JavaScript: SDK, Python: SDK, Community Demo Application, End-User SIG, Contributor Experience |
 | [Trask Stalnaker](https://github.com/trask) | 7 | Specification: Logs, Semantic Conventions: General, Semantic Conventions: RPC, Semantic Conventions: Service and Deployment, Arrow, Java: SDK + Instrumentation, Security |
 | [Juraci Paixão Kröhling](https://github.com/jpkrohling) | 5 | Specification: Sampling, GoLang: Automatic Instrumentation, GoLang: Compile-Time Instrumentation, Kubernetes Operator, Semantic Conventions: Tooling |
-| [Morgan McLean](https://github.com/mtwo) | 5 | Profiling, OpenTelemetry on Mainframes, .NET: Automatic Instrumentation, .NET: SDK, Injector |
 | [Pablo Baeyens](https://github.com/mx-psi) | 5 | Semantic Conventions: System Metrics, Prometheus Interoperability, Policies, Collector, Kubernetes Helm Charts |
-| [Alolita Sharma](https://github.com/alolita) | 3 | Semantic Conventions: K8s, Kotlin: SDK, Swift: SDK |
 | [Austin Parker](https://github.com/austinlparker) | 3 | Functions as a Service (FAAS), Erlang/Elixir: SDK, Developer Experience |
 
 ## TC sponsor load
@@ -64,7 +62,7 @@ _Sponsorship of "Specification: General + OTel Maintainers Sync" is collective a
 | Specification: Logs<br><sub>under Specification: General + OTel Maintainers Sync</sub> | [Trask Stalnaker](https://github.com/trask) | [Robert Pająk](https://github.com/pellared) (guiding) |
 | Semantic Conventions: General<br><sub>under Specification: General + OTel Maintainers Sync</sub> | [Trask Stalnaker](https://github.com/trask) | [Armin Ruech](https://github.com/arminru) (leading), [Liudmila Molkova](https://github.com/lmolkova) (leading) |
 | Semantic Conventions: System Metrics<br><sub>under Semantic Conventions: General</sub> | [Pablo Baeyens](https://github.com/mx-psi) | [Alex Boten](https://github.com/codeboten) (escalating) |
-| Semantic Conventions: K8s<br><sub>under Semantic Conventions: General</sub> | [Alolita Sharma](https://github.com/alolita) | [David Ashpole](https://github.com/dashpole) (leading) |
+| Semantic Conventions: K8s<br><sub>under Semantic Conventions: General</sub> | tbd | [David Ashpole](https://github.com/dashpole) (leading) |
 | Semantic Conventions and Instrumentation: GenAI<br><sub>under Semantic Conventions: General</sub> | [Ted Young](https://github.com/tedsuo) | [Liudmila Molkova](https://github.com/lmolkova) (leading) |
 | Semantic Conventions: CI/CD<br><sub>under Semantic Conventions: General</sub> | [Marylia Gutierrez](https://github.com/maryliag) | [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating), [Robert Pająk](https://github.com/pellared) (guiding) |
 | Semantic Conventions: RPC<br><sub>under Semantic Conventions: General</sub> | [Trask Stalnaker](https://github.com/trask) | [Liudmila Molkova](https://github.com/lmolkova) (guiding) |
@@ -73,8 +71,8 @@ _Sponsorship of "Specification: General + OTel Maintainers Sync" is collective a
 | OpAMP | [Ted Young](https://github.com/tedsuo) | [Tigran Najaryan](https://github.com/tigrannajaryan) (leading) |
 | Prometheus Interoperability | [Pablo Baeyens](https://github.com/mx-psi) | [David Ashpole](https://github.com/dashpole) (leading) |
 | Functions as a Service (FAAS) | [Austin Parker](https://github.com/austinlparker) | tbd |
-| Profiling | [Morgan McLean](https://github.com/mtwo) | [Tigran Najaryan](https://github.com/tigrannajaryan) (guiding) |
-| OpenTelemetry on Mainframes | [Morgan McLean](https://github.com/mtwo) | [Robert Pająk](https://github.com/pellared) (escalating) |
+| Profiling | tbd | [Tigran Najaryan](https://github.com/tigrannajaryan) (guiding) |
+| OpenTelemetry on Mainframes | tbd | [Robert Pająk](https://github.com/pellared) (escalating) |
 | Client Instrumentation | [Ted Young](https://github.com/tedsuo) | [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating) |
 | Policies | [Pablo Baeyens](https://github.com/mx-psi) | [David Ashpole](https://github.com/dashpole) (guiding) |
 
@@ -87,23 +85,23 @@ _Sponsorship of "Specification: General + OTel Maintainers Sync" is collective a
 | Browser | [Ted Young](https://github.com/tedsuo) | [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating) |
 | Collector | [Pablo Baeyens](https://github.com/mx-psi) | [Joshua MacDonald](https://github.com/jmacd) (guiding), [Alex Boten](https://github.com/codeboten) (leading) |
 | C++: SDK | [Severin Neumann](https://github.com/svrnm) | [Reiley Yang](https://github.com/reyang) (escalating) |
-| .NET: Automatic Instrumentation | [Morgan McLean](https://github.com/mtwo) | [Reiley Yang](https://github.com/reyang) (escalating), [Robert Pająk](https://github.com/pellared) (guiding) |
-| .NET: SDK | [Morgan McLean](https://github.com/mtwo) | [Reiley Yang](https://github.com/reyang) (escalating) |
+| .NET: Automatic Instrumentation | tbd | [Reiley Yang](https://github.com/reyang) (escalating), [Robert Pająk](https://github.com/pellared) (guiding) |
+| .NET: SDK | tbd | [Reiley Yang](https://github.com/reyang) (escalating) |
 | Dart and Flutter: SDK | [Severin Neumann](https://github.com/svrnm) | [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating) |
 | Erlang/Elixir: SDK | [Austin Parker](https://github.com/austinlparker) | tbd (escalating) |
 | GoLang: SDK | [Marylia Gutierrez](https://github.com/maryliag) | [David Ashpole](https://github.com/dashpole) (leading), [Robert Pająk](https://github.com/pellared) (guiding) |
 | GoLang: Automatic Instrumentation | [Juraci Paixão Kröhling](https://github.com/jpkrohling) | [David Ashpole](https://github.com/dashpole) (escalating) |
 | GoLang: Compile-Time Instrumentation | [Juraci Paixão Kröhling](https://github.com/jpkrohling) | [David Ashpole](https://github.com/dashpole) (escalating) |
-| Injector | [Morgan McLean](https://github.com/mtwo) | [Jack Berg](https://github.com/jack-berg) (guiding) |
+| Injector | tbd | [Jack Berg](https://github.com/jack-berg) (guiding) |
 | Java: SDK + Instrumentation | [Trask Stalnaker](https://github.com/trask) | [Jack Berg](https://github.com/jack-berg) (leading) |
 | JavaScript: SDK | [Marylia Gutierrez](https://github.com/maryliag) | [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating) |
-| Kotlin: SDK | [Alolita Sharma](https://github.com/alolita) | [Carlos Alberto Cortez](https://github.com/carlosalberto) (guiding) |
+| Kotlin: SDK | tbd | [Carlos Alberto Cortez](https://github.com/carlosalberto) (guiding) |
 | Packaging | [Ted Young](https://github.com/tedsuo) | [Tigran Najaryan](https://github.com/tigrannajaryan) (escalating) |
 | PHP: SDK | [Severin Neumann](https://github.com/svrnm) | [Jack Berg](https://github.com/jack-berg) (escalating) |
 | Python: SDK | [Marylia Gutierrez](https://github.com/maryliag) | [Reiley Yang](https://github.com/reyang) (escalating) |
 | Ruby: SDK | [Ted Young](https://github.com/tedsuo) | [Armin Ruech](https://github.com/arminru) (escalating) |
 | Rust: SDK | [Ted Young](https://github.com/tedsuo) | [Reiley Yang](https://github.com/reyang) (escalating) |
-| Swift: SDK | [Alolita Sharma](https://github.com/alolita) | [Reiley Yang](https://github.com/reyang) (escalating) |
+| Swift: SDK | tbd | [Reiley Yang](https://github.com/reyang) (escalating) |
 | Network | [Ted Young](https://github.com/tedsuo) | [Liudmila Molkova](https://github.com/lmolkova) (escalating) |
 | eBPF Instrumentation | [Severin Neumann](https://github.com/svrnm) | [David Ashpole](https://github.com/dashpole) (escalating) |
 | Kubernetes Operator | [Juraci Paixão Kröhling](https://github.com/jpkrohling) | [David Ashpole](https://github.com/dashpole) (escalating) |

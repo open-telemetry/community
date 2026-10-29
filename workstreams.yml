@@ -127,7 +127,7 @@
   name: 'Semantic Conventions: K8s'
   parent: semconv-general
   people:
-  - gcLiaison: alolita
+  - gcLiaison: tbd
   - tcSponsor:
       username: dashpole
       level: leading
@@ -294,7 +294,7 @@
   name: Profiling
   parent: none
   people:
-  - gcLiaison: mtwo
+  - gcLiaison: tbd
   - tcSponsor:
       username: tigrannajaryan
       level: guiding
@@ -312,7 +312,7 @@
   name: OpenTelemetry on Mainframes
   parent: none
   people:
-  - gcLiaison: mtwo
+  - gcLiaison: tbd
   - specSponsor: dyladan
   - tcSponsor:
       username: pellared
@@ -470,7 +470,7 @@
   name: '.NET: Automatic Instrumentation'
   parent: none
   people:
-  - gcLiaison: mtwo
+  - gcLiaison: tbd
   - tcSponsor:
       username: reyang
       level: escalating
@@ -491,7 +491,7 @@
   name: '.NET: SDK'
   parent: none
   people:
-  - gcLiaison: mtwo
+  - gcLiaison: tbd
   - tcSponsor:
       username: reyang
       level: escalating
@@ -610,7 +610,7 @@
   name: Injector
   parent: none
   people:
-  - gcLiaison: mtwo
+  - gcLiaison: tbd
   - tcSponsor:
       username: jack-berg
       level: guiding
@@ -671,7 +671,7 @@
   name: 'Kotlin: SDK'
   parent: none
   people:
-  - gcLiaison: alolita
+  - gcLiaison: tbd
   - tcSponsor:
       username: carlosalberto
       level: guiding
@@ -786,7 +786,7 @@
   name: 'Swift: SDK'
   parent: none
   people:
-  - gcLiaison: alolita
+  - gcLiaison: tbd
   - tcSponsor:
       username: reyang
       level: escalating
