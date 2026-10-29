@@ -112,17 +112,21 @@ The new member must:
 - [ ] Accept invitations to mailing lists above, creating an account on https://lists.cncf.io
   if necessary, using their preferred email address.
 
-### Additional Mailing List
+### LFX Project Control Center
+OpenTelemetry meetings run on Zoom accounts managed through the LFX Project
+Control Center (see
+[how to create and configure meetings](https://github.com/open-telemetry/community/blob/main/docs/how-to-handle-public-calendar.md)).
 
 The existing member must:
 
-- [ ] Invite new member as `Moderator`, ensuring that they have the same
-  privileges as existing members, to the following mailing list:
-  - https://lists.cncf.io/g/cncf-otel-zoomadmins
+- [ ] Give the new member access to manage the OpenTelemetry project in the
+  [LFX Project Control Center](https://projectadmin.lfx.linuxfoundation.org).
 
 The new member must:
-- [ ] Accept invitations to mailing list above, creating an account on https://lists.cncf.io
-  if necessary, using their preferred email address.
+
+- [ ] Validate they can log in to the
+  [LFX Project Control Center](https://projectadmin.lfx.linuxfoundation.org)
+  and manage OpenTelemetry meetings under Collaboration > Meetings.
 
 ### GitHub
 Most of the management, enablement, support and documentation work done by GC
@@ -162,8 +166,8 @@ The new member must:
 _Note: Confidential documents shared only between GC members are stored under the admin google account and never shared with private accounts. To see/edit them, you must login into the admin google account._
 
 ### Zapier
-Zapier is used to sync meeting recordings from Zoom to a publicly viewable
-Google spreadsheet (see https://github.com/open-telemetry/community/blob/main/docs/how-meeting-recordings-upload-works.md
+Zapier is used to automatically add repository maintainers to new security
+incidents (see [assets.md](https://github.com/open-telemetry/community/blob/main/assets.md#zapier-account)
 for more details).
 
 The new member must:

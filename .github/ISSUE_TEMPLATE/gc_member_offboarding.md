@@ -52,7 +52,11 @@ The existing member must:
   - https://lists.cncf.io/g/cncf-opentelemetry-governance
   - https://lists.cncf.io/g/cncf-opentelemetry-announce (moderator)
   - the [FOSSA OpenTelemetry Team](https://app.fossa.com/account/settings/organization/teams/78675)
-- [ ] Remove the departing member from https://lists.cncf.io/g/cncf-otel-zoomadmins.
+- [ ] Remove the departing member's access to the OpenTelemetry project in the
+  [LFX Project Control Center](https://projectadmin.lfx.linuxfoundation.org).
+- [ ] Remove the departing member from https://lists.cncf.io/g/cncf-otel-zoomadmins
+  if they are still a member. The list is only used for the
+  [deprecated Zoom accounts](https://github.com/open-telemetry/community/blob/main/assets.md#deprecated-zoom-accounts).
 - [ ] Ask TC to remove the departing member from the
   [open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
   team.
