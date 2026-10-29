@@ -924,11 +924,34 @@ def _get_display_name(username):
         return None
 
 
+def _sanitize_display_name(name):
+    """Escape markdown link syntax in a display name.
+
+    Display names fetched from the GitHub API are free-form text set by the
+    user. A "]" in the name terminates the link text of the generated
+    "[name](url)" entry, so the rest of the name is rendered as markdown of
+    the user's choosing (e.g. a link or image pointing anywhere) in the
+    README this script commits. Raw HTML or "<url>" autolinks in the name
+    would do the same. Strip control characters and escape the link-text
+    delimiters and angle brackets so the whole name stays plain link text.
+    """
+    name = re.sub(r"[\x00-\x1f\x7f]+", " ", name)
+    name = re.sub(r"([\\\[\]<>])", r"\\\1", name)
+    return name.strip()
+
+
 def _to_emeritus_entry(username, role_label, display_name=None, marker="-"):
-    """Create an emeritus entry line with previous role."""
-    if not display_name:
-        display_name = _get_display_name(username)
-    name = display_name or f"@{username}"
+    """Create an emeritus entry line with previous role.
+
+    A display_name passed in is the label already in the README and is kept
+    as-is. A name fetched from the GitHub API is sanitized first.
+    """
+    name = display_name
+    if not name:
+        api_name = _get_display_name(username)
+        name = _sanitize_display_name(api_name) if api_name else ""
+    if not name:
+        name = f"@{username}"
     return f"{marker} [{name}](https://github.com/{username}), {role_label}"
 
 
