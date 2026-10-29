@@ -2,7 +2,7 @@
 name: GC Member Onboarding
 about: Onboard a new member of the Governance Committee
 title: 'GC ONBOARDING: <GH_USERNAME>'
-labels: area/onboarding
+labels: area/gc-election
 assignees: ''
 ---
 
@@ -33,7 +33,7 @@ The new member must:
    2. [Concepts](https://opentelemetry.io/docs/concepts/)
    3. [Specification](https://opentelemetry.io/docs/specs/otel/)
 2. Have read and agreed to comply with the
-   [OpenTelemetry Governance Committee Charter](../../governance-charter.md)
+   [OpenTelemetry Governance Committee Charter](https://github.com/open-telemetry/community/blob/main/governance-charter.md)
    as per requirements to stand for election.
 3. Have an email address, Google account, and GitHub account and is willing
    to share those details with other GC members.
@@ -95,6 +95,9 @@ The existing member must:
 
 The new member must:
 
+- [ ] Link their GitHub account to their Linux Foundation ID (LFID) at
+  [openprofile.dev](https://openprofile.dev). CNCF uses this link to grant
+  access to the Service Desk and the project maintainer mailing lists.
 - [ ] Accept invitation to CNCF Service Desk and create an account.
 - [ ] Validate they have access to the [CNCF Service Desk](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)
   (see more information about Service Desk in the [docs](https://github.com/cncf/servicedesk#readme)).
@@ -125,8 +128,15 @@ The existing member must:
 - [ ] Ask TC to add new member as `Member` to the [open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
   team.
 - [ ] Add new member as code owner in [open-telemetry/community](https://github.com/open-telemetry/community/blob/main/CODEOWNERS)
-- [ ] Add new member to the list of GC members in [open-telemetry/community/community-members.md](https://github.com/open-telemetry/community/blob/main/community-members.md).
-- [ ] Add new member in the `OpenTelemetry (Governance Committee)` section of [cncf/foundation/project-maintainers.csv](https://github.com/cncf/foundation/blob/main/project-maintainers.csv)
+- [ ] Add new member to the `governance-committee` team in [open-telemetry/community/people.yml](https://github.com/open-telemetry/community/blob/main/people.yml),
+  including their `termEnd`, and run `make generate` to update the list of GC
+  members in [community-members.md](https://github.com/open-telemetry/community/blob/main/community-members.md).
+- [ ] Merge the bot PRs that sync the `open-telemetry/governance-committee` team
+  to CNCF's maintainer records. They are created daily, first in
+  [open-telemetry/opentelemetry.io](https://github.com/open-telemetry/opentelemetry.io/pulls?q=is%3Apr+%22Update+community+members%22)
+  and then in [open-telemetry/.project](https://github.com/open-telemetry/.project/pulls).
+  Validate the new member is listed in the `servicedesk` team of
+  [maintainers.yaml](https://github.com/open-telemetry/.project/blob/main/maintainers.yaml).
 
 ### Google Drive
 OpenTelemetry handles minutes and other ad-hoc documents in Google Drive.

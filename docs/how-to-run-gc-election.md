@@ -353,9 +353,10 @@ Once the nominee list is final:
    link, and notify the governance mailing list.
 6. Offboard departing GC members and onboard new members:
    * File a GC Member Onboarding issue for each new member.
-   * Update `community-members.md` and CODEOWNERS.
-   * Revoke system access for departing members.
-   * Invite departing members to `#opentelemetry-gc-alum`.
+   * File a GC Member Offboarding issue for each departing member.
+   * Update `people.yml` (then run `make generate`) and CODEOWNERS in one PR
+     for all changes. Set the `gcLiaison` of SIGs covered by departing
+     members to `tbd` until new liaisons are assigned.
 
 ## Troubleshooting
 
