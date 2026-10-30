@@ -119,14 +119,20 @@ Control Center (see
 
 The existing member must:
 
-- [ ] Give the new member access to manage the OpenTelemetry project in the
-  [LFX Project Control Center](https://projectadmin.lfx.linuxfoundation.org).
+- [ ] Open a ticket with [LF support](https://support.linuxfoundation.org/)
+  requesting the `Community Program Manager` role on the OpenTelemetry project
+  in the [LFX Project Control Center](https://projectadmin.lfx.linuxfoundation.org)
+  for the new member's LFID. Roles cannot be granted self-serve (see
+  [user permissions](https://docs.linuxfoundation.org/lfx/project-control-center/v2-latest-version/operations/user-permissions)).
+  Include any other pending additions or removals so that a single ticket keeps
+  the list in sync with the current GC.
 
 The new member must:
 
 - [ ] Validate they can log in to the
   [LFX Project Control Center](https://projectadmin.lfx.linuxfoundation.org)
-  and manage OpenTelemetry meetings under Collaboration > Meetings.
+  and manage OpenTelemetry meetings under Collaboration > Meetings, and that
+  they are listed under Operations > User permissions.
 
 ### GitHub
 Most of the management, enablement, support and documentation work done by GC
