@@ -541,7 +541,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 ### Chinese (zh-CN)
 
 - **Slack channel:** [#otel-localization-zhcn](https://cloud-native.slack.com/archives/C08SSK25Y7L)
-- **Technical Committee sponsors:** [Reiley Yang](https://github.com/reyang)
+- **Technical Committee sponsors:** [Reiley Yang](https://github.com/reyang) (guiding)
 - **Spec sponsors:** [Severin Neumann](https://github.com/svrnm)
 - **Governance Committee liaison:** [Severin Neumann](https://github.com/svrnm)
 
