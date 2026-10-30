@@ -1138,18 +1138,25 @@ def _build_issue_body(changes):
 def _create_followup_issue(repo, changes):
     """Create a follow-up issue when the README is already up to date.
 
-    If an open issue with the same title already exists, update its body instead.
-    Returns the issue URL.
+    If an open issue with the same title, created by the authenticated user,
+    already exists, update its body instead. Returns the issue URL.
     """
     body = _build_issue_body(changes)
     issues_url = f"{REST_API}/repos/{ORG}/{repo}/issues"
+    issue_owner = _get_fork_owner()
 
-    # Look for an existing open issue to update rather than creating a duplicate
-    url = f"{issues_url}?state=open&per_page=100"
+    # Look for an existing open issue to update rather than creating a duplicate.
+    # Only consider issues created by the authenticated user: anyone can open an
+    # issue with this title, and the script must not write its body into it.
+    url = f"{issues_url}?state=open&creator={issue_owner}&per_page=100"
     while url:
         resp = request_with_retry("GET", url)
         for issue in read_json(resp):
-            if issue.get("title") == ISSUE_TITLE and not issue.get("pull_request"):
+            if (
+                issue.get("title") == ISSUE_TITLE
+                and not issue.get("pull_request")
+                and (issue.get("user") or {}).get("login") == issue_owner
+            ):
                 issue_number = issue["number"]
                 request_with_retry("PATCH", f"{issues_url}/{issue_number}", data={"body": body})
                 return issue.get("html_url", "")
