@@ -713,7 +713,7 @@
       level: escalating
   resources:
   - meeting:
-      schedule: Wednesday at 08:00 EST
+      schedule: Wednesday at 07:30 UTC
       calendarInviteGroup: calendar-php
       gDocNotes: 1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI
   - slack:
@@ -721,6 +721,7 @@
       id: C01NFPCV44V
   - repository: open-telemetry/opentelemetry-php
   - repository: open-telemetry/opentelemetry-php-contrib
+  - repository: open-telemetry/opentelemetry-php-distro
   - repository: open-telemetry/opentelemetry-php-instrumentation
 - id: python-sdk
   sigCategory: implementation
