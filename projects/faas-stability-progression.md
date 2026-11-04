@@ -13,7 +13,7 @@ Due to the current developmental status of the faas conventions those convention
 
 ### Goals, objectives, and requirements
 
-The primary goal of this sub-project is to review the existing state of conventions/instrumentation and use that knowledge to build a strong base for stabilizing the conventions.
+The primary goal of this sub-project is to review the existing state of conventions/instrumentation and use that knowledge to build a strong base for stabilizing the conventions across the instrumentation.
 
 To ensure a more structured project, the delivery will be completed in stages
 
@@ -46,6 +46,7 @@ The cron & event driven (ie file changes) span invocations are classed as out of
 
 - Stabilized faas semantic conventions
 - Updated collector receivers & instrumentation
+- Stable lambda collector components
 
 ## Staffing / Help Wanted
 
