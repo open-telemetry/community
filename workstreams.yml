@@ -206,8 +206,8 @@
   people:
   - gcLiaison: trask
   - tcSponsor:
-      username: tbd
-      level: guiding
+      username: lmolkova
+      level: tbd
   resources:
   - meeting:
       schedule: Alternating between Thursday at 08:00 PT and Thursday at 05:30 UTC
@@ -278,8 +278,8 @@
   people:
   - gcLiaison: austinlparker
   - tcSponsor:
-      username: tbd
-      level: tbd
+      username: carlosalberto
+      level: escalating
   resources:
   - meeting:
       schedule: Every other Thursday at 8:00 PT
@@ -530,7 +530,7 @@
   people:
   - gcLiaison: austinlparker
   - tcSponsor:
-      username: tbd
+      username: jmacd
       level: escalating
   resources:
   - meeting:
@@ -799,6 +799,24 @@
       name: '#otel-swift'
       id: C01NCHR19SB
   - repository: open-telemetry/opentelemetry-swift
+- id: zig-sdk
+  sigCategory: implementation
+  name: 'Zig: SDK'
+  parent: none
+  people:
+  - gcLiaison: tbd
+  - tcSponsor:
+      username: jmacd
+      level: escalating
+  resources:
+  - meeting:
+      schedule: Wednesday at 07:00 PT
+      calendarInviteGroup: calendar-zig
+      gDocNotes: 1ls14-vZdXcR3o_3WiFYwAPGIwjPkRgMsaKsc2ReeWWo
+  - slack:
+      name: '#otel-zig'
+      id: C0B4RTXTBEV
+  - repository: open-telemetry/opentelemetry-zig
 - id: network
   sigCategory: implementation
   name: Network
@@ -1012,7 +1030,7 @@
   - specSponsor: svrnm
   - tcSponsor:
       username: tbd
-      level: tbd
+      level: best-effort
   resources:
   - slack:
       name: '#otel-localization-bn'
@@ -1026,7 +1044,7 @@
   - specSponsor: svrnm
   - tcSponsor:
       username: reyang
-      level: tbd
+      level: best-effort
   resources:
   - slack:
       name: '#otel-localization-zhcn'
@@ -1040,7 +1058,7 @@
   - specSponsor: svrnm
   - tcSponsor:
       username: tbd
-      level: tbd
+      level: best-effort
   resources:
   - slack:
       name: '#otel-localization-fr'
@@ -1054,7 +1072,7 @@
   - specSponsor: svrnm
   - tcSponsor:
       username: tbd
-      level: tbd
+      level: best-effort
   resources:
   - meeting:
       schedule: Every third Wednesday at 01:00pm JST
@@ -1072,7 +1090,7 @@
   - specSponsor: svrnm
   - tcSponsor:
       username: pellared
-      level: guiding
+      level: best-effort
   resources:
   - slack:
       name: '#otel-localization-pl'
@@ -1086,7 +1104,7 @@
   - specSponsor: jpkrohling
   - tcSponsor:
       username: tbd
-      level: tbd
+      level: best-effort
   resources:
   - slack:
       name: '#otel-localization-ptbr'
@@ -1100,7 +1118,7 @@
   - specSponsor: svrnm
   - tcSponsor:
       username: tbd
-      level: tbd
+      level: best-effort
   resources:
   - meeting:
       schedule: Monthly on a different day, at a different time (see Slack channel)
@@ -1117,7 +1135,7 @@
   - specSponsor: svrnm
   - tcSponsor:
       username: tbd
-      level: tbd
+      level: best-effort
   resources:
   - meeting:
       schedule: Every second Friday at 8:30am UTC-3
@@ -1135,7 +1153,7 @@
   - specSponsor: svrnm
   - tcSponsor:
       username: tbd
-      level: tbd
+      level: best-effort
   resources:
   - slack:
       name: '#otel-localization-uk'
