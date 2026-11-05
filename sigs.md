@@ -364,11 +364,11 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### PHP: SDK
 
-- **Meeting time:** Wednesday at 08:00 EST
+- **Meeting time:** Wednesday at 07:30 UTC
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI)
 - **Meeting invites group:** [calendar-php](https://groups.google.com/a/opentelemetry.io/g/calendar-php)
 - **Slack channel:** [#otel-php](https://cloud-native.slack.com/archives/C01NFPCV44V)
-- **Repositories:** [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opentelemetry-php), [open-telemetry/opentelemetry-php-contrib](https://github.com/open-telemetry/opentelemetry-php-contrib), [open-telemetry/opentelemetry-php-instrumentation](https://github.com/open-telemetry/opentelemetry-php-instrumentation)
+- **Repositories:** [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opentelemetry-php), [open-telemetry/opentelemetry-php-contrib](https://github.com/open-telemetry/opentelemetry-php-contrib), [open-telemetry/opentelemetry-php-distro](https://github.com/open-telemetry/opentelemetry-php-distro), [open-telemetry/opentelemetry-php-instrumentation](https://github.com/open-telemetry/opentelemetry-php-instrumentation)
 - **Technical Committee sponsors:** [Jack Berg](https://github.com/jack-berg) (escalating)
 - **Governance Committee liaison:** [Severin Neumann](https://github.com/svrnm)
 
