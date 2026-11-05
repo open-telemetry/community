@@ -20,12 +20,11 @@ WORKSTREAMS_FILE = "workstreams.yml"
 METADATA_FILE = "people.yml"
 LEDGER_FILE = "sig-sponsorship-ledger.md"
 
-LEVELS = ["leading", "guiding", "escalating", "best-effort", "tbd"]
+LEVELS = ["leading", "guiding", "escalating", "tbd"]
 LEVEL_LABEL = {
     "leading": "Leading",
     "guiding": "Guiding",
     "escalating": "Escalating",
-    "best-effort": "Best-effort",
     "tbd": "No level set",
 }
 

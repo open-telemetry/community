@@ -88,8 +88,6 @@ items:
               # Active SIG leadership; drives charter completion.
               # Fulfils guiding and escalating obligations. Max 2 per TC member.
               - leading
-              # Best-effort TC contact
-              - best-effort
               # Level required but not yet determined.
               - tbd
       # Trusted collaborator with approval rights on the spec repository.

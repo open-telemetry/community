@@ -20,18 +20,18 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 
 ## TC sponsor load
 
-| TC member | Leading | Guiding | Escalating | Best-effort | No level set | Total |
-| --- | --- | --- | --- | --- | --- | --- |
-| [Reiley Yang](https://github.com/reyang) | 1 | 0 | 7 | 1 | 0 | 9 |
-| [David Ashpole](https://github.com/dashpole) | 3 | 1 | 4 | 0 | 0 | 8 |
-| [Liudmila Molkova](https://github.com/lmolkova) | 3 | 1 | 3 | 0 | 1 | 8 |
-| [Carlos Alberto Cortez](https://github.com/carlosalberto) | 0 | 1 | 6 | 0 | 0 | 7 |
-| [Jack Berg](https://github.com/jack-berg) | 1 | 1 | 4 | 0 | 0 | 6 |
-| [Robert Pająk](https://github.com/pellared) | 0 | 4 | 1 | 1 | 0 | 6 |
-| [Joshua MacDonald](https://github.com/jmacd) | 1 | 2 | 2 | 0 | 0 | 5 |
-| [Tigran Najaryan](https://github.com/tigrannajaryan) | 1 | 2 | 1 | 0 | 0 | 4 |
-| [Alex Boten](https://github.com/codeboten) | 1 | 0 | 2 | 0 | 0 | 3 |
-| [Armin Ruech](https://github.com/arminru) | 1 | 0 | 1 | 0 | 0 | 2 |
+| TC member | Leading | Guiding | Escalating | No level set | Total |
+| --- | --- | --- | --- | --- | --- |
+| [Reiley Yang](https://github.com/reyang) | 1 | 0 | 7 | 1 | 9 |
+| [David Ashpole](https://github.com/dashpole) | 3 | 1 | 4 | 0 | 8 |
+| [Liudmila Molkova](https://github.com/lmolkova) | 3 | 1 | 3 | 1 | 8 |
+| [Carlos Alberto Cortez](https://github.com/carlosalberto) | 0 | 1 | 6 | 0 | 7 |
+| [Jack Berg](https://github.com/jack-berg) | 1 | 1 | 4 | 0 | 6 |
+| [Robert Pająk](https://github.com/pellared) | 0 | 4 | 1 | 1 | 6 |
+| [Joshua MacDonald](https://github.com/jmacd) | 1 | 2 | 2 | 0 | 5 |
+| [Tigran Najaryan](https://github.com/tigrannajaryan) | 1 | 2 | 1 | 0 | 4 |
+| [Alex Boten](https://github.com/codeboten) | 1 | 0 | 2 | 0 | 3 |
+| [Armin Ruech](https://github.com/arminru) | 1 | 0 | 1 | 0 | 2 |
 
 <details>
 <summary>SIGs sponsored, per TC member</summary>
