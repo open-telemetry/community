@@ -55,9 +55,6 @@ def discover_workflows(owner: str) -> list[tuple[str, str]]:
         raise RuntimeError(f"gh search code: {proc.stderr}")
     workflows = set()
     for result in json.loads(proc.stdout or "[]"):
-        repo = result.get("repository", {}).get("nameWithOwner")
-        path = result.get("path")
-        if not repo or not path:
         repository = result.get("repository", {})
         repo = repository.get("nameWithOwner")
         path = result.get("path")
