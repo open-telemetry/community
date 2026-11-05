@@ -24,7 +24,7 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 | --- | --- | --- | --- | --- | --- |
 | [Reiley Yang](https://github.com/reyang) | 1 | 0 | 7 | 1 | 9 |
 | [David Ashpole](https://github.com/dashpole) | 3 | 1 | 4 | 0 | 8 |
-| [Liudmila Molkova](https://github.com/lmolkova) | 3 | 1 | 3 | 1 | 8 |
+| [Liudmila Molkova](https://github.com/lmolkova) | 3 | 1 | 4 | 0 | 8 |
 | [Carlos Alberto Cortez](https://github.com/carlosalberto) | 0 | 1 | 6 | 0 | 7 |
 | [Jack Berg](https://github.com/jack-berg) | 1 | 1 | 4 | 0 | 6 |
 | [Robert Pająk](https://github.com/pellared) | 0 | 4 | 1 | 1 | 6 |
@@ -66,7 +66,7 @@ _Sponsorship of "Specification: General + OTel Maintainers Sync" is collective a
 | Semantic Conventions and Instrumentation: GenAI<br><sub>under Semantic Conventions: General</sub> | [Ted Young](https://github.com/tedsuo) | [Liudmila Molkova](https://github.com/lmolkova) (leading) |
 | Semantic Conventions: CI/CD<br><sub>under Semantic Conventions: General</sub> | [Marylia Gutierrez](https://github.com/maryliag) | [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating), [Robert Pająk](https://github.com/pellared) (guiding) |
 | Semantic Conventions: RPC<br><sub>under Semantic Conventions: General</sub> | [Trask Stalnaker](https://github.com/trask) | [Liudmila Molkova](https://github.com/lmolkova) (guiding) |
-| Semantic Conventions: Service and Deployment<br><sub>under Semantic Conventions: General</sub> | [Trask Stalnaker](https://github.com/trask) | [Liudmila Molkova](https://github.com/lmolkova) |
+| Semantic Conventions: Service and Deployment<br><sub>under Semantic Conventions: General</sub> | [Trask Stalnaker](https://github.com/trask) | [Liudmila Molkova](https://github.com/lmolkova) (escalating) |
 | Specification: Entities<br><sub>under Specification: General + OTel Maintainers Sync</sub> | [Severin Neumann](https://github.com/svrnm) | [Tigran Najaryan](https://github.com/tigrannajaryan) (guiding) |
 | OpAMP | [Ted Young](https://github.com/tedsuo) | [Tigran Najaryan](https://github.com/tigrannajaryan) (leading) |
 | Prometheus Interoperability | [Pablo Baeyens](https://github.com/mx-psi) | [David Ashpole](https://github.com/dashpole) (leading) |
@@ -119,12 +119,12 @@ _Sponsorship of "Specification: General + OTel Maintainers Sync" is collective a
 | Security | [Trask Stalnaker](https://github.com/trask) | [Reiley Yang](https://github.com/reyang) (leading) |
 | Contributor Experience | [Marylia Gutierrez](https://github.com/maryliag) | [Liudmila Molkova](https://github.com/lmolkova) (escalating) |
 | Developer Experience | [Austin Parker](https://github.com/austinlparker) | [Liudmila Molkova](https://github.com/lmolkova) (escalating) |
-| Bengali (bn)<br><sub>under Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)</sub> | [Severin Neumann](https://github.com/svrnm) | tbd (best-effort) |
+| Bengali (bn)<br><sub>under Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)</sub> | [Severin Neumann](https://github.com/svrnm) | tbd |
 | Chinese (zh-CN)<br><sub>under Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)</sub> | [Severin Neumann](https://github.com/svrnm) | [Reiley Yang](https://github.com/reyang) (best-effort) |
-| French (fr-FR)<br><sub>under Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)</sub> | [Severin Neumann](https://github.com/svrnm) | tbd (best-effort) |
-| Japanese (ja-JA)<br><sub>under Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)</sub> | [Severin Neumann](https://github.com/svrnm) | tbd (best-effort) |
+| French (fr-FR)<br><sub>under Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)</sub> | [Severin Neumann](https://github.com/svrnm) | tbd |
+| Japanese (ja-JA)<br><sub>under Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)</sub> | [Severin Neumann](https://github.com/svrnm) | tbd |
 | Polish (pl-PL)<br><sub>under Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)</sub> | [Severin Neumann](https://github.com/svrnm) | [Robert Pająk](https://github.com/pellared) (best-effort) |
-| Portuguese (pt-BR)<br><sub>under Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)</sub> | [Severin Neumann](https://github.com/svrnm) | tbd (best-effort) |
-| Romanian (ro-RO)<br><sub>under Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)</sub> | [Severin Neumann](https://github.com/svrnm) | tbd (best-effort) |
-| Spanish (es-ES)<br><sub>under Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)</sub> | [Severin Neumann](https://github.com/svrnm) | tbd (best-effort) |
-| Ukrainian (uk-UA)<br><sub>under Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)</sub> | [Severin Neumann](https://github.com/svrnm) | tbd (best-effort) |
+| Portuguese (pt-BR)<br><sub>under Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)</sub> | [Severin Neumann](https://github.com/svrnm) | tbd |
+| Romanian (ro-RO)<br><sub>under Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)</sub> | [Severin Neumann](https://github.com/svrnm) | tbd |
+| Spanish (es-ES)<br><sub>under Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)</sub> | [Severin Neumann](https://github.com/svrnm) | tbd |
+| Ukrainian (uk-UA)<br><sub>under Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.)</sub> | [Severin Neumann](https://github.com/svrnm) | tbd |
