@@ -58,6 +58,10 @@ def discover_workflows(owner: str) -> list[tuple[str, str]]:
         repo = result.get("repository", {}).get("nameWithOwner")
         path = result.get("path")
         if not repo or not path:
+        repository = result.get("repository", {})
+        repo = repository.get("nameWithOwner")
+        path = result.get("path")
+        if not repo or not path or repository.get("isPrivate"):
             continue
         dirname, filename = os.path.split(path)
         if dirname != ".github/workflows" or not filename.endswith((".yml", ".yaml")):
