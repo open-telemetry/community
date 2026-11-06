@@ -2,7 +2,7 @@
 name: GC Member Onboarding
 about: Onboard a new member of the Governance Committee
 title: 'GC ONBOARDING: <GH_USERNAME>'
-labels: area/onboarding
+labels: area/gc-election
 assignees: ''
 ---
 
@@ -33,7 +33,7 @@ The new member must:
    2. [Concepts](https://opentelemetry.io/docs/concepts/)
    3. [Specification](https://opentelemetry.io/docs/specs/otel/)
 2. Have read and agreed to comply with the
-   [OpenTelemetry Governance Committee Charter](../../governance-charter.md)
+   [OpenTelemetry Governance Committee Charter](https://github.com/open-telemetry/community/blob/main/governance-charter.md)
    as per requirements to stand for election.
 3. Have an email address, Google account, and GitHub account and is willing
    to share those details with other GC members.
@@ -85,16 +85,26 @@ Interactions between the OpenTelemetry GC and CNCF are mostly driven via Service
 Desk tickets. Members can create tickets to discuss access to systems, licensing,
 funds, marketing, press, etc.
 
+Access to the Service Desk and to
+https://lists.cncf.io/g/cncf-opentelemetry-maintainers is granted
+automatically once the new member is in the `servicedesk` team of
+[open-telemetry/.project](https://github.com/open-telemetry/.project/blob/main/maintainers.yaml)
+(see the GitHub section below) and has linked their GitHub account to their
+Linux Foundation ID (LFID).
+
 The existing member must:
 
-- [ ] Send an email to cncf-maintainer-changes@cncf.io to request invitations to the Service Desk
-      and mailing lists for the new member
-      - https://lists.cncf.io/g/cncf-opentelemetry-governance (moderator)
-      - https://lists.cncf.io/g/cncf-opentelemetry-announce (moderator)
-      - https://lists.cncf.io/g/cncf-opentelemetry-maintainers (member)
+- [ ] Send an email to cncf-maintainer-changes@cncf.io to request that the new
+  member be added as `Moderator` to the following mailing lists:
+  - https://lists.cncf.io/g/cncf-opentelemetry-governance
+  - https://lists.cncf.io/g/cncf-opentelemetry-announce
 
 The new member must:
 
+- [ ] In their [LFX profile](https://openprofile.dev), connect their GitHub
+  account under Identities and set the email address they want CNCF to use as
+  their primary email. CNCF takes the name, primary email, and affiliation for
+  the Service Desk and the maintainer mailing list from this profile.
 - [ ] Accept invitation to CNCF Service Desk and create an account.
 - [ ] Validate they have access to the [CNCF Service Desk](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)
   (see more information about Service Desk in the [docs](https://github.com/cncf/servicedesk#readme)).
@@ -102,17 +112,27 @@ The new member must:
 - [ ] Accept invitations to mailing lists above, creating an account on https://lists.cncf.io
   if necessary, using their preferred email address.
 
-### Additional Mailing List
+### LFX Project Control Center
+OpenTelemetry meetings run on Zoom accounts managed through the LFX Project
+Control Center (see
+[how to create and configure meetings](https://github.com/open-telemetry/community/blob/main/docs/how-to-handle-public-calendar.md)).
 
 The existing member must:
 
-- [ ] Invite new member as `Moderator`, ensuring that they have the same
-  privileges as existing members, to the following mailing list:
-  - https://lists.cncf.io/g/cncf-otel-zoomadmins
+- [ ] Open a ticket with [LF support](https://support.linuxfoundation.org/)
+  requesting the `Community Program Manager` role on the OpenTelemetry project
+  in the [LFX Project Control Center](https://projectadmin.lfx.linuxfoundation.org)
+  for the new member's LFID. Roles cannot be granted self-serve (see
+  [user permissions](https://docs.linuxfoundation.org/lfx/project-control-center/v2-latest-version/operations/user-permissions)).
+  Include any other pending additions or removals so that a single ticket keeps
+  the list in sync with the current GC.
 
 The new member must:
-- [ ] Accept invitations to mailing list above, creating an account on https://lists.cncf.io
-  if necessary, using their preferred email address.
+
+- [ ] Validate they can log in to the
+  [LFX Project Control Center](https://projectadmin.lfx.linuxfoundation.org)
+  and manage OpenTelemetry meetings under Collaboration > Meetings, and that
+  they are listed under Operations > User permissions.
 
 ### GitHub
 Most of the management, enablement, support and documentation work done by GC
@@ -125,8 +145,16 @@ The existing member must:
 - [ ] Ask TC to add new member as `Member` to the [open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
   team.
 - [ ] Add new member as code owner in [open-telemetry/community](https://github.com/open-telemetry/community/blob/main/CODEOWNERS)
-- [ ] Add new member to the list of GC members in [open-telemetry/community/community-members.md](https://github.com/open-telemetry/community/blob/main/community-members.md).
-- [ ] Add new member in the `OpenTelemetry (Governance Committee)` section of [cncf/foundation/project-maintainers.csv](https://github.com/cncf/foundation/blob/main/project-maintainers.csv)
+- [ ] Add new member to the `governance-committee` team in [open-telemetry/community/people.yml](https://github.com/open-telemetry/community/blob/main/people.yml),
+  including their `termEnd`, and run `make generate` to update the list of GC
+  members in [community-members.md](https://github.com/open-telemetry/community/blob/main/community-members.md).
+- [ ] Merge the bot PRs that sync the `open-telemetry/governance-committee` team
+  to CNCF's maintainer records. They are created daily, first in
+  [open-telemetry/opentelemetry.io](https://github.com/open-telemetry/opentelemetry.io/pulls?q=is%3Apr+%22Update+community+members%22)
+  and then in [open-telemetry/.project](https://github.com/open-telemetry/.project/pulls).
+  Validate the new member is listed in the `servicedesk` team of
+  [maintainers.yaml](https://github.com/open-telemetry/.project/blob/main/maintainers.yaml),
+  which grants their Service Desk and maintainer mailing list access.
 
 ### Google Drive
 OpenTelemetry handles minutes and other ad-hoc documents in Google Drive.
@@ -144,8 +172,8 @@ The new member must:
 _Note: Confidential documents shared only between GC members are stored under the admin google account and never shared with private accounts. To see/edit them, you must login into the admin google account._
 
 ### Zapier
-Zapier is used to sync meeting recordings from Zoom to a publicly viewable
-Google spreadsheet (see https://github.com/open-telemetry/community/blob/main/docs/how-meeting-recordings-upload-works.md
+Zapier is used to automatically add repository maintainers to new security
+incidents (see [assets.md](https://github.com/open-telemetry/community/blob/main/assets.md#zapier-account)
 for more details).
 
 The new member must:
