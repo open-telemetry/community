@@ -41,7 +41,7 @@ This section outlines the initial set of resource-level attributes, their expect
 | Entity     | Attribute    | Allowed Values                                                            | OpenTelemetry Attribute       | Status                  |
 |------------|-----------------------------|------------------------------------------------------------|-------------------------------|-------------------------|
 | Service    | owner                       | Dynamic values (e.g., "team@example.com", "team-id")       | `service.owner`               | Proposed                |
-| Service    | criticality                 | "mission_critical", "high", "medium", "low"                | `service.criticality`         | Proposed                |
+| Service    | criticality                 | "critical", "high", "medium", "low"                        | `service.criticality`         | Stabilization in progress ([semantic-conventions#4054](https://github.com/open-telemetry/semantic-conventions/pull/4054)) |
 | Service    | deployment.environment.name | "production", "staging", "development", "testing"          | `deployment.environment.name` | Existing (to stabilize) |
 | Data       | sensitivity                 | "high", "medium", "low"                                    | `data.sensitivity`            | Proposed (new entity)   |
 
