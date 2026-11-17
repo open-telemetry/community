@@ -127,7 +127,7 @@
   name: 'Semantic Conventions: K8s'
   parent: semconv-general
   people:
-  - gcLiaison: tbd
+  - gcLiaison: danielgblanco
   - tcSponsor:
       username: dashpole
       level: leading
@@ -294,7 +294,7 @@
   name: Profiling
   parent: none
   people:
-  - gcLiaison: tbd
+  - gcLiaison: danielgblanco
   - tcSponsor:
       username: tigrannajaryan
       level: guiding
@@ -312,7 +312,7 @@
   name: OpenTelemetry on Mainframes
   parent: none
   people:
-  - gcLiaison: tbd
+  - gcLiaison: jsuereth
   - specSponsor: dyladan
   - tcSponsor:
       username: pellared
@@ -470,7 +470,7 @@
   name: '.NET: Automatic Instrumentation'
   parent: none
   people:
-  - gcLiaison: tbd
+  - gcLiaison: danielgblanco
   - tcSponsor:
       username: reyang
       level: escalating
@@ -491,7 +491,7 @@
   name: '.NET: SDK'
   parent: none
   people:
-  - gcLiaison: tbd
+  - gcLiaison: danielgblanco
   - tcSponsor:
       username: reyang
       level: escalating
@@ -610,7 +610,7 @@
   name: Injector
   parent: none
   people:
-  - gcLiaison: tbd
+  - gcLiaison: jpkrohling
   - tcSponsor:
       username: jack-berg
       level: guiding
@@ -671,7 +671,7 @@
   name: 'Kotlin: SDK'
   parent: none
   people:
-  - gcLiaison: tbd
+  - gcLiaison: jsuereth
   - tcSponsor:
       username: carlosalberto
       level: guiding
@@ -787,7 +787,7 @@
   name: 'Swift: SDK'
   parent: none
   people:
-  - gcLiaison: tbd
+  - gcLiaison: jsuereth
   - tcSponsor:
       username: reyang
       level: escalating
@@ -895,7 +895,7 @@
   name: 'Semantic Conventions: Tooling'
   parent: semconv-general
   people:
-  - gcLiaison: jpkrohling
+  - gcLiaison: jsuereth
   - tcSponsor:
       username: lmolkova
       level: leading
@@ -933,7 +933,7 @@
   name: End-User SIG
   parent: none
   people:
-  - gcLiaison: maryliag
+  - gcLiaison: danielgblanco
   - tcSponsor:
       username: jack-berg
       level: escalating
