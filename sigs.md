@@ -129,7 +129,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Prometheus Interoperability
 
-- **Meeting time:** Every other Friday at 08:00 PT
+- **Meeting time:** Fridays at 08:00 PT
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1OijO_NZyR7gb7AvUj_KxKbcbsN09XQmq_ExZeDlgEOg)
 - **Meeting invites group:** [calendar-prometheus](https://groups.google.com/a/opentelemetry.io/g/calendar-prometheus)
 - **Slack channel:** [#otel-prometheus](https://cloud-native.slack.com/archives/C01LSCJBXDZ)
