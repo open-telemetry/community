@@ -364,7 +364,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### PHP: SDK
 
-- **Meeting time:** Wednesday at 07:30 UTC
+- **Meeting time:** Wednesday at 07:45 UTC
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI)
 - **Meeting invites group:** [calendar-php](https://groups.google.com/a/opentelemetry.io/g/calendar-php)
 - **Slack channel:** [#otel-php](https://cloud-native.slack.com/archives/C01NFPCV44V)
