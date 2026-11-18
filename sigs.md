@@ -138,7 +138,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Functions as a Service (FAAS)
 
-- **Meeting time:** Every other Thursday at 8:00 PT
+- **Meeting time:** Every other Thursday at 6:00 PT
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/16dGljp7YY7jgzxydDKsin8DQCCx6HQqdQHorDxTx6SQ)
 - **Meeting invites group:** [calendar-faas](https://groups.google.com/a/opentelemetry.io/g/calendar-faas)
 - **Slack channel:** [#otel-faas](https://cloud-native.slack.com/archives/C04HVBETC9Z)
