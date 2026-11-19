@@ -104,7 +104,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting invites group:** [calendar-semconv](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)
 - **Slack channel:** [#otel-service-and-deployment-semconv-sig](https://cloud-native.slack.com/archives/C09HLNSSJSE)
 - **Roadmap projects:** [Semantic Conventions: Service and Deployment roadmap](https://github.com/orgs/open-telemetry/projects/168)
-- **Technical Committee sponsors:** tbd (guiding)
+- **Technical Committee sponsors:** [Liudmila Molkova](https://github.com/lmolkova) (escalating)
 - **Governance Committee liaison:** [Trask Stalnaker](https://github.com/trask)
 
 ### Specification: Entities
@@ -143,7 +143,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting invites group:** [calendar-faas](https://groups.google.com/a/opentelemetry.io/g/calendar-faas)
 - **Slack channel:** [#otel-faas](https://cloud-native.slack.com/archives/C04HVBETC9Z)
 - **Repositories:** [open-telemetry/opentelemetry-lambda](https://github.com/open-telemetry/opentelemetry-lambda)
-- **Technical Committee sponsors:** tbd
+- **Technical Committee sponsors:** [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating)
 - **Governance Committee liaison:** [Austin Parker](https://github.com/austinlparker)
 
 ### Profiling
@@ -277,7 +277,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting invites group:** [calendar-erlang](https://groups.google.com/a/opentelemetry.io/g/calendar-erlang)
 - **Slack channel:** [#otel-erlang-elixir](https://cloud-native.slack.com/archives/C01N75YMZCN)
 - **Repositories:** [open-telemetry/opentelemetry-erlang](https://github.com/open-telemetry/opentelemetry-erlang), [open-telemetry/opentelemetry-erlang-contrib](https://github.com/open-telemetry/opentelemetry-erlang-contrib)
-- **Technical Committee sponsors:** tbd (escalating)
+- **Technical Committee sponsors:** [Joshua MacDonald](https://github.com/jmacd) (escalating)
 - **Governance Committee liaison:** [Austin Parker](https://github.com/austinlparker)
 
 ### GoLang: SDK
@@ -413,6 +413,16 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Technical Committee sponsors:** [Reiley Yang](https://github.com/reyang) (escalating)
 - **Governance Committee liaison:** [Josh Suereth](https://github.com/jsuereth)
 
+### Zig: SDK
+
+- **Meeting time:** Wednesday at 07:00 PT
+- **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1ls14-vZdXcR3o_3WiFYwAPGIwjPkRgMsaKsc2ReeWWo)
+- **Meeting invites group:** [calendar-zig](https://groups.google.com/a/opentelemetry.io/g/calendar-zig)
+- **Slack channel:** [#otel-zig](https://cloud-native.slack.com/archives/C0B4RTXTBEV)
+- **Repositories:** [open-telemetry/opentelemetry-zig](https://github.com/open-telemetry/opentelemetry-zig)
+- **Technical Committee sponsors:** [Joshua MacDonald](https://github.com/jmacd) (escalating)
+- **Governance Committee liaison:** [Josh Suereth](https://github.com/jsuereth)
+
 ### Network
 
 - **Meeting time:** Monday at 07:00 PT
@@ -541,7 +551,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 ### Chinese (zh-CN)
 
 - **Slack channel:** [#otel-localization-zhcn](https://cloud-native.slack.com/archives/C08SSK25Y7L)
-- **Technical Committee sponsors:** [Reiley Yang](https://github.com/reyang)
+- **Technical Committee sponsors:** [Reiley Yang](https://github.com/reyang) (escalating)
 - **Spec sponsors:** [Severin Neumann](https://github.com/svrnm)
 - **Governance Committee liaison:** [Severin Neumann](https://github.com/svrnm)
 
@@ -565,7 +575,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 ### Polish (pl-PL)
 
 - **Slack channel:** [#otel-localization-pl](https://cloud-native.slack.com/archives/C0ALHN9V7PT)
-- **Technical Committee sponsors:** [Robert Pająk](https://github.com/pellared) (guiding)
+- **Technical Committee sponsors:** [Robert Pająk](https://github.com/pellared) (escalating)
 - **Spec sponsors:** [Severin Neumann](https://github.com/svrnm)
 - **Governance Committee liaison:** [Severin Neumann](https://github.com/svrnm)
 
