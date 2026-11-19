@@ -713,7 +713,7 @@
       level: escalating
   resources:
   - meeting:
-      schedule: Wednesday at 07:30 UTC
+      schedule: Wednesday at 07:45 UTC
       calendarInviteGroup: calendar-php
       gDocNotes: 1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI
   - slack:
