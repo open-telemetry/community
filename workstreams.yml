@@ -282,7 +282,7 @@
       level: tbd
   resources:
   - meeting:
-      schedule: Every other Thursday at 8:00 PT
+      schedule: Every other Thursday at 6:00 PT
       calendarInviteGroup: calendar-faas
       gDocNotes: 16dGljp7YY7jgzxydDKsin8DQCCx6HQqdQHorDxTx6SQ
   - slack:
