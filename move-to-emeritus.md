@@ -6,8 +6,8 @@ This document describes the automated process for identifying inactive community
 
 The [`move-to-emeritus` workflow](.github/workflows/move-to-emeritus.yml) runs monthly and checks whether members of each repo's Maintainer, Approver, and Triager teams have been active in the past **4 months**. For each repo where inactive members are found, the workflow either:
 
-- Opens a **pull request** to move the inactive members to the `Emeritus` section of the repo's README, or
-- Opens a **follow-up issue** if the README is already up to date but the members still need to be removed from GitHub teams, Slack channels, and package managers.
+- Opens a **pull request** to move the inactive members to the `Emeritus` section of the repo's README or CONTRIBUTING file, or
+- Opens a **follow-up issue** if the membership document is already up to date but the members still need to be removed from GitHub teams, Slack channels, and package managers.
 
 The workflow uses the `opentelemetrybot` account to create a fork, push the change, and open the cross-repo PR.
 
@@ -95,11 +95,11 @@ For some repos, teams whose name contains certain keywords are skipped:
 
 1. **Fetches all teams** in the `open-telemetry` org matching the role keywords (`maintainer`, `approver`, `triager`).
 2. **Checks activity** for every member of each team across all repos assigned to that team, using the role-appropriate criteria above.
-3. **For each repo with inactive members**, fetches the repo's README and attempts to:
+3. **For each repo with inactive members**, fetches the repo's README, falling back to CONTRIBUTING when it contains the active role list, and attempts to:
    - Remove the member from their current role section (Maintainers, Approvers, or Triagers).
    - Add them to the `Emeritus` section.
-4. **If the README was modified**, opens (or updates) a pull request from `opentelemetrybot`'s fork with the title `chore: Move inactive members to emeritus`.
-5. **If the README was already up to date** (the member is already in Emeritus), opens (or updates) a follow-up issue titled `chore: Remove inactive members from teams and channels` to remind maintainers to complete the off-boarding steps.
+4. **If the membership document was modified**, opens (or updates) a pull request from `opentelemetrybot`'s fork with the title `chore: Move inactive members to emeritus`.
+5. **If the membership document was already up to date** (the member is already in Emeritus), opens (or updates) a follow-up issue titled `chore: Remove inactive members from teams and channels` to remind maintainers to complete the off-boarding steps.
 
 ## How maintainers should address the PRs
 

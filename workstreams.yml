@@ -127,7 +127,7 @@
   name: 'Semantic Conventions: K8s'
   parent: semconv-general
   people:
-  - gcLiaison: tbd
+  - gcLiaison: danielgblanco
   - tcSponsor:
       username: dashpole
       level: leading
@@ -265,7 +265,7 @@
       level: leading
   resources:
   - meeting:
-      schedule: Every other Friday at 08:00 PT
+      schedule: Fridays at 08:00 PT
       calendarInviteGroup: calendar-prometheus
       gDocNotes: 1OijO_NZyR7gb7AvUj_KxKbcbsN09XQmq_ExZeDlgEOg
   - slack:
@@ -282,7 +282,7 @@
       level: escalating
   resources:
   - meeting:
-      schedule: Every other Thursday at 8:00 PT
+      schedule: Every other Thursday at 6:00 PT
       calendarInviteGroup: calendar-faas
       gDocNotes: 16dGljp7YY7jgzxydDKsin8DQCCx6HQqdQHorDxTx6SQ
   - slack:
@@ -294,7 +294,7 @@
   name: Profiling
   parent: none
   people:
-  - gcLiaison: tbd
+  - gcLiaison: danielgblanco
   - tcSponsor:
       username: tigrannajaryan
       level: guiding
@@ -312,7 +312,7 @@
   name: OpenTelemetry on Mainframes
   parent: none
   people:
-  - gcLiaison: tbd
+  - gcLiaison: jsuereth
   - specSponsor: dyladan
   - tcSponsor:
       username: pellared
@@ -470,7 +470,7 @@
   name: '.NET: Automatic Instrumentation'
   parent: none
   people:
-  - gcLiaison: tbd
+  - gcLiaison: danielgblanco
   - tcSponsor:
       username: reyang
       level: escalating
@@ -491,7 +491,7 @@
   name: '.NET: SDK'
   parent: none
   people:
-  - gcLiaison: tbd
+  - gcLiaison: danielgblanco
   - tcSponsor:
       username: reyang
       level: escalating
@@ -610,7 +610,7 @@
   name: Injector
   parent: none
   people:
-  - gcLiaison: tbd
+  - gcLiaison: jpkrohling
   - tcSponsor:
       username: jack-berg
       level: guiding
@@ -671,7 +671,7 @@
   name: 'Kotlin: SDK'
   parent: none
   people:
-  - gcLiaison: tbd
+  - gcLiaison: jsuereth
   - tcSponsor:
       username: carlosalberto
       level: guiding
@@ -713,7 +713,7 @@
       level: escalating
   resources:
   - meeting:
-      schedule: Wednesday at 08:00 EST
+      schedule: Wednesday at 07:45 UTC
       calendarInviteGroup: calendar-php
       gDocNotes: 1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI
   - slack:
@@ -721,6 +721,7 @@
       id: C01NFPCV44V
   - repository: open-telemetry/opentelemetry-php
   - repository: open-telemetry/opentelemetry-php-contrib
+  - repository: open-telemetry/opentelemetry-php-distro
   - repository: open-telemetry/opentelemetry-php-instrumentation
 - id: python-sdk
   sigCategory: implementation
@@ -786,7 +787,7 @@
   name: 'Swift: SDK'
   parent: none
   people:
-  - gcLiaison: tbd
+  - gcLiaison: jsuereth
   - tcSponsor:
       username: reyang
       level: escalating
@@ -804,7 +805,7 @@
   name: 'Zig: SDK'
   parent: none
   people:
-  - gcLiaison: tbd
+  - gcLiaison: jsuereth
   - tcSponsor:
       username: jmacd
       level: escalating
@@ -912,7 +913,7 @@
   name: 'Semantic Conventions: Tooling'
   parent: semconv-general
   people:
-  - gcLiaison: jpkrohling
+  - gcLiaison: jsuereth
   - tcSponsor:
       username: lmolkova
       level: leading
@@ -950,7 +951,7 @@
   name: End-User SIG
   parent: none
   people:
-  - gcLiaison: maryliag
+  - gcLiaison: danielgblanco
   - tcSponsor:
       username: jack-berg
       level: escalating
@@ -1044,7 +1045,7 @@
   - specSponsor: svrnm
   - tcSponsor:
       username: reyang
-      level: best-effort
+      level: escalating
   resources:
   - slack:
       name: '#otel-localization-zhcn'
@@ -1090,7 +1091,7 @@
   - specSponsor: svrnm
   - tcSponsor:
       username: pellared
-      level: best-effort
+      level: escalating
   resources:
   - slack:
       name: '#otel-localization-pl'

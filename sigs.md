@@ -64,7 +64,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-k8s-semconv-sig](https://cloud-native.slack.com/archives/C07Q1L0FGKX)
 - **Roadmap projects:** [Semantic Conventions: K8s roadmap](https://github.com/orgs/open-telemetry/projects/114)
 - **Technical Committee sponsors:** [David Ashpole](https://github.com/dashpole) (leading)
-- **Governance Committee liaison:** tbd
+- **Governance Committee liaison:** [Daniel Gomez Blanco](https://github.com/danielgblanco)
 
 ### Semantic Conventions and Instrumentation: GenAI
 
@@ -104,7 +104,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting invites group:** [calendar-semconv](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)
 - **Slack channel:** [#otel-service-and-deployment-semconv-sig](https://cloud-native.slack.com/archives/C09HLNSSJSE)
 - **Roadmap projects:** [Semantic Conventions: Service and Deployment roadmap](https://github.com/orgs/open-telemetry/projects/168)
-- **Technical Committee sponsors:** [Liudmila Molkova](https://github.com/lmolkova)
+- **Technical Committee sponsors:** [Liudmila Molkova](https://github.com/lmolkova) (escalating)
 - **Governance Committee liaison:** [Trask Stalnaker](https://github.com/trask)
 
 ### Specification: Entities
@@ -129,7 +129,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Prometheus Interoperability
 
-- **Meeting time:** Every other Friday at 08:00 PT
+- **Meeting time:** Fridays at 08:00 PT
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1OijO_NZyR7gb7AvUj_KxKbcbsN09XQmq_ExZeDlgEOg)
 - **Meeting invites group:** [calendar-prometheus](https://groups.google.com/a/opentelemetry.io/g/calendar-prometheus)
 - **Slack channel:** [#otel-prometheus](https://cloud-native.slack.com/archives/C01LSCJBXDZ)
@@ -138,12 +138,12 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Functions as a Service (FAAS)
 
-- **Meeting time:** Every other Thursday at 8:00 PT
+- **Meeting time:** Every other Thursday at 6:00 PT
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/16dGljp7YY7jgzxydDKsin8DQCCx6HQqdQHorDxTx6SQ)
 - **Meeting invites group:** [calendar-faas](https://groups.google.com/a/opentelemetry.io/g/calendar-faas)
 - **Slack channel:** [#otel-faas](https://cloud-native.slack.com/archives/C04HVBETC9Z)
 - **Repositories:** [open-telemetry/opentelemetry-lambda](https://github.com/open-telemetry/opentelemetry-lambda)
-- **Technical Committee sponsors:** [Carlos Alberto Cortez](https://github.com/carlosalberto)
+- **Technical Committee sponsors:** [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating)
 - **Governance Committee liaison:** [Austin Parker](https://github.com/austinlparker)
 
 ### Profiling
@@ -154,7 +154,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-profiles](https://cloud-native.slack.com/archives/C03J794L0BV)
 - **Repositories:** [open-telemetry/opentelemetry-ebpf-profiler](https://github.com/open-telemetry/opentelemetry-ebpf-profiler)
 - **Technical Committee sponsors:** [Tigran Najaryan](https://github.com/tigrannajaryan) (guiding)
-- **Governance Committee liaison:** tbd
+- **Governance Committee liaison:** [Daniel Gomez Blanco](https://github.com/danielgblanco)
 
 ### OpenTelemetry on Mainframes
 
@@ -164,7 +164,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-mainframes](https://cloud-native.slack.com/archives/C05PXDFTCPJ)
 - **Technical Committee sponsors:** [Robert Pająk](https://github.com/pellared) (escalating)
 - **Spec sponsors:** [Daniel Dyla](https://github.com/dyladan)
-- **Governance Committee liaison:** tbd
+- **Governance Committee liaison:** [Josh Suereth](https://github.com/jsuereth)
 
 ### Client Instrumentation
 
@@ -248,7 +248,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-dotnet-auto-instr](https://cloud-native.slack.com/archives/C01NR1YLSE7)
 - **Repositories:** [open-telemetry/opentelemetry-dotnet-instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation)
 - **Technical Committee sponsors:** [Reiley Yang](https://github.com/reyang) (escalating), [Robert Pająk](https://github.com/pellared) (guiding)
-- **Governance Committee liaison:** tbd
+- **Governance Committee liaison:** [Daniel Gomez Blanco](https://github.com/danielgblanco)
 
 ### .NET: SDK
 
@@ -258,7 +258,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-dotnet](https://cloud-native.slack.com/archives/C01N3BC2W7Q)
 - **Repositories:** [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet), [open-telemetry/opentelemetry-dotnet-contrib](https://github.com/open-telemetry/opentelemetry-dotnet-contrib)
 - **Technical Committee sponsors:** [Reiley Yang](https://github.com/reyang) (escalating)
-- **Governance Committee liaison:** tbd
+- **Governance Committee liaison:** [Daniel Gomez Blanco](https://github.com/danielgblanco)
 
 ### Dart and Flutter: SDK
 
@@ -319,7 +319,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-injector](https://cloud-native.slack.com/archives/C09025GKPAL)
 - **Repositories:** [open-telemetry/opentelemetry-injector](https://github.com/open-telemetry/opentelemetry-injector)
 - **Technical Committee sponsors:** [Jack Berg](https://github.com/jack-berg) (guiding)
-- **Governance Committee liaison:** tbd
+- **Governance Committee liaison:** [Juraci Paixão Kröhling](https://github.com/jpkrohling)
 
 ### Java: SDK + Instrumentation
 
@@ -350,7 +350,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-kotlin](https://cloud-native.slack.com/archives/C08NRCD4R4G)
 - **Repositories:** [open-telemetry/opentelemetry-kotlin](https://github.com/open-telemetry/opentelemetry-kotlin)
 - **Technical Committee sponsors:** [Carlos Alberto Cortez](https://github.com/carlosalberto) (guiding)
-- **Governance Committee liaison:** tbd
+- **Governance Committee liaison:** [Josh Suereth](https://github.com/jsuereth)
 
 ### Packaging
 
@@ -364,11 +364,11 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### PHP: SDK
 
-- **Meeting time:** Wednesday at 08:00 EST
+- **Meeting time:** Wednesday at 07:45 UTC
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1WLDZGLY24rk5fRudjdQAcx_u81ZQWCF3zxiNT-sz7DI)
 - **Meeting invites group:** [calendar-php](https://groups.google.com/a/opentelemetry.io/g/calendar-php)
 - **Slack channel:** [#otel-php](https://cloud-native.slack.com/archives/C01NFPCV44V)
-- **Repositories:** [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opentelemetry-php), [open-telemetry/opentelemetry-php-contrib](https://github.com/open-telemetry/opentelemetry-php-contrib), [open-telemetry/opentelemetry-php-instrumentation](https://github.com/open-telemetry/opentelemetry-php-instrumentation)
+- **Repositories:** [open-telemetry/opentelemetry-php](https://github.com/open-telemetry/opentelemetry-php), [open-telemetry/opentelemetry-php-contrib](https://github.com/open-telemetry/opentelemetry-php-contrib), [open-telemetry/opentelemetry-php-distro](https://github.com/open-telemetry/opentelemetry-php-distro), [open-telemetry/opentelemetry-php-instrumentation](https://github.com/open-telemetry/opentelemetry-php-instrumentation)
 - **Technical Committee sponsors:** [Jack Berg](https://github.com/jack-berg) (escalating)
 - **Governance Committee liaison:** [Severin Neumann](https://github.com/svrnm)
 
@@ -411,19 +411,17 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-swift](https://cloud-native.slack.com/archives/C01NCHR19SB)
 - **Repositories:** [open-telemetry/opentelemetry-swift](https://github.com/open-telemetry/opentelemetry-swift)
 - **Technical Committee sponsors:** [Reiley Yang](https://github.com/reyang) (escalating)
-- **Governance Committee liaison:** tbd
-
+- **Governance Committee liaison:** [Josh Suereth](https://github.com/jsuereth)
 
 ### Zig: SDK
 
-- **Meeting time:** Wednesdays 07:00 PT
+- **Meeting time:** Wednesday at 07:00 PT
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1ls14-vZdXcR3o_3WiFYwAPGIwjPkRgMsaKsc2ReeWWo)
-- **Meeting invites group:** [calendar-go](https://groups.google.com/a/opentelemetry.io/g/calendar-zig)
+- **Meeting invites group:** [calendar-zig](https://groups.google.com/a/opentelemetry.io/g/calendar-zig)
 - **Slack channel:** [#otel-zig](https://cloud-native.slack.com/archives/C0B4RTXTBEV)
 - **Repositories:** [open-telemetry/opentelemetry-zig](https://github.com/open-telemetry/opentelemetry-zig)
 - **Technical Committee sponsors:** [Joshua MacDonald](https://github.com/jmacd) (escalating)
-- **Governance Committee liaison:** [Alolita Sharma](https://github.com/alolita)
-
+- **Governance Committee liaison:** [Josh Suereth](https://github.com/jsuereth)
 
 ### Network
 
@@ -483,7 +481,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Slack channel:** [#otel-weaver](https://cloud-native.slack.com/archives/C0697EXNTL3)
 - **Repositories:** [open-telemetry/weaver](https://github.com/open-telemetry/weaver)
 - **Technical Committee sponsors:** [Liudmila Molkova](https://github.com/lmolkova) (leading)
-- **Governance Committee liaison:** [Juraci Paixão Kröhling](https://github.com/jpkrohling)
+- **Governance Committee liaison:** [Josh Suereth](https://github.com/jsuereth)
 
 ## Cross-Cutting SIGs
 
@@ -507,7 +505,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Repositories:** [open-telemetry/sig-end-user](https://github.com/open-telemetry/sig-end-user)
 - **Roadmap projects:** [End-User SIG roadmap](https://github.com/orgs/open-telemetry/projects/181)
 - **Technical Committee sponsors:** [Jack Berg](https://github.com/jack-berg) (escalating)
-- **Governance Committee liaison:** [Marylia Gutierrez](https://github.com/maryliag)
+- **Governance Committee liaison:** [Daniel Gomez Blanco](https://github.com/danielgblanco)
 
 ### Security
 
@@ -546,21 +544,21 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 ### Bengali (bn)
 
 - **Slack channel:** [#otel-localization-bn](https://cloud-native.slack.com/archives/C08TBCSAY1F)
-- **Technical Committee sponsors:** best-effort
+- **Technical Committee sponsors:** tbd
 - **Spec sponsors:** [Severin Neumann](https://github.com/svrnm)
 - **Governance Committee liaison:** [Severin Neumann](https://github.com/svrnm)
 
 ### Chinese (zh-CN)
 
 - **Slack channel:** [#otel-localization-zhcn](https://cloud-native.slack.com/archives/C08SSK25Y7L)
-- **Technical Committee sponsors:** [Reiley Yang](https://github.com/reyang) (best-effort)
+- **Technical Committee sponsors:** [Reiley Yang](https://github.com/reyang) (escalating)
 - **Spec sponsors:** [Severin Neumann](https://github.com/svrnm)
 - **Governance Committee liaison:** [Severin Neumann](https://github.com/svrnm)
 
 ### French (fr-FR)
 
 - **Slack channel:** [#otel-localization-fr](https://cloud-native.slack.com/archives/C07THD60YLF)
-- **Technical Committee sponsors:** best-effort
+- **Technical Committee sponsors:** tbd
 - **Spec sponsors:** [Severin Neumann](https://github.com/svrnm)
 - **Governance Committee liaison:** [Severin Neumann](https://github.com/svrnm)
 
@@ -570,21 +568,21 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1venl18Obvp3vD-lR_9Hj9k826s_weF0vzWe-TdaDkuY)
 - **Meeting invites group:** [calendar-localization-ja](https://groups.google.com/a/opentelemetry.io/g/calendar-localization-ja)
 - **Slack channel:** [#otel-localization-ja](https://cloud-native.slack.com/archives/C08SGPBN44E)
-- **Technical Committee sponsors:** best-effort
+- **Technical Committee sponsors:** tbd
 - **Spec sponsors:** [Severin Neumann](https://github.com/svrnm)
 - **Governance Committee liaison:** [Severin Neumann](https://github.com/svrnm)
 
 ### Polish (pl-PL)
 
 - **Slack channel:** [#otel-localization-pl](https://cloud-native.slack.com/archives/C0ALHN9V7PT)
-- **Technical Committee sponsors:** [Robert Pająk](https://github.com/pellared) (best-effort)
+- **Technical Committee sponsors:** [Robert Pająk](https://github.com/pellared) (escalating)
 - **Spec sponsors:** [Severin Neumann](https://github.com/svrnm)
 - **Governance Committee liaison:** [Severin Neumann](https://github.com/svrnm)
 
 ### Portuguese (pt-BR)
 
 - **Slack channel:** [#otel-localization-ptbr](https://cloud-native.slack.com/archives/C076LET8YSK)
-- **Technical Committee sponsors:** best-effort
+- **Technical Committee sponsors:** tbd
 - **Spec sponsors:** [Juraci Paixão Kröhling](https://github.com/jpkrohling)
 - **Governance Committee liaison:** [Severin Neumann](https://github.com/svrnm)
 
@@ -593,7 +591,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting time:** Monthly on a different day, at a different time (see Slack channel)
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1bvLFPDKMs2fw7750dKLvgL3BWRy5jLWJrivApOThDVg)
 - **Slack channel:** [#otel-localization-ro](https://cloud-native.slack.com/archives/C09E9KNNLP4)
-- **Technical Committee sponsors:** best-effort
+- **Technical Committee sponsors:** tbd
 - **Spec sponsors:** [Severin Neumann](https://github.com/svrnm)
 - **Governance Committee liaison:** [Severin Neumann](https://github.com/svrnm)
 
@@ -603,13 +601,13 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1LAhaPQfZ9IBjXZ1Y3misVV0Gp8Y8CVvoOVChV89Q0s0)
 - **Meeting invites group:** [calendar-localization-es](https://groups.google.com/a/opentelemetry.io/g/calendar-localization-es)
 - **Slack channel:** [#otel-localization-es](https://cloud-native.slack.com/archives/C07PVQVCHA6)
-- **Technical Committee sponsors:** best-effort
+- **Technical Committee sponsors:** tbd
 - **Spec sponsors:** [Severin Neumann](https://github.com/svrnm)
 - **Governance Committee liaison:** [Severin Neumann](https://github.com/svrnm)
 
 ### Ukrainian (uk-UA)
 
 - **Slack channel:** [#otel-localization-uk](https://cloud-native.slack.com/archives/C097ZNPM3LK)
-- **Technical Committee sponsors:** best-effort
+- **Technical Committee sponsors:** tbd
 - **Spec sponsors:** [Severin Neumann](https://github.com/svrnm)
 - **Governance Committee liaison:** [Severin Neumann](https://github.com/svrnm)
