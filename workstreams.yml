@@ -568,24 +568,6 @@
   - repository: open-telemetry/opentelemetry-go-vanityurls
   - repository: open-telemetry/opentelemetry-proto-go
   - repository: open-telemetry/govanityurls
-- id: go-auto-instr
-  sigCategory: implementation
-  name: 'GoLang: Automatic Instrumentation'
-  parent: none
-  people:
-  - gcLiaison: jpkrohling
-  - tcSponsor:
-      username: dashpole
-      level: escalating
-  resources:
-  - meeting:
-      schedule: Every other Tuesday at 09:30 PT
-      calendarInviteGroup: calendar-go
-      gDocNotes: 1P6am_r_cxCX1HcpDQlznrTrTOvwN2whshL0f58lXSWI
-  - slack:
-      name: '#otel-go-instrumentation'
-      id: C03S01YSAS0
-  - repository: open-telemetry/opentelemetry-go-instrumentation
 - id: go-compile-instr
   sigCategory: implementation
   name: 'GoLang: Compile-Time Instrumentation'
