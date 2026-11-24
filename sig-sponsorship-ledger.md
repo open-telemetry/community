@@ -4,7 +4,7 @@
 
 Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical Committee (TC) sponsor(s), followed by how many SIGs each GC and TC member is currently responsible for. For full per-SIG details (meetings, Slack, repos), see [sigs.md](./sigs.md).
 
-**60 SIGs** · **9 GC members** with at least one liaison assignment · **10 TC members** with at least one sponsor assignment · **1 SIG** missing a GC liaison · **10 SIGs** missing a TC sponsor
+**59 SIGs** · **9 GC members** with at least one liaison assignment · **10 TC members** with at least one sponsor assignment · **1 SIG** missing a GC liaison · **10 SIGs** missing a TC sponsor
 
 ## GC liaison load
 
@@ -15,8 +15,8 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 | [Trask Stalnaker](https://github.com/trask) | 7 | Specification: Logs, Semantic Conventions: General, Semantic Conventions: RPC, Semantic Conventions: Service and Deployment, Arrow, Java: SDK + Instrumentation, Security |
 | [Marylia Gutierrez](https://github.com/maryliag) | 6 | Semantic Conventions: CI/CD, GoLang: SDK, JavaScript: SDK, Python: SDK, Community Demo Application, Contributor Experience |
 | [Daniel Gomez Blanco](https://github.com/danielgblanco) | 5 | Semantic Conventions: K8s, Profiling, .NET: Automatic Instrumentation, .NET: SDK, End-User SIG |
-| [Juraci Paixão Kröhling](https://github.com/jpkrohling) | 5 | Specification: Sampling, GoLang: Automatic Instrumentation, GoLang: Compile-Time Instrumentation, Injector, Kubernetes Operator |
 | [Pablo Baeyens](https://github.com/mx-psi) | 5 | Semantic Conventions: System Metrics, Prometheus Interoperability, Policies, Collector, Kubernetes Helm Charts |
+| [Juraci Paixão Kröhling](https://github.com/jpkrohling) | 4 | Specification: Sampling, GoLang: Compile-Time Instrumentation, Injector, Kubernetes Operator |
 | [Josh Suereth](https://github.com/jsuereth) | 4 | OpenTelemetry on Mainframes, Kotlin: SDK, Swift: SDK, Semantic Conventions: Tooling |
 | [Austin Parker](https://github.com/austinlparker) | 3 | Functions as a Service (FAAS), Erlang/Elixir: SDK, Developer Experience |
 
@@ -25,7 +25,7 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 | TC member | Leading | Guiding | Escalating | No level set | Total |
 | --- | --- | --- | --- | --- | --- |
 | [Reiley Yang](https://github.com/reyang) | 1 | 0 | 7 | 1 | 9 |
-| [David Ashpole](https://github.com/dashpole) | 3 | 1 | 4 | 0 | 8 |
+| [David Ashpole](https://github.com/dashpole) | 3 | 1 | 3 | 0 | 7 |
 | [Liudmila Molkova](https://github.com/lmolkova) | 3 | 1 | 3 | 0 | 7 |
 | [Carlos Alberto Cortez](https://github.com/carlosalberto) | 0 | 1 | 5 | 0 | 6 |
 | [Jack Berg](https://github.com/jack-berg) | 1 | 1 | 4 | 0 | 6 |
@@ -39,7 +39,7 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 <summary>SIGs sponsored, per TC member</summary>
 
 - **[Reiley Yang](https://github.com/reyang)** (9 SIGs): .NET: Automatic Instrumentation, .NET: SDK, C++: SDK, Chinese (zh-CN), Community Demo Application, Python: SDK, Rust: SDK, Security, Swift: SDK
-- **[David Ashpole](https://github.com/dashpole)** (8 SIGs): GoLang: Automatic Instrumentation, GoLang: Compile-Time Instrumentation, GoLang: SDK, Kubernetes Operator, Policies, Prometheus Interoperability, Semantic Conventions: K8s, eBPF Instrumentation
+- **[David Ashpole](https://github.com/dashpole)** (7 SIGs): GoLang: Compile-Time Instrumentation, GoLang: SDK, Kubernetes Operator, Policies, Prometheus Interoperability, Semantic Conventions: K8s, eBPF Instrumentation
 - **[Liudmila Molkova](https://github.com/lmolkova)** (7 SIGs): Contributor Experience, Developer Experience, Network, Semantic Conventions and Instrumentation: GenAI, Semantic Conventions: General, Semantic Conventions: RPC, Semantic Conventions: Tooling
 - **[Carlos Alberto Cortez](https://github.com/carlosalberto)** (6 SIGs): Browser, Client Instrumentation, Dart and Flutter: SDK, JavaScript: SDK, Kotlin: SDK, Semantic Conventions: CI/CD
 - **[Jack Berg](https://github.com/jack-berg)** (6 SIGs): Android: SDK + Automatic Instrumentation, Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.), End-User SIG, Injector, Java: SDK + Instrumentation, PHP: SDK
@@ -78,7 +78,7 @@ _Sponsorship of "Specification: General + OTel Maintainers Sync" is collective a
 | Client Instrumentation | [Ted Young](https://github.com/tedsuo) | [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating) |
 | Policies | [Pablo Baeyens](https://github.com/mx-psi) | [David Ashpole](https://github.com/dashpole) (guiding) |
 
-### Implementation (28)
+### Implementation (27)
 
 | SIG | GC liaison | TC sponsor(s) |
 | --- | --- | --- |
@@ -92,7 +92,6 @@ _Sponsorship of "Specification: General + OTel Maintainers Sync" is collective a
 | Dart and Flutter: SDK | [Severin Neumann](https://github.com/svrnm) | [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating) |
 | Erlang/Elixir: SDK | [Austin Parker](https://github.com/austinlparker) | tbd (escalating) |
 | GoLang: SDK | [Marylia Gutierrez](https://github.com/maryliag) | [David Ashpole](https://github.com/dashpole) (leading), [Robert Pająk](https://github.com/pellared) (guiding) |
-| GoLang: Automatic Instrumentation | [Juraci Paixão Kröhling](https://github.com/jpkrohling) | [David Ashpole](https://github.com/dashpole) (escalating) |
 | GoLang: Compile-Time Instrumentation | [Juraci Paixão Kröhling](https://github.com/jpkrohling) | [David Ashpole](https://github.com/dashpole) (escalating) |
 | Injector | [Juraci Paixão Kröhling](https://github.com/jpkrohling) | [Jack Berg](https://github.com/jack-berg) (guiding) |
 | Java: SDK + Instrumentation | [Trask Stalnaker](https://github.com/trask) | [Jack Berg](https://github.com/jack-berg) (leading) |
