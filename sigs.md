@@ -290,16 +290,6 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Technical Committee sponsors:** [David Ashpole](https://github.com/dashpole) (leading), [Robert Pająk](https://github.com/pellared) (guiding)
 - **Governance Committee liaison:** [Marylia Gutierrez](https://github.com/maryliag)
 
-### GoLang: Automatic Instrumentation
-
-- **Meeting time:** Every other Tuesday at 09:30 PT
-- **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1P6am_r_cxCX1HcpDQlznrTrTOvwN2whshL0f58lXSWI)
-- **Meeting invites group:** [calendar-go](https://groups.google.com/a/opentelemetry.io/g/calendar-go)
-- **Slack channel:** [#otel-go-instrumentation](https://cloud-native.slack.com/archives/C03S01YSAS0)
-- **Repositories:** [open-telemetry/opentelemetry-go-instrumentation](https://github.com/open-telemetry/opentelemetry-go-instrumentation)
-- **Technical Committee sponsors:** [David Ashpole](https://github.com/dashpole) (escalating)
-- **Governance Committee liaison:** [Juraci Paixão Kröhling](https://github.com/jpkrohling)
-
 ### GoLang: Compile-Time Instrumentation
 
 - **Meeting time:** Every Thursday at 09:30 UTC

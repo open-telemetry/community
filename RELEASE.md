@@ -41,7 +41,6 @@
 | ---------- | ----------- | --------- | ---------- | ------------------- |
 | opentelemetry-go | [RELEASING.md](https://github.com/open-telemetry/opentelemetry-go/blob/main/RELEASING.md) | ~Every 4-6 weeks | Make scripts (manual) | [Release Maintainers](https://github.com/open-telemetry/opentelemetry-go/blob/main/CONTRIBUTING.md#maintainers) |
 | opentelemetry-go-contrib | [RELEASING.md](https://github.com/open-telemetry/opentelemetry-go-contrib/blob/main/RELEASING.md) | Monthly (after core) | Partial | [Release Maintainers](https://github.com/open-telemetry/opentelemetry-go-contrib/blob/main/CONTRIBUTING.md#maintainers) |
-| opentelemetry-go-instrumentation | [RELEASING.md](https://github.com/open-telemetry/opentelemetry-go-instrumentation/blob/main/RELEASING.md) | ~Every 4-6 weeks | Make scripts (manual) | [Release Maintainers](https://github.com/open-telemetry/opentelemetry-go-instrumentation/blob/main/CONTRIBUTING.md#maintainers) |
 
 ### Python (SIG Python)
 
