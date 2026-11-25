@@ -181,24 +181,6 @@
       name: '#otel-cicd'
       id: C0598R66XAP
   - roadmapProject: 171
-- id: semconv-rpc
-  sigCategory: specification
-  name: 'Semantic Conventions: RPC'
-  parent: semconv-general
-  people:
-  - gcLiaison: trask
-  - tcSponsor:
-      username: lmolkova
-      level: guiding
-  resources:
-  - meeting:
-      schedule: Every other Thursday at 07:30 PT
-      calendarInviteGroup: calendar-semconv
-      gDocNotes: 11AtPWuaNGl2MfhRwgWqNbnjAPtK06jMKWh5-_YbWuHE
-  - slack:
-      name: '#otel-semconv-rpc-stability'
-      id: C09D3TRKMED
-  - roadmapProject: 161
 - id: semconv-service-deployment
   sigCategory: specification
   name: 'Semantic Conventions: Service and Deployment'

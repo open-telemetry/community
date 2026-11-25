@@ -4,7 +4,7 @@
 
 Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical Committee (TC) sponsor(s), followed by how many SIGs each GC and TC member is currently responsible for. For full per-SIG details (meetings, Slack, repos), see [sigs.md](./sigs.md).
 
-**59 SIGs** · **9 GC members** with at least one liaison assignment · **10 TC members** with at least one sponsor assignment · **1 SIG** missing a GC liaison · **10 SIGs** missing a TC sponsor
+**58 SIGs** · **9 GC members** with at least one liaison assignment · **10 TC members** with at least one sponsor assignment · **1 SIG** missing a GC liaison · **10 SIGs** missing a TC sponsor
 
 ## GC liaison load
 
@@ -12,8 +12,8 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 | --- | --- | --- |
 | [Severin Neumann](https://github.com/svrnm) | 15 | Specification: Entities, C++: SDK, Dart and Flutter: SDK, PHP: SDK, eBPF Instrumentation, Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.), Bengali (bn), Chinese (zh-CN), French (fr-FR), Japanese (ja-JA), Polish (pl-PL), Portuguese (pt-BR), Romanian (ro-RO), Spanish (es-ES), Ukrainian (uk-UA) |
 | [Ted Young](https://github.com/tedsuo) | 9 | Semantic Conventions and Instrumentation: GenAI, OpAMP, Client Instrumentation, Android: SDK + Automatic Instrumentation, Browser, Packaging, Ruby: SDK, Rust: SDK, Network |
-| [Trask Stalnaker](https://github.com/trask) | 7 | Specification: Logs, Semantic Conventions: General, Semantic Conventions: RPC, Semantic Conventions: Service and Deployment, Arrow, Java: SDK + Instrumentation, Security |
 | [Marylia Gutierrez](https://github.com/maryliag) | 6 | Semantic Conventions: CI/CD, GoLang: SDK, JavaScript: SDK, Python: SDK, Community Demo Application, Contributor Experience |
+| [Trask Stalnaker](https://github.com/trask) | 6 | Specification: Logs, Semantic Conventions: General, Semantic Conventions: Service and Deployment, Arrow, Java: SDK + Instrumentation, Security |
 | [Daniel Gomez Blanco](https://github.com/danielgblanco) | 5 | Semantic Conventions: K8s, Profiling, .NET: Automatic Instrumentation, .NET: SDK, End-User SIG |
 | [Pablo Baeyens](https://github.com/mx-psi) | 5 | Semantic Conventions: System Metrics, Prometheus Interoperability, Policies, Collector, Kubernetes Helm Charts |
 | [Juraci Paixão Kröhling](https://github.com/jpkrohling) | 4 | Specification: Sampling, GoLang: Compile-Time Instrumentation, Injector, Kubernetes Operator |
@@ -26,9 +26,9 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 | --- | --- | --- | --- | --- | --- |
 | [Reiley Yang](https://github.com/reyang) | 1 | 0 | 7 | 1 | 9 |
 | [David Ashpole](https://github.com/dashpole) | 3 | 1 | 3 | 0 | 7 |
-| [Liudmila Molkova](https://github.com/lmolkova) | 3 | 1 | 3 | 0 | 7 |
 | [Carlos Alberto Cortez](https://github.com/carlosalberto) | 0 | 1 | 5 | 0 | 6 |
 | [Jack Berg](https://github.com/jack-berg) | 1 | 1 | 4 | 0 | 6 |
+| [Liudmila Molkova](https://github.com/lmolkova) | 3 | 0 | 3 | 0 | 6 |
 | [Robert Pająk](https://github.com/pellared) | 0 | 5 | 1 | 0 | 6 |
 | [Tigran Najaryan](https://github.com/tigrannajaryan) | 1 | 2 | 1 | 0 | 4 |
 | [Alex Boten](https://github.com/codeboten) | 1 | 0 | 2 | 0 | 3 |
@@ -40,9 +40,9 @@ Every OpenTelemetry SIG with its Governance Committee (GC) liaison and Technical
 
 - **[Reiley Yang](https://github.com/reyang)** (9 SIGs): .NET: Automatic Instrumentation, .NET: SDK, C++: SDK, Chinese (zh-CN), Community Demo Application, Python: SDK, Rust: SDK, Security, Swift: SDK
 - **[David Ashpole](https://github.com/dashpole)** (7 SIGs): GoLang: Compile-Time Instrumentation, GoLang: SDK, Kubernetes Operator, Policies, Prometheus Interoperability, Semantic Conventions: K8s, eBPF Instrumentation
-- **[Liudmila Molkova](https://github.com/lmolkova)** (7 SIGs): Contributor Experience, Developer Experience, Network, Semantic Conventions and Instrumentation: GenAI, Semantic Conventions: General, Semantic Conventions: RPC, Semantic Conventions: Tooling
 - **[Carlos Alberto Cortez](https://github.com/carlosalberto)** (6 SIGs): Browser, Client Instrumentation, Dart and Flutter: SDK, JavaScript: SDK, Kotlin: SDK, Semantic Conventions: CI/CD
 - **[Jack Berg](https://github.com/jack-berg)** (6 SIGs): Android: SDK + Automatic Instrumentation, Communications (Website, [Documentation](https://opentelemetry.io/docs/), etc.), End-User SIG, Injector, Java: SDK + Instrumentation, PHP: SDK
+- **[Liudmila Molkova](https://github.com/lmolkova)** (6 SIGs): Contributor Experience, Developer Experience, Network, Semantic Conventions and Instrumentation: GenAI, Semantic Conventions: General, Semantic Conventions: Tooling
 - **[Robert Pająk](https://github.com/pellared)** (6 SIGs): .NET: Automatic Instrumentation, GoLang: SDK, OpenTelemetry on Mainframes, Polish (pl-PL), Semantic Conventions: CI/CD, Specification: Logs
 - **[Tigran Najaryan](https://github.com/tigrannajaryan)** (4 SIGs): OpAMP, Packaging, Profiling, Specification: Entities
 - **[Alex Boten](https://github.com/codeboten)** (3 SIGs): Collector, Kubernetes Helm Charts, Semantic Conventions: System Metrics
@@ -55,7 +55,7 @@ _Sponsorship of "Specification: General + OTel Maintainers Sync" is collective a
 
 ## SIG directory
 
-### Specification (18)
+### Specification (17)
 
 | SIG | GC liaison | TC sponsor(s) |
 | --- | --- | --- |
@@ -67,7 +67,6 @@ _Sponsorship of "Specification: General + OTel Maintainers Sync" is collective a
 | Semantic Conventions: K8s<br><sub>under Semantic Conventions: General</sub> | [Daniel Gomez Blanco](https://github.com/danielgblanco) | [David Ashpole](https://github.com/dashpole) (leading) |
 | Semantic Conventions and Instrumentation: GenAI<br><sub>under Semantic Conventions: General</sub> | [Ted Young](https://github.com/tedsuo) | [Liudmila Molkova](https://github.com/lmolkova) (leading) |
 | Semantic Conventions: CI/CD<br><sub>under Semantic Conventions: General</sub> | [Marylia Gutierrez](https://github.com/maryliag) | [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating), [Robert Pająk](https://github.com/pellared) (guiding) |
-| Semantic Conventions: RPC<br><sub>under Semantic Conventions: General</sub> | [Trask Stalnaker](https://github.com/trask) | [Liudmila Molkova](https://github.com/lmolkova) (guiding) |
 | Semantic Conventions: Service and Deployment<br><sub>under Semantic Conventions: General</sub> | [Trask Stalnaker](https://github.com/trask) | tbd (guiding) |
 | Specification: Entities<br><sub>under Specification: General + OTel Maintainers Sync</sub> | [Severin Neumann](https://github.com/svrnm) | [Tigran Najaryan](https://github.com/tigrannajaryan) (guiding) |
 | OpAMP | [Ted Young](https://github.com/tedsuo) | [Tigran Najaryan](https://github.com/tigrannajaryan) (leading) |
