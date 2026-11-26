@@ -152,8 +152,8 @@
       level: leading
   resources:
   - meeting:
-      schedule: 'General GenAI topics: every Tuesday 9:00 PT, every other Tuesday
-        9:00 UTC+8; agent-related topics: every Monday 9:00 PT'
+      schedule: 'General GenAI topics: every Tuesday 9:00 PT and every Tuesday
+        9:00 UTC+8; stabilization: every Monday, Wednesday, and Friday 12:00 PT'
       calendarInviteGroup: calendar-semconv
       gDocNotes: 1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M
   - slack:
