@@ -68,7 +68,7 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 
 ### Semantic Conventions and Instrumentation: GenAI
 
-- **Meeting time:** General GenAI topics: every Tuesday 9:00 PT, every other Tuesday 9:00 UTC+8; agent-related topics: every Monday 9:00 PT
+- **Meeting time:** General GenAI topics: every Tuesday 9:00 PT and every Tuesday 9:00 UTC+8; stabilization: every Monday, Wednesday, and Friday 12:00 PT
 - **Meeting notes:** [Google Doc](https://docs.google.com/document/d/1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M)
 - **Meeting invites group:** [calendar-semconv](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)
 - **Slack channel:** [#otel-genai-instrumentation](https://cloud-native.slack.com/archives/C06KR7ARS3X)
