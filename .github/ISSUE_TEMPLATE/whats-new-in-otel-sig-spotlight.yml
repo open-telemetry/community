@@ -1,0 +1,73 @@
+name: '"What''s New in OTel?" SIG Spotlight Form'
+description: Propose having your SIG featured in the monthly "What's New in OTel?" livestream hosted by the OTel Community Managers.
+title: '[SIG Spotlight]: <name>'
+labels:
+  - whats-new-in-otel
+assignees:
+  - avillela
+  - reese-lee
+cspell:ignore: avillela reese-lee
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your interest in having your SIG featured on "What's New in OTel?"! This form is for SIG maintainers to propose sharing an update during the monthly livestream hosted by the OTel Community Managers.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: What is your name?
+      placeholder: ex. Jane Doe
+    validations:
+      required: true
+  - type: input
+    id: contact_email
+    attributes:
+      label: Contact email
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+  - type: input
+    id: sig
+    attributes:
+      label: What OTel SIG do you represent?
+      description: Name the SIG you'll be presenting on behalf of.
+      placeholder: ex. OTel Collector SIG
+    validations:
+      required: true
+  - type: dropdown
+    id: availability
+    attributes:
+      label: What month(s) are you available?
+      description: Select all months during which you could present.
+      multiple: true
+      options:
+        - January
+        - February
+        - March
+        - April
+        - May
+        - June
+        - July
+        - August
+        - September
+        - October
+        - November
+        - December
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summarize what you'd like to share
+      description: Give an overview of the update or topic you'd like to highlight.
+    validations:
+      required: true
+  - type: textarea
+    id: call_to_action
+    attributes:
+      label: What is your call to action?
+      description: What do you want viewers to do after watching (e.g., try a feature, join a SIG, contribute)?
+    validations:
+      required: true
