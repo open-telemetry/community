@@ -87,16 +87,6 @@ This page contains detailed information for all OpenTelemetry Special Interest G
 - **Technical Committee sponsors:** [Carlos Alberto Cortez](https://github.com/carlosalberto) (escalating), [Robert Pająk](https://github.com/pellared) (guiding)
 - **Governance Committee liaison:** [Marylia Gutierrez](https://github.com/maryliag)
 
-### Semantic Conventions: RPC
-
-- **Meeting time:** Every other Thursday at 07:30 PT
-- **Meeting notes:** [Google Doc](https://docs.google.com/document/d/11AtPWuaNGl2MfhRwgWqNbnjAPtK06jMKWh5-_YbWuHE)
-- **Meeting invites group:** [calendar-semconv](https://groups.google.com/a/opentelemetry.io/g/calendar-semconv)
-- **Slack channel:** [#otel-semconv-rpc-stability](https://cloud-native.slack.com/archives/C09D3TRKMED)
-- **Roadmap projects:** [Semantic Conventions: RPC roadmap](https://github.com/orgs/open-telemetry/projects/161)
-- **Technical Committee sponsors:** [Liudmila Molkova](https://github.com/lmolkova) (guiding)
-- **Governance Committee liaison:** [Trask Stalnaker](https://github.com/trask)
-
 ### Semantic Conventions: Service and Deployment
 
 - **Meeting time:** Alternating between Thursday at 08:00 PT and Thursday at 05:30 UTC
