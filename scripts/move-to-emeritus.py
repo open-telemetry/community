@@ -1233,8 +1233,8 @@ def _create_pr(repo, head_owner, branch, base, title, body):
         # PR is closed (not merged) — e.g. when a previous run's PR was
         # auto-closed because the branch transiently had zero commits ahead of
         # base. Reopen the most recent closed-not-merged PR targeting this base.
-        list_url = f"{REST_API}/repos/{ORG}/{repo}/pulls?head={head}&state=closed"
-        for pr in read_json(request_with_retry("GET", list_url)):
+        list_url = f"{REST_API}/repos/{ORG}/{repo}/pulls"
+        for pr in paginate_rest(list_url, params={"head": head, "state": "closed"}):
             if pr.get("merged_at"):
                 continue
             if pr.get("base", {}).get("ref") != base:
