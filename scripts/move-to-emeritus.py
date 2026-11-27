@@ -1204,6 +1204,7 @@ def _create_pr(repo, head_owner, branch, base, title, body):
     """Open a cross-repo PR from head_owner/repo:branch into ORG/repo:base.
 
     If a PR for that branch already exists, update its title and body instead.
+    If the only match is a closed, non-merged PR, reopen and update it.
     """
     url = f"{REST_API}/repos/{ORG}/{repo}/pulls"
     head = f"{head_owner}:{branch}"
@@ -1216,17 +1217,38 @@ def _create_pr(repo, head_owner, branch, base, title, body):
         })
         return read_json(resp).get("html_url", "")
     except urllib.error.HTTPError as e:
-        if e.code == 422:
-            # PR likely already exists — find and update it
-            list_url = f"{REST_API}/repos/{ORG}/{repo}/pulls?head={head}&state=open"
-            prs = read_json(request_with_retry("GET", list_url))
-            if prs:
-                pr_number = prs[0]["number"]
-                patch_url = f"{REST_API}/repos/{ORG}/{repo}/pulls/{pr_number}"
-                request_with_retry("PATCH", patch_url, data={"title": title, "body": body})
-                return prs[0].get("html_url", "")
-            detail = e.read().decode("utf-8", errors="replace")
-            print(f"  [ERROR] PR creation 422, no open PR found. GitHub said: {detail}", file=sys.stderr)
+        if e.code != 422:
+            raise
+
+        # First: find and update an open PR with this head.
+        list_url = f"{REST_API}/repos/{ORG}/{repo}/pulls?head={head}&state=open"
+        prs = read_json(request_with_retry("GET", list_url))
+        if prs:
+            pr_number = prs[0]["number"]
+            patch_url = f"{REST_API}/repos/{ORG}/{repo}/pulls/{pr_number}"
+            request_with_retry("PATCH", patch_url, data={"title": title, "body": body})
+            return prs[0].get("html_url", "")
+
+        # Fallback: GitHub returns 422 "PR already exists" even when the matching
+        # PR is closed (not merged) — e.g. when a previous run's PR was
+        # auto-closed because the branch transiently had zero commits ahead of
+        # base. Reopen the most recent closed-not-merged PR targeting this base.
+        list_url = f"{REST_API}/repos/{ORG}/{repo}/pulls"
+        for pr in paginate_rest(list_url, params={"head": head, "state": "closed"}):
+            if pr.get("merged_at"):
+                continue
+            if pr.get("base", {}).get("ref") != base:
+                continue
+            pr_number = pr["number"]
+            print(f"  Reopening closed PR #{pr_number}", flush=True)
+            patch_url = f"{REST_API}/repos/{ORG}/{repo}/pulls/{pr_number}"
+            request_with_retry("PATCH", patch_url, data={
+                "state": "open", "title": title, "body": body,
+            })
+            return pr.get("html_url", "")
+
+        detail = e.read().decode("utf-8", errors="replace")
+        print(f"  [ERROR] PR creation 422, no reopenable PR found. GitHub said: {detail}", file=sys.stderr)
         raise
 
 
