@@ -1231,10 +1231,135 @@ def _create_pr(repo, head_owner, branch, base, title, body):
 
 
 # ---------------------------------------------------------------------------
+# security-insights.yml updates
+# ---------------------------------------------------------------------------
+#
+# OSSF Security Insights ships in two schema versions across OTel repos:
+#   - 1.0.0 (opentelemetry-go): flat list of GitHub profile URLs under
+#     project-lifecycle.core-maintainers
+#   - 2.0.0 (dotnet family, demo, helm-charts): structured entries
+#     (name/affiliation/social/primary) under project.administrators and
+#     repository.core-team
+# Edits are surgical (regex-based) so comments, quoting, and key order are
+# preserved — a full YAML parse+dump round-trip would lose formatting.
+
+SECURITY_INSIGHTS_PATHS = (".github/security-insights.yml", "SECURITY-INSIGHTS.yml")
+
+
+def _fetch_security_insights(repo):
+    """Fetch the repo's security-insights.yml if present.
+
+    Returns (content, sha, path, schema_major) or None. A file is only
+    considered valid if it carries a `schema-version:` header — otherwise we
+    skip it so an unrelated file sitting at the same path isn't mutated.
+    """
+    for path in SECURITY_INSIGHTS_PATHS:
+        result = fetch_repo_file(repo, path)
+        if result is None:
+            continue
+        content, sha, actual_path = result
+        m = re.search(r"schema-version:\s*['\"]?(\d+)\.", content)
+        if m is None:
+            continue
+        return content, sha, actual_path, int(m.group(1))
+    return None
+
+
+def _remove_security_insights_entry_v1(content, username):
+    """Remove `- https://github.com/<user>` from a schema-1.0.0 flat list."""
+    pattern = re.compile(
+        rf"^[ \t]*-[ \t]+https?://github\.com/{re.escape(username)}/?[ \t]*\r?\n",
+        re.MULTILINE | re.IGNORECASE,
+    )
+    new_content, n = pattern.subn("", content)
+    return new_content, n > 0
+
+
+def _remove_security_insights_entry_v2(content, username):
+    """Remove a structured list item whose `social:` field matches the user.
+
+    Works for any 2.0.0 list of entries (administrators, core-team, etc.) by
+    locating each matching `social:` line and deleting the enclosing `- ...`
+    block.
+    """
+    lines = content.split("\n")
+    social_re = re.compile(
+        rf"^\s*social:\s*https?://github\.com/{re.escape(username)}/?\s*$",
+        re.IGNORECASE,
+    )
+    changed = False
+    while True:
+        match_i = next(
+            (i for i, line in enumerate(lines) if social_re.match(line)),
+            None,
+        )
+        if match_i is None:
+            break
+        changed = True
+
+        # Walk backward to the enclosing "- " list-item start.
+        social_indent = len(lines[match_i]) - len(lines[match_i].lstrip())
+        start = match_i
+        while start > 0:
+            stripped = lines[start].lstrip()
+            if stripped.startswith("- "):
+                item_indent = len(lines[start]) - len(stripped)
+                if item_indent < social_indent:
+                    break
+            start -= 1
+        item_indent = len(lines[start]) - len(lines[start].lstrip())
+
+        # Walk forward to the next list item at the same indent OR a line
+        # less-indented than the item's children.
+        end = match_i + 1
+        while end < len(lines):
+            s = lines[end]
+            if s.strip() == "":
+                end += 1
+                continue
+            nxt_indent = len(s) - len(s.lstrip())
+            if nxt_indent <= item_indent:
+                break
+            end += 1
+        # Don't absorb trailing blank lines — they belong to the next block.
+        while end > match_i + 1 and lines[end - 1].strip() == "":
+            end -= 1
+
+        del lines[start:end]
+    return "\n".join(lines), changed
+
+
+def _update_security_insights(content, usernames, schema_major):
+    """Remove each user from a security-insights file.
+
+    Returns (new_content, unresolved) where `unresolved` is the subset of
+    `usernames` whose GitHub URL still appears in the file after removal
+    (so a maintainer can address it by hand).
+    """
+    new_content = content
+    for user in usernames:
+        if schema_major == 1:
+            new_content, _ = _remove_security_insights_entry_v1(new_content, user)
+        else:
+            new_content, _ = _remove_security_insights_entry_v2(new_content, user)
+
+    unresolved = []
+    for user in usernames:
+        still_there = re.search(
+            rf"github\.com/{re.escape(user)}\b",
+            new_content,
+            re.IGNORECASE,
+        )
+        if still_there:
+            unresolved.append(user)
+    return new_content, unresolved
+
+
+# ---------------------------------------------------------------------------
 # Orchestration: process repos and open PRs
 # ---------------------------------------------------------------------------
 
-def _build_pr_body(repo, changes, cutoff, warning=None):
+def _build_pr_body(repo, changes, cutoff, warning=None, security_notes=None):
     """Build the PR body markdown for a repo."""
     body = "## Move inactive members to emeritus\n\n"
     if warning:
@@ -1248,6 +1373,9 @@ def _build_pr_body(repo, changes, cutoff, warning=None):
         teams_str = ", ".join(teams)
         body += f"- @{user} ({role_label}, Remove from team(s): {teams_str})\n"
     body += "\n"
+
+    if security_notes:
+        body += "\n".join(security_notes) + "\n\n"
 
     body += (
         "> [!IMPORTANT]\n"
@@ -1265,7 +1393,7 @@ def _build_pr_body(repo, changes, cutoff, warning=None):
     return body
 
 
-def _build_issue_body(changes):
+def _build_issue_body(changes, security_notes=None):
     """Build the issue body for the follow-up cleanup issue."""
     body = "## Remove inactive members from teams and channels\n\n"
     body += (
@@ -1276,6 +1404,10 @@ def _build_issue_body(changes):
         teams_str = ", ".join(teams)
         body += f"- @{user} ({role_label}, Remove from team(s): {teams_str})\n"
     body += "\n"
+
+    if security_notes:
+        body += "\n".join(security_notes) + "\n\n"
+
     body += (
         "> [!IMPORTANT]\n"
         "> A Maintainer should remove the user(s) from:\n"
@@ -1292,13 +1424,13 @@ def _build_issue_body(changes):
     return body
 
 
-def _create_followup_issue(repo, changes):
+def _create_followup_issue(repo, changes, security_notes=None):
     """Create a follow-up issue when the README is already up to date.
 
     If an open issue with the same title already exists, update its body instead.
     Returns the issue URL.
     """
-    body = _build_issue_body(changes)
+    body = _build_issue_body(changes, security_notes=security_notes)
     issues_url = f"{REST_API}/repos/{ORG}/{repo}/issues"
 
     # Look for an existing open issue to update rather than creating a duplicate
@@ -1358,11 +1490,36 @@ def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
                 f"{file_path}, skipping."
             )
 
-        if document == original_document:
+        # Also apply removals to security-insights.yml if the repo has one.
+        security_update = None  # (new_content, sha, path) if a commit is needed
+        security_notes = []
+        change_users = [user for user, _, _ in changes]
+        si_result = _fetch_security_insights(repo)
+        if si_result is not None and change_users:
+            si_content, si_sha, si_path, schema_major = si_result
+            new_si, unresolved = _update_security_insights(
+                si_content, change_users, schema_major
+            )
+            if new_si != si_content:
+                security_update = (new_si, si_sha, si_path)
+                security_notes.append(
+                    f"> [!NOTE]\n> `{si_path}` was also updated to remove the "
+                    "above member(s)."
+                )
+            if unresolved:
+                mentions = ", ".join("@" + u for u in unresolved)
+                security_notes.append(
+                    f"> [!WARNING]\n> `{si_path}` still references "
+                    f"{mentions}. Please update the file manually."
+                )
+
+        if document == original_document and security_update is None:
             print(f"  No {file_path} changes needed.")
             if changes:
                 try:
-                    issue_url = _create_followup_issue(repo, changes)
+                    issue_url = _create_followup_issue(
+                        repo, changes, security_notes=security_notes or None
+                    )
                     print(f"  Issue: {issue_url}")
                 except Exception as e:
                     print(f"  ERROR creating issue for {ORG}/{repo}: {e}", file=sys.stderr)
@@ -1382,17 +1539,29 @@ def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
             except urllib.error.HTTPError as e:
                 print(f"  [WARN] Could not sync fork with upstream: HTTP {e.code}", flush=True)
             _ensure_branch(fork_owner, repo, BRANCH_NAME, base_sha)
-            _update_file(
-                fork_owner, repo, file_path, document, file_sha, BRANCH_NAME,
-                "chore: Move inactive members to emeritus",
-            )
+
+            if document != original_document:
+                _update_file(
+                    fork_owner, repo, file_path, document, file_sha, BRANCH_NAME,
+                    "chore: Move inactive members to emeritus",
+                )
+            if security_update is not None:
+                new_si, si_sha, si_path = security_update
+                _update_file(
+                    fork_owner, repo, si_path, new_si, si_sha, BRANCH_NAME,
+                    "chore: Remove inactive members from security-insights.yml",
+                )
+                print(f"  Updated {si_path}", flush=True)
 
             warning = repo_warnings.get(repo)
             # Strip leading whitespace/WARNING: prefix for cleaner PR body
             if warning:
                 warning = warning.strip().removeprefix("WARNING: ")
 
-            pr_body = _build_pr_body(repo, changes, cutoff, warning)
+            pr_body = _build_pr_body(
+                repo, changes, cutoff, warning,
+                security_notes=security_notes or None,
+            )
             pr_url = _create_pr(
                 repo, fork_owner, BRANCH_NAME, default_branch,
                 "chore: Move inactive members to emeritus",
