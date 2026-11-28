@@ -1275,58 +1275,167 @@ def _remove_security_insights_entry_v1(content, username):
     return new_content, n > 0
 
 
+# YAML lists that the upstream OSSF Security Insights 2.0.0 schema requires to
+# be non-empty. If removing all candidate entries would empty one of these, we
+# leave the entries in place so the generated PR doesn't produce a file that
+# violates the schema; the unresolved-user warning in the PR body lets the
+# maintainer handle it manually.
+REQUIRED_NONEMPTY_LISTS_V2 = {"administrators", "core-team"}
+
+
+def _is_structural(line):
+    """True if the line carries YAML structure (not blank, not a comment)."""
+    stripped = line.lstrip()
+    return bool(stripped) and not stripped.startswith("#")
+
+
+def _find_enclosing_list_item(lines, match_i, social_indent):
+    """Return (item_start, item_end, parent_key) for the list item that
+    contains `lines[match_i]`, or None if the match is in a non-list mapping.
+
+    - Backward scan stops at mapping boundaries so matches in standalone
+      mappings (e.g. vulnerability-reporting.contact) aren't mistaken for the
+      preceding list item.
+    - Forward scan skips comment lines so a comment at or shallower than the
+      item's indent doesn't end the item early.
+    """
+    # Walk backward to the enclosing "- " item. Stop at mapping boundaries.
+    item_start = None
+    i = match_i
+    while i > 0:
+        if _is_structural(lines[i]):
+            s = lines[i]
+            stripped = s.lstrip()
+            indent = len(s) - len(stripped)
+            if stripped.startswith("- "):
+                if indent < social_indent:
+                    item_start = i
+                    break
+            elif indent < social_indent:
+                # Walked out of the item into a shallower mapping key —
+                # the social: match is a standalone field, not a list item.
+                return None
+        i -= 1
+    if item_start is None:
+        return None
+
+    item_indent = len(lines[item_start]) - len(lines[item_start].lstrip())
+
+    # Walk forward to the next line (ignoring blanks and comments) whose
+    # indent is at or shallower than the item's.
+    end = match_i + 1
+    while end < len(lines):
+        s = lines[end]
+        if s.strip() == "" or s.lstrip().startswith("#"):
+            end += 1
+            continue
+        nxt_indent = len(s) - len(s.lstrip())
+        if nxt_indent <= item_indent:
+            break
+        end += 1
+    # Don't absorb trailing blank/comment lines — they belong to the next item.
+    while end > match_i + 1 and not _is_structural(lines[end - 1]):
+        end -= 1
+
+    # Walk back from item_start to find the parent key line.
+    parent_key = None
+    j = item_start - 1
+    while j >= 0:
+        if _is_structural(lines[j]):
+            s = lines[j]
+            stripped = s.lstrip()
+            indent = len(s) - len(stripped)
+            if indent < item_indent and stripped.endswith(":"):
+                parent_key = stripped.rstrip(":").strip()
+                break
+        j -= 1
+
+    return (item_start, end, parent_key)
+
+
+def _count_list_items(lines, parent_key):
+    """Count direct `- ` list items under the first occurrence of `parent_key:`."""
+    for i, line in enumerate(lines):
+        if not _is_structural(line):
+            continue
+        stripped = line.lstrip()
+        if not stripped.startswith(f"{parent_key}:"):
+            continue
+        parent_indent = len(line) - len(stripped)
+        item_indent = None
+        count = 0
+        for j in range(i + 1, len(lines)):
+            inner = lines[j]
+            if not _is_structural(inner):
+                continue
+            inner_stripped = inner.lstrip()
+            ind = len(inner) - len(inner_stripped)
+            if ind <= parent_indent:
+                break
+            if inner_stripped.startswith("- "):
+                if item_indent is None:
+                    item_indent = ind
+                if ind == item_indent:
+                    count += 1
+        return count
+    return 0
+
+
 def _remove_security_insights_entry_v2(content, username):
     """Remove a structured list item whose `social:` field matches the user.
 
     Works for any 2.0.0 list of entries (administrators, core-team, etc.) by
     locating each matching `social:` line and deleting the enclosing `- ...`
-    block.
+    block. Skips removals that would:
+    - cross a mapping boundary into an unrelated list item,
+    - leave orphan fields after a comment inside the item, or
+    - empty a schema-required list (administrators, core-team) entirely.
+    Skipped users remain in the file and surface via the unresolved-user
+    warning in the PR body.
     """
     lines = content.split("\n")
     social_re = re.compile(
         rf"^\s*social:\s*https?://github\.com/{re.escape(username)}/?\s*$",
         re.IGNORECASE,
     )
-    changed = False
-    while True:
-        match_i = next(
-            (i for i, line in enumerate(lines) if social_re.match(line)),
-            None,
-        )
-        if match_i is None:
-            break
-        changed = True
 
-        # Walk backward to the enclosing "- " list-item start.
-        social_indent = len(lines[match_i]) - len(lines[match_i].lstrip())
-        start = match_i
-        while start > 0:
-            stripped = lines[start].lstrip()
-            if stripped.startswith("- "):
-                item_indent = len(lines[start]) - len(stripped)
-                if item_indent < social_indent:
-                    break
-            start -= 1
-        item_indent = len(lines[start]) - len(lines[start].lstrip())
+    # Pass 1: collect candidate (item_start, item_end, parent_key) tuples.
+    candidates = []
+    for match_i, line in enumerate(lines):
+        if not social_re.match(line):
+            continue
+        social_indent = len(line) - len(line.lstrip())
+        info = _find_enclosing_list_item(lines, match_i, social_indent)
+        if info is None:
+            continue  # standalone mapping — leave it; unresolved warning handles it.
+        candidates.append(info)
 
-        # Walk forward to the next list item at the same indent OR a line
-        # less-indented than the item's children.
-        end = match_i + 1
-        while end < len(lines):
-            s = lines[end]
-            if s.strip() == "":
-                end += 1
-                continue
-            nxt_indent = len(s) - len(s.lstrip())
-            if nxt_indent <= item_indent:
-                break
-            end += 1
-        # Don't absorb trailing blank lines — they belong to the next block.
-        while end > match_i + 1 and lines[end - 1].strip() == "":
-            end -= 1
+    if not candidates:
+        return content, False
 
+    # Pass 2: filter out candidates whose removal would empty a required list.
+    by_parent = {}
+    for idx, (_, _, parent_key) in enumerate(candidates):
+        if parent_key in REQUIRED_NONEMPTY_LISTS_V2:
+            by_parent.setdefault(parent_key, []).append(idx)
+    skip = set()
+    for parent_key, idxs in by_parent.items():
+        total = _count_list_items(lines, parent_key)
+        if total and len(idxs) >= total:
+            skip.update(idxs)
+
+    to_apply = [
+        (start, end)
+        for idx, (start, end, _) in enumerate(candidates)
+        if idx not in skip
+    ]
+    if not to_apply:
+        return content, False
+
+    # Pass 3: delete in reverse-start order so earlier indices stay valid.
+    for start, end in sorted(to_apply, key=lambda se: -se[0]):
         del lines[start:end]
-    return "\n".join(lines), changed
+    return "\n".join(lines), True
 
 
 def _update_security_insights(content, usernames, schema_major):
