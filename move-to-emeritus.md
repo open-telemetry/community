@@ -98,8 +98,9 @@ For some repos, teams whose name contains certain keywords are skipped:
 3. **For each repo with inactive members**, fetches the repo's README, falling back to CONTRIBUTING when it contains the active role list, and attempts to:
    - Remove the member from their current role section (Maintainers, Approvers, or Triagers).
    - Add them to the `Emeritus` section.
-4. **If the membership document was modified**, opens (or updates) a pull request from `opentelemetrybot`'s fork with the title `chore: Move inactive members to emeritus`.
-5. **If the membership document was already up to date** (the member is already in Emeritus), opens (or updates) a follow-up issue titled `chore: Remove inactive members from teams and channels` to remind maintainers to complete the off-boarding steps.
+4. **If the repo has a `security-insights.yml`** (at `.github/security-insights.yml` or `SECURITY-INSIGHTS.yml`), also removes the member from the `administrators` / `core-team` / `core-maintainers` lists it defines. Schema versions 1.0.0 and 2.0.0 are both supported. If the user's entry is in a format the script can't match, the PR body will flag the user as needing a manual update.
+5. **If any file was modified**, opens (or updates) a pull request from `opentelemetrybot`'s fork with the title `chore: Move inactive members to emeritus`.
+6. **If no file needed changes** (the member is already in Emeritus and the security-insights file is already clean), opens (or updates) a follow-up issue titled `chore: Remove inactive members from teams and channels` to remind maintainers to complete the off-boarding steps.
 
 ## How maintainers should address the PRs
 

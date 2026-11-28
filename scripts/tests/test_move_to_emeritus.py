@@ -236,7 +236,7 @@ class EmeritusDocumentTest(unittest.TestCase):
                         emeritus.create_emeritus_prs(report, {}, "2026-01-01")
 
                     create_followup_issue.assert_called_once_with(
-                        "example", changes
+                        "example", changes, security_notes=None
                     )
                     self.assertEqual(
                         [("alice", "Maintainer", ["example-maintainers"])], changes
@@ -251,6 +251,258 @@ class EmeritusDocumentTest(unittest.TestCase):
         )
 
         self.assertFalse(emeritus._has_emeritus_member(document, self.user_info))
+
+
+class SecurityInsightsTest(unittest.TestCase):
+    SI_V2 = (
+        "header:\n"
+        "  schema-version: 2.0.0\n"
+        "project:\n"
+        "  administrators:\n"
+        "    - name: Alice Example\n"
+        "      affiliation: Example Corp\n"
+        "      social: https://github.com/alice\n"
+        "      primary: true\n"
+        "    - name: Bob Example\n"
+        "      affiliation: Example Corp\n"
+        "      social: https://github.com/bob\n"
+        "      primary: false\n"
+        "repository:\n"
+        "  core-team:\n"
+        "    - name: Alice Example\n"
+        "      affiliation: Example Corp\n"
+        "      social: https://github.com/alice\n"
+        "      primary: true\n"
+        "    - name: Carol Example\n"
+        "      affiliation: Example Corp\n"
+        "      social: https://github.com/carol\n"
+        "      primary: false\n"
+    )
+
+    SI_V1 = (
+        "header:\n"
+        '  schema-version: "1.0.0"\n'
+        "project-lifecycle:\n"
+        "  status: active\n"
+        "  core-maintainers:\n"
+        "    - https://github.com/alice\n"
+        "    - https://github.com/bob\n"
+        "    - https://github.com/carol\n"
+    )
+
+    def test_remove_v2_drops_all_matching_entries(self):
+        result, _ = emeritus._remove_security_insights_entry_v2(self.SI_V2, "alice")
+
+        self.assertNotIn("github.com/alice\n", result)
+        # Alice appeared in both administrators and core-team — both gone.
+        self.assertEqual(0, result.count("github.com/alice"))
+        # Other entries untouched.
+        self.assertIn("github.com/bob", result)
+        self.assertIn("github.com/carol", result)
+        # Surrounding YAML structure preserved.
+        self.assertIn("administrators:", result)
+        self.assertIn("core-team:", result)
+
+    def test_remove_v2_case_insensitive_url(self):
+        doc = self.SI_V2.replace(
+            "social: https://github.com/alice",
+            "social: HTTPS://GitHub.com/Alice",
+        )
+        result, _ = emeritus._remove_security_insights_entry_v2(doc, "alice")
+
+        self.assertNotIn("Alice", result.split("administrators:")[-1].split("repository:")[0])
+
+    def test_remove_v2_missing_user_is_noop(self):
+        result, changed = emeritus._remove_security_insights_entry_v2(
+            self.SI_V2, "mallory"
+        )
+
+        self.assertEqual(self.SI_V2, result)
+        self.assertFalse(changed)
+
+    def test_remove_v1_drops_flat_url_entry(self):
+        result, changed = emeritus._remove_security_insights_entry_v1(
+            self.SI_V1, "bob"
+        )
+
+        self.assertNotIn("github.com/bob", result)
+        self.assertIn("github.com/alice", result)
+        self.assertIn("github.com/carol", result)
+        self.assertTrue(changed)
+
+    def test_remove_v1_case_insensitive(self):
+        doc = self.SI_V1.replace(
+            "- https://github.com/bob", "- HTTPS://GitHub.com/Bob"
+        )
+        result, changed = emeritus._remove_security_insights_entry_v1(doc, "bob")
+
+        self.assertNotIn("Bob", result)
+        self.assertTrue(changed)
+
+    def test_update_reports_unresolved_users(self):
+        # `dave` is nowhere in the file → removal is a no-op → unresolved stays empty.
+        new_content, unresolved = emeritus._update_security_insights(
+            self.SI_V2, ["dave"], schema_major=2
+        )
+        self.assertEqual(self.SI_V2, new_content)
+        self.assertEqual([], unresolved)
+
+    def test_update_flags_user_still_present_after_removal(self):
+        # If the user URL appears in a format our regex doesn't recognise (e.g. a
+        # free-text comment), we should flag them as unresolved.
+        doc = (
+            "header:\n"
+            "  schema-version: 2.0.0\n"
+            "project:\n"
+            "  comment: see https://github.com/alice for history\n"
+        )
+        _, unresolved = emeritus._update_security_insights(
+            doc, ["alice"], schema_major=2
+        )
+        self.assertEqual(["alice"], unresolved)
+
+    @mock.patch.object(emeritus, "fetch_repo_file")
+    def test_fetch_requires_schema_version_header(self, fetch_repo_file):
+        # A file at the same path without a schema-version header is skipped so
+        # we never mutate an unrelated file sitting there.
+        fetch_repo_file.return_value = ("# just a readme\n", "sha", ".github/security-insights.yml")
+
+        self.assertIsNone(emeritus._fetch_security_insights("example"))
+
+    @mock.patch.object(emeritus, "fetch_repo_file")
+    def test_fetch_detects_schema_version(self, fetch_repo_file):
+        fetch_repo_file.side_effect = [
+            (self.SI_V2, "sha", ".github/security-insights.yml"),
+        ]
+
+        result = emeritus._fetch_security_insights("example")
+        self.assertIsNotNone(result)
+        content, sha, path, schema_major = result
+        self.assertEqual(sha, "sha")
+        self.assertEqual(path, ".github/security-insights.yml")
+        self.assertEqual(2, schema_major)
+
+    @mock.patch.object(emeritus, "fetch_repo_file")
+    def test_fetch_falls_back_to_root_path(self, fetch_repo_file):
+        fetch_repo_file.side_effect = [
+            None,
+            (self.SI_V1, "sha", "SECURITY-INSIGHTS.yml"),
+        ]
+
+        result = emeritus._fetch_security_insights("example")
+        self.assertIsNotNone(result)
+        _, _, path, schema_major = result
+        self.assertEqual(path, "SECURITY-INSIGHTS.yml")
+        self.assertEqual(1, schema_major)
+
+    def test_v2_leaves_standalone_mapping_contact_intact(self):
+        """A `social:` field in a non-list mapping (e.g. vulnerability-reporting
+        contact) must not be deleted, and the backward scan must not cross
+        mapping boundaries into a preceding list item.
+        """
+        doc = (
+            "header:\n"
+            "  schema-version: 2.0.0\n"
+            "project:\n"
+            "  administrators:\n"
+            "    - name: Bob Example\n"
+            "      affiliation: Example Corp\n"
+            "      social: https://github.com/bob\n"
+            "      primary: true\n"
+            "  vulnerability-reporting:\n"
+            "    contact:\n"
+            "      name: Alice Example\n"
+            "      social: https://github.com/alice\n"
+            "      primary: true\n"
+        )
+
+        result, changed = emeritus._remove_security_insights_entry_v2(doc, "alice")
+
+        # Alice's standalone mapping isn't a list item — leave it untouched.
+        self.assertFalse(changed)
+        self.assertEqual(doc, result)
+        # Bob (in administrators) must still be present.
+        self.assertIn("name: Bob Example", result)
+        self.assertIn("https://github.com/bob", result)
+
+    def test_v2_deletes_full_item_despite_shallow_comment(self):
+        """A comment at or shallower than the item's indent between fields
+        must not end the item early — the whole item (fields + comment) is
+        removed, no field is orphaned.
+        """
+        doc = (
+            "header:\n"
+            "  schema-version: 2.0.0\n"
+            "project:\n"
+            "  administrators:\n"
+            "    - name: Alice Example\n"
+            "      affiliation: Example Corp\n"
+            "      social: https://github.com/alice\n"
+            "# a column-0 comment inside Alice's item\n"
+            "      primary: true\n"
+            "    - name: Bob Example\n"
+            "      affiliation: Example Corp\n"
+            "      social: https://github.com/bob\n"
+            "      primary: false\n"
+        )
+
+        result, changed = emeritus._remove_security_insights_entry_v2(doc, "alice")
+
+        self.assertTrue(changed)
+        # Alice's whole item (including primary: true) is gone, nothing orphaned.
+        self.assertNotIn("Alice Example", result)
+        self.assertNotIn("github.com/alice", result)
+        self.assertNotIn("primary: true", result)
+        # The stray comment goes with Alice's block (safer than orphaning it).
+        self.assertNotIn("# a column-0 comment", result)
+        # Bob survives intact and is still parseable (primary: false on its own line).
+        self.assertIn("name: Bob Example", result)
+        self.assertIn("primary: false", result)
+
+    def test_v2_keeps_entry_when_removal_would_empty_required_list(self):
+        """If Alice is the only administrator, removing her would leave
+        `administrators:` as a null value and violate the upstream schema.
+        Keep the entry and expect the caller to surface Alice as unresolved.
+        """
+        doc = (
+            "header:\n"
+            "  schema-version: 2.0.0\n"
+            "project:\n"
+            "  administrators:\n"
+            "    - name: Alice Example\n"
+            "      affiliation: Example Corp\n"
+            "      social: https://github.com/alice\n"
+            "      primary: true\n"
+            "repository:\n"
+            "  core-team:\n"
+            "    - name: Alice Example\n"
+            "      affiliation: Example Corp\n"
+            "      social: https://github.com/alice\n"
+            "      primary: true\n"
+            "    - name: Bob Example\n"
+            "      affiliation: Example Corp\n"
+            "      social: https://github.com/bob\n"
+            "      primary: false\n"
+        )
+
+        result, changed = emeritus._remove_security_insights_entry_v2(doc, "alice")
+
+        # Alice remains in administrators (would have emptied the required list),
+        # but was removed from core-team (Bob remains).
+        self.assertTrue(changed)
+        # Alice is still in the file (administrators entry preserved).
+        self.assertIn("https://github.com/alice", result)
+        # But core-team's Alice entry is gone (only one Alice occurrence left).
+        self.assertEqual(1, result.count("https://github.com/alice"))
+        # Bob survives in core-team.
+        self.assertIn("https://github.com/bob", result)
+
+        # The caller-visible behaviour: unresolved list flags Alice because her
+        # URL still appears in the file after the sweep.
+        _, unresolved = emeritus._update_security_insights(
+            doc, ["alice"], schema_major=2
+        )
+        self.assertEqual(["alice"], unresolved)
 
 
 if __name__ == "__main__":

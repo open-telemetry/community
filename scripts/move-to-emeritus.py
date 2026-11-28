@@ -1231,10 +1231,244 @@ def _create_pr(repo, head_owner, branch, base, title, body):
 
 
 # ---------------------------------------------------------------------------
+# security-insights.yml updates
+# ---------------------------------------------------------------------------
+#
+# OSSF Security Insights ships in two schema versions across OTel repos:
+#   - 1.0.0 (opentelemetry-go): flat list of GitHub profile URLs under
+#     project-lifecycle.core-maintainers
+#   - 2.0.0 (dotnet family, demo, helm-charts): structured entries
+#     (name/affiliation/social/primary) under project.administrators and
+#     repository.core-team
+# Edits are surgical (regex-based) so comments, quoting, and key order are
+# preserved — a full YAML parse+dump round-trip would lose formatting.
+
+SECURITY_INSIGHTS_PATHS = (".github/security-insights.yml", "SECURITY-INSIGHTS.yml")
+
+
+def _fetch_security_insights(repo):
+    """Fetch the repo's security-insights.yml if present.
+
+    Returns (content, sha, path, schema_major) or None. A file is only
+    considered valid if it carries a `schema-version:` header — otherwise we
+    skip it so an unrelated file sitting at the same path isn't mutated.
+    """
+    for path in SECURITY_INSIGHTS_PATHS:
+        result = fetch_repo_file(repo, path)
+        if result is None:
+            continue
+        content, sha, actual_path = result
+        m = re.search(r"schema-version:\s*['\"]?(\d+)\.", content)
+        if m is None:
+            continue
+        return content, sha, actual_path, int(m.group(1))
+    return None
+
+
+def _remove_security_insights_entry_v1(content, username):
+    """Remove `- https://github.com/<user>` from a schema-1.0.0 flat list."""
+    pattern = re.compile(
+        rf"^[ \t]*-[ \t]+https?://github\.com/{re.escape(username)}/?[ \t]*\r?\n",
+        re.MULTILINE | re.IGNORECASE,
+    )
+    new_content, n = pattern.subn("", content)
+    return new_content, n > 0
+
+
+# YAML lists that the upstream OSSF Security Insights 2.0.0 schema requires to
+# be non-empty. If removing all candidate entries would empty one of these, we
+# leave the entries in place so the generated PR doesn't produce a file that
+# violates the schema; the unresolved-user warning in the PR body lets the
+# maintainer handle it manually.
+REQUIRED_NONEMPTY_LISTS_V2 = {"administrators", "core-team"}
+
+
+def _is_structural(line):
+    """True if the line carries YAML structure (not blank, not a comment)."""
+    stripped = line.lstrip()
+    return bool(stripped) and not stripped.startswith("#")
+
+
+def _find_enclosing_list_item(lines, match_i, social_indent):
+    """Return (item_start, item_end, parent_key) for the list item that
+    contains `lines[match_i]`, or None if the match is in a non-list mapping.
+
+    - Backward scan stops at mapping boundaries so matches in standalone
+      mappings (e.g. vulnerability-reporting.contact) aren't mistaken for the
+      preceding list item.
+    - Forward scan skips comment lines so a comment at or shallower than the
+      item's indent doesn't end the item early.
+    """
+    # Walk backward to the enclosing "- " item. Stop at mapping boundaries.
+    item_start = None
+    i = match_i
+    while i > 0:
+        if _is_structural(lines[i]):
+            s = lines[i]
+            stripped = s.lstrip()
+            indent = len(s) - len(stripped)
+            if stripped.startswith("- "):
+                if indent < social_indent:
+                    item_start = i
+                    break
+            elif indent < social_indent:
+                # Walked out of the item into a shallower mapping key —
+                # the social: match is a standalone field, not a list item.
+                return None
+        i -= 1
+    if item_start is None:
+        return None
+
+    item_indent = len(lines[item_start]) - len(lines[item_start].lstrip())
+
+    # Walk forward to the next line (ignoring blanks and comments) whose
+    # indent is at or shallower than the item's.
+    end = match_i + 1
+    while end < len(lines):
+        s = lines[end]
+        if s.strip() == "" or s.lstrip().startswith("#"):
+            end += 1
+            continue
+        nxt_indent = len(s) - len(s.lstrip())
+        if nxt_indent <= item_indent:
+            break
+        end += 1
+    # Don't absorb trailing blank/comment lines — they belong to the next item.
+    while end > match_i + 1 and not _is_structural(lines[end - 1]):
+        end -= 1
+
+    # Walk back from item_start to find the parent key line.
+    parent_key = None
+    j = item_start - 1
+    while j >= 0:
+        if _is_structural(lines[j]):
+            s = lines[j]
+            stripped = s.lstrip()
+            indent = len(s) - len(stripped)
+            if indent < item_indent and stripped.endswith(":"):
+                parent_key = stripped.rstrip(":").strip()
+                break
+        j -= 1
+
+    return (item_start, end, parent_key)
+
+
+def _count_list_items(lines, parent_key):
+    """Count direct `- ` list items under the first occurrence of `parent_key:`."""
+    for i, line in enumerate(lines):
+        if not _is_structural(line):
+            continue
+        stripped = line.lstrip()
+        if not stripped.startswith(f"{parent_key}:"):
+            continue
+        parent_indent = len(line) - len(stripped)
+        item_indent = None
+        count = 0
+        for j in range(i + 1, len(lines)):
+            inner = lines[j]
+            if not _is_structural(inner):
+                continue
+            inner_stripped = inner.lstrip()
+            ind = len(inner) - len(inner_stripped)
+            if ind <= parent_indent:
+                break
+            if inner_stripped.startswith("- "):
+                if item_indent is None:
+                    item_indent = ind
+                if ind == item_indent:
+                    count += 1
+        return count
+    return 0
+
+
+def _remove_security_insights_entry_v2(content, username):
+    """Remove a structured list item whose `social:` field matches the user.
+
+    Works for any 2.0.0 list of entries (administrators, core-team, etc.) by
+    locating each matching `social:` line and deleting the enclosing `- ...`
+    block. Skips removals that would:
+    - cross a mapping boundary into an unrelated list item,
+    - leave orphan fields after a comment inside the item, or
+    - empty a schema-required list (administrators, core-team) entirely.
+    Skipped users remain in the file and surface via the unresolved-user
+    warning in the PR body.
+    """
+    lines = content.split("\n")
+    social_re = re.compile(
+        rf"^\s*social:\s*https?://github\.com/{re.escape(username)}/?\s*$",
+        re.IGNORECASE,
+    )
+
+    # Pass 1: collect candidate (item_start, item_end, parent_key) tuples.
+    candidates = []
+    for match_i, line in enumerate(lines):
+        if not social_re.match(line):
+            continue
+        social_indent = len(line) - len(line.lstrip())
+        info = _find_enclosing_list_item(lines, match_i, social_indent)
+        if info is None:
+            continue  # standalone mapping — leave it; unresolved warning handles it.
+        candidates.append(info)
+
+    if not candidates:
+        return content, False
+
+    # Pass 2: filter out candidates whose removal would empty a required list.
+    by_parent = {}
+    for idx, (_, _, parent_key) in enumerate(candidates):
+        if parent_key in REQUIRED_NONEMPTY_LISTS_V2:
+            by_parent.setdefault(parent_key, []).append(idx)
+    skip = set()
+    for parent_key, idxs in by_parent.items():
+        total = _count_list_items(lines, parent_key)
+        if total and len(idxs) >= total:
+            skip.update(idxs)
+
+    to_apply = [
+        (start, end)
+        for idx, (start, end, _) in enumerate(candidates)
+        if idx not in skip
+    ]
+    if not to_apply:
+        return content, False
+
+    # Pass 3: delete in reverse-start order so earlier indices stay valid.
+    for start, end in sorted(to_apply, key=lambda se: -se[0]):
+        del lines[start:end]
+    return "\n".join(lines), True
+
+
+def _update_security_insights(content, usernames, schema_major):
+    """Remove each user from a security-insights file.
+
+    Returns (new_content, unresolved) where `unresolved` is the subset of
+    `usernames` whose GitHub URL still appears in the file after removal
+    (so a maintainer can address it by hand).
+    """
+    new_content = content
+    for user in usernames:
+        if schema_major == 1:
+            new_content, _ = _remove_security_insights_entry_v1(new_content, user)
+        else:
+            new_content, _ = _remove_security_insights_entry_v2(new_content, user)
+
+    unresolved = []
+    for user in usernames:
+        still_there = re.search(
+            rf"github\.com/{re.escape(user)}\b",
+            new_content,
+            re.IGNORECASE,
+        )
+        if still_there:
+            unresolved.append(user)
+    return new_content, unresolved
+
+
+# ---------------------------------------------------------------------------
 # Orchestration: process repos and open PRs
 # ---------------------------------------------------------------------------
 
-def _build_pr_body(repo, changes, cutoff, warning=None):
+def _build_pr_body(repo, changes, cutoff, warning=None, security_notes=None):
     """Build the PR body markdown for a repo."""
     body = "## Move inactive members to emeritus\n\n"
     if warning:
@@ -1248,6 +1482,9 @@ def _build_pr_body(repo, changes, cutoff, warning=None):
         teams_str = ", ".join(teams)
         body += f"- @{user} ({role_label}, Remove from team(s): {teams_str})\n"
     body += "\n"
+
+    if security_notes:
+        body += "\n".join(security_notes) + "\n\n"
 
     body += (
         "> [!IMPORTANT]\n"
@@ -1265,7 +1502,7 @@ def _build_pr_body(repo, changes, cutoff, warning=None):
     return body
 
 
-def _build_issue_body(changes):
+def _build_issue_body(changes, security_notes=None):
     """Build the issue body for the follow-up cleanup issue."""
     body = "## Remove inactive members from teams and channels\n\n"
     body += (
@@ -1276,6 +1513,10 @@ def _build_issue_body(changes):
         teams_str = ", ".join(teams)
         body += f"- @{user} ({role_label}, Remove from team(s): {teams_str})\n"
     body += "\n"
+
+    if security_notes:
+        body += "\n".join(security_notes) + "\n\n"
+
     body += (
         "> [!IMPORTANT]\n"
         "> A Maintainer should remove the user(s) from:\n"
@@ -1292,13 +1533,13 @@ def _build_issue_body(changes):
     return body
 
 
-def _create_followup_issue(repo, changes):
+def _create_followup_issue(repo, changes, security_notes=None):
     """Create a follow-up issue when the README is already up to date.
 
     If an open issue with the same title already exists, update its body instead.
     Returns the issue URL.
     """
-    body = _build_issue_body(changes)
+    body = _build_issue_body(changes, security_notes=security_notes)
     issues_url = f"{REST_API}/repos/{ORG}/{repo}/issues"
 
     # Look for an existing open issue to update rather than creating a duplicate
@@ -1358,11 +1599,36 @@ def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
                 f"{file_path}, skipping."
             )
 
-        if document == original_document:
+        # Also apply removals to security-insights.yml if the repo has one.
+        security_update = None  # (new_content, sha, path) if a commit is needed
+        security_notes = []
+        change_users = [user for user, _, _ in changes]
+        si_result = _fetch_security_insights(repo)
+        if si_result is not None and change_users:
+            si_content, si_sha, si_path, schema_major = si_result
+            new_si, unresolved = _update_security_insights(
+                si_content, change_users, schema_major
+            )
+            if new_si != si_content:
+                security_update = (new_si, si_sha, si_path)
+                security_notes.append(
+                    f"> [!NOTE]\n> `{si_path}` was also updated to remove the "
+                    "above member(s)."
+                )
+            if unresolved:
+                mentions = ", ".join("@" + u for u in unresolved)
+                security_notes.append(
+                    f"> [!WARNING]\n> `{si_path}` still references "
+                    f"{mentions}. Please update the file manually."
+                )
+
+        if document == original_document and security_update is None:
             print(f"  No {file_path} changes needed.")
             if changes:
                 try:
-                    issue_url = _create_followup_issue(repo, changes)
+                    issue_url = _create_followup_issue(
+                        repo, changes, security_notes=security_notes or None
+                    )
                     print(f"  Issue: {issue_url}")
                 except Exception as e:
                     print(f"  ERROR creating issue for {ORG}/{repo}: {e}", file=sys.stderr)
@@ -1382,17 +1648,29 @@ def create_emeritus_prs(inactive_report, repo_warnings, cutoff):
             except urllib.error.HTTPError as e:
                 print(f"  [WARN] Could not sync fork with upstream: HTTP {e.code}", flush=True)
             _ensure_branch(fork_owner, repo, BRANCH_NAME, base_sha)
-            _update_file(
-                fork_owner, repo, file_path, document, file_sha, BRANCH_NAME,
-                "chore: Move inactive members to emeritus",
-            )
+
+            if document != original_document:
+                _update_file(
+                    fork_owner, repo, file_path, document, file_sha, BRANCH_NAME,
+                    "chore: Move inactive members to emeritus",
+                )
+            if security_update is not None:
+                new_si, si_sha, si_path = security_update
+                _update_file(
+                    fork_owner, repo, si_path, new_si, si_sha, BRANCH_NAME,
+                    "chore: Remove inactive members from security-insights.yml",
+                )
+                print(f"  Updated {si_path}", flush=True)
 
             warning = repo_warnings.get(repo)
             # Strip leading whitespace/WARNING: prefix for cleaner PR body
             if warning:
                 warning = warning.strip().removeprefix("WARNING: ")
 
-            pr_body = _build_pr_body(repo, changes, cutoff, warning)
+            pr_body = _build_pr_body(
+                repo, changes, cutoff, warning,
+                security_notes=security_notes or None,
+            )
             pr_url = _create_pr(
                 repo, fork_owner, BRANCH_NAME, default_branch,
                 "chore: Move inactive members to emeritus",
